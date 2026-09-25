@@ -1,0 +1,6 @@
+{
+  "name": "Anatomia Umysłu: Psychologia, Neuronauka i Wpływ",
+  "description": "Interaktywna książka badająca mechanizmy ludzkich zachowań, studia przypadków z życia codziennego, analizy psychologiczne, neuronaukę decyzji oraz ćwiczenia samorozwojowe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
