@@ -19,6 +19,9 @@ export const caseStudiesList: CaseStudy[] = [
       { speaker: 'Tomasz', text: 'Oczywiście, panie dyrektorze, ja bardzo doceniam stabilność... Po prostu pomyślałem...', subtext: 'Kapitulacja kory przedczołowej; wejście w postawę przepraszająco-poddańczą.' },
       { speaker: 'Wiktor (Dyrektor)', text: 'Dlatego nie chcę cię teraz obarczać dodatkową odpowiedzialnością... Wróćmy do tematu za 6 miesięcy.', subtext: 'Fałszywa troska (paternalizm manipulacyjny) i zamiana prawa pracownika w rzekomą łaskę pracodawcy.' }
     ],
+    decisionTaken: 'Tomasz skapitulował bez przedstawienia przygotowanego raportu finansowego, zgodził się na 6-miesięczną zwłokę i przeprosił za zawracanie głowy.',
+    whatProtagonistSaw: 'Chłodne spojrzenie szefa, mahoniowe biurko, 90 sekund ciszy, wzmiankę o cięciach budżetowych i zagrożenie bycia uznanym za nielojalnego chciwca.',
+    whatWasMissed: 'Tomasz nie zauważył, że projekt generuje 40% zysków firmy, na rynku brakuje specjalistów o jego profilu, a reakcja dyrektora była wyuczonym skryptem negocjacyjnym testującym odporność pracownika.',
     psychologicalAnalysis: {
       coreMechanism: 'Syndrom zamrożenia (Freeze Response) wywołany nagłą asymetrią statusu i aktywacją schematu podporządkowania w obliczu symbolicznego autorytetu.',
       cognitiveBiases: [
@@ -31,6 +34,15 @@ export const caseStudiesList: CaseStudy[] = [
         { name: 'Racjonalizacja post-factum', explanation: 'W drodze do domu Tomasz zaczął wmawiać sobie: "Właściwie szef ma rację, za pół roku będę miał jeszcze mocniejsze dossier".' }
       ],
       emotionalDynamic: 'Gwałtowne przejście od zmotywowanej asertywności (stymulowanej dopaminą podczas planowania w domu) do stanu lękowego wycofania pod wpływem wstydu i strachu społecznego.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Pytanie dyrektora o lojalność w trudnych czasach i 90 sekund milczenia.',
+      attentionFocus: 'Zmarszczone brwi dyrektora i lęk przed utratą aprobaty szefa.',
+      interpretation: '„Szef uważa, że jestem bezczelny i nielojalny; jeśli będę naciskać, wyrzucą mnie z pracy”.',
+      emotion: 'Ścisk w gardle, nagły lęk, poczucie winy, wstyd (wyrzut noradrenaliny).',
+      impulse: 'Rozładować napięcie, uciec z gabinetu, przypodobać się (fawn response).',
+      action: 'Zgoda na odłożenie rozmowy o pół roku i przeprosiny.',
+      consequence: 'Brak podwyżki przez kolejne 6 miesięcy, spadek samooceny, narastająca gorycz i złość na samego siebie.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
@@ -61,6 +73,8 @@ export const caseStudiesList: CaseStudy[] = [
         { step: '3. Odmowa Odsunięcia w Czasie', script: '"Sześć miesięcy to zbyt długi horyzont wobec rezultatów, które dostarczyłem w minionym roku. Proponuję ustalić aneks z datą wejścia w życie od przyszłego miesiąca."', rationale: 'Odrzucenie pozornej obietnicy i zamknięcie furtki ucieczkowej dyrektora.' }
       ]
     },
+    alternativePath: 'Gdyby Tomasz zastosował Protokół Pauzy (STOP), zauważył ucisk w gardle, wziął fizjologiczne westchnienie i położył raport na biurku mówiąc: „Doceniam troskę o stabilność, spójrzmy na zyski”, rozmowa potoczyłaby się w płaszczyźnie merytorycznej.',
+    readerQuestion: 'W jakich sytuacjach zawodowych Twój głos cichnie, a ciało wchodzi w uległy odruch przepraszania za samą swoją obecność?',
     keyTakeaway: 'Kiedy w sytuacji biznesowej czujesz nagłe poczucie winy lub paraliż gardła, nie reagujesz na treść słów, lecz na neurochemiczną pułapkę uległości. Zrozumienie, że to tylko biologia stresu, pozwala odzyskać kontrolę nad korą przedczołową.'
   },
   {
@@ -80,6 +94,9 @@ export const caseStudiesList: CaseStudy[] = [
       { speaker: 'Ekspedientka', text: 'Została nam ostatnia sztuka w tym rozmiarze, przed chwilą pytała o niego inna klientka.', subtext: 'Podwójny wektor: sztuczny niedobór (scarcity) oraz rywalizacja wewnątrzgatunkowa o limitowany zasób.' },
       { speaker: 'Marta (w myślach)', text: 'Ciężko pracowałam przez cały tydzień, zasłużyłam na coś pięknego. Jeśli go teraz nie wezmę, jutro będę płakać.', subtext: 'Mechanizm kompensacji emocjonalnej i natychmiastowa racjonalizacja impulsywnego zakupu.' }
     ],
+    decisionTaken: 'Zakup torebki i płaszcza za 3400 zł przy użyciu karty kredytowej pod wpływem 15 minut pobytu w butiku.',
+    whatProtagonistSaw: 'Napis „Rabat 70%”, miękki kaszmir, uśmiechniętą ekspedientkę i odliczający zegar w aplikacji.',
+    whatWasMissed: 'Stan własnego wyczerpania (godzina 19:30 w piątek), fakt posiadania 3 podobnych płaszczy w szafie oraz odroczony koszt spłaty karty z odsetkami.',
     psychologicalAnalysis: {
       coreMechanism: 'Kompensacyjne rozładowanie napięcia emocjonalnego poprzez natychmiastową gratyfikację sensoryczną w warunkach osłabionej samokontroli.',
       cognitiveBiases: [
@@ -92,6 +109,15 @@ export const caseStudiesList: CaseStudy[] = [
         { name: 'Rozszczepienie czasowe', explanation: 'Oddzielenie natychmiastowej przyjemności zakupu od odroczonego w czasie bólu spłaty karty kredytowej za miesiąc.' }
       ],
       emotionalDynamic: 'Gwałtowny skok od emocjonalnego wyczerpania i pustki do ekscytacji łowieckiej, zakończony post-decyzyjnym kacem moralnym.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Czerwony neon wyprzedaży i komplement ekspedientki o kolorze cery.',
+      attentionFocus: 'Ostatnia sztuka na wieszaku i zegar odliczający minuty.',
+      interpretation: '„To okazja życia, zasłużyłam po tak ciężkim tygodniu; jeśli teraz nie kupię, ktoś mi to zabierze”.',
+      emotion: 'Dopaminowy skok podniecenia połączony z lękiem przed utratą szansy (FOMO).',
+      impulse: 'Wyjąć kartę kredytową, przyłożyć do terminala, poczuć natychmiastową ulgę.',
+      action: 'Płatność zbliżeniowa bez patrzenia na kwotę całkowitą.',
+      consequence: 'Chwilowa euforia w sklepie, a po 40 minutach głęboki kac moralny i wyrzuty sumienia.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
@@ -121,11 +147,13 @@ export const caseStudiesList: CaseStudy[] = [
         { step: '3. Zakaz Zakupów w Stanie Zmęczenia (Protokół HALT)', script: 'Nigdy nie wchodź do sklepów, gdy jesteś Głodny (Hungry), Zły (Angry), Samotny (Lonely) lub Zmęczony (Tired).', rationale: 'Wyczerpanie zasobów glukozy w mózgu uniemożliwia hamowanie zachowań impulsywnych.' }
       ]
     },
+    alternativePath: 'Gdyby Marta znała swój stan (HALT - skrajne zmęczenie po tygodniu), zostawiłaby torebkę z prośbą o odłożenie do jutra rana i wyszła z galerii. W 90% przypadków rano ochota na zakup całkowicie znika.',
+    readerQuestion: 'Ile rzeczy w Twojej szafie lub na półkach kupiłeś nie z potrzeby, lecz z chęci nagrodzenia się po trudnym dniu?',
     keyTakeaway: 'Dopamina to hormon obietnicy szczęścia, a nie samego szczęścia. Kiedy czujesz parzący przymus kupienia czegoś natychmiast, twój biologiczny układ nagrody padł ofiarą profesjonalnie zaprojektowanego ataku.'
   },
   {
     id: 'studium-3-gaslighting-relacja',
-    title: '„Przecież nikt inny ci tego nie powie”: Anatomia codziennego gaslightingu',
+    title: '„Przecież nikt inny ci tego nie powie”: Anatomia codziennego zacierania faktów',
     subtitle: 'Niewidzialna erozja zaufania do własnych zmysłów w relacji biznesowo-partnerskiej',
     protagonist: 'Karolina, 35 lat, architektka wnętrz, współwłaścicielka pracowni projektowej',
     context: 'Karolina prowadzi studio ze wspólnikiem Pawłem. Od kilkunastu miesięcy czuje narastający chaos umysłowy, ciągłą potrzebę notowania każdego słowa i poczucie, że traci kompetencje zawodowe. Paweł systematycznie neguje ustalenia, wmawiając jej nadwrażliwość, złą pamięć i niestabilność emocjonalną.',
@@ -141,6 +169,9 @@ export const caseStudiesList: CaseStudy[] = [
       { speaker: 'Karolina', text: 'Ale ja pamiętam... Miałam to nawet zapisane w notesie...', subtext: 'Wycofywanie się z pewności na rzecz obrony i szukania dowodów na własne zdrowie psychiczne.' },
       { speaker: 'Paweł', text: 'Nagrywasz mnie? Ty naprawdę potrzebujesz pomocy specjalisty. Niszczysz naszą firmę.', subtext: 'Odwrócenie ról kata i ofiary (DARVO: Deny, Attack, and Reverse Victim and Offender).' }
     ],
+    decisionTaken: 'Karolina przez miesiące wycofywała się z własnych decyzji, kasowała swoje projekty i brała na siebie winę za rzekome błędy pamięciowe.',
+    whatProtagonistSaw: 'Pewny siebie, spokojny ton wspólnika, troskliwą mimikę twarzy i pozorne „dowody” w postaci brakujących maili.',
+    whatWasMissed: 'Fakt, że pamięć Pawła wcale nie była lepsza — Paweł cynicznie przestawiał pionki, by ukryć własne niedopatrzenia budżetowe i przejąć kontrolę nad spółką.',
     psychologicalAnalysis: {
       coreMechanism: 'Gaslighting — systematyczne i długofalowe niszczenie zaufania ofiary do własnych zmysłów, pamięci i racjonalnego osądu rzeczywistości.',
       cognitiveBiases: [
@@ -152,6 +183,15 @@ export const caseStudiesList: CaseStudy[] = [
         { name: 'Przymus usprawiedliwiania agresora', explanation: '"On chce dobrze, to ja jestem trudna we współpracy i zbyt emocjonalna".' }
       ],
       emotionalDynamic: 'Stopniowe przejście od autonomii i pewności siebie do paraliżującego lęku, poczucia winy, wyalienowania i chronicznego wyczerpania nerwowego.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Kłamstwo Pawła wygłoszone spokojnym, zatroskanym głosem.',
+      attentionFocus: 'Własne zmęczenie i obawa: „Co jeśli to ja tracę kontrolę?”.',
+      interpretation: '„Jestem przemęczona, Paweł jest spokojny, więc to na pewno ja pomyliłam dni”.',
+      emotion: 'Dezorientacja, wstyd, poczucie bezradności, chroniczny niepokój.',
+      impulse: 'Ustąpić, przeprosić, uniknąć kłótni, sprawdzić jeszcze raz pocztę.',
+      action: 'Podporządkowanie się nowej, fałszywej wersji wydarzeń.',
+      consequence: 'Dalsza utrata pewności siebie i ugruntowanie dominacji manipulatora.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
@@ -181,6 +221,8 @@ export const caseStudiesList: CaseStudy[] = [
         { step: '3. Technika Szarego Kamienia (Grey Rock)', script: 'Na prowokacje: "Rozumiem twoje zdanie. Ja opieram się na pisemnym harmonogramie. Wracam do pracy". Zero emocjonalnych tłumaczeń.', rationale: 'Odcięcie manipulatora od paliwa, jakim jest emocjonalna reakcja i cierpienie ofiary.' }
       ]
     },
+    alternativePath: 'Gdyby Karolina od pierwszego incydentu wprowadziła zasadę podsumowań mailowych i odmówiła dyskutowania o swoim zdrowiu psychicznym („Moja pamięć działa bez zarzutu, rozmawiajmy o faktach”), Paweł musiałby wycofać się ze swoich gierek.',
+    readerQuestion: 'Czy zdarzyło Ci się kiedykolwiek przepraszać kogoś za to, że to on Cię zranił lub oszukał?',
     keyTakeaway: 'Jeśli w jakiejkolwiek relacji regularnie zaczynasz czuć potrzebę udowadniania, że jesteś osobą o zdrowych zmysłach, nie masz problemu z pamięcią — masz do czynienia z wyrachowanym drapieżnikiem emocjonalnym.'
   },
   {
@@ -200,6 +242,9 @@ export const caseStudiesList: CaseStudy[] = [
       { speaker: 'Wewnętrzny Krytyk Piotra', text: 'To musi być absolutne arcydzieło. Jeśli ma być przeciętne, lepiej żeby w ogóle nie powstało.', subtext: 'Perfekcjonizm paraliżujący: utożsamienie wartości człowieka z doskonałością produktu.' },
       { speaker: 'Mózg Piotra (Racjonalizacja)', text: 'Tylko zorganizuję maile i poukładam książki na półce alfabetycznie. To też praca przygotowawcza.', subtext: 'Pozorna produktywność (prokrastynacja proaktywna) dająca fałszywe poczucie sprawczości.' }
     ],
+    decisionTaken: 'Zamiast napisać choćby 1 stronę tekstu, Piotr spędził 12 godzin na sprzątaniu dysku, sortowaniu poczty i czytaniu artykułów.',
+    whatProtagonistSaw: 'Pusty biały ekran, mrugający kursor, bałagan w folderach i własne rzekome „lenistwo”.',
+    whatWasMissed: 'Piotr nie zauważył, że jego zachowanie to czysty mechanizm unikania lęku przed oceną, napędzany nierealistycznym perfekcjonizmem i syndromem oszusta.',
     psychologicalAnalysis: {
       coreMechanism: 'Prokrastynacja awersyjna wywołana lękiem przed porażką, lękiem przed oceną i perfekcjonizmem maladaptacyjnym.',
       cognitiveBiases: [
@@ -211,6 +256,15 @@ export const caseStudiesList: CaseStudy[] = [
         { name: 'Wyparcie i kompensacja', explanation: 'Udowadnianie sobie pracowitości poprzez sprzątanie i załatwianie drobnych spraw zamiast zmierzenia się z rdzeniem problemu.' }
       ],
       emotionalDynamic: 'Błędne koło: Lęk przed oceną -> Ucieczka w prokrastynację -> Chwilowa ulga neurochemiczna -> Wyrzuty sumienia i spadek samooceny -> Jeszcze większy lęk przed zadaniem.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Mrugający kursor na pustej stronie dokumentu Word.',
+      attentionFocus: 'Myśli o potencjalnej krytyce środowiska i lęk przed byciem przeciętnym.',
+      interpretation: '„Jeśli napiszę coś słabego, wszyscy zobaczą, że jestem oszustem; muszę stworzyć arcydzieło”.',
+      emotion: 'Ścisk w żołądku, lęk egzystencjalny, paraliżująca bezsilność.',
+      impulse: 'Uciec w bezpieczne, proste zadanie dające natychmiastowe poczucie kontroli (sprzątanie).',
+      action: 'Zamknięcie edytora tekstu i 8 godzin sortowania plików.',
+      consequence: 'Poczucie winy, zmarnowany dzień, utrwalenie przekonania o własnej nieskuteczności.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
@@ -234,11 +288,13 @@ export const caseStudiesList: CaseStudy[] = [
         { tactic: 'Kult zajętości (Toxic Productivity)', description: 'Społeczne programowanie nakazujące być ciągle "zajętym", co ułatwia ucieczkę od głębokiej pracy wymagającej konfrontacji z pustką.', vulnerabilityExploited: 'Lęk przed bezruchem i ciszą.' }
       ],
       counterMeasures: [
-        { step: '1. Zasada 5 Minut i Brzydkiego Pierwszego Szkicu', script: '"Zezwalam sobie napisać najgorszy, najbardziej żenujący akapit w historii literatury. Będę pisać tylko przez 5 minut, po czym mogę legalnie przestać".', rationale: 'Drastyczne obniżenie progu wejścia wyłącza alarm w ciele migdałowatym; po 5 minutach włącza się zjawisko Zeigarnik i pęd zadaniowy.' },
+        { step: '1. Zasada 5 Minut i Brzydkiego Pierwszego Szkicu', script: '"Zezwalam sobie napisać najgorszy, najbardziej żenujący akapit w historii literatury. Będę pisać tylko przez 5 minut, po czym mogę legalnie przestać".', rationale: 'Drastyczne obniżenie progu wejścia wyłącza alarm w ciele migdałowatego; po 5 minutach włącza się zjawisko Zeigarnik i pęd zadaniowy.' },
         { step: '2. Emocjonalne Etykietowanie (Affect Labeling)', script: 'Nazwij emocję na głos: "Czuję teraz lęk przed tym, że zostanę oceniony jako przeciętny. To normalne. To tylko reakcja biologiczna mojego mózgu".', rationale: 'Badania Matthew Liebermana dowodzą, że zwerbalizowanie lęku aktywuje prawą brzuszną korę przedczołową i natychmiast wycisza ciało migdałowate.' },
         { step: '3. Rozdzielenie Twórcy od Krytyka', script: 'Nigdy nie edytuj tekstu podczas pisania. Dzień 1 to czysta ekspresja (tryb dopaminowy). Dzień 2 to chłodna redakcja (tryb analityczny).', rationale: 'Zapobiega konfliktowi poznawczemu między przeciwstawnymi sieciami neuronowymi (DMN vs CEN).' }
       ]
     },
+    alternativePath: 'Gdyby Piotr pozwolił sobie na napisanie 3 zdań „brudnopisu o zerowej wartości” i nastawił stoper na 5 minut, kora przedczołowa ominęłaby blokadę lękową, a książka powstałaby w 3 miesiące.',
+    readerQuestion: 'Przed jaką trudną emocją (lękiem, nudą, poczuciem niekompetencji) uciekasz najczęściej w „pozornie pożyteczne” obowiązki?',
     keyTakeaway: 'Prokrastynacja nigdy nie jest defektem charakteru ani brakiem dyscypliny. To desperacka próba twojego układu nerwowego, by uchronić cię przed emocjonalnym bólem odrzucenia. Wylecz lęk i perfekcjonizm, a dyscyplina pojawi się sama.'
   }
 ];
@@ -413,203 +469,402 @@ export const selfExercisesList: SelfExercise[] = [
 
 export const chapterOne: Chapter = {
   number: 1,
-  title: 'Wstęp i Architektura Umysłu: Iluzja Kontroli, Biologia Wyboru i Niewidzialne Wektory Wpływu',
-  subtitle: 'Dlaczego robimy to, czego nie chcemy, ulegamy manipulacji wbrew logice i jak odzyskać stery nad własnym mózgiem',
-  leadParagraph: 'Czy kiedykolwiek zastanawiałeś się, dlaczego pomimo żelaznych postanowień ulegasz impulsom, których potem żałujesz? Dlaczego w obecności pewnych ludzi Twój głos cichnie, a starannie przygotowane argumenty znikają z głowy jak dym? Witaj w podróży w głąb najbardziej złożonej maszyny we wszechświecie — ludzkiego mózgu. W tym tomie zdejmiemy kurtynę z biologicznych i psychologicznych mechanizmów, które każdego dnia kształtują Twoje życie.',
-  totalEstimatedPages: 28,
+  title: 'Architektura Umysłu: Dlaczego podejmujemy decyzje, których później nie rozumiemy?',
+  subtitle: 'Biologia wyboru, ślepe plamki uwagi, pamięć rekonstrukcyjna i sztuka świadomej pauzy',
+  leadParagraph: 'Czytelnik rozpoczyna tę podróż z powszechnym przeświadczeniem: „To ja w pełni świadomie podejmuję swoje decyzje”. Pod koniec tego tomu zrozumiesz jednak, że każda Twoja decyzja jest wynikiem dynamicznego tańca wielu procesów: percepcji, selektywnej uwagi, rekonstrukcji pamięciowej, fizjologicznych stanów emocjonalnych i podświadomych heurystyk. Nie kontrolujesz każdego pierwszego impulsu, ale możesz nauczyć się go dostrzegać i wstawić świadomą pauzę zanim impuls zamieni się w destrukcyjne działanie.',
+  totalEstimatedPages: 52,
   sections: [
     {
-      id: 'sekcja-1-dialog-z-czytelnikiem',
+      id: 'sekcja-1-czy-jestes-autorem',
       pageNumber: 1,
       sectionNumber: '1.1',
-      title: 'Przedmowa: Dialog z Czytelnikiem o Pęknięciach w Racjonalności',
+      title: 'Czy naprawdę jesteś autorem swoich decyzji?',
       category: 'wstep',
-      readingTimeMinutes: 7,
+      readingTimeMinutes: 8,
       quote: {
-        text: 'Największym złudzeniem człowieka nie jest to, że posiada wady, lecz to, że w pełni świadomie nimi zarządza.',
-        author: 'Erich Fromm'
+        text: 'Człowiek może robić to, co chce, ale nie może chcieć tego, co chce.',
+        author: 'Arthur Schopenhauer'
       },
       paragraphs: [
-        'Zacznijmy od szczerej rozmowy, bez akademickiej pompatyczności i bez pseudokołczingowych haseł o „stawaniu się najlepszą wersją siebie”. Zamiast tego usiądź wygodnie i przypomnij sobie dowolny moment z minionego miesiąca, w którym zrobiłeś coś wbrew własnym, twardym postanowieniom.',
-        'Może obiecałeś sobie, że nie wydasz ani grosza ponad budżet, a wróciłeś do domu z drogim gadżetem, którego wcale nie potrzebowałeś? Może na zebraniu w pracy pozwoliłeś, aby ktoś przypisał sobie zasługi za Twój dwutygodniowy trud, podczas gdy Ty wpatrywałeś się w blat stołu, czując rosnącą gulę w gardle? A może po raz setny obiecałeś sobie, że dziś o 22:30 pójdziesz spać, by o 1:40 w nocy nadal przewijać bezmyślnie rolki na ekranie smartfona, czując mdłości ze zmęczenia?',
-        'W takich momentach najczęstszą reakcją jest samobiczowanie: „Jestem słaby”, „Brak mi silnej woli”, „Inni potrafią trzymać dyscyplinę, a ze mną jest coś fundamentalnie nie tak”. Chcę, abyś w tym momencie wziął głęboki oddech i odłożył ten bicz na bok. Ta książka powstała po to, aby udowodnić Ci ponad wszelką wątpliwość:',
-        'Twój problem nie polega na deficycie charakteru ani słabości moralnej. Twój problem polega na tym, że próbujesz kierować statkiem kosmicznym o nazwie „Homo Sapiens”, posługując się instrukcją obsługi napisaną dla tostera.',
-        'Przez tysiąclecia kultura wmawiała nam mit racjonalnego decydenta — istotę, która rzekomo waży za i przeciw, kalkuluje zyski i straty, a następnie podejmuje logiczną decyzję. Współczesna neuronauka, psychologia poznawcza i socjologia bezlitośnie obaliły ten mit. Człowiek nie jest komputerem podejmującym logiczne decyzje. Człowiek jest biologiczną maszyną do racjonalizowania decyzji, które podjął ułamek sekundy wcześniej pod wpływem neuroprzekaźników, pradawnych ewolucyjnych lęków i subtelnych sygnałów z otoczenia.'
+        'Wyobraź sobie Michała. Jest czwartek, godzina 20:00. Michał wraca z pracy, zjada lekki obiad i siada przy biurku z jasną, świadomą intencją: przez najbliższe dwie godziny ma powtórzyć materiał do kluczowego certyfikatu branżowego, od którego zależy jego awans na stanowisko kierownicze. Na biurku leży czysty notatnik, kubek z zieloną herbatą i wyciszony smartfon. Wszystko wydaje się pod kontrolą.',
+        'Mija zaledwie 12 minut. Michał dochodzi do trudniejszego akapitu o strukturze baz danych. W jego klatce piersiowej pojawia się ledwo zauważalne uczucie znużenia i niepewności. W tym samym ułamku sekundy, całkowicie poza świadomą debatą, jego prawa ręka unosi się i bezwiednie chwyta telefon. Kciuk przesuwa się po czytniku linii papilarnych. Ekran rozbłyska. Michał nawet nie zauważył momentu, w którym „podjął decyzję” o przerwaniu nauki.',
+        'W ciągu następnych 45 minut Michał podejmuje serię mikrodecyzji: sprawdza jedno powiadomienie z komunikatora, odpisuje dwoma słowami znajomemu, zerka na nagłówek na portalu informacyjnym, otwiera krótki filmik, z którego przechodzi do kolejnego. Gdy o 21:15 podnosi wzrok na zegar ścienny, czuje falę gorąca, niesmak w ustach i potężne poczucie winy: „Znowu to zrobiłem. Dlaczego nie potrafię usiedzieć w spokoju nawet przez godzinę?”.',
+        'Zatrzymajmy się w tym miejscu. Kto podjął decyzję o sięgnięciu po telefon? Czy to był „świadomy Michał”, który 12 minut wcześniej planował naukę? Absolutnie nie. Decyzja zaczęła się znacznie wcześniej — w cichym dyskomforcie emocjonalnym, w nawykowej ścieżce synaptycznej wyuczonej przez tysiące wcześniejszych powtórzeń, w bodźcu leżącym w polu widzenia 15 centymetrów od dłoni.',
+        'Rozbierając tę sytuację na czynniki pierwsze, widzimy całą anatomię ludzkiego wyboru: Intencja → Pojawienie się trudności → Mikroskopijny dyskomfort somatyczny → Automatyczny odruch ucieczki ku natychmiastowej uldze → Racjonalizacja post-factum. Poniższy interaktywny dylemat pozwoli Ci zbadać ten mechanizm na własnej skórze.'
       ],
       subsections: [
         {
-          title: 'Empatia dla Złożoności: Dlaczego Przetrwaliśmy jako Gatunek?',
+          title: 'Iluzja Suwerenności Poznawczej',
           paragraphs: [
-            'Twój mózg nie ewoluował po to, abyś był szczęśliwy, bogaty, szczupły czy asertywny w relacji z despotycznym dyrektorem. Twój mózg ewoluował w jednym, jedynym celu: ABY PRZETRWAĆ I PRZEKAZAĆ GENY na wschodnioafrykańskiej sawannie 150 000 lat temu.',
-            'Mechanizmy, które dzisiaj doprowadzają Cię do rozpaczy — lęk przed odrzuceniem przez grupę, przymus magazynowania kalorii, uległość wobec silniejszego osobnika, obsesyjne poszukiwanie nowości — były genialnymi adaptacjami ewolucyjnymi, dzięki którym Twoi przodkowie nie zostali zjedzeni przez drapieżniki.',
-            'Kiedy w XXI wieku wchodzisz do klimatyzowanego biura lub galerii handlowej, Twój pradawny pień mózgu i układ limbiczny wciąż interpretują bodźce według reguł plemiennych. Kiedy szef krzyczy, mózg rejestruje to jako zagrożenie wygnaniem z plemienia (co na sawannie oznaczało pewną śmierć głodową). Kiedy widzisz promocję z odliczającym zegarem, jądro półleżące krzyczy: „Bierz, bo jutro zasoby się skończą!”.',
-            'Zrozumienie tej prawdy to pierwszy krok do prawdziwej wolności. Nie zmienisz swojej biologii poprzez nienawiść do samego siebie. Możesz ją zmienić tylko poprzez dogłębną znajomość jej kodów źródłowych.'
+            'Większość z nas żyje w przekonaniu, że w naszej głowie zasiada mały kapitan — racjonalne „Ja”, które patrzy na świat przez okna oczu, waży argumenty i pociąga za dźwignie zachowania. To klasyczny błąd Kartezjusza.',
+            'W rzeczywistości świadomość nie jest kapitanem statku. Świadomość jest raczej rzecznikiem prasowym rządu, który dowiaduje się o podjętych ustawach chwilę po tym, jak zostały przegłosowane przez podkorowe ministerstwa emocji, nawyków i percepcji — i natychmiast zręcznie dorabia do nich logiczną teorię.'
           ],
           highlightBox: {
-            title: 'Złota Zasada Neuro-Empatii',
-            content: 'Nie możesz wygrać wojny z własnym mózgiem, stosując przemoc i wstyd. Mózg poddany presji wstydu produkuje kortyzol, który jeszcze silniej paraliżuje ośrodki samokontroli. Zmiana zaczyna się od życzliwej ciekawości badacza.',
+            title: 'Kluczowe Przebudzenie Poznawcze',
+            content: 'Zrozumienie, że nie jesteś autorem każdego pierwszego impulsu w swojej głowie, nie odbiera Ci wolności — odbiera Ci jedynie destrukcyjny wstyd i otwiera drzwi do prawdziwej, trenowalnej samoregulacji.',
             type: 'insight'
           }
         }
       ]
     },
     {
-      id: 'sekcja-2-architektura-mozgu',
+      id: 'sekcja-2-dwa-tryby-umyslu',
       pageNumber: 4,
       sectionNumber: '1.2',
-      title: 'Biologia Decyzji: System 1 i 2, Kora Przedczołowa i Pradawne Obwody',
+      title: 'Dwa tryby działania umysłu: Procesy automatyczne i analityczne',
       category: 'teoria',
       readingTimeMinutes: 10,
       quote: {
-        text: 'Myślenie jest najtrudniejszą z prac, dlatego tak niewielu się w nie angażuje.',
-        author: 'Henry Ford / Daniel Kahneman'
+        text: 'Nikt nie zaprojektował ludzkiego mózgu. On rósł warstwami, dostosowując się do wyzwań epoki kamienia łupanego.',
+        author: 'Daniel Kahneman'
       },
       paragraphs: [
-        'Wyobraź sobie, że Twój mózg to zaledwie półtora kilograma galaretowatej tkanki zamkniętej w ciemnej puszce czaszki. Ta tkanka stanowi zaledwie 2% masy Twojego ciała, ale w stanie spoczynku pożera ponad 20% całej dostępnej w organizmie energii (glukozy i tlenu). Przy intensywnym wysiłku intelektualnym ten wskaźnik szybuje jeszcze wyżej.',
-        'Z punktu widzenia ewolucji, mózg to energetyczny smok. Gdyby nasi przodkowie musieli głęboko i analitycznie analizować każdy krok — czy ten cień w krzakach to wiatr, czy lampart — umarliby z głodu albo zostaliby pożarci, zanim ich kora przedczołowa sformułowałaby wniosek.',
-        'Dlatego ewolucja wyposażyła nas w potężny mechanizm oszczędzania energii: automatyzację, heurystyki poznawcze oraz dualny system przetwarzania informacji, spopularyzowany przez noblistę Daniela Kahnemana.'
+        'Jednym z najbardziej wpływowych modeli w psychologii poznawczej ostatnich dekad jest koncepcja procesów dualnych, spopularyzowana przez laureata Nagrody Nobla Daniela Kahnemana jako System 1 i System 2. Zanim jednak przejdziemy do szczegółów, musimy postawić sprawę z absolutną jasnością naukową:',
+        'System 1 i System 2 TO NIE SĄ DWA FIZYCZNE MODUŁY MÓZGU. Jeśli neurochirurg otworzy ludzką czaszkę, nie znajdzie tam przegródki z napisem „System 1” ani kabelka biegnącego do „Systemu 2”. Jest to model dydaktyczno-funkcjonalny — metafora ułatwiająca zrozumienie dwóch diametralnie różnych trybów, w jakich sieci neuronalne przetwarzają informacje.',
+        'Tryb automatyczny (System 1) jest szybki, nieświadomy, niewymagający wysiłku i bezustannie włączony. Odpowiada za rozpoznanie wyrazu wściekłości na twarzy partnera w ciągu 50 milisekund, odskoczenie na dźwięk klaksonu, odczytanie wielkiego napisu na billboardzie czy prowadzenie samochodu po pustej autostradzie. Działa na zasadzie skojarzeń i heurystyk.',
+        'Tryb analityczny (System 2) jest powolny, świadomy, sekwencyjny i niezwykle kosztowny metabolicznie. To on włącza się, gdy musisz policzyć w pamięci 17 × 24, zaparkować równolegle w ciasnej luce, napisać oficjalne pismo prawne czy powstrzymać się przed wykrzyczeniem złośliwego komentarza na zebraniu rodzinnym.',
+        'Główny problem polega na tym, że System 2 jest z natury leniwy. Zużywa mnóstwo energii, szybko się męczy i przy każdej okazji chętnie oddaje stery automatycznemu Systemowi 1. Kiedy idziesz na zakupy zmęczony po pracy, System 2 śpi, a System 1 kupuje wszystko, co ma jaskrawe opakowanie i wielki napis rabatu.'
       ],
       subsections: [
         {
-          title: 'System 1 (Szybki, Intuicyjny, Tani Energetycznie)',
+          title: 'Problem Kija i Piłki oraz Intuicyjne Ślepe Uliczki',
           paragraphs: [
-            'System 1 działa w sposób bezwysiłkowy, automatyczny, błyskawiczny i całkowicie poza Twoją świadomą kontrolą. To on sprawia, że odskakujesz na widok kształtu przypominającego węża, natychmiast odczytujesz wrogość na twarzy rozmówcy, bezbłędnie prowadzisz auto po pustej, znanej trasie i sięgasz po chipsy podczas oglądania filmu.',
-            'System 1 opiera się na skojarzeniach, metaforach, emocjach i biologicznych skrótach myślowych. Jest genialny w ratowaniu życia, ale całkowicie ślepy na statystykę, logikę formalną i długoterminowe konsekwencje finansowe. Co najważniejsze: System 1 NIE MOŻE ZOSTAĆ WYŁĄCZONY. On pracuje non-stop, skanując świat co ułamek sekundy.'
-          ]
-        },
-        {
-          title: 'System 2 (Wolny, Analityczny, Drogi Energetycznie)',
-          paragraphs: [
-            'System 2 to Twoje świadome „Ja”. To siedlisko logicznego myślenia, planowania emerytalnego, nauki języka obcego, pisania kodu czy rozwiązywania zadania 17 × 24. Mieści się przede wszystkim w grzbietowo-bocznej korze przedczołowej (dlPFC).',
-            'Choć lubimy myśleć o sobie jako o pilotach Systemu 2, prawda jest brutalna: System 2 jest niewiarygodnie leniwy. Aktywuje się niechętnie, męczy się po kilkunastu minutach intensywnej pracy (zjawisko wyczerpania zasobów wolitywnych) i przy pierwszej lepszej okazji chętnie oddaje stery automatycznemu Systemowi 1.',
-            'Większość manipulacji marketingowych, politycznych i relacyjnych polega na jednym prostym triku: przeciążyć lub uśpić Twój System 2, aby bezpośrednio rozmawiać z podatnym na emocje i lęki Systemem 1.'
+            'Klasyczny eksperyment Shane\'a Fredericka (Cognitive Reflection Test) doskonale ilustruje tę dynamikę. Zadanie brzmi: „Kij bejsbolowy i piłka kosztują łącznie 1,10 zł. Kij jest o 1,00 zł droższy od piłki. Ile kosztuje piłka?”.',
+            'Pierwsza, natychmiastowa odpowiedź, która z błyskawiczną siłą nasuwa się w głowie niemal każdemu człowiekowi, brzmi: „10 groszy”. Jest tak atrakcyjna, prosta i elegancka, że większość ludzi bez wahania ją wypowiada. Dopiero gdy zmusisz swój System 2 do zatrzymania i sprawdzenia rachunku: 10 groszy (piłka) + 1,10 zł (kij o 1 zł droższy) = 1,20 zł! Prawidłowa odpowiedź to oczywiście 5 groszy (5 gr + 1,05 zł = 1,10 zł).',
+            'To proste ćwiczenie obnaża kluczowy fakt: Twoja intuicja nie jest nieomylnym głosem mądrości wszechświata. Intuicja to szybki algorytm dopasowywania wzorców, który znakomicie chronił nas przed drapieżnikami na sawannie, ale w świecie cyfr, umów prawnych i manipulacji marketingowych regularnie prowadzi nas na manowce.'
           ],
           highlightBox: {
-            title: 'Anatomia Zmęczenia Decyzyjnego (Decision Fatigue)',
-            content: 'Słynne badania sędziów orzekających w sprawach o przedterminowe zwolnienie warunkowe (Danziger et al., PNAS) wykazały, że szansa na pozytywne rozpatrzenie wniosku wynosiła około 65% na początku dnia roboczego i po przerwie na posiłek, spadając niemal do 0% tuż przed posiłkiem, gdy poziom glukozy w mózgach sędziów spadał. Gdy kora przedczołowa jest zmęczona, wybiera opcję najbezpieczniejszą: odmowę lub automatyzm.',
+            title: 'Wgląd w Neuroarchitekturę',
+            content: 'Procesy Systemu 1 opierają się głównie na strukturach podkorowych (ciało migdałowate, jądra podstawy) oraz korze asocjacyjnej. Procesy Systemu 2 wymagają intensywnej synchronizacji grzbietowo-bocznej kory przedczołowej (dlPFC) z przednim zakrętem obręczy (ACC).',
             type: 'neuro'
           }
         }
       ]
     },
     {
-      id: 'sekcja-3-studium-tomasz',
+      id: 'sekcja-3-porwanie-decyzji',
       pageNumber: 8,
       sectionNumber: '1.3',
-      title: 'Studium Przypadku I: Rozmowa o Pieniądze i Anatomia Paraliżu Społecznego',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 12,
+      title: 'Porwanie decyzji i anatomia reakcji: Model łańcucha decyzyjnego',
+      category: 'teoria',
+      readingTimeMinutes: 11,
       paragraphs: [
-        'Przejdźmy teraz z sali wykładowej do brutalnej rzeczywistości biurowej. Przyjrzymy się z bliska Tomaszowi — wybitnemu specjaliście, którego mózg w obecności dyrektora Wiktora uległ całkowitej kapitulacji.',
-        'W tym studium przypadku zobaczysz, jak milisekunda po milisekundzie hierarchia społeczna i mowa ciała potrafią odciąć dostęp do wiedzy i asertywności, przekształcając dojrzałego mężczyznę w zalęknione dziecko szukające aprobaty.'
-      ],
-      caseStudyRef: caseStudiesList[0]
-    },
-    {
-      id: 'sekcja-4-neurochemia-wyborow',
-      pageNumber: 13,
-      sectionNumber: '1.4',
-      title: 'Neurochemiczny Koktajl: Dopamina, Kortyzol i Hormonalne Haki',
-      category: 'neuronauka',
-      readingTimeMinutes: 9,
-      quote: {
-        text: 'Dopamina to nie cząsteczka przyjemności. To cząsteczka pragnienia, antycypacji i niespokojnego poszukiwania.',
-        author: 'Dr Daniel Z. Lieberman, „The Molecule of More”'
-      },
-      paragraphs: [
-        'Aby zrozumieć ludzkie zachowanie, musimy porzucić poetyckie opisy i spojrzeć na neuroprzekaźniki. To one są prawdziwymi dyrektorami teatru w Twojej głowie. Każdy nastrój, impuls, zawahanie i nagła chęć ucieczki to bezpośredni rezultat stężenia konkretnych związków chemicznych w szczelinach synaptycznych.'
+        'Wyobraź sobie następującą sytuację: jest wtorek, godzina 15:40. Tomasz, pracownik działu analitycznego, słyszy cichy brzęczyk w telefonie. Na ekranie pojawia się wiadomość od dyrektora Wiktora: „Musimy jutro rano pilnie porozmawiać o Twoim projekcie”.',
+        'Zatrzymajmy film w tej dokładnie milisekundzie. Co się wydarzyło w świecie obiektywnym? Fizycznym faktem jest to, że na szklanym ekranie pojawiło się kilkanaście liter tworzących zdanie. Nic więcej. Nie ma tu żadnego wyroku, nie ma zwolnienia z pracy, nie ma oceny.',
+        'A co dzieje się w głowie Tomasza w ciągu zaledwie 300 milisekund? Jego uwaga zostaje zablokowana na słowie „pilnie”. Mózg natychmiast odpala interpretację: „Wiktor odkrył błąd w arkuszu. Jest wściekły. Wyrzucą mnie, a mam kredyt hipoteczny”. Ciało migdałowate natychmiast reaguje na tę interpretację — żołądek Tomasza zaciska się jak w imadle, do krwi trafia noradrenalina, a w krtani pojawia się suchość.',
+        'W tym stanie pojawia się impuls: natychmiast rozładować to piekielne napięcie! Tomasz zaczyna nerwowo pisać do koleżanki z zespołu, szukać ukrytych podtekstów w mailach szefa z ostatnich dwóch tygodni, a po powrocie do domu wybucha krzykiem na żonę z powodu nieumytego kubka w zlewie.',
+        'Oto uniwersalny łańcuch, który zarządza ludzkim zachowaniem:'
       ],
       subsections: [
         {
-          title: 'Mit Dopaminy: Dlaczego Osiągnięcie Celu Nigdy Cię Nie Cieszy Tak Bardzo Jak Polowanie?',
+          title: '8 Ogniw Łańcucha Decyzyjnego',
           paragraphs: [
-            'Większość ludzi błędnie uważa dopaminę za hormon szczęścia. Nic bardziej mylnego. Za spokój, satysfakcję i zadowolenie odpowiadają endorfiny, serotonina i kannabinoidy. Dopamina natomiast odpowiada za pożądanie, napięcie i obietnicę nagrody.',
-            'Dopamina wystrzeliwuje w kosmos w momencie, gdy WIDZISZ możliwość zysku: powiadomienie na telefonie, zapach świeżego pieczywa, spojrzenie atrakcyjnej osoby, obietnicę premii. Szczyt wyrzutu dopaminy następuje TUŻ PRZED konsumpcją! Kiedy już zdobędziesz torebkę, zjesz pączka czy kupisz nowy samochód — poziom dopaminy gwałtownie spada poniżej linii bazowej. To zjawisko nazywamy dopaminowym dołkiem (dopamine dip).',
-            'To dlatego w zakupach czy w nałogach to proces wybierania i poszukiwania jest tak uzależniający, a moment posiadania przynosi rozczarowanie i natychmiastowe poszukiwanie kolejnego bodźca.'
-          ]
-        },
-        {
-          title: 'Kortyzol i Adrenalina: Toksyczny Koszt Przewlekłego Niepokoju',
-          paragraphs: [
-            'W naturze reakcja stresowa trwała 3 minuty: albo uciekłeś przed tygrysem szablozębnym, albo zostałeś zjedzony. Kortyzol mobilizował glukozę, wyłączał trawienie i układ odpornościowy, pompując krew do mięśni nóg.',
-            'Dziś naszym „tygrysem” jest kredyt hipoteczny, niezadowolony klient, toksyczny szef czy kłótnia z partnerem. Twój mózg nie odróżnia fizycznego zagrożenia życia od zagrożenia psychologicznego. W rezultacie miliony ludzi żyją w stanie przewlekłego, niskopoziomowego zatrucia kortyzolem.',
-            'Kortyzol w wysokich dawkach dosłownie niszczy dendryty neuronów w hipokampie (ośrodku pamięci) oraz w korze przedczołowej, jednocześnie powiększając i uwrażliwiając ciało migdałowate. Oznacza to, że im dłużej żyjesz w stresie, tym fizycznie trudniej jest Ci myśleć logicznie, a Twój mózg staje się fabryką paranoi i lęku.'
+            '1. BODZIEC (Treść SMS-a na ekranie)',
+            '2. UWAGA (Wychwycenie słowa „pilnie” i odcięcie reszty tła)',
+            '3. OCENA / INTERPRETACJA („Na pewno zrobiłem błąd i zaraz mnie zwolnią”) — to tutaj rodzi się iluzja!',
+            '4. EMOCJA (Ostry lęk, wstyd, bezsilność)',
+            '5. IMPULS (Przymus natychmiastowego uśmierzenia bólu lub ucieczki)',
+            '6. DECYZJA (Brak świadomej pauzy — zgoda na działanie pod dyktando impulsu)',
+            '7. DZIAŁANIE (Gorączkowe odpisywanie, panika, wycofanie lub agresja zastępcza)',
+            '8. KONSEKWENCJA (Zepsuty wieczór, bezsenna noc, wyczerpanie neurobiologiczne).'
           ],
           highlightBox: {
-            title: 'Wzór na Wypalenie Synaptyczne',
-            content: 'Przewlekły stres (kortyzol) + Ciągła stymulacja dopaminowa (powiadomienia, social media) = Całkowity paraliż układu wykonawczego. Jeśli czujesz permanentne zmęczenie i brak woli walki, Twoje receptory synaptyczne są po prostu zablokowane.',
-            type: 'warning'
+            title: 'Kluczowe Rozróżnienie Książki: FAKT vs INTERPRETACJA',
+            content: 'FAKT: „Otrzymałem wiadomość o spotkaniu o 9:00”. INTERPRETACJA: „Szef mnie nienawidzi i chce mnie zniszczyć”. Cierpimy nie z powodu faktów, lecz z powodu historii, które nasz umysł dopisuje do faktów.',
+            type: 'insight'
           }
         }
       ]
     },
     {
-      id: 'sekcja-5-studium-marta',
-      pageNumber: 16,
-      sectionNumber: '1.5',
-      title: 'Studium Przypadku II: W Transie Zakupowym – Jak E-commerce i Centra Handlowe Hakują Mózg',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 11,
+      id: 'sekcja-4-brak-pelnej-informacji',
+      pageNumber: 12,
+      sectionNumber: '1.4',
+      title: 'Mózg nie ma pełnej informacji: Ewolucyjny sens uproszczeń',
+      category: 'teoria',
+      readingTimeMinutes: 9,
       paragraphs: [
-        'W drugim studium przypadku zdemontujemy na czynniki pierwsze przypadek Marty. Prześledzimy, jak profesjonalnie zaprojektowane środowisko sensoryczne potrafi w kilkadziesiąt minut doprowadzić do wyczerpania zasobów logicznych i skłonić inteligentną kobietę do wydania pensji na rzeczy, których nie planowała kupić.'
+        'Wielu popularnych autorów przedstawia ludzki mózg jako wadliwy mechanizm pełen irracjonalnych błędów i potknięć. To fundamentalne nieporozumienie. Twój mózg nie jest zepsuty. Twój mózg jest arcydziełem inżynierii biologicznej, która musiała rozwiązać dramatyczny dylemat: JAK PRZETRWAĆ W ŚWIECIE O NIESKOŃCZONEJ ILOŚCI DANYCH, DYSPONUJĄC BARDZO OGRANICZONĄ ENERGIĄ I CZASEM?',
+        'Gdyby Twój pradawny przodek na widok poruszających się krzaków zatrzymał się, zebrał próbki gleby, zmierzył prędkość wiatru i przeprowadził analizę statystyczną prawdopodobieństwa obecności lamparta — zostałby pożarty zanim jego kora przedczołowa sformułowałaby pierwszy wniosek.',
+        'W ewolucji przetrwali ci, którzy stosowali heurystyki — szybkie, przybliżone reguły wnioskowania: „Krzak się rusza? UCIEKAJ!”. Lepiej było sto razy uciec przed wiatrem (błąd fałszywie dodatni), niż raz pomylić się na korzyść drapieżnika (błąd fałszywie ujemny, oznaczający śmierć).',
+        'Współczesny człowiek wchodzi jednak z tym samym pradawnym aparatem do banku, gabinetu lekarskiego czy supermarketu. W tych środowiskach szybkie uproszczenie — oparte na pierwszym wrażeniu, nastroju czy sympatii do garnituru doradcy finansowego — zamiast uratować nam życie, potrafi zrujnować naszą przyszłość finansową.'
       ],
-      caseStudyRef: caseStudiesList[1]
-    },
-    {
-      id: 'sekcja-6-manipulacja-relacyjna',
-      pageNumber: 20,
-      sectionNumber: '1.6',
-      title: 'Mroczne Zakątki Relacji: Gaslighting, DARVO i Demontaż Poczucia Realizmu',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 13,
-      paragraphs: [
-        'Manipulacja nie zawsze ma twarz krzykliwego sprzedawcy czy agresywnego przełożonego. Najbardziej niszczycielskie formy wpływu przychodzą w jedwabnych rękawiczkach — w relacjach z ludźmi, którym ufamy najbardziej.',
-        'W tym rozdziale przeanalizujemy przypadek Karoliny i jej wspólnika Pawła. Poznasz mechanizm gaslightingu — techniki, która potrafi doprowadzić w pełni zdrowego człowieka na skraj załamania nerwowego i utraty zaufania do własnych zmysłów.'
-      ],
-      caseStudyRef: caseStudiesList[2]
-    },
-    {
-      id: 'sekcja-7-studium-piotr',
-      pageNumber: 23,
-      sectionNumber: '1.7',
-      title: 'Studium Przypadku IV: Prokrastynacja jako Emocjonalny Schron przed Lękiem',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 11,
-      paragraphs: [
-        'Czy zdarzyło Ci się kiedyś sprzątać lodówkę lub czyścić fugi w łazience szczoteczką do zębów tylko po to, by nie pisać ważnego raportu, nie uczyć się do egzaminu lub nie zadzwonić do klienta?',
-        'W czwartym studium przypadku poznamy Piotra. Rozprawimy się raz na zawsze ze szkodliwym mitem „lenistwa” i pokażemy, czym prokrastynacja jest naprawdę z perspektywy neurobiologii emocji.'
-      ],
-      caseStudyRef: caseStudiesList[3]
-    },
-    {
-      id: 'sekcja-8-warsztat-rozwojowy',
-      pageNumber: 26,
-      sectionNumber: '1.8',
-      title: 'Zeszyt Ćwiczeń Samorozwojowych: 4 Narzędzia Neuro-Przełomu',
-      category: 'cwiczenia',
-      readingTimeMinutes: 15,
-      quote: {
-        text: 'Wiedza bez praktyki jest jak łódź na suchym lądzie — imponująca, lecz donikąd cię nie zaprowadzi.',
-        author: 'Przysłowie wschodnie'
-      },
-      paragraphs: [
-        'Dotarłeś do najważniejszej części tego rozdziału. Sama wiedza teoretyczna o dopaminie, Kahnemanie czy ciele migdałowatym nie zmieni Twojego życia ani o milimetr. Aby w Twoim mózgu powstały nowe połączenia synaptyczne (zjawisko neuroplastyczności zależnej od doświadczenia), musisz podjąć świadomy, fizyczny wysiłek przetworzenia tych informacji.',
-        'Poniżej znajdziesz 4 interaktywne ćwiczenia. Potraktuj je z powagą. Wypełnij je, odpowiadając na pytania we własnym tempie. Twoje odpowiedzi zostaną zachowane w Twoim osobistym panelu czytelnika.'
+      subsections: [
+        {
+          title: 'Kiedy Heurystyka Pomaga, a Kiedy Prowadzi do Katastrofy?',
+          paragraphs: [
+            'Uproszczenia poznawcze są genialne w sytuacjach o wysokiej przewidywalności środowiska i natychmiastowej informacji zwrotnej (np. gdy doświadczony strażak instynktownie czuje, że płonący budynek za chwilę się zawali). Psycholog Gary Klein nazwał to intuicją ekspercką (Recognition-Primed Decision).',
+            'Heurystyki zawodzą nas jednak dramatycznie w trzech warunkach: 1. Gdy mamy do czynienia ze statystyką i prawdopodobieństwem; 2. W warunkach presji czasu i manipulacji marketingowej; 3. W skomplikowanych relacjach międzyludzkich, gdzie pierwsze wrażenie bywa fasadą cynicznego drapieżnika.'
+          ]
+        }
       ]
     },
     {
-      id: 'sekcja-9-podsumowanie-most',
-      pageNumber: 28,
-      sectionNumber: '1.9',
-      title: 'Epilog Rozdziału 1: Nowa Umowa z Samym Sobą i Most do Rozdziału 2',
-      category: 'podsumowanie',
-      readingTimeMinutes: 5,
+      id: 'sekcja-5-uwaga-selektywna',
+      pageNumber: 15,
+      sectionNumber: '1.5',
+      title: 'Uwaga: Dlaczego nie widzisz wszystkiego, co dzieje się wokół Ciebie?',
+      category: 'teoria',
+      readingTimeMinutes: 10,
       paragraphs: [
-        'Gratulacje. Właśnie ukończyłeś fundamentalny, pierwszy moduł naszej podróży. Jeśli zapamiętasz z tych niemal 30 stron zaledwie trzy rzeczy, niech to będą:',
-        '1. Twój mózg nie jest Twoim wrogiem — to pradawny system operacyjny, który w XXI wieku zgłasza błędy kompatybilności. Zamiast go nienawidzić, naucz się odczytywać jego kody alarmowe.',
-        '2. Pomiędzy bodźcem a Twoją reakcją zawsze istnieje ułamek sekundy wolnej woli. To przestrzeń, w której możesz wziąć fizjologiczny oddech, włączyć korę przedczołową i wybrać świadome działanie zamiast automatycznej kapitulacji.',
-        '3. Wpływ i manipulacja działają tylko wtedy, gdy pozostają niewidzialne. Gdy znasz mechanizmy takie jak Framing, Scarcity, Amygdala Hijack czy DARVO — tracą one swoją hipnotyczną moc.',
-        'W Rozdziale 2: „Anatomia Ciemnej Triady i Mikro-Manipulacji Codziennych” pójdziemy o krok dalej. Prześwietlimy mechanizmy narcyzmu, makiawelizmu i psychopatii w codziennych relacjach partnerskich, rodzinnych i zawodowych, wyposażając Cię w niewzruszoną psychologiczną tarczę obronną.'
+        'Wyobraź sobie, że siedzisz w tętniącej życiem kawiarni. Wokół Ciebie rozbrzmiewają dziesiątki rozmów, szum ekspresu ciśnieniowego, muzyka z głośników, stukot naczyń, zapach palonych ziaren i ciepło promieni słonecznych na Twoim ramieniu. Ty jednak z łatwością prowadzisz głęboką rozmowę z przyjacielem, ignorując całe to akustyczne morze.',
+        'Nagle, przy stoliku oddalonym o pięć metrów, ktoś zupełnie obcy wymawia cicho Twoje imię: „Michał”. W ułamku sekundy Twój wzrok i uwaga odrywają się od przyjaciela i wędrują ku tamtemu stolikowi. To zjawisko, znane w psychologii jako Efekt Cocktail Party (Colin Cherry), udowadnia, że Twój mózg nieustannie monitoruje tło, filtrując miliony bodźców i wpuszczając do świadomości tylko to, co uzna za krytyczne dla Twojej tożsamości lub bezpieczeństwa.',
+        'Nasza uwaga nie jest panoramicznym oknem na świat. Uwaga jest jak maleńki, wąski snop światła latarki w ciemnym lesie. Gdy skierujesz latarkę na gałąź drzewa, nie widzisz leżącego u Twoich stóp kamienia. Co więcej: zjawisko ślepoty na zmiany (Change Blindness) dowodzi, że w filmie możemy nie zauważyć, jak aktor zmienia koszulę z czerwonej na niebieską między ujęciami, jeśli w tym samym czasie patrzymy na jego twarz.',
+        'Współczesny świat korporacji, mediów społecznościowych i smartfonów toczy brutalną wojnę o ten właśnie maleńki snop światła Twojej latarki. A uwaga, wbrew mitom o „podzielności uwagi”, nie potrafi świecić w dwóch miejscach naraz.'
+      ],
+      subsections: [
+        {
+          title: 'Mit Multitaskingu i Prawdziwy Koszt Przełączania Zadań',
+          paragraphs: [
+            'Liczne badania neuronaukowe (m.in. Davida Strayera i Glorii Mark z University of California) bezlitośnie obaliły mit wielozadaniowości. Ludzki mózg nie wykonuje dwóch skomplikowanych procesów analitycznych jednocześnie — on jedynie błyskawicznie i chaotycznie PRZEŁĄCZA SIĘ między nimi.',
+            'Za każde takie przełączenie (np. pisanie raportu → zerknięcie na powiadomienie z WhatsAppa → powrót do raportu) płacimy tzw. kosztem przełączenia (Switch Cost). Mózg musi wyhamować poprzednią sieć synaptyczną, przeładować pamięć operacyjną i na nowo wejść w stan skupienia. Szacuje się, że powrót do głębokiego stanu flow po jednym rozproszeniu trwa średnio 23 minuty i 15 sekund!',
+            'Poniższy eksperyment pozwoli Ci na własnej skórze doświadczyć zjawiska interferencji poznawczej i zmierzyć swój własny koszt przełączania.'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'sekcja-6-pamiec-rekonstrukcyjna',
+      pageNumber: 19,
+      sectionNumber: '1.6',
+      title: 'Pamięć nie jest kamerą wideo: Rekonstrukcja, zniekształcenia i spory o przeszłość',
+      category: 'teoria',
+      readingTimeMinutes: 11,
+      paragraphs: [
+        'Zapewne znasz tę scenę z własnego życia: podczas rodzinnego obiadu lub spotkania z partnerem zaczynacie wspominać kłótnię sprzed roku. Ty jesteś w 100% pewien, że padły wtedy słowa X i że to druga strona pierwsza trzasnęła drzwiami. Druga osoba patrzy na Ciebie z autentycznym oburzeniem i przysięga na wszystko, co dla niej święte, że to Ty zacząłeś awanturę, a słowa X nigdy nie padły.',
+        'W takich momentach najczęstszą reakcją jest oskarżenie o kłamstwo, złą wolę lub manipulację. Tymczasem prawda bywa znacznie bardziej fascynująca i zarazem niepokojąca: OBOJE MOŻECIE MÓWIĆ PRAWDĘ O SWOICH WSPOMNIENIACH, A JEDNOCZEŚNIE OBOJE MOŻECIE SIĘ MYLIĆ WOBEC FAKTÓW.',
+        'Pionierskie badania prof. Elizabeth Loftus dowiodły ponad wszelką wątpliwość, że ludzka pamięć nie działa jak dysk twardy czy kamera wideo rejestrująca nienaruszony zapis wydarzeń. Pamięć jest procesem dynamicznej REKONSTRUKCJI.',
+        'Za każdym razem, gdy przywołujesz wspomnienie z przeszłości, Twój mózg nie „odpala pliku wideo”. On pobiera luźne fragmenty z kory mózgowej, scala je na nowo w hipokampie i... zapisuje z powrotem, ale już zmodyfikowane przez Twój obecny stan emocjonalny, nowe informacje usłyszane od innych oraz aktualny kontekst rozmowy!'
+      ],
+      subsections: [
+        {
+          title: 'Eksperyment z Wypadkiem Samochodowym i Kruchość Zeznań',
+          paragraphs: [
+            'W klasycznym eksperymencie Loftus i Palmer (1974) badanym pokazano film przedstawiający stłuczkę dwóch samochodów. Następnie zadano im z pozoru niewinne pytanie o prędkość aut. Jednej grupie zadano pytanie: „Z jaką prędkością jechały auta, gdy się STKNĘŁY?”. Średnia odpowiedź wynosiła 51 km/h. Drugiej grupie zadano pytanie: „Z jaką prędkością jechały auta, gdy się ROZTRZASKAŁY?”. Średnia odpowiedź wyniosła aż 65 km/h!',
+            'Co najbardziej uderzające: tydzień później zapytano badanych, czy na miejscu wypadku było potłuczone szkło (w rzeczywistości na filmie szkła nie było). W grupie ze słowem „roztrzaskały” aż 32% osób z całą pewnością przypomniało sobie potłuczone szkło, którego nigdy nie widzieli na oczy! Pojedyncze słowo w pytaniu trwale przekształciło strukturę ich śladu pamięciowego.',
+            'Dlatego w relacjach z bliskimi i w biznesie spory o to, „kto co dokładnie powiedział pół roku temu”, są z góry skazane na porażkę. Jeśli chcesz mieć pewność — twórz pisemne notatki bezpośrednio po spotkaniu, zamiast ufać plastycznej glinie własnego hipokampa.'
+          ],
+          highlightBox: {
+            title: 'Lekcja Pokory Epistemicznej',
+            content: 'Niezachwiana pewność co do własnych wspomnień nie ma żadnego związku z ich obiektywną trafnością. Ludzie potrafią z łzami w oczach i niezłomną wiarą relacjonować wydarzenia, które nigdy nie miały miejsca.',
+            type: 'insight'
+          }
+        }
+      ]
+    },
+    {
+      id: 'sekcja-7-emocje-i-rozum',
+      pageNumber: 23,
+      sectionNumber: '1.7',
+      title: 'Emocje nie są przeciwieństwem rozumu: Rola afektu w mądrym wyborze',
+      category: 'teoria',
+      readingTimeMinutes: 10,
+      paragraphs: [
+        'Przez ponad dwa tysiące lat zachodnia filozofia — od Platona po Kartezjusza — budowała fałszywą dychotomię: z jednej strony szlachetny, chłodny Rozum, z drugiej dzikie, prymitywne Emocje, które rzekomo psują logiczne myślenie. Radzono nam: „Odrzuć emocje, kieruj się wyłącznie czystą kalkulacją”.',
+        'Dopiero przełomowe badania wybitnego neurologa Antonio Damasio (opisane w książce „Błąd Kartezjusza”) zadały temu mitowi śmiertelny cios. Damasio badał pacjentów, którzy w wyniku uszkodzenia brzuszno-przyśrodkowej kory przedczołowej (vmPFC) utracili zdolność do odczuwania emocji, zachowując nienaruszone IQ, pamięć logiczną i zdolności językowe.',
+        'Gdyby tradycyjna filozofia miała rację, ci pacjenci powinni stać się idealnymi, super-racjonalnymi decydentami — biologicznymi odpowiednikami pana Spocka ze Star Treka. Stało się jednak coś dokładnie odwrotnego: PACJENCI CI BYLI CAŁKOWICIE NIEZDOLNI DO PODJĘCIA NAJPROSTSZEJ DECYZJI!',
+        'Potrafili godzinami debatować nad wyborem między niebieskim a czarnym długopisem, analizując w nieskończoność wagę tworzywa, cenę wkładu i kąt pisania, nie mogąc dokonać wyboru. Dlaczego? Ponieważ bez emocjonalnego sygnału wartościującego („to mi się bardziej podoba / to ma dla mnie znaczenie”) mózg tonie w nieskończonym oceanie równorzędnych logicznie danych.'
+      ],
+      subsections: [
+        {
+          title: 'Hipoteza Znaczników Somatycznych i Dwa Złote Prawa Emocji',
+          paragraphs: [
+            'Damasio sformułował Hipotezę Znaczników Somatycznych (Somatic Marker Hypothesis). Zanim kora przedczołowa przeprowadzi chłodną kalkulację, ciało (żołądek, tętno, napięcie mięśni) wysyła szybki sygnał trzewny — intuicyjny skrót oparty na minionych doświadczeniach: „Uważaj, to pachnie kłopotami!” albo „To jest właściwy kierunek!”.',
+            'Aby dojrzale zarządzać swoimi wyborami, musisz wbić sobie do głowy dwie fundamentalne zasady:',
+            'ZASADA 1: EMOCJA TO NIE BŁĄD. Emocja to genialny, skondensowany sygnał informacyjny o Twoich potrzebach, granicach i stanie fizjologicznym.',
+            'ZASADA 2: EMOCJA TO NIE AUTOMATYCZNA PRAWDA O ŚWIECIE. To, że czujesz lęk, nie oznacza, że sytuacja jest obiektywnie groźna. To, że czujesz zazdrość, nie oznacza, że partner Cię zdradza. Emocja mówi o Twoim stanie wewnętrznym, a nie o faktach zewnętrznych.'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'sekcja-8-obciazenie-poznawcze',
+      pageNumber: 27,
+      sectionNumber: '1.8',
+      title: 'Kiedy myślenie zaczyna kosztować: Obciążenie poznawcze i wyczerpanie woli',
+      category: 'neuronauka',
+      readingTimeMinutes: 11,
+      paragraphs: [
+        'Wyobraź sobie, że w Twoim smartfonie otwarto jednocześnie 45 wymagających aplikacji w tle, jasność ekranu ustawiono na 100%, a bateria ma zaledwie 14% naładowania. Co dzieje się z telefonem? Zaczyna się nagrzewać, animacje klatkują, a proste polecenia wykonują się z wielosekundowym opóźnieniem.',
+        'Dokładnie to samo dzieje się z Twoim aparatem decyzyjnym pod wpływem obciążenia poznawczego (Cognitive Load). Kora przedczołowa nie ma nieskończonego źródła zasilania. Do podtrzymania funkcji wykonawczych — skupienia uwagi, hamowania odruchów, planowania — potrzebuje stałego dopływu glukozy i tlenu.',
+        'Kiedy jesteś niewyspany, głodny, zestresowany i zmuszony do podjęcia setek mikro-wyborów w ciągu dnia, Twoja dostępna rezerwa poznawcza gwałtownie spada. Zjawisko to, badane m.in. przez Roya Baumeistera pod nazwą Ego Depletion, tłumaczy, dlaczego po 10 godzinach ciężkiej pracy w biurze tak łatwo ulec pokusie kupienia fast foodu lub wszcząć awanturę w domu o niepozmywane naczynia.'
+      ],
+      subsections: [
+        {
+          title: 'Słynne Badanie Sędziów Izraelskich (Danziger et al., 2011)',
+          paragraphs: [
+            'Jedno z najgłośniejszych badań nad wyczerpaniem decyzyjnym dotyczyło sędziów orzekających w sprawach o przedterminowe zwolnienie warunkowe więźniów. Analiza ponad 1000 wyroków ujawniła szokującą prawidłowość: na początku dnia roboczego oraz tuż po przerwie na posiłek odsetek pozytywnych decyzji wynosił około 65%.',
+            'Jednak w miarę upływu godzin, gdy sędziowie byli coraz bardziej zmęczeni i głodni, szansa na zwolnienie więźnia systematycznie spadała, osiągając niemal 0% tuż przed planowaną przerwą obiadową! Zmęczony mózg sędziego wybierał opcję najbezpieczniejszą poznawczo: odrzucić wniosek i utrzymać status quo.',
+            'Poniższy interaktywny symulator pozwoli Ci sprawdzić, jak różne czynniki Twojego dnia wpływają na dostępny budżet uwagi.'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'sekcja-9-wiem-ale-nie-robie',
+      pageNumber: 31,
+      sectionNumber: '1.9',
+      title: 'Dlaczego wiemy, co powinniśmy zrobić, ale tego nie robimy?',
+      category: 'teoria',
+      readingTimeMinutes: 12,
+      paragraphs: [
+        'To prawdopodobnie najbardziej frustrujące doświadczenie w życiu każdego dorosłego człowieka: DOSKONALE WIESZ, co powinieneś zrobić. Wiesz, że powinieneś pójść na trening, zjeść zdrowy posiłek, iść spać o 22:30, napisać raport albo odbyć spokojną rozmowę wyjaśniającą.',
+        'Wiesz to na poziomie logicznym, masz pełne dane, potrafisz napisać o tym wypracowanie. A mimo to, gdy przychodzi moment działania, robisz coś dokładnie przeciwnego: sięgasz po chipsy, scrollujesz telefon do 2:00 w nocy lub odkładasz projekt na za tydzień. Dlaczego powstaje ta bolesna przepaść między wiedzą a działaniem?',
+        'Odpowiedź tkwi w mechanizmie zwanym dyskontowaniem odroczonym (Hyperbolic Discounting). Twój pradawny mózg powstał w świecie natychmiastowego zaspokojenia: jeśli upolowałeś zwierzynę, musiałeś zjeść ją natychmiast, bo nie było lodówek. Korzyść „tu i teraz” ewolucyjnie zawsze miała nieskończenie wyższą wartość przetrwania niż mglista obietnica nagrody za rok czy za pięć lat.',
+        'Kiedy stoisz przed wyborem: zjeść pączka (natychmiastowy zastrzyk dopaminy i kalorii w 2 sekundy) vs mieć dobrą sylwetkę za 6 miesięcy — dla Twojego układu limbicznego to w ogóle nie jest równorzędny pojedynek. Przyszłe „Ja” jest dla mózgu biologicznym obcym.'
+      ],
+      subsections: [
+        {
+          title: 'Prokrastynacja to Unikanie Bólu, a Nie Brak Zegarka',
+          paragraphs: [
+            'Drugim filarem tego zjawiska jest unikanie dyskomfortu. Zgodnie z badaniami dr. Tima Pychyla, prokrastynacja nie jest defektem zarządzania czasem. Jest emocjonalnym mechanizmem obronnym.',
+            'Kiedy siadasz do trudnego zadania (np. napisania książki czy sprawozdania), pojawia się lęk: „A co jeśli to będzie słabe? Co jeśli zostanę skrytykowany?”. Mózg interpretuje ten lęk jako zagrożenie fizyczne. Wtedy pojawia się ucieczka w sprzątanie biurka lub sprawdzanie maili — czynność, która przynosi natychmiastową ulgę neurochemiczną, utrwalając nawyk ucieczki na przyszłość.'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'sekcja-10-protokol-pauzy',
+      pageNumber: 35,
+      sectionNumber: '1.10',
+      title: 'Cztery sekundy przed decyzją: Protokół Pauzy w praktyce',
+      category: 'cwiczenia',
+      readingTimeMinutes: 12,
+      quote: {
+        text: 'Mądrość nie polega na braku impulsów, lecz na umiejętności stworzenia szczeliny między impulsem a czynem.',
+        author: 'Protokół Autorski'
+      },
+      paragraphs: [
+        'Dotarliśmy do punktu kulminacyjnego całego Rozdziału 1. Skoro wiesz już, jak działa automatyczny łańcuch reakcji, jak uwaga ulega zawężeniu, a pamięć rekonstrukcji — nadszedł czas na wdrożenie głównego narzędzia tej książki.',
+        'Przedstawiamy autorski PROTOKÓŁ PAUZY. Nie jest to magiczna technika, która sprawi, że przestaniesz być człowiekiem i nigdy więcej się nie zdenerwujesz. Jest to pragmatyczny, 6-stopniowy bezpiecznik neurobiologiczny, który ma jedno zadanie: dać Twojej korze przedczołowej cenne 4–6 sekund na powrót do sterów, zanim automatyczny odruch spali mosty.'
+      ],
+      subsections: [
+        {
+          title: 'Sześć Kroków Protokołu Pauzy',
+          paragraphs: [
+            '1. STOP (Zatrzymaj Ciało): Pierwsza zasada to zamrożenie fizycznego ruchu. Jeśli pisałeś wiadomość — zdejmij palce z klawiatury. Jeśli stałeś — oprzyj stopy mocno o ziemię. Zrób jedno podwójne westchnienie fizjologiczne (Physiological Sigh): dwa szybkie wdechy nosem, długi powolny wydech ustami.',
+            '2. FAKT (Co naprawdę się wydarzyło?): Zdejmij z sytuacji całą dramaturgię. Zapytaj siebie: „Co w tej sytuacji zarejestrowałaby obiektywna kamera wideo?”. Zredukuj zdarzenie do czystych danych fizycznych.',
+            '3. INTERPRETACJA (Co sobie dopowiadam?): Zauważ opowieść swojego umysłu. Nazwij ją: „Aha, mój umysł właśnie produkuje film katastroficzny pod tytułem: Wszyscy są przeciwko mnie”.',
+            '4. EMOCJA (Co teraz czuję w ciele?): Zastosuj etykietowanie afektu (Affect Labeling): „Czuję ucisk w klatce piersiowej, czuję złość i lęk”. Samo nazwanie emocji słowem aktywuje prawą korę przedczołową i natychmiast wycisza ciało migdałowate!',
+            '5. IMPULS (Do czego wyrywa się moje ciało?): Zauważ chęć krzyku, ucieczki w telefon czy trzaśnięcia drzwiami. Powiedz sobie: „Czuję ten impuls, ale impuls to nie rozkaz”.',
+            '6. WYBÓR (Co chcę zrobić po świadomym namyśle?): Zadaj pytanie z perspektywy Systemu 2: „Jaki krok w tej chwili najlepiej posłuży mojemu długoterminowemu celowi i moim wartościom?”.'
+          ],
+          highlightBox: {
+            title: 'Zasada 4 Sekund',
+            content: 'Czas półtrwania wolnej noradrenaliny w szczelinie synaptycznej po pierwszym impulsie wynosi zaledwie kilka sekund. Jeśli w tym czasie nie nakarmisz alarmu nowymi katastroficznymi myślami — fala biologiczna samoczynnie opada.',
+            type: 'insight'
+          }
+        }
+      ]
+    },
+    {
+      id: 'sekcja-11-laboratorium-umyslu',
+      pageNumber: 39,
+      sectionNumber: '1.11',
+      title: 'Laboratorium własnego umysłu: 5 praktycznych doświadczeń poznawczych',
+      category: 'cwiczenia',
+      readingTimeMinutes: 14,
+      paragraphs: [
+        'W tej sekcji przechodzimy od teorii do osobistego doświadczenia. Przygotowaliśmy dla Ciebie 5 interaktywnych eksperymentów badających różne aspekty Twojego aparatu decyzyjnego: od heurystyk Systemu 1, przez rozróżnianie faktu od interpretacji, po ślepotę pozauwagową i etykietowanie emocji.',
+        'Pamiętaj o najważniejszej zasadzie tego laboratorium: wyniki tych zadań NIE SĄ testem na Twoją inteligencję ani oceną Twojej wartości jako człowieka. Są one lustrem pokazującym uniwersalne mechanizmy biologiczne wspólne dla całego gatunku Homo Sapiens.'
+      ]
+    },
+    {
+      id: 'sekcja-12-studia-przypadkow',
+      pageNumber: 42,
+      sectionNumber: '1.12',
+      title: 'Studia przypadków z życia codziennego: Tomasz, Marta, Karolina i Piotr',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 16,
+      paragraphs: [
+        'W tej sekcji wracamy do naszych czterech bohaterów. Każdy z nich zmierzył się z innym typem pęknięcia racjonalności decyzyjnej: Tomasz z paraliżem przed autorytetem, Marta z transową gorączką zakupową, Karolina z subtelnym zacieraniem faktów w relacji, a Piotr z paraliżującą prokrastynacją.',
+        'Wszystkie studia przypadków zostały ustrukturyzowane według jednolitego schematu analitycznego A–J: od historii i dostępnych danych, przez wiwisekcję psychologiczną i neuronaukową, po alternatywną ścieżkę wyboru i narzędzie obronne.'
+      ]
+    },
+    {
+      id: 'sekcja-13-czy-to-byl-moj-wybor',
+      pageNumber: 46,
+      sectionNumber: '1.13',
+      title: '„Czy to naprawdę był mój wybór?”: Refleksja nad wolną wolą i sprawczością',
+      category: 'teoria',
+      readingTimeMinutes: 9,
+      quote: {
+        text: 'Dopóki nie uczynisz nieświadomego świadomym, będzie ono kierowało twoim życiem, a ty będziesz nazywał to przeznaczeniem.',
+        author: 'Carl Gustav Jung'
+      },
+      paragraphs: [
+        'Po przeczytaniu o ograniczeniach uwagi, fałszywych wspomnieniach, wyczerpaniu woli i podświadomych heurystykach wielu czytelników zadaje sobie z niepokojem pytanie: „Skoro tak wiele procesów dzieje się automatycznie, czy w ogóle posiadam wolną wolę? Czy cokolwiek z tego, co robię, jest moim prawdziwym wyborem?”.',
+        'Odpowiedź współczesnej kognitywistyki jest pełna nadziei i głębokiego humanizmu. Nie, nie masz absolutnej, wszechmocnej kontroli nad każdym impulsem, myślą czy nastrojem, który rodzi się w Twojej głowie w ułamku sekundy. Twoje geny, mikrobiom jelitowy, poziom zmęczenia i historia dzieciństwa nieustannie podsuwają propozycje zachowań.',
+        'ALE MASZ PEŁNĄ SPRAWCZOŚĆ W ZAKRESIE TEGO, KTÓRYM PROPOZYCJOM POWIESZ „TAK”, A KTÓRYM POWIESZ „NIE”.',
+        'Zrozumienie biologii i psychologii nie odbiera sprawczości — ono ją dopiero stwarza! Dopóki nie wiesz, jak działa automat, jesteś jak liść miotany wiatrem neurochemii. Gdy poznasz architekturę umysłu, stajesz się żeglarzem, który potrafi ustawić żagle tak, by wykorzystać siłę wiatru do dotarcia do zamierzonego celu.'
+      ]
+    },
+    {
+      id: 'sekcja-14-interaktywna-mapa',
+      pageNumber: 48,
+      sectionNumber: '1.14',
+      title: 'Interaktywna mapa Twojego procesu decyzyjnego',
+      category: 'cwiczenia',
+      readingTimeMinutes: 8,
+      paragraphs: [
+        'Poniższy interaktywny schemat to wizualna synteza całego materiału Rozdziału 1. Przedstawia pełny 11-etapowy proces decyzyjny: od momentu uderzenia bodźca fizycznego, przez filtr uwagi, interpretację, stan afektywny, impuls, aż po Protokół Pauzy, świadomy wybór i konsolidację uczenia synaptycznego.',
+        'Kliknij na poszczególne ogniwa mapy, aby przypomnieć sobie ich znaczenie, przykłady z życia codziennego oraz pytania do autorefleksji.'
+      ]
+    },
+    {
+      id: 'sekcja-15-test-koncowy',
+      pageNumber: 50,
+      sectionNumber: '1.15',
+      title: 'Test końcowy: Sprawdź swój aparat decyzyjny (15 pytań)',
+      category: 'cwiczenia',
+      readingTimeMinutes: 15,
+      paragraphs: [
+        'Czas na kompleksowy sprawdzian wiedzy i umiejętności zdobytych w Rozdziale 1. Przygotowaliśmy dla Ciebie 15 precyzyjnych pytań wielokrotnego wyboru, obejmujących wszystkie omówione zagadnienia: System 1 i 2, heurystyki, różnicę między faktem a interpretacją, ślepotę pozauwagową, pamięć rekonstrukcyjną oraz Protokół Pauzy.',
+        'Po wybraniu każdej odpowiedzi otrzymasz natychmiastowe wyjaśnienie merytoryczne. Na końcu testu wygenerowany zostanie raport pokazujący Twoje mocne strony oraz obszary wymagające ewentualnej powtórki.'
+      ]
+    },
+    {
+      id: 'sekcja-16-podsumowanie-i-most',
+      pageNumber: 52,
+      sectionNumber: '1.16',
+      title: 'Podsumowanie Rozdziału 1 i Most do Rozdziału 2: Gdy emocje przejmują stery',
+      category: 'podsumowanie',
+      readingTimeMinutes: 6,
+      paragraphs: [
+        'Dotarłeś do końca fundamentalnego, pierwszego rozdziału naszej podróży. Przeszedłeś przez ponad 50 stron wiedzy, eksperymentów, studiów przypadków i ćwiczeń samorozwojowych. Przed wyruszeniem w dalszą drogę, oto kwintesencja, którą warto zapisać w pamięci długotrwałej:'
+      ],
+      subsections: [
+        {
+          title: '10 Rzeczy, Które Warto Zapamiętać z Rozdziału 1',
+          paragraphs: [
+            '1. Twój mózg nie ewoluował po to, by być logicznym komputerem, lecz po to, by przetrwać na sawannie przy minimalnym zużyciu energii.',
+            '2. System 1 i System 2 to model funkcjonalny dwóch trybów myślenia (szybki/automatyczny vs wolny/analityczny), a nie dwa fizyczne organy.',
+            '3. FAKT to obiektywne zdarzenie; INTERPRETACJA to historia dopisana przez umysł. Prawdziwe cierpienie rodzi się w interpretacji.',
+            '4. Ograniczona racjonalność (Herbert Simon) oznacza, że mózg dąży do decyzji zadowalających, stosując heurystyki oszczędzające czas.',
+            '5. Uwaga działa jak wąski reflektor — to, co znajduje się poza stożkiem skupienia, dosłownie znika ze świadomości (ślepota pozauwagowa).',
+            '6. Pamięć jest procesem dynamicznej rekonstrukcji, a nie nienaruszonym nagraniem wideo. Każde wspomnienie jest podatne na zniekształcenia.',
+            '7. Emocja NIE JEST błędem poznawczym, ale NIE JEST też automatycznie prawdą o świecie zewnętrznym — jest sygnałem o Twoim stanie wewnętrznym.',
+            '8. Obciążenie poznawcze i brak snu wyczerpują korę przedczołową, zmuszając mózg do ucieczki w prymitywne automatyzmy (Decision Fatigue).',
+            '9. Prokrastynacja to emocjonalna strategia unikania dyskomfortu i lęku przed oceną, a nie defekt charakteru czy brak dyscypliny.',
+            '10. Pomiędzy bodźcem a reakcją istnieje złota szczelina 4–6 sekund. Zastosowanie Protokołu Pauzy (STOP) to fundament ludzkiej wolności.'
+          ]
+        },
+        {
+          title: 'Jedno Praktyczne Zadanie na Dzisiejszy Dzień',
+          paragraphs: [
+            'Wybierz DZIŚ JEDNĄ sytuację, w której poczujesz nagłe podenerwowanie, chęć odpisania złośliwym komentarzem lub impuls sięgnięcia po słodycze.',
+            'Nie karć się za ten impuls. Zastosuj sekwencję 4 kroków: 1. Zdejmij ręce i zrób wydech; 2. Nazwij FAKT („Telefon zawibrował”); 3. Nazwij INTERPRETACJĘ („Mój umysł twierdzi, że muszę natychmiast odpisać”); 4. Dokonaj świadomego WYBORU. Zrób to tylko raz.'
+          ]
+        },
+        {
+          title: 'Most do Rozdziału 2: Kiedy Emocje Przejmują Stery',
+          paragraphs: [
+            'Wiesz już, że pomiędzy bodźcem a Twoim działaniem istnieje cały skomplikowany proces poznawczy, w który możesz świadomie interweniować.',
+            'Ale co się dzieje, kiedy bodziec uderza z tak druzgocącą siłą, że kora przedczołowa zostaje całkowicie odcięta od zasilania w ułamku sekundy? Kiedy wściekłość, panika lub wstyd zalewają Twój układ nerwowy jak tsunami, niszcząc wszelkie logiczne tamy?',
+            'Wtedy wkraczamy w krainę zjawiska zwanego PORWANIEM EMOCJONALNYM (Amygdala Hijack). W Rozdziale 2 prześwietlimy anatomię neurobiologicznej burzy, zbadamy mechanizmy chronicznego stresu, atrofii hipokampa i wyposażymy Cię w zaawansowaną somatyczną tarczę antykryzysową.',
+            'Do zobaczenia w Rozdziale 2.'
+          ]
+        }
       ]
     }
   ]

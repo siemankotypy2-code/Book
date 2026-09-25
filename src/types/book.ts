@@ -6,11 +6,24 @@ export interface CaseStudy {
   context: string;
   story: string[];
   dialogue?: { speaker: string; text: string; subtext?: string }[];
+  // Structure A-J expanded
+  decisionTaken?: string;
+  whatProtagonistSaw?: string;
+  whatWasMissed?: string;
   psychologicalAnalysis: {
     coreMechanism: string;
     cognitiveBiases: { name: string; description: string; impact: string }[];
     defenseMechanisms: { name: string; explanation: string }[];
     emotionalDynamic: string;
+  };
+  decisionProcessAnalysis?: {
+    trigger: string;
+    attentionFocus: string;
+    interpretation: string;
+    emotion: string;
+    impulse: string;
+    action: string;
+    consequence: string;
   };
   neurobiologicalAnalysis: {
     brainRegions: { region: string; role: string; activationState: string }[];
@@ -21,6 +34,8 @@ export interface CaseStudy {
     tacticsUsed: { tactic: string; description: string; vulnerabilityExploited: string }[];
     counterMeasures: { step: string; script: string; rationale: string }[];
   };
+  alternativePath?: string;
+  readerQuestion?: string;
   keyTakeaway: string;
 }
 
@@ -71,6 +86,58 @@ export interface Chapter {
 export type ReaderTheme = 'parchment' | 'sepia' | 'dark' | 'clean';
 export type FontSize = 'sm' | 'base' | 'lg' | 'xl';
 
+// Decision Process Map Types
+export interface DecisionProcessNode {
+  id: string;
+  stepNumber: number;
+  label: string;
+  subtitle: string;
+  description: string;
+  everydayExample: string;
+  neurobiologicalContext: string;
+  reflectionQuestion: string;
+  colorScheme: 'slate' | 'amber' | 'blue' | 'purple' | 'rose' | 'emerald';
+}
+
+// Laboratory Experiment Types
+export interface LabExperiment {
+  id: string;
+  number: number;
+  title: string;
+  category: string;
+  instruction: string;
+  taskPrompt: string;
+  interactiveType: 'speed_choice' | 'fact_vs_interpretation' | 'stroop_attention' | 'emotional_pulse' | 'decision_audit';
+  explanation: string;
+  reflectionInsight: {
+    whatItSaysAboutProcess: string;
+    whatItDoesNotSayAboutYou: string;
+  };
+}
+
+// Chapter Final Exam Question
+export interface ExamQuestion {
+  id: number;
+  question: string;
+  topic: string;
+  sectionRef: string;
+  options: {
+    label: string;
+    text: string;
+    isCorrect: boolean;
+  }[];
+  explanation: string;
+  keyTakeaway: string;
+}
+
+export interface ExamResult {
+  score: number;
+  total: number;
+  percentage: number;
+  weakTopics: { topic: string; sectionRef: string; advice: string }[];
+  summaryMessage: string;
+}
+
 // Diagnostic Quiz types for diagnosticQuiz.ts
 export interface QuizOption {
   label: string;
@@ -94,7 +161,7 @@ export interface GlossaryTerm {
   everydayExample: string;
 }
 
-// Module types for module1.ts
+// Module types for module1.ts & others
 export interface ModuleChapterAdvice {
   heading: string;
   content: string;

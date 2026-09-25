@@ -1,12 +1,31 @@
-import React, { useRef } from 'react';
-import { Chapter, BookSection, ReaderTheme, FontSize } from '../types/book';
-import { selfExercisesList } from '../data/chapterOneData';
+import React, { useRef, useState } from 'react';
+import { Chapter, BookSection, ReaderTheme, FontSize, CaseStudy } from '../types/book';
+import { caseStudiesList, selfExercisesList } from '../data/chapterOneData';
 import { CaseStudyCard } from './CaseStudyCard';
 import { BrainNeuroWidget } from './BrainNeuroWidget';
 import { SelfReflectExercises } from './SelfReflectExercises';
 import { InteractiveDecisionSim } from './InteractiveDecisionSim';
 import { DiagnosticTest } from './DiagnosticTest';
-import { ChevronLeft, ChevronRight, CheckCircle2, Bookmark, Share2, Quote, Lightbulb, AlertTriangle, Brain } from 'lucide-react';
+import { MicroChoiceWidget } from './MicroChoiceWidget';
+import { DualProcessVisualizer } from './DualProcessVisualizer';
+import { AttentionExperimentWidget } from './AttentionExperimentWidget';
+import { CognitiveBudgetSim } from './CognitiveBudgetSim';
+import { ChapterOneLab } from './ChapterOneLab';
+import { ChapterOneFinalTest } from './ChapterOneFinalTest';
+import { DecisionProcessMap } from './DecisionProcessMap';
+import {
+  ChevronLeft,
+  ChevronRight,
+  CheckCircle2,
+  Bookmark,
+  Share2,
+  Quote,
+  Lightbulb,
+  AlertTriangle,
+  Brain,
+  Users,
+  Sparkles
+} from 'lucide-react';
 
 interface ReaderViewProps {
   chapter: Chapter;
@@ -36,6 +55,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
   onToggleBookmark
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [selectedCaseStudyId, setSelectedCaseStudyId] = useState<string>(caseStudiesList[0].id);
 
   // Theme styles
   const themeClasses: Record<ReaderTheme, { container: string; text: string; subtext: string; card: string; border: string }> = {
@@ -81,6 +101,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
 
   const currentFont = fontSizeClasses[fontSize];
   const isCompleted = completedSections.includes(activeSection.id);
+  const activeCaseStudy = caseStudiesList.find((c) => c.id === selectedCaseStudyId) || caseStudiesList[0];
 
   return (
     <main className={`min-h-screen transition-colors duration-300 ${currentTheme.container} py-8 sm:py-12 px-4 sm:px-6 lg:px-8`}>
@@ -104,20 +125,31 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               onClick={() => onToggleCompleteSection(activeSection.id)}
               className={`p-2 rounded-xl border text-xs font-mono transition flex items-center space-x-1.5 ${
                 isCompleted
-                  ? 'bg-emerald-100 text-emerald-800 border-emerald-300'
-                  : 'text-stone-500 hover:text-stone-900 border-stone-300'
+                  ? 'bg-emerald-100 text-emerald-800 border-emerald-300 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border-emerald-700'
+                  : 'text-stone-500 hover:text-stone-900 border-stone-300 dark:border-stone-700'
               }`}
               title="Oznacz moduł jako przeczytany"
             >
               <CheckCircle2 className="w-4 h-4 text-emerald-600" />
               <span className="hidden sm:inline">{isCompleted ? 'Przeczytano' : 'Oznacz przeczytane'}</span>
             </button>
+            <button
+              onClick={onToggleBookmark}
+              className={`p-2 rounded-xl border text-xs font-mono transition flex items-center space-x-1.5 ${
+                isBookmarked
+                  ? 'bg-amber-100 text-amber-800 border-amber-300 dark:bg-amber-950/60 dark:text-amber-300 dark:border-amber-700'
+                  : 'text-stone-500 hover:text-stone-900 border-stone-300 dark:border-stone-700'
+              }`}
+              title="Dodaj zakładkę do tej sekcji"
+            >
+              <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-amber-600 text-amber-600' : 'text-stone-400'}`} />
+            </button>
           </div>
         </div>
 
         {/* Section Title */}
         <div className="mb-8">
-          <div className="flex items-center space-x-2 text-xs font-mono text-amber-800 uppercase tracking-widest mb-2">
+          <div className="flex items-center space-x-2 text-xs font-mono text-amber-800 dark:text-amber-400 uppercase tracking-widest mb-2 font-bold">
             <span>Sekcja {activeSection.sectionNumber}</span>
             <span>•</span>
             <span>Czas czytania: ok. {activeSection.readingTimeMinutes} min</span>
@@ -148,23 +180,47 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           ))}
         </article>
 
-        {/* Interactive Brain Neuro Widget if on section 1.2 or 1.4 */}
-        {(activeSection.sectionNumber === '1.2' || activeSection.sectionNumber === '1.4') && (
+        {/* SECTION 1.1: MicroChoice Dilemma Widget (Sytuacja Michała) */}
+        {activeSection.sectionNumber === '1.1' && (
           <div className="my-10">
-            <BrainNeuroWidget />
+            <MicroChoiceWidget />
           </div>
         )}
 
-        {/* Interactive Decision Simulator if on section 1.1 or 1.3 */}
+        {/* SECTION 1.2: Dual Process Visualizer (System 1 vs System 2) */}
+        {activeSection.sectionNumber === '1.2' && (
+          <div className="my-10">
+            <DualProcessVisualizer />
+          </div>
+        )}
+
+        {/* SECTION 1.3: Interactive Decision Simulator */}
         {activeSection.sectionNumber === '1.3' && (
           <div className="my-10">
             <InteractiveDecisionSim />
           </div>
         )}
 
-        {/* Case Study if present */}
+        {/* SECTION 1.4: Brain Neuro Widget & Diagnostic Test */}
+        {activeSection.sectionNumber === '1.4' && (
+          <div className="my-10 space-y-10">
+            <BrainNeuroWidget />
+            <DiagnosticTest />
+          </div>
+        )}
+
+        {/* SECTION 1.5: Attention Experiment Widget (Stroop & Selective Attention) */}
+        {activeSection.sectionNumber === '1.5' && (
+          <div className="my-10">
+            <AttentionExperimentWidget />
+          </div>
+        )}
+
+        {/* Case Study if present on regular sections */}
         {activeSection.caseStudyRef && (
-          <CaseStudyCard caseStudy={activeSection.caseStudyRef} />
+          <div className="my-10">
+            <CaseStudyCard caseStudy={activeSection.caseStudyRef} />
+          </div>
         )}
 
         {/* Subsections if present */}
@@ -198,17 +254,70 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </div>
         )}
 
-        {/* Diagnostic Test on section 1.1 or 1.2 */}
-        {activeSection.sectionNumber === '1.2' && (
-          <div className="my-10">
-            <DiagnosticTest />
+        {/* SECTION 1.8: Cognitive Budget Simulator & Self-Development Workbook */}
+        {activeSection.sectionNumber === '1.8' && (
+          <div className="my-10 space-y-10">
+            <CognitiveBudgetSim />
+            <SelfReflectExercises exercises={selfExercisesList} />
           </div>
         )}
 
-        {/* Self-Development Workbook on section 1.8 */}
-        {activeSection.sectionNumber === '1.8' && (
+        {/* SECTION 1.11: Laboratory of the Mind (5 Interactive Experiments) */}
+        {activeSection.sectionNumber === '1.11' && (
           <div className="my-10">
-            <SelfReflectExercises exercises={selfExercisesList} />
+            <ChapterOneLab />
+          </div>
+        )}
+
+        {/* SECTION 1.12: Comprehensive Case Studies Deep-Dive Selector */}
+        {activeSection.sectionNumber === '1.12' && (
+          <div className="my-10 space-y-6">
+            <div className="p-5 rounded-2xl bg-stone-100 dark:bg-stone-800/80 border border-stone-300 dark:border-stone-700">
+              <div className="flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-amber-800 dark:text-amber-400 font-bold mb-2">
+                <Users className="w-4 h-4" />
+                <span>Wybierz Studium Przypadku do Szczegółowej Wiwisekcji:</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+                {caseStudiesList.map((cs) => {
+                  const isSelected = cs.id === selectedCaseStudyId;
+                  return (
+                    <button
+                      key={cs.id}
+                      onClick={() => setSelectedCaseStudyId(cs.id)}
+                      className={`p-3 rounded-xl text-left border transition font-sans ${
+                        isSelected
+                          ? 'bg-amber-800 text-white border-amber-900 shadow-sm'
+                          : 'bg-white dark:bg-stone-700/80 text-stone-800 dark:text-stone-200 hover:bg-stone-200/60 dark:hover:bg-stone-600 border-stone-300 dark:border-stone-600'
+                      }`}
+                    >
+                      <span className="text-[10px] font-mono uppercase block opacity-80">
+                        {cs.protagonist.split(',')[0]}
+                      </span>
+                      <h4 className="font-bold text-xs line-clamp-2 mt-0.5">
+                        {cs.title.split(':')[0]}
+                      </h4>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Active Case Study Card */}
+            <CaseStudyCard caseStudy={activeCaseStudy} />
+          </div>
+        )}
+
+        {/* SECTION 1.14: Interactive Decision Process Map */}
+        {activeSection.sectionNumber === '1.14' && (
+          <div className="my-10">
+            <DecisionProcessMap />
+          </div>
+        )}
+
+        {/* SECTION 1.15: Chapter One Final Exam */}
+        {activeSection.sectionNumber === '1.15' && (
+          <div className="my-10">
+            <ChapterOneFinalTest />
           </div>
         )}
 
@@ -228,7 +337,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </button>
 
           <div className="text-xs font-mono text-stone-400">
-            Rozdział 1 • Sekcja {activeSection.sectionNumber}
+            Rozdział 1 • Sekcja {activeSection.sectionNumber} z {chapter.sections.length}
           </div>
 
           <button

@@ -180,20 +180,20 @@ export default function App() {
             {/* Quick Stats Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 pt-6 border-t border-white/10">
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                <span className="text-[11px] font-mono text-stone-400 block uppercase">Objętość Tomu I</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">~30 stron</span>
+                <span className="text-[11px] font-mono text-stone-400 block uppercase">Objętość Rozdziału 1</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">52 strony (16 sekcji)</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Studia Przypadków</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">4 szczegółowe</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">4 pełne analizy A–J</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                <span className="text-[11px] font-mono text-stone-400 block uppercase">Analizy Neuro</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">100% zintegrowane</span>
+                <span className="text-[11px] font-mono text-stone-400 block uppercase">Interaktywne Narzędzia</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">8 modułów dydaktycznych</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                <span className="text-[11px] font-mono text-stone-400 block uppercase">Ćwiczenia Praktyczne</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">4 interaktywne</span>
+                <span className="text-[11px] font-mono text-stone-400 block uppercase">Egzamin Końcowy</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">15 pytań + raport</span>
               </div>
             </div>
           </div>
