@@ -15,6 +15,11 @@ import { chapterThirteen } from './chapterThirteenData';
 import { chapterFourteen } from './chapterFourteenData';
 import { chapterFifteen } from './chapterFifteenData';
 import { chapterSixteen } from './chapterSixteenData';
+import { chapterSeventeen } from './chapterSeventeenData';
+import { chapterEighteen } from './chapterEighteenData';
+import { chapterNineteen } from './chapterNineteenData';
+import { chapterTwenty } from './chapterTwentyData';
+import { chapterTwentyOne } from './chapterTwentyOneData';
 
 export const allChapters: Chapter[] = [
   chapterOne,
@@ -32,7 +37,12 @@ export const allChapters: Chapter[] = [
   chapterThirteen,
   chapterFourteen,
   chapterFifteen,
-  chapterSixteen
+  chapterSixteen,
+  chapterSeventeen,
+  chapterEighteen,
+  chapterNineteen,
+  chapterTwenty,
+  chapterTwentyOne
 ];
 
 export {
@@ -51,5 +61,10 @@ export {
   chapterThirteen,
   chapterFourteen,
   chapterFifteen,
-  chapterSixteen
+  chapterSixteen,
+  chapterSeventeen,
+  chapterEighteen,
+  chapterNineteen,
+  chapterTwenty,
+  chapterTwentyOne
 };

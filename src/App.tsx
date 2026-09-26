@@ -201,7 +201,7 @@ export default function App() {
             <div className="flex items-center justify-between mb-4">
               <span className="text-xs font-mono uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full flex items-center gap-1.5">
                 <Feather className="w-3.5 h-3.5" />
-                Dzieło Literacko-Naukowe • Tom I & Tom II: Kompletna Encyklopedia
+                Dzieło Literacko-Naukowe • Tom I, Tom II & Tom III (Kompletne Wydanie)
               </span>
               <button
                 onClick={() => setShowCoverHero(false)}
@@ -212,33 +212,33 @@ export default function App() {
             </div>
 
             <h1 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-amber-50 leading-tight">
-              Anatomia Umysłu i Sztuka Wpływu
+              Anatomia Umysłu, Wpływu i Autonomii
             </h1>
             <p className="font-serif text-lg sm:text-2xl text-amber-200/90 mt-2 italic">
-              Tom I: Architektura Umysłu • Tom II: Człowiek Wśród Ludzi
+              Tom I: Architektura Umysłu • Tom II: Człowiek Wśród Ludzi • Tom III: Autonomia i Samokształtowanie
             </p>
 
             <p className="text-sm sm:text-base text-stone-300 font-sans mt-4 max-w-2xl leading-relaxed">
-              Książka stworzona w bezpośrednim kontakcie z czytelnikiem. Od wewnętrznych obwodów neuronowych, podwójnego systemu i mechanizmów uwagi (Tom I), po psychologię społeczną, komunikację, etykę wpływu, obronę przed manipulacją, dynamikę relacji, nawyki i sztukę działania (Tom II).
+              Książka stworzona w bezpośrednim kontakcie z czytelnikiem. Od wewnętrznych obwodów neuronowych, podwójnego systemu i uwagi (Tom I), przez psychologię społeczną, komunikację i etykę wpływu (Tom II), po architekturę tożsamości, przekonań, samooceny, wartości i metapoznania (Tom III).
             </p>
 
             {/* Quick Stats Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 pt-6 border-t border-white/10">
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Zakres Dzieła</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">16 Rozdziałów (228 sekcji)</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">21 Rozdziałów (318 sekcji)</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Struktura Tomów</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">Tom I (1-5) • Tom II (6-16)</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">Tom I (1-5) • Tom II (6-16) • Tom III (17-21)</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Laboratoria & Egzaminy</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">24 interaktywne moduły</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">29 interaktywnych modułów</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Studia Przypadków</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">23 pełne analizy A–J</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">28 pełnych analiz A–J</span>
               </div>
             </div>
           </div>
@@ -265,11 +265,12 @@ export default function App() {
         <div className="p-2.5 rounded-2xl bg-stone-200/70 dark:bg-stone-800/80 border border-stone-300/80 dark:border-stone-700 flex items-center space-x-2 overflow-x-auto font-sans text-xs">
           <span className="text-[10px] font-mono uppercase tracking-wider text-stone-500 font-bold px-2 shrink-0 flex items-center gap-1">
             <Layers className="w-3.5 h-3.5 text-amber-700" />
-            {activeChapterNumber <= 5 ? 'Tom I (Umysł):' : 'Tom II (Człowiek):'}
+            {activeChapterNumber <= 5 ? 'Tom I (Umysł):' : activeChapterNumber <= 16 ? 'Tom II (Człowiek):' : 'Tom III (Autonomia):'}
           </span>
           {allChapters.map((ch) => {
             const isCurrent = ch.number === activeChapterNumber;
-            const isTom2 = ch.number >= 6;
+            const tomLabel = ch.number <= 5 ? 'T1' : ch.number <= 16 ? 'T2' : 'T3';
+            const displayChapterNum = ch.number <= 16 ? ch.number : ch.number - 16;
             return (
               <button
                 key={ch.number}
@@ -280,13 +281,15 @@ export default function App() {
                 className={`px-3 py-1.5 rounded-xl transition whitespace-nowrap text-xs font-semibold flex items-center gap-1.5 ${
                   isCurrent
                     ? 'bg-amber-800 text-white shadow-sm font-bold'
-                    : isTom2
+                    : ch.number >= 17
+                    ? 'bg-purple-100 dark:bg-stone-700 text-purple-900 dark:text-purple-200 hover:bg-white border border-purple-200 dark:border-stone-600'
+                    : ch.number >= 6
                     ? 'bg-amber-50/90 dark:bg-stone-700 text-amber-900 dark:text-amber-200 hover:bg-white border border-amber-200/60 dark:border-stone-600'
                     : 'bg-white/80 dark:bg-stone-700 text-stone-800 dark:text-stone-200 hover:bg-white'
                 }`}
               >
-                <span className="opacity-70 font-mono text-[10px]">{isTom2 ? 'T2' : 'T1'}</span>
-                <span>R{ch.number}: {ch.title.split(':')[0]}</span>
+                <span className="opacity-70 font-mono text-[10px]">{tomLabel}</span>
+                <span>R{displayChapterNum}: {ch.title.split(':')[0].replace(/Rozdział \d+/g, '').trim() || ch.title.split(':')[0]}</span>
               </button>
             );
           })}

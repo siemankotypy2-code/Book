@@ -32,6 +32,11 @@ import { chapterThirteenExamQuestions } from '../data/chapterThirteenData';
 import { chapterFourteenExamQuestions } from '../data/chapterFourteenData';
 import { chapterFifteenExamQuestions } from '../data/chapterFifteenData';
 import { chapterSixteenExamQuestions } from '../data/chapterSixteenData';
+import { chapterSeventeenExamQuestions } from '../data/chapterSeventeenData';
+import { chapterEighteenExamQuestions } from '../data/chapterEighteenData';
+import { chapterNineteenExamQuestions } from '../data/chapterNineteenData';
+import { chapterTwentyExamQuestions } from '../data/chapterTwentyData';
+import { chapterTwentyOneExamQuestions } from '../data/chapterTwentyOneData';
 import { SocialInfluenceLab } from './SocialInfluenceLab';
 import { CommunicationLab } from './CommunicationLab';
 import { PersuasionLab } from './PersuasionLab';
@@ -43,6 +48,11 @@ import { InformationDietAudit } from './InformationDietAudit';
 import { NegotiationLab } from './NegotiationLab';
 import { ResilienceActionPlan } from './ResilienceActionPlan';
 import { SocialSystemMap } from './SocialSystemMap';
+import { IdentityMapWidget } from './IdentityMapWidget';
+import { BeliefUpdateSimWidget } from './BeliefUpdateSimWidget';
+import { SelfEfficacyLabWidget } from './SelfEfficacyLabWidget';
+import { ValuesConflictSimWidget } from './ValuesConflictSimWidget';
+import { MetacognitionLabWidget } from './MetacognitionLabWidget';
 import {
   ChevronLeft,
   ChevronRight,
@@ -140,7 +150,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
         <div className="mb-10 pb-6 border-b border-stone-300/60 flex flex-wrap items-center justify-between gap-4">
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-amber-700 font-bold block mb-1">
-              {chapter.number <= 5 ? 'Tom I' : 'Tom II'} • Rozdział {chapter.number}
+              {chapter.number <= 5 ? 'Tom I • Architektura Umysłu' : chapter.number <= 16 ? 'Tom II • Człowiek Wśród Ludzi' : `Tom III • Autonomia & Samokształtowanie (Rozdział ${chapter.number - 16})`}
             </span>
             <div className="text-sm font-sans font-medium text-stone-500">
               {chapter.title}
@@ -609,6 +619,91 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={16}
               chapterTitle="Człowiek Jako System Społeczny"
               examQuestions={chapterSixteenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 17 (Tom III Rozdział 1) WIDGETS --- */}
+        {(activeSection.sectionNumber === '17.4' || activeSection.sectionNumber === '17.8') && (
+          <div className="my-10">
+            <IdentityMapWidget />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '17.18' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={17}
+              chapterTitle="Tożsamość i Obraz Siebie"
+              examQuestions={chapterSeventeenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 18 (Tom III Rozdział 2) WIDGETS --- */}
+        {(activeSection.sectionNumber === '18.9' || activeSection.sectionNumber === '18.17') && (
+          <div className="my-10">
+            <BeliefUpdateSimWidget />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '18.18' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={18}
+              chapterTitle="Przekonania i Sposób Patrzenia na Świat"
+              examQuestions={chapterEighteenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 19 (Tom III Rozdział 3) WIDGETS --- */}
+        {(activeSection.sectionNumber === '19.3' || activeSection.sectionNumber === '19.17') && (
+          <div className="my-10">
+            <SelfEfficacyLabWidget />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '19.18' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={19}
+              chapterTitle="Samoocena, Poczucie Skuteczności i Obraz Siebie"
+              examQuestions={chapterNineteenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 20 (Tom III Rozdział 4) WIDGETS --- */}
+        {(activeSection.sectionNumber === '20.11' || activeSection.sectionNumber === '20.17') && (
+          <div className="my-10">
+            <ValuesConflictSimWidget />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '20.18' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={20}
+              chapterTitle="Wartości, Potrzeby i Priorytety"
+              examQuestions={chapterTwentyExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 21 (Tom III Rozdział 5) WIDGETS --- */}
+        {(activeSection.sectionNumber === '21.5' || activeSection.sectionNumber === '21.17') && (
+          <div className="my-10">
+            <MetacognitionLabWidget />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '21.18' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={21}
+              chapterTitle="Świadomość Siebie i Metapoznanie"
+              examQuestions={chapterTwentyOneExamQuestions}
             />
           </div>
         )}

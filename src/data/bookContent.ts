@@ -16,14 +16,14 @@ export const BOOK_MODULES: Module[] = [
 import { ModuleChapter } from '../types/book';
 
 export const BOOK_METADATA = {
-  title: 'Anatomia Umysłu: Psychologia, Neuronauka i Wpływ',
-  subtitle: 'Praktyczny przewodnik po ludzkich zachowaniach, mechanizmach decyzji i sztuce porozumienia',
+  title: 'Anatomia Umysłu: Psychologia, Neuronauka, Wpływ i Autonomia',
+  subtitle: 'Praktyczny przewodnik po ludzkich zachowaniach, mechanizmach decyzji, relacjach i długoterminowej samokontroli',
   author: 'Kolektyw Naukowo-Psychologiczny',
-  edition: 'Wydanie Kompletne Interaktywne (Tom I & Tom II, 2026)',
+  edition: 'Wydanie Kompletne Interaktywne (Tom I, Tom II & Tom III Etap I, 2026)',
   totalModules: 5,
-  totalChapters: 16,
-  estimatedTotalMinutes: 450,
-  description: 'Głęboka, oparta na dowodach naukowych podróż przez labirynt ludzkiej psychiki i relacji społecznych. Szesnaście monumentalnych rozdziałów, 228 sekcji, wyczerpujące studia przypadków z życia codziennego, precyzyjne analizy psychologiczne, wglądy neuronaukowe, interaktywne laboratoria decyzyjne oraz egzaminy końcowe.'
+  totalChapters: 21,
+  estimatedTotalMinutes: 680,
+  description: 'Głęboka, oparta na dowodach naukowych podróż przez labirynt ludzkiej psychiki, relacji społecznych i indywidualnej autonomii. Dwadzieścia jeden monumentalnych rozdziałów, 318 sekcji, wyczerpujące studia przypadków z życia codziennego, precyzyjne analizy psychologiczne, wglądy neuronaukowe, interaktywne laboratoria decyzyjne oraz egzaminy końcowe.'
 };
 
 export function getAllChapters(): ModuleChapter[] {

@@ -22,7 +22,7 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
   completedSections
 }) => {
   const [selectedChapterTab, setSelectedChapterTab] = useState<number>(activeChapterNumber);
-  const [volumeFilter, setVolumeFilter] = useState<'all' | 'tom1' | 'tom2'>('all');
+  const [volumeFilter, setVolumeFilter] = useState<'all' | 'tom1' | 'tom2' | 'tom3'>('all');
 
   if (!isOpen) return null;
 
@@ -30,7 +30,8 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
 
   const filteredChapters = chapters.filter((c) => {
     if (volumeFilter === 'tom1') return c.number <= 5;
-    if (volumeFilter === 'tom2') return c.number >= 6;
+    if (volumeFilter === 'tom2') return c.number >= 6 && c.number <= 16;
+    if (volumeFilter === 'tom3') return c.number >= 17;
     return true;
   });
 
@@ -59,13 +60,17 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
         <div className="p-5 sm:p-6 border-b border-amber-900/10 bg-amber-50/60 flex items-center justify-between">
           <div>
             <span className="text-[11px] font-mono uppercase tracking-widest text-amber-800 font-bold block">
-              {currentTabChapter.number <= 5 ? 'Tom I • Architektura Umysłu' : 'Tom II • Człowiek Wśród Ludzi'}
+              {currentTabChapter.number <= 5
+                ? 'Tom I • Architektura Umysłu'
+                : currentTabChapter.number <= 16
+                ? 'Tom II • Człowiek Wśród Ludzi'
+                : 'Tom III • Autonomia & Samokształtowanie'}
             </span>
             <h3 className="font-serif text-lg font-bold text-stone-900 mt-0.5">
               Spis Treści i Nawigacja Książki
             </h3>
             <div className="flex items-center space-x-3 text-xs text-stone-500 font-mono mt-1">
-              <span>{chapters.length} Rozdziałów (Tom I & II)</span>
+              <span>{chapters.length} Rozdziałów (Tom I, II & III)</span>
               <span>•</span>
               <span className="flex items-center gap-1">
                 <Clock className="w-3 h-3" />
@@ -83,25 +88,31 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
         </div>
 
         {/* Volume Switcher Filter */}
-        <div className="px-4 py-2 bg-stone-200/70 border-b border-stone-300 flex items-center space-x-2 text-[11px] font-mono">
+        <div className="px-4 py-2 bg-stone-200/70 border-b border-stone-300 flex items-center space-x-2 text-[11px] font-mono overflow-x-auto">
           <span className="text-stone-500 font-bold uppercase tracking-wider shrink-0">Tom:</span>
           <button
             onClick={() => setVolumeFilter('all')}
-            className={`px-2.5 py-1 rounded-md transition ${volumeFilter === 'all' ? 'bg-amber-800 text-white font-bold' : 'bg-white/80 text-stone-700 hover:bg-white'}`}
+            className={`px-2.5 py-1 rounded-md transition whitespace-nowrap ${volumeFilter === 'all' ? 'bg-amber-800 text-white font-bold' : 'bg-white/80 text-stone-700 hover:bg-white'}`}
           >
             Wszystkie ({chapters.length})
           </button>
           <button
             onClick={() => setVolumeFilter('tom1')}
-            className={`px-2.5 py-1 rounded-md transition ${volumeFilter === 'tom1' ? 'bg-amber-800 text-white font-bold' : 'bg-white/80 text-stone-700 hover:bg-white'}`}
+            className={`px-2.5 py-1 rounded-md transition whitespace-nowrap ${volumeFilter === 'tom1' ? 'bg-amber-800 text-white font-bold' : 'bg-white/80 text-stone-700 hover:bg-white'}`}
           >
-            Tom I: Umysł (1-5)
+            Tom I (1-5)
           </button>
           <button
             onClick={() => setVolumeFilter('tom2')}
-            className={`px-2.5 py-1 rounded-md transition ${volumeFilter === 'tom2' ? 'bg-amber-800 text-white font-bold' : 'bg-white/80 text-stone-700 hover:bg-white'}`}
+            className={`px-2.5 py-1 rounded-md transition whitespace-nowrap ${volumeFilter === 'tom2' ? 'bg-amber-800 text-white font-bold' : 'bg-white/80 text-stone-700 hover:bg-white'}`}
           >
-            Tom II: Człowiek Wśród Ludzi (6-16)
+            Tom II (6-16)
+          </button>
+          <button
+            onClick={() => setVolumeFilter('tom3')}
+            className={`px-2.5 py-1 rounded-md transition whitespace-nowrap ${volumeFilter === 'tom3' ? 'bg-amber-800 text-white font-bold' : 'bg-white/80 text-stone-700 hover:bg-white'}`}
+          >
+            Tom III (17-21)
           </button>
         </div>
 

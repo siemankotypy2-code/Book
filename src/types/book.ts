@@ -76,6 +76,8 @@ export interface BookSection {
 
 export interface Chapter {
   number: number;
+  volume?: number;
+  volumeChapterNumber?: number;
   title: string;
   subtitle: string;
   leadParagraph: string;
