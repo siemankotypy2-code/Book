@@ -201,7 +201,7 @@ export default function App() {
             <div className="flex items-center justify-between mb-4">
               <span className="text-xs font-mono uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full flex items-center gap-1.5">
                 <Feather className="w-3.5 h-3.5" />
-                Dzieło Literacko-Naukowe • Tom I: Fundamenty Umysłu
+                Dzieło Literacko-Naukowe • Tom I & Tom II: Kompletna Encyklopedia
               </span>
               <button
                 onClick={() => setShowCoverHero(false)}
@@ -215,30 +215,30 @@ export default function App() {
               Anatomia Umysłu i Sztuka Wpływu
             </h1>
             <p className="font-serif text-lg sm:text-2xl text-amber-200/90 mt-2 italic">
-              Część I: Architektura Umysłu — Podwójny System, Emocje, Uwaga, Percepcja i Pamięć
+              Tom I: Architektura Umysłu • Tom II: Człowiek Wśród Ludzi
             </p>
 
             <p className="text-sm sm:text-base text-stone-300 font-sans mt-4 max-w-2xl leading-relaxed">
-              Książka stworzona w bezpośrednim kontakcie z czytelnikiem, z głęboką empatią dla biologicznych ograniczeń mózgu. Zawiera wyczerpujące studia przypadków z życia codziennego, wiwisekcje neurobiologiczne, analizy psychologiczne oraz interaktywny zestaw eksperymentów i symulatorów.
+              Książka stworzona w bezpośrednim kontakcie z czytelnikiem. Od wewnętrznych obwodów neuronowych, podwójnego systemu i mechanizmów uwagi (Tom I), po psychologię społeczną, komunikację, etykę wpływu, obronę przed manipulacją, dynamikę relacji, nawyki i sztukę działania (Tom II).
             </p>
 
             {/* Quick Stats Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 pt-6 border-t border-white/10">
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                <span className="text-[11px] font-mono text-stone-400 block uppercase">Zakres Części I</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">5 Rozdziałów (74 sekcje)</span>
+                <span className="text-[11px] font-mono text-stone-400 block uppercase">Zakres Dzieła</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">16 Rozdziałów (228 sekcji)</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                <span className="text-[11px] font-mono text-stone-400 block uppercase">Łączna Objętość</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">~216 stron</span>
+                <span className="text-[11px] font-mono text-stone-400 block uppercase">Struktura Tomów</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">Tom I (1-5) • Tom II (6-16)</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                <span className="text-[11px] font-mono text-stone-400 block uppercase">Interaktywne Narzędzia</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">12 modułów i egzaminów</span>
+                <span className="text-[11px] font-mono text-stone-400 block uppercase">Laboratoria & Egzaminy</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">24 interaktywne moduły</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Studia Przypadków</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">12 pełnych analiz A–J</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">23 pełne analizy A–J</span>
               </div>
             </div>
           </div>
@@ -265,10 +265,11 @@ export default function App() {
         <div className="p-2.5 rounded-2xl bg-stone-200/70 dark:bg-stone-800/80 border border-stone-300/80 dark:border-stone-700 flex items-center space-x-2 overflow-x-auto font-sans text-xs">
           <span className="text-[10px] font-mono uppercase tracking-wider text-stone-500 font-bold px-2 shrink-0 flex items-center gap-1">
             <Layers className="w-3.5 h-3.5 text-amber-700" />
-            Część I:
+            {activeChapterNumber <= 5 ? 'Tom I (Umysł):' : 'Tom II (Człowiek):'}
           </span>
           {allChapters.map((ch) => {
             const isCurrent = ch.number === activeChapterNumber;
+            const isTom2 = ch.number >= 6;
             return (
               <button
                 key={ch.number}
@@ -276,13 +277,16 @@ export default function App() {
                   setActiveChapterNumber(ch.number);
                   setActiveSectionId(ch.sections[0].id);
                 }}
-                className={`px-3 py-1.5 rounded-xl transition whitespace-nowrap text-xs font-semibold ${
+                className={`px-3 py-1.5 rounded-xl transition whitespace-nowrap text-xs font-semibold flex items-center gap-1.5 ${
                   isCurrent
                     ? 'bg-amber-800 text-white shadow-sm font-bold'
+                    : isTom2
+                    ? 'bg-amber-50/90 dark:bg-stone-700 text-amber-900 dark:text-amber-200 hover:bg-white border border-amber-200/60 dark:border-stone-600'
                     : 'bg-white/80 dark:bg-stone-700 text-stone-800 dark:text-stone-200 hover:bg-white'
                 }`}
               >
-                Rozdział {ch.number}: {ch.title}
+                <span className="opacity-70 font-mono text-[10px]">{isTom2 ? 'T2' : 'T1'}</span>
+                <span>R{ch.number}: {ch.title.split(':')[0]}</span>
               </button>
             );
           })}
@@ -318,10 +322,10 @@ export default function App() {
       {/* Book Footer */}
       <footer className="border-t border-stone-300/60 py-8 px-4 text-center font-sans text-xs text-stone-500">
         <p className="font-serif italic text-sm text-stone-700 dark:text-stone-300 mb-1">
-          „Anatomia Umysłu: Psychologia, Neuronauka i Wpływ” • Tom I: Fundamenty Umysłu
+          „Anatomia Umysłu: Psychologia, Neuronauka i Wpływ” • Tom I & Tom II (Rozdziały 1–16)
         </p>
         <p>
-          Wszystkie badania i przykłady ugruntowane w neuronauce poznawczej, afektywnej oraz psychologii ewolucyjnej.
+          Wszystkie badania i studia przypadków ugruntowane w neuronauce poznawczej, afektywnej, psychologii społecznej i behawioralnej.
         </p>
       </footer>
     </div>

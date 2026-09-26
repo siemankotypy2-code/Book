@@ -21,6 +21,28 @@ import { chapterTwoExamQuestions } from '../data/chapterTwoData';
 import { chapterThreeExamQuestions } from '../data/chapterThreeData';
 import { chapterFourExamQuestions } from '../data/chapterFourData';
 import { chapterFiveExamQuestions } from '../data/chapterFiveData';
+import { chapterSixExamQuestions } from '../data/chapterSixData';
+import { chapterSevenExamQuestions } from '../data/chapterSevenData';
+import { chapterEightExamQuestions } from '../data/chapterEightData';
+import { chapterNineExamQuestions } from '../data/chapterNineData';
+import { chapterTenExamQuestions } from '../data/chapterTenData';
+import { chapterElevenExamQuestions } from '../data/chapterElevenData';
+import { chapterTwelveExamQuestions } from '../data/chapterTwelveData';
+import { chapterThirteenExamQuestions } from '../data/chapterThirteenData';
+import { chapterFourteenExamQuestions } from '../data/chapterFourteenData';
+import { chapterFifteenExamQuestions } from '../data/chapterFifteenData';
+import { chapterSixteenExamQuestions } from '../data/chapterSixteenData';
+import { SocialInfluenceLab } from './SocialInfluenceLab';
+import { CommunicationLab } from './CommunicationLab';
+import { PersuasionLab } from './PersuasionLab';
+import { ManipulationDetector } from './ManipulationDetector';
+import { RelationshipMap } from './RelationshipMap';
+import { MotivationSystemSim } from './MotivationSystemSim';
+import { HabitLoopLab } from './HabitLoopLab';
+import { InformationDietAudit } from './InformationDietAudit';
+import { NegotiationLab } from './NegotiationLab';
+import { ResilienceActionPlan } from './ResilienceActionPlan';
+import { SocialSystemMap } from './SocialSystemMap';
 import {
   ChevronLeft,
   ChevronRight,
@@ -118,7 +140,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
         <div className="mb-10 pb-6 border-b border-stone-300/60 flex flex-wrap items-center justify-between gap-4">
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-amber-700 font-bold block mb-1">
-              Tom I • Rozdział {chapter.number}
+              {chapter.number <= 5 ? 'Tom I' : 'Tom II'} • Rozdział {chapter.number}
             </span>
             <div className="text-sm font-sans font-medium text-stone-500">
               {chapter.title}
@@ -393,6 +415,193 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={5}
               chapterTitle="Pamięć i Rekonstrukcja Przeszłości"
               examQuestions={chapterFiveExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 6 WIDGETS --- */}
+        {activeSection.sectionNumber === '6.4' && (
+          <div className="my-10">
+            <SocialInfluenceLab />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '6.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={6}
+              chapterTitle="Człowiek Wśród Ludzi"
+              examQuestions={chapterSixExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 7 WIDGETS --- */}
+        {(activeSection.sectionNumber === '7.2' || activeSection.sectionNumber === '7.4') && (
+          <div className="my-10">
+            <CommunicationLab />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '7.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={7}
+              chapterTitle="Komunikacja"
+              examQuestions={chapterSevenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 8 WIDGETS --- */}
+        {(activeSection.sectionNumber === '8.6' || activeSection.sectionNumber === '8.10') && (
+          <div className="my-10">
+            <PersuasionLab />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '8.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={8}
+              chapterTitle="Wpływ i Perswazja"
+              examQuestions={chapterEightExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 9 WIDGETS --- */}
+        {(activeSection.sectionNumber === '9.5' || activeSection.sectionNumber === '9.12') && (
+          <div className="my-10">
+            <ManipulationDetector />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '9.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={9}
+              chapterTitle="Manipulacja"
+              examQuestions={chapterNineExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 10 WIDGETS --- */}
+        {(activeSection.sectionNumber === '10.3' || activeSection.sectionNumber === '10.8') && (
+          <div className="my-10">
+            <RelationshipMap />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '10.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={10}
+              chapterTitle="Relacje"
+              examQuestions={chapterTenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 11 WIDGETS --- */}
+        {(activeSection.sectionNumber === '11.4' || activeSection.sectionNumber === '11.9') && (
+          <div className="my-10">
+            <MotivationSystemSim />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '11.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={11}
+              chapterTitle="Motywacja"
+              examQuestions={chapterElevenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 12 WIDGETS --- */}
+        {(activeSection.sectionNumber === '12.5' || activeSection.sectionNumber === '12.9') && (
+          <div className="my-10">
+            <HabitLoopLab />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '12.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={12}
+              chapterTitle="Nawyki"
+              examQuestions={chapterTwelveExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 13 WIDGETS --- */}
+        {(activeSection.sectionNumber === '13.2' || activeSection.sectionNumber === '13.12') && (
+          <div className="my-10">
+            <InformationDietAudit />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '13.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={13}
+              chapterTitle="Decyzje w Świecie Informacji"
+              examQuestions={chapterThirteenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 14 WIDGETS --- */}
+        {(activeSection.sectionNumber === '14.2' || activeSection.sectionNumber === '14.8') && (
+          <div className="my-10">
+            <NegotiationLab />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '14.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={14}
+              chapterTitle="Konflikt i Negocjacje"
+              examQuestions={chapterFourteenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 15 WIDGETS --- */}
+        {(activeSection.sectionNumber === '15.4' || activeSection.sectionNumber === '15.12') && (
+          <div className="my-10">
+            <ResilienceActionPlan />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '15.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={15}
+              chapterTitle="Samokontrola i Działanie"
+              examQuestions={chapterFifteenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM II: CHAPTER 16 WIDGETS --- */}
+        {(activeSection.sectionNumber === '16.1' || activeSection.sectionNumber === '16.13') && (
+          <div className="my-10">
+            <SocialSystemMap />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '16.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={16}
+              chapterTitle="Człowiek Jako System Społeczny"
+              examQuestions={chapterSixteenExamQuestions}
             />
           </div>
         )}
