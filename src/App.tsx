@@ -226,19 +226,19 @@ export default function App() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 pt-6 border-t border-white/10">
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Zakres Części I</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">5 Rozdziałów</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">5 Rozdziałów (74 sekcje)</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Łączna Objętość</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">~200 stron</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">~216 stron</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Interaktywne Narzędzia</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">11 modułów</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">12 modułów i egzaminów</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Studia Przypadków</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">8 analiz A–J</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">12 pełnych analiz A–J</span>
               </div>
             </div>
           </div>

@@ -16,6 +16,11 @@ import { DecisionProcessMap } from './DecisionProcessMap';
 import { EmotionalReactionWidget } from './EmotionalReactionWidget';
 import { PerceptionExperimentWidget } from './PerceptionExperimentWidget';
 import { MemoryExperimentWidget } from './MemoryExperimentWidget';
+import { ChapterExamWidget } from './ChapterExamWidget';
+import { chapterTwoExamQuestions } from '../data/chapterTwoData';
+import { chapterThreeExamQuestions } from '../data/chapterThreeData';
+import { chapterFourExamQuestions } from '../data/chapterFourData';
+import { chapterFiveExamQuestions } from '../data/chapterFiveData';
 import {
   ChevronLeft,
   ChevronRight,
@@ -345,6 +350,50 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
         {activeSection.sectionNumber === '1.15' && (
           <div className="my-10">
             <ChapterOneFinalTest />
+          </div>
+        )}
+
+        {/* SECTION 2.16: Chapter Two Final Exam */}
+        {activeSection.sectionNumber === '2.16' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={2}
+              chapterTitle="Porwanie Emocjonalne"
+              examQuestions={chapterTwoExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* SECTION 3.14: Chapter Three Final Exam */}
+        {activeSection.sectionNumber === '3.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={3}
+              chapterTitle="Uwaga i Reflektor Świadomości"
+              examQuestions={chapterThreeExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* SECTION 4.13: Chapter Four Final Exam */}
+        {activeSection.sectionNumber === '4.13' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={4}
+              chapterTitle="Percepcja i Filtry Rzeczywistości"
+              examQuestions={chapterFourExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* SECTION 5.15: Chapter Five Final Exam */}
+        {activeSection.sectionNumber === '5.15' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={5}
+              chapterTitle="Pamięć i Rekonstrukcja Przeszłości"
+              examQuestions={chapterFiveExamQuestions}
+            />
           </div>
         )}
 
