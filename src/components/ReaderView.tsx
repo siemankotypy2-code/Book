@@ -630,7 +630,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </div>
         )}
 
-        {activeSection.sectionNumber === '17.18' && (
+        {(activeSection.sectionNumber === '17.18' || activeSection.sectionNumber === '17.21') && (
           <div className="my-10">
             <ChapterExamWidget
               chapterNumber={17}
@@ -647,7 +647,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </div>
         )}
 
-        {activeSection.sectionNumber === '18.18' && (
+        {(activeSection.sectionNumber === '18.18' || activeSection.sectionNumber === '18.21') && (
           <div className="my-10">
             <ChapterExamWidget
               chapterNumber={18}
@@ -664,7 +664,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </div>
         )}
 
-        {activeSection.sectionNumber === '19.18' && (
+        {(activeSection.sectionNumber === '19.18' || activeSection.sectionNumber === '19.21') && (
           <div className="my-10">
             <ChapterExamWidget
               chapterNumber={19}
@@ -681,7 +681,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </div>
         )}
 
-        {activeSection.sectionNumber === '20.18' && (
+        {(activeSection.sectionNumber === '20.18' || activeSection.sectionNumber === '20.21') && (
           <div className="my-10">
             <ChapterExamWidget
               chapterNumber={20}
@@ -698,7 +698,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </div>
         )}
 
-        {activeSection.sectionNumber === '21.18' && (
+        {(activeSection.sectionNumber === '21.18' || activeSection.sectionNumber === '21.21') && (
           <div className="my-10">
             <ChapterExamWidget
               chapterNumber={21}
