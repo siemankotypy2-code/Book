@@ -253,6 +253,17 @@ export const chapterNineteenExamQuestions: ExamQuestion[] = [
     explanation: 'Sprawczość buduje się krok po kroku. Małe wygrane torują drogę dla odważniejszych decyzji w przyszłości.',
     keyTakeaway: 'Zacznij od wygranych tak małych, że nie sposób ich przegrać.'
   }
+  { id: "deep-19.22", pageNumber:40, sectionNumber:"19.22", title:"Samoocena nie jest jedną liczbą", category:"teoria", readingTimeMinutes:8, paragraphs:["Ocena siebie może zależeć od dziedziny, sytuacji i aktualnego wyniku. Ktoś może czuć się kompetentny w nauce języka, a jednocześnie bardzo niepewny podczas wystąpień. Dlatego pytanie „czy mam wysoką samoocenę?” bywa mniej użyteczne niż „w jakiej dziedzinie, według jakiego standardu i na podstawie jakich danych oceniam siebie?”.","Poczucie własnej wartości również nie jest tym samym co przekonanie „jestem dobry w tym zadaniu”. Człowiek może uznać projekt za nieudany bez wyciągania wniosku, że jako osoba jest bezwartościowy. Rozdzielenie tych ocen ułatwia przyjmowanie informacji zwrotnej.","Pewność siebie i kompetencja także mogą się rozchodzić. Pewność może wyprzedzać umiejętności albo za nimi pozostawać. Rzetelna ocena wymaga więc połączenia subiektywnego poczucia z obserwowalnym wykonaniem."] },
+  { id: "deep-19.23", pageNumber:41, sectionNumber:"19.23", title:"Self-efficacy: czy potrafię wykonać konkretne zadanie?", category:"teoria", readingTimeMinutes:8, paragraphs:["Poczucie własnej skuteczności dotyczy przekonania, że można zorganizować i wykonać działania potrzebne do osiągnięcia określonego wyniku. Jest bardziej konkretne niż ogólne „jestem wartościowym człowiekiem”. Można mieć wysokie poczucie skuteczności w matematyce i niskie w rozmowach konfliktowych.","Jeśli ktoś mówi „nie mam pewności siebie”, nie warto automatycznie odpowiadać podnoszeniem samooceny. Trzeba ustalić, czy problemem jest brak wiedzy, brak praktyki, trudność emocjonalna, niejasne kryterium sukcesu czy wcześniejsze doświadczenie porażki.","Najlepiej sprawdzać skuteczność na konkretnych zadaniach. „Czy jestem dobry w programowaniu?” jest mniej diagnostyczne niż „czy potrafię samodzielnie znaleźć błąd w funkcji o podobnej złożoności?”."] },
+  { id: "deep-19.24", pageNumber:42, sectionNumber:"19.24", title:"Porównania społeczne i nieznany mianownik", category:"teoria", readingTimeMinutes:8, paragraphs:["Porównanie z innymi może dostarczać informacji, ale często brakuje nam danych o warunkach startowych, czasie treningu, zasobach i nieudanych próbach drugiej osoby. Widzimy wynik, a nie cały proces. Media społecznościowe dodatkowo zwiększają udział starannie wybranych momentów w obrazie innych.","Nie każde porównanie jest szkodliwe. Porównanie z osobą o podobnym poziomie może pomóc znaleźć strategię lub ustalić realistyczny standard. Problem pojawia się wtedy, gdy pojedynczy wynik drugiej osoby staje się dowodem na własną niższą wartość.","Warto dodać drugą oś porównania: własną historię. „Jak zmieniło się moje wykonanie przy podobnych warunkach?” pozwala oddzielić informację o poziomie od globalnego sądu o sobie."] },
+  { id: "deep-19.25", pageNumber:43, sectionNumber:"19.25", title:"Informacja zwrotna bez obrony i bez samoponiżenia", category:"teoria", readingTimeMinutes:8, paragraphs:["Krytyka może dotyczyć wyniku, strategii, zachowania albo osoby. Najbardziej użyteczna jest zwykle wtedy, gdy wiadomo, czego dotyczy i co można zmienić. „Jesteś beznadziejny” dostarcza niewiele danych. „W dwóch miejscach pominąłeś założenie” daje materiał do nauki.","Podobnie jest z pochwałą. „Jesteś geniuszem” może być przyjemne, ale nie mówi, które działanie warto powtórzyć. Bardziej informacyjna pochwała wskazuje przygotowanie, strategię, wytrwałość albo konkretną poprawę.","Dojrzała samoocena nie wymaga ignorowania wad. Wymaga traktowania danych o błędach jako informacji o działaniu, a nie automatycznie jako wyroku o całej osobie."] },
+  { id: "deep-19.26", pageNumber:44, sectionNumber:"19.26", title:"Realistyczny obraz własnych możliwości", category:"teoria", readingTimeMinutes:8, paragraphs:["Najbardziej użyteczny obraz siebie łączy własne doświadczenie, obserwowalne wykonanie oraz informację zwrotną. Żadne z tych źródeł nie jest doskonałe: poczucie może być zbyt surowe, wynik zależy od warunków, a opinia innych może zawierać ich własne uprzedzenia.","Celem nie jest stałe przekonanie „jestem świetny”. Celem jest dokładniejszy model: wiem, co już potrafię, gdzie potrzebuję praktyki, w jakich warunkach działam najlepiej i jak reaguję na trudność.","Następny rozdział stawia pytanie o wybór: które cele, relacje i działania są naprawdę ważne? Do tego potrzebne są wartości, potrzeby i priorytety."] },
+
+  { id:19, question:"Co najlepiej odróżnia opis faktu od interpretacji?", topic:"Samoocena, pewność siebie i obraz własnych możliwości", sectionRef:"Sekcja 19.22", options:[{"label":"A","text":"Opis faktu można w większym stopniu sprawdzić niezależnie od znaczenia, które mu nadajemy.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
+  { id:20, question:"Co jest przykładem rozsądnej aktualizacji przekonania?", topic:"Samoocena, pewność siebie i obraz własnych możliwości", sectionRef:"Sekcja 19.23", options:[{"label":"A","text":"Zmiana stopnia pewności po pojawieniu się istotnych danych, bez konieczności przechodzenia do przeciwnej skrajności.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
+  { id:21, question:"Dlaczego warto uwzględniać kontekst przy ocenie siebie?", topic:"Samoocena, pewność siebie i obraz własnych możliwości", sectionRef:"Sekcja 19.24", options:[{"label":"A","text":"To samo zachowanie może mieć różne znaczenie i częstość w zależności od sytuacji.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
+  { id:22, question:"Co zwiększa wartość informacji zwrotnej?", topic:"Samoocena, pewność siebie i obraz własnych możliwości", sectionRef:"Sekcja 19.25", options:[{"label":"A","text":"Wskazanie konkretnego zachowania, warunku lub wyniku, który można ponownie zaobserwować.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
+  { id:23, question:"Które pytanie ma charakter metapoznawczy?", topic:"Samoocena, pewność siebie i obraz własnych możliwości", sectionRef:"Sekcja 19.26", options:[{"label":"A","text":"Co wiem, skąd to wiem i jakie dane mogłyby pokazać, że mój wniosek jest nietrafny?","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
 ];
 
 export const caseStudiesChapterNineteen: CaseStudy[] = [
@@ -689,7 +700,72 @@ export const caseStudiesChapterNineteen: CaseStudy[] = [
     alternativePath: 'Gdyby Marek odrzucił metodę małych kroków, spędziłby resztę życia w łóżku w stanie głębokiej depresji.',
     readerQuestion: 'Jaki cel w Twoim życiu wydaje się tak wielki, że paraliżuje Cię przed zrobieniem pierwszego mikrokroku?',
     keyTakeaway: 'Nie szturmuj góry jednym skokiem. Podziel trasę na stopnie tak małe, że Twój mózg nie zdoła poczuć lęku.'
-  }
+  },
+  {
+    id:"19-deep-8", title:"sportowiec: jedna sytuacja nie definiuje całej osoby", subtitle:"Rozbudowane studium przypadku",
+    protagonist:"sportowiec", context:"Sytuacja codzienna wymagająca analizy własnego modelu siebie i danych.",
+    story:["Bohaterem jest sportowiec, który w sytuacji związanej z tematem rozdziału interpretuje pojedyncze doświadczenie jako informację o całym sobie.","Pierwsza interpretacja pojawia się szybko: wydarzenie zostaje połączone z wcześniejszym przekonaniem. Emocja sprawia, że wniosek wydaje się bardziej oczywisty, niż wynika to z samych danych.","W dalszej analizie bohater rozdziela fakt, interpretację i przewidywanie. Odkrywa również dane, które nie pasują do pierwszego wyjaśnienia. Nie oznacza to, że pierwsza intuicja była całkowicie błędna; była po prostu szersza niż dostępne dowody.","Bohater wybiera działanie, które pozwala zebrać kolejną informację. Dzięki temu zmiana nie polega na przyjęciu przeciwnej skrajności, lecz na doprecyzowaniu własnego modelu."],
+    decisionTaken:"Bohater zatrzymał pierwszy wniosek i sprawdził jego zakres.",
+    whatProtagonistSaw:"Zdarzenie oraz własną natychmiastową reakcję.",
+    whatWasMissed:"Kontekst, dane przeciwne i alternatywne wyjaśnienia.",
+    psychologicalAnalysis:{
+      coreMechanism:"Konfrontacja globalnego samoopisu z konkretnymi danymi i kontekstem.",
+      cognitiveBiases:[
+        {name:"nadmierna generalizacja",description:"Pojedyncze doświadczenie zostało rozszerzone na szerszy sąd.",impact:"Zmniejszyło precyzję samoopisu lub oceny sytuacji."},
+        {name:"selekcja informacji",description:"Dane zgodne z pierwszą hipotezą były łatwiejsze do zauważenia.",impact:"Wzmacniało początkową interpretację."}
+      ],
+      defenseMechanisms:[{name:"racjonalizacja",explanation:"Nieprzyjemna informacja została początkowo wyjaśniona w sposób chroniący wcześniejszy obraz siebie."}],
+      emotionalDynamic:"Napięcie zwiększało atrakcyjność szybkiego wyjaśnienia; spokojne zebranie danych poszerzyło pole możliwych interpretacji."
+    },
+    decisionProcessAnalysis:{trigger:"konkretne zdarzenie",attentionFocus:"element zgodny z wcześniejszym modelem",interpretation:"pierwszy wniosek",emotion:"napięcie lub niepewność",impulse:"szybko wyjaśnić sytuację",action:"zebrać dodatkowe dane",consequence:"bardziej precyzyjna decyzja"},
+    neurobiologicalAnalysis:{
+      brainRegions:[
+        {region:"sieci uwagi i kontroli poznawczej",role:"wspierają utrzymanie celu i porównywanie informacji",activationState:"udział zależny od zadania i kontekstu"},
+        {region:"systemy pamięci",role:"dostarczają informacji o wcześniejszych doświadczeniach",activationState:"nie są pojedynczym ośrodkiem określonego zachowania"}
+      ],
+      neurotransmitters:[{name:"układy neuromodulacyjne",roleInScenario:"mogą modulować pobudzenie, uwagę i uczenie się; nie stanowią samodzielnego wyjaśnienia całej reakcji."}],
+      biologicalTimeline:[{timeMs:"brak sztywnej osi",process:"Zachowanie powstaje poprzez współdziałanie wielu procesów, dlatego unikamy pozornej precyzji czasowej."}]
+    },
+    influenceAndManipulation:{tacticsUsed:[],counterMeasures:[
+      {step:"Oddziel dane od wniosku",script:"Najpierw zapiszę, co faktycznie wiem.",rationale:"Zmniejsza ryzyko pomylenia hipotezy z faktem."},
+      {step:"Poszukaj alternatywy",script:"Jakie są dwa inne rozsądne wyjaśnienia?",rationale:"Chroni przed zbyt szybkim zamknięciem interpretacji."}
+    ]},
+    alternativePath:"Można było wcześniej ustalić, jakie dane mogłyby zmienić wniosek.",
+    readerQuestion:"Który fragment historii jest faktem, a który interpretacją?",
+    keyTakeaway:"Dobra analiza nie usuwa pierwszej intuicji; sprawdza jej zakres i warunki."
+  },  {
+    id:"19-deep-9", title:"osoba ucząca się nowej umiejętności: decyzja pod presją własnego modelu", subtitle:"Rozbudowane studium przypadku",
+    protagonist:"osoba ucząca się nowej umiejętności", context:"Sytuacja codzienna wymagająca analizy własnego modelu siebie i danych.",
+    story:["Drugi przypadek dotyczy osoba ucząca się nowej umiejętności, który musi podjąć decyzję pod presją własnego obrazu sytuacji.","Najpierw próbuje zachować spójność z dotychczasowym opisem siebie. Argumenty zgodne z wcześniejszym poglądem przychodzą łatwiej, a dane sprzeczne wymagają dodatkowego namysłu.","Punkt zwrotny pojawia się wtedy, gdy bohater pyta, jakie informacje zmieniłyby jego zdanie. Okazuje się, że dotąd nie miał jasnego warunku aktualizacji.","Po zebraniu danych bohater nie otrzymuje jednej magicznej odpowiedzi. Zyskuje natomiast bardziej precyzyjny sposób podejmowania decyzji: rozpoznaje ograniczenia, koszty, alternatywy i poziom własnej pewności."],
+    decisionTaken:"Bohater zatrzymał pierwszy wniosek i sprawdził jego zakres.",
+    whatProtagonistSaw:"Zdarzenie oraz własną natychmiastową reakcję.",
+    whatWasMissed:"Kontekst, dane przeciwne i alternatywne wyjaśnienia.",
+    psychologicalAnalysis:{
+      coreMechanism:"Konflikt między potrzebą spójności a koniecznością aktualizacji modelu na podstawie nowych danych.",
+      cognitiveBiases:[
+        {name:"nadmierna generalizacja",description:"Pojedyncze doświadczenie zostało rozszerzone na szerszy sąd.",impact:"Zmniejszyło precyzję samoopisu lub oceny sytuacji."},
+        {name:"selekcja informacji",description:"Dane zgodne z pierwszą hipotezą były łatwiejsze do zauważenia.",impact:"Wzmacniało początkową interpretację."}
+      ],
+      defenseMechanisms:[{name:"racjonalizacja",explanation:"Nieprzyjemna informacja została początkowo wyjaśniona w sposób chroniący wcześniejszy obraz siebie."}],
+      emotionalDynamic:"Napięcie zwiększało atrakcyjność szybkiego wyjaśnienia; spokojne zebranie danych poszerzyło pole możliwych interpretacji."
+    },
+    decisionProcessAnalysis:{trigger:"konkretne zdarzenie",attentionFocus:"element zgodny z wcześniejszym modelem",interpretation:"pierwszy wniosek",emotion:"napięcie lub niepewność",impulse:"szybko wyjaśnić sytuację",action:"zebrać dodatkowe dane",consequence:"bardziej precyzyjna decyzja"},
+    neurobiologicalAnalysis:{
+      brainRegions:[
+        {region:"sieci uwagi i kontroli poznawczej",role:"wspierają utrzymanie celu i porównywanie informacji",activationState:"udział zależny od zadania i kontekstu"},
+        {region:"systemy pamięci",role:"dostarczają informacji o wcześniejszych doświadczeniach",activationState:"nie są pojedynczym ośrodkiem określonego zachowania"}
+      ],
+      neurotransmitters:[{name:"układy neuromodulacyjne",roleInScenario:"mogą modulować pobudzenie, uwagę i uczenie się; nie stanowią samodzielnego wyjaśnienia całej reakcji."}],
+      biologicalTimeline:[{timeMs:"brak sztywnej osi",process:"Zachowanie powstaje poprzez współdziałanie wielu procesów, dlatego unikamy pozornej precyzji czasowej."}]
+    },
+    influenceAndManipulation:{tacticsUsed:[],counterMeasures:[
+      {step:"Oddziel dane od wniosku",script:"Najpierw zapiszę, co faktycznie wiem.",rationale:"Zmniejsza ryzyko pomylenia hipotezy z faktem."},
+      {step:"Poszukaj alternatywy",script:"Jakie są dwa inne rozsądne wyjaśnienia?",rationale:"Chroni przed zbyt szybkim zamknięciem interpretacji."}
+    ]},
+    alternativePath:"Można było wcześniej ustalić, jakie dane mogłyby zmienić wniosek.",
+    readerQuestion:"Który fragment historii jest faktem, a który interpretacją?",
+    keyTakeaway:"Dobra analiza nie usuwa pierwszej intuicji; sprawdza jej zakres i warunki."
+  },
 ];
 
 export const selfExercisesChapterNineteen: SelfExercise[] = [
@@ -895,7 +971,9 @@ export const selfExercisesChapterNineteen: SelfExercise[] = [
     reflectionQuestions: [
       'Dlaczego najtrudniejsza jest zawsze iskra zapłonowa, a po 2 minutach działanie staje się naturalne?'
     ]
-  }
+  },
+  {id:"deep-19-ex-a",title:"Analiza przypadku krok po kroku",subtitle:"Od automatycznej oceny do sprawdzalnej hipotezy",objective:"Nauczyć się oddzielać dane od interpretacji i planować następny krok.",durationMinutes:18,neuroScientificFoundation:"Ćwiczenie rozwija metapoznawcze monitorowanie własnych ocen; nie zakłada jednego mechanizmu neuronalnego.",steps:[{stepNumber:1,title:"Zapisz konkretną sytuację.",instruction:"Zapisz konkretną sytuację.",promptText:"Co dokładnie się wydarzyło?",placeholder:"Zapisz odpowiedź tutaj."},{stepNumber:2,title:"Oddziel obserwowalne fakty od własnego wniosku.",instruction:"Oddziel obserwowalne fakty od własnego wniosku.",promptText:"Co dopowiedziałem?",placeholder:"Zapisz odpowiedź tutaj."},{stepNumber:3,title:"Wypisz dwa alternatywne wyjaśnienia.",instruction:"Wypisz dwa alternatywne wyjaśnienia.",promptText:"Co jeszcze może być prawdą?",placeholder:"Zapisz odpowiedź tutaj."},{stepNumber:4,title:"Zaplanuj mały test lub działanie.",instruction:"Zaplanuj mały test lub działanie.",promptText:"Co mogę sprawdzić?",placeholder:"Zapisz odpowiedź tutaj."}],reflectionQuestions:["Co było faktem?","Który wniosek był najbardziej niepewny?","Jak zmienił się plan działania?"]},
+  {id:"deep-19-ex-b",title:"Eksperyment z własnym opisem",subtitle:"Sprawdź, czy opis siebie przewiduje zachowanie",objective:"Porównać etykietę lub przekonanie z rzeczywistymi danymi z kilku sytuacji.",durationMinutes:20,neuroScientificFoundation:"Ćwiczenie wykorzystuje obserwację zachowania i aktualizację modelu siebie na podstawie powtarzających się danych.",steps:[{stepNumber:1,title:"Wybierz jedno zdanie o sobie.",instruction:"Wybierz jedno zdanie o sobie.",promptText:"Jak brzmi mój obecny opis?",placeholder:"Zapisz obserwacje."},{stepNumber:2,title:"Przez tydzień zbieraj konkretne przykłady za i przeciw.",instruction:"Przez tydzień zbieraj konkretne przykłady za i przeciw.",promptText:"Jakie mam dane?",placeholder:"Zapisz obserwacje."},{stepNumber:3,title:"Zaznacz warunki, w których opis działa.",instruction:"Zaznacz warunki, w których opis działa.",promptText:"Kiedy opis jest mniej trafny?",placeholder:"Zapisz obserwacje."},{stepNumber:4,title:"Przepisz zdanie tak, aby uwzględniało kontekst.",instruction:"Przepisz zdanie tak, aby uwzględniało kontekst.",promptText:"Jak brzmi bardziej precyzyjna wersja?",placeholder:"Zapisz obserwacje."}],reflectionQuestions:["Czy etykieta była zbyt globalna?","Jakie warunki miały znaczenie?","Co chcę sprawdzić ponownie?"]},
 ];
 
 export const chapterNineteen: Chapter = {

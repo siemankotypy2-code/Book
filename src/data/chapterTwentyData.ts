@@ -253,6 +253,17 @@ export const chapterTwentyExamQuestions: ExamQuestion[] = [
     explanation: 'Symulator pozwala zobaczyć, że każda decyzja niesie ze sobą koszt i uczy akceptowania tych kosztów bez ucieczki w racjonalizację.',
     keyTakeaway: 'Wybór priorytetu to także odwaga do przyjęcia kosztu odrzuconej alternatywy.'
   }
+  { id: "deep-20.22", pageNumber:40, sectionNumber:"20.22", title:"Wartość, cel i preferencja", category:"teoria", readingTimeMinutes:8, paragraphs:["Wartość opisuje kierunek uznawany za ważny, na przykład uczciwość, autonomia, troska o bliskich czy rozwój. Cel jest konkretnym rezultatem, takim jak ukończenie kursu. Preferencja mówi, co w danej chwili wolimy. Te poziomy mogą współpracować, ale nie są tym samym.","Ktoś może cenić zdrowie, mieć cel regularnego treningu i jednocześnie preferować wieczór z serialem. Konflikt preferencji z celem nie musi oznaczać konfliktu wartości. Problem pojawia się wtedy, gdy krótkoterminowe wybory systematycznie uniemożliwiają realizację kierunku, który człowiek uważa za ważny.","To rozróżnienie chroni przed wnioskiem „skoro nie zrobiłem planu, moje wartości są kłamstwem”. Przyczyną może być planowanie, zmęczenie, środowisko albo konflikt kilku uzasadnionych potrzeb."] },
+  { id: "deep-20.23", pageNumber:41, sectionNumber:"20.23", title:"Wartości deklarowane a realizowane", category:"teoria", readingTimeMinutes:8, paragraphs:["Ludzie mogą szczerze deklarować, że ważna jest dla nich rodzina, rozwój albo autonomia, a jednocześnie poświęcać większość czasu na inne działania. Taka rozbieżność nie musi oznaczać hipokryzji. Decyzje są ograniczone obowiązkami, pieniędzmi, czasem i zobowiązaniami wobec innych.","Pomocne jest porównanie deklaracji z kalendarzem i decyzjami. Nie po to, by wystawić sobie ocenę moralną, lecz by zobaczyć koszt alternatywny. Jeśli rozwój jest ważny, ale przez miesiąc nie ma na niego czasu, jest to informacja o realnym układzie priorytetów.","Czasem trzeba też zrewidować deklarację. Jeśli po spokojnym namyśle okazuje się, że dana wartość była głównie oczekiwaniem rodziny, warto sprawdzić, czy rzeczywiście chcemy ją zachować."] },
+  { id: "deep-20.24", pageNumber:42, sectionNumber:"20.24", title:"Konflikt wartości nie zawsze ma rozwiązanie bez kosztu", category:"teoria", readingTimeMinutes:8, paragraphs:["Niektóre decyzje stawiają naprzeciw siebie dwie rzeczy, które naprawdę są ważne. Wymagająca praca może wspierać rozwój i niezależność, ale ograniczać czas dla rodziny. Pozostanie w obecnej pracy może chronić stabilność, ale opóźniać zmianę.","Analiza powinna zacząć się od nazwania kosztów. Która wartość jest ważniejsza w tym okresie? Jaki minimalny poziom drugiej trzeba zachować? Które koszty są odwracalne, a które długoterminowe?","Nie każda hierarchia musi obowiązywać całe życie. Priorytety częściowo zależą od etapu życia i sytuacji. Elastyczna hierarchia może być bardziej realistyczna niż jedna lista rozstrzygająca każdy przyszły konflikt."] },
+  { id: "deep-20.25", pageNumber:43, sectionNumber:"20.25", title:"„Chcę” kontra „powinienem”", category:"teoria", readingTimeMinutes:8, paragraphs:["Słowo „powinienem” może oznaczać odpowiedzialność, normę społeczną albo własny standard. Zanim potraktujemy je jak nakaz, warto ustalić źródło i konsekwencje.","Jeśli niewykonanie czegoś powoduje realną szkodę dla mnie lub innych, mamy ważny powód do działania. Jeśli główną konsekwencją jest czyjeś rozczarowanie, warto dodatkowo zbadać, czy norma jest zgodna z własnymi wartościami.","Autonomia nie oznacza robienia wszystkiego, na co ma się ochotę. Oznacza świadome uwzględnianie powodów, potrzeb, ograniczeń i zobowiązań. Czasem autonomiczna decyzja brzmi: „nie mam ochoty, ale wybieram to, bo uznaję powód za ważny”."] },
+  { id: "deep-20.26", pageNumber:44, sectionNumber:"20.26", title:"Priorytety jako decyzje o ograniczonych zasobach", category:"teoria", readingTimeMinutes:8, paragraphs:["Priorytet nie jest tylko tym, co uważamy za ważne. Jest również tym, czemu przydzielamy ograniczone zasoby: czas, uwagę, energię, pieniądze i dostępność emocjonalną. Hierarchia wartości staje się praktyczna dopiero wtedy, gdy można ją zobaczyć w decyzjach.","Dobra hierarchia nie musi być idealna ani stała. Powinna być wystarczająco jasna, aby pomagać w trudnych sytuacjach, i wystarczająco elastyczna, aby uwzględniać zmianę okoliczności.","To prowadzi do ostatniego rozdziału tego bloku. Skoro człowiek może mylić deklaracje, oceny i interpretacje z rzeczywistością, potrzebuje sposobu obserwowania własnego funkcjonowania."] },
+
+  { id:19, question:"Co najlepiej odróżnia opis faktu od interpretacji?", topic:"Wartości, potrzeby i priorytety", sectionRef:"Sekcja 20.22", options:[{"label":"A","text":"Opis faktu można w większym stopniu sprawdzić niezależnie od znaczenia, które mu nadajemy.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
+  { id:20, question:"Co jest przykładem rozsądnej aktualizacji przekonania?", topic:"Wartości, potrzeby i priorytety", sectionRef:"Sekcja 20.23", options:[{"label":"A","text":"Zmiana stopnia pewności po pojawieniu się istotnych danych, bez konieczności przechodzenia do przeciwnej skrajności.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
+  { id:21, question:"Dlaczego warto uwzględniać kontekst przy ocenie siebie?", topic:"Wartości, potrzeby i priorytety", sectionRef:"Sekcja 20.24", options:[{"label":"A","text":"To samo zachowanie może mieć różne znaczenie i częstość w zależności od sytuacji.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
+  { id:22, question:"Co zwiększa wartość informacji zwrotnej?", topic:"Wartości, potrzeby i priorytety", sectionRef:"Sekcja 20.25", options:[{"label":"A","text":"Wskazanie konkretnego zachowania, warunku lub wyniku, który można ponownie zaobserwować.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
+  { id:23, question:"Które pytanie ma charakter metapoznawczy?", topic:"Wartości, potrzeby i priorytety", sectionRef:"Sekcja 20.26", options:[{"label":"A","text":"Co wiem, skąd to wiem i jakie dane mogłyby pokazać, że mój wniosek jest nietrafny?","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
 ];
 
 export const caseStudiesChapterTwenty: CaseStudy[] = [
@@ -656,7 +667,72 @@ export const caseStudiesChapterTwenty: CaseStudy[] = [
       ]
     },
     keyTakeaway: 'Zmieniają się etapy życia, lecz potrzeba sensu i tworzenia dobra pozostaje niezmienna. Przeprojektuj swoje priorytety.'
-  }
+  },
+  {
+    id:"20-deep-8", title:"rodzic: jedna sytuacja nie definiuje całej osoby", subtitle:"Rozbudowane studium przypadku",
+    protagonist:"rodzic", context:"Sytuacja codzienna wymagająca analizy własnego modelu siebie i danych.",
+    story:["Bohaterem jest rodzic, który w sytuacji związanej z tematem rozdziału interpretuje pojedyncze doświadczenie jako informację o całym sobie.","Pierwsza interpretacja pojawia się szybko: wydarzenie zostaje połączone z wcześniejszym przekonaniem. Emocja sprawia, że wniosek wydaje się bardziej oczywisty, niż wynika to z samych danych.","W dalszej analizie bohater rozdziela fakt, interpretację i przewidywanie. Odkrywa również dane, które nie pasują do pierwszego wyjaśnienia. Nie oznacza to, że pierwsza intuicja była całkowicie błędna; była po prostu szersza niż dostępne dowody.","Bohater wybiera działanie, które pozwala zebrać kolejną informację. Dzięki temu zmiana nie polega na przyjęciu przeciwnej skrajności, lecz na doprecyzowaniu własnego modelu."],
+    decisionTaken:"Bohater zatrzymał pierwszy wniosek i sprawdził jego zakres.",
+    whatProtagonistSaw:"Zdarzenie oraz własną natychmiastową reakcję.",
+    whatWasMissed:"Kontekst, dane przeciwne i alternatywne wyjaśnienia.",
+    psychologicalAnalysis:{
+      coreMechanism:"Konfrontacja globalnego samoopisu z konkretnymi danymi i kontekstem.",
+      cognitiveBiases:[
+        {name:"nadmierna generalizacja",description:"Pojedyncze doświadczenie zostało rozszerzone na szerszy sąd.",impact:"Zmniejszyło precyzję samoopisu lub oceny sytuacji."},
+        {name:"selekcja informacji",description:"Dane zgodne z pierwszą hipotezą były łatwiejsze do zauważenia.",impact:"Wzmacniało początkową interpretację."}
+      ],
+      defenseMechanisms:[{name:"racjonalizacja",explanation:"Nieprzyjemna informacja została początkowo wyjaśniona w sposób chroniący wcześniejszy obraz siebie."}],
+      emotionalDynamic:"Napięcie zwiększało atrakcyjność szybkiego wyjaśnienia; spokojne zebranie danych poszerzyło pole możliwych interpretacji."
+    },
+    decisionProcessAnalysis:{trigger:"konkretne zdarzenie",attentionFocus:"element zgodny z wcześniejszym modelem",interpretation:"pierwszy wniosek",emotion:"napięcie lub niepewność",impulse:"szybko wyjaśnić sytuację",action:"zebrać dodatkowe dane",consequence:"bardziej precyzyjna decyzja"},
+    neurobiologicalAnalysis:{
+      brainRegions:[
+        {region:"sieci uwagi i kontroli poznawczej",role:"wspierają utrzymanie celu i porównywanie informacji",activationState:"udział zależny od zadania i kontekstu"},
+        {region:"systemy pamięci",role:"dostarczają informacji o wcześniejszych doświadczeniach",activationState:"nie są pojedynczym ośrodkiem określonego zachowania"}
+      ],
+      neurotransmitters:[{name:"układy neuromodulacyjne",roleInScenario:"mogą modulować pobudzenie, uwagę i uczenie się; nie stanowią samodzielnego wyjaśnienia całej reakcji."}],
+      biologicalTimeline:[{timeMs:"brak sztywnej osi",process:"Zachowanie powstaje poprzez współdziałanie wielu procesów, dlatego unikamy pozornej precyzji czasowej."}]
+    },
+    influenceAndManipulation:{tacticsUsed:[],counterMeasures:[
+      {step:"Oddziel dane od wniosku",script:"Najpierw zapiszę, co faktycznie wiem.",rationale:"Zmniejsza ryzyko pomylenia hipotezy z faktem."},
+      {step:"Poszukaj alternatywy",script:"Jakie są dwa inne rozsądne wyjaśnienia?",rationale:"Chroni przed zbyt szybkim zamknięciem interpretacji."}
+    ]},
+    alternativePath:"Można było wcześniej ustalić, jakie dane mogłyby zmienić wniosek.",
+    readerQuestion:"Który fragment historii jest faktem, a który interpretacją?",
+    keyTakeaway:"Dobra analiza nie usuwa pierwszej intuicji; sprawdza jej zakres i warunki."
+  },  {
+    id:"20-deep-9", title:"osoba przed ważną decyzją zawodową: decyzja pod presją własnego modelu", subtitle:"Rozbudowane studium przypadku",
+    protagonist:"osoba przed ważną decyzją zawodową", context:"Sytuacja codzienna wymagająca analizy własnego modelu siebie i danych.",
+    story:["Drugi przypadek dotyczy osoba przed ważną decyzją zawodową, który musi podjąć decyzję pod presją własnego obrazu sytuacji.","Najpierw próbuje zachować spójność z dotychczasowym opisem siebie. Argumenty zgodne z wcześniejszym poglądem przychodzą łatwiej, a dane sprzeczne wymagają dodatkowego namysłu.","Punkt zwrotny pojawia się wtedy, gdy bohater pyta, jakie informacje zmieniłyby jego zdanie. Okazuje się, że dotąd nie miał jasnego warunku aktualizacji.","Po zebraniu danych bohater nie otrzymuje jednej magicznej odpowiedzi. Zyskuje natomiast bardziej precyzyjny sposób podejmowania decyzji: rozpoznaje ograniczenia, koszty, alternatywy i poziom własnej pewności."],
+    decisionTaken:"Bohater zatrzymał pierwszy wniosek i sprawdził jego zakres.",
+    whatProtagonistSaw:"Zdarzenie oraz własną natychmiastową reakcję.",
+    whatWasMissed:"Kontekst, dane przeciwne i alternatywne wyjaśnienia.",
+    psychologicalAnalysis:{
+      coreMechanism:"Konflikt między potrzebą spójności a koniecznością aktualizacji modelu na podstawie nowych danych.",
+      cognitiveBiases:[
+        {name:"nadmierna generalizacja",description:"Pojedyncze doświadczenie zostało rozszerzone na szerszy sąd.",impact:"Zmniejszyło precyzję samoopisu lub oceny sytuacji."},
+        {name:"selekcja informacji",description:"Dane zgodne z pierwszą hipotezą były łatwiejsze do zauważenia.",impact:"Wzmacniało początkową interpretację."}
+      ],
+      defenseMechanisms:[{name:"racjonalizacja",explanation:"Nieprzyjemna informacja została początkowo wyjaśniona w sposób chroniący wcześniejszy obraz siebie."}],
+      emotionalDynamic:"Napięcie zwiększało atrakcyjność szybkiego wyjaśnienia; spokojne zebranie danych poszerzyło pole możliwych interpretacji."
+    },
+    decisionProcessAnalysis:{trigger:"konkretne zdarzenie",attentionFocus:"element zgodny z wcześniejszym modelem",interpretation:"pierwszy wniosek",emotion:"napięcie lub niepewność",impulse:"szybko wyjaśnić sytuację",action:"zebrać dodatkowe dane",consequence:"bardziej precyzyjna decyzja"},
+    neurobiologicalAnalysis:{
+      brainRegions:[
+        {region:"sieci uwagi i kontroli poznawczej",role:"wspierają utrzymanie celu i porównywanie informacji",activationState:"udział zależny od zadania i kontekstu"},
+        {region:"systemy pamięci",role:"dostarczają informacji o wcześniejszych doświadczeniach",activationState:"nie są pojedynczym ośrodkiem określonego zachowania"}
+      ],
+      neurotransmitters:[{name:"układy neuromodulacyjne",roleInScenario:"mogą modulować pobudzenie, uwagę i uczenie się; nie stanowią samodzielnego wyjaśnienia całej reakcji."}],
+      biologicalTimeline:[{timeMs:"brak sztywnej osi",process:"Zachowanie powstaje poprzez współdziałanie wielu procesów, dlatego unikamy pozornej precyzji czasowej."}]
+    },
+    influenceAndManipulation:{tacticsUsed:[],counterMeasures:[
+      {step:"Oddziel dane od wniosku",script:"Najpierw zapiszę, co faktycznie wiem.",rationale:"Zmniejsza ryzyko pomylenia hipotezy z faktem."},
+      {step:"Poszukaj alternatywy",script:"Jakie są dwa inne rozsądne wyjaśnienia?",rationale:"Chroni przed zbyt szybkim zamknięciem interpretacji."}
+    ]},
+    alternativePath:"Można było wcześniej ustalić, jakie dane mogłyby zmienić wniosek.",
+    readerQuestion:"Który fragment historii jest faktem, a który interpretacją?",
+    keyTakeaway:"Dobra analiza nie usuwa pierwszej intuicji; sprawdza jej zakres i warunki."
+  },
 ];
 
 export const selfExercisesChapterTwenty: SelfExercise[] = [
@@ -841,7 +917,9 @@ export const selfExercisesChapterTwenty: SelfExercise[] = [
     reflectionQuestions: [
       'O ile lżejszy się stajesz, gdy zrzucasz z barków realizację nieaktualnych celów z młodości?'
     ]
-  }
+  },
+  {id:"deep-20-ex-a",title:"Analiza przypadku krok po kroku",subtitle:"Od automatycznej oceny do sprawdzalnej hipotezy",objective:"Nauczyć się oddzielać dane od interpretacji i planować następny krok.",durationMinutes:18,neuroScientificFoundation:"Ćwiczenie rozwija metapoznawcze monitorowanie własnych ocen; nie zakłada jednego mechanizmu neuronalnego.",steps:[{stepNumber:1,title:"Zapisz konkretną sytuację.",instruction:"Zapisz konkretną sytuację.",promptText:"Co dokładnie się wydarzyło?",placeholder:"Zapisz odpowiedź tutaj."},{stepNumber:2,title:"Oddziel obserwowalne fakty od własnego wniosku.",instruction:"Oddziel obserwowalne fakty od własnego wniosku.",promptText:"Co dopowiedziałem?",placeholder:"Zapisz odpowiedź tutaj."},{stepNumber:3,title:"Wypisz dwa alternatywne wyjaśnienia.",instruction:"Wypisz dwa alternatywne wyjaśnienia.",promptText:"Co jeszcze może być prawdą?",placeholder:"Zapisz odpowiedź tutaj."},{stepNumber:4,title:"Zaplanuj mały test lub działanie.",instruction:"Zaplanuj mały test lub działanie.",promptText:"Co mogę sprawdzić?",placeholder:"Zapisz odpowiedź tutaj."}],reflectionQuestions:["Co było faktem?","Który wniosek był najbardziej niepewny?","Jak zmienił się plan działania?"]},
+  {id:"deep-20-ex-b",title:"Eksperyment z własnym opisem",subtitle:"Sprawdź, czy opis siebie przewiduje zachowanie",objective:"Porównać etykietę lub przekonanie z rzeczywistymi danymi z kilku sytuacji.",durationMinutes:20,neuroScientificFoundation:"Ćwiczenie wykorzystuje obserwację zachowania i aktualizację modelu siebie na podstawie powtarzających się danych.",steps:[{stepNumber:1,title:"Wybierz jedno zdanie o sobie.",instruction:"Wybierz jedno zdanie o sobie.",promptText:"Jak brzmi mój obecny opis?",placeholder:"Zapisz obserwacje."},{stepNumber:2,title:"Przez tydzień zbieraj konkretne przykłady za i przeciw.",instruction:"Przez tydzień zbieraj konkretne przykłady za i przeciw.",promptText:"Jakie mam dane?",placeholder:"Zapisz obserwacje."},{stepNumber:3,title:"Zaznacz warunki, w których opis działa.",instruction:"Zaznacz warunki, w których opis działa.",promptText:"Kiedy opis jest mniej trafny?",placeholder:"Zapisz obserwacje."},{stepNumber:4,title:"Przepisz zdanie tak, aby uwzględniało kontekst.",instruction:"Przepisz zdanie tak, aby uwzględniało kontekst.",promptText:"Jak brzmi bardziej precyzyjna wersja?",placeholder:"Zapisz obserwacje."}],reflectionQuestions:["Czy etykieta była zbyt globalna?","Jakie warunki miały znaczenie?","Co chcę sprawdzić ponownie?"]},
 ];
 
 export const chapterTwenty: Chapter = {
