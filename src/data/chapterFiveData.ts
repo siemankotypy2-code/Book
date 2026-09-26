@@ -224,14 +224,14 @@ export const chapterFive: Chapter = {
       id: 'sec-5-3',
       pageNumber: 307,
       sectionNumber: '5.3',
-      title: 'Taksonomia Systemów Pamięci: Robocza, Deklaratywna i Proceduralna',
+      title: 'Taksonomia Systemów Pamięci: Model Baddeleya, Pamięć Deklaratywna i Utajona',
       category: 'teoria',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Pamięć jest zbiorem zróżnicowanych modułów neuronalnych:',
-        '• Pamięć Robocza / Operacyjna (Working Memory – model Baddeleya): Podręczny bufor poznawczy (utrzymujący informacje przez 15–30 sekund). To w niej wykonujesz obliczenia i przetwarzasz zdania.',
-        '• Pamięć Deklaratywna (Jawna / Świadoma): obejmuje pamięć epizodyczną (wydarzenia osobiste umiejscowione w czasie i przestrzeni, np. pierwszy dzień w szkole – podatna na rekonstrukcję) oraz pamięć semantyczną (fakty i wiedza o świecie, np. stolicą Francji jest Paryż).',
-        '• Pamięć Niedeklaratywna / Utajona (Proceduralna): Pamięć nawyków motorowych i automatyzmów („Jazda na rowerze”, „Pisanie na klawiaturze”). Odporna na upływ czasu i uszkodzenia hipokampa.'
+        'Współczesna kognitywistyka odrzuca koncepcję pamięci jako jednolitego „magazynu”. Zgodnie z modelem Alana Baddeleya oraz taksonomią Endela Tulvinga i Larry\'ego Squire\'a, pamięć jest zbiorem odrębnych systemów neuronalnych o różnej dynamice:',
+        '1. PAMIĘĆ ROBOCZA / OPERACYJNA (Working Memory – model Baddeleya): Podręczny bufor poznawczy zarządzający bieżącym przetwarzaniem informacji. Składa się z 4 komponentów: Centralnego Systemu Wykonawczego (Central Executive – alokacja uwagi), Pętli Fonologicznej (Phonological Loop – werbalny słuch wewnętrzny), Szkicownika Wzrokowo-Przestrzennego (Visuospatial Sketchpad – wewnętrzne oko) oraz Bufora Epizodycznego (Episodic Buffer – integrującego dane z różnych zmysłów w spójne sceny).',
+        '2. PAMIĘĆ DEKLARATYWNA (Jawna / Świadoma – zależna od struktur przyśrodkowego płata skroniowego i hipokampa): Dzieli się na PAMIĘĆ EPIZODYCZNĄ (autobiograficzne wydarzenia z przeszłości osadzone w konkretnym czasie i miejscu — to ona podlega ciągłej rekonstrukcji) oraz PAMIĘĆ SEMANTYCZNĄ (abstrakcyjną wiedzę o świecie, słownictwo i pojęcia, np. że tlen ma symbol O).',
+        '3. PAMIĘĆ NIEDEKLARATYWNA / UTAJONA (Niezależna od hipokampa): Obejmuje pamięć proceduralną (motoryczne schematy w prążkowiu i móżdżku: jazda na nartach, gra na instrumencie), torowanie (priming w korze nowej) oraz proste odruchy warunkowe (układ wegetatywny i ciało migdałowate). Pamięć ta jest niezwykle trwała i nie ulega erozji przy amnezji hipokampalnej.'
       ]
     },
     {
@@ -267,13 +267,15 @@ export const chapterFive: Chapter = {
       id: 'sec-5-5',
       pageNumber: 319,
       sectionNumber: '5.5',
-      title: '„Pewność Wspomnienia ≠ Jego Dokładność”: Badania Neissera nad Katastrofą Challengera',
+      title: '„Pewność Wspomnienia ≠ Jego Dokładność”: Fenomen Wspomnień Fleszowych (Flashbulb Memories)',
       category: 'neuronauka',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Dzień po tragicznej eksplozji promu kosmicznego Challenger w 1986 roku psycholog Ulrich Neisser poprosił grupę 106 studentów o szczegółowe opisanie na piśmie: gdzie byli, z kim rozmawiali, co robili i co czuli w chwili, gdy dowiedzieli się o tragedii.',
+        'W 1977 roku Roger Brown i James Kulik sformułowali hipotezę „Wspomnień Fleszowych” (Flashbulb Memories), sugerując, że w momentach skrajnego szoku emocjonalnego (np. zabójstwo Johna F. Kennedy\'ego) w mózgu uruchamia się specjalny biologiczny mechanizm „Now Print!” (Drukuj Teraz!), który utrwala scenę z fotograficzną, niezmienną dokładnością.',
+        'Współczesna psychologia poznawcza poddała tę hipotezę bezlitosnej weryfikacji. Dzień po tragicznej eksplozji promu kosmicznego Challenger w 1986 roku psycholog Ulrich Neisser poprosił grupę 106 studentów o szczegółowe opisanie na piśmie: gdzie byli, z kim rozmawiali, co robili i co czuli w chwili, gdy dowiedzieli się o tragedii.',
         'Trzy lata później badacz zebrał tych samych uczestników i poprosił ich o ponowne opisanie tamtego poranka. Wyniki były wstrząsające: ponad 25% studentów podało wersję CAŁKOWICIE SPRZECZNĄ ze swoimi własnymi odręcznymi notatkami sprzed trzech lat! Ktoś, kto dzień po katastrofie napisał: „Siedziałem w pokoju w akademiku z kolegą Jimem”, po trzech latach twierdził z płomiennym przekonaniem: „Byłem na stołówce z dziewczyną, gdy nagle ktoś krzyknął!”.',
-        'Gdy Neisser pokazał badanym ich własne, pożółkłe notatki z 1986 roku, studenci patrzyli na nie z niedowierzaniem. Jedna ze studentek powiedziała słynne zdanie: „Rozpoznaję mój charakter pisma, ale wiem na pewno, że to nie wydarzyło się w ten sposób”. Zjawisko to nazwano paradoksem Wspomnień Fleszowych (Flashbulb Memories).'
+        'Gdy Neisser pokazał badanym ich własne, pożółkłe notatki z 1986 roku, studenci patrzyli na nie z niedowierzaniem. Jedna ze studentek powiedziała słynne zdanie: „Rozpoznaję mój charakter pisma, ale wiem na pewno, że to nie wydarzyło się w ten sposób”. Podobne rezultaty przyniósł 10-letni program badawczy Williama Hirsta nad wspomnieniami o zamachach z 11 września 2001 r.: po dekadzie spójność faktograficzna spadła poniżej 40%, podczas gdy subiektywna pewność badanych pozostała na niezmiennym poziomie bliskim 100%!',
+        'Morał naukowy: silny ładunek emocjonalny generowany przez ciało migdałowate utrwala SUBIEKTYWNĄ PEWNOŚĆ i poczucie jaskrawości obrazu, ale w żaden sposób nie chroni samego engramu przed zniekształceniami i erozją faktograficzną.'
       ]
     },
     {
@@ -295,13 +297,18 @@ export const chapterFive: Chapter = {
       id: 'sec-5-7',
       pageNumber: 331,
       sectionNumber: '5.7',
-      title: 'Konsolidacja Pamięciowa i Biologiczna Rola Snu (NREM i REM)',
+      title: 'Konsolidacja Synaptyczna vs Układowa i Biologiczna Rola Snu (NREM i REM)',
       category: 'neuronauka',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Wyobraź sobie hipokamp jako podręczny notes ze spiralą o ograniczonej liczbie kartek, a korę nową jako potężną bibliotekę narodową. W ciągu dnia wszystkie nowe doświadczenia zapisywane są w notesie.',
-        'Co dzieje się, gdy zasypiasz? Podczas snu wolnofalowego (NREM / SWS) mózg generuje tzw. wrzeciona senne (Sleep Spindles) oraz ostre fale powolne. Hipokamp zaczyna „odtwarzać” doświadczenia dnia z 10-krotną prędkością, wysyłając sygnały do odpowiednich pól kory mózgowej.',
-        'To właśnie w nocy dochodzi do KONSOLIDACJI SYNAPTYCZNEJ I SYSTEMOWEJ. Z kolei w fazie REM mózg tworzy dalekosiężne, kreatywne połączenia semantyczne. Zarywając noc przed egzaminem, dosłownie wyrzucasz do kosza notes z notatkami, zanim biblioteka zdążyła go skatalogować!'
+        'Aby informacja przekształciła się w trwałe wspomnienie, musi przejść przez dwa poziomy utrwalania:',
+        '1. KONSOLIDACJA SYNAPTYCZNA: Zachodzi w ciągu minut i godzin po zdarzeniu na poziomie pojedynczych połączeń neuronowych (długotrwałe wzmocnienie synaptyczne — LTP), wymagając kaskady biochemicznej z udziałem receptorów NMDA i syntezy nowych białek strukturalnych.',
+        '2. KONSOLIDACJA UKŁADOWA (Systemowa): Powolny, wielomiesięczny dialog pomiędzy hipokampem a neokorą. Hipokamp pełni rolę szybkiego, tymczasowego magazynu o ograniczonej pojemności, z którego informacje są stopniowo przenoszone do stabilnych, rozproszonych sieci kory nowej.',
+        'Kluczową rolę w tej relokacji odgrywa sen. Podczas snu wolnofalowego (NREM / stadium N3) dochodzi do tzw. sprzężenia trzech oscylacji (Tri-Oscillatory Coupling):',
+        '• Kora nowa generuje wolne oscylacje (< 1 Hz), które wyznaczają nadrzędny rytm transferu;',
+        '• Wzgórze generuje w odpowiedzi wrzeciona senne (Sleep Spindles, 11–16 Hz);',
+        '• Hipokamp odpowiada wyładowaniami ostrych fal (Sharp-Wave Ripples, 150–250 Hz), odtwarzając dzienne doświadczenia w przyspieszonym tempie i przesyłając je wprost do przygotowanych sieci korowych.',
+        'Z kolei faza REM odpowiada za tzw. desensytyzację emocjonalną (usuwanie bolesnego ładunku noradrenaliny z traumatycznych wspomnień) oraz konsolidację pamięci proceduralnej i twórcze asocjacje. Pozbawianie się snu w nocy po nauce dosłownie niszczy biologiczny transfer danych do trwałej biblioteki mózgu!'
       ]
     },
     {

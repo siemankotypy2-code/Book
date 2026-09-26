@@ -520,10 +520,10 @@ export const chapterOne: Chapter = {
       },
       paragraphs: [
         'Jednym z najbardziej wpływowych modeli w psychologii poznawczej ostatnich dekad jest koncepcja procesów dualnych, spopularyzowana przez laureata Nagrody Nobla Daniela Kahnemana jako System 1 i System 2. Zanim jednak przejdziemy do szczegółów, musimy postawić sprawę z absolutną jasnością naukową:',
-        'System 1 i System 2 TO NIE SĄ DWA FIZYCZNE MODUŁY MÓZGU. Jeśli neurochirurg otworzy ludzką czaszkę, nie znajdzie tam przegródki z napisem „System 1” ani kabelka biegnącego do „Systemu 2”. Jest to model dydaktyczno-funkcjonalny — metafora ułatwiająca zrozumienie dwóch diametralnie różnych trybów, w jakich sieci neuronalne przetwarzają informacje.',
-        'Tryb automatyczny (System 1) jest szybki, nieświadomy, niewymagający wysiłku i bezustannie włączony. Odpowiada za rozpoznanie wyrazu wściekłości na twarzy partnera w ciągu 50 milisekund, odskoczenie na dźwięk klaksonu, odczytanie wielkiego napisu na billboardzie czy prowadzenie samochodu po pustej autostradzie. Działa na zasadzie skojarzeń i heurystyk.',
+        'System 1 i System 2 TO NIE SĄ DWA FIZYCZNE MODUŁY MÓZGU. Jeśli neurochirurg otworzy ludzką czaszkę, nie znajdzie tam osobnej przegródki z napisem „System 1” ani kabelka biegnącego do „Systemu 2”. Jest to model dydaktyczno-funkcjonalny — heurystyczna metafora ułatwiająca zrozumienie dwóch diametralnie różnych trybów, w jakich sieci neuronalne przetwarzają informacje.',
+        'Tryb automatyczny (System 1) jest szybki, nieświadomy, niewymagający wysiłku i bezustannie włączony. Odpowiada za rozpoznanie wyrazu wściekłości na twarzy partnera w ciągu 50 milisekund, odskoczenie na dźwięk klaksonu, odczytanie wielkiego napisu na billboardzie czy płynne prowadzenie samochodu po pustej autostradzie. Działa na zasadzie skojarzeń, wzorców statystycznych i heurystyk.',
         'Tryb analityczny (System 2) jest powolny, świadomy, sekwencyjny i niezwykle kosztowny metabolicznie. To on włącza się, gdy musisz policzyć w pamięci 17 × 24, zaparkować równolegle w ciasnej luce, napisać oficjalne pismo prawne czy powstrzymać się przed wykrzyczeniem złośliwego komentarza na zebraniu rodzinnym.',
-        'Główny problem polega na tym, że System 2 jest z natury leniwy. Zużywa mnóstwo energii, szybko się męczy i przy każdej okazji chętnie oddaje stery automatycznemu Systemowi 1. Kiedy idziesz na zakupy zmęczony po pracy, System 2 śpi, a System 1 kupuje wszystko, co ma jaskrawe opakowanie i wielki napis rabatu.'
+        'Główny problem polega na tym, że System 2 jest z natury ekonomiczny energetycznie („leniwy poznawczo”). Zużywa mnóstwo glukozy i tlenu, szybko ulega znużeniu i przy każdej okazji chętnie deleguje zadania automatycznemu Systemowi 1. Kiedy idziesz na zakupy zmęczony po 10 godzinach pracy, System 2 zawiesza kontrolę wykonawczą, a System 1 kupuje wszystko, co ma jaskrawe opakowanie, duży napis promocyjny i obietnicę szybkiej dopaminy.'
       ],
       subsections: [
         {
@@ -531,13 +531,22 @@ export const chapterOne: Chapter = {
           paragraphs: [
             'Klasyczny eksperyment Shane\'a Fredericka (Cognitive Reflection Test) doskonale ilustruje tę dynamikę. Zadanie brzmi: „Kij bejsbolowy i piłka kosztują łącznie 1,10 zł. Kij jest o 1,00 zł droższy od piłki. Ile kosztuje piłka?”.',
             'Pierwsza, natychmiastowa odpowiedź, która z błyskawiczną siłą nasuwa się w głowie niemal każdemu człowiekowi, brzmi: „10 groszy”. Jest tak atrakcyjna, prosta i elegancka, że większość ludzi bez wahania ją wypowiada. Dopiero gdy zmusisz swój System 2 do zatrzymania i sprawdzenia rachunku: 10 groszy (piłka) + 1,10 zł (kij o 1 zł droższy) = 1,20 zł! Prawidłowa odpowiedź to oczywiście 5 groszy (5 gr + 1,05 zł = 1,10 zł).',
-            'To proste ćwiczenie obnaża kluczowy fakt: Twoja intuicja nie jest nieomylnym głosem mądrości wszechświata. Intuicja to szybki algorytm dopasowywania wzorców, który znakomicie chronił nas przed drapieżnikami na sawannie, ale w świecie cyfr, umów prawnych i manipulacji marketingowych regularnie prowadzi nas na manowce.'
+            'To proste ćwiczenie obnaża kluczowy fakt: Twoja intuicja nie jest nieomylnym głosem mądrości wszechświata. Intuicja to szybki algorytm dopasowywania wzorców, który znakomicie chronił nas przed drapieżnikami na sawannie, ale w świecie cyfr, umów prawnych i manipulacji marketingowych regularnie prowadzi nas na manowce.',
+            'Warto jednak pamiętać o granicach tego modelu: System 1 NIE jest „głupi” ani „gorszy”. To dzięki niemu mówisz płynnie w ojczystym języku, wyczuwasz nastrój w pokoju w sekundę i bez trudu łapiesz rzucony klucz. Z kolei System 2 wcale nie jest „świętym gwarantem prawdy” — to właśnie System 2 z genialną precyzją tworzy kłamliwe racjonalizacje post-factum, teorie spiskowe i skomplikowane usprawiedliwienia dla błędów popełnionych pod wpływem impulsu.'
           ],
           highlightBox: {
             title: 'Wgląd w Neuroarchitekturę',
-            content: 'Procesy Systemu 1 opierają się głównie na strukturach podkorowych (ciało migdałowate, jądra podstawy) oraz korze asocjacyjnej. Procesy Systemu 2 wymagają intensywnej synchronizacji grzbietowo-bocznej kory przedczołowej (dlPFC) z przednim zakrętem obręczy (ACC).',
+            content: 'Procesy Systemu 1 opierają się głównie na strukturach podkorowych (ciało migdałowate, prążkowie, wzgórze) oraz korze asocjacyjnej. Procesy Systemu 2 wymagają intensywnej synchronizacji grzbietowo-bocznej kory przedczołowej (dlPFC) z przednim zakrętem obręczy (ACC) i ciemieniową siecią wykonawczą.',
             type: 'neuro'
           }
+        },
+        {
+          title: 'Mit „Mózgu Trójjedynego” (MacLean) a Prawdziwa Neuroanatomia Ewolucyjna',
+          paragraphs: [
+            'W literaturze popularnonaukowej wciąż powraca hipoteza „mózgu trójjedynego” Paula MacLeana z lat 60. XX wieku, sugerująca, że w naszej czaszce kryją się trzy niezależne warstwy narastające jak słoje drzewa: „mózg gadzi” (pień i odruchy), „mózg ssaczy / limbiczny” (emocje) oraz „ludzka kora nowa” (rozum).',
+            'Współczesna neurobiologia ewolucyjna (Georg Striedter, Terrence Deacon, Lisa Feldman Barrett) jednoznacznie obaliła ten model jako biologiczny mit. Wszystkie kręgowce — w tym gady i płazy — posiadają homologiczne struktury przodomózgowia i obwody emocjonalne. Kora nowa człowieka nie została „nałożona na gada”, lecz całe sieci korowo-podkorowe ewoluowały wspólnie przez setki milionów lat.',
+            'Ludzki mózg nie jest polem bitwy między „gadziem a człowiekiem”. Jest zintegrowaną, wielopoziomową siecią predykcyjną, w której emocje i procesy racjonalne są ze sobą nierozerwalnie splecione na każdym poziomie przetwarzania.'
+          ]
         }
       ]
     },
@@ -553,6 +562,7 @@ export const chapterOne: Chapter = {
         'Zatrzymajmy film w tej dokładnie milisekundzie. Co się wydarzyło w świecie obiektywnym? Fizycznym faktem jest to, że na szklanym ekranie pojawiło się kilkanaście liter tworzących zdanie. Nic więcej. Nie ma tu żadnego wyroku, nie ma zwolnienia z pracy, nie ma oceny.',
         'A co dzieje się w głowie Tomasza w ciągu zaledwie 300 milisekund? Jego uwaga zostaje zablokowana na słowie „pilnie”. Mózg natychmiast odpala interpretację: „Wiktor odkrył błąd w arkuszu. Jest wściekły. Wyrzucą mnie, a mam kredyt hipoteczny”. Ciało migdałowate natychmiast reaguje na tę interpretację — żołądek Tomasza zaciska się jak w imadle, do krwi trafia noradrenalina, a w krtani pojawia się suchość.',
         'W tym stanie pojawia się impuls: natychmiast rozładować to piekielne napięcie! Tomasz zaczyna nerwowo pisać do koleżanki z zespołu, szukać ukrytych podtekstów w mailach szefa z ostatnich dwóch tygodni, a po powrocie do domu wybucha krzykiem na żonę z powodu nieumytego kubka w zlewie.',
+        'Ważne zastrzeżenie neurobiologiczne: kora przedczołowa w takim momencie nie „wyłącza się” do zera (co oznaczałoby utratę przytomności). Zgodnie z badaniami prof. Amy Arnsten z Yale University, potężny wyrzut katecholamin (noradrenaliny i dopaminy) stymuluje receptory alfa-1 i D1, co osłabia połączenia synaptyczne w sieciach grzbietowo-bocznej kory przedczołowej (dlPFC) i drastycznie redukuje jej odgórny wpływ hamujący (top-down control). Kontrolę nad zachowaniem przejmują głębsze obwody prążkowia i pnia mózgu, faworyzując szybkie, wyuczone nawyki i odruchy obronne kosztem refleksyjnego planowania.',
         'Oto uniwersalny łańcuch, który zarządza ludzkim zachowaniem:'
       ],
       subsections: [
@@ -585,9 +595,11 @@ export const chapterOne: Chapter = {
       readingTimeMinutes: 9,
       paragraphs: [
         'Wielu popularnych autorów przedstawia ludzki mózg jako wadliwy mechanizm pełen irracjonalnych błędów i potknięć. To fundamentalne nieporozumienie. Twój mózg nie jest zepsuty. Twój mózg jest arcydziełem inżynierii biologicznej, która musiała rozwiązać dramatyczny dylemat: JAK PRZETRWAĆ W ŚWIECIE O NIESKOŃCZONEJ ILOŚCI DANYCH, DYSPONUJĄC BARDZO OGRANICZONĄ ENERGIĄ I CZASEM?',
-        'Gdyby Twój pradawny przodek na widok poruszających się krzaków zatrzymał się, zebrał próbki gleby, zmierzył prędkość wiatru i przeprowadził analizę statystyczną prawdopodobieństwa obecności lamparta — zostałby pożarty zanim jego kora przedczołowa sformułowałaby pierwszy wniosek.',
+        'Gdyby Twój pradawny przodek na widok poruszających się krzaków zatrzymał się, zebrał próbki gleby, zmierzył prędkość wiatru i przeprowadził analizę statystyczną prawdopodobieństwa obecności drapieżnika — zostałby pożarty zanim jego kora przedczołowa sformułowałaby pierwszy wniosek.',
         'W ewolucji przetrwali ci, którzy stosowali heurystyki — szybkie, przybliżone reguły wnioskowania: „Krzak się rusza? UCIEKAJ!”. Lepiej było sto razy uciec przed wiatrem (błąd fałszywie dodatni), niż raz pomylić się na korzyść drapieżnika (błąd fałszywie ujemny, oznaczający śmierć).',
-        'Współczesny człowiek wchodzi jednak z tym samym pradawnym aparatem do banku, gabinetu lekarskiego czy supermarketu. W tych środowiskach szybkie uproszczenie — oparte na pierwszym wrażeniu, nastroju czy sympatii do garnituru doradcy finansowego — zamiast uratować nam życie, potrafi zrujnować naszą przyszłość finansową.'
+        'Laureat Nagrody Nobla Herbert Simon wprowadził pojęcie OGRANICZONEJ RACJONALNOŚCI (Bounded Rationality): ludzki umysł nie dąży do matematycznej optymalizacji (która wymagałaby nieskończonych mocy obliczeniowych), lecz do satysfakcjonowania (satisficing) — wyboru rozwiązania wystarczająco dobrego przy minimalnym nakładzie czasu i energii.',
+        'Z kolei wybitny psycholog Gerd Gigerenzer wykazał koncepcję RACJONALNOŚCI EKOLOGICZNEJ: szybkie i oszczędne heurystyki (Fast and Frugal Heuristics) w realnym świecie pełnym niepewności często okazują się trafniejsze niż skomplikowane modele ekonometryczne, ponieważ nie ulegają tzw. przetrenowaniu na szumie danych (overfitting).',
+        'Współczesny człowiek wchodzi jednak z tym samym pradawnym aparatem do banku, gabinetu lekarskiego czy supermarketu. W tych sztucznie spreparowanych środowiskach szybkie uproszczenie — oparte na pierwszym wrażeniu, nastroju czy sympatii do garnituru doradcy finansowego — zamiast uratować nam życie, potrafi zrujnować naszą przyszłość finansową.'
       ],
       subsections: [
         {
@@ -686,15 +698,17 @@ export const chapterOne: Chapter = {
       readingTimeMinutes: 11,
       paragraphs: [
         'Wyobraź sobie, że w Twoim smartfonie otwarto jednocześnie 45 wymagających aplikacji w tle, jasność ekranu ustawiono na 100%, a bateria ma zaledwie 14% naładowania. Co dzieje się z telefonem? Zaczyna się nagrzewać, animacje klatkują, a proste polecenia wykonują się z wielosekundowym opóźnieniem.',
-        'Dokładnie to samo dzieje się z Twoim aparatem decyzyjnym pod wpływem obciążenia poznawczego (Cognitive Load). Kora przedczołowa nie ma nieskończonego źródła zasilania. Do podtrzymania funkcji wykonawczych — skupienia uwagi, hamowania odruchów, planowania — potrzebuje stałego dopływu glukozy i tlenu.',
-        'Kiedy jesteś niewyspany, głodny, zestresowany i zmuszony do podjęcia setek mikro-wyborów w ciągu dnia, Twoja dostępna rezerwa poznawcza gwałtownie spada. Zjawisko to, badane m.in. przez Roya Baumeistera pod nazwą Ego Depletion, tłumaczy, dlaczego po 10 godzinach ciężkiej pracy w biurze tak łatwo ulec pokusie kupienia fast foodu lub wszcząć awanturę w domu o niepozmywane naczynia.'
+        'Dokładnie to samo dzieje się z Twoim aparatem decyzyjnym pod wpływem obciążenia poznawczego (Cognitive Load). Kora przedczołowa nie dysponuje nieskończonym źródłem zasilania. Do podtrzymania funkcji wykonawczych — skupienia uwagi, hamowania odruchów, planowania — potrzebuje intensywnego zasilania bioelektrycznego i metabolicznego.',
+        'Zjawisko zmęczenia samokontroli zostało spopularyzowane przez Roya Baumeistera pod nazwą Ego Depletion (wyczerpanie woli jako „mięśnia zużywającego glukozę”). Warto jednak odnotować istotne uściślenie naukowe: w dobie współczesnego kryzysu replikacyjnego w psychologii (m.in. wieloośrodkowe replikacje Haggera i Friese) koncepcja, że mózgowi fizycznie „kończy się glukoza”, została zrewidowana.',
+        'Współczesna neuronauka (np. model kosztu alternatywnego Michaela Inzlichta — Opportunity Cost Model of Self-Control) wyjaśnia zmęczenie poznawcze nie jako brak paliwa w baku, lecz jako dynamiczne PRZESUNIĘCIE MOTYWACYJNE: po okresie ciężkiego wysiłku mózg podświadomie kalkuluje, że dalsze inwestowanie energii w zadania narzucone („muszę”) staje się nieopłacalne, i zaczyna gwałtownie domagać się nagrody, odpoczynku i eksploracji zadań przyjemnych („chcę”). Wynik behawioralny pozostaje ten sam: po 10 godzinach pracy w korporacji System 2 kapituluje i ucieka w łatwą dopaminę z fast foodu lub mediów społecznościowych.'
       ],
       subsections: [
         {
-          title: 'Słynne Badanie Sędziów Izraelskich (Danziger et al., 2011)',
+          title: 'Słynne Badanie Sędziów Izraelskich (Danziger et al., 2011) i Jego Metodologiczny Kontekst',
           paragraphs: [
-            'Jedno z najgłośniejszych badań nad wyczerpaniem decyzyjnym dotyczyło sędziów orzekających w sprawach o przedterminowe zwolnienie warunkowe więźniów. Analiza ponad 1000 wyroków ujawniła szokującą prawidłowość: na początku dnia roboczego oraz tuż po przerwie na posiłek odsetek pozytywnych decyzji wynosił około 65%.',
-            'Jednak w miarę upływu godzin, gdy sędziowie byli coraz bardziej zmęczeni i głodni, szansa na zwolnienie więźnia systematycznie spadała, osiągając niemal 0% tuż przed planowaną przerwą obiadową! Zmęczony mózg sędziego wybierał opcję najbezpieczniejszą poznawczo: odrzucić wniosek i utrzymać status quo.',
+            'Jedno z najgłośniejszych badań nad wyczerpaniem decyzyjnym dotyczyło sędziów orzekających w sprawach o przedterminowe zwolnienie warunkowe więźniów. Analiza ponad 1000 orzeczeń ujawniła uderzającą prawidłowość: na początku dnia roboczego oraz tuż po przerwie na posiłek odsetek pozytywnych decyzji wynosił około 65%, podczas gdy tuż przed planowaną przerwą obiadową spadał niemal do zera.',
+            'Choć badanie to stało się ikoną literatury popularnonaukowej, późniejsze analizy prawno-metodologiczne (np. Weinshall-Margel & Shapira, Keren Lakens) wykazały istotny niuans: kolejność rozpatrywanych spraw nie była całkowicie losowa — sędziowie często grupowali wnioski więźniów niemających reprezentacji adwokackiej (statystycznie znacznie słabsze) pod koniec sesji przed przerwą.',
+            'Nawet przy tych zastrzeżeniach metodologicznych rdzenny wniosek poznawczy pozostaje niewzruszony: obciążenie poznawcze, głód i spadek zasobów uwagi dramatycznie popychają każdy ludzki umysł w stronę opcji domyślnych (Default Option) — czyli odmowy, odłożenia decyzji lub zachowania status quo, bo wymagają one najmniejszego nakładu pracy kory przedczołowej.',
             'Poniższy interaktywny symulator pozwoli Ci sprawdzić, jak różne czynniki Twojego dnia wpływają na dostępny budżet uwagi.'
           ]
         }

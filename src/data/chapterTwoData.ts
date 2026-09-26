@@ -317,20 +317,33 @@ export const chapterTwo: Chapter = {
       id: 'sec-2-5',
       pageNumber: 78,
       sectionNumber: '2.5',
-      title: 'Anatomia Porwania: Dwie Drogi Przetwarzania w Mózgu',
+      title: 'Anatomia Porwania: Dwie Drogi Przetwarzania w Mózgu i Granice Modelu',
       category: 'neuronauka',
       readingTimeMinutes: 16,
       paragraphs: [
-        'Wybitny neurobiolog Joseph LeDoux z New York University odkrył, w jaki sposób mózg przetwarza bodźce o potencjalnym ładunku emocjonalnym. Badania ujawniły istnienie dwóch równoległych szlaków neuronalnych:',
-        '1. Droga Niska (The Low Road – krótka, szybka, niedokładna): Bodziec wzrokowy lub słuchowy trafia ze zmysłów do WZGÓRZA (Thalamus). stamtąd bezpośrednio, omijając korę mózgową, jedzie wąskim pęczkiem aksonów do CIAŁA MIGDAŁOWATEGO. Ta droga trwa zaledwie 12–15 milisekund. Nie zapewnia szczegółowej analizy obrazu, ale błyskawicznie uruchamia odpowiedź obronną. To dzięki niej odskakujesz od czarnej gałęzi w lesie, zanim uświadomisz sobie, że to nie wąż.',
-        '2. Droga Wysoka (The High Road – długa, wolna, precyzyjna): Równolegle ten sam sygnał ze wzgórza wędruje do odpowiednich pól KORY CZUCIOWEJ (np. wzrokowej w płacie potylicznym), a następnie do KORY PRZEDCZOŁOWEJ (dlPFC). Kora dokonywać precyzyjnego montażu danych, analizuje kontekst, wspomnienia i po 300 milisekundach wysyła komendę korygującą: „Spokojnie, to tylko zwiędła gałąź, nie żmija”.'
+        'Wybitny neurobiolog Joseph LeDoux z New York University odkrył, w jaki sposób mózg przetwarza bodźce o potencjalnym ładunku zagrożenia. Klasyczne badania ujawniły istnienie dwóch równoległych szlaków neuronalnych:',
+        '1. Droga Niska (The Low Road – krótka, podkorowa, zgrubna): Bodziec sensoryczny trafia z narządu zmysłu do WZGÓRZA (Thalamus), a stamtąd bezpośrednio, wąskim pasmem aksonów, do CIAŁA MIGDAŁOWATEGO. Ta transmisja zajmuje zaledwie 12–15 milisekund u gryzoni i około 20 milisekund u ludzi. Zapewnia ona błyskawiczną reakcję obronną (odskoczenie w bok, uniesienie rąk), ale przesyła obraz o bardzo niskiej rozdzielczości (low spatial frequency) — niewyraźny zarys lub nagłą plamę ruchu.',
+        '2. Droga Wysoka (The High Road – długa, korowa, analityczna): Równolegle ten sam sygnał ze wzgórza wędruje do pierwszorzędowej KORY CZUCIOWEJ (np. wzrokowej w płacie potylicznym), stamtąd do wyższych pól asocjacyjnych kory skroniowej, a wreszcie do KORY PRZEDCZOŁOWEJ (dlPFC). Kora dokonuje drobiazgowego montażu danych, weryfikuje kontekst, sięga do pamięci epizodycznej i po około 250–350 milisekundach wysyła sygnał hamujący: „Spokojnie, ten czarny zygzak na ścieżce to zeschły korzeń sosny, a nie żmija zygzakowata”.'
       ],
       subsections: [
+        {
+          title: 'Kluczowe Uściślenie Naukowe: Czego Droga Niska NIE Potrafi Zrobić?',
+          paragraphs: [
+            'W literaturze popularnonaukowej często popełnia się błąd, twierdząc, że droga niska odpowiada za porwania emocjonalne w relacjach biurowych (np. gdy ktoś obrazi nas mailem lub spojrzy z pogardą). To neurobiologiczny nonsens!',
+            'Droga niska przekazuje wyłącznie najbardziej prymitywne, niespecyficzne cechy fizyczne: nagły trzask gałęzi, głośny wybuch, niespodziewany cień kątem oka. Nie posiada rozdzielczości niezbędnej do przeczytania słowa na ekranie smartfona ani zinterpretowania mikroekspresji twarzy szefa. Aby zrozumieć tekst „Musimy natychmiast porozmawiać” lub odczytać sarkazm w głosie dyrektora, sygnał MUSI przejść przez korę potyliczną, skroniową (zakręt wrzecionowaty FFA, bruzdę skroniową górną STS) oraz sieci językowe.',
+            'Ponadto sam Joseph LeDoux w swoich późniejszych pracach (m.in. „Anxious”, 2015) wyraźnie podkreślił: podkorowy obwód ciała migdałowatego to ZAUTOMATYZOWANY SYSTEM OBRONY PRZED ZAGROŻENIEM (Survival / Threat-Defense Circuit), a nie generator świadomego uczucia strachu. Ciało migdałowate uruchamia przyspieszenie akcji serca i wyrzut hormonów, ale świadome, subiektywne doświadczenie strachu („Boję się o swoją posadę”) jest złożonym konstruktem tworzonym dopiero w sieciach korowych.'
+          ],
+          highlightBox: {
+            title: 'Rygor Naukowy',
+            content: 'Droga niska ratuje życie przed gałęzią udającą węża. Twoje cierpienie z powodu maila od przełożonego nie wynika z ominięcia kory, lecz ze sposobu, w jaki kora asocjacyjna i przedczołowa nadały temu mailowi katastroficzne znaczenie!',
+            type: 'neuro'
+          }
+        },
         {
           title: 'Wąskie Gardło Ewolucyjne',
           paragraphs: [
             'Dlaczego ewolucja zachowała tak nieprecyzyjną drogę niską? Ponieważ w dzikiej naturze koszt błędu fałszywie pozytywnego (uznanie gałęzi za węża) wynosił zaledwie kilka kalorii zużytych na niepotrzebny skok w bok. Z kolei koszt błędu fałszywie negatywnego (uznanie jadowitego węża za nieszkodliwą gałąź) oznaczał śmierć organizmu i wyeliminowanie genów z puli.',
-            'Dlatego nasz układ nerwowy jest z natury pesymistyczny: woli dziesięć razy zaalarmować Cię bez potrzeby, niż raz zignorować realne niebezpieczeństwo. Zrozumienie tego faktu uczy pokory wobec własnych lęków.'
+            'Dlatego nasz układ nerwowy jest z natury ewolucyjnym pesymistą: woli dziesięć razy zaalarmować Cię bez potrzeby, niż raz zignorować realne niebezpieczeństwo.'
           ]
         }
       ]
@@ -386,6 +399,20 @@ export const chapterTwo: Chapter = {
             '2. Wyzwalacze nabyte (indywidualne / społeczne): ton głosu przypominający surowego rodzica, zignorowanie pytania w e-mailu, spóźnienie partnera o 15 minut.',
             'Prawdziwa praca nad inteligencją emocjonalną polega na zidentyfikowaniu własnej „mapy minowej” wyzwalaczy nabytych, aby nie odpalały one pierwotnych programów walki i ucieczki w nowoczesnym biurze.'
           ]
+        },
+        {
+          title: 'Teoria Emocji Skonstruowanych (Lisa Feldman Barrett)',
+          paragraphs: [
+            'Przez dekady wierzono w tzw. klasyczny model emocji (Paul Ekman), zakładający, że w ludzkim mózgu istnieją wrodzone, uniwersalne „obwody emocji podstawowych” (jak lęk czy złość), które włączają się jak guziki, wywołując identyczny grymas twarzy i reakcję biologiczną u każdego człowieka.',
+            'Najnowsze badania neuronaukowe prof. Lisy Feldman Barrett z Northeastern University („Jak powstają emocje”, 2017) zrewolucjonizowały ten pogląd. Barrett dowiodła, że emocje NIE SĄ wbudowane fabrycznie w ciało migdałowate. Zamiast tego Twój mózg nieustannie KONSTRUUJE emocje w procesie aktywnego przewidywania (predykcji).',
+            'Fundamentem jest tzw. Afekt Bazowy (Core Affect) tworzony przez interocepcję — sygnały z wnętrza ciała opisujące dwa wymiary: walencję (przyjemne vs nieprzyjemne) oraz poziom pobudzenia fizjologicznego (wysokie vs niskie). Następnie kora mózgowa, korzystając z wiedzy pojęciowej, języka i kontekstu kulturowego, dopasowuje najbardziej prawdopodobną hipotezę: „Serce bije szybko, a żołądek się ściska na widok przełożonego? Znam pojęcie <zagrożenie kariery>, więc konstruuję instancję lęku”.',
+            'Ta perspektywa ma potężne konsekwencje praktyczne: skoro emocje są konstrukcją Twojego mózgu opartą na pojęciach, to wzbogacając swój słownik pojęciowy (tzw. ziarnistość emocjonalna / emotional granularity), zyskujesz bezpośredni wpływ na to, jak Twój mózg konstruuje i przeżywa rzeczywistość!'
+          ],
+          highlightBox: {
+            title: 'Wgląd w Konstruktywizm Afektywny',
+            content: 'Nie jesteś bierną ofiarą „atakujących Cię emocji”. Twoje ciało dostarcza surowego afektu (napięcie, ciepło, puls), a Twój umysł nadaje mu narrację i znaczenie. Zmieniając pojęcia i interpretację, zmieniasz samą materię emocji.',
+            type: 'insight'
+          }
         }
       ]
     },
@@ -450,11 +477,17 @@ export const chapterTwo: Chapter = {
       category: 'cwiczenia',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Skoro emocje pojawiają się automatycznie, jak możemy odzyskać nad nimi sprawczość? Wybitny badacz James Gross ze Stanford University opracował Procesowy Model Regulacji Emocji. Kluczowe rozróżnienie dotyczy dwóch najczęstszych strategii:',
-        'A. TŁUMIENIE EKSPRESJI (Expressive Suppression): Polega na próbie ukrycia, zahamowania lub zablokowania uzewnętrzniania emocji, gdy ta już wybuchła (np. zagryzanie warg, udawanie niewzruszonego, powstrzymywanie łez). Badania fMRI pokazują, że tłumienie NIE ZMNIEJSZA pobudzenia ciała migdałowatego, a wręcz zwiększa aktywację układu współczulnego, podnosi ciśnienie krwi i obciąża pamięć roboczą.',
-        'B. REEWALUACJA POZNAWCZA (Cognitive Reappraisal): Polega na świadomej zmianie interpretacji sytuacji, ZANIM reakcja emocjonalna osiągnie punkt szczytowy (np. „Przełożony prosi o rozmowę, ponieważ chce przydzielić mi nowy projekt, a nie dlatego, że chce mnie zwolnić”). Reewaluacja skutecznie wycisza ciało migdałowate i obniża pobudzenie fizjologiczne.'
+        'Skoro emocje pojawiają się automatycznie, jak możemy odzyskać nad nimi sprawczość? Wybitny badacz James Gross ze Stanford University wraz z Kevinem Ochsnerem z Columbia University opracowali Procesowy Model Regulacji Emocji. Kluczowe rozróżnienie w neuronauce dotyczy dwóch diametralnie różnych strategii:',
+        'A. TŁUMIENIE EKSPRESJI (Expressive Suppression): Strategia zorientowana na odpowiedź (Response-Focused). Polega na desperackiej próbie ukrycia, zaciśnięcia zębów i zablokowania ekspresji motorycznej, gdy fala neurobiologiczna już eksplodowała. Badania fMRI i kardiologiczne jednoznacznie dowodzą, że tłumienie NIE WYCISZA ciała migdałowatego — wręcz przeciwnie: poziom noradrenaliny rośnie, wzrasta opór naczyniowy i ciśnienie skurczowe, a zasoby pamięci roboczej zostają sparaliżowane wysiłkiem udawania spokoju.',
+        'B. REEWALUACJA POZNAWCZA (Cognitive Reappraisal): Strategia zorientowana na antycypację (Antecedent-Focused). Polega na świadomej interwencji w proces przypisywania znaczenia ZANIM pobudzenie osiągnie szczyt. Neuroanatomicznie proces ten angażuje sieć czołowo-ciemieniową: grzbietowo-boczna kora przedczołowa (dlPFC) oraz brzuszno-boczna (vlPFC) wysyłają sygnały do brzuszno-przyśrodkowej kory przedczołowej (vmPFC), która z kolei pobudza interneurony GABA-ergiczne (komórki wtrącone ITC) w ciele migdałowatym, dosłownie „przykręcając kurek” reaktywności jądra boczno-podstawnego (BLA).'
       ],
       subsections: [
+        {
+          title: 'Neuroanatomiczne Porównanie: Co Dzieje się w Mózgu?',
+          paragraphs: [
+            'Podczas gdy tłumienie zużywa potężne zasoby metaboliczne na blokowanie mięśni twarzy przy wciąż wrzącym układzie limbicznym, reewaluacja modyfikuje samą genezę sygnału alarmowego. Mózg przestaje interpretować bodziec jako egzystencjalne zagrożenie, co pozwala na płynną homeostazę układu krążenia i układu hormonalnego.'
+          ]
+        },
         {
           title: 'Technika Etykietowania Afektu (Affect Labeling)',
           paragraphs: [

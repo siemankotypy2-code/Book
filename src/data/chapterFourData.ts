@@ -239,13 +239,14 @@ export const chapterFour: Chapter = {
       id: 'sec-4-3',
       pageNumber: 233,
       sectionNumber: '4.3',
-      title: 'Mózg jako Maszyna Predykcyjna (Predictive Processing Framework)',
+      title: 'Mózg jako Maszyna Predykcyjna (Predictive Processing i Mózg Bayesowski)',
       category: 'neuronauka',
       readingTimeMinutes: 16,
       paragraphs: [
-        'Przez dekady psychologia traktowała mózg jako pasywny odbiornik – urządzenie, które czeka na sygnał, przetwarza go i wypluwa reakcję. Przełom w neuronauce XX-wiecznej (pionierzy: Karl Friston, Andy Clark, Jakob Hohwy) przyniósł zupełnie nowy model: PREDIKCYJNE PRZETWARZANIE (Predictive Processing).',
-        'Zgodnie z tym modelem, Twój mózg usadzony w ciemnej, kościstej pusze czaszki NIE CZEKA na sygnały zewnątrz. On nieustannie generuje ODGÓRNE PRZEWIDYWANIA (Predictions / Generative Models) na temat tego, co powinno nastąpić w kolejnej milisekundzie.',
-        'Sygnały ze zmysłów służą mózgowi wyłącznie do jednego celu: do sprawdzania, czy jego przewidywanie było trafne! Jeśli wystąpi rozbieżność między oczekiwaniem a sygnałem, powstaje tzw. BŁĄD PREDIKCJI (Prediction Error). Dopiero ten błąd wędruje w górę i koryguje nasz wewnętrzny model świata.'
+        'Przez dekady w psychologii dominował tzw. model biernego odbiornika: oko rejestruje fotony jak soczewka aparatu fotograficznego, przesyła sygnał po nerwie wzrokowym, a kora składa z tego wierny obraz świata. Współczesna neuronauka poznawcza całkowicie odrzuciła ten naiwny pogląd na rzecz koncepcji PRZETWARZANIA PREDYKCYJNEGO (Predictive Processing) oraz hipotezy MÓZGU BAYESOWSKIEGO (Bayesian Brain), wywodzącej się z idei „nieświadomego wnioskowania” Hermanna von Helmholtza i rozwiniętej przez Karla Fristona i Andy\'ego Clarka.',
+        'Zgodnie z tą przełomową teorią, Twój mózg usadzony w absolutnej ciemności kościstej puszki czaszki NIE CZEKA na bodźce ze świata zewnętrznego. Zamiast tego bezustannie generuje ODGÓRNE HIPOTEZY i PRZEWIDYWANIA (tzw. Priors — przekonania pierwotne oparte na wcześniejszym doświadczeniu, ewolucji i pamięci).',
+        'Kora mózgowa przesyła te predykcje w dół hierarchii sensorycznej. Sygnały wpadające przez siatkówkę oka czy błonę bębenkową nie służą do „tworzenia obrazu”, lecz wyłącznie do konfrontacji z modelem: jeśli sygnał zmysłowy różni się od oczekiwania, powstaje tzw. BŁĄD PREDIKCJI (Prediction Error).',
+        'Świadome spostrzeżenie (tzw. Posterior) to w ujęciu statystyki bayesowskiej optymalny kompromis pomiędzy tym, czego mózg się spodziewał (Prior), a tym, co zasygnalizowały narządy zmysłów (Likelihood). Co fascynujące, uwaga pełni w tym procesie rolę tzw. ważenia precyzji (Precision Weighting): skierowanie uwagi na dany obiekt zwiększa zaufanie do błędu predykcji, zmuszając mózg do skorygowania wcześniejszych założeń.'
       ],
       subsections: [
         {
@@ -297,13 +298,27 @@ export const chapterFour: Chapter = {
       id: 'sec-4-6',
       pageNumber: 251,
       sectionNumber: '4.6',
-      title: 'Stałość Percepcyjna (Perceptual Constancy) i Złudzenia Optyczne',
+      title: 'Stałość Percepcyjna (Perceptual Constancy) i Złudzenia Optyczne jako Triumf Wnioskowania',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Gdy znajomy oddala się od Ciebie ulicą na odległość 50 metrów, obraz jego sylwetki na Twojej siatkówce zmniejsza się ponad dziesięciokrotnie. Dlaczego nie krzyczysz: „Mój Boże, mój kolega skurczył się do rozmiarów krasnala!”?',
-        'Dzięki mechanizmowi STAŁOŚCI WIELKOŚCI (Size Constancy) mózg automatycznie przelicza odległość i utrzymuje stałe poczucie rozmiaru obiektu.',
-        'Ten sam mechanizm odpowiada za Stałość Jasności i Koloru. Gdy w 2015 roku internet oszalał na punkcie słynnego zdjęcia „Sukienki” (The Dress – czy jest biało-złota, czy niebiesko-czarna?), spór wynikał właśnie z tego, jak mózg każdego obserwatora automatycznie „odejmował” domniemane oświetlenie sceny (światło dzienne vs sztuczne światło żółte).'
+        'Gdy znajomy oddala się od Ciebie ulicą na odległość 50 metrów, obraz jego sylwetki rzutowany na Twoją siatkówkę zmniejsza się ponad dziesięciokrotnie. Dlaczego nie krzyczysz w panice: „Mój znajomy skurczył się do rozmiarów krasnala!”?',
+        'Dzięki mechanizmowi STAŁOŚCI WIELKOŚCI (Size Constancy) mózg automatycznie przelicza odległość i utrzymuje stałe poczucie rozmiaru obiektu. Wynika to z faktu, że widzenie rozwiązuje tzw. PROBLEM ODWROTNY W OPTYCE (Inverse Optics Problem): nieskończenie wiele różnych trójwymiarowych obiektów może dać dokładnie taki sam dwuwymiarowy rzut na siatkówce. Mózg musi zatem zgadywać najbardziej prawdopodobną przyczynę fizyczną.',
+        'Ten sam mechanizm odpowiada za Stałość Jasności i Koloru. Gdy w 2015 roku internet oszalał na punkcie słynnego zdjęcia „Sukienki” (The Dress – czy jest biało-złota, czy niebiesko-czarna?), spór wynikał właśnie z tego, jak mózg każdego obserwatora automatycznie „odejmował” domniemane oświetlenie sceny (światło dzienne chłodne vs sztuczne światło ciepłe).'
+      ],
+      subsections: [
+        {
+          title: 'Szachownica Adelsona: Dlaczego Złudzenia NIE SĄ Wadą Mózgu?',
+          paragraphs: [
+            'W słynnym złudzeniu szachownicy Edwarda Adelsona z MIT dwa pola oznaczona literami A i B wydają się diametralnie różne — pole A wygląda na ciemnoszary kwadrat, a pole B na jasny kwadrat w cieniu cylindra. Jednak pomiar fotometryczny w programie graficznym ujawnia szokujący fakt: oba pola odbijają DOKŁADNIE IDENTYCZNĄ liczbę fotonów i mają tę samą wartość RGB (120, 120, 120)!',
+            'Wielu uważa to za dowód na „ułomność ludzkich zmysłów”. W rzeczywistości jest dokładnie na odwrót: to dowód na absolutny geniusz wnioskowania statystycznego! W realnym świecie obiekt leżący w cieniu odbija mniej światła. Gdyby mózg widział tylko surowe fotony (jak światłomierz), uznałby białą koszulę w cieniu za czarną. Aby odtworzyć obiektywną prawdę o materii, mózg MUSI uwzględnić cień i sztucznie rozjaśnić pole B. To, co nazywamy złudzeniem optycznym, jest po prostu ujawnieniem genialnych, optymalnych reguł bayesowskich, bez których bylibyśmy w świecie zupełnie ślepi.'
+          ],
+          highlightBox: {
+            title: 'Wgląd w Architekturę Percepcji',
+            content: 'Złudzenia zmysłowe nie dowodzą, że Twój mózg jest zepsuty. Dowodzą, że Twój mózg jest wybitnym matematykiem probabilistycznym, który rozwiązuje niejednoznaczne równania fizyki w ułamku sekundy.',
+            type: 'insight'
+          }
+        }
       ]
     },
     {

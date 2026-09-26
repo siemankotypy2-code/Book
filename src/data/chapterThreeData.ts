@@ -214,12 +214,26 @@ export const chapterThree: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Uwaga nie jest jednolitą strukturą. To złożona sieć neuronalna, składająca się z trzech głównych podsystemów (zgodnie z modelem Michaela Posnera):',
-        '1. UWAGA SELEKTYWNA (Selective Attention): Umiejętność wyłowienia konkretnego bodźca z tła pełnego szumu (np. słuchanie głosu rozmówcy w hałaśliwej restauracji – tzw. Efekt Cocktail Party). Reflektor uwagi oświetla wybrany obiekt, przesuwając resztę bodźców w mrok nieświadomości.',
-        '2. UWAGA SKUPIONA / PODTRZYMYWANA (Sustained Attention / Vigilance): Zdolność do utrzymania ciągłej czujności i skupienia na jednym zadaniu przez dłuższy czas bez rozpraszania się (np. praca nad skomplikowanym kodem lub długi lot samolotem).',
-        '3. UWAGA PODZIELNA (Divided Attention): Zdolność do równoległego przetwarzania informacji z dwóch lub więcej źródeł. Współczesna neurobiologia jednoznacznie dowodzi, że uwaga podzielna jest możliwa TYLKO WTEDY, gdy przynajmniej jedno z zadań jest w pełni zautomatyzowane (np. chodzenie i rozmowa) i nie angażuje zasobów kory przedczołowej.'
+        'Uwaga nie jest pojedynczym, jednolitym organem. To wysoce wyspecjalizowana sieć neuronalna. Zgodnie z przełomowymi pracami Michaela Posnera i Jamesa Petersena, możemy wyróżnić trzy fundamentalne podsystemy uwagi:',
+        '1. UWAGA SELEKTYWNA (Selective Attention): Umiejętność wyłowienia konkretnego bodźca z morza szumu sensorycznego (np. słuchanie głosu rozmówcy w głośnej kawiarni — tzw. Efekt Cocktail Party). Reflektor uwagi oświetla wybrany obiekt, przesuwając resztę bodźców w cień nieświadomości.',
+        '2. UWAGA SKUPIONA / PODTRZYMYWANA (Sustained Attention / Vigilance): Zdolność do utrzymania ciągłej czujności i skupienia na jednym zadaniu przez dłuższy czas bez ulegania dystrakcjom (np. programowanie, czytanie sprawozdania finansowego czy monitorowanie radaru).',
+        '3. UWAGA PODZIELNA (Divided Attention): Zdolność do równoległego przetwarzania informacji z dwóch źródeł. Współczesna neurobiologia jednoznacznie dowodzi, że uwaga podzielna jest możliwa TYLKO WTEDY, gdy jedno z zadań jest w pełni zautomatyzowane (np. marsz i rozmowa) i nie angażuje zasobów kory przedczołowej.'
       ],
       subsections: [
+        {
+          title: 'Wielka Debata o Filtrze Uwagi: Broadbent, Treisman oraz Deutsch & Deutsch',
+          paragraphs: [
+            'W psychologii poznawczej przez dekady toczył się spór o to, w którym dokładnie momencie nasz mózg filtruje niechciane informacje:',
+            '• Model Wczesnej Selekcji (Donald Broadbent, 1958): Filtr działa jak fizyczna zwrotnica bezpośrednio po rejestracji zmysłowej. Wszystko, na co nie jest skierowana uwaga, zostaje bezpowrotnie odrzucone przed analizą znaczenia.',
+            '• Model Osłabienia / Ściszenia (Anne Treisman, 1964): Sygnały nienadzorowane nie są całkowicie kasowane, lecz „przyciszane” (osłabiane). Jeśli w przyciszonym tle pojawi się bodziec o skrajnie niskim progu aktywacji (np. Twoje własne imię wypowiedziane na drugim końcu sali lub krzyk „Pożar!”), przedrze się on przez osłabiony filtr do świadomości.',
+            '• Model Późnej Selekcji (J. Anthony Deutsch i Donald Deutsch, 1963): Mózg podświadomie analizuje semantycznie (znaczeniowo) wszystkie napływające bodźce, a selektywne wąskie gardło pojawia się dopiero tuż przed wyborem reakcji motorycznej i zapisem w pamięci roboczej.'
+          ],
+          highlightBox: {
+            title: 'Wgląd w Architekturę Poznawczą',
+            content: 'Nasz mózg łączy elementy modelu Treisman i późnej selekcji: nieświadome sieci korowe nieustannie analizują otoczenie w poszukiwaniu sygnałów kluczowych dla przetrwania i statusu, wpuszczając do świadomego reflektora tylko to, co uzyskana najwyższy priorytet behawioralny.',
+            type: 'insight'
+          }
+        },
         {
           title: 'Zasoby Uwagi: Model Jednego Zbiornika Daniela Kahnemana',
           paragraphs: [
@@ -265,10 +279,19 @@ export const chapterThree: Chapter = {
       category: 'neuronauka',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Kto tak naprawdę kieruje reflektorem Twojej uwagi? W naszym mózgu trwa nieustanny wyścig zbrojeń pomiędzy dwoma sieciami neuronalnymi:',
-        '1. SIECI ODGÓRNA / CZERWONA (Top-Down Attention / Executive Network): Sterowana przez korę przedczołową i płat ciemieniowy. To świadoma, wolicjonalna kontrola. Włączasz ją, gdy mówisz sobie: „Przez najbliższe 45 minut czytam wyłącznie ten rozdział książki”. Wymaga stałego nakładu energii metabolicznej.',
-        '2. SIECI ODDOLNA / AUTOMATYCZNA (Bottom-Up Attention / Salience Network): Sterowana przez wzgórek górny (Superior Colliculus), brzuszne pole ciemieniowo-skroniowe oraz ciało migdałowate. Działa automatycznie na bodźce wyraziste, niespodziewane lub zagrażające: głośny huk, jaskrawa czerwona kropka powiadomienia, ruch w kącie oka, wypowiedzenie Twojego imienia.',
-        'Projektanci aplikacji i mediów społecznościowych bezlitośnie wykorzystują oddolny obwód uwagi. Każde powiadomienie pushing z dźwiękiem lub wibracją wywołuje bezwarunkowy odruch orientacyjny, rozbijając odgórną kontrolę kory przedczołowej.'
+        'Kto tak naprawdę kieruje reflektorem Twojej uwagi? W naszym mózgu trwa nieustanny wyścig zbrojeń pomiędzy dwoma wielkimi sieciami czołowo-ciemieniowymi, zidentyfikowanymi przez Maurizio Corbettę i Gordona Shulmana (2002):',
+        '1. GRZBIETOWA SIEĆ UWAGI (Dorsal Attention Network - DAN / Odgórna): Obejmuje bruzdę śródciemieniową (IPS) oraz pole czołowe oczu (FEF). Odpowiada za wolicjonalne, endogenne kierowanie reflektora na cele wyznaczone przez korę przedczołową („Teraz skupiam się wyłącznie na pisaniu kodu”). DAN wysyła sygnały zstępujące do wczesnej kory zmysłowej, wzmacniając neurony kodujące pożądane cechy i wygaszając tło.',
+        '2. BRZUSZNA SIEĆ UWAGI (Ventral Attention Network - VAN / Oddolna): Obejmuje skrzyżowanie skroniowo-ciemieniowe (TPJ) oraz brzuszną korę czołową (VFC: zakręt czołowy dolny i środkowy). Działa jak automatyczny wyłącznik bezpieczeństwa (Circuit-Breaker). Nie jest aktywna podczas stałego skupienia, lecz gwałtownie odpala się, gdy w polu sensorycznym pojawi się bodziec niespodziewany, wyrazisty lub istotny życiowo (huk, jaskrawe powiadomienie, krzyk). Wtedy VAN przerywa pracę sieci DAN i zmusza reflektor do natychmiastowego obrotu ku intruzowi.',
+        'Współczesna gospodarka uwagi (Attention Economy) to wielomiliardowy przemysł inżynierii cyfrowej, którego jedynym celem jest bezwzględne hakowanie Twojej sieci brzusznej (VAN) za pomocą wibracji, badge’y i animacji, aby uniemożliwić sieci grzbietowej (DAN) utrzymanie głębokiego skupienia.'
+      ],
+      subsections: [
+        {
+          title: 'Neuroergonomia Skupienia: Jak Chronić Sieć Grzbietową?',
+          paragraphs: [
+            'Skoro sieć brzuszna (VAN) jest ewolucyjnie bezwarunkowym odruchem orientacyjnym, nie wygrasz z nią samą „siłą woli”. Jeśli telefon leży w polu widzenia, każdy rozbłysk ekranu automatycznie aktywuje VAN.',
+            'Jedyną skuteczną obroną poznawczą jest higiena środowiskowa: usunięcie wyzwalaczy sensorycznych (fizyczne odłożenie telefonu do innego pokoju, praca w trybie pełnoekranowym, wyłączenie powiadomień wizualnych). Wtedy sieć grzbietowa może pracować bez ciągłego resetowania jej engramów.'
+          ]
+        }
       ]
     },
     {
