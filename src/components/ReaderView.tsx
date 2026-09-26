@@ -13,6 +13,9 @@ import { CognitiveBudgetSim } from './CognitiveBudgetSim';
 import { ChapterOneLab } from './ChapterOneLab';
 import { ChapterOneFinalTest } from './ChapterOneFinalTest';
 import { DecisionProcessMap } from './DecisionProcessMap';
+import { EmotionalReactionWidget } from './EmotionalReactionWidget';
+import { PerceptionExperimentWidget } from './PerceptionExperimentWidget';
+import { MemoryExperimentWidget } from './MemoryExperimentWidget';
 import {
   ChevronLeft,
   ChevronRight,
@@ -180,28 +183,25 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           ))}
         </article>
 
-        {/* SECTION 1.1: MicroChoice Dilemma Widget (Sytuacja Michała) */}
+        {/* --- CHAPTER 1 WIDGETS --- */}
         {activeSection.sectionNumber === '1.1' && (
           <div className="my-10">
             <MicroChoiceWidget />
           </div>
         )}
 
-        {/* SECTION 1.2: Dual Process Visualizer (System 1 vs System 2) */}
         {activeSection.sectionNumber === '1.2' && (
           <div className="my-10">
             <DualProcessVisualizer />
           </div>
         )}
 
-        {/* SECTION 1.3: Interactive Decision Simulator */}
         {activeSection.sectionNumber === '1.3' && (
           <div className="my-10">
             <InteractiveDecisionSim />
           </div>
         )}
 
-        {/* SECTION 1.4: Brain Neuro Widget & Diagnostic Test */}
         {activeSection.sectionNumber === '1.4' && (
           <div className="my-10 space-y-10">
             <BrainNeuroWidget />
@@ -209,10 +209,37 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </div>
         )}
 
-        {/* SECTION 1.5: Attention Experiment Widget (Stroop & Selective Attention) */}
         {activeSection.sectionNumber === '1.5' && (
           <div className="my-10">
             <AttentionExperimentWidget />
+          </div>
+        )}
+
+        {/* --- CHAPTER 2 WIDGETS --- */}
+        {(activeSection.sectionNumber === '2.3' || activeSection.sectionNumber === '2.6') && (
+          <div className="my-10">
+            <EmotionalReactionWidget />
+          </div>
+        )}
+
+        {/* --- CHAPTER 3 WIDGETS --- */}
+        {(activeSection.sectionNumber === '3.1' || activeSection.sectionNumber === '3.3') && (
+          <div className="my-10">
+            <AttentionExperimentWidget />
+          </div>
+        )}
+
+        {/* --- CHAPTER 4 WIDGETS --- */}
+        {(activeSection.sectionNumber === '4.2' || activeSection.sectionNumber === '4.3') && (
+          <div className="my-10">
+            <PerceptionExperimentWidget />
+          </div>
+        )}
+
+        {/* --- CHAPTER 5 WIDGETS --- */}
+        {(activeSection.sectionNumber === '5.2' || activeSection.sectionNumber === '5.4') && (
+          <div className="my-10">
+            <MemoryExperimentWidget />
           </div>
         )}
 
@@ -337,7 +364,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </button>
 
           <div className="text-xs font-mono text-stone-400">
-            Rozdział 1 • Sekcja {activeSection.sectionNumber} z {chapter.sections.length}
+            Rozdział {chapter.number} • Sekcja {activeSection.sectionNumber} z {chapter.sections.length}
           </div>
 
           <button

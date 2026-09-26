@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Chapter, BookSection } from '../types/book';
-import { Book, Bookmark, CheckCircle2, ChevronRight, Clock, Sparkles, X, Layers } from 'lucide-react';
+import { Book, Bookmark, CheckCircle2, ChevronRight, Clock, Sparkles, X, Layers, BookOpen } from 'lucide-react';
 
 interface BookTableOfContentsProps {
-  chapter: Chapter;
+  chapters: Chapter[];
+  activeChapterNumber: number;
   activeSectionId: string;
-  onSelectSection: (sectionId: string) => void;
+  onSelectSection: (chapterNumber: number, sectionId: string) => void;
   isOpen: boolean;
   onClose: () => void;
   completedSections: string[];
 }
 
 export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
-  chapter,
+  chapters,
+  activeChapterNumber,
   activeSectionId,
   onSelectSection,
   isOpen,
   onClose,
   completedSections
 }) => {
+  const [selectedChapterTab, setSelectedChapterTab] = useState<number>(activeChapterNumber);
+
   if (!isOpen) return null;
+
+  const currentTabChapter = chapters.find((c) => c.number === selectedChapterTab) || chapters[0];
 
   const categoryLabels: Record<BookSection['category'], { label: string; bg: string; text: string }> = {
     wstep: { label: 'Wprowadzenie', bg: 'bg-amber-100', text: 'text-amber-800' },
@@ -30,7 +36,7 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
     podsumowanie: { label: 'Podsumowanie & Most', bg: 'bg-stone-200', text: 'text-stone-800' }
   };
 
-  const totalReadingMinutes = chapter.sections.reduce((acc, s) => acc + s.readingTimeMinutes, 0);
+  const totalReadingMinutes = currentTabChapter.sections.reduce((acc, s) => acc + s.readingTimeMinutes, 0);
 
   return (
     <div className="fixed inset-0 z-50 flex font-sans">
@@ -41,22 +47,22 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
       />
 
       {/* Drawer */}
-      <div className="relative ml-auto w-full max-w-md bg-[#FAF7F2] text-stone-900 h-full shadow-2xl flex flex-col border-l border-amber-900/15 z-10 animate-slideLeft">
+      <div className="relative ml-auto w-full max-w-lg bg-[#FAF7F2] text-stone-900 h-full shadow-2xl flex flex-col border-l border-amber-900/15 z-10 animate-slideLeft">
         {/* Header */}
         <div className="p-5 sm:p-6 border-b border-amber-900/10 bg-amber-50/60 flex items-center justify-between">
           <div>
             <span className="text-[11px] font-mono uppercase tracking-widest text-amber-800 font-bold block">
-              Spis Treści i Nawigacja
+              Tom I • Część I: Architektura Umysłu
             </span>
             <h3 className="font-serif text-lg font-bold text-stone-900 mt-0.5">
-              Rozdział {chapter.number}: Architektura Umysłu
+              Spis Treści i Nawigacja
             </h3>
             <div className="flex items-center space-x-3 text-xs text-stone-500 font-mono mt-1">
-              <span>{chapter.sections.length} Modułów</span>
+              <span>5 Rozdziałów</span>
               <span>•</span>
               <span className="flex items-center gap-1">
                 <Clock className="w-3 h-3" />
-                ~{totalReadingMinutes} min lektury
+                ~{chapters.reduce((acc, c) => acc + c.sections.reduce((sAcc, s) => sAcc + s.readingTimeMinutes, 0), 0)} min pełnej części
               </span>
             </div>
           </div>
@@ -69,9 +75,43 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
           </button>
         </div>
 
+        {/* Chapter Tabs Bar */}
+        <div className="px-4 py-3 bg-stone-100 border-b border-stone-200 flex space-x-1.5 overflow-x-auto text-xs font-mono">
+          {chapters.map((ch) => {
+            const isTabActive = ch.number === selectedChapterTab;
+            return (
+              <button
+                key={ch.number}
+                onClick={() => setSelectedChapterTab(ch.number)}
+                className={`px-3 py-1.5 rounded-lg whitespace-nowrap transition flex items-center gap-1.5 ${
+                  isTabActive
+                    ? 'bg-amber-800 text-white font-bold shadow-xs'
+                    : 'bg-white text-stone-700 hover:bg-stone-200 border border-stone-200'
+                }`}
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Rozdział {ch.number}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Active Chapter Title & Subtitle */}
+        <div className="p-4 bg-amber-50/40 border-b border-amber-900/10">
+          <span className="text-[10px] font-mono uppercase text-amber-800 font-bold block">
+            Wybrany Rozdział {currentTabChapter.number}
+          </span>
+          <h4 className="font-serif font-bold text-base text-stone-900">
+            {currentTabChapter.title}
+          </h4>
+          <p className="text-xs text-stone-600 font-serif italic mt-0.5">
+            „{currentTabChapter.subtitle}”
+          </p>
+        </div>
+
         {/* Section List */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-2">
-          {chapter.sections.map((section) => {
+          {currentTabChapter.sections.map((section) => {
             const isActive = section.id === activeSectionId;
             const isCompleted = completedSections.includes(section.id);
             const cat = categoryLabels[section.category];
@@ -80,12 +120,12 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
               <button
                 key={section.id}
                 onClick={() => {
-                  onSelectSection(section.id);
+                  onSelectSection(currentTabChapter.number, section.id);
                   onClose();
                 }}
                 className={`w-full text-left p-3.5 rounded-xl border transition-all flex items-start space-x-3 group ${
                   isActive
-                    ? 'bg-amber-100/70 border-amber-400/80 shadow-xs'
+                    ? 'bg-amber-100/70 border-amber-400/80 shadow-xs ring-1 ring-amber-400'
                     : 'bg-white/80 hover:bg-stone-100/80 border-stone-200/80'
                 }`}
               >
@@ -114,7 +154,7 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
                     {section.title}
                   </h4>
                   <div className="text-[11px] font-mono text-stone-400 mt-1">
-                    Strona {section.pageNumber} z {chapter.totalEstimatedPages}
+                    Strona {section.pageNumber} z {currentTabChapter.totalEstimatedPages}
                   </div>
                 </div>
 
@@ -122,28 +162,6 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
               </button>
             );
           })}
-
-          {/* Roadmap of Future Chapters */}
-          <div className="mt-6 pt-5 border-t border-stone-200">
-            <span className="text-xs font-mono uppercase tracking-widest text-stone-400 font-bold block mb-3">
-              Plan Kolejnych Rozdziałów Książki
-            </span>
-
-            <div className="space-y-2 opacity-70">
-              <div className="p-3 rounded-lg bg-stone-100 border border-stone-200 text-xs">
-                <span className="font-bold block text-stone-800">Rozdział 2: Anatomia Ciemnej Triady</span>
-                <span className="text-stone-600">Narcyzm, Makiawelizm i Psychopatia w życiu codziennym</span>
-              </div>
-              <div className="p-3 rounded-lg bg-stone-100 border border-stone-200 text-xs">
-                <span className="font-bold block text-stone-800">Rozdział 3: Społeczny Mózg i Konformizm</span>
-                <span className="text-stone-600">Eksperymenty Ascha, posłuszeństwo i presja plemienna</span>
-              </div>
-              <div className="p-3 rounded-lg bg-stone-100 border border-stone-200 text-xs">
-                <span className="font-bold block text-stone-800">Rozdział 4: Perswazja Etyczna & Nudge Theory</span>
-                <span className="text-stone-600">Architektura wyboru wg Thaler & Sunstein</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

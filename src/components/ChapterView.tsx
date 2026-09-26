@@ -1,5 +1,5 @@
 import React from 'react';
-import { Chapter, ReaderTheme, FontSize, Bookmark } from '../types/book';
+import { ModuleChapter, ReaderTheme, FontSize, Bookmark } from '../types/book';
 import { InteractiveToolRunner } from './InteractiveToolRunner';
 import { ExerciseSection } from './ExerciseSection';
 import { 
@@ -20,14 +20,14 @@ import {
 } from 'lucide-react';
 
 interface Props {
-  chapter: Chapter;
+  chapter: ModuleChapter;
   theme: ReaderTheme;
   fontSize: FontSize;
-  prevChapter?: Chapter;
-  nextChapter?: Chapter;
+  prevChapter?: ModuleChapter;
+  nextChapter?: ModuleChapter;
   onNavigateChapter: (chapterId: string) => void;
   isBookmarked: boolean;
-  onToggleBookmark: (chapter: Chapter) => void;
+  onToggleBookmark: (chapter: ModuleChapter) => void;
   onExerciseCompleted: () => void;
 }
 
@@ -44,13 +44,13 @@ export const ChapterView: React.FC<Props> = ({
 }) => {
   // Font size classes
   const fontBodyClass = 
-    fontSize === 'normal' ? 'text-base leading-relaxed sm:text-lg sm:leading-8' :
-    fontSize === 'large' ? 'text-lg leading-8 sm:text-xl sm:leading-9' :
+    fontSize === 'sm' ? 'text-base leading-relaxed sm:text-lg sm:leading-8' :
+    fontSize === 'base' ? 'text-lg leading-8 sm:text-xl sm:leading-9' :
     'text-xl leading-9 sm:text-2xl sm:leading-10';
 
   const fontTheoryClass = 
-    fontSize === 'normal' ? 'text-sm sm:text-base leading-relaxed' :
-    fontSize === 'large' ? 'text-base sm:text-lg leading-relaxed' :
+    fontSize === 'sm' ? 'text-sm sm:text-base leading-relaxed' :
+    fontSize === 'base' ? 'text-base sm:text-lg leading-relaxed' :
     'text-lg sm:text-xl leading-relaxed';
 
   return (

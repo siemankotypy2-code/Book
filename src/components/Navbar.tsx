@@ -11,10 +11,10 @@ import {
   BookmarkCheck,
   Award
 } from 'lucide-react';
-import { Chapter } from '../types/book';
+import { ModuleChapter } from '../types/book';
 
 interface Props {
-  activeChapter: Chapter;
+  activeChapter: ModuleChapter;
   currentChapterIndex: number;
   totalChapters: number;
   readingProgress: number; // 0 to 100 scroll percentage of active chapter

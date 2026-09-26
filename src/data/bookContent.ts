@@ -13,6 +13,8 @@ export const BOOK_MODULES: Module[] = [
   MODULE_5
 ];
 
+import { ModuleChapter } from '../types/book';
+
 export const BOOK_METADATA = {
   title: 'Anatomia Umysłu: Psychologia, Neuronauka i Wpływ',
   subtitle: 'Praktyczny przewodnik po ludzkich zachowaniach, mechanizmach decyzji i sztuce porozumienia',
@@ -24,15 +26,15 @@ export const BOOK_METADATA = {
   description: 'Głęboka, oparta na dowodach naukowych podróż przez labirynt ludzkiej psychiki. Dziesięć rozdziałów, dziesięć realistycznych studiów przypadków z życia codziennego, precyzyjne analizy psychologiczne, wglądy neuronaukowe, interaktywne laboratoria decyzyjne oraz ćwiczenia samorozwojowe.'
 };
 
-export function getAllChapters(): Chapter[] {
+export function getAllChapters(): ModuleChapter[] {
   return BOOK_MODULES.flatMap(m => m.chapters);
 }
 
-export function getChapterById(id: string): Chapter | undefined {
+export function getChapterById(id: string): ModuleChapter | undefined {
   return getAllChapters().find(c => c.id === id);
 }
 
-export function getAdjacentChapters(currentId: string): { prev?: Chapter; next?: Chapter } {
+export function getAdjacentChapters(currentId: string): { prev?: ModuleChapter; next?: ModuleChapter } {
   const all = getAllChapters();
   const index = all.findIndex(c => c.id === currentId);
   if (index === -1) return {};
@@ -43,13 +45,13 @@ export function getAdjacentChapters(currentId: string): { prev?: Chapter; next?:
 }
 
 export function searchBook(query: string): {
-  chapter: Chapter;
+  chapter: ModuleChapter;
   matchedField: string;
   snippet: string;
 }[] {
   if (!query || query.trim().length < 2) return [];
   const q = query.toLowerCase().trim();
-  const results: { chapter: Chapter; matchedField: string; snippet: string }[] = [];
+  const results: { chapter: ModuleChapter; matchedField: string; snippet: string }[] = [];
 
   for (const chapter of getAllChapters()) {
     if (chapter.title.toLowerCase().includes(q)) {

@@ -171,9 +171,21 @@ export interface ModuleChapterStep {
   stepNumber: number;
   title: string;
   description: string;
-  inputType: 'text' | 'textarea';
-  promptQuestion: string;
+  inputType: 'text' | 'textarea' | 'checklist';
+  promptQuestion?: string;
+  options?: string[];
 }
+
+export interface Bookmark {
+  id: string;
+  chapterId: string;
+  sectionId?: string;
+  createdAt?: string;
+}
+
+export type ChapterExercise = ModuleChapterExercise;
+export type UserExerciseResponse = any;
+export type InteractiveToolConfig = ModuleChapterInteractiveTool;
 
 export interface ModuleChapterExercise {
   id: string;

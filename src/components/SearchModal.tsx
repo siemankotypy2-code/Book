@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { searchBook } from '../data/bookContent';
-import { Chapter } from '../types/book';
+import { ModuleChapter } from '../types/book';
 import { Search, X, BookOpen, ArrowRight, CornerDownLeft } from 'lucide-react';
 
 interface Props {
