@@ -26,12 +26,12 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
       { label: 'C', text: 'Trwałe unikanie kontaktów z ludźmi z innych krajów.', isCorrect: false },
       { label: 'D', text: 'Przekonanie, że każdy człowiek ma dokładnie te same cechy charakteru.', isCorrect: false }
     ],
-    explanation: 'Mózg dąży do spójności (cognitive consistency). Gdy przyjmujesz etykietę „nieśmiałego”, ciało migdałowate traktuje próbę publicznego zabrania głosu jako złamanie wewnętrznego skryptu.',
+    explanation: 'Potrzeba spójności może sprawiać, że zachowanie niepasujące do przyjętej etykiety wywołuje napięcie lub skłania do wyjaśniania sytuacji w sposób zgodny z dotychczasowym obrazem siebie. Nie należy jednak przypisywać tej reakcji jednemu obszarowi mózgu.',
     keyTakeaway: 'Etykieta staje się samospełniającą się przepowiednią, gdy pomylisz chwilowy nawyk ze sztywną cechą.'
   },
   {
     id: 3,
-    question: 'W jaki sposób Domyślna Sieć Neuronalna (Default Mode Network – DMN) uczestniczy w tworzeniu narracji autobiograficznej?',
+    question: 'W jaki sposób aktywność Domyślnej Sieci Neuronalnej (Default Mode Network – DMN) może wiązać się z przetwarzaniem informacji o sobie i własnej przeszłości?',
     topic: 'Neuronauka Tożsamości',
     sectionRef: 'Sekcja 17.1',
     options: [
@@ -40,8 +40,8 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
       { label: 'C', text: 'Aktywuje się wyłącznie w trakcie rozwiązywania skomplikowanych równań różniczkowych.', isCorrect: false },
       { label: 'D', text: 'Jest odpowiedzialna za skurcze mięśni gładkich układu pokarmowego.', isCorrect: false }
     ],
-    explanation: 'Gdy nie rozwiązujemy zadania celowego, DMN generuje wewnętrzny monolog i opowieść autobiograficzną. To tam rekonstruowane są sensy i interpretacje minionych zdarzeń.',
-    keyTakeaway: 'Tożsamość jest wynikiem ciągłej pracy DMN, a nie jednorazowo wykutej rzeźby.'
+    explanation: 'Aktywność DMN jest związana między innymi z przetwarzaniem informacji o sobie, wspomnieniami autobiograficznymi i wyobrażeniami dotyczącymi przyszłości. Nie oznacza to, że cała narracja o sobie powstaje wyłącznie w tej sieci.',
+    keyTakeaway: 'Tożsamość jest związana z wieloma współdziałającymi procesami poznawczymi i społecznymi, a nie z jednym mechanizmem mózgowym.'
   },
   {
     id: 4,
@@ -101,7 +101,7 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
   },
   {
     id: 8,
-    question: 'Co według Carol Dweck dzieje się w mózgu osoby o nastawieniu na rozwój (Growth Mindset), gdy napotyka porażkę tożsamościową?',
+    question: 'Jak nastawienie na rozwój (Growth Mindset) zmienia interpretację niepowodzenia?',
     topic: 'Growth Mindset a Tożsamość',
     sectionRef: 'Sekcja 17.13',
     options: [
@@ -129,7 +129,7 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
   },
   {
     id: 10,
-    question: 'Jakie zagrożenie niesie ze sobą nadmierna obrona obrazu siebie (Identity Preservation Bias) w obliczu nowych, twardych faktów?',
+    question: 'Jakie zagrożenie niesie ze sobą silna tendencja do obrony dotychczasowego obrazu siebie w obliczu nowych, sprzecznych danych?',
     topic: 'Obrona Obrazu Siebie',
     sectionRef: 'Sekcja 17.10',
     options: [
@@ -773,7 +773,7 @@ export const selfExercisesChapterSeventeen: SelfExercise[] = [
     subtitle: 'Przekształcanie sztywnych przekonań tożsamościowych w plastyczne opisy behawioralne',
     objective: 'Identyfikacja ograniczających etykiet na własny temat i zamiana ich na elastyczny opis sytuacji oraz nawyków.',
     durationMinutes: 20,
-    neuroScientificFoundation: 'Neuroplastyczność kory przedczołowej wymaga przełamania utrwalonych obwodów Domyślnej Sieci Neuronalnej (DMN), które automatycznie aktywują starą narrację o sobie.',
+    neuroScientificFoundation: 'Zmiana sposobu myślenia i działania może wiązać się z uczeniem i plastycznością układu nerwowego; nie wymaga jednak prostego modelu „przełamywania obwodów DMN”.',
     steps: [
       {
         stepNumber: 1,
@@ -1006,7 +1006,7 @@ export const chapterSeventeen: Chapter = {
       },
       paragraphs: [
         'Wielu ludzi spędza całe życie na poszukiwaniu tzw. „prawdziwego ja”, żywiąc głębokie przekonanie, że gdzieś wewnątrz nich istnieje stały, nieprzetworzony rdzeń osobowości. Oczekują, że pewnego dnia natrafią na ten fundament i odtąd wszystkie decyzje staną się proste. Jest to jednak jedna z najbardziej powszechnych iluzji poznawczych.',
-        'Współczesna neuronauka poznawcza wyraźnie pokazuje, że mózg nie posiada jednego „ośrodka jaźni”. Wyobrażenie o sobie powstaje w wyniku skoordynowanej pracy Domyślnej Sieci Neuronalnej (Default Mode Network – DMN), która łączy fragmenty wspomnień, wyobrażenia przyszłości, oceny społeczne i sygnały z ciała w jedną, spójną opowieść.',
+        'Nie ma jednego „ośrodka jaźni”. Obraz siebie jest związany z działaniem wielu współpracujących procesów i sieci mózgowych. DMN jest jedną z sieci istotnych dla przetwarzania informacji związanych z sobą, pamięcią autobiograficzną i wyobrażaniem przyszłości, ale nie wyjaśnia całej tożsamości samodzielnie.',
         'Gdy mówisz „Jestem introwertykiem”, „Jestem urodzonym liderem” lub „Nie mam talentu do języków”, nie opisujesz obiektywnego faktu fizycznego, takiego jak wzrost czy grupa krvi. Wyrażasz w ten sposób zrekonstruowaną hipotezę tożsamościową, do której Twój umysł dopasował wybrane dowody z przeszłości.',
         'Ta hipoteza staje się soczewką, przez którą przesiewasz każde nowe doświadczenie. Zrozumienie procesowego charakteru tożsamości zdejmuje z nas ciężar esencjalizmu i otwiera przestrzeń do świadomej autotransformacji.'
       ],
@@ -1015,7 +1015,7 @@ export const chapterSeventeen: Chapter = {
           title: 'Dynamiczna rekonstrukcja self-concept',
           paragraphs: [
             'Obraz siebie (self-concept) ulega nieustannej aktualizacji. Każde nowe doświadczenie, odniesiony sukces czy poniesiona porażka jest przesiewana przez istniejące filtry, ale ma też potencjał do modyfikacji całej struktury.',
-            'Problem polega na tym, że umysł wykazuje potężny odruch zachowawczy (Identity Preservation Bias). Woli trzymać się znanej, nawet krzywdzącej etykiety, niż wejść w stan niepewności związany ze zmianą wyobrażenia o sobie.'
+            'Problem polega na tym, że człowiek może silnie preferować spójność dotychczasowego obrazu siebie. W efekcie może szukać uzasadnień, pomijać część danych lub reinterpretować informacje, które są z nim sprzeczne. Nie jest to jedna formalna „tendencja” wyjaśniająca każde zachowanie.'
           ],
           highlightBox: {
             title: 'Wgląd Neuronaukowy: DMN a narracja o sobie',
@@ -1082,7 +1082,7 @@ export const chapterSeventeen: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 9,
       paragraphs: [
-        'Kiedy powtarzasz sobie lub innym: „Ja już taki jestem”, uruchamiasz potężny mechanizm poznawczy. Mózg dąży do spójności (cognitive consistency). Jeśli uwierzysz, że jesteś osobą nieśmiałą, każda próba odezwania się na forum będzie traktowana przez ciało migdałowate jako zagrożenie dla przyjętej tożsamości.',
+        'Kiedy powtarzasz sobie „ja już taki jestem”, możesz wzmacniać interpretację nowych sytuacji przez dotychczasowy opis siebie. Próba odezwania się na forum może wtedy wywołać napięcie nie dlatego, że istnieje jeden mózgowy „ośrodek etykiety”, lecz dlatego, że sytuacja koliduje z oczekiwaniami i wcześniejszym doświadczeniem.',
         'Etykiety działają jak soczewka, która przepuszcza tylko te dowody, które potwierdzają przyjęty schemat. Błąd potłuczenia szklanki przez osobę o etykiecie „gajowy i niezgrabny” zostanie uznany za dowód reguły, podczas gdy u osoby o etykiecie „zręcznego sportowca” zostanie potraktowany jako przypadek.',
         'Proces ten, zwany self-stereotyping, sprawia, że ludzie dobrowolnie nakładają na siebie ograniczenia, unikając wyzwań, które mogłyby wzbogacić ich kompetencje.'
       ],
@@ -1097,7 +1097,7 @@ export const chapterSeventeen: Chapter = {
       readingTimeMinutes: 10,
       paragraphs: [
         'Większość ludzi wierzy, że wspomnienia są przechowywane w mózgu jak pliki MP4 na twardym dysku. Tymczasem odnajdywanie wspomnień jest procesem twórczym. Każde przywołanie wydarzenia z przeszłości jest jego ponownym przepisaniem w kontekście aktualnego stanu emocjonalnego.',
-        'Dan McAdams, badacz psychologii narracyjnej, wykazał, że tożsamość to wyreżyserowana opowieść, w której człowiek przydziela sobie rolę ofiary, bohatera, uciekiniera lub męczennika.',
+        'W koncepcji tożsamości narracyjnej Dana McAdamsa człowiek organizuje część doświadczeń w opowieść o własnym życiu, nadając wydarzeniom znaczenie i budując poczucie ciągłości.',
         'Zmieniając sposób opowiadania o swoich porażkach z przeszłości, zmienia się struktura połączeń neuronalnych odpowiedzialnych za odczuwanie lęku i sprawczości.'
       ]
     },
@@ -1280,7 +1280,7 @@ export const chapterSeventeen: Chapter = {
       category: 'podsumowanie',
       readingTimeMinutes: 6,
       paragraphs: [
-        '1. Tożsamość nie jest sztywnym rdzeniem, lecz dynamicznym procesem rekonstruowanym przez DMN.',
+        '1. Tożsamość nie jest sztywnym rdzeniem; jest kształtowana przez współdziałanie procesów poznawczych, społecznych, rozwojowych i biologicznych.',
         '2. Etykiety „ja taki jestem” działają jak samospełniające się przepowiednie, blokujące neuroplastyczność.',
         '3. Zamiana zdań esencjalistycznych na opisy behawioralne odzyskuje sprawczość w dlPFC.',
         '4. Zrównoważona tożsamość stoi na wielu niezależnych filarach i elastyczności w odgrywaniu ról.'
