@@ -253,6 +253,7 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
     explanation: 'Tożsamość procesowa pozwala na ciągły rozwój bez lęku, że zmiana poglądu jest dowodem na „zdradę samego siebie”.',
     keyTakeaway: 'Możesz zmieniać poglądy i zachowania, pozostając wiernym swojej drodze rozwoju.'
   }
+  { id: 19, question: "W analizie tożsamości ważne jest rozróżnienie między zachowaniem a etykietą. Dlaczego?", topic: "Tożsamość", sectionRef: "Sekcja 17.22", options: [{label:"A",text:"Bo etykieta zawsze jest fałszywa.",isCorrect:false},{label:"B",text:"Bo opis konkretnego zachowania łatwiej sprawdzić i zmienić niż globalny sąd o całej osobie.",isCorrect:true},{label:"C",text:"Bo zachowanie nie ma związku z tożsamością.",isCorrect:false},{label:"D",text:"Bo etykiety nie wpływają na decyzje.",isCorrect:false}], explanation: "Opis zachowania uwzględnia kontekst i pozostawia miejsce na korektę.", keyTakeaway: "Konkretny opis jest bardziej użyteczny niż globalna etykieta." },
 ];
 
 export const caseStudiesChapterSeventeen: CaseStudy[] = [
