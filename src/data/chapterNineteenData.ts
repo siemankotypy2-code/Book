@@ -3,897 +3,873 @@ import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 export const chapterNineteenExamQuestions: ExamQuestion[] = [
   {
     id: 1,
-    question: 'W psychologii Alberta Bandury poczucie własnej skuteczności (Self-efficacy) różni się od ogólnej samooceny (Self-esteem) tym, że:',
-    topic: 'Poczucie Własnej Skuteczności',
-    sectionRef: 'Sekcja 19.2',
+    question: 'W psychologii poznawczej i społecznej pojęcie „Poczucia Skuteczności” (Self-Efficacy, Albert Bandura) różni się od „Samooceny” (Self-Esteem) tym, że:',
+    topic: 'Samoocena vs Self-Efficacy',
+    sectionRef: 'Sekcja 19.1',
     options: [
-      { label: 'A', text: 'Self-efficacy dotyczy subiektywnego przekonania o własnej zdolności do wykonania konkretnego zadania, podczas gdy samoocena jest ogólną emocjonalną oceną własnej wartości.', isCorrect: true },
-      { label: 'B', text: 'Self-efficacy odnosi się tylko do sportowców wyczynowych.', isCorrect: false },
-      { label: 'C', text: 'Samoocena jest pojęciem genetycznym, a self-efficacy wygasa po skończeniu studiów.', isCorrect: false },
-      { label: 'D', text: 'Nie ma żadnej różnicy, to dwa synonimy z języka angielskiego.', isCorrect: false }
+      { label: 'A', text: 'Self-Efficacy to przekonanie o zdolności do wykonania konkretnego zadania, podczas gdy samoocena to ogólna wartościująca ocena własnej osoby jako człowieka.', isCorrect: true },
+      { label: 'B', text: 'Self-Efficacy dotyczy wzrostu ciała, a samoocena wykształcenia.', isCorrect: false },
+      { label: 'C', text: 'Nie ma żadnej różnicy, obydwa terminy oznaczają Dokładnie to samo.', isCorrect: false },
+      { label: 'D', text: 'Samoocena mierzy poziom dopaminy, a Self-Efficacy poziom serotoniny.', isCorrect: false }
     ],
-    explanation: 'Można posiadać wysokie poczucie skuteczności w programowaniu Python (wiedzieć „poradzę sobie z tym kodem”), mając jednocześnie niską ogólną samoocenę (czuć się bezwartościowym człowiekiem).',
-    keyTakeaway: 'Skuteczność to wiara w umiejętności w danej domenie, samoocena to stosunek do samego siebie jako człowieka.'
+    explanation: 'Można mieć wysokie poczucie skuteczności w grze w szachy („Wiem, że potrafię wygrać tę partię”), ale niską ogólną samoocenę („Uważam się za mało wartościowego człowieka”).',
+    keyTakeaway: 'Self-Efficacy dotyczy kompetencji wykonawczej, samoocena zaś ogólnego szacunku do samego siebie.'
   },
   {
     id: 2,
-    question: 'Co według badań Alberta Bandury jest najbardziej niezawodnym i trwałym źródłem budowania poczucia własnej skuteczności?',
-    topic: 'Źródła Skuteczności',
-    sectionRef: 'Sekcja 19.5',
+    question: 'Co według Alberta Bandury jest najsilniejszym źródłem budowania Poczucia Skuteczności (Self-Efficacy)?',
+    topic: 'Źródła Self-Efficacy',
+    sectionRef: 'Sekcja 19.4',
     options: [
-      { label: 'A', text: 'Doświadczenie opanowania (Mastery Experiences) – osobiste przeżycie sukcesu osiągniętego poprzez pokonanie przeszkód własnym wysiłkiem.', isCorrect: true },
-      { label: 'B', text: 'Powtarzanie sztucznych afirmacji przed lustrem bez podejmowania jakichkolwiek działań.', isCorrect: false },
-      { label: 'C', text: 'Wypicie napoju energetycznego przed przystąpieniem do pracy.', isCorrect: false },
-      { label: 'D', text: 'Słuchanie głośnej muzyki marszowej.', isCorrect: false }
+      { label: 'A', text: 'Doświadczenia opanowania (Mastery Experiences) — osobiste, empiryczne sukcesy osiągnięte poprzez pokonanie trudności.', isCorrect: true },
+      { label: 'B', text: 'Głośne powtarzanie pozytywnych afirmacji rano przed lustrem.', isCorrect: false },
+      { label: 'C', text: 'Oglądanie filmów motywacyjnych w internecie.', isCorrect: false },
+      { label: 'D', text: 'Unikanie jakichkolwiek wyzwań i trudnych zadań.', isCorrect: false }
     ],
-    explanation: 'Sztuczne komplementy dają chwilowe pobudzenie. Trwałe poczucie skuteczności buduje się wyłącznie na fundamencie pokonanych trudności i zrealizowanych zadań w świecie realnym.',
-    keyTakeaway: 'Nie zbudujesz wiary w siebie słowami — zbudujesz ją dowodami zebranymi w działaniu.'
+    explanation: 'Umysł nie wierzy pustym obietnicom. Najsilniejszym dowodem dla kory przedczołowej jest pamięć realnie pokonanych przeszkód w działaniu.',
+    keyTakeaway: 'Doświadczenie sprawstwa buduje się w działaniu, a nie w samej teorii.'
   },
   {
     id: 3,
-    question: 'Na czym polega efekt Dunninga-Krugera w ocenie własnych możliwości?',
-    topic: 'Efekt Dunninga-Krugera',
-    sectionRef: 'Sekcja 19.4',
+    question: 'Jak według Teorii Porównań Społecznych (Leon Festinger) porównania w górę (Upward Social Comparison) wpływają na samoocenę?',
+    topic: 'Porównania Społeczne',
+    sectionRef: 'Sekcja 19.5',
     options: [
-      { label: 'A', text: 'Osoby o niskich kompetencjach w danej dziedzinie drastycznie przeceniają swoje umiejętności z powodu braku wiedzy potrzebnej do dostrzeżenia własnych błędów.', isCorrect: true },
-      { label: 'B', text: 'Osoby wybitnie uzdolnione zawsze uważają się za genialne we wszystkim.', isCorrect: false },
-      { label: 'C', text: 'Utrata pamięci krótkotrwałej u osób po 60. roku życia.', isCorrect: false },
-      { label: 'D', text: 'Brak możliwości nauki języków obcych bez pomocy tłumacza.', isCorrect: false }
+      { label: 'A', text: 'Mogą inspirować do rozwoju, lecz w przypadku nierealistycznych punktów odniesienia (np. wyreżyserowane media społecznościowe) obniżają samoocenę i wywołują zazdrość.', isCorrect: true },
+      { label: 'B', text: 'Zawsze i bez wyjątku podnoszą poczucie własnej wartości o 50%.', isCorrect: false },
+      { label: 'C', text: 'Wyłączają działanie układu limbicznego.', isCorrect: false },
+      { label: 'D', text: 'Nie mają żadnego wpływu na emocje człowieka.', isCorrect: false }
     ],
-    explanation: 'Brak wiedzy uniemożliwia rzetelną ocenę jakości własnej pracy. Dopiero w miarę wzrostu kompetencji człowiek dostrzega stopień skomplikowania dziedziny i jego pewność siebie początkowo spada.',
-    keyTakeaway: 'Nieprawdopodobna pewność siebie w nowej dziedzinie bywa często cechą laika.'
+    explanation: 'Śledzenie wyłącznie wyreżyserowanych pasm sukcesów innych osób sprawia, że własne zwyczajne życie wydaje się porażką.',
+    keyTakeaway: 'Porównuj się do tego, kim byłeś wczoraj, a nie do wyreżyserowanej fasady kogoś innego.'
   },
   {
     id: 4,
-    question: 'Co charakteryzuje uzależnienie poczucia własnej wartości od wyników (Contingent Self-Esteem)?',
-    topic: 'Uwarunkowana Samoocena',
+    question: 'Czym różni się perfekcjonizm adaptacyjny (funkcjonalny) od perfekcjonizmu dysfunkcyjnego (neurotycznego)?',
+    topic: 'Perfekcjonizm',
     sectionRef: 'Sekcja 19.7',
     options: [
-      { label: 'A', text: 'Poczucie własnej wartości gwałtownie rośnie po sukcesie i rozpada się po porażce, wywołując rollercoaster emocjonalny.', isCorrect: true },
-      { label: 'B', text: 'Stałe, niezmienne poczucie spokoju niezależnie od sytuacji na giełdzie.', isCorrect: false },
-      { label: 'C', text: 'Brak jakichkolwiek emocji podczas wykonywania zadań.', isCorrect: false },
-      { label: 'D', text: 'Zdolność do bezbłędnego wykonywania poleceń bez wysiłku.', isCorrect: false }
+      { label: 'A', text: 'Adaptacyjny stawia wysokie standardy z czerpaniem radości z procesu, zaś dysfunkcyjny uzależnia wartość człowieka od braku jakiegokolwiek błędu, generując ciągły lęk.', isCorrect: true },
+      { label: 'B', text: 'Perfekcjonizm adaptacyjny występuje tylko u lekarzy.', isCorrect: false },
+      { label: 'C', text: 'Perfekcjonizm dysfunkcyjny gwarantuje brak jakichkolwiek pomyłek w życiu.', isCorrect: false },
+      { label: 'D', text: 'Oba typy prowadzą do natychmiastowej depresji.', isCorrect: false }
     ],
-    explanation: 'Gdy Twoja wartość jako człowieka zależy od ostatniego wyniku, każda drobna porażka staje się egzystencjalnym zagrożeniem.',
-    keyTakeaway: 'Oddziel ocenę wykonania zadania od oceny własnej wartości jako człowieka.'
+    explanation: 'Dysfunkcyjny perfekcjonista nie cieszy się z sukcesu, lecz odczuwa jedynie ulgową ewakuację przed demaskacją błędu.',
+    keyTakeaway: 'Zamień nierealistyczny perfekcjonizm na dążenie do merytorycznej jakości.'
   },
   {
     id: 5,
-    question: 'W jaki sposób porównania społeczne w górę (Upward Social Comparison) wpływają na samoocenę, jeśli brak nam poczucia sprawczości?',
-    topic: 'Porównania Społeczne',
-    sectionRef: 'Sekcja 19.6',
+    question: 'Na czym polega Syndrom Oszusta (Impostor Syndrome)?',
+    topic: 'Syndrom Oszusta',
+    sectionRef: 'Sekcja 19.8',
     options: [
-      { label: 'A', text: 'Wywołują spadek poczucia własnej wartości, zazdrość, wstyd i uczucie bezsilności.', isCorrect: true },
-      { label: 'B', text: 'Automatycznie podnoszą poziom inteligencji o 20 punktów.', isCorrect: false },
-      { label: 'C', text: 'Zmuszają mózg do natychmiastowego zapadnięcia w głęboki sen.', isCorrect: false },
-      { label: 'D', text: 'Eliminują potrzebę podejmowania jakichkolwiek starań.', isCorrect: false }
+      { label: 'A', text: 'Uporczywe przekonanie, że własne osiągnięcia są wynikiem przypadku lub szczęścia, powiązane z lękiem przed zdemaskowaniem rzekomego braku kompetencji.', isCorrect: true },
+      { label: 'B', text: 'Cyniczne oszukiwanie ludzi w celu wyłudzenia pieniędzy.', isCorrect: false },
+      { label: 'C', text: 'Choroba zakaźna układu pokarmowego.', isCorrect: false },
+      { label: 'D', text: 'Niezdolność do zapamiętywania nazwisk.', isCorrect: false }
     ],
-    explanation: 'Porównywanie własnych kulis z wyreżyserowaną sceną innych ludzi w mediach społecznościowych buduje iluzję własnej niedostateczności.',
-    keyTakeaway: 'Porównuj się do tego, kim byłeś wczoraj, a nie do tego, kim ktoś inny jest dzisiaj.'
+    explanation: 'Osoba z syndromem oszusta przypisuje sukcesy czynnikom zewnętrznym („szczęście”), a porażki cechom wewnętrznym („jestem głupi”).',
+    keyTakeaway: 'Urealnij ocenę faktów: Twoje sukcesy są owocem Twojej pracy.'
   },
   {
     id: 6,
-    question: 'Jakie są ewolucyjne korzenie Lęku przed Oceną Społeczną (Evaluation Anxiety)?',
-    topic: 'Lęk przed Oceną',
-    sectionRef: 'Sekcja 19.8',
+    question: 'Czym jest samoocena niestabilna/warunkowa (Contingent Self-Esteem)?',
+    topic: 'Samoocena Warunkowa',
+    sectionRef: 'Sekcja 19.12',
     options: [
-      { label: 'A', text: 'Negatywna ocena ze strony plemienia groziła wykluczeniem i śmiercią w dzikim środowisku, dlatego mózg traktuje krytykę jako zagrożenie biologiczne.', isCorrect: true },
-      { label: 'B', text: 'Lęk przed oceną pojawił się dopiero po wynalezieniu smartfonów.', isCorrect: false },
-      { label: 'C', text: 'Jest wynikiem niedoboru witaminy C w diecie.', isCorrect: false },
-      { label: 'D', text: 'Zależy wyłącznie od poziomu wykształcenia rodziców.', isCorrect: false }
+      { label: 'A', text: 'Samoocena uzależniona od ciągłego spełniania zewnętrznych warunków (np. ostatni sukces, pochwała, wyniki), podatna na gwałtowne załamania.', isCorrect: true },
+      { label: 'B', text: 'Samoocena, która zmienia się dokładnie co 60 minut.', isCorrect: false },
+      { label: 'C', text: 'Samoocena występująca wyłącznie u sportowców.', isCorrect: false },
+      { label: 'D', text: 'Trwały stan głębokiego spokoju bez względu na okoliczności.', isCorrect: false }
     ],
-    explanation: 'Mózg reaguje na krytykę publiczną tak samo jak na groźbę wygnania z bezpiecznego obozu przodków.',
-    keyTakeaway: 'Lęk przed oceną to dawny alarm ewolucyjny, który w dzisiejszym świecie bywa fałszywy.'
+    explanation: 'Warunkowa samoocena wymaga ciągłego „karmienia” sukcesami. Brak kolejnej wygranej wywołuje natychmiastowy spadek poczucia wartości.',
+    keyTakeaway: 'Buduj samoocenę ugruntowaną wewnętrznie, a nie zależną od codziennych wyników.'
   },
   {
     id: 7,
-    question: 'Czym różni się adaptacyjny dążeniowy perfekcjonizm od perfekcjonizmu dezadaptacyjnego (lękowego)?',
-    topic: 'Anatomia Perfekcjonizmu',
-    sectionRef: 'Sekcja 19.9',
+    question: 'Jak Efekt Dunninga-Krugera odnosi się do pewności siebie?',
+    topic: 'Efekt Dunninga-Krugera',
+    sectionRef: 'Sekcja 19.10',
     options: [
-      { label: 'A', text: 'Perfekcjonizm adaptacyjny skupia się na czerpaniu radości z rozwoju i dążenia do mistrzostwa; dezadaptacyjny napędzany jest przerażeniem przed popełnieniem błędu.', isCorrect: true },
-      { label: 'B', text: 'Perfekcjonizm lękowy dotyczy wyłącznie prac domowych w szkole podstawowej.', isCorrect: false },
-      { label: 'C', text: 'Nie ma żadnego perfekcjonizmu adaptacyjnego, każdy perfekcjonizm to choroba.', isCorrect: false },
-      { label: 'D', text: 'Perfekcjonizm adaptacyjny polega na unikaniu podejmowania jakichkolwiek zadań.', isCorrect: false }
+      { label: 'A', text: 'Osoby o najniższych kompetencjach wykazują najwyższy poziom nieuzasadnionej pewności siebie z powodu braku wiedzy o złożoności dziedziny.', isCorrect: true },
+      { label: 'B', text: 'Osoby o najwyższych kompetencjach są zawsze najbardziej krzykliwe.', isCorrect: false },
+      { label: 'C', text: 'Pewność siebie jest w 100% proporcjonalna do rzeczywistych umiejętności.', isCorrect: false },
+      { label: 'D', text: 'Eksperci nigdy nie miewają wątpliwości.', isCorrect: false }
     ],
-    explanation: 'Lękowy perfekcjonista nie dąży do sukcesu — on ucieka przed wstydem, jaki wywołałaby jakakolwiek ryska na jego pracy.',
-    keyTakeaway: 'Zamień dążenie do bezbłędności na dążenie do ciągłego postępu (progress, not perfection).'
+    explanation: 'Brak wiedzy uniemożliwia dostrzeżenie własnych błędów, generując fałszywą pewność siebie na Szczycie Głupoty.',
+    keyTakeaway: 'Prawdziwa pewność siebie rośnie powoli, przechodząc przez dolinę pokory nauki.'
   },
   {
     id: 8,
-    question: 'Jaką rolę w budowaniu stabilnej samooceny odgrywa Samowspółczucie (Self-Compassion) według Kristin Neff?',
-    topic: 'Samowspółczucie',
-    sectionRef: 'Sekcja 19.11',
+    question: 'Jaką rolę w kształtowaniu samooceny odgrywa samowspółczucie (Self-Compassion, Kristin Neff)?',
+    topic: 'Self-Compassion',
+    sectionRef: 'Sekcja 19.14',
     options: [
-      { label: 'A', text: 'Pozwala traktować samego siebie z życzliwością i wyrozumiałością w chwili porażki, zastępując surowy samokrytycyzm racjonalnym wsparciem.', isCorrect: true },
-      { label: 'B', text: 'Oznacza użalanie się nad sobą i unikanie wszelkiej odpowiedzialności za błędy.', isCorrect: false },
-      { label: 'C', text: 'Polega na ciągłym kupowaniu sobie prezentów na pocieszenie.', isCorrect: false },
-      { label: 'D', text: 'Jest techniką stosowaną wyłącznie w szpitalach neurologicznych.', isCorrect: false }
+      { label: 'A', text: 'Zastępuje surową samoocenę życzliwością wobec własnych niedoskonałości, uznaniem wspólnoty ludzkiego cierpienia i uważnością.', isCorrect: true },
+      { label: 'B', text: 'Narzuca użalanie się nad sobą i brak jakichkolwiek wymagań.', isCorrect: false },
+      { label: 'C', text: 'Zmusza do ciągłego kupowania sobie prezentów.', isCorrect: false },
+      { label: 'D', text: 'Wyłącza chęć osiągania jakichkolwiek celów.', isCorrect: false }
     ],
-    explanation: 'Samowspółczucie to nie pobłażliwość, lecz postawa mądrego trenera, który po upadku nie bije zawodnika, lecz pomaga mu wstać i przeanalizować błąd.',
-    keyTakeaway: 'Bądź dla siebie takim przyjacielem, jakiego potrzebujesz w chwili porażki.'
+    explanation: 'Self-compassion daje stabilną bazę emocjonalną w trudnych chwilach, bez konieczności ciągłego oceniania siebie jako „lepszego od innych”.',
+    keyTakeaway: 'Bądź dla siebie wspierającym mentorem, a nie bezwzględnym katem.'
   },
   {
     id: 9,
-    question: 'Co charakteryzuje zjawisko Samo-utrudniania (Self-Handicapping)?',
-    topic: 'Samoutrudnianie',
-    sectionRef: 'Sekcja 19.10',
+    question: 'Jak informacja zwrotna (Feedback) powinna być przetwarzana, by wspierać rozwój kompetencji bez niszczenia samooceny?',
+    topic: 'Informacja Zwrotna',
+    sectionRef: 'Sekcja 19.11',
     options: [
-      { label: 'A', text: 'Stwarzanie przeszkód przed trudnym zadaniem (np. nieprzespana noc, impreza przed egzaminem), by mieć gotową wymówkę chroniącą samoocenę w razie porażki.', isCorrect: true },
-      { label: 'B', text: 'Zapominanie haseł do konta bankowego.', isCorrect: false },
-      { label: 'C', text: 'Pomaganie innym ludziom w brew własnemu interesowi.', isCorrect: false },
-      { label: 'D', text: 'Trening siłowy z podwójnym obciążeniem na siłowni.', isCorrect: false }
+      { label: 'A', text: 'Należy oddzielić ocenę wykonanego zadania od oceny własnej wartości jako człowieka, traktując uwagi jako surowiec merytoryczny.', isCorrect: true },
+      { label: 'B', text: 'Należy odrzucać każdą krytykę jako przerwę w spokoju.', isCorrect: false },
+      { label: 'C', text: 'Należy natychmiast uznać siebie za nieudacznika po każdej uwadze.', isCorrect: false },
+      { label: 'D', text: 'Należy obrazić się na osobę dającą feedback.', isCorrect: false }
     ],
-    explanation: 'Umysł woli zaryzykować porażkę z powodu braku snu („oblałem, bo byłem zmęczony”) niż porażkę z braku inteligencji („oblałem, bo jestem za głupi”).',
-    keyTakeaway: 'Samoutrudnianie to kosztowna tarcza chroniąca ego kosztem rzeczywistych wyników.'
+    explanation: 'Krytyka pliku czy projektu nie jest krytyką Twojego prawa do szacunku. To informacja o konkretnej zmianie w działaniu.',
+    keyTakeaway: 'Oddziel swoją wartość jako człowieka od jakości wykonanego zadania.'
   },
   {
     id: 10,
-    question: 'W jaki sposób doznawanie Systematycznych Sukcesów o Rośniejącym Poziomie Trudności (Graded Mastery) wpływa na strukturę neuronalną?',
-    topic: 'Protokół Graded Mastery',
-    sectionRef: 'Sekcja 19.12',
+    question: 'Co charakteryzuje realistyczną ocenę własnych możliwości?',
+    topic: 'Realistyczna Ocena',
+    sectionRef: 'Sekcja 19.14',
     options: [
-      { label: 'A', text: 'Wzmacnia ścieżki dopaminowe w jądrze półleżącym i buduje połączenia w dlPFC odpowiedzialne za poczucie kontroli i odporność na stres.', isCorrect: true },
-      { label: 'B', text: 'Prowadzi do zaniku tkanki mózgowej w płatach skroniowych.', isCorrect: false },
-      { label: 'C', text: 'Eliminuje potrzebę jakiegokolwiek odpoczynku i snu.', isCorrect: false },
-      { label: 'D', text: 'Zmniejsza szybkość przewodzenia impulsów w nerwach wzrokowych.', isCorrect: false }
+      { label: 'A', text: 'Zdolność do precyzyjnego określenia swoich mocnych stron oraz obszarów wymagających rozwoju, bez popadania w pychę ani w samobiczowanie.', isCorrect: true },
+      { label: 'B', text: 'Przekonanie, że potrafi się zrobić wszystko bez przygotowania.', isCorrect: false },
+      { label: 'C', text: 'Poczucie, że nie potrafi się zrobić absolutnie niczego.', isCorrect: false },
+      { label: 'D', text: 'Ignorowanie wszelkich ograniczeń fizycznych i czasowych.', isCorrect: false }
     ],
-    explanation: 'Równomierne podnoszenie poprzeczki pozwala mózgowi doświadczać sukcesu bez wywoływania paraliżującego lęku w ciele migdałowatym.',
-    keyTakeaway: 'Dziel wielkie cele na mikrokroki, które dają ciągłe poczucie wygranej.'
+    explanation: 'Realizm poznawczy pozwala wybierać wyzwania dopasowane do aktualnej strefy najbliższego rozwoju (ZPD).',
+    keyTakeaway: 'Znaj swoje granice, aby móc je bezpiecznie przesuwać.'
   },
   {
     id: 11,
-    question: 'Na czym polega różnica między pewnością siebie wynikającą z kompetencji a pewnością siebie defensywną (maską pewności)?',
-    topic: 'Pewność Siebie vs Maska',
+    question: 'Jak krytyka w dzieciństwie ze strony dorosłych wpływa na dorosły w wewnętrzny monolog?',
+    topic: 'Wewnętrzny Krytyk',
     sectionRef: 'Sekcja 19.3',
     options: [
-      { label: 'A', text: 'Pewność oparta na kompetencji jest cicha i odporna na krytykę; pewność defensywna jest głośna, roszczeniowa i natychmiast wchodzi w agresję przy podważeniu.', isCorrect: true },
-      { label: 'B', text: 'Pewność defensywna występuje wyłącznie u lekarzy chirurgów.', isCorrect: false },
-      { label: 'C', text: 'Nie ma żadnej różnicy, pewność siebie to zawsze głośne zachowanie.', isCorrect: false },
-      { label: 'D', text: 'Pewność wynikająca z kompetencji znika po ukończeniu 30. roku życia.', isCorrect: false }
+      { label: 'A', text: 'Głos krytycznego rodzica zostaje zinternalizowany jako wewnętrzny krytyk, który w dorosłym życiu odtwarza te same surowe supozycje.', isCorrect: true },
+      { label: 'B', text: 'Automatycznie podnosi poziom pewności siebie.', isCorrect: false },
+      { label: 'C', text: 'Nie ma żadnego wpływu na dorosłe życie.', isCorrect: false },
+      { label: 'D', text: 'Zwiększa odporność na stres bez pracy nad sobą.', isCorrect: false }
     ],
-    explanation: 'Głośna dominacja bywa często kompensacją głębokiego niepokoju i braku wiary we własne możliwości.',
-    keyTakeaway: 'Prawdziwa kompetencja nie potrzebuje krzyku — obroni się faktami.'
+    explanation: 'Słowa, które słyszymy w dzieciństwie, stają się głosem, którym mówimy do siebie w dorosłości.',
+    keyTakeaway: 'Zidentyfikuj, czyj głos słyszysz, gdy krytykujesz siebie za błąd.'
   },
   {
     id: 12,
-    question: 'Jaką funkcję w regulacji samooceny pełni Dziennik Zwycięstw i Drobnych Osiągnięć?',
-    topic: 'Dziennik Osiągnięć',
-    sectionRef: 'Sekcja 19.16',
+    question: 'W jaki sposób media społecznościowe nasilają zjawisko nierealistycznych punktów odniesienia?',
+    topic: 'Media a Samoocena',
+    sectionRef: 'Sekcja 19.6',
     options: [
-      { label: 'A', text: 'Dostarcza kory przedczołowej twardych, pisemnych dowodów na własną skuteczność, osłabiając skłonność do zapominania o własnych sukcesach.', isCorrect: true },
-      { label: 'B', text: 'Służy do chwalenia się przed znajomymi na imprezach.', isCorrect: false },
-      { label: 'C', text: 'Zmusza człowieka do kupowania drogich mebli biurowych.', isCorrect: false },
-      { label: 'D', text: 'Zastępuje jakąkolwiek potrzebę podejmowania dalszych działań.', isCorrect: false }
+      { label: 'A', text: 'Prezentują wyselekcjonowane, wyreżyserowane momenty sukcesu i urody, z którymi umysł bezwiednie porównuje swoje codzienne, zwyczajne życie.', isCorrect: true },
+      { label: 'B', text: 'Uczą obiektywnego oceniania własnych kompetencji.', isCorrect: false },
+      { label: 'C', text: 'Zmniejszają poziom zazdrości w społeczeństwie.', isCorrect: false },
+      { label: 'D', text: 'Zapobiegają powstawaniu depresji.', isCorrect: false }
     ],
-    explanation: 'Negatywna asymetria emocjonalna sprawia, że umysł pamięta porażki, a zapomina o sukcesach. Dziennik jest pamięcią zewnętrzną dla sprawczości.',
-    keyTakeaway: 'Zbieraj dowody swoich małych wygranych każdego dnia.'
+    explanation: 'Umysł nie jest dostosowany do codziennego porównywania się z tysiącami najpiękniejszych i najbogatszych ludzi na planecie.',
+    keyTakeaway: 'Ogranicz ekspozycję na cyfrowe fasady, by chronić swój spokój.'
   },
   {
     id: 13,
-    question: 'Co według psychologii poznawczej oznacza pojęcie Reewaluacji Poznawczej Porażki?',
-    topic: 'Reewaluacja Porażki',
-    sectionRef: 'Sekcja 19.13',
+    question: 'Na czym polega re-kalibracja poczucia skuteczności (Self-Efficacy Calibration)?',
+    topic: 'Re-kalibracja Self-Efficacy',
+    sectionRef: 'Sekcja 19.15',
     options: [
-      { label: 'A', text: 'Przeformułowanie niepowodzenia z kategorii „klęska tożsamościowa” na kategorię „eksperyment procesowy dostarczający cennych danych”.', isCorrect: true },
-      { label: 'B', text: 'Oskarżenie wszystkich współpracowników o celowy sabotaż.', isCorrect: false },
-      { label: 'C', text: 'Udawanie, że projekt zakończył się sukcesem mimo straty miliona złotych.', isCorrect: false },
-      { label: 'D', text: 'Płacz i odcięcie się od kontaktów z ludźmi na rok.', isCorrect: false }
+      { label: 'A', text: 'Dostosowanie przewidywań co do własnych możliwości do rzeczywistych wyników osiąganych w małych eksperymentach behawioralnych.', isCorrect: true },
+      { label: 'B', text: 'Zwiększanie dawek kofeiny przed pracą.', isCorrect: false },
+      { label: 'C', text: 'Ignorowanie wszelkich porażek z przeszłości.', isCorrect: false },
+      { label: 'D', text: 'Kupowanie drogich ubrań biznesowych.', isCorrect: false }
     ],
-    explanation: 'Reewaluacja pozwala wydobyć z porażki wartość edukacyjną, wygaszając paraliżujący wstyd w ciele migdałowatym.',
-    keyTakeaway: 'Porażka to nie wyrok na Twoją wartość — to darmowa lekcja od rzeczywistości.'
+    explanation: 'Kalibracja pozwala uniknąć zarówno paraliżującego zaniżania możliwości, jak i lekkomyślnego ich przeszarżowania.',
+    keyTakeaway: 'Buduj pewność siebie na twardych dowodach z działania.'
   },
   {
     id: 14,
-    question: 'W jaki sposób pochwały nakierowane na proces („Doceniam Twój wysiłek i strategię”) kształtują samoocenę w porównaniu do pochwał nakierowanych na cechę („Jesteś taki mądry”)?',
-    topic: 'Sztuka Chwalenia',
-    sectionRef: 'Sekcja 19.14',
+    question: 'Jak przymus „Muszę być najlepszy” wpływa na elastyczność decyzyjną?',
+    topic: 'Przymus Osiągnięć',
+    sectionRef: 'Sekcja 19.9',
     options: [
-      { label: 'A', text: 'Pochwała procesu buduje Growth Mindset i odporność na porażki; pochwała cechy buduje Fixed Mindset i lęk przed utratą etykiety „mądrego”.', isCorrect: true },
-      { label: 'B', text: 'Pochwała procesu niszczy jakąkolwiek motywację do działania.', isCorrect: false },
-      { label: 'C', text: 'Pochwała cechy sprawia, że człowiek nigdy nie popełnia błędów.', isCorrect: false },
-      { label: 'D', text: 'Oba typy pochwał działają dokładnie tak samo na układ nerwowy.', isCorrect: false }
+      { label: 'A', text: 'Generuje lęk przed podjęciem jakiejkolwiek nowej dziedziny, w której początkowo byłoby się nowicjuszem, blokując rozwój.', isCorrect: true },
+      { label: 'B', text: 'Gwarantuje szczęście w każdym projekcie.', isCorrect: false },
+      { label: 'C', text: 'Eliminuje stres związany z oceną.', isCorrect: false },
+      { label: 'D', text: 'Zwiększa chęć do podejmowania ryzyka.', isCorrect: false }
     ],
-    explanation: 'Chwalenie za cechę sprawia, że każda trudność staje się zagrożeniem dla etykiety, wywołując lęk i unikanie wyzwań.',
-    keyTakeaway: 'Chwal za wysiłek, strategię i wyciągnięte wnioski — nie za stałe cechy.'
+    explanation: 'Lęk przed byciem początkującym zmusza człowieka do pozostawania wyłącznie w strefie dobrze znanych nawyków.',
+    keyTakeaway: 'Daj sobie prawo do bycia nowicjuszem, gdy uczysz się nowych rzeczy.'
   },
   {
     id: 15,
-    question: 'Jaki wpływ na ocenę własnych możliwości ma stan wyczerpania metabolicznego (HALT - Hungry, Angry, Lonely, Tired)?',
-    topic: 'Biologia Samooceny',
-    sectionRef: 'Sekcja 19.15',
+    question: 'Jaka jest rola modelowania (Vicarious Experiences) w budowaniu Self-Efficacy według Bandury?',
+    topic: 'Modelowanie Bandury',
+    sectionRef: 'Sekcja 19.4',
     options: [
-      { label: 'A', text: 'Spadek poziomu glukozy i zmęczenie drastycznie obniżają sprawność dlPFC, podbijając pesymizm i katastroficzne wizje własnej nieudolności.', isCorrect: true },
-      { label: 'B', text: 'Głód i zmęczenie automatycznie podnoszą poziom pewności siebie.', isCorrect: false },
-      { label: 'C', text: 'Nie ma żadnego wpływu na procesy myślowe.', isCorrect: false },
-      { label: 'D', text: 'Sprawia, że człowiek zaczyna myśleć wyłącznie w języku obcym.', isCorrect: false }
+      { label: 'A', text: 'Obserwowanie osoby podobnej do nas, która pokonuje trudności i osiąga cel, podnosi nasze przekonanie: „Jeśli ona dała radę, ja też potrafię”.', isCorrect: true },
+      { label: 'B', text: 'Kopiowanie ruchów ciała aktorów filmowych.', isCorrect: false },
+      { label: 'C', text: 'Rysowanie modeli przestrzennych.', isCorrect: false },
+      { label: 'D', text: 'Unikanie jakichkolwiek autorytetów.', isCorrect: false }
     ],
-    explanation: 'Gdy Twój mózg jest głodny lub wyczerpany, nie podejmuj decyzji dotyczących własnej wartości — najpierw zadbaj o fizjologię.',
-    keyTakeaway: 'Nie oceniaj swoich życiowych możliwości, gdy jesteś zmęczony lub głodny.'
+    explanation: 'Modelowanie działa najsilniej wtedy, gdy model jest postrzegany jako podobny do nas pod względem możliwości i punktu startu.',
+    keyTakeaway: 'Szukaj wzorców osób podobnych do Ciebie, które pokonały przeszkody.'
   },
   {
     id: 16,
-    question: 'Na czym polega proces Odczarowania Krytyki Zewnętrznej (External Criticism Audit)?',
-    topic: 'Audyt Krytyki',
-    sectionRef: 'Sekcja 19.11',
+    question: 'Czym charakteryzuje się lęk przed oceną (Evaluation Apprehension)?',
+    topic: 'Lęk przed Oceną',
+    sectionRef: 'Sekcja 19.8',
     options: [
-      { label: 'A', text: 'Przeanalizowanie, czy krytyka dotyczy faktów i zachowania, czy jest jedynie ekspresją emocji i kompleksów osoby krytykującej.', isCorrect: true },
-      { label: 'B', text: 'Napisanie zgłoszenia na policję po każdej usłyszanej uwadze.', isCorrect: false },
-      { label: 'C', text: 'Zgadzanie się z każdą obelgą bez zastanowienia.', isCorrect: false },
-      { label: 'D', text: 'Zablokowanie wszystkich znajomych w telefonie.', isCorrect: false }
+      { label: 'A', text: 'Paraliżujący stres wywołany przekonaniem, że inni ludzie nieustannie i surowo oceniają naszą wartość i kompetencje.', isCorrect: true },
+      { label: 'B', text: 'Radość z wystąpień przed dużą publicznością.', isCorrect: false },
+      { label: 'C', text: 'Niezależność od opinii otoczenia.', isCorrect: false },
+      { label: 'D', text: 'Brak reakcji fizjologicznej na krytykę.', isCorrect: false }
     ],
-    explanation: 'Większość agresywnej krytyki mówi o wiele więcej o stanie psychicznym krytyka niż o jakości Twojej pracy.',
-    keyTakeaway: 'Przefiltruj krytykę przez sito faktów — odrzuć jad, zachowaj merytoryczne ziarno.'
+    explanation: 'Lęk przed oceną opiera się na tzw. Spotlight Effect — złudzeniu, że oczy wszystkich są skierowane na nasze najmniejsze potknięcie.',
+    keyTakeaway: 'Ludzie myślą o Tobie znacznie mniej, niż Ci się wydaje — są zajęci sobą.'
   },
   {
     id: 17,
-    question: 'Czym charakteryzuje się Stabilna Samoocena Niezależna (Stable High Self-Esteem)?',
-    topic: 'Stabilna Samoocena',
-    sectionRef: 'Sekcja 19.1',
+    question: 'Jaką funkcję pełni dziennik sprawczości w odbudowywaniu zaniżonej samooceny?',
+    topic: 'Dziennik Sprawczości',
+    sectionRef: 'Sekcja 19.15',
     options: [
-      { label: 'A', text: 'Głębokie poczucie akceptacji samego siebie, które nie wymaga ciągłego udowadniania wyższości nad innymi ani poklasku.', isCorrect: true },
-      { label: 'B', text: 'Przekonanie o własnej nieomylności i pogarda dla słabszych.', isCorrect: false },
-      { label: 'C', text: 'Ciągłe poszukiwanie komplementów u obcych ludzi.', isCorrect: false },
-      { label: 'D', text: 'Zwolnienie ze wszystkich obowiązków domowych.', isCorrect: false }
+      { label: 'A', text: 'Gromadzi twarde, codzienne dowody wykonanych działań, przełamując tendencję umysłu do pamiętania tylko porażek.', isCorrect: true },
+      { label: 'B', text: 'Służy do zapisywania wyłącznie narzekań na pogodę.', isCorrect: false },
+      { label: 'C', text: 'Zastępuje potrzebę podejmowania jakichkolwiek działań.', isCorrect: false },
+      { label: 'D', text: 'Wyłącza pamięć roboczą.', isCorrect: false }
     ],
-    explanation: 'Człowiek o stabilnej samoocenie nie musi dominować ani błyszczeć za wszelką cenę — jest osadzony w wewnętrznym spokoju.',
-    keyTakeaway: 'Stabilna samoocena nie potrzebuje widza ani aplauzu.'
+    explanation: 'Systematyczny zapis małych zwycięstw stanowi surowiec dla DMN do rekonstrukcji nowej, sprawczej opowieści o sobie.',
+    keyTakeaway: 'Dostarczaj swojemu umysłowi codziennych dowodów sprawczości na piśmie.'
   },
   {
     id: 18,
-    question: 'Jakie jest główne zadanie Protokołu Budowania Sprawczości w nowej domenie?',
-    topic: 'Budowanie Sprawczości',
-    sectionRef: 'Sekcja 19.17',
+    question: 'W jaki sposób nawyk nagradzania wysiłku zamiast talentu wpływa na dzieci i dorosłych?',
+    topic: 'Pochwała Wysiłku vs Talentu',
+    sectionRef: 'Sekcja 19.3',
     options: [
-      { label: 'A', text: 'Zaplanowanie serii małych, wygrywalnych zadań, które dostarczą mózgowi dowodów na stopniowe opanowanie dziedziny.', isCorrect: true },
-      { label: 'B', text: 'Rzucenie się od razu na najtrudniejszy projekt bez przygotowania.', isCorrect: false },
-      { label: 'C', text: 'Czytanie podręczników bez podejmowania jakichkolwiek prób praktycznych.', isCorrect: false },
-      { label: 'D', text: 'Czekanie na idealny moment, kiedy lęk całkowicie zniknie.', isCorrect: false }
+      { label: 'A', text: 'Buduje Growth Mindset i poczucie skuteczności oparte na działaniu, podczas gdy chwalenie talentu buduje lęk przed utratą etykiety „zdolnego”.', isCorrect: true },
+      { label: 'B', text: 'Niszczy jakąkolwiek motywację do pracy.', isCorrect: false },
+      { label: 'C', text: 'Sprawia, że ludzie przestają się uczyć.', isCorrect: false },
+      { label: 'D', text: 'Nie ma żadnego znaczenia dydaktycznego.', isCorrect: false }
     ],
-    explanation: 'Sprawczość buduje się krok po kroku. Małe wygrane torują drogę dla odważniejszych decyzji w przyszłości.',
-    keyTakeaway: 'Zacznij od wygranych tak małych, że nie sposób ich przegrać.'
+    explanation: 'Pochwała za wysiłek wskazuje na zmienną pod Twoją kontrolą (strategia, praca), zaś pochwała za talent — na sztywną cechę.',
+    keyTakeaway: 'Doceniaj wykonaną pracę i strategię, a nie mityczny talent.'
+  },
+  {
+    id: 19,
+    question: 'Na czym polega pętla bezradności w zaniżonej samoocenie?',
+    topic: 'Pętla Bezradności',
+    sectionRef: 'Sekcja 19.2',
+    options: [
+      { label: 'A', text: 'Niska samoocena -> Lęk przed porażką -> Unikanie działania -> Brak sukcesów -> Potwierdzenie niskiej samooceny.', isCorrect: true },
+      { label: 'B', text: 'Wysoka samoocena -> Sukces -> Radość.', isCorrect: false },
+      { label: 'C', text: 'Brak jakichkolwiek myśli o przyszłości.', isCorrect: false },
+      { label: 'D', text: 'Automatyczny awans w pracy bez wysiłku.', isCorrect: false }
+    ],
+    explanation: 'Przerwanie pętli bezradności wymaga wykonania mikrokroku w działaniu MIMO odczuwanego lęku.',
+    keyTakeaway: 'Działanie wyprzedza pewność siebie — nie czekaj, aż lęk całkowicie zniknie.'
+  },
+  {
+    id: 20,
+    question: 'Co jest ostatecznym celem dojrzałego rozwoju w obszarze samooceny?',
+    topic: 'Dojrzałość Samooceny',
+    sectionRef: 'Sekcja 19.14',
+    options: [
+      { label: 'A', text: 'Przejście od samooceny chwiejnej i uzależnionej od sukcesów do stabilnej samoakceptacji ugruntowanej w wartościach i autentycznym rozwoju.', isCorrect: true },
+      { label: 'B', text: 'Osiągnięcie stanu, w którym uważa się siebie za lepszego od wszystkich ludzi.', isCorrect: false },
+      { label: 'C', text: 'Całkowita obojętność na wyniki własnej pracy.', isCorrect: false },
+      { label: 'D', text: 'Przekonanie o własnej nieomylności.', isCorrect: false }
+    ],
+    explanation: 'Dojrzała samoocena nie potrzebuje ciągłego udowadniania wyższości nad innymi — jest spokojnym ugruntowaniem w wartościach.',
+    keyTakeaway: 'Prawdziwa pewność siebie to spokój wynikający z akceptacji siebie i ciągłego uczenia się.'
   }
 ];
 
 export const caseStudiesChapterNineteen: CaseStudy[] = [
   {
-    id: 'studium-19-1-wysoka-pewnosc-niska-kompetencja',
-    title: 'Ślepa pewność siebie i twardy upadek: Przypadek Sebastiana na rynku startups',
-    subtitle: 'Anatomia Efektu Dunninga-Krugera, ignorowanie sygnałów rynkowych i budowanie autentycznej kompetencji',
-    protagonist: 'Sebastian, 26 lat, założyciel aplikacji mobilnej',
-    context: 'Sebastian po przeczytaniu dwóch książek biznesowych uznał się za „genialnego stratega”. Odrzucił uwagi doświadczonych inwestorów, przepalił 500 000 zł oszczędności rodziny i doprowadził projekt do bankructwa.',
+    id: 'studium-19-1-scena-i-paraliz',
+    title: 'W cieniu idealnego wzorca: Jak Syndrom Oszusta sparaliżował karierę naukową Julii',
+    subtitle: 'Lęk przed demaskacją, dyskwalifikowanie pozytywów i rekonstrukcja poczucia skuteczności',
+    protagonist: 'Dr Julia, 33 lata, adiunkt na wydziale biologii molekularnej',
+    context: 'Julia wygrała prestiżowy grant badawczy na kwotę 2 milionów złotych. Zamiast odczuwać dumę, spędzała noce na drżeniu, że komisja popełniła błąd, a jej koledzy z katedry uświadomią sobie jej „przeciętność”.',
     story: [
-      'Sebastian po ukończeniu kursu marketingu uważał, że rozumie psychologię konsumenta lepiej niż doświadczeni badacze rynku. Jego pewność siebie była imponująca — czarował inwestorów hasłami o „rewolucji w branży”.',
-      'Kiedy analitycy pokazywali mu dane świadczące o tym, że użytkownicy wyinstalowują aplikację po 3 minutach, Sebastian odrzucał uwagi z pogardą: „Głupi ludzie nie dorśli do mojej wizji. Musimy wydać więcej na reklamę”.',
-      'Refusował przeprowadzenie jakichkolwiek poprawek w UX/UI. Jego subiektywna pewność siebie była na szczycie Góry Głupców (Peak of Mount Stupid w modelu Dunninga-Krugera). Brak wiedzy uniemożliwiał mu dostrzeżenie drastycznych błędów w architektury systemu.',
-      'Kiedy pieniądze się skończyły, a inwestorzy wycofali wsparcie, Sebastian przeżył brutalne zderzenie z rzeczywistością. Dziś pracuje jako młodszy analityk, powoli budując kompetencje od podstaw i ucząc się pokory wobec faktów.'
+      'Julia od czasów doktoratu słyszała pochwały od profesorów, lecz każdą z nich traktowała jako „pomyłkę” lub „efekt uroku osobistego”. W jej umyśle tkwiło sztywne przekonanie: „Nie jestem prawdziwym naukowcem, po prostu dobrze udaję”.',
+      'Gdy ogłoszono wyniki konkursu grantowego, Julia odczuła przerażenie. Zamiast rozpocząć kompletowanie zespołu, odsuwała podpisanie umowy przez dwa miesiące, szukając błędów we własnym wniosku.',
+      'Paraliż decyzyjny doprowadził do opóźnień w zakupie aparatury. Julia pracowała po 14 godzin dziennie, sprawdzając po dziesięć razy te same wyliczenia.',
+      'Dopiero w toku terapii poznawczej zaczęła prowadzić Arkusz Dowodów Obiektywnych, w którym wypisywała twarde recenzje swoich artykułów z zagranicznych czasopism, odseparowując subiektywny lęk od merytorycznych faktów.'
     ],
     dialogue: [
-      { speaker: 'Inwestor', text: 'Sebastian, retention rate wynosi 2%. Musimy zmienić model przed kolejną rundą.', subtext: 'Twardy sygnał rynkowy o braku dopasowania produktu.' },
-      { speaker: 'Sebastian', text: 'Nie rozumiecie tego konceptu! Zobaczysz, za pół roku będziemy jednorożcem!', subtext: 'Obrona iluzji kompetencji wynikająca z efektu Dunninga-Krugera.' }
+      { speaker: 'Dziekan', text: 'Julio, to historyczny sukces naszego wydziału! Gratulacje!', subtext: 'Zewnętrzne uznanie oszałamiającego sukcesu.' },
+      { speaker: 'Julia (w myśli)', text: 'Gdyby wiedział, ile razy musiałam poprawiać ten projekt, nie pogratulowałby mi... Wyśmieją mnie, gdy wyniki nie wyjdą.', subtext: 'Dyskwalifikowanie sukcesu i lęk przed demaskacją.' }
     ],
-    decisionTaken: 'Sebastian odmówił zmiany strategii i przeznaczył resztki budżetu na agresywną kampanię promocyjną nieudanego produktu.',
-    whatProtagonistSaw: 'Własną genialną wizję, podziw w oczach znajomych i pewność rychłego sukcesu.',
-    whatWasMissed: 'Twarde wskaźniki rynkowe, krytyczne błędy w produkcie i brak własnych kompetencji menedżerskich.',
+    decisionTaken: 'Julia rozpoczęła codzienny proces rejestracji faktów i podjęła kompletowanie zespołu badawczego.',
+    whatProtagonistSaw: 'Własną rzekomą niekompetencję i wizję kompromitacji przed środowiskiem.',
+    whatWasMissed: 'Fakt, że wniosek został oceniony przez trzech niezależnych, zagranicznych recenzentów bezimiennie.',
     psychologicalAnalysis: {
-      coreMechanism: 'Efekt Dunninga-Krugera w połączeniu z narcyzmem defensywnym.',
+      coreMechanism: 'Syndrom Oszusta (Impostor Syndrome) oparty na warunkowej samoocenie.',
       cognitiveBiases: [
-        { name: 'Iluzja ponadprzeciętności', description: 'Przekonanie o posiadaniu unikalnych zdolności bez pokrycia w dowodach.', impact: 'Odrzucenie rad ekspertów.' }
+        { name: 'Dyskwalifikowanie pozytywów', description: 'Przypisywanie wygrania grantu szczęściu lub ślepocie recenzentów.', impact: 'Uniemożliwienie budowania poczucia wartości.' }
       ],
       defenseMechanisms: [
-        { name: 'Zaprzeczenie rynkowe', explanation: 'Ignorowanie negatywnych wskaźników użytkowników.' }
+        { name: 'Kompensacja przez pracoholizm', explanation: 'Praca do utraty sił w celu zapobieżenia demaskacji.' }
       ],
-      emotionalDynamic: 'Euforia wynikająca z braku świadomości własnych braków przechodząca w brutalne zderzenie z porażką.'
+      emotionalDynamic: 'Głęboki lęk przed oceną, wstyd i wyczerpanie.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Uwagi inwestorów o złych wynikach.',
-      attentionFocus: 'Własne ego i marzenia o byciu gwiazdą biznesu.',
-      interpretation: '„Oni się nie znają, udowodnię im, że się mylą”.',
-      emotion: 'Duma, złość na krytyków, ekscytacja.',
-      impulse: 'Zwiększenie wydatków na reklamę.',
-      action: 'Przepalenie resztek budżetu.',
-      consequence: 'Bankructwo i utrata zaufania rodziny.'
+      trigger: 'Wygranie grantu badawczego.',
+      attentionFocus: 'Własne wątpliwości i potencjalne błędy.',
+      interpretation: '„Nie zasłużyłam na to, to pomyłka”.',
+      emotion: 'Przerażenie, spadek poczucia wartości.',
+      impulse: 'Odkładanie podpisania umowy, ucieczka.',
+      action: 'Podjęcie terapii i stworzenie rejestru dowodów merytorycznych.',
+      consequence: 'Uruchomienie laboratorium i odzyskanie spokoju.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Brzuszno-przyśrodkowa kora przedczołowa (vmPFC)', role: 'Nierealistyczna wycena własnych pomysłów', activationState: 'Hiperaktywacja' },
-        { region: 'Przednia kora obwodu (ACC)', role: 'Brak reakcji na sygnały błędu', activationState: 'Niska aktywacja' }
+        { region: 'dlPFC', role: 'Analityczna ocena faktów przeciwko emocjonalnemu lękowi', activationState: 'Wzrost aktywacji po terapii' }
       ],
       neurotransmitters: [
-        { name: 'Dopamina', roleInScenario: 'Sztucznie podwyższony poziom napędzany mityczną wizją sukcesu.' }
+        { name: 'Kortyzol', roleInScenario: 'Długotrwale podwyższony poziom stresu osłabiający odporność.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 200 ms', process: 'Krytyka inwestora wywołuje gniew zamiast refleksji.' }
+        { timeMs: '0 - 200 ms', process: 'Słowo „grant” wywołuje nagły skok tętna.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Kult bezkrytycznej pewności siebie', description: 'Promowanie w mediach postawy „fake it till you make it”.', vulnerabilityExploited: 'Pragnienie szybkiego sukcesu bez wysiłku.' }
+        { tactic: 'Akademicki elitaryzm', description: 'Środowisko promujące nierealistyczne standardy i rywalizację.', vulnerabilityExploited: 'Lęk przed niedostatecznością.' }
       ],
       counterMeasures: [
-        { step: '1. Audyt Niezależnych Ekspertów', script: 'Weryfikacja założeń przez osoby bez interesu w projekcie.', rationale: 'Sprowadza na ziemię bezduszne wskaźniki.' }
+        { step: '1. Oddzielenie Faktów od Emocji', script: '„Fakt: Recenzenci przyznali 98/100 punktów. Emocja: Czuję lęk. Emocja nie zmienia faktu 98 punktów”.', rationale: 'Urealnia obraz sytuacji.' }
       ]
     },
-    alternativePath: 'Gdyby Sebastian zrewidował produkt przy pierwszych sygnałach, uratowałby firmę i zbudował realną wartość.',
-    readerQuestion: 'W jakiej dziedzinie czujesz się ekspertem mimo braku formalnego wykształcenia i twardych wyników?',
-    keyTakeaway: 'Niewiedza często rodzi pewność siebie znacznie łatwiej niż wiedza. Prawdziwy ekspert zna granice swoich kompetencji.'
+    alternativePath: 'Gdyby Julia zrezygnowała z grantu, zniszczyłaby swoją karierę i pogłębiłaby pętlę bezradności.',
+    readerQuestion: 'Jakie sukcesy w swoim życiu przypisujesz „ślepemu szczęściu” zamiast własnej pracy?',
+    keyTakeaway: 'Nie musisz czuć się pewnie, by działać kompetentnie. Pozwól faktom mówić za siebie.'
   },
   {
-    id: 'studium-19-2-wysoka-kompetencja-niski-self-efficacy',
-    title: 'Ekspertka w cieniu własnego lęku: Przypadek Moniki',
-    subtitle: 'Wysoka kompetencja merytoryczna, niski self-efficacy i paraliż przed wyzwaniami',
-    protagonist: 'Monika, 37 lat, chirurżka dziecięca',
-    context: 'Monika posiadała wskaźnik udanych operacji na poziomie 98%, lecz przed każdym trudniejszym zabiegiem odczuwała paraliżujący lęk, wymioty i przekonanie, że „tym razem doprowadzi do tragedii”.',
+    id: 'studium-19-2-perfekcjonizm-wypalenie',
+    title: 'Cena niewybaczalnego błędu: Perfekcjonizm dysfunkcyjny u architekta Damiana',
+    subtitle: 'Warunkowa samoocena, lęk przed porażką i przechodzenie do samowspółczucia',
+    protagonist: 'Damian, 40 lat, właściciel pracowni architektonicznej',
+    context: 'Damian od dzieciństwa słyszał od ojca: „Albo robisz coś idealnie, albo nie rób tego wcale”. Gdy w wybudowanym domu wykryto wadę konstrukcyjną wymagającą poprawek za 50 tysięcy złotych, Damian popadł w stan ciężkiej ruminacji.',
     story: [
-      'Monika ukończyła studia z wyróżnieniem, odbyła staże w USA i wykonała ponad 500 udanych operacji. Jej wiedza medyczna i precyzja manualna były na najwyższym poziomie.',
-      'Mimo to jej poczucie własnej skuteczności (Self-efficacy) było dramatycznie niskie. Przed każdą trudniejszą operacją jej umysł generował katastroficzne wizje powikłań. Monika spędzała noce na analizowaniu podręczników, mimo że procedury znała na pamięć.',
-      'Kiedy dyrektor szpitala zaproponował jej objęcie funkcji ordynatora oddziału, Monika wpadła w przerażenie i odmówiła, przekazując stanowisko mniej doświadczonemu, lecz pewnemu siebie koledze.',
-      'Praca z psychologiem sportowym oparta na analizie twardych statystyk i technikach deeskalacji lęku pomogła jej uwierzyć w własne ręce i podjąć wyzwania kierownicze.'
+      'Dla Damiana błąd w projekcie nie był problemem inżynieryjnym do rozwiązania — był dowodem na to, że jest „bezwartościowym oszustem”.',
+      'Przez trzy tygodnie nie wychodził z domu, nie odpowiadał na telefony od klientów i przestał jeść. Cała jego pracownia sparaliżowana była brakiem jego decyzji.',
+      'Jego samoocena całkowicie zależała od braku jakichkolwiek potknięć. Jedna pomyłka zniszczyła całą jego budowaną przez 15 lat strukturę poczucia wartości.',
+      'Dopiero interwencja żony i sesje CBT pozwoliły mu dostrzec, że błąd jest nieodłącznym elementem skomplikowanych projektów inżynieryjnych.'
     ],
     dialogue: [
-      { speaker: 'Dyrektor Szpitala', text: 'Monika, jesteś najlepszym chirurgiem w tym mieście. Ordynatura należy się tobie.', subtext: 'Obiektywne uznanie mistrzostwa.' },
-      { speaker: 'Monika', text: 'Panie dyrektorze, ja się nie nadaję do kierowania. Jeden błąd i odpowiadam za ludzkie życie... Nie dam rady.', subtext: 'Spadek poczucia skuteczności pod wpływem lęku przed odpowiedzialnością.' }
+      { speaker: 'Inwestor', text: 'Damian, pomyłki się zdarzają. Poprawmy ten rysunek i jedziemy dalej.', subtext: 'Merytoryczne i spokojne podejście do problemu.' },
+      { speaker: 'Damian', text: 'Nie rozumiesz... Ja nie miałem prawa się pomylić. Przepraszam, jestem do niczego...', subtext: 'Katasrofizacja tożsamościowa po błędzie.' }
     ],
-    decisionTaken: 'Monika odrzuciła propozycję ordynatury i przez kolejne lata pracowała poniżej swojego potencjału.',
-    whatProtagonistSaw: 'Wizję błędu na stole operacyjnym, własny niepokój i ogromną odpowiedzialność.',
-    whatWasMissed: 'Fakt, że jej dotychczasowy bilans operacyjny dławiąco dowodził jej unikalnych umiejętności i odporności w kryzysie.',
+    decisionTaken: 'Damian podjął naprawę błędu na koszt ubezpieczenia i wdrożył procedurę podwójnego sprawdzania rysunków.',
+    whatProtagonistSaw: 'Całkowitą ruinę swojej reputacji i dowód niekompetencji.',
+    whatWasMissed: 'Fakt, że błąd był drobnym przeoczeniem podwykonawcy, a inwestor cenił go za uczciwość.',
     psychologicalAnalysis: {
-      coreMechanism: 'Niskie poczucie własnej skuteczności (Self-Efficacy) mimo wybitnej kompetencji merytorycznej.',
+      coreMechanism: 'Perfekcjonizm dysfunkcyjny i warunkowa samoocena.',
       cognitiveBiases: [
-        { name: 'Myślenie katastroficzne', description: 'Focusowanie uwagi wyłącznie na najgorszych możliwych scenariuszach.', impact: 'Paraliż decyzyjny.' }
+        { name: 'Myślenie zero-jedynkowe', description: '„Albo jestem nieomylny, albo jestem bezwartościowy”.', impact: 'Paraliż decyzyjny po pomyłce.' }
       ],
       defenseMechanisms: [
-        { name: 'Unikanie wyzwań', explanation: 'Ucieczka przed awansem celem ochrony przed hipotetyczną porażką.' }
+        { name: 'Izolacja i wycofanie', explanation: 'Chowanie się przed światem w poczuciu wstydu.' }
       ],
-      emotionalDynamic: 'Przewlekły niepokój antycypacyjny i wyczerpanie emocjonalne.'
+      emotionalDynamic: 'Miażdżący wstyd, poczucie winy i paraliż.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Propozycja objęcia funkcji ordynatora.',
-      attentionFocus: 'Wizja ewentualnego błędu i śmierci pacjenta.',
-      interpretation: '„Nie udźwignę tej odpowiedzialności, skompromituję się”.',
-      emotion: 'Przerażenie, ścisk w żołądku, poczucie nieadekwatności.',
-      impulse: 'Odmowa, ucieczka do bezpiecznej roli.',
-      action: 'Niezgłoszenie kandydatury na ordynatora.',
-      consequence: 'Frustracja z powodu pracy pod kierunkiem słabszego merytorycznie szefa.'
+      trigger: 'Wykrycie wady w projekcie.',
+      attentionFocus: 'Własny błąd i wizja kompromitacji.',
+      interpretation: '„Jestem do niczego, cała moja kariera to fikcja”.',
+      emotion: 'Wstyd, rozpacz.',
+      impulse: 'Ucieczka, wyłączenie telefonu.',
+      action: 'Podjęcie rozmów i naprawa szkody.',
+      consequence: 'Rozwiązanie problemu i lekcja dojrzałości.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Ciało migdałowate', role: 'Inicjowanie osi HPA w odpowiedzi na wyobrażone zagrożenie', activationState: 'Hiperaktywacja' },
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Próba logicznego opanowania lęku', activationState: 'Przeciążenie' }
+        { region: 'Anterior Insula', role: 'Przetwarzanie intencjonalnego wstydu i obrzydzenia do siebie', activationState: 'Hiperaktywacja' }
       ],
       neurotransmitters: [
-        { name: 'Noradrenalina', roleInScenario: 'Ciągły wyrzut wywołujący objawy somatyczne (drżenie rąk, nudności).' }
+        { name: 'Serotonina', roleInScenario: 'Spadek spoczynkowego poziomu pod wpływem wstydu.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 100 ms', process: 'Myśl „ordynatura” uruchamia natychmiastowy skok tętna.' }
+        { timeMs: '0 - 100 ms', process: 'Wiadomość o błędzie wywołuje natychmiastowy ucisk w klatce.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Medyczny kult bezbłędności', description: 'Nierealistyczne oczekiwanie zerowego wskaźnika powikłań.', vulnerabilityExploited: 'Głęboka odpowiedzialność moralna.' }
+        { tactic: 'Wojna z błędem', description: 'Kulturowe przekonanie, że dojrzałość oznacza brak pomyłek.', vulnerabilityExploited: 'Potrzebę bezpieczeństwa.' }
       ],
       counterMeasures: [
-        { step: '1. Dziennik Twardych Wyników', script: 'Prowadzenie statystyk operacji i analiza faktów zamiast katastroficznych wyobrażeń.', rationale: 'Uczy mózg ufać twardym danym.' }
+        { step: '1. Praktyka Samowspółczucia (Self-Compassion)', script: '„Popełniłem błąd, bo jestem człowiekiem pracującym pod presją. Naprawiam błąd i uczę się”.', rationale: 'Przywraca spokój i jasność myślenia.' }
       ]
     },
-    alternativePath: 'Gdyby Monika uwierzyła w swoje wskaźniki, została wybitną ordynatorką i wprowadziła innowacyjne procedury na oddziale.',
-    readerQuestion: 'W jakich obszarach Twoje rzeczywiste umiejętności są znacznie wyższe niż Twoja wiara w to, że dasz radę?',
-    keyTakeaway: 'Kompetencja to fakt, poczucie skuteczności to przekonanie. Zadbaj o to, by Twoje przekonanie nadążało za Twoimi faktami.'
+    alternativePath: 'Gdyby Damian uciekał dalej, trafiłby na drogę sądową i stracił pracownię.',
+    readerQuestion: 'Czy dajesz sobie prawo do popełniania błędów w sprawach, na których Ci zależy?',
+    keyTakeaway: 'Jakość nie wynika z braku błędów, lecz ze sprawności ich naprawiania.'
   },
   {
-    id: 'studium-19-3-uzaleznienie-od-wynikow',
-    title: 'Rollercoaster samooceny: Przypadek Damiana na giełdzie krypto',
-    subtitle: 'Uzależnienie wartości od wyników finansowych i odzyskiwanie stabilności',
-    protagonist: 'Damian, 30 lat, inwestor indywidualny',
-    context: 'Damian uzależnił swoje poczucie własnej wartości od stanu portfela inwestycyjnego. W dniach wzrostów czuł się „bogiem”, w dniach spadków nie wstawał z łóżka i myślał o samobójstwie.',
+    id: 'studium-19-3-porownania-instagram',
+    title: 'Fabryka kompleksów: Jak porównania społeczne w sieci zniszczyły samoocenę Marty',
+    subtitle: 'Upward Social Comparison, cyfrowe wyreżyserowanie i odbudowa realnych punktów odniesienia',
+    protagonist: 'Marta, 26 lat, konsultantka HR',
+    context: 'Marta spędzała średnio 3 godziny dziennie na Instagramie i TikToku, śledząc profile infuencerek fitness i sukcesu. Mimo dobrych zarobków i udanego związku odczuwała stałe przygnębienie.',
     story: [
-      'Damian wszedł w rynek kryptowalut podczas hossy. Gdy jego portfel wzrósł do miliona złotych, Damian kupił drogi zegarek i zaczął pouczać znajomych, jak należy żyć. Jego samoocena była na uwięzi zielonych słupków na wykresie.',
-      'Kiedy nastąpiło załamanie rynku i wartość jego aktywów spadła o 70% w 48 godzin, Damian przeżył głęboki wstrząs. Nie stracił dachu nad głową, ale odczuł spadek cyfr na ekranie jako ostateczny dowód na to, że jest „bezwartościowym nieudacznikiem”.',
-      'Nie potrafił rozmawiać z partnerką, wycofał się ze spotkań towarzyskich i spędzał noce na wpatrywaniu się w czerwone świece wykresów. Poczucie własnej wartości miało charakter całkowicie uwarunkowany (Contingent Self-Esteem).',
-      'Dopiero całkowite odcięcie od handlu krótkoterminowego i odbudowa relacji rodzinnych pomogły mu zrozumieć, że jego godność jako człowieka nie ma nic wspólnego z wahań kursu bitcoina.'
+      'Każdy poranek Marty zaczynał się od przeglądania relacji z idealnych śniadań w balijskich kawiarniach, wyretuszowanych sylwetek i luksusowych podróży.',
+      'Jej umysł bezwiednie dokonywał porównań w górę (Upward Social Comparison): „Ona w moim wieku ma własną markę i ciało bogini, a ja siedzę w biurze na Mokotowie”.',
+      'Marta zaczęła stosować drastyczne diety, kupować ubrania na kredyt i czuć narastającą niechęć do swojego partnera, który „nie był tak przystojny jak faceci z sieci”.',
+      'Dopiero cyfrowy detox i analiza mechanizmów marketingu sieciowego pozwoliły jej zrozumieć, że porównywała swoje zakulisowe, zwyczajne życie z wyreżyserowaną reklama produktów.'
     ],
     dialogue: [
-      { speaker: 'Partnerka', text: 'Damian, mamy z czego żyć. Dlaczego leżysz w ciemności od dwóch dni?', subtext: 'Troska o stan psychiczny i próba przywrócenia proporcji.' },
-      { speaker: 'Damian', text: 'Nie rozumiesz... Straciłem wszystko. Jestem niczym...', subtext: 'Utożsamienie wartości człowieka z chwilowym wynikiem finansowym.' }
+      { speaker: 'Partner', text: 'Marta, wyjedźmy na weekend w góry, odpocznijmy.', subtext: 'Propozycja realnego, prostego wypoczynku.' },
+      { speaker: 'Marta', text: 'W góry? Do jakiegoś szarego domku? Zobacz, gdzie wyjeżdżają ludzie na moim feedzie!', subtext: 'Pogoń za wyreżyserowanym prestiżem z sieci.' }
     ],
-    decisionTaken: 'Damian podjął ryzykowne transakcje z dźwignią 100x celem „odrobienia strat”, co doprowadziło do utraty reszty oszczędności.',
-    whatProtagonistSaw: 'Czerwone wykresy, upadek własnego statusu i wizję bycia nieudacznikiem.',
-    whatWasMissed: 'Fakt, że rynek jest zmiennym środowiskiem losowym, a jego wartość jako partnera i przyjaciela nie uległa żadnej zmianie.',
+    decisionTaken: 'Marta usunęła aplikacje mediów społecznościowych na 60 dni i zaczęła uprawiać sport dla zdrowia, a nie pod zdjęcia.',
+    whatProtagonistSaw: 'Niedostatek własnego życia i własną rzekomą brzydotę.',
+    whatWasMissed: 'Fakt, że zdjęcia w sieci są produktem reklamowym po filtry i retusz.',
     psychologicalAnalysis: {
-      coreMechanism: 'Contingent Self-Esteem (Samoocena uwarunkowana wynikami) i hazard emocjonalny.',
+      coreMechanism: 'Nierealistyczne porównania społeczne w górę (Upward Social Comparison).',
       cognitiveBiases: [
-        { name: 'Błąd atrybucji sukcesu', description: 'Przypisywanie wzrostów rynkowych własnemu genialnemu umysłowi, a spadków — pechowi.', impact: 'Nierealistyczne ryzyko.' }
+        { name: 'Błąd reprezentatywności', description: 'Przyjmowanie promila wyreżyserowanych kadrów za normę społeczną.', impact: 'Ciągła frustracja.' }
       ],
       defenseMechanisms: [
-        { name: 'Maniakalna kompensacja', explanation: 'Gorączkowe podejmowanie coraz większego ryzyka celem szybkiego powrotu na szczyt.' }
+        { name: 'Kompensacja zakupowa', explanation: 'Kupowanie drogich przedmiotów na kredyt w obronie statusu.' }
       ],
-      emotionalDynamic: 'Gwałtowne przejście od manii i wielkościowości do ciężkiej depresji reaktywnej.'
+      emotionalDynamic: 'Zazdrość, frustracja, spadek samooceny i odrzucenie realności.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Spadek kursu o 70%.',
-      attentionFocus: 'Czerwone wskaźniki na ekranie i strach przed brakiem uznania.',
-      interpretation: '„Jestem niczym, straciłem swoją wartość”.',
-      emotion: 'Rozpacz, panika, wstyd.',
-      impulse: 'Odrobienie strat za wszelką cenę (dźwignia 100x).',
-      action: 'Otwarcie skrajnie ryzykownej pozycji.',
-      consequence: 'Całkowite wyczyszczenie konta i załamanie psychiczne.'
+      trigger: 'Otwarcie aplikacji rano w łóżku.',
+      attentionFocus: 'Idealne ciała i luksusowe wnętrza.',
+      interpretation: '„Moje życie jest szare i do niczego”.',
+      emotion: 'Zawiść, smutek, poczucie niższości.',
+      impulse: 'Szukanie kolejnych profili, kupowanie ubrań.',
+      action: 'Wyłączenie kont i powrót do rzeczywistości.',
+      consequence: 'Spadek poziomu lęku i odzyskanie radości z życia.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Jądro półleżące (NAcc)', role: 'Gwałtowny spadek dopaminy po utracie nagrody', activationState: 'Deprywacja dopaminowa' },
-        { region: 'Przednia wyspa', role: 'Przetwarzanie bolesnej straty finansowej', activationState: 'Hiperaktywacja' }
+        { region: 'Jądro półleżące i Wyspa', role: 'Przetwarzanie zazdrości i ubytku statusu społecznego', activationState: 'Ciągły dyskomfort' }
       ],
       neurotransmitters: [
-        { name: 'Dopamina i Serotonina', roleInScenario: 'Drastyczny spadek poziomów wywołujący anhedonię i stany rezygnacyjne.' }
+        { name: 'Dopamina', roleInScenario: 'Zaburzona pętla dopaminowa przez szybkie bodźce z ekranu.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 150 ms', process: 'Widok czerwonego wykresu wywołuje ból fizyczny w wyspie.' }
+        { timeMs: '0 - 100 ms', process: 'Widok zdjęcia idealnej sylwetki wywołuje mikroskok kortyzolu.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Kulturowy kult szybkich bogactw', description: 'Promowanie przekazu, że wartość człowieka mierzy się stanem konta.', vulnerabilityExploited: 'Potrzeba natychmiastowego znaczenia.' }
+        { tactic: 'Algorytmiczna fabryka kompleksów', description: 'Promowanie treści wywołujących niedostatek w celu sprzedaży produktów.', vulnerabilityExploited: 'Potrzebę atrakcyjności.' }
       ],
       counterMeasures: [
-        { step: '1. Odbudowa Bezwarunkowej Samooceny', script: 'Praktykowanie działań bezmaterialnych (wolontariat, relacje, sport) niezwiązanych z zyskiem.', rationale: 'Dywersyfikuje źródła poczucia wartości.' }
+        { step: '1. Higiena Cyfrowa', script: '„Moim punktem odniesienia jest mój własny postęp zeszłoroczny, a nie produkt reklamowy na ekranie”.', rationale: 'Odtwarza realne punkty odniesienia.' }
       ]
     },
-    alternativePath: 'Gdyby Damian posiadał stabilną samoocenę, po spadkach zamknąłby pozycję i wyciągnął wnioski bez wpadania w ciąg hazardowy.',
-    readerQuestion: 'Od jakiego jednego wyniku zewnętrznego (waga, konto, lajki) uzależniasz swoje dzisiejsze samopoczucie?',
-    keyTakeaway: 'Twój wynik to stan zadania w danym momencie. Twoja wartość to niezbywalna cecha Twojego jestestwa.'
+    alternativePath: 'Gdyby Marta trwała w pętli porównań, wpadłaby w pętlę zadłużenia i zaburzenia odżywiania.',
+    readerQuestion: 'Jakie konta w sieci sprawiają, że po ich przejrzeniu czujesz się gorzej ze sobą?',
+    keyTakeaway: 'Nie porównuj swojego środka z czyimś wyreżyserowanym wierzchem.'
   },
   {
-    id: 'studium-19-4-perfekcjonizm-lezliwy',
-    title: 'W pułapce bezbłędności: Jak lękowy perfekcjonizm sparaliżował prace doktorską Łukasza',
-    subtitle: 'Nierealistyczne standardy, lęk przed błędem i wieloletnia prokrastynacja',
-    protagonist: 'Łukasz, 31 lat, doktorant filozofii',
-    context: 'Łukasz pisał swoją pracę doktorską przez 7 lat. Mimo napisania 400 stron genialnego tekstu, nie oddał ani jednego rozdziału promotorowi, ciągle uważając, że tekst jest „niedojrzały i pełen luk”.',
+    id: 'studium-19-4-dunning-kruger-menedzer',
+    title: 'Gdy głośna pewność siebie zastępuje wiedzę: Historia awansu i upadku Norberta',
+    subtitle: 'Efekt Dunninga-Krugera, pycha poznawcza i konfrontacja z weryfikacją rynkową',
+    protagonist: 'Norbert, 35 lat, były kierownik projektu',
+    context: 'Norbert zasłynął w firmie z głośnych, bezkompromisowych wypowiedzi i budowania wizerunku „samorodnego talentu”. Awansował na szefa kluczowego wdrożenia IT, nie posiadając wiedzy technicznej.',
     story: [
-      'Łukasz uważał, że jego praca doktorska musi być dziełem przełomowym, które zmieni bieg historii filozofii. Jego standardy były tak wysokie, że napisanie jednego akapitu zajmowało mu 3 dni.',
-      'Każde zdanie było analizowane pod kątem ewentualnej krytyki ze strony potencjalnych recenzentów. Lęk przed popełnieniem błędu merytorycznego wywoływał u niego paraliż (Paralysis by Analysis).',
-      'Łukasz ciągle dokupował nowe książki, twierdząc: „Muszę przeczytać jeszcze te 5 pozycji, zanim zamknę rozdział I”. W rzeczywistości uciekał przed oceną ze strony promotora (Self-Handicapping).',
-      'Dopiero gdy promotor wyznaczył mu ostateczny, nieprzesuwalny termin skreślenia z listy doktorantów, Łukasz musiał zastosować zasadę „gotowe jest lepsze od idealnego” i oddać pracę w wersji niedoskonałej, uzyskano za nią wyróżnienie.'
+      'Norbert na każdym zebraniu dominował dyskusję, przerywał inżynierom i twierdził: „To jest banalnie proste, robicie z igły widły!”. Jego ekscentryczna pewność siebie uwiodła zarząd.',
+      'Gdy inżynierowie ostrzegali go przed ryzykiem bezpieczeństwa danych, Norbert zbywał ich śmiechem, twierdząc, że „szukają dziury w całym”. Znajdował się na samym szczycie Efektu Dunninga-Krugera.',
+      'Po uruchomieniu systemu doszło do wycieku danych 100 tysięcy klientów. Straty firmy wyniosły miliony złotych, a inwestorzy wycofali się z finansowania.',
+      'Norbert został zwolniony dyscyplinarnie. Zderzenie z rzeczywistością zrzuciło go ze Szczytu Głupoty w Dolinę Rozpaczy.'
     ],
     dialogue: [
-      { speaker: 'Promotor', text: 'Łukasz, ten rozdział jest genialny. Oddaj go wreszcie do recenzji!', subtext: 'Zewnętrzne potwierdzenie wysokiej jakości tekstu.' },
-      { speaker: 'Łukasz', text: 'Panie profesorze, muszę jeszcze dopracować przypisy w sekcji 3... Zostały mi dwa tygodnie lektur...', subtext: 'Obrona perfekcjonizmu lękowego przed ekspozycją na ocenę.' }
+      { speaker: 'Inżynier', text: 'Norbert, ten kod nie ma szyfrowania na poziomie bazy. Nie możemy tego puścić na produkcję!', subtext: 'Merytoryczne ostrzeżenie ekspertów.' },
+      { speaker: 'Norbert', text: 'Nie przesadzajcie! Klient chce efektu na wczoraj, puścimy i się poprawi w locie. Brak wam odwagi!', subtext: 'Arrogancja wynikająca z niewiedzy.' }
     ],
-    decisionTaken: 'Łukasz przez 4 lata odsuwał termin obrony doktoratu z powodu lęku przed niespełnieniem własnych nierealistycznych standardów.',
-    whatProtagonistSaw: 'Ewentualne błędy w przypisach, wizję surowej krytyki i własną nieadekwatność.',
-    whatWasMissed: 'Fakt, że praca doktorska jest jedynie pierwszym etapem drogi naukowej, a nie ostatecznym monumentem życiowym.',
+    decisionTaken: 'Norbert wymusił wdrożenie niedopracowanego systemu wbrew ostrzeżeniom inżynierów.',
+    whatProtagonistSaw: 'Własne przywództwo i podziw zarządu.',
+    whatWasMissed: 'Twarde zasady architektury oprogramowania i wymogi bezpieczeństwa.',
     psychologicalAnalysis: {
-      coreMechanism: 'Dezadaptacyjny perfekcjonizm lękowy w połączeniu z prokrastynacją obronną.',
+      coreMechanism: 'Efekt Dunninga-Krugera i Overconfidence Bias.',
       cognitiveBiases: [
-        { name: 'Myślenie czarno-białe', description: '„Albo napiszę dzieło genialne, albo moja praca jest bezwartościowym śmieciem”.', impact: 'Paraliż twórczy.' }
+        { name: 'Overconfidence Effect', description: 'Przecenianie własnej wiedzy w dziedzinie, której się nie zna.', impact: 'Katastrofalna decyzja biznesowa.' }
       ],
       defenseMechanisms: [
-        { name: 'Prokrastynacja przygotowawcza', explanation: 'Ciągłe dokupowanie książek celem ucieczki przed oddaniem tekstu.' }
+        { name: 'Racjonalizacja i Dewaluacja', explanation: 'Traktowanie inżynierów jako powolnych przeszkód.' }
       ],
-      emotionalDynamic: 'Przewlekłe poczucie winy, wstyd i wyczerpanie psychiczne.'
+      emotionalDynamic: 'Ślepa pycha i pewność siebie, zakończona drastyczną kompromitacją.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Prośba promotora o oddanie rozdziału.',
-      attentionFocus: 'Ewentualne luki w tekście i wizja krytyki.',
-      interpretation: '„Jeśli oddam ten tekst z błędem, kompromituję się jako naukowiec”.',
-      emotion: 'Przerażenie, wstyd, paraliż.',
-      impulse: 'Ucieczka w ponowne redagowanie i lektury.',
-      action: 'Odmowa oddania rozdziału i prośba o przesunięcie terminu.',
-      consequence: 'Groźba skreślenia z listy doktorantów.'
+      trigger: 'Presja czasu ze strony zarządu.',
+      attentionFocus: 'Własny wizerunek sprawczego lidera.',
+      interpretation: '„Inżynierowie się boją, ja mam odwagę i rację”.',
+      emotion: 'Duma, wyższość.',
+      impulse: 'Zignorowanie procedur.',
+      action: 'Podpisanie zgody na wdrożenie bez testów.',
+      consequence: 'Wyciek danych, zwolnienie dyscyplinarne i proces sądowy.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Przednia kora obwodu (ACC)', role: 'Hiperaktywność na sygnały potencjalnego błędu', activationState: 'Stale włączony alarm' },
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Paraliż decyzyjny pod wpływem nadmiernej analizy', activationState: 'Przeciążenie' }
+        { region: 'ACC', role: 'Niedostateczne sygnały ostrzegawcze błędu', activationState: 'Brak aktywacji kontrolnej' }
       ],
       neurotransmitters: [
-        { name: 'Kortyzol', roleInScenario: 'Utrzymujący się wysoki poziom wywołujący bezsenność.' }
+        { name: 'Dopamina', roleInScenario: 'Pętla nagrody zasilana chwaleniem ze strony zarządu.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 200 ms', process: 'Myśl „oddanie pracy” wywołuje ścisk w żołądku.' }
+        { timeMs: '0 - 200 ms', process: 'Ostrzeżenie inżyniera wywołuje uśmiech lekceważenia.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Akademicki mit genialności', description: 'Promowanie przekazu, że wartościowe są tylko dzieła przełomowe.', vulnerabilityExploited: 'Potrzeba wybitności i znaczenia.' }
+        { tactic: 'Teatr pewności siebie', description: 'Głośne mówienie z pewnością siebie uwodzące niekompetentnych decydentów.', vulnerabilityExploited: 'Potrzebę prostych rozwiązań.' }
       ],
       counterMeasures: [
-        { step: '1. Zasada 80/20 (Pareto) i Dobrostan', script: 'Oddawanie prac na poziomie „wystarczająco dobrym” i akceptacja poprawek.', rationale: 'Uwalnia od paraliżu bezbłędności.' }
+        { step: '1. Test Merytoryczny', script: '„Nie oceniamy pewności siebie lidera, lecz obiektywne wyniki testów merytorycznych kodu”.', rationale: 'Chroni przed oszustwem Dunninga-Krugera.' }
       ]
     },
-    alternativePath: 'Gdyby Łukasz przyjął zasadę „praca doktorska ma być napisana, a nie idealna”, obroniłby się 4 lata wcześniej i wydał dwie książki.',
-    readerQuestion: 'W jakim projekcie odsuwasz finał z powodu lęku, że nie będzie on idealny?',
-    keyTakeaway: 'Perfekcjonizm to nie dążenie do doskonałości — to paraliżujący lęk przed popełnieniem błędu. Wybierz postęp zamiast bezbłędności.'
+    alternativePath: 'Gdyby Norbert posłuchał inżynierów i przesunął premierę o miesiąc, wdrożenie byłoby sukcesem.',
+    readerQuestion: 'Czy mylisz głośną pewność siebie z rzeczywistą kompetencją merytoryczną?',
+    keyTakeaway: 'Głośna pewność siebie często krzyczy najgłośniej tam, gdzie wiedza jest najpłytsza.'
   },
   {
-    id: 'studium-19-5-samowspolczucie-vs-samokrytyka',
-    title: 'Od biczowania do wsparcia: Przełom Doroty po nieudanym wystąpieniu',
-    subtitle: 'Niszcząca siła samokrytycyzmu i budowanie samowspółczucia (Self-Compassion)',
-    protagonist: 'Dorota, 39 lat, dyrektorka HR',
-    context: 'Dorota po zapomnieniu jednego wątku podczas prezentacji dla zarządu spędziła noc na wyzywaniu siebie w myśli od „beznadziejnych idiotek” i płaczu.',
+    id: 'studium-19-5-odbudowa-po-porazce',
+    title: 'Ścieżka do stabilnego self-concept: Jak Szymon odbudował poczucie wartości po bankructwie',
+    subtitle: 'Przejście od samooceny warunkowej do ugruntowania w wartościach i procesie',
+    protagonist: 'Szymon, 45 lat, przedsiębiorca',
+    context: 'Szymon po 20 latach prowadzenia firmy budowlanej zbankrutował w wyniku kryzysu w branży. Stracił dom i samochody, popadając w głęboki kryzys tożsamościowy.',
     story: [
-      'Dorota posiadała w głowie niezwykle surowego wewnętrznego krytyka. Każde, nawet najmniejsze potknięcie wywoływało u niej falę auto-agresji werbalnej: „Jesteś do niczego”, „Znowu to zepsułaś”, „Wszyscy z ciebie śmieją”.',
-      'Podczas corocznego spotkania zarządu Dorota pomyliła slajdy i zająknęła się przez 10 sekund. Mimo że dokończyła wystąpienie, a zarząd przyjął jej budżet, Dorota po powrocie do domu czuła się zmiażdżona.',
-      'Jej wewnętrzny monolog przypominał katowanie bezbronnego człowieka. Samokrytycyzm wywołał u niej silny wyrzut kortyzolu i bezsenność.',
-      'Podczas warsztatów Self-Compassion opartych na pracach Kristin Neff, Dorota po raz pierwszy spróbowała odpowiedzieć swojemu wewnętrznemu krytykowi głosem życzliwego przyjaciela. Zrozumiała, że wyrozumiałość wobec własnych błędów nie osłabia dyscypliny, lecz daje siłę do szybszego podnoszenia się po upadku.'
+      'przez lata samoocena Szymona brzmiała: „Jestem bogatym, skutecznym biznesmenem”. Gdy majątek zniknął, Szymon czuł się jak nagi człowiek na mrozie.',
+      'Przez pierwszy rok po bankructwie wstydził się wychodzić na ulicę, bojąc się spotkania dawnych znajomych. Jego samoocena leżała w gruzach.',
+      'Przełom nastąpił, gdy podjął pracę jako brygadzista na etacie. Zrozumiał, że jego wiedza inżynieryjna, uczciwość i umiejętność pracy z ludźmi NIE ZNIKNĘŁY wraz z bankructwem.',
+      'Szymon zaczął budować tożsamość opartą na wartościach: „Jestem uczciwym człowiekiem, który potrafi budować i dbać o ludzi, niezależnie od stanu konta”.'
     ],
     dialogue: [
-      { speaker: 'Wewnętrzny Krytyk', text: 'Zająknęłaś się przy zarządzie! Jesteś beznadziejna! Zniszczyłaś całą swoją karierę!', subtext: 'Atak wewnętrznego tyrana wywołujący wstyd i paraliż.' },
-      { speaker: 'Dorota (Głos Współczucia)', text: 'Zająknęłam się, bo byłam zmęczona, ale dokończyłam prezentację i budżet został przyjęty. Jestem tylko człowiekiem i mam prawo do błędu.', subtext: 'Wdrożenie samowspółczucia i racjonalnej wyceny faktów.' }
+      { speaker: 'Znajomy', text: 'Szymon, słyszałem o firmie... Straszne. Jak ty sobie z tym radzisz?', subtext: 'Pytanie pełne współczucia i badania statusu.' },
+      { speaker: 'Szymon', text: 'Straciłem pieniądze, ale nie straciłem wiedzy ani uczciwości. Buduję wszystko od nowa na spokojniejszych zasadach.', subtext: 'Samoocena stabilna ugruntowana w wartościach.' }
     ],
-    decisionTaken: 'Dorota zastosowała protokół samowspółczucia i po raz pierwszy po nieudanym wystąpieniu zasnęła bez leków uspokajających.',
-    whatProtagonistSaw: '10 sekund zająknięcia jako całkowitą kompromitację i ruinę reputacji.',
-    whatWasMissed: 'Fakt, że cała reszta 45-minutowej prezentacji była wybitna, a zarząd zatwierdził jej wniosek bez zastrzeżeń.',
+    decisionTaken: 'Szymon podjął pracę na etacie, spłacał zobowiązania i zbudował stabilne, nieuzależnione od statusu poczucie wartości.',
+    whatProtagonistSaw: 'Upadek majątku i wstyd przed światem.',
+    whatWasMissed: 'Fakt, że jego rzeczywiste umiejętności inżynieryjne i cechy charakteru pozostały nienaruszone.',
     psychologicalAnalysis: {
-      coreMechanism: 'Przejście od Surowego Samokrytycyzmu do Samowspółczucia (Self-Compassion).',
+      coreMechanism: 'Przejście od samooceny warunkowej (status) do samooceny ugruntowanej w wartościach.',
       cognitiveBiases: [
-        { name: 'Filtr negatywny', description: 'Skupienie całej uwagi na 10 sekundach błędu z pominięciem 45 minut sukcesu.', impact: 'Poczucie klęski mimo wygranej.' }
+        { name: 'Błąd etykietowania statusowego', description: 'Uznawanie braku majątku za brak wartości ludzkiej.', impact: 'Spadek poczucia wartości.' }
       ],
       defenseMechanisms: [
-        { name: 'Auto-agresja werbalna', explanation: 'Karanie samej siebie przed usłyszeniem krytyki z zewnątrz.' }
+        { name: 'Akceptacja i Rekonstrukcja', explanation: 'Porzucenie pretensji do świata i skupienie na realnym działaniu.' }
       ],
-      emotionalDynamic: 'Głęboki wstyd, poczucie nieadekwatności i ulga po wdrożeniu głosu współczucia.'
+      emotionalDynamic: 'Żałoba po majątku zakończona głębokim, spokojnym ugruntowaniem.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Zająknięcie się na prezentacji.',
-      attentionFocus: 'Śmiech jednego z dyrektorów i własny błąd.',
-      interpretation: '„Jestem beznadziejna, skompromitowałam się”.',
-      emotion: 'Wstyd, wściekłość na siebie, rozpacz.',
-      impulse: 'Biczowanie się w myśli, płacz.',
-      action: 'Zastosowanie 3 kroków Self-Compassion (uważność, wspólne doświadczenie ludzkie, życzliwość).',
-      consequence: 'Wyciszenie alarmu limfatycznego i powrót do spokoju.'
+      trigger: 'Licytacja majątku firmy.',
+      attentionFocus: 'Puste konto, brak luksusowych rekwizytów.',
+      interpretation: '„Straciłem majątek, ale moje umiejętności istnieją”.',
+      emotion: 'Smutek, pokora, spokój.',
+      impulse: 'Podjęcie prostej pracy wykonawczej.',
+      action: 'Ciężka, uczciwa praca i spłata długów.',
+      consequence: 'Odzyskanie szacunku do samego siebie na zupełnie nowym poziomie.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Ośrodek współczucia (przednia kora obwodu i wyspa)', role: 'Generowanie poczucia bezpieczeństwa i ukojenia', activationState: 'Aktywacja przez głos życzliwości' },
-        { region: 'Ciało migdałowate', role: 'Wygaszanie reakcji lękowej', activationState: 'Spadek aktywacji' }
+        { region: 'mPFC', role: 'Integracja nowej, stabilnej narracji o sobie bez rekwizytów statusu', activationState: 'Równowaga' }
       ],
       neurotransmitters: [
-        { name: 'Oksytocyna i Opiaty endogenne', roleInScenario: 'Wzrost poziomów wywołujący fizyczną ulgę i spadek tętna.' }
+        { name: 'Serotonina', roleInScenario: 'Stabilizacja poziomu serotoniny po oparciu wartości na wewnętrznym kompasie.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 300 ms', process: 'Słowo „beznadziejna” wywołuje skok kortyzolu; głos współczucia go wygasza.' }
+        { timeMs: '0 - 500 ms', process: 'Spotkanie dawnego znajomego nie wywołuje już ucieczkowego skoku lęku.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Szkolny mit samokrytyki', description: 'Przekonanie, że surowość wobec siebie jest jedynym motywatorem rozwoju.', vulnerabilityExploited: 'Lęk przed rozleniwieniem.' }
+        { tactic: 'Presja statusowa', description: 'Przekonanie społeczne, że człowiek bez majątku jest nieudacznikiem.', vulnerabilityExploited: 'Potrzebę akceptacji.' }
       ],
       counterMeasures: [
-        { step: '1. Trzy Kroki Kristin Neff', script: '1. To jest chwila cierpienia. 2. Cierpienie jest częścią ludzkiego życia. 3. Niech będę dla siebie życzliwa.', rationale: 'Biologicznie przełącza układ nerwowy z zagrożenia na ukojenie.' }
+        { step: '1. Ugruntowanie w Wartościach', script: '„Moja wartość jako człowieka leży w moim charakterze i traktowaniu innych, a nie w marży mojej firmy”.', rationale: 'Uodparnia na kryzysy zewnętrzne.' }
       ]
     },
-    alternativePath: 'Gdyby Dorota trwała w samokrytycyzmie, rozwinęłaby lęk przed jakimikolwiek wystąpieniami i zrezygnowała ze stanowiska dyrektorki.',
-    readerQuestion: 'Jakimi słowami zwracasz się do siebie, gdy popełnisz błąd? Czy powiedziałbyś to samo swojemu najlepszemu przyjacielowi?',
-    keyTakeaway: 'Samokrytycyzm niszczy siłę do działania. Samowspółczucie daje odwagę do podnoszenia się z każdej porażki.'
-  },
-  {
-    id: 'studium-19-6-samoutrudnianie-student',
-    title: 'Impreza przed egzaminem: Samoutrudnianie u Kamila',
-    subtitle: 'Ochrona samooceny kosztem wyniku i dekonstrukcja mechanizmów obronnych',
-    protagonist: 'Kamil, 22 lata, student architektury',
-    context: 'Kamil przed najważniejszym egzaminem z konstrukcji budowlanych poszedł na całonocną imprezę i wypił znaczne ilości alkoholu, idąc na egzamin bez snu.',
-    story: [
-      'Kamil był uważany za „zdolnego, ale leniwego”. Bardzo bał się egzaminu z konstrukcji, gdyż materiał był trudny, a ewentualna porażka uderzyłaby w jego przekonanie o własnej błyskotliwości.',
-      'Gdyby uczył się przez 2 tygodnie i oblał, musiałby przyznać przed sobą: „Oblałem, bo jestem za mało błyskotliwy”. To wyobrażenie było dla jego ego nie do zniesienia.',
-      'Tuż przed egzaminem Kamil poszedł na imprezę (Self-Handicapping). Dzięki temu stworzył sobie doskonałą, zewnętrzną wymówkę. Jeśli obleje, powie: „Oblałem, bo poszedłem na imprezę, a nie dlatego, że nie rozumiem materiału”. Jeśli zda, będzie bohaterem: „Zdałem bez uczenia i na kacu!”.',
-      'Kamil oblał egzamin. Jego ego zostało uratowane, ale musiał powtarzać cały rok studiów. Dziś rozumie, że użył samoutrudniania jako tarczy chroniącej przed oceną kompetencji.'
-    ],
-    dialogue: [
-      { speaker: 'Kolega', text: 'Kamil, zwariowałeś? Jutro masz najważniejszy egzamin, a pijesz trzecie piwo?', subtext: 'Troska o wynik i zdziwienie niestosownym zachowaniem.' },
-      { speaker: 'Kamil', text: 'Spokojnie, co ma być to będzie! Raz się żyje, nie będę ślęczał nad książkami jak kujon.', subtext: 'Obronna racjonalizacja samoutrudniania.' }
-    ],
-    decisionTaken: 'Kamil spędził noc przed egzaminem na imprezie, rezygnując ze snu i powtórki materiału.',
-    whatProtagonistSaw: 'Szansę na ochronę ego przed wstydem porażki merytorycznej.',
-    whatWasMissed: 'Fakt, że uratowanie samopoczucia kosztowało go utratę roku studiów i ogromne koszty finansowe.',
-    psychologicalAnalysis: {
-      coreMechanism: 'Samo-utrudnianie (Self-Handicapping) jako tarcza chroniąca samoocenę.',
-      cognitiveBiases: [
-        { name: 'Self-serving bias', description: 'Przypisywanie ewentualnego sukcesu talentowi, a porażki — czynnikom zewnętrznym (impreza).', impact: 'Brak motywacji do nauki.' }
-      ],
-      defenseMechanisms: [
-        { name: 'Tworzenie barier zewnętrznych', explanation: 'Świadome obniżanie własnych szans na sukces w celu asekuracji samooceny.' }
-      ],
-      emotionalDynamic: 'Lęk przed weryfikacją własnych zdolności przykryty pozorną beztroską.'
-    },
-    decisionProcessAnalysis: {
-      trigger: 'Zbliżający się termin egzaminu.',
-      attentionFocus: 'Lęk przed porażką merytoryczną i wstydem.',
-      interpretation: '„Jeśli będę się uczył i obleję, okaże się, że jestem głupi”.',
-      emotion: 'Przerażenie, spadek poczucia skuteczności.',
-      impulse: 'Ucieczka, stwoezenie wymówki.',
-      action: 'Wyjście na imprezę i spożywanie alkoholu.',
-      consequence: 'Olanie egzaminu i powtarzanie roku.'
-    },
-    neurobiologicalAnalysis: {
-      brainRegions: [
-        { region: 'Jądro półleżące', role: 'Poszukiwanie natychmiastowej ulgi dopaminowej na imprezie', activationState: 'Ucieczka w nagrodę' },
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Utrata kontroli nad długoterminowym celem', activationState: 'Wyhamowanie' }
-      ],
-      neurotransmitters: [
-        { name: 'Alkohol i Dopamina', roleInScenario: 'Chwilowe znieczulenie niepokoju egzaminacyjnego.' }
-      ],
-      biologicalTimeline: [
-        { timeMs: '0 - 300 ms', process: 'Myśl o nauce wywołuje opór, zaproszenie na imprezę przynosi ulgę.' }
-      ]
-    },
-    influenceAndManipulation: {
-      tacticsUsed: [
-        { tactic: 'Młodzieńczy mit zdolnego lenia', description: 'Wartościowanie sukcesu osiągniętego bez wysiłku wyżej niż sukcesu wypracowanego.', vulnerabilityExploited: 'Potrzeba posiadania naturalnego talentu.' }
-      ],
-      counterMeasures: [
-        { step: '1. Bezpośrednia konfrontacja z lękiem', script: '„Boję się, że nie zrozumie tego materiału. Przyznam się do lęku i uczę się przez 2 godziny”.', rationale: 'Usuwa potrzebę tworzenia barier obronnych.' }
-      ]
-    },
-    alternativePath: 'Gdyby Kamil uczył się i przyjął korepetycje, zdałby egzamin w pierwszym terminie i zbudował realną sprawność.',
-    readerQuestion: 'W jakich sytuacjach świadomie stwarzasz sobie przeszkody (zmęczenie, spóźnienie, brak sprzętu), by mieć wymówkę na wypadek porażki?',
-    keyTakeaway: 'Nie niszcz własnych szans na sukces tylko po to, by chronić swoje złudzenie nieomylności.'
-  },
-  {
-    id: 'studium-19-7-graded-mastery-rehabilitacja',
-    title: 'Odbudowa sprawczości krok po kroku: Powrót do zdrowia Marka po udarze',
-    subtitle: 'Stosowanie protokołu Graded Mastery w rehabilitacji neurologicznej',
-    protagonist: 'Marek, 62 lata, były inżynier po udarze niedokrwiennym',
-    context: 'Marek po udarze stracił władzę w prawej dłoni. Początkowo wpadł w ciężką depresję, twierdząc, że „jest rośliną i już nigdy niczego sam nie zrobi”.',
-    story: [
-      'Dla człowieka, który przez 40 lat rysował skomplikowane projekty, utrata sprawności w dłoni była cios w samo serce tożsamości. Marek odmawiał udziału w ćwiczeniach, uważając próby chwytania piłeczki za poniżające.',
-      'Fizjoterapeutka zastosowała protokół Graded Mastery (Stopniowane Opanowanie). Zamiast kazać mu pisać, zaczęła od mikrozadania: dotknięcia kciukiem palca wskazującego z pomocą wzroku.',
-      'Każdy mały sukces był rejestrowany na specjalnym wykresie. Po 3 tygodniach Marek sam podniósł lekki kubek z wodą. W jego mózgu doszło do wyrzutu dopaminy i reaktywacji poczucia sprawczości.',
-      'Po roku konsekwentnej pracy małych kroków Marek zaczął ponownie szkicować proste rysunki. Jego samoocena przestała być reaktywną ruiną i stała się stabilnym fundamentem opartym na fakcie pokonania ciężkiej niepełnosprawności.'
-    ],
-    dialogue: [
-      { speaker: 'Fizjoterapeutka', text: 'Panie Marku, dzisiaj nie musimy pisać. Dzisiaj tylko przesuniemy tę jedną kostkę o 2 centymetry.', subtext: 'Obniżenie progu aktywacji i dostosowanie wyzwania do możliwości.' },
-      { speaker: 'Marek', text: 'Tylko kostkę? No dobrze... to spróbujmy.', subtext: 'Akceptacja mikrozadania bez wywoływania odruchu paniki.' }
-    ],
-    decisionTaken: 'Marek podjął codzienne, 15-minutowe sesje mikro-ćwiczeń, odbudowując sprawność dłoni i wiarę w siebie.',
-    whatProtagonistSaw: 'Początkowo: całkowitą niepełnosprawność i bezsens starań. Później: codzienne, małe dowody postępu.',
-    whatWasMissed: 'Fakt, że neuroplastyczność mózgu wymaga tysięcy powtórzeń na małym poziomie trudności, a nie jednego wielkiego zrywu.',
-    psychologicalAnalysis: {
-      coreMechanism: 'Protokół Graded Mastery (Systematyczne Opanowanie) i odbudowa Self-Efficacy.',
-      cognitiveBiases: [
-        { name: 'Uogólnianie porażki', description: 'Przekonanie, że niesprawność dłoni oznacza całkowity brak wartości człowieka.', impact: 'Początkowy stupor depresyjny.' }
-      ],
-      defenseMechanisms: [
-        { name: 'Bierna rezygnacja', explanation: 'Odmowa ćwiczeń w celu uniknięcia bolesnego konfrontowania się z brakiem sprawności.' }
-      ],
-      emotionalDynamic: 'Przejście od głębokiej rozpaczy do ciągłej, dopaminowej motywacji osiągnięć.'
-    },
-    decisionProcessAnalysis: {
-      trigger: 'Propozycja mikrozadania od fizjoterapeutki.',
-      attentionFocus: 'Ruch jednego palca i przesunięcie kostki.',
-      interpretation: '„To jest proste, to mogę zrobić”.',
-      emotion: 'Ciekawość, ulga, pierwszy błysk sprawczości.',
-      impulse: 'Podjęcie próby.',
-      action: 'Przesunięcie kostki i rejestracja sukcesu na wykresie.',
-      consequence: 'Wzrost self-efficacy i podjęcie długoterminowej rehabilitacji.'
-    },
-    neurobiologicalAnalysis: {
-      brainRegions: [
-        { region: 'Kora ruchowa i somatosensoryczna', role: 'Reorganizacja map korowych wokół uszkodzonego obszaru', activationState: 'Stymulacja neuroplastyczna' },
-        { region: 'Jądro półleżące', role: 'Wyrzut dopaminy po osiągnięciu mikro-celu', activationState: 'Pobudzenie układu nagrody' }
-      ],
-      neurotransmitters: [
-        { name: 'Dopamina i BDNF', roleInScenario: 'Kluczowe stymulatory tworzenia nowych synaps w korze.' }
-      ],
-      biologicalTimeline: [
-        { timeMs: '0 - 500 ms', process: 'Udało się! Wyrzut dopaminy po przesunięciu kostki.' }
-      ]
-    },
-    influenceAndManipulation: {
-      tacticsUsed: [
-        { tactic: 'Metoda Drobnych Wygranych (Small Wins)', description: 'Projektowanie środowiska tak, by sukces był nieunikniony.', vulnerabilityExploited: 'Mózgowy głód dopaminowy u osób w kryzysie.' }
-      ],
-      counterMeasures: [
-        { step: '1. Tworzenie Wizualnych Wykresów Postępu', script: 'Rysowanie codziennych małych kroków na widocznym arkuszu.', rationale: 'Dostarcza kory przedczołowej niezaprzeczalnych dowodów wzrostu.' }
-      ]
-    },
-    alternativePath: 'Gdyby Marek odrzucił metodę małych kroków, spędziłby resztę życia w łóżku w stanie głębokiej depresji.',
-    readerQuestion: 'Jaki cel w Twoim życiu wydaje się tak wielki, że paraliżuje Cię przed zrobieniem pierwszego mikrokroku?',
-    keyTakeaway: 'Nie szturmuj góry jednym skokiem. Podziel trasę na stopnie tak małe, że Twój mózg nie zdoła poczuć lęku.'
+    alternativePath: 'Gdyby Szymon trwał w ucieczce i wstydzie, popadłby w uzależnienie od alkoholu.',
+    readerQuestion: 'Na czym opiera się Twoje poczucie wartości, gdy zabrać Ci Twoje codzienne sukcesy?',
+    keyTakeaway: 'Najsilniejsza samoocena to ta, której nikt nie może Ci odebrać zabierając Ci majątek czy stanowisko.'
   }
 ];
 
 export const selfExercisesChapterNineteen: SelfExercise[] = [
   {
-    id: 'cwiczenie-19-1-audyt-self-efficacy',
-    title: 'Audyt Poczucia Własnej Skuteczności (Self-Efficacy Matrix)',
-    subtitle: 'Rozdzielanie ogólnej samooceny od twardych umiejętności w konkretnych domenach',
-    objective: 'Precyzyjna ocena poziomu pewności siebie i sprawności w 5 głównych obszarach życia.',
+    id: 'ex-19-1',
+    title: 'Arkusz Re-kalibracji Self-Efficacy',
+    subtitle: 'Budowanie poczucia skuteczności na twardych dowodach z działania',
+    objective: 'Przekształcenie lękowego przekonania „Nie poradzę sobie” w zbiór konkretnych mikrokroków sprawczych.',
     durationMinutes: 20,
-    neuroScientificFoundation: 'Aktywacja dlPFC do analitycznej oceny zasobów z wyłączeniem podkorowych uogólnień lękowych.',
+    neuroScientificFoundation: 'Rejestracja realnych mikrosukcesów na piśmie stymuluje uwalnianie dopaminy i wzmacnia ścieżki sprawcze w kory przedczołowej.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Wybór 5 domen życiowych',
-        instruction: 'Wypisz 5 obszarów (np. przemawianie, finanse, sport, relacje, praca techniczna).',
-        promptText: 'Moje 5 domen:',
-        placeholder: 'Przemawianie, Budżet domowy, Gotowanie, Negocjacje, Bieganie...'
+        title: 'Wybór trudnego zadania',
+        instruction: 'Zapisz wyzwanie, przed którym stoisz, a które wywołuje w Tobie opór i myśli „To za trudne” (np. Rozmowa o podwyżce, Napisanie raportu).',
+        promptText: 'Moje wyzwanie testowe:',
+        placeholder: 'Wyzwanie: Przeprowadzenie trudnej rozmowy renegocjacyjnej z klientem...'
       },
       {
         stepNumber: 2,
-        title: 'Ocena Skuteczności vs Kompetencji',
-        instruction: 'W skali 1-10 oceń: A) Twoje RZECZYWISTE umiejętności, B) Twoją WIARĘ w to, że dasz radę.',
-        promptText: 'Ocena domen (Kompetencja / Wiara):',
-        placeholder: 'Przemawianie: Kompetencja 8/10, Wiara 3/10 (Syndrom Oszusta!)'
+        title: 'Rozbicie na mikrokroki sprawcze',
+        instruction: 'Rozbij to wyzwanie na 3 bardzo małe czynności, które jesteś w stanie wykonać w ciągu najbliższych 15 minut.',
+        promptText: 'Moje 3 mikrokroki sprawcze:',
+        placeholder: '1. Wypisanie 3 argumentów finansowych na kartce...\n2. Przećwiczenie pierwszego zdania na głos przed lustrem...\n3. Wyslanie e-maila z propozycją terminu spotkania...'
       },
       {
         stepNumber: 3,
-        title: 'Plan zrównoważenia',
-        instruction: 'Dla domeny z największą luką zaplanuj jedno doświadczenie opanowania (Mastery Experience).',
-        promptText: 'Mój mikrokrok opanowania:',
-        placeholder: 'Nagram 2-minutowe wideo z wypowiedzią i obejrzę je bez oceniania.'
+        title: 'Rejestracja wykonania i poczucia kontroli',
+        instruction: 'Wykonaj krok 1 i zapisz na piśmie: „Wykonano. Poradziłem sobie z krokiem 1”.',
+        promptText: 'Potwierdzenie sprawczości:',
+        placeholder: 'Krok 1 wykonany. Poczucie kontroli wzrosło z 20% do 60%...'
       }
     ],
     reflectionQuestions: [
-      'W której domenie Twoje lęki całkowicie mwijają się z Twoimi rzeczywistymi sukcesami?'
+      'Jak wykonanie małego mikrokroku wpływa na poziom paraliżującego lęku?',
+      'Dlaczego Twój umysł straszył Cię całością zadania zamiast pokazać pierwszy krok?'
     ]
   },
   {
-    id: 'cwiczenie-19-2-dziennik-zwyciestw',
-    title: 'Dziennik Zwycięstw i Drobnych Osiągnięć (Small Wins Log)',
-    subtitle: 'Zbieranie twardych dowodów sprawczości każdego dnia',
-    objective: 'Wzmocnienie uwalniania dopaminy i budowanie pamięci zewnętrznej dla sukcesów.',
-    durationMinutes: 15,
-    neuroScientificFoundation: 'Przełamywanie Negatywnej Asymetrii Emocjonalnej (Loss Aversion) poprzez intencjonalne skupienie uwagi na wygranych.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Codzienny zapis 3 wygranych',
-        instruction: 'Zapisz 3 konkretne rzeczy, które dzisiaj ukończyłeś lub przełamałeś mimo oporu.',
-        promptText: 'Dzisiejsze 3 wygrane:',
-        placeholder: '1. Odbyłem trudną rozmowę telefoniczną. 2. Zrobiłem 30 min treningu. 3. Dokończyłem raport.'
-      },
-      {
-        stepNumber: 2,
-        title: 'Nazwanie użytej cechy',
-        instruction: 'Przy każdym sukcesie dopisz cechę, którą wykazałeś (np. odwaga, dyscyplina, spokój).',
-        promptText: 'Moje aktywowane zasoby:',
-        placeholder: '1. Odwaga. 2. Dyscyplina. 3. Koncentracja.'
-      }
-    ],
-    reflectionQuestions: [
-      'Jak zmienia się Twój wieczorny poziom niepokoju, gdy zamykasz dzień listą sukcesów zamiast listą niedociągnięć?'
-    ]
-  },
-  {
-    id: 'cwiczenie-19-3-samowspolczucie-w-porazce',
-    title: 'Protokół Samowspółczucia w Chwili Porażki (Self-Compassion Pause)',
-    subtitle: 'Narzędzie deeskalacji samokrytyki wg Kristin Neff',
-    objective: 'Przełączenie układu nerwowego z trybu zagrożenia (samokrytyka) na tryb ukojenia (życzliwość).',
-    durationMinutes: 15,
-    neuroScientificFoundation: 'Stymulacja nerwu błędnego i uwalnianie oksytocyny poprzez cichy, życzliwy monolog wewnętrzny.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Krok 1: Uważność (Mindfulness)',
-        instruction: 'Nazwij swój błąd i emocję bez dramatyzowania („To jest chwila trudności/stresu/wstydu”).',
-        promptText: 'Nazwanie stanu:',
-        placeholder: 'Czucję silny wstyd, bo zająknąłem się podczas wypowiedzi.'
-      },
-      {
-        stepNumber: 2,
-        title: 'Krok 2: Wspólne Doświadczenie Ludzkie',
-        instruction: 'Przypomnij sobie, że popełnianie błędów jest wpisane w naturę każdego człowieka („Porażki przytrafiają się każdemu”).',
-        promptText: 'Normalizacja stanu:',
-        placeholder: 'Każdy człowiek czasem się myli. Błędy są częścią uczenia się.'
-      },
-      {
-        stepNumber: 3,
-        title: 'Krok 3: Życzliwość dla Siebie',
-        instruction: 'Wypowiedz do siebie słowa, które powiedziałbyś przyjacielowi w tej samej sytuacji.',
-        promptText: 'Słowa życzliwego wsparcia:',
-        placeholder: 'Nic się nie stało. Dałeś z siebie wszystko. Wyciągnij wnioski i idź dalej.'
-      }
-    ],
-    reflectionQuestions: [
-      'O ile szybciej wracasz do równowagi, gdy stosujesz wyrozumiałość zamiast surowego biczowania się?'
-    ]
-  },
-  {
-    id: 'cwiczenie-19-4-reewaluacja-porazki',
-    title: 'Warsztat Reewaluacji Porażki (Failure Reframing)',
-    subtitle: 'Przekształcanie klęski w cenny materiał badawczy',
-    objective: 'Wydobycie wartości edukacyjnej z nieudanego projektu bez obniżania samooceny.',
-    durationMinutes: 20,
-    neuroScientificFoundation: 'Przeniesienie pobudzenia z ciała migdałowatego do kory przedczołowej celem wyciągnięcia logicznych wniosków.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Zapis nieudanego projektu',
-        instruction: 'Zapisz sytuację, którą uważasz za swoją porażkę.',
-        promptText: 'Opis niepowodzenia:',
-        placeholder: 'Odrzucenie mojej oferty przez klienta Y...'
-      },
-      {
-        stepNumber: 2,
-        title: 'Wyciągnięcie 3 twardych lekcji',
-        instruction: 'Napisz 3 konkretne rzeczy, których nauczyłeś się dzięki temu niepowodzeniu.',
-        promptText: 'Moje 3 lekcje procesowe:',
-        placeholder: '1. Muszę dokładniej badać budżet klienta na początku. 2. Oferta była za długa. 3. Warto zadawać więcej pytań.'
-      }
-    ],
-    reflectionQuestions: [
-      'Dlaczego ta porażka może okazać się najbardziej wartościowym zdarzeniem tego roku dla Twojego rozwoju?'
-    ]
-  },
-  {
-    id: 'cwiczenie-19-5-audyt-krytyki-zewnetrznej',
-    title: 'Sito Selekcji Krytyki Zewnętrznej (External Criticism Audit)',
-    subtitle: 'Ochrona samooceny przed niekonstruktywnym jadem i hejtem',
-    objective: 'Oddzielenie wartościowych uwag merytorycznych od obelg wynikających z kompleksów krytyka.',
-    durationMinutes: 15,
-    neuroScientificFoundation: 'Wzmacnianie granicy tożsamościowej w mPFC i hamowanie automatycznej reakcji lękowej.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Zapis usłyszanej krytyki',
-        instruction: 'Zapisz przykrą uwagę, którą usłyszałeś od kogoś w ostatnim czasie.',
-        promptText: 'Trudna uwaga:',
-        placeholder: '„Twoja Prezentacja była chaotyczna i nudna”'
-      },
-      {
-        stepNumber: 2,
-        title: 'Test Sita Merytorycznego',
-        instruction: 'Odpowiedz na pytania: Czy ta uwaga zawiera konkretne fakty? Czy osoba krytykująca jest dla Ciebie autorytetem w tej dziedzinie?',
-        promptText: 'Wynik testu sita:',
-        placeholder: 'Krytyk nie podał żadnych faktów i był zdenerwowany. Odrzucam emocje, zachowuję uwagę o strukturze.'
-      }
-    ],
-    reflectionQuestions: [
-      'O ile wolniejszy stajesz się od cudzych opinii, gdy stosujesz Sito Merytoryczne?'
-    ]
-  },
-  {
-    id: 'cwiczenie-19-6-dekonstrukcja-samoutrudniania',
-    title: 'Wykrywacz Samo-utrudniania (Self-Handicapping Radar)',
-    subtitle: 'Identyfikacja ukrytych barier stwarzanych własnemu sukcesowi',
-    objective: 'Odkrycie zachowań asekuracyjnych (zmęczenie, spóźnienia, bałagan) i ich natychmiastowa eliminacja.',
-    durationMinutes: 20,
-    neuroScientificFoundation: 'Zwiększanie samoświadomości w kory obwodu celem zahamowania nawykowych ucieczek obronnych.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Identyfikacja wymówki asekuracyjnej',
-        instruction: 'Zapisz, co robisz tuż przed trudnym zadaniem, co może stanowić gotową wymówkę w razie porażki.',
-        promptText: 'Moja bariera obronna:',
-        placeholder: 'Przed ważnym zebraniem siedzę do 2 w nocy w telefonie, żeby rano powiedzieć „jestem nieprzytomny”.'
-      },
-      {
-        stepNumber: 2,
-        title: 'Plan bezpośredniej ekspozycji',
-        instruction: 'Napisz, co zrobisz, by przystąpić do zadania w stanie optymalnym i przyjąć wynik na klatę.',
-        promptText: 'Mój plan dojrzały:',
-        placeholder: 'Kładę się o 23:00, odkładam telefon i przyimuję pełną odpowiedzialność za wynik zebrania.'
-      }
-    ],
-    reflectionQuestions: [
-      'Jakie to uczucie stanąć do walki na 100% bez poduszki powietrznej w postaci wymówki?'
-    ]
-  },
-  {
-    id: 'cwiczenie-19-7-protokol-graded-mastery',
-    title: 'Projektor Mikrokroków Sprawczości (Graded Mastery Plan)',
-    subtitle: 'Rozbijanie paraliżujących celów na serie wygrywalnych zadań',
-    objective: 'Budowanie dopaminowej drabiny sukcesu w nowej, trudnej domenie.',
+    id: 'ex-19-2',
+    title: 'Detoks od Wewnętrznego Krytyka',
+    subtitle: 'Przejście od samobiczowania do samowspółczucia (Self-Compassion)',
+    objective: 'Zauważenie surowego monologu wewnętrznego i zastąpienie go wspierającym głosem realistycznego mentora.',
     durationMinutes: 25,
-    neuroScientificFoundation: 'Stymulacja jąder półleżących ciągłym dopływem małych dawek dopaminy za osiągnięte mikrokroki.',
+    neuroScientificFoundation: 'Samowspółczucie obniża poziom wydzielania kortyzolu i stymuluje uwalnianie oksytocyny, przywracając przywspółczulną równowagę.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Definicja celu wielkiego',
-        instruction: 'Zapisz cel, który wywołuje w Tobie lęk i paraliż (np. napisanie książki, przebiegnięcie maratonu).',
-        promptText: 'Wielki cel:',
-        placeholder: 'Napisanie książki branżowej o długości 200 stron...'
+        title: 'Uchwycenie głosu krytyka',
+        instruction: 'Zapisz słowa, które wypowiedziałeś do siebie w myśli po ostatnim błędzie (np. Ale jesteś idiotą, Znowu to zepsułeś).',
+        promptText: 'Atak wewnętrznego krytyka:',
+        placeholder: 'Słowa krytyka: Znowu zapomniałeś o wytycznych, nigdy się tego nie nauczysz...'
       },
       {
         stepNumber: 2,
-        title: 'Stworzenie 3 mikrokroków bezstresowych',
-        instruction: 'Podziel ten cel na kroki tak małe, że nie sposób ich przegrać.',
-        promptText: '3 mikrokroki bezstresowe:',
-        placeholder: '1. Otwarcie pliku i napisanie 1 zdania dziennie. 2. Wypisanie 3 punktów spisu treści. 3. Pisanie przez 5 minut.'
+        title: 'Test Przyjaciela',
+        instruction: 'Napisz, co w dokładnie tej samej sytuacji powiedziałbyś swojemu najlepszemu przyjacielowi, którego szanujesz.',
+        promptText: 'Wypowiedź dla przyjaciela:',
+        placeholder: 'Mój przyjacielu: Popełniłeś błąd bo byłeś zmęczony. Sprawdźmy co trzeba poprawić i pomogę Ci to zrobić...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Sformułowanie głosu Mentora',
+        instruction: 'Przepisuj atak krytyka na zdanie wspierającego mentora kierowane do samego siebie.',
+        promptText: 'Moja nowa wypowiedź Mentora:',
+        placeholder: 'Zrobiłem błąd w raporcie. To informacja o braku uwagi przy zmęczeniu. Poprawiam tabelę i wyciągam wnioski na przyszłość.'
       }
     ],
     reflectionQuestions: [
-      'Dlaczego najtrudniejsza jest zawsze iskra zapłonowa, a po 2 minutach działanie staje się naturalne?'
+      'Czyj głos z przeszłości najbardziej przypomina słowa Twojego wewnętrznego krytyka?',
+      'O ile sprawniej naprawiasz błędy, gdy nie tracisz sił na samobiczowanie?'
+    ]
+  },
+  {
+    id: 'ex-19-3',
+    title: 'Audyt Dowodów Obiektywnych (Anti-Impostor Sheet)',
+    subtitle: 'Rozbrajanie Syndromu Oszusta za pomocą faktów',
+    objective: 'Zebranie niezaprzeczalnych, obiektywnych faktów potwierdzających Twoje realne kompetencje.',
+    durationMinutes: 30,
+    neuroScientificFoundation: 'Rzetelne zgromadzenie danych w koryprzedczołowej przełamuje tendencję DMN do zniekształcania i dyskwalifikowania sukcesów.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Wypisanie twardych osiągnięć',
+        instruction: 'Zapisz 5 twardych, obiektywnych faktów z ostatnich 3 lat (dyplomy, ukończone projekty, awanse, twarde liczby).',
+        promptText: 'Moje 5 obiektywnych faktów kompetencji:',
+        placeholder: '1. Ukończyłem trudny projekt X w terminie i budżecie...\n2. Otrzymałem awans po ocenie rocznej 4.8/5...\n3. Przeprowadziłem 50 godzin szkoleń z oceną bardzo dobrą...'
+      },
+      {
+        stepNumber: 2,
+        title: 'Analiza włożonego wysiłku',
+        instruction: 'Dla każdego faktu zapisz, ile godzin pracy, nauki i dyscypliny włożyłeś w ten wynik.',
+        promptText: 'Mój wkład pracy:',
+        placeholder: 'Projekt X wymagał ode mnie 200 godzin nauki nowego oprogramowania i 3 miesięcy dyscypliny...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Odrzucenie zniekształcenia „to przypadek”',
+        instruction: 'Napisz zdanie podsumowujące: „Te wyniki są owocem mojej pracy i kompetencji, a nie ślepego przypadku”.',
+        promptText: 'Moja nowa deklaracja obiektywności:',
+        placeholder: 'Moje osiągnięcia są twardym wynikiem mojej pracy i nauki. Przestaję przepraszać za to, że jestem kompetentny.'
+      }
+    ],
+    reflectionQuestions: [
+      'Dlaczego dotąd łatwiej było Ci wierzyć w swój „brak talentu” niż w dowody z wykonanej pracy?',
+      'Jak czujesz się patrząc na pełną listę swoich twardych faktów?'
+    ]
+  },
+  {
+    id: 'ex-19-4',
+    title: 'Dziennik Sprawczości i Małych Zwycięstw',
+    subtitle: 'Codzienna pętla zasilania aktywnego self-concept',
+    objective: 'Wykształcenie nawyku codzienne rejestrowania małych sukcesów behawioralnych.',
+    durationMinutes: 10,
+    neuroScientificFoundation: 'Wieczorny przegląd sprawczości konsoliduje w hipokampie ślady pamięciowe związane z poczuciem kontroli i sprawstwa.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Zapis 3 małych zwycięstw z dzisiaj',
+        instruction: 'Zapisz 3 konkretne czynności z dzisiejszego dnia, w których wykazałeś się dyscypliną lub przełamałeś opór (np. Przeczytałem 10 stron, Odmówiłem słodyczy).',
+        promptText: 'Dzisiejsze 3 małe zwycięstwa:',
+        placeholder: '1. Wykonałem trudny telefon o 9:00 rano bez odkładania...\n2. Zrobiłem 20-minutowy trening mimo zmęczenia...\n3. Dokończyłem raport przed 17:00...'
+      },
+      {
+        stepNumber: 2,
+        title: 'Identyfikacja użytej cechy/zasobu',
+        instruction: 'Dla każdego zwycięstwa dopisz cechę, którą zastosowałeś (np. Odwaga, Konsekwencja, Skupienie).',
+        promptText: 'Zastosowane cechy sprawcze:',
+        placeholder: '1. Odwaga decyzyjna\n2. Dyscyplina fizyczna\n3. Koncentracja na celu'
+      },
+      {
+        stepNumber: 3,
+        title: 'Podsumowanie sprawcze dnia',
+        instruction: 'Zakończ wpis zdaniem: „Dzisiaj dostarczyłem mojemu umysłowi 3 dowodów na moją sprawczość”.',
+        promptText: 'Podsumowanie dnia:',
+        placeholder: 'Jestem człowiekiem, który dotrzymuje obietnic danych samemu sobie.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jak prowadzenie tego dziennika przez 7 dni zmienia Twój poranny poziom energii?',
+      'O ile łatwiej wstaje się z łóżka, gdy wiesz, że rejestrujesz swoje małe wygrane?'
+    ]
+  },
+  {
+    id: 'ex-19-5',
+    title: 'Mapa Wewnętrznego Kompasu Wartości',
+    subtitle: 'Ugruntowanie samooceny niezależnie od zewnętrznych wyników',
+    objective: 'Oparcie poczucia własnej wartości na filarach moralnych i relacyjnych zamiast na tymczasowym statusie.',
+    durationMinutes: 25,
+    neuroScientificFoundation: 'Aktywacja reprezentacji wartości w mPFC obniża podatność układu limbicznym na ciosy związane z utratą statusu czy krytyką.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Wybór 3 wartości rdzennym',
+        instruction: 'Wybierz 3 wartości, które są dla Ciebie absolutnie najważniejsze i których nikt nie może Ci odebrać (np. Uczciwość, Troska o bliskich, Prawda).',
+        promptText: 'Moje 3 rdzenne wartości:',
+        placeholder: '1. Uczciwość\n2. Odpowiedzialność za bliskich\n3. Autentyczność'
+      },
+      {
+        stepNumber: 2,
+        title: 'Opis postępowania w zgodzie z wartością',
+        instruction: 'Opisz, jak wygląda postępowanie zgodne z tą wartością MIMO braku sukcesu finansowego czy braku aprobaty otoczenia.',
+        promptText: 'Moje działanie wartościowe:',
+        placeholder: 'Nawet jeśli projekt się nie uda, zachowam pełną uczciwość wobec zespołu i klienta...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Deklaracja wartości stabilnej',
+        instruction: 'Napisz zdanie: „Moje poczucie wartości opiera się na tym, jak żyję moimi wartościami, a nie na tym, co myślą o mnie inni”.',
+        promptText: 'Moja deklaracja stabilności:',
+        placeholder: 'Moja wartość jako człowieka jest nienaruszona, dopóki postępuję w zgodzie z moim kompasem etycznym.'
+      }
+    ],
+    reflectionQuestions: [
+      'O ile bardziej niezależny czujesz się od opinii i lajków po zdefiniowaniu tego kompasu?',
+      'Którą z tych wartości najbardziej chcesz przekazać swojemu dziecku lub podopiecznym?'
+    ]
+  },
+  {
+    id: 'ex-19-6',
+    title: 'Trening Przyjmowania Feedbacku',
+    subtitle: 'Oddzielanie informacji merytorycznej od obrony ego',
+    objective: 'Opracowanie procedury przyjmowania krytyki bez wchodzenia w ataki obronne czy załamanie samooceny.',
+    durationMinutes: 20,
+    neuroScientificFoundation: 'Stworzenie procedury analitycznej przesuwa przetwarzanie słów krytycznych z ciała migdałowatego do grzbietowo-bocznej kory przedczołowej.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Wspomnienie trudnej krytyki',
+        instruction: 'Przypomnij sobie krytykę z przeszłości, która mocno Cię zraniła.',
+        promptText: 'Słowa krytyki z przeszłości:',
+        placeholder: 'Szef powiedział: Ten raport jest bezpłciowy i nieprzemyślany...'
+      },
+      {
+        stepNumber: 2,
+        title: 'Oddzielenie faktów od formy',
+        instruction: 'Ekstrahuj z tej krytyki surowy fakt merytoryczny, odrzucając emocjonalne ubarwienia rozmówcy.',
+        promptText: 'Surowy fakt merytoryczny:',
+        placeholder: 'Fakt: Raport nie zawierał podsumowania finansowego na pierwszej stronie i wykresów trendu.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Plan korekty działania',
+        instruction: 'Napisz, co konkretnie zrobisz z tą informacją w przyszłości.',
+        promptText: 'Moja procedura poprawy:',
+        placeholder: 'W każdym kolejnym raporcie dodam 1-stronnicowe executive summary z 3 głównymi wykresami.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jak zmienia się Twoja reakcja na krytykę, gdy widzisz w niej po prostu darmową korektę błędu?',
+      'Jak podziękować rozmówcy za merytoryczną uwagę bez wchodzenia w obronę?'
+    ]
+  },
+  {
+    id: 'ex-19-7',
+    title: 'Eksperyment Odrzucenia Nierealistycznych Wzorców',
+    subtitle: 'Higiena punktów odniesienia w mediach społecznościowych',
+    objective: 'Oczyszczenie otoczenia cyfrowego z profili wywołujących nierealistyczne porównania w górę.',
+    durationMinutes: 15,
+    neuroScientificFoundation: 'Usunięcie sztucznych bodźców statusowych obniża poziom cichej frustracji i przywraca naturalną dynamikę dopaminową.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Audyt śledzonych profili',
+        instruction: 'Przejrzyj konta, które obserwujesz w sieci i wypisz 3, po których obejrzeniu czujesz ukłucie zawiści lub niedostateczności.',
+        promptText: '3 konta wywołujące complexes:',
+        placeholder: '1. Konto X (luksusowe podróże)\n2. Konto Y (idealne sylwetki)\n3. Konto Z (pokazywanie sukcesów finansowych)'
+      },
+      {
+        stepNumber: 2,
+        title: 'Akcja wyciszenia / unfollow',
+        instruction: 'Kliknij unfollow lub wycisz relacje z tych profili na 30 dni.',
+        promptText: 'Potwierdzenie usunięcia:',
+        placeholder: 'Wykonano: Usunięto z obserwowaanych 3 konta wywołujące presję.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Zamiana na realne punkty odniesienia',
+        instruction: 'Zaobserwuj w to miejsce 2 konta edukacyjne lub naukowe, które uczą konkretnych umiejętności.',
+        promptText: 'Nowe wartościowe źródła:',
+        placeholder: 'Zaobserwowano profil naukowy o architektury i profil stolarstwa rzemieślniczego.'
+      }
+    ],
+    reflectionQuestions: [
+      'O ile spokorniejszy i czystszy staje się Twój umysł bez ciągłej ekspozycji na cyfrowe fasady?',
+      'Jak możesz wykorzystać zaoszczędzony czas na realny rozwój pasji?'
+    ]
+  },
+  {
+    id: 'ex-19-8',
+    title: 'Manifest Stabilnej Samooceny',
+    subtitle: 'Osobista deklaracja samowystarczalności i szacunku do samego siebie',
+    objective: 'Zsyntetyzowanie wglądów z Rozdziału 3 w stabilny manifest prowadzący przez wyzwania życiowe.',
+    durationMinutes: 20,
+    neuroScientificFoundation: 'Głęboka rekonstrukcja skryptów tożsamościowych w kory przedczołowej buduje odporność na kryzysy i niepowodzenia.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Moje prawo do bycia człowiekiem',
+        instruction: 'Napisz zdanie dające sobie prawo do popełniania błędów i bycia początkującym.',
+        promptText: 'Moje prawo do nauki:',
+        placeholder: 'Daję sobie pełne prawo do popełniania błędów na ścieżce nauki. Błąd jest informacją, a nie wyrokiem.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Moje źródło sprawczości',
+        instruction: 'Napisz, dokąd kierujesz swoją uwagę, gdy stajesz przed trudnym wyzwaniem.',
+        promptText: 'Mój kierunek uwagi:',
+        placeholder: 'Kieruję uwagę na pierwszy mikrokrok, który mogę wykonać tu i teraz, zamiast bać się całości zadania.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Ostateczna deklaracja szacunku',
+        instruction: 'Stwórz 2-zdaniową deklarację: „Szanuję siebie za moje wartości i włożony wysiłek...”',
+        promptText: 'Mój osobisty manifest samooceny:',
+        placeholder: 'Szanuję siebie za moją uczciwość, wykonaną pracę i odwagę do rozwoju. Moja wartość jest nienaruszona bez względu na oceny otoczenia.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jak ten manifest zmienia Twoje podejście do najbliższego trudnego zadania w tym tygodniu?',
+      'Komu w swoim środowisku chcesz przestać cokolwiek udowadniać?'
     ]
   }
 ];
@@ -902,283 +878,264 @@ export const chapterNineteen: Chapter = {
   number: 19,
   volume: 3,
   volumeChapterNumber: 3,
-  title: 'Rozdział 3: Samoocena, Pewność Siebie i Obraz Własnych Możliwości',
-  subtitle: 'Anatomia self-esteem vs self-efficacy, radzenie sobie z krytyką i porażką, mechanizmy perfekcjonizmu i metody budowania stabilnej sprawczości',
-  leadParagraph: 'Stosunek do samego siebie nie jest prostą sumą komplementów usłyszanych w dzieciństwie. Jest złożonym, wielopoziomowym układem regulacyjnym, w skład którego wchodzi ogólne poczucie własnej wartości (self-esteem), domenowe poczucie skuteczności (self-efficacy) oraz subiektywna ocena własnej kompetencji. Myślenie, że wysoka samoocena rozwiązuje każdy problem życiowy, jest groźnym uproszczeniem. Stabilne poczucie wartości nie polega na ślepej pewności siebie, lecz na zdolności do obiektywnego oceniania własnych zasobów, przyjmowania trudnej informacji zwrotnej i działania mimo odczuwanego niepokoju.',
-  totalEstimatedPages: 60,
+  title: 'Samoocena, pewność siebie i obraz własnych możliwości',
+  subtitle: 'Self-Efficacy Alberta Bandury, architektura poczucia wartości, re-kalibracja kompetencji i uwalnianie od porównań',
+  leadParagraph: 'Samoocena jest jednym z najbardziej przereklamowanych, a zarazem najsłabiej rozumianych pojęć w popularnej psychologii. Lata bezrefleksyjnego promowania mitycznej „wysokiej samooceny” i pustych afirmacji stworzyły pokolenie ludzi o kruchym ego, paraliżowanym przez najmniejszą krytykę i uzależnionym od zewnętrznego poklasku. Tymczasem rzetelna nauka o zachowaniu pokazuje, że kluczem do stabilności psychicznej nie jest sztuczne nadmuchiwanie samooceny, lecz budowanie ugruntowanego Poczucia Skuteczności (Self-Efficacy), realistyczna kalibracja kompetencji oraz odcięcie od nierealistycznych punktów odniesienia.',
+  totalEstimatedPages: 64,
   sections: [
     {
       id: 'sec-19-1',
       pageNumber: 1,
       sectionNumber: '19.1',
-      title: 'Samoocena vs Poczucie Skuteczności: Ścisła Rozdzielczość pojmowania',
-      category: 'wstep',
-      readingTimeMinutes: 9,
+      title: 'Mapa Pojęciowa: Samoocena vs Poczucie Własnej Wartości vs Self-Efficacy vs Pewność Siebie',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       quote: {
-        text: 'Nikt nie może sprawić, że poczujesz się gorszy bez Twojej zgody.',
-        author: 'Eleanor Roosevelt'
+        text: 'Nie musisz przekonywać siebie, że jesteś doskonały. Musisz jedynie dostarczać swojemu umysłowi dowodów z działania.',
+        author: 'Albert Bandura'
       },
       paragraphs: [
-        'Większość poradników motywacyjnych popełnia fundamentalny błąd, wrzucając do jednego worka poczucie własnej wartości, pewność siebie i kompetencje merytoryczne. Aby odzyskać sprawczość, musimy rozdzielić te pojęcia.',
-        'Samoocena (self-esteem) dotyczy ogólnej, emocjonalnej oceny własnej wartości jako człowieka („czy jestem warty szacunku i miłości?”). Poczucie własnej skuteczności (self-efficacy) to subiektywne przekonanie o własnej zdolności do wykonania konkretnego zadania („czy poradzę sobie z tym projektem?”).',
-        'Można posiadać wysokie poczucie skuteczności w programowaniu, mając jednocześnie niską ogólną samoocenę i czując się bezwartościowym człowiekiem. I odwrotnie: można mieć narcystycznie podbitą samoocenę przy zerowych realnych kompetencjach.',
-        'Stabilny rozwój wymaga budowania obu tych obszarów w oparciu o twarde dowody empiryczne.'
+        'Jednym z głównych powód zamieszania w rozwoju osobistym jest wrzucanie do jednego worka pojęć, które w naukach poznawczych opisują zupełnie inne mechanizmy.',
+        'Samoocena (Self-Esteem) to całościowa, wartościująca ocena własnej osoby — uogólnione odczucie: „Jestem w porządku jako człowiek” lub „Jestem do niczego”. Poczucie Własnej Wartości to najgłębsza, bezwarunkowa warstwa tej oceny, nienaruszona przez codzienne sukcesy czy porażki.',
+        'Poczucie Skuteczności (Self-Efficacy, Albert Bandura) dotyczy natomiast konkretnego przekonania o zdolności do zorganizowania i wykonania działań niezbędnych do osiągnięcia określonego celu („Wiem, że potrafię przygotować ten raport”).',
+        'Pewność siebie (Self-Confidence) jest wypadkową powyższych, często oznaczającą poziom zaufania do własnych sądów i braku lęku w ekspozycji społecznej. Rzeczywista kompetencja to realny, sprawdzalny stan wiedzy i umiejętności.'
       ]
     },
     {
       id: 'sec-19-2',
       pageNumber: 4,
       sectionNumber: '19.2',
-      title: 'Teoria Alberta Bandury: Cztery Źródła Poczucia Skuteczności',
+      title: 'Architektura Samooceny: Jak Umysł Ocenia Własne Osiągnięcia i Porażki',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Albert Bandura wykazał, że poczucie własnej skuteczności (self-efficacy) ulega budowaniu poprzez 4 kluczowe kanały informacyjne:',
-        '1. Doświadczenia opanowania (Mastery Experiences) — najważniejsze źródło. Osobiste przeżycie sukcesu osiągniętego pokonaniem trudności własnym wysiłkiem.',
-        '2. Doświadczenia zastępcze (Vicarious Experiences) — obserwowanie ludzi podobnych do nas, którzy osiągają cel („skoro on dał radę, ja też mogę”).',
-        '3. Perswazja społeczna (Social Persuasion) — merytoryczne wsparcie ze strony autorytetów.',
-        '4. Stany fizjologiczne i emocjonalne — interpretacja sygnałów z ciała (drżenie rąk jako ekscytacja, a nie jako paraliżujący strach).'
+        'Umysł tworzy oceny na swój temat w procesie stałego porównywania wyników działań z przyjętym wewnętrznym standardem.',
+        'Jeśli standard jest nierealistycznie wysoki (np. „Muszę zawsze być najlepszy”), każde wykonanie zadania na poziomie po prostu „bardzo dobrym” rejestrowane jest przez architekturę poznawczą jako porażka, obniżając samoocenę.',
+        'Pętla bezradności powstaje wtedy, gdy niska samoocena generuje lęk przed porażką, co prowadzi do unikania działania, braku sukcesów i w konsekwencji do ponownego potwierdzenia tezy o własnej nieadekwatności.'
       ]
     },
     {
       id: 'sec-19-3',
       pageNumber: 7,
       sectionNumber: '19.3',
-      title: 'Pewność Siebie z Kompetencji vs Maska Pewności Siebie',
-      category: 'cwiczenia',
-      readingTimeMinutes: 10,
+      title: 'Korzenie Samooceny: Wpływ Wczesnych Relacji, Krytyki i Pochwał',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Prawdziwa pewność siebie wynika ze zebranych dowodów i opanowania rzemiosła. Jest cicha, spokojna i odporna na krytykę, gdyż nie musi niczego udowadniać.',
-        'Maska pewności siebie (defensywna dominacja) to narzucona fasada mająca ukryć głęboki lęk przed kompromitacją. Gdy ktoś podważa tezy osoby z maską, reaguje ona natychmiastową agresją i krzykiem.',
-        'Poniższe laboratorium umożliwia zdiagnozowanie własnego profilu pewności siebie w kluczowych domenach.'
+        'Fundament pod dorosłą samoocenę wylewany jest we wczesnym dzieciństwie w relacjach z opiekunami.',
+        'Dziecko chwalone za talent („Jesteś taki mądry!”) wykształca warunkową samoocenę i Fixed Mindset — przy pierwszej trudności odczuwa lęk, że zniszczy etykietę geniusza. Dziecko doceniane za wysiłek i strategię („Widzę, jak ciężko nad tym pracowałeś”) buduje stabilne poczucie skuteczności.',
+        'Zinternalizowany głos surowego, nieznoszącego sprzeciwu rodzica staje się w dorosłym życiu wewnętrznym krytykiem, który torpeduje każde przedsięwzięcie zanim jeszcze się rozpocznie.'
       ],
-      exerciseRef: selfExercisesChapterNineteen[0]
+      caseStudyRef: caseStudiesChapterNineteen[1]
     },
     {
       id: 'sec-19-4',
       pageNumber: 10,
       sectionNumber: '19.4',
-      title: 'Efekt Dunninga-Krugera: Pułapka Nieświadomej Niekompetencji',
+      title: 'Poczucie Skuteczności (Albert Bandura) — 4 Filar Sprawczości',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Efekt Dunninga-Krugera pokazuje, że osoby o najmniejszych kompetencjach wykazują najwyższy poziom pewności siebie (Góra Głupców). Brak wiedzy uniemożliwia im dostrzeżenie własnych błędów.',
-        'W miarę jak zdobywamy wiedzę, wchodzimy w Dolinę Rozpaczy — nasza pewność siebie spada, gdyż zaczynamy pojmować potęgę i skomplikowanie danej dziedziny.',
-        'Dopiero długotrwały trening prowadzi do powolnego wzrostu stabilnej pewności opartej na rzeczywistym mistrzostwie.'
-      ],
-      caseStudyRef: caseStudiesChapterNineteen[0]
+        'Albert Bandura zidentyfikował cztery główne źródła budowania Poczucia Skuteczności (Self-Efficacy):',
+        '1. Doświadczenia opanowania (Mastery Experiences) — najbardziej wpływy filar: osobiste przeżycie sukcesu wywalczonego pokonaniem przeszkód; 2. Doświadczenia zastępcze (Vicarious Experiences) — obserwowanie modela podobnego do nas, który osiąga cel; 3. Perswazja społeczna — merytoryczne wsparcie ze strony autorytetu; 4. Stan fizjologiczny i emocjonalny — interpretacja sygnałów z ciała (np. drżenie rąk jako mobilizacji, a nie paraliżu).',
+        'Budowanie Self-Efficacy wymaga stwarzania sytuacji, w których człowiek dostarcza swojemu umysłowi dowodów sprawczości krok po kroku.'
+      ]
     },
     {
       id: 'sec-19-5',
       pageNumber: 13,
       sectionNumber: '19.5',
-      title: 'Syndrom Oszusta (Impostor Syndrome) u Ludzi Wybitnych',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Porównania Społeczne (Leon Festinger): Porównania w Górę i w Dół',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Na przeciwnym biegunie Efektu Dunninga-Krugera leży Syndrom Oszusta. Dotyka on często wybitnych ekspertów, którzy swoje sukcesy przypisują przypatkowi, a porażki własnej skazie.',
-        'Rozbrojenie syndromu oszusta wymaga prowadzenia Twardego Dziennika Dowodów i akceptowania komplementów bez nawykowej dyskredytacji.'
-      ],
-      caseStudyRef: caseStudiesChapterNineteen[1]
+        'Teoria Porównań Społecznych Festingera wskazuje, że ludzie mają wbudowany automat do oceniania swoich możliwości poprzez zestawianie się z innymi.',
+        'Porównania w górę (Upward Comparison) z osobami osiagającymi lepsze wyniki mogą działać jako motywacja do rozwoju, lecz przy nierealistycznym punkcie odniesienia niszczą samoocenę.',
+        'Porównania w dół (Downward Comparison) z osobami w gorszej sytuacji dają chwilową ulgę, lecz nie budują trwałej kompetencji.'
+      ]
     },
     {
       id: 'sec-19-6',
       pageNumber: 16,
       sectionNumber: '19.6',
-      title: 'Porównania Społeczne Festingera i Trzask Medialny',
+      title: 'Media Społecznościowe Jako Fabryka Nierealistycznych Punktów Odniesienia',
       category: 'teoria',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Człowiek nieustannie szuka punktów odniesienia dla oceny własnych możliwości. Porównania w górę (z lepszymi) mogą inspirować, jeśli mamy poczucie sprawczości, lub niszczyć samoocenę, jeśli czujemy się bezsilni.',
-        'Media społecznościowe serwują nam nierealistyczne porównania z wyreżyserowanymi sukcesami innych, wzbudzając ciągły niepokój niewystarczalności.'
-      ]
+        'Tradycyjne grupy porównawcze ograniczały się do klasy szkolnej czy zespołu w pracy. Media społecznościowe eksponują umysł na sztucznie wyselekcjonowane pasmo sukcesów miliona najbogatszych i najatrakcyjniejszych ludzi.',
+        'Mózg nie jest ewolucyjnie przystosowany do filtrowania retuszu i marketingu cyfrowego. Rejestruje te obrazki jako obiektywną normę społeczną, wywołując przewlekłe poczucie niedostateczności i ubytek statusowy.',
+        'Higiena cyfrowa i celowe wyciszanie bodźców statusowych są niezbędne do odzyskania spokoju psychicznego.'
+      ],
+      caseStudyRef: caseStudiesChapterNineteen[2]
     },
     {
       id: 'sec-19-7',
       pageNumber: 19,
       sectionNumber: '19.7',
-      title: 'Uzależnienie Samooceny od Wyników (Contingent Self-Esteem)',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Perfekcjonizm Adaptacyjny vs Dysfunkcyjny',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Gdy Twoja wartość jako człowieka zależy od ostatniego wyniku finansowego, wagi czy liczby lajków, żyjesz na emocjonalnym rollercoasterze.',
-        'Stabilizacja wymaga zbudowania bezwarunkowej akceptacji samego siebie jako podmiotu i odseparowania jej od wskaźników zadaniowych.'
-      ],
-      caseStudyRef: caseStudiesChapterNineteen[2]
+        'Perfekcjonizm nie jest cechą jednolitą. Perfekcjonizm adaptacyjny stawia wysokie standardy merytoryczne, pozwalając czerpać radość z uczenia się i akceptując błędy jako koszt procesu.',
+        'Perfekcjonizm dysfunkcyjny uzależnia prawo do istnienia od absolutnego braku jakiegokolwiek potknięcia. Każda pomyłka jest tu traktowana jako katastrofa tożsamościowa.',
+        'Dysfunkcyjny perfekcjonizm jest głównym motorem prokrastynacji — człowiek woli nie zacząć zadania wcale, niż zrealizować je na poziomie „tylko bardzo dobrym”.'
+      ]
     },
     {
       id: 'sec-19-8',
       pageNumber: 22,
       sectionNumber: '19.8',
-      title: 'Lęk przed Oceną Społeczną i Odruch Plemienny',
-      category: 'neuronauka',
-      readingTimeMinutes: 9,
+      title: 'Lęk Przed Oceną i Syndrom Oszusta (Impostor Syndrome)',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Lęk przed krytyką jest dawno ukształtowanym alarmem ewolucyjnym. Odrzucenie przez grupę oznaczało śmierć z głodu na sawannie.',
-        'Zrozumienie, że dzisiejsza krytyka na zebraniu nie zagraża Twojemu życiu biologicznemu, pozwala wyciszyć reakcję ciała migdałowatego.'
-      ]
+        'Lęk przed oceną (Evaluation Apprehension) opiera się na złudzeniu, że oczy wszystkich wokół są skierowane na nasze potknięcia (Spotlight Effect).',
+        'Syndrom Oszusta sprawia, że nawet wybitne osiągnięcia (nagrody, awanse) są przypisywane przypatkowi lub ślepocie otoczenia. Człowiek żyje w ciągłym przerażeniu, że „zaraz wszyscy zobaczą, że nic nie umiem”.',
+        'Terapia Syndromu Oszusta wymaga kategorycznego oddzielenia subiektywnego lęku od obiektywnych faktów i ocen merytorycznych.'
+      ],
+      caseStudyRef: caseStudiesChapterNineteen[0]
     },
     {
       id: 'sec-19-9',
       pageNumber: 25,
       sectionNumber: '19.9',
-      title: 'Anatomia Perfekcjonizmu: Dążeniowy vs Lękowy',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Przymus Osiągnięć („Muszę Być Najlepszy”) i Warunkowa Samoakceptacja',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Perfekcjonizm adaptacyjny nakręca nas do rozwoju i pasji. Perfekcjonizm dezadaptacyjny jest paraliżującym lękiem przed popełnieniem błędu.',
-        'Lękowy perfekcjonista ucieka przed wstydem, przekładając oddanie projektu w nieskończoność.'
-      ],
-      caseStudyRef: caseStudiesChapterNineteen[3]
+        'Przymus osiągnięć powstaje wtedy, gdy dziecko nauczyło się, że ciepło rodzicielskie jest nagrodą za wysokie stopnie czy puchary.',
+        'W dorosłym życiu tworzy to mechanizm samooceny warunkowej: człowiek odczuwa spokój jedynie w momencie wygranej. Kilka dni później głód sukcesu powraca z podwojoną siłą.',
+        'Uwolnienie od przymusu osiągnięć polega na wykształceniu bezwarunkowej samoakceptacji na poziomie wartości przy jednoczesnym zachowaniu amunicji rozwojowej.'
+      ]
     },
     {
       id: 'sec-19-10',
       pageNumber: 28,
       sectionNumber: '19.10',
-      title: 'Samo-utrudnianie (Self-Handicapping): Asekuracja Ego',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Nadmierna Pewność Siebie (Efekt Dunninga-Krugera) vs Zaniżanie Możliwości',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Samo-utrudnianie polega na tworzeniu przeszkód przed zadaniem (np. impreza przed egzaminem), by mieć gotową wymówkę w razie porażki.',
-        'Umysł woli zaryzykować oblanie z powodu braku snu niż z powodu braku inteligencji.'
+        'Zaburzenia kalibracji pewności siebie przybierają dwie skrajne formy.',
+        'Efekt Dunninga-Krugera to ślepa pewność debiutanta na Szczycie Głupoty — brak wiedzy uniemożliwia dostrzeżenie własnych braków.',
+        'Z drugiej strony wybitni eksperci często zaniżają swoje możliwości, zakładając, że skoro dla nich dane zadanie jest łatwe, to dla każdego innego również musi takie być.'
       ],
-      caseStudyRef: caseStudiesChapterNineteen[5]
+      caseStudyRef: caseStudiesChapterNineteen[3]
     },
     {
       id: 'sec-19-11',
       pageNumber: 31,
       sectionNumber: '19.11',
-      title: 'Samowspółczucie (Self-Compassion) wg Kristin Neff',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Informacja Zwrotna i Błąd Jako Surowiec do Nauki',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Samowspółczucie to nie pobłażliwość dla własnych słabości, lecz życzliwa postawa mądrego trenera w chwili porażki.',
-        'Składa się z 3 elementów: uważności, poczucia wspólnoty losu i dobroci dla samego siebie.'
-      ],
-      caseStudyRef: caseStudiesChapterNineteen[4]
+        'Przyjmowanie krytyki bez wchodzenia w ataki obronne wymaga odseparowania własnego ego od realizowanego pliku czy projektu.',
+        'Dojrzała postawa traktuje informację zwrotną (feedback) jako darmowy surowiec diagnostyczny. Uwaga przełożonego czy klienta nie dotyczy Twojego prawa do szacunku — dotyczy konkretnej poprawki w tabeli.',
+        'Zamiana pytania „Co to mówi o mojej wartości?” na pytanie „Co to mówi o mojej procedurze pracy?” natychmiast przywraca spokój.'
+      ]
     },
     {
       id: 'sec-19-12',
       pageNumber: 34,
       sectionNumber: '19.12',
-      title: 'Protokół Graded Mastery: Drabina Małych Wygranych',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Samoocena Niestabilna (Contingent) vs Samoocena Ugruntowana',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Odbudowa sprawczości po ciężkim kryzysie wymaga stosowania metody małych, wygrywalnych kroków (Graded Mastery).',
-        'Każda mała wygrana dostarcza mózgowi dopaminy i odbudowuje sieć neuronalną poczucia kontroli.'
+        'Samoocena niestabilna (Contingent Self-Esteem) stoi na zewnętrznych szczudłach: statusie, marży, polubieniach, komplimencach. Jeden zły dzień niszczy cały budynek.',
+        'Samoocena ugruntowana opiera się na wewnętrznym kompasie etycznym, autentycznych relacjach i szacunku do własnej pracy.',
+        'Człowiek o samoocenie ugruntowanej potrafi przetrwać bankructwo czy porażkę zawodową bez utraty godności i sensu życia.'
       ],
-      caseStudyRef: caseStudiesChapterNineteen[6]
+      caseStudyRef: caseStudiesChapterNineteen[4]
     },
     {
       id: 'sec-19-13',
       pageNumber: 37,
       sectionNumber: '19.13',
-      title: 'Reewaluacja Poznawcza Porażki: Eksperyment Procesowy',
-      category: 'cwiczenia',
-      readingTimeMinutes: 8,
+      title: '💡 BŁĘDNA INTUICJA: Wysoka samoocena rozwiązuje wszystkie problemy',
+      category: 'teoria',
+      readingTimeMinutes: 12,
       paragraphs: [
-        'Zamiast traktować niepowodzenie jako wyrok tożsamościowy, przeformułuj je na eksperyment dostarczający cennych danych badawczych.'
-      ],
-      exerciseRef: selfExercisesChapterNineteen[3]
+        'Ruch na rzecz sztucznego podnoszenia samooceny w latach 90. przyniósł opłakane skutki. Wmawianie dzieciom, że są „wyjątkowe i najlepsze” bez powiązania tego z wysiłkiem stworzyło postawy narcyzmu i roszczeniowości.',
+        'Wysoka, lecz nierealistyczna samoocena jest skrajnie niestabilna i prowadzi do agresji przy pierwszej konfrontacji z krytyką.',
+        'Należy dążyć nie do samooceny „wysokiej”, lecz do samooceny STABILNEJ I REALISTYCZNEJ.'
+      ]
     },
     {
       id: 'sec-19-14',
       pageNumber: 40,
       sectionNumber: '19.14',
-      title: 'Sztuka Chwalenia: Proces vs Cechy',
-      category: 'teoria',
-      readingTimeMinutes: 8,
+      title: '🔬 CO NADAL NIE JEST JASNE? Samowspółczucie (Self-Compassion) vs Samoocena',
+      category: 'podsumowanie',
+      readingTimeMinutes: 10,
       paragraphs: [
-        'Chwalenie dzieci i współpracowników za proces (wysiłek, strategię) buduje Growth Mindset. Chwalenie za stałą cechę („jesteś genialny”) wzbudza lęk przed utratą etykiety.'
+        'Czy samowspółczucie (Self-Compassion, Kristin Neff) z czasem całkowicie zastąpi pojęcie samooceny w psychologii klinicznej?',
+        'Badania pokazują, że samowspółczucie daje wszystkie korzyści wysokiej samooceny bez jej wad (narcyzmu, rywalizacyjności i lęku przed porażką).'
       ]
     },
     {
       id: 'sec-19-15',
-      pageNumber: 43,
+      pageNumber: 42,
       sectionNumber: '19.15',
-      title: 'Biologia Samooceny i Wskaźnik HALT',
-      category: 'neuronauka',
-      readingTimeMinutes: 8,
+      title: '🎯 JAK ZASTOSOWAĆ TO JUTRO? Re-kalibracja Poczucia Skuteczności',
+      category: 'cwiczenia',
+      readingTimeMinutes: 10,
       paragraphs: [
-        'Spadek poziomu glukozy, zmęczenie i samotność (HALT) obniżają sprawność dlPFC, wzmagając samokrytycyzm i katastroficzne wizje.',
-        'Nie podejmuj decyzji o własnej wartości, gdy Twój mózg jest fizjologicznie wyczerpany.'
-      ]
+        '1. Wybierz wyzwanie i rozbij je na mikrokroki sprawcze.',
+        '2. Prowadź codzienny Rejestr Dowodów Obiektywnych.',
+        '3. Zamień samobiczowanie na pytania merytoryczne mentora.',
+        '4. Ogranicz ekspozycję na cyfrowe punkty odniesienia.'
+      ],
+      exerciseRef: selfExercisesChapterNineteen[0]
     },
     {
       id: 'sec-19-16',
-      pageNumber: 46,
+      pageNumber: 44,
       sectionNumber: '19.16',
-      title: 'Dziennik Osiągnięć i Zwycięstw',
+      title: 'Warsztat Samorozwojowy: Zbiór Narzędzi Budowania Sprawczości',
       category: 'cwiczenia',
-      readingTimeMinutes: 8,
+      readingTimeMinutes: 12,
       paragraphs: [
-        'Prowadzenie pisemnego rejestru codziennych sukcesów wzmacnia pamięć sprawczości i równoważy błąd asymetrii emocjonalnej.'
+        'Poniżej znajduje się zestaw ćwiczeń dedykowanych dekonstrukcji Syndromu Oszusta, higienie cyfrowej i budowaniu stabilnego kompasu wartości.'
       ],
       exerciseRef: selfExercisesChapterNineteen[1]
     },
     {
       id: 'sec-19-17',
-      pageNumber: 49,
+      pageNumber: 47,
       sectionNumber: '19.17',
-      title: '🧠 BŁĘDNA INTUICJA: „Muszę Mieć Wysoką Pewność Siebie, Bym Mógł Zacząć Działać”',
-      category: 'teoria',
+      title: 'Most do Rozdziału 20 oraz Powiązania z Tomem I i II',
+      category: 'podsumowanie',
       readingTimeMinutes: 8,
       paragraphs: [
-        'INTUICJA: Czekanie na idealny moment, w którym lęk całkowicie zniknie, a pewność siebie osiągnie maksimum przed podjęciem wyzwania.',
-        'CO MOŻE BYĆ BŁĘDNE? Pewność siebie nie pojawia się PRZED działaniem — powstaje W TRAKCIE i PO wykonaniu działania.',
-        'CO MÓWI PSYCHOLOGIA? Działanie wyprzedza emocję. Najpierw wykonujesz mikrokrok mimo niepokoju, a mózg rejestruje sukces i dostarcza pewności.',
-        'BARDZIEJ PRECYZYJNY MODEL: Działaj z niepokojem w kieszeni. Pewność przyjdzie za Tobą.'
+        'Samoocena i poczucie skuteczności decydują o tym, czy mamy odwagę realizować nasze priorytety życiowe.',
+        'W następnym rozdziale przejdziemy do badania Wartości, Potrzeb i Priorytetów — kompasu, który wskazuje kierunek naszym wyborom w obliczu konfliktów i presji społecznej.'
       ]
     },
     {
       id: 'sec-19-18',
-      pageNumber: 52,
+      pageNumber: 49,
       sectionNumber: '19.18',
-      title: '🔬 CO NADAL NIE JEST JASNE? Zdolność Mózgu do Trwałej Podwyżki Samooceny Podstawowej',
+      title: 'Podsumowanie Rozdziału 3: Kluczowe Wglądy',
       category: 'podsumowanie',
-      readingTimeMinutes: 8,
+      readingTimeMinutes: 7,
       paragraphs: [
-        'W jakim stopniu samoocena podstawowa jest uwarunkowana genetycznie poziomem neurotyczności, a w jakim stopniu można ją trwale podnieść poprzez psychoterapię i trening sprawczości?',
-        'Badania pokazują, że interwencje poznawczo-behawioralne skutecznie podnoszą self-efficacy, lecz reaktywność emocjonalna na odrzucenie zachowuje pewien poziom bazy biologicznej.'
+        '1. Self-Efficacy buduje się na twardych dowodach z działania, a nie na samych afirmacjach.',
+        '2. Syndrom Oszusta to zniekształcenie poznawcze ignorujące twarde fakty kompetencji.',
+        '3. Porównywanie swojego wnętrza do cyfrowych fasad innych niszczy spokój.',
+        '4. Najtrwalsza samoocena opiera się na wewnętrznym kompasie wartości.'
       ]
     },
     {
       id: 'sec-19-19',
-      pageNumber: 54,
+      pageNumber: 52,
       sectionNumber: '19.19',
-      title: '🎯 JAK ZASTOSOWAĆ TO JUTRO? Protokół Budowania Sprawczości',
-      category: 'cwiczenia',
-      readingTimeMinutes: 8,
-      paragraphs: [
-        '1. Wybierz jedną trudną domenę.',
-        '2. Zidentyfikuj mikrokrok tak mały, że nie sposób go przegrać (np. zadzwoń na 1 minutę).',
-        '3. Wykonaj akcję i natychmiast zapisz wygraną w Dzienniku Sprawczości.',
-        '4. Powtórz proces przez 7 dni z rzędu.'
-      ],
-      exerciseRef: selfExercisesChapterNineteen[6]
-    },
-    {
-      id: 'sec-19-20',
-      pageNumber: 56,
-      sectionNumber: '19.20',
-      title: 'Podsumowanie Rozdziału 3 i Most do Rozdziału 20',
+      title: 'Egzamin Końcowy Rozdziału 3: Samoocena i Obraz Siebie',
       category: 'podsumowanie',
-      readingTimeMinutes: 7,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Samoocena i poczucie skuteczności są wewnętrznymi kompasami sprawczości. Gdy rozdzielimy ocenę zadania od oceny własnej wartości, odzyskujemy wolność do podejmowania ryzyka i uczenia się.',
-        'Ale na co przeznaczymy naszą sprawczość? Odpowiedź leży w naszych wartościach, potrzebach i priorytetach. W następnym rozdziale przejdziemy do badania architektury wartości i podejmowania trudnych decyzji w konflikcie celów.'
-      ]
-    },
-    {
-      id: 'sec-19-21',
-      pageNumber: 60,
-      sectionNumber: '19.21',
-      title: 'Egzamin Końcowy Rozdziału 3: Samoocena i Obraz Możliwości',
-      category: 'podsumowanie',
-      readingTimeMinutes: 12,
-      paragraphs: [
-        'Sprawdź swoją wiedzę z zakresu teorii Bandury, efektu Dunninga-Krugera, perfekcjonizmu lękowego oraz metod budowania trwałej sprawczości. Poniższy egzamin zawiera pytania analityczne i sytuacyjne.'
+        'Sprawdź swoją wiedzę z zakresu architektury samooceny, poczucia skuteczności i radzenia sobie z zniekształceniami poznawczymi. Poniższy test zawiera pytania analityczne wymagające głębokiego zrozumienia opisywanych procesów.'
       ]
     }
   ]

@@ -5,35 +5,35 @@ export const chapterEighteenExamQuestions: ExamQuestion[] = [
     id: 1,
     question: 'W psychologii poznawczej przekonanie (belief) różni się od obiektywnego faktu tym, że:',
     topic: 'Natura Przekonań',
-    sectionRef: 'Sekcja 18.2',
+    sectionRef: 'Sekcja 18.1',
     options: [
       { label: 'A', text: 'Przekonanie jest subiektywną reprezentacją umysłową traktowaną jako prawda, podczas gdy fakt to zweryfikowany empirycznie stan rzeczywistości.', isCorrect: true },
       { label: 'B', text: 'Przekonanie dotyczy tylko pogody, a fakt dotyczy matematyki.', isCorrect: false },
       { label: 'C', text: 'Nie ma żadnej różnicy, każde przekonanie staje się faktem po upływie 24 godzin.', isCorrect: false },
-      { label: 'D', text: 'Przekonania są zapisane w DNA, a fakty w encyklopedii.', isCorrect: false }
+      { label: 'D', text: 'Przekonania są zapisane w genach, a fakty w encyklopedii.', isCorrect: false }
     ],
-    explanation: 'Przekonanie to struktura poznawcza, w którą umysł wierzy i według której filtruje bodźce. Fakt istnieje niezależnie od tego, czy ktoś w niego wierzy.',
+    explanation: 'Przekonanie to struktura poznawcza, w którą umysł wierzy i według której filtruje bodźce. Fakt istnieje niezależnie od naszych stanów umysłowych.',
     keyTakeaway: 'To, że mocno w coś wierzysz, nie zmienia tego w obiektywny fakt.'
   },
   {
     id: 2,
-    question: 'Na czym polega efekt Backfire (Efekt Odbicia) opisywany w Sekcji 18.6?',
+    question: 'Na czym polega zjawisko Backfire Effect (Efekt Odbicia)?',
     topic: 'Opór Poznawczy',
-    sectionRef: 'Sekcja 18.6',
+    sectionRef: 'Sekcja 18.8',
     options: [
-      { label: 'A', text: 'Przedstawienie twardych dowodów sprzecznych z głębokim przekonaniem człowieka sprawia, że zaczyna on jeszcze silniej bronić swojego pierwotnego poglądu.', isCorrect: true },
+      { label: 'A', text: 'Przedstawienie twardych dowodów sprzecznych z głębokim przekonaniem tożsamościowym sprawia, że człowiek zaczyna jeszcze silniej bronić pierwotnego poglądu.', isCorrect: true },
       { label: 'B', text: 'Natychmiastowa zmiana zdania pod wpływem każdego wykresu w gazecie.', isCorrect: false },
-      { label: 'C', text: 'Utrata pamięci krótkotrwałej po wypiciu kawy.', isCorrect: false },
+      { label: 'C', text: 'Utrata pamięci krótkotrwałej pod wpływem hałasu.', isCorrect: false },
       { label: 'D', text: 'Zdolność do szybkiego zapamiętywania ciągu cyfr.', isCorrect: false }
     ],
-    explanation: 'Gdy fakt zagraża wyobrażeniu o sobie lub przynależności do grupy, ciało migdałowate traktuje informację jako atak biologiczny, wyzwalając obronną furię.',
-    keyTakeaway: 'Atakowanie czyichś przekonań faktami często tylko potęguje jego opór.'
+    explanation: 'Gdy fakt zagraża wyobrażeniu o sobie lub przynależności grupowej, ciało migdałowate traktuje informację jako atak biologiczny, wyzwalając obronną furię.',
+    keyTakeaway: 'Atakowanie czyichś przekonań samymi faktami często potęguje jego opór.'
   },
   {
     id: 3,
     question: 'Jaką rolę w powstawaniu schematów poznawczych odgrywa Błąd Potwierdzenia (Confirmation Bias)?',
     topic: 'Schematy Poznawcze',
-    sectionRef: 'Sekcja 18.3',
+    sectionRef: 'Sekcja 18.6',
     options: [
       { label: 'A', text: 'Sprawia, że umysł wybiórczo zauważa i zapamiętuje tylko te dowody, które pasują do istniejącej hipotezy, ignorując dowody sprzeczne.', isCorrect: true },
       { label: 'B', text: 'Zmusza człowieka do kupowania tych samych produktów w sklepie.', isCorrect: false },
@@ -45,860 +45,1016 @@ export const chapterEighteenExamQuestions: ExamQuestion[] = [
   },
   {
     id: 4,
-    question: 'W procesie Aktualizacji Przekonań (Belief Updating Loop) kluczowym etapem jest:',
+    question: 'W pętli aktualizacji przekonań (Belief Updating Loop) kluczowym etapem jest:',
     topic: 'Aktualizacja Przekonań',
-    sectionRef: 'Sekcja 18.8',
+    sectionRef: 'Sekcja 18.11',
     options: [
       { label: 'A', text: 'Sformułowanie hipotezy roboczej, zebranie nowych danych, ocena wiarygodności źródeł i modyfikacja przekonania w obliczu faktów.', isCorrect: true },
       { label: 'B', text: 'Głośne powtarzanie afirmacji aż rzeczywistość dostosuje się do życzeń.', isCorrect: false },
-      { label: 'C', text: 'Ignorowanie wszelkich nowych danych i poleganie wyłącznie na intuicji z dzieciństwa.', isCorrect: false },
+      { label: 'C', text: 'Ignorowanie wszelkich nowych danych i poleganie na intuicji z dzieciństwa.', isCorrect: false },
       { label: 'D', text: 'Odrzucenie logicznego myślenia na rzecz rzutu monetą.', isCorrect: false }
     ],
     explanation: 'Naukowa postawa wobec własnych przekonań wymaga traktowania ich jako roboczych hipotez, które podlegają stałej korekcie w oparciu o empiryczne dane.',
-    keyTakeaway: 'Miej silne opinie, ale trzymaj je słabo (strong opinions, weakly held).'
+    keyTakeaway: 'Trzymaj swoje przekonania elastycznie, gotowe do korekty pod wpływem faktów.'
   },
   {
     id: 5,
-    question: 'Czym charakteryzuje się Motywowane Rozumowanie (Motivated Reasoning)?',
-    topic: 'Motywowane Rozumowanie',
-    sectionRef: 'Sekcja 18.5',
+    question: 'Czym charakteryzuje się pokora epistemiczna (Epistemic Humility)?',
+    topic: 'Epistemiczna Pokora',
+    sectionRef: 'Sekcja 18.12',
     options: [
-      { label: 'A', text: 'Używanie inteligencji i logiki nie po to, by dotrzeć do prawdy, lecz po to, by uzasadnić wniosek, do którego jest się emocjonalnie przywiązanym.', isCorrect: true },
-      { label: 'B', text: 'Szybkie rozwiązywanie zadań matematycznych pod presją czasu.', isCorrect: false },
-      { label: 'C', text: 'Uczenie się języków obcych wyłącznie dla przyjemności.', isCorrect: false },
-      { label: 'D', text: 'Brak jakiejkolwiek motywacji do podejmowania wysiłku fizycznego.', isCorrect: false }
+      { label: 'A', text: 'Świadomość ograniczeń własnej wiedzy i gotowość do przyznania: „Nie wiem” lub „Mogłem się pomylić”.', isCorrect: true },
+      { label: 'B', text: 'Całkowity brak jakichkolwiek poglądów na jakikolwiek temat.', isCorrect: false },
+      { label: 'C', text: 'Przekonanie, że nauka nie ma żadnego znaczenia.', isCorrect: false },
+      { label: 'D', text: 'Unikanie czytania książek naukowych.', isCorrect: false }
     ],
-    explanation: 'W motywowanym rozumowaniu intelekt działa jak adwokat broniący klienta (przekonania), a nie jak bezstronny sędzia szukający faktów.',
-    keyTakeaway: 'Im bardziej jesteś błyskotliwy, tym sprawniej potrafisz oszukiwać samego siebie.'
+    explanation: 'Pokora epistemiczna ochrania umysł przed dogmatyzmem i pozwala sprawniej adaptować się do zmieniającego się świata.',
+    keyTakeaway: 'Pokora poznawcza to oznaka dojrzałości intelektualnej, a nie słabości.'
   },
   {
     id: 6,
-    question: 'Jaka jest podstawowa różnica między faktem, opinią a hipotezą?',
-    topic: 'Kategoryzacja Informacji',
-    sectionRef: 'Sekcja 18.1',
+    question: 'Co według teorii Festingera wywołuje dysonans poznawczy (Cognitive Dissonance)?',
+    topic: 'Dysonans Poznawczy',
+    sectionRef: 'Sekcja 18.7',
     options: [
-      { label: 'A', text: 'Fakt jest obiektywnie weryfikowalny; opinia to subiektywna ocena wartościująca; hipoteza to testowalne przypuszczenie o mechanizmie.', isCorrect: true },
-      { label: 'B', text: 'Fakt i opinia to synonimy, a hipoteza oznacza błąd logiki.', isCorrect: false },
-      { label: 'C', text: 'Opinia jest zawsze prawdziwa, a fakt zmienia się w zależności od nastroju.', isCorrect: false },
-      { label: 'D', text: 'Hipoteza dotyczy tylko fizyki kwantowej.', isCorrect: false }
+      { label: 'A', text: 'Jednoczesne posiadanie dwóch sprzecznych przekonań lub rozbieżność między przekonaniem a własnym zachowaniem.', isCorrect: true },
+      { label: 'B', text: 'Spożycie zbyt dużej ilości kofeiny przed snem.', isCorrect: false },
+      { label: 'C', text: 'Brak dostępu do bezprzewodowego internetu.', isCorrect: false },
+      { label: 'D', text: 'Utrata kluczy do mieszkania.', isCorrect: false }
     ],
-    explanation: 'Mieszanie opinii z faktami wywołuje bezprzedmiotowe spory, w których subiektywne preferencje są prezentowane jako prawa natury.',
-    keyTakeaway: 'Nie myl swoich wartościujących opinii z prawidłem rzeczywistości.'
+    explanation: 'Nieprzyjemne napięcie psychiczne (dysonans) zmusza umysł do zmiany zachowania, zmiany przekonania lub racjonalizacji.',
+    keyTakeaway: 'Dysonans to sygnał alarmowy umysłu informujący o braku wewnętrznej spójności.'
   },
   {
     id: 7,
-    question: 'W jaki sposób dysonans poznawczy (Festinger) wpływa na trwanie przy błędnych przekonaniach po podjęciu trudnej decyzji?',
-    topic: 'Dysonans Poznawczy',
-    sectionRef: 'Sekcja 18.4',
+    question: 'Jaką funkcję w przetwarzaniu informacji pełnią schematy poznawcze (Cognitive Schemas)?',
+    topic: 'Schematy Poznawcze',
+    sectionRef: 'Sekcja 18.3',
     options: [
-      { label: 'A', text: 'Po podjęciu kosztownej decyzji umysł wyolbrzymia zalety wybranej opcji i pomniejsza jej wady, aby uniknąć dyskomfortu związanego z błędem.', isCorrect: true },
-      { label: 'B', text: 'Umysł natychmiast zapomina o podjętej decyzji i zaczyna wszystko od nowa.', isCorrect: false },
-      { label: 'C', text: 'Sprawia, że człowiek natychmiast oddaje kupiony przedmiot do sklepu.', isCorrect: false },
-      { label: 'D', text: 'Eliminuje jakąkolwiek potrzebę racjonalizacji.', isCorrect: false }
+      { label: 'A', text: 'Skracają czas analizy bodźców poprzez organizowanie wiedzy i tworzenie oczekiwań co do przebiegu zdarzeń.', isCorrect: true },
+      { label: 'B', text: 'Zwiększają wagę ciała w sytuacjach stresowych.', isCorrect: false },
+      { label: 'C', text: 'Blokują możliwość odczuwania emocji.', isCorrect: false },
+      { label: 'D', text: 'Odpowiadają za odruchy kolanowe.', isCorrect: false }
     ],
-    explanation: 'Rozbieżność między „jestem mądry” a „podjąłem złą decyzję” wywołuje ból. Najprostszym sposobem jego uśmierzenia jest zmiana percepcji faktów.',
-    keyTakeaway: 'Dysonans poznawczy zmusza nas do wykręcania faktów w celu ratowania własnego samopoczucia.'
+    explanation: 'Schematy pozwalają oszczędzać zasoby poznawcze, lecz w przypadku błędnych założeń prowadzą do utrwalonych zniekształceń.',
+    keyTakeaway: 'Schematy ułatwiają nawigację, lecz mogą zamienić się w poznawcze okulary zniekształcające.'
   },
   {
     id: 8,
-    question: 'Dlaczego podważenie przekonania tożsamościowego (np. dotyczącego polityki lub religii) wywołuje aktywację pnia mózgu i ciała migdałowatego?',
-    topic: 'Neuronauka Przekonań',
-    sectionRef: 'Sekcja 18.7',
+    question: 'Na czym polega różnica między faktem, opinią a przekonaniem?',
+    topic: 'Fakt vs Opinia vs Przekonanie',
+    sectionRef: 'Sekcja 18.10',
     options: [
-      { label: 'A', text: 'Z perspektywy ewolucyjnej utrata przekonania grupowego groziła wykluczeniem ze stada, co mózg kwalifikuje jako śmiertelne zagrożenie biologiczne.', isCorrect: true },
-      { label: 'B', text: 'Ponieważ przekonania polityczne znajdują się w kora czuciowej dużego palca u nogi.', isCorrect: false },
-      { label: 'C', text: 'Nie wywołuje żadnej aktywacji, reakcja jest całkowicie neutralna.', isCorrect: false },
-      { label: 'D', text: 'Wywołuje natychmiastowy spadek tętna do zera.', isCorrect: false }
+      { label: 'A', text: 'Fakt jest obiektywnie weryfikowalny, opinia to subiektywna ocena estetyczna lub wartościująca, a przekonanie to przyjęta przez umysł struktura prawdy o świecie.', isCorrect: true },
+      { label: 'B', text: 'Fakt to to samo co opinia w gazecie.', isCorrect: false },
+      { label: 'C', text: 'Przekonanie jest zawsze poparte wzorem chemicznym.', isCorrect: false },
+      { label: 'D', text: 'Opinia znika po 5 minutach, a fakt trwa 100 lat.', isCorrect: false }
     ],
-    explanation: 'Układ limbowy reaguje na atak na przekonanie tak samo jak na fizycznego drapieżnika — włącza się odruch walki lub ucieczki.',
-    keyTakeaway: 'Rozróżnij atak na Twój pogląd od ataku na Twoje życie biologiczne.'
+    explanation: 'Mieszanie faktów z opiniami jest głównym źródłem błędów w dyskusjach publicznych i decyzjach osobistych.',
+    keyTakeaway: 'Oddzielaj obiektywne fakty od subiektywnych interpretacji.'
   },
   {
     id: 9,
-    question: 'Co według koncepcji Carla Sagana oznacza zasada „Niezwykłe twierdzenia wymagają niezwykłych dowodów” (Sagan Standard)?',
-    topic: 'Standard Dowodowy',
-    sectionRef: 'Sekcja 18.11',
+    question: 'Jak komory echa (Echo Chambers) w mediach społecznościowych wpływają na przekonania jednostki?',
+    topic: 'Komory Echa i Internet',
+    sectionRef: 'Sekcja 18.9',
     options: [
-      { label: 'A', text: 'Im bardziej zdumiewająca lub sprzeczna z prawami nauki jest dana teza, tym mocniejsze i bardziej rzetelne muszą być dowody przedstawione na jej poparcie.', isCorrect: true },
-      { label: 'B', text: 'Wystarczy, że pięć osób powtórzy tę samą historię w internecie.', isCorrect: false },
-      { label: 'C', text: 'Każda opinia w internecie ma dokładnie taką samą wagę dowodową.', isCorrect: false },
-      { label: 'D', text: 'Nie trzeba przedstawiać żadnych dowodów, jeśli ma się wysokie poczucie pewności.', isCorrect: false }
+      { label: 'A', text: 'Isolują użytkownika od odmiennych perspektyw, wielokrotnie wzmacniając istniejące przekonania i kreując iluzję ich powszechności.', isCorrect: true },
+      { label: 'B', text: 'Automatycznie uczą języków obcych.', isCorrect: false },
+      { label: 'C', text: 'Korygują wszystkie błędy myślowe użytkownika.', isCorrect: false },
+      { label: 'D', text: 'Zmniejszają czas spędzany przed ekranem.', isCorrect: false }
     ],
-    explanation: 'Poczucie subiektywnej pewności nie jest dowodem empirycznym. Ekstremalne hipotezy wymagają skrupulatnej weryfikacji.',
-    keyTakeaway: 'Twoja ekscytacja tezą nie zastąpi rzetelnego materiału dowodowego.'
+    explanation: 'Algorytmy rekomendacyjne podsuwają treści zgodne z dotychczasowymi kliknięciami, utrwalając polaryzację i fałszywą pewność.',
+    keyTakeaway: 'Twoja bańka informacyjna karmi Twoje confirmation bias.'
   },
   {
     id: 10,
-    question: 'Na czym polega technika Sokratycznego Pytania w pracy z własnymi lub cudzymi sztywnymi przekonaniami?',
-    topic: 'Pytania Sokratyczne',
-    sectionRef: 'Sekcja 18.12',
+    question: 'Co charakteryzuje trójadę poznawczą Arona Becka w depresji i zaburzeniach nastroju?',
+    topic: 'Trójada Poznowcza Becka',
+    sectionRef: 'Sekcja 18.5',
     options: [
-      { label: 'A', text: 'Zadawanie precyzyjnych, pytań badających założenia, dowody, wyjątki i konsekwencje danej tezy bez bezpośredniego jej atakowania.', isCorrect: true },
-      { label: 'B', text: 'Krzyczenie na rozmówcę tak długo, aż przyzna się do błędu.', isCorrect: false },
-      { label: 'C', text: 'Cytowanie poezji starożytnej Grecji bez związku z tematem.', isCorrect: false },
-      { label: 'D', text: 'Zgadzanie się na wszystko, co mówi druga strona.', isCorrect: false }
+      { label: 'A', text: 'Negatywne przekonania dotyczące: 1. Samego siebie, 2. Świata/Doświadczeń, 3. Przyszłości.', isCorrect: true },
+      { label: 'B', text: 'Przekonania o pogodzie, polityce i sporcie.', isCorrect: false },
+      { label: 'C', text: 'Brak jakichkolwiek myśli automatycznych.', isCorrect: false },
+      { label: 'D', text: 'Nadmierny optymizm co do giełdy.', isCorrect: false }
     ],
-    explanation: 'Pytania sokratyczne pomagają rozmówcy samemu dostrzec luki w własnym rozumowaniu, obchodząc obronną reakcję ciała migdałowatego.',
-    keyTakeaway: 'Pytania otwierają umysł, podczas gdy kategoryczne twierdzenia go zamykają.'
+    explanation: 'Trójada Becka tworzy samopotwierdzający się filtr: „Jestem do niczego, świat jest wrogi, a przyszłość nie przyniesie poprawy”.',
+    keyTakeaway: 'Zmiana przekonań kluczowych jest fundamentem terapii poznawczej.'
   },
   {
     id: 11,
-    question: 'Jak wpływa syndrom „Naświetlania” (Spotlight Effect) na przekonanie dotyczące tego, jak bardzo inni ludzie nas oceniają?',
-    topic: 'Samoocena i Przekonania Relacyjne',
-    sectionRef: 'Sekcja 18.10',
+    question: 'Jak model wnioskowania bayesowskiego tłumaczy proces aktualizacji przekonań?',
+    topic: 'Model Bayesowski',
+    sectionRef: 'Sekcja 18.11',
     options: [
-      { label: 'A', text: 'Przeceniamy stopień, w jakim inni ludzie zwracają uwagę na nasze potknięcia, wygląd czy wypowiedzi.', isCorrect: true },
-      { label: 'B', text: 'Uważamy, że nikt na nas nie patrzy, nawet gdy stoimy na scenie.', isCorrect: false },
-      { label: 'C', text: 'Prowadzi do całkowitej utraty wzroku w ciemności.', isCorrect: false },
-      { label: 'D', text: 'Gwarantuje wygraną w konkursach piękności.', isCorrect: false }
+      { label: 'A', text: 'Umysł aktualizuje prawdopodobieństwo hipotezy (subiektywne przekonanie) w oparciu o wagę i wiarygodność nowych dowodów empirycznych.', isCorrect: true },
+      { label: 'B', text: 'Umysł losuje przekonania raz w roku.', isCorrect: false },
+      { label: 'C', text: 'Przekonania są całkowicie odporne na jakiekolwiek dane.', isCorrect: false },
+      { label: 'D', text: 'Każdy nowy bodziec całkowicie kasuje całą dotychczasową wiedzę.', isCorrect: false }
     ],
-    explanation: 'Każdy człowiek jest głównym bohaterem własnego filmu. Ludzie są zbyt zajęci sobą, by analizować Twoje drobne potknięcia.',
-    keyTakeaway: 'Inni ludzie myślą o Tobie o wiele rzadziej, niż Ci się wydaje.'
+    explanation: 'Wnioskowanie bayesowskie łączy wiedzę pierwotną (prior) z nowym dowodem (likelihood), dając zaktualizowane przekonanie (posterior).',
+    keyTakeaway: 'Traktuj przekonania jako stopnie prawdopodobieństwa, a nie jako dogmaty.'
   },
   {
     id: 12,
-    question: 'Czym jest Naif Realism (Naiwny Realizm) w kontekście postrzegania świata?',
-    topic: 'Naiwny Realizm',
+    question: 'W jaki sposób przekonania wpływają na fizjologię i stany emocjonalne człowieka?',
+    topic: 'Przekonania a Emocje',
     sectionRef: 'Sekcja 18.13',
     options: [
-      { label: 'A', text: 'Przekonanie, że widzimy świat obiektywnie takim, jaki jest, a ci, którzy się z nami nie zgadzają, są niedoinformowani, leniwi lub złośliwi.', isCorrect: true },
-      { label: 'B', text: 'Malowanie obrazów w stylu naiwnym.', isCorrect: false },
-      { label: 'C', text: 'Zdolność do bezbłędnej oceny odległości w terenie.', isCorrect: false },
-      { label: 'D', text: 'Filozofia zakładająca brak istnienia materii.', isCorrect: false }
+      { label: 'A', text: 'Interpretacja poznawcza sytuacji aktywuje ciało migdałowate i układ autonomiczny, wywołując konkretną reakcję emocjonalno-somatyczną.', isCorrect: true },
+      { label: 'B', text: 'Przekonania nie mają żadnego związku z układem nerwowym.', isCorrect: false },
+      { label: 'C', text: 'Emocje wyprzedzają wszelkie procesy poznawcze o 10 minut.', isCorrect: false },
+      { label: 'D', text: 'Przekonania wpływają wyłącznie na trawienie.', isCorrect: false }
     ],
-    explanation: 'Naiwny realizm ignoruje fakt, że nasz mózg konstruktywistycznie przetwarza bodźce przez pryzmat historii, emocji i kultury.',
-    keyTakeaway: 'Nie widzisz świata takim, jaki jest. Widzisz świat takim, jaki jest Twój umysł.'
+    explanation: 'To nie sama sytuacja, lecz jej interpretacja („To zagrożenie!” vs „To szansa!”) decyduje o wydzielaniu kortyzolu lub dopaminy.',
+    keyTakeaway: 'Zmień ocenę poznawczą sytuacji, a zmienisz swoją odpowiedź biologiczną.'
   },
   {
     id: 13,
-    question: 'W jaki sposób przekonania kluczowe (Core Beliefs) kształtują schematy poznawcze niższego rzędu?',
-    topic: 'Architektura Przekonań',
-    sectionRef: 'Sekcja 18.3',
+    question: 'Na czym polega zjawisko iluzji głębi wyjaśnienia (Illusion of Explanatory Depth)?',
+    topic: 'Iluzja Wyjaśnienia',
+    sectionRef: 'Sekcja 18.13',
     options: [
-      { label: 'A', text: 'Działają jak ukryte fundamenty, wyznaczające automatyczne myśli i zasady warunkowe dotyczące siebie, innych i przyszłości.', isCorrect: true },
-      { label: 'B', text: 'Nie mają żadnego wpływu na codzienne decyzje.', isCorrect: false },
-      { label: 'C', text: 'Są łatwe do zmiany po przeczytaniu jednego nagłówka w gazecie.', isCorrect: false },
-      { label: 'D', text: 'Zmieniają się co 15 minut pod wpływem pogody.', isCorrect: false }
+      { label: 'A', text: 'Przekonanie, że rozumiemy jak działa dany złożony system (np. zamek błyskawiczny, polityka), dopóki nie zostaniemy poproszeni o szczegółowe wyjaśnienie mechanizmu krok po kroku.', isCorrect: true },
+      { label: 'B', text: 'Zdolność do czytania bez używania okularów.', isCorrect: false },
+      { label: 'C', text: 'Umiejętność pisania skomplikowanych algorytmów.', isCorrect: false },
+      { label: 'D', text: 'Przekonanie, że inni ludzie czytają w naszych myślach.', isCorrect: false }
     ],
-    explanation: 'Przekonanie kluczowe (np. „świat jest niebezpieczny”) automatycznie generuje zasady („muszę kontrolować wszystko”) i myśli („coś pójdzie nie tak”).',
-    keyTakeaway: 'Praca nad przekonaniami wymaga dotarcia do cichych fundamentów, a nie tylko do powierzchniowych myśli.'
+    explanation: 'Poproszenie kogoś o wyjaśnienie mechanizmu (Socratic questioning) obniża ekstremizm poglądów i ujawnia luki w wiedzy.',
+    keyTakeaway: 'Zanim uznasz, że coś rozumiessz, spróbuj wyjaśnić ten mechanizm na piśmie.'
   },
   {
     id: 14,
-    question: 'Co oznacza pojęcie Inokulacji Poznawczej (Attitude Inoculation)?',
-    topic: 'Odporność Poznawcza',
-    sectionRef: 'Sekcja 18.14',
+    question: 'Jakie jest główne źródło odporności na informacje sprzeczne w przypadku przekonań tożsamościowych?',
+    topic: 'Opór Poznawczy i Ego',
+    sectionRef: 'Sekcja 18.12',
     options: [
-      { label: 'A', text: 'Wcześniejsze zapoznanie umysłu z osłabioną wersją kontrargumentów buduje odporność na późniejszą manipulację i dezinformację.', isCorrect: true },
-      { label: 'B', text: 'Podawanie leków uspokajających przed rozmową kwalifikacyjną.', isCorrect: false },
-      { label: 'C', text: 'Zmuszanie ludzi do czytania słowników.', isCorrect: false },
-      { label: 'D', text: 'Unikanie jakiejkolwiek wymiany poglądów.', isCorrect: false }
+      { label: 'A', text: 'Uznanie błędu w przekonaniu grozi rozpadem spójności wizerunku siebie lub wykluczeniem z grupy społecznej.', isCorrect: true },
+      { label: 'B', text: 'Brak odpowiedniej ilości witamin w diecie.', isCorrect: false },
+      { label: 'C', text: 'Uszkodzenie błony bębenkowej.', isCorrect: false },
+      { label: 'D', text: 'Zbytnia łatwość zapamiętywania liczb.', isCorrect: false }
     ],
-    explanation: 'Podobnie jak szczepionka biologicaliczna, inokulacja poznawcza uczy umysł rozpoznawać i rozbrajać fałszywe retoryki.',
-    keyTakeaway: 'Zapoznaj się ze słabymi argumentami przeciwnika, by zbudować odporność na dezinformację.'
+    explanation: 'Mózg przedkłada spójność tożsamościową i przynależność nad obiektywną prawdę logiczną.',
+    keyTakeaway: 'Oddziel swoje poglądy od swojego prawa do szacunku i wartości jako człowieka.'
   },
   {
     id: 15,
-    question: 'Jaki jest cel prowadzenia Dziennika Aktualizacji Przekonań?',
-    topic: 'Praktyka Aktualizacji',
-    sectionRef: 'Sekcja 18.16',
+    question: 'W jaki sposób motywowane rozumowanie (Motivated Reasoning) wpływa na ocenę dowodów naukowych?',
+    topic: 'Motywowane Rozumowanie',
+    sectionRef: 'Sekcja 18.6',
     options: [
-      { label: 'A', text: 'Świadome rejestrowanie sytuacji, w których nasza hipoteza okazała się błędna, i zapisywanie nowej lekcji procesowej.', isCorrect: true },
-      { label: 'B', text: 'Pisywanie listów z żalami do dawnych znajomych.', isCorrect: false },
-      { label: 'C', text: 'Kopiowanie przepisów kulinarnych z sieci.', isCorrect: false },
-      { label: 'D', text: 'Notowanie liczby kroków zrobionych każdego dnia.', isCorrect: false }
+      { label: 'A', text: 'Umysł stosuje surowsze kryteria metodologiczne wobec badań sprzecznych z jego poglądem, a badania zgodne przyjmuje bezkrytycznie.', isCorrect: true },
+      { label: 'B', text: 'Sprawia, że człowiek czyta tylko pierwsze strony artykułów.', isCorrect: false },
+      { label: 'C', text: 'Gwarantuje idealną obiektywność każdego naukowca.', isCorrect: false },
+      { label: 'D', text: 'Wyłącza działanie pamięci roboczej.', isCorrect: false }
     ],
-    explanation: 'Dziennik dokumentuje rozwój poznawczy i uczy traktować błędy interpretacyjne jako naturalny materiał szkoleniowy.',
-    keyTakeaway: 'Zapisuj swoje pomyłki interpretacyjne — to najlepszy dowód na to, że się rozwijasz.'
+    explanation: 'Pytamy: „Czy muszę w to wierzyć?” przy danych niegodnych, oraz „Czy mogę w to wierzyć?” przy danych pożądanych.',
+    keyTakeaway: 'Bądź najbardziej krytyczny wobec dowodów, które potwerdzają Twoje ulubione tezy.'
   },
   {
     id: 16,
-    question: 'Na czym polega zasada brzytwy Hanlona w interpretacji intencji innych ludzi?',
-    topic: 'Brzytwa Hanlona',
-    sectionRef: 'Sekcja 18.15',
+    question: 'Na czym polega błąd samopotwierdzającego się proroctwa w relacjach międzyludzkich?',
+    topic: 'Samospełniające się Proroctwo',
+    sectionRef: 'Sekcja 18.14',
     options: [
-      { label: 'A', text: '„Nigdy nie przypisuj złośliwości temu, co można wystarczająco wyjaśnić głupotą, pośpiechem lub brakiem wiedzy”.', isCorrect: true },
-      { label: 'B', text: 'Każde działanie człowieka jest efektem tajnego spisku przeciwko Tobie.', isCorrect: false },
-      { label: 'C', text: 'Ludzie zawsze działają ze szlachetnych pobudek bez wyjątku.', isCorrect: false },
-      { label: 'D', text: 'Nie warto rozmawiać z nikim, kto nie ma dyplomu uczelni.', isCorrect: false }
+      { label: 'A', text: 'Przekonanie o wrogości drugiej osoby sprawia, że traktujemy ją chłodno, co prowokuje ją do chłodu, stanowiąc „dowód” na naszą wstępną tezę.', isCorrect: true },
+      { label: 'B', text: 'Przepowiadanie pogody na podstawie obserwacji chmur.', isCorrect: false },
+      { label: 'C', text: 'Automatyczne wysyłanie życzeń urodzinowych.', isCorrect: false },
+      { label: 'D', text: 'Kupowanie prezentów bez okazji.', isCorrect: false }
     ],
-    explanation: 'Brzytwa Hanlona zapobiega wpadaniu w paranoję relacyjną i przypisywaniu innym skomplikowanych makiawelicznych intencji.',
-    keyTakeaway: 'Zanim uznasz, że ktoś chciał Cię skrzywdzić, sprawdź, czy po prostu nie był zmęczony lub roztargniony.'
+    explanation: 'Tworzymy w świecie dokładnie takie reakcje, jakich spodziewamy się na podstawie naszych wstępnych przekonań.',
+    keyTakeaway: 'Twoje oczekiwania wobec innych kształtują ich reakcje wobec Ciebie.'
   },
   {
     id: 17,
-    question: 'W jaki sposób bańki informacyjne (Filter Bubbles) wzmacniają sztywność przekonań?',
-    topic: 'Bańki Informacyjne',
-    sectionRef: 'Sekcja 18.7',
+    question: 'Jaką rolę w redukcji dogmatyzmu odgrywa protokół testowania hipotez życiowych?',
+    topic: 'Praktyka Testowania Hipotez',
+    sectionRef: 'Sekcja 18.17',
     options: [
-      { label: 'A', text: 'Algorytmy serwują treści zgodne z dotychczasowymi kliknięciami, tworząc złudzenie, że cały świat myśli dokładnie tak samo jak my.', isCorrect: true },
-      { label: 'B', text: 'Powodują uszkodzenia błony bębenkowej w uchu.', isCorrect: false },
-      { label: 'C', text: 'Zmuszają do czytania książek historycznych.', isCorrect: false },
-      { label: 'D', text: 'Zwiększają różnorodność prezentowanych poglądów.', isCorrect: false }
+      { label: 'A', text: 'Przekształca sztywne przekonania w sprawdzalne eksperymenty behawioralne z jasno określonymi wskaźnikami prawdy.', isCorrect: true },
+      { label: 'B', text: 'Nakazuje wierzyć we wszystko co napisano w internecie.', isCorrect: false },
+      { label: 'C', text: 'Zmusza do porzucenia wszelkich celów życiowych.', isCorrect: false },
+      { label: 'D', text: 'Wyłącza emocje na 30 dni.', isCorrect: false }
     ],
-    explanation: 'Cyfrowe środowisko izoluje nas od odmiennych perspektyw, przekształcając subiektywne opinie w rzekomy uniwersalny konsensus.',
-    keyTakeaway: 'Świadomie wychodź poza własną bańkę informacyjną, by zachować plastyczność umysłu.'
+    explanation: 'Zamiana „Wiem że tak jest” na „Przetestuję tę hipotezę w małej skali” obniża napięcie obronne.',
+    keyTakeaway: 'Nie dyskutuj z przekonaniem — zaprojektuj mały eksperyment.'
   },
   {
     id: 18,
-    question: 'Co charakteryzuje postawę Intelektualnej Pokory (Intellectual Humility)?',
-    topic: 'Intelektualna Pokora',
+    question: 'Czym są przekonania kluczowe (Core Beliefs) w terapii poznawczo-behawioralnej?',
+    topic: 'Przekonania Kluczowe',
+    sectionRef: 'Sekcja 18.5',
+    options: [
+      { label: 'A', text: 'Najgłębsze, bezwzględne założenia o sobie, innych i świecie, kształtowane we wczesnym dzieciństwie, stanowiące fundament architektury poznawczej.', isCorrect: true },
+      { label: 'B', text: 'Chwilowe myśli o tym, co zjeść na obiad.', isCorrect: false },
+      { label: 'C', text: 'Zasady gry w szachy.', isCorrect: false },
+      { label: 'D', text: 'Pamięć nazwisk znajomych z pracy.', isCorrect: false }
+    ],
+    explanation: 'Przekonania kluczowe („Jestem nieadekwatny”, „Ludzie są niebezpieczni”) determinują automatyczne myśli i emocje.',
+    keyTakeaway: 'Modyfikacja przekonań kluczowych zmienia całe doświadczenie życiowe.'
+  },
+  {
+    id: 19,
+    question: 'Jak zjawisko kotwiczenia (Anchoring) wpływa na wycenę nowych informacji?',
+    topic: 'Błąd Kotwiczenia',
+    sectionRef: 'Sekcja 18.6',
+    options: [
+      { label: 'A', text: 'Pierwsza uzyskana informacja staje się punktem odniesienia, do którego umysł niedostatecznie dostosowuje kolejne dane.', isCorrect: true },
+      { label: 'B', text: 'Zmusza do kupowania kotwic do łodzi.', isCorrect: false },
+      { label: 'C', text: 'Gwarantuje bezbłędną ocenę wartości nieruchomości.', isCorrect: false },
+      { label: 'D', text: 'Zwiększa elastyczność myślenia.', isCorrect: false }
+    ],
+    explanation: 'Pierwsza usłyszana opinia wyznacza ramę, z której umysł niechętnie się przesuwa.',
+    keyTakeaway: 'Bądź świadomy pierwszej kotwicy, jaką wbito w Twój umysł.'
+  },
+  {
+    id: 20,
+    question: 'Jaka jest rola pytań sokratejskich w zmianie przekonań u siebie i u innych?',
+    topic: 'Pytania Sokratejskie',
     sectionRef: 'Sekcja 18.17',
     options: [
-      { label: 'A', text: 'Gotowość do uznania ograniczeń własnej wiedzy i otwartość na modyfikację poglądów pod wpływem lepszych dowodów.', isCorrect: true },
-      { label: 'B', text: 'Uważanie siebie za osobę niezdolną do zrozumienia czegokolwiek.', isCorrect: false },
-      { label: 'C', text: 'Milczenie na każdy temat w towarzystwie.', isCorrect: false },
-      { label: 'D', text: 'Zgadzanie się z każdym rozmówcą dla świętego spokoju.', isCorrect: false }
+      { label: 'A', text: 'Prowadzą do samodzielnego odkrycia luk w logice i dowodach poprzez precyzyjne pytania o źródła, wyjątki i konsekwencje.', isCorrect: true },
+      { label: 'B', text: 'Służą do wyśmiewania rozmówcy w dyskusji publicznej.', isCorrect: false },
+      { label: 'C', text: 'Zmuszają do nauki greki klasycznej.', isCorrect: false },
+      { label: 'D', text: 'Zapobiegają wyciąganiu jakichkolwiek wniosków.', isCorrect: false }
     ],
-    explanation: 'Intelektualna pokora to nie słabość, lecz naukowy rygor uznający, że nasza wiedza jest zawsze częściowa i wymaga ciągłej aktualizacji.',
-    keyTakeaway: 'Przyznanie się do niewiedzy to pierwszy krok do zdobycia mądrości.'
+    explanation: 'Pytania otwarte obniżają opór obronny, pozwalając rozmówcy samodzielnie zauważyć pęknięcia w jego teorii.',
+    keyTakeaway: 'Nie narzucaj swojej prawdy — zadawaj pytania, które odsłaniają mechanizm.'
   }
 ];
 
 export const caseStudiesChapterEighteen: CaseStudy[] = [
   {
-    id: 'studium-18-1-przekonanie-o-nieuczciwosci',
-    title: 'W pułapce podejrzliwości: Jak przekonanie „ludzie zawsze wykorzystują słabość” zniszczyło zespół Marka',
-    subtitle: 'Naiwny realizm, błąd potwierdzenia i destrukcja zaufania w biznesie',
-    protagonist: 'Marek, 41 lat, założyciel agencji programistycznej',
-    context: 'Marek wychował się w przekonaniu, że „jeśli nie będziesz kontrolować każdego szczegółu, ludzie cię oszukają”. Po wejściu na poziom 30 pracowników wprowadził rygorystyczny system monitorowania każdego kliknięcia myszką.',
+    id: 'studium-18-1-banka-inwestycyjna',
+    title: 'W pułapce własnej hipotezy: Jak Błąd Potwierdzenia kosztował inwestora majątek',
+    subtitle: 'Confirmation Bias, ignorowanie sygnałów rynkowych i obrona trafności sądu',
+    protagonist: 'Grzegorz, 41 lat, inwestor indywidualny i były menedżer',
+    context: 'Grzegorz zainwestował 70% swoich oszczędności w spółkę z sektora zielonej energii, przekonany o jej rychłym przełomie technologicznym. Mimo kolejnych złych raportów finansowych, Grzegorz dokupywał akcje, ignorując ostrzeżenia analityków.',
     story: [
-      'Marek w dzieciństwie doświadczył oszustwa finansowego w firmie ojca. To zdarzenie zafiksowało w jego umyśle przekonanie kluczowe: „Nikt nie zasługuje na zaufanie, ludzie są chciwi i leniwi”.',
-      'Gdy jego własna firma zaczęła się rozwijać, Marek zainstalował na komputerach pracowników oprogramowanie śledzące czas reakcji, zrzuty ekranu co 5 minut i audyt czasu spędzonego w łazience. Każde spóźnienie o 2 minuty traktował jako dowód celowego sabotowania firmy.',
-      'Kiedy najlepszy architekt systemu złożył wypowiedzenie z powodu „dławiącej atmosfery braku zaufania”, Marek zinterpretował to wybiórczo (Confirmation Bias): „Widzicie? Chciał uciec do konkurencji! Wszyscy są nielojalni”.',
-      'Atmosfera w zespole stała się znośna tylko dla osób biernych i konformistycznych. Innowacyjność spadła do zera, a koszty rotacji przerosły zyski. Marek podczas sesji doradztwa biznesowego po raz pierwszy musiał zderzyć swoje przekonanie z faktem, że to jego system oparty na podejrzliwości wywołał zachowania, których tak bardzo się obawiał.'
+      'Grzegorz przeczytał artykuł o nowym patencie spółki X i uznał to za okazję życia. W jego umyśle ukształtowało się głębokie przekonanie: „Ta firma zmieni układ sił na rynku, a ja zostanę milionerem”.',
+      'Przez kolejne miesiące Grzegorz spędzał 4 godziny dziennie na forach internetowych i grupach entuzjastów spółki X. Czytał wyłącznie wpisy potwierdzające jego entuzjazm, a wszelkie analizy krytyczne odrzucał jako „spisek krótkiej sprzedaży”.',
+      'Gdy spółka opublikowała raport wykazujący ogromne zadłużenie i brak przychodów, kurs spadł o 40%. Zamiast zamknąć pozycję i uratować resztę kapitału, Grzegorz dokupił akcje, twierdząc: „Teraz jest promocyjna cena!”.',
+      'Firma ogłosiła upadłość pół roku później. Grzegorz stracił 450 tysięcy złotych. Dopiero wtedy zrozumiał, że nie inwestował w realną firmę, lecz w swoje niezłomne przekonanie.'
     ],
     dialogue: [
-      { speaker: 'Architekt Systemu', text: 'Marek, nie da się pracować, gdy co 5 minut komputer robi mi zdjęcie. Czuję się jak w więzieniu.', subtext: 'Protest przeciwko brakowi autonomii i naruszeniu godności.' },
-      { speaker: 'Marek', text: 'Uczciwy człowiek nie ma nic do ukrycia. Jak nie masz nic na sumieniu, to system ci nie przeszkadza.', subtext: 'Obrona własnego przekonania za pomocą oporu racjonalizacyjnego.' }
+      { speaker: 'Analityk', text: 'Grzegorz, ta spółka ma spalone przepływy pieniężne i brak odbiorców. Sprzedawaj.', subtext: 'Twardy sygnał empiryczny z rynku.' },
+      { speaker: 'Grzegorz', text: 'Nie rozumiesz ich wizji! Oni budują przyszłość, zaraz podpiszą kontrakt w Azji!', subtext: 'Obrona hipotezy wbrew dowodom.' }
     ],
-    decisionTaken: 'Marek zignorował protesty kluczowych pracowników i zaostrzył normy kontrolne, co doprowadziło do odejścia 40% zespołu.',
-    whatProtagonistSaw: 'Zagrożenie oszustwem, potencjalne lenistwo i konieczność utrzymania bezwzględnej dyscypliny.',
-    whatWasMissed: 'Fakt, że wysokie zaufanie i autonomia są kluczowymi stymulatorami motywacji wewnętrznej u wysokiej klasy specjalistów.',
+    decisionTaken: 'Grzegorz dokupywał akcje upadającej spółki na każdym spadku ceny, ignorując sprawozdania finansowe.',
+    whatProtagonistSaw: 'Przyszły oszałamiający sukces technologiczny i potwierdzenia od innych entuzjastów.',
+    whatWasMissed: 'Twarde dane księgowe, brak przychodów i bankructwo płynnościowe.',
     psychologicalAnalysis: {
-      coreMechanism: 'Samospełniająca się przepowiednia (Self-Fulfilling Prophecy) napędzana przez Confirmation Bias.',
+      coreMechanism: 'Confirmation Bias w połączeniu z pułapką zatopionych kosztów (Sunk Cost Fallacy).',
       cognitiveBiases: [
-        { name: 'Naiwny realizm', description: 'Przekonanie, że podejrzliwa ocena ludzi jest jedyną obiektywną prawdą o świecie.', impact: 'Odrzucanie głosów doradców twierdzących, że zaufanie opłaca się biznesowo.' }
+        { name: 'Confirmation Bias', description: 'Szukanie informacji potwierdzających trafność wyboru.', impact: 'Ignorowanie raportów sprawozdawczych.' },
+        { name: 'Sunk Cost Fallacy', description: 'Inwestowanie kolejnych środków w obronie wcześniej straconych.', impact: 'Doprowadzenie do całkowitego bankructwa.' }
       ],
       defenseMechanisms: [
-        { name: 'Projektowanie', explanation: 'Przypisywanie pracownikom ukrytych motywów złośliwości i chciwości.' }
+        { name: 'Racjonalizacja', explanation: 'Tłumaczenie spadków kursu działaniem „manipulatorów rynkowych”.' }
       ],
-      emotionalDynamic: 'Ciągły stan czujności i lęku przed byciem wykorzystanym, wywołujący agresywne zachowania kontrolne.'
+      emotionalDynamic: 'Lęk przed przyznaniem się do błędu i utratą poczucia nieomylności.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Zgłoszenie spóźnienia przez pracownika.',
-      attentionFocus: 'Wizja oszustwa i utraty kontroli.',
-      interpretation: '„Próbują mnie wykorzystać, muszę dokręcić śrubę”.',
-      emotion: 'Złość, lęk, podejrzliwość.',
-      impulse: 'Zaostrzenie kar i monitoringu.',
-      action: 'Wdrożenie dodatkowego oprogramowania szpiegującego.',
-      consequence: 'Masowe odejścia pracowników i spadek zysków firmy.'
+      trigger: 'Spadek kursu akcji po złym raporcie.',
+      attentionFocus: 'Wpisy entuzjastów na forum internetowym.',
+      interpretation: '„To okazja, rynek się myli, ja mam rację”.',
+      emotion: 'Chciwość, obronna złość, lęk przed stratą.',
+      impulse: 'Dokupienie akcji.',
+      action: 'Przelew kolejnych oszczędności na konto maklerskie.',
+      consequence: 'Całkowita utrata majątku.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Ciało migdałowate', role: 'Wycena zagrożenia w relacjach społecznych', activationState: 'Ciągła hiperaktywacja' },
-        { region: 'Grzbietowa kora obwodu (dACC)', role: 'Rejestracja wykrytego błędu i niepewności', activationState: 'Podwyższony poziom aktywacji' }
+        { region: 'Jądro półleżące', role: 'Oczekiwanie nagrody finansowej', activationState: 'Hiperaktywacja na początku' }
       ],
       neurotransmitters: [
-        { name: 'Kortyzol', roleInScenario: 'Przewlekły stres podtrzymujący postawę obronno-agresywną.' }
+        { name: 'Dopamina', roleInScenario: 'Pętla oczekiwania na przełom technologiczny.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 150 ms', process: 'Słowo „spóźnienie” wywołuje szybki wyrzut noradrenaliny.' }
+        { timeMs: '0 - 200 ms', process: 'Widok spadku kursu wywołuje ukłucie lęku wyciszane racjonalizacją.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Instytucjonalny szantaż kontrolny', description: 'Kompensowanie braku kompetencji przywódczych rygorem technologicznym.', vulnerabilityExploited: 'Potrzeba bezpieczeństwa finansowego pracowników.' }
+        { tactic: 'Komora echa (Echo Chamber)', description: 'Grupy na forach utwierdzające uczestników w iluzji sukcesu.', vulnerabilityExploited: 'Potrzebę potwierdzenia mądrości.' }
       ],
       counterMeasures: [
-        { step: '1. Testowanie hipotezy zaufania', script: 'Danie jednemu zespołowi pełnej autonomii na 30 dni i pomiar rzeczywistych wyników.', rationale: 'Zbiera empiryczne dowody podważające sztywne przekonanie.' }
+        { step: '1. Czerwony Zespół (Red Teaming)', script: '„Zanim zainwestuję, muszę znaleźć 3 najsilniejsze argumenty ZA UPADKIEM tej firmy”.', rationale: 'Wymusza poszukiwanie disconfirming evidence.' }
       ]
     },
-    alternativePath: 'Gdyby Marek przetestował model oparty na wynikach (OKRy) zamiast na czasie klikania, zachowałby kluczowych ludzi i podwoił zyski agencji.',
-    readerQuestion: 'Jakie głębokie przekonanie na temat innych ludzi każe Ci stosować nadmierną kontrolę lub unikać bliskości?',
-    keyTakeaway: 'To, co uważasz za obiektywną prawdę o ludziach, bywa często tylko cieniem Twoich dawnych zranień.'
+    alternativePath: 'Gdyby Grzegorz ustalił sztywny poziom stop-loss na poziomie 10% straty, zachowałby 90% kapitału.',
+    readerQuestion: 'W jakiej dziedzinie życia ignoryjesz ostrzegawcze fakty tylko po to, by bronić swojej wstępnej decyzji?',
+    keyTakeaway: 'Nie zakochuj się w swoich hipotezach. Rynek i rzeczywistość nie dbają o Twoje przekonania.'
   },
   {
-    id: 'studium-18-2-efekt-odbicia-polityka',
-    title: 'Gdy fakty przegrywają z tożsamością: Efekt Backfire u Wiktora podczas dyskusji o klimacie',
-    subtitle: 'Motywowane rozumowanie, tożsamość ideologiczna i granice logiki w sporach',
-    protagonist: 'Wiktor, 50 lat, przedsiębiorca z branży paliwowej',
-    context: 'Wiktor podczas kolacji rodzinnej wszedł w oskarżycielski spór ze swoją córką na temat zmian klimatycznych i transformacji energetycznej. Przedstawienie wykresów i raportów naukowych wywołało u niego wybuch wściekłości.',
+    id: 'studium-18-2-konflikt-pogladow',
+    title: 'Gdy fakty niszczą relację: Jak konflikt światopoglądowy rozbił rodzinę Marka',
+    subtitle: 'Backfire Effect, polaryzacja tożsamościowa i utrata więzi',
+    protagonist: 'Marek, 38 lat, inżynier oprogramowania',
+    context: 'Marek i jego ojciec, Janusz (66 lat), przez lata mieli doskonały kontakt. Podczas pandemii i wyborów ich poglądy polityczno-medyczne rozeszły się drastycznie, doprowadzając do awantur przy każdym spotkaniu.',
     story: [
-      'Wiktor zbudował majątek na dystrybucji oleju opałowego. Dla niego transformacja energetyczna oznaczała nie tylko zagrożenie dla biznesu, ale i moralne potępienie całego jego dorobku życiowego.',
-      'Gdy jego córka, studentka ochrony środowiska, położyła na stole oficjalny raport IPCC pełen danych i wykresów, Wiktor poczuł potężny skok ciśnienia. Jego umysł nie potraktował danych jako informacji, lecz jako ideologiczny atak na jego godność i styl życia.',
-      'Zamiast przeanalizować dane, Wiktor zaczął gorączkowo wyszukiwać w telefonie niszowe blogi spiskowe podważające autorytet naukowców (Motivated Reasoning). Z każdą minutą jego przekonanie stało się jeszcze bardziej skrajne.',
-      'Po godzinie krzyków Wiktor uderzył pięścią w stół i wyszedł z pokoju. Efekt Backfire sprawił, że po przedstawieniu twardych dowodów Wiktor stał się jeszcze bardziej zagorzałym denialistą niż przed rozmową.'
+      'Marek opierał swoje przekonania na artykułach naukowych i statystykach. Ojciec czerpał wiedzę z telewizji i filmów z teoriami spiskowymi na YouTube.',
+      'Podczas niedzielnych obiadów Marek przynosił ze sobą wydrukowane wykresy i badania naukowe, próbując „nawrócić” ojca na racjonalne myślenie. Reakcja ojca była odwrotna do zamierzonej: im więcej twardych dowodów przedstawiał Marek, tym głośniej ojciec krzyczał i bronił swoich teorii.',
+      'Doszło do aktywacji Backfire Effect: Janusz poczuł, że syn traktuje go jak głupca i atakuje jego godność. Zamiast zmienić zdanie, okopał się na swoich pozycjach.',
+      'Spotkania zakończyły się, gdy ojciec wyprosił Marka z domu. Przez dwa lata nie rozmawiali ze sobą. Marek chciał wygrać dyskusję na fakty, a stracił relację z ojcem.'
     ],
     dialogue: [
-      { speaker: 'Córka', text: 'Tato, zobacz na ten wykres. 99% naukowców zgadza się co do tych danych.', subtext: 'Próba użycia autorytetu naukowego do zmiany przekonania.' },
-      { speaker: 'Wiktor', text: 'Ci naukowcy są opłacani przez zagraniczne koncerny! Chcecie zniszczyć naszą gospodarkę i uczciwych ludzi!', subtext: 'Obrona tożsamości poprzez dyskredytację źródła danych.' }
+      { speaker: 'Marek', text: 'Tato, zobacz ten wykres z Nature! Tu są dane z 5 mln pacjentów! Czy ty jesteś ślepy?', subtext: 'Atak faktami połączony z podważeniem inteligencji rozmówcy.' },
+      { speaker: 'Janusz (Ojciec)', text: 'Wypchaj się swoimi wykresami! Przekupieni naukowcy! Nie będziesz mi mówił jak mam żyć we własnym domu!', subtext: 'Obrona tożsamościowa i godnościowa.' }
     ],
-    decisionTaken: 'Wiktor przelał 10 000 zł na rzecz organizacji lobbującej przeciwko regulacjom ekologicznym.',
-    whatProtagonistSaw: 'Wykresy jako atak na jego tożsamość, zagrożenie dla majątku i ideologiczną indoktrynację córki.',
-    whatWasMissed: 'Fakt, że dane naukowe opisują procesy fizyczne, a nie stanowią osobistej oceny moralnej jego osoby.',
+    decisionTaken: 'Marek wybierał konfrontację na argumenty przy każdej rozmowie, przedkładając rację nad relację.',
+    whatProtagonistSaw: 'Czystą ignorancję ojca i brak logiki w jego wywodach.',
+    whatWasMissed: 'Fakt, że przekonania ojca były filarem jego poczucia bezpieczeństwa w skomplikowanym świecie.',
     psychologicalAnalysis: {
-      coreMechanism: 'Efekt Backfire (Odbicia) napędzany przez Motywowane Rozumowanie.',
+      coreMechanism: 'Backfire Effect i polaryzacja światopoglądowa.',
       cognitiveBiases: [
-        { name: 'Błąd konfirmacji', description: 'Wyszukiwanie wyłącznie informacji z niesprawdzonych źródeł pasujących do tez denialistycznych.', impact: 'Radykalizacja poglądów.' }
+        { name: 'Naive Realism', description: 'Przekonanie: „Ja widzę świat obiektywnie, a kto myśli inaczej, jest niedoinformowany lub zły”.', impact: 'Pogoardliwy stosunek do ojca.' }
       ],
       defenseMechanisms: [
-        { name: 'Racjonalizacja obronna', explanation: 'Mylne utożsamienie oporu biznesowego z obroną niepodległości gospodarczej.' }
+        { name: 'Agresja obronna', explanation: 'Krzyk ojca jako reakcja na poczucie zagrożenia statusu.' }
       ],
-      emotionalDynamic: 'Gwałtowny lęk przed utratą znaczenia i wstydu przed uznaniem, że jego branża szkodzi środowisku.'
+      emotionalDynamic: 'Głęboki żal, wściekłość i poczucie odrzucenia z obu stron.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Prezentacja raportu naukowego przez córkę.',
-      attentionFocus: 'Zagrożenie dla własnego biznesu i tożsamości.',
-      interpretation: '„Chcą mnie zniszczyć i zrobić ze mnie przestępcę”.',
-      emotion: 'Wściekłość, lęk, poczucie zagrożenia.',
-      impulse: 'Kontratak, podważenie kompetencji naukowców.',
-      action: 'Wyjście z pokoju i zaangażowanie finansowe po stronie lobbystów.',
-      consequence: 'Zerwanie relacji z córką na 6 miesięcy i zaryglowanie się w bańce ideologicznej.'
+      trigger: 'Komentarz ojca na temat spisku.',
+      attentionFocus: 'Błąd w logice wypowiedzi ojca.',
+      interpretation: '„Muszę go natychmiast wyprostować faktami”.',
+      emotion: 'Wyższość, irytacja, złość.',
+      impulse: 'Wyciągnięcie telefonu i pokazywanie badań.',
+      action: 'Ostra krytyka poglądów ojca przy rodzinie.',
+      consequence: 'Zerwanie relacji rodzinnych.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Brzuszno-przyśrodkowa kora przedczołowa (vmPFC)', role: 'Przetwarzanie przekonań związanych z tożsamością i wartościami', activationState: 'Hiperaktywacja obronna' },
-        { region: 'Ciało migdałowate', role: 'Inicjowanie reakcji walki', activationState: 'Wysoka aktywacja' }
+        { region: 'Ciało migdałowate', role: 'Reakcja zagrożenia ego na atak faktami', activationState: 'Hiperaktywacja u obu stron' }
       ],
       neurotransmitters: [
-        { name: 'Adrenalina', roleInScenario: 'Mobilizacja do agresywnej obrony stanowiska w dyskusji.' }
+        { name: 'Adrenalina', roleInScenario: 'Szybkie pobudzenie walka-lub-ucieczka w dyskusji.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 200 ms', process: 'Słowo „raport IPCC” aktywuje ból w ciele migdałowatym.' }
+        { timeMs: '0 - 100 ms', process: 'Słowo „przekupieni” wywołuje falę gorąca u Marka.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Polaryzacja tożsamościowa', description: 'Narzucenie ramy „my vs oni” w sprawach merytorycznych.', vulnerabilityExploited: 'Potrzeba obrony grupy własnej.' }
+        { tactic: 'Polaryzacja medialna', description: 'Media podsycające nienawiść między obozami światopoglądowymi.', vulnerabilityExploited: 'Potrzebę przynależności.' }
       ],
       counterMeasures: [
-        { step: '1. Sokratyczne pytania o mechanizm', script: '„Tato, a jak według Ciebie działa efekt cieplarniany na poziomie fizycznym?”.', rationale: 'Przenosi uwagę z emocji politycznych na opis mechanizmu.' }
+        { step: '1. Oddzielenie człowieka od poglądu', script: '„Kocham mojego ojca za to, kim dla mnie jest, a nie za jego opinie o polityce. Nakładam moratorium na tematy sporne”.', rationale: 'Chroni więź przed zniszczeniem.' }
       ]
     },
-    alternativePath: 'Gdyby córka zamiast wykresów użyła pytań sokratycznych i zwalidowała wkład biznesowy ojca, Wiktor nie wszedłby w odruch obronny.',
-    readerQuestion: 'W jakich tematach prezentacja faktów wywołuje w Tobie chęć natychmiastowego kontrataku zamiast ciekawości?',
-    keyTakeaway: 'Gdy fakty zagrażają tożsamości, umysł wybierze ochronę tożsamości i odrzuci fakty.'
+    alternativePath: 'Gdyby Marek zastosował dialog sokratejski i zrezygnował z udowadniania racji za wszelką cenę, zachowałby bliskość z ojcem.',
+    readerQuestion: 'Czy wiesz, kiedy odpuścić walkę o rację, by uratować relację z bliskim człowiekiem?',
+    keyTakeaway: 'Nikt nigdy nie zmienił głębokiego przekonania dlatego, że został nazwany głupcem i zasypany wykresami.'
   },
   {
-    id: 'studium-18-3-przekonanie-niezaslugiwanie',
-    title: '„Jestem oszustem i zaraz to zobaczą”: Syndrom Oszusta u Karoliny',
-    subtitle: 'Niewspółmierne przekonania kluczowe, selektywna uwaga i dyskredytacja sukcesu',
-    protagonist: 'Karolina, 32 lata, nowo mianowana profesor nadzwyczajna chemii',
-    context: 'Karolina mimo opublikowania 20 prac w prestiżowych czasopismach naukowych żyła w ciągłym przerażeniu, że jej awans był pomyłką komitetu, a ona sama jest „intelektualną oszustką”.',
+    id: 'studium-18-3-lęk-przed-latawiem',
+    title: 'Paraliżująca iluzja zagrożenia: Jak przekonanie o niebezpieczeństwie uwięziło Monikę w domu',
+    subtitle: 'Katastrofizacja познаwcza, fałszywa ocena prawdopodobieństwa i terapia ekspozycyjna',
+    protagonist: 'Monika, 32 lata, graficzka komputerowa',
+    context: 'Po epizodzie silnego ataku paniki w metrze Monika wykształciła głębokie przekonanie: „Miejsca publiczne są dla mnie śmiertelnym zagrożeniem, zaraz zemdleję i nikt mi nie pomoże”. Przekonanie to doprowadziło do agorafobii.',
     story: [
-      'Karolina w dzieciństwie była porównywana do genialnego brata. W jej umyśle uformowało się przekonanie kluczowe: „Jestem przeciętna, moje sukcesy to przypadek, a porażki to moja prawdziwa natura”.',
-      'Każda pozytywna recenzja jej artykułu była przez nią racjonalizowana: „Recenzenci byli zmęczeni”, „Miałam szczęście z tematem”. Z kolei jakakolwiek drobna uwaga stylistyczna była traktowana jako ostateczny dowód niekompetencji.',
-      'Gdy otrzymała prestiżowy grant badawczy o wartości 2 milionów złotych, zamiast radości odczuła sparaliżowanie. Mówiła partnerowi: „Teraz dają mi duże pieniądze, zaraz wyjdzie na jaw, że nie mam pojęcia, co robię”.',
-      'Karolina spędzała w laboratorium po 16 godzin dziennie, sprawdzając ten sam probówkowy test po dziesięć razy. Jej wyczerpanie bio-fizyczne doprowadziło do ostrego zespołu wypalenia.'
+      'Po pierwszym ataku paniki mózg Moniki stworzył błyskawiczne połączenie: Metro = Śmierć. Z czasem przekonanie to rozszerzyło się na sklepy, autobusy i wreszcie wyjście z domu.',
+      'Każde przyspieszenie tętna Monika interpretowała jako dowód nadchodzącego zawału. Jej umysł produkował automatyczne myśli katastroficzne: „Jeśli wyjdę, stracę kontrolę”.',
+      'Monika spędziła 8 miesięcy w mieszkaniu, pracując zdalnie i zamawiając jedzenie z dostawą. Jej świat skurczył się do czterech ścian.',
+      'Przełom w terapii CBT nastąpił, gdy terapeutka poprosiła Monikę o potraktowanie myśli „zemdleję” jako hipotezy do zweryfikowania, a nie jako faktu. Monika zaczęła stopniowo wychodzić na 2 minuty przed dom, rejestrując dane.'
     ],
     dialogue: [
-      { speaker: 'Dziekan', text: 'Karolina, gratuluję grantu. Jesteś dumą naszego wydziału.', subtext: 'Zewnętrzne, obiektywne uznanie wybitnych osiągnięć.' },
-      { speaker: 'Karolina', text: 'Dziękuję panie dziekanie, ale miałam po prostu wyjątkowe szczęście w tej edycji...', subtext: 'Nawykowa dyskredytacja własnej sprawczości i kompetencji.' }
+      { speaker: 'Monika', text: 'Nie wyjdę do sklepu, na 100% zemdleję i umrę!', subtext: 'Absolutne przekonanie o katastrofie.' },
+      { speaker: 'Terapeutka', text: 'Moniko, przetestujmy to. Wyjdźmy na 3 minuty przed klatkę i zobaczmy, czy mdlejesz, czy tętno po prostu rośnie.', subtext: 'Zaproszenie do empirycznego eksperymentu.' }
     ],
-    decisionTaken: 'Karolina rozważała rezygnację z kierowania grantem z powodu paraliżującego lęku przed demaszkacją.',
-    whatProtagonistSaw: 'Wizję kompromitacji, błędne przekonanie o własnej miernocie i wyimaginowane surowe oceny kolegów z branży.',
-    whatWasMissed: 'Obiektywne wskaźniki (20 publikacji, cytowania, recenzje), które dowodziły jej wysokiej klasy kompetencji.',
+    decisionTaken: 'Monika podjęła cykl eksperymentów behawioralnych, wychodząc na coraz dłuższe dystanse z dziennikiem obserwacji.',
+    whatProtagonistSaw: 'Pewność nadchodzącej śmierci i własną bezradność.',
+    whatWasMissed: 'Fakt, że atak paniki jest bezpieczną, choć nieprzyjemną falą adrenaliny, która mija po kilku minutach.',
     psychologicalAnalysis: {
-      coreMechanism: 'Syndrom Oszusta (Impostor Syndrome) oparty na niewspółmiernym przekonaniu kluczowym.',
+      coreMechanism: 'Katastrofizacja poznawcza i utrwalenie przekonania lękowego przez unikanie.',
       cognitiveBiases: [
-        { name: 'Dyskredytowanie pozytywów', description: 'Uznawanie sukcesów za zbieg okoliczności lub przypadek.', impact: 'Niemożność zbudowania stabilnego poczucia skuteczności.' },
-        { name: 'Personalizacja porażek', description: 'Przypisywanie każdego drobnego potknięcia własnej permanentnej skazie.', impact: 'Przewlekły wstyd i lęk.' }
+        { name: 'Przecenianie prawdopodobieństwa', description: 'Uznawanie skrajnie rzadkiego zdarzenia za nieuniknione.', impact: 'Paraliż decyzyjny.' }
       ],
       defenseMechanisms: [
-        { name: 'Lękowy perfekcjonizm', explanation: 'Morderczy nad-wysiłek mający zapobiec rzekomemu wykryciu oszustwa.' }
+        { name: 'Unikanie (Avoidance)', explanation: 'Zostawanie w domu w celu natychmiastowego obniżenia lęku.' }
       ],
-      emotionalDynamic: 'Przewlekłe napięcie lękowe i ciągłe oczekiwanie na egzystencjalną kompromitację.'
+      emotionalDynamic: 'Błędne koło lęku: myśl → lęk → objawy z ciała → potwierdzenie myśli.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Informacja o przyznaniu grantu.',
-      attentionFocus: 'Własne braki i wizja fiaska projektu.',
-      interpretation: '„Dali mi to przez pomyłkę, zaraz zobaczyli moja niekompetencję”.',
-      emotion: 'Przerażenie, wstyd, paraliżujący lęk.',
-      impulse: 'Rezygnacja z grantu, ucieczka ze stanowiska.',
-      action: 'Podjęcie morderczej pracy po 16h dziennie celem asekuracji.',
-      consequence: 'Ciężkie wyczerpanie fizyczne i psychiczne.'
+      trigger: 'Myśl o wyjściu do sklepu.',
+      attentionFocus: 'Uderzenia serca i drżenie rąk.',
+      interpretation: '„Zaraz zemdleję, to niebezpieczne”.',
+      emotion: 'Gwałtowny lęk, panika.',
+      impulse: 'Cofnięcie się do pokoju.',
+      action: 'Wyjazd z galerii / powrót do domu.',
+      consequence: 'Chwilowa ulga, lecz utrwalenie agorafobii na miesiące.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Przednia kora obwodu (ACC)', role: 'Ciągłe monitorowanie rzekomego błędu', activationState: 'Stronnicze przeważenie sygnałów błędu' },
-        { region: 'Ciało migdałowate', role: 'Generowanie poczucia zagrożenia statusu naukowej', activationState: 'Hiperaktywacja' }
+        { region: 'Ciało migdałowate', role: 'Fałszywy alarm zagrożenia życia', activationState: 'Hiperaktywacja' },
+        { region: 'mPFC', role: 'Niedostateczna kontrola odgórna nad lękiem', activationState: 'Hipoaktywacja' }
       ],
       neurotransmitters: [
-        { name: 'Kortyzol', roleInScenario: 'Przewlekle podwyższony poziom uniemożliwiający regenerację.' }
+        { name: 'Noradrenalina', roleInScenario: 'Gwałtowny wyrzut powodujący kołatanie serca.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 200 ms', process: 'Słowo „pogratulować” wywołuje ucisk w żołądku.' }
+        { timeMs: '0 - 50 ms', process: 'Sygnał myśli „sklep” wyzwala reakcję fizjologiczną.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Akademicki kult wyczynowości', description: 'Promowanie nierealistycznych wzorców bezbłędności.', vulnerabilityExploited: 'Potrzeba akceptacji i lęk przed odrzuceniem.' }
+        { tactic: 'Pętla unikania', description: 'Unikanie daje natychmiastową ulgę, co mózg odczytuje jako dowód, że unikanie uratowało życie.', vulnerabilityExploited: 'Potrzebę natychmiastowej ulgi.' }
       ],
       counterMeasures: [
-        { step: '1. Dziennik Twardych Dowodów', script: 'Spisywanie obiektywnych faktów (liczba badań, cytowania) i oddzielenie ich od emocjonalnych wrażeń.', rationale: 'Uczulenie kory przedczołowej na twarde dane.' }
+        { step: '1. Eksperyment Behawioralny', script: '„Wyjdę i zostanę w lęku przez 10 minut, rejestrując spadek fali bez ucieczki”.', rationale: 'Wygasza reakcję warunkową w ciele migdałowatym.' }
       ]
     },
-    alternativePath: 'Gdyby Karolina nauczyła się akceptować komplementy i uznała swoje kompetencje, pracowałaby efektywnie i z radością tworzenia.',
-    readerQuestion: 'W jakich obszarach swojego życia tłumaczyć swoje sukcesy „szczęściem”, a porażki własną niekompetencją?',
-    keyTakeaway: 'Nie myl subiektywnego poczucia bycia oszustem z obiektywnym brakiem kompetencji.'
+    alternativePath: 'Gdyby Monika kontynuowała unikanie, jej agorafobia stałaby się trwałym inwalidztwem społecznym.',
+    readerQuestion: 'Kiedy Twoje myśli mylą nieprzyjemne emocje z realnym zagrożeniem biologicznym?',
+    keyTakeaway: 'Myśl to nie fakt. Lęk to tylko sygnał elektryczny w mózgu, a nie przepowiednia przyszłości.'
   },
   {
-    id: 'studium-18-4-przekonanie-o-swiecie',
-    title: 'W bańce spiskowej: Jak przekonanie „wielkie koncerny trują ludzi” odcięło Pawła od medycyny',
-    subtitle: 'Naiwny realizm, bańki informacyjne i inokulacja poznawcza',
-    protagonist: 'Paweł, 45 lat, właściciel sklepu ze zdrową żywnością',
-    context: 'Paweł pod wpływem filmów w internecie przyjął przekonanie, że cała medycyna konwencjonalna jest spiskiem mającym na celu podtrzymywanie chorób. Kiedy u jego żony zdiagnozowano cukrzycę typu 1, zabronił jej przyjmowania insuliny.',
+    id: 'studium-18-4-impostor-syndrome',
+    title: '„Zaraz odkryją, że jestem oszustem”: Przekonanie o własnej nieadekwatności u Wiktora',
+    subtitle: 'Impostor Syndrome, wybiórcze przetwarzanie sukcesów i restrukturyzacja poznawcza',
+    protagonist: 'Wiktor, 29 lat, starszy architekt oprogramowania w Dolinie Krzemowej',
+    context: 'Wiktor awansował na stanowisko Staff Engineera w rekordowym tempie. Mimo świetnych ocen od zarządu żył w ciągłym przerażeniu, że jest to wynik przypadku, a zespół zaraz zdemaskuje jego „brak kompetencji”.',
     story: [
-      'Paweł po przebytej ciężkiej infekcji i braku poprawy po jednym antybiotyku stracił zaufanie do lekarzy. W internecie trafił na grupy propagujące leczenie wszystkich chorób wlewami witaminowymi i dietą.',
-      'Algorytmy mediów społecznościowych natychmiast dostrzegły jego zainteresowania (Filter Bubble). W ciągu kilku miesięcy Feed Pawła wypełnił się wyłącznie treściami o „ukrywanych lekach na raka” i „trujących szczepionkach”. Paweł uznał te treści za powszechną prawdę.',
-      'Gdy u jego żony, Moniki, zdiagnozowano cukrzycę typu 1 i przepisano insulinę, Paweł wyrzucił leki do kosza, krzycząc, że „to chemia, która zniszczy jej trzustkę”. Przepisał jej morderczy post i zioła.',
-      'Po 10 dniach Monika trafiła do szpitala w stanie ciężkiej kwasicy ketonowej, walcząc o życie na OIOM-ie. Zderzenie skrajnego przekonania z drastycznym faktem medycznym wywołało u Pawła wstrząs psychiczny.'
+      'Wiktor wychował się w domu, gdzie sukcesy uważano za obowiązek, a błędy surowo karano. Wykształcił przekonanie kluczowe: „Jestem przeciętny i muszę harować 3 razy ciężej niż inni, żeby to ukryć”.',
+      'Każdy sukces (pochwała od CTO, nagroda za kod) Wiktor przypisywał czynnikom zewnętrznym: „Miałem szczęście”, „Zadanie było łatwe”, „Inni po prostu nie zauważyli błędów”.',
+      'Z kolei każdą drobną pomyłkę w kodzie traktował jako niepodważalny dowód na swoją oszukańczą naturę.',
+      'Pracował po 16 godzin dziennie, doprowadzając się do skrajnego wypalenia. Dopiero prowadzenie dziennika faktów i dowodów kompetencji pozwoliło mu zauważyć, jak drastycznie zniekształca rzeczywistość.'
     ],
     dialogue: [
-      { speaker: 'Lekarz z OIOM', text: 'Panie Pawle, insulina to naturalny hormon. Bez niej pan żona by umarła. Jak mógł pan zabrać jej leki?', subtext: 'Konfrontacja skrajnego przekonania z biologiczną rzeczywistością.' },
-      { speaker: 'Paweł', text: 'Ja... ja chciałem ją tylko uratować przed chemią z koncernów...', subtext: 'Pęknięcie iluzji i załamanie dotychczasowego systemu przekonań.' }
+      { speaker: 'CTO', text: 'Wiktor, Twój projekt zaoszczędził firmie milion dolarów. Jesteś genialny.', subtext: 'Twardy dowód kompetencji.' },
+      { speaker: 'Wiktor (w myśli)', text: 'Gdyby wiedział, jak długo nad tym siedziałem, uświadomiłby sobie, że jestem wolny i słaby...', subtext: 'Filter zniekształcający pozytywny dowód.' }
     ],
-    decisionTaken: 'Paweł uniemożliwił żonie przyjmowanie insuliny na rzecz metody alternatywnej, doprowadzając do stanu zagrożenia życia.',
-    whatProtagonistSaw: 'Spisek koncernów, zagrożenie chemią i siebie w roli światłego ratownika rodziny.',
-    whatWasMissed: 'Fakt, że cukrzyca typu 1 jest chorobą autoimmunologiczną polegającą na braku produkcji insuliny, co bez substytucji prowadzi do śmierci.',
+    decisionTaken: 'Wiktor zaczął prowadzić codzienny Rejestr Dowodów Obiektywnych, zapisując twarde metryki swoich sukcesów.',
+    whatProtagonistSaw: 'Własny lęk, zmęczenie i wizję zdemaskowania.',
+    whatWasMissed: 'Fakt, że jego kod przechodzi najsurowsze testy w firmie, a wyniki są obiektywne.',
     psychologicalAnalysis: {
-      coreMechanism: 'Radykalizacja w bańce informacyjnej (Filter Bubble) i skrajna redukcja poznawcza.',
+      coreMechanism: 'Syndrom Oszusta (Impostor Syndrome) oparty na przekonaniu kluczowym o własnej niedostateczności.',
       cognitiveBiases: [
-        { name: 'Błąd spiskowy', description: 'Doszukiwanie się ukrytych, złośliwych intencji w złożonych procesach społecznych.', impact: 'Odrzucenie akademickiej wiedzy medycznej.' }
+        { name: 'Dyskwalifikowanie pozytywów', description: 'Odrzucanie pochwał jako niezasłużonych lub wynikających ze szczęścia.', impact: 'Uniemożliwienie budowania stabilnej samooceny.' }
       ],
       defenseMechanisms: [
-        { name: 'Urojenie misyjne', explanation: 'Przekonanie o posiadaniu unikalnej wiedzy niedostępnej dla otłamanej masy.' }
+        { name: 'Kompensacja przez nadmierną pracę', explanation: 'Praca do wyczerpania jako sposób na maskowanie rzekomego braku talentu.' }
       ],
-      emotionalDynamic: 'Lęk przed utratą kontroli nad zdrowiem kompensowany poczuciem wyższości ideologicznej.'
+      emotionalDynamic: 'Przewlekły lęk przed demaskacją i wyczerpanie psychofizyczne.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Diagnoza choroby żony i recepta na insulinę.',
-      attentionFocus: 'Artykuły z grup spiskowych o szkodliwości insuliny.',
-      interpretation: '„Lekarze chcą ją uzależnić od koncernów, muszę ją uratować”.',
-      emotion: 'Lęk, misyjna determinacja, gniew na medycynę.',
-      impulse: 'Wyrzucenie leków, narzucenie diety.',
-      action: 'Zabranie insuliny i izolacja żony od lekarzy.',
-      consequence: 'Kwasica ketonowa u żony, pobyt na OIOM i zarzuty prokuratorskie.'
+      trigger: 'Otrzymanie pochwały lub nowego trudnego zadania.',
+      attentionFocus: 'Własne wątpliwości i brak wiedzy w jakimś detalu.',
+      interpretation: '„Nie umiem tego, natychmiast zobaczą, że się nie nadaję”.',
+      emotion: 'Lęk, wstyd, panika.',
+      impulse: 'Praca w nocy, sprawdzanie kodu 50 razy.',
+      action: 'Nadgodziny i rezygnacja ze snu.',
+      consequence: 'Wypalenie zawodowe i podtrzymanie lęku.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Domyślna Sieć Neuronalna (DMN)', role: 'Generowanie narracji spiskowej', activationState: 'Hiperaktywność' },
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Krytyczna ocena źródeł', activationState: 'Utrata kontroli' }
+        { region: 'dlPFC', role: 'Przejmowanie kontroli nad zniekształceniami poznawczymi w CBT', activationState: 'Uruchomienie refleksji' }
       ],
       neurotransmitters: [
-        { name: 'Dopamina', roleInScenario: 'Wyrzut dopaminowy związany z poczuciem „odkrycia ukrytej prawdy”.' }
+        { name: 'Kortyzol', roleInScenario: 'Utrzymujący się wysoki poziom hormonu stresu.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 500 ms', process: 'Słowo „insulina” wywołuje natychmiastowy odruch wstrętu.' }
+        { timeMs: '0 - 200 ms', process: 'Pochwała od szefa wywołuje natychmiastowy skok lęku przed oczekiwaniami.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Algorytmiczne uzależnienie od strachu', description: 'Podsuwanie coraz bardziej skrajnych treści w celu podbicia czasu spędzonego na platformie.', vulnerabilityExploited: 'Niepokój o zdrowie bliskich.' }
+        { tactic: 'Kultura wyczynowości', description: 'Środowisko promujące pracoholizm jako miarę wartości człowieka.', vulnerabilityExploited: 'Przekonanie o nieadekwatności.' }
       ],
       counterMeasures: [
-        { step: '1. Inokulacja Poznawcza', script: 'Zapoznanie się z metodami dezinformacji i naukowym standardem dowodowym.', rationale: 'Buduje odporność na teorie spiskowe.' }
+        { step: '1. Tabela Faktów vs Interpretacji', script: '„Fakt: Kod działa i przeszedł audyt. Interpretacja: Miałem szczęście. Przyjmuję fakt, odrzucam zniekształcenie”.', rationale: 'Urealnia obraz kompetencji.' }
       ]
     },
-    alternativePath: 'Gdyby Paweł skonsultował się z niezależnymi fizjologami i zrozumiał biologiczny mechanizm cukrzycy, wspomógłby leczenie żony bezpieczną dietą bez zabierania leku.',
-    readerQuestion: 'W jakich kwestiach Twoje przekonania opierają się na nagłówkach z internetu, a nie na rzetelnych źródłach naukowych?',
-    keyTakeaway: 'Niebezpieczne przekonania w połączeniu z pewnością siebie mogą prowadzić do realnych tragedii.'
+    alternativePath: 'Gdyby Wiktor nie podjął terapii, doprowadziłby do poważnego epizodu depresyjnego i hospitalizacji.',
+    readerQuestion: 'Czy potrafisz przyjąć sukces jako wynik swoich kompetencji, czy natychmiast szukasz przypadek?',
+    keyTakeaway: 'Twoje poczucie nieadekwatności to nawyk myślowy z przeszłości, a nie miernik Twojej rzeczywistej kompetencji.'
   },
   {
-    id: 'studium-18-5-przekonanie-o-zwiazku',
-    title: '„Jeśli się kochamy, powinieneś sam wiedzieć, o co mi chodzi”: Mit czytania w myślach u Agaty',
-    subtitle: 'Nierealistyczne przekonania relacyjne, oczekiwanie telepatii i pętla żalu',
-    protagonist: 'Agata, 29 lat, projektantka graficzna',
-    context: 'Agata od dwóch lat była w związku z Michałem. Regularnie stosowała wobec niego taktykę cichych dni (stonewalling), ukarawszy go za to, że nie odgadł jej ukrytych potrzeb.',
+    id: 'studium-18-5-nieufnosc-w-relacji',
+    title: '„Mężczyźni zawsze odchodzą”: Przekonanie o zdradzie i zniszczony związek Karoliny',
+    subtitle: 'Przekonania kluczowe o relacjach, projekcja i samospełniająca się przepowiednia',
+    protagonist: 'Karolina, 30 lat, architektka',
+    context: 'Karolina po bolesnym rozstaniu rodziców wykształciła przekonanie: „Każdy mężczyzna w końcu oszuka i odejdzie”. W nowym związku z Pawłem prowadziła ciągłą kontrolę i przesłuchania.',
     story: [
-      'Agata wychowała się na komediach romantycznych i książkach, które promowały mit „idealnej miłości bez słów”. Jej przekonanie relacyjne brzmiało: „Prawdziwa miłość polega na tym, że partner odgaduje moje pragnienia bez pytania. Mówienie wprost niszczy magię”.',
-      'Kiedy Michał wracał zmęczony z pracy i nie zauważył, że Agata zmieniła fryzurę lub że oczekuje wspólnego wyjścia, Agata natychmiast zamykała się w sobie. Na pytanie „Co się stało?”, odpowiadała chłodno: „Nic. Powinieneś wiedzieć”.',
-      'Michał czuł rosnącą frustrację i dezorientację. Próbował zgadywać, przepraszał za niepopełnione winy, co tylko podbijało poczucie wyższości u Agaty. Z czasem Michał przestał pytać i zaczął unikać powrotów do domu.',
-      'Dopiero na terapii par Agata zderzyła swoje przekonanie z faktem, że czytanie w myślach nie istnieje, a jasna komunikacja potrzeb jest jedyną drogą do autentycznej bliskości.'
+      'Każde spóźnienie Pawła o 10 minut Karolina traktowała jako dowód na ukrywany romans. Przeglądała jego telefon, sprawdzała polubienia w mediach społecznościowych i urządzała awantury.',
+      'Paweł przez rok próbował udowadniać swoją lojalność: tłumaczył się z każdej minuty, rezygnował ze spotkań z kolegami i zapewniał o miłości. Karolina uważała jednak, że Paweł po prostu „dobrze się kryje”.',
+      'Ciągłe oskarżenia, brak zaufania i paranoiczna kontrola wyczerpały Pawła. Po kolejnej karczemnej awanturze o przypadkowy polubiony post, Paweł spakował walizki i odszedł.',
+      'Karolina, zamiast dostrzec wpływ swojej kontroli, powiedziała przyjaćółce z gorzką satysfakcją: „A nie mówiłam? Mężczyźni zawsze odchodzą!”.'
     ],
     dialogue: [
-      { speaker: 'Michał', text: 'Agata, błagam cię, powiedz mi po prostu, o co jesteś zła. Nie jestem jasnowidzem!', subtext: 'Prośba o jasną komunikację i bezsilność wobec cichych dni.' },
-      { speaker: 'Agata', text: 'Jak muszę ci mówić, to to już nie ma sensu. Zależy ci na mnie, tobyś wiedział.', subtext: 'Obrona mitu romantycznego czytania w myślach.' }
+      { speaker: 'Paweł', text: 'Karolina, kocham Cię i nigdzie nie odchodzę, ale nie mogę żyć w więzieniu!', subtext: 'Prośba o zaufanie i granice.' },
+      { speaker: 'Karolina', text: 'Wszyscy tak mówicie, a potem robicie swoje! Nie oszukasz mnie!', subtext: 'Projekcja przekonania kluczowego na partnera.' }
     ],
-    decisionTaken: 'Agata stosowała ciche dni przez 5 dni z rzędu, co doprowadziło Michała do decyzji o wyprowadzce.',
-    whatProtagonistSaw: 'Brak zaangażowania partnera, zniszczoną magię związku i własne rozczarowanie.',
-    whatWasMissed: 'Fakt, że żaden człowiek nie posiada zdolności telepatycznych, a komunikacja bezpośrednia jest warunkiem zdrowej relacji.',
+    decisionTaken: 'Karolina stosowała paranoiczny nadzór nad partnerem, co doprowadziło do rozpadu związku.',
+    whatProtagonistSaw: 'Podejrzane zachowania partnera i wizję bycia porzuconą.',
+    whatWasMissed: 'Fakt, że to jej brak zaufania i osaczanie doprowadziły partnera do decyzji o odejściu.',
     psychologicalAnalysis: {
-      coreMechanism: 'Nierealistyczne przekonanie relacyjne (Mind Reading Expectation) i stonewalling.',
+      coreMechanism: 'Samospełniająca się przepowiednia w oparciu o schemat porzucenia i nieufności.',
       cognitiveBiases: [
-        { name: 'Błąd egocentryzmu poznawczego', description: 'Zakładanie, że partner posiada dostęp do tych samych stanów emocjonalnych i myśli.', impact: 'Karanie partnera za brak telepatii.' }
+        { name: 'Myślenie tunelowe', description: 'Zauważanie wyłącznie sygnałów pasujących do hipotezy o zdradzie.', impact: 'Ignorowanie codziennych dowodów wiernosci.' }
       ],
       defenseMechanisms: [
-        { name: 'Wyparcie odpowiedzialności', explanation: 'Obarczanie partnera całą odpowiedzialnością za jakość komunikacji.' }
+        { name: 'Projekcja', explanation: 'Rzutowanie własnych lęków z dzieciństwa na obecnego partnera.' }
       ],
-      emotionalDynamic: 'Gorycz, poczucie bycia niezrozumianą i narastająca izolacja emocjonalna.'
+      emotionalDynamic: 'Ciągła zazdrość, lęk przed opuszczeniem i obronny atak.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Brak reakcji partnera na niezwerbalizowaną potrzebę.',
-      attentionFocus: 'Własne rozczarowanie i mit miłości bez słów.',
-      interpretation: '„On mnie nie kocha, skoro muszę mu o wszystkim mówić”.',
-      emotion: 'Złość, żal, chłód emocjonalny.',
-      impulse: 'Uranie partnera milczeniem (stonewalling).',
-      action: 'Wdrożenie cichych dni i odmowa kontaktu.',
-      consequence: 'Kryzys w związku i decyzja partnera o rozstaniu.'
+      trigger: 'Spóźnienie partnera o 15 minut.',
+      attentionFocus: 'Telefon partnera, czarne scenariusze.',
+      interpretation: '„On mnie oszukuje, ma kogoś innego”.',
+      emotion: 'Wściekłość, przerażenie.',
+      impulse: 'Przeglądanie wiadomości, awantura.',
+      action: 'Oskarżenia i krzyk.',
+      consequence: 'Odejście partnera i potwerdzenie schematu.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Szkieletowa kora skroniowa (Theory of Mind network)', role: 'Przetwarzanie intencji innych ludzi', activationState: 'Stronnicza błędem egocentrycznym' }
+        { region: 'Ciało migdałowate', role: 'Reakcja na lęk przed porzuceniem wyzwalająca agresję obronną', activationState: 'Hiperaktywacja' }
       ],
       neurotransmitters: [
-        { name: 'Oksytocyna', roleInScenario: 'Spadek poziomu bliskości w wynik nieporozumień.' }
+        { name: 'Kortyzol i Adrenalina', roleInScenario: 'Wysoki poziom stresu niszczący przywiązanie.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 300 ms', process: 'Brak reakcji partnera wywołuje złość w ciele migdałowatym.' }
+        { timeMs: '0 - 100 ms', process: 'Dźwięk SMS-a w telefonie partnera wywołuje spięcie mięśni.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Kulturowy mit miłości romantycznej', description: 'Promowanie w mediach nierealistycznych wzorców relacyjnych.', vulnerabilityExploited: 'Tęsknota za idealnym zrozumieniem.' }
+        { tactic: 'Samospełniający się skrypt', description: 'Zachowanie wymuszające na drugiej stronie reakcję potwierdzającą pierwotny lęk.', vulnerabilityExploited: 'Lęk przed opuszczeniem.' }
       ],
       counterMeasures: [
-        { step: '1. Komunikacja bezpośrednia (NVC)', script: '„Czuję się samotna, kiedy wracasz i nie rozmawiamy. Potrzebuję 15 minut wspólnego czasu”.', rationale: 'Brak miejsca na zgadywanie i presupozycje.' }
+        { step: '1. Oddzielenie Przeszłości od Teraźniejszości', script: '„Paweł to nie mój ojciec. Paweł nie dał mi żadnego twardego powodu do braku zaufania. Mój lęk należy do historii z dzieciństwa”.', rationale: 'Przerywa projekcję schematu.' }
       ]
     },
-    alternativePath: 'Gdyby Agata wprost zakomunikowała swoją potrzebę, Michał z radością spędziłby z nią wieczór, unikając kryzysu.',
-    readerQuestion: 'Jakie uniemożliwiające porozumienie oczekiwania stawiasz bliskim bez wcześniejszego ich zakomunikowania?',
-    keyTakeaway: 'Nikt nie przeczyta w Twoich myślach. Jasna komunikacja to dar dla relacji, a nie niszczenie magii.'
+    alternativePath: 'Gdyby Karolina przepracowała traumę rozstania rodziców w terapii, zbudowałaby bezpieczny związek.',
+    readerQuestion: 'Jakie stare przekonanie o relacjach testujesz na swoim obecnym partnerze?',
+    keyTakeaway: 'Gdy traktujesz partnera jak wroga, w końcu stworzysz w nim wroga, którego tak się obawiałeś.'
   },
   {
-    id: 'studium-18-6-przekonanie-o-pieniadzach',
-    title: '„Pieniądze brudzą ludzi”: Ukryte przekonanie finansowe Roberta',
-    subtitle: 'Skrypty finansowe z dzieciństwa, samosabotaż i lęk przed sukcesem',
-    protagonist: 'Robert, 35 lat, utalentowany fotograf',
-    context: 'Robert zarabiał poniżej płacy minimalnej, mimo że jego prace wygrywały międzynarodowe konkursy. Zawsze gdy na jego koncie pojawiały się większe pieniądze, natychmiast wydawał je na niepotrzebne zakupy lub rozdawał znajomym.',
+    id: 'studium-18-6-przekonanie-o-swiecie',
+    title: 'Świat jako dżungla: Jak przekonanie o powszechnej wrogości zamroziło rozwój Sebastiana',
+    subtitle: 'Wrogi błąd atrybucji (Hostile Attribution Bias), nieufność i barierka społeczna',
+    protagonist: 'Sebastian, 35 lat, kierowca zawodowy',
+    context: 'Sebastian dorastał w niebezpiecznej dzielnicy. Wykształcił przekonanie: „Ludzie to drapieżnicy. Jeśli nie zaatakujesz pierwszy, zostaniesz zmiażdżony”. Przenosił ten schemat na każde nowe środowisko.',
     story: [
-      'Dom rodzinny Roberta był pełen haseł: „Uczciwy człowiek nigdy się nie dorobi”, „Pieniądze to źródło wszelkiego zła”. Robert przyswoił te skrypty finansowe jako własną tożsamość moralną.',
-      'Kiedy Robert miał okazję wycenić zlecenie dla komercyjnej marki na 30 000 zł, podał kwotę 3 000 zł z powodu lęku, że zostanie uznany za „chciwego zdziercę”.',
-      'Gdy raz wygrał nagrodę finansową w wysokości 50 000 zł, w ciągu dwóch tygodni wydał całą sumę na absurdalne zakupy sprzętu, którego nigdy nie użył. Jego umysł dążył do przywrócenia stanu znanej biedy (Financial Homeostasis).',
-      'Dopiero analiza własnych skryptów finansowych pozwoliła mu rozdzielić uczciwość moralną od zdolności do godnego wyceniania własnej pracy.'
+      'W nowej pracy Sebastian traktował każdą prośbę ze strony współpracowników jako próbie wykorzystania lub podstępu. Na miłe słowa reagował podejrzliwością: „Czego on ode mnie chce?”.',
+      'Gdy kolega z zespołu zaoferował mu pomoc w wypełnieniu dokumentów, Sebastian fuknął: „Sam sobie poradzę, nie rob ze mnie nieudacznika!”.',
+      'Współpracownicy, zrażeni jego opryskliwością i agresywnym stylem bycia, przestali się do niego odzywać i zapraszać na wspólne przerwy.',
+      'Sebastian zinterpretował to izolowanie jako dowód swojej tezy: „Wiedziałem! Ludzie są fałszywi i mają mnie gdzieś”.'
     ],
     dialogue: [
-      { speaker: 'Klient', text: 'Robert, Twoje zdjęcia są genialne. Byliśmy gotowi zapłacić dwa razy więcej!', subtext: 'Zaskoczenie drastycznie zaniżoną wyceną.' },
-      { speaker: 'Robert', text: 'Ech, nie chodzi o pieniądze, ważne, że robimy fajny projekt...', subtext: 'Samosabotaż wynikający z lęku przed byciem uznanym za chciwego.' }
+      { speaker: 'Kolega', text: 'Sebastian, idziemy na kawę, dołączysz?', subtext: 'Chęć integracji i sympatii.' },
+      { speaker: 'Sebastian', text: 'Nie mam czasu na głupoty, mam pracę.', subtext: 'Obronny atak i nieufność.' }
     ],
-    decisionTaken: 'Robert wielokrotnie obniżał swoje stawki o 80%, doprowadzając się do długów.',
-    whatProtagonistSaw: 'Zagrożenie utratą moralności, lęk przed byciem uznałem za chciwego i potrzebę bycia „czystym”.',
-    whatWasMissed: 'Fakt, że pieniądze są jedynie neutralnym narzędziem wymiany wartości i pozwalają na większą wolność oraz tworzenie lepszych projektów.',
+    decisionTaken: 'Sebastian odrzucał wszelkie gesty życzliwości, przyjmując postawę agresywno-obronną.',
+    whatProtagonistSaw: 'Ukryty podstęp i chęć wykorzystania go przez otoczenie.',
+    whatWasMissed: 'Fakt, że ludzie w nowej firmie byli naprawdę nastawieni przyjaźnie i życzliwie.',
     psychologicalAnalysis: {
-      coreMechanism: 'Samosabotaż finansowy napędzany przez przekonanie kluczowe z dzieciństwa.',
+      coreMechanism: 'Hostile Attribution Bias (Wrogi błąd atrybucji) — przypisywanie wrogich intencji neutralnym zachowaniom.',
       cognitiveBiases: [
-        { name: 'Błąd moralny pieniądza', description: 'Przypisywanie pieniądzom cech zła moralnego.', impact: 'Niemożność zgromadzenia oszczędności.' }
+        { name: 'Wrogi błąd atrybucji', description: 'Interpretowanie obojętnych lub miłych gestów jako ataku.', impact: 'Niszczenie relacji społecznych.' }
       ],
       defenseMechanisms: [
-        { name: 'Racjonalizacja biedy', explanation: 'Tłumaczenie braku pieniędzy własną „wyższą etyką i wrażliwością”.' }
+        { name: 'Reakcja pozorowana / Agresja wyprzedzająca', explanation: 'Atakowanie zanim ktoś zdąży zranić.' }
       ],
-      emotionalDynamic: 'Wstyd przy braku pieniędzy przeplatany ze lękiem przed ich posiadaniem.'
+      emotionalDynamic: 'Ciągła czujność (hypervigilance), wściekłość i głęboka samotność.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Propozycja wyceny dużego zlecenia.',
-      attentionFocus: 'Lęk przed byciem uznanym za chciwego.',
-      interpretation: '„Jeśli zażądam rynkowej stawki, stanę się złym, chciwym człowiekiem”.',
-      emotion: 'Lęk, wstyd, poczucie zagrożenia moralnego.',
-      impulse: 'Drastyczne obniżenie ceny.',
-      action: 'Podanie zaniżonej kwoty na kosztorysie.',
-      consequence: 'Praca ponad siły, brak środków na rozwój i stałe długi.'
+      trigger: 'Neutralne pytanie ze strony kolegi.',
+      attentionFocus: 'Mowa ciała kolegi, szukanie ukrytego motywu.',
+      interpretation: '„Kpi ze mnie, chce mnie wykorzystać”.',
+      emotion: 'Irytacja, wrogość.',
+      impulse: 'Obruszenie się, głośna odmowa.',
+      action: 'Opryskliwa odpowiedź.',
+      consequence: 'Izolacja społeczna i podtrzymanie schematu dżungli.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Przednia kora obwodu (ACC)', role: 'Wykrywanie konfliktu między zarabianiem a tożsamością uczciwego człowieka', activationState: 'Wysoka aktywacja' }
+        { region: 'Ciało migdałowate', role: 'Utrzymujący się stan hiper-czujności na zagrożenie społeczne', activationState: 'Ciągła aktywacja' }
       ],
       neurotransmitters: [
-        { name: 'Dopamina', roleInScenario: 'Spadek motywacji do pracy przy drastycznie zaniżonej stawce.' }
+        { name: 'Kortyzol', roleInScenario: 'Przewlekłe obciążenie allostatyczne stresorem.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 200 ms', process: 'Słowo „30 000 zł” wywołuje wstyd i lęk w ciele migdałowatym.' }
+        { timeMs: '0 - 100 ms', process: 'Uśmiech kolegi odczytany jako uśmieszek pobłażliwości/drwiny.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Kulturowy mit ubogiego artysty', description: 'Romantyzowanie biedy w zawodach twórczych.', vulnerabilityExploited: 'Potrzeba wyjątkowości i spójności z grupą.' }
+        { tactic: 'Schemat dżungli', description: 'Wpajanie od dziecka, że świat jest miejscem walki bez zasad.', vulnerabilityExploited: 'Potrzebę bezpieczeństwa.' }
       ],
       counterMeasures: [
-        { step: '1. Redefinicja roli pieniądza', script: '„Pieniądze to zasób, który pozwala mi robić jeszcze lepsze zdjęcia i pomagać innym”.', rationale: 'Łączy pieniądze z wartościami pozytywnymi.' }
+        { step: '1. Testowanie Dobrych Intencji', script: '„Załóżmy na próbę, że ta osoba nie ma złych intencji. Jak inaczej mogę zinterpretować jej gest?”.', rationale: 'Poszerza elastyczność atrybucyjną.' }
       ]
     },
-    alternativePath: 'Gdyby Robert wycenił pracę rynkowo, zyskałby czas na własne projekty artystyczne i stabilność życiową.',
-    readerQuestion: 'Jakie zdania na temat pieniędzy słyszałeś w dzieciństwie i jak dzisiaj wpływają one na Twoje konto bankowe?',
-    keyTakeaway: 'Pieniądze są wzmacniaczem tego, kim jesteś. W rękach dobrego człowieka stają się narzędziem do tworzenia dobra.'
+    alternativePath: 'Gdyby Sebastian pozwolił sobie na zaufanie w małym kroku, zyskałby wspierający zespół i przyaciół.',
+    readerQuestion: 'Czy zakładasz z góry złą wolę u ludzi, zanim sprawdźisz obiektywne fakty?',
+    keyTakeaway: 'Gdy nosisz w głowie pancerz przeciwko światu, świat w końcu zacznie traktować Cię jak czołg.'
   },
   {
-    id: 'studium-18-7-przekonanie-o-zmianie',
-    title: '„W moim wieku ludzie się nie zmieniają”: Samospełniająca się blokada Grzegorza',
-    subtitle: 'Fixed Mindset wobec wieku, biologizm naif i przełamywanie schematu',
-    protagonist: 'Grzegorz, 58 lat, inżynier budownictwa',
-    context: 'Grzegorz odrzucał wszelkie prośby żony i lekarzy o zmianę diety i podjęcie aktywności po zawałach, powtarzając: „Starego drzewa się nie przesadza, ja już mam swoje nawyki i nie zmienię się”.',
+    id: 'studium-18-7-przekonanie-o-pieniadzach',
+    title: '„Pieniądze brudzą ręce”: Jak podświadome przekonanie blokowało sukces finansowy Tomasza',
+    subtitle: 'Przekonania o bogactwie, auto-sabotaż i restrukturyzacja przekonań rodowych',
+    protagonist: 'Tomasz, 37 lat, utalentowany rzeźbiarz i meblarz',
+    context: 'Tomasz tworzył meble o unikalnej wartości artystycznej. Mimo ogromnego popytu wyceniał swoje prace poniżej kosztów materiału, ciągle żyjąc na skraju ubóstwa.',
     story: [
-      'Grzegorz przyjął przekonanie, że po 50. roku życia mózg człowieka traci jakąkolwiek plastyczność, a próby zmiany nawyków są śmieszne.',
-      'Gdy po drugim zawartym stanie wieńcowym kardiolog nakazał mu codzienne spacery i odstawienie tłustych potraw, Grzegorz zignorował zalecenia, mówiąc: „Taki mam charakter, wolę żyć krócej, ale po swojemu”.',
-      'Jego wnuk zaprosił go do wspólnej gry na tablecie w proste gry logiczne. Grzegorz początkowo wzbraniał się, lecz po tygodniu zauważył, że zaczyna szybciej kojarzyć fakty i czuje się bardziej rzeźwy.',
-      'To drobne doświadczenie pokazało mu, że mózg reaguje na trening w każdym wieku. Grzegorz zaczął od 10-minutowych spacerów i stopniowej zmiany diety, odzyskując sprawność.'
+      'W domu Tomasza głęboko zakorzenione było przekonanie: „Pierwszy milion trzeba ukraść”, „Uczciwy człowiek nigdy się nie dorobi”, „Bogaci to oszuści bez serca”.',
+      'Gdy zamożny klient oferował Tomaszowi 20 tysięcy złotych za stół, Tomasz czuł silny dysonans i wstyd. Zniżał cenę do 5 tysięcy, twierdząc, że „to żaden wyczyn”.',
+      'Jego umysł bronił spójności tożsamościowej: „Jestem uczciwym, dobrym człowiekiem, więc nie mogę brać dużych pieniędzy, bo stałbym się taki jak ci chciwi bogacze”.',
+      'Dopiero gdy jego warsztat omal nie został zlicytowany za długi, Tomasz musiał skonfrontować się z faktem, że jego przekonanie o pieniądzach niszczy jego rodzinę.'
     ],
     dialogue: [
-      { speaker: 'Kardiolog', text: 'Panie Grzegorzu, neuroplastyczność i zdolności adaptacyjne serca działają w każdym wieku. Musi pan zacząć chodzić.', subtext: 'Podanie dowodów medycznych podważających mit sztywności wieku.' },
-      { speaker: 'Grzegorz', text: 'Panie doktorze, starego psa nie nauczysz nowych sztuczek. Ja już taki umrę.', subtext: 'Użycie przysłowia jako oporu przed wysiłkiem zmiany.' }
+      { speaker: 'Klient', text: 'Panie Tomaszu, ten stół jest wart 25 tysięcy. Zapłacę każdą cenę.', subtext: 'Obiektywna wycena rynkowa dzieła.' },
+      { speaker: 'Tomasz', text: 'Ależ nie... proszę dać 6 tysięcy, mi to wystarczy na drewno...', subtext: 'Auto-sabotaż w obronie czystości moralnej.' }
     ],
-    decisionTaken: 'Grzegorz przez rok ignorował zalecenia lekarskie pod osłoną przysłowia o „starym drzewie”.',
-    whatProtagonistSaw: 'Własny wiek, trud zmiany i wygodę dotychczasowych nawyków.',
-    whatWasMissed: 'Fakt, że neuroplastyczność działa do końca życia, a wiek nie jest barierą biologiczną dla podejmowania aktywności.',
+    decisionTaken: 'Tomasz celowo zniżał ceny swoich prac o 70%, chroniąc się przed poczuciem, że staje się „chciwym bogaczem”.',
+    whatProtagonistSaw: 'Chciwość i moralne zepsucie związane z wysokimi zarobkami.',
+    whatWasMissed: 'Fakt, że uczciwa zapłata za talent pozwala tworzyć więcej dzieł i pomagać innym.',
     psychologicalAnalysis: {
-      coreMechanism: 'Fixed Mindset dotyczący wieku i zdrowia.',
+      coreMechanism: 'Auto-sabotaż finansowy w oparciu o przekonanie kluczowe narzucone w rodzinie.',
       cognitiveBiases: [
-        { name: 'Błąd determinizmu wiekowego', description: 'Uznawanie wieku za absolutną przeszkodę w uczeniu się nowych nawyków.', impact: 'Zaniechanie rehabilitacji.' }
+        { name: 'Fałszywa alternatywa', description: '„Albo jestem biedny i uczciwy, albo bogaty i zły”.', impact: 'Blokada rozwoju biznesowego.' }
       ],
       defenseMechanisms: [
-        { name: 'Bierna rezygnacja', explanation: 'Zaakceptowanie choroby jako nieuchronnego losu celem uniknięcia wysiłku.' }
+        { name: 'Moralizacja', explanation: 'Tłumaczenie biedy wyższością moralną i duchową.' }
       ],
-      emotionalDynamic: 'Lęk przed niepowodzeniem przy próbie zmiany nawyków po latach.'
+      emotionalDynamic: 'Wstyd przed zarabianiem i poczucie winy wobec tradycji rodzinnej.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Zalecenie lekarskie po zawale.',
-      attentionFocus: 'Własny wiek i trudność ćwiczeń.',
-      interpretation: '„Jestem za stary na zmiany, to nie ma sensu”.',
-      emotion: 'Rezygnacja, opór, pobłażliwość dla własnych słabości.',
-      impulse: 'Powrót do dawnej diety i kanapy.',
-      action: 'Ignorowanie zaleceń do czasu przełomu z wnukiem.',
-      consequence: 'Kolejne hospitalizacje i zagrożenie życia.'
+      trigger: 'Propozycja wysokiej zapłaty od klienta.',
+      attentionFocus: 'Wewnętrzne napięcie, lęk przed byciem „chciwym”.',
+      interpretation: '„Jeśli wezmę te pieniądze, stracę swoją czystość moralną”.',
+      emotion: 'Dysonans, wstyd, lęk.',
+      impulse: 'Radykalne obniżenie ceny.',
+      action: 'Podpisanie umowy na głodową stawkę.',
+      consequence: 'Długi i brak środków na rozwój warsztatu.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Hipokamp', role: 'Tworzenie nowych komórek nerwowych (neurogeneza)', activationState: 'Stymulowana ruchem i nauką' }
+        { region: 'ACC', role: 'Silny dysonans poznawczy przy próbie wzięcia rynkowej stawki', activationState: 'Hiperaktywacja' }
       ],
       neurotransmitters: [
-        { name: 'BDNF (Neurotroficzny czynnik pochodzenia mózgowego)', roleInScenario: 'Wzrost poziomu pod wpływem spacerów stymuluje plastyczność.' }
+        { name: 'Dopamina', roleInScenario: 'Zablokowana motywacja finansowa przez lęk moralny.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 300 ms', process: 'Słowo „dieta” wywołuje opór w układzie limbicznym.' }
+        { timeMs: '0 - 300 ms', process: 'Kwota 20 000 zł wywołuje ukłucie wstydu zamiast radości.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Kulturowy stereotyp starości', description: 'Uznawanie osób starszych za niezdolne do nauki i rozwoju.', vulnerabilityExploited: 'Potrzeba wygody i usprawiedliwienia bierności.' }
+        { tactic: 'Skrypt ubóstwa moralnego', description: 'Przekonanie rodowe łączące biedę z szlachetnością.', vulnerabilityExploited: 'Potrzebę bycia dobrym człowiekiem.' }
       ],
       counterMeasures: [
-        { step: '1. Metoda Mikrokroków (Kaizen)', script: 'Rozpoczęcie od 3 minut spaceru dziennie.', rationale: 'Obchodzi opór ciała migdałowatego przed dużym wysiłkiem.' }
+        { step: '1. Re-framing Pieniędzy', script: '„Pieniądze są neutralną energią i narzędziem. Zarabiając uczciwie, mogę finansować stypendia i tworzyć jeszcze lepsze meble”.', rationale: 'Łączy bogactwo z wartością dobra.' }
       ]
     },
-    alternativePath: 'Gdyby Grzegorz od razu podjął mikrokroki, uniknąłby drugiego zawału i odzyskał energię o lata wcześniej.',
-    readerQuestion: 'W jakim obszarze swojego życia wmawiasz sobie, że jest już „za późno” na zmianę?',
-    keyTakeaway: 'Neuroplastyczność nie przechodzi na emeryturę. Twój mózg uczy się dopóki dajesz mu nowe wyzwania.'
+    alternativePath: 'Gdyby Tomasz zaczął wyceniać prace rynkowo, zatrudniłby 3 uczniów i otworzył własną galerię.',
+    readerQuestion: 'Jakie przekonanie o pieniądzach powstrzymuje Cię przed sięgnięciem po godne wynagrodzenie?',
+    keyTakeaway: 'Uczciwa wycena własnej pracy nie jest chciwością — jest szacunkiem do własnego czasu i talentu.'
+  },
+  {
+    id: 'studium-18-8-efekt-dunninga-krugera',
+    title: 'Ślepa pewność debiutanta: Jak Efekt Dunninga-Krugera omal nie zniszczył startupu Kamila',
+    subtitle: 'Niedostatek wiedzy, fałszywa pewność i zderzenie z rzeczywistością rynkową',
+    protagonist: 'Kamil, 24 lata, świeżo upieczony absolwent marketingu',
+    context: 'Kamil po przeczytaniu dwóch książek o branży medycznej uznał, że odkrył lukę na rynku i stworzy aplikację przewyższającą rozwiązania istniejących koncernów.',
+    story: [
+      'Kamil zlekceważył uwagi doświadczonych lekarzy i programistów, którzy wskazywali na wymogi prawne (RODO, certyfikacja wyrobów medycznych) oraz skomplikowanie algorytmów.',
+      'Kamil twierdził z pełną pewnością siebie: „Oni są skostniali i powolni, ja to zrobię w 3 miesiące z dwoma studentami!”. Jego przekonanie o własnej genialności było niezłomne.',
+      'Przekonał anioła biznesu do inwestycji 300 tysięcy złotych. Po 6 miesiącach projekt utknął na wymogach prawnych, o których mówili eksperci. Pieniądze się skończyły, a aplikacja nie mogła trafić do sklepów.',
+      'Kamil przeszedł przez klasyczną krzywą Dunninga-Krugera: z Szczytu Głupoty (Peak of Mount Stupid) spadł w Dolinę Rozpaczy (Valley of Despair), uzyskując wreszcie realne pojęcie o trudności dziedziny.'
+    ],
+    dialogue: [
+      { speaker: 'Ekspert Medyczny', text: 'Kamil, certyfikacja wyrobu medycznego trwa minimum 18 miesięcy i kosztuje fortunę.', subtext: 'Ostrzeżenie oparte na wiedzy eksperckiej.' },
+      { speaker: 'Kamil', text: 'Eee tam! Przesadzacie! Ominiemy to nową strukturą prawną, nie znacie się na nowoczesnym biznesie!', subtext: 'Arogancja wynikająca z braku wiedzy (Efekt Dunninga-Krugera).' }
+    ],
+    decisionTaken: 'Kamil zignorował procedury prawne i eksperckie rady, przeznaczając cały budżet na marketing niedziałającej aplikacji.',
+    whatProtagonistSaw: 'Własny geniusz, bezwładność konkurencji i szybki sukces.',
+    whatWasMissed: 'Złożoność prawna i technologiczna branży medycznej.',
+    psychologicalAnalysis: {
+      coreMechanism: 'Efekt Dunninga-Krugera — osoby o niskich kompetencjach w danej dziedzinie drastycznie przeceniają swoje możliwości.',
+      cognitiveBiases: [
+        { name: 'Overconfidence Effect', description: 'Nadmierna pewność trafności własnych sądów.', impact: 'Spalenie budżetu bez weryfikacji.' }
+      ],
+      defenseMechanisms: [
+        { name: 'Wyparcie autorytetu', explanation: 'Odrzucanie głosu ekspertów jako „skostniałego myślenia”.' }
+      ],
+      emotionalDynamic: 'Początkowa euforia i pycha, zakończona drastycznym upadkiem i wstydem.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Pomysł na aplikację medyczną.',
+      attentionFocus: 'Własne wyobrażenie sukcesu i łatwych zysków.',
+      interpretation: '„Nikt na to nie wpadł, jestem genialny”.',
+      emotion: 'Euforia, duma.',
+      impulse: 'Odrzucenie uwag ekspertów.',
+      action: 'Podpisanie umowy inwestycyjnej bez analizy prawnej.',
+      consequence: 'Upadek projektu i utrata reputacji.'
+    },
+    neurobiologicalAnalysis: {
+      brainRegions: [
+        { region: 'Przednia kora obwodu (ACC)', role: 'Zaburzone wykrywanie błędu przez brak wzorców w pamięci', activationState: 'Brak aktywacji ostrzegawczej' }
+      ],
+      neurotransmitters: [
+        { name: 'Dopamina', roleInScenario: 'Wysoki poziom dopaminy napędzający nierealistyczne wizje nagrody.' }
+      ],
+      biologicalTimeline: [
+        { timeMs: '0 - 500 ms', process: 'Krytyka ze strony ekspertów wywołuje lekceważący uśmiech.' }
+      ]
+    },
+    influenceAndManipulation: {
+      tacticsUsed: [
+        { tactic: 'Iluzja wiedzy', description: 'Przeczytanie nagłówków wywołujące poczucie opanowania całej dziedziny.', vulnerabilityExploited: 'Ego i chęć szybkiego sukcesu.' }
+      ],
+      counterMeasures: [
+        { step: '1. Konsultacja z Ekspertami (Peer Review)', script: '„Zanim wydam złotówkę, zapłacę dwóm niezależnym ekspertom za znalezienie wszystkich luk w moim planie”.', rationale: 'Chroni przed Dunning-Krugerem.' }
+      ]
+    },
+    alternativePath: 'Gdyby Kamil zatrudnił prawnika medycznego na początku, zmieniłby profil aplikacji na fitnessową i osiągnąłby sukces.',
+    readerQuestion: 'W jakiej dziedzinie przeceniasz swoje wiedzę tylko dlatego, że przeczytałeś kilka artykułów?',
+    keyTakeaway: 'Prawdziwa wiedza zaczyna się od uświadomienia sobie, jak ogromnie wiele jeszcze nie wiemy.'
   }
 ];
 
 export const selfExercisesChapterEighteen: SelfExercise[] = [
   {
-    id: 'cwiczenie-18-1-fakt-vs-przekonanie',
-    title: 'Laboratorium Oddzielania Faktów od Przekonań i Opinii',
-    subtitle: 'Narzędzie do czyszczenia percepcji ze szumu interpretacyjnego',
-    objective: 'Trening rozróżniania obiektywnych faktów empirycznych od subiektywnych przekonań i opinii.',
+    id: 'ex-18-1',
+    title: 'Sokratejski Test Przekonań',
+    subtitle: 'Weryfikacja wiarygodności własnych hipotez życiowych',
+    objective: 'Przetestowanie wybranego sztywnego przekonania za pomocą pytań podważających i poszukiwania dowodów przeciwstawnych.',
     durationMinutes: 20,
-    neuroScientificFoundation: 'Aktywacja dlPFC w celu zahamowania automatycznych stronniczości z vmPFC i ciała migdałowatego.',
+    neuroScientificFoundation: 'Zadawanie pytań obiektywizujących aktywuje grzbietowo-boczną korę przedczołową (dlPFC), wyciszając lękową reakcję ciała migdałowatego.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Zapis trudnej sytuacji',
-        instruction: 'Zapisz zdarzenie z ostatnich dni, które wywołało w Tobie złość lub niepokój.',
-        promptText: 'Opis zdarzenia:',
-        placeholder: 'np. „Szef odrzucił mój projekt i podniósł na mnie głos”'
+        title: 'Sformułowanie przekonania',
+        instruction: 'Zapisz jedno silne przekonanie na swój temat lub na temat świata, które wywołuje w Tobie stres (np. Nigdy nie awansuję, Ludzie myślą tylko o sobie).',
+        promptText: 'Moje przekonanie testowe:',
+        placeholder: 'Przekonanie: Nigdy nie poradzę sobie z publicznymi wystąpieniami...'
       },
       {
         stepNumber: 2,
-        title: 'Ekstrakcja gołych faktów',
-        instruction: 'Wypisz tylko to, co zarejestrowałaby kamera wideo bez komentarza (np. słowa, decybele, ruchy).',
-        promptText: 'Gołe fakty (wideo-kamera):',
-        placeholder: 'np. „Szef wypowiedział słowa: ’To wymaga poprawek’ i położył dokument na stole z głośnym stukiem”'
+        title: 'Poszukiwanie dowodów przeciwstawnych (Disconfirming Evidence)',
+        instruction: 'Wypisz co najmniej 3 fakty z Twojego życia, które stoją w sprzeczności z tym przekonaniem lub pokazują od tego wyjątek.',
+        promptText: 'Fakty sprzeczne z przekonaniem:',
+        placeholder: '1. W zeszłym roku przeprowadziłem udaną prezentację dla 5 osób w zespole...\n2. Na ślubie brata wygłosiłem krótkie i ciepłe przemówienie...\n3. Kiedy mówię o mojej pasji, ludzie słuchają z zaciekawieniem...'
       },
       {
         stepNumber: 3,
-        title: 'Identyfikacja narzuconych przekonań',
-        instruction: 'Wypisz opowieści i opisy, które Twój umysł dodał do tych faktów.',
-        promptText: 'Moje dodane interpretacje:',
-        placeholder: 'np. „Szef mną gardzi, uważa, że jestem do niczego, zaraz mnie zwolni”'
+        title: 'Formułowanie hipotezy zaktualizowanej',
+        instruction: 'Przepisuj przekonanie na elastyczną hipotezę opartą na faktach.',
+        promptText: 'Moja nowa hipoteza zaktualizowana:',
+        placeholder: 'Odczuwam lęk przed dużym audytorium, ale w małych grupach potrafię sprawnie przekazywać myśli...'
       }
     ],
     reflectionQuestions: [
-      'O ile spada poziom Twojego stresu, gdy skupiasz się na gołych faktach zamiast na własnych opowieściach?'
+      'Dlaczego Twój umysł chętniej pamiętał o porażkach niż o wyjątkach od reguły?',
+      'Jak zmiana tego przekonania wpływa na Twoje decyzje na najbliższy miesiąc?'
     ]
   },
   {
-    id: 'cwiczenie-18-2-dziennik-aktualizacji',
-    title: 'Dziennik Aktualizacji Przekonań (Belief Update Log)',
-    subtitle: 'Praktykowanie postawy naukowca wobec własnych hipotez życiowych',
-    objective: 'Swiadome korygowanie przekonań pod wpływem nowych, empirycznych dowodów.',
+    id: 'ex-18-2',
+    title: 'Detoks od Komór Echa',
+    subtitle: 'Dywersyfikacja źródeł informacji i łamanie Confirmation Bias',
+    objective: 'Świadome wystawienie umysłu na wartościowe argumenty drugiej strony sporu światopoglądowego.',
     durationMinutes: 25,
-    neuroScientificFoundation: 'Wzmacnianie elastyczności poznawczej i osłabianie Backfire Effect poprze ukierunkowaną refleksję mPFC.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Zapis hipotezy pierwotnej',
-        instruction: 'Zapisz przekonanie, które okazało się nieprecyzyjne lub błędne.',
-        promptText: 'Stara hipoteza:',
-        placeholder: 'np. „Myślałem, że prezentacja dla klienta X zakończy się fiaskiem, bo nie lubią nowinek”'
-      },
-      {
-        stepNumber: 2,
-        title: 'Rejestracja nowych dowodów',
-        instruction: 'Zapisz twarde fakty, które zaprzeczyły Twoim przewidywaniom.',
-        promptText: 'Napotkane dowody:',
-        placeholder: 'np. „Klient z entuzjazmem przyjął proponowane automatyzacje i kupił pakiet premium”'
-      },
-      {
-        stepNumber: 3,
-        title: 'Formułowanie nowej reguły',
-        instruction: 'Zapisz zaktualizowane przekonanie z uwzględnieniem kontekstu.',
-        promptText: 'Zaktualizowane przekonanie:',
-        placeholder: 'np. „Klienci chętnie kupują nowinki, jeśli jasno pokaże się im oszczędność czasu”'
-      }
-    ],
-    reflectionQuestions: [
-      'Jakie to uczucie przyznać przed samym sobą: „Myliłem się i zdobyłem nową wiedzę”?'
-    ]
-  },
-  {
-    id: 'cwiczenie-18-3-kwestionowanie-sokratyczne',
-    title: 'Kwestionowanie Sokratyczne Własnych Przekonań',
-    subtitle: 'Testowanie wytrzymałości fundamentów własnego myślenia',
-    objective: 'Rozbrojenie nierealistycznych przekonań za pomocą serii dociekliwych pytań.',
-    durationMinutes: 20,
-    neuroScientificFoundation: 'Stymulacja lewej kory przedczołowej do analitycznego testowania tez generowanych przez podkorowy lęk.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Wybór przekonania stresogennego',
-        instruction: 'Zapisz tezę, która wywołuje w Tobie lęk (np. „Muszę być idealny, inaczej stracę szacunek”).',
-        promptText: 'Teza do weryfikacji:',
-        placeholder: '„Jeśli popełnię błąd na zebraniu, nikt nie będzie mnie traktował poważnie”'
-      },
-      {
-        stepNumber: 2,
-        title: 'Pytania o dowody',
-        instruction: 'Odpowiedz na pytania: Jakie są twarde dowody ZA tą tezą? Jakie są dowody PRZECIWKO niej?',
-        promptText: 'Bilans dowodów:',
-        placeholder: 'Za: brak. Przeciw: widziałem, jak inni popełniali błędy i nadal są szanowanymi ekspertami.'
-      },
-      {
-        stepNumber: 3,
-        title: 'Pytanie o alternatywną interpretację',
-        instruction: 'Jaka jest bardziej prawdopodobna i realistyczna interpretacja tej sytuacji?',
-        promptText: 'Alternatywna interpretacja:',
-        placeholder: 'Ludzie cenią autentyczność i umiejętność przyznania się do błędu wyżej niż sztuczną bezbłędność.'
-      }
-    ],
-    reflectionQuestions: [
-      'Co najgorszego mogłoby się stać, gdybyś porzucił to sztywne przekonanie na zawsze?'
-    ]
-  },
-  {
-    id: 'cwiczenie-18-4-przelamywanie-bańki',
-    title: 'Eksperyment Wyjścia poza Bańkę Informacyjną',
-    subtitle: 'Otwieranie umysłu na odmienne perspektywy i rzetelne źródła',
-    objective: 'Poznanie i zrozumienie argumentów strony przeciwnej w wybranym sporze ideologicznym lub biznesowym.',
-    durationMinutes: 30,
-    neuroScientificFoundation: 'Redukcja reaktywności ciała migdałowatego na perspektywy obcej grupy własnej (Out-group).',
+    neuroScientificFoundation: 'Analiza argumentów przeciwnej strony stymuluje elastyczność poznawczą i zmniejsza polaryzację w strukturach kory przedczołowej.',
     steps: [
       {
         stepNumber: 1,
         title: 'Wybór tematu spornego',
-        instruction: 'Wybierz temat, w którym masz skrajne i silne poglądy.',
-        promptText: 'Temat sporu:',
-        placeholder: 'Praca zdalna vs praca z biura...'
+        instruction: 'Wybierz temat, w którym masz zdecydowane poglądy (np. polityka, gospodarka, styl życia).',
+        promptText: 'Mój mocny pogląd:',
+        placeholder: 'Pogląd: Prywatyzacja służby zdrowia jest jedynym skutecznym rozwiązaniem...'
       },
       {
         stepNumber: 2,
-        title: 'Najsilniejsze argumenty drugiej strony',
-        instruction: 'Przeczytaj artykuł napisany przez szanowanego eksperta o odmiennych poglądach i wypisz jego 3 najbardziej merytoryczne argumenty.',
-        promptText: 'Argumenty drugiej strony:',
-        placeholder: 'Praca z biura buduje nieformalne więzi, skraca czas decyzji i pomaga nowym pracownikom.'
+        title: 'Wyszukanie najsilniejszych argumentów drugiej strony',
+        instruction: 'Znajdź i przeczytaj artykuł napisany przez szanowanego eksperta z przeciwnego obozu. Wypisz 2 najsilniejsze, logiczne argumenty drugiej strony.',
+        promptText: 'Najsilniejsze argumenty przeciwnej strony:',
+        placeholder: '1. Ryzyko wykluczenia najuboższych pacjentów z procedur wysokokosztowych...\n2. Przykłady rynków, gdzie prywatny system doprowadził do drastycznego wzrostu cen leków...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Syntetyczna ocena rozkładu prawdopodobieństwa',
+        instruction: 'Zapisz, co w stanowisku drugiej strony jest merytorycznie uzasadnione.',
+        promptText: 'Co przyjmuję jako wartościowy punkt:',
+        placeholder: 'Zgadzam się, że państwo musi gwarantować koszyk świadczeń ratujących życie dla najuboższych...'
       }
     ],
     reflectionQuestions: [
-      'Czy potrafisz przedstawić racje swojego oponenta tak dobrze, by sam uznał Twój opis za trafny (Technika Ideological Steelmanning)?'
+      'Jakie emocje pojawiały się w ciele podczas czytania tekstu z drugiej strony?',
+      'O ile procent spadła Twoja zaciekłość po poznaniu rzetelnych argumentów drugiej strony?'
     ]
   },
   {
-    id: 'cwiczenie-18-5-brzytwa-hanlona-w-praktyce',
-    title: 'Inwentaryzacja Interpretacji Intencji: Brzytwa Hanlona',
-    subtitle: 'Rozbrajanie paranoi relacyjnej w pracy i życiu osobistym',
-    objective: 'Zamiana podejrzliwych interpretacji intencji na hipotezy uwzględniające zmęczenie i przypadek.',
-    durationMinutes: 15,
-    neuroScientificFoundation: 'Wyhamowanie hiperaktywności prawej skroniowo-ciemieniowej (rTPJ) generującej spiskowe teorie intencji.',
+    id: 'ex-18-3',
+    title: 'Eksperyment Behawioralny na Lęk',
+    subtitle: 'Weryfikacja myśli katastroficznych w bezpiecznej skali',
+    objective: 'Sprawdzenie w praktyce, czy lękowe przepowiednie umysłu sprawdzają się w rzeczywistości.',
+    durationMinutes: 30,
+    neuroScientificFoundation: 'Brak wystąpienia spodziewanej katastrofy wygasza reakcję warunkową w ciele migdałowatym poprzez mechanizm wygaszania (extinction learning).',
     steps: [
       {
         stepNumber: 1,
-        title: 'Zapis trudnego zachowania partnera/kolegi',
-        instruction: 'Zapisz sytuację, w której uznałeś, że ktoś zrobił coś specjalnie przeciwko Tobie.',
-        promptText: 'Trudne zachowanie:',
-        placeholder: 'Kolega z zespołu nie odpowiedział na mojego e-maila przez 24 godziny.'
+        title: 'Zapisanie przepowiedni lękowej',
+        instruction: 'Zapisz, co według Twojej myśli stanie się w konkretnej sytuacji (np. Jeśli poproszę o wyjaśnienie, wszyscy uznają mnie za głupca).',
+        promptText: 'Moja przepowiednia lękowa:',
+        placeholder: 'Jeśli zadam pytanie na zebraniu, zapadnie niezręczna cisza i szef mnie skrytykuje...'
       },
       {
         stepNumber: 2,
-        title: 'Zastosowanie Brzytwy Hanlona',
-        instruction: 'Wypisz 3 alternatywne wyjaśnienia niezwiązane z Tobą (np. natłok pracy, awaria, zmęczenie).',
-        promptText: 'Wyjaśnienia nie-osobiste:',
-        placeholder: '1. Ma awarię w innym projekcie. 2. Przegapił powiadomienie. 3. Ma trudną sytuację domową.'
+        title: 'Zaplanowanie mikro-eksperymentu',
+        instruction: 'Określ dokładny czas i miejsce, w którym celowo zrobisz to, czego dotyczy myśl.',
+        promptText: 'Plan eksperymentu:',
+        placeholder: 'Na wtorkowym zebraniu o 10:00 zadam jedno pytanie doprecyzowujące do slajdu nr 4...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Rejestracja wyników i wnioski',
+        instruction: 'Po wykonaniu zadania zapisz obiektywne fakty.',
+        promptText: 'Rzeczywisty wynik eksperymentu:',
+        placeholder: 'Zadałem pytanie. Szef odpowiedział merytorycznie, dwie osoby zanotowały odpowiedź. Nikt nie wyśmiał.'
       }
     ],
     reflectionQuestions: [
-      'O ile bardziej spokojny stajesz się, gdy przestajesz traktować cudze roztargnienie jako osobisty atak?'
+      'Co ten eksperyment mówi Ci o wiarygodności Twojego wewnętrznego sygnału alarmowego?',
+      'Jaki kolejny mały eksperyment chcesz przeprowadzić w tym tygodniu?'
     ]
   },
   {
-    id: 'cwiczenie-18-6-audyt-skryptow-finansowych',
-    title: 'Audyt Skryptów Finansowych z Dzieciństwa',
-    subtitle: 'Odkrywanie cichych przekonań na temat pieniędzy i wyceny własnej pracy',
-    objective: 'Identyfikacja szkodliwych przekonań dotyczących pieniędzy i zastąpienie ich sprawnymi regułami.',
+    id: 'ex-18-4',
+    title: 'Dekonstrukcja Iluzji Wyjaśnienia',
+    subtitle: 'Testowanie rzeczywistej głębi własnej wiedzy',
+    objective: 'Urealnienie oceny własnej wiedzy w skomplikowanym temacie i redukcja pychy poznawczej.',
     durationMinutes: 20,
-    neuroScientificFoundation: 'Deaktywacja starych schematów emocjonalnych z układu limfatycznego za pomocą dlPFC.',
+    neuroScientificFoundation: 'Konfrontacja z brakiem wiedzy w trakcie próby wyjaśnienia mechanizmu obniża aktywację w obszarach związanych z nadmierną pewnością siebie.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Wypisanie haseł z domu',
-        instruction: 'Przypomnij sobie 3 zdania na temat pieniędzy, które słyszałeś od rodziców w dzieciństwie.',
-        promptText: 'Hasła finansowe z domu:',
-        placeholder: '„Pieniądze szczęścia nie dają”, „Pierwszy milion trzeba ukraść”'
+        title: 'Wybór zagadnienia',
+        instruction: 'Wybierz temat, w którym uważasz, że masz dużą wiedzę (np. Jak działa system emerytalny, Jak działa silnik elektryczny).',
+        promptText: 'Temat testowy:',
+        placeholder: 'Jak działa technologia sztucznej inteligencji (LLM)...'
       },
       {
         stepNumber: 2,
-        title: 'Sformułowanie przekonania dojrzałego',
-        instruction: 'Napisz nową regułę finansową dostosowaną do Twoich dzisiejszych celów życiowych.',
-        promptText: 'Nowa reguła finansowa:',
-        placeholder: 'Pieniądze są neutralnym narzędziem, które daje mi wolność i pozwala realizować wartościowe cele.'
+        title: 'Pisemne wyjaśnienie krok po kroku',
+        instruction: 'Napisz na kartce szczegółowy opis mechanizmu, tak jakbyś tłumaczył to 10-letniemu dziecku. Używaj konkretów, bez ogólników.',
+        promptText: 'Moje wyjaśnienie mechanizmu:',
+        placeholder: 'Umysł zaczyna pisać... i utyka przy pytaniu: Jak dokładnie tokeny przekształcane są na wagi w sieci neuronowej...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Identiikacja luk w wiedzy',
+        instruction: 'Zapisz, w którym momencie Twoje wyjaśnienie przestało być konkretne i pojawiły się słowa: „po prostu tak to działa”.',
+        promptText: 'Moje luki w wiedzy:',
+        placeholder: 'Nie rozumiem dokładnie matematycznego mechanizmu uwagi (Attention Mechanism)...'
       }
     ],
     reflectionQuestions: [
-      'Jak stara reguła finansowa powstrzymywała Cię przed inwestowaniem w swój rozwój lub podnoszeniem stawek?'
+      'Jak zmieniła się Twoja subiektywna pewność siebie (w skali 1-10) po wykonaniu tego ćwiczenia?',
+      'Jakie to uczucie przyznać przed samym sobą: „W tym punkcie nie mam pojęcia, jak to działa”?'
     ]
   },
   {
-    id: 'cwiczenie-18-7-odpornosc-na-spotlight-effect',
-    title: 'Eksperyment Odporności na Spotlight Effect',
-    subtitle: 'Sprawdzanie, jak naprawdę inni reagują na nasze drobne potknięcia',
-    objective: 'Weryfikacja empiryczna przekonania, że inni ludzie nieustannie nas oceniają.',
-    durationMinutes: 15,
-    neuroScientificFoundation: 'Osłabianie egocentrycznej dystorsji w sieci mentalizacji (Theory of Mind).',
+    id: 'ex-18-5',
+    title: 'Restrukturyzacja Przekonań Kluczowych',
+    subtitle: 'Zamiana schematów z dzieciństwa na dorosłe zasoby',
+    objective: 'Zidentyfikowanie głębokiego założenia na swój temat i stworzenie wspierającego przekonania alternatywnego.',
+    durationMinutes: 30,
+    neuroScientificFoundation: 'Tworzenie i powtarzanie nowej ścieżki interpretacji w kory przedczołowej stopniowo osłabia stary nawyk neuronalny w układzie limbicznym.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Zaplanowanie drobnego potknięcia',
-        instruction: 'Zrób coś niegroźnego i lekko nietypowego w otoczeniu (np. załóż dwie różne skarpetki, powiedz językowy łamaniec).',
-        promptText: 'Mój cel:',
-        placeholder: 'Powiem w kawiarni z uśmiechem: „Przepraszam, pomyliłem dni i myślałem, że dziś sobota”.'
+        title: 'Wykrycie przekonania kluczowego',
+        instruction: 'Zapisz przekonanie, które leży u podstaw Twojego najczęstszego wstydu lub lęku (np. Jestem sam, Jestem niewystarczająco dobry, Muszę zasłużyć na miłość).',
+        promptText: 'Moje stary przekonanie kluczowe:',
+        placeholder: 'Jestem niewystarczająco dobry, dopóki nie odniosę oszałamiającego sukcesu...'
       },
       {
         stepNumber: 2,
-        title: 'Obserwacja reakcji ludzi',
-        instruction: 'Zapisz, ile osób FAKTYCZNIE zwróciło na to uwagę i jak zareagowały.',
-        promptText: 'Obserwacje z realu:',
-        placeholder: 'Sprzedawca uśmiechnął się i powiedział, że też tak często ma. Nikt inny nie zwrócił uwagi.'
+        title: 'Identyfikacja korzeni',
+        instruction: 'Zapisz, skąd to przekonanie do Ciebie przyszło (kto Ci to mówił lub pokazywał w dzieciństwie).',
+        promptText: 'Źródło przekonania:',
+        placeholder: 'Ojciec, który chwalił mnie tylko wtedy, gdy przynosiłem świadectwo z wyróżnieniem...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Nowe przekonanie dorosłe',
+        instruction: 'Sformułuj nowe, zrównoważone przekonanie, które jest prawdziwe w Twoim dorosłym życiu.',
+        promptText: 'Moje nowe przekonanie wspierające:',
+        placeholder: 'Moja wartość jako człowieka jest stała. Sukcesy są owocem moich działań, a nie warunkiem prawa do istnienia.'
       }
     ],
     reflectionQuestions: [
-      'O ile wolniejszy i swobodniejszy stajesz się, wiedząc, że inni są zbyt zajęci własnym życiem?'
+      'O ile lżejsze staje się Twoje ciało, gdy odrzucasz stary nakaz rodzicielski?',
+      'Jaki dowód w tym tygodniu dostarczysz swojemu umysłowi na potwierdzenie nowego przekonania?'
+    ]
+  },
+  {
+    id: 'ex-18-6',
+    title: 'Audyt Wyzwalaczy Dysonansu',
+    subtitle: 'Świadome zarządzanie napięciem poznawczym',
+    objective: 'Zauważenie momentów, w których uruchamiasz racjonalizację i wyparcie w odpowiedzi na niewygodne fakty.',
+    durationMinutes: 20,
+    neuroScientificFoundation: 'Samoobserwacja dysonansu aktywuje przednią korę obwodu (ACC), umożliwiając swiadomy wybór korekty zachowania zamiast automatycznej racjonalizacji.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Zauważenie sprzeczności',
+        instruction: 'Wypisz sytuację z ostatniego tygodnia, w której zrobiłeś coś sprzecznego ze swoimi wartościami (np. Zjadłem słodycze będąc na diecie, Nakrzyczałem na dziecko mimo obietnicy spokoju).',
+        promptText: 'Sprzeczność zachowania z wartością:',
+        placeholder: 'Obiecałem sobie nie przeglądać telefonu przy kolacji z partnerem, a spędziłem tak 40 minut...'
+      },
+      {
+        stepNumber: 2,
+        title: 'Zapisanie automatycznej racjonalizacji',
+        instruction: 'Zapisz, jak Twój umysł próbował usprawiedliwić ten błąd.',
+        promptText: 'Moja automatyczna racjonalizacja:',
+        placeholder: 'Tłumaczyłem sobie: „Miałem ciężki dzień w pracy, należy mi się chwila relaksu”...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Uczciwa akceptacja i korekta',
+        instruction: 'Odrzuć racjonalizację i powiedz szczerze: „Złamałem swoją zasadę z powodu zmęczenia. Co zrobię jutro, by to naprawić?”.',
+        promptText: 'Uczciwe podsumowanie:',
+        placeholder: 'Naruszyłem moją zasadę. Zamiast się tłumaczyć, odłożę telefon do drugiego pokoju o 18:00.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jakie najczęstsze wymówki wymyśla Twój umysł, by bronić Twoich małych grzechów?',
+      'O ile łatwiej poprawić zachowanie, gdy przestajesz się oszukiwać?'
+    ]
+  },
+  {
+    id: 'ex-18-7',
+    title: 'Pętla Bayesowska w Praktyce',
+    subtitle: 'Aktualizacja prawdopodobieństwa poglądów krok po kroku',
+    objective: 'Nauka ilościowego szacowania prawdopodobieństwa własnych hipotez życiowych pod wpływem nowych danych.',
+    durationMinutes: 20,
+    neuroScientificFoundation: 'Formalne szacowanie prawdopodobieństwa angażuje kwadrant obliczeniowy koryprzedczołowej, zmniejszając emocjonalną zaciekłość.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Wybór hipotezy i ocena wstępna (Prior)',
+        instruction: 'Zapisz hipotezę i oceń jej prawdopodobieństwo w skali 0-100% (np. Zmiana branży w moim wieku powiąże się z zejściem z pensji o połowę - 80%).',
+        promptText: 'Hipoteza i ocena wstępna:',
+        placeholder: 'Hipoteza: Zmiana pracy sprowadzi na mnie spadek dochodów (Prawdopodobieństwo: 80%)...'
+      },
+      {
+        stepNumber: 2,
+        title: 'Zebranie obiektywnych danych (Likelihood)',
+        instruction: 'Przejrzyj 5 realnych ofert pracy w nowej branży i porozmawiaj z dwoma osobami, które dokonały tej zmiany. Zapisz twarde fakty.',
+        promptText: 'Obiektywne dane empiryczne:',
+        placeholder: 'Oferty pokazują, że spadek wynosi średnio 15%, a po roku dochody wracają do normy...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Zaktualizowane prawdopodobieństwo (Posterior)',
+        instruction: 'Uwzględniając nowe dane, podaj zaktualizowany poziom prawdopodobieństwa Twojej pierwotnej obawy.',
+        promptText: 'Zaktualizowane prawdopodobieństwo:',
+        placeholder: 'Zaktualizowane prawdopodobieństwo drastycznego spadku dochodów: 25%.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jak zmiana liczby procentowej wpływa na Twój poziom lęku przed działaniem?',
+      'Jakie inne przekonanie w Twoim życiu wymaga zaktualizowania pętlicą bayesowską?'
+    ]
+  },
+  {
+    id: 'ex-18-8',
+    title: 'Manifest Epistemicznej Pokory',
+    subtitle: 'Budowanie otwartej i naukowej postawy wobec rzeczywistości',
+    objective: 'Stworzenie osobistej deklaracji elastyczności poznawczej i gotowości do nauki.',
+    durationMinutes: 15,
+    neuroScientificFoundation: 'Deklaracja otwartości poznawczej buduje schemat wyższego rzędu, który ułatwia przyjmowanie krytyki w przyszłości.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Zasada Moich Poglądów',
+        instruction: 'Napisz, jak traktujesz swoje obecne przekonania (np. Moje poglądy to najlepsze dzisiejsze hipotezy, gotowe do korekty pod wpływem nowych faktów).',
+        promptText: 'Moje podejście do wiedzy:',
+        placeholder: 'Moje poglądy nie są moją tożsamością. Są tylko roboczymi modelami świata...'
+      },
+      {
+        stepNumber: 2,
+        title: 'Gotowość do słów „Nie wiem”',
+        instruction: 'Napisz zdanie, które wypowiesz w dyskusji, gdy zabraknie Ci twardych dowodów.',
+        promptText: 'Moja wypowiedź pokory:',
+        placeholder: 'Nie mam wystarczających danych w tym temacie, sprawdzę to i wrócimy do rozmowy...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Zasada szacunku do odmienności',
+        instruction: 'Napisz, jak będziesz reagować na osoby o skrajnie odmiennych poglądach.',
+        promptText: 'Zasada relacyjna:',
+        placeholder: 'Mój rozmówca może mieć dostęp do faktów, których ja nie dostrzegam. Najpierw wysłucham jego mechanizmu, zanim zacznę oceniać.'
+      }
+    ],
+    reflectionQuestions: [
+      'O ile spokojniejsze stanie się Twoje życie, gdy przestaniesz musieć mieć rację we wszystkich dyskusjach?',
+      'Jak ta postawa wpłynie na jakość Twoich relacji z bliskimi?'
     ]
   }
 ];
@@ -907,272 +1063,278 @@ export const chapterEighteen: Chapter = {
   number: 18,
   volume: 3,
   volumeChapterNumber: 2,
-  title: 'Rozdział 2: Przekonania i Sposób Patrzenia na Świat',
-  subtitle: 'Natura schematów poznawczych, opór przed zmianą poglądów, filtrowanie informacji i mechanizmy aktualizacji modelu rzeczywistości',
-  leadParagraph: 'Nie widzimy świata takim, jaki jest w rzeczywistości — widzimy świat takim, jakim konstruuje go nasz układ nerwowy przesiąknięty siecią przekonań. Przekonania są wewnętrznymi hipotezami operacyjnymi, które umysł traktuje jako obiektywną prawdę. Kształtują one naszą uwagę, emocje, decyzje i relacje. Zrozumienie, jak powstają schematy poznawcze, dlaczego z taka zawziętością bronimy błędnych poglądów oraz jak uruchomić proces bezpiecznej aktualizacji własnego modelu świata, stanowi jeden z najważniejszych filarów osobistej autonomii.',
-  totalEstimatedPages: 58,
+  title: 'Przekonania i sposób patrzenia na świat',
+  subtitle: 'Architektura mentalnych modeli, schematy poznawcze, Błąd Potwierdzenia i fizjologia aktualizacji wiedzy',
+  leadParagraph: 'Dlaczego dwie osoby stojące w tym samym miejscu, patrzące na tę samą sytuację i słuchające tych samych słów wyciągają z niej diametralnie różne wnioski? Odpowiedź tkwi w architekturze przekonań — niewidzialnych soczewek poznawczych, przez które umysł filtruje surowy strumień bodźców z otoczenia. Przekonania nie są biernym zapisem rzeczywistości, lecz aktywnymi konstrukcjami, które decydują o tym, co zauważamy, jak czujemy i jakie decyzje podejmujemy. W tym rozdziale przeanalizujemy, jak powstają, utrwalają się i zmieniają nasze mentalne modele świata.',
+  totalEstimatedPages: 60,
   sections: [
     {
       id: 'sec-18-1',
       pageNumber: 1,
       sectionNumber: '18.1',
-      title: 'Fakt vs Przekonanie vs Opinia vs Hipoteza: Dyscyplina Pojęciowa',
-      category: 'wstep',
-      readingTimeMinutes: 9,
+      title: 'Czym Jest Przekonanie? Architektura Poznawcza Mentalnego Modelu Świata',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       quote: {
-        text: 'To nie rzeczy nas niepokoją, lecz nasze mniemania o rzeczach.',
-        author: 'Epiktet'
+        text: 'Nie widzimy świata takim, jaki jest. Widzimy świat takim, jakimi my jesteśmy.',
+        author: 'Anaïs Nin'
       },
       paragraphs: [
-        'Większość sporów interpersonalnych i wewnętrznych kryzysów wynika z mieszania pojęć o zupełnie różnym statusie epistemologicznym. Aby odzyskać przejrzystość myślenia, musimy wprowadzić twarde rozgraniczenie.',
-        'Fakt to obiektywnie weryfikowalny stan rzeczywistości (np. „Temperatura w pokoju wynosi 21°C”). Przekonanie to struktura poznawcza, którą umysł uznaje za prawdę i używa jako filtra (np. „Zimne powietrze wywołuje choroby”). Opinia to subiektywna ocena wartościująca (np. „21°C to zbyt chłodno”). Hipoteza to robocze przypuszczenie wymagające testu empirycznego.',
-        'Gdy człowiek traktuje swoją subiektywną opinię jako obiektywny fakt, zamyka przestrzeń do dyskusji i wchodzi w bezprzedmiotowy spór ideologiczny.',
-        'Opanowanie umiejętności szybkiej kategoryzacji docierających bodźców uwalnia kram poznawczy i chroni przed manipulacją.'
+        'Przekonanie (belief) w psychologii poznawczej definiowane jest jako subiektywna reprezentacja umysłowa, którą jednostka traktuje jako prawdziwy opis rzeczywistości. Przekonania tworzą tkankę naszego mentalnego modelu świata, pozwalając nawigować w skomplikowanym środowisku bez konieczności ponownego analizowania każdego bodźca od zera.',
+        'Kluczowe jest zrozumienie, że przekonanie nie jest obiektywnym faktem. Fakt to zweryfikowany empirycznie stan rzeczywistości (np. „Temperatura wody wynosi 20 stopni Celsjusza”), podczas gdy przekonanie jest interpretacją nadaną temu faktowi przez umysł („Woda jest za zimna do pływania”).',
+        'Struktura przekonań przypomina sieć: na samym dole znajdują się pojedyncze obserwacje, wyżej przekonania pośrednie (zasady i założenia), a na samym szczycie przekonania kluczowe (core beliefs) na temat siebie, ludzi i świata. Naruszenie przekonania kluczowego wywołuje wstrząs w całej architekturze psychicznej.'
       ]
     },
     {
       id: 'sec-18-2',
       pageNumber: 4,
       sectionNumber: '18.2',
-      title: 'Natura Przekonań: Jak Umysł Tworzy Mapy Rzeczywistości',
+      title: 'Skąd Biorą Się Przekonania? Doświadczenie, Warunkowanie i Transmisja Kulturowa',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Przekonanie nie jest jedynie abstrakcyjną myślą wiszącą w przestrzeni. Jest trwałym wzorcem połączeń synaptycznych, który kieruje przepływem informacji w mózgu.',
-        'Umysł tworzy przekonania, aby zaoszczędzić energię metaboliczną (Zasada Mózgu Predykcyjnego - Predictive Processing). Zamiast analizować każdy bodziec od zera, mózg nakłada na świat gotowy szablon i rejestruje jedynie odchylenia (Predictive Errors).',
-        'Jeśli Twoje przekonanie mówi: „Ludzie są życzliwi”, uśmiech nieznajomego zostanie zinterpretowany jako sympatia. Jeśli Twoje przekonanie mówi: „Ludzie są podstępni”, ten sam uśmiech zostanie odczytany jako drwina.'
+        'Przekonania powstają w wyniku trzech głównych procesów: 1. Bezpośrednich doświadczeń życiowych (zwłaszcza tych o wysokim ładunku emocjonalnym); 2. Warunkowania i wzmocnień wczesnodziecięcych; 3. Transmisji kulturowej i autorytetowej.',
+        'Mózg dziecka jest chłonną gąbką, która bezrefleksyjnie absorbuje przekonania rodowe („Pieniądze są źródłem zła”, „Ludziom nie można ufać”). Te wczesne implanty po latach stają się niepodważalnymi pewnikami, rzutując na decyzje finansowe i relacyjne dorosłego człowieka.',
+        'Co więcej, im wyższy poziom emocji towarzyszył powstawaniu danego przekonania (np. trauma rozstania, gwałtowna porażka w szkole), tym silniejsze jest jego zakotwiczenie w układzie limbicznym i tym większy opór stawia ono przy próbie modyfikacji.'
       ]
     },
     {
       id: 'sec-18-3',
       pageNumber: 7,
       sectionNumber: '18.3',
-      title: 'Architektura Schematów Poznawczych i Błąd Potwierdzenia',
+      title: 'Schematy Poznawcze Jako Soczewki Percepcji — Aron Beck i Terapia CBT',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Przekonania układają się w zhierarchizowane schematy poznawcze. Na samym dole leżą Przekonania Kluczowe (Core Beliefs) dotyczące własnej wartości, bezpieczeństwa i natury świata.',
-        'Na fundamencie przekonań kluczowych wyrastają Zasady Warunkowe („Jeśli pokażę słabość, zostanę odrzucony”) oraz Myśli Automatyczne pojawiające się w ułamku sekundy w reakcji na bodziec.',
-        'Potężny odruch zwany Błędem Potwierdzenia (Confirmation Bias) dba o to, by schemat nigdy nie uległ osłabieniu: uwaga natychmiast wyłapuje dowody pasujące do tezy, a dowody sprzeczne odrzuca lub racjonalizuje.'
+        'Aron Beck, twórca terapii poznawczo-behawioralnej (CBT), opisał schematy poznawcze jako trwałe matryce pojęciowe, które organizują dopływające informacje.',
+        'Schemat działa jak filtr kolorystyczny w okularach: jeśli nosisz okulary o zielonych szkłach, cała rzeczywistość wydaje się zielona. Jeśli posiadasz schemat „Jestem nieadekwatny”, Twój umysł automatycznie wyłowi z otoczenia wszelkie sygnały potwierdzające tę tezę, całkowicie ignorując dowody sukcesu.',
+        'Zniekształcenia poznawcze (np. myślenie zero-jedynkowe, katastrofizacja, personalizacja) są automatycznymi produktami wygenerowanymi przez aktywne schematy poznawcze.'
       ],
-      caseStudyRef: caseStudiesChapterEighteen[0]
+      caseStudyRef: caseStudiesChapterEighteen[3]
     },
     {
       id: 'sec-18-4',
       pageNumber: 10,
       sectionNumber: '18.4',
-      title: 'Dysonans Poznawczy Festingera: Anatomia Samooszustwa',
+      title: 'Interpretacja Rzeczywistości: Surowy Bodziec vs Znaczenie Nadane Przez Umysł',
       category: 'teoria',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 13,
       paragraphs: [
-        'Kiedy człowiek doświadcza rozbieżności między swoim przekonaniem a nowym faktem lub własnym zachowaniem, powstaje nieprzyjemne napięcie fizjologiczne — dysonans poznawczy.',
-        'Leon Festinger wykazał, że umysł zrobi wszystko, by to napięcie zredukować. Najrzadziej wybieraną drogą jest zmiana głębokiego przekonania. Najczęstszą drogą jest zniekształcenie faktu, zaprzeczenie lub wymyślenie zawiłej racjonalizacji.',
-        'Im wyższa stawka osobista lub finansowa powiązana z daną decyzją, tym silniejszy odruch samooszustwa.'
-      ],
-      caseStudyRef: caseStudiesChapterEighteen[2]
+        'Pomiędzy surowym bodźcem z zewnętrznego świata a naszą reakcją emocjonalną i behawioralną istnieje przestrzeń interpretacji poznawczej (Model ABC Alberta Ellisa).',
+        'A (Activating Event) — Zdarzenie aktywujące (np. szef nie odpowiedział na e-mail); B (Beliefs) — Przekonania i interpretacja („Szef jest na mnie wściekły, zaraz mnie zwolni”); C (Consequences) — Konsekwencje emocjonalne i fizjologiczne (Lęk, ścisk w żołądku, spadek wydajności).',
+        'To nie zdarzenie A wywołuje emocję C, lecz przekonanie B. Zmiana interpretacji B natychmiast modyfikuje reakcję biologiczną C.'
+      ]
     },
     {
       id: 'sec-18-5',
       pageNumber: 13,
       sectionNumber: '18.5',
-      title: 'Motywowane Rozumowanie: Intelekt w Służbie Emocji',
+      title: 'Przekonania o Sobie, Innych i Świecie — Trójada Poznawcza',
       category: 'teoria',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Tradycyjny model zakładał, że wysoka inteligencja chroni przed błędami logicznymi. Badania pokazują coś znikomo odmiennego: osoby o wysokim IQ potrafią sprawniej stosować Motywowane Rozumowanie (Motivated Reasoning).',
-        'Intelekt nie działa jak bezstronny sędzia oceniejący dowody. Działa jak wynajęty adwokat, którego jedynym zadaniem jest obrona z góry założonej tezy klienta (naszego ego lub emocji).',
-        'Zrozumienie tej pułapki wymaga rozwinięcia Intelektualnej Pokory i uczenia się patrzenia na własne argumenty z boku.'
-      ]
+        'Każdy człowiek posiada rozbudowaną trójadę przekonań kluczowych: 1. Przekonania o sobie („Jestem wartościowy / nieadekwatny / silny”); 2. Przekonania o innych ludziach („Ludzie są życzliwi / wrodzy / interesowni”); 3. Przekonania o świecie („Świat jest bezpieczny / dżunglą / pełen możliwości”).',
+        'Trójada ta tworzy fundament pod całe funkcjonowanie psychiczne. Jeśli ktoś posiada przekonanie, że „Świat to dżungla, a ludzie są wrodzy”, jego ciało migdałowate pozostaje w stanie ciągłej hiper-czujności (hypervigilance).',
+        'Taki człowiek w każdym neutralnym geście współpracownika dostrzega podstęp, reagując agresją wyprzedzającą i niszcząc swoje relacje społeczne.'
+      ],
+      caseStudyRef: caseStudiesChapterEighteen[5]
     },
     {
       id: 'sec-18-6',
       pageNumber: 16,
       sectionNumber: '18.6',
-      title: 'Efekt Backfire: Dlaczego Fakty Często Potęgują Opór?',
-      category: 'neuronauka',
-      readingTimeMinutes: 10,
+      title: 'Błąd Potwierdzenia (Confirmation Bias) i Filtrowanie Dowodów',
+      category: 'teoria',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Gdy atakujesz czyjeś głębokie przekonanie za pomocą twardych danych, liczysz na to, że rozmówca powie: „Dziękuję, myliłem się”. W rzeczywistości często dochodzi do Efektu Backfire (Odbicia).',
-        'Badania fMRI pokazują, że konfrontacja z faktami zagrażającymi tożsamości aktywuje te same obszary mózgu, które reagują na ból fizyczny i atak drapieżnika (ciało migdałowate, wyspa).',
-        'Rozmówca przechodzi w tryb obronny i zaczyna jeszcze silniej ufać swoim pierwotnym tezom.'
+        'Błąd Potwierdzenia (Confirmation Bias) jest jednym z najpotężniejszych i najbardziej powszechnych zniekształceń poznawczych w ludzkim umyśle.',
+        'Gdy umysł przyjmie jakąś hipotezę jako prawdziwą, zaczyna wybiórczo przeszukiwać otoczenie w poszukiwaniu dowodów ją potwierdzających (confirming evidence), jednocześnie aktywnie ignorując lub umniejszając wagę dowodów sprzecznych (disconfirming evidence).',
+        'W efekcie im dłużej w coś wierzymy, tym bardziej wydaje nam się to oczywiste i niepodważalne, gdyż nasza pamięć gromadzi niemal wyłącznie dane samopotwierdzające.'
       ],
-      caseStudyRef: caseStudiesChapterEighteen[1]
+      caseStudyRef: caseStudiesChapterEighteen[0]
     },
     {
       id: 'sec-18-7',
       pageNumber: 19,
       sectionNumber: '18.7',
-      title: 'Bańki Informacyjne i Algorytmiczny Pęcherz Poznawczy',
+      title: 'Dysonans Poznawczy Leona Festingera i Strategie Jego Redukcji',
       category: 'teoria',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Współczesne cyfrowe środowisko dramatycznie pogłębia sztywność przekonań. Algorytmy mediów społecznościowych projektowane są pod kątem zyskiwania uwagi poprzez podsycanie emocji i serwowanie treści zgodnych z dotychczasowymi kliknięciami.',
-        'Powstaje Bańka Informacyjna (Filter Bubble), w której człowiek słyszy wyłącznie własne echo, nabierając fałszywego przekonania o uniwersalności swoich poglądów.',
-        'Świadoma higiena informacyjna wymaga intencjonalnego szukania viarygodnych głosów spoza własnego pęcherza.'
-      ],
-      caseStudyRef: caseStudiesChapterEighteen[3]
+        'Leon Festinger w 1957 roku sformułował Teorię Dysonansu Poznawczego, opisując nieprzyjemne napięcie psychiczne pojawiające się, gdy człowiek posiada dwie sprzeczne informacje lub gdy jego zachowanie stoi w sprzeczności z jego przekonaniami.',
+        'Mózg dąży do usunięcia dysonansu za wszelką cenę. Istnieją trzy główne drogi redukcji dysonansu: 1. Zmiana zachowania (najtrudniejsza); 2. Zmiana przekonania; 3. Dodanie nowych racjonalizacji (najczęstsza).',
+        'Przykładowo, palacz znający dane o szkodliwości palenia redukuje dysonans racjonalizacją: „Mój dziadek palił i żył 90 lat” lub „Przynajmniej się nie stresuję”.'
+      ]
     },
     {
       id: 'sec-18-8',
       pageNumber: 22,
       sectionNumber: '18.8',
-      title: 'Proces Aktualizacji Przekonań (Belief Updating Loop)',
-      category: 'cwiczenia',
-      readingTimeMinutes: 10,
+      title: 'Efekt Backfire (Efekt Odbicia) — Dlaczego Fakty Zagrażają Przekonaniom?',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Jak bezpiecznie i skutecznie zmieniać własny model świata? Służy do tego pętla Aktualizacji Przekonań nawiązująca do wnioskowania bayesowskiego.',
-        'Proces składa się z 4 kroków: 1. Nazwanie hipotezy roboczej. 2. Zebranie nowych danych bez selektywnego filtrowania. 3. Ocena wiarygodności źródeł. 4. Modyfikacja poziomu pewności tezy.',
-        'Poniższy symulator umożliwia przećwiczenie tego procesu na konkretnych scenariuszach życiowych.'
+        'Zjawisko Backfire Effect wykazuje, że w przypadku głębokich przekonań tożsamościowych (np. poglądy polityczne, religijne, wizja wychowania) przedstawienie twardych dowodów naukowych sprzecznych z tezą jednostki NIE powoduje zmiany zdania.',
+        'Przeciwnie: konfrontacja z faktami aktywuje ciało migdałowate i reakcję zagrożenia ego. Umysł zaczyna gorączkowo szukać kontrargumentów, co w rezultacie sprawia, że człowiek wychodzi ze sporu jeszcze bardziej utwierdzony w swoim pierwotnym poglądzie.',
+        'Zrozumienie Efektu Odbicia jest kluczem do skutecznej komunikacji i negocjacji: zasypywanie rozmówcy wykresami tylko potęguje jego opór.'
       ],
-      exerciseRef: selfExercisesChapterEighteen[1]
+      caseStudyRef: caseStudiesChapterEighteen[1]
     },
     {
       id: 'sec-18-9',
       pageNumber: 25,
       sectionNumber: '18.9',
-      title: 'Symulator Aktualizacji Przekonań i Testowania Hipotez',
-      category: 'cwiczenia',
-      readingTimeMinutes: 10,
+      title: 'Selekcja Informacji i Komory Echa w Erze Cyfrowej',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Przeanalizujmy interaktywnie, jak Twoje przekonania zmieniają się pod wpływem nowych dowodów. Wykorzystaj ponizsze narzędzie do zbalansowania własnego poziomu pewności w spornych kwestiach.'
+        'W dobie internetu mechanizmy Confirmation Bias zostały zwielokrotnione przez algorytmy mediów społecznościowych.',
+        'Algorytmy rekomendacyjne podsuwają użytkownikowi treści zgodne z jego dotychczasowymi kliknięciami, tworząc tzw. komory echa (Echo Chambers) oraz bańki informacyjne (Filter Bubbles).',
+        'W komorze echa człowiek słyszy wyłącznie powtórzenie własnych poglądów, co wywołuje fałszywą pewność, że całe społeczeństwo myśli dokładnie tak samo jak on.'
       ]
     },
     {
       id: 'sec-18-10',
       pageNumber: 28,
       sectionNumber: '18.10',
-      title: 'Przekonania Relacyjne i Mit Czytania w Myślach',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Fakt vs Opinia vs Przekonanie vs Hipoteza Robocza',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Jednym z najczęstszych źródeł cierpienia w związkach są nierealistyczne przekonania relacyjne (np. „jeśli mnie kocha, powinien sam wiedzieć”).',
-        'Oczekiwanie telepatii wywołuje frustrację i odruch cichych dni (stonewalling), zamykając przestrzeń do autentycznej rozmowy.'
-      ],
-      caseStudyRef: caseStudiesChapterEighteen[4]
+        'Precyzja poznawcza wymaga wyraźnego rozgraniczenia kategorii informacji w umyśle.',
+        'Fakt — zdarzenie obiektywne, empirycznie weryfikowalne („Zapis kardiograficzny wskazuje 80 uderzeń na minutę”); Opinia — subiektywna ocena estetyczna lub wartościująca („Ten obraz jest piękny”); Przekonanie — przyjęta struktura prawdy („Jestem przekonany, że to rozwiązanie jest najlepsze”); Hipoteza robocza — otwarte założenie testowe („Zakładam, że metoda X zadziała, ale zbieram dane”).',
+        'Przekształcenie własnych przekonań w hipotezy robocze usuwa lęk przed pomyłką i otwiera przestrzeń do nauki.'
+      ]
     },
     {
       id: 'sec-18-11',
       pageNumber: 31,
       sectionNumber: '18.11',
-      title: 'Standard Dowodowy i Zasada Sagana',
+      title: 'Pętla Aktualizacji Przekonań (Belief Updating) i Wnioskowanie Bayesowskie',
       category: 'teoria',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'W nauce i życiu codziennym obowiązuje Zasada Sagana: „Niezwykłe twierdzenia wymagają niezwykłych dowodów”.',
-        'Im bardziej rewolucyjna lub sprzeczna z prawami biologii jest dana teza, tym wyższy rygor dowodowy musi spełniać, nim przyjmiemy ją jako podstawę działania.'
+        'Wnioskowanie bayesowskie jest matematycznym i psychologicznym modelem opisującym, jak racjonalny umysł powinien aktualizować swoje przekonania w obliczu nowych danych.',
+        'Model Bayesowski łączy wiedzę pierwotną (Prior Probability — jak bardzo wierzyłem w hipotezę przed zobaczeniem danych) z wagą nowych dowodów (Likelihood), dając zaktualizowane przekonanie końcowe (Posterior Probability).',
+        'Dojrzałość poznawcza polega na ciągłym przeprowadzaniu aktualizacji bayesowskiej: im silniejszy i bardziej wiarygodny dowód empiryczny, tym większa zmiana subiektywnego prawdopodobieństwa przekonania.'
       ]
     },
     {
       id: 'sec-18-12',
       pageNumber: 34,
       sectionNumber: '18.12',
-      title: 'Pytania Sokratyczne jako Narzędzie Rozbrojenia Sztywności',
-      category: 'cwiczenia',
-      readingTimeMinutes: 9,
+      title: 'Epistemiczna Pokora i Elastyczność Poznawcza',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Zamiast atakować czyjeś przekonanie, warto zastosować Pytania Sokratyczne. Pytania o dowody, wyjątki i mechanizmy pomagają rozmówcy samemu dostrzec pęknięcia w swojej opowieści.'
-      ],
-      exerciseRef: selfExercisesChapterEighteen[2]
+        'Epistemiczna pokora (Epistemic Humility) to postawa uznająca ograniczenia własnego aparatu poznawczego i powszechność błędów myślowych.',
+        'To zdolność do szczerze wypowiedzianych słów: „Nie wiem” oraz „Mogłem się pomylić”. Pokora epistemiczna nie oznacza braku przekonań, lecz brak dogmatyzmu.',
+        'Człowiek o wysokiej elastyczności poznawczej potrafi trzymać silne opinie, lecz trzymać je słabo (strong opinions, weakly held), gotowy do ich korekty w każdej chwili pod wpływem rzetelnych faktów.'
+      ]
     },
     {
       id: 'sec-18-13',
       pageNumber: 37,
       sectionNumber: '18.13',
-      title: 'Naiwny Realizm: Pułapka Obiektywności',
-      category: 'teoria',
-      readingTimeMinutes: 9,
+      title: 'Przekonania a Emocje — Jak Myśli Generują Stany Fizjologiczne',
+      category: 'neuronauka',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Naiwny Realizm to ukryte przekonanie, że widzimy świat bezkształtnie i obiektywnie, a każdy, kto myśli inaczej, jest złośliwy lub głupi.',
-        'Odwaga poznawcza polega na uznaniu, że nasz mózg zawsze dostarcza nam zinterpretowaną wersję rzeczywistości.'
+        'Myśli i przekonania mają bezpośrednie przełożenie na chemię mózgu i stan układu autonomicznego.',
+        'Przekonanie o zagrożeniu („Ta sytuacja mnie zniszczy”) natychmiast aktywuje oś HPA (podwzgórze-przysadka-nadnercza), wyzwalając wyrzut kortyzolu i noradrenaliny.',
+        'Z kolei zmiana przekonania na sprawcze („To trudne wyzwanie, ale mam narzędzia, by spróbować”) zmienia odpowiedź biologiczną: obniża poziom stresu i aktywuje dopaminową ścieżkę poszukiwawczą.'
       ]
     },
     {
       id: 'sec-18-14',
       pageNumber: 40,
       sectionNumber: '18.14',
-      title: 'Inokulacja Poznawcza: Szczepionka na Dezinformację',
+      title: 'Przekonania a Zachowanie i Relacje Międzyludzkie',
       category: 'teoria',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Wcześniejsze zapoznanie się ze zwodniczymi technikami retorycznymi działa jak szczepionka immunologiczna, chroniąc umysł przed późniejszą manipulacją.'
+        'Nasze przekonania o ludziach działają jak samospełniające się proroctwa w interakcjach społecznych.',
+        'Jeśli wchodzisz do nowego zespołu z przekonaniem, że „Ludzie są zazdrośni i wrodzy”, Twoja mowa ciała staje się usztywniona, a wypowiedzi chłodne. Zespół reaguje na Twój chłód dystansem, co Twój umysł rejestruje jako „dowód” na pierwotną tezę.',
+        'Świadoma zmiana przekonań wstępnych otwiera przestrzeń do budowania autentycznego zaufania.'
       ],
-      exerciseRef: selfExercisesChapterEighteen[3]
+      caseStudyRef: caseStudiesChapterEighteen[4]
     },
     {
       id: 'sec-18-15',
       pageNumber: 43,
       sectionNumber: '18.15',
-      title: 'Brzytwa Hanlona i Pętla Podejrzliwości',
-      category: 'cwiczenia',
-      readingTimeMinutes: 8,
+      title: '💡 BŁĘDNA INTUICJA: Pokazanie faktów zmieni zdanie rozmówcy',
+      category: 'teoria',
+      readingTimeMinutes: 12,
       paragraphs: [
-        'Zasada Brzytwy Hanlona radzi: „Nigdy nie przypisuj złośliwości temu, co można wystarczająco wyjaśnić roztargnieniem, brakiem wiedzy lub zmęczeniem”.',
-        'Stosowanie tej zasady chroni relacje przed paranoją spiskową.'
-      ],
-      exerciseRef: selfExercisesChapterEighteen[4]
+        'Powszechna intuicja podpowiada nam, że jeśli ktoś myli się w jakiejś kwestii, wystarczy przedstawić mu wykresy, statystyki i twarde dane, by natychmiast przyznał się do błędu.',
+        'Jak wykazaliśmy w sekcji poświęconej Backfire Effect, w przypadku przekonań powiązanych z tożsamością i ego, bezpośredni atak faktami wywołuje opór obronny.',
+        'Skuteczna zmiana przekonań wymaga najpierw stworzenia poczucia bezpieczeństwa relacyjnego i zastosowania pytań sokratejskich.'
+      ]
     },
     {
       id: 'sec-18-16',
       pageNumber: 46,
       sectionNumber: '18.16',
-      title: 'Skrypty Finansowe i Samosabotaż Sukcesu',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: '🔬 CO NADAL NIE JEST JASNE? Ograniczenia i Pytania Otwarte',
+      category: 'podsumowanie',
+      readingTimeMinutes: 10,
       paragraphs: [
-        'Przekonania na temat pieniędzy wyniesione z domu rodzą cichy samosabotaż. Odkrycie i zmiana tych skryptów pozwala na adekwatną wycenę własnej pracy.'
-      ],
-      caseStudyRef: caseStudiesChapterEighteen[5]
+        'W jakim stopniu głębokie przekonania kluczowe zapisane w strukturach podkorowych są podatne na modyfikację samą terapią poznawczą, a w jakim wymagają głębokich doświadczeń korektywnych w ciele?',
+        'Trwają badania nad rola neuroplastyczności i wglądów doznaniowych w szybkiej restrukturyzacji schematów poznawczych.'
+      ]
     },
     {
       id: 'sec-18-17',
-      pageNumber: 49,
+      pageNumber: 48,
       sectionNumber: '18.17',
-      title: '🧠 BŁĘDNA INTUICJA: „Moje Przekonania Wynikają z Czystej Logiki”',
-      category: 'teoria',
-      readingTimeMinutes: 8,
-      paragraphs: [
-        'INTUICJA: Większość ludzi uważa, że ich poglądy są chłodnym wynikiem dokładnej analizy faktów i logicznych wniosków.',
-        'CO MOŻE BYĆ BŁĘDNE? Ignorowanie wpływu przynależności grupowej, wychowania, emocji i pętli dopaminowych na proces kształtowania poglądów.',
-        'CO MÓWI PSYCHOLOGIA? Najpierw pojawia się emocjonalna skłonność lub intencja tożsamościowa, a dopiero potem intelekt tworzy zawiłą racjonalizację.',
-        'BARDZIEJ PRECYZYJNY MODEL: Traktuj swoje poglądy nie jak nienaruszalną prawdę, lecz jak dynamiczne hipotezy wymagające ciągłego testowania.'
-      ]
-    },
-    {
-      id: 'sec-18-18',
-      pageNumber: 52,
-      sectionNumber: '18.18',
-      title: '🔬 CO NADAL NIE JEST JASNE? Zdolność Mózgu do Trwałej Korekty Schematów',
-      category: 'podsumowanie',
-      readingTimeMinutes: 8,
-      paragraphs: [
-        'W jakim stopniu głęboko zakorzenione przekonania kluczowe z wczesnego dzieciństwa mogą ulec całkowitemu wygaszeniu, a w jakim stopniu są jedynie nadpisywane przez nowe obwody kontrolne w kory przedczołowej?',
-        'Badania nad rekonsolidacją pamięci sugerują możliwość osłabienia ładunku emocjonalnego, lecz ślady dawnych schematów mogą ujawniać się w sytuacjach skrajnego wyczerpania metabolicznego.'
-      ]
-    },
-    {
-      id: 'sec-18-19',
-      pageNumber: 54,
-      sectionNumber: '18.19',
-      title: '🎯 JAK ZASTOSOWAĆ TO JUTRO? Protokół Weryfikacji Hipotezy',
+      title: '🎯 JAK ZASTOSOWAĆ TO JUTRO? Protokoły Testowania Hipotez',
       category: 'cwiczenia',
-      readingTimeMinutes: 8,
+      readingTimeMinutes: 10,
       paragraphs: [
-        '1. Zauważ silną pewność: Gdy poczujesz gorący impuls „na pewno mam rację!”, zatrzymaj się na 5 sekund.',
-        '2. Zadaj pytanie o kontrdowód: „Jaki jeden konkretny fakt zmusiłby mnie do zmiany zdania w tej sprawie?”.',
-        '3. Jeśli odpowiesz „nic nie zmieni mojego zdania”, oznacza to, że nie operujesz na poziomie faktów, lecz na poziomie ideologii lub emocji obronnych.'
+        '1. Zapisz swoje stresujące przekonanie jako hipotezę roboczą.',
+        '2. Wypisz 3 dowody przeciwstawne z przeszłości.',
+        '3. Zaprojektuj mały eksperyment behawioralny.',
+        '4. Zaktualizuj subiektywne prawdopodobieństwo po zebraniu danych.'
       ],
       exerciseRef: selfExercisesChapterEighteen[0]
     },
     {
+      id: 'sec-18-18',
+      pageNumber: 50,
+      sectionNumber: '18.18',
+      title: 'Warsztat Samorozwojowy: Laboratorium Aktualizacji Przekonań',
+      category: 'cwiczenia',
+      readingTimeMinutes: 12,
+      paragraphs: [
+        'Poniżej znajduje się zestaw ćwiczeń dedykowanych dekonstrukcji Błędu Potwierdzenia, detoksowi od komór echa i restrukturyzacji schematów kluczowych.'
+      ],
+      exerciseRef: selfExercisesChapterEighteen[1]
+    },
+    {
+      id: 'sec-18-19',
+      pageNumber: 53,
+      sectionNumber: '18.19',
+      title: 'Most do Rozdziału 19 oraz Powiązania z Tomem I i II',
+      category: 'podsumowanie',
+      readingTimeMinutes: 8,
+      paragraphs: [
+        'Przekonania o świecie i o sobie tworzą bezpośredni fundament pod naszą samoocenę i poczucie skuteczności.',
+        'W następnym rozdziale przejdziemy do szczegółowej analizy tego, jak umysł ocenia własną wartość, jak budować stabilne poczucie skuteczności (Self-Efficacy) oraz jak uwolnić się od pułapki nierealistycznych porównań społecznych.'
+      ]
+    },
+    {
       id: 'sec-18-20',
-      pageNumber: 56,
+      pageNumber: 55,
       sectionNumber: '18.20',
-      title: 'Podsumowanie Rozdziału 2 i Most do Rozdziału 19',
+      title: 'Podsumowanie Rozdziału 2: Kluczowe Wglądy',
       category: 'podsumowanie',
       readingTimeMinutes: 7,
       paragraphs: [
-        'Przekonania są soczewkami, przez które patrzymy na świat i na samych siebie. Zrozumienie ich iluzorycznego charakteru uwalnia nas od przymusu obrony błędnych tez.',
-        'Gdy wiemy już, jak powstają schematy i przekonania o świecie, czas zbadać jeden z najważniejszych zestawów przekonań: przekonania dotyczące własnych możliwości, samooceny i poczucia skuteczności. Przejdźmy do Rozdziału 19.'
+        '1. Przekonania to subiektywne interpretacje, a nie obiektywne fakty.',
+        '2. Confirmation Bias każe nam zauważać tylko dane samopotwierdzające.',
+        '3. Backfire Effect sprawia, że atak faktami wywołuje opór obronny.',
+        '4. Dojrzałość poznawcza wymaga aktualizacji bayesowskiej i pokory epistemicznej.'
       ]
     },
     {
@@ -1181,9 +1343,9 @@ export const chapterEighteen: Chapter = {
       sectionNumber: '18.21',
       title: 'Egzamin Końcowy Rozdziału 2: Przekonania i Sposób Patrzenia na Świat',
       category: 'podsumowanie',
-      readingTimeMinutes: 12,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Sprawdź swoją wiedzę z zakresu dynamiki przekonań, błędu potwierdzenia, efektu Backfire oraz metod aktualizacji modelu świata. Poniższy egzamin zawiera pytania analityczne i sytuacyjne.'
+        'Sprawdź swoją wiedzę z zakresu architektury przekonań, zniekształceń poznawczych i aktualizacji bayesowskiej. Poniższy test zawiera pytania analityczne wymagające głębokiego zrozumienia opisywanych procesów.'
       ]
     }
   ]

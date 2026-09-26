@@ -3,843 +3,873 @@ import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 export const chapterTwentyExamQuestions: ExamQuestion[] = [
   {
     id: 1,
-    question: 'W psychologii motywacji fundamentalna różnica między wartością a celem polega na tym, że:',
-    topic: 'Wartości a Cele',
-    sectionRef: 'Sekcja 20.2',
+    question: 'W psychologii motywacji wartość (value) różni się od celu (goal) tym, że:',
+    topic: 'Wartości vs Cyle',
+    sectionRef: 'Sekcja 20.1',
     options: [
-      { label: 'A', text: 'Wartość jest ciągłym kierunkiem działania i sposobem bycia (jak kompas wyznaczający północ), podczas gdy cel jest konkretnym, odhaczalnym punktem końcowym.', isCorrect: true },
-      { label: 'B', text: 'Wartość jest kwotą pieniędzy w banku, a cel jest propozycją handlową.', isCorrect: false },
-      { label: 'C', text: 'Cele są ważne tylko dla dzieci, a wartości dla emerytów.', isCorrect: false },
-      { label: 'D', text: 'Nie ma żadnej różnicy, to pojęcia tożsame w naukach społecznych.', isCorrect: false }
+      { label: 'A', text: 'Wartość to kierunek i kompas jakościowy żywy w każdym momencie, zaś cel to konkretny, osiągalny punkt końcowy, który można odhaczyć na liście.', isCorrect: true },
+      { label: 'B', text: 'Wartość dotyczy tylko pieniędzy, a cel dotyczy sportu.', isCorrect: false },
+      { label: 'C', text: 'Cel znika po 5 minutach, a wartość trwa dokładnie rok.', isCorrect: false },
+      { label: 'D', text: 'Nie ma żadnej różnicy merytorycznej.', isCorrect: false }
     ],
-    explanation: 'Cele można osiągnąć i „odhaczyć” (np. „przebiec maraton”). Wartością jest sam styl życia i troska o zdrowie – nie można jej „odhaczyć”, lecz można nią żyć każdego dnia.',
-    keyTakeaway: 'Cel to przystań, do której płyniesz; wartość to kompas wyznaczający kurs.'
+    explanation: 'Bycie wspierającym rodzicem to wartość (kierunek na całe życie). Kupienie dziecku roweru to cel (punkto końcowy do odhaczenia).',
+    keyTakeaway: 'Wartości to kierunki na kompasie, cele to przystanki na drodze.'
   },
   {
     id: 2,
-    question: 'Według Teorii Samostanowienia (Self-Determination Theory – SDT) Deciego i Ryana, trzema uniwersalnymi potrzebami psychicznymi człowieka są:',
-    topic: 'Teoria Samostanowienia SDT',
-    sectionRef: 'Sekcja 20.3',
+    question: 'Według Teorii Samodeterminacji (SDT - Deci & Ryan) trzy podstawowe, uniwersalne potrzeby psychologiczne człowieka to:',
+    topic: 'Teoria Samodeterminacji SDT',
+    sectionRef: 'Sekcja 20.2',
     options: [
-      { label: 'A', text: 'Autonomia, Kompetencja i Powiązanie z innymi (Autonomy, Competence, Relatedness).', isCorrect: true },
-      { label: 'B', text: 'Pieniądze, Władza i Sława.', isCorrect: false },
-      { label: 'C', text: 'Bezpieczeństwo, Kofeina i Szybki internet.', isCorrect: false },
-      { label: 'D', text: 'Rygor, Izolacja i Stały nadzór.', isCorrect: false }
+      { label: 'A', text: 'Autonomia (Autonomy), Kompetencja (Competence) oraz Powiązanie/Bliskość (Relatedness).', isCorrect: true },
+      { label: 'B', text: 'Sława, Pieniądze i Władza.', isCorrect: false },
+      { label: 'C', text: 'Jedzenie, Sen i Dobra Pogoda.', isCorrect: false },
+      { label: 'D', text: 'Lajki, Prestiż i Samochód.', isCorrect: false }
     ],
-    explanation: 'Gdy środowisko zaspokaja te trzy uniwersalne potrzeby, motywacja wewnętrzna i dobrostan kwitną w sposób naturalny.',
-    keyTakeaway: 'Autonomia, kompetencja i więzi to biologiczne odżywki ludzkiego ducha.'
+    explanation: 'Zaspokojenie tych trzech potrzeb stanowi warunek konieczny dla dobrostanu, motywacji wewnętrznej i rozwoju autonomii.',
+    keyTakeaway: 'Niezaspokojenie autonomii, kompetencji lub bliskości wywołuje obniżenie dobrostanu.'
   },
   {
     id: 3,
-    question: 'Dlaczego rozbieżność między deklarowanymi wartościami („rodzina jest najważniejsza”) a rzeczywistym zachowaniem (praca po 16 godzin dziennie) NIE MUSI wynikać ze złej woli człowieka?',
-    topic: 'Deklaracje vs Zachowanie',
+    question: 'Czym różnią się wartości deklarowane od wartości realizowanych w działaniu?',
+    topic: 'Wartości Deklarowane vs Realizowane',
     sectionRef: 'Sekcja 20.4',
     options: [
-      { label: 'A', text: 'Ponieważ zachowanie jest wypadkową natychmiastowych bodźców środowiskowych, lęku przed brakiem bezpieczeństwa i pętli dopaminowych tu i teraz.', isCorrect: true },
-      { label: 'B', text: 'Człowiek ten jest z natury oszustem i kłamcą.', isCorrect: false },
-      { label: 'C', text: 'Nie ma żadnej rozbieżności, praca i rodzina to to samo.', isCorrect: false },
-      { label: 'D', text: 'Deklarowane wartości ulegają skasowaniu po godzinie 17:00.', isCorrect: false }
+      { label: 'A', text: 'Deklarowane to słowa wypowiadane w wywiadach, zaś realizowane to faktyczne decyzje alokacji czasu, energii i pieniędzy w codzienności.', isCorrect: true },
+      { label: 'B', text: 'Wartości realizowane są zapisane w konstytucji.', isCorrect: false },
+      { label: 'C', text: 'Wartości deklarowane kosztują najwięcej pieniędzy.', isCorrect: false },
+      { label: 'D', text: 'Oba pojęcia oznaczają to samo.', isCorrect: false }
     ],
-    explanation: 'Umysł często ulega presji natychmiastowych nagród i lęku przed brakiem bezpieczeństwa, przez co odsuwa realizację głębokich wartości na rzekome „później”.',
-    keyTakeaway: 'Nie oceniaj człowieka — zbadaj mechanizm, który odciąga go od jego wartości.'
+    explanation: 'Jeśli ktoś twierdzi, że jego wartością jest „Zdrowie”, a spędza 14 godzin na siedząco i je fast foody, zdrowie jest wartością deklarowaną, a nie realizowaną.',
+    keyTakeaway: 'Twój kalendarz i wyciąg z konta mówią o Twoich wartościach prawdę, której nie zagłuszą słowa.'
   },
   {
     id: 4,
-    question: 'Na czym polega Konflikt Wartości (Value Conflict) w sytuacjach decyzyjnych?',
-    topic: 'Konflikty Wartości',
+    question: 'Co według psychologii decyzyjnej wywołuje konflikt wartości (Value Conflict)?',
+    topic: 'Konflikt Wartości',
     sectionRef: 'Sekcja 20.5',
     options: [
-      { label: 'A', text: 'Sytuacja, w której wybór działania zgodnego z jedną wartością (np. Wolność) wymaga bolesnego ustępstwa na rzecz innej wartości (np. Bezpieczeństwo).', isCorrect: true },
-      { label: 'B', text: 'Kłótnia dwóch osób na temat cen w sklepie.', isCorrect: false },
-      { label: 'C', text: 'Błąd w obliczeniach matematycznych na fakturze.', isCorrect: false },
-      { label: 'D', text: 'Brak możliwości kupienia biletu na pociąg.', isCorrect: false }
+      { label: 'A', text: 'Sytuacja, w której opowiedzenie się za jedną wartością (np. Wolność) wymusza naruszenie innej ważnej wartości (np. Bezpieczeństwo).', isCorrect: true },
+      { label: 'B', text: 'Brak możliwości kupienia biletu na koncert.', isCorrect: false },
+      { label: 'C', text: 'Sprzeczka o to, który film obejrzeć w kinie.', isCorrect: false },
+      { label: 'D', text: 'Zgubienie portfela w sklepie.', isCorrect: false }
     ],
-    explanation: 'Konflikty wartości są nieuniknioną częścią dorosłego życia. Dojrzałość polega na świadomym dokonywaniu priorytetyzacji w danym kontekście.',
-    keyTakeaway: 'Wypowiedzenie „tak” jednej wartości bywa często wypowiedzeniem „nie” innej.'
+    explanation: 'Konflikty wartości są nieodłączną częścią dojrzałego życia i wymagają świadomego ustalenia priorytetów w konkretnym kontekście.',
+    keyTakeaway: 'Hierarchia wartości jest zwrotnicą pozwalającą podejmować trudne decyzje.'
   },
   {
     id: 5,
-    question: 'W jaki sposób konflikt celów krótkoterminowych i długoterminowych wywołuje zjawisko Dyskontowania Hiperbolicznego?',
-    topic: 'Dyskonto Hiperboliczne',
+    question: 'Jak opóźniona gratyfikacja (Delayed Gratification) odnosi się do priorytetów krótko- i długoterminowych?',
+    topic: 'Gratyfikacja',
     sectionRef: 'Sekcja 20.6',
     options: [
-      { label: 'A', text: 'Układ limbiczny przyznaje nieproporcjonalnie wyższą wagę natychmiastowej nagrodzie (np. batonik, serial) niż odroczonej w czasie dużej wartości (zdrowie za 10 lat).', isCorrect: true },
-      { label: 'B', text: 'Zniżka cenowa w sklepach ze sprzętem AGD.', isCorrect: false },
-      { label: 'C', text: 'Błąd w trajektorii lotu satelity.', isCorrect: false },
-      { label: 'D', text: 'Proces obniżania wartości waluty przez bank centralny.', isCorrect: false }
+      { label: 'A', text: 'Zdolność do rezygnacji z natychmiastowej, małej nagrody impulsywnej na rzecz realizacji ważniejszej wartości długoterminowej.', isCorrect: true },
+      { label: 'B', text: 'Kupowanie produktów wyłącznie na wyprzedażach.', isCorrect: false },
+      { label: 'C', text: 'Odkładanie jedzenia na 5 dni.', isCorrect: false },
+      { label: 'D', text: 'Zapominanie o urodzinach bliskich.', isCorrect: false }
     ],
-    explanation: 'Dla podkorowych struktur mózgu „ja za 10 lat” jest obcą osobą. Praca nad wartościami wymaga przybliżania przyszłych konsekwencji do teraźniejszości.',
-    keyTakeaway: 'Spraw, by koszty złych decyzji były natychmiastowe, a nagrody z dobrych — widoczne dzisiaj.'
+    explanation: 'Konflikt między układy limbicznym (natychmiastowa ulga) a korą przedczołową (długoterminowa wartość) decyduje o sukcesie samokontroli.',
+    keyTakeaway: 'Wybieraj to, czego chcesz najbardziej, zamiast tego, czego chcesz w tej jednej minucie.'
   },
   {
     id: 6,
-    question: 'Czym różnią się wartości autonomiczne od wartości introwykowanych (narzuconych przez presję społeczną)?',
-    topic: 'Autonomia Wartości',
-    sectionRef: 'Sekcja 20.7',
+    question: 'Na czym polega pętla konfliktu „Chcę” vs „Powinienem” (Want vs Ought)?',
+    topic: 'Chcę vs Powinienem',
+    sectionRef: 'Sekcja 20.10',
     options: [
-      { label: 'A', text: 'Wartości autonomiczne są głęboko przemyślane i zintegrowane z jaźnią; wartości introjekcyjne realizowane są z lęku przed wstydem lub odrzuceniem.', isCorrect: true },
-      { label: 'B', text: 'Wartości introjekcyjne są zawsze zapisane w konstytucji państwa.', isCorrect: false },
-      { label: 'C', text: 'Wartości autonomiczne występują wyłącznie u pustelników.', isCorrect: false },
-      { label: 'D', text: 'Nie ma żadnej różnicy w poczuciu sensu podczas ich realizacji.', isCorrect: false }
+      { label: 'A', text: 'Napięcie między natychmiastowym pragnieniem impulsywnym a narzuconym lub przyjętym wymogiem moralno-społecznym.', isCorrect: true },
+      { label: 'B', text: 'Niezdolność do wyboru koloru samochodu.', isCorrect: false },
+      { label: 'C', text: 'Radość z wykonywania trudnych zadań.', isCorrect: false },
+      { label: 'D', text: 'Brak jakichkolwiek potrzeb biologicznych.', isCorrect: false }
     ],
-    explanation: 'Podążanie za wartościami narzuconymi rodzi przewlekły opór i poczucie pustki, nawet przy osiąganiu wielkich sukcesów.',
-    keyTakeaway: 'Życie wedle cudzych wartości to najszybsza droga do egzystencjalnego wypalenia.'
+    explanation: 'Gdy „powinienem” opiera się wyłącznie na presji zewnętrznej bez autonomicznej akceptacji, wywołuje szybki opór i prokrastynację.',
+    keyTakeaway: 'Przekształć zewnętrzne „powinienem” we własne, autonomiczne „wybieram”.'
   },
   {
     id: 7,
-    question: 'Jaka jest rola Potrzeb Natychmiastowych w hierarchii potrzeb Abrahama Maslowa i współczesnych modelach motywacyjnych?',
-    topic: 'Hierarchia Potrzeb',
-    sectionRef: 'Sekcja 20.8',
+    question: 'Jak presja społeczna i oczekiwania grupy wpływają na nasze wartości?',
+    topic: 'Presja Społeczna a Wartości',
+    sectionRef: 'Sekcja 20.7',
     options: [
-      { label: 'A', text: 'Niezaspokojenie potrzeb podstawowych (sen, bezpieczeństwo, głód) drastycznie zawęża pole uwagi i uniemożliwia realizację wartości wyższego rzędu.', isCorrect: true },
-      { label: 'B', text: 'Potrzeby fizjologiczne są całkowicie nieistotne dla ludzi o wysokiej inteligencji.', isCorrect: false },
-      { label: 'C', text: 'Maslow udowodnił, że człowiek potrzebuje wyłącznie uznania w mediach.', isCorrect: false },
-      { label: 'D', text: 'Potrzeby wyższego rzędu ulegają skasowaniu po ukończeniu 30 lat.', isCorrect: false }
+      { label: 'A', text: 'Mogą prowadzić do przyjęcia narzuconych wartości zewnętrznych (introjekcja) w obronie przed wykluczeniem z grupy.', isCorrect: true },
+      { label: 'B', text: 'Zawsze wspierają naszą indywidualną autonomię.', isCorrect: false },
+      { label: 'C', text: 'Nie mają żadnego wpływu na nasze decyzje życiowe.', isCorrect: false },
+      { label: 'D', text: 'Wyłączają zapotrzebowanie na bliskość.', isCorrect: false }
     ],
-    explanation: 'Gdy Twój organizm jest deprywowany ze snu lub poczucia bezpieczeństwa, kora przedczołowa traci zasoby na rzecz podkorowej walki o przetrwanie.',
-    keyTakeaway: 'Zadbaj o biologiczny fundament, by móc żyć głębokimi wartościami.'
+    explanation: 'Strach przed odrzuceniem skłania jednostkę do realizowania celów, które nie są spójne z jej wewnętrznym kompasem.',
+    keyTakeaway: 'Odnajdź odwagę do życia w zgodzie z własnym kompasem, a nie ze skryptem grupy.'
   },
   {
     id: 8,
-    question: 'Jaką funkcję pełni matryca prioryteryzacji Eisenhowera w codziennym zarządzaniu wartościami?',
-    topic: 'Matryca Eisenhowera',
-    sectionRef: 'Sekcja 20.10',
+    question: 'Jak ewolucja wartości przebiega na różnych etapach życia człowieka?',
+    topic: 'Ewolucja Wartości',
+    sectionRef: 'Sekcja 20.9',
     options: [
-      { label: 'A', text: 'Kategoryzuje zadania na Pilne/Nieważne, Pilne/Ważne, Niepilne/Ważne i Niepilne/Nieważne, chroniąc czas dla wartości długoterminowych (Ćwiartka II).', isCorrect: true },
-      { label: 'B', text: 'Służy do obliczania podatku od nieruchomości.', isCorrect: false },
-      { label: 'C', text: 'Zmusza człowieka do robienia wszystkiego na raz.', isCorrect: false },
-      { label: 'D', text: 'Wyeliminuje potrzebę snu i odpoczynku.', isCorrect: false }
+      { label: 'A', text: 'Hierarchia wartości przesuwa się w reakcji na przełomowe wydarzenia rozwojowe (np. młodość = eksploracja, dojrzałość = stabilizacja i troska).', isCorrect: true },
+      { label: 'B', text: 'Wartości są zamrożone i nie zmieniają się od urodzenia do śmierci.', isCorrect: false },
+      { label: 'C', text: 'Wartości zmieniają się dokładnie co 30 dni.', isCorrect: false },
+      { label: 'D', text: 'Zależą wyłącznie od znaku zodiaku.', isCorrect: false }
     ],
-    explanation: 'Większość ludzi spędza życie w Ćwiartce I (pożary) i Ćwiartce III (pilne cudze sprawy). Wartości i rozwój mieszkają w Ćwiartce II (ważne, ale niepilne).',
-    keyTakeaway: 'Chroń czas na sprawy ważne, ale niepilne — tam buduje się Twoja przyszłość.'
+    explanation: 'Zmiana hierarchii wartości wraz z wiekiem jest naturalnym objawem dojrzałości psychologicznej.',
+    keyTakeaway: 'Pozwól swoim priorytetom ewoluować wraz ze zmianą Twojego etapu życiowego.'
   },
   {
     id: 9,
-    question: 'Co charakteryzuje Złudzenie Ostatecznego Celu (Arrival Fallacy)?',
-    topic: 'Złudzenie Ostatecznego Celu',
-    sectionRef: 'Sekcja 20.9',
+    question: 'Czym różni się wartość od zwykłej preferencji?',
+    topic: 'Wartość vs Preferencja',
+    sectionRef: 'Sekcja 20.3',
     options: [
-      { label: 'A', text: 'Przekonanie, że osiągnięcie konkretnego celu (np. zakup domu, awans) da nam trwałe, niewzruszone szczęście do końca życia.', isCorrect: true },
-      { label: 'B', text: 'Błąd w nawigacji GPS przy dojeździe do celu.', isCorrect: false },
-      { label: 'C', text: 'Strach przed podróżowaniem samolotem.', isCorrect: false },
-      { label: 'D', text: 'Niezgoda na podpisanie umowy o pracę.', isCorrect: false }
+      { label: 'A', text: 'Wartość jest głęboką zasadą organizującą tożsamość i wybory moralne, a preferencja to zmienny gust dotyczący wygody lub estetyki.', isCorrect: true },
+      { label: 'B', text: 'Preferencja trwa 50 lat, a wartość 5 minut.', isCorrect: false },
+      { label: 'C', text: 'Nie ma żadnej różnicy.', isCorrect: false },
+      { label: 'D', text: 'Wartość dotyczy tylko jedzenia.', isCorrect: false }
     ],
-    explanation: 'Adaptacja hedoniczna sprawia, że po osiągnięciu celu poziom szczęścia szybko wraca do punktu bazowego. Szczęście leży w procesie, nie w mecie.',
-    keyTakeaway: 'Nie czekaj ze szczęściem na metę — zakochaj się w samym żeglowaniu.'
+    explanation: 'Wybór kawy zamiast herbaty to preferencja. Wybór uczciwości w biznesie kosztem łatwego zysku to wartość.',
+    keyTakeaway: 'Nie myl błahych preferencji z nienaruszalnymi wartościami.'
   },
   {
     id: 10,
-    question: 'Na czym polega technika „Klarowania Wartości” (Values Clarification) w terapii ACT (Acceptance and Commitment Therapy)?',
-    topic: 'Klarowanie Wartości ACT',
-    sectionRef: 'Sekcja 20.12',
+    question: 'Jaką rolę w podejmowaniu decyzji pod presją odgrywa jasna hierarchia priorytetów?',
+    topic: 'Nawigacja Decyzyjna',
+    sectionRef: 'Sekcja 20.8',
     options: [
-      { label: 'A', text: 'Wyodrębnienie serca własnych wartości i zaplanowanie elastycznych działań zmierzających w ich kierunku mimo obecności trudnych emocji.', isCorrect: true },
-      { label: 'B', text: 'Spalenie wszystkich swoich dotychczasowych dokumentów.', isCorrect: false },
-      { label: 'C', text: 'Przekonywanie innych ludzi, że mają żyć wedle naszych zasad.', isCorrect: false },
-      { label: 'D', text: 'Powtarzanie reguł z podręcznika logiki.', isCorrect: false }
+      { label: 'A', text: 'Działa jak zwrotnica poznawcza, skracając czas analizy i chroniąc przed paraliżem decyzyjnym.', isCorrect: true },
+      { label: 'B', text: 'Zwiększa poziom lęku o 100%.', isCorrect: false },
+      { label: 'C', text: 'Uniemożliwia podjęcie jakiegokolwiek wyboru.', isCorrect: false },
+      { label: 'D', text: 'Gwarantuje brak jakichkolwiek konsekwencji finansowych.', isCorrect: false }
     ],
-    explanation: 'ACT uczy, że wartości nie wymagają pozbycia się lęku — wartości dają odwagę do działania RAZEM z lękiem idącym pod pachę.',
-    keyTakeaway: 'Nie czekaj, aż lęk zniknie — weź go ze sobą i rób to, co ważne.'
+    explanation: 'Gdy wiesz, co jest dla Ciebie najważniejsze, podejmowanie trudnych decyzji staje się znacznie prostsze.',
+    keyTakeaway: 'Gdy Twoje wartości są jasne, decyzje przestają być udręką.'
   },
   {
     id: 11,
-    question: 'W jaki sposób zmiana etapu życia (np. narodziny dziecka, przejście na emeryturę) wpływa na reorganizację hierarchii priorytetów?',
-    topic: 'Zmiana Priorytetów w Życiu',
+    question: 'Na czym polega audyt realizowanych wartości (Values Audit)?',
+    topic: 'Audyt Wartości',
     sectionRef: 'Sekcja 20.13',
     options: [
-      { label: 'A', text: 'Wymusza rekonfigurację zasobów czasowych i wartości, co jest naturalnym procesem rozwojowym, a nie objawem niestabilności.', isCorrect: true },
-      { label: 'B', text: 'Powoduje natychmiastową utratę wszystkich wspomnień z przeszłości.', isCorrect: false },
-      { label: 'C', text: 'Sprawia, że człowiek przestaje odczuwać jakiekolwiek emocje.', isCorrect: false },
-      { label: 'D', text: 'Nie ma żadnego wpływu na codzienne decyzje.', isCorrect: false }
+      { label: 'A', text: 'Przegląd realnych wydatków czasowych i finansowych z ostatniego miesiąca w celu sprawdzenia ich spójności z deklaracjami.', isCorrect: true },
+      { label: 'B', text: 'Sprawdzanie stanu konta bankowego co 5 minut.', isCorrect: false },
+      { label: 'C', text: 'Pisanie listów do znajomych z dzieciństwa.', isCorrect: false },
+      { label: 'D', text: 'Mierzenie tętna w trakcie pracy.', isCorrect: false }
     ],
-    explanation: 'Hierarchia wartości jest żywym organizmem. To, co było priorytetem w wieku 20 lat (przygoda, niezależność), może ustąpić miejsca stabilności w wieku 35 lat.',
-    keyTakeaway: 'Pozwól swoim priorytetom ewoluować razem z Twoim etapem życia.'
+    explanation: 'Audyt ujawnia hipokryzję poznawczą i pozwala bezatastycznie skorygować codzienne nawyki.',
+    keyTakeaway: 'Porównaj swoje deklaracje z wpisami w kalendarzu.'
   },
   {
     id: 12,
-    question: 'Co jest głównym celem Ćwiczenia „Nekrolog / Mowa Pogrzebowa” w określaniu głębokich wartości?',
-    topic: 'Perspektywa Ostateczna',
-    sectionRef: 'Sekcja 20.14',
+    question: 'Co charakteryzuje decyzję podjętą w zgodzie z wartościami (Value-Based Decision)?',
+    topic: 'Decyzja Oparta na Wartościach',
+    sectionRef: 'Sekcja 20.8',
     options: [
-      { label: 'A', text: 'Uruchomienie perspektywy ostatecznej, która usuwa powierzchowne szumy społecznej aprobaty i odsłania to, co naprawdę się liczy.', isCorrect: true },
-      { label: 'B', text: 'Wywołanie stanów depresyjnych u osoby ćwiczącej.', isCorrect: false },
-      { label: 'C', text: 'Napisanie testamentu prawnego u notariusza.', isCorrect: false },
-      { label: 'D', text: 'Zaplanowanie budżetu na uroczystości rodzinne.', isCorrect: false }
+      { label: 'A', text: 'Gwarantuje wewnętrzny spokój i spójność, nawet jeśli niesie ze sobą koszty materialne lub dyskomfort w krótkim terminie.', isCorrect: true },
+      { label: 'B', text: 'Gwarantuje natychmiastowy i wielki zysk finansowy.', isCorrect: false },
+      { label: 'C', text: 'Zawsze spotyka się z zachwytem ze strony wszystkich ludzi.', isCorrect: false },
+      { label: 'D', text: 'Nie wymaga żadnego wysiłku.', isCorrect: false }
     ],
-    explanation: 'Spojrzenie na własne życie z perspektywy jego końca drastycznie oczyszcza priorytety: nikt na łożu śmierci nie żałuje, że spędził za mało czasu w biurze.',
-    keyTakeaway: 'Pamiętaj o końcu, by pamiętać o tym, jak żyć dzisiaj.'
+    explanation: 'Spójność z wartościami jest źródłem długoterminowej dumy i szacunku do samego siebie.',
+    keyTakeaway: 'Dobre decyzje bywają trudne w krótkim terminie, lecz dają spokój w długim.'
   },
   {
     id: 13,
-    question: 'Jaką rolę w chronieniu własnych wartości pełni umiejętność Stawiania Granic (Boundary Setting)?',
-    topic: 'Stawianie Granic',
-    sectionRef: 'Sekcja 20.15',
+    question: 'Jaką rolę w Teorii Samodeterminacji odgrywa potrzeba Autonomii?',
+    topic: 'Potrzeba Autonomii',
+    sectionRef: 'Sekcja 20.2',
     options: [
-      { label: 'A', text: 'Jest operacyjnym narzędziem obrony czasu i energii przed roszczeniami otoczenia, umożliwiającym realizację własnych priorytetów.', isCorrect: true },
-      { label: 'B', text: 'Polega na obrażaniu każdego, kto ma odmienne zdanie.', isCorrect: false },
-      { label: 'C', text: 'Jest metodą budowania płotów wokół domu.', isCorrect: false },
-      { label: 'D', text: 'Zmusza innych do płacenia nam za rozmowę.', isCorrect: false }
+      { label: 'A', text: 'Poczucie, że jesteśmy autorem i gospodarzem własnych wyborów, a nie tylko pionkiem sterowanym zewnętrzną presją.', isCorrect: true },
+      { label: 'B', text: 'Mieszkanie na bezludnej wyspie bez kontaktu z ludźmi.', isCorrect: false },
+      { label: 'C', text: 'Zarabianie miliona dolarów rocznie.', isCorrect: false },
+      { label: 'D', text: 'Brak jakichkolwiek zasad w społeczeństwie.', isCorrect: false }
     ],
-    explanation: 'Brak granic sprawia, że Twój kalendarz staje się śmietnikiem na cudze nagłe sprawy.',
-    keyTakeaway: 'Możesz powiedzieć „nie” prośbie innego człowieka, mówiąc „tak” własnym wartościom.'
+    explanation: 'Brak autonomii zamienia działanie w przymus i prowadzi do wypalenia oraz biernego oporu.',
+    keyTakeaway: 'Autonomia to poczucie kierowania własnym życiem.'
   },
   {
     id: 14,
-    question: 'Co oznacza pojęcie Intencji Implementacyjnej (Implementation Intentions) w realizacji celów opartych na wartościach?',
-    topic: 'Intencje Implementacyjne',
-    sectionRef: 'Sekcja 20.16',
+    question: 'Co dzieje się, gdy zachodzi długotrwałe naruszenie wartości w pracy zawodowej?',
+    topic: 'Kryzys Wartości w Pracy',
+    sectionRef: 'Sekcja 20.5',
     options: [
-      { label: 'A', text: 'Sformułowanie precyzyjnego planu typu: „JEŚLI pojawi się sytuacja X, TO wykonam działanie Y”.', isCorrect: true },
-      { label: 'B', text: 'Kupowanie drogich poradników o sukcesie.', isCorrect: false },
-      { label: 'C', text: 'Głośne krzyczenie na skrzyżowaniu o swoich marzeniach.', isCorrect: false },
-      { label: 'D', text: 'Czekanie na natchnienie w niedzielne popołudnie.', isCorrect: false }
+      { label: 'A', text: 'Pojawia się wypalenie wartościowe (Moral Injury), cynizm, wyczerpanie emocjonalne i spadek motywacji.', isCorrect: true },
+      { label: 'B', text: 'Automatyczny wzrost efektywności o 50%.', isCorrect: false },
+      { label: 'C', text: 'Brak jakiejkolwiek reakcji psychicznej.', isCorrect: false },
+      { label: 'D', text: 'Wzrost odporności na stres.', isCorrect: false }
     ],
-    explanation: 'Reguła „Jeśli-To” zdejmuje ciężar decyzyjny z zmęczonej kory przedczołowej i automatyzuje zachowanie zgodne z wartością.',
-    keyTakeaway: 'Zaplanuj wyzwalacz i akcję wcześniej, by nie negocjować ze sobą w chwili próby.'
+    explanation: 'Zmuszanie do działań sprzecznych z własnym kompasem moralnym jest silnym czynnikiem chorobotwórczym w organizacji.',
+    keyTakeaway: 'Praca wbrew własnym wartościom niszczy od wewnątrz.'
   },
   {
     id: 15,
-    question: 'W jaki sposób presja grupy społecznej może doprowadzić do zjawiska „Erozji Wartości”?',
-    topic: 'Erozja Wartości',
-    sectionRef: 'Sekcja 20.5',
+    question: 'Na czym polega błąd „Ilość zamiast Jakości” w ustalaniu priorytetów?',
+    topic: 'Błąd Ilości Priorytetów',
+    sectionRef: 'Sekcja 20.6',
     options: [
-      { label: 'A', text: 'Powolne, drobne ustępstwa na rzecz norm grupy sprawiają, że człowiek stopniowo przesuwa granice tego, co uważa za dopuszczalne.', isCorrect: true },
-      { label: 'B', text: 'Zjawisko to występuje wyłącznie w wojsku.', isCorrect: false },
-      { label: 'C', text: 'Erozja wartości następuje w ułamku sekundy po błysku pioruna.', isCorrect: false },
-      { label: 'D', text: 'Nie ma żadnej możliwości ulegania wpływowi grupy.', isCorrect: false }
+      { label: 'A', text: 'Próba uznania 15 spraw za „najważniejsze priorytety” naraz, co w praktyce oznacza brak jakiegokolwiek priorytetu i rozproszenie sił.', isCorrect: true },
+      { label: 'B', text: 'Kupowanie zbyt dużej ilości książek.', isCorrect: false },
+      { label: 'C', text: 'Jedzenie zbyt obfitych posiłków.', isCorrect: false },
+      { label: 'D', text: 'Spanie dłużej niż 8 godzin.', isCorrect: false }
     ],
-    explanation: 'Erozja wartości nie dzieje się w jednym wielkim skoku — to seria tysiąca małych kompromisów ze swoim sumieniem.',
-    keyTakeaway: 'Chroń swoje granice przy pierwszych drobnych naruszeniach.'
+    explanation: 'Słowo „priorytet” historycznie występowało wyłącznie w liczbie pojedynczej. Prawdziwe priorytety są nieliczne.',
+    keyTakeaway: 'Gdy wszystko jest priorytetem, nic nim nie jest.'
   },
   {
     id: 16,
-    question: 'Jaka jest rola nagród wewtrznych i zmartwychwstania motywacji w procesie długofalowego dążenia do celów?',
-    topic: 'Nagrody Wewnętrzne',
-    sectionRef: 'Sekcja 20.3',
+    question: 'Jak radzić sobie z konfliktem wartości Wolność vs Bezpieczeństwo?',
+    topic: 'Wolność vs Bezpieczeństwo',
+    sectionRef: 'Sekcja 20.5',
     options: [
-      { label: 'A', text: 'Poczucie spójności i dumy z własnego postępowania działa jako najtrwalszy stymulator neurologiczny podtrzymujący wysiłek.', isCorrect: true },
-      { label: 'B', text: 'Tylko nagrody pieniężne potrafią skłonić mózg do pracy.', isCorrect: false },
-      { label: 'C', text: 'Nagrody wewnętrzne są wymysłem literatury pięknej.', isCorrect: false },
-      { label: 'D', text: 'Wysiłek długofalowy nie wymaga żadnego wsparcia dopaminowego.', isCorrect: false }
+      { label: 'A', text: 'Świadomie określić granicę akceptowalnego ryzyka i zbudować bazę bezpieczeństwa, która zasila przestrzeń wolności.', isCorrect: true },
+      { label: 'B', text: 'Całkowicie zrezygnować z wolności.', isCorrect: false },
+      { label: 'C', text: 'Całkowicie zrezygnować z bezpieczeństwa.', isCorrect: false },
+      { label: 'D', text: 'Udawać, że konflikt nie istnieje.', isCorrect: false }
     ],
-    explanation: 'Czyste sumienie i poczucie spójności wewnętrznej dają głęboki spokój i odporność na wstrząsy zewnętrzne.',
-    keyTakeaway: 'Największą nagrodą za życie w zgodzie z wartościami jest szacunek do samego siebie.'
+    explanation: 'Dojrzałość decyzyjna polega na szukaniu synergii i akceptacji koniecznych kompromisów.',
+    keyTakeaway: 'Bezpieczna baza pozwala na śmiałą eksplorację wolności.'
   },
   {
     id: 17,
-    question: 'Na czym polega pułapka „Myślenia Życzeniowego” (Wishful Thinking) w ustalaniu priorytetów?',
-    topic: 'Myślenie Życzeniowe',
-    sectionRef: 'Sekcja 20.4',
+    question: 'Jaką funkcję w urealnianiu priorytetów pełni Zasada Pareto (80/20)?',
+    topic: 'Zasada Pareto',
+    sectionRef: 'Sekcja 20.6',
     options: [
-      { label: 'A', text: 'Planowanie zadań bez uwzględnienia twardych ograniczeń czasowych i zasobów energetycznych organizmu.', isCorrect: true },
-      { label: 'B', text: 'Piszczenie życzeń do Świętego Mikołaja.', isCorrect: false },
-      { label: 'C', text: 'Zdolność do bezbłędnego przewidywania przyszłości.', isCorrect: false },
-      { label: 'D', text: 'Unikanie jakiegokolwiek planowania.', isCorrect: false }
+      { label: 'A', text: 'Identyfikuje 20% kluczowych działań, które przynoszą 80% najważniejszych wartościowych rezultatów w życiu.', isCorrect: true },
+      { label: 'B', text: 'Narzuca spanie przez 20% doby.', isCorrect: false },
+      { label: 'C', text: 'Zmusza do wydawania 80% zarobków na rozrywkę.', isCorrect: false },
+      { label: 'D', text: 'Nie ma zastosowania w psychologii.', isCorrect: false }
     ],
-    explanation: 'Ignorowanie faktu, że doba ma 24 godziny, a zasoby woli są ograniczone, prowadzi do przewlekłego poczucia winy i klęski.',
-    keyTakeaway: 'Planuj z kalendarzem w ręku, a nie z nierealistycznymi życzeniami.'
+    explanation: 'Skupienie siły na 20% najważniejszych aktywności chroni przed marnowaniem energii na błahostki.',
+    keyTakeaway: 'Znajdź swoje kluczowe 20% i mu poświęć swoją najlepszą uwagę.'
   },
   {
     id: 18,
-    question: 'Jakie jest główne zadanie Symulatora Konfliktu Wartości (Sekcja 20.11)?',
-    topic: 'Symulator Wartości',
-    sectionRef: 'Sekcja 20.11',
+    question: 'Czym charakteryzuje się dojrzałe wyznaczanie granic (Boundaries) w oparciu o wartości?',
+    topic: 'Wyznaczanie Granic',
+    sectionRef: 'Sekcja 20.8',
     options: [
-      { label: 'A', text: 'Przećwiczenie podejmowania trudnych wyborów w scenariuszach zderzenia dwóch ważnych racji przy pełnej świadomości kosztów.', isCorrect: true },
-      { label: 'B', text: 'Nauka obsługi nowych gier komputerowych.', isCorrect: false },
-      { label: 'C', text: 'Wyrokowanie o tym, kto ma rację w sporach małżeńskich.', isCorrect: false },
-      { label: 'D', text: 'Automatyczne rozwiązywanie problemów finansowych.', isCorrect: false }
+      { label: 'A', text: 'Jasne i spokojne komunikowanie otoczeniu, na co się zgadzamy, a na co nie, bez agresji i bez poczucia winy.', isCorrect: true },
+      { label: 'B', text: 'Krzyczenie na ludzi przy każdej próbie rozmowy.', isCorrect: false },
+      { label: 'C', text: 'Zgadzanie się na wszystko ze strachu przed odrzuceniem.', isCorrect: false },
+      { label: 'D', text: 'Zerwanie kontaktów ze wszystkimi znajomymi.', isCorrect: false }
     ],
-    explanation: 'Symulator pozwala zobaczyć, że każda decyzja niesie ze sobą koszt i uczy akceptowania tych kosztów bez ucieczki w racjonalizację.',
-    keyTakeaway: 'Wybór priorytetu to także odwaga do przyjęcia kosztu odrzuconej alternatywy.'
+    explanation: 'Granice służą ochronie naszych kluczowych wartości i zasobów, umożliwiając zdrowe relacje.',
+    keyTakeaway: 'Mówienie „nie” innym bywa jedynym sposobem na powiedzenie „tak” własnym wartościom.'
+  },
+  {
+    id: 19,
+    question: 'Jak zjawisko prokrastynacji wiąże się z brakiem spójności z wartościami?',
+    topic: 'Prokrastynacja a Wartości',
+    sectionRef: 'Sekcja 20.10',
+    options: [
+      { label: 'A', text: 'Odkładanie zadań często wynika z faktu, że celem kieruje zewnętrzna presja („powinienem”), a nie wewnętrzna wartość („chcę”).', isCorrect: true },
+      { label: 'B', text: 'Prokrastynacja to po prostu brak zegarka.', isCorrect: false },
+      { label: 'C', text: 'Występuje tylko u osób nielubiących kawy.', isCorrect: false },
+      { label: 'D', text: 'Nie ma żadnego związku z wartościami.', isCorrect: false }
+    ],
+    explanation: 'Gdy zadanie nie ma dla nas sensu ani wartości, umysł stawia opór i szuka natychmiastowej ulgi.',
+    keyTakeaway: 'Odnajdź głębsze „dlaczego” w zadaniu, by odzyskać naturalną motywację.'
+  },
+  {
+    id: 20,
+    question: 'Co jest ostatecznym sprawdzianem spójności życiowej (Integrity)?',
+    topic: 'Spójność Życiowa',
+    sectionRef: 'Sekcja 20.12',
+    options: [
+      { label: 'A', text: 'Gotowość do postępowania zgodnie z wartościami nawet wtedy, gdy nikt nie patrzy i gdy nie przynosi to natychmiastowych zysków.', isCorrect: true },
+      { label: 'B', text: 'Posiadanie tysięcy obserwujących na TikToku.', isCorrect: false },
+      { label: 'C', text: 'Brak jakichkolwiek trudnych emocji.', isCorrect: false },
+      { label: 'D', text: 'Wygranie dużej kwoty na loterii.', isCorrect: false }
+    ],
+    explanation: 'Integralność to stan spójności między myśleniem, mówieniem a działaniem w każdych warunkach.',
+    keyTakeaway: 'Prawdziwa spójność to robić to, co słuszne, nawet gdy nikt nie patrzy.'
   }
 ];
 
 export const caseStudiesChapterTwenty: CaseStudy[] = [
   {
-    id: 'studium-20-1-deklaracje-vs-zachowanie',
-    title: 'W pułapce korpo-sukcesu: Dlaczego Paweł poświęcił rodzinę dla kolejnego awansu?',
-    subtitle: 'Niezgodność deklarowanych wartości z zachowaniem, presja statusowa i odzyskiwanie spójności',
-    protagonist: 'Paweł, 38 lat, partner w firmie doradczej',
-    context: 'Paweł w wywiadach i rozmowach ze znajomymi powtarzał, że „rodzina jest dla niego bezwzględnym numerem jeden”. W rzeczywistości pracował po 70 godzin tygodniowo, a córka widywała go głównie, gdy spała.',
+    id: 'studium-20-1-awans-vs-rodzina',
+    title: 'W kleszczach sukcesu: Konflikt wartości Wolność vs Rodzina u Huberta',
+    subtitle: 'Krótki termin vs długi termin, iluzja „jeszcze tylko jednego projektu” i audyt priorytetów',
+    protagonist: 'Hubert, 39 lat, dyrektor zarządzający w branży budowlanej',
+    context: 'Hubert otrzymał propozycję objęcia rynków zagranicznych, co wiązało się z 50% podwyżką pensji, lecz wymagało przebywania w podróży przez 4 dni w tygodniu. W domu czekała żona z dwoma synami w wieku 6 i 9 lat.',
     story: [
-      'Paweł szczerze wierzył, że kocha swoją rodzinę i robi wszystko dla ich dobra. Kupował drogi dom, zagraniczne wakacje i prywatne szkoły dla dzieci.',
-      'Jednak jego kalendarz opowiadał inną historię. Z 16 godzin aktywności dziennej 13 spędzał w biurze lub w podróżach służbowych. Gdy wracał do domu, jego umysł nadal przetwarzał maile i tabelki w Excelu.',
-      'Kiedy żona postawiła mu ultimatum i zaproponowała separację, Paweł odczuł głęboki szok: „Jak to? Przecież haruję jak wół dla was! Rodzina jest dla mnie najważniejsza!”.',
-      'Dopiero w toku analizy własnego postępowania zrozumiał mechanizm: praca dawała mu natychmiastowe, dopaminowe nagrody statusowe (pochwały klientów, bonusy), podczas gdy budowanie relacji w domu wymagało cierpliwości bez natychmiastowego poklasku. Paweł przesunął wskaźniki i obniżył wymiar czasu pracy o 25%.'
+      'Hubert deklarował, że największą wartością w jego życiu jest „Rodzina”. Jednocześnie od 5 lat spędzał w pracy po 12 godzin dziennie, tłumacząc sobie: „Robię to wszystko dla nich, by mieli bezpieczną przyszłość”.',
+      'Propozycja awansu wywołała w nim ostry konflikt wartości. Z jednej strony parła potrzeba statusu, prestiżu i uznania („Sukces/Wolność finansowa”), z drugiej zaś obietnica bycia obecnym ojcem.',
+      'Gdy Hubert skonsultował decyzję z żoną, ta powiedziała wprost: „Chłopcy nie potrzebują kolejnego drogiego gadżetu. Potrzebują ojca na meczu w sobotę”.',
+      'Hubert przeprowadził Rzetelny Audyt Czasowy i uświadomił sobie, że lata dzieciństwa synów nie powtórzą się nigdy. Odrzucił awans zagraniczny, wynegocjowując redefinicję obecnej roli.'
     ],
     dialogue: [
-      { speaker: 'Żona', text: 'Paweł, dzieci cię nie znają. Pieniądze nie zastąpią im ojca przy stole.', subtext: 'Konfrontacja deklaracji z twardą rzeczywistością.' },
-      { speaker: 'Paweł', text: 'Przecież robię to wszystko dla was! Chcę, żebyście mieli bezpieczne życie!', subtext: 'Racjonalizacja ucieczki w pracę pod płaszczykiem troski.' }
+      { speaker: 'Prezes Zarządu', text: 'Hubert, taka szansa trafia się raz w życiu. Będziesz rządził całym regionem!', subtext: 'Kuszenie statusem i prestiżem.' },
+      { speaker: 'Hubert (do siebie)', text: 'Jeśli odmówię, uznają mnie za pozbawionego ambicji... Ale jeśli wyjadę, przegapię dorastanie synów.', subtext: 'Ostry konflikt ról i wartości.' }
     ],
-    decisionTaken: 'Paweł zrezygnował z przewodniczenia trzem komitetom i ograniczył pracę do 45 godzin tygodniowo.',
-    whatProtagonistSaw: 'Poczucie obowiązku zapewnienia dostatku, status i wizję bycia świetnym żywicielem rodziny.',
-    whatWasMissed: 'Fakt, że jego obecność emocjonalna była dla dzieci ważniejsza niż kolejne luksusowe gadżety.',
+    decisionTaken: 'Hubert odrzucił awans zagraniczny i ustalił sztywną granicę powrotów do domu o godzinie 17:30.',
+    whatProtagonistSaw: 'Mijający czas dorastania dzieci i puste słowa własnych deklaracji.',
+    whatWasMissed: 'Fakt, że nieograniczony rozwój zawodowy kosztem rodziny był formułą na rozpad małżeństwa.',
     psychologicalAnalysis: {
-      coreMechanism: 'Rozbieżność między Deklarowaną Wartością (Rodzina) a Aktywną Wartością w Działaniu (Status/Sukces).',
+      coreMechanism: 'Konflikt wartości (Status/Osiągnięcia vs Bliskość/Rodzina) i dysonans poznawczy.',
       cognitiveBiases: [
-        { name: 'Dyskonto hiperboliczne', description: 'Wybieranie natychmiastowej premii zawodowej kosztem odroczonej harmonii rodzinnej.', impact: 'Zniszczenie więzi małżeńskiej.' }
+        { name: 'Racjonalizacja wartościująca', description: 'Tłumaczenie pracoholizmu „troską o finansowe bezpieczeństwo rodziny”.', impact: 'Ukrywanie pragnienia statusu.' }
       ],
       defenseMechanisms: [
-        { name: 'Projekcja altruistyczna', explanation: 'Tłumaczenie pracoholizmu szlachetnym poświęceniem dla bliskich.' }
+        { name: 'Odkładanie na później (Prokrastynacja życiowa)', explanation: 'Mówienie sobie: „Jeszcze tylko 2 lata intensywnej pracy i zwolnię”.' }
       ],
-      emotionalDynamic: 'Guilt response (poczucie winy) przeplatane z poczuciem niesprawiedliwości, że wysiłek nie jest doceniany.'
+      emotionalDynamic: 'Lęk przed przeoczeniem szansy zawodowej kontra lęk przed utratą więzi z dziećmi.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Ultimatum małżeńskie i wniosek o separację.',
-      attentionFocus: 'Pustka w domu i lęk przed utratą rodziny.',
-      interpretation: '„Moje zachowanie zaprzecza temu, co deklaruję, muszę to natychmiast zmienić”.',
-      emotion: 'Przerażenie, wstyd, głębokie opamiętanie.',
-      impulse: 'Zrezygnowanie z części obowiązków w firmie.',
-      action: 'Zmniejszenie wymiaru pracy i wprowadzenie nienegocjowalnego czasu dla rodziny.',
-      consequence: 'Odbudowa relacji z dziećmi i stabilizacja małżeństwa.'
+      trigger: 'Propozycja awansu zagranicznego od Prezesa.',
+      attentionFocus: 'Reakcja żony i wiek synów (6 i 9 lat).',
+      interpretation: '„Czas dorastania moich dzieci jest zasobem nieodnawialnym”.',
+      emotion: 'Smutek, ulga, pewność wyboru.',
+      impulse: 'Odmowa przyjęcia delegacji.',
+      action: 'Szczera rozmowa z zarządem i renegocjacja warunków obecnej roli.',
+      consequence: 'Zachowanie rodziny i spokój psychiczny.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Jądro półleżące (NAcc)', role: 'Uzależnienie od dopaminowych nagród zawodowych', activationState: 'Wyhamowanie pętli nagrody' },
-        { region: 'Przednia kora obwodu (ACC)', role: 'Rejestracja ostrego konfliktu wartości', activationState: 'Wysoka aktywacja' }
+        { region: 'dlPFC', role: 'Świadomy wybór wartości długoterminowej wbrew impulsowi statusowemu', activationState: 'Uruchomienie kontroli' }
       ],
       neurotransmitters: [
-        { name: 'Oksytocyna', roleInScenario: 'Wzrost poziomu po spędzeniu czasu z dziećmi bez telefonu.' }
+        { name: 'Oksytocyna', roleInScenario: 'Wzrost poziomu po podjęciu decyzji o obecności w domu.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 200 ms', process: 'Słowa „wniosek o separację” wywołują skok kortyzolu.' }
+        { timeMs: '0 - 300 ms', process: 'Słowa żony „Chłopcy potrzebują ojca” wywołują wzruszenie i jasność wyboru.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Korporacyjny kult dyspozycyjności', description: 'Promowanie przekazu, że sukces wymaga oddania całego życia.', vulnerabilityExploited: 'Potrzeba uznania i ambicja.' }
+        { tactic: 'Korporacyjna marchewka', description: 'Wykorzystywanie ambicji i potrzeby statusu do wymuszenia pełnej dyspozycyjności.', vulnerabilityExploited: 'Potrzebę uznania.' }
       ],
       counterMeasures: [
-        { step: '1. Twardy Audyt Kalendarza', script: 'Sprawdzenie, ile godzin w tygodniu FAKTYCZNIE przeznacza się na deklarowane wartości.', rationale: 'Zderza iluzje z twardymi danymi.' }
+        { step: '1. Test Ostateczny (Deathbed Test)', script: '„Na łożu śmierci nie będę żałował, że spędziłem za mało czasu w biurze. Będę żałował każdego przegapionego meczu syna”.', rationale: 'Urealnia prawdziwą hierarchię wartości.' }
       ]
     },
-    alternativePath: 'Gdyby Paweł zignorował ultimatum, doszłoby do rozwodu, a on sam załamałby się psychicznie w pustym domu.',
-    readerQuestion: 'Gdyby ktoś przeanalizował Twój kalendarz z ostatniego miesiąca, jakie wartości uznałby za Twoje prawdziwe priorytety?',
-    keyTakeaway: 'Twoje prawdziwe wartości to nie to, co deklarujesz, lecz to, na co przeznaczasz swój czas, energię i pieniądze.'
+    alternativePath: 'Gdyby Hubert przyjął awans, po 3 latach dorobiłby się majątku, lecz jego małżeństwo zakończyłoby się rozwodem.',
+    readerQuestion: 'Która z Twoich wartości jest najczęściej poświęcana na ołtarzu codziennego pośpiechu?',
+    keyTakeaway: 'Nie możesz mieć wszystkiego na raz. Prawdziwe priorytety poznaje się po tym, z czego potrafisz zrezygnować.'
   },
   {
-    id: 'studium-20-2-konflikt-wolnosc-bezpieczenstwo',
-    title: 'Między etatem a własną firmą: Dylemat wartości u Karoliny',
-    subtitle: 'Konflikt wartości Wolność vs Bezpieczeństwo i podejmowanie decyzji w warunkach niepewności',
-    protagonist: 'Karolina, 33 lata, projektantka UX',
-    context: 'Karolina od 8 lat pracowała na bezpiecznym etacie w banku. Marzyła o otwarciu własnego studia projektowego, lecz lęk przed utratą stałej pensji paraliżował ją przed złożeniem wypowiedzenia.',
+    id: 'studium-20-2-autonomia-etyka',
+    title: 'Cena niezależności: Jak decyzja oparta na etyce kosztowała Olgę posadę',
+    subtitle: 'Wartości w działaniu, odmowa udziału w oszustwie i budowanie autonomii',
+    protagonist: 'Olga, 34 lata, dyrektor ds. marketingu w firmie farmaceutycznej',
+    context: 'Olga odkryła, że nowy suplement diety wprowadzany na rynek przez jej firmę zawiera substancje wywołujące skutki uboczne, a badania w ulotce zostały sfałszowane. Zarząd nakazał jej ruszyć z kampanią.',
     story: [
-      'Karolina odczuwała głęboką potrzebę Wolności i Kreatywności. Praca w banku była powtarzalna, pełna absurdalnych procedur i ograniczeń.',
-      'Z drugiej strony w jej umyśle silnie rezonowała wartość Bezpieczeństwa Finansowego. Każda myśl o odejściu z etatu wywoływała u niej wizję braku środków na spłatę kredytu hipotecznego.',
-      'Karolina tkwiła w stanie paraliżu decyzyjnego przez 3 lata. Wolność ciągnęła ją w jedną stronę, Bezpieczeństwo w drugą. Ten stały konflikt wywołał u niej objawy psychosomatyczne (bóle kręgosłupa, migreny).',
-      'Dopiero zastosowanie metody hybrydowej (stworzenie poduszki finansowej na 12 miesięcy i przejście na pół etatu w banku) pozwoliło jej zrealizować Wolność bez drastycznego naruszania Bezpieczeństwa.'
+      'Dla Olgi kluczową wartością była „Prawda i Uczciwość”. Zderzenie z cynicznym poleceniem zarządu („Kampania ma ruszyć w poniedziałek, a badania się wyprostuje later”) wywołało u niej paraliżujący dysonans.',
+      'Zarząd straszył ją dyscyplinarnym zwolnieniem i wilczym biletem w branży. W jej umyśle walczyły dwie siły: Bezpieczeństwo finansowe kontra Prawda.',
+      'Olga odmówiła podpisania budżetu na fałszywą kampanię i złożyła raport do komisji etycznej. Została zwolniona tego samego dnia.',
+      'Mimo że przez 4 miesiące szukała nowej pracy, spędzając oszczędności, odczuwała głęboką dumę i spokój. Jej decyzja odbiła się echem w branży i ostatecznie trafiła do firmy o najwyższych standardach etycznych.'
     ],
     dialogue: [
-      { speaker: 'Partner', text: 'Karolina, ciągle narzekasz na ten bank. Rzuć to w cholerę i zacznij robić swoje!', subtext: 'Zachecanie do skoku na głęboką wodę bez uwzględnienia potrzeby bezpieczeństwa.' },
-      { speaker: 'Karolina', text: 'Łatwo ci mówić! A co, jeśli przez pół roku nie znajdę ani jednego klienta? Z czego zapłacimy ratę?', subtext: 'Lęk o fundament bezpieczeństwa finansowego.' }
+      { speaker: 'Prezes', text: 'Olgo, nie bądź świętsza od papieża. Wszyscy tak robią na tym rynku. Podpisujesz czy szukamy kogoś innego?', subtext: 'Presja konformizmu i szantaż rynkowy.' },
+      { speaker: 'Olga', text: 'Nie podpiszę kampanii wprowadzającej pacjentów w błąd. Moje imię jest dla mnie ważniejsze niż to stanowisko.', subtext: 'Obrona nienaruszalnej wartości.' }
     ],
-    decisionTaken: 'Karolina wynegocjowała przejście na 1/2 etatu i przeznaczyła pozostały czas na budowanie własnego studia.',
-    whatProtagonistSaw: 'Skrajne scenariusze: albo bezpieczna niewola na etacie, albo skok w przepaść bez środków do życia.',
-    whatWasMissed: 'Fakt, że konflikt wartości można rozwiązać poprzez strategie hybrydowe, które łączą obie wartości na akceptowalnym poziomie.',
+    decisionTaken: 'Olga odmówiła udziału w oszustwie i przyjęła wypowiedzenie umowy o pracę.',
+    whatProtagonistSaw: 'Czysty brak moralności w zarządzie i zagrożenie dla zdrowia pacjentów.',
+    whatWasMissed: 'Fakt, że zgoda na kompromis etyczny zniszczyłaby jej szacunek do samej siebie na całe lata.',
     psychologicalAnalysis: {
-      coreMechanism: 'Konflikt Wartości (Wolność vs Bezpieczeństwo) i paraliż decyzyjny.',
+      coreMechanism: 'Wartości w działaniu (Value-Based Action) i ochrona spójności moralnej.',
       cognitiveBiases: [
-        { name: 'Myślenie czarno-białe', description: 'Widzenie tylko dwóch skrajnych rozwiązań bez opcji pośrednich.', impact: 'Trwanie w paraliżu przez lata.' }
+        { name: 'Efekt konformizmu społecznego', description: 'Nacisk zarządu: „Wszyscy tak robią, więc to norma”.', impact: 'Próba złamania kręgosłupa etycznego.' }
       ],
       defenseMechanisms: [
-        { name: 'Odkładanie decyzji', explanation: 'Trwanie w męczącym status quo z lęku przed ryzykiem.' }
+        { name: 'Odmowa udziału (Bojkot)', explanation: 'Kategoryczne postawienie granicy etycznej.' }
       ],
-      emotionalDynamic: 'Frustracja na etacie przeplatana ze lękiem przed samodzielnością.'
+      emotionalDynamic: 'Lęk przed brakiem pracy kontra głęboka duma i wewnętrzny spokój.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Kolejna zmiana procedur w banku niszcząca kreatywność.',
-      attentionFocus: 'Brak perspektyw rozwoju i pragnienie wolności.',
-      interpretation: '„Muszę znaleźć sposób na połączenie wolności z bezpiecznym dochodem”.',
-      emotion: 'Dystans do etatu, ostrożna nadzieja.',
-      impulse: 'Negocjacje z szefem o zmniejszenie wymiaru czasu pracy.',
-      action: 'Przejście na pół etatu i uruchomienie firmy.',
-      consequence: 'Spadek niepokoju i udany start własnej działalności.'
+      trigger: 'Polecenie uruchomienia sfałszowanej kampanii.',
+      attentionFocus: 'Ulotka z sfałszowanymi wynikami i zdrowie pacjentów.',
+      interpretation: '„Jeśli to podpiszę, stanę się współwinna oszustwa”.',
+      emotion: 'Oburzenie, lęk przed brakiem pracy, duma.',
+      impulse: 'Odmowa złożenia podpisu.',
+      action: 'Złożenie raportu etycznego i przyjęcie zwolnienia.',
+      consequence: 'Przejściowe trudności finansowe, a następnie awans w renomowanej firmie.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Przednia kora obwodu (ACC)', role: 'Przetwarzanie konfliktu decyzyjnego', activationState: 'Uspokojenie po wypracowaniu opcji hybrydowej' },
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Planowanie poduszki finansowej i kroków wykonawczych', activationState: 'Wysoka sprawność' }
+        { region: 'Przednia kora obwodu (ACC)', role: 'Wykrywanie ostrego naruszenia wartości moralnych', activationState: 'Ekstremalna aktywacja' }
       ],
       neurotransmitters: [
-        { name: 'Dopamina', roleInScenario: 'Wzrost motywacji po otwarciu własnego studia.' }
+        { name: 'Noradrenalina', roleInScenario: 'Wysokie pobudzenie w walce o własne granice.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 300 ms', process: 'Myśl „pół etatu” zredukowała impuls lękowy w ciele migdałowatym.' }
+        { timeMs: '0 - 100 ms', process: 'Słowo „sfałszujmy” wywołuje fizyczną odrazę.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Kulturowy mit bezkompromisowości', description: 'Promowanie hasła „wszystko albo nic” w biznesie.', vulnerabilityExploited: 'Młodzieńcza niecierpliwość.' }
+        { tactic: 'Szantaż rynkowy i racjonalizacja grupy', description: 'Tłumaczenie oszustwa „wymogami rynku” i zastraszaniem zwolnieniem.', vulnerabilityExploited: 'Lęk przed brakiem środków.' }
       ],
       counterMeasures: [
-        { step: '1. Projektowanie Rozwiązań Hybrydowych', script: 'Łączenie przeciwnych wartości w jednym modelu działania.', rationale: 'Obniża poziom stresu i ryzyka.' }
+        { step: '1. Nienaruszalna Granica', script: '„Moja spójność etyczna nie jest na sprzedaż za żadne wynagrodzenie”.', rationale: 'Chroni przed utratą godności.' }
       ]
     },
-    alternativePath: 'Gdyby Karolina rzuciła etat bez przygotowania i poduszki, panika finansowa zmusiłaby ją do powrotu do korporacji po 3 miesiącach.',
-    readerQuestion: 'Jakie dwie wartości rywalizują w Tobie w tym momencie i jak możesz zbudować most hybrydowy pomiędzy nimi?',
-    keyTakeaway: 'Nie musisz wybierać między skrajnościami. Dojrzała decyzja często polega na sprytnym połączeniu wartości.'
+    alternativePath: 'Gdyby Olga podpisała kampanię, żyłaby w ciągłym lęku przed prokuraturą i wypaleniem moralnym.',
+    readerQuestion: 'Jaka jest Twoja cena za złamanie własnych wartości moralnych?',
+    keyTakeaway: 'Spójność życiowa polega na robieniu tego, co słuszne, nawet gdy płaci się za to wysokie koszty.'
   },
   {
-    id: 'studium-20-3-zludzenie-ostatecznego-celu',
-    title: 'Gdy awans nie przyniósł szczęścia: Pułapka Arrival Fallacy u Tomasza',
-    subtitle: 'Adaptacja hedoniczna, gonitwa za mecenatem i odkrywanie wartości w procesie',
-    protagonist: 'Tomasz, 42 lata, dyrektor operacyjny w branży logistycznej',
-    context: 'Tomasz przez 10 lat dążył do zdobycia stanowiska dyrektora i pensji 50 000 zł. Kiedy osiągnął cel, po tygodniu euforii wpadł w głęboką pustkę i pytanie: „I to ma być wszystko?”.',
+    id: 'studium-20-3-minimalizm-kariera',
+    title: 'Ucieczka z wyścigu szczurów: Re-definicja priorytetów u Pawła',
+    subtitle: 'Autonomia, porzucenie narzuconych potrzeb i wybór prostoty',
+    protagonist: 'Paweł, 42 lata, były wiceprezes banku',
+    context: 'Paweł zarabiał 80 tysięcy złotych miesięcznie, posiadał dwa luksusowe apartamenty i odczuwał dojmujący brak sensu. Praca po 14 godzin dziennie doprowadziła go do stanu przedzawałowego.',
     story: [
-      'Tomasz żył w głębokim przekonaniu o Złudzeniu Ostatecznego Celu (Arrival Fallacy). Mówił sobie: „Gdy tylko zostanę dyrektorem i kupię dom w Wilanowie, będę w pełni szczęśliwy i spokojny”.',
-      'Przez dekadę poświęcał zdrowie, snu i relacje, by dotrzeć do tego punktu. Każdą niedogodność tłumaczył słowami: „To tylko teraz, na mecie będzie wspaniale”.',
-      'Kiedy został oficjalnie mianowany dyrektorem i odebrał kluczyki do służbowego SUV-a, odczuł wybuch euforii. Jednak już po 10 dniach poziom jego szczęścia powrócił do punktu bazowego (Adaptacja Hedoniczna).',
-      'Zamiast oczekiwanego spokoju pojawiły się nowe stresy, presja wyników i dojmująca pustka. Tomasz zrozumiał, że uzależnił swoje życie od punktu końcowego, ignorując fakt, że życie dzieje się w trakcie podróży.'
+      'Przez 15 lat Paweł gonił za wyznacznikami sukcesu: droższe zegarki, nowsze samochody, prestiżowe adresy. Jego hierarchia wartości została zdominowana przez narzucone skrypty korporacyjne.',
+      'Po pobycie na oddziale kardiologii Paweł zadał sobie po raz pierwszy od dekady pytanie: „Po co ja to wszystko robię? Czy te przedmioty dają mi choć gram prawdziwego szczęścia?”.',
+      'Uświadomił sobie, że jego rzeczywistymi potrzebami są: Spokój, Bliskość z naturą i Czas dla rodziny. Cały luksus był jedynie kosztownym rekwizytem maskującym pustkę.',
+      'Paweł sprzedał jeden z apartamentów, zrezygnował ze stanowiska wiceprezesa i otworzył małą firmę doradczą. Jego dochody spadły o 70%, lecz poziom satysfakcji z życia wzrósł wielokrotnie.'
     ],
     dialogue: [
-      { speaker: 'Tomasz', text: 'Mam wszystko, o czym marzyłem przez 10 lat... Dlaczego czuję się tak potwornie pusty?', subtext: 'Konfrontacja ze złudzeniem ostatecznego celu.' },
-      { speaker: 'Mentor', text: 'Tomek, cel daje kierunek, ale nie daje szczęścia. Szczęście było w tym, kim stawałeś się po drodze.', subtext: 'Wyjaśnienie różnicy między mecenatem a procesem.' }
+      { speaker: 'Kolega z Banku', text: 'Paweł, zwariowałeś? Porzucasz taki status i taką pensję dla jakiejś małej firmy?!', subtext: 'Niedowierzanie otoczenia uwięzionego w wyścigu szczurów.' },
+      { speaker: 'Paweł', text: 'Zamieniłem pieniądze, których nie miałem kiedy wydawać, na czas, którego nie kupię za żadne miliony.', subtext: 'Urealnienie prawdziwej hierarchii wartości.' }
     ],
-    decisionTaken: 'Tomasz zmienił podejście do pracy: przestał traktować stanowisko jako mecenat i skupił się na budowaniu wartościowych relacji z zespołem i pasji trenerskiej.',
-    whatProtagonistSaw: 'Stanowisko dyrektora jako ostateczną przystań szczęścia i ulgi.',
-    whatWasMissed: 'Fakt, że umysł ludzki szybko przyzwyczaja się do nowego statusu, a prawdziwy dobrostan daje proces działania zgodnego z wartościami.',
+    decisionTaken: 'Paweł porzucił korporacyjny wyścig szczurów i zredukował koszty życia na rzecz autonomii czasowej.',
+    whatProtagonistSaw: 'Pustkę ekskluzywnego życia i zdrowotną cenę pracoholizmu.',
+    whatWasMissed: 'Fakt, że wolność czasowa jest cenniejszym zasobem niż stan konta bankowego.',
     psychologicalAnalysis: {
-      coreMechanism: 'Złudzenie Ostatecznego Celu (Arrival Fallacy) oraz Adaptacja Hedoniczna.',
+      coreMechanism: 'Re-kalibracja potrzeb i przejście od motywacji zewnętrznej do wewnętrznej (Teoria SDT).',
       cognitiveBiases: [
-        { name: 'Afektywne błędne przewidywanie', description: 'Przeliczanie stopnia i czasu trwania szczęścia po osiągnięciu celu.', impact: 'Głębokie rozczarowanie na mecie.' }
+        { name: 'Kierat hedoniczny (Hedonic Treadmill)', description: 'Szybkie przyzwyczajanie się do wyższego standardu i potrzeba kolejnych bodźców.', impact: 'Ciągły niedosyt.' }
       ],
       defenseMechanisms: [
-        { name: 'Przesunięcie poprzeczki', explanation: 'Wyznaczanie kolejnego, jeszcze większego celu, byle nie poczuć pustki.' }
+        { name: 'Urealnienie wartości', explanation: 'Odrzucenie narzuconych wymogów statusowych.' }
       ],
-      emotionalDynamic: 'Krótka euforia przechodząca w egzystencjalny zawód i poszukiwanie sensu.'
+      emotionalDynamic: 'Uwolnienie od ciągłego wyścigu i głęboki spokój.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Osiągnięcie celu i powrót do punktu bazowego samopoczucia.',
-      attentionFocus: 'Obecna pustka mimo realizacji marzeń.',
-      interpretation: '„Cele nie dają trwałego szczęścia, muszę odnaleźć sens w codziennym procesie”.',
-      emotion: 'Rozczarowanie, refleksja, głęboki spokój po odpuszczeniu gonitwy.',
-      impulse: 'Zmiana stylu zarządzania i redukcja presji.',
-      action: 'Skupienie się na rozwoju ludzi i własnych pasjach.',
-      consequence: 'Odzyskanie radości z codziennej pracy.'
+      trigger: 'Epizod sercowy i pobyt na kardiologii.',
+      attentionFocus: 'Własne zdrowie i przelotność życia.',
+      interpretation: '„Gonię za iluzją, która mnie zabija”.',
+      emotion: 'Przerażenie, jasność celu, ulga.',
+      impulse: 'Złożenie rezygnacji.',
+      action: 'Sprzedaż majątku i restrukturyzacja stylu życia.',
+      consequence: 'Zdrowie, odzyskanie relacji z dziećmi i autonomia.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Jądro półleżące (NAcc)', role: 'Gwałtowny spadek dopaminy po konsumpcji nagrody', activationState: 'Spadek aktywacji po osiągnięciu celu' },
-        { region: 'Korowy układ serotoninergiczny', role: 'Stabilny poziom zadowolenia z procesu', activationState: 'Wzrost przy działaniu zgodnym z wartościami' }
+        { region: 'DMN', role: 'Integration nowej, prostej opowieści o dobrym życiu', activationState: 'Obniżenie ruminacji' }
       ],
       neurotransmitters: [
-        { name: 'Dopamina', roleInScenario: 'Dopamina uwalnia się w trakcie polowania, a nie u celu.' }
+        { name: 'Kortyzol', roleInScenario: 'Drastyczny spadek spoczynkowego poziomu hormonów stresu.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 500 ms', process: 'Moment osiągnięcia celu daje strzał dopaminy, który gaśnie po kilku dniach.' }
+        { timeMs: '0 - 500 ms', process: 'Decyzja o rezygnacji wywołuje fizyczne odprężenie mięśni karku.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Kulturowy mit „I żyć będą długo i szczęśliwie”', description: 'Promowanie przekazu, że meta zmienia wszystko na zawsze.', vulnerabilityExploited: 'Niecierpliwość i tęsknota za ulgą.' }
+        { tactic: 'Kierat konsumpcyjny', description: 'Kultura wmawiająca, że wartość człowieka zależy od posiadanych dóbr.', vulnerabilityExploited: 'Potrzebę statusu.' }
       ],
       counterMeasures: [
-        { step: '1. Orientacja na Proces (Systems vs Goals)', script: 'Zakochaj się w codziennym systemie działania, a cele traktuj tylko jako drogowskazy.', rationale: 'Chroni przed pułapką Arrival Fallacy.' }
+        { step: '1. Swiadomy Minimalizm', script: '„Kupuję tylko to, co służy moim realnym wartościom, a nie mym rekwizytom wizerunkowym”.', rationale: 'Uwalnia od zależności finansowej.' }
       ]
     },
-    alternativePath: 'Gdyby Tomasz nie zrozumiał tej lekcji, rzuciłby się w kolejny wyścig po jeszcze wyższe stanowisko, wykańczając swój organizm.',
-    readerQuestion: 'Kiedy ostatnio osiągnąłeś długo wyczekiwany cel i jak szybko Twoje samopoczucie wróciło do normy?',
-    keyTakeaway: 'Osiągnięcie celu przynosi ulgę na chwilę. Prawdziwe, trwałe zadowolenie daje życie zgodne z wartościami każdego dnia.'
+    alternativePath: 'Gdyby Paweł został w banku, w ciągu 2 lat przeszedłby rozległy zawał serca.',
+    readerQuestion: 'Ile swojego czasu i zdrowia sprzedajesz za rzeczy, których tak naprawdę nie potrzebujesz?',
+    keyTakeaway: 'Najbogatszy jest ten, którego potrzeby są najmniejsze, a czas należy do niego.'
   },
   {
-    id: 'studium-20-4-konflikt-krotki-dlugi-termin',
-    title: 'Gdy impuls wygrywa ze zdrowiem: Przypadek Michała',
-    subtitle: 'Nawyki żywieniowe, Dyskonto Hiperboliczne i budowanie intencji implementacyjnych',
-    protagonist: 'Michał, 36 lat, programista',
-    context: 'Michał miał zdiagnozowane stłuszczenie wątroby i stany przedcukrzycowe. Mimo jasnych instrukcji od lekarza, co wieczór ulegał pokusie zamawiania fast-foodów i słodyczy.',
+    id: 'studium-20-4-konflikt-pogladów-rodzina',
+    title: 'Gdy tradycja zderza się z wyborem: Odważna decyzja Ani o własnej ścieżce życiowej',
+    subtitle: 'Autonomia vs oczekiwania rodowe, przełamanie szantażu emocjonalnego',
+    protagonist: 'Ania, 28 lat, lekarka weterynarii',
+    context: 'Ania pochodziła z tradycyjnej rodziny, w której oczekiwano, że po studiach wyjdzie za mąż za wskazanego partnera, przejmie gospodarstwo i zostanie na wsi. Ania marzyła o pracy w klinice dla dzikich zwierząt w Afryce.',
     story: [
-      'Michał deklarował, że jego główną wartością jest Zdrowie i chęć zobaczenia, jak dorastają jego dzieci. Rozumiał zagrożenie biologiczne.',
-      'Jednak o godzinie 21:00, po 9 godzinach kodowania, jego kora przedczołowa była wyczerpana metabolicznie. Wtedy do głosu dochodziło Dyskonto Hiperboliczne.',
-      'Dla jego układu limbicznego natychmiastowa ulga i wyrzut dopaminy z tłustego jedzenia tu i teraz wygrywały z wizją zdrowia za 15 lat. Michał mówił sobie: „Tylko dzisiaj zamówię pizzę, od jutra przechodzę na dietę”.',
-      'Dopiero zmiana architektury środowiska (brak aplikacji do zamawiania jedzenia w telefonie, przygotowane zdrowe posiłki w lodówce) oraz wdrożenie Intencji Implementacyjnych („JEŚLI poczuję głód po 20:00, TO wypiję szklankę wody i zjem jabłko”) pozwoliły mu pokonać odruch impulsywny.'
+      'Rodzina wywierała na Anię potężną presję emocjonalną: „Matka przez ciebie zachoruje”, „Jesteś samolubna”, „Zdradzasz nasze tradycje”.',
+      'Ania przez lata zmagała się z dławiącym poczuciem winy. Jej potrzeba autonomii zderzała się z wrodzoną potrzebą powiązania i bliskości z rodziną.',
+      'Dopiero gdy uświadomiła sobie, że poświęcenie własnego życia dla spełnienia oczekiwań rodziców doprowadzi ją do głębokiej depresji, podjęła decyzję o wyjeździe.',
+      'Napisala do rodziców ciepły, lecz stanowczy list, stawiający jasne granice jej autonomii.'
     ],
     dialogue: [
-      { speaker: 'Żona', text: 'Michał, znowu kurier? Przecież wyniki badań były fatalne!', subtext: 'Przypomnienie o wartości zdrowia i długofalowych konsekwencjach.' },
-      { speaker: 'Michał', text: 'Miałem koszmarny dzień w pracy! Muszę coś zjeść, żeby nie zwariować. Od jutra naprawdę zaczynam dietę!', subtext: 'Uleganie natychmiastowej uldze i odsuwanie kosztów na przyszłość.' }
+      { speaker: 'Matka', text: 'Aniu, jeśli wyjedziesz do tej Afryki, nie masz po co wracać do tego domu!', subtext: 'Szantaż emocjonalny odrzuceniem.' },
+      { speaker: 'Ania', text: 'Mamo, kocham was bardzo, ale moje życie należy do mnie. Wyjeżdżam, ale moje serce zostaje z wami.', subtext: 'Stawianie granic z pozycji miłości i autonomii.' }
     ],
-    decisionTaken: 'Michał usunął aplikacje do dostawy jedzenia i ustalił regułę niejedzenia po godzinie 20:00.',
-    whatProtagonistSaw: 'Natychmiastową ulgę emocjonalną i przyjemność z jedzenia w chwile zmęczenia.',
-    whatWasMissed: 'Fakt, że każde uleganie impulsowi osłabia wolę i przybliża go do rozwoju pełnoobjawowej cukrzycy.',
+    decisionTaken: 'Ania wyjechała na kontrakt do Afryki, stawiając dojrzałe granice w relacji z rodzicami.',
+    whatProtagonistSaw: 'Szantaż emocjonalny i wizję utraty rodziny.',
+    whatWasMissed: 'Fakt, że dojrzała miłość rodzicielska potrzebuje czasu, by zaakceptować autonomię dziecka.',
     psychologicalAnalysis: {
-      coreMechanism: 'Dyskonto Hiperboliczne (Hyperbolic Discounting) i wyczerpanie zasobów samokontroli.',
+      coreMechanism: 'Różnicowanie siebie (Differentiation of Self) i odzyskiwanie autonomii w systemie rodzinnym.',
       cognitiveBiases: [
-        { name: 'Racjonalizacja natychmiastowa', description: 'Obiecywanie poprawy „od jutra” celem zmniejszenia poczucia winy dzisiaj.', impact: 'Trwanie w niszczącym nawyku.' }
+        { name: 'Myślenie katastroficzne', description: 'Przekonanie, że wyjazd bezpowrotnie zniszczy relację z rodzicami.', impact: 'Paraliż decyzyjny.' }
       ],
       defenseMechanisms: [
-        { name: 'Znieczulanie emocjonalne', explanation: 'Używanie jedzenia do regulacji trudnych stanów napięciowych.' }
+        { name: 'Stawianie granic', explanation: 'Odmowa ulegania szantażowi emocjonalnemu.' }
       ],
-      emotionalDynamic: 'Chwilowa ulga przechodząca w poczucie wstydu i wyrzuty sumienia.'
+      emotionalDynamic: 'Poczucie winy przechodzące w ulgę i poczucie sprawczości.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Zmęczenie po pracy o godzinie 21:00.',
-      attentionFocus: 'Smak pizzy i chęć natychmiastowego relaksu.',
-      interpretation: '„Zasłużyłem na to, muszę rozładować stres”.',
-      emotion: 'Głód dopaminowy, zniecierpliwienie.',
-      impulse: 'Kliknięcie w aplikację do dostawy jedzenia.',
-      action: 'Zamówienie i zjedzenie pizzy.',
-      consequence: 'Spadek poczucia sprawczości, pogorszenie wyników badań i wstyd.'
+      trigger: 'Otrzymanie oficjalnej propozycji kontraktu z Afryki.',
+      attentionFocus: 'Własne pragnienie rozwoju i odwoływanie się matki.',
+      interpretation: '„Jestem dorosłym człowiekiem i mam prawo do własnego życia”.',
+      emotion: 'Lęk, poczucie winy, ogromna determinacja.',
+      impulse: 'Rezygnacja z wyjazdu dla świętego spokoju.',
+      action: 'Podpisanie umowy i szczera rozmowa z rodzicami.',
+      consequence: 'Wyjazd, realizacja pasji i stopniowa akceptacja ze strony rodziców.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Jądro półleżące (NAcc)', role: 'Silna aktywacja na widok obrazków jedzenia w aplikacji', activationState: 'Gwałtowny głód dopaminowy' },
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Spadek kontroli w wyniku wyczerpania glukozy', activationState: 'Osłabienie hamowania' }
+        { region: 'dlPFC', role: 'Podejmowanie autonomicznych decyzji pod prąd presji społecznej', activationState: 'Wysoka aktywacja' }
       ],
       neurotransmitters: [
-        { name: 'Dopamina', roleInScenario: 'Spadek poziomu bazowego wywołujący impuls poszukiwania nagrody.' }
+        { name: 'Dopamina', roleInScenario: 'Skok motywacji dopaminowej po wybraniu własnej ścieżki.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 100 ms', process: 'Ikona aplikacji wywołuje natychmiastowy wyrzut dopaminy w NAcc.' }
+        { timeMs: '0 - 200 ms', process: 'Słowa matki wywołują dławienie w gardle wyciszane oddechem.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Projektowanie aplikacji food-delivery', description: 'Ułatwianie zakupu do jednego kliknięcia celem ominiecia kontroli przedczołowej.', vulnerabilityExploited: 'Zmęczenie wieczorne klientów.' }
+        { tactic: 'Szantaż emocjonalny poczuciem winy', description: 'Wpajanie, że autonomia dziecka jest krzywdą dla rodziców.', vulnerabilityExploited: 'Potrzebę przywiązania.' }
       ],
       counterMeasures: [
-        { step: '1. Zwiększenie Tarcia Środowiskowego (Friction)', script: 'Usunięcie aplikacji, usunięcie zapamiętanych kart płatniczych.', rationale: 'Wymusza czas na refleksję w dlPFC.' }
+        { step: '1. Różnicowanie (Differentiation)', script: '„Jestem osobnym człowiekiem. Kocham was, ale moje wybory należą do mnie”.', rationale: 'Odbudowuje granice tożsamościowe.' }
       ]
     },
-    alternativePath: 'Gdyby Michał zignorował sygnały, za 5 lat musiałby przyjmować insulinę i straciłby sprawność fizyczną.',
-    readerQuestion: 'Jaki mały, natychmiastowy impuls regularnie niszczy Twój ważny cel długoterminowy?',
-    keyTakeaway: 'Nie walcz z pokusą silną wolą wieczorem. Zaprojektuj środowisko rano tak, by pokusa nie miała dostępu do Twojego mózgu.'
+    alternativePath: 'Gdyby Ania została na wsi, żyłaby w narastającym żalu i niechęci do własnej rodziny.',
+    readerQuestion: 'Którą ze swoich decyzji odkładasz z powodu lęku przed poczuciem winy wobec bliskich?',
+    keyTakeaway: 'Twoje życie jest Twoim dziełem. Nie oddawaj pędzla w ręce innych ludzi, nawet tych, których kochasz.'
   },
   {
-    id: 'studium-20-5-autonomia-vs-konformizm',
-    title: 'Pod prąd rodziny: Decyzja Ewy o wyborze studiów artystycznych',
-    subtitle: 'Autonomia wartości, odrzucenie presji społecznej i radzenie sobie ze wstydem grupy',
-    protagonist: 'Ewa, 19 lat, studentka wzornictwa przemysłowego',
-    context: 'Ewa pochodziła z rodziny o wielopokoleniowych tradycjach medycznych. Jej decyzja o rezygnacji ze medycyny na rzecz akademii sztuk pięknych wywołała oskarżenia o „marnowanie talentu i zdradę rodziny”.',
+    id: 'studium-20-5-zarzadzanie-energii-priorytety',
+    title: 'Sztuka rezygnacji: Jak Michał uratował swój projekt poprzez wdrożenie Zasady Pareto',
+    subtitle: 'Mniej znaczy więcej, eliminacja błahostek i koncentracja na 20% kluczowych działań',
+    protagonist: 'Michał, 36 lat, twórca aplikacji edukacyjnej',
+    context: 'Michał pracował po 16 godzin dziennie, próbując wdrożyć 50 funkcji w nowej aplikacji. Projekt opóźniał się o pół roku, a budżet się kończył.',
     story: [
-      'Dla rodziny Ewy wartość Bezpieczeństwa i Prestiżu Medycznego była nienegocjowalnym fundamentem. Od dziecka przygotowywano ją do zawodu lekarskiego.',
-      'Ewa czuła jednak, że jej autentyczną wartością jest Twórczość i Projektowanie. Myśl o spędzeniu życia w szpitalu napawała ją przerażeniem.',
-      'Gdy ogłosiła wyniki rekrutacji na ASP, ojciec przestał się do niej odzywać przez 3 miesiące, a matka płakała, mówiąc: „Co my powiemy rodzinie na święta?”. Ewa doświadczyła potężnego naporu presji konformistycznej.',
-      'Dzięki wsparciu mentorki Ewa przetrwała ten trudny okres. Po dwóch latach jej sukcesy projektowe i autentyczna radość z życia sprawiły, że rodzice powoli zaakceptowali jej autonomiczną drogę.'
+      'Michał cierpiał na błąd „wszystko jest tak samo ważne”. Każdy pomysł użytkowników dodawał do listy wymagań, rozpraszając zespół.',
+      'Pracował do skrajnego wyczerpania, lecz efekty były mierne: aplikacja była skomplikowana, wolna i przeładowana.',
+      'Inwestor postawił ultimatum: Albo w 30 dni ruszają z działającym rdzeniem, albo wycofuje finansowanie.',
+      'Michał zastosował Zasadę Pareto: bezwzględnie usunął 40 funkcji, skupiając się na 3 kluczowych, które dawały 80% wartości. Aplikacja ruszyła w terminie i stała się hitem.'
     ],
     dialogue: [
-      { speaker: 'Ojciec', text: 'Sztuka? Z czego ty będziesz żyć? Przehandlowałaś pewną przyszłość na mrzonki!', subtext: 'Obrona własnego skryptu bezpieczeństwa i lęk przed opinią otoczenia.' },
-      { speaker: 'Ewa', text: 'Tato, szanuję medycynę, ale to nie jest moje życie. Chcę projektować rzeczy, które pomagają ludziom inaczej.', subtext: 'Stawianie autonomicznych granic w zgodzie ze swoimi wartościami.' }
+      { speaker: 'Inwestor', text: 'Michał, wytnij 80% tego gąszczu. Zostaw tylko to, co naprawdę rozwiązuje problem klienta!', subtext: 'Wymuszenie koncentracji na kluczowych priorytetach.' },
+      { speaker: 'Michał', text: 'Ale te wszystkie funkcje są takie piękne... Jak mam z nich zrezygnować?', subtext: 'Przywiązanie do błahostek i brak priorytetyzacji.' }
     ],
-    decisionTaken: 'Ewa złożyła dokumenty na ASP i zamieszkała w akademiku, finansując studia z pracy dorywczej.',
-    whatProtagonistSaw: 'Odrzucenie przez rodzinę, wstyd rodziców i niepewność finansową.',
-    whatWasMissed: 'Fakt, że dorosła autonomia wymaga odwagi do przejścia przez czasowy chłód w relacjach z bliskimi.',
+    decisionTaken: 'Michał drastycznie okroił zakres projektu do 3 najważniejszych funkcji i wydał wersję podstawową.',
+    whatProtagonistSaw: 'Konieczność zachowania wszystkich swoich pomysłów.',
+    whatWasMissed: 'Fakt, że prostota i koncentracja są kluczem do użyteczności i sukcesu.',
     psychologicalAnalysis: {
-      coreMechanism: 'Autonomia wartości vs Presja Rodzinna i Konformizm.',
+      coreMechanism: 'Priorytetyzacja oparta na Zasadzie Pareto (80/20) i eliminacja rozpraszaczy.',
       cognitiveBiases: [
-        { name: 'Efekt uległości rodzinnej', description: 'Przekonanie, że spełnianie oczekiwań rodziców jest jedyną drogą do zasłużenia na miłość.', impact: 'Paraliż przed wyborem pasji.' }
+        { name: 'Sunk Cost Fallacy', description: 'Trzymanie się zbędnych funkcji tylko dlatego, że poświęcono na nie czas.', impact: 'Paraliż projektu.' }
       ],
       defenseMechanisms: [
-        { name: 'Separacja wartości', explanation: 'Różnicowanie własnych celów od tradycji rodzinnej.' }
+        { name: 'Przeładowanie pracą (Busyness)', explanation: 'Ucieczka w ilość zadań przed trudną decyzją o selekcji.' }
       ],
-      emotionalDynamic: 'Lęk przed wykluczeniem przechodzący w poczucie ulgi i dumy z własnej drogi.'
+      emotionalDynamic: 'Lęk przed wycięciem funkcji przechodzący w olśnienie prostotą.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Ultimatum od inwestora.',
+      attentionFocus: 'Rdzenna wartość aplikacji dla użytkownika.',
+      interpretation: '„Mniej funkcji oznacza lepszą jakość i szybszy start”.',
+      emotion: 'Ulga, jasność, skupienie.',
+      impulse: 'Wycięcie 80% zbędnego kodu.',
+      action: 'Publikacja wersji prostej.',
+      consequence: 'Sukces rynkowy i uratowanie firmy.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Przednia wyspa', role: 'Przetwarzanie lęku przed odrzuceniem społecznym', activationState: 'Uspokojenie po podjęciu decyzji' },
-        { region: 'Przednia kora obwodu', role: 'Monitorowanie konfliktu wartości', activationState: 'Stopniowy spadek aktywacji' }
+        { region: 'dlPFC', role: 'Kierowanie zasobami uwagi na jeden kluczowy cel', activationState: 'Maksymalna wydajność' }
       ],
       neurotransmitters: [
-        { name: 'Dopamina', roleInScenario: 'Wzrost poziomu w odpowiedzi na realizację autentycznej pasji projektowej.' }
+        { name: 'Dopamina', roleInScenario: 'Szybkie ukończenie prostej wersji aktywuje pętlę sukcesu.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 200 ms', process: 'Myśl o rozczarowaniu rodziców wywołuje ból w wyspie.' }
+        { timeMs: '0 - 100 ms', process: 'Widok działającej prostej wersji daje natychmiastowy spokój.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Szantaż emocjonalny wstydem', description: 'Wywieranie presji pytaniami: „Co powiemy rodzinie?”.', vulnerabilityExploited: 'Potrzeba przynależności i aprobaty.' }
+        { tactic: 'Iluzja kompletności', description: 'Przekonanie, że produkt musi zawierać wszystko, by był wartościowy.', vulnerabilityExploited: 'Perfekcjonizm.' }
       ],
       counterMeasures: [
-        { step: '1. Asertywna Różnicowanie Self', script: '„Szanuję wasz wybór, ale to jest moja droga”.', rationale: 'Utrzymuje granicę tożsamościową.' }
+        { step: '1. Brutalna Selekcja (Radical Pruning)', script: '„Zostawiam tylko to, co jest bezwzględnie konieczne. Reszta idzie do kosza”.', rationale: 'Gwarantuje dowożenie wyników.' }
       ]
     },
-    keyTakeaway: 'Autonomia wymaga odważnego wybierania własnych wartości, nawet jeśli otoczenie nie reaguje entuzjazmem.'
-  },
-  {
-    id: 'studium-20-6-stawianie-granic-pracoholizm',
-    title: 'Naukasz Mówienia „NIE”: Jak Katarzyna obroniła swój czas wolny',
-    subtitle: 'Stawianie granic w pracy, lęk przed odrzuceniem i odzyskiwanie priorytetów',
-    protagonist: 'Katarzyna, 34 lata, senior project manager',
-    context: 'Katarzyna była osobą, do której wszyscy w firmie przychodzili z „nagłymi sprawami”. Nie potrafiła odmówić żadnej prośbie, przez co pracowała w weekendy i była na skraju załamania.',
-    story: [
-      'Katarzyna kierowała się przekonaniem: „Jeśli odmówię pomocy, ludzie uznają, że jestem leniwa, i przestaną mnie lubić”. Jej wartość Pomocniczości została wypaczona w brak granic.',
-      'Kiedy otrzymała kolejny projekt z nierealnym terminem do wykonania na niedzielę, poczuła, że jej organizm odmówił posłuszeństwa — pojawiły się zawroty głowy i drżenie rąk.',
-      'Przełamała lęk i zastosowała procedurę asertywnej odmowy: „Chętnie wezmę ten projekt, ale wymaga to przesunięcia terminu projektu X na przyszły tydzień. Który temat ma wyższy priorytet?”.',
-      'Ku jej zaskoczeniu przełożony nie zwolnił jej, lecz powiedział: „Masz rację, przesuniemy projekt X. Dziękuję, że mówisz o moich zasobach”. Katarzyna odzyskała weekendy i szacunek w zespole.'
-    ],
-    dialogue: [
-      { speaker: 'Przełożony', text: 'Kasia, musisz wziąć jeszcze ten raport dla zarządu na poniedziałek rano.', subtext: 'Presja na przekroczenie granic w warunkach braku zasobów.' },
-      { speaker: 'Katarzyna', text: 'Szefie, chętnie go zrobię, ale przy obecnym obciążeniu wymaga to przełożenia projektu Y. Co ma priorytet?', subtext: 'Asertywne postawienie granicy z podaniem opcji wyboru.' }
-    ],
-    decisionTaken: 'Katarzyna wprowadziła regułę nieodpisywania na maile po 18:00 i asertywnego negocjowania priorytetów.',
-    whatProtagonistSaw: 'Zagrożenie odrzuceniem, wizję bycia uznaną za samolubną i lęk przed gniewem szefa.',
-    whatWasMissed: 'Fakt, że stawiając jasne granice, uczy innych szacunku do swojego czasu i podnosi swoją profesjonalną wartość.',
-    psychologicalAnalysis: {
-      coreMechanism: 'Asertywne stawianie granic i osłabianie lęku przed odrzuceniem.',
-      cognitiveBiases: [
-        { name: 'Błąd przypodobania (People Pleasing)', description: 'Nierealistyczne przekonanie, że odmowa zniszczy relacje zawodowe.', impact: 'Przeładowanie i wypalenie.' }
-      ],
-      defenseMechanisms: [
-        { name: 'Uległość obronna', explanation: 'Zgadzanie się na wszystko z lęku przed konfrontacją.' }
-      ],
-      emotionalDynamic: 'Przejście od skrajnego wyczerpania i lęku do poczucia ulgi i szacunku dla siebie.'
-    },
-    neurobiologicalAnalysis: {
-      brainRegions: [
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Utrzymanie racjonalnej struktury odmowy', activationState: 'Przejęcie kontroli' },
-        { region: 'Ciało migdałowate', role: 'Sygnał zagrożenia oceną', activationState: 'Wygaszenie' }
-      ],
-      neurotransmitters: [
-        { name: 'Kortyzol', roleInScenario: 'Spadek poziomu stresu po odzyskaniu kontroli nad czasem.' }
-      ],
-      biologicalTimeline: [
-        { timeMs: '0 - 150 ms', process: 'Prośba o projekt na niedzielę wywołuje odruch ścisku w gardle.' }
-      ]
-    },
-    influenceAndManipulation: {
-      tacticsUsed: [
-        { tactic: 'Eksploatacja pomocniczości', description: 'Narzucanie zadań osobom o niskich granicach.', vulnerabilityExploited: 'Lęk przed byciem ocenionym jako niekoleżeński.' }
-      ],
-      counterMeasures: [
-        { step: '1. Pytanie o Priorytety', script: '„Chętnie pomogę, ale z czego mam zrezygnować?”.', rationale: 'Przenosi odpowiedzialność za wybór na zlecającego.' }
-      ]
-    },
-    keyTakeaway: 'Stawiając granice innym, stawiasz fundament pod szacunek do samego siebie.'
-  },
-  {
-    id: 'studium-20-7-reorganizacja-emerytura',
-    title: 'Nowy rozdział: Jak Andrzej odnalazł priorytety po przejściu na emeryturę',
-    subtitle: 'Reorganizacja priorytetów w nowym etapie życia i odzyskiwanie sensu',
-    protagonist: 'Andrzej, 65 lat, był inżynier architektury',
-    context: 'Andrzej po przejściu na emeryturę czuł się niepotrzebny i pusty. Dawne priorytety zawodowe przestały istnieć, a nowe jeszcze się nie uformowały.',
-    story: [
-      'Dla Andrzeja praca była głównym operatorem sensu przez 40 lat. Kiedy przeszedł na emeryturę, odczuł potężną próżnię czasową i tożsamościową.',
-      'Przez pierwsze miesiące spędzał dni przed telewizorem, popadając w stan zniechęcenia. Czując, że jego życie traci sterowność, postanowił zrobić audyt wartości na nowy etap życia.',
-      'Odkrył, że jego nowymi priorytetami są: Przekazywanie Wiedzy i Troska o Lokalną Społeczność. Zgłosił się jako wolontariusz do uniwersytetu trzeciego wieku i zaczął prowadzić darmowe warsztaty z rysunku dla młodzieży z trudnych domów.',
-      'Ta zmiana priorytetów dała mu nową falę energii i sprawiła, że emerytura stała się najbardziej twórczym okresem w jego życiu.'
-    ],
-    dialogue: [
-      { speaker: 'Żona', text: 'Andrzej, zobacz, jak te dzieciaki na ciebie czekają. Znowu masz ten sam błysk w oku co kiedyś.', subtext: 'Zauważenie powrotu sensu i energii po zmianie priorytetów.' },
-      { speaker: 'Andrzej', text: 'Wiesz... czuję, że teraz robię coś, co naprawdę ma znaczenie. Nie dla pieniędzy, ale dla nich.', subtext: 'Odkrycie autonomicznych wartości w nowym etapie życia.' }
-    ],
-    decisionTaken: 'Andrzej przeznaczył 15 godzin tygodniowo na pracę wolontariacką i stworzył międzypokoleniową pracownię rysunku.',
-    whatProtagonistSaw: 'Starość jako czas bezczynności i powolnego odchodzenia w niepamięć.',
-    whatWasMissed: 'Fakt, że zmiana etapu życia stwarza unikalną szansę na realizację wartości, na które wcześniej brakowało czasu.',
-    psychologicalAnalysis: {
-      coreMechanism: 'Reorganizacja Priorytetów na nowym etapie życia i Generatywność (Erikson).',
-      cognitiveBiases: [
-        { name: 'Mityczna sztywność wieku', description: 'Przekonanie, że po zakończeniu kariery zawodowej rola człowieka w świecie się kończy.', impact: 'Początkowy stupor rezygnacyjny.' }
-      ],
-      defenseMechanisms: [
-        { name: 'Przesunięcie sensu', explanation: 'Odnalezienie nowej domeny dla dawnej pasji rysunkowej.' }
-      ],
-      emotionalDynamic: 'Przejście od pustki i smutku do głębokiej satysfakcji z dzielenia się wiedzą.'
-    },
-    neurobiologicalAnalysis: {
-      brainRegions: [
-        { region: 'Jądro półleżące', role: 'Dopaminowy napęd z wolontariatu i pracy z dziećmi', activationState: 'Ponowne wzbudzenie pętli nagrody' },
-        { region: 'Domyślna Sieć Neuronalna', role: 'Integracja nowej roli społecznej', activationState: 'Harmonijna praca' }
-      ],
-      neurotransmitters: [
-        { name: 'Oksytocyna i Dopamina', roleInScenario: 'Wzrost poczucia więzi społecznej i sensu.' }
-      ],
-      biologicalTimeline: [
-        { timeMs: '0 - 500 ms', process: 'Widok uśmiechniętych uczniów wywołuje ciepło i wyciszenie niepokoju.' }
-      ]
-    },
-    influenceAndManipulation: {
-      tacticsUsed: [
-        { tactic: 'Emerytalny mit bezczynności', description: 'Spostrzeganie seniorów wyłącznie jako pasywnych konsumentów.', vulnerabilityExploited: 'Lęk przed brakiem przydatności.' }
-      ],
-      counterMeasures: [
-        { step: '1. Audyt Wartości na Nowy Etap', script: 'Przeformułowanie pytań: „Co chcę dać z siebie w tym nowym czasie?”.', rationale: 'Otwiera nowe ścieżki aktywnego działania.' }
-      ]
-    },
-    keyTakeaway: 'Zmieniają się etapy życia, lecz potrzeba sensu i tworzenia dobra pozostaje niezmienna. Przeprojektuj swoje priorytety.'
+    alternativePath: 'Gdyby Michał nie dokonał selekcji, projekt upadłby, a firma zbankrutowałaby.',
+    readerQuestion: 'Które 20% Twoich codziennych działań przynosi Ci 80% rzeczywistego szczęścia i sukcesu?',
+    keyTakeaway: 'Istotą priorytetyzacji nie jest decydowanie o tym, co robić — jest nią odważne decydowanie o tym, czego NIE robić.'
   }
 ];
 
 export const selfExercisesChapterTwenty: SelfExercise[] = [
   {
-    id: 'cwiczenie-20-1-hierarchia-wartosci',
-    title: 'Krystalizator Hierarchii Wartości (Values Hierarchy Matrix)',
-    subtitle: 'Wyodrębnienie 5 fundamentalnych kompasów własnego życia',
-    objective: 'Wyselekcjonowanie z listy 30 wartości 5 najważniejszych i poukładanie ich w rygorystyczną hierarchię.',
+    id: 'ex-20-1',
+    title: 'Audyt Wartości Realizowanych (Time & Money Audit)',
+    subtitle: 'Konfrontacja deklaracji słownych z rzeczywistymi wyborami',
+    objective: 'Przeanalizowanie realnego wykorzystania czasu i pieniędzy w zeszłym miesiącu i porównanie go z deklarowanymi wartościami.',
     durationMinutes: 25,
-    neuroScientificFoundation: 'Stymulacja przyśrodkowej kory przedczołowej (mPFC) do dokonywania wyborów w oparciu o głęboką samowiedzę.',
+    neuroScientificFoundation: 'Konfrontacja z obiektywnymi danymi wywołuje powstrzymanie racjonalizacji w kory przedczołowej i umożliwia korektę nawyków.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Selekcja wstępna',
-        instruction: 'Wybierz z pamięci 10 wartości, które są dla Ciebie ważne (np. Wolność, Zdrowie, Rodzina, Sukces, Prawda, Spokój).',
-        promptText: 'Moje 10 wartości:',
-        placeholder: 'Rodzina, Wolność, Rozwój, Zdrowie, Uczciwość, Sukces, Bezpieczeństwo...'
+        title: 'Wypisanie 3 głównych wartości deklarowanych',
+        instruction: 'Zapisz 3 wartości, które uważasz za najważniejsze w swoim życiu (np. Zdrowie, Rodzina, Rozwój).',
+        promptText: 'Moje wartości deklarowane:',
+        placeholder: '1. Zdrowie\n2. Czas dla rodziny\n3. Rozwój osobisty'
       },
       {
         stepNumber: 2,
-        title: 'Pojedynek wartości',
-        instruction: 'Poddaj wartości konfrontacji dwójkami: Gdybyś musiał wybrać między A a B, co wybierasz?',
-        promptText: 'Moje ścisłe TOP 5 w hierarchii:',
-        placeholder: '1. Zdrowie. 2. Prawda. 3. Wolność. 4. Rodzina. 5. Rozwój.'
-      }
-    ],
-    reflectionQuestions: [
-      'Która z Twoich top 5 wartości jest obecnie najbardziej zaniedbywana w codziennym działaniu?'
-    ]
-  },
-  {
-    id: 'cwiczenie-20-2-audyt-kalendarza',
-    title: 'Twardy Audyt Kalendarza i Portfela',
-    subtitle: 'Zderzenie deklarowanych wartości z rzeczywistym alokowaniem zasobów',
-    objective: 'Odkrycie prawdziwych aktywnych wartości na podstawie analizy czasu i wydatków z minionego miesiąca.',
-    durationMinutes: 30,
-    neuroScientificFoundation: 'Redukcja Błędu Samooceny poprzez konfrontację z twardymi danymi empirycznymi.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Analiza czasu',
-        instruction: 'Przejrzyj swój kalendarz z minionego tygodnia i oblicz, ile godzin przeznaczyłeś na poszczególne obszary.',
-        promptText: 'Bilans godzinowy:',
-        placeholder: 'Praca: 55h. Ekran/Social media: 20h. Rodzina: 8h. Zdrowie/Sport: 2h.'
+        title: 'Obiektywna analiza kalendarza i wydatków',
+        instruction: 'Sprawdź ile godzin w zeszłym tygodniu poświęciłeś na działania bezpośrednio karmiące te wartości.',
+        promptText: 'Realny czas i pieniądze przeznaczone na wartości:',
+        placeholder: 'Zdrowie: 1 godzina ćwiczeń w tygodniu (1.5% czasu)...\nRodzina: 4 godziny bez telefonu...\nRozwój: 0 godzin...'
       },
       {
-        stepNumber: 2,
-        title: 'Wnioski i korekta',
-        instruction: 'Zidentyfikuj największą rozbieżność i zaplanuj przeniesienie 3 godzin z obszaru jałowego na obszar wartościowy.',
-        promptText: 'Mój plan korekty zasobów:',
-        placeholder: 'Ograniczę social media o 1h dziennie i przeznaczę ten czas na wspólne spacery z dziećmi.'
+        stepNumber: 3,
+        title: 'Plan korekty alokacji zasobów',
+        instruction: 'Zaplanuj jedną konkretną zmianę w kalendarzu na ten tydzień, która przesunie co najmniej 3 godziny na rzecz najwyższej wartości.',
+        promptText: 'Moja korekta w kalendarzu:',
+        placeholder: 'Wprowadzam 30-minutowy spacer codziennie o 18:00 (Zdrowie) oraz blokuję niedzielne popołudnie bez ekranów (Rodzina).'
       }
     ],
     reflectionQuestions: [
-      'Jakie to uczucie zobaczyć czarno na białym, na co naprawdę spalamy swoje życie?'
+      'Gdzie w Twoim kalendarzu przepadają godziny, które miały służyć Twoim najważniejszym wartościom?',
+      'Jaką jedną zbędną czynność musisz wyeliminować, by odzyskać czas dla siebie?'
     ]
   },
   {
-    id: 'cwiczenie-20-3-cwiczenie-nekrolog',
-    title: 'Ćwiczenie Perspektywy Ostatecznej (Mowa Pogrzebowa)',
-    subtitle: 'Oczyszczanie priorytetów z szumu społecznego aprobaty',
-    objective: 'Odkrycie, co naprawdę chciałbyś po sobie zostawić i jakim człowiekiem zostać zapamiętanym.',
-    durationMinutes: 30,
-    neuroScientificFoundation: 'Deaktywacja bieżących dopaminowych pokus na rzecz głębokiej integracji narracyjnej w mPFC.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Mowa najbliższej osoby',
-        instruction: 'Napisz 3 zdania, które chciałbyś, aby Twoje dziecko lub partner wypowiedział o Tobie na Twoim pogrzebie.',
-        promptText: 'Co chciałbym usłyszeć:',
-        placeholder: '„Był człowiekiem prawym, obecnym i dającym poczucie bezpieczeństwa. Zawsze można było na niego liczyć.”'
-      },
-      {
-        stepNumber: 2,
-        title: 'Zderzenie z dzisiejszym dniem',
-        instruction: 'Napisz, co musisz zmienić w swoim dzisiejszym zachowaniu, by ta mowa stała się prawdą.',
-        promptText: 'Wymagana zmiana dziś:',
-        placeholder: 'Muszę przestać krzyczeć ze zmęczenia i odłożyć telefon po powrocie do domu.'
-      }
-    ],
-    reflectionQuestions: [
-      'Co z rzeczy, którymi zamartwiasz się dzisiaj, będzie miało jakiekolwiek znaczenie za 30 lat?'
-    ]
-  },
-  {
-    id: 'cwiczenie-20-4-matryca-eisenhowera',
-    title: 'Praktyczna Matryca Eisenhowera w Zapobieganiu Pożarom',
-    subtitle: 'Ochrona czasu na sprawy Ważne, ale Niepilne (Ćwiartka II)',
-    objective: 'Kategoryzacja zadań i wyznaczenie stałych bloków czasowych na realizację wartości długoterminowych.',
+    id: 'ex-20-2',
+    title: 'Matryca Rozstrzygania Konfliktów Wartości',
+    subtitle: 'Nawigacja decyzyjna w sytuacjach trudnych wyborów',
+    objective: 'Stworzenie jasnej hierarchii priorytetów w sytuacji zderzenia dwóch ważnych wartości.',
     durationMinutes: 20,
-    neuroScientificFoundation: 'Wzmacnianie kontroli wykonawczej w dlPFC przeciwko impulsywnemu reagowaniu na bodźce pilne.',
+    neuroScientificFoundation: 'Jawne ustalenie hierarchii wartości redukuje paraliż decyzyjny i obniża pobudzenie przedniej kory obwodu (ACC).',
     steps: [
       {
         stepNumber: 1,
-        title: 'Lista spraw bieżących',
-        instruction: 'Wypisz 8 zadań ze swojej dzisiejszej listy i przydziel je do 4 ćwiartek.',
-        promptText: 'Moje zadania w ćwiartkach:',
-        placeholder: 'I (Pilne/Ważne): awaria. II (Niepilne/Ważne): trening, strategia. III (Pilne/Nieważne): maile. IV: TV.'
+        title: 'Zdefiniowanie konfliktu wartości',
+        instruction: 'Zapisz dwie wartości, które wchodzą w bezpośrednie starcie w Twoim obecnym życiu (np. Bezpieczeństwo finansowe vs Wolność twórcza).',
+        promptText: 'Starcie wartości:',
+        placeholder: 'Wartość A: Bezpieczeństwo etatowe vs Wartość B: Niezależność i własna firma...'
       },
       {
         stepNumber: 2,
-        title: 'Blokowanie czasu na Ćwiartkę II',
-        instruction: 'Wpisz do kalendarza na ten tydzień 2 nienegocjowalne bloki po 90 minut na zadania z Ćwiartki II.',
-        promptText: 'Moje bloki święte:',
-        placeholder: 'Wtorek i Czwartek 8:00 - 9:30: Praca nad strategią rozwoju firmy (telefon wyłączony).'
+        title: 'Określenie warunków granicznych',
+        instruction: 'Określ minimalne warunki bezpieczeństwa, po spełnieniu których dajesz sobie prawo do realizacji wartości wolności.',
+        promptText: 'Moje warunki brzegowe:',
+        placeholder: 'Przejdę na własną działalność, gdy zgromadzę poduszkę finansową na 6 miesięcy życia...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Sformułowanie kompasu decyzyjnego',
+        instruction: 'Napisz zdanie podsumowujące Twoją hierarchię w tym etapie życia.',
+        promptText: 'Mój kompas na ten etap:',
+        placeholder: 'Na tym etapie buduję poduszkę bezpieczeństwa, by za 8 miesięcy zrealizować moją wartość wolności bez niszczenia spokoju rodziny.'
       }
     ],
     reflectionQuestions: [
-      'Dlaczego odsuwanie spraw Ważnych ale Niepilnych prowadzi do późniejszych katastrof i pożarów?'
+      'Dlaczego próba realizowania obu wartości bez planu wywoływała w Tobie ciągłe poczucie winy?',
+      'Jak jasny warunek brzegowy obniża Twój poziom stresu?'
     ]
   },
   {
-    id: 'cwiczenie-20-5-intencje-implementacyjne',
-    title: 'Kreator Intencji Implementacyjnych (Reguła JEŚLI-TO)',
-    subtitle: 'Automatyzacja zachowań zgodnych z wartościami w sytuacjach trudnych',
-    objective: 'Napisanie precyzyjnych skryptów zachowania na wypadek wystąpienia pokusy lub oporu.',
+    id: 'ex-20-3',
+    title: 'Przekształcenie „Powinienem” w „Wybieram”',
+    subtitle: 'Budowanie motywacji autonomicznej (Teoria SDT)',
+    objective: 'Odzyskanie poczucia sprawczości i autonomii w codziennych obowiązkach.',
     durationMinutes: 15,
-    neuroScientificFoundation: 'Tworzenie gotowych pętli neuronalnych w korze przedczołowej omitujących konieczność wysiłkowej decyzji w stresie.',
+    neuroScientificFoundation: 'Zmiana ramy językowej z zewnętrznego przymusu na autonomiczny wybór aktywuje obszary koryprzedczołowej odpowiedzialne za motywację wewnętrzną.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Zdefiniowanie wyzwalacza i akcji',
-        instruction: 'Napisz 3 reguły w formacie: „JEŚLI [sytuacja pokusy], TO [akcja zgodna z wartością]”.',
-        promptText: 'Moje reguły JEŚLI-TO:',
-        placeholder: 'JEŚLI poczuję ochotę na słodycze o 21:00, TO wypiję szklankę wody i zrobię 10 pompek.'
+        title: 'Wypisanie zdań przymusu („Powinienem”)',
+        instruction: 'Zapisz 3 zdania dotyczące obowiązków, które wypowiadasz ze słowami „Muszę...” lub „Powinienem...” (np. Muszę pisać ten raport).',
+        promptText: 'Moje zdania przymusu:',
+        placeholder: '1. Muszę chodzić na siłownię...\n2. Powinienem oszczędzać pieniądze...\n3. Muszę jeździć do teściów...'
+      },
+      {
+        stepNumber: 2,
+        title: 'Odkrycie ukrytej wartości/korzyści',
+        instruction: 'Dla każdego zdania odpowiedz na pytanie: Z jakiej wartości lub korzyści korzystam, decydując się na to działanie?',
+        promptText: 'Ukryta wartość/korzyść:',
+        placeholder: '1. Chcę mieć sprawne ciało bez bólu kręgosłupa...\n2. Chcę spokoju duchowego na wypadek kryzysu...\n3. Cenię dobre relacje w rodzinie...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Sformułowanie zdania wyboru („Wybieram, bo...”)',
+        instruction: 'Przepisuj każde zdanie na formułę: „Wybieram X, ponieważ zależy mi na Y. Albo decyduję się nie robić X i przyjmuję konsekwencje”.',
+        promptText: 'Moje nowe zdania autonomii:',
+        placeholder: 'Wybieram trening 3 razy w tygodniu, ponieważ chcę mieć sprawne kręgosłup i energię do pracy.'
       }
     ],
     reflectionQuestions: [
-      'O ile łatwiej podejmuje się decyzje, gdy plan reakcji został przygotowany wcześniej w stanie spokoju?'
+      'Jak zmienia się Twoja chęć do działania, gdy zastępujesz przymus autonomicznym wyborem?',
+      'Z którego „powinienem” w swoim życiu powinieneś po prostu zrezygnować?'
     ]
   },
   {
-    id: 'cwiczenie-20-6-stawianie-granic',
-    title: 'Trening Asertywnego Stawiania Granic w Ochronie Wartości',
-    subtitle: 'Nauka mówienia NIE prośbom zderzającym się z własnymi priorytetami',
-    objective: 'Sformułowanie i przećwiczenie formuły asertywnej odmowy bez wpadania w poczucie winy.',
+    id: 'ex-20-4',
+    title: 'Trening Asertywnego Mówienia „NIE”',
+    subtitle: 'Ochrona priorytetów bez agresji i bez poczucia winy',
+    objective: 'Nauczenie się zwięzłej komunikacji odmowy w sprawach stojących w sprzeczności z Twoimi priorytetami.',
     durationMinutes: 20,
-    neuroScientificFoundation: 'Wyhamowanie reakcji uległości (Fawn Response) poprzez wsparcie racjonalne z dlPFC.',
+    neuroScientificFoundation: 'Skuteczna komunikacja granic redukuje lęk przed odrzuceniem społecznym i chroni zasoby wykonawcze.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Scenariusz naruszenia granicy',
-        instruction: 'Zapisz sytuację, w której ktoś nakłada na Ciebie zadanie naruszające Twój czas prywatny.',
-        promptText: 'Sytuacja trudna:',
-        placeholder: 'Prośba o podjęcie dodatkowego dyżuru w weekend...'
+        title: 'Zidentyfikowanie sytuacji naruszania granic',
+        instruction: 'Wypisz sytuację, w której najczęściej zgadzasz się na coś wbrew sobie z powodu lęku przed rozczarowaniem kogoś.',
+        promptText: 'Sytuacja trudnej odmowy:',
+        placeholder: 'Gdy kolega z pracy prosi o przejęcie jego zadania w piątek o 16:00...'
       },
       {
         stepNumber: 2,
-        title: 'Formuła odmowy asertywnej',
-        instruction: 'Napisz zdanie: „Doceniam... Jednak nie mogę... ponieważ moje priorytety... proponuję...”',
-        promptText: 'Moja odmowa:',
-        placeholder: 'Doceniam zaufanie, jednak nie wezmę tego dyżuru, gdyż ten weekend rezerwuję dla rodziny. Proponuję zamianę na wtorek.'
+        title: 'Opracowanie skryptu zwięzłej odmowy',
+        instruction: 'Stwórz 2-zdaniową odmowę opartą na szacunku i jasnym komunikacie bez nadmiernego tłumaczenia się.',
+        promptText: 'Mój skrypt zwięzłej odmowy:',
+        placeholder: 'Nie pomogę Ci w tym projekcie w ten piątek, ponieważ mam zaplanowane priorytety rodzinne. Daj znać w poniedziałek rano.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Przećwiczenie odmowy na głos',
+        instruction: 'Powiedz ten skrypt 3 razy na głos z pewną, spokojną mową ciała.',
+        promptText: 'Potwierdzenie treningu:',
+        placeholder: 'Przećwiczono na głos. Postawa prosta, głos spokojny.'
       }
     ],
     reflectionQuestions: [
-      'Jakie to uczucie obronić swój czas bez uciekania się do kłamstw czy wymówek zdrowotnych?'
+      'Dlaczego tłumaczenie się i przepraszanie przy odmowie osłabia Twój przekaz?',
+      'Jakie to uczucie obronić swój czas bez wchodzenia w agresję?'
     ]
   },
   {
-    id: 'cwiczenie-20-7-reorganizacja-priorytetow',
-    title: 'Plan Reorganizacji Priorytetów na Nowy Etap Życia',
-    subtitle: 'Świadome pożegnanie starych celów i powitanie nowych zadań rozwojowych',
-    objective: 'Uporządkowanie celów życiowych w zgodzie z aktualnym wiekiem, stanem zdrowia i rolą społeczną.',
+    id: 'ex-20-5',
+    title: 'Zasada Pareto w Praktyce Życiowej (Cut the 80%)',
+    subtitle: 'Eliminacja bezużytecznych działań na rzecz kluczowych rezultatów',
+    objective: 'Zidentyfikowanie 20% aktywności dających 80% rezultatów i drastyczne ograniczenie reszty.',
     durationMinutes: 25,
-    neuroScientificFoundation: 'Reorganizacja schematów tożsamościowych w kory przedczołowej wspierająca adaptację.',
+    neuroScientificFoundation: 'Redukcja przeładowania bodźcami odciąża pamięć roboczą i zwiększa głębokość skupienia w kory przedczołowej.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Pożegnanie starego celu',
-        instruction: 'Zapisz cel z przeszłości, który przestał być aktualny, i świadomie z niego zrezygnuj.',
-        promptText: 'Odrzucana presja z przeszłości:',
-        placeholder: 'Chęć udowodnienia dawnej grupie ze studiów, że zarobię pierwszy milion przed 35-tką.'
+        title: 'Wypisanie wszystkich obowiązków z danego obszaru',
+        instruction: 'Zapisz listę 10 zadań, które wykonujesz w ciągu tygodnia w pracy lub w domu.',
+        promptText: 'Moja lista 10 zadań:',
+        placeholder: '1. Pisanie raportów, 2. Spotkania statusowe, 3. Odpowiadanie na maile, 4. Tworzenie strategii...'
       },
       {
         stepNumber: 2,
-        title: 'Powitanie nowego priorytetu',
-        instruction: 'Napisz, co staje się Twoim głównym drogowskazem na najbliższe 3 lata.',
-        promptText: 'Mój aktualny priorytet:',
-        placeholder: 'Budowanie trwałego zdrowia, spokoju wewnętrznego i głębokiej relacji z partnerem.'
+        title: 'Wskazanie kluczowych 20%',
+        instruction: 'Wskaż 2 zadania z tej listy, które przynoszą 80% realnej wartości i postępu.',
+        promptText: 'Kluczowe 20%:',
+        placeholder: '1. Tworzenie strategii dla kluczowych klientów\n2. Bezpośrednie spotkania sprzedażowe'
+      },
+      {
+        stepNumber: 3,
+        title: 'Plan delegowania lub eliminacji pozostałych 80%',
+        instruction: 'Napisz, co zrobisz z przynajmniej dwoma zadaniami z pozostałych 80% (automatyzacja, skrócona forma, delegowanie).',
+        promptText: 'Plan cięć:',
+        placeholder: 'Skracam spotkania statusowe z 60 do 15 minut. Zastępuję e-maile jednym krótkim podsumowaniem dziennym.'
       }
     ],
     reflectionQuestions: [
-      'O ile lżejszy się stajesz, gdy zrzucasz z barków realizację nieaktualnych celów z młodości?'
+      'O ile wzrośnie Twoja skuteczność, gdy skupisz siły na kluczowym 20%?',
+      'Co powstrzymuje Cię przed natychmiastowym wycięciem zbędnych spotkań?'
+    ]
+  },
+  {
+    id: 'ex-20-6',
+    title: 'Test Ostateczny Wartości (Deathbed Test)',
+    subtitle: 'Urealnienie perspektywy życiowej i odrzucenie błahostek',
+    objective: 'Głęboka weryfikacja priorytetów z perspektywy końca życia.',
+    durationMinutes: 20,
+    neuroScientificFoundation: 'Wyobrażenie skończoności życia aktywuje struktury mPFC odpowiedzialne za refleksję egzystencjalną i odrzucenie narzuconych gier statusowych.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Wyobrażenie perspektywy końca drogi',
+        instruction: 'Wyobraź sobie siebie w wieku 90 lat, siedzącego na fotelu i patrzącego wstecz na swoje obecne życie.',
+        promptText: 'Co widzę z perspektywy 90 lat:',
+        placeholder: 'Widzę, że wyścigi o status i lajki nie miały żadnego znaczenia. Liczyły się relacje i odwaga bycia sobą...'
+      },
+      {
+        stepNumber: 2,
+        title: 'Wypisanie rzeczy, których NIE będziesz żałować',
+        instruction: 'Wypisz 3 sprawy, którymi dziś się zamartwiasz, a które z perspektywy 90 lat będą całkowicie bez znaczenia.',
+        promptText: 'Błahostki bez znaczenia:',
+        placeholder: '1. Opinia sąsiadów o moim samochodzie...\n2. Nietrafiony projekt sprzed dwóch lat...\n3. Złośliwy komentarz w pracy...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Jedna zmiana na dzisiaj',
+        instruction: 'Napisz jedną decyzję, którą podejmiesz dzisiaj, by żyć w większej spójności z tą egzystencjalną mądrością.',
+        promptText: 'Moja decyzja z perspektywy końca drogi:',
+        placeholder: 'Spędzę ten wieczór z dziećmi bez telefonu, ciesząc się chwolą obecną.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jak Test Ostateczny zmienia Twoją ocenę obecnych problemów zawodowych?',
+      'Dlaczego czekamy z życiem na własnych zasadach aż do kryzysu?'
+    ]
+  },
+  {
+    id: 'ex-20-7',
+    title: 'Instrukcja Obsługi Potrzeb Psychologicznych (SDT Audit)',
+    subtitle: 'Diagnoza zaspokojenia Autonomii, Kompetencji i Bliskości',
+    objective: 'Zidentyfikowanie obszarów deficytu w 3 podstawowych potrzebach i zaplanowanie działań naprawczych.',
+    durationMinutes: 20,
+    neuroScientificFoundation: 'Zaspokojenie potrzeb SDT jest warunkiem koniecznym dla neurobiologicznej równowagi i zapobiegania wypaleniu.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Ocena nasycenia potrzeb (0-100%)',
+        instruction: 'Oceń na ile Twoje obecne życie zaspokaja potrzeby: Autonomii (poczucie wyboru), Kompetencji (poczucie rozwoju) oraz Bliskości (poczucie więzi).',
+        promptText: 'Obecny poziom nasycenia:',
+        placeholder: 'Autonomia: 40%\nKompetencja: 80%\nBliskość: 30%'
+      },
+      {
+        stepNumber: 2,
+        title: 'Identyfikacja największego deficytu',
+        instruction: 'Wybierz potrzebę o najniższym wyniku i opisz, co najbardziej ją blokuje w Twoim codziennym życiu.',
+        promptText: 'Główna blokada potrzeby:',
+        placeholder: 'Bliskość jest blokowana przez ciągły pracoholizm i brak czasu na szczere rozmowy z partnerem...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Działanie regenerujące potrzebę',
+        instruction: 'Zaplanuj jedną konkretną akcję na ten tydzień, która podniesie poziom nasycenia tej potrzeby.',
+        promptText: 'Moja akcja regenerująca:',
+        placeholder: 'Zaplanuję randkę z partnerem bez tematów pracy i dzieci w ten piątek.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jak brak zaspokojenia tej potrzeby przekłada się na Twój poziom irytacji w ciągu dnia?',
+      'Co możesz zrobić, by chronić tę przestrzeń co tydzień?'
+    ]
+  },
+  {
+    id: 'ex-20-8',
+    title: 'Manifest Spójności i Priorytetów',
+    subtitle: 'Osobisty kompas kierowania własnym życiem',
+    objective: 'Zsyntetyzowanie wglądów z Rozdziału 4 w zwięzłą deklarację wartości i priorytetów.',
+    durationMinutes: 20,
+    neuroScientificFoundation: 'Formalna kodyfikacja priorytetów w koryprzedczołowej ułatwia automatyczne podejmowanie wyborów pod presją czasu.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Moja nienaruszalna zasada',
+        instruction: 'Napisz jedną zasadę etyczną, której nie złamiesz dla żadnych pieniędzy ani awansu.',
+        promptText: 'Moja nienaruszalna zasada:',
+        placeholder: 'Nigdy nie będę kłamać w sprawach bezpieczeństwa i relacji dla własnej korzyści.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Mój główny priorytet na ten rok',
+        instruction: 'Napisz jeden główny priorytet, któremu podporządkujesz swoje zasoby czasowe w najbliższym roku.',
+        promptText: 'Mój priorytet nr 1:',
+        placeholder: 'Odbudowa zdrowia fizycznego i obecności w domu.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Osobisty manifest spójności',
+        instruction: 'Napisz 2-zdaniowy manifest: „Wybieram życie w zgodzie z moim kompasem...”',
+        promptText: 'Mój osobisty manifest priorytetów:',
+        placeholder: 'Wybieram wolność czasową i spokój sumienia zamiast cudzego podziwu. Moje wartości prowadzą moje decyzje każdego dnia.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jak ten manifest ułatwi Ci powiedzenie „nie” najbliższej niekorzystnej propozycji?',
+      'O ile spokojniejszy czujesz się mając jasny kompas w ręku?'
     ]
   }
 ];
@@ -848,69 +878,65 @@ export const chapterTwenty: Chapter = {
   number: 20,
   volume: 3,
   volumeChapterNumber: 4,
-  title: 'Rozdział 4: Wartości, Potrzeby i Priorytety',
-  subtitle: 'Architektura kompasu moralnego, motywacja autonomiczna, rozwiazywanie konfliktów wartości i sztuka operacyjnej priorytetyzacji w życiu',
-  leadParagraph: 'Życie bez jasnej hierarchii wartości przypomina nawigowanie statkiem po wzburzonym oceanie bez kompasu. Każda fala społecznej presji, mody czy chwilowego impulsu przesuwa nas w losowym kierunku. Wartości nie są abstrakcyjnymi hasłami z podręczników etyki — są operacyjnymi kryteriami wyboru, które decydują o tym, na co przeznaczamy nasz czas, energię i finanse. Zrozumienie różnicy między wartościami a celami, rozbrojenie konfliktów między wolnością a bezpieczeństwem oraz nauka przekładania wartości na codzienne nawyki stanowią fundament prawdziwej autonomii osobistej.',
-  totalEstimatedPages: 58,
+  title: 'Wartości, potrzeby i priorytety',
+  subtitle: 'Teoria Samodeterminacji SDT, kompasy moralne, nawigacja w konflikcie wartości i sztuka wyznaczania granic',
+  leadParagraph: 'Dlaczego tak często wiemy, co jest dla nas dobre i ważne, a mimo to działamy w sposób całkowicie sprzeczny z naszymi deklaracjami? Dlaczego osławiony „brak czasu” okazuje się w rzeczywistości jedynie brakiem jasnych priorytetów? W świecie przeładowanym bodźcami, presją społeczną i cyfrowym hałasem umiejętność precyzyjnego zdefiniowania własnych wartości oraz potrzeb psychologicznych przestaje być luksusem — staje się warunkiem koniecznym zachowania psychicznej autonomii. W tym rozdziale przeanalizujemy, jak budować nienaruszalny kompas priorytetów i podejmować odważne decyzje w zgodzie ze sobą.',
+  totalEstimatedPages: 62,
   sections: [
     {
       id: 'sec-20-1',
       pageNumber: 1,
       sectionNumber: '20.1',
-      title: 'Wartości vs Cele vs Potrzeby vs Preferencje: Rozdzielczość Pojęciowa',
-      category: 'wstep',
-      readingTimeMinutes: 9,
+      title: 'Czym Są Wartości? Filary Motywacyjne i Kompasy Decyzyjne',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       quote: {
-        text: 'Kiedy Twoje wartości są dla Ciebie jasne, podejmowanie decyzji staje się proste.',
+        text: 'Gdy Twoje wartości są dla Ciebie jasne, podejmowanie decyzji staje się proste.',
         author: 'Roy E. Disney'
       },
       paragraphs: [
-        'W języku potocznym pojęcia takie jak „wartość”, „cel”, „potrzeba” i „zachcianka” są ze sobą permanentnie mylone. Aby skutecznie kierować własnym życiem, musimy wprowadzić ścisły porządek terminologiczny.',
-        'Wartość (Value) to ciągły kierunek działania i sposób bycia (np. „bycie troskliwym rodzicem”). Wartości nie można „odhaczyć” ani osiągnąć raz na zawsze — można nią żyć w każdej minucie. Cel (Goal) to konkretny, weryfikowalny punkt w czasie (np. „przeczytać dzieciom książkę dzisiaj o 19:00”). Cel można osiągnąć i zamknąć.',
-        'Potrzeba (Need) to biologiczny lub psychiczny stan braku wymagający zaspokojenia (np. sen, bezpieczeństwo, więź). Preferencja to subiektywny wybór formy (np. „wolę kawę od herbaty”).',
-        'Gdy pomylisz cel z wartością, wpadasz w pułapkę: po osiągnięciu celu pojawia się pustka, gdyż cel się skończył, a wartość wymaga ciągłego zasilania.'
+        'Wartości (values) w psychologii poznawczo-behawioralnej i akceptacji (ACT) definiowane są jako wybrane jakości działania, które nadają życiu kierunek i głęboki sens. Wartość nie jest rzeczą do posiadania ani celem do odhaczenia na liście.',
+        'Metaforycznie wartości przypominają kierunki na kompasie (np. Zachód). Nigdy nie „docierasz” na Zachód — po prostu podróżujesz w tym kierunku każdego dnia. Działanie zgodne z wartością „Bycie troskliwym partnerem” nie kończy się po jednym miłym geście, lecz trwa w każdym kolejnym wyborze.',
+        'Wartości stanowią najgłębszą warstwę motywacji wewnętrznej. Gdy działasz w zgodzie z własnymi wartościami, Twoja kora przedczołowa odczuwa stan spójności (integrity), wyzwalając poczucie dumy i spokoju ducha.'
       ]
     },
     {
       id: 'sec-20-2',
       pageNumber: 4,
       sectionNumber: '20.2',
-      title: 'Natura Wartości: Kompas vs Przystań',
+      title: 'Teoria Samodeterminacji (SDT Deci & Ryan) — 3 Podstawowe Potrzeby Psychologiczne',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Wartości działają jak kompas wyznaczający północ. Kompas nie jest miejscem, do którego dopływasz — jest narzędziem, które pozwala płynąć we właściwym kierunku niezależnie od pogody.',
-        'Osoba, dla której wartością jest Rozwój, nie „kończy rozwoju” po uzyskaniu dyplomu. Dyplom był tylko jednym z przystani na drodze wyznaczonej przez kompas.',
-        'Gdy kierujesz się wartościami, każde działanie podjęte w zgodzie z nimi przynosi natychmiastowe poczucie spójności i godności.'
+        'Edward Deci i Richard Ryan w Teorii Samodeterminacji (Self-Determination Theory) udowodnili, że każdy człowiek do prawidłowego rozwoju i dobrostanu potrzebuje stałego zaspokajania 3 uniwersalnych potrzeb psychologicznych:',
+        '1. Potrzeba Autonomii (Autonomy) — poczucie, że jesteśmy autorem własnych wyborów, a nie pionkiem przesuwanym na szachownicy przez szefa czy rodzinę; 2. Potrzeba Kompetencji (Competence) — poczucie sprawczości i rozwoju umiejętności w starciu z wyzwaniami; 3. Potrzeba Bliskości i Powiązania (Relatedness) — poczucie przynależności, bycia kochanym i szanowanym w bezpiecznej grupie.',
+        'Gdy środowisko pracy lub domowe blokuje te potrzeby (np. mikromanagement niszczący autonomię), człowiek popada w stan wyczerpania, cynizmu i biernego oporu.'
       ]
     },
     {
       id: 'sec-20-3',
       pageNumber: 7,
       sectionNumber: '20.3',
-      title: 'Teoria Samostanowienia SDT: Trzy Filarowe Potrzeby Psychiczne',
+      title: 'Wartość vs Cel vs Preferencja — Różnice Strukturalne w Architekturze Decyzyjnej',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Deci i Ryan w Teorii Samostanowienia (SDT) udowodnili, że motywacja autonomiczna kwitnie tylko wtedy, gdy środowisko zaspokaja 3 uniwersalne potrzeby psychiczne:',
-        '1. Autonomia (Autonomy) — poczucie, że jesteś autorem swoich wyborów, a nie pionkiem na planszy.',
-        '2. Kompetencja (Competence) — poczucie rozwoju, sprawności i robienia postępów w trudnych zadaniach.',
-        '3. Powiązanie / Przynależność (Relatedness) — poczucie głębokiej więzi, troski i bycia ważnym dla innych ludzi.',
-        'Zignorowanie którejkolwiek z tych potrzeb prowadzi do spłycenia motywacji i poczucia jałowości działania.'
+        'Niezwykle ważne jest precyzyjne rozróżnienie trzech pojęć, które często bywają mylone w praktyce samorozwojowej.',
+        'Wartość to jakościowy kierunek działania na całe życie (np. „Dbnie o zdrowie”). Cel to konkretny, mierny przystanek na tej drodze, który można osiągnąć („Przebiegnięcie maratonu w pażdzierniku”). Preferencja to zmienny gust lub nawyk dotyczący wygody („Wolę biegać rano niż wieczorem”).',
+        'Mylenie celu z wartością prowadzi do pułapki „Osiągnę cel i będę szczęśliwy”. Po przebiegnięciu maratonu pojawia się pustka. Gdy rozumiesz, że maraton był tylko przystankiem na drodze wartości „Zdrowie”, kontynuujesz ruch w wybranym kierunku.'
       ]
     },
     {
       id: 'sec-20-4',
       pageNumber: 10,
       sectionNumber: '20.4',
-      title: 'Deklarowane Wartości vs Rzeczywiste Zachowanie: Anatomia Rozbieżności',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 10,
+      title: 'Wartości Deklarowane vs Wartości Realizowane w Działaniu',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Dlaczego ludzie tak często powtarzają: „Rodzina/Zdrowie jest dla mnie najważniejsze”, a jednocześnie spędzają całe życie w biurze i zaniedbują badania lekarskie?',
-        'Ta rozbieżność nie wynika ze złej woli czy hipokryzji. Wynika z faktu, że codzienne zachowanie jest stymulowane przez natychmiastowe nagrody dopaminowe i natychmiastowy lęk przed brakiem bezpieczeństwa.',
-        'Praca w biurze daje szybki feedback i status. Troska o zdrowie wymaga wysiłku bez natychmiastowego poklasku.',
-        'Odzyskanie spójności wymaga zbadania mechanizmów, które odciągają nas od deklarowanych priorytetów.'
+        'Istnieje drastyczna różnica między tym, co człowiek twierdzi na temat swoich wartości, a tym, jak faktycznie żyje.',
+        'Wartości deklarowane to szlachetne słowa wypowiadane podczas dyskusji czy pisane w CV („Rodzina jest dla mnie najważniejsza”). Wartości realizowane to obiektywne fakty wynikające ze sposobu alokacji czasu, energii i pieniędzy.',
+        'Jeśli Twój kalendarz wykazuje 70 godzin pracy i 2 godziny dla rodziny w tygodniu, to bez względu na deklaracje słowne Twoją wartością realizowaną jest Status/Praca, a nie Rodzina. Konfrontacja z tą prawdą jest pierwszym krokiem do dojrzałości.'
       ],
       caseStudyRef: caseStudiesChapterTwenty[0]
     },
@@ -918,13 +944,13 @@ export const chapterTwenty: Chapter = {
       id: 'sec-20-5',
       pageNumber: 13,
       sectionNumber: '20.5',
-      title: 'Konflikty Wartości: Wolność vs Bezpieczeństwo, Sukces vs Relacje',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Konflikty Wartości — Gdy Wolność Zderza Się z Bezpieczeństwem',
+      category: 'teoria',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Najtrudniejsze decyzje życiowe nie dotyczą wyboru między Dobrem a Złem. Dotyczą wyboru między dwoma Przeciwstawnymi Dobrami (Konflikt Wartości).',
-        'Chęć posiadania pełnej Wolności zderza się z potrzebą Bezpieczeństwa Finansowego. Chęć odniesienia wielkiego Sukcesu zderza się z potrzebą Bliskości w relacjach.',
-        'Rozwiązaniem nie jest iluzoryczny brak wyboru, lecz świadoma priorytetyzacja i wypracowanie rozwiązań hybrydowych.'
+        'Dojrzałe życie nie polega na łatwym wyborze między Dobrem a Złem. Najtrudniejsze dylematy życiowe to starcie między dwoma wartościami, z których obie są dobre (np. Wolność vs Bezpieczeństwo, Uczciwość vs Lojalność).',
+        'W sytuacji konfliktu wartości opowiedzenie się za jedną opcją wymusza konieczność znoszenia kosztu rezygnacji z drugiej. Brak akceptacji tego kosztu generuje przewlekły paraliż decyzyjny.',
+        'Świadoma nawigacja wymaga ustalenia jasnej hierarchii priorytetów na dany etap życia i akceptacji faktu, że nie można mieć wszystkiego naraz.'
       ],
       caseStudyRef: caseStudiesChapterTwenty[1]
     },
@@ -932,200 +958,156 @@ export const chapterTwenty: Chapter = {
       id: 'sec-20-6',
       pageNumber: 16,
       sectionNumber: '20.6',
-      title: 'Konflikt Krótkiego i Długiego Terminu: Dyskonto Hiperboliczne',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 10,
+      title: 'Priorytety i Nawigacja Decyzyjna — Krótki Termin vs Długi Termin',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Układ limbiczny przyznaje priorytet nagrodom natychmiastowym (tłuste jedzenie, serial, zakup), ignorując odroczone koszty zdrowotne czy finansowe.',
-        'Dyskonto Hiperboliczne zmusza nas do robienia rzeczy, których żałujemy 2 godziny później.',
-        'Przełamanie tego mechanizmu wymaga zmiany architektury środowiska i budowania intencji implementacyjnych.'
+        'Umysł ludzki z powodu ewolucyjnego budowy układu limbicznym ma naturalną tendencję do faworyzowania natychmiastowej ulgi i małych nagród krótko-terminowych nad dużymi celami długo-terminowymi (Hyperbolic Discounting).',
+        'Zarządzanie priorytetami to umiejętność odraczania gratyfikacji (Delayed Gratification). To świadomy wybór dyskomfortu w tej minucie w imię spójności z wartościami w perspektywie lat.',
+        'Zasada Pareto (80/20) w zarządzaniu priorytetami nakazuje odważne wyeliminowanie 80% błahostek po to, by skoncentrować pełną energię na 20% kluczowych działań zasilających nasze główne wartości.'
       ],
-      caseStudyRef: caseStudiesChapterTwenty[3]
+      caseStudyRef: caseStudiesChapterTwenty[4]
     },
     {
       id: 'sec-20-7',
       pageNumber: 19,
       sectionNumber: '20.7',
-      title: 'Autonomia Wartości vs Presja Grupy i Introjekcja',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Presja Społeczna, Oczekiwania Rodziny i Grupy a Narzucone Wartości',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Wielu ludzi realizuje cele, które nie są ich własnymi wartościami, lecz stanowią cichy spadkobierczy nakaz rodziców lub grupy społecznej (Introjekcja).',
-        'Odzyskanie autonomii wymaga odwagi do stawienia czoła lękowi przed odrzuceniem i pójścia własną drogą.'
+        'Większość ludzi przeżywa znaczne części swojego życia realizując narzucone wartości zewnętrznej grupy (rodziny, korporacji, subkultury) w obronie przed lękiem przed odrzuceniem.',
+        'Zjawisko introjekcji polega na bezkrytycznym poknięciu cudzych priorytetów i traktowaniu ich jako własnych. Powoduje to powolne wyobcowanie i poczucie, że żyje się w cudzym scenariuszu.',
+        'Odzyskanie autonomii wymaga odważnego różnicowania siebie (Differentiation of Self) od oczekiwań otoczenia.'
       ],
-      caseStudyRef: caseStudiesChapterTwenty[4]
+      caseStudyRef: caseStudiesChapterTwenty[3]
     },
     {
       id: 'sec-20-8',
       pageNumber: 22,
       sectionNumber: '20.8',
-      title: 'Potrzeby Natychmiastowe vs Długoterminowe: Hierarchia Maslowa',
+      title: 'Decyzje Pod Naciskiem i Zachowanie Autonomii — Sztuka Wyznaczania Granic',
       category: 'teoria',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Gdy nie są zaspokojone potrzeby podstawowe (sen, bezbolesność, poczucie bezpieczeństwa), kora przedczołowa traci zasoby do realizowania wyższych wartości.',
-        'Zadbaj o fizjologiczny fundament, by moc budować trwały dobrostan psychiczny.'
+        'Wyznaczanie granic (Boundaries) jest umiejętnością komunikowania własnych nienaruszalnych wartości bez agresji i bez poczucia winy.',
+        'Granica nie jest atakiem na drugiego człowieka — jest jasną informacją o tym, na co się zgadzamy, a na co nie. Osoba o jasnych priorytetach potrafi wypowiedzieć spokojne „Nie” prośbie szefa czy znajomego, powołując się na własny kompas.',
+        'Mówienie „Nie” innym ludziom jest w rzeczywistości jedyną drogą do powiedzenia „Tak” własnym priorytetom.'
       ]
     },
     {
       id: 'sec-20-9',
       pageNumber: 25,
       sectionNumber: '20.9',
-      title: 'Złudzenie Ostatecznego Celu (Arrival Fallacy)',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 10,
+      title: 'Ewolucja Wartości na Różnych Etapach Życia',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Przekonanie, że osiągnięcie konkretnego celu przyniesie wieczne szczęście, jest iluzją poznawczą.',
-        'Adaptacja hedoniczna sprowadza poziom samopoczucia do punktu bazowego. Szczęście leży w samym procesie płynięcia.'
-      ],
-      caseStudyRef: caseStudiesChapterTwenty[2]
+        'Hierarchia wartości nie jest sztywnym spisem stanowionym raz na zawsze. Zmienia się i ewoluuje wraz z wiekiem i doświadczeniami życiowymi.',
+        'W młodości dominuje potrzeba eksploracji, wolności, budowania pozycji i zdobywania kompetencji. W wieku dojrzałym wskaźniki przesuwają się ku stabilizacji, głębokim relacjom, zdrowiu i przekazywaniu wiedzy innym (generatywność wg Eriksona).',
+        'Zaakceptowanie faktu, że Twoje priorytety sprzed 10 lat nie muszą być Twoimi priorytetami dzisiaj, uwalnia od fałszywego poczucia winy.'
+      ]
     },
     {
       id: 'sec-20-10',
       pageNumber: 28,
       sectionNumber: '20.10',
-      title: 'Operacyjna Priorytetyzacja: Matryca Eisenhowera',
-      category: 'cwiczenia',
-      readingTimeMinutes: 9,
+      title: 'Wewnętrzny Konflikt „Chcę” vs „Powinienem” — Uwalnianie Prokrastynacji',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Narzędzie Eisenhowera pozwala oddzielić sprawy Pilne od Spraw Ważnych.',
-        'Ochrona czasu na sprawy Ważne, ale Niepilne (Ćwiartka II) to klucz do życia zgodnego z wartościami.'
-      ],
-      exerciseRef: selfExercisesChapterTwenty[3]
+        'Prokrastynacja rzadko jest wynikiem zwykłego lenistwa. Najczęściej jest objawem ostrego konfliktu między nakazem „Powinienem” (pochodzącym z norm zewnętrznych) a pragnieniem „Chcę”.',
+        'Gdy zadanie jest opatrzone etykietą „Przymus”, umysł reaguje oporem i szuka ucieczki w natychmiastowe gratyfikacje.',
+        'Rozwiązanie polega na re-framingu: przeformułowaniu zadania z pozycji autonomii: „Wybieram to działanie, ponieważ służy ono mojej wartości X”.'
+      ]
     },
     {
       id: 'sec-20-11',
       pageNumber: 31,
       sectionNumber: '20.11',
-      title: 'Symulator Konfliktu Wartości i Decyzji Trudnych',
-      category: 'cwiczenia',
-      readingTimeMinutes: 10,
+      title: '💡 BŁĘDNA INTUICJA: Działanie zgodne z wartościami przychodzi bez wysiłku',
+      category: 'teoria',
+      readingTimeMinutes: 12,
       paragraphs: [
-        'Przeanalizujmy interaktywnie zderzenie dwóch ważnych racji w konkretnych scenariuszach. Poniższe narzędzie uczy akceptowania kosztów odrzuconych alternatyw.'
+        'Częstym mit miedzyludzkim jest przekonanie, że jeśli coś jest naszą prawdziwą wartością, to realizacja tego działania powinna być lekka, łatwa i przyjemna.',
+        'W rzeczywistości działanie w zgodzie z wartościami (np. Uczciwość w trudnej rozmowie, Wstanie na trening o 6:00 rano dla Zdrowia) bardzo często wymaga pokonania znacznego oporu i dyskomfortu w krótkim terminie.',
+        'Wartości dają głęboki sens i dumę, a nie brak wysiłku fizjologicznego.'
       ]
     },
     {
       id: 'sec-20-12',
       pageNumber: 34,
       sectionNumber: '20.12',
-      title: 'Klarowanie Wartości w Terapii ACT',
-      category: 'cwiczenia',
-      readingTimeMinutes: 9,
+      title: '🔬 CO NADAL NIE JEST JASNE? Zmiana Wartości w Obliczu Kryzysów Egzystencjalnych',
+      category: 'podsumowanie',
+      readingTimeMinutes: 10,
       paragraphs: [
-        'Klarowanie wartości polega na wyznaczeniu kierunku działania przy jednoczesnej akceptacji obecności lęku i oporu.'
+        'W jakim stopniu nagła, drastyczna zmiana hierarchii wartości po traumie czy chorobie (Post-Traumatic Growth) jest trwałym przebudowaniem sieci neuronalnych, a w jakim przejściowym stanem obronnym?',
+        'Badania nad wzrostem potreumatycznym wskazują na dużą rolę aktywnej restrukturyzacji narracji autobiograficznej.'
+      ]
+    },
+    {
+      id: 'sec-20-13',
+      pageNumber: 36,
+      sectionNumber: '20.13',
+      title: '🎯 JAK ZASTOSOWAĆ TO JUTRO? Audyt Realizowanych Wartości i Kalendarza',
+      category: 'cwiczenia',
+      readingTimeMinutes: 10,
+      paragraphs: [
+        '1. Przeprowadź audyt kalendarza z zeszłego tygodnia.',
+        '2. Wylicz procent czasu przeznaczony na poszczególne wartości.',
+        '3. Wyeliminuj 1 zbędną czynność pożerającą czas.',
+        '4. Zablokuj nienaruszalny czas na najwyższą wartość.'
       ],
       exerciseRef: selfExercisesChapterTwenty[0]
     },
     {
-      id: 'sec-20-13',
-      pageNumber: 37,
-      sectionNumber: '20.13',
-      title: 'Ewolucja Priorytetów na Różnych Etapach Życia',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
-      paragraphs: [
-        'Hierarchia priorytetów nie jest zamrożona na zawsze. Zmiana etapu życia wymusza dojrzałą rekonfigurację zasobów.'
-      ],
-      caseStudyRef: caseStudiesChapterTwenty[6]
-    },
-    {
       id: 'sec-20-14',
-      pageNumber: 40,
+      pageNumber: 38,
       sectionNumber: '20.14',
-      title: 'Perspektywa Ostateczna: Ćwiczenie Mowy Pogrzebowej',
+      title: 'Warsztat Samorozwojowy: Laboratorium Priorytetyzacji i Granic',
       category: 'cwiczenia',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 12,
       paragraphs: [
-        'Spojrzenie na własne życie z perspektywy jego końca odrzuca powierzchowny szum społeczny i ujawnia to, co naprawdę ważne.'
-      ],
-      exerciseRef: selfExercisesChapterTwenty[2]
-    },
-    {
-      id: 'sec-20-15',
-      pageNumber: 43,
-      sectionNumber: '20.15',
-      title: 'Stawianie Granic w Ochronie Wartości',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
-      paragraphs: [
-        'Stawianie granic jest operacyjnym narzędziem obrony własnych priorytetów przed roszczeniami otoczenia.'
-      ],
-      caseStudyRef: caseStudiesChapterTwenty[5]
-    },
-    {
-      id: 'sec-20-16',
-      pageNumber: 46,
-      sectionNumber: '20.16',
-      title: 'Intencje Implementacyjne: Reguła JEŚLI-TO',
-      category: 'cwiczenia',
-      readingTimeMinutes: 8,
-      paragraphs: [
-        'Formuła „Jeżeli X, To Y” automatyzuje trudne decyzje i wspiera wolę w chwili pokusy.'
-      ],
-      exerciseRef: selfExercisesChapterTwenty[4]
-    },
-    {
-      id: 'sec-20-17',
-      pageNumber: 49,
-      sectionNumber: '20.17',
-      title: '🧠 BŁĘDNA INTUICJA: „Jeśli Wartość Jest Prawdziwie Moja, Nigdy Nie Poczuję Oporu przed Jej Realizacją”',
-      category: 'teoria',
-      readingTimeMinutes: 8,
-      paragraphs: [
-        'INTUICJA: Przekonanie, że przy działaniu w zgodzie z prawdziwymi wartościami praca powinna przychodzić lekko, bezstresowo i z uśmiechem.',
-        'CO MOŻE BYĆ BŁĘDNE? Mylein oporu i zmęczenia ze złą wartością. Nawet najpiękniejsza wartość (np. rodzicielstwo, sztuka, nauka) wymaga trudnego, powtarzalnego wysiłku.',
-        'CO MÓWI PSYCHOLOGIA? Opór i zmęczenie są naturalną ceną za tworzenie rzeczy wartościowych w świecie realnym.',
-        'BARDZIEJ PRECYZYJNY MODEL: Wartość nie usuwa trudu — wartość nadaje trudowi głęboki sens.'
-      ]
-    },
-    {
-      id: 'sec-20-18',
-      pageNumber: 52,
-      sectionNumber: '20.18',
-      title: '🔬 CO NADAL NIE JEST JASNE? Uniwersalność Wartości Ludzkich (Schwartz Value Survey)',
-      category: 'podsumowanie',
-      readingTimeMinutes: 8,
-      paragraphs: [
-        'W jakim stopniu struktura wartości opisana przez Schaloma Schwartza jest uniwersalna dla wszystkich kultur, a w jakim stopniu zależy od uwarunkowań społeczno-gospodarczych?',
-        'Badania pokazują, że podstawowe osie (Otwartość na zmianę vs Zachowawczość, Przekraczanie Jaźni vs Umacnianie Jaźni) występują we wszystkich społecznościach, lecz ich waga ulega przesunięciom.'
-      ]
-    },
-    {
-      id: 'sec-20-19',
-      pageNumber: 54,
-      sectionNumber: '20.19',
-      title: '🎯 JAK ZASTOSOWAĆ TO JUTRO? Protokół Wyboru Priorytetu',
-      category: 'cwiczenia',
-      readingTimeMinutes: 8,
-      paragraphs: [
-        '1. Wybierz jedną najważniejszą wartość na ten tydzień.',
-        '2. Zidentyfikuj jedno zadanie z Ćwiartki II (Ważne, Niepilne), które wspiera tę wartość.',
-        '3. Wpisz nienegocjowalny blok czasowy na to zadanie do kalendarza.',
-        '4. Wykonaj akcję chroniąc granice.'
+        'Poniżej znajduje się zestaw ćwiczeń dedykowanych rozwiązywaniu konfliktów wartości, rozbrajaniu zwrotów przymusu oraz nauce asertywnej odmowy.'
       ],
       exerciseRef: selfExercisesChapterTwenty[1]
     },
     {
-      id: 'sec-20-20',
-      pageNumber: 56,
-      sectionNumber: '20.20',
-      title: 'Podsumowanie Rozdziału 4 i Most do Rozdziału 21',
+      id: 'sec-20-15',
+      pageNumber: 41,
+      sectionNumber: '20.15',
+      title: 'Most do Rozdziału 21 oraz Powiązania z Tomem I i II',
       category: 'podsumowanie',
-      readingTimeMinutes: 7,
+      readingTimeMinutes: 8,
       paragraphs: [
-        'Wartości i priorytety wyznaczają kurs naszej życiowej nawigacji. Gdy nauczymy się podejmować decyzje w zgodzie z własnym kompasem, odzyskujemy poczucie głębokiej spójności i sensu.',
-        'Ale jak monitorować jakość naszych procesów myślowych i upewnić się, że nie ulegamy nowym iluzjom? Odpowiedzią jest Metapoznanie i Świadomość Siebie. Przejdźmy do zwieńczenia tego bloku — Rozdziału 21.'
+        'Zdefiniowanie wartości i priorytetów daje nam jasny kompas działania. Aby jednak ten kompas działał w praktyce, musimy wykształcić zdolność do ciągłego monitorowania naszych procesów myślowych i emocjonalnych.',
+        'W następnym rozdziale przejdziemy do zwieńczenia pierwszego bloku Tomu III: Świadomości Siebie i Metapoznania — umiejętności patrzenia na własne myśli, emocje i tożsamość z pozycji obiektywnego obserwatora.'
       ]
     },
     {
-      id: 'sec-20-21',
-      pageNumber: 58,
-      sectionNumber: '20.21',
+      id: 'sec-20-16',
+      pageNumber: 43,
+      sectionNumber: '20.16',
+      title: 'Podsumowanie Rozdziału 4: Kluczowe Wglądy',
+      category: 'podsumowanie',
+      readingTimeMinutes: 7,
+      paragraphs: [
+        '1. Wartości to jakościowe kierunki działania, cele to przystanki na drodze.',
+        '2. Prawdziwe wartości poznaje się po alokacji czasu i pieniędzy w kalendarzu.',
+        '3. Konflikty wartości wymagają świadomego ustalenia priorytetów na dany etap.',
+        '4. Mówienie „nie” narzuconym przymusom jest warunkiem koniecznym autonomii.'
+      ]
+    },
+    {
+      id: 'sec-20-17',
+      pageNumber: 46,
+      sectionNumber: '20.17',
       title: 'Egzamin Końcowy Rozdziału 4: Wartości, Potrzeby i Priorytety',
       category: 'podsumowanie',
-      readingTimeMinutes: 12,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Sprawdź swoją wiedzę z zakresu architektury wartości, teorii SDT, dyskontowania hiperbolicznego i matrycy priorytetyzacji. Poniższy egzamin zawiera pytania analityczne i sytuacyjne.'
+        'Sprawdź swoją wiedzę z zakresu Teorii Samodeterminacji, konfliktów wartości i sztuki priorytetyzacji. Poniższy test zawiera pytania analityczne wymagające głębokiego zrozumienia opisywanych procesów.'
       ]
     }
   ]

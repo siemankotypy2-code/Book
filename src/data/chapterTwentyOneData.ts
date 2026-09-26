@@ -3,855 +3,876 @@ import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 export const chapterTwentyOneExamQuestions: ExamQuestion[] = [
   {
     id: 1,
-    question: 'W psychologii poznawczej metapoznanie (Metacognition) wg Johna Flavella oznacza:',
-    topic: 'Metapoznanie',
-    sectionRef: 'Sekcja 21.2',
+    question: 'W psychologii poznawczej metapoznanie (metacognition) definiuje się jako:',
+    topic: 'Definicja Metapoznania',
+    sectionRef: 'Sekcja 21.1',
     options: [
-      { label: 'A', text: 'Zdolność do monitorowania, kontrolowania i oceniania własnych procesów poznawczych („myślenie o myśleniu”).', isCorrect: true },
-      { label: 'B', text: 'Zdolność do szybkiego czytania książek w języku angielskim.', isCorrect: false },
-      { label: 'C', text: 'Proces czyszczenia pamięci podręcznej komputera.', isCorrect: false },
-      { label: 'D', text: 'Niekontrolowane myślenie o wakacjach podczas pracy.', isCorrect: false }
+      { label: 'A', text: 'Zdolność do myślenia o własnym myśleniu — procesy monitorowania i kontrolowania własnych stanów poznawczych, pamięciowych i emocjonalnych.', isCorrect: true },
+      { label: 'B', text: 'Zdolność do szybkiego zapamiętywania nazwisk osób poznamych na imprezie.', isCorrect: false },
+      { label: 'C', text: 'Umiejętność czytania w myślach innych ludzi bez używania słów.', isCorrect: false },
+      { label: 'D', text: 'Proces automatycznego trawienia pokarmu po posiłku.', isCorrect: false }
     ],
-    explanation: 'Metapoznanie to nawigacja drugiego rzędu. Pozwala zadać sobie pytanie: „Czy ja naprawdę rozumiem ten materiał, czy tylko wydaje mi się, że go rozumiem?”.',
-    keyTakeaway: 'Metapoznanie to kapitan, który obserwuje nawigatora w Twoim umyśle.'
+    explanation: 'Metapoznanie to nadzorcza warstwa umysłu (Meta-Cognitive Executive), która obserwuje jak myślimy, pamiętamy i podejmujemy decyzje.',
+    keyTakeaway: 'Metapoznanie to zdolność stanie się świadomym obserwatorem własnego umysłu.'
   },
   {
     id: 2,
-    question: 'Eksperymenty Nisbetta i Wilsona („Telling More Than We Can Know”) dowiodły, że ludzie pytani o przyczyny własnych wyborów:',
-    topic: 'Ograniczenia Introspekcji',
+    question: 'Na czym polega iluzja wglądu (Illusion of Insight) opisywana w badaniach nad introspekcją (Nisbett & Wilson)?',
+    topic: 'Granice Introspekcji',
     sectionRef: 'Sekcja 21.4',
     options: [
-      { label: 'A', text: 'Często tworzą przekonujące racjonalizacje post-factum, nie mając rzeczywistego bezpośredniego dostępu do podświadomych mechanizmów decyzyjnych.', isCorrect: true },
-      { label: 'B', text: 'Zawsze podają idealnie trafną przyczynę neurologiczną każdego odruchu.', isCorrect: false },
-      { label: 'C', text: 'Mówią wyłącznie prawdę popartą wykresami z rezonansu.', isCorrect: false },
-      { label: 'D', text: 'Tracą zdolność mówienia na okres godziny.', isCorrect: false }
+      { label: 'A', text: 'Ludzie często nie mają bezpośredniego dostępu do wyższych procesów poznawczych i tworzą po fakcie dorobione, zmyślone teorie na temat przyczyn własnych decyzji.', isCorrect: true },
+      { label: 'B', text: 'Introspekcja daje zawsze w 100% doskonałą i obiektywną wiedzę o przyczynach naszych zachowań.', isCorrect: false },
+      { label: 'C', text: 'Introspekcja jest możliwa tylko podczas głębokiego snu.', isCorrect: false },
+      { label: 'D', text: 'Nikt na świecie nie potrafi podjąć świadomej decyzji.', isCorrect: false }
     ],
-    explanation: 'Introspekcja nie jest bezpośrednim wglądem w synapsy, lecz wyreżyserowaną opowieścią kory przedczołowej próbującej uzasadnić podjęty odruch.',
-    keyTakeaway: 'Nie bierz swoich pierwszych racjonalizacji za obiektywną prawdę o swoich motywach.'
+    explanation: 'Nisbett i Wilson udowodnili, że gdy pytamy ludzi „dlaczego to wybrałeś?”, ich umysł często generuje racjonalizację post-hoc, zamiast podawać realną przyczynę.',
+    keyTakeaway: 'Nie bierz swoich automatycznych wyjaśnień „dlaczego tak zrobiłem” za niepodważalną prawdę.'
   },
   {
     id: 3,
-    question: 'Na czym polega kluczowa różnica między Obserwacją a Interpretacją w monitorowaniu własnego stanu psychicznego?',
-    topic: 'Obserwacja vs Interpretacja',
-    sectionRef: 'Sekcja 21.3',
+    question: 'Jaką funkcję w metapoznaniu pełni kalibracja metapoznawcza (Metacognitive Calibration)?',
+    topic: 'Kalibracja Metapoznawcza',
+    sectionRef: 'Sekcja 21.8',
     options: [
-      { label: 'A', text: 'Obserwacja rejestruje gołe fakty i sygnały z ciała bez ocen; interpretacja dodaje do nich opowieść, oceny moralne i przewidywania.', isCorrect: true },
-      { label: 'B', text: 'Obserwacja dotyczy przyrody, a interpretacja dotyczy teologicznych tekstów.', isCorrect: false },
-      { label: 'C', text: 'Nie ma żadnej różnicy, to dwa synonimy.', isCorrect: false },
-      { label: 'D', text: 'Interpretacja jest zawsze bezbłędna, a obserwacja myli się w 90% przypadków.', isCorrect: false }
+      { label: 'A', text: 'Mierzy stopień spójności między subiektywną pewnością człowieka co do słuszności swojego sądu a obiektywną trafnością tego sądu.', isCorrect: true },
+      { label: 'B', text: 'Wylicza poziom cukru we krwi przed i po wysiłku.', isCorrect: false },
+      { label: 'C', text: 'Służy do ustawiania ostrości w aparatach fotograficznych.', isCorrect: false },
+      { label: 'D', text: 'Mierzy pojemność płuc w trakcie biegu.', isCorrect: false }
     ],
-    explanation: 'Sygnał z ciała („ucisk w żołądku”) jest obserwacją. Opowieść („zaraz skompromituję się przed zespołem”) jest interpretacją.',
-    keyTakeaway: 'Zatrzymaj się na obserwacji sygnału, zanim pozwolisz umysłowi nakręcić katastroficzny film.'
+    explanation: 'Dobra kalibracja oznacza, że gdy jesteś pewien na 90%, mylisz się tylko w 10% przypadków. Zła kalibracja wywołuje fałszywą pewność siebie.',
+    keyTakeaway: 'Wysoka pewność siebie przy niskiej trafności to prosta droga do katastroficznych błędów.'
   },
   {
     id: 4,
-    question: 'W jaki sposób złudzenie Poczucia Wiedzy (Feeling of Knowing / Illusion of Explanatory Depth) wprowadza nas w błąd?',
-    topic: 'Złudzenie Wiedzy',
-    sectionRef: 'Sekcja 21.6',
+    question: 'Czym różni się obserwacja fenomenologiczna własnego stanu od jego interpretacji?',
+    topic: 'Obserwacja vs Interpretacja',
+    sectionRef: 'Sekcja 21.5',
     options: [
-      { label: 'A', text: 'Mylimy powierzchowną znajomość terminu lub wrażenie płynności (fluency) z głębokim rozumieniem mechanizmu.', isCorrect: true },
-      { label: 'B', text: 'Zmusza nas do czytania encyklopedii po nocach.', isCorrect: false },
-      { label: 'C', text: 'Sprawia, że zapominamy swoje imię w stresie.', isCorrect: false },
-      { label: 'D', text: 'Gwarantuje wygraną w teleturniejach.', isCorrect: false }
+      { label: 'A', text: 'Obserwacja rejestruje surowy bodziec z ciała („Czuję ścisk w żołądku”), zaś interpretacja dorabia do niego teorię („On mnie nienawidzi”).', isCorrect: true },
+      { label: 'B', text: 'Interpretacja trwa 5 sekund, a obserwacja 2 godziny.', isCorrect: false },
+      { label: 'C', text: 'Nie ma żadnej różnicy, oba słowa oznaczają to samo.', isCorrect: false },
+      { label: 'D', text: 'Obserwacja dotyczy tylko fizyki, a interpretacja biologii.', isCorrect: false }
     ],
-    explanation: 'Myślisz, że wiesz, jak działa spłuczka w toalecie lub zegarek, dopóki nie musisz narysować dokładnego schematu mechanicznego.',
-    keyTakeaway: 'Najlepszym testem wiedzy jest próba prostego wyjaśnienia mechanizmu od zera.'
+    explanation: 'Umiejętność rozdzielenia surowego doznania somatycznego od dramatycznej narracji jest fundamentem regulacji emocjonalnej.',
+    keyTakeaway: 'Oddziel surowe doznanie biologiczne od dorobionej do niego teorii.'
   },
   {
     id: 5,
-    question: 'Na czym polega zagrożenie wynikające z Nadmiernej Analizy i Ruminacji (Paralysis by Analysis)?',
-    topic: 'Ruminacja i Nadanaliza',
-    sectionRef: 'Sekcja 21.8',
+    question: 'Jak ruminacja (Overthinking) różni się od konstruktywnego metapoznania?',
+    topic: 'Ruminacja vs Metapoznanie',
+    sectionRef: 'Sekcja 21.13',
     options: [
-      { label: 'A', text: 'Ciągłe, zapętlone rozmyślanie o problemie bez przechodzenia do działania wyczerpuje zasoby kory przedczołowej i potęguje lęk.', isCorrect: true },
-      { label: 'B', text: 'Umożliwia natychmiastowe rozwiązanie każdego konfliktu.', isCorrect: false },
-      { label: 'C', text: 'Prowadzi do niekontrolowanego wzrostu inteligencji emocjonalnej.', isCorrect: false },
-      { label: 'D', text: 'Zwiększa sprawność fizyczną organizmu.', isCorrect: false }
+      { label: 'A', text: 'Ruminacja to bezowocne, jałowe kręcenie się wokół problemu w poczuciu bezradności, zaś metapoznanie to analityczny obserwator, który prowadzi do korekty działania.', isCorrect: true },
+      { label: 'B', text: 'Ruminacja jest zawsze przyjemna, a metapoznanie bolesne.', isCorrect: false },
+      { label: 'C', text: 'Ruminacja występuje tylko u dzieci.', isCorrect: false },
+      { label: 'D', text: 'Nie ma żadnej różnicy w funkcjonowaniu mózgu.', isCorrect: false }
     ],
-    explanation: 'Ruminacja nie jest rozwiązywaniem problemu — jest kręceniem się w pętli lęku, które daje iluzję pracy bez jakichkolwiek wyników.',
-    keyTakeaway: 'Odróżnij konstruktywne myślenie od jałowej pętli ruminacyjnej.'
+    explanation: 'Ruminacja utrzymuje hiperaktywację w DMN i ciele migdałowatym, podczas gdy metapoznanie włącza sieć kontroli wykonawczej w dlPFC.',
+    keyTakeaway: 'Nie pomyl jałowego zamartwiania się ze świadomym rozwiązywaniem problemu.'
   },
   {
     id: 6,
-    question: 'Jaką funkcję w metapoznaniu pełni rola Wewnętrznego Obserwatora (Self-As-Context / Observer Self)?',
-    topic: 'Wewnętrzny Obserwator',
-    sectionRef: 'Sekcja 21.5',
+    question: 'Jaką rolę w wykrywaniu własnych błędów poznawczych w czasie rzeczywistym pełni kora przedczołowa?',
+    topic: 'Wykrywanie Błędów w Mózgu',
+    sectionRef: 'Sekcja 21.9',
     options: [
-      { label: 'A', text: 'Przyjęcie perspektywy świadomego świadka, który przygląda się myśla i emocjom bez utożsamiania się z nimi i bez automatycznej reakcji.', isCorrect: true },
-      { label: 'B', text: 'Krytykowanie samego siebie za każdy popełniony błąd.', isCorrect: false },
-      { label: 'C', text: 'Wyobrażanie sobie, że patrzy na nas publiczność w teatrze.', isCorrect: false },
-      { label: 'D', text: 'Wyłączenie jakiejkolwiek świadomości zmysłowej.', isCorrect: false }
+      { label: 'A', text: 'Przednia kora obwodu (ACC) wysyła sygnał konfliktu, a grzbietowo-boczna kora przedczołowa (dlPFC) powstrzymuje odruch automatyczny i wdraża korektę.', isCorrect: true },
+      { label: 'B', text: 'Wykrywanie błędów zachodzi wyłącznie w rdzeniu kręgowym.', isCorrect: false },
+      { label: 'C', text: 'Mózg nie posiada żadnego mechanizmu wykrywania własnych błędów.', isCorrect: false },
+      { label: 'D', text: 'Kora przedczołowa służy tylko do rejestrowania zapachów.', isCorrect: false }
     ],
-    explanation: 'Jesteś niebem, przez które przechodzą chmury myśli i burze emocji. Nie jesteś chmurą — jesteś przestrzenią nieba.',
-    keyTakeaway: 'Nie jesteś swoimi myślami — jesteś świadomością, która te myśli zauważa.'
+    explanation: 'Integracja ACC i dlPFC tworzy neuronalny hamulec bezpieczeństwa chroniący przed impulsywnymi błędami.',
+    keyTakeaway: 'Pauza poznawcza przed reakcją to czas na aktywację Twojego wewnętrznego hamulca.'
   },
   {
     id: 7,
-    question: 'Co według psychologii oznacza pojęcie Decentryzacji Poznawczej (Defusion / Decentering)?',
-    topic: 'Decentryzacja',
-    sectionRef: 'Sekcja 21.7',
+    question: 'Co charakteryzuje postawę „Meta-Warstwy” w odniesieniu do pierwszych 4 rozdziałów Tomu III?',
+    topic: 'Meta-Warstwa Tomu III',
+    sectionRef: 'Sekcja 21.12',
     options: [
-      { label: 'A', text: 'Zdolność do zdystansowania się od własnych myśli i traktowania ich jako hipotez lub zdarzeń umysłowych, a nie jako niepodważalnych faktów.', isCorrect: true },
-      { label: 'B', text: 'Błąd w ustawieniu ostrości w aparacie fotograficznym.', isCorrect: false },
-      { label: 'C', text: 'Niezdolność do skupienia uwagi na jednej książce.', isCorrect: false },
-      { label: 'D', text: 'Utrata orientacji przestrzennej w nowym mieście.', isCorrect: false }
+      { label: 'A', text: 'Traktowanie własnej tożsamości, przekonań, samooceny i wartości jako obserwowalnych procesów, które można badać i korygować z dystansu.', isCorrect: true },
+      { label: 'B', text: 'Napisanie książki autobiograficznej pod pseudonimem.', isCorrect: false },
+      { label: 'C', text: 'Zapomnienie wszystkiego czego nauczyliśmy się wcześniej.', isCorrect: false },
+      { label: 'D', text: 'Kupowanie okularów do czytania w ciemności.', isCorrect: false }
     ],
-    explanation: 'Decentryzacja zmienia zdanie „Jestem beznadziejny” na „Mam myśl, że jestem beznadziejny”, stwarzając przestrzeń do wyboru reakcji.',
-    keyTakeaway: 'Złagodź nacisk myśli, traktując je jako słowa na ekranie, a nie jak wyroki losu.'
+    explanation: 'Przejście od „Jestem moimi myślami” do „Jestem obserwatorem moich myśli” jest największym skokiem rozwojowym w autonomicznym funkcjonowaniu.',
+    keyTakeaway: 'Nie jesteś swoimi myślami — jesteś przestrzenią, w której te myśli się pojawiają.'
   },
   {
     id: 8,
-    question: 'W jaki sposób monitorowanie poziomów zmęczenia (Wskaźnik HALT) wspiera procesy metapoznawcze?',
-    topic: 'HALT w Metapoznaniu',
-    sectionRef: 'Sekcja 21.9',
+    question: 'Jak zjawisko ślepych plamek (Blind Spots) wpływa na naszą samoświadomość?',
+    topic: 'Ślepe Plamki Samoświadomości',
+    sectionRef: 'Sekcja 21.10',
     options: [
-      { label: 'A', text: 'Pozwala powstrzymać się od wyciągania ostatecznych wniosków o swoim życiu w chwile głodu, złości, samotności czy zmęczenia.', isCorrect: true },
-      { label: 'B', text: 'Zmusza człowieka do natychmiastowego zjedzenia posiłku obfitego w cukier.', isCorrect: false },
-      { label: 'C', text: 'Eliminuje jakąkolwiek potrzebę snu.', isCorrect: false },
-      { label: 'D', text: 'Gwarantuje sukces na egzaminie z filozofii.', isCorrect: false }
+      { label: 'A', text: 'Sprawia, że nie dostrzegamy własnych zniekształceń i błędów behawioralnych, które są doskonale widoczne dla zewnętrznych obserwatorów.', isCorrect: true },
+      { label: 'B', text: 'Wywołuje trwała utratę wzroku w ciemnym pokoju.', isCorrect: false },
+      { label: 'C', text: 'Uniemożliwia czytanie map drogowych.', isCorrect: false },
+      { label: 'D', text: 'Zwiększa odporność na infekcje.', isCorrect: false }
     ],
-    explanation: 'Gdy zasoby metaboliczne są na wyczerpaniu, metapoznanie wysyła sygnał: „Twój pesymizm jest wynikiem niskiego poziomu glukozy, a nie katastrofy życiowej”.',
-    keyTakeaway: 'Nie podejmuj ważnych decyzji tożsamościowych na głodnym lub zmęczonym mózgu.'
+    explanation: 'Dlatego uczciwy feedback od zaufanych mentorytów jest niezbędny dla zniwelowania własnych ślepych plamek.',
+    keyTakeaway: 'Potrzebujemy innych ludzi jako luster, by zobaczyć to, co ukryte przed naszym własnym wzrokiem.'
   },
   {
     id: 9,
-    question: 'Na czym polega technika Pytania „Skąd Wiem, Że Wiem?” w weryfikacji przekonań?',
-    topic: 'Skąd Wiem Że Wiem',
-    sectionRef: 'Sekcja 21.6',
+    question: 'Na czym polega monitorowanie procesów poznawczych w pętli Metapoznawczej?',
+    topic: 'Pętla Metapoznawcza',
+    sectionRef: 'Sekcja 21.3',
     options: [
-      { label: 'A', text: 'Żądanie od własnego umysłu podania konkretnych źródeł, dowodów i ścieżki wnioskowania dla danej pewności.', isCorrect: true },
-      { label: 'B', text: 'Podważanie własnego imienia i nazwiska w urzędzie.', isCorrect: false },
-      { label: 'C', text: 'Głośne krzyczenie na pytających nas ludzi.', isCorrect: false },
-      { label: 'D', text: 'Unikanie czytania artykułów naukowych.', isCorrect: false }
+      { label: 'A', text: 'Ciągły przepływ informacji między poziomem obiektowym (gdzie zachodzi myślenie) a poziomem meta (gdzie oceniamy sprawność i trafność tego myślenia).', isCorrect: true },
+      { label: 'B', text: 'Liczenie oddechów przez 24 godziny bez przerwy.', isCorrect: false },
+      { label: 'C', text: 'Powtarzanie regułek z gramatyki angielskiej.', isCorrect: false },
+      { label: 'D', text: 'Sprawdzanie stanu konta bankowego.', isCorrect: false }
     ],
-    explanation: 'Pytanie to odróżnia intuicyjne wrażenie wiedzy od rzeczywistego opanowania materiału i merytorycznego uzasadnienia.',
-    keyTakeaway: 'Sprawdź, czy Twoja pewność ma pokrycie w faktach, czy jest tylko emocjonalnym wrażeniem.'
+    explanation: 'Poziom meta dokonuje ewaluacji („Czy dobrze zrozumiałem ten tekst?”) i wywoływa kontrolę („Muszę przeczytać ten akapit jeszcze raz”).',
+    keyTakeaway: 'Monitorowanie bez kontroli jest jałowe, kontrola bez monitorowania jest ślepa.'
   },
   {
     id: 10,
-    question: 'Czym charakteryzuje się stan Mindful Awareness (Uważnej Świadomości) w codziennym działaniu?',
-    topic: 'Uważna Świadomość',
-    sectionRef: 'Sekcja 21.10',
+    question: 'Jaką rolę w kalibracji pewności siebie odgrywa pętla samoobserwacji z dziennikiem decyzji?',
+    topic: 'Dziennik Decyzji i Metapoznanie',
+    sectionRef: 'Sekcja 21.15',
     options: [
-      { label: 'A', text: 'Niewartościujące, pełne ciekawości kierowanie uwagi na doświadczenie obecnej chwili (sygnały z ciała, myśli, otoczenie).', isCorrect: true },
-      { label: 'B', text: 'Ciągłe analizowanie błędów z przeszłości przez 24 godziny na dobę.', isCorrect: false },
-      { label: 'C', text: 'Wyłączenie jakichkolwiek myśli i stanów emocjonalnych na stałe.', isCorrect: false },
-      { label: 'D', text: 'Zdolność do czytania w myślach innych ludzi.', isCorrect: false }
+      { label: 'A', text: 'Pozwala po czasie zweryfikować obiektywną trafność własnych prognoz, odsłaniając błędy pewności siebie i racjonalizacje post-hoc.', isCorrect: true },
+      { label: 'B', text: 'Służy do zapisywania wyłącznie listy zakupów.', isCorrect: false },
+      { label: 'C', text: 'Wyłącza potrzebę myślenia przed podjęciem decyzji.', isCorrect: false },
+      { label: 'D', text: 'Gwarantuje brak jakichkolwiek niepowodzeń finansowych.', isCorrect: false }
     ],
-    explanation: 'Uważność zrywa automatyczny pilotaż, dając kory przedczołowej ułamek sekundy na wybór świadomej reakcji zamiast odruchu.',
-    keyTakeaway: 'Pomiędzy bodźcem a reakcją istnieje przestrzeń. W tej przestrzeni leży nasza wolność.'
+    explanation: 'Zapisanie subiektywnego prawdopodobieństwa na piśmie PRZED poznałem wyniku chroni przed Błędem Mądrości Po Fakcie (Hindsight Bias).',
+    keyTakeaway: 'Zapisuj swoje prognozy na piśmie, by konfrontować subiektywną pewność z obiektywnym wynikiem.'
   },
   {
     id: 11,
-    question: 'Jaka jest rola Kory Przedczołowej (dlPFC i mPFC) w procesach samomonitorowania metapoznawczego?',
-    topic: 'Neuronauka Metapoznania',
-    sectionRef: 'Sekcja 21.11',
+    question: 'Co według badań dotyczych autorefleksji charakteryzuje pytanie „CO?” w odróżnieniu od pytania „DLACZEGO?” (Tasha Eurich)?',
+    topic: 'Pytanie CO vs DLACZEGO',
+    sectionRef: 'Sekcja 21.14',
     options: [
-      { label: 'A', text: 'Reprezentują i oceniają własne stany poznawcze, wyhamowując automatyczne reakcje podkorowe z ciała migdałowatego.', isCorrect: true },
-      { label: 'B', text: 'Odpowiadają wyłącznie za trawienie pokarmu i tętno.', isCorrect: false },
-      { label: 'C', text: 'Są aktywne tylko podczas snu głębokiego.', isCorrect: false },
-      { label: 'D', text: 'Nie mają żadnej roli w procesach myślowych.', isCorrect: false }
+      { label: 'A', text: 'Pytanie „DLACZEGO czuję lęk?” promuje jałową ruminację, podczas gdy „CO mogę zrobić w tej sytuacji?” kieruje uwagę na sprawcze działanie.', isCorrect: true },
+      { label: 'B', text: 'Pytanie „DLACZEGO” daje natychmiastowe rozwiązania biznesowe.', isCorrect: false },
+      { label: 'C', text: 'Nie ma żadnej różnicy w psychologii autorefleksji.', isCorrect: false },
+      { label: 'D', text: 'Pytanie „CO” wywołuje atak paniki.', isCorrect: false }
     ],
-    explanation: 'Przednie obszary kory przedczołowej stanowią biologiczne podłoże metapoznania, umożliwiając refleksję nad własnym procesem myślowym.',
-    keyTakeaway: 'Trening metapoznania fizycznie wzmacnia połączenia w Twojej korze przedczołowej.'
+    explanation: 'Zamiana pytania „Dlaczego to mnie spotkało?” na „Co mogę z tym zrobić?” jest najprostszym przełączeniem z ruminacji na metapoznanie.',
+    keyTakeaway: 'Pytaj „CO?” i „JAK?”, zamiast ugrzęznąć w jałowym „DLACZEGO?”.'
   },
   {
     id: 12,
-    question: 'Na czym polega praktyka Dziennika Refleksji Metapoznawczej?',
-    topic: 'Dziennik Metapoznawczy',
-    sectionRef: 'Sekcja 21.16',
+    question: 'Jaką funkcję pełni pauza poznawcza (Cognitive Pause) w procesie podejmowania decyzji?',
+    topic: 'Pauza Poznawcza',
+    sectionRef: 'Sekcja 18.15',
     options: [
-      { label: 'A', text: 'Notowanie nie tylko samych decyzji, lecz także stanu emocjonalnego, założeń i wyłapanych błędów poznawczych towarzyszących ich podejmowaniu.', isCorrect: true },
-      { label: 'B', text: 'Pisywanie wierszy i opowiadań fikcyjnych.', isCorrect: false },
-      { label: 'C', text: 'Zapisywanie cen produktów w sklepach.', isCorrect: false },
-      { label: 'D', text: 'Kopiowanie tekstów z podręczników.', isCorrect: false }
+      { label: 'A', text: 'Tworzy szczelinę czasową między bodźcem a reakcją, pozwalając wyjść z automatycznego skryptu limficznego i włączyć refleksję w dlPFC.', isCorrect: true },
+      { label: 'B', text: 'Narzuca natychmiastowe usnięcie na 15 minut.', isCorrect: false },
+      { label: 'C', text: 'Uniemożliwia jakąkolwiek odpowiedź werbalną.', isCorrect: false },
+      { label: 'D', text: 'Służy do wyliczania podatków.', isCorrect: false }
     ],
-    explanation: 'Dziennik metapoznawczy uczy wyłapywać własne powtarzalne pułapki myślowe i buduje precyzyjny model własnego umysłu.',
-    keyTakeaway: 'Badaj proces podejmowania swoich decyzji, a nie tylko ich ostateczny wynik.'
+    explanation: 'W owej szczelinie między bodźcem a reakcją leży nasza cała wolność wyboru i autonomia decyzyjna.',
+    keyTakeaway: 'Pomiędzy bodźcem a reakcją znajduje się przestrzeń na Twoją wolność.'
   },
   {
     id: 13,
-    question: 'Co jest głównym celem Laboratorium Metapoznania (Sekcja 21.5)?',
-    topic: 'Laboratorium Metapoznania',
-    sectionRef: 'Sekcja 21.5',
+    question: 'Na czym polega błąd „Pewność to Trafność” (Certainty-Accuracy Fallacy)?',
+    topic: 'Błąd Pewność to Trafność',
+    sectionRef: 'Sekcja 21.8',
     options: [
-      { label: 'A', text: 'Przećwiczenie wyłapywania automatycznych myśli, testowania ich trafności i świadomego przełączania się z reakcji na obserwację.', isCorrect: true },
-      { label: 'B', text: 'Nauka szybkiego pisania na klawiaturze.', isCorrect: false },
-      { label: 'C', text: 'Mierzenie ciśnienia krwi po wysiłku.', isCorrect: false },
-      { label: 'D', text: 'Trening zapamiętywania ciągu słów.', isCorrect: false }
+      { label: 'A', text: 'Fałszywe założenie, że im silniejsze i bardziej gwałtowne jest subiektywne poczucie pewności co do jakiegoś sądu, tym bardziej jest on obiektywnie prawdziwy.', isCorrect: true },
+      { label: 'B', text: 'Przekonanie, że każdy wykres jest prawdziwy.', isCorrect: false },
+      { label: 'C', text: 'Niezdolność do odczuwania pewności w jakiejkolwiek sprawie.', isCorrect: false },
+      { label: 'D', text: 'Utrata pamięci po urazie głowy.', isCorrect: false }
     ],
-    explanation: 'Laboratorium dostarcza praktycznego doświadczenia rozdzielenia Jaźni-Obserwatora od bieżącego szumu myślowego.',
-    keyTakeaway: 'Przejdź z pozycji aktora wciągniętego w dramat na pozycję reżysera w reżyserce.'
+    explanation: 'Siła emocjonalnego przekonania nie ma bezpośredniego związku z jego merytoryczną poprawnością.',
+    keyTakeaway: 'Można być głęboko, absolutnie i gwałtownie przekonanym... i całkowicie się mylić.'
   },
   {
     id: 14,
-    question: 'W jaki sposób Pętla Świadomej Pauzy (Protokół STOP) chroni przed impulsywnym reagowaniem pod wpływem emocji?',
-    topic: 'Protokół STOP',
-    sectionRef: 'Sekcja 21.14',
+    question: 'Jaką rolę w metapoznaniu odgrywa ciało migdałowate vs kora przedczołowa?',
+    topic: 'Anatomi Mózgu w Metapoznaniu',
+    sectionRef: 'Sekcja 21.6',
     options: [
-      { label: 'A', text: 'Wymusza zatrzymanie (S), wzięcie oddechu (T), obserwację stanu (O) i świadome przejście do działania (P).', isCorrect: true },
-      { label: 'B', text: 'Zmusza do ucieczki z miejsca zdarzenia.', isCorrect: false },
-      { label: 'C', text: 'Wywołuje natychmiastowy sen.', isCorrect: false },
-      { label: 'D', text: 'Krzyczenie słowa „STOP” na rozmówcę.', isCorrect: false }
+      { label: 'A', text: 'Ciało migdałowate generuje szybkie, nawykowe reakcje lękowe, a kora przedczołowa sprawuje nadzór metapoznawczy i wycisza impuls obronny.', isCorrect: true },
+      { label: 'B', text: 'Ciało migdałowate odpowiada za logikę, a kora za strach.', isCorrect: false },
+      { label: 'C', text: 'Obie struktury wyłączają się w trakcie myślenia.', isCorrect: false },
+      { label: 'D', text: 'Nie uczestniczą w procesach decyzyjnych.', isCorrect: false }
     ],
-    explanation: 'Protokół STOP wstawia klin między bodziec a reakcję, pozwalając na przejęcie kontroli przez dlPFC.',
-    keyTakeaway: 'Zatrzymaj się, weź oddech, zaobserwuj swój stan i wybierz mądrą reakcję.'
+    explanation: 'Trening metapoznawczy wzmacnia funkcjonalne połączenia hamujące między dlPFC a ciałem migdałowatym.',
+    keyTakeaway: 'Świadomy nadzór kory przedczołowej poskramia impulsywność układu limficznego.'
   },
   {
     id: 15,
-    question: 'Co według badań nad podświadomymi odruchami oznacza pojęcie Autopilot Życiowy?',
-    topic: 'Autopilot Życiowy',
-    sectionRef: 'Sekcja 21.1',
+    question: 'Czym charakteryzuje się samoobserwacja bez oceniania (Non-Judgmental Awareness)?',
+    topic: 'Samoobserwacja bez Oceny',
+    sectionRef: 'Sekcja 21.5',
     options: [
-      { label: 'A', text: 'Wykonywanie większości codziennych czynności, ocen i decyzji za pomocą nawykowych, podkorowych skryptów bez udziału świadomej refleksji.', isCorrect: true },
-      { label: 'B', text: 'Korzystanie z nowoczesnych systemów nawigacji w samochodzie.', isCorrect: false },
-      { label: 'C', text: 'Zdolność do latania samolotem bez licencji.', isCorrect: false },
-      { label: 'D', text: 'Brak jakichkolwiek emocji w życiu.', isCorrect: false }
+      { label: 'A', text: 'Rejestrowanie pojawiających się myśli i emocji jak chmur na niebie, bez natychmiastowego przypisywania im etykiet „dobry” czy „zły”.', isCorrect: true },
+      { label: 'B', text: 'Całkowity brak jakichkolwiek myśli w głowie.', isCorrect: false },
+      { label: 'C', text: 'Ocenianie każdego swojego kroku w skali 1-10.', isCorrect: false },
+      { label: 'D', text: 'Ignorowanie konsekwencji własnych działań.', isCorrect: false }
     ],
-    explanation: 'Autopilot oszczędza energię, lecz prowadzi do powielania dawnych błędów i utraty sterowności nad własnym życiem.',
-    keyTakeaway: 'Wyłącz autopilota — zacznij świadomie sterować swoimi wyborami.'
+    explanation: 'Przyglądanie się myśli bez wchodzenia z nią w fuzję poznawczą pozwala na zachowanie dystansu i spokoju.',
+    keyTakeaway: 'Zauważ myśl, pozwól jej przepłynąć i wybierz swoją odpowiedź.'
   },
   {
     id: 16,
-    question: 'Jaką rolę w metapoznaniu pełni akceptacja granic własnego poznania (Intelektualna Skromność)?',
-    topic: 'Intelektualna Skromność',
-    sectionRef: 'Sekcja 21.15',
+    question: 'Jak błąd Hindsight Bias (Mądrość Po Fakcie) niszczy naszą samoświadomość?',
+    topic: 'Hindsight Bias',
+    sectionRef: 'Sekcja 21.10',
     options: [
-      { label: 'A', text: 'Chroni przed dogmatyzmem i otwiera umysł na uczenie się oraz przyjmowanie nowych informacji.', isCorrect: true },
-      { label: 'B', text: 'Zmusza człowieka do udawania, że niczego nie wie.', isCorrect: false },
-      { label: 'C', text: 'Niszczy jakąkolwiek pewność siebie w pracy.', isCorrect: false },
-      { label: 'D', text: 'Jest cechą wyłącznie ludzi w podeszłym wieku.', isCorrect: false }
+      { label: 'A', text: 'Po poznaniu wyniku zdarzenia wmawiamy sobie: „Od początku wiedziałem że tak będzie!”, zniekształcając pamięć o naszej wstępnej niepewności.', isCorrect: true },
+      { label: 'B', text: 'Uniemożliwia zapamiętywanie dat urodzin.', isCorrect: false },
+      { label: 'C', text: 'Zmusza do ciągłego czytania gazet historycznych.', isCorrect: false },
+      { label: 'D', text: 'Gwarantuje idealną trafność prognoz giełdowych.', isCorrect: false }
     ],
-    explanation: 'Uznanie, że nasz umysł bywa omylny i posiada plamy ślepe, jest warunkiem koniecznym do dalszego rozwoju.',
-    keyTakeaway: 'Świadomość własnej omylności to najwyższa forma dojrzałości poznawczej.'
+    explanation: 'Hindsight Bias uniemożliwia uczenie się na błędach, wywołując iluzję nieomylności retrospektywnej.',
+    keyTakeaway: 'Uczciwa ocena decyzji wymaga oceny danych dostępnych w W MOMENCIE jej podejmowania.'
   },
   {
     id: 17,
-    question: 'W jaki sposób technika Scenariusza Najgorszego Wyjścia (Pre-Mortem Analysis) wspomaga metapoznanie przed podjęciem trudnej decyzji?',
-    topic: 'Pre-Mortem Analysis',
-    sectionRef: 'Sekcja 21.13',
+    question: 'Na czym polega defuzja poznawcza (Cognitive Defusion) w Terapii Akceptacji i Zaangażowania (ACT)?',
+    topic: 'Defuzja Poznawcza',
+    sectionRef: 'Sekcja 21.14',
     options: [
-      { label: 'A', text: 'Przed wdrożeniem wyobrażamy sobie, że projekt zakończył się całkowitą klęską, i szukamy przyczyny tej klęski z wyprzedzeniem.', isCorrect: true },
-      { label: 'B', text: 'Napisanie testamentu przed wyjazdem na wakacje.', isCorrect: false },
-      { label: 'C', text: 'Oskarżenie zespołu o brak zaangażowania na samym początku.', isCorrect: false },
-      { label: 'D', text: 'Rezygnacja z jakichkolwiek działań z lęku.', isCorrect: false }
+      { label: 'A', text: 'Oddzielenie siebie od myśli poprzez zauważenie: „Mam myśl, że nie dam rady”, zamiast fuzji: „Nie dam rady”.', isCorrect: true },
+      { label: 'B', text: 'Próba całkowitego wymazania myśli z głowy siłą woli.', isCorrect: false },
+      { label: 'C', text: 'Głośne krzyczenie na własne myśli w pokoju.', isCorrect: false },
+      { label: 'D', text: 'Picie dużej ilości wody podczas nauki.', isCorrect: false }
     ],
-    explanation: 'Pre-Mortem oszukuje Błąd Potwierdzenia i zmusza kory przedczołową do szukania plam ślepych w własnym planie.',
-    keyTakeaway: 'Wyobraź sobie klęskę dzisiaj, by móc jej zapobiec jutro.'
+    explanation: 'Defuzja tworzy przestrzeń metapoznawczą, w której myśl jest uznana za wytwór umysłu, a nie za nienaruszalny nakaz działania.',
+    keyTakeaway: 'Ty jesteś obserwatorem myśli, a nie samą myślą.'
   },
   {
     id: 18,
-    question: 'Czym kończy się całościowa podróż przez Tom I, Tom II i Tom III dzieła „Anatomia Umysłu”?',
-    topic: 'Synteza Całości',
-    sectionRef: 'Sekcja 21.20',
+    question: 'Jaką funkcję w metapoznaniu pełni proces re-framingu (Przeformułowania Poznawczego)?',
+    topic: 'Re-framing',
+    sectionRef: 'Sekcja 21.15',
     options: [
-      { label: 'A', text: 'Zintegrowaniem wiedzy o biologii mózgu, relacjach społecznych i wolności do świadomego kształtowania własnego zachowania.', isCorrect: true },
-      { label: 'B', text: 'Utratą wszelkiej nadziei na zmianę.', isCorrect: false },
-      { label: 'C', text: 'Koniecznością przeczytania książki od nowa 10 razy.', isCorrect: false },
-      { label: 'D', text: 'Otrzymaniem dyplomu doktora habilitowanego.', isCorrect: false }
+      { label: 'A', text: 'Świadoma zmiana ramy interpretacyjnej danego zdarzenia w celu odnalezienia nowej, bardziej sprawczej perspektywy.', isCorrect: true },
+      { label: 'B', text: 'Malowanie ramek na zdjęcia na nowy kolor.', isCorrect: false },
+      { label: 'C', text: 'Oszukiwanie samego siebie że trudna sytuacja nie istnieje.', isCorrect: false },
+      { label: 'D', text: 'Wyłączanie pamięci krótkotrwałej.', isCorrect: false }
     ],
-    explanation: 'Zrozumienie mechanizmów psychicznych i relacyjnych daje wolność od bycia ślepym pionkiem i pozwala żyć w zgodzie z prawem i mądrością.',
-    keyTakeaway: 'Nie jesteś już ślepy. Idź i żyj świadomie.'
+    explanation: 'Re-framing nie jest naiwnym optymizmem — jest poszukiwaniem prawdziwej, lecz bardziej użytecznej ramy dla tego samego faktu.',
+    keyTakeaway: 'Zmień ramę obrazu, a zobaczysz zupełnie inne możliwości działania.'
+  },
+  {
+    id: 19,
+    question: 'Co jest głównym wskaźnikiem wysokiego poziomu Dojrzałości Metapoznawczej?',
+    topic: 'Dojrzałość Metapoznawcza',
+    sectionRef: 'Sekcja 21.12',
+    options: [
+      { label: 'A', text: 'Spokojna zdolność do obserwowania własnych emocji, nawyków i błędów z życzliwym dystansem oraz sprawna korekta działania bez utraty poczucia wartości.', isCorrect: true },
+      { label: 'B', text: 'Brak jakichkolwiek błędów myślowych i emocji.', isCorrect: false },
+      { label: 'C', text: 'Przekonanie o własnej wyższości nad innymi.', isCorrect: false },
+      { label: 'D', text: 'Ciągłe zamartwianie się o przyszłość.', isCorrect: false }
+    ],
+    explanation: 'Dojrzałość metapoznawcza łączy czujną samoobserwację z głębokim samowspółczuciem i elastycznością wykonawczą.',
+    keyTakeaway: 'Dojrzałość to spokój w obserwacji własnego umysłu i odważna korekta w działaniu.'
+  },
+  {
+    id: 20,
+    question: 'Jak metapoznanie pozwala domknąć I blok Tomu III (Tożsamość, Przekonania, Samoocena, Wartości)?',
+    topic: 'Synteza Bloku I Tomu III',
+    sectionRef: 'Sekcja 21.12',
+    options: [
+      { label: 'A', text: 'Daje narzędzie nadzorcze, które pozwala badać naszą tożsamość, przekonania, samoocenę i wartości jako dynamiczny system, nad którym sprawujemy aktywną kontrolę.', isCorrect: true },
+      { label: 'B', text: 'Narzuca zapomnienie wszystkich zdobytych wglądów.', isCorrect: false },
+      { label: 'C', text: 'Eliminuje potrzebę podejmowania jakichkolwiek decyzji życiowych.', isCorrect: false },
+      { label: 'D', text: 'Zmusza do zrezygnowania z rozwoju osobistego.', isCorrect: false }
+    ],
+    explanation: 'Metapoznanie jest spoiwem, które zamienia teorię w codzienną, autonomiczną praktykę samokształtowania.',
+    keyTakeaway: 'Zyskałeś klucz do własnego umysłu — używaj go z mądrością i odwaga.'
   }
 ];
 
 export const caseStudiesChapterTwentyOne: CaseStudy[] = [
   {
-    id: 'studium-21-1-autopilot-reaktywny',
-    title: 'W niewoli automatycznych odruchów: Przypadek Marka na spotkaniach zarządu',
-    subtitle: 'Niewydolność metapoznawcza, odruch kontrataku i wyłączanie autopilota',
-    protagonist: 'Marek, 44 lata, dyrektor operacyjny',
-    context: 'Marek na każdą uwagą krytyczną ze strony dyrektora finansowego reagował natychmiastowym, podniesionym głosem i agresywnym atakiem. Po spotkaniach żałował swojego zachowania, lecz w trakcie zebrania działał w całkowitej nieświadomości.',
+    id: 'studium-21-1-iluzja-wgladu',
+    title: 'W sieci własnych racjonalizacji: Jak Iluzja Wglądu oślepiła menedżera Konrada',
+    subtitle: 'Illusion of Insight, opór przed feedbackiem i przełom metapoznawczy',
+    protagonist: 'Konrad, 43 lata, dyrektor operacyjny',
+    context: 'Konrad uważał siebie za wzór samoświadomości. Po przeczytaniu kilkudziesięciu książek psychologicznych potrafił z łatwością analizować mechanizmy innych ludzi, całkowicie przeoczając własny agresywny styl zarządzania.',
     story: [
-      'Marek posiadał wyuczony w dzieciństwie schemat obronny: „Najlepszą obroną jest atak”. Gdy słyszał jakąkolwiek uwagę dotyczącą jego budżetu, jego ciało migdałowate przejmowało kontrolę w 100 milisekund.',
-      'Zanim jego kora przedczołowa zdołała zanalizować treść uwagi, Marek już przerywał rozmówcy, podnosił głos i wypominał mu dawne błędy. Działał w trybie pełnego Autopilota Życiowego.',
-      'Brak metapoznania (brak monitorowania własnego stanu emocjonalnego w trakcie) sprawiał, że Marek po każdym spotkaniu czuł się wyczerpany i wstydził się swojego wybuchu, mówiąc: „Coś we mnie wstąpiło, nie kontrolowałem tego”.',
-      'Wdrożenie techniki Wewnętrznego Obserwatora i metody STOP pozwoliło mu dostrzec pierwszy skok tętna i zaciskanie pięści ZANIM wypowiedział pierwsze słowo, dając mu ułamek sekundy na wybór świadomej odpowiedzi.'
+      'Konrad na zebraniach często podnosił głos, przerywał podwładnym i drwił z ich pomysłów. Pytany o te zachowania podawał wyrafinowane teorie psychologiczne: „Ja po prostu stosuję prowokatywną metodę wyciągania ludzi ze strefy komfortu dla ich własnego rozwoju”.',
+      'Był to podręcznikowy przykład Iluzji Wglądu (Nisbett & Wilson) — Konrad tworzył post-hoc błyskotliwe rationalizacje, by ukryć przed sobą prosty fakt: nie potrafił kontrolować własnej irytacji.',
+      'Dopiero gdy z jego działu odeszło 4 kluczowych specjalistów w ciągu miesiąca, zarząd nakazał mu udział w sesjach feedbackowych z użyciem nagrań wideo z zebrań.',
+      'Obejrzenie własnego nagrania bez możliwości ucieczki w teorie było dla Konrada szokiem metapoznawczym. Po raz pierwszy zobaczył swoje zachowanie bez zniekształcającej soczewki własnych rationalizacji.'
     ],
     dialogue: [
-      { speaker: 'Dyrektor Finansowy', text: 'Marek, te koszty w dziale B są o 15% wyższe niż zakładaliśmy. Musimy to przejrzeć.', subtext: 'Merytoryczna uwaga dotycząca wskaźników budżetowych.' },
-      { speaker: 'Marek (Autopilot)', text: 'A sam ile wydałeś na te durne szkolenia?! Zawsze się do mnie przywalasz!', subtext: 'Automatyczny odruch kontrataku bez reflekscji metapoznawczej.' }
+      { speaker: 'Coach', text: 'Konrad, spójrz na slajd 12 nagrania. Dlaczego przerwałeś Ani w 3 sekundzie jej wypowiedzi i podniosłeś głos?', subtext: 'Zderzenie z obiektywnym materiałem dowodowym.' },
+      { speaker: 'Konrad', text: 'Bo ja wiedziałem co ona chce powiedzieć... Chciałem oszczędzić czas zespołu...', subtext: 'Automatyczna racjonalizacja post-hoc wyciszana przez nagranie.' }
     ],
-    decisionTaken: 'Marek wdrożył 5-sekundową pauzę oddechową przed każdą odpowiedzią na uwagi budżetowe.',
-    whatProtagonistSaw: 'Atak na swoją osobę i zagrożenie dla swojego autorytetu.',
-    whatWasMissed: 'Fakt, że dyrektor finansowy po prostu wykonywał swoją pracę, a jego uwaga była merytorycznym zaproszeniem do optymalizacji.',
+    decisionTaken: 'Konrad rozpoczął codzienną praktykę rejestracji pauzy poznawczej i przeprosił zespół za swoje dotychczasowe zachowanie.',
+    whatProtagonistSaw: 'Własną rzekomą mądrość psychologiczną i misję edukacyjną.',
+    whatWasMissed: 'Fakt, że jego zachowanie było zwykłą, niekontrolowaną impulsywnością emocjonalną.',
     psychologicalAnalysis: {
-      coreMechanism: 'Porwanie migdałowate (Amygdala Hijack) przy braku kontroli metapoznawczej (brak samomonitorowania).',
+      coreMechanism: 'Iluzja Wglądu (Illusion of Insight) i racjonalizacja post-hoc.',
       cognitiveBiases: [
-        { name: 'Błąd wrogości', description: 'Przypisywanie neutralnym uwagom intencji agresywnych.', impact: 'Niszczenie relacji zawodowych.' }
+        { name: 'Blind Spot Bias', description: 'Dostrzeganie błędów u innych przy ślepocie na własne zniekształcenia.', impact: 'Niszczenie relacji z zespołem.' }
       ],
       defenseMechanisms: [
-        { name: 'Aktor-obserwator bias', explanation: 'Tłumaczenie swojej agresji „prowokacją drugiego”, a agresji drugiego — jego złym charakterem.' }
+        { name: 'Intelektualizacja', explanation: 'Używanie teorii psychologicznych do usprawiedliwiania braku samokontroli.' }
       ],
-      emotionalDynamic: 'Gwałtowny skok gniewu przechodzący w po-faktyczny wstyd i poczucie winy.'
+      emotionalDynamic: 'Pycha poznawcza pękająca w zderzeniu z obiektywnym nagraniem wideo.'
     },
     decisionProcessAnalysis: {
-      trigger: 'Uwaga budżetowa od dyrektora finansowego.',
-      attentionFocus: 'Zacisk w klatce piersiowej i poczucie ataku.',
-      interpretation: '„On mnie podważa przed wszystkimi, muszę go zniszczyć”.',
-      emotion: 'Wściekłość, impulsywny gniew.',
-      impulse: 'Wykrzyczenie oskarżeń.',
-      action: 'Agresywna przerwa i atak werbalny.',
-      consequence: 'Kryzys w zarządzie i opinia osoby niestabilnej emocjonalnie.'
+      trigger: 'Oglądanie nagrania własnego zebrania na sesji coachingu.',
+      attentionFocus: 'Własna twarz i reakcja przerażenia na twarzach podwładnych.',
+      interpretation: '„Ja ich nie motywowałem... ja ich zastraszałem”.',
+      emotion: 'Szok, wstyd, pokora.',
+      impulse: 'Obrona, przerywanie nagrania.',
+      action: 'Zatrzymanie się, akceptacja faktów i przeprosiny zespołu.',
+      consequence: 'Odbudowa relacji i uratowanie działu.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Ciało migdałowate', role: 'Inicjowanie reakcji walki drogą podkorową', activationState: 'Hiperaktywacja' },
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Brak aktywacji samomonitorowania (metapoznanie wyłączone)', activationState: 'Utrata kontroli' }
+        { region: 'mPFC i dlPFC', role: 'Przejście do obiektywnego monitorowania metapoznawczego', activationState: 'Aktywacja kory nadzorczej' }
       ],
       neurotransmitters: [
-        { name: 'Noradrenalina', roleInScenario: 'Maksymalny skok wywołujący zacisk krtani i podniesienie głosu.' }
+        { name: 'Serotonina i Dopamina', roleInScenario: 'Spadek pychy na rzecz stabilnego ugruntowania w faktach.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 100 ms', process: 'Słowo „koszty” wywołuje impuls w ciele migdałowatym; reakcja werbalna następuje w 400 ms, zanim włączy się dlPFC.' }
+        { timeMs: '0 - 300 ms', process: 'Widok własnego krzyku na nagraniu wywołuje skok tętna i wstyd.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Wyczulenie na zagrożenie statusu', description: 'Wyuczony odruch reagowania gniewem na każdą uwagą.', vulnerabilityExploited: 'Lęk przed odrzuceniem i niskie poczucie wartości.' }
+        { tactic: 'Intelektualne uzasadnienie przemocy', description: 'Nazywanie własnej agresji „prowokatywnym rozwojem”.', vulnerabilityExploited: 'Arogancję i potrzebę dominacji.' }
       ],
       counterMeasures: [
-        { step: '1. Kotwica Somatyczna (Protokół STOP)', script: 'Oparcie stóp o podłogę, podwójny wydech i zaobserwowanie ucisku w klatce bez wypowiadania słów.', rationale: 'Daje czas dlPFC na przejęcie kontroli.' }
+        { step: '1. Obiektywny Zapis Wideo/Audio', script: '„Nie dyskutujemy o Twoich intencjach. Oglądamy twardy materiał wideo i analizujemy fakt”.', rationale: 'Przełamuje racjonalizację post-hoc.' }
       ]
     },
-    alternativePath: 'Gdyby Marek wdrożył metapoznanie, odpowiedziałby spokojnie: „Przejrzyjmy te pozycje po zebraniu”, budując opinię opanowanego lidera.',
-    readerQuestion: 'W jakich sytuacjach Twój autopilot przejmuje kontrolę, zanim zdążysz zadać sobie pytanie: „Co ja właściwie robię?”?',
-    keyTakeaway: 'Metapoznanie to wstawienie klinu między impuls a reakcję. W tym ułamku sekundy leży Twoja wolność.'
+    alternativePath: 'Gdyby Konrad odrzucił nagranie, zostałby zwolniony z zarządu za mobbing.',
+    readerQuestion: 'Jakie własne niedociągnięcia dorabiasz do pięknych teorii psychologicznych?',
+    keyTakeaway: 'Teoretyczna wiedza o psychologii bez uczciwej samoobserwacji staje się jedynie bardziej wyrafinowaną formą samooszustwa.'
   },
   {
-    id: 'studium-21-2-paraliż-analityczny',
-    title: 'W pułapce nadanalizy: Jak ruminacja zniszczyła projekt biznesowy Joanny',
-    subtitle: 'Nadużycie procesów analitycznych, Paralysis by Analysis i powrót do działania',
-    protagonist: 'Joanna, 35 lat, analityczka finansowa',
-    context: 'Joanna miała otworzyć własną firmę doradczą. Spędziła 2 lata na analizowaniu każdego możliwego ryzyka, pisząc 150-stronicowy biznesplan, lecz nigdy nie wykonała ani jednego telefonu do klienta.',
+    id: 'studium-21-2-ruminacja-vs-metapoznanie',
+    title: 'Błędne koło myśli: Jak Marta zamieniła jałową ruminację na sprawcze metapoznanie',
+    subtitle: 'Ruminacja (Overthinking), pętla DMN i przełączenie na pytania sprawcze',
+    protagonist: 'Marta, 29 lat, analityczka finansowa',
+    context: 'Marta po popelnieniu błędu w wycenie przeżywała nocne gonitwy myśli. Przez 4 godziny w łóżku powtarzała w głowie te same pytania: „Dlaczego ja zawsze muszę coś zepsuć? Co szef sobie o mnie pomyśli? Dlaczego jestem taka nieuważna?”.',
     story: [
-      'Joanna pomyliła metapoznanie z Rumiancją (jałową nadanalizą). Uważała, że jeśli przemyśli problem jeszcze raz z każdej strony, wyeliminuje ryzyko błędu do zera.',
-      'Jej umysł produkował ciągłe pętle myślowe: „A co, jeśli inflacja wzrośnie?”, „A co, jeśli klient X nie zapłaci?”, „A co, jeśli przepisy się zmienią?”. Całą energię zużywała na symulacje w głowie.',
-      'Po 2 latach przygotowań jej pomysł został wdrożony przez inną firmę, która po prostu zaczęła działać i korygowała błędy na bieżąco.',
-      'Joanna zrozumiała, że jej nadanaliza nie była mądrością, lecz wyrafinowaną formą ucieczki przed lękiem przed porażką.'
+      'Marta uważała, że jej nocne zamartwianie się jest dowodem odpowiedzialności i „głębokiej autorefleksji”. W rzeczywistości była to jałowa ruminacja.',
+      'Ruminacja podtrzymywała hiperaktywację DMN i ciała migdałowatego, uniemożliwiając sen i generując poranne wyczerpanie.',
+      'Terapeutka uświadomiła Marcie różnicę: Ruminacja pyta bez końca „DLACZEGO?”, nie szukając rozwiązań. Metapoznanie pyta „CO?” i „JAK?”, prowadząc do konkretnej akcji.',
+      'Marta wdrożyła Protokół Przełączenia: gdy przychodziła nocna myśl, zapisywała ją w Dzienniku Metapoznawczym i zadawała jedno pytanie: „Co konkretnie mogę zrobić z tym jutro o 8:00?”.'
     ],
     dialogue: [
-      { speaker: 'Mąż', text: 'Aśka, masz już biznesplan na 150 stron. Kiedy zrobisz pierwszą stronę internetową?', subtext: 'Zderzenie jałowej analizy z potrzebą konkretnego działania.' },
-      { speaker: 'Joanna', text: 'Nie rozumiesz, muszę jeszcze przeanalizować ryzyko podatkowe w scenariuszu C... Został mi tydzień analiz...', subtext: 'Ucieczka w pętlę nadanalizy przed ryzykiem rynkowym.' }
+      { speaker: 'Wewnętrzny Głos (Ruminacja)', text: 'Dlaczego znowu to zrobiłam? Jestem do niczego... Cała moja kariera się zawali...', subtext: 'Jałowa pętla lękowa w DMN.' },
+      { speaker: 'Marta (Metapoznanie)', text: 'Stop. To jest myśl lękowa, a nie fakt. Jutro o 8:00 wyślę korektę tabeli. Teraz idę spać.', subtext: 'Defuzja poznawcza i przełączenie na akcję.' }
     ],
-    decisionTaken: 'Joanna ustaliła limit czasu na analizę (maksymalnie 30 minut) i wdrożyła zasadę „testowania hipotez w realu”.',
-    whatProtagonistSaw: 'Mądrość, skrupulatność i konieczność bezbłędnego przygotowania się.',
-    whatWasMissed: 'Fakt, że rzeczywistość biznesowa jest nieprzewidywalna, a jedyną prawdziwą wiedzę dają rynkowe eksperymenty, a nie pętle myślowe.',
+    decisionTaken: 'Marta wdrożyła Dziennik Metapoznawczy i zamieniła pytania „Dlaczego” na pytania „Co zrobić”.',
+    whatProtagonistSaw: 'Nocne zamartwianie się jako dowód troski o pracę.',
+    whatWasMissed: 'Fakt, że ruminacja niszczyła jej zdrowie bez przynoszenia jakiejkolwiek korzyści merytorycznej.',
     psychologicalAnalysis: {
-      coreMechanism: 'Ruminacja i Paralysis by Analysis.',
+      coreMechanism: 'Ruminacja poznawcza (Overthinking) vs Metapoznawcza Kontrola Wykonawcza.',
       cognitiveBiases: [
-        { name: 'Iluzja kontroli myślowej', description: 'Nierealistyczne przekonanie, że rozmyślanie uchroni przed ryzykiem.', impact: 'Przewlekła prokrastynacja.' }
+        { name: 'Katastrofizacja', description: 'Rozmnażanie czarnych scenariuszy bez weryfikacji faktów.', impact: 'Bezsenność i wyczerpanie.' }
       ],
       defenseMechanisms: [
-        { name: 'Ucieczka w analizę', explanation: 'Zastępowanie działania w realu pisaniem opracowań.' }
+        { name: 'Ruminacja jako iluzja działania', explanation: 'Zamartwianie się jako zastępnik realnego rozwiązania.' }
       ],
-      emotionalDynamic: 'Przewlekłe napięcie lękowe przykryte płaszczem rzekomego profesjonalizmu.'
+      emotionalDynamic: 'Ciągły lęk, poczucie bezradności i poranne wyczerpanie.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Przypomnienie sobie błędu z pracy w łóżku o 23:00.',
+      attentionFocus: 'Czarne scenariusze i własna niedostateczność.',
+      interpretation: '„Moje zamartwianie się jest potrzebne”.',
+      emotion: 'Lęk, panika, bezsenność.',
+      impulse: 'Przewracanie się z boku na bok i odtwarzanie rozmów.',
+      action: 'Włączenie światła, zapisanie akcji w dzienniku i defuzja.',
+      consequence: 'Głęboki sen i wysłanie korekty rano.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Domyślna Sieć Neuronalna', role: 'Jałowe kręcenie się w pętli myślowej', activationState: 'Hiperaktywacja' },
-        { region: 'Kora przedczołowa', role: 'Przeciążenie pętli kontrolnej', activationState: 'Wyczerpanie' }
+        { region: 'DMN i Ciało migdałowate', role: 'Hiperaktywacja pętli ruminacyjnej', activationState: 'Obniżenie aktywacji po defuzji' },
+        { region: 'dlPFC', role: 'Przełączenie uwagi na konkretny plan akcji', activationState: 'Wzrost aktywacji' }
       ],
       neurotransmitters: [
-        { name: 'Kortyzol', roleInScenario: 'Utrzymujący się niepokój antycypacyjny.' }
+        { name: 'Kortyzol i Melatolina', roleInScenario: 'Spadek kortyzolu pozwalający na naturalny wyrzut melatoniny.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 300 ms', process: 'Myśl o pierwszej rozmowie z klientem wywołuje lęk.' }
+        { timeMs: '0 - 100 ms', process: 'Myśl o błędzie wywołuje skok tętna wyciszany zapisem na piśmie.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Kult perfekcyjnego przygotowania', description: 'Wmawianie, że brak bezbłędnego planu to nieodpowiedzialność.', vulnerabilityExploited: 'Lęk przed porażką.' }
+        { tactic: 'Pułapka Overthinkingu', description: 'Mylenie zamartwiania się z rozwiązywaniem problemu.', vulnerabilityExploited: 'Lęk przed porażką.' }
       ],
       counterMeasures: [
-        { step: '1. Zasada Testu Empirycznego', script: '„Wykonam 1 telefon i zbiorę realne dane zamiast tworzyć symulacje”.', rationale: 'Przełamuje pętlę ruminacyjną.' }
+        { step: '1. Pytanie CO zamiast DLACZEGO', script: '„Zamiast pytać dlaczego to się stało, pytam: CO dokładnie mogę z tym zrobić jutro o 8:00?”.', rationale: 'Przełącza DMN na kontrolę wykonawczą.' }
       ]
     },
-    keyTakeaway: 'Odróżnij konstruktywne myślenie od jałowej ruminacji. Mądrość testuje hipotezy w działaniu.'
+    alternativePath: 'Gdyby Marta trwała w ruminacji, nabawiłaby się przewlekłej bezsenności i nerwicy lękowej.',
+    readerQuestion: 'Czy Twoje nocne myśli prowadzą do konkretnego planu działania, czy są tylko jałowym katastrofizowaniem?',
+    keyTakeaway: 'Nie myl zamartwiania się z myśleniem. Prawdziwe myślenie kończy się planem akcji.'
   },
   {
-    id: 'studium-21-3-iluzja-wiedzy',
-    title: 'Mówca bez pokrycia: Jak Piotr zderzył się ze Złudzeniem Głębokości Objaśniania',
-    subtitle: 'Illusion of Explanatory Depth, test prostego wyjaśnienia i naukowa pokora',
-    protagonist: 'Piotr, 28 lat, popularyzator nauki na YouTube',
-    context: 'Piotr przeczytał nagłówki kilku artykułów o fizyce kwantowej i nagrał film, w którym z wielką pewnością siebie tłumaczył mechanizmy splątania. Kiedy w komentarzach pojawił się profesor fizyki z konkretnymi pytaniami, Piotr kompromitująco zamilkł.',
+    id: 'studium-21-3-pauza-poznawcza',
+    title: 'W szczelinie między bodźcem a reakcją: Jak Robert opanował wybuchy wściekłości',
+    subtitle: 'Pauza poznawcza (Cognitive Pause), wyciszanie ciała migdałowatego i samokontrola',
+    protagonist: 'Robert, 37 lat, architekt wnętrz',
+    context: 'Robert słynął z gwałtownego charakteru. Gdy podwykonawca na budowie zrobił coś niezgodnie z rysunkiem, Robert wpadał w szał, krzyczał i rzucał przedmiotami, co niszczyło jego reputację.',
     story: [
-      'Piotr padł ofiarą Złudzenia Głębokości Objaśniania (Illusion of Explanatory Depth). Ponieważ przeczytał łatwo napisany artykuł popularnonaukowy, wydawało mu się, że rozumie mechanizm.',
-      'Jego umysł pomylił płynność czytania (Fluency) z rzeczywistym opanowaniem wiedzy. Piotr nie zadał sobie metapoznawczego pytania: „Czy potrafię narysować ten proces i odpowiedzieć na pytanie O DLACZEGO?”.',
-      'Krytyka ze strony profesora była dla niego zimnym prysznicem. Piotr zrezygnował z udawania eksperta i zaczął stosować Technikę Feynmana — próbę pisemnego wyjaśnienia pojęcia tak prosto, by zrozumiał je 10-latek.'
+      'Robert tłumaczył się: „Ja po prostu mam krótki lont, reaguję błyskawicznie, to jest silniejsze ode mnie!”. Uważał swój wybuch za automatyczny odruch biologiczny.',
+      'Terapeuta zapoznał go z koncepcją Pauzy Poznawczej Viktor Frankla: „Między bodźcem a reakcją jest przestrzeń. W tej przestrzeni leży nasza wolność wyboru”.',
+      'Robert zaczął trenować 3-sekundową pauzę oddechową (Kotwica Ciała) za każdym razem, gdy widział błąd na budowie. Zamiast natychmiast krzyczeć, brał głęboki wdech i zadawał sobie pytanie: „Jaka jest moja reakcja docelowa?”.',
+      'Trening pauzy poznawczej pozwolił mu przejąć kontrolę nad odruchem limbicznym. Jego relacje z budowlańcami uległy radykalnej poprawie, a projekty zaczęły być dowożone bez opóźnień.'
     ],
     dialogue: [
-      { speaker: 'Profesor (w komentarzu)', text: 'Panie Piotrze, w minucie 4:20 pomylił Pan stan stacjonarny z nakładaniem fal. Proszę podać równanie, na którym Pan bazuje.', subtext: 'Twardy test merytoryczny odsłaniający brak fundamentów.' },
-      { speaker: 'Piotr (w myśli)', text: 'Boże... myślałem, że to rozumiem... przecież to brzmiało tak prosto w artykule...', subtext: 'Pęknięcie złudzenia wiedzy i zderzenie z rzeczywistością.' }
+      { speaker: 'Budowlaniec', text: 'Panie Robercie, ściana wyszła 5 cm w lewo, pomyliliśmy rysunki.', subtext: 'Bodzeć wyzwalający potencjalny wybuch.' },
+      { speaker: 'Robert (po 3-sekundowej pauzie)', text: 'Rozumiem. Zatrzymajmy prace. Pokażcie mi rysunek i zobaczmy jak to najszybciej skorygować.', subtext: 'Autonomiczna, opanowana odpowiedź z dlPFC.' }
     ],
-    decisionTaken: 'Piotr usunął nierzetelny film i wprowadził wymóg konsultowania skryptów z ekspertami akademickimi.',
-    whatProtagonistSaw: 'Własną erudycję i łatwość wypowiedzi na bazie powierzchownych lektur.',
-    whatWasMissed: 'Fakt, że powierzchowna znajomość pojęć nie jest równoznaczna z rozumieniem głębokiego mechanizmu.',
+    decisionTaken: 'Robert wdrożył 3-sekundową pauzę oddechową i przejął kontrolę nad automatycznym atakiem.',
+    whatProtagonistSaw: 'Swoją wściekłość jako nieunikniony odruch biologiczny.',
+    whatWasMissed: 'Fakt, że miedzy bodźcem a reakcją zawsze istnieje przestrzeń na świadomy wybór.',
     psychologicalAnalysis: {
-      coreMechanism: 'Illusion of Explanatory Depth i Błąd Płynności (Fluency Bias).',
+      coreMechanism: 'Pauza Poznawcza (Cognitive Pause) i odgórna kontrola przedczołowa nad ciałem migdałowatym.',
       cognitiveBiases: [
-        { name: 'Błąd ponadprzeciętności wiedzy', description: 'Mylenie przeczytania tekstu z opanowaniem rzemiosła.', impact: 'Skompromitowanie publiczne.' }
+        { name: 'Iluzja braku wyboru', description: 'Przekonanie że emocja MUSI automatycznie prowadzić do agresywnego zachowania.', impact: 'Zwalnianie się z odpowiedzialności.' }
       ],
       defenseMechanisms: [
-        { name: 'Racjonalizacja ignorancji', explanation: 'Tłumaczenie błędu „skrótem myślowym dla widzów”.' }
+        { name: 'Acting out', explanation: 'Natychmiastowe rozładowanie napięcia emocjonalnego przez krzyk i agresję.' }
       ],
-      emotionalDynamic: 'Nierealistyczna pewność siebie przechodząca w ostry wstyd.'
+      emotionalDynamic: 'Gwałtowny skok wściekłości wyciszany przywspółczulnym oddechem.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Widok błędnie wybudowanej ściany.',
+      attentionFocus: 'Fala gorąca w ciele i impuls do krzyku.',
+      interpretation: '„Mam 3 sekundy pauzy. Wybieram spokój i rozwiązanie”.',
+      emotion: 'Złość wyciszana do poziomu opanowania.',
+      impulse: 'Krzyk i rzucenie miarką.',
+      action: '3 głębokie oddechy i spokojna rozmowa o korekcie.',
+      consequence: 'Szybka naprawa błędu i zachowanie szacunku ekipy.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Przednia kora obwodu', role: 'Rejestracja porażki poznawczej', activationState: 'Hiperaktywacja po komentarzu' },
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Konieczność rzetelnej weryfikacji faktów', activationState: 'Aktywacja' }
+        { region: 'dlPFC i ACC', role: 'Hamowanie impulsu limbicznego w szczelinie czasowej', activationState: 'Wzrost aktywacji kontrolnej' },
+        { region: 'Ciało migdałowate', role: 'Generowanie pierwotnego impulsu walki', activationState: 'Wyhamowanie reakcji' }
       ],
       neurotransmitters: [
-        { name: 'Dopamina', roleInScenario: 'Gwałtowny spadek poziomu po krytyce.' }
+        { name: 'Noradrenalina', roleInScenario: 'Spadek poziomu pobudzenia pod wpływem aktywacji nerwu błędnego.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 200 ms', process: 'Komentarz profesora wywołuje wstyd i opadnięcie pewności.' }
+        { timeMs: '0 - 500 ms', process: 'Pauza 3-sekundowa daje czas na dotarcie sygnału do kory przedczołowej.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Pop-naukowy błąd spłycenia', description: 'Sprzedawanie złożonych zjawisk w powierzchownych pigułkach.', vulnerabilityExploited: 'Leniwy mózg szukający prostych odpowiedzi.' }
+        { tactic: 'Mityczny krótki lont', description: 'Tłumaczenie braku samokontroli cechą temperamentu.', vulnerabilityExploited: 'Wygodę i impulsywność.' }
       ],
       counterMeasures: [
-        { step: '1. Technika Feynmana', script: 'Pisz wyjaśnienia tak prosto, by zrozumiał je 10-latek — luki ujawnią się same.', rationale: 'Testuje prawdziwą głębię wiedzy.' }
+        { step: '1. Kotwica Oddechowa 3-Sekund', script: '„Widzę błąd -> Biorę wdech -> Liczę do 3 -> Dopiero wtedy mówię”.', rationale: 'Tworzy fizyczną pauzę poznawczą.' }
       ]
     },
-    keyTakeaway: 'Nie myl płynności czytania z mądrością. Sprawdzaj swoją wiedzę w konfrontacji z twardymi mechanizmami.'
+    alternativePath: 'Gdyby Robert nie wdrożył pauzy, pobiłby się z podwykonawcą i stracił licencję.',
+    readerQuestion: 'Jak długa jest Twoja pauza między bodźcem emocjonalnym a reakcją werbalną?',
+    keyTakeaway: 'Twoja wolność leży w pauzie między tym, co Cię spotyka, a tym, jak na to odpowiadasz.'
   },
   {
-    id: 'studium-21-4-decentryzacja-mysli',
-    title: 'Wolność od własnego monologu: Jak Decentryzacja uratowała Karola przed atakiem paniki',
-    subtitle: 'Cognitive Defusion, patrzenie na myśli jak na chmury i odzyskiwanie spokoju',
-    protagonist: 'Karol, 40 lat, architekt',
-    context: 'Karol podczas ważnej prezentacji odczuł nagłe ukłucie w klatce piersiowej. W jego umyśle natychmiast pojawiła się myśl: „To zawał, zaraz umrę na oczach klientów”.',
+    id: 'studium-21-4-kalibracja-pewnosci',
+    title: 'Ślepa pewność w biznesie: Jak zła kalibracja metapoznawcza zniszczyła inwestycję Daniela',
+    subtitle: 'Metacognitive Calibration, Overconfidence i dziennik prognoz',
+    protagonist: 'Daniel, 41 lat, inwestor w branży nieruchomości',
+    context: 'Daniel był w 100% pewien, że zakup działki pod Warszawą i budowa osiedla przyniesie 30% zysku w rok. Ignorował pytania doradców o warunki zabudowy i plany przestrzenne.',
     story: [
-      'Dawny Karol dałby się wciągnąć w tę myśl bezreszty (Fuzja Poznawcza). Zareagowałby paniką, przerwaniem prezentacji i wezwaniem karetki.',
-      'Tym razem Karol zastosował technikę Decentryzacji (Defusion). Zamiast utożsamić się z myślą, powiedział sobie w duchu: „Zauważam, że mój umysł właśnie wygenerował myśl o zawale”.',
-      'Spojrzał na tę myśl z dystansu, jak na napis na ekranie. Zauważył, że serce bije szybciej z powodu stresu, ale oddycha normalnie. Spokojnie kontynuował wypowiedź, a po 2 minutach myśl o zawale rozpłynęła się.'
+      'Daniel cierpiał na fatalną kalibrację metapoznawczą: jego subiektywna pewność wynosiła 100%, podczas gdy obiektywna trafność jego wiedzy o prawie budowlanym wynosiła zaledwie 30%.',
+      'Mylił gwałtowną pewność emocjonalną z merytoryczną poprawnością sądu (Certainty-Accuracy Fallacy). Odrzucał audyty prawne jako „zbędne koszty”.',
+      'Po zakupie ziemi okazało się, że przez działkę przebiega planowana linia wysokiego napięcia, co uniemożliwia jakąkolwiek budowę przez najbliższe 10 lat. Wartość ziemi spadła o 70%.',
+      'Dopiero ta katastrofa zmusiła Daniela do nauki kalibracji metapoznawczej: zaczął szacować ilościowo prawdopodobieństwo i powoływać niezależnych audytorów do każdego projektu.'
     ],
     dialogue: [
-      { speaker: 'Umysł Karola (Myśl)', text: 'To jest zawał! Zaraz zemdlejesz i umrzesz przed tymi ludźmi!', subtext: 'Automatyczny, katastroficzny odruch lękowy.' },
-      { speaker: 'Karol (Wewnętrzny Obserwator)', text: 'Dziękuję umyśle za tę hipotezę. Zauważam cię, ale teraz wracam do prezentacji projektu.', subtext: 'Decentryzacja poznawcza i brak fuzji z myślą.' }
+      { speaker: 'Prawnik', text: 'Daniel, nie mamy jeszcze wypisu z planu zagospodarowania. Wstrzymaj przelew!', subtext: 'Merytoryczny sygnał ostrzegawczy.' },
+      { speaker: 'Daniel', text: 'Ja wiem jak działają te urzędy! Załatwię to w tydzień, nie ma żadnego ryzyka! Przelewaj kapitał!', subtext: 'Zła kalibracja metapoznawcza i błąd pewności.' }
     ],
-    decisionTaken: 'Karol dokończył prezentację bez wpadania w panikę i podpisał kontrakt na projekt.',
-    whatProtagonistSaw: 'Myśl jako niepodważalny wyrok i zagrożenie biologiczne.',
-    whatWasMissed: 'Fakt, że myśl jest jedynie zdarzeniem elektrycznym w mózgu, które nie musi mieć nic wspólnego z rzeczywistością.',
+    decisionTaken: 'Daniel kupił działkę bez audytu prawnego na podstawie ślepej pewności siebie.',
+    whatProtagonistSaw: 'Pewny zysk i własny nos do interesów.',
+    whatWasMissed: 'Twarde zapisy w urzędowych księgach wieczystych i planach przestrzennych.',
     psychologicalAnalysis: {
-      coreMechanism: 'Decentryzacja Poznawcza (Cognitive Defusion) i zdystansowanie od lęku.',
+      coreMechanism: 'Brak kalibracji metapoznawczej (Metacognitive Miscalibration) i Overconfidence Effect.',
       cognitiveBiases: [
-        { name: 'Myślenie katastroficzne', description: 'Mylein ukłucia z zagrożeniem życia.', impact: 'Próba przerwania wystąpienia.' }
+        { name: 'Certainty-Accuracy Fallacy', description: 'Mylenie siły emocjonalnego przekonania z obiektywną prawdą.', impact: 'Tragiczna decyzja finansowa.' }
       ],
       defenseMechanisms: [
-        { name: 'Obserwacja bez fuzji', explanation: 'Traktowanie myśli jako zdarzenia umysłowego, a nie jako faktu.' }
+        { name: 'Wyparcie ryzyka', explanation: 'Traktowanie ostrzeżeń prawnika jako zbędnej biurokracji.' }
       ],
-      emotionalDynamic: 'Przejście od zagrażającej paniki do głębokiego opanowania.'
+      emotionalDynamic: 'Ślepy huraoptymizm zakończony drastycznym upadkiem.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Okazja zakupu działki poniżej ceny rynkowej.',
+      attentionFocus: 'Wizja szybkiego zysku 30%.',
+      interpretation: '„Jestem genialnym inwestorem, poradzę sobie ze wszystkim”.',
+      emotion: 'Chciwość, pycha.',
+      impulse: 'Natychmiastowy przelew zaliczki.',
+      action: 'Podpisanie aktu bez audytu.',
+      consequence: 'Zamrożenie milionów złotych w bezużytecznej ziemi.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Przyśrodkowa kora przedczołowa', role: 'Świadoma obserwacja własnych stanów bez fuzji', activationState: 'Utrzymanie kontroli' },
-        { region: 'Ciało migdałowate', role: 'Inicjowanie paniki', activationState: 'Szybkie wygaszenie' }
+        { region: 'ACC', role: 'Niedostateczna sygnalizacja ryzyka przez brak kalibracji', activationState: 'Brak aktywacji' }
       ],
       neurotransmitters: [
-        { name: 'GABA', roleInScenario: 'Wzrost hamowania przekaźnictwa lękowego po zastosowaniu decentryzacji.' }
+        { name: 'Dopamina', roleInScenario: 'Pętla nagrody zasilana wizją zysku wyłączająca krytyczne myślenie.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 100 ms', process: 'Ukłucie wywołuje myśl; w 300 ms włącza się Obserwator i gasi alarm.' }
+        { timeMs: '0 - 200 ms', process: 'Ostrzeżenie prawnika zlekceważone uśmiechem pychy.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Fuzja myśli z rzeczywistością', description: 'Nawyk traktowania każdej myśli jako faktu.', vulnerabilityExploited: 'Lęk przed śmiercią i utratą kontroli.' }
+        { tactic: 'Presja czasu i okazjonalność', description: 'Sprzedający narzucał pośpiech, by uniemożliwić audyt.', vulnerabilityExploited: 'Chciwość i pewność siebie.' }
       ],
       counterMeasures: [
-        { step: '1. Fraza Defuzyjna', script: '„Zauważam, że mam myśl, że...”.', rationale: 'Rozdziela podmiot od treści myśli.' }
+        { step: '1. Dziennik Kalibracji Prognoz', script: '„Oceniam pewność tej decyzji na 90%. Zanim przeleję środki, wymuszam niezależny audyt merytoryczny”.', rationale: 'Urealnia kalibrację metapoznawczą.' }
       ]
     },
-    keyTakeaway: 'Nie jesteś swoimi myślami — jesteś świadomością, która je zauważa. Dystans daje wolność.'
+    alternativePath: 'Gdyby Daniel poczekał 3 dni na wypis z planu, uniknąłby straty milionów złotych.',
+    readerQuestion: 'W jakich decyzjach mylisz siłę swojego optymizmu z twardymi faktami?',
+    keyTakeaway: 'Pewność siebie to stan emocjonalny, a trafność to stan faktów. Nigdy ich nie myl.'
   },
   {
-    id: 'studium-21-5-pre-mortem-biznes',
-    title: 'Szczepionka na bezkrytyczny optymizm: Analiza Pre-Mortem w projekcie Marty',
-    subtitle: 'Wykrywanie plam ślepych przed wdrożeniem i oszukiwanie Błędu Potwierdzenia',
-    protagonist: 'Marta, 42 lata, dyrektorka ds. innowacji',
-    context: 'Marta przygotowywała wdrożenie nowego systemu CRM w całej firmie. Wszyscy w zespole byli zachwyceni projektem i panował hurraoptymizm.',
+    id: 'studium-21-5-meta-warstwa-integracja',
+    title: 'Nawigator własnego umysłu: Jak Krzysztof zintegrował 5 filarów Tomu III',
+    subtitle: 'Tożsamość, Przekonania, Samoocena, Wartości i Metapoznanie w praktyce życiowej',
+    protagonist: 'Krzysztof, 50 lat, dyrektor generalny i mentor biznesowy',
+    context: 'Krzysztof po przejściu przez kryzys wieku średniego, rozwód i wypalenie zawodowe podjął głęboką pracę nad sobą. Zintegrował wiedzę z zakresu architektury umysłu w jeden spójny system samoregulacji.',
     story: [
-      'Marta wiedziała, że grupy mają tendencję do myślenia grupowego (Groupthink) i ignorowania ryzyk. Zorganizowała sesję Pre-Mortem Analysis.',
-      'Zebrała zespół i powiedziała: „Wyobraźmy sobie, że minął rok. Nasz projekt CRM okazał się potworną, drogową katastrofą. Firma straciła miliony. Wypiszcie na kartkach 5 powodów, dlaczego do tego doszło”.',
-      'Dzięki tej zmianie perspektywy zespół bez lęku wskazał kluczowe plamy ślepe: brak przeszkolenia pracowników liniowych i niekompatybilność z dawnym oprogramowaniem. Marta wprowadziła poprawki, zapobiegając realnej katastrofie.'
+      'Krzysztof nauczył się patrzeć na swoją tożsamość jako na ewoluujący proces (Rozdział 1), uwalniając się od sztywnej etykiety „prezesa-pracoholika”.',
+      'Przekształcił swoje dotychczasowe dogmaty w hipotezy testowe (Rozdział 2), wykształcając pokorę epistemiczną i umiejętność słuchania innych.',
+      'Oparł swoją samoocenę na wewnętrznym kompasie wartości i twardych dowodach sprawczości (Rozdział 3), całkowicie odcinając się od porównań społecznych.',
+      'Zdefiniował nienaruszalne wartości (Rozdział 4) i zaczął zarządzać czasem zgodnie z zasadą Pareto. A nad wszystkim postawił czujnego obserwatora metapoznawczego (Rozdział 5).',
+      'Krzysztof stał się człowiekiem o głębokiej autonomii, spokoju ducha i niezwykłej skuteczności w prowadzeniu ludzi.'
     ],
     dialogue: [
-      { speaker: 'Marta', text: 'Udawajmy, że jesteśmy po katastrofie tego projektu. Dlaczego polegliśmy?', subtext: 'Uruchomienie techniki Pre-Mortem i obejście Błędu Potwierdzenia.' },
-      { speaker: 'Inżynier', text: 'Szczerze? Jeśli nie zrobimy małych warsztatów dla magazynu, oni nie będą wpisywać danych i cały system leży.', subtext: 'Ujawnienie krytycznej plamy ślepej dzięki nowej ramie pytania.' }
+      { speaker: 'Młody Menedżer', text: 'Krzysztof, jak ty to robisz, że w największym kryzysie w firmie zachowujesz taki spokój i podejmujesz trafne decyzje?', subtext: 'Podziw dla dojrzałości metapoznawczej.' },
+      { speaker: 'Krzysztof', text: 'Widzę emocje i ryzyka, ale nie jestem moimi emocjami. Mam proces, mam wartości i mam pauzę przed reakcją.', subtext: 'Pełna integracja Meta-Warstwy Tomu III.' }
     ],
-    decisionTaken: 'Marta opóźniła start o 2 tygodnie, by przeprowadzić warsztaty dla magazynu, co zagwarantowało sukces wdrożenia.',
-    whatProtagonistSaw: 'Niezbędność celowego szukania luk w optymistycznych planach.',
-    whatWasMissed: 'Fakt, że bez intencjonalnego pytania o klęskę ludzie milczą na temat ryzyk z lęku przed wyłamaniem się z grupy.',
+    decisionTaken: 'Krzysztof stworzył osobczy system codziennej samoobserwacji i kalibracji decyzji oparty na 5 filarach.',
+    whatProtagonistSaw: 'Własny umysł jako skomplikowany, ale obserwowalny i sterowalny system.',
+    whatWasMissed: 'Nic — Krzysztof wykształcił pełną przejrzystość metapoznawczą.',
     psychologicalAnalysis: {
-      coreMechanism: 'Analiza Pre-Mortem i przełamywanie Groupthink.',
+      coreMechanism: 'Pełna integracja Meta-Warstwy Tomu III: Nadzór Metapoznawczy nad procesami tożsamości, przekonań, samooceny i wartości.',
       cognitiveBiases: [
-        { name: 'Błąd optymizmu', description: 'Nierealistyczne przekonanie, że własny projekt nie napotka przeszkód.', impact: 'Ignorowanie ryzyk.' }
+        { name: 'Redukcja wszystkich zniekształceń', description: 'Świadome wykrywanie i neutralizowanie błędów w czasie rzeczywistym.', impact: 'Niezwykła trafność decyzyjna.' }
       ],
       defenseMechanisms: [
-        { name: 'Kontrolowana symulacja porażki', explanation: 'Bezpieczne przećwiczenie scenariusza klęski przed wdrożeniem.' }
+        { name: 'Świadoma samoregulacja', explanation: 'Korekta zachowania z pozycji życzliwego obserwatora.' }
       ],
-      emotionalDynamic: 'Przejście od ślepego entuzjazmu do dojrzałego, zabezpieczonego planowania.'
+      emotionalDynamic: 'Głęboki, niezmącony spokój, spójność i duma z własnej drogi.'
+    },
+    decisionProcessAnalysis: {
+      trigger: 'Kryzys biznesowy lub relacyjny.',
+      attentionFocus: 'Meta-obserwacja własnych reakcji i faktów.',
+      interpretation: '„Oto wyzwanie. Mam narzędzia, mam wartości, wybieram najlepszy krok”.',
+      emotion: 'Spokój, skupienie, jasność.',
+      impulse: 'Brak impulsywności.',
+      action: 'Przemyślane, zrównoważone działanie.',
+      consequence: 'Rozwiązanie problemu i budowanie autorytetu.'
     },
     neurobiologicalAnalysis: {
       brainRegions: [
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Symulacje perspektywiczne i analiza ryzyk', activationState: 'Uruchomienie krytycznego myślenia' },
-        { region: 'Przednia kora obwodu', role: 'Wykrywanie potencjalnych błędów proceduralnych', activationState: 'Podwyższona czujność' }
+        { region: 'Cała Sieć Kontroli Wykonawczej (FPN) i mPFC', role: 'Maksymalna synchronizacja procesów nadzorczych i emocjonalnych', activationState: 'Optymalna tonacja' }
       ],
       neurotransmitters: [
-        { name: 'Noradrenalina', roleInScenario: 'Konstruktywna czujność ukierunkowana na poprawki.' }
+        { name: 'Równowaga Dopaminowo-Serotoninowa', roleInScenario: 'Stan wysokiego skupienia i poczucia dobrostanu.' }
       ],
       biologicalTimeline: [
-        { timeMs: '0 - 300 ms', process: 'Pytanie Pre-Mortem zdejmuje presję konformizmu z uczestników.' }
+        { timeMs: '0 - 500 ms', process: 'Sygnał stresowy jest natychmiast rejestrowany przez ACC i mitygowany przez dlPFC.' }
       ]
     },
     influenceAndManipulation: {
       tacticsUsed: [
-        { tactic: 'Presja hurraoptymizmu', description: 'Tępienie głosów krytycznych jako „braku zaangażowania”.', vulnerabilityExploited: 'Potrzeba przynależności zespołu.' }
+        { tactic: 'Odporność na wszelką manipulację', description: 'Dzięki znajomości własnych wartości i mechanizmów Krzysztof jest całkowicie niewrażliwy na szantaż emocjonalny.', vulnerabilityExploited: 'Brak podatności.' }
       ],
       counterMeasures: [
-        { step: '1. Gra w Klęskę (Pre-Mortem)', script: 'Prośba o oskarżenie projektu o porażkę w fikcyjnej przyszłości.', rationale: 'Legitymizuje krytyczne myślenie.' }
+        { step: '1. Osobisty System Samoregulacji', script: '„Obserwuję mój umysł, kieruję moimi wartościami i podejmuję autonomiczne decyzje”.', rationale: 'Gwarantuje pełną autonomię psychologiczną.' }
       ]
     },
-    keyTakeaway: 'Wyobraź sobie porażkę dzisiaj, by móc jej zapobiec jutro. Mądrość szuka ryzyk wcześniej.'
-  },
-  {
-    id: 'studium-21-6-halt-i-decyzje',
-    title: 'Głód i złość za kierownicą: Jak wskaźnik HALT uratował małżeństwo Pawła',
-    subtitle: 'Biologiczne uwarunkowania metapoznania i zasada powstrzymania się od wyroków w wyczerpaniu',
-    protagonist: 'Paweł, 38 lat, przedstawiciel handlowy',
-    context: 'Paweł po 10 godzinach jazdy samochodem w korkach, głodny i wyczerpany, wracał do domu. Kiedy żona zapytała go o zakup mleka, Paweł poczuł potężną falę wściekłości i chęć wyrzucenia z siebie oskarżeń o „brak szacunku”.',
-    story: [
-      'Paweł na szczęście zastosował wskaźnik HALT (Hungry, Angry, Lonely, Tired). Jego metapoznanie wysłało sygnał: „Twój poziom glukozy wynosi zero, Twój mózg jest wyczerpany. Ta wściekłość to nie stan Twojego małżeństwa — to Twój głód”.',
-      'Paweł milczał przez 3 minuty, wszedł do kuchni, zjadł banana i wypił szklankę wody.',
-      'Po 10 minutach, gdy glukoza dotarła do kory przedczołowej, złość całkowicie opadła. Paweł przytulił żonę i powiedział: „Przepraszam, byłem potwornie głodny i zmęczony. Już idę po to mleko”.'
-    ],
-    dialogue: [
-      { speaker: 'Żona', text: 'Paweł, kupiłeś to mleko, o które prosiłam?', subtext: 'Zwykłe, neutralne pytanie domowe.' },
-      { speaker: 'Paweł (Wewnętrzny Obserwator)', text: 'Uwaga! Jesteś głodny i wyczerpany (HALT). Nie odzywaj się, zanim czegoś nie zjesz.', subtext: 'Zaaplikowanie metapoznawczego hamulca biologicznego.' }
-    ],
-    decisionTaken: 'Paweł powstrzymał się od wybuchu gniewu i zjadł posiłek przed podjęciem rozmowy.',
-    whatProtagonistSaw: 'Wykrycie fizjologicznych źródeł własnego rozdrażnienia.',
-    whatWasMissed: 'Fakt, że zmęczenie biologiczne jest najczęstszym generatorem fałszywych konfliktów relacyjnych.',
-    psychologicalAnalysis: {
-      coreMechanism: 'Interocepcja i Skaner Biologiczny HALT.',
-      cognitiveBiases: [
-        { name: 'Personalizacja wyczerpania', description: 'Przypisywanie złości zachowaniu partnera zamiast własnemu głodowi.', impact: 'Awantury domowe.' }
-      ],
-      defenseMechanisms: [
-        { name: 'Pauza fizjologiczna', explanation: 'Uzupełnienie glukozy przed pójściem w konfrontację.' }
-      ],
-      emotionalDynamic: 'Gwałtowny impuls irytacji wygaszony świadomym posiłkiem.'
-    },
-    neurobiologicalAnalysis: {
-      brainRegions: [
-        { region: 'Przednia wyspa', role: 'Rejestracja wewnętrznych stanów ciała (głód, zmęczenie)', activationState: 'Skanowanie stanu' },
-        { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Powistrzymanie wybuchu gniewu', activationState: 'Przejęcie kontroli po dopływie glukozy' }
-      ],
-      neurotransmitters: [
-        { name: 'Glukoza i Serotonina', roleInScenario: 'Spadek wywołuje agresję; posiłek przywraca stabilność.' }
-      ],
-      biologicalTimeline: [
-        { timeMs: '0 - 100 ms', process: 'Pytanie o mleko wywołuje złość w ciele migdałowatym; pauza ratuje relację.' }
-      ]
-    },
-    influenceAndManipulation: {
-      tacticsUsed: [
-        { tactic: 'Biologiczna ślepota na zmęczenie', description: 'Niezauważanie wpływu głodu na poziom cierpliwości.', vulnerabilityExploited: 'Spadek glukozy w korze przedczołowej.' }
-      ],
-      counterMeasures: [
-        { step: '1. Skan HALT przed Rozmową', script: 'Sprawdź czy nie jesteś głodny/zmęczony zanim powiesz przykre słowo.', rationale: 'Chroni relację przed skutkami wyczerpania.' }
-      ]
-    },
-    keyTakeaway: 'Nie rozwiązuj problemów małżeńskich na głodnym mózgu. Najpierw nakarm organizm, potem rozmawiaj.'
-  },
-  {
-    id: 'studium-21-7-wielka-synteza',
-    title: 'Świadomy architekt własnego życia: Przypadek Ewy po przejściu trzech tomów',
-    subtitle: 'Zintegrowanie wiedzy o umyśle, relacjach i autonomii w jedną spójną praktykę życiową',
-    protagonist: 'Ewa, 41 lat, menedżerka i matka dwóch dorastających synów',
-    context: 'Ewa przed przeczytaniem całej serii żyła w ciągłym poczuciu winy, konfliktach relacyjnych i paraliżu przed oceną. Po przepracowaniu materiału Tomu I, II i III stała się człowiekiem głęboko osadzonym w wewnętrznej autonomii.',
-    story: [
-      'Ewa zrozumiała biologię swojego stresu (Tom I), rozbroiła manipulacje i konflikty w relacjach (Tom II) oraz zbudowała autonomiczną tożsamość opartą na własnych wartościach (Tom III).',
-      'Kiedy dzisiaj napotyka trudną sytuację w pracy czy w domu, jej wewnętrzny Obserwator uśmiecha się z czułością i mówi: „Poznaję cię. To błąd atrybucji. To odruch obronny. Weź oddech. Zastosuj pauzę. Wybierz mądrość”.',
-      'Ewa nie stała się robotem bez emocji. Nadal odczuwa lęk, złość czy smutek. Różnica polega na tym, że nie jest już ich ślepą niewolnicą. Jest świadomym architektem swojego doświadczenia.'
-    ],
-    dialogue: [
-      { speaker: 'Syn', text: 'Mamo, znowu mi marudzić będziesz o te ocenach?', subtext: 'Trudny bodziec relacyjny i próba prowokacji.' },
-      { speaker: 'Ewa', text: 'Synu, zależy mi na twojej przyszłości, ale to twoje życie i twoje decyzje. Jestem tu, gdybyś potrzebował pomocy.', subtext: 'Świadoma postawa autonomii, wsparcia i braku przemocowej kontroli.' }
-    ],
-    decisionTaken: 'Ewa stworzyła swój Osobisty Kompas Nawigacyjny i żyje w głębokiej harmonii ze sobą i otoczeniem.',
-    whatProtagonistSaw: 'Życie jako fascynujące pole do praktykowania mądrości i rozwoju.',
-    whatWasMissed: 'Fakt, że największą wolnością człowieka jest wolność od własnych nieuświadomionych automatyzmów.',
-    psychologicalAnalysis: {
-      coreMechanism: 'Zintegrowana Metapoznawcza Autonomia i Wolność od Automatyzmów.',
-      cognitiveBiases: [
-        { name: 'Świadomość własnych stronniczości', description: 'Wyłapywanie własnych błędów poznawczych w czasie rzeczywistym.', impact: 'Spokój i wysoka sprawność decyzji.' }
-      ],
-      defenseMechanisms: [
-        { name: 'Świadomy wybór reakcji', explanation: 'Zastąpienie odruchów podkorowych dojrzałą samoregulacją.' }
-      ],
-      emotionalDynamic: 'Głęboka spójność wewnętrzna, życzliwość dla siebie i stabilne poczucie wolności.'
-    },
-    neurobiologicalAnalysis: {
-      brainRegions: [
-        { region: 'Kora przedczołowa (dlPFC, mPFC, vmPFC)', role: 'Pełna integracja kontroli wykonawczej i samowiedzy', activationState: 'Harmonijna, wysoka sprawność' },
-        { region: 'Ciało migdałowate', role: 'Wygaszona nadreaktywność', activationState: 'Optymalny poziom czujności' }
-      ],
-      neurotransmitters: [
-        { name: 'GABA, Serotonina, Dopamina', roleInScenario: 'Zbalansowany profil neurochemiczny dający spokój i motywację.' }
-      ],
-      biologicalTimeline: [
-        { timeMs: '0 - 100 ms', process: 'Bodziec dociera do amygdali, lecz w 200 ms kora przedczołowa wybiera świadomą pauzę.' }
-      ]
-    },
-    influenceAndManipulation: {
-      tacticsUsed: [
-        { tactic: 'Manipulacje otoczenia', description: 'Próby wywołania poczucia winy lub lęku.', vulnerabilityExploited: 'Odmowa ulegania dzięki silnej autonomii.' }
-      ],
-      counterMeasures: [
-        { step: '1. Osobista Mapa Systemowa', script: 'Kierowanie się własnymi wartościami przy zachowaniu szacunku do innych.', rationale: 'Daje pełną odporność psychologiczną.' }
-      ]
-    },
-    keyTakeaway: 'Zrozumienie własnego umysłu daje najwyższą wolność — wolność świadomego tworzenia własnego losu.'
+    alternativePath: 'Krzysztof stał się autentycznym liderem własnego życia i wzorem dla innych.',
+    readerQuestion: 'Czy jesteś gotów zacząć traktować swój umysł jako system, który możesz świadomie obserwować i udoskonalać?',
+    keyTakeaway: 'Autonomia to nie stan, w którym nie masz problemów. To zdolność świadomego nawigowania w swoim umyśle w każdym kryzysie.'
   }
 ];
 
 export const selfExercisesChapterTwentyOne: SelfExercise[] = [
   {
-    id: 'cwiczenie-21-1-protokol-stop',
-    title: 'Trening Świadomej Pauzy: Protokół STOP',
-    subtitle: 'Wstawianie klina między bodziec a automatyczną reakcję',
-    objective: 'Opanowanie 4-etapowego nawyku zatrzymywania się w chwilach emocjonalnego wzburzenia.',
+    id: 'ex-21-1',
+    title: 'Dziennik Obserwatora Metapoznawczego',
+    subtitle: 'Praktyka rozdzielania surowych faktów od interpretacji',
+    objective: 'Wykształcenie nawyku rejestrowania zdarzeń bez natychmiastowego dorabiania dramatycznych teorii.',
     durationMinutes: 15,
-    neuroScientificFoundation: 'Aktywacja dlPFC w celu zahamowania wyładowań w ciele migdałowatym i odzyskania kontroli wykonawczej.',
+    neuroScientificFoundation: 'Świadome rozdzielenie bodźca od interpretacji aktywuje grzbietowo-boczną korę przedczołową i wycisza reakcję limbiczną.',
     steps: [
       {
         stepNumber: 1,
-        title: 'S - Stop (Zatrzymaj się)',
-        instruction: 'W chwili skoku emocji zamroź na 3 sekundy mowę i ruchy ciała.',
-        promptText: 'Moja kotwica zatrzymania:',
-        placeholder: 'Zatrzymuję mowę, opieram stopy na podłodze.'
+        title: 'Rejestracja surowego faktu',
+        instruction: 'Zapisz zdarzenie z dzisiaj w sposób czysto obiektywny, tak jak zarejestrowałaby je kamera wideo (bez przymiotników oceniasjących).',
+        promptText: 'Surowy fakt wideo:',
+        placeholder: 'Fakt: Szef wszedł do pokoju, nie powiedział „dzień dobry” i usiadł przy biurku o 9:01...'
       },
       {
         stepNumber: 2,
-        title: 'T - Take a breath (Weź oddech)',
-        instruction: 'Wykonaj podwójny wdech nosem i długi, spokojny wydech ustami (oddech fizjologiczny).',
-        promptText: 'Reakcja oddechowa:',
-        placeholder: 'Robię 2 głębokie wydechy, wyciszając tętno.'
+        title: 'Uchwycenie automatycznej interpretacji',
+        instruction: 'Zapisz, jaką historię Twój umysł natychmiast do tego faktu dośpiewał.',
+        promptText: 'Automatyczna historia mojego umysłu:',
+        placeholder: 'Historia: On jest na mnie wściekły za ten raport, zaraz mnie wezwie i opieprzy...'
       },
       {
         stepNumber: 3,
-        title: 'O - Observe (Zaobserwuj)',
-        instruction: 'Zauważ bez oceny: Co dzieje się w moim ciele? Jakie myśli biegną przez głowę?',
-        promptText: 'Moje obserwacje:',
-        placeholder: 'Czuję napięcie w żuchwie i myśl: „On chce mnie oszukać”.'
-      },
-      {
-        stepNumber: 4,
-        title: 'P - Proceed (Przejdź do działania)',
-        instruction: 'Wybierz mądrą, autonomiczną reakcję zgodną z Twoimi wartościami.',
-        promptText: 'Moja świadoma reakcja:',
-        placeholder: 'Mówię spokojnym tonem: „Chcę dokładnie zrozumieć Twój punkt widzenia”.'
+        title: 'Sformułowanie 2 alternatywnych wyjaśnień',
+        instruction: 'Zapisz 2 inne, równie prawdopodobne wyjaśnienia tego samego faktu.',
+        promptText: 'Alternatywne wyjaśnienia:',
+        placeholder: '1. Szef jest zamyślony bo ma trudną rozmowę z zarządem...\n2. Boli go ząb i spieszył się do łazienki...'
       }
     ],
     reflectionQuestions: [
-      'O ile zmienia się jakość Twoich rozmów, gdy dajesz sobie 5 sekund pauzy przed odpowiedzią?'
+      'Jak często Twoja pierwsza automatyczna historia okazuje się fałszywa?',
+      'O ile lżejsze staje się Twoje ciało, gdy nie wierzysz bezkrytycznie w pierwszą myśl?'
     ]
   },
   {
-    id: 'cwiczenie-21-2-decentryzacja-mysli',
-    title: 'Warsztat Decentryzacji Poznawczej (Cognitive Defusion)',
-    subtitle: 'Patrzenie na myśli jak na chmury na niebie',
-    objective: 'Osłabienie fuzji z katastroficznymi myślami i zmiana stosunku do własnego monologu wewnętrznego.',
-    durationMinutes: 20,
-    neuroScientificFoundation: 'Zmiana perspektywy w sieci DMN poprzez aktywację przyśrodkowej kory przedczołowej.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Zapis myśli stresogennej',
-        instruction: 'Zapisz myśl, która Cię dokucza w formacie: „Jestem [X]” lub „Musi się stać [Y]”.',
-        promptText: 'Trudna myśl:',
-        placeholder: '„Na pewno zepsuję ten projekt i stracę pracę”'
-      },
-      {
-        stepNumber: 2,
-        title: 'Przekształcenie na perspektywę obserwatora',
-        instruction: 'Przepisz to zdanie dodając przed nim frazę: „Mam myśl, że...”',
-        promptText: 'Zdanie z dystansem:',
-        placeholder: '„Mam myśl, że zepsuję ten projekt i stracę pracę”'
-      },
-      {
-        stepNumber: 3,
-        title: 'Dodanie poziomu metapoznawczego',
-        instruction: 'Przepisz zdanie dodając frazę: „Zauważam, że mój umysł produkuje myśl, że...”',
-        promptText: 'Pełny dystans metapoznawczy:',
-        placeholder: '„Zauważam, że mój umysł właśnie produkuję myśl, że zepsuję ten projekt”'
-      }
-    ],
-    reflectionQuestions: [
-      'Jak zmienia się ciężar i ładunek emocjonalny tej myśli, gdy patrzysz na nią z poziomu Obserwatora?'
-    ]
-  },
-  {
-    id: 'cwiczenie-21-3-skad-wiem-ze-wiem',
-    title: 'Test Skąd Wiem, Że Wiem? (Illusion of Knowledge Audit)',
-    subtitle: 'Prześwietlanie własnej wiedzy i wyłapywanie plam ślepych',
-    objective: 'Weryfikacja rzetelności opanowania kluczowych pojęć i przekonań.',
-    durationMinutes: 20,
-    neuroScientificFoundation: 'Testowanie pamięci deklaratywnej i osłabianie błędu płynności (fluency bias) w dlPFC.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Wybór pojęcia / tezy',
-        instruction: 'Wybierz temat, o którym uważasz, że masz głęboką wiedzę (np. jak działa silnik, jak działa inflacja).',
-        promptText: 'Temat testowy:',
-        placeholder: 'Jak działa sztuczna inteligencja oparta na sieciach neuronowych...'
-      },
-      {
-        stepNumber: 2,
-        title: 'Prosty opis mechanizmu (Technika Feynmana)',
-        instruction: 'Napisz krok po kroku prosty opis mechanizmu od zera, bez używania trudnego żargonu.',
-        promptText: 'Moje wyjaśnienie od zera:',
-        placeholder: 'Sieć neuronowa przyjmuje liczby, mnoży je przez wagi, dodaje do nich wartość i sprawdza wynik...'
-      },
-      {
-        stepNumber: 3,
-        title: 'Identiakcja luki',
-        instruction: 'Wskazać punkt, w którym Twoje wyjaśnienie staje się ogólnikowe („i potem dzieje się magia”). To jest Twoja plama ślepa.',
-        promptText: 'Moja wyłapana luka:',
-        placeholder: 'Nie potrafię dokładnie wyjaśnić, jak działa algorytm wstecznej propagacji błędu.'
-      }
-    ],
-    reflectionQuestions: [
-      'O ile częściej warto przyznawać się do niewiedzy, by móc zdobyć prawdziwą mądrość?'
-    ]
-  },
-  {
-    id: 'cwiczenie-21-4-analiza-pre-mortem',
-    title: 'Warsztat Analizy Pre-Mortem przed Wielką Decyzją',
-    subtitle: 'Szczepionka na Błąd Potwierdzenia i Groupthink',
-    objective: 'Wyobrażenie sobie porażki projektu z wyprzedzeniem celem identyfikacji ukrytych ryzyk.',
-    durationMinutes: 25,
-    neuroScientificFoundation: 'Celowa aktywacja symulacji perspektywicznych w kory przedczołowej z wyłączeniem optymistycznych stronniczości.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Opis planowanego projektu',
-        instruction: 'Zapisz cel lub projekt, który zamierzasz wdrożyć.',
-        promptText: 'Mój projekt:',
-        placeholder: 'Zmiana pracy i przejście do nowej branży...'
-      },
-      {
-        stepNumber: 2,
-        title: 'Scenariusz katastrofy z przyszłości',
-        instruction: 'Wyobraź sobie, że minął rok i projekt zakończył się całkowitą klęską. Wypisz 4 konkretne przyczyny tej klęski.',
-        promptText: 'Dlaczego ponieśliśmy klęskę (patrząc z przyszłości):',
-        placeholder: '1. Brak poduszki finansowej na 6 miesięcy. 2. Brak znajomości branży. 3. Słaby networking. 4. Brak dyscypliny.'
-      },
-      {
-        stepNumber: 3,
-        title: 'Działania prewencyjne dziś',
-        instruction: 'Dla każdej przyczyny zaplanuj jedno konkretne działanie zabezpieczające już dzisiaj.',
-        promptText: 'Moje zabezpieczenia:',
-        placeholder: '1. Oszczędzam 6-miesięczną poduszkę przed odejściem. 2. Zapisuję się na kurs. 3. Idę na 3 wydarzenia branżowe.'
-      }
-    ],
-    reflectionQuestions: [
-      'Jakie to uczucie przechytrzyć własny Błąd Potwierdzenia i zapobiec porażce, zanim do niej dojdzie?'
-    ]
-  },
-  {
-    id: 'cwiczenie-21-5-halt-praktyka',
-    title: 'Skaner Stanu Biologicznego HALT',
-    subtitle: 'Chrona decyzji przed fałszywymi emocjami wynikającymi ze zmęczenia',
-    objective: 'Wyuczenie nawyku sprawdzania stanu organizmu przed podejmowaniem trudnych rozmów.',
+    id: 'ex-21-2',
+    title: 'Trening 3-Sekundowej Pauzy Poznawczej',
+    subtitle: 'Budowanie szczeliny między bodźcem a reakcją',
+    objective: 'Wykształcenie fizycznego nawyku wyhamowania impulsywnej odpowiedzi werbalnej lub behawioralnej.',
     durationMinutes: 10,
-    neuroScientificFoundation: 'Skanowanie interoceptywne w wyspie przedniej i wstrzymanie pochopnych reakcji w dlPFC.',
+    neuroScientificFoundation: 'Trzysekundowa pauza oddechowa stwarza okno czasowe na dotarcie sygnału z podkorowego ciała migdałowatego do kory przedczołowej.',
     steps: [
       {
         stepNumber: 1,
-        title: 'Skan 4 wskaźników HALT',
-        instruction: 'Oceń w skali 1-10: H (Hungry - Czy jestem głodny?), A (Angry - Czy jestem wzburzony?), L (Lonely - Czy czuję samotność?), T (Tired - Czy jestem zmęczony?).',
-        promptText: 'Mój dzisiejszy stan HALT:',
-        placeholder: 'Głód: 8/10, Złość: 4/10, Samotność: 2/10, Zmęczenie: 9/10 (Stan wysokiego ryzyka!)'
+        title: 'Wyznaczenie kotwicy pauzy',
+        instruction: 'Wybierz sygnał, który od dziś będzie dla Ciebie wezwaniem do 3-sekundowej pauzy (np. dźwięk powiadomienia, trudne pytanie od współpracownika).',
+        promptText: 'Moja kotwica pauzy:',
+        placeholder: 'Moja kotwica: Gdy ktoś zadaje mi trudne lub prowokujące pytanie na zebraniu...'
       },
       {
         stepNumber: 2,
-        title: 'Decyzja o wstrzymaniu',
-        instruction: 'Jeśli którykolwiek wskaźnik przekracza 7/10, powstrzymaj się od trudnych ustaleń i najpierw zrealizuj potrzebę biologiczną.',
-        promptText: 'Moja akcja regeneracyjna:',
-        placeholder: 'Przekładam trudną rozmowę z partnerem na jutro rano po śniadaniu. Dzisiaj idę spać o 22:00.'
-      }
-    ],
-    reflectionQuestions: [
-      'Ile niepotrzebnych kłótni w Twoim życiu wynikało po prostu ze zmęczenia i spadku glukozy we krwi?'
-    ]
-  },
-  {
-    id: 'cwiczenie-21-6-dziennik-metapoznawczy',
-    title: 'Dziennik Refleksji Metapoznawczej',
-    subtitle: 'Budowanie własnego modelu procesów myślowych',
-    objective: 'Codzienna rejestracja jakości własnych decyzji, wyłapanych błędów i stanów emocjonalnych.',
-    durationMinutes: 15,
-    neuroScientificFoundation: 'Rozwijanie neuroplastycznych połączeń w kory przedczołowej odpowiedzialnych za samowiedzę.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Zapis kluczowej decyzji dnia',
-        instruction: 'Zapisz jedną ważną decyzję podjętą w ciągu dnia.',
-        promptText: 'Moja decyzja:',
-        placeholder: 'Odwet na maila z żądaniem rabatu...'
-      },
-      {
-        stepNumber: 2,
-        title: 'Audyt procesu myślowego',
-        instruction: 'Jakie emocje i błędy poznawcze próbowały wpłynąć na tę decyzję? Jak poraziłeś sobie z ich wyhamowaniem?',
-        promptText: 'Moje obserwacje procesu:',
-        placeholder: 'Chciałem odpisać agresywnie (złość), ale zastosowałem STOP, poczekałem 2 godziny i dałem ofertę merytoryczną.'
-      }
-    ],
-    reflectionQuestions: [
-      'Jak stała praktyka pisania dziennika metapoznawczego zmienia Twoją odporność na stres społeczny?'
-    ]
-  },
-  {
-    id: 'cwiczenie-21-7-mapa-systemowa-synteza',
-    title: 'Wielka Synteza: Osobista Mapa Systemowa Autonomii',
-    subtitle: 'Zintegrowanie wiedzy z Tomu I, Tomu II i Tomu III w spójny dokument życiowy',
-    objective: 'Stworzenie indywidualnego operacyjnego kompasu samoregulacji poznawczo-społecznej.',
-    durationMinutes: 40,
-    neuroScientificFoundation: 'Głęboka integracja narracyjna w mPFC łożąca podwaliny pod dojrzałą rezyliencję i autonomię.',
-    steps: [
-      {
-        stepNumber: 1,
-        title: 'Filar I: Moje pułapki umysłu (Tom I)',
-        instruction: 'Wypisz swoje 2 najczęstsze błędy poznawcze z Tomu I (np. Błąd Potwierdzenia, Tunelowanie uwagi) i ich antidotum.',
-        promptText: 'Moje pułapki i antidota:',
-        placeholder: 'Confirmation bias (antidotum: szukam kontrdowodów); Tunelowanie uwagi (antidotum: poszerzam perspektywę).'
-      },
-      {
-        stepNumber: 2,
-        title: 'Filar II: Moja dynamika relacyjna (Tom II)',
-        instruction: 'Wypisz swój główny nawyk relacyjny w konflikcie z Tomu II i swoje nowe asertywne zachowanie.',
-        promptText: 'Moje relacje i granice:',
-        placeholder: 'Nawyk: wycofanie (stonewalling); Nowe zachowanie: zapowiedź pauzy i powrót do rozmowy po 15 min.'
+        title: 'Procedura 3 sekund',
+        instruction: 'Zapisz dokładny przebieg Twojej pauzy: 1. Zamknięcie ust, 2. Głęboki wdech do brzucha, 3. Ciche policzenie: 1... 2... 3...',
+        promptText: 'Procedura pauzy:',
+        placeholder: '1. Zamykam usta, 2. Biorę wdech nosem, 3. Liczę w myśli do 3, 4. Pytam sam siebie: Jaki jest mój cel?'
       },
       {
         stepNumber: 3,
-        title: 'Filar III: Moja tożsamość i wartości (Tom III)',
-        instruction: 'Wypisz swoją Deklarację Tożsamości Procesowej i TOP 3 wartości nienegocjowalne.',
-        promptText: 'Moja tożsamość i kompas:',
-        placeholder: 'Deklaracja: Jestem człowiekiem rozwijającym się. Wartości: Prawda, Zdrowie, Wolność.'
+        title: 'Trening na sucho',
+        instruction: 'Wyobraź sobie prowokującą sytuację i przećwicz procedurę 3 sekund 5 razy zrzadką.',
+        promptText: 'Potwierdzenie treningu:',
+        placeholder: 'Przećwiczono na sucho 5 razy. Ciało zapamiętało odruch.'
       }
     ],
     reflectionQuestions: [
-      'O ile bardziej świadomym, spokojnym i autonomicznym człowiekiem stałeś się po przejściu tej drogi?',
-      'Jak zamierzasz wykorzystać tę wiedzę do budowania dobra wokół siebie każdego dnia?'
+      'Jak ten krótki odruch chroni Cię przed wypowiedzeniem słów, których później żałujesz?',
+      'Jak reaguje rozmówca, gdy widzi Twoje opanowanie i przemyślaną odpowiedź?'
+    ]
+  },
+  {
+    id: 'ex-21-3',
+    title: 'Dziennik Kalibracji Prognoz i Pewności',
+    subtitle: 'Urealnianie subiektywnej pewności z obiektywną trafnością',
+    objective: 'Nauczenie się ilościowego szacowania prawdopodobieństwa i rozbrajanie Błędu Mądrości Po Fakcie.',
+    durationMinutes: 20,
+    neuroScientificFoundation: 'Ilościowy zapis prognozy przed poznałem wyniku zmusza układ nadzorczy do nauki na błędach i koryguje Overconfidence Effect.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Zapis prognozy i subiektywnej pewności',
+        instruction: 'Przed podjęciem ważnej decyzji zapisz swoją prognozę i oceń swoją pewność w skali 0-100% (np. Ta rekrutacja zamknie się w 2 tygodnie - Pewność: 90%).',
+        promptText: 'Prognoza i pewność:',
+        placeholder: 'Prognoza: Klient podpisze umowę w tym tygodniu. Pewność: 85%.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Weryfikacja obiektywnego wyniku po czasie',
+        instruction: 'Po upływie wyznaczonego czasu zapisz rzeczywisty wynik zdarzenia.',
+        promptText: 'Obiektywny wynik:',
+        placeholder: 'Wynik: Klient przesunął decyzję o miesiąc z powodu braku budżetu.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Analiza luki kalibracyjnej',
+        instruction: 'Zapisz, dlaczego Twoja pewność była przesadzona i jaką lukę w informacjach przeoczyłeś.',
+        promptText: 'Lekcja kalibracyjna:',
+        placeholder: 'Moja pewność była za wysoka bo nie sprawdziłem cyklu budżetowego klienta. Następnym razem dodam to pytanie na pierwszej rozmowie.'
+      }
+    ],
+    reflectionQuestions: [
+      'O ile częściej mylisz się w sprawach, w których byłeś „w 100% pewien”?',
+      'Jak rejestracja prognoz uczy Cię pokory epistemicznej?'
+    ]
+  },
+  {
+    id: 'ex-21-4',
+    title: 'Praktyka Defuzji Poznawczej (ACT)',
+    subtitle: 'Uwalnianie się od dyktatu automatycznych myśli',
+    objective: 'Nauczenie się dystansowania od własnych myśli lękowych poprzez zmianę ramy językowej.',
+    durationMinutes: 15,
+    neuroScientificFoundation: 'Zmiana ramy z „Jestem nieudacznikiem” na „Zauważam myśl, że jestem nieudacznikiem” aktywuje sieć kontroli i zmniejsza fuzję poznawczą.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Uchwycenie trudnej myśli w fuzji',
+        instruction: 'Zapisz myśl, która często Cię paraliżuje w formie bezpośredniej (np. Nie dam rady, Zepsuję to).',
+        promptText: 'Myśl w fuzji:',
+        placeholder: 'Myśl: Kompromituję się na tym zebraniu...'
+      },
+      {
+        stepNumber: 2,
+        title: 'Zastosowanie ramy obserwatora',
+        instruction: 'Przepisuj tę myśl dodając na początku frazę: „Mam myśl, że...”',
+        promptText: 'Myśl z dystansem:',
+        placeholder: 'Mam myśl, że kompromituję się na tym zebraniu...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Głęboka defuzja metapoznawcza',
+        instruction: 'Przepisuj myśl dodając frazę: „Zauważam, że mój umysł produkuje teraz myśl, że...”',
+        promptText: 'Głęboka defuzja:',
+        placeholder: 'Zauważam, że mój umysł produkuje teraz myśl, że kompromituję się na tym zebraniu. Dziękuję umyśle za tę myśl, ale wracam do prezentacji.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jak zmiana słów wpływa na ciężar emocjonalny, jaki niesie ta myśl?',
+      'Czy widzisz różnicę między BYCIEM myślą a BYCIEM OBSERWATOREM myśli?'
+    ]
+  },
+  {
+    id: 'ex-21-5',
+    title: 'Audyt Ślepych Plamek (Blind Spot Survey)',
+    subtitle: 'Używanie otoczenia jako obiektywnego lustra',
+    objective: 'Zebranie życzliwego i rzetelnego feedbacku od 2 osób na temat Twoich schematów, których sam nie dostrzegasz.',
+    durationMinutes: 30,
+    neuroScientificFoundation: 'Zewnętrzny feedback przełamuje automatyczne racjonalizacje DMN i pozwala korygować błędy w zachowaniu.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Wybór 2 zaufanych osób',
+        instruction: 'Wybierz 2 osoby z Twojego otoczenia (partner, przyjaciel, życzliwy współpracownik), które znają Cię dobrze i mówią prawdę.',
+        promptText: 'Moi 2 obiektywni obserwatorzy:',
+        placeholder: '1. Przyjaciel Michał\n2. Współpracownik Ewa'
+      },
+      {
+        stepNumber: 2,
+        title: 'Zadanie 2 pytań diagnostycznych',
+        instruction: 'Zapytaj te osoby: 1. Jaka jest moja największa mocna strona? 2. Jaki nawyk lub zachowanie najczęściej utrudnia mi osiąganie celów, a którego sam nie zauważam?',
+        promptText: 'Zebrany feedback:',
+        placeholder: 'Michał: Masz świetne pomysły, ale gdy ktoś się nie zgadza, natychmiast zamykasz się w sobie i przestajesz rozmawiać...'
+      },
+      {
+        stepNumber: 3,
+        title: 'Metapoznawcza akceptacja bez obrony',
+        instruction: 'Zapisz zebrany feedback bez szukania usprawiedliwień i podziękuj za niego.',
+        promptText: 'Moja lekcja ze ślepej plamki:',
+        placeholder: 'Akceptuję fakt, że wycofanie się z dyskusji jest moim rodzajem zniekształcenia obronnego. Zaplanuję reakcję zastępczą.'
+      }
+    ],
+    reflectionQuestions: [
+      'O ile trudniej dostrzec własną ślepą plamkę bez pomocy drugiego człowieka?',
+      'Jak docenić odwagę osoby, która dała Ci szczery i trudny feedback?'
+    ]
+  },
+  {
+    id: 'ex-21-6',
+    title: 'Zamiana „DLACZEGO” na „CO” (Overthinking Detox)',
+    subtitle: 'Przełączanie ruminacji na sprawcze rozwiązywanie problemów',
+    objective: 'Przekształcenie jałowych pytań lękowych w pytania ukierunkowane na akcję.',
+    durationMinutes: 15,
+    neuroScientificFoundation: 'Pytania typu „CO” aktywują kwadrant zadaniowy kory przedczołowej, hamując jałowe krążenie w DMN.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Uchwycenie pytania ruminacyjnego („Dlaczego?”)',
+        instruction: 'Zapisz pytanie, które często męczy Cię w głowie (np. Dlaczego ja zawsze mam pecha? Dlaczego on tak do mnie powiedział?).',
+        promptText: 'Moje pytanie ruminacyjne:',
+        placeholder: 'Pytanie: Dlaczego szef zawsze krytykuje akurat moje pomysły?'
+      },
+      {
+        stepNumber: 2,
+        title: 'Przepisanie na pytanie sprawcze („CO?”)',
+        instruction: 'Przepisuj to pytanie na formułę: „CO konkretnie mogę zrobić w tej sytuacji?” lub „JAK mogę przygotować się do następnej rozmowy?”.',
+        promptText: 'Moje pytanie sprawcze:',
+        placeholder: 'Pytanie sprawcze: CO konkretnie mogę poprawić w strukturze mojej kolejnej prezentacji, by argumenty były niepodważalne?'
+      },
+      {
+        stepNumber: 3,
+        title: 'Określenie 1 akcji wykonawczej',
+        instruction: 'Zapisz jedno działanie, które wykonasz w odpowiedzi na nowe pytanie.',
+        promptText: 'Moja akcja wykonawcza:',
+        placeholder: 'Prześlę wstępny szkic prezentacji do konsultacji z Ewą w czwartek.'
+      }
+    ],
+    reflectionQuestions: [
+      'O ile szybciej odzyskujesz energię do działania po zamianie pytań?',
+      'Jak ta prosta zmiana nawyku językowego chroni Twój sen?'
+    ]
+  },
+  {
+    id: 'ex-21-7',
+    title: 'Syntetyczny Rejestr Spójności Bloku I Tomu III',
+    subtitle: 'Integracja Tożsamości, Przekonań, Samooceny i Wartości',
+    objective: 'Sprawdzenie spójności między Twoim nowym obrazem siebie, przekonaniami, samooceną i wartościami.',
+    durationMinutes: 30,
+    neuroScientificFoundation: 'Całościowa synteza struktur poznawczych buduje zintegrowany, odporny na kryzysy model samoregulacji w mPFC.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Tożsamość i Przekonania (Rozdziały 1 i 2)',
+        instruction: 'Napisz kim jesteś w ujęciu procesowym i jaka jest Twoja główna zaktualizowana hipoteza o świecie.',
+        promptText: 'Tożsamość i Przekonanie:',
+        placeholder: 'Jestem ewoluującym człowiekiem, który uczy się na błędach. Świat jest skomplikowany, ale mam narzędzia, by w nim nawigować.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Samoocena i Wartości (Rozdziały 3 i 4)',
+        instruction: 'Napisz na czym opiera się Twoja samoocena i jaka wartość prowadzi Twoje codzienne wybory.',
+        promptText: 'Samoocena i Wartość:',
+        placeholder: 'Moja samoocena opiera się na twardych dowodach pracy i wierności mojej wartości: Uczciwości i Troski o bliskich.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Nadzór Metapoznawczy (Rozdział 5)',
+        instruction: 'Napisz zdanie określające Twoją rolę jako obserwatora własnego umysłu.',
+        promptText: 'Mój nadzór metapoznawczy:',
+        placeholder: 'Jestem uważnym obserwatorem moich myśli i emocji. Zanim zareaguję, biorę oddech i wybieram odpowiedź w zgodzie z moim kompasem.'
+      }
+    ],
+    reflectionQuestions: [
+      'Jak czujesz się patrząc na ten zintegrowany fundament własnej autonomii?',
+      'Jak ten fundament zmienia Twoją postawę wobec wyzwań, które czekają Cię w kolejnych tomach?'
+    ]
+  },
+  {
+    id: 'ex-21-8',
+    title: 'Manifest Metapoznawczej Autonomii',
+    subtitle: 'Zwieńczenie bloku I Tomu III i osobista deklaracja dojrzałości',
+    objective: 'Stworzenie ostatecznego manifestu nawigatora własnego umysłu.',
+    durationMinutes: 20,
+    neuroScientificFoundation: 'Kodyfikacja manifestu tworzy najwyższy skrypt torujący dla kory przedczołowej na całe przyszłe życie.',
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Moja przestrzeń wolności',
+        instruction: 'Napisz zdanie o swojej wolności wyboru między bodźcem a reakcją.',
+        promptText: 'Moja przestrzeń wyboru:',
+        placeholder: 'Żaden bodziec ani emocja nie ma władzy wymusić na mnie automatycznej reakcji. Zawsze mam przestrzeń na pauzę i wybór.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Moja postawa wobec własnego umysłu',
+        instruction: 'Napisz jak będziesz traktować swoje myśli, błędy i sukcesy.',
+        promptText: 'Postawa wobec umysłu:',
+        placeholder: 'Traktuję moje myśli jako hipotezy, moje błędy jako darmowe lekcje, a moje sukcesy jako owoc mojej pracy.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Ostateczny manifest dojrzałości',
+        instruction: 'Napisz 2-zdaniowy manifest nawigatora własnego umysłu.',
+        promptText: 'Mój manifest dojrzałości:',
+        placeholder: 'Jestem gospodarzem mojego umysłu i autorem mojej opowieści. Żyję w zgodzie z moimi wartościami, stale ucząc się i rozwijając w świecie.'
+      }
+    ],
+    reflectionQuestions: [
+      'Gdzie umieścisz ten manifest, by towarzyszył Ci każdego dnia?',
+      'O ile bardziej spójnym i silnym człowiekiem czujesz się po przejściu tej drogi?'
     ]
   }
 ];
@@ -860,89 +881,92 @@ export const chapterTwentyOne: Chapter = {
   number: 21,
   volume: 3,
   volumeChapterNumber: 5,
-  title: 'Rozdział 5: Świadomość Siebie i Metapoznanie',
-  subtitle: 'Myślenie o myśleniu, monitorowanie procesów poznawczych, granice introspekcji i zwieńczenie dzieła Anatomia Umysłu',
-  leadParagraph: 'Stoisz na szczycie monumentalnej konstrukcji dzieła „Anatomia Umysłu”. Przeszliśmy wspólnie drogę od biologicznych fundamentów percepcji, uwagi i emocji (Tom I), przez skomplikowane teatry gier społecznych, komunikacji i perswazji (Tom II), aż po architekturę tożsamości, przekonań, samooceny i wartości (Tom III). Zwieńczeniem całej tej wiedzy jest Metapoznanie — zdolność umysłu do przyglądania się samemu sobie, monitorowania własnych procesów myślowych i świadomego przejmowania steru nad własnym życiem. Bez metapoznania cała ta wiedza pozostaje jedynie martwym podręcznikiem. Z metapoznaniem stajesz się suwerennym architektem swojego doświadczenia.',
-  totalEstimatedPages: 62,
+  title: 'Świadomość siebie i metapoznanie',
+  subtitle: 'Metacognition, nadzór wykonawczy, granice introspekcji, kalibracja pewności siebie i integracja bloku I Tomu III',
+  leadParagraph: 'Osiągnęliśmy punkt zwrotny naszej podróży przez architekturę ludzkiego umysłu. Poznaliśmy mechanizmy tworzenia tożsamości, powstawania przekonań, kształtowania samooceny oraz wyznaczania wartości. Jednak wiedza ta pozostałaby jedynie martwym zbiorem teorii, gdyby umysł nie posiadał zdolności najwyższego rzędu — zdolności do spojrzenia na samego siebie z dystansu. Metapoznanie (Metacognition) to umiejętność myślenia o własnym myśleniu, monitorowania własnych emocji i korygowania własnych decyzji w czasie rzeczywistym. To ten nadzorczy reflektor świadomości zamienia nas z bezwolnych odtwórców automatycznych skryptów w prawdziwych gospodarzy własnego życia.',
+  totalEstimatedPages: 66,
   sections: [
     {
       id: 'sec-21-1',
       pageNumber: 1,
       sectionNumber: '21.1',
-      title: 'Zwieńczenie Drogi: Od Biologii przez Relacje do Suwerennej Świadomości',
-      category: 'wstep',
-      readingTimeMinutes: 10,
+      title: 'Świadomość Siebie (Self-Awareness) i Architektura Metapoznania',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       quote: {
-        text: 'Dopóki nie uczynisz podświadomego świadomym, będzie ono kierowało Twoim życiem, a Ty będziesz nazywał to przeznaczeniem.',
+        text: 'Dopóki nie uczynisz nieświadomego świadomym, będzie ono kierować Twoim życiem, a Ty będziesz nazywał to przeznaczeniem.',
         author: 'Carl Gustav Jung'
       },
       paragraphs: [
-        'Wyobraź sobie człowieka, który spędza całe życie wewnątrz skomplikowanej machiny, nie wiedząc, jak działają jej przekładnie. Każde pociągnięcie dźwigni emocji wywołuje u niego lęk, każda presja ze strony otoczenia zmusza go do uległości, a każde stary przekonanie więzi go w klatce wyobrażeń.',
-        'Przejście przez 21 rozdziałów tej książki miało jeden główny cel: zaprosić Cię do reżyserki. Zobaczyliśmy, jak ciało migdałowate reaguje na zagrożenia statusowe, jak błąd potwierdzenia wykręca fakty, jak techniki perswazji hakują naszą potrzebę spójności i jak tożsamość buduje się na fundamencie opowieści autobiograficznej.',
-        'Od dzisiaj nie jesteś już ślepym obserwatorem własnych automatyzmów. Masz w rękach precyzyjną mapę nawigacyjną.'
+        'Świadomość siebie (Self-Awareness) nie jest stanem zero-jedynkowym, lecz wielopoziomową zdolnością do monitorowania własnych procesów wewnętrznych.',
+        'Metapoznanie (Metacognition) jest pojęciem ukutym przez Johna Flavella w 1976 roku i oznacza wyższą funkcję wykonawczą umysłu: wiedzę o własnych procesach poznawczych oraz zdolność do ich aktywnej regulacji.',
+        'System metapoznawczy składa się z dwóch powiązanych ze sobą pętli: 1. Monitorowania metapoznawczego (obserwacja: „Czy rozumiem ten tekst?”, „Czy czuję złość?”); 2. Kontroli metapoznawczej (decyzja: „Muszę przeczytać ten akapit wolniej”, „Muszę wziąć oddech przed odpowiedzią”).'
       ]
     },
     {
       id: 'sec-21-2',
       pageNumber: 4,
       sectionNumber: '21.2',
-      title: 'Natura Metapoznania: John Flavell i Nawigacja Drugiego Rzędu',
+      title: 'Metapoznanie — Myślenie o Własnym Myśleniu i Obserwator Nadzorczy',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Pojęcie Metapoznania (Metacognition) wprowadzone przez Johna Flavella oznacza wprost „myślenie o myśleniu” — zdolność do monitorowania, kontrolowania i oceniania własnych procesów poznawczych.',
-        'Myślenie pierwszego rzędu rozwiązywuje zadanie („Jak napisać ten raport?”). Myślenie drugiego rzędu (metapoznanie) przygląda się samemu procesowi („Czy ja mam wystarczająco dużo danych do tego raportu?”, „Czy nie ulegam Błędowi Potwierdzenia?”, „Czy mój stan zmęczenia nie zniekształca moich wniosków?”).',
-        'Metapoznanie jest najwyższą formą ludzkiej inteligencji, stanowiącą biologiczny fundament dla samoregulacji, dojrzałości i mądrości.'
+        'Wyobraź sobie, że w Twoim umyśle znajduje się reżyser, który stoi za kamerą i obserwuje scenę, na której występują Twoje myśli, emocje i impulsy.',
+        'Większość ludzi utożsamia się w 100% z aktorami na scenie („Jestem wściekły”, „Nie dam rady”). Trening metapoznawczy pozwala przenieść punkt ciężkości tożsamości do Reżysera („Zauważam, że w moim umyśle pojawiła się myśl o treści: nie dam rady”).',
+        'Ta drobna zmiana perspektywy stwarza bezcenną przestrzeń decyzyjną i przerywa dyktat automatycznych nawyków limficznych.'
       ]
     },
     {
       id: 'sec-21-3',
       pageNumber: 7,
       sectionNumber: '21.3',
-      title: 'Obserwacja vs Interpretacja: Czyszczenie Percepcji ze Szumu',
+      title: 'Monitorowanie Procesów Poznawczych, Emocjonalnych i Decyzyjnych',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Kluczowym nawykiem metapoznawczym jest umiejętność błyskawicznego rozdzielania czystej Obserwacji od nakładanej na nią Interpretacji.',
-        'Obserwacja rejestruje sygnał somatyczny lub bodziec zewnętrzny bez opowieści moralnej (np. „Moje tętno wynosi 95 uderzeń na minutę”, „Rozmówca skrzyżował ręce”).',
-        'Interpretacja natychmiast dodaje do tego katastroficzny scenariusz („Zaraz zemdleję”, „On mnie nienawidzi”).',
-        'Utrzymanie uwagi na poziomie czystej obserwacji wygasza alarm w ciele migdałowatym i pozwala kory przedczołowej na wybór racjonalnej reakcji.'
+        'Monitorowanie metapoznawcze wymaga ciągłego zadawania sobie pytań sprawdzających stan własnego aparatu poznawczego.',
+        '„Na ile jestem zmęczony i jak to wpływa na moją cierpliwość?”, „Czy ta decyzja opiera się na twardych danych, czy na moim lęku przed porażką?”, „Czy ta ocena rozmówcy nie jest napędzana moim Błędem Potwierdzenia?”.',
+        'Ciągła diagnostyka własnego stanu zapobiega wpadaniu w pułapki zmęczeniowe i decyzje podejmowane pod wpływem afektu.'
       ]
     },
     {
       id: 'sec-21-4',
       pageNumber: 10,
       sectionNumber: '21.4',
-      title: 'Ograniczenia Introspekcji: Nisbett, Wilson i Złudzenie Wglądu',
+      title: 'Introspekcja i Jej Granice — Badania Nisbetta i Wilsona nad Iluzją Wglądu',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Wielu ludzi uważa, że wystarczy głęboko „pomyśleć w milczeniu”, by poznać prawdziwe motywy swojego zachowania. Klasyczne badania Nisbetta i Wilsona („Telling More Than We Can Know”) zadały potężny cios temu przekonaniu.',
-        'Dowiedziono, że ludzie pytani o przyczyny swoich wyborów podają przekonujące, zgrabne opowieści, nie mając w rzeczywistości bezpośredniego dostępu do podświadomych mechanizmów podkorowych.',
-        'Introspekcja bywa często jedynie fabryką racjonalizacji. Dlatego metapoznanie opiera się nie na czystej introspekcji, lecz na testowaniu hipotez w działaniu i zbieraniu twardych danych empirycznych.'
-      ]
+        'Przez wieki wierzono, że człowiek ma bezpośredni, nieograniczony i bezbłędny dostęp do przyczyn własnych decyzji poprzez introspekcję.',
+        'Klasyczne badania Richarda Nisbetta i Timothy’ego Wilsona (1977 - „Telling More Than We Can Know”) zadały śmiertelny cios tej iluzji. Wykazano, że ludzie zapytani o powód swojego wyboru podawali z pełną pewnością siebie wyrafinowane teorie, które miały się nijak do rzeczywistych czynników sterujących (np. pozycji produktu na półce).',
+        'Zrozumienie granic introspekcji uczy pokory: nasze uzasadnienia post-hoc są często jedynie ładnymi bajkami opowiadanymi przez DMN w celu obrony wizerunku racjonalnego człowieka.'
+      ],
+      caseStudyRef: caseStudiesChapterTwentyOne[0]
     },
     {
       id: 'sec-21-5',
       pageNumber: 13,
       sectionNumber: '21.5',
-      title: 'Laboratorium Metapoznania i Wewnętrznego Obserwatora',
-      category: 'cwiczenia',
-      readingTimeMinutes: 10,
+      title: 'Obserwacja Fenomenologiczna vs Interpretacja i Dorabianie Teorii',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Przeanalizujmy interaktywnie, jak działa Twój Wewnętrzny Obserwator. Poniższe narzędzie uczy wychodzić z roli aktora wciągniętego w emocjonalny dramat na pozycję reżysera stojącego w reżyserce.'
+        'Praktyczna samoświadomość wymaga umiejętności rozdzielenia surowej obserwacji doznaniowej od dorobionej do niej teorii.',
+        'Obserwacja surowa brzmi: „Czuję przyspieszone tętno, ucisk w klatce i ścisk w żołądku”. Interpretacja brzmi: „Obojętność szefa oznacza, że zaraz mnie zwolni, a moje życie się zawali”.',
+        'Gdy nauczysz się zatrzymywać na poziomie surowej obserwacji biologicznej, emocja traci swoją niszczycielską siłę i mija jak fala w ciągu kilkudziesięciu sekund.'
       ]
     },
     {
       id: 'sec-21-6',
       pageNumber: 16,
       sectionNumber: '21.6',
-      title: 'Złudzenie Głębokości Objaśniania i Test „Skąd Wiem, Że Wiem?”',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Automatyzmy Behawioralne vs Świadoma Kontrola Wykonawcza',
+      category: 'neuronauka',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Często ulegamy Złudzeniu Głębokości Objaśniania (Illusion of Explanatory Depth), myląc powierzchowną znajomość słów z głębokim rozumieniem mechanizmu.',
-        'Test Feynmana („wyjaśnij to prosto od zera”) natychmiast odsłania plamy ślepe w naszej wiedzy, pozwalając na ich rzetelne uzupełnienie.'
+        'Około 80% naszych codziennych zachowań przebiega w trybie automatycznym, sterowanym przez jądrą podstawy i układ limficzny (System 1 Daniel Kahneman).',
+        'Świadoma kontrola wykonawcza (System 2) wywoływana przez grzbietowo-boczna korę przedczołową (dlPFC) jest zasobem skrajnie kosztownym metabolicznie.',
+        'Metapoznanie działa jak inteligentny przełącznik: wykrywa sygnały błędu (ACC) i wyłącza automatycznego pilota dokładnie wtedy, gdy sytuacja wymaga nienawykowej, przemyślanej decyzji.'
       ],
       caseStudyRef: caseStudiesChapterTwentyOne[2]
     },
@@ -950,187 +974,170 @@ export const chapterTwentyOne: Chapter = {
       id: 'sec-21-7',
       pageNumber: 19,
       sectionNumber: '21.7',
-      title: 'Decentryzacja Poznawcza (Defusion): Zdjęcie Nacisku Myśli',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 10,
+      title: '„Skąd Wiem, Że Wiem?” — Monitorowanie Wiedzy i Pewności w Pamięci',
+      category: 'teoria',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Decentryzacja polega na zmianie relacji z własnymi myślami: przestajemy traktować je jak wyroki losu, a zaczynamy widzieć w nich przemijające zdarzenia umysłowe.',
-        'Fraza „Zauważam, że mam myśl, że...” tworzy bezpieczną przestrzeń między Tobą a Twoim monologiem wewnętrznym.'
-      ],
-      caseStudyRef: caseStudiesChapterTwentyOne[3]
+        'Umysł posiada doznania metapoznawcze zwane „poczuciem wiedzy” (Feeling of Knowing - FOK) oraz „pamięcią na końcu języka” (Tip-of-the-Tongue State).',
+        'Te subiektywne stany pozwalają nam ocenić, czy posiadamy dane zasoby w pamięci, zanim jeszcze dokładnie je wydobędziemy.',
+        'Trening kalibracji FOK jest kluczowy dla efektywnego uczenia się i zapobiega iluzji opanowania materiału po samym pobieżnym przeczytaniu tekstu.'
+      ]
     },
     {
       id: 'sec-21-8',
       pageNumber: 22,
       sectionNumber: '21.8',
-      title: 'Zagrożenia Nadanalizy: Paralysis by Analysis i Ruminacja',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Pewność Siebie vs Trafność Sądu — Kalibracja Metapoznawcza',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Metapoznanie nie oznacza ciągłego, jałowego rozmyślania o problemie (Ruminacja). Nadanaliza wyczerpuje zasoby kory przedczołowej i wzmaga lęk.',
-        'Konstruktywne myślenie prowadzi do konkretnego eksperymentu w świecie realnym; ruminacja kręci się w pętli bez końca.'
+        'Jednym z największych zagrożeń w decyzjach biznesowych i osobistych jest zjawisko Certainty-Accuracy Fallacy — fałszywe utożsamianie siły subiektywnej pewności z obiektywną trafnością sądu.',
+        'Kalibracja metapoznawcza mierzy spójność między tymi dwoma wskaźnikami. Osoba o dobrej kalibracji jest bardzo pewna siebie tylko wtedy, gdy jej wiedza jest obiektywna i wysoka, a gdy dane są niepełne — szacuje swoją pewność na niska.',
+        'Prowadzenie rejestru prognoz na piśmie jest najskuteczniejszą metodą urealniania kalibracji metapoznawczej.'
       ],
-      caseStudyRef: caseStudiesChapterTwentyOne[1]
+      caseStudyRef: caseStudiesChapterTwentyOne[3]
     },
     {
       id: 'sec-21-9',
       pageNumber: 25,
       sectionNumber: '21.9',
-      title: 'Biologia Metapoznania: Wskaźnik HALT i Skaner Ciała',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: 'Wykrywanie Własnych Błędów Poznawczych w Czasie Rzeczywistym',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Jakość procesów metapoznawczych ściśle zależy od stanu fizjologicznego organizmu. Spadek glukozy i zmęczenie wyłączają wyższe funkcje kontrolne.',
-        'Wskaźnik HALT uczy wstrzymywania się od wyciągania ostatecznych wniosków o swoim życiu, gdy organizm jest wyczerpany.'
-      ],
-      caseStudyRef: caseStudiesChapterTwentyOne[5]
+        'Najwyższym stopniem dojrzałości metapoznawczej jest zdolność do złapania własnego umysłu na błędzie myślowym W MOMENCIE, gdy ten błąd się pojawia.',
+        'Zamiast dać się ponieść fali Confirmation Bias czy Katastrofizacji, świadomy obserwator mówi do siebie: „Aha! Właśnie w tym momencie mój umysł uruchomił Błąd Potwierdzenia. Zrzycam soczewkę i szukam dowodów przeciwstawnych”.',
+        'To jest prawdziwa autonomia decyzyjna w praktyce.'
+      ]
     },
     {
       id: 'sec-21-10',
       pageNumber: 28,
       sectionNumber: '21.10',
-      title: 'Mindful Awareness: Uważność bez Oceniania',
+      title: 'Informacja Zwrotna od Innych i Ślepe Plamki (Blind Spots) Samoświadomości',
       category: 'teoria',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Uważna Świadomość to stan pełnego, żywego kontaktu z obecną chwilą bez przylepiania etykiet „dobre” czy „złe”.',
-        'Praktyka uważności fizycznie pogrubia warstwę kory w obszarach odpowiedzialnych za samoregulację emocjonalną.'
-      ]
+        'Nawet najbardziej rozwinięte metapoznanie nie chroni nas całkowicie przed własnymi ślepymi plamkami (Blind Spots).',
+        'Istnieją zachowania, ton głosu i mikro-ekspresje, które są doskonale widoczne dla otoczenia, a pozostają całkowicie ukryte przed naszym wewnętrznym wzrokiem.',
+        'Tworzenie bezpiecznych relacji z mentorami i przyajciółmi, którzy mają odwagę dać nam szczery feedback, jest nieodzownym uzupełnieniem własnej samoświadomości.'
+      ],
+      caseStudyRef: caseStudiesChapterTwentyOne[4]
     },
     {
       id: 'sec-21-11',
       pageNumber: 31,
       sectionNumber: '21.11',
-      title: 'Neuronauka Samomonitorowania: Rola dlPFC i mPFC',
-      category: 'neuronauka',
-      readingTimeMinutes: 9,
+      title: 'Rozbieżność Między Obrazem Siebie a Rzeczywistym Zachowaniem',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Obszary kory przedczołowej (dlPFC, mPFC) oraz przednia kora obwodu (ACC) tworzą biologiczny obwód metapoznawczy.',
-        'Trening samomonitorowania wzmacnia te ścieżki, czyniąc nas bardziej odpornymi na odruchy podkorowe.'
+        'Wielu ludzi żyje w głębokim rozłamie między tym, jak wyobraża sobie siebie (np. „Jestem tolerancyjny, spokony i otwarty”), a tym, jak zachowuje się w sytuacjach stresowych (agresja, zamknięcie, krytykanctwo).',
+        'Zniwelowanie tej rozbieżności wymaga odwagi do odrzucenia wyidealizowanej fasady i zaakceptowania prawdy o swoich obecnych nawykach.',
+        'Dopiero akceptacja stanu faktycznego daje punkt oparcia do realnej zmiany.'
       ]
     },
     {
       id: 'sec-21-12',
       pageNumber: 34,
       sectionNumber: '21.12',
-      title: 'Odbudowa Autonomii w Reakcjach: Autopilot vs Wybór',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 10,
+      title: 'Meta-Warstwa Tomu III — Integracja Tożsamości, Przekonań, Samooceny i Wartości',
+      category: 'teoria',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Wyłączenie autopilota życiowego pozwala na przełączenie się z reatywności na autonomiczną kreację.',
-        'Każdy moment świadomego wyboru buduje Twoją suwerenność osobistą.'
+        'Ten rozdział stanowi zwieńczenie i klamrę kompozycyjną pierwszego bloku Tomu III.',
+        'Tożsamość (Rozdział 1) daje nam elastyczną opowieść o sobie; Przekonania (Rozdział 2) dają nam zaktualizowane modele świata; Samoocena i Self-Efficacy (Rozdział 3) dają nam wiarę w działanie i urealnione kompetencje; Wartości (Rozdział 4) dają nam nienaruszalny kompas priorytetów.',
+        'A Metapoznanie (Rozdział 5) jest nawigatorem, który spaja te 4 filary w jeden, spójny, żywy i autonomiczny system samokształtowania.'
       ],
-      caseStudyRef: caseStudiesChapterTwentyOne[0]
+      caseStudyRef: caseStudiesChapterTwentyOne[4]
     },
     {
       id: 'sec-21-13',
       pageNumber: 37,
       sectionNumber: '21.13',
-      title: 'Szczepionka na Optymizm: Analiza Pre-Mortem',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 9,
+      title: '💡 BŁĘDNA INTUICJA: Analizowanie siebie bez końca prowadzi do samopoznania',
+      category: 'teoria',
+      readingTimeMinutes: 12,
       paragraphs: [
-        'Technika Pre-Mortem Analysis zmusza umysł do wyobrażenia sobie klęski przed wdrożeniem projektu, ujawniając ukryte plamy ślepe.'
-      ],
-      caseStudyRef: caseStudiesChapterTwentyOne[4]
+        'Częstą pułapką u osób dbających o rozwój osobisty jest mylenie sprawczego metapoznania z jałową ruminacją (Overthinking).',
+        'Godziny spędzone na analizowaniu „dlaczego tak czuję” i rozkładaniu każdego detalu na czynniki pierwsze niszczą energię i prowadzą do paraliżu analitycznego (Analysis Paralysis).',
+        'Metapoznanie ma służyć Lepszemu Działaniu w świecie realnym, a nie zastępować to działanie.'
+      ]
     },
     {
       id: 'sec-21-14',
       pageNumber: 40,
       sectionNumber: '21.14',
-      title: 'Protokół STOP: 4 Kroki Świadomej Pauzy',
-      category: 'cwiczenia',
-      readingTimeMinutes: 9,
+      title: '🔬 CO NADAL NIE JEST JASNE? Fizjologiczne Korelaty Metapoznania',
+      category: 'podsumowanie',
+      readingTimeMinutes: 10,
       paragraphs: [
-        '4 kroki (Stop, Take a breath, Observe, Proceed) wstawiają klin w automatyczną pętlę emocjonalną.'
+        'Jakie dokładnie obwody neuronalne odpowiadają za doznanie „wglądu metapoznawczego” (Insight) i na ile trening medytacyjny zmienia strukturę szarej masy w mPFC i ACC?',
+        'Badania nad neuroobrazowaniem osób o wysokiej samoświadomości pokazują wzrost gęstości połączeń między korą przedczołową a wyspą.'
+      ]
+    },
+    {
+      id: 'sec-21-15',
+      pageNumber: 42,
+      sectionNumber: '21.15',
+      title: '🎯 JAK ZASTOSOWAĆ TO JUTRO? Protokoły Kalibracji Metapoznawczej',
+      category: 'cwiczenia',
+      readingTimeMinutes: 10,
+      paragraphs: [
+        '1. Stosuj 3-sekundową pauzę poznawczą przed trudną reakcją.',
+        '2. Prowadź Dziennik Prognoz z wyliczaniem procentu pewności.',
+        '3. Zamieniaj pytania „DLACZEGO” na pytania „CO z tym zrobię”.',
+        '4. Zbieraj regularny feedback od obiektywnych obserwatorów.'
       ],
       exerciseRef: selfExercisesChapterTwentyOne[0]
     },
     {
-      id: 'sec-21-15',
-      pageNumber: 43,
-      sectionNumber: '21.15',
-      title: 'Intelektualna Skromność i Ciągły Rozwój',
-      category: 'teoria',
-      readingTimeMinutes: 9,
-      paragraphs: [
-        'Intelektualna skromność to świadomość granic własnego poznania i otwartość na ciagłe uczenie się.'
-      ]
-    },
-    {
       id: 'sec-21-16',
-      pageNumber: 46,
+      pageNumber: 44,
       sectionNumber: '21.16',
-      title: 'Praktyka Dziennika Metapoznawczego',
+      title: 'Warsztat Samorozwojowy: Laboratorium Nawigatora Umysłu',
       category: 'cwiczenia',
-      readingTimeMinutes: 9,
+      readingTimeMinutes: 12,
       paragraphs: [
-        'Codzienna rejestracja jakości własnych procesów myślowych utrwala nawyk samomonitorowania.'
+        'Poniżej znajduje się zestaw ćwiczeń dedykowanych treningowi defuzji poznawczej, audytowi ślepych plamek i integracji pierwszego bloku Tomu III.'
       ],
-      exerciseRef: selfExercisesChapterTwentyOne[5]
+      exerciseRef: selfExercisesChapterTwentyOne[1]
     },
     {
       id: 'sec-21-17',
-      pageNumber: 49,
+      pageNumber: 47,
       sectionNumber: '21.17',
-      title: '🧠 BŁĘDNA INTUICJA: „Gdy Będę Miał Pełne Metapoznanie, Przestanę Odczuwać Jakiekolwiek Trudne Emocje”',
-      category: 'teoria',
+      title: 'Most do Rozdziału 22 oraz Zapowiedź Bloku II Tomu III',
+      category: 'podsumowanie',
       readingTimeMinutes: 8,
       paragraphs: [
-        'INTUICJA: Oczekiwanie, że świadomość procesów myślowych sprawi, iż lęk, złość czy smutek całkowicie znikną z naszego życia.',
-        'CO MOŻE BYĆ BŁĘDNE? Mylein samokontroli z zamrożeniem emocjonalnym. Emocje są naturalnymi ewolucyjnymi sygnałami z ciała i będą pojawiać się zawsze.',
-        'CO MÓWI PSYCHOLOGIA? Metapoznanie nie wyłącza powstawania fal emocjonalnych — daje Ci deskę surfingową, byś potrafił na tych falach pływać bez tonięcia.',
-        'BARDZIEJ PRECYZYJNY MODEL: Nie walcz z falą emocji — ucz się świadomie na niej żeglować.'
+        'Opanowaliśmy fundamenty indywidualnej autonomii psychicznej: wiemy kim jesteśmy, jak myślimy, jak oceniamy swoje możliwości, czym się kierujemy i jak to wszystko monitorować.',
+        'W kolejnym bloku Tomu III przejdziemy do badania tego, jak człowiek w praktyce kształtuje swoje środowisko, buduje odporność nawykową i realizuje długoterminowe cele w świecie zewnętrznym.'
       ]
     },
     {
       id: 'sec-21-18',
-      pageNumber: 52,
+      pageNumber: 49,
       sectionNumber: '21.18',
-      title: '🔬 CO NADAL NIE JEST JASNE? Granice Świadomości w Przetwarzaniu Podprogowym',
+      title: 'Podsumowanie Rozdziału 5: Kluczowe Wglądy',
       category: 'podsumowanie',
-      readingTimeMinutes: 8,
+      readingTimeMinutes: 7,
       paragraphs: [
-        'Jaki procent naszych codziennych decyzji podejmujemy w sposób w pełni świadomy, a jaki stanowi jedynie podprogową realizację skryptów neuronalnych?',
-        'Badania pokazują, że udział procesów podświadomych jest ogromny, lecz to właśnie metapoznanie stanowi jedyny znany ewolucyjnie interfejs pozwalający na modyfikację tych skryptów.'
+        '1. Metapoznanie to zdolność myślenia o własnym myśleniu i odzyskiwania kontroli.',
+        '2. Introspekcja ma swoje granice i tworzy racjonalizacje post-hoc.',
+        '3. Pauza poznawcza tworzy wolność wyboru między bodźcem a reakcją.',
+        '4. Metapoznanie spaja tożsamość, przekonania, samoocenę i wartości w jeden spójny system.'
       ]
     },
     {
       id: 'sec-21-19',
-      pageNumber: 54,
+      pageNumber: 52,
       sectionNumber: '21.19',
-      title: '🎯 ZWIEŃCZENIE CAŁOŚCI: Osobista Mapa Systemowa Autonomii',
-      category: 'cwiczenia',
-      readingTimeMinutes: 12,
-      paragraphs: [
-        'Oto Twoje najważniejsze zadanie podsumowujące całe monumentalne dzieło „Anatomia Umysłu”. Połącz wiedzę z Tomu I, II i III w jeden spójny kompas operacyjny.'
-      ],
-      exerciseRef: selfExercisesChapterTwentyOne[6]
-    },
-    {
-      id: 'sec-21-20',
-      pageNumber: 58,
-      sectionNumber: '21.20',
-      title: 'Ostateczne Posłanie: Życie jako Świadoma Praktyka Mądrości',
-      category: 'podsumowanie',
-      readingTimeMinutes: 10,
-      paragraphs: [
-        'Przeszliśmy wspólnie monumentalną drogę. Od dzisiaj masz w rękach nie tylko wiedzę naukowa, lecz i narzędzia do jej codziennego praktykowania.',
-        'Nie staniesz się idealny z dnia na dzień. Nadal będziesz czasem popełniać błędy. Różnica polega na tym, że OD DZISIAJ NIE JESTEŚ JUŻ ŚLEPY.',
-        'W chwili, gdy poczujesz trudny impuls, Twój wewnętrzny Obserwator uśmiechnie się z czułością i powie: „Oho, poznaję cię. Weź oddech. Zastosuj pauzę. Wybierz mądrość”.',
-        'Idź i żyj świadomie. Buduj dobro wokół siebie.'
-      ],
-      caseStudyRef: caseStudiesChapterTwentyOne[6]
-    },
-    {
-      id: 'sec-21-21',
-      pageNumber: 62,
-      sectionNumber: '21.21',
-      title: 'Wielki Egzamin Finałowy Rozdziału 5 i Całego Tomu III',
+      title: 'Egzamin Końcowy Rozdziału 5: Świadomość Siebie i Metapoznanie',
       category: 'podsumowanie',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Sprawdź swoją wiedzę z zakresu metapoznania, samomonitorowania, decentryzacji oraz syntezy całej wiedzy o człowieku. Poniższy egzamin zwieńcza dzieło Anatomia Umysłu.'
+        'Sprawdź swoją wiedzę z zakresu metapoznania, kalibracji pewności siebie, defuzji poznawczej i integracji pierwszego bloku Tomu III. Poniższy test zawiera pytania analityczne wymagające głębokiego zrozumienia opisywanych procesów.'
       ]
     }
   ]

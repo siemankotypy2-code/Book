@@ -37,6 +37,7 @@ import { chapterEighteenExamQuestions } from '../data/chapterEighteenData';
 import { chapterNineteenExamQuestions } from '../data/chapterNineteenData';
 import { chapterTwentyExamQuestions } from '../data/chapterTwentyData';
 import { chapterTwentyOneExamQuestions } from '../data/chapterTwentyOneData';
+import { chapterTwentyTwoExamQuestions } from '../data/chapterTwentyTwoData';
 import { SocialInfluenceLab } from './SocialInfluenceLab';
 import { CommunicationLab } from './CommunicationLab';
 import { PersuasionLab } from './PersuasionLab';
@@ -53,6 +54,7 @@ import { BeliefUpdateSimWidget } from './BeliefUpdateSimWidget';
 import { SelfEfficacyLabWidget } from './SelfEfficacyLabWidget';
 import { ValuesConflictSimWidget } from './ValuesConflictSimWidget';
 import { MetacognitionLabWidget } from './MetacognitionLabWidget';
+import { SelfRegulationLabWidget } from './SelfRegulationLabWidget';
 import {
   ChevronLeft,
   ChevronRight,
@@ -704,6 +706,23 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={21}
               chapterTitle="Świadomość Siebie i Metapoznanie"
               examQuestions={chapterTwentyOneExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 22 (Tom III Rozdział 6) WIDGETS --- */}
+        {(activeSection.sectionNumber === '22.4' || activeSection.sectionNumber === '22.11' || activeSection.sectionNumber === '22.17') && (
+          <div className="my-10">
+            <SelfRegulationLabWidget />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '22.18' || activeSection.sectionNumber === '22.21') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={22}
+              chapterTitle="Samoregulacja i Kierowanie Zachowaniem"
+              examQuestions={chapterTwentyTwoExamQuestions}
             />
           </div>
         )}

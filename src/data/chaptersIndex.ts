@@ -20,6 +20,7 @@ import { chapterEighteen } from './chapterEighteenData';
 import { chapterNineteen } from './chapterNineteenData';
 import { chapterTwenty } from './chapterTwentyData';
 import { chapterTwentyOne } from './chapterTwentyOneData';
+import { chapterTwentyTwo } from './chapterTwentyTwoData';
 
 export const allChapters: Chapter[] = [
   chapterOne,
@@ -42,7 +43,8 @@ export const allChapters: Chapter[] = [
   chapterEighteen,
   chapterNineteen,
   chapterTwenty,
-  chapterTwentyOne
+  chapterTwentyOne,
+  chapterTwentyTwo
 ];
 
 export {
@@ -66,5 +68,6 @@ export {
   chapterEighteen,
   chapterNineteen,
   chapterTwenty,
-  chapterTwentyOne
+  chapterTwentyOne,
+  chapterTwentyTwo
 };
