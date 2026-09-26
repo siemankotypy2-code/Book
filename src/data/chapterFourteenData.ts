@@ -98,6 +98,48 @@ export const chapterFourteenExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Pytanie kalibrowane „Jak mam to zrobić?” jest potężną formą odmowy bez mówienia „Nie”. Zamiast prowokować opór, przerzuca ciężar myślenia na drugą stronę, angażując jej korę przedczołową.',
     keyTakeaway: 'Zastąp konfrontacyjne „Nie zrobię tego!” kalibrowanym „Jak mam to zrobić w tych warunkach?”.'
+  },
+  {
+    id: 8,
+    question: 'Czym jest ZOPA (Zone of Possible Agreement) i w jakich okolicznościach porozumienie jest niemożliwe (Sekcja 14.8)?',
+    topic: 'Strefa Możliwego Porozumienia (ZOPA)',
+    sectionRef: 'Sekcja 14.8',
+    options: [
+      { label: 'A', text: 'Strefą ciszy na pokładzie samolotu rejsowego.', isCorrect: false },
+      { label: 'B', text: 'Przestrzenią wspólną pomiędzy ceną rezerwacyjną kupującego (maksimum, ile może zapłacić) a ceną rezerwacyjną sprzedającego (minimum, za ile może sprzedać). Gdy te zakresy się nie przecinają (negatywna ZOPA), racjonalne porozumienie jest niemożliwe bez zmiany zmiennych.', isCorrect: true },
+      { label: 'C', text: 'Kwotą podatku od czynności cywilnoprawnych.', isCorrect: false },
+      { label: 'D', text: 'Formą ubezpieczenia od strajku pracowników.', isCorrect: false }
+    ],
+    explanation: 'Jeśli kupujący ma maksymalnie 10 000 zł, a sprzedający nie odda towaru za mniej niż 12 000 zł, istnieje negatywna ZOPA. Wymuszenie umowy skończy się fiaskiem; jedynym ratunkiem jest rozszerzenie tortu o inne waluty (usługi, barter, terminy).',
+    keyTakeaway: 'Zanim zaczniesz targi, oszacuj, czy istnieje realna ZOPA — jeśli nie, dodaj nowe waluty do stołu.'
+  },
+  {
+    id: 9,
+    question: 'W jaki sposób wytrawny negocjator neutralizuje manipulacyjną taktykę „Dobrego i Złego Psa” (Good Cop / Bad Cop) (Sekcja 14.10)?',
+    topic: 'Demaskowanie Taktyki Dobrego i Złego Psa',
+    sectionRef: 'Sekcja 14.10',
+    options: [
+      { label: 'A', text: 'Rzuca się z pięściami na agresywnego partnera.', isCorrect: false },
+      { label: 'B', text: 'Identyfikuje schemat i demaskuje go na głos z życzliwym uśmiechem („Widzę, że stosujecie klasyczny podział na dobrego i złego policjanta, doceńmy ten teatr i wróćmy do kalkulacji arkusza”), co natychmiast paraliżuje manipulację.', isCorrect: true },
+      { label: 'C', text: 'Ucieka z pokoju przez okno pożarowe.', isCorrect: false },
+      { label: 'D', text: 'Składa doniesienie do prokuratury o wymuszenie.', isCorrect: false }
+    ],
+    explanation: 'Taktyki manipulacyjne działają tylko wtedy, gdy pozostają niewidzialne. Nazwanie gry po imieniu bez wrogości odbiera manipulatorom element zaskoczenia i zmusza do powrotu do faktów.',
+    keyTakeaway: 'Nazwij manipulację po imieniu, a jej mechanizm natychmiast zardzewieje.'
+  },
+  {
+    id: 10,
+    question: 'Czym różnią się negocjacje dystrybutywne od negocjacji integracyjnych pod kątem długoterminowej relacji stron (Sekcja 14.9)?',
+    topic: 'Negocjacje Dystrybutywne a Integracyjne',
+    sectionRef: 'Sekcja 14.9',
+    options: [
+      { label: 'A', text: 'W dystrybutywnych negocjuje się tylko w nocy, a w integracyjnych tylko w dzień.', isCorrect: false },
+      { label: 'B', text: 'Negocjacje dystrybutywne (gra o sumie zerowej) traktują tort jako stały i polegają na wyszarpaniu jak największego kawałka kosztem partnera, co niszczy zaufanie. Negocjacje integracyjne poszukują synergii i powiększają tort, budując długofalowe partnerstwo.', isCorrect: true },
+      { label: 'C', text: 'Negocjacje integracyjne są zakazane w spółkach akcyjnych.', isCorrect: false },
+      { label: 'D', text: 'Nie ma różnic merytorycznych.', isCorrect: false }
+    ],
+    explanation: 'Dystrybucja sprawdza się przy jednorazowym zakupie pamiątki na targu w Marrakeszu. W biznesie i życiu prywatnym każda relacja jest powtarzalna — maksymalizacja zysku kosztem upokorzenia partnera to gwarancja zemsty w kolejnej rundzie.',
+    keyTakeaway: 'Nie wygrywaj kosztem partnera, z którym jutro musisz znowu współpracować.'
   }
 ];
 
@@ -106,7 +148,7 @@ export const chapterFourteen: Chapter = {
   title: 'Konflikt i Negocjacje: Sztuka Porozumienia Gdy Interesy Się Ścierają',
   subtitle: 'Od walki pozycyjnej do metody harwardzkiej, potęga BATNA i psychologia wygrana-wygrana',
   leadParagraph: 'Konflikt nie jest anomalią ani porażką moralną — jest naturalnym prawem tarcia społecznego. Tam, gdzie spotykają się dwa różne układy nerwowe, dwie historie życiowe i dwa ograniczone budżety, różnica zdań jest gwarantowana. Pytanie nie brzmi, czy będziesz miał konflikty, lecz jak będziesz przez nie przechodził: czy spalisz mosty w bezsilnej wojnie na wyniszczenie, czy zamienisz kryzys w fundament trwałego porozumienia.',
-  totalEstimatedPages: 56,
+  totalEstimatedPages: 64,
   sections: [
     {
       id: 'sec-14-1',
@@ -188,7 +230,60 @@ export const chapterFourteen: Chapter = {
         'FAZA 2 (Poziomy 4–6: Win-Lose): 4. Troska o własny wizerunek i szukanie koalicji; 5. Utrata twarzy (publiczne upokorzenie przeciwnika); 6. Strategie gróźb i ultimatum. Tu celem staje się pokonanie oponenta.',
         'FAZA 3 (Poziomy 7–9: Lose-Lose): 7. Ograniczone uderzenia niszczące; 8. Fragmentacja i zniszczenie wrogiego systemu; 9. Wspólne runięcie w przepaść („Zginę, byle tylko pociągnąć cię na dno!”).',
         'PRZYKŁAD 2: Rozwód Grzegorza i Anny. Zaczęło się od poziomu 1 (spór o to, kto ma odebrać dziecko z basenu). Przeszło w poziom 4 (angażowanie teściów i znajomych do poparcia swojej wersji). Na poziomie 6 padły groźby alimentacyjne. Na poziomie 9 oboje wydali po 80 tysięcy złotych na prawników, stracili oszczędności życia, zniszczyli psychikę dziecka i doprowadzili do licytacji wspólnego domu komornikowi — klasyczne runięcie w przepaść Lose-Lose.'
-      ]
+      ],
+      caseStudyRef: {
+        id: 'cs-ch14-lokator-remont',
+        title: 'Wojna o Kaucję i Zalany Parkiet: Jak Błahy Remont Wszedł na 6. Stopień Schodów Glasla',
+        subtitle: 'Od przeciekającego zaworu do policyjnych interwencji i blokady rachunków',
+        protagonist: 'Alicja (architektka wnętrz, 28 lat, najemczyni) i Bogusław (emerytowany oficer wojskowy, 65 lat, właściciel mieszkania)',
+        context: 'Wynajem 2-pokojowego mieszkania w zabytkowej kamienicy w Poznaniu po 2 latach bezproblemowej współpracy.',
+        story: [
+          'Podczas nieobecności Alicji doszło do rozszczelnienia starego zaworu pod zlewem. Woda zalała 6 metrów dębowego parkietu. Wartość szkody: 4 500 zł.',
+          'Poziom 1 i 2 Glasla: Bogusław oskarżył Alicję o zaniedbanie: „Zostawiła pani odkręcony kran!”. Alicja pokazała opinię hydraulika stwierdzającą zmęczenie materiału w 30-letniej rurze należącej do instalacji budynku.',
+          'Poziom 3 i 4: Bogusław bez uprzedzenia wszedł do mieszkania zapasowym kluczem, wymienił zamki w drzwiach i oświadczył, że nie odda kaucji (6 000 zł) oraz zatrzymuje jej sprzęt fotograficzny jako zastaw. Alicja wezwała ślusarza i policję, a sprawę opisała na lokalnej grupie na Facebooku, oznaczając Bogusława z imienia i nazwiska jako „oszusta i zboczeńca włamującego się do mieszkań”.',
+          'Poziom 5 i 6: Bogusław poczuł utratę twarzy przed sąsiadami. Złożył doniesienie do prokuratury o zniesławienie, odciął dopływ prądu do lokalu i wysłał do rodziców Alicji pismo z groźbą zablokowania jej uprawnień architektonicznych.',
+          'Punkt zwrotny: Przed skierowaniem aktu oskarżenia prawnicy obu stron skierowali ich na obowiązkowe posiedzenie mediacyjne w sądzie rejonowym.',
+          'Interwencja mediatora: Zatrzymanie zjazdu po schodach Glasla. Mediator przeprowadził analizę interesów: Bogusław bał się, że z emerytury nie starczy mu na wymianę podłogi i czuł się upokorzony postem w internecie; Alicja bała się utraty narzędzi pracy i kompromitacji zawodowej.',
+          'Rozwiązanie: Alicja usunęła post i opublikowała sprostowanie wyjaśniające awarię techniczną. Bogusław zgłosił szkodę ze swojego ubezpieczenia murów (które pokryło 80% naprawy), a brakujące 900 zł pokryto w połowie z kaucji, resztę zwracając Alicji w 3 dni.'
+        ],
+        decisionTaken: 'Odstąpienie od wojny wizerunkowo-prawnej na rzecz zbadania polisy ubezpieczeniowej i ochrony dobrego imienia obu stron.',
+        whatProtagonistSaw: 'Alicja widziała w właścicielu agresywnego psychopatę naruszającego mir domowy; Bogusław widział w niej roszczeniową milenialkę niszczącą jego dorobek życia.',
+        whatWasMissed: 'Że oboje mieli ubezpieczenie OC, które w całości rozwiązywało problem finansowy bez angażowania sądu i policji.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Błyskawiczna eskalacja Glasla napędzana lękiem statusowym i obroną godności.',
+          cognitiveBiases: [
+            { name: 'Wrogie przypisanie intencji (Hostile Attribution Bias)', description: 'Uznanie awarii technicznej za celowe działanie wymierzone we właściciela.', impact: 'Przejście od rozmowy do zemsty.' },
+            { name: 'Eskalacja zaangażowania', description: 'Wydawanie tysięcy złotych na prawników przy szkodzie wartej 4500 zł.', impact: 'Paraliż zdrowego rozsądku.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Obrona tożsamości przez atak', explanation: 'Publiczne oskarżenia w sieci jako próba wyrównania poczucia bezsilności.' }
+          ],
+          emotionalDynamic: 'Przejście od lęku i poczucia krzywdy do furii narcystycznej, a ostatecznie do ulgi po rozbrojeniu sporu.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Wyspa i ciało migdałowate', role: 'Generowanie wstrętu moralnego i poczucia zagrożenia terytorium', activationState: 'Ekstremalna aktywacja u obu stron' },
+            { region: 'Przednia kora zakrętu obręczy', role: 'Ocena niesprawiedliwości społecznej', activationState: 'Zablokowana do czasu sesji mediacyjnej' }
+          ],
+          neurotransmitters: [
+            { name: 'Adrenalina i noradrenalina', roleInScenario: 'Permanentny stan walki uniemożliwiający logiczne spojrzenie na polisę' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Dzień mediacji', process: 'Oddzielne sesje na osobności obniżają poziom kortyzolu i umożliwiają chłodną kalkulację.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [
+            { tactic: 'Szantaż wizerunkowy i groźba karna', description: 'Użycie policji, prokuratury i Facebooka jako narzędzi nacisku.', vulnerabilityExploited: 'Strach przed publiczną utratą reputacji' }
+          ],
+          counterMeasures: [
+            { step: 'Cyrkularna deeskalacja', script: '„Widzę, że oboje ponosimy gigantyczne koszty emocjonalne i finansowe. Czy możemy cofnąć się o 3 kroki i sprawdzić zapisy polisy ubezpieczeniowej?”.', rationale: 'Przenosi spór z areny honorowej na płaszczyznę techniczną.' }
+          ]
+        },
+        alternativePath: 'Gdyby nie mediacja, proces karny o zniesławienie trwałby 3 lata, kosztował 15 000 zł, niszcząc karierę Alicji i zdrowie Bogusława.',
+        readerQuestion: 'W którym punkcie schodów Glasla znajduje się Twój obecny spór i jakie koszty poniesiesz, schodząc o kolejny stopień?',
+        keyTakeaway: 'Im niżej schodzisz po schodach eskalacji, tym mniej pamiętasz, o co poszło na początku. Liczy się tylko chęć zniszczenia rywala.'
+      }
     },
     {
       id: 'sec-14-4',
@@ -323,7 +418,42 @@ export const chapterFourteen: Chapter = {
         '1. Macierz Zaufania i Władzy: Kto ma większą władzę formalną? Kto ma lepszy dostęp do informacji? Jakie jest dotychczasowe zaufanie?',
         '2. Rejestr Obaw Oponenta (Accusation Audit): Spisanie wszystkich najgorszych rzeczy, jakie druga strona mogłaby o tobie pomyśleć lub powiedzieć („Pomyślą, że jestem roszczeniowy, nielojalny, chciwy i chcę ich oszukać”). Wypowiedzenie tych obaw na samym początku rozmowy rozbraja je zanim zostaną użyte przeciwko tobie.',
         '3. Waluty Wymienne (Traded Currencies): Co ma dla ciebie niski koszt, ale ogromną wartość dla nich? Co ma dla nich niski koszt, a ogromną wartość dla ciebie?'
-      ]
+      ],
+      exerciseRef: {
+        id: 'ex-14-mapa-emocji',
+        title: 'Audyt Zarzutów i Mapa Władzy: Przygotowanie Przed Konfrontacją',
+        subtitle: 'Rozbrój najgorsze podejrzenia oponenta zanim padną przy stole',
+        objective: 'Wypisanie potencjalnych zarzutów i lęków partnera rozmowy w celu zbudowania pancerza obronnego.',
+        durationMinutes: 20,
+        neuroScientificFoundation: 'Wypowiedzenie obaw antycypowanych (Proactive Framing) eliminuje element zaskoczenia i wyłącza u oponenta reakcję obronną w zakręcie obręczy.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Najgorsze zarzuty oponenta',
+            instruction: 'Wypisz 3 najbardziej bolesne, niesprawiedliwe myśli, jakie druga strona może mieć o Twoich intencjach.',
+            promptText: 'Co najgorszego mogą o mnie pomyśleć?',
+            placeholder: 'Pomyślą, że jestem nielojalny, chcę wyciągnąć więcej kasy i uciec do konkurencji...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Sformułowanie otwarcia demaskującego',
+            instruction: 'Zbuduj zdanie rozpoczynające rozmowę, które neutralizuje te zarzuty na wejściu.',
+            promptText: 'Moje otwarcie:',
+            placeholder: 'Wiem, że gdy poproszę o renegocjację kontraktu, możecie pomyśleć, że jestem chciwy i nie doceniam waszego wsparcia...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Waluty wymienne niskiego kosztu',
+            instruction: 'Zidentyfikuj 2 rzeczy, które możesz oddać bez żalu, a które są bezcenne dla oponenta.',
+            promptText: 'Moje waluty wymienne:',
+            placeholder: 'Mogę zaoferować dłuższy czas na płatność i bezpłatne szkolenie ich zespołu w zamian za wyższą marżę...'
+          }
+        ],
+        reflectionQuestions: [
+          'Jak zmienia się Twoja pewność siebie, gdy sam wypowiadasz na głos najgorsze zarzuty zanim zrobi to rywal?',
+          'Dlaczego ludzie tak rzadko stosują audyt zarzutów, bojąc się „podpowiadania argumentów”?'
+        ]
+      }
     },
     {
       id: 'sec-14-7',
@@ -338,7 +468,57 @@ export const chapterFourteen: Chapter = {
         'Zamiast: „Musicie oddać mi te pieniądze do piątku!”, pyta: „Co możemy zrobić, by rozliczenie wpłynęło do końca tygodnia bez zakłócania waszej płynności?”.',
         'Pytania kalibrowane przenoszą ciężar rozwiązania problemu na drugą stronę, nie wywołując w niej poczucia ataku ani oporu psychologicznego. Rozmówca przestaje walczyć, a zaczyna główkować nad Twoim dylematem.',
         'PRZYKŁAD 4: Wynajmujący mieszkanie student Paweł staje przed żądaniem właściciela lokalu: „Od przyszłego miesiąca podnoszę czynsz o 600 zł, albo do końca tygodnia ma się pan wyprowadzić!”. Paweł zamiast krzyczeć lub płakać, stosuje pytanie kalibrowane tonem nocnego radiowca: „Panie Stanisławie, bardzo zależy mi na dbaniu o to mieszkanie tak jak dotąd. Jak mam pogodzić tak nagłą podwyżkę z moim studenckim budżetem w połowie semestru bez konieczności rzucania uczelni?”. Właściciel, zaskoczony brakiem agresji, zawahał się, spojrzał w podłogę i zaproponował: „No dobrze, niech będzie 150 zł teraz, a resztę omówimy w wakacje”.'
-      ]
+      ],
+      caseStudyRef: {
+        id: 'cs-ch14-fuzja-zespoly',
+        title: 'Wojna Dwóch Plemion: Zderzenie Inżynierów po Przejęciu Spółki Medycznej',
+        subtitle: 'Jak pytania kalibrowane zapobiegły masowemu odejściu kluczowych programistów',
+        protagonist: 'Grzegorz (VP of Engineering po fuzji, 44 lata) i Szymon (lead developer przejętego startupu medycznego, 31 lat)',
+        context: 'Fuzja korporacji farmaceutycznej ze zwinnym startupem tworzącym oprogramowanie do analizy rezonansu magnetycznego.',
+        story: [
+          'Po sfinalizowaniu transakcji Grzegorz wydał dekret: od 1 marca startup musi porzucić swój autorski stos technologiczny w chmurze i przejść na przestarzały, korporacyjny system zgodny z procedurami ISO.',
+          'Szymon i jego 12 inżynierów odebrało to jako uderzenie w ich godność zawodową. „Zabijacie nasz produkt! Ten korporacyjny potwór nie nadaje się do uczenia maszynowego!”. Złożyli zbiorowe ultimatum: jeśli zarząd nie cofnie decyzji, wszyscy odchodzą do konkurencji 1 kwietnia.',
+          'Grzegorz początkowo chciał ich zwolnić dyscyplinarnie (Styl Rywalizacji). Zdawał sobie jednak sprawę, że utrata zespołu oznacza fiasko fuzji wartej 50 milionów euro.',
+          'Zamiast kolejnego zebrania z nakazami, Grzegorz zaprosił Szymona na zamkniętą sesję 1:1. Zastosował serię pytań kalibrowanych:',
+          '„Szymonie, jak możemy zagwarantować zgodność z rygorystycznymi wymogami FDA dla wyrobów medycznych, zachowując zwinność waszego kodu w chmurze?”.',
+          'Szymon, zmuszony do myślenia z perspektywy regulatora, po raz pierwszy zrozumiał, że Grzegorz nie działa ze złośliwości, lecz podlega odpowiedzialności karnej za certyfikację.',
+          'Szymon zaproponował architekturę hybrydową: mikrousługi AI pozostają w chmurze startupu, a moduł raportowania i archiwizacji łączy się z systemem korporacyjnym za pomocą bezpiecznego API.',
+          'Efekt: Zespół pozostał w komplecie, certyfikacja FDA została przyznana w rekordowe 4 miesiące, a rozwiązanie Szymona stało się nowym standardem w całej grupie kapitałowej.'
+        ],
+        decisionTaken: 'Zastąpienie autorytarnego nakazu pytaniem kalibrowanym zmuszającym lidera oporu do współprojektowania rozwiązania.',
+        whatProtagonistSaw: 'Grzegorz widział w programistach roszczeniowych rebeliantów; Szymon widział w korporacji tępego niszczyciela innowacji.',
+        whatWasMissed: 'Że certyfikacja medyczna i innowacja technologiczna nie wykluczają się, lecz wymagają mostu architektonicznego.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Przeniesienie uwagi z walki o władzę (System 1) na techniczne rozwiązywanie problemu (System 2) za pomocą pytań kalibrowanych.',
+          cognitiveBiases: [
+            { name: 'Efekt IKEA', description: 'Przywiązanie inżynierów do własnego kodu jako części tożsamości.', impact: 'Paniczny opór przed jakimkolwiek systemem korporacyjnym.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Reaktywne dewaluowanie', explanation: 'Odrzucanie procedur korporacyjnych tylko dlatego, że pochodzą od „nowego właściciela”.' }
+          ],
+          emotionalDynamic: 'Przejście od wściekłości i buntu do dumy ze współtworzenia strategicznej architektury.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Boczna kora okołoczołowa', role: 'Ocena złożonych scenariuszy i kompromisów technicznych', activationState: 'Uruchomiona po pytaniu „Jak możemy to pogodzić?”' }
+          ],
+          neurotransmitters: [
+            { name: 'Dopamina', roleInScenario: 'Uwolniona w momencie znalezienia eleganckiego rozwiązania hybrydowego' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Druga godzina rozmowy', process: 'Opada pobudzenie pnia mózgu, pojawia się skupienie poznawcze.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Kalibrowane „Jak”', script: '„Jak mamy zrealizować wymogi prawne regulatora bez naruszania wydajności waszych algorytmów?”.', rationale: 'Czyni oponenta architektem rozwiązania.' }
+          ]
+        },
+        alternativePath: 'Gdyby Grzegorz użył siły, startup zbankrutowałby technologicznie, a zarząd odwołałby go ze stanowiska VP.',
+        readerQuestion: 'W jakiej relacji zamiast mówić „Musisz to zrobić”, powinieneś zapytać „Jak mamy to wspólnie osiągnąć”?',
+        keyTakeaway: 'Pytania kalibrowane nie dają oponentowi pola do ataku — zmuszają go do wytężenia umysłu w poszukiwaniu Twojego sukcesu.'
+      }
     },
     {
       id: 'sec-14-8',
@@ -418,7 +598,42 @@ export const chapterFourteen: Chapter = {
         'Wielu uważa kompromis za szczyt dojrzałości. W rzeczywistości kompromis polega na tym, że obie strony rezygnują z części swoich kluczowych potrzeb. Rezultatem jest „zgniły kompromis”, w którym produkt końcowy jest kaleki, a obie strony czują niedosyt i ukryty żal.',
         'Negocjacje Integracyjne (Rozszerzanie Tortu) polegają na poszukiwaniu nowych zmiennych, które nie były brane pod uwagę w pierwotnym sporze.',
         'PRZYKŁAD 6: Małżeństwo kupuje mieszkanie. On chce parter z ogródkiem dla psa, ona chce 4. piętro ze względu na widok i światło. Zgniły kompromis: 2. piętro bez ogródka i ze słabym widokiem — oboje są niezadowoleni. Rozwiązanie integracyjne: Kupują mieszkanie na ostatnim piętrze w budynku z dużym tarasem dachowym obsadzonym zielenią, na którym pies ma wybieg, a żona ma wymarzony widok na panoramę miasta.'
-      ]
+      ],
+      exerciseRef: {
+        id: 'ex-14-poszerzanie-tortu',
+        title: 'Poszerzanie Tortu: Zamiana Zgniłego Kompromisu w Synergię',
+        subtitle: 'Przetestuj dodanie nowych walut do sporu, w którym strony utknęły w klinczu',
+        objective: 'Wytrenowanie umiejętności wymyślania opcji poza tradycyjnym podziałem 50/50.',
+        durationMinutes: 20,
+        neuroScientificFoundation: 'Przełamanie schematu sumy zerowej stymuluje przednią część kory zakrętu obręczy i sieć wykrywania istotności (Salience Network), umożliwiając asocjację odległych pojęć.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Zidentyfikuj zablokowany spór',
+            instruction: 'Wybierz sytuację, w której jedynym rozważanym wyjściem jest „spotkanie w połowie drogi” kosztem obu stron.',
+            promptText: 'Nasz obecny zgniły kompromis:',
+            placeholder: 'Podział obowiązków opieki nad chorym rodzicem po 3 dni w tygodniu, co niszczy grafik pracy obu rodzeństwa...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Burza mózgów zmiennych asymetrycznych',
+            instruction: 'Dopisz 3 nowe elementy: elastyczność czasową, finansowanie opieki zewnętrznej, zakupy i logistykę.',
+            promptText: 'Nowe waluty wniesione do puli:',
+            placeholder: 'Jedno rodzeństwo przejmuje transport medyczny i zakupy (ma samochód), drugie organizuje opiekunkę na 2 dni...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Wybór wariantu Win-Win',
+            instruction: 'Sformułuj propozycję integracyjną, w której nikt nie czuje się przegrany.',
+            promptText: 'Rozwiązanie synergiczne:',
+            placeholder: 'Wspólnie finansujemy wykwalifikowaną pielęgniarkę we wtorki i czwartki, a weekendy dzielimy na zmianę co 2 tygodnie...'
+          }
+        ],
+        reflectionQuestions: [
+          'Dlaczego mechaniczne dzielenie problemu na pół jest intelektualnym pójściem na łatwiznę?',
+          'O ile trwalsze są porozumienia, w których obie strony zaspokoiły 100% swoich kluczowych potrzeb?'
+        ]
+      }
     },
     {
       id: 'sec-14-10',
@@ -434,7 +649,57 @@ export const chapterFourteen: Chapter = {
         '2. Oddziel człowieka od problemu: Kiedy ktoś na ciebie krzyczy, nie krzycz głośniej. Zastosuj milczenie i poczekaj, aż wyrzuci z siebie całą energię afektu.',
         '3. Testuj blef pytaniami o szczegóły techniczne i dowody: „Jeśli macie ofertę o 40% niższą od naszej, dlaczego wciąż marnujecie czas na rozmowy z nami?”.',
         'PRZYKŁAD 7: Negocjator korporacyjny w rozmowie z dostawcą oprogramowania mówi z udawaną wściekłością: „Wasza cena to absurd! Jeśli do jutra nie zejdziecie o połowę, zrywamy umowę i idziemy do sądu!”. Dostawca spokojnie zapisuje notatkę, milczy przez 5 sekund, po czym mówi łagodnym tonem: „Rozumiem, że kwestia budżetu na ten rok jest pod ogromną presją. Jeśli jednak decydujecie się na drogę sądową, szanuję tę decyzję. Z kim z państwa działu prawnego powinien skontaktować się nasz radca?”. Negocjator korporacyjny natychmiast wycofał się z groźby: „Nie no, nie musimy od razu iść do prawników, usiądźmy i porozmawiajmy o rabacie ilościowym”. Blef został obnażony.'
-      ]
+      ],
+      caseStudyRef: {
+        id: 'cs-ch14-spolecznosc-ekologia',
+        title: 'Starcie o Dolinę Rzeki: Jak Społeczność Oparła się Brudnej Grze Dewelopera',
+        subtitle: 'Od gróźb, blefów i podziałów we wsi do zjednoczonego paktu zrównoważonego rozwoju',
+        protagonist: 'Wiesław (sołtys podkrakowskiej wsi, 58 lat) i Pełnomocnik Zarządu Holdingu Deweloperskiego',
+        context: 'Plan budowy wielkiego kompleksu magazynowo-logistycznego na obszarze chronionego mokradła retencyjnego.',
+        story: [
+          'Deweloper wszedł do gminy z taktyką „Dobrego i Złego Psa”: mecenas holdingu straszył mieszkańców wielomilionowymi odszkodowaniami za blokowanie inwestycji, a przedstawiciel PR kusił obietnicami budowy nowego boiska dla szkoły.',
+          'Zastosowano dezinformację i próby skłócenia mieszkańców: starszym obiecywano dopłaty do węgla, młodszych straszono, że brak magazynów skaże wieś na bezrobocie. Wieś podzieliła się na wrogie obozy, dochodziło do wyzwisk pod sklepem.',
+          'Sołtys Wiesław nie uległ panice ani szantażowi. Zorganizował warsztat z niezależnym prawnikiem i hydrologiem z uniwersytetu.',
+          'Ekspertyza obnażyła gigantyczny blef: budowa magazynów w dolinie rzecznej w razie ulewy zalałaby 40 domów w dolnej części wsi, a deweloper nie posiadał kluczowej decyzji środowiskowej RDOŚ.',
+          'Podczas decydującej rozprawy administracyjnej deweloper zażądał natychmiastowej zgody, grożąc pozwami. Sołtys położył na stole raport hydrologiczny i zadał pytanie kalibrowane: „Jak zamierzają państwo zagwarantować bezpieczeństwo majątku 120 rodzin w razie fali powodziowej, gdy zabetonujecie 15 hektarów naturalnego polderu?”.',
+          'Blef pękł. Inwestor, widząc zjednoczoną społeczność z twardą wiedzą prawno-przyrodniczą, musiał ustąpić. Zmieniono lokalizację magazynów na nieużytki przy autostradzie, a dolina rzeki została wpisana do rejestru użytków ekologicznych.'
+        ],
+        decisionTaken: 'Sołtys zastąpił bezsilny krzyk twardą ekspertyzą hydrologiczną i pytaniem kalibrowanym demaskującym blef prawny inwestora.',
+        whatProtagonistSaw: 'Mieszkańcy widzieli w holdingu wszechmocną korporację, z którą „i tak nikt nie wygra”.',
+        whatWasMissed: 'Że deweloper sam działał pod presją czasu i gigantycznego kredytu pomostowego, a brak zgody środowiskowej był jego śmiertelną słabością.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Neutralizacja taktyki Dziel i Rządź (Divide et Impera) poprzez odwołanie do tożsamości nadrzędnej i twardych faktów naukowych.',
+          cognitiveBiases: [
+            { name: 'Iluzja bezradności wobec władzy', description: 'Przekonanie, że bogaty holding może zignorować prawo.', impact: 'Początkowa bierność mieszkańców.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Konsolidacja grupowa', explanation: 'Przekształcenie lęku przed zalaniem w solidarne działanie obywatelskie.' }
+          ],
+          emotionalDynamic: 'Przejście od lęku i podziałów wewnętrznych do godności i poczucia wspólnej siły.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Brzuszno-przyśrodkowa kora przedczołowa', role: 'Ocena wartości moralnych i sprawiedliwości społecznej', activationState: 'Uruchomiona u sołtysa podczas obrony ziemi' }
+          ],
+          neurotransmitters: [
+            { name: 'Oksytocyna', roleInScenario: 'Spajała zaufanie mieszkańców podczas zebrań wiejskich' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Rozprawa administracyjna', process: 'Spokojna postawa sołtysa wyciszyła panikę na sali.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [
+            { tactic: 'Dobry i Zły Policjant oraz Dziel i Rządź', description: 'Naprzemienne stosowanie gróźb odszkodowawczych i obietnic socjalnych dla wybranych grup.', vulnerabilityExploited: 'Brak wiedzy prawnej i niepewność materialna' }
+          ],
+          counterMeasures: [
+            { step: 'Audyt Faktów i Ekspertyza Zewnętrzna', script: '„Sprawdziliśmy państwa dokumentację w RDOŚ. Państwa groźby nie mają podstaw prawnych. Rozmawiajmy o twardych danych hydrologicznych”.', rationale: 'Natychmiast neutralizuje fałszywą presję.' }
+          ]
+        },
+        alternativePath: 'Gdyby mieszkańcy dali się podzielić, wieś zostałaby zalana przy pierwszej wiosennej powodzi, a deweloper ogłosiłby upadłość celowej spółki z o.o.',
+        readerQuestion: 'W jakich sytuacjach wierzysz blefom drugiej strony tylko dlatego, że wypowiada je pewnym siebie głosem w drogim garniturze?',
+        keyTakeaway: 'Przeciwko blefom i manipulacji najlepszą bronią są twarde dane, jedność i odwaga zadawania pytań o dowody.'
+      }
     },
     {
       id: 'sec-14-11',

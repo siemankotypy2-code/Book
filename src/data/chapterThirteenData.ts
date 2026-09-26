@@ -500,6 +500,18 @@ export const chapterThirteen: Chapter = {
       paragraphs: [
         'Przemysł influencerski to multimiliardowy biznes oparty na handlu pozorami. Widzisz 20-letniego chłopaka opierającego się o wynajęte Lamborghini lub uśmiechniętą modelkę z idealną cerą wygładzoną filtrem AI.',
         'Kiedy porównujesz swoje szare, zwyczajne kulisy z cudzym, precyzyjnie oświetlonym spektaklem, Twój mózg doświadcza trwałego spadku dopaminy bazowej. Zapominasz, że to, co widzisz na ekranie, jest pracą aktorów reklamowych, a nie realnym życiem.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 5: „Zarabiaj 10 tysięcy pasywnie w 7 dni” — Teatr bogactwa',
+          paragraphs: [
+            'Sytuacja i bohater: Damian (24 lata, student politechniki) ogląda na TikToku wideo młodego influencera w drogim garniturze w Dubaju, obiecującego „wolność finansową” po zakupie jego kursu krypto za 1999 zł. Damian odczuwa głęboki wstyd, że sam pracuje dorywczo w kawiarni.',
+            'Działający mechanizm: Halo Effect (efekt aureoli) i manipulacja statusem materialnym w celu wywołania poczucia niższości i natychmiastowego zakupu.',
+            'Jak rozpoznać w czasie rzeczywistym: Nagłe poczucie, że twoje codzienne, uczciwe wysiłki są bezwartościowe, połączone z obietnicą drogi na skróty.',
+            'Możliwa konstruktywna reakcja: Chłodna analiza faktów: „Garnitur i samochód można wypożyczyć na godzinę do nagrania wideo. Gdyby jego metoda działała pasywnie, nie musiałby desperacko sprzedawać kursu za 1999 zł”.',
+            'Wniosek dydaktyczny dla czytelnika: W internecie zamożność i sukces to najczęściej rekwizyty w teatrze sprzedaży, a nie realne osiągnięcia.'
+          ]
+        }
       ]
     },
     {
@@ -512,6 +524,18 @@ export const chapterThirteen: Chapter = {
       paragraphs: [
         'Prawda jest skomplikowana, nudna i obwarowana zastrzeżeniami („Badania wskazują na umiarkowaną korelację przy uwzględnieniu czynników X i Y”). Fałsz jest prosty, absolutny i spektakularny („Ten owoc niszczy 100% komórek raka!”).',
         'Z punktu widzenia ewolucji, mózg poszukuje nowości (Novelty Seeking). Prawda rzadko bywa szokująco nowa; fake news zawsze oferuje tani zastrzyk nowości, co sprawia, że użytkownicy podają go dalej 6 razy szybciej niż rzetelną wiadomość.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 6: Cudowna terapia witaminowa podana dalej na grupie rodzinnej',
+          paragraphs: [
+            'Sytuacja i bohater: Babcia Helena (68 lat) otrzymuje na komunikatorze łańcuszek z linkiem do bloga: „Lekarze ukrywają to przed wami: napar z kurkumy i sody oczyszcza tętnice w 48 godzin!”. W trosce o syna natychmiast przesyła link do całej rodziny z dopiskiem: „Przeczytajcie koniecznie!”.',
+            'Działający mechanizm: Heurystyka nowości, syndrom oblężonej twierdzy („lekarze ukrywają”) oraz altruistyczny odruch opiekuńczy wykorzystany przez farmę klików do monetyzacji reklam.',
+            'Jak rozpoznać w czasie rzeczywistym: Obecność wielkich liter, emotikonów alarmowych, spiskowej narracji i braku jakichkolwiek odnośników do recenzowanych pism medycznych (PubMed, The Lancet).',
+            'Możliwa konstruktywna reakcja: Spokojna edukacja bliskiej osoby zamiast wyśmiania: „Babciu, to piękny gest, że tak się o nas troszczysz. Ale te strony zarabiają na reklamach wyświetlanych obok sensacyjnych bzdur. Prawdziwe badania nad układem krążenia wyglądają inaczej”.',
+            'Wniosek dydaktyczny dla czytelnika: Najskuteczniejszym nośnikiem dezinformacji nie są źli ludzie, lecz nasi zmanipulowani, zatroskani bliscy.'
+          ]
+        }
       ]
     },
     {

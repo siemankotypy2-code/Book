@@ -483,6 +483,18 @@ export const chapterEight: Chapter = {
         'W marketingu komunikaty typu „Zostały tylko 2 sztuki!”, „Oferta wygasa za 12 minut” wyłączają racjonalną kalkulację kory przedczołowej i uruchamiają panikę FOMO (Fear of Missing Out).',
         'Poniższy warsztat pozwala zbadać własną podatność na 6 zasad Cialdiniego i zbudować tarcze ochronne.'
       ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 4: Znikające pokoje na portalu rezerwacyjnym',
+          paragraphs: [
+            'Sytuacja i bohater: Tomasz planuje wyjazd z partnerką na weekend. Na ekranie pojawia się czerwony baner: „Tylko 1 pokój w tej cenie! 14 osób właśnie przegląda tę ofertę!”.',
+            'Działający mechanizm: Sztuczna reguła niedostępności połączona ze społecznym dowodem słuszności wywołująca lęk przed utratą (Loss Aversion).',
+            'Jak rozpoznać w czasie rzeczywistym: Nagły skok tętna i impuls, by kliknąć „Rezerwuj teraz” bez sprawdzania opinii i warunków anulacji.',
+            'Możliwa konstruktywna reakcja: Zamknięcie karty przeglądarki na 15 minut i ochłonięcie — pokój zazwyczaj nadal jest dostępny.',
+            'Wniosek dydaktyczny dla czytelnika: Sztuczny pośpiech to najczęstsza broń służąca do wyłączenia kory przedczołowej.'
+          ]
+        }
+      ],
       exerciseRef: chapterEightExerciseCialdini
     },
     {
@@ -496,6 +508,18 @@ export const chapterEight: Chapter = {
         'Człowiek ma obsesyjną biologiczną potrzebę bycia postrzeganym jako spójny i konsekwentny. Jeśli publicznie zadeklarujesz jakieś stanowisko, Twoje ego zrobi wszystko, by nagiąć fakty i obronić ten wybór, nawet gdy okoliczności ulegną radykalnej zmianie.',
         'Zasada „stopy w drzwiach” (Foot-in-the-Door) polega na nakłonieniu odbiorcy do małego, niewinnego kroku (np. podpisanie petycji, wzięcie darmowej próbki). Kiedy ten krok zostanie zrobiony, człowiek sam definiuje siebie jako kogoś zaangażowanego w sprawę, co toruje drogę do gigantycznych ustępstw. Studium przypadku poniżej przedstawia dramat studentki uwikłanej w strukturę MLM.'
       ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 5: Petycja o zieleń i późniejsza darowizna',
+          paragraphs: [
+            'Sytuacja i bohater: Na ulicy aktywista prosi Macieja jedynie o podpis pod petycją o posadzenie 10 drzew w parku (zerowy koszt). Maciej podpisuje.',
+            'Działający mechanizm: Technika stopy w drzwiach i potrzeba spójności tożsamościowej. Tydzień później ten sam aktywista puka do drzwi z prośbą o 200 zł stałego zlecenia na fundację. Maciej, chcąc pozostać spójny ze swoim wizerunkiem „człowieka dbającego o zieleń”, zgadza się na płatność.',
+            'Jak rozpoznać w czasie rzeczywistym: Myśl: „Przecież już wcześniej poparłem tę akcję, głupio byłoby teraz odmówić”.',
+            'Możliwa konstruktywna reakcja: Rozdzielenie małego gestu od dużej decyzji finansowej i asertywna odmowa bez poczucia winy.',
+            'Wniosek dydaktyczny dla czytelnika: Poparcie idei nie obliguje Cię do sponsorowania każdej związanej z nią inicjatywy.'
+          ]
+        }
+      ],
       caseStudyRef: chapterEightCaseStudyMlm
     },
     {
@@ -508,6 +532,18 @@ export const chapterEight: Chapter = {
       paragraphs: [
         'Fakty nie mają obiektywnego znaczenia w izolacji — znaczenie nadaje im RAMA, w jakiej zostaną osadzone. To samo mięso można opisać jako „w 80% chude” lub „w 20% tłuste”. Badania dowodzą, że klienci oceniają mięso w ramie „80% chude” jako znacznie smaczniejsze i zdrowsze!',
         'W relacjach i biznesie ramowanie decyduje o sukcesie lub porażce negocjacji. Poniższy warsztat uczy, jak świadomie przekształcać ramy problemu z kosztu w inwestycję i z zagrożenia w szansę.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 6: Zgoda na operację kardiologiczną — zysk a strata',
+          paragraphs: [
+            'Sytuacja i bohater: Pacjent przed trudną operacją by-passów. Gdy kardiochirurg mówi: „90% pacjentów przeżywa ten zabieg bez powikłań”, pacjent podpisuje zgodę ze spokojem. Gdy inny lekarz mówi: „Istnieje 10% ryzyka zgonu na stole”, ten sam pacjent wpada w panikę i żąda wypisu.',
+            'Działający mechanizm: Ramowanie zysku vs straty (Kahneman & Tversky). Liczby są matematycznie identyczne, ale aktywują skrajnie różne sieci neuronalne.',
+            'Jak rozpoznać w czasie rzeczywistym: Sprawdzenie, czy perswazja opiera się na perspektywie negatywnej (strach), czy pozytywnej (korzyść).',
+            'Możliwa konstruktywna reakcja: Samodzielne przeliczenie ramy na drugą stronę medalu przed podjęciem decyzji.',
+            'Wniosek dydaktyczny dla czytelnika: Zawsze pytaj o drugą stronę ramy, zanim podejmiesz kluczowy wybór.'
+          ]
+        }
       ],
       exerciseRef: chapterEightExerciseFraming
     },

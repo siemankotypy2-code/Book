@@ -491,6 +491,28 @@ export const chapterTen: Chapter = {
       paragraphs: [
         'Stonewalling (stawianie kamiennego muru) jest zazwyczaj błędnie interpretowany jako zła wola czy arogancja. W 85% przypadków u mężczyzn jest to jednak reakcja na FIZJOLOGICZNE ZALANIE (Flooding).',
         'Kiedy tętno podczas kłótni przekracza 100 uderzeń na minutę, układ nerwowy wchodzi w stan biologicznego paraliżu. Mózg odcina zdolność przetwarzania mowy, by chronić serce przed zawałem. Człowiek zamyka się w sobie nie dlatego, że mu nie zależy, lecz dlatego, że tonie somatycznie.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 5: Paraliż i zamrożenie w samochodzie — Flooding u partnera',
+          paragraphs: [
+            'Sytuacja i bohater: Podczas powrotu z rodzinnego obiadu Paulina gwałtownie wyrzuca mężowi Karolowi, że nie obronił jej przed uszczypliwą uwagą teściowej. Karol nagle milknie, wpatruje się tępo w drogę i nie odpowiada na kolejne pytania.',
+            'Działający mechanizm: Czwarty Jeździec Gottmana (Stonewalling) wywołany somatycznym zalaniem (Flooding). Tętno powyżej 110 bpm wyłączyło korę przedczołową Karola.',
+            'Jak rozpoznać w czasie rzeczywistym: Bladość twarzy, zaciśnięte dłonie na kierownicy, płytki oddech, całkowity brak kontaktu wzrokowego.',
+            'Możliwa konstruktywna reakcja: Rozpoznanie przeciążenia i natychmiastowe zarządzenie przerwy fizjologicznej: „Karol, widzę, że cię odcięło. Zjedźmy na parking, napijmy się kawy w ciszy przez 20 minut, wrócimy do tematu w domu, gdy opadną emocje”.',
+            'Wniosek dydaktyczny dla czytelnika: Dyskusja z człowiekiem w stanie zalania jest bezcelowa biologicznie — kora przedczołowa nie przetwarza wtedy argumentów.'
+          ]
+        },
+        {
+          title: 'PRZYKŁAD 6: Pseudoprzeprosiny vs Prawdziwa naprawa w zespole',
+          paragraphs: [
+            'Sytuacja i bohater: Kierownik projektu Tomasz spóźnił się z kluczową dokumentacją, przez co graficzka Joanna musiała pracować w weekend. W poniedziałek Tomasz mówi: „Przepraszam cię, Joanna, jeśli poczułaś presję, ale klient zmienił wymagania”.',
+            'Działający mechanizm: Pseudoprzeprosiny zrzucające winę na wrażliwość ofiary („jeśli poczułaś”) i okoliczności zewnętrzne („ale klient”).',
+            'Jak rozpoznać w czasie rzeczywistym: Pojawienie się słów „jeśli” oraz „ale”, które unieważniają całą intencję skruchy.',
+            'Możliwa konstruktywna reakcja: Prawdziwe przeprosiny: „Joanno, przepraszam cię. Mój brak organizacji naruszył twój prywatny czas i zmusił cię do pracy w weekend. Biorę za to pełną odpowiedzialność. Odbierz sobie dwa dni wolnego, a w kolejnych sprintach wprowadzam 48-godzinny bufor”.',
+            'Wniosek dydaktyczny dla czytelnika: Dojrzałe przeprosiny biorą 100% odpowiedzialności za skutki i natychmiast proponują realne zadośćuczynienie.'
+          ]
+        }
       ]
     },
     {

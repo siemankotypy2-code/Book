@@ -98,6 +98,48 @@ export const chapterSixteenExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Pojedyncza pętla to termostat: jest za zimno, więc włącza grzanie. Podwójna pętla pyta: „Dlaczego w ogóle mamy okno otwarte w środku zimy i czy termostat jest ustawiony na właściwą temperaturę?”.',
     keyTakeaway: 'Nie poprawiaj w kółko tych samych objawów — zbadaj ukryte założenia leżące u podstaw Twoich decyzji.'
+  },
+  {
+    id: 8,
+    question: 'Czym różni się układ antykruchy od odpornego w koncepcji Nassima Nicholasa Taleba (Sekcja 16.6)?',
+    topic: 'Antykruchość w Psychologii Systemowej',
+    sectionRef: 'Sekcja 16.6',
+    options: [
+      { label: 'A', text: 'Układ antykruchy nigdy nie ulega zmęczeniu materiałowemu.', isCorrect: false },
+      { label: 'B', text: 'Układ odporny (np. kamień) jedynie wytrzymuje wstrząs bez zmian, podczas gdy układ antykruchy (np. mięsień po mikrourazach lub dojrzały człowiek po kryzysie) pod wpływem losowych wstrząsów i stresorów rośnie w siłę i staje się doskonalszy.', isCorrect: true },
+      { label: 'C', text: 'Antykruchość dotyczy wyłącznie metali ciężkich.', isCorrect: false },
+      { label: 'D', text: 'Układ antykruchy natychmiast pęka przy najmniejszym dotknięciu.', isCorrect: false }
+    ],
+    explanation: 'Kruchość boi się zmienności; odporność znosi ją z trudem; antykruchość potrzebuje zmienności i wyzwań, by ewoluować. Życiowa mądrość polega na budowaniu życia, w którym niespodziewane trudności stają się trampoliną do mądrości.',
+    keyTakeaway: 'Nie proś o łatwiejsze życie — buduj antykruchą strukturę, która rośnie w burzy.'
+  },
+  {
+    id: 9,
+    question: 'W eksperymencie Muzafera Sherifa (Robbers Cave, 1954), co okazało się jedynym skutecznym narzędziem do trwałego ugaszenia wojny między dwoma wrogimi obozami chłopców (Sekcja 16.10)?',
+    topic: 'Cel Nadrzędny w Eksperymencie Robbers Cave',
+    sectionRef: 'Sekcja 16.10',
+    options: [
+      { label: 'A', text: 'Wspólne oglądanie filmów animowanych i jedzenie lodów.', isCorrect: false },
+      { label: 'B', text: 'Wprowadzenie Celu Nadrzędnego (Superordinate Goal) — wspólnego kryzysu (np. awaria jedynego wodociągu obozowego), którego żadna grupa nie mogła rozwiązać samodzielnie, zmuszającego obie strony do fizycznej współpracy.', isCorrect: true },
+      { label: 'C', text: 'Kary dyscyplinarne i zakaz wychodzenia z domków.', isCorrect: false },
+      { label: 'D', text: 'Wykłady o tolerancji i miłości bliźniego.', isCorrect: false }
+    ],
+    explanation: 'Zwykły kontakt (np. wspólna stołówka) tylko nasilał bójki. Dopiero konieczność wspólnego pchania zepsutej cysterny z wodą pitną skruszyła podział na „My” i „Oni”. Wspólna misja ponad podziałami jednoczy najgorszych wrogów.',
+    keyTakeaway: 'Nie zwalczysz plemienności pouczaniem — stwórz wspólny cel, który wymaga połączonych sił.'
+  },
+  {
+    id: 10,
+    question: 'Dlaczego w etyce wpływu transparentność intencji i poszanowanie autonomii odbiorcy jest najlepszą strategią długoterminową (Sekcja 16.8)?',
+    topic: 'Etyka Wpływu a Trwałość Kapitału Społecznego',
+    sectionRef: 'Sekcja 16.8',
+    options: [
+      { label: 'A', text: 'Ponieważ jest to wymóg formalny prawa patentowego.', isCorrect: false },
+      { label: 'B', text: 'Manipulacja przynosi szybki zysk, ale niszczy zaufanie i wyzwala reaktancję (chęć odwetu); wpływ etyczny buduje kapitał społeczny, zaufanie sieciowe i trwałe sojusze, które procentują przez dziesięciolecia.', isCorrect: true },
+      { label: 'C', text: 'Etyka nie ma żadnego znaczenia w realnym biznesie.', isCorrect: false },
+      { label: 'D', text: 'Wszyscy ludzie są naiwni i zapominają oszustwa po tygodniu.', isCorrect: false }
+    ],
+    explanation: 'W powtarzalnych grach społecznych (Dylemat Więźnia) strategia Tit-for-Tat oparta na życzliwości i czytelnych intencjach zawsze deklasuje bezwzględny egoizm. Prawość to najwyższa forma pragmatyzmu.',
+    keyTakeaway: 'Manipulacja wygrywa bitwę, ale przegrywa całą wojnę relacyjną. Prawda jest najtrwalszą walutą.'
   }
 ];
 
@@ -106,7 +148,7 @@ export const chapterSixteen: Chapter = {
   title: 'Człowiek Jako System Społeczny: Wielka Synteza Dzieła',
   subtitle: 'Jak połączyć mechanizmy umysłu, relacji i wpływu w jeden spójny system świadomego życia',
   leadParagraph: 'Dotarliśmy do szczytu góry. Przez szesnaście rozbudowanych rozdziałów badaliśmy człowieka w każdym wymiarze: od neuroprzekaźników w szczelinie synaptycznej, przez pożary ciała migdałowatego, reflektor uwagi i pułapki percepcji w Tomie I, aż po presję stada, sztukę rozmowy, etykę wpływu, sidła manipulacji, architekturę więzi, nawyki, potop informacyjny, negocjacje i hart woli w Tomie II. Teraz pora połączyć te wszystkie rzeki w jeden potężny ocean zrozumienia.',
-  totalEstimatedPages: 60,
+  totalEstimatedPages: 64,
   sections: [
     {
       id: 'sec-16-1',
@@ -143,7 +185,56 @@ export const chapterSixteen: Chapter = {
         'Przez ponad sto lat psychologia badała człowieka tak, jakby był samotną wyspą — próbówką w laboratorium. Badano pamięć, refleks, inteligencję jednostki.',
         'Jednak rewolucja systemowa Petera Senge i Gregory’ego Batesona ujawniła, że jednostka wyjęta ze swojego kontekstu społecznego jest abstrakcją. Twoje zachowanie zależy w 80% od pola sił, w którym się poruszasz.',
         'PRZYKŁAD 1: Wybitny programista Krzysztof, spokojny i cichy w domu, w nowej korporacji staje się agresywny i opryskliwy. Dyrektor HR wysyła go na „trening panowania nad złością” (błąd leczenia jednostki). Wnikliwy audyt systemowy wykazał, że w firmie premie przyznawano wyłącznie za publiczne wytykanie błędów kolegom, a zarząd nagradzał bezwzględną rywalizację. Zachowanie Krzysztofa było racjonalną adaptacją do patologicznego systemu nagród.'
-      ]
+      ],
+      caseStudyRef: {
+        id: 'cs-ch16-szpital-sor',
+        title: 'Chaos na Ostrym Dyżurze: Jak Przebudowa Systemu Uleczyła Wojnę Lekarzy z Pielęgniarkami',
+        subtitle: 'Od wzajemnych oskarżeń o błędy medyczne do zsynchronizowanego protokołu ratunkowego',
+        protagonist: 'Dr Anna (ordynator Szpitalnego Oddziału Ratunkowego, 46 lat) i Danuta (przełożona pielęgniarek SOR, 52 lata)',
+        context: 'Szpital wojewódzki przyjmujący 150 pacjentów na dobę w warunkach permanentnego niedofinansowania.',
+        story: [
+          'Na oddziale panowała atmosfera nienawiści. Lekarze rezydenci zarzucali pielęgniarkom opieszałość i ignorowanie zleceń lekowych: „One piją kawę, podczas gdy pacjent ma migotanie przedsionków!”. Pielęgniarki oskarżały lekarzy o arogancję i brak szacunku: „Młodzi po studiach traktują nas jak służące i wypisują nieczytelne zlecenia!”.',
+          'Wskaźnik powikłań rósł, a 6 doświadczonych pielęgniarek złożyło wypowiedzenia. Dyrekcja chciała ukarać naganą Danutę i zwolnić dwóch głośnych rezydentów.',
+          'Interwencja systemowa: Nowa ordynator dr Anna odmówiła szukania kozłów ofiarnych. Przeprowadziła audyt obiegu pacjenta.',
+          'Odkrycie luki systemowej: Zlecenia lekarskie były wprowadzane w starym systemie komputerowym, do którego pielęgniarki miały tylko 1 wspólny terminal na korytarzu. Lekarze zlecali badania „w chmurze”, nie informując pielęgniarek słownie. Pielęgniarki dowiadywały się o pilnej kroplówce dopiero po 45 minutach.',
+          'Zamiast kolejnych reprymend, wprowadzono zmianę reguł gry: 1. Mobilne tablety dla każdej dyżurnej pielęgniarki z natychmiastowym powiadomieniem dźwiękowym o zleceniu CITO. 2. Poranny 5-minutowy huddle (odprawa stojąca) lekarza dyżurnego z zespołem pielęgniarskim z zasadą zamkniętej pętli komunikacji („Zlecam 5 mg morfiny” → „Podałam 5 mg morfiny o 10:14”).',
+          'Rezultat: Czas podania leków ratujących życie skrócił się o 70%, konflikty wygasły, pielęgniarki wycofały wypowiedzenia, a SOR zyskał miano najlepiej zorganizowanego w regionie.'
+        ],
+        decisionTaken: 'Ordynator zrezygnowała z kar personalnych na rzecz usunięcia wąskiego gardła technologiczno-komunikacyjnego w systemie.',
+        whatProtagonistSaw: 'Pielęgniarki i lekarze widzieli w sobie nawzajem wrogów bez serca i kompetencji.',
+        whatWasMissed: 'Że obie grupy były na skraju wyczerpania, uwięzione w wadliwym procesie wymuszającym błędy.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Błąd atrybucji fundamentalnej przesłaniający błędy w architekturze procesu (System Failure masked as Human Failure).',
+          cognitiveBiases: [
+            { name: 'Podstawowy błąd atrybucji', description: 'Tłumaczenie opóźnień lenistwem personelu zamiast brakiem terminali.', impact: 'Wojna plemienna na oddziale.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Projekcja winy', explanation: 'Zrzucanie odpowiedzialności za błędy medyczne na drugą grupę zawodową.' }
+          ],
+          emotionalDynamic: 'Przejście od lęku i paranoi do wzajemnego szacunku i zaufania zespołowego.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Oś HPA personelu medycznego', role: 'Przewlekły wyrzut kortyzolu obniżający empatię i cierpliwość', activationState: 'Ukojony po usprawnieniu przepływu zleceń' },
+            { region: 'Przednia kora zakrętu obręczy', role: 'Rejestracja konfliktów i błędów w procedurach', activationState: 'Zoptymalizowana' }
+          ],
+          neurotransmitters: [
+            { name: 'Adrenalina', roleInScenario: 'Długotrwały stan czuwania bojowego uniemożliwiający spokojny dialog' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Miesiąc po wdrożeniu huddle', process: 'Mierzalny spadek wskaźników wypalenia zawodowego u 85% personelu.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Zamknięta Pętla Komunikacji (Closed-Loop)', script: '„Doktorze, potwierdzam podanie leku X w dawce Y”.', rationale: 'Eliminuje nieporozumienia i domysły w stanie presji czasu.' }
+          ]
+        },
+        alternativePath: 'Gdyby zwolniono rezydentów i ukarano Danutę, oddział stanąłby z braku obsady, co doprowadziłoby do śmierci pacjentów na korytarzu.',
+        readerQuestion: 'W jakich konfliktach w Twojej pracy obwiniasz ludzi o złą wolę, zamiast zbadać wadliwy proces, w którym muszą funkcjonować?',
+        keyTakeaway: 'Zły system pokona dobrego człowieka za każdym razem. Chcesz zmienić zachowanie ludzi? Zmień architekturę systemu.'
+      }
     },
     {
       id: 'sec-16-3',
@@ -271,6 +362,41 @@ export const chapterSixteen: Chapter = {
         alternativePath: 'Gdyby nie terapia systemowa, za 2 lata doszłoby do bolesnego rozwodu z walką o majątek i traumatyzacją dzieci.',
         readerQuestion: 'W jaki powtarzalny taniec cyrkularny dajesz się wciągać swoim bliskim i współpracownikom?',
         keyTakeaway: 'Nie pytaj, kto zaczął. Zapytaj, jak możecie oboje przestać tańczyć taniec zniszczenia.'
+      },
+      exerciseRef: {
+        id: 'ex-16-mapa-petli-cyrkularnej',
+        title: 'Kartografia Cyrkularna: Rozrysowanie Tańca Wycofanie-Atak',
+        subtitle: 'Zidentyfikuj pętlę sprzężenia zwrotnego w swoim kluczowym konflikcie',
+        objective: 'Wizualizacja cyrkularnej dynamiki sporu i znalezienie własnego punktu wyjścia z błędnego koła.',
+        durationMinutes: 25,
+        neuroScientificFoundation: 'Zewnętrzna reprezentacja graficzna pętli relacyjnej przełącza percepcję z afektywnej sieci istotności (Salience Network) na wykonawczą sieć centralną (CEN).',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Mój wyzwalacz i moja reakcja',
+            instruction: 'Opisz, jakie zachowanie partnera/współpracownika natychmiast wyzwala Twój odruch obronny i co wtedy robisz.',
+            promptText: 'Gdy on/ona robi X, ja automatycznie robię Y:',
+            placeholder: 'Gdy partner nie odpowiada na pytanie, ja podnoszę głos i żądam natychmiastowej reakcji...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Wewnętrzny stan drugiej strony',
+            instruction: 'Wciel się w rolę partnera: co on czuje w ciele i myśli, gdy Ty wykonujesz swój ruch?',
+            promptText: 'Co czuje partner pod wpływem mojego zachowania?',
+            placeholder: 'Czuje się atakowany, osaczony i gorszy, więc odcina się, by przetrwać...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Nowy, asymetryczny ruch przerywający',
+            instruction: 'Zaprojektuj jeden nieoczekiwany ruch, który rozbraja całą pętlę w zarodku.',
+            promptText: 'Mój nowy ruch przełamujący:',
+            placeholder: 'Zamiast krzyczeć, kładę dłoń na stole, milknę na 10 sekund i mówię: „Widzę, że jesteś zmęczony, porozmawiajmy po obiedzie”...'
+          }
+        ],
+        reflectionQuestions: [
+          'Jak zmienia się Twoje spojrzenie na partnera, gdy uświadamiasz sobie, że jego chłód jest reakcją na Twój lęk?',
+          'Kto w pętli cyrkularnej ma władzę, by ją zatrzymać? (Wskazówka: ten, kto pierwszy ją zauważy).'
+        ]
       }
     },
     {
@@ -286,7 +412,55 @@ export const chapterSixteen: Chapter = {
         'Rzeczy odporne wytrzymują wstrząs bez zmian (kamień).',
         'Rzeczy ANTYKRUCHE stają się SILNIEJSZE pod wpływem wstrząsu (mięśnie rosnące pod wpływem mikrourazów na treningu, układ odpornościowy uczący się na kontakcie z bakterią).',
         'Celem tej książki jest uczynienie Cię człowiekiem antykruchym. Każdy kryzys, każda zdrada, każda porażka staje się materiałem budulcowym dla Twojej nowej mądrości.'
-      ]
+      ],
+      caseStudyRef: {
+        id: 'cs-ch16-ekologia-wies',
+        title: 'Próba Ognia i Suszy: Jak Gospodarstwo Ekologiczne Wygrało z Monokulturą Rolną',
+        subtitle: 'Zastosowanie zasad antykruchości i bioróżnorodności w odpowiedzi na katastrofę klimatyczną',
+        protagonist: 'Marek i Barbara (rolnicy ekologiczni, 48 i 45 lat) oraz sąsiedzi z wielkoobszarowej monokultury kukurydzy',
+        context: 'Stuletnia susza w Wielkopolsce — 3 miesiące bez kropli deszczu w szczycie okresu wegetacyjnego.',
+        story: [
+          'Sąsiednie gospodarstwa wielkoobszarowe postawiły na maksymalną wydajność: setki hektarów monokultury kukurydzy, ciężka chemia, głęboka orka wyjaławiająca glebę. Kiedy nadeszła susza, wysuszone plantacje obumarły w 80%, a rolnicy stanęli w obliczu bankructwa.',
+          'Marek i Barbara przez 12 lat budowali system permakulturowy i agroleśnictwo: pasy zadrzewień śródpolnych zatrzymujące wiatr, stawy retencyjne zbierające deszczówkę, różnorodne odmiany prastarych zbóż (orkisz, samopsza) i mulczowanie gleby.',
+          'Przez lata sąsiedzi śmiali się z nich, nazywając ich „eko-dziwakami tracącymi pole na krzaki”.',
+          'Wynik suszy: Drzewa śródpolne obniżyły temperaturę przy gruncie o 4 stopnie Celsjusza i zablokowały parowanie. Retencja wodna pozwoliła uratować 90% plonów zbóż i warzyw. Ceny orkiszu i warzyw bio wzrosły na rynku o 150%.',
+          'Gospodarstwo Marka i Barbary nie tylko przetrwało (odporność), ale osiągnęło najwyższy zysk w historii i podpisało 5-letnie kontrakty z sieciami restauracji w Warszawie (antykruchość).',
+          'W kolejnym roku ci sami sąsiedzi, którzy z nich drwili, przyszli z prośbą o pomoc w założeniu zadrzewień i spółdzielni retencyjnej.'
+        ],
+        decisionTaken: 'Świadoma rezygnacja z maksymalizacji krótkoterminowego zysku na rzecz systemowej dywersyfikacji i retencji biologicznej.',
+        whatProtagonistSaw: 'Marek i Barbara widzieli w przyrodzie partnera i złożony ekosystem wzajemnych zależności.',
+        whatWasMissed: 'Sąsiedzi wierzyli, że człowiek za pomocą chemii i maszyn może całkowicie uniezależnić się od praw biosfery.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Antykruchość (Antifragility) osiągnięta dzięki redundancji (nadmiarowości), dywersyfikacji i tolerancji na błędy.',
+          cognitiveBiases: [
+            { name: 'Złudzenie kontroli', description: 'Wiara konwencjonalnych rolników w absolutną kontrolę nad naturą.', impact: 'Katastrofalna strata finansowa.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Obronne wyśmiewanie inności', explanation: 'Krytykowanie innowacji Marka jako sposób na obronę własnych nawyków.' }
+          ],
+          emotionalDynamic: 'Przejście od osamotnienia i drwin do statusu mentorów lokalnej społeczności.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Długoterminowe planowanie wieloletnich cykli ekologicznych', activationState: 'Utrzymywana przez dekadę bez ulegania presji grupy' }
+          ],
+          neurotransmitters: [
+            { name: 'Serotonina', roleInScenario: 'Głębokie poczucie sensu i harmonii z otoczeniem' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Szczyt suszy w lipcu', process: 'Marek i Barbara nie odczuwają paniki — ich stawy retencyjne działają zgodnie z planem.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Edukacja przez Wynik (Leading by Example)', script: '„Nie kłócimy się z sąsiadami. Pokazujemy zielone kłosy orkiszu, gdy wokół jest pustynia”.', rationale: 'Fakty materialne niszczą wszelkie uprzedzenia ideologiczne.' }
+          ]
+        },
+        alternativePath: 'Gdyby ulegli presji otoczenia i zaorali stawy pod monokulturę kukurydzy, zbankrutowaliby razem z resztą wsi.',
+        readerQuestion: 'W jakich obszarach Twojego życia (finanse, relacje, praca) postawiłeś na kruchą monokulturę zamiast antykruchej dywersyfikacji?',
+        keyTakeaway: 'Nie optymalizuj wszystkiego pod kątem słonecznego dnia. Buduj system, który staje się silniejszy, gdy nadchodzi gradobicie.'
+      }
     },
     {
       id: 'sec-16-7',
@@ -301,7 +475,90 @@ export const chapterSixteen: Chapter = {
         'Podwójna Pętla (Double-Loop): „Zrobiłem błąd → jakie ukryte założenia, schematy myślenia i wartości sprawiły, że podjąłem taką decyzję?”. Skupia się na systemie operacyjnym umysłu.',
         'Ludzie sukcesu nie rozwiązują w kółko tych samych problemów. Przeprowadzają audyt podwójnej pętli i zmieniają reguły gry.',
         'PRZYKŁAD 4: Przedsiębiorca Robert co pół roku tracił kluczowego kierownika sprzedaży. W pojedynczej pętli za każdym razem zatrudniał nową agencję rekrutacyjną i oferował 20% wyższą pensję (leczenie objawowe). W podwójnej pętli usiadł i zbadał własne założenia: „Dlaczego odchodzą? Ponieważ mam ukryte przekonanie, że nikt nie zrobi tego lepiej ode mnie, przez co nie pozwalam im podjąć ani jednej samodzielnej decyzji”. Robert zmienił strukturę uprawnień w spółce — od 3 lat rotacja na kluczowych stanowiskach wynosi zero.'
-      ]
+      ],
+      caseStudyRef: {
+        id: 'cs-ch16-startup-podwojna-petla',
+        title: 'Ślepy Zaułek Innowacji: Jak Startup AI Odkrył Swoje Fałszywe Założenia',
+        subtitle: 'Przejście od nerwowego poprawiania kodu do przedefiniowania modelu biznesowego',
+        protagonist: 'Kamil (CEO i współzałożyciel startupu VoiceAI, 29 lat) i Olga (Head of Customer Success, 32 lata)',
+        context: 'Po zebraniu 3 milionów złotych od funduszu VC wskaźnik rezygnacji klientów (Churn Rate) wynosi 70% w pierwszym miesiącu.',
+        story: [
+          'Firma stworzyła zaawansowanego bota głosowego AI dla call center. Klienci podpisywali umowy pilotażowe, po czym po 3 tygodniach masowo rezygnowali, zgłaszając frustrację.',
+          'Reakcja w pojedynczej pętli: Kamil zarządził nocne sprinty programistyczne: „Musimy zredukować opóźnienie odpowiedzi modelu z 800 ms do 300 ms i dodać 10 nowych akcentów językowych!”. Inżynierowie pracowali po 16 godzin, obcięli latencję, a churn nadal wynosił 70%. Zespół był na skraju buntu i wyczerpania.',
+          'Interwencja podwójnej pętli: Olga wymusiła spotkanie strategiczne bez laptopów. Zadała pytanie Argyrisa: „Jakie fundamentalne założenie leży u podstaw całego naszego produktu?”.',
+          'Kamil odpowiedział: „Założyliśmy, że klienci chcą, aby bot całkowicie zastąpił człowieka i udawał żywą osobę”. Olga pokazała nagrania z rozmów: klienci byli wściekli, gdy bot udawał człowieka, a czuli ulgę, gdy otwarcie mówił, że jest sztuczną inteligencją i natychmiast załatwiał prosty problem (np. reset hasła czy podanie numeru konta).',
+          'Przebudowa podwójnej pętli: Zrezygnowano z udawania człowieka. Bot został zoptymalizowany pod kątem 1-minutowych, konkretnych operacji technicznych z natychmiastowym przełączeniem do żywego konsultanta w sprawach trudnych.',
+          'Wskaźnik churnu spadł z 70% do 4%, firma pozyskała 3 wielkie banki jako klientów i weszła w fazę rentowności.'
+        ],
+        decisionTaken: 'Przejście od leczenia objawowego (poprawianie kodu) do zakwestionowania fundamentalnego dogmatu tożsamościowego produktu.',
+        whatProtagonistSaw: 'Kamil widział w porażce problem technologiczny (zbyt wolny algorytm).',
+        whatWasMissed: 'Że problem leżał w psychologii użytkownika — ludzie nienawidzą być oszukiwani przez maszynę.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Przełamanie ślepoty paradygmatycznej (Paradigm Blindness) za pomocą pytań podwójnej pętli.',
+          cognitiveBiases: [
+            { name: 'Pułapka utopionych kosztów', description: 'Trwanie przy koncepcji bota udającego człowieka ze względu na 2 lata pracy badawczej.', impact: 'Marnowanie funduszy inwestorów.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Ucieczka w technicyzm', explanation: 'Rozwiązywanie problemów informatycznych w celu uniknięcia bolesnej prawdy o produkcie.' }
+          ],
+          emotionalDynamic: 'Przejście od paniki i wypalenia do wyzwalającej jasności strategicznej.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Kora biegunowa przedczołowa (Brodmann Area 10)', role: 'Porównywanie alternatywnych modeli mentalnych i strategii najwyższego rzędu', activationState: 'Uruchomiona podczas sesji podwójnej pętli' }
+          ],
+          neurotransmitters: [
+            { name: 'Acetylocholina', roleInScenario: 'Zwiększenie plastyczności kory mózgowej podczas redefinicji założeń' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Dzień redefinicji strategii', process: 'Natychmiastowy spadek napięcia i wyciszenie objawów psychosomatycznych u założycieli.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Protokół Kwestionowania Założeń (Assumption Audit)', script: '„Co jeśli nasze najbardziej oczywiste, święte założenie jest w 100% błędne?”.', rationale: 'Otwiera przestrzeń na innowację przełomową.' }
+          ]
+        },
+        alternativePath: 'Gdyby startup kontynuował pojedynczą pętlę, po 6 miesiącach skończyłyby się pieniądze od inwestorów, a firma ogłosiłaby upadłość.',
+        readerQuestion: 'Jakie święte założenie w Twoim życiu lub biznesie bronisz z uporem, mimo że rzeczywistość w kółko pokazuje Ci jego nieskuteczność?',
+        keyTakeaway: 'Kiedy kończą Ci się siły na naprawianie problemu, przestań poprawiać narzędzie — zmień założenie, które kazało Ci go użyć.'
+      },
+      exerciseRef: {
+        id: 'ex-16-podwojna-petla-decyzji',
+        title: 'Audyt Podwójnej Pętli: Przesłuchanie Ukrytych Założeń',
+        subtitle: 'Dotrzyj do korzeni chronicznych problemów w swoim życiu',
+        objective: 'Nauczenie się odróżniania leczenia objawowego (pojedyncza pętla) od transformacji paradygmatu (podwójna pętla).',
+        durationMinutes: 20,
+        neuroScientificFoundation: 'Metapoznawcza analiza założeń pobudza przednią część kory przedczołowej, hamując odruchowe schematy pamięci proceduralnej w zwojach podstawy.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybierz nawracający problem',
+            instruction: 'Określ sytuację, która powtarza się w Twoim życiu w różnych dekoracjach (np. zmiana pracy z tym samym problemem z szefem, powtarzający się spór w związkach).',
+            promptText: 'Mój chroniczny pożar:',
+            placeholder: 'W każdej nowej pracy po 6 miesiącach czuję się przeciążony i niedoceniany...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Moje dotychczasowe leczenie objawowe (Pojedyncza Pętla)',
+            instruction: 'Co zwykle robiłeś, by to naprawić (jakie działania techniczne)?',
+            promptText: 'Działania w pojedynczej pętli:',
+            placeholder: 'Brałem urlop na żądanie, piłem więcej kawy, szukałem kolejnej pracy...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Odkrycie ukrytego założenia (Podwójna Pętla)',
+            instruction: 'Dokończ zdanie: „Robiłem tak, ponieważ głęboko wierzyłem, że...”.',
+            promptText: 'Moje ukryte założenie:',
+            placeholder: 'Głęboko wierzyłem, że jeśli powiem „nie” na dodatkowe zadanie, zostanę natychmiast uznany za bezwartościowego...'
+          }
+        ],
+        reflectionQuestions: [
+          'O ile bardziej wyzwalająca jest zmiana jednego fałszywego założenia niż wieczna walka z jego skutkami?',
+          'Czym różni się gaszenie pożarów od usunięcia łatwopalnych materiałów z fundamentów domu?'
+        ]
+      }
     },
     {
       id: 'sec-16-8',
@@ -316,7 +573,8 @@ export const chapterSixteen: Chapter = {
         'Różnica tkwi w INTENCJI i PRZEJRZYSTOŚCI:',
         'Manipulator ukrywa swoje intencje, traktuje drugiego człowieka jak przedmiot do osiągnięcia własnej korzyści i pozostawia go osłabionego lub ograbionego.',
         'Lider Etyczny działa z otwartą przyłbicą, wzmacnia podmiotowość drugiej strony i dąży do porozumień, w których rosną obie strony.',
-        'W świecie zdominowanym przez algorytmy manipulujące emocjami, Twoja prawość i wierność prawdzie są najcenniejszą walutą społeczną.'
+        'W świecie zdominowanym przez algorytmy manipulujące emocjami, Twoja prawość i wierność prawdzie są najcenniejszą walutą społeczną.',
+        'PRZYKŁAD 6: Etyczny dyrektor studia gier mobilnych Maciej staje przed propozycją inwestora: wprowadzenie mechanizmu „skrzynek z łupami” (Loot Boxes) żerujących na psychice nastolatków za pomocą zmiennego rozkładu wzmocnień dopaminowych (hazard dla dzieci). Taki mechanizm podwoiłby zysk w 3 miesiące. Maciej odmawia: „Naszą misją jest tworzenie gier budujących kreatywność i więzi, a nie uzależnianie młodego układu nerwowego”. Zamiast tego wdraża model subskrypcyjny bez ukrytych mikrotransakcji. Gra zyskuje nagrodę Apple Design Award, a lojalna społeczność zapewnia firmie stabilne przychody przez kolejnych 8 lat bez cienia skandalu etycznego.'
       ]
     },
     {
@@ -333,7 +591,42 @@ export const chapterSixteen: Chapter = {
         '2. Ochrona poranków i wieczorów (pierwsza i ostatnia godzina dnia wolna od ekranów).',
         '3. Spacery w naturze bez elektroniki (przywracanie uwagi mimowolnej wg Attention Restoration Theory Kaplana).',
         '4. Przebywanie z ludźmi, którzy podnoszą Twoją poprzeczkę moralną i intelektualną.'
-      ]
+      ],
+      exerciseRef: {
+        id: 'ex-16-higiena-azylu',
+        title: 'Projektowanie Kognitywnego Azylu: Ekologia Umysłu w Świecie Szumu',
+        subtitle: 'Stwórz strefę wolną od algorytmicznego bombardowania i odzyskaj przestrzeń na głęboką myśl',
+        objective: 'Zaprojektowanie konkretnych reguł higieny informacyjnej chroniących zasoby uwagi i spokój psychiczny.',
+        durationMinutes: 15,
+        neuroScientificFoundation: 'Kontakt z naturą i ciszą sensoryczną wygasza permanentne pobudzenie sieci uwagi grzbietowej (DAN) i regeneruje sieć domyślną (DMN), wspierając konsolidację pamięci.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Złota Godzina Poranna i Wieczorna',
+            instruction: 'Zdefiniuj zasadę pierwszych 60 minut po przebudzeniu i ostatnich 60 minut przed snem.',
+            promptText: 'Mój poranny i wieczorny azyl bez ekranów:',
+            placeholder: 'Poranek: szklanka wody, rozciąganie, kawa bez telefonu do 7:30; Wieczór: telefon do ładowarki w przedpokoju o 21:30, czytanie książki papierowej...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Dieta Niskoinformacyjna (Low-Info Diet)',
+            instruction: 'Wskaż 2 portale lub aplikacje, które natychmiast usuwasz z telefonu, by odciąć generatory bezużytecznego lęku.',
+            promptText: 'Co odcinam ze swojego menu mentalnego?',
+            placeholder: 'Usuwam aplikacje z wiadomościami z kraju i świata oraz powiadomienia z Twittera/X...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Święte Miejsce Ciszy',
+            instruction: 'Wyznacz w swoim domu lub okolicy jedno miejsce, w którym obowiązuje całkowity zakaz elektroniki.',
+            promptText: 'Mój fizyczny azyl:',
+            placeholder: 'Fotel przy oknie w sypialni oraz ławka w pobliskim parku miejskim...'
+          }
+        ],
+        reflectionQuestions: [
+          'Jak zmienia się poziom Twojego lęku po 3 dniach bez czytania newsów politycznych?',
+          'O ile bogatsze staje się Twoje życie wewnętrzne, gdy przestajesz zalewać każdą wolną sekundę cudzymi opiniami?'
+        ]
+      }
     },
     {
       id: 'sec-16-10',
@@ -414,7 +707,8 @@ export const chapterSixteen: Chapter = {
         'Faza 1: Zależność (Dziecięctwo) — „Ty się mną opiekujesz, a jeśli coś idzie nie tak, to twoja wina”.',
         'Faza 2: Niezależność (Młodość) — „Niczego od nikogo nie potrzebuję, sam dam sobie radę, nikt mi nie będzie mówił, co mam robić”.',
         'Faza 3: Współzależność (Dojrzałość) — „Jestem wolną, autonomiczną jednostką z własnymi granicami, i świadomie decyduję się połączyć siły z innymi wolnymi ludźmi, bo razem możemy stworzyć coś nieskończenie większego niż w pojedynkę”.',
-        'To jest cel Tomu II: doprowadzić Cię do stanu mądrej, silnej, bezpiecznej Współzależności.'
+        'To jest cel Tomu II: doprowadzić Cię do stanu mądrej, silnej, bezpiecznej Współzależności.',
+        'PRZYKŁAD 7: Zespół inżynierów w centrum badań kosmicznych. Na etapie Zależności młodzi stażyści bali się podjąć jakąkolwiek decyzję bez podpisu dyrektora. Na etapie Niezależności trzej główni architekci zamknęli się w swoich pokojach, odmawiając dzielenia się kodem, rywalizując o miano „głównego geniusza”. Projekt łazika opóźnił się o 2 lata. Dopiero przejście do Współzależności — stworzenie otwartej bazy komponentów i cotygodniowych sesji wspólnego rozwiązywania problemów — pozwoliło zintegrować optykę, napęd i oprogramowanie w rekordowe 6 miesięcy.'
       ]
     },
     {

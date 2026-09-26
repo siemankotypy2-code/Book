@@ -430,6 +430,18 @@ export const chapterNine: Chapter = {
       paragraphs: [
         'Nazwa pochodzi ze sztuki teatralnej Gas Light (1938), w której mąż celowo przykręcał lampy gazowe w domu, a gdy żona mówiła, że światło przygasa, wmawiał jej, że traci zmysły.',
         'Współczesny gaslighting to wyrafinowana forma przemocy psychologicznej polegająca na konsekwentnym podważaniu percepcji, pamięci i zdrowia psychicznego ofiary. Zdania-klucze: „Jesteś przewrażliwiona”, „Nigdy czegoś takiego nie mówiłem”, „Masz paranoję”, „Wszyscy widzą, że coś z tobą nie tak”.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 3: Gaslighting w korporacji — Znikające ustalenia projektowe',
+          paragraphs: [
+            'Sytuacja i bohater: Starsza analityczka Ewa przygotowała raport zgodnie z ustaleniami z dyrektorem Dariuszem. Na zebraniu zarządu dyrektor publicznie gani Ewę: „Przecież mówiłem pani wyraźnie, że wskaźniki EBITDA liczymy według nowego wzoru. Jak mogła pani popełnić tak szkolny błąd?”. Ewa pamięta, że na spotkaniu w cztery oczy Dariusz nakazał stary wzór, lecz nie ma notatki mailowej.',
+            'Działający mechanizm: Gaslighting biurowy jako tarcza ochronna menedżera przed zarządem kosztem zaufania pracownika do własnej pamięci.',
+            'Jak rozpoznać w czasie rzeczywistym: Poczucie zawrotu głowy i gorączkowe zastanawianie się: „Czy ja naprawdę oszalałam i tego nie dosłyszałam?”.',
+            'Możliwa konstruktywna reakcja: Zasada „Paper Trail” (ślad papierowy): od tego momentu każde ustalenie z Dariuszem kończy się podsumowaniem mailowym: „Zgodnie z naszą rozmową, przyjmuję wskaźnik X”.',
+            'Wniosek dydaktyczny dla czytelnika: W relacjach z manipulatorem fakty istnieją tylko wtedy, gdy są zapisane na piśmie.'
+          ]
+        }
       ]
     },
     {
@@ -479,6 +491,18 @@ export const chapterNine: Chapter = {
       paragraphs: [
         'Karanie ciszą (Silent Treatment) to jedna z najbardziej toksycznych form biernej agresji. Odcięcie kontaktu wzrokowego i werbalnego aktywuje w mózgu ofiary przednią korę zakrętu obręczy — dokładnie ten sam obszar, który rejestruje ból fizyczny.',
         'Ofiara nie może się bronić, bo nie ma z kim rozmawiać. Chodzi po domu na palcach, błagając o słowo wyjaśnienia, gotowa na każde ustępstwo, byle przerwać lodowaty mur ciszy. To ewolucyjny koszmar wykluczenia ze stada przeniesiony do domowego salonu.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 4: Trzy dni ciszy po odmowie wyjazdu do teściów',
+          paragraphs: [
+            'Sytuacja i bohater: Łukasz (35 lat) powiedział żonie Kamili, że w nadchodzący weekend chce odpocząć w domu i nadrobić sen, zamiast jechać na 3-dniowy zjazd rodzinny. Kamila bez słowa wyszła z pokoju i przez kolejne 72 godziny nie odezwała się do niego ani słowem, ostentacyjnie trzaskając naczyniami.',
+            'Działający mechanizm: Karanie ciszą (Silent Treatment) jako kara za postawienie zdrowej granicy i próba wymuszenia uległości bez otwartej konfrontacji.',
+            'Jak rozpoznać w czasie rzeczywistym: Poczucie duszącego napięcia w mieszkaniu i automatyczna chęć natychmiastowego ugięcia się („Dobra, pojedziemy, tylko przestań milczeć”).',
+            'Możliwa konstruktywna reakcja: Odmowa tańczenia w tym spektaklu: „Kamila, widzę, że wybrałaś milczenie. Szanuję twoją potrzebę samotności. Kiedy zechcesz porozmawiać normalnym głosem o naszych planach, jestem do dyspozycji”. Następnie Łukasz zajmuje się własnymi sprawami bez żebrania o kontakt.',
+            'Wniosek dydaktyczny dla czytelnika: Karanie ciszą żywi się Twoim lękiem przed odrzuceniem. Gdy przestajesz prosić o kontakt, technika ta traci całą swoją moc operacyjną.'
+          ]
+        }
       ]
     },
     {

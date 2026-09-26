@@ -98,6 +98,48 @@ export const chapterFifteenExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Pomiędzy impulsem do działania a uruchomieniem sabotażu mija około 5 sekund. Odliczanie wstecz wymaga wysiłku kory przedczołowej i przerywa pętlę automatycznego lęku.',
     keyTakeaway: 'Rusz się w ciągu 5 sekund, zanim Twój mózg przekona Cię, że to zły pomysł.'
+  },
+  {
+    id: 8,
+    question: 'W jaki sposób Architektura Wyboru (Choice Architecture) i tarcie behawioralne redukują potrzebę stosowania siły woli (Sekcja 15.5)?',
+    topic: 'Tarcie Behawioralne w Samokontroli',
+    sectionRef: 'Sekcja 15.5',
+    options: [
+      { label: 'A', text: 'Wymagają noszenia specjalnych opasek uciskowych na nadgarstkach.', isCorrect: false },
+      { label: 'B', text: 'Zwiększają tarcie (liczbę kroków i wysiłek) dla zachowań niepożądanych (np. wyłączony telefon w innym pokoju) i zmniejszają tarcie do zera dla nawyków pożądanych (np. rozłożona mata do ćwiczeń), dzięki czemu kora przedczołowa nie musi toczyć walki z pokusą.', isCorrect: true },
+      { label: 'C', text: 'Służą wyłącznie do projektowania sklepów wielkopowierzchniowych.', isCorrect: false },
+      { label: 'D', text: 'Są całkowicie nieskuteczne u osób dorosłych.', isCorrect: false }
+    ],
+    explanation: 'Samokontrola oparta na wiecznym zmaganiu się z pokusą prędzej czy później przegra z wyczerpaniem metabolicznym. Mistrzowie samoregulacji nie mają silniejszej woli — po prostu usuwają pokusy ze swojego pola widzenia.',
+    keyTakeaway: 'Nie polegaj na silnej woli w jaskini pokus — zaprojektuj środowisko, w którym pokusa wymaga zbyt dużego wysiłku.'
+  },
+  {
+    id: 9,
+    question: 'Jaką rolę odgrywa Panoramiczne Pole Widzenia (Panoramic Vision) w somatycznej regulacji układu nerwowego w stanach ostrego stresu (Sekcja 15.7)?',
+    topic: 'Widzenie Panoramiczne a Nerw Błędny',
+    sectionRef: 'Sekcja 15.7',
+    options: [
+      { label: 'A', text: 'Służy wyłącznie pilotom myśliwców wojskowych.', isCorrect: false },
+      { label: 'B', text: 'Fizjologicznie przełącza aktywność z gałęzi współczulnej (widzenie tunelowe wywołane noradrenaliną) na gałąź przywspółczulną nerwu błędnego, obniżając tętno i napięcie mięśniowe bez udziału myśli werbalnych.', isCorrect: true },
+      { label: 'C', text: 'Poprawia ostrość widzenia po zmroku o 200%.', isCorrect: false },
+      { label: 'D', text: 'Wywołuje natychmiastowy sen głęboki.', isCorrect: false }
+    ],
+    explanation: 'Oczy są dosłownie wypustką mózgu na zewnątrz czaszki. Kiedy patrzysz wąsko (na ekran telefonu), pień mózgu podkręca czujność alarmową. Rozszerzenie pola widzenia na obrzeża wysyła biologiczny komunikat: „brak bezpośredniego zagrożenia życia”.',
+    keyTakeaway: 'Kiedy czujesz panikę, nie zmuszaj się do pozytywnego myślenia — unieś wzrok i zobacz horyzont.'
+  },
+  {
+    id: 10,
+    question: 'Dlaczego deficyt snu głębokiego (Faza NREM 3/4) dramatycznie zwiększa prawdopodobieństwo załamania samokontroli następnego dnia (Sekcja 15.2)?',
+    topic: 'Sen Wolnofalowy a Homeostaza Prefrontalna',
+    sectionRef: 'Sekcja 15.2',
+    options: [
+      { label: 'A', text: 'Powoduje zanik mięśni kończyn dolnych.', isCorrect: false },
+      { label: 'B', text: 'W fazie NREM układ glimfatyczny oczyszcza korę mózgową z toksycznych metabolitów (m.in. beta-amyloidu) i odnawia zapasy glikogenu w astrocytach; brak snu upośledza połączenia synaptyczne z ciałem migdałowatym o 60%.', isCorrect: true },
+      { label: 'C', text: 'Sprawia, że człowiek zapomina własne nazwisko.', isCorrect: false },
+      { label: 'D', text: 'Nie ma żadnego wpływu na procesy decyzyjne.', isCorrect: false }
+    ],
+    explanation: 'Matthew Walker (badacz snu z UC Berkeley) wykazał, że jedna nieprzespana noc cofa zdolność hamowania prefrontalnego do poziomu nietrzeźwego człowieka. Samokontrola bez 7–8 godzin snu to biologiczna fikcja.',
+    keyTakeaway: 'Sen to nie luksus ani nagroda — to fundament metaboliczny Twojej woli i etyki.'
   }
 ];
 
@@ -106,7 +148,7 @@ export const chapterFifteen: Chapter = {
   title: 'Samokontrola i Działanie: Ostatnia Twierdza Woli',
   subtitle: 'Co zrobić, kiedy wiesz, co powinieneś zrobić, ale nadal tego nie robisz — odporność, antyperfekcjonizm i system powrotu',
   leadParagraph: 'Dotarliśmy do punktu krytycznego całej podróży. Znasz już architekturę swojego umysłu z Tomu I: wiesz, jak System 1 walczy z Systemem 2, jak amygdala wzbudza afekt, jak uwaga selekcjonuje świat, jak percepcja tworzy iluzje i jak pamięć rekonstruuje przeszłość. Znasz mechanizmy grupy, komunikacji, wpływu, manipulacji, relacji, motywacji, nawyków i informacji z Tomu II. Masz całą wiedzę świata. I oto stajesz przed lustrem o 6:00 rano. Wszystko sprowadza się do tego jednego pytania: CO TERAZ ZROBISZ?',
-  totalEstimatedPages: 56,
+  totalEstimatedPages: 64,
   sections: [
     {
       id: 'sec-15-1',
@@ -149,7 +191,55 @@ export const chapterFifteen: Chapter = {
         'Roy Baumeister ukuł słynną teorię „Wyczerpania Ego” (Ego Depletion) — twierdząc, że siła woli to mięsień, który męczy się przy każdym wysiłku.',
         'Jednak rewolucyjne badania Carol Dweck z Stanford University rzuciły nowe światło na ten mechanizm. Okazało się, że wyczerpanie siły woli dotyczy głównie tych ludzi, którzy WIERZĄ, że wola jest ograniczona! Uczestnicy, którzy traktowali wysiłek umysłowy jako proces rozgrzewający i dający nową energię, osiągali znakomite wyniki nawet po długotrwałym teście.',
         'Wniosek: Zarządzanie energią to nie tylko kalorie, to przede wszystkim Twoja wewnętrzna narracja o tym, czym jest zmęczenie.'
-      ]
+      ],
+      caseStudyRef: {
+        id: 'cs-ch15-sport-kontuzja',
+        title: 'Ból Zerwanego Ścięgna: Jak Triatlonistka Przekształciła Mit Wyczerpania w Odporność',
+        subtitle: 'Od rozpaczy po zerwaniu Achillesa do zdobycia medalu dzięki przebudowie narracji woli',
+        protagonist: 'Klaudia (zawodniczka amatorskich mistrzostw Ironman, 34 lata) i jej fizjoterapeuta sportowy',
+        context: 'Trzy miesiące przed najważniejszym startem życia na Hawajach. Podczas treningu pęka ścięgno Achillesa.',
+        story: [
+          'Klaudia zdefiniowała całe swoje życie przez pryzmat żelaznej dyscypliny sportowej. Kiedy lekarz założył gips i zapowiedział 9 miesięcy bez biegania, Klaudia wpadła w głęboką depresję reaktywną.',
+          'Jej wewnętrzny monolog brzmiał: „Moja wola była wszystkim, co miałam. Bez sportu jestem nikim, całe moje poświęcenie poszło na marne”. Czuła chroniczne wyczerpanie, leżała w łóżku i unikała kontaktu z przyjaciółmi.',
+          'Punkt zwrotny: Fizjoterapeuta zadał jej pytanie: „Klaudio, a co jeśli Twoja wola nie zużywa się, lecz właśnie teraz przechodzi najtrudniejszy trening mentalny w Twoim życiu?”.',
+          'Zastosowanie koncepcji Carol Dweck: Klaudia przestała traktować rekonwalescencję jako przerwę w działaniu, a zaczęła jako aktywny trening adaptacyjny. Rozpisała harmonogram mikro-rehabilitacji, treningu siłowego górnych partii ciała na wózku i medytacji uważności.',
+          'Kiedy po 8 miesiącach wróciła na trasę, nie tylko odzyskała dawną formę, ale ukończyła zawody z rekordem życiowym. Powtarzała: „Ból fizyczny to informacja, ale to twoja interpretacja decyduje, czy zrobisz z niego grób, czy trampolinę”.'
+        ],
+        decisionTaken: 'Klaudia odrzuciła narrację o wyczerpaniu i zniszczeniu na rzecz aktywnego wykorzystania kryzysu jako treningu odporności kognitywnej.',
+        whatProtagonistSaw: 'Początkowo widziała w kontuzji koniec swojej tożsamości i dowód na kruchość planów.',
+        whatWasMissed: 'Że jej odporność psychiczna była niezależna od sprawności jednej nogi — tkwiła w sposobie reagowania na przeciwności.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Zmiana nastawienia (Mindset Shift wg Carol Dweck) z nastawienia na trwałość (Fixed Mindset) na nastawienie na rozwój (Growth Mindset).',
+          cognitiveBiases: [
+            { name: 'Katastrofizacja sportowa', description: 'Przekonanie, że jedna kontuzja przekreśla 10 lat wysiłku treningowego.', impact: 'Początkowy paraliż depresyjny.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Sublimacja energii afektywnej', explanation: 'Przekierowanie złości na systematyczną rehabilitację i pracę nad skupieniem.' }
+          ],
+          emotionalDynamic: 'Przejście od żałoby i wściekłości do niezniszczalnego spokoju wojownika.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Długofalowe planowanie i reewaluacja celów życiowych', activationState: 'Uruchomiona podczas tworzenia planu rehabilitacji' },
+            { region: 'Przednia kora zakrętu obręczy', role: 'Modulacja percepcji bólu fizycznego i psychicznego', activationState: 'Wyciszona przez techniki mindfulness' }
+          ],
+          neurotransmitters: [
+            { name: 'Endorfiny i serotonina', roleInScenario: 'Przywrócone przez sukcesywny progres w drobnych ćwiczeniach' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Trzeci miesiąc rehabilitacji', process: 'Mózg tworzy nowe mapy czuciowo-ruchowe, eliminując lęk przed obciążeniem nogi.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Przebudowa Dialogu Wewnętrznego', script: '„Moje ciało się leczy. Każdy dzień odpoczynku i ćwiczeń to cegiełka mojego powrotu do mistrzostwa”.', rationale: 'Chroni przed spiralą rozpaczy.' }
+          ]
+        },
+        alternativePath: 'Gdyby Klaudia uległa myśleniu o wyczerpaniu, zrezygnowałaby ze sportu, przybrała na wadze i pogrążyła się w chronicznym poczuciu żalu.',
+        readerQuestion: 'Jaki niespodziewany cios losu traktujesz jako wyrok, zamiast zobaczyć w nim najtrudniejszy trening Twojej woli?',
+        keyTakeaway: 'Prawdziwa siła nie polega na tym, że nigdy nie upadasz. Polega na tym, że każdą przeszkodę potrafisz zamienić w paliwo do wzrostu.'
+      }
     },
     {
       id: 'sec-15-4',
@@ -262,6 +352,41 @@ export const chapterFifteen: Chapter = {
         alternativePath: 'Gdyby Aneta nie przełamała paraliżu, rada wydziału skreśliłaby ją z listy doktorantów, a 5 lat jej ciężkiej pracy laboratoryjnej poszłoby na marne.',
         readerQuestion: 'Jaki wielki projekt w Twoim życiu czeka na realizację, sparaliżowany Twoim żądaniem, by od razu był arcydziełem?',
         keyTakeaway: 'Lepszy skończony i niedoskonały projekt w świecie rzeczywistym niż idealne arcydzieło gnijące w cmentarzu Twojej wyobraźni.'
+      },
+      exerciseRef: {
+        id: 'ex-15-tarcie-behawioralne',
+        title: 'Architektura Tarcia: Projektowanie Środowiska Bezsilnej Woli',
+        subtitle: 'Zbuduj bariery dla złych nawyków i usuń przeszkody dla dobrych wyborów',
+        objective: 'Praktyczne przekonfigurowanie przestrzeni fizycznej i cyfrowej w celu wyeliminowania tarcia decyzyjnego.',
+        durationMinutes: 20,
+        neuroScientificFoundation: 'Zmniejszenie liczby decyzji w ciągu dnia (Decision Fatigue) chroni pulę glukozy i neuroprzekaźników w grzbietowo-bocznej korze przedczołowej.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybierz destrukcyjny automatyzm',
+            instruction: 'Określ nawyk, któremu ulegasz z powodu zbyt łatwego dostępu (np. social media, słodycze, seriale).',
+            promptText: 'Mój automatyczny pożeracz energii:',
+            placeholder: 'Przeglądanie Instagrama przed snem i podjadanie czekolady w trakcie pracy...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Zainstaluj 3 stopnie tarcia',
+            instruction: 'Dodaj co najmniej 3 fizyczne przeszkody dzielące Cię od tego zachowania.',
+            promptText: 'Moje 3 bariery tarcia:',
+            placeholder: '1. Aplikacja wylogowana i ukryta w folderze; 2. Telefon ładowany w korytarzu; 3. Brak słodyczy w domu...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Uprość nawyk pożądany do 0 sekund',
+            instruction: 'Przygotuj środowisko dla nawyku pożądanego tak, by wymagał zerowego wysiłku przygotowawczego.',
+            promptText: 'Moja autostrada bez tarcia:',
+            placeholder: 'Książka leży otwarta na poduszce, butelka z wodą stoi przy biurku...'
+          }
+        ],
+        reflectionQuestions: [
+          'Dlaczego poleganie na samej silnej woli w pokoju pełnym pokus jest z góry skazane na porażkę?',
+          'O ile łatwiej jest podjąć dobrą decyzję, gdy zła wymaga ubrania się i wyjścia z domu?'
+        ]
       }
     },
     {
@@ -274,7 +399,8 @@ export const chapterFifteen: Chapter = {
       paragraphs: [
         'Mel Robbins odkryła fenomen psychologiczny zwany Zasadą 5 Sekund. Kiedy w Twojej głowie pojawia się instynkt do działania ukierunkowanego na cel (wstać z łóżka, odezwać się na zebraniu, pójść pobiegać), masz dokładnie 5 sekund na wykonanie fizycznego ruchu.',
         'Jeśli nie ruszysz się w ciągu 5 sekund, Twoje zwoje podstawy mózgu uruchomią automatyczny program ochronny: pojawią się wymówki, racjonalizacje, zmęczenie i lęk.',
-        'Odliczanie wstecz: 5 - 4 - 3 - 2 - 1 zmusza korę przedczołową do skupienia uwagi i przerywa pętlę wahania. Na słowo „1” wykonujesz ruch somatyczny.'
+        'Odliczanie wstecz: 5 - 4 - 3 - 2 - 1 zmusza korę przedczołową do skupienia uwagi i przerywa pętlę wahania. Na słowo „1” wykonujesz ruch somatyczny.',
+        'PRZYKŁAD 6: Poranny trening pływacki Jacka o 6:00 rano. Kiedy dzwoni budzik, a za oknem jest ciemno i leje deszcz, w jego głowie natychmiast odpala się negocjator: „Jestem zmęczony, pójdę popływać jutro, sen jest ważniejszy”. Jacek wie, że każda sekunda leżenia w pościeli zwiększa opór. Przerywa monolog odliczaniem na głos: 5 - 4 - 3 - 2 - 1 — na „1” odrzuca kołdrę i stawia stopy na zimnej podłodze. Gdy tylko ciało jest w pionie, negocjator traci siłę głosu.'
       ]
     },
     {
@@ -290,7 +416,96 @@ export const chapterFifteen: Chapter = {
         '1. Westchnienie Fizjologiczne (Physiological Sigh): Dwa szybkie wdechy przez nos (drugi dopompowuje pęcherzyki płucne) i długi, powolny wydech ustami. Dwa takie powtórzenia natychmiast wyrzucają nadmiar CO2 i stymulują nerw błędny.',
         '2. Panoramiczne Pole Widzenia: Przełączenie wzroku z widzenia tunelowego (fokus na smartfonie lub problemie) na widzenie peryferyjne (rejestrowanie ścian pokoju, sufitu i horyzontu bez ruszania gałkami ocznymi). Fizjologicznie wyłącza to układ współczulny.',
         'PRZYKŁAD 4: Doświadczony pilot linii lotniczych kapitan Tomasz podczas lądowania we mgle przy silnym wietrze bocznym słyszy alarm ostrzegający o uskoku wiatru (Windshear). Jego puls skacze do 140 uderzeń. Zamiast ulec panice, wykonuje jedno głębokie westchnienie fizjologiczne, rozszerza pole widzenia na wszystkie przyrządy pokładowe i ze stuprocentowym opanowaniem wykonuje procedurę Go-Around (odejście na drugi krąg), ratując 180 pasażerów.'
-      ]
+      ],
+      caseStudyRef: {
+        id: 'cs-ch15-finanse-impuls',
+        title: 'Gorączka Zakupów: Jak Natalia Rozbroiła Pętlę Impulsywnego Wydawania pod Wpływem Stresu',
+        subtitle: 'Od 40 000 zł długu na kartach kredytowych do somatycznego panowania nad zachciankami',
+        protagonist: 'Natalia (Key Account Manager w korporacji mediowej, 30 lat) i certyfikowany psychodietetyk/doradca finansowy',
+        context: 'Permanentny stres sprzedażowy, praca pod presją kwartalnych targetów i chroniczna bezsenność.',
+        story: [
+          'Natalia po każdym ciężkim zebraniu z dyrektorem czuła potworny ucisk w klatce piersiowej i poczucie pustki. Aby stłumić ten ból, wchodziła na aplikacje e-commerce (Zalando, luksusowe kosmetyki, biżuteria).',
+          'W ułamku sekundy kupowała ubrania za 2000–3000 zł. Przez 15 minut czuła euforię (wyrzut dopaminy), po czym pojawiało się obezwładniające poczucie winy, wstyd i lęk.',
+          'W ciągu 2 lat zgromadziła 40 000 zł zadłużenia na kartach kredytowych. Szafy pękały w szwach od nierozpakowanych paczek z metkami.',
+          'Próby „wzięcia się w garść” i przysięgi o oszczędzaniu kończyły się fiaskiem przy pierwszym większym kryzysie w pracy.',
+          'Punkt zwrotny: Zamiast obwiniać swój „słaby charakter”, Natalia rozpoczęła trening regulacji somatycznej. Zrozumiała, że zakupy były dla jej układu nerwowego jedynym znanym sposobem na wyciszenie pożaru w ciele migdałowatym.',
+          'Protokół interwencji: 1. Usunięcie zapisanych kart z telefonu i zainstalowanie blokady zakupów na 48 godzin (Twarde tarcie).',
+          '2. W chwili impulsu: 3 westchnienia fizjologiczne Hubermana, 10 minut spaceru na świeżym powietrzu i panoramiczne pole widzenia.',
+          '3. Tłumaczenie potrzeby: „Czego moje ciało naprawdę teraz potrzebuje? Nie potrzebuję kolejnej sukienki — potrzebuję bezpieczeństwa, odpoczynku i przytulenia”.',
+          'W ciągu 18 miesięcy Natalia spłaciła cały dług, zamknęła karty kredytowe i nauczyła się regulować napięcie przez jogę i saunę.'
+        ],
+        decisionTaken: 'Natalia zrozumiała biologiczne podłoże swoich impulsów i zastąpiła destrukcyjny nawyk somatyczną samoregulacją.',
+        whatProtagonistSaw: 'Widziała w sobie zakupoholiczkę pozbawioną zasad moralnych i woli walki.',
+        whatWasMissed: 'Że zakupy były desperacką próbą samoleczenia przewlekłego stanu wyczerpania i lęku przed odrzuceniem w korporacji.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Regulacja afektu przez zachowania kompulsywne (Dopaminergic Coping) w stanie przeciążenia układu współczulnego.',
+          cognitiveBiases: [
+            { name: 'Dyskontowanie odroczone', description: 'Przecenianie natychmiastowej ulgi z zakupu ponad długofalowe bezpieczeństwo finansowe.', impact: 'Pętla zadłużenia.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Kompulsywne rozładowanie napięcia', explanation: 'Użycie rytuału kliknięcia „Kup teraz” jako chemicznego znieczulenia emocji.' }
+          ],
+          emotionalDynamic: 'Przejście od paniki i wstydu do ugruntowanego poczucia bezpieczeństwa somatycznego.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Jądro półleżące (Nucleus Accumbens)', role: 'Wzbudzenie pożądania i oczekiwania nagrody', activationState: 'Nadaktywne pod wpływem reklam push' },
+            { region: 'Przednia wyspa', role: 'Sygnalizacja somatycznego cierpienia i pustki', activationState: 'Ukojona po ćwiczeniach oddechowych' }
+          ],
+          neurotransmitters: [
+            { name: 'Dopamina i endorfiny', roleInScenario: 'Chwilowy pik dopaminowy po transakcji zastąpiony zjazdem serotoniny' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Fala pragnienia', process: 'Trwa maksymalnie 90 sekund, jeśli nie zostanie podsycana klikaniem w telefon.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [
+            { tactic: 'One-Click Buy i Powiadomienia Push', description: 'Maksymalne obniżenie tarcia przez platformy e-commerce w celu wykorzystania impulsywności.', vulnerabilityExploited: 'Zmęczenie wieczorne i samotność' }
+          ],
+          counterMeasures: [
+            { step: 'Kwarantanna 48 godzin', script: '„Dodaję do koszyka, ale kupię dopiero pojutrze, jeśli nadal będę tego potrzebować”.', rationale: 'Pozwala opaść fali dopaminowej.' }
+          ]
+        },
+        alternativePath: 'Gdyby Natalia nie wdrożyła regulacji somatycznej, wpadłaby w pętlę chwilówek, windykację komorniczą i załamanie nerwowe.',
+        readerQuestion: 'Jakie zachowania kompulsywne (jedzenie, zakupy, gry, scrollowanie) stosujesz, gdy Twoje ciało krzyczy o odpoczynek?',
+        keyTakeaway: 'Nie walcz z zachcianką siłą woli. Zapytaj swoje ciało, jaki prawdziwy ból próbuje w ten sposób znieczulić.'
+      },
+      exerciseRef: {
+        id: 'ex-15-regulacja-nerwu-blednego',
+        title: 'Somatyczny Reset Układu Nerwowego: Protokół Hubermana',
+        subtitle: 'Błyskawiczne obniżenie tętna i tonusu współczulnego w warunkach ostrego pobudzenia',
+        objective: 'Nauczenie się somatycznej deaktywacji reakcji walki/ucieczki w mniej niż 60 sekund.',
+        durationMinutes: 10,
+        neuroScientificFoundation: 'Fizjologiczne westchnienie mechanicznie rozszerza pęcherzyki płucne i stymuluje receptory rozciągania w sercu, wyzwalając acetylocholinę z nerwu błędnego.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Fizjologiczne Westchnienie (Physiological Sigh)',
+            instruction: 'Wykonaj głęboki wdech przez nos, na samym końcu dobierz jeszcze odrobinę powietrza krótkim dopompowaniem, po czym wypuść powietrze powoli przez usta.',
+            promptText: 'Wykonaj 3 cykle oddechowe i zaobserwuj tętno:',
+            placeholder: 'Czuję, jak ramiona opadają, a puls w skroniach zaczyna zwalniać...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Włączenie widzenia panoramicznego',
+            instruction: 'Nie ruszając głową ani oczami, rozszerz pole uwagi tak, by jednocześnie widzieć lewą i prawą ścianę pomieszczenia oraz podłogę i sufit.',
+            promptText: 'Co rejestrujesz na obrzeżach pola widzenia?',
+            placeholder: 'Rejestruję kontury mebli, światło z okna, przestrzeń pokoju...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Rozluźnienie żwaczy i języka',
+            instruction: 'Opuść dolną szczękę, pozwól językowi spocząć miękko na dnie jamy ustnej.',
+            promptText: 'Jaki stan pojawia się w ciele?',
+            placeholder: 'Napięcie w karku ustępuje, wraca poczucie uziemienia i spokoju...'
+          }
+        ],
+        reflectionQuestions: [
+          'Dlaczego żadne logiczne argumenty nie działają, dopóki Twoje ciało znajduje się w stanie alarmu pnia mózgu?',
+          'O ile łatwiej jest podjąć mądrą decyzję z poziomu zrelaksowanego ciała?'
+        ]
+      }
     },
     {
       id: 'sec-15-8',
@@ -302,7 +517,42 @@ export const chapterFifteen: Chapter = {
       paragraphs: [
         'Większość ludzi wierzy w archaiczny mit pedagogiczny: „Jeśli nie będę dla siebie bezwzględny, jeśli nie będę krzyczał na siebie w głowie, to rozleniwię się i niczego w życiu nie osiągnę”.',
         'Neuronauka i badania Kristin Neff udowadniają coś dokładnie przeciwnego: Krytyk Wewnętrzny aktywuje ciało migdałowate i oś stresu HPA. Będąc swoim własnym katem, żyjesz w permanentnym stanie zagrożenia wewnętrznego. Rezultat? Chroniczne zmęczenie, depresja i unikanie trudnych wyzwań.'
-      ]
+      ],
+      exerciseRef: {
+        id: 'ex-15-dialog-ze-sojusznikiem',
+        title: 'Przekształcenie Wewnętrznego Kata w Mądrego Sojusznika',
+        subtitle: 'Zdemontuj toksyczny monolog wewnętrzny i zastąp go życzliwym przywództwem',
+        objective: 'Nauczenie się rozpoznawania głosu samokrytyki i przeformułowywania go na język wsparcia.',
+        durationMinutes: 15,
+        neuroScientificFoundation: 'Aktywacja systemu kojenia (Soothing System Paula Gilberta) poprzez życzliwy ton głosu stymuluje wydzielanie oksytocyny i opiatów endogennych.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Złap głos kata na gorącym uczynku',
+            instruction: 'Zapisz dosłownie słowa, którymi biczujesz się po potknięciu.',
+            promptText: 'Co mówi mój wewnętrzny krytyk?',
+            placeholder: '„Znowu to zepsułeś, nigdy niczego nie osiągniesz, jesteś leniwy i beznadziejny”...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Odkryj lęk stojący za krytykiem',
+            instruction: 'Zadaj swojemu krytykowi pytanie: „Czego tak naprawdę się boisz, że tak na mnie krzyczysz?”.',
+            promptText: 'Jaki lęk maskuje ta agresja?',
+            placeholder: 'Boi się, że zostanę odrzucony, wyśmiany i zostanę sam bez środków do życia...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Odpowiedź Mądrego Sojusznika',
+            instruction: 'Przeformułuj ten komunikat tak, jak powiedziałbyś to swojemu dziecku lub najlepszemu przyjacielowi.',
+            promptText: 'Głos Sojusznika:',
+            placeholder: '„Widzę, jak bardzo ci zależy. To potknięcie boli, ale jesteśmy w tym razem. Odpocznijmy chwilę i spróbujmy inaczej”...'
+          }
+        ],
+        reflectionQuestions: [
+          'Czy pozwoliłbyś komukolwiek odzywać się do Ciebie takimi słowami, jakimi biczujesz się sam?',
+          'O ile większą odwagę do podejmowania ryzyka zyskujesz, wiedząc, że po błędzie nie spotka Cię wewnętrzna egzekucja?'
+        ]
+      }
     },
     {
       id: 'sec-15-9',
@@ -315,7 +565,7 @@ export const chapterFifteen: Chapter = {
         'Samowspółczucie (Self-Compassion) wg prof. Kristin Neff składa się z 3 nierozłącznych elementów:',
         '1. Uważność (Mindfulness): Zauważenie własnego bólu bez wyolbrzymiania ani wypierania („To jest chwila cierpienia”).',
         '2. Wspólne Człowieczeństwo (Common Humanity): Uświadomienie sobie, że cierpienie i błędy są nieodłączną częścią ludzkiego losu — nie jesteś jedynym, który nawalił („Wszyscy ludzie czasami zawodzą, to nie czyni mnie potworem”).',
-        '3. Życzliwość dla Samego Siebie (Self-Kindness): Potraktowanie siebie z takim samym ciepłem i wsparciem, z jakim potraktowałbyś płaczącego najlepszego przyjaciela.',
+        '3. Życzliwość dla Samego Siebie (Self-Kindness): Potraktowanie siebie z takim同 cieplem i wsparciem, z jakim potraktowałbyś płaczącego najlepszego przyjaciela.',
         'PRZYKŁAD 5: Młody programista Marek po raz pierwszy wypuszcza kod na produkcję w dużej firmie fintechowej. W kodzie był krytyczny błąd, który na 20 minut zablokował transakcje kartowe klientów. Marek siedzi w toalecie, trzęsąc się z przerażenia, a w jego głowie rozbrzmiewa głos ojca: „Jesteś zerem, znowu wszystko zepsułeś, wyrzucą cię z wilczym biletem!”. Zamiast utonąć w ataku paniki, Marek stosuje procedurę samowspółczucia: kładzie dłoń na sercu, bierze głęboki oddech i mówi sobie: „Popełniłem poważny błąd. Czuję ogromny wstyd. Ale ten błąd nie definiuje mojej wartości jako człowieka. Każdy senior w tej firmie kiedyś położył serwer. Idę do zespołu, przyznam się do błędu i naprawimy to razem”. Zespół przyjął jego zgłoszenie z szacunkiem, błąd naprawiono w 15 minut, a Marek zyskał reputację dojrzałego, odpowiedzialnego inżyniera.'
       ],
       caseStudyRef: {
@@ -381,7 +631,8 @@ export const chapterFifteen: Chapter = {
         'Brené Brown, wybitna badaczka wstydu i odporności psychicznej z University of Houston, postawiła bezlitosną diagnozę:',
         '„Perfekcjonizm nie jest dążeniem do bycia najlepszym. Nie jest pracowitością ani samodoskonaleniem. Perfekcjonizm to ważąca 20 ton tarcza ochronna, którą nosimy ze sobą, wierząc, że uchroni nas przed zranieniem, krytyką, oceną i wstydem”.',
         'Perfekcjonista mówi: „Jeśli będę idealnie wyglądać, idealnie pracować i idealnie żyć, nikt mnie nigdy nie skrzywdzi”. To tragiczna iluzja. Perfekcjonizm prowadzi do paraliżu decyzyjnego, paniki przed rozpoczęciem dzieła i chronicznego niezadowolenia.',
-        'Antidotum na perfekcjonizm jest Antyperfekcjonizm Pragmatyczny: skupienie się na procesie, miłość do powtarzalnych prób i duma z gotowości do popełniania błędów w służbie nauki.'
+        'Antidotum na perfekcjonizm jest Antyperfekcjonizm Pragmatyczny: skupienie się na procesie, miłość do powtarzalnych prób i duma z gotowości do popełniania błędów w służbie nauki.',
+        'PRZYKŁAD 7: Wdrożenie aplikacji mobilnej przez startup Joanny. Zamiast szlifować każdy piksel przez 18 miesięcy w obawie przed krytyką użytkowników, Joanna przyjęła regułę MVP (Minimum Viable Product): „Wypuszczamy wersję spełniającą 80% naszych założeń po 4 miesiącach. Wolimy usłyszeć bolesny feedback od 100 pierwszych użytkowników niż spędzić rok na dopieszczaniu funkcji, których nikt nie potrzebuje”. Aplikacja zadebiutowała z drobnymi błędami, ale szybkie aktualizacje na bazie uwag klientów przyniosły firmie 50 000 subskrybentów w pierwszym kwartale.'
       ]
     },
     {
@@ -459,7 +710,57 @@ export const chapterFifteen: Chapter = {
         'Godziny 4–12: Drenaż emocjonalny. Rozmowa z JEDNĄ zaufaną osobą (Rozdział 10), która potrafi wysłuchać bez dawania rad.',
         'Godziny 12–24: Zamiana traumy w lekcję. Weź kartkę i napisz: 1. Co było pod moją kontrolą? 2. Co było poza moją kontrolą? 3. Jaką jedną procedurę zmienię jutro rano?',
         'W ten sposób skracasz czas paraliżu z 6 miesięcy do jednej doby.'
-      ]
+      ],
+      caseStudyRef: {
+        id: 'cs-ch15-restart-biznes',
+        title: 'Gorycz Bankructwa: Jak Szef Kuchni Odbudował Się po Utracie Dorobku 20 Lat',
+        subtitle: 'Zastosowanie protokołu 24 godzin po licytacji komorniczej restauracji',
+        protagonist: 'Wojciech (szef kuchni i restaurator, 51 lat) i jego dorosła córka Agata',
+        context: 'Bankructwo renomowanej restauracji w centrum Krakowa po pandemii i drastycznych podwyżkach cen gazu.',
+        story: [
+          'Wojciech włożył w lokal całe swoje oszczędności życia. Kiedy komornik okleił taśmą piec konwekcyjny i zamknął lokal, Wojciech wrócił do pustego mieszkania i przez 48 godzin leżał bez ruchu twarzą do ściany.',
+          'Pojawiły się myśli rezygnacyjne: „Mój czas minął, jestem nikim, zawiodłem moich pracowników”. Jego ciało było w stanie grzbietowo-błędnego zamrożenia (Dorsal Vagal Shutdown).',
+          'Córka Agata nie pocieszała go na siłę frazesami typu „będzie dobrze”. Przyniosła gorący rosół, zaparzyła herbatę i wdrożyła Protokół 24 Godzin:',
+          'Godziny 0–8: Pełny odpoczynek somatyczny, gorąca kąpiel, wyłączony telefon, sen.',
+          'Godziny 8–16: Drenaż emocjonalny — Wojciech wypłakał cały ból i wstyd przed córką, która trzymała go za rękę bez oceniania.',
+          'Godziny 16–24: Twarda analiza faktów: 1. Co było poza kontrolą? (Pandemia, wzrost cen gazu o 600%, inflacja). 2. Co było pod kontrolą? (Zbyt wysoki czynsz, brak poduszki finansowej). 3. Co dalej? (Kunszt kulinarny Wojciecha nie zbankrutował — zbankrutowała jedynie spółka z o.o.).',
+          'Wojciech odzyskał godność. Zamiast otwierać kolejny zadłużony lokal, przyjął ofertę objęcia roli szefa kuchni w butikowym hotelu na Mazurach. Po roku jego autorskie menu zdobyło prestiżową rekomendację przewodnika kulinarnego.'
+        ],
+        decisionTaken: 'Wojciech oddzielił bankructwo biznesowe od bankructwa swojej wartości osobistej dzięki rygorystycznemu przejściu przez fazy protokołu Bounce-Back.',
+        whatProtagonistSaw: 'Początkowo widział w komorniku koniec swojego życia i nieodwracalną hańbę.',
+        whatWasMissed: 'Że jego talent, pasja i relacja z córką pozostały nienaruszone, a rynek natychmiast docenił jego kompetencje, gdy przestał tonąć we wstydzie.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Przełamanie paraliżu zamrożenia pourazowego (Trauma Freeze) przez sekwencyjną pomoc somatyczną i społeczną.',
+          cognitiveBiases: [
+            { name: 'Nadmierne uogólnienie', description: '„Upadła restauracja, więc upadło całe moje życie”.', impact: 'Głęboka prostracja psychiczna.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Regresja i odcięcie somatyczne', explanation: 'Leżenie bez ruchu jako biologiczna reakcja na bezradność.' }
+          ],
+          emotionalDynamic: 'Przejście od bezdennej rozpaczy przez bezpieczną żałobę do powrotu do pasji twórczej.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Grzbietowy kompleks nerwu błędnego', role: 'Wzbudzenie stanu zamrożenia i hipometabolizmu', activationState: 'Odblokowany przez ciepły posiłek i dotyk córki' },
+            { region: 'Hipokamp', role: 'Oddzielenie przeszłego bankructwa od teraźniejszych możliwości zawodowych', activationState: 'Uruchomiony w fazie racjonalnej analizy' }
+          ],
+          neurotransmitters: [
+            { name: 'Oksytocyna i serotonina', roleInScenario: 'Przywrócenie poczucia więzi i bezpieczeństwa' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Druga doba po interwencji', process: 'Powrót apetytu i energii witalnej do działania.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Rozdzielenie Tożsamości od Podmiotu Prawnego', script: '„Firma z o.o. to tylko instrument prawny. Moje dłonie, moje smaki i moje doświadczenie są ze mną”.', rationale: 'Chroni jądro tożsamości przed anihilacją.' }
+          ]
+        },
+        alternativePath: 'Gdyby Wojciech pozostał sam w pustym mieszkaniu, mógłby ulec nałogowi alkoholowemu lub popaść w chroniczną depresję kliniczną.',
+        readerQuestion: 'Jaką porażkę w swoim życiu utożsamiasz z własną wartością jako człowieka, zamiast potraktować ją jako nieudany eksperyment rynkowy?',
+        keyTakeaway: 'Nie jesteś swoją firmą, swoim stanowiskiem ani swoim projektem. Porażka to wydarzenie w czasie, a nie Twoja tożsamość.'
+      }
     },
     {
       id: 'sec-15-13',
