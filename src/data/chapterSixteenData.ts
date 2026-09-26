@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 
 export const chapterSixteenExamQuestions: ExamQuestion[] = [
   {
@@ -70,6 +70,34 @@ export const chapterSixteenExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Mapa własnych mechanizmów łączy Tom I (wnętrze umysłu) z Tomem II (świat relacji społecznych). Staje się Twoją prywatną instrukcją obsługi samego siebie w obliczu burz współczesnego świata.',
     keyTakeaway: 'Poznaj samego siebie, a zrozumiesz cały świat.'
+  },
+  {
+    id: 6,
+    question: 'W koncepcji Stephena Coveya dotyczącej dojrzałości psychologicznej (Sekcja 16.11), szczytowym stadium rozwoju człowieka jest:',
+    topic: 'Trzy Stadia Dojrzałości Coveya: Od Zależności do Współzależności',
+    sectionRef: 'Sekcja 16.11',
+    options: [
+      { label: 'A', text: 'Zależność — całkowite oddanie kontroli instytucjom lub rodzicom.', isCorrect: false },
+      { label: 'B', text: 'Współzależność (Interdependence) — stan, w którym wolna, niezależna jednostka świadomie łączy siły z innymi autonomicznymi ludźmi, tworząc synergię wykraczającą poza możliwości jednostki.', isCorrect: true },
+      { label: 'C', text: 'Samotna izolacja w jaskini bez kontaktu z technologią.', isCorrect: false },
+      { label: 'D', text: 'Agresywna dominacja nad słabszymi członkami grupy.', isCorrect: false }
+    ],
+    explanation: 'Niezależność („sam sobie poradzę”) to dopiero etap pośredni wyjścia z zależności. Prawdziwa mądrość dorosłego to współzależność oparta na szacunku, zaufaniu i wspólnej misji.',
+    keyTakeaway: 'Niezależność daje wolność, ale dopiero współzależność daje wielkie owoce.'
+  },
+  {
+    id: 7,
+    question: 'Co oznacza pojęcie „Podwójnego Sprzężenia Zwrotnego” (Double-Loop Learning) Chrisa Argyrisa w analizie błędów życiowych (Sekcja 16.7)?',
+    topic: 'Uczenie się Podwójnej Pętli Argyrisa',
+    sectionRef: 'Sekcja 16.7',
+    options: [
+      { label: 'A', text: 'Wykonywanie dwóch okrążeń bieżni po każdej pomyłce.', isCorrect: false },
+      { label: 'B', text: 'Zamiast pytać tylko „Jak naprawić ten pojedynczy błąd?” (pojedyncza pętla), pytasz „Jakie fundamentalne założenia, wartości i modele myślowe doprowadziły do powstania tego problemu?” (podwójna pętla).', isCorrect: true },
+      { label: 'C', text: 'Podwójne sprawdzanie faktury przed wysłaniem do księgowości.', isCorrect: false },
+      { label: 'D', text: 'Technika programistyczna w językach niskiego poziomu.', isCorrect: false }
+    ],
+    explanation: 'Pojedyncza pętla to termostat: jest za zimno, więc włącza grzanie. Podwójna pętla pyta: „Dlaczego w ogóle mamy okno otwarte w środku zimy i czy termostat jest ustawiony na właściwą temperaturę?”.',
+    keyTakeaway: 'Nie poprawiaj w kółko tych samych objawów — zbadaj ukryte założenia leżące u podstaw Twoich decyzji.'
   }
 ];
 
@@ -78,7 +106,7 @@ export const chapterSixteen: Chapter = {
   title: 'Człowiek Jako System Społeczny: Wielka Synteza Dzieła',
   subtitle: 'Jak połączyć mechanizmy umysłu, relacji i wpływu w jeden spójny system świadomego życia',
   leadParagraph: 'Dotarliśmy do szczytu góry. Przez szesnaście rozbudowanych rozdziałów badaliśmy człowieka w każdym wymiarze: od neuroprzekaźników w szczelinie synaptycznej, przez pożary ciała migdałowatego, reflektor uwagi i pułapki percepcji w Tomie I, aż po presję stada, sztukę rozmowy, etykę wpływu, sidła manipulacji, architekturę więzi, nawyki, potop informacyjny, negocjacje i hart woli w Tomie II. Teraz pora połączyć te wszystkie rzeki w jeden potężny ocean zrozumienia.',
-  totalEstimatedPages: 56,
+  totalEstimatedPages: 60,
   sections: [
     {
       id: 'sec-16-1',
@@ -98,145 +126,287 @@ export const chapterSixteen: Chapter = {
         '3. Filtry percepcji (Tom I, Rozdział 4) i archiwa pamięci (Tom I, Rozdział 5) nadają mu wstępne znaczenie.',
         '4. Ciało migdałowate i układ afektywny (Tom I, Rozdział 2) wywołują somatyczny skok tętna.',
         '5. System 1 i System 2 (Tom I, Rozdział 1) toczą walkę o wybór reakcji.',
-        '6. Normy grupy i hierarchia społeczna (Rozdział 6) wyznaczają granice tego, co wypada zrobić.',
-        '7. Narzędzia komunikacji (Rozdział 7) i perswazji (Rozdział 8) manifestują decyzję w słowach.',
-        '8. Relacja (Rozdział 10) lub konflikt (Rozdział 14) otrzymują uderzenie fali zwrotnej.',
-        '9. Zwoje podstawy (Rozdział 12) utrwalają to zachowanie jako nawyk na przyszłość.',
-        '10. Wola i odporność psychiczna (Rozdział 15) decydują o tym, czy wyciągniesz z tego lekcję, czy pogrążysz się w żalu.',
-        'Nie jesteś zbiorem luźnych funkcji psychicznych. Jesteś jednym, pulsującym, zintegrowanym systemem społeczno-biologicznym.'
+        '6. Wpływ grupy i normy społeczne (Rozdział 6) wyznaczają granice tego, co dopuszczalne.',
+        '7. Komunikacja i język (Rozdział 7) nadają formę Twojemu komunikatowi na zewnątrz.',
+        '8. Odbiorca reaguje przez własną matrycę obaw, nawyków (Rozdział 12) i mechanizmów obronnych.',
+        'Widzisz to? Jesteś żywym węzłem w gigantycznej sieci kognitywno-społecznej.'
       ]
     },
     {
       id: 'sec-16-2',
       pageNumber: 770,
       sectionNumber: '16.2',
-      title: 'Gdzie może pojawić się błąd? Diagnostyka systemu w 10 punktach',
+      title: 'Umysł w sieci relacji: Od psychologii jednostki do myślenia systemowego',
       category: 'teoria',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Kiedy Twoje życie zaczyna przypominać pole minowe, nie pytaj z rozpaczą: „Dlaczego to znowu mi się przytrafia?”. Sprawdź swój system jak inżynier badający awarię reaktora:',
-        'Punkt 1 (Uwaga): Czy moje rozproszenie nie wynika ze zbyt wielu powiadomień w telefonie?',
-        'Punkt 2 (Ciało): Czy moja wybuchowość w domu nie jest prostym skutkiem 5 godzin snu i głodu (HALT)?',
-        'Punkt 3 (Percepcja): Czy nie ulegam Podstawowemu Błędowi Atrybucji, przypisując partnerowi złą wolę zamiast zmęczenia?',
-        'Punkt 4 (Relacje): Czy nie zapomniałem o Magicznej Proporcji 5:1, rzucając same krytyczne uwagi?',
-        'Punkt 5 (Granice): Czy moje poczucie wypalenia nie wynika z panicznego lęku przed powiedzeniem „NIE” szefowi?',
-        'Punkt 6 (Manipulacja): Czy ktoś w moim otoczeniu nie stosuje systematycznego gaslightingu lub DARVO?',
-        'Punkt 7 (Negocjacje): Czy walczę o sztywne stanowisko, zamiast zapytać o interesy stron?',
-        'Punkt 8 (Nawyki): Czy moje otoczenie nie jest zastawione pułapkami dopaminowymi?',
-        'Punkt 9 (Informacja): Czy nie karmię swojego mózgu toksycznymi wiadomościami budzącymi lęk?',
-        'Punkt 10 (Samokrytyka): Czy nie biczuję się za to, że jestem tylko człowiekiem?'
+        'Przez ponad sto lat psychologia badała człowieka tak, jakby był samotną wyspą — próbówką w laboratorium. Badano pamięć, refleks, inteligencję jednostki.',
+        'Jednak rewolucja systemowa Petera Senge i Gregory’ego Batesona ujawniła, że jednostka wyjęta ze swojego kontekstu społecznego jest abstrakcją. Twoje zachowanie zależy w 80% od pola sił, w którym się poruszasz.',
+        'PRZYKŁAD 1: Wybitny programista Krzysztof, spokojny i cichy w domu, w nowej korporacji staje się agresywny i opryskliwy. Dyrektor HR wysyła go na „trening panowania nad złością” (błąd leczenia jednostki). Wnikliwy audyt systemowy wykazał, że w firmie premie przyznawano wyłącznie za publiczne wytykanie błędów kolegom, a zarząd nagradzał bezwzględną rywalizację. Zachowanie Krzysztofa było racjonalną adaptacją do patologicznego systemu nagród.'
       ]
     },
     {
       id: 'sec-16-3',
       pageNumber: 774,
       sectionNumber: '16.3',
-      title: 'Człowiek wpływa na człowieka: Niewidzialna sieć rezonansu',
+      title: 'Sprzężenia zwrotne: Pętle wzmacniające i równoważące w życiu codziennym',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'W fizyce kwantowej istnieje zjawisko splątania; w neurobiologii istnieje zjawisko Rezonansu Limbicznego (Lewis, Amini, Lannon).',
-        'Kiedy wchodzisz do pokoju w stanie głębokiego, wewnętrznego spokoju i życzliwości, tętno osób siedzących przy stole obniża się bez ich wiedzy. Twoje neurony lustrzane, Twój ton głosu i Twój rozluźniony nerw błędny wysyłają sygnały bezpieczeństwa.',
-        'I odwrotnie: jeden wściekły, zalękniony, manipulujący człowiek potrafi zatruć atmosferę 50-osobowego działu w korporacji w ciągu jednego poranka. Nie jesteś bezradnym odbiorcą nastrojów otoczenia — jesteś stacją nadawczą. Jakość Twojej obecności zmienia rzeczywistość wokół Ciebie.'
+        'W każdym systemie istnieją dwa rodzaje pętli sprzężeń zwrotnych:',
+        '1. Pętla Wzmacniająca (Reinforcing Loop): Mechanizm kuli śnieżnej. Sukces rodzi pewność siebie, która rodzi odwagę, która przynosi większy sukces (lub w wersji negatywnej: lęk rodzi izolację, która rodzi poczucie odrzucenia, potęgujące lęk).',
+        '2. Pętla Równoważąca (Balancing Loop): Termostat poszukujący homeostazy. Kiedy próbujesz drastycznie zmienić nawyki, system (Twoje ciało lub Twoja rodzina) generuje opór, by przywrócić dawny stan równowagi.',
+        'Zrozumienie tych pętli pozwala przestać walczyć z wiatrakami i znaleźć Punkty Dźwigni (Leverage Points) — miejsca, gdzie mała zmiana wywołuje gigantyczny efekt.'
       ]
     },
     {
       id: 'sec-16-4',
       pageNumber: 778,
       sectionNumber: '16.4',
-      title: 'Pętla społeczna: Jak nasze oczekiwania kreują zachowania innych',
+      title: 'Architektura spójności: Kiedy ciało, myśl i relacja mówią jednym głosem',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Przypomnij sobie badania Roberta Rosenthala nad Efektem Pigmaliona (i jego mrocznym bratem, Efektem Golema). Kiedy nauczyciele wierzyli, że losowo wybrani uczniowie są „ukrytymi geniuszami”, nieświadomie poświęcali im więcej uwagi, częściej się do nich uśmiechali i dawali im więcej czasu na odpowiedź. Po roku IQ tych dzieci wzrosło obiektywnie o kilkanaście punktów!',
-        'To jest Pętla Społeczna. Jeśli wchodzisz w relację z założeniem: „Ludzie to oszuści, którzy chcą mnie wykorzystać”, Twoja mowa ciała staje się podejrzliwa, chłodna i agresywna. W odpowiedzi ludzie wokół Ciebie zamykają się i reagują wrogością. Mówisz wtedy z triumfem: „Wiedziałem! Miałem rację!”.',
-        'Nie miałeś racji. Twoje własne lękowe oprogramowanie wygenerowało potwory, przed którymi próbowało Cię ostrzec.'
-      ]
+        'Człowiek niespójny żyje w permanentnym rozdarciu kognitywnym: jego ciało mówi „stop, jestem wyczerpany” (somatyka), jego myśl mówi „musisz pracować, bo cię zwolnią” (krytyk), a jego słowa brzmią „oczywiście, szefie, chętnie wezmę ten projekt” (fałszywe dostosowanie).',
+        'Spójność Wewnętrzna (Congruence) Carla Rogersa pojawia się wtedy, gdy Twoje doznania somatyczne, Twoje procesy poznawcze i Twoje zachowania społeczne są w pełnej harmonii. Nie musisz udawać nikogo innego, nie marnujesz energii na maskowanie intencji.',
+        'PRZYKŁAD 2: Lekarka Joanna po 10 latach pracy w korporacyjnym centrum medycznym odmawiała sobie prawa do odpoczynku, zmagając się z przewlekłym bólem kręgosłupa i bezsennością. Podczas warsztatu spójności zauważyła, że jej ciało dosłownie kuli się przed wejściem do kliniki. Zdecydowała się na radykalną spójność: odeszła z sieciówki, otworzyła kameralny gabinet medycyny rodzinnej na wsi, gdzie poświęca każdemu pacjentowi 45 minut. W ciągu miesiąca bóle pleców ustąpiły bez żadnych leków.'
+      ],
+      exerciseRef: {
+        id: 'ex-16-audyt-spojnosci',
+        title: 'Audyt Spójności Osobistej: Ciało, Myśl, Słowo i Czyn',
+        subtitle: 'Zdiagnozuj i ulecz pęknięcia pomiędzy Twoją somatyką, myślami i zachowaniami',
+        objective: 'Przywrócenie kongruencji (spójności) pomiędzy wewnętrznymi odczuciami a zewnętrzną komunikacją.',
+        durationMinutes: 20,
+        neuroScientificFoundation: 'Redukcja dysonansu poznawczo-somatycznego obniża permanentny tonus współczulny i przywraca optymalne funkcjonowanie osi podwzgórze-przysadka-nadnercza.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór sfery życia',
+            instruction: 'Wybierz obszar, w którym czujesz największy wewnętrzny opór: Praca, Związek lub Zdrowie.',
+            promptText: 'Wybrany obszar i aktualny stan:',
+            placeholder: 'Relacja z przełożonym w pracy — czuję chroniczne zmęczenie...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Trójkąt Spójności',
+            instruction: 'Wypisz: co czuje Twoje ciało, co myśli Twój mózg, co mówią Twoje usta.',
+            promptText: 'Ciało vs Myśl vs Słowa:',
+            placeholder: 'Ciało: zaciśnięte gardło; Myśl: jestem wykorzystywany; Słowa: tak, oczywiście, zrobię to na jutro...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Krok Integracyjny',
+            instruction: 'Sformułuj jedno zdanie, które wyrówna te trzy poziomy w najbliższej rozmowie.',
+            promptText: 'Moje zdanie kongruentne:',
+            placeholder: 'Potrzebuję przedyskutować podział zadań, ponieważ obecny harmonogram przekracza moje moce operacyjne...'
+          }
+        ],
+        reflectionQuestions: [
+          'Ile energii życiowej zużywasz każdego dnia na udawanie kogoś, kim nie jesteś?',
+          'O ile lżejsze staje się życie, gdy Twoje „tak” oznacza naprawdę „tak”, a Twoje „nie” oznacza „nie”?'
+        ]
+      }
     },
     {
       id: 'sec-16-5',
       pageNumber: 782,
       sectionNumber: '16.5',
-      title: 'Konflikt jako pętla: Przełamywanie zaklętego kręgu',
+      title: 'Pętle cyrkularne w relacjach i zespołach: Taniec oskarżeń',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'W każdym przewlekłym konflikcie obie strony są w 100% przekonane, że „ja się tylko bronię, to tamten zaczął!”.',
-        'Wyobraź sobie wyścig zbrojeń w relacji: On milczy, bo ona krzyczy. Ona krzyczy, bo on milczy. Jeśli spytasz jego, powie: „Milczę, bo z nią nie da się rozmawiać, od razu krzyczy!”. Jeśli spytasz ją, powie: „Krzyczę, bo jak mówię normalnie, to on mnie całkowicie ignoruje!”.',
-        'Szukanie winnego w pętli cyrkularnej jest tak samo mądre jak szukanie początku koła od roweru. Jedynym wyjściem jest odwaga jednostki do PRZERWANIA SWOJEGO FRAGMENTU PĘTLI: „Nawet jeśli ona krzyczy, ja nie zamilknę — podejdę, wezmę ją za rękę i powiem: Słyszę cię. Nie uciekam. Zależy mi na nas”. W tym momencie zaklęcie pryska.'
-      ]
+        'W relacjach nie ma prostej przyczynowości. Istnieje taniec sprzężony zwrotnie. Klasyczny wzorzec to pętla Demand-Withdraw (Żądanie-Wycofanie):',
+        'Partner A czuje lęk przed odrzuceniem → zaczyna krytykować i naciskać na rozmowę („Nigdy ze mną nie rozmawiasz!”) → Partner B czuje zalanie emocjonalne i lęk przed oceną → wycofuje się do pokoju i milczy → Partner A widzi milczenie jako potwierdzenie odrzucenia → krzyczy głośniej → Partner B ucieka z domu.',
+        'Kto zaczął? Nikt. Oboje są uwięzieni w choreografii, którą sami współtworzą.',
+        'PRZYKŁAD 3: W zespole marketingu menedżer Darek uważał, że jego copywriterka Kasia jest „niesamodzielna i leniwa”, więc kontrolował każdy przecinek w jej tekstach (mikromanagement). Kasia, czując brak zaufania i stałą krytykę, przestała zgłaszać własne pomysły i czekała na dokładne polecenia Darka. Darek widząc to, utwierdzał się w przekonaniu: „Widzicie? Gdybym jej nie kontrolował, nic by nie zrobiła!”. Dopiero interwencja coacha systemowego, który pokazał im pętlę na tablicy, pozwoliła Darkowi cofnąć nadzór, co natychmiast odblokowało kreatywność Kasi.'
+      ],
+      caseStudyRef: {
+        id: 'cs-ch16-malzenstwo-system',
+        title: 'Taniec w Labiryncie: Jak Ewa i Krzysztof Przerwali 10-letnią Pętlę Żądanie-Wycofanie',
+        subtitle: 'Od cichych dni i wzajemnych oskarżeń do dojrzałego przymierza w terapii systemowej',
+        protagonist: 'Ewa (architekt wnętrz, 42 lata) i Krzysztof (inżynier automatyki, 45 lat)',
+        context: 'Małżeństwo z 15-letnim stażem, dwójka dzieci w wieku szkolnym, atmosfera chronicznego chłodu emocjonalnego.',
+        story: [
+          'Ewa czuła się w małżeństwie samotna i przeciążona obowiązkami domowymi. Za każdym razem, gdy Krzysztof wracał z pracy, witała go listą pretensji: „Znowu nic nie zrobiłeś! Muszę o wszystkim myśleć sama!”.',
+          'Krzysztof, po całym dniu rozwiązywania awarii w fabryce, odbierał ton żony jako bezwzględny atak na jego męską wartość. Zamykał się w garażu lub zakładał słuchawki, majsterkując przy motocyklu.',
+          'Milczenie Krzysztofa doprowadzało Ewę do szału. Wchodziła do garażu, wyrywała mu słuchawki z uszu i krzyczała. Krzysztof wychodził na spacer bez słowa na 3 godziny.',
+          'Wreszcie po ostrej awanturze w święta, kiedy Krzysztof spakował walizkę, trafili do terapeuty systemowego. Byli przekonani, że terapeuta rozstrzygnie: „kto ma rację, a kto jest winny”.',
+          'Terapeuta odmówił szukania winnego. Narysował na tablicy cyrkularną pętlę: 1. Krzysztof czuje się niedoceniony → ucieka w milczenie. 2. Ewa czuje się opuszczona → ucieka w krzyk. 3. Krzyk Ewy potwierdza obawy Krzysztofa, że jest złym mężem → ucieka głębiej. 4. Ucieczka Krzysztofa potwierdza obawy Ewy, że jest sama → krzyczy głośniej.',
+          'Oboje zobaczyli, że ich wrogiem nie jest partner — ich wrogiem jest SAM TANIEC, w który dali się wciągnąć.',
+          'Protokół przerwania pętli: Krzysztof zobowiązał się, że gdy poczuje chęć ucieczki, powie: „Ewo, czuję się przytłoczony. Nie uciekam od ciebie, potrzebuję 20 minut ciszy, a o 19:30 usiądę z tobą do herbaty i porozmawiamy”. Ewa zobowiązała się, że w tym czasie nie wejdzie do pokoju i nie użyje słów „ty zawsze”.',
+          'Po 6 miesiącach małżeństwo odzyskało bliskość, intymność i poczucie głębokiego przymierza partnerskiego.'
+        ],
+        decisionTaken: 'Zrezygnowanie z szukania winnego na rzecz wspólnego zdemontowania toksycznej pętli komunikacyjnej.',
+        whatProtagonistSaw: 'Ewa widziała w Krzysztofie bezdusznego ignoranta; Krzysztof widział w Ewie wiecznie niezadowoloną jędzę.',
+        whatWasMissed: 'Że za jej krzykiem kryła się paniczna tęsknota za bliskością, a za jego ucieczką — głęboki ból z powodu bycia niewystarczającym.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Cyrkularna pętla Demand-Withdraw napędzana stylami przywiązania (lękowy Ewy i unikający Krzysztofa).',
+          cognitiveBiases: [
+            { name: 'Podstawowy błąd atrybucji', description: 'Oboje tłumaczyli zachowanie partnera złą wolą i defektem charakteru.', impact: 'Eskalacja pogardy.' },
+            { name: 'Selektywna uwaga', description: 'Ewa rejestrowała tylko chwile, gdy Krzysztof milczał; Krzysztof rejestrował tylko momenty jej krzyku.', impact: 'Utrwalenie zniekształceń.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Wycofanie emocjonalne (Stonewalling)', explanation: 'Znieczulenie układu nerwowego przed zalaniem afektywnym.' }
+          ],
+          emotionalDynamic: 'Przejście od wzajemnego terroru obronnego do bezbronnej, bezpiecznej empatii.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Ośrodek bólu społecznego (dACC)', role: 'Rejestracja odrzucenia jako fizycznego zranienia', activationState: 'Nadaktywny u obojga' },
+            { region: 'Układ przywspółczulny (gałąź brzuszna nerwu błędnego)', role: 'Zaangażowanie społeczne i bezpieczny kontakt wzrokowy', activationState: 'Przywrócony po interwencji terapeuty' }
+          ],
+          neurotransmitters: [
+            { name: 'Oksytocyna', roleInScenario: 'Odbudowa więzi przywiązaniowej podczas spokojnych rozmów wieczornych' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Umówione 20 minut pauzy', process: 'Tętno Krzysztofa opada z 105 do 68 bpm, umożliwiając racjonalny dialog.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Cyrkularna Przebudowa Dialogu', script: '„Widzę, jak wpadamy w naszą starą pętlę. Kocham cię i nie chcę w to grać. Usiądźmy na kanapie i powiedz mi, czego w tej chwili najbardziej potrzebujesz”.', rationale: 'Natychmiast przerywa automatyzm kłótni.' }
+          ]
+        },
+        alternativePath: 'Gdyby nie terapia systemowa, za 2 lata doszłoby do bolesnego rozwodu z walką o majątek i traumatyzacją dzieci.',
+        readerQuestion: 'W jaki powtarzalny taniec cyrkularny dajesz się wciągać swoim bliskim i współpracownikom?',
+        keyTakeaway: 'Nie pytaj, kto zaczął. Zapytaj, jak możecie oboje przestać tańczyć taniec zniszczenia.'
+      }
     },
     {
       id: 'sec-16-6',
       pageNumber: 786,
       sectionNumber: '16.6',
-      title: 'Manipulacja jako pętla: Kiedy ofiara karmi kata',
+      title: 'Odporność ekologiczna: Budowanie antykruchego środowiska życia',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'To bolesna, ale wyzwalająca prawda: żaden manipulator nie może manipulować człowiekiem, który nie zgadza się na udział w manipulacyjnej pętli.',
-        'Manipulator potrzebuje Twojego poczucia winy, Twojego lęku przed odrzuceniem, Twojej potrzeby bycia „dobrym i kochanym przez wszystkich”. Kiedy odmawiasz wejścia w rolę ofiary — kiedy na szantaż emocjonalny odpowiadasz spokojnym: „Bardzo mi przykro, że tak to widzisz, i moja decyzja pozostaje niezmienna” — manipulator traci grunt pod nogami.',
-        'Jego broń działa tylko na Twoje własne niezaleczone kompleksy. Uzdrawiając swoje poczucie własnej wartości, rozbrajasz wszystkie bomby manipulatorów tego świata.'
+        'Nassim Nicholas Taleb w książce „Antykruchość” wprowadził fundamentalne rozróżnienie:',
+        'Rzeczy kruche pękają pod wpływem wstrząsu (szklanka spadająca na podłogę).',
+        'Rzeczy odporne wytrzymują wstrząs bez zmian (kamień).',
+        'Rzeczy ANTYKRUCHE stają się SILNIEJSZE pod wpływem wstrząsu (mięśnie rosnące pod wpływem mikrourazów na treningu, układ odpornościowy uczący się na kontakcie z bakterią).',
+        'Celem tej książki jest uczynienie Cię człowiekiem antykruchym. Każdy kryzys, każda zdrada, każda porażka staje się materiałem budulcowym dla Twojej nowej mądrości.'
       ]
     },
     {
       id: 'sec-16-7',
       pageNumber: 790,
       sectionNumber: '16.7',
-      title: 'Relacja jako żywy ekosystem: Pielęgnacja ogrodu więzi',
+      title: 'Pętla podwójna (Double-Loop Learning): Zmiana zasad zamiast gaszenia pożarów',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Relacja nie jest rzeźbą z marmuru, którą stawia się raz na całe życie na cokole ślubu czy przyjaźni. Relacja jest ogrodem.',
-        'Jeśli przestaniesz podlewać ogród przez trzy miesiące, nie mów z pretensją: „Dziwne, ten ogród sam z siebie wysechł!”. Chwasty (pretensje, drobne złośliwości, brak uważności) rosną same z siebie bez żadnego wysiłku. Kwiaty (bliskość, zaufanie, seks, czułość) wymagają codziennego, świadomego trudu.',
-        'Wprowadź do swoich relacji codzienne mikroskopijne rytuały pielęgnacyjne: 6-sekundowy pocałunek na pożegnanie, 15 minut szczerej rozmowy przy herbacie bez ekranów, słowo „dziękuję” powiedziane za ugotowany obiad czy wyrzucone śmieci. Te małe rzeczy to woda dająca życie.'
+        'Chris Argyris z Harvard Business School wyróżnił dwa poziomy uczenia się:',
+        'Pojedyncza Pętla (Single-Loop): „Zrobiłem błąd → jak go szybko naprawić?”. Skupia się na technice i objawach.',
+        'Podwójna Pętla (Double-Loop): „Zrobiłem błąd → jakie ukryte założenia, schematy myślenia i wartości sprawiły, że podjąłem taką decyzję?”. Skupia się na systemie operacyjnym umysłu.',
+        'Ludzie sukcesu nie rozwiązują w kółko tych samych problemów. Przeprowadzają audyt podwójnej pętli i zmieniają reguły gry.',
+        'PRZYKŁAD 4: Przedsiębiorca Robert co pół roku tracił kluczowego kierownika sprzedaży. W pojedynczej pętli za każdym razem zatrudniał nową agencję rekrutacyjną i oferował 20% wyższą pensję (leczenie objawowe). W podwójnej pętli usiadł i zbadał własne założenia: „Dlaczego odchodzą? Ponieważ mam ukryte przekonanie, że nikt nie zrobi tego lepiej ode mnie, przez co nie pozwalam im podjąć ani jednej samodzielnej decyzji”. Robert zmienił strukturę uprawnień w spółce — od 3 lat rotacja na kluczowych stanowiskach wynosi zero.'
       ]
     },
     {
       id: 'sec-16-8',
       pageNumber: 794,
       sectionNumber: '16.8',
-      title: 'Decyzja pod wpływem grupy: Zachować siebie w tłumie',
+      title: 'Etyka wpływu w świecie dezinformacji i algorytmów',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Nawiązując do Rozdziału 6 (Asch i Milgram): największą próbą charakteru człowieka jest moment, w którym cała sala mówi „A”, a Twoje sumienie i rozum widzą „B”.',
-        'Bycie nonkonformistą nie polega na byciu wiecznie zbuntowanym nastolatkiem, który dla zasady zaprzecza wszystkiemu. Bycie dojrzałym człowiekiem polega na zdolności do zadania sobie pytania w ciszy własnej kory przedczołowej:',
-        '„Czy ja naprawdę w to wierzę, czy po prostu boję się, że koledzy z biura przestaną mnie lubić?”.',
-        'Odwaga cywilna to najrzadszy kruszec ludzkiej cywilizacji. Wystarczy jeden człowiek stojący prosto w sali pełnej uległości, by dać nadzieję setkom innych.'
+        'Z wiedzą zawartą w Tomie I i Tomie II stajesz się człowiekiem o wyjątkowej sile rażenia. Znasz słabe punkty ludzkiego umysłu, wiesz, jak działa framing, znasz regułę wzajemności, techniki etykietowania emocji i błędy atrybucji.',
+        'W tym miejscu pojawia się fundamentalne pytanie etyczne: CZYM RÓŻNI SIĘ MISTRZ WPŁYWU OD MANIPULATORA?',
+        'Różnica tkwi w INTENCJI i PRZEJRZYSTOŚCI:',
+        'Manipulator ukrywa swoje intencje, traktuje drugiego człowieka jak przedmiot do osiągnięcia własnej korzyści i pozostawia go osłabionego lub ograbionego.',
+        'Lider Etyczny działa z otwartą przyłbicą, wzmacnia podmiotowość drugiej strony i dąży do porozumień, w których rosną obie strony.',
+        'W świecie zdominowanym przez algorytmy manipulujące emocjami, Twoja prawość i wierność prawdzie są najcenniejszą walutą społeczną.'
       ]
     },
     {
       id: 'sec-16-9',
       pageNumber: 798,
       sectionNumber: '16.9',
-      title: 'Decyzja pod wpływem emocji: Mądrość zintegrowanego serca i rozumu',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Higiena ekologiczna umysłu: Tworzenie azylu kognitywnego',
+      category: 'cwiczenia',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Nie jesteśmy robotami i nigdy nie powinniśmy dążyć do chłodnego, psychopatycznego odcięcia się od uczuć. Emocje to nasza głębia, nasza miłość, nasza pasja i nasz kompas moralny.',
-        'Mądrość nie polega na tłumieniu emocji. Mądrość polega na tym, by EMOCJE BYŁY DORADCAMI PRZY STOLE, ALE BY TO ŚWIADOME „JA” PODEJMOWAŁO OSTATECZNĄ DECYZJĘ.',
-        'Pozwól złości powiedzieć: „Ta granica została przekroczona!”. Pozwól lękowi powiedzieć: „Tu czai się realne ryzyko!”. Wysłuchaj ich z szacunkiem. A potem weź głęboki oddech, włącz korę przedczołową i powiedz: „Dziękuję wam za ostrzeżenie. Teraz ja wybiorę najmądrzejszy sposób działania”.'
+        'Nie możesz zachować jasności umysłu, kąpiąc się codziennie w szambie informacyjnym. Twój umysł staje się tym, czym go karmisz.',
+        'ZASADY EKOLOGII POZNAWCZEJ:',
+        '1. Bezwzględna selekcja źródeł (mniej wiadomości, więcej książek i recenzowanych badań).',
+        '2. Ochrona poranków i wieczorów (pierwsza i ostatnia godzina dnia wolna od ekranów).',
+        '3. Spacery w naturze bez elektroniki (przywracanie uwagi mimowolnej wg Attention Restoration Theory Kaplana).',
+        '4. Przebywanie z ludźmi, którzy podnoszą Twoją poprzeczkę moralną i intelektualną.'
       ]
     },
     {
       id: 'sec-16-10',
       pageNumber: 802,
       sectionNumber: '16.10',
-      title: 'Decyzja pod wpływem informacji: Wolność w erze algorytmów',
+      title: 'Od plemienności do przymierza: Sztuka budowania mostów ponad podziałami',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Twoja uwaga to Twoje życie. Dosłownie: to, na co kierujesz reflektor swojej świadomości przez 16 godzin na dobę, staje się Twoją biologiczną strukturą mózgu i Twoim przeznaczeniem.',
-        'Kiedy bezmyślnie oddajesz swoją uwagę algorytmom z Doliny Krzemowej, stajesz się cyfrowym niewolnikiem karmiącym korporacje swoim lękiem i oburzeniem.',
-        'Wybierz suwerenność. Zbuduj wokół swojego umysłu fosę obronną. Czytaj książki zamiast postów. Rozmawiaj z ludźmi twarzą w twarz zamiast wymieniać komentarze pod artykułami. Bądź panem swojego reflektora.'
-      ]
+        'Ewolucja wyposażyła nas w plemienny mózg (W My kontra Oni, Rozdział 6). Algorytmy mediów społecznościowych bezwzględnie to wykorzystują, polaryzując narody, rodziny i społeczności.',
+        'Dojrzałość społeczna polega na przekroczeniu logiki plemienia na rzecz logiki Przymierza. Przymierze nie wymaga jednomyślności. Wymaga uznania godności drugiego człowieka i gotowości do poszukiwania wspólnego dobra.',
+        'PRZYKŁAD 5: Zebranie wspólnoty mieszkaniowej na krakowskim osiedlu. Wybucha zajadła kłótnia między młodymi rodzicami chcącymi wybudować plac zabaw a właścicielami samochodów żądającymi dodatkowych miejsc parkingowych. Padają wyzwiska, sprawa trafia do sądu. Starsza mieszkanka osiedla, emerytowana nauczycielka pani Helena, zabiera głos w duchu pojednania: „Szanowni sąsiedzi, czy pamiętacie, że wszyscy wybraliśmy to osiedle, bo chcieliśmy spokoju i bezpieczeństwa? Przejdźmy się po okolicy”. Okazało się, że za blokiem leży nieużywana działka miejska. Dzięki wspólnej petycji miasto przekazało działkę na parking, a dawny trawnik stał się pięknym placem zabaw. Plemienna wojna zamieniła się w sukces całej społeczności.'
+      ],
+      caseStudyRef: {
+        id: 'cs-ch16-szkola-dialog',
+        title: 'Wojna o Smartfony w Liceum: Jak Myślenie Systemowe Przekształciło Polaryzację w Przymierze',
+        subtitle: 'Konflikt rodziców, nauczycieli i uczniów rozwiązany za pomocą zintegrowanych zasad dialogu',
+        protagonist: 'Magdalena (Dyrektorka Społecznego Liceum, 48 lat), Mateusz (przewodniczący samorządu uczniowskiego, 18 lat) i Rafał (przewodniczący rady rodziców, 46 lat)',
+        context: 'Gwałtowny spadek wyników w nauce, fala cyberprzemocy na TikToku i wniosek grupy rodziców o natychmiastowy zakaz wnoszenia telefonów do szkoły pod groźbą kar dyscyplinarnych.',
+        story: [
+          'Szkoła stanęła w ogniu wojny domowej. Rafał (rada rodziców) krzyczał na zebraniu: „Telefony niszczą mózgi naszych dzieci! Jeśli dyrekcja nie wprowadzi zakazu, zabierzemy dzieci ze szkoły!”.',
+          'Uczniowie poczuli się potraktowani jak bezmyślni przestępcy. Mateusz ogłosił strajk uczniowski: „Nie jesteśmy więźniami! Żyjemy w XXI wieku, używamy telefonów do notatek i nauki! Zakaz to średniowiecze!”.',
+          'Nauczyciele byli wyczerpani byciem policjantami rekwirującymi telefony na przerwach. Atmosfera w szkole stała się nie do zniesienia.',
+          'Dyrektorka Magdalena zrozumiała, że wprowadzenie jednostronnego zakazu (Styl Rywalizacji) wywoła jedynie podziemny opór, fałszowanie obecności i eskalację cyberprzemocy w domach.',
+          'Zastosowanie myślenia systemowego: Magdalena zorganizowała „Okrągły Stół Edukacji Cyfrowej”. Zamiast głosowania większościowego, zastosowała 3 zasady:',
+          '1. Rozdzielenie ludzi od problemu: Zakaz ataków osobistych; badanie twardych danych neurologicznych o dopaminie i uwadze.',
+          '2. Odkrycie ukrytych interesów: Rodzice nie chcieli gnębić dzieci — bali się o ich przyszłość i zdrowie psychiczne. Uczniowie nie chcieli bezmyślnie scrollować — bali się wykluczenia rówieśniczego i braku kontaktu ze światem.',
+          '3. Współtworzenie rozwiązań integracyjnych: Uczniowie pod przewodnictwem Mateusza sami opracowali „Kartę Higieny Cyfrowej”.',
+          'Postanowienia Karty: Lekcje w pełnym trybie Focus (telefony w dedykowanych etui na biurku nauczyciela). Przerwy: stworzenie strefy analogowej z bilardem, planszówkami i muzyką, gdzie ekrany są wyłączone, oraz strefy cyfrowej w bibliotece do pracy projektowej.',
+          'Rezultat: Liczba incydentów cyberprzemocy spadła o 85%, wyniki matur wzrosły, a szkoła stała się ogólnokrajowym modelem dojrzałego dialogu społecznego.'
+        ],
+        decisionTaken: 'Dyrektorka odrzuciła autorytarny zakaz na rzecz włączenia wszystkich stron w proces projektowania reguł systemowych.',
+        whatProtagonistSaw: 'Początkowo rodzice widzieli w uczniach uzależnione zombie, a uczniowie w rodzicach autorytarnych tyranów.',
+        whatWasMissed: 'Że obie strony miały wspólny cel: dobrostan młodego pokolenia i jego zdolność do odniesienia sukcesu w dorosłym życiu.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Przejście od polaryzacji plemiennej (In-group vs Out-group) do tożsamości nadrzędnej (Superordinate Goal).',
+          cognitiveBiases: [
+            { name: 'Naiwny realizm', description: 'Przekonanie rodziców, że ich spojrzenie na technologię jest jedynym obiektywnym.', impact: 'Ignorowanie argumentów młodzieży.' },
+            { name: 'Reaktancja psychiczna', description: 'Gwałtowny opór uczniów przed narzuceniem zakazu bez konsultacji.', impact: 'Bunt i strajk.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Polaryzacja grupowa', explanation: 'Radykalizacja postaw wewnątrz zamkniętych grup rodziców na WhatsAppie.' }
+          ],
+          emotionalDynamic: 'Przejście od lęku i gniewu do dumy ze wspólnie wypracowanego kompromisu.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Przednia kora zakrętu obręczy', role: 'Konflikt wartości i monitorowanie błędów', activationState: 'Ukojona po uzgodnieniu wspólnych norm' },
+            { region: 'Kora przedczołowa', role: 'Długofalowe planowanie i samokontrola uczniów', activationState: 'Wzmocniona poczuciem współwłasności reguł' }
+          ],
+          neurotransmitters: [
+            { name: 'Dopamina i Oksytocyna', roleInScenario: 'Zastąpienie pustych strzałów dopaminowych z TikToka oksytocyną z realnych relacji przy planszówkach na przerwach' }
+          ],
+          biologicalTimeline: [
+            { timeMs: '3 miesiące po wdrożeniu', process: 'Mierzalna poprawa wskaźników uwagi i nastroju u 90% uczniów.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Protokół Okrągłego Stołu', script: '„Nie pytamy, kto ma rację. Pytamy, jak możemy razem stworzyć szkołę, z której wszyscy będziemy dumni”.', rationale: 'Wymusza kooperację ponad podziałami pokoleniowymi.' }
+          ]
+        },
+        alternativePath: 'Gdyby dyrektorka wprowadziła bezwzględny zakaz policyjny, szkołę opuściłoby 40% uczniów, a konflikt przeniósłby się na sale sądowe i media lokalne.',
+        readerQuestion: 'W jakich konfliktach w Twojej społeczności lub rodzinie brakuje odwagi, by usiąść do Okrągłego Stołu i poszukać tożsamości nadrzędnej?',
+        keyTakeaway: 'Ludzie nie sprzeciwiają się zmianom. Ludzie sprzeciwiają się temu, gdy są zmieniani siłą bez prawa do głosu.'
+      }
     },
     {
       id: 'sec-16-11',
       pageNumber: 806,
       sectionNumber: '16.11',
-      title: 'Decyzja pod wpływem drugiego człowieka: Od zależności do współzależności',
+      title: 'Do Współzależności: Trzy etapy dojrzałości kognitywno-społecznej',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
@@ -300,7 +470,7 @@ export const chapterSixteen: Chapter = {
         },
         influenceAndManipulation: {
           tacticsUsed: [
-            { tactic: 'Presja Czasu i Groźba Wizerunkowa', description: 'Przeciwnik: „Podpisujcie albo zrywamy!”.', vulnerabilityExploited: 'Strach przed kompromitacją w mediach' }
+            { tactic: 'Presja Czasu i Groźba Wizerunkowa', description: 'Przeciwnik: „Podpisujcie albo zrywamy!” — manipulacja wykorzystująca lęk przed kompromitacją w mediach.', vulnerabilityExploited: 'Strach przed publiczną utratą twarzy' }
           ],
           counterMeasures: [
             { step: 'Demaskowanie Gry i Wezwanie do Faktów', script: '„Doceniamy wasz pośpiech, i jednocześnie nasza kancelaria nie podpisuje dokumentów zawierających błędy w wyliczeniach podatkowych. Wracamy o 9:00 rano z poprawionym załącznikiem”.', rationale: 'Rozbija blef oponenta twardą BATNA.' }
@@ -325,7 +495,42 @@ export const chapterSixteen: Chapter = {
         '3. Moja Czułość na Manipulację: Na co jestem najbardziej podatny (Poczucie winy? Lęk przed odrzuceniem? Sztuczna presja czasu? Chęć bycia podziwianym)?',
         '4. Moje Środowisko Nawykowe: Jaka jedna zmiana w architekturze mojego pokoju/biurka uwolni 50% mojej woli?',
         '5. Mój Protokół Przebudzenia: Jakie jedno zdanie powiem sobie w chwili, gdy zorientuję się, że znowu wpadłem w starą pętlę?'
-      ]
+      ],
+      exerciseRef: {
+        id: 'ex-16-mapa-systemowa',
+        title: 'Konstruktor Osobistej Mapy Systemowej (Wielka Synteza)',
+        subtitle: 'Zintegruj wiedzę z Tomu I i Tomu II w jeden spójny dokument operacyjny Twojego życia',
+        objective: 'Stworzenie indywidualnego kompasu samoregulacji poznawczo-społecznej.',
+        durationMinutes: 30,
+        neuroScientificFoundation: 'Integracja narracyjna doświadczeń wzmacnia połączenia pomiędzy hipokampem, ciałem migdałowatym a przyśrodkową korą przedczołową, podnosząc odporność psychologiczną.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Błędy poznawcze (Tom I)',
+            instruction: 'Wypisz swoje 2 najczęstsze błędy poznawcze z Tomu I (np. błąd potwierdzenia, tunelowanie uwagi).',
+            promptText: 'Moje pułapki umysłu:',
+            placeholder: 'Błąd atrybucji (oceniam innych surowiej niż siebie) i myślenie katastroficzne...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Styl w relacjach (Tom II)',
+            instruction: 'Wpisz swój dominujący styl w konflikcie i wskaż 1 pętlę cyrkularną, w której tkwisz.',
+            promptText: 'Moja dynamika relacyjna:',
+            placeholder: 'Styl unikania; pętla: gdy ktoś naciska, ja milczę, co wzmaga jego presję...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Nawyk kotwiczący i Przymierze',
+            instruction: 'Zdefiniuj jeden nienegocjowalny nawyk regeneracji i sformułuj osobistą Deklarację Współzależności.',
+            promptText: 'Mój nawyk i deklaracja:',
+            placeholder: 'Nawyk: 8h snu i 30 minut spaceru bez telefonu. Deklaracja: Tworzę relacje oparte na prawdzie i zaufaniu...'
+          }
+        ],
+        reflectionQuestions: [
+          'O ile bardziej współczujący i wyrozumiały stałeś się dla samego siebie po zrozumieniu biologii swojego mózgu?',
+          'O ile bardziej cierpliwy jesteś wobec innych ludzi, wiedząc, z jakimi niewidzialnymi mechanizmami się zmagają?'
+        ]
+      }
     },
     {
       id: 'sec-16-14',

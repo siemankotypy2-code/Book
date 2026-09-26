@@ -277,6 +277,13 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </div>
         )}
 
+        {/* Exercise if present on regular sections */}
+        {activeSection.exerciseRef && activeSection.sectionNumber !== '1.8' && (
+          <div className="my-10">
+            <SelfReflectExercises exercises={[activeSection.exerciseRef]} />
+          </div>
+        )}
+
         {/* Subsections if present */}
         {activeSection.subsections && activeSection.subsections.length > 0 && (
           <div className="my-12 space-y-10">

@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 
 export const chapterSixExamQuestions: ExamQuestion[] = [
   {
@@ -7,10 +7,10 @@ export const chapterSixExamQuestions: ExamQuestion[] = [
     topic: 'Konformizm Informacyjny vs Normatywny',
     sectionRef: 'Sekcja 6.4',
     options: [
-      { label: 'A', text: 'Badani mieli wadę wzroku i nie dowidzieli planszy testowej.', isCorrect: false },
+      { label: 'A', text: 'Badani mieli fizyczną wadę wzroku i nie dowidzieli planszy testowej w sztucznym oświetleniu.', isCorrect: false },
       { label: 'B', text: 'Z powodu wpływu normatywnego — lęku przed odrzuceniem przez grupę i dyskomfortu wyłamania się ze wspólnego konsensusu, mimo że wewnętrznie widzieli prawdę.', isCorrect: true },
       { label: 'C', text: 'Byli przekupieni przez asystentów badawczych przed wejściem do laboratorium.', isCorrect: false },
-      { label: 'D', text: 'Mózg ludzki jest niezdolny do porównywania prostych figur geometrycznych.', isCorrect: false }
+      { label: 'D', text: 'Mózg ludzki jest anatomicznie niezdolny do porównywania prostych figur geometrycznych w obecności innych.', isCorrect: false }
     ],
     explanation: 'Eksperyment Ascha dowiódł potęgi konformizmu normatywnego. Gdy uczestnicy mogli zapisać odpowiedź po cichu na kartce (bez wiedzy grupy), wskaźnik błędów spadał niemal do zera, co dowodzi, że widzieli prawdę, lecz bali się społecznego wykluczenia.',
     keyTakeaway: 'Konformizm często nie wynika z braku wzroku, lecz ze strachu przed izolacją.'
@@ -21,24 +21,24 @@ export const chapterSixExamQuestions: ExamQuestion[] = [
     topic: 'Posłuszeństwo i Stan Agentyczny',
     sectionRef: 'Sekcja 6.5',
     options: [
-      { label: 'A', text: 'Wrodzony sadyzm większości populacji.', isCorrect: false },
+      { label: 'A', text: 'Wrodzony sadyzm większości populacji ujawniający się w warunkach laboratoryjnych.', isCorrect: false },
       { label: 'B', text: 'Wejście w tzw. stan agentyczny — przeniesienie moralnej odpowiedzialności za własne czyny na postrzegany autorytet (eksperymentatora).', isCorrect: true },
-      { label: 'C', text: 'Hipnoza stosowana przez prowadzącego badanie.', isCorrect: false },
-      { label: 'D', text: 'Podanie badanym środków farmakologicznych otępiających wolę.', isCorrect: false }
+      { label: 'C', text: 'Hipnoza i manipulacja farmakologiczna stosowana przez prowadzącego badanie.', isCorrect: false },
+      { label: 'D', text: 'Brak świadomości, że prąd elektryczny może wywołać ból fizyczny.', isCorrect: false }
     ],
     explanation: 'Milgram wykazał, że w hierarchii społecznej człowiek ma tendencję do redefiniowania siebie nie jako autonomicznego sprawcy, lecz jako „agenta wykonującego wolę wyższej instancji”. Odpowiedzialność sumienia zostaje przeniesiona w górę hierarchii.',
     keyTakeaway: 'Autorytet zwalnia jednostkę z myślenia o konsekwencjach, jeśli ta odda mu sprawczość.'
   },
   {
     id: 3,
-    question: 'Na czym polega „Efekt Widza” (Bystander Effect) opisany przez Latané i Darleya po zabójstwie Kitty Genovese (Sekcja 6.6 i 6.7)?',
+    question: 'Na czym polega „Efekt Widza” (Bystander Effect) opisany przez Latané i Darleya (Sekcja 6.6 i 6.7)?',
     topic: 'Efekt Widza i Rozproszenie Odpowiedzialności',
     sectionRef: 'Sekcja 6.6',
     options: [
-      { label: 'A', text: 'Im więcej świadków wypadku, tym statystycznie mniejsza szansa, że pojedynczy świadek podejmie natychmiastowe działanie ratunkowe.', isCorrect: true },
-      { label: 'B', text: 'Ludzie w tłumie zawsze stają się agresywni i atakują ofiarę.', isCorrect: false },
-      { label: 'C', text: 'Wszyscy świadkowie zawsze uciekają z miejsca zdarzenia w ciągu 10 sekund.', isCorrect: false },
-      { label: 'D', text: 'Obecność innych ludzi natychmiast wyzwala maksymalny altruizm.', isCorrect: false }
+      { label: 'A', text: 'Im więcej świadków nagłego wypadku, tym statystycznie mniejsza szansa, że pojedynczy świadek podejmie natychmiastowe działanie ratunkowe.', isCorrect: true },
+      { label: 'B', text: 'Ludzie w tłumie zawsze stają się agresywni i fizycznie atakują ofiarę wypadku.', isCorrect: false },
+      { label: 'C', text: 'Wszyscy świadkowie zawsze uciekają z miejsca zdarzenia w ciągu pierwszych 10 sekund.', isCorrect: false },
+      { label: 'D', text: 'Obecność innych ludzi natychmiast wyzwala maksymalny odruch altruistyczny u każdego obserwatora.', isCorrect: false }
     ],
     explanation: 'Gdy wokół są inni, zachodzi rozproszenie odpowiedzialności („Ktoś inny na pewno już zadzwonił po pomoc”) oraz zjawisko niewiedzy wielu (patrzymy na spokój innych i wnioskujemy, że sytuacja nie jest groźna).',
     keyTakeaway: 'Gdy wszyscy są odpowiedzialni, nikt nie czuje się odpowiedzialny indywidualnie.'
@@ -50,9 +50,9 @@ export const chapterSixExamQuestions: ExamQuestion[] = [
     sectionRef: 'Sekcja 6.12',
     options: [
       { label: 'A', text: 'Wyjaśniamy jej zachowanie cechami charakteru (np. „jest leniwy, niekompetentny”), ignorując potężny wpływ okoliczności sytuacyjnych.', isCorrect: true },
-      { label: 'B', text: 'Zawsze doszukujemy się winy w warunkach atmosferycznych.', isCorrect: false },
-      { label: 'C', text: 'Uważamy, że sami postąpilibyśmy jeszcze gorzej.', isCorrect: false },
-      { label: 'D', text: 'Przypisujemy każdemu człowiekowi czyste intencje i świętość.', isCorrect: false }
+      { label: 'B', text: 'Zawsze doszukujemy się winy w warunkach atmosferycznych i pechu losowym.', isCorrect: false },
+      { label: 'C', text: 'Uważamy, że sami w identycznych okolicznościach postąpilibyśmy jeszcze gorzej.', isCorrect: false },
+      { label: 'D', text: 'Przypisujemy każdemu człowiekowi czyste intencje i doskonałe motywy moralne.', isCorrect: false }
     ],
     explanation: 'Gdy spóźnia się kolega, myślimy: „Jest niesłowny i niezorganizowany” (atrybucja wewnętrzna). Gdy sami się spóźniamy, myślimy: „Korki, awaria metra, wypadek na trasie” (atrybucja zewnętrzna, sytuacyjna).',
     keyTakeaway: 'Innych oceniamy po ich zachowaniu, siebie — po naszych okolicznościach i intencjach.'
@@ -64,20 +64,280 @@ export const chapterSixExamQuestions: ExamQuestion[] = [
     sectionRef: 'Sekcja 6.10',
     options: [
       { label: 'A', text: 'Jedna wyrazista, pozytywna cecha (np. atrakcyjność fizyczna, elokwencja) sprawia, że bezkrytycznie przypisujemy osobie inne pozytywne cechy, jak uczciwość czy inteligencja.', isCorrect: true },
-      { label: 'B', text: 'Widzimy świetlistą aureolę wokół głów ludzi o wysokim statusie materialnym.', isCorrect: false },
+      { label: 'B', text: 'Widzimy fizyczną aureolę światła wokół głów ludzi o wysokim statusie materialnym.', isCorrect: false },
       { label: 'C', text: 'Oceniający zawsze nienawidzi osób o wysokich kompetencjach technicznych.', isCorrect: false },
-      { label: 'D', text: 'Powoduje całkowitą utratę pamięci krótkotrwałej po spotkaniu.', isCorrect: false }
+      { label: 'D', text: 'Powoduje całkowitą utratę pamięci krótkotrwałej po spotkaniu z autorytetem.', isCorrect: false }
     ],
     explanation: 'System 1 (zbadany w Tomie I) dąży do spójności poznawczej. Skoro ktoś jest zadbany, uśmiechnięty i pewny siebie, umysł automatycznie nadaje mu etykietę „wiarygodny profesjonalista”, zanim zbada merytoryczne fakty.',
     keyTakeaway: 'Powierzchowny blask przesłania brak merytorycznego fundamentu.'
+  },
+  {
+    id: 6,
+    question: 'W jaki sposób zjawisko niewiedzy wielu (pluralistic ignorance) paraliżuje reakcję w sytuacji zagrożenia pożarowego w biurze?',
+    topic: 'Niewiedza Wielu',
+    sectionRef: 'Sekcja 6.6',
+    options: [
+      { label: 'A', text: 'Wszyscy natychmiast mdleją z powodu braku tlenu.', isCorrect: false },
+      { label: 'B', text: 'Każdy widzi dym, ale widząc pozorny spokój na twarzach kolegów (którzy maskują lęk, by nie siać paniki), dochodzi do wniosku, że to tylko rutynowy test.', isCorrect: true },
+      { label: 'C', text: 'Czujniki dymu emitują fale dźwiękowe wyłączające logiczne myślenie.', isCorrect: false },
+      { label: 'D', text: 'Pracownicy są przekonani, że gaszenie ognia leży wyłącznie w obowiązkach zarządu spółki.', isCorrect: false }
+    ],
+    explanation: 'Niewiedza wielu to stan, w którym większość członków grupy po cichu odrzuca daną normę lub obawia się zagrożenia, lecz błędnie zakłada, że inni ją w pełni akceptują. Wzajemne maskowanie zaniepokojenia prowadzi do wspólnego bezruchu.',
+    keyTakeaway: 'Pozorny spokój otoczenia nie jest dowodem na bezpieczeństwo sytuacji.'
+  },
+  {
+    id: 7,
+    question: 'Jaka interwencja jest najbardziej skuteczna w natychmiastowym przełamaniu efektu widza w zatłoczonym miejscu publicznym?',
+    topic: 'Przełamywanie Efektu Widza',
+    sectionRef: 'Sekcja 6.7',
+    options: [
+      { label: 'A', text: 'Krzyczenie ogólnego hasła: „Niech ktoś szybko zadzwoni po karetkę!”.', isCorrect: false },
+      { label: 'B', text: 'Wyznaczenie konkretnej osoby palcem i podanie jej precyzyjnego polecenia: „Pan w niebieskiej kurtce — proszę teraz zadzwonić pod 112!”.', isCorrect: true },
+      { label: 'C', text: 'Czekanie w milczeniu, aż ktoś z większym doświadczeniem medycznym podejmie inicjatywę.', isCorrect: false },
+      { label: 'D', text: 'Ucieczka na bezpieczną odległość i napisanie posta z apelem w mediach społecznościowych.', isCorrect: false }
+    ],
+    explanation: 'Wskazanie konkretnej jednostki imiennie lub przez wyróżnik („Pani w czerwonym płaszczu”) likwiduje rozproszenie odpowiedzialności. Ciężar decyzyjny spada w 100% na tę jedną osobę, zmuszając jej korę przedczołową do wyjścia ze stanu zablokowania.',
+    keyTakeaway: 'Odpowiedzialność osobista rośnie do 100%, gdy usuniesz anonimowość tłumu.'
   }
 ];
+
+export const chapterSixCaseStudySchool: CaseStudy = {
+  id: 'cs-ch6-liceum-hejt',
+  title: 'Konformizm na Szkolnej Grupie: Zofia i Lincz w Ciszy',
+  subtitle: 'Jak 17-letnia uczennica wbrew własnemu sumieniu dołączyła do wykluczenia koleżanki z klasy',
+  protagonist: 'Zofia, 17 lat, licealistka o profilu humanistycznym',
+  context: 'Grupa klasowa na komunikatorze internetowym przed sprawdzianem z biologii.',
+  story: [
+    'Zofia uważała się za osobę wrażliwą, czytającą literaturę i sprzeciwiającą się przemocy. W piątek wieczorem na klasowej grupie komunikatora pojawił się zrzut ekranu prywatnej wiadomości Oksany — cichej dziewczyny, która dołączyła do klasy po przeprowadzce z innego miasta.',
+    'Liderka klasy, Laura, opatrzyła zrzut złośliwym komentarzem: „Patrzcie, jak ta donosicielka prosi panią o przełożenie sprawdzianu, bo niby nie ma podręcznika. Wstyd, że z nami chodzi”. W ciągu 3 minut pod postem pojawiło się dwadzieścia śmiejących się reakcji i lawina szyderstw.',
+    'Zofia poczuła ucisk w klatce piersiowej. Wiedziała, że Oksana opiekuje się młodszą siostrą po pracy rodziców i nie stać jej na drogi repetytorium. Zofia napisała w oknie wiadomości: „Dajcie spokój, to przecież nic złego, każdy może mieć trudniejszy tydzień”. Jednak palec zawisł nad przyciskiem „Wyślij”.',
+    'W jej głowie rozbrzmiały natychmiastowe głosy: „Jeśli to wyślę, jutro na korytarzu Laura nie powie mi cześć. Nikt nie usiądzie ze mną na lunchu. Przeniosą ten hejt na mnie”. Zofia skasowała tekst. Zamiast tego... kliknęła ikonę śmiejącej się buźki pod postem Laury.',
+    'W poniedziałek Oksana nie przyszła do szkoły. Zofia unikała patrzenia w lustro, czując paraliżujący wstyd i złość na własne tchórzostwo.'
+  ],
+  decisionTaken: 'Zofia usunęła głos wsparcia dla pokrzywdzonej i dołączyła do pozornego rechotu grupy, ulegając konformizmowi normatywnemu.',
+  whatProtagonistSaw: 'Zagrożenie własną pozycją w klasie, ryzyko stania się kolejnym celem nagonki i rzekomą bezwzględną lojalność innych wobec liderki.',
+  whatWasMissed: 'Że co najmniej 8 innych osób w klasie czuło dokładnie taki sam niesmak, ale wszyscy milczeli z tego samego strachu (zjawisko niewiedzy wielu).',
+  psychologicalAnalysis: {
+    coreMechanism: 'Konformizm normatywny wywołany lękiem przed wykluczeniem społecznym (ostracism threat) i rozproszeniem odpowiedzialności w przestrzeni cyfrowej.',
+    cognitiveBiases: [
+      { name: 'Niewiedza wielu (Pluralistic Ignorance)', description: 'Wszyscy po cichu potępiają hejt, ale nikt nie protestuje, sądząc, że reszta aprobuje zachowanie liderki.', impact: 'Poczucie bezsilności jednostki.' },
+      { name: 'Złudzenie odporności moralnej', description: 'Przekonanie Zofii, że „w realnym świecie nigdy by tak nie postąpiła”.', impact: 'Autousprawiedliwienie po fakcie.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Racjonalizacja', explanation: '„To tylko jedna reakcja w sieci, mój sprzeciw i tak by nic nie zmienił, Laura jest zbyt wpływowa”.' }
+    ],
+    emotionalDynamic: 'Paniczny lęk przed społeczną śmiercią (wykluczeniem ze stada rówieśniczego), który zablokował wyższe wartości empatyczne.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Pojawienie się szyderczego posta Laury i 20 reakcji aprobujących.',
+    attentionFocus: 'Własny status w klasie i wizja siedzenia w samotności na przerwie.',
+    interpretation: '„Sprzeciw równa się natychmiastowy ostracyzm i skierowanie agresji na mnie”.',
+    emotion: 'Lęk somatyczny, ucisk w mostku, wstyd antycypacyjny.',
+    impulse: 'Zneutralizować zagrożenie poprzez przypodobanie się dominującej grupie.',
+    action: 'Skasowanie obrony Oksany i wstawienie emotikonu aprobaty.',
+    consequence: 'Dalsza izolacja Oksany, ciężkie poczucie winy Zofii i utrata szacunku do samej siebie.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Przednia kora zakrętu obręczy (dACC)', role: 'Rejestracja zagrożenia bólem wykluczenia', activationState: 'Bardzo wysoka, wywołująca stan paniki' },
+      { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Świadoma kontrola wartości moralnych', activationState: 'Zdominowana przez sygnalizację ciała migdałowatego' }
+    ],
+    neurotransmitters: [
+      { name: 'Kortyzol i noradrenalina', roleInScenario: 'Uruchomienie trybu uległości i podporządkowania hierarchii stada' }
+    ],
+    biologicalTimeline: [
+      { timeMs: '0 - 150 ms', process: 'Skan posta i wykrycie nazwiska liderki stada.' },
+      { timeMs: '150 - 500 ms', process: 'Błyskawiczna kalkulacja kosztu sprzeciwu: zagrożenie społeczne dominuje nad empatią.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [
+      { tactic: 'Publiczny lincz jako demonstracja władzy', description: 'Laura wyznacza kozła ofiarnego, by scementować swoją pozycję w grupie.', vulnerabilityExploited: 'Potrzeba akceptacji rówieśniczej' }
+    ],
+    counterMeasures: [
+      { step: 'Prywatny sojusz i bezpośredni kontakt', script: 'Wysłanie prywatnej wiadomości do Oksany: „Widziałam post Laury, to było podłe. Nie jesteś sama, masz we mnie oparcie”. Następnie nawiązanie kontaktu z 2 innymi rozumnymi osobami z klasy.', rationale: 'Rozbija monolit jednomyślności bez wchodzenia w bezpośrednią pyskówkę w tłumie.' }
+    ]
+  },
+  alternativePath: 'Gdyby Zofia wysłała przygotowaną wiadomość: „Dajcie spokój, to przecież nic złego”, co najmniej 3 inne osoby natychmiast polubiłyby jej komentarz, rozbijając dominację Laury i chroniąc Oksanę przed traumą.',
+  readerQuestion: 'Kiedy ostatnio zmilczałeś żart lub przytyk raniący kogoś obok, tylko dlatego, że śmiali się wszyscy pozostali?',
+  keyTakeaway: 'Brak reakcji na krzywdę w grupie nigdy nie jest neutralny — grupa odczytuje Twoje milczenie jako bezwarunkową zgodę.'
+};
+
+export const chapterSixCaseStudyFamily: CaseStudy = {
+  id: 'cs-ch6-rodzina-autorytet',
+  title: 'Niedzielny Obiad u Patriarchy: Cena Autonomii',
+  subtitle: 'Jak 29-letni Tomasz zrezygnował z marzeń badawczych pod presją rodzinnej hierarchii',
+  protagonist: 'Tomasz, 29 lat, doktorant biotechnologii',
+  context: 'Uroczysty obiad z okazji 75. urodzin dziadka Mariana, emerytowanego dyrektora fabryki.',
+  story: [
+    'Tomasz otrzymał prestiżowe, dwuletnie stypendium naukowe w instytucie w Zurychu. Było to ukoronowanie siedmiu lat jego badań nad enzymami. Na niedzielnym obiedzie rodzinnym postanowił podzielić się tą nowiną.',
+    'Przy stole siedziało dwanaście osób: rodzice, wujostwo, rodzeństwo i nestor rodu, dziadek Marian. Dziadek od lat zarządzał rodziną jak przedsiębiorstwem państwowym: jego zdanie było ostateczne, a każdy sprzeciw traktowano jako zdradę krwi.',
+    'Gdy Tomasz ogłosił wyjazd, przy stole zapadła ciężka cisza. Dziadek odłożył sztućce, spojrzał surowo i powiedział podniesionym tonem: „Do Zurychu? A kto zajmie się firmą transportową wuja Marka, w którą włożyliśmy rodzinne oszczędności? Myśleliśmy, że wychowaliśmy odpowiedzialnego mężczyznę, a ty chcesz uciekać za granicę i bawić się w probówki za grosze”.',
+    'Matka Tomasza natychmiast złapała się za serce, szepcząc: „Tomaszku, nie denerwuj dziadka w urodziny”. Ojciec wbił wzrok w talerz. Wuj Marek rzucił: „Egoista”. Nikt z obecnych nie zapytał Tomasza, czego on pragnie, ani nie pogratulował mu sukcesu.',
+    'Tomasz poczuł potworny skurcz żołądka. Zamiast dorosłego, 29-letniego naukowca, w ułamku sekundy poczuł się jak zawstydzony 8-letni chłopiec przyłapany na kradzieży jabłek. Zamiast obronić swój dorobek, opuścił głowę i wykrztusił: „...Przemyślę to jeszcze, dziadku”. Trzy tygodnie później odrzucił ofertę z Zurychu.'
+  ],
+  decisionTaken: 'Tomasz zrezygnował z przełomowego stypendium naukowego, podporządkowując się autorytetowi dziadka i poczuciu winy narzuconemu przez rodzinę.',
+  whatProtagonistSaw: 'Gniew patriarchy, cierpienie matki, potępienie krewnych i widmo bycia „czarną owcą” rodziny.',
+  whatWasMissed: 'Że jego lęk był echem dziecięcego uwarunkowania; jako niezależny dorosły nie potrzebował już aprobaty nestora do przetrwania biologicznego.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Posłuszeństwo wobec autorytetu rodzinnego połączone ze stanem agentycznym i lojalnością transgeneracyjną.',
+    cognitiveBiases: [
+      { name: 'Błąd zakorzenienia w roli dziecka (Regresja)', description: 'W obecności rodziny dorosły człowiek automatycznie przyjmuje dawną, uległą rolę z dzieciństwa.', impact: 'Utrata asertywności dorosłego decydenta.' },
+      { name: 'Emocjonalny szantaż i dług wdzięczności', description: 'Przekonanie, że realizacja własnych celów jest krzywdzeniem rodziców.', impact: 'Paraliż decyzyjny.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Introjekcja', explanation: 'Tomasz bezkrytycznie przyjął przekonanie dziadka, że praca naukowa jest „małowartościowa” w porównaniu z handlem.' }
+    ],
+    emotionalDynamic: 'Głęboki konflikt między potrzebą autonomii a lękiem przed zerwaniem więzi pierwotnej.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Atak słowny dziadka Mariana i reakcja somatyczna matki.',
+    attentionFocus: 'Emocjonalna reakcja rodziny i groźba odrzucenia.',
+    interpretation: '„Jestem złym synem i egoistą, jeśli podążę za marzeniem”.',
+    emotion: 'Wstyd, wina, strach przed wykluczeniem z rodu.',
+    impulse: 'Natychmiast uspokoić dziadka i matkę za wszelką cenę.',
+    action: 'Deklaracja wycofania się i późniejsza odmowa przyjęcia stypendium.',
+    consequence: 'Frustracja, wypalenie zawodowe w nielubianej branży i ukryty żal do rodziny przez kolejne dekady.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Układ limbiczny (Ciało migdałowate)', role: 'Wyzwalanie reakcji zamrożenia (freeze) w obliczu gniewu dominującego samca', activationState: 'Hiperaktywacja' },
+      { region: 'Brzuszno-przyśrodkowa kora przedczołowa (vmPFC)', role: 'Integracja emocji z hierarchią społeczną', activationState: 'Zdominowana przez dawne wspomnienia kar z dzieciństwa' }
+    ],
+    neurotransmitters: [
+      { name: 'Kortyzol', roleInScenario: 'Paraliż asertywności, zablokowanie ekspresji własnych potrzeb' }
+    ],
+    biologicalTimeline: [
+      { timeMs: '0 - 300 ms', process: 'Krzyk dziadka: sygnał zagrożenia dominacyjnego w pniu mózgu.' },
+      { timeMs: '300 - 1200 ms', process: 'Zalanie organizmu kortyzolem, zaciśnięcie krtani i uległa postawa ciała.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [
+      { tactic: 'Szantaż emocjonalny FOG (Fear, Obligation, Guilt)', description: 'Użycie zdrowia matki i obowiązku wobec wuja do wymuszenia posłuszeństwa.', vulnerabilityExploited: 'Lojalność synowska i poczucie obowiązku' }
+    ],
+    counterMeasures: [
+      { step: 'Spokojna, dojrzała asertywność z oddzieleniem faktów od emocji', script: '„Dziadku, rozumiem, że zależy ci na firmie wuja. Moja decyzja o wyjeździe do Zurychu jest jednak podjęta i nie podlega negocjacji. To dla mnie ogromna szansa. Będziemy w kontakcie telefonicznym”.', rationale: 'Ustanawia granicę dorosły-dorosły, odmawiając wejścia w rolę skruszonego dziecka.' }
+    ]
+  },
+  alternativePath: 'Gdyby Tomasz wyjechał do Zurychu, po początkowym chłodzie rodzina po roku zaczęłaby się chwalić w towarzystwie jego sukcesami za granicą, a on sam zachowałby szacunek do siebie.',
+  readerQuestion: 'Z jakiej życiowej szansy zrezygnowałeś tylko dlatego, że „w Twojej rodzinie tego się nie robi”? ',
+  keyTakeaway: 'Dorosłość zaczyna się w momencie, gdy jesteś gotów znieść czyjeś rozczarowanie, aby nie zdradzić samego siebie.'
+};
+
+export const chapterSixExerciseRoles: SelfExercise = {
+  id: 'ex-ch6-role-audit',
+  title: 'Ćwiczenie 6.1: Audyt Masek i Ról Społecznych',
+  subtitle: 'Odkryj, ile z Twoich codziennych wyborów wynika z Twojej woli, a ile ze skryptu Twojej roli',
+  objective: 'Zidentyfikowanie nieświadomych norm i ograniczeń, jakie narzucają na Ciebie Twoje role w pracy, rodzinie i wśród znajomych.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Świadoma autorefleksja angażuje sieć wzbudzeń domyślnych (DMN) oraz przednią korę zakrętu obręczy, umożliwiając dekontekstualizację — oddzielenie rdzennego „ja” od automatycznych schematów behawioralnych.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Zidentyfikuj 3 kluczowe role społeczne',
+      instruction: 'Wypisz trzy role, w których spędzasz najwięcej czasu (np. kierownik zespołu, perfekcyjna matka, lojalny syn, wieczny wesołek w paczce przyjaciół).',
+      promptText: 'Wpisz swoje 3 role oraz niepisane nakazy, jakie każda z nich Ci narzuca:',
+      placeholder: 'Rola 1: W pracy - nie wolno mi okazać niewiedzy ani zawahać się przed klientem...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Wykryj cenę emocjonalną roli',
+      instruction: 'Zastanów się, jakich emocji i autentycznych zachowań zabrania Ci każda z tych ról. Jakie sygnały somatyczne (napięcie w karku, ścisk w żołądku) temu towarzyszą?',
+      promptText: 'Czego nie wolno mi czuć ani mówić, gdy noszę tę maskę?',
+      placeholder: 'Gdy jestem w roli szefa, tłumię lęk i bezsilność, co objawia się zgrzytaniem zębami...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Eksperyment mikro-autentyczności',
+      instruction: 'Wybierz jedną bezpieczną sytuację w tym tygodniu, w której zdejmiesz maskę roli i zareagujesz w 100% z poziomu autentycznego człowieka.',
+      promptText: 'Co konkretnie powiesz lub zrobisz w wybranej sytuacji?',
+      placeholder: 'Na poniedziałkowym zebraniu powiem otwarcie: „Nie znam jeszcze odpowiedzi na to pytanie, sprawdzę to do środy”...'
+    }
+  ],
+  reflectionQuestions: [
+    'Kim jesteś w momentach, gdy nikt na Ciebie nie patrzy i nikt od Ciebie niczego nie oczekuje?',
+    'Którą ze swoich ról nosisz z własnego wyboru, a którą odziedziczyłeś bezrefleksyjnie po oczekiwaniach otoczenia?'
+  ]
+};
+
+export const chapterSixExerciseBystander: SelfExercise = {
+  id: 'ex-ch6-bystander-breaker',
+  title: 'Ćwiczenie 6.2: Protokół 5 Sekund — Przełamywanie Efektu Widza',
+  subtitle: 'Trening aktywnej interwencji w sytuacjach niejednoznacznych społecznie',
+  objective: 'Zbudowanie gotowości do natychmiastowego przerwania paraliżu tłumu i wzięcia odpowiedzialności.',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Przełamanie paraliżu decyzyjnego w ciągu pierwszych 5 sekund zapobiega przejęciu kontroli przez korę zakrętu obręczy (dACC), która pod wpływem obserwacji biernego tłumu wygasza intencję działania.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Analiza sytuacji z przeszłości',
+      instruction: 'Przypomnij sobie sytuację z przestrzeni publicznej lub biura, w której widziałeś kogoś w potrzebie lub trudnej sytuacji, ale nie zareagowałeś, bo inni nie reagowali.',
+      promptText: 'Co to była za sytuacja i jakie myśli pojawiły się w Twojej głowie w pierwszych sekundach?',
+      placeholder: 'Na przystanku ktoś zasłabł, a ja pomyślałem: „Pewnie zaraz ktoś podejdzie, nie będę się wtrącał”...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Sformułuj osobisty Protokół Jednoosobowy',
+      instruction: 'Napisz dokładną formułę słowną, której użyjesz następnym razem, gdy zobaczysz sytuację kryzysową w obecności biernych świadków.',
+      promptText: 'Jakie konkretne słowa wypowiesz do wybranego z tłumu świadka?',
+      placeholder: '„Panie w czerwonej kurtce, proszę podejść i pomóc mi podnieść tego pana, a pani w okularach niech dzwoni pod 112!”'
+    },
+    {
+      stepNumber: 3,
+      title: 'Pakt z samym sobą: Zasada Pierwszego Kroku',
+      instruction: 'Zadeklaruj jedną zasadę moralną, którą będziesz stosować bez względu na to, czy inni ludzie wokół Ciebie stoją w milczeniu.',
+      promptText: 'Moja niezmienna zasada odpowiedzialności osobistej to:',
+      placeholder: 'Gdy widzę człowieka w opresji, robię pierwszy krok w ciągu 3 sekund, zanim mój mózg zacznie kalkulować, co pomyślą inni.'
+    }
+  ],
+  reflectionQuestions: [
+    'Jak zmieniłoby się Twoje poczucie sprawczości, gdybyś zawsze uważał się za pierwszego odpowiedzialnego na miejscu zdarzenia?',
+    'Czego tak naprawdę boisz się bardziej: ośmieszenia przed obcymi ludźmi czy świadomości, że nie pomogłeś?'
+  ]
+};
+
+export const chapterSixExerciseAttribution: SelfExercise = {
+  id: 'ex-ch6-attribution-reframing',
+  title: 'Ćwiczenie 6.3: Rozbrajanie Podstawowego Błędu Atrybucji',
+  subtitle: 'Przebuduj automatyczny osąd drugiego człowieka z atrybucji cech na atrybucję sytuacji',
+  objective: 'Zastąpienie odruchowej wrogości i etykietowania (System 1) chłodną, empatyczną analizą kontekstu sytuacyjnego (System 2).',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Przejście od automatycznej oceny w ciele migdałowatym do analizy sytuacji w brzuszno-bocznej korze przedczołowej redukuje poziom katecholamin i obniża tętno spoczynkowe.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Wybierz osobę, która Cię ostatnio zirytowała',
+      instruction: 'Opisz zachowanie kogoś ze swojego otoczenia (współpracownik, partner, kierowca na drodze), które wzbudziło w Tobie złość.',
+      promptText: 'Co ta osoba zrobiła i jaka była Twoja pierwsza, automatyczna etykieta na jej temat?',
+      placeholder: 'Kolega nie przesłał raportu na czas. Moja myśl: „To leń i ignorant, który ma gdzieś moją pracę”...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Wygeneruj 3 hipotezy sytuacyjne (Zewnętrzne)',
+      instruction: 'Wymyśl trzy całkowicie wiarygodne okoliczności zewnętrzne, które mogły zmusić tę osobę do takiego zachowania bez jej złej woli.',
+      promptText: 'Jakie 3 niewidoczne dla Ciebie czynniki mogły wpłynąć na jej zachowanie?',
+      placeholder: '1. Miał w nocy awarię w domu. 2. Jego dziecko zachorowało. 3. Otrzymał sprzeczne polecenia z zarządu...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Sformułuj komunikat ciekawości zamiast ataku',
+      instruction: 'Ułóż zdanie, którym rozpoczniesz rozmowę z tą osobą, pytając o fakty i okoliczności, zamiast oskarżać jej charakter.',
+      promptText: 'Jak zapytasz o powody w sposób konstruktywny?',
+      placeholder: '„Zauważyłem, że raport nie dotarł do 15:00. Czy coś niespodziewanego stanęło na przeszkodzie? Jak mogę pomóc zamknąć ten temat?”'
+    }
+  ],
+  reflectionQuestions: [
+    'O ile lżejsze staje się Twoje codzienne życie, gdy przestajesz przypisywać ludziom złą wolę tam, gdzie wystarczy zwykły zbieg okoliczności?',
+    'Jak chciałbyś, aby inni interpretowali Twoje własne potknięcia i gorsze dni?'
+  ]
+};
 
 export const chapterSix: Chapter = {
   number: 6,
   title: 'Człowiek Wśród Ludzi',
   subtitle: 'Jak obecność, presja i normy grupy bezwiednie przekształcają nasze decyzje, oceny i tożsamość',
-  leadParagraph: 'W Tomie I zbadaliśmy architekturę samotnego umysłu — podwójny system, afektywne pożary amygdali, wąskie gardło uwagi i omylną rekonstrukcję wspomnień. Jednak żaden ludzki mózg nie ewoluował w izolatorium. Nasz aparat poznawczy to w 90% procesor społeczny, nieustannie skanujący stado w poszukiwaniu akceptacji, statusu i sygnałów zagrożenia. W tym rozdziale przekraczamy próg indywidualnej czaszki i badamy niewidzialne pole grawitacyjne grupy.',
+  leadParagraph: 'W Tomie I zbadaliśmy architekturę samotnego umysłu — podwójny system, afektywne pożary ciała migdałowatego, wąskie gardło uwagi i omylną rekonstrukcję wspomnień. Jednak żaden ludzki mózg nie ewoluował w izolatorium. Nasz aparat poznawczy to w 90% procesor społeczny, nieustannie skanujący stado w poszukiwaniu akceptacji, statusu i sygnałów zagrożenia. W tym rozdziale badamy niewidzialne pole grawitacyjne grupy: od konformizmu i uległości, przez efekt widza, aż po błędy atrybucji.',
   totalEstimatedPages: 52,
   sections: [
     {
@@ -125,13 +385,13 @@ export const chapterSix: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD Z ŻYCIA: Oszczędzanie energii w hotelu',
+          title: 'PRZYKŁAD 1: Szpitalny oddział ratunkowy — Niepisana norma milczenia',
           paragraphs: [
-            'W słynnym badaniu Cialdiniego w pokojach hotelowych testowano różne komunikaty zachęcające do ponownego używania ręczników.',
-            'Komunikat A (norma nakazowa i apel ekologiczny): „Chroń środowisko! Użyj ręcznika ponownie, aby oszczędzać wodę dla przyszłych pokoleń”. Skuteczność: 35%.',
-            'Komunikat B (norma opisowa ogólna): „Dołącz do naszych gości! 75% osób mieszkających w naszym hotelu używa ręczników wielokrotnie”. Skuteczność wzrosła do 44%.',
-            'Komunikat C (norma opisowa lokalna): „75% gości, którzy mieszkali DOKŁADNIE W TYM POKOJU, ponownie użyło ręczników”. Skuteczność skoczyła do blisko 50%!',
-            'Dlaczego? Mózg nie chce być abstrakcyjnie dobry; mózg panicznie pragnie robić to, co robili inni członkowie jego bezpośredniego otoczenia.'
+            'Sytuacja i bohater: Młody lekarz rezydent, dr Paweł (28 lat), zauważa, że starszy ordynator, dyżurujący 26. godzinę z rzędu, pomylił dawki leku przeciwkrzepliwego dla pacjenta z zawałem.',
+            'Działający mechanizm: Kolizja normy nakazowej (kodeks etyki lekarskiej: ratuj życie za wszelką cenę) z potężną normą opisową oddziału („Nigdy nie podważaj autorytetu ordynatora przy personelu, jeśli chcesz ukończyć specjalizację”).',
+            'Jak rozpoznać w czasie rzeczywistym: Suchość w ustach, drżenie rąk, natrętna myśl: „Może ordynator wie coś, czego ja nie doczytałem?”. To System 1 próbuje racjonalizować bierność, by uniknąć kary społecznej.',
+            'Możliwa konstruktywna reakcja: Użycie techniki bezpiecznego pytania (graded assertiveness): „Panie ordynatorze, czy w dokumentacji pacjenta wpisujemy 5000 czy 2500 jednostek, bo w wytycznych z tego roku zalecają niższą dawkę przy tej masie ciała?”. Pozwala to przełożonemu skorygować błąd bez utraty twarzy.',
+            'Wniosek dydaktyczny dla czytelnika: Kultura milczenia w organizacji zawsze opiera się na normach opisowych. Zmiana zachowania wymaga stworzenia psychologicznego bezpieczeństwa, a nie kolejnych regulaminów.'
           ]
         }
       ]
@@ -141,7 +401,7 @@ export const chapterSix: Chapter = {
       pageNumber: 234,
       sectionNumber: '6.3',
       title: 'Maska staje się twarzą: Role społeczne i deindywiduacja',
-      category: 'teoria',
+      category: 'cwiczenia',
       readingTimeMinutes: 13,
       paragraphs: [
         'Kiedy wkładasz garnitur adwokata, lekarski fartuch, policyjny mundur lub identyfikator audytora korporacyjnego, nie tylko zmieniasz odzież wierzchnią. Zmieniasz matrycę decyzyjną. Zjawisko to, badane m.in. przez Ervinga Goffmana i Philipa Zimbardo, pokazuje, że rola społeczna działa jak gotowy skrypt poznawczy.',
@@ -150,48 +410,31 @@ export const chapterSix: Chapter = {
       ],
       subsections: [
         {
-          title: 'UWAŻAJ NA UPROSZCZENIE: Eksperyment Więzienny Zimbardo',
+          title: 'PRZYKŁAD 2: Kamila i nowa rola kierownicza',
           paragraphs: [
-            'Przez dekady Stanfordzki Eksperyment Więzienny (1971) przedstawiano jako dowód na to, że „zwykli ludzie automatycznie stają się potworami w złym otoczeniu”. Współczesna rewizja naukowa (m.in. prace Thibault Le Texiera) nakazuje jednak ogromną ostrożność.',
-            'Strażnicy nie stali się sadystami sami z siebie — byli aktywnie instruowani i zachęcani przez Zimbardo do stosowania presji psychologicznej. Oznacza to coś jeszcze bardziej niepokojącego: ludzie stają się okrutni nie w próżni, lecz wtedy, gdy autorytet legitymizuje ich przemoc jako „służbę wyższemu celowi naukowemu lub społecznemu”.'
-          ],
-          highlightBox: {
-            title: 'Korekta Naukowa (Status F/B)',
-            content: 'Deindywiduacja nie odbiera wolnej woli mechanicznie; obniża próg oporu wobec destrukcyjnych zachowań, jeśli są one aprobowane przez przewodnika stada.',
-            type: 'warning'
-          }
+            'Sytuacja i bohater: Kamila (32 lata), dotąd serdeczna i pomocna koleżanka z zespołu marketingu, po awansie na stanowisko dyrektorskie nagle staje się chłodna, autorytarna i zaczyna rozliczać dawnych przyjaciół z każdej minuty spóźnienia.',
+            'Działający mechanizm: Wchłonięcie przez rolę społeczną. Kamila nieświadomie odtwarza skrypt „silnego przywódcy”, jaki widziała u swoich dawnych, surowych przełożonych, myląc profesjonalizm z emocjonalnym dystansem.',
+            'Jak rozpoznać w czasie rzeczywistym: Ciągłe napięcie mięśniowe poza pracą, poczucie wyobcowania i wewnętrzny dysonans: „Dlaczego zachowuję się wobec nich jak ktoś, kogo sama nie cierpiałam?”.',
+            'Możliwa konstruktywna reakcja: Świadome rozróżnienie między jasnością wymagań biznesowych a szacunkiem relacyjnym. Szczera rozmowa z zespołem: „Moja rola się zmieniła i odpowiadam za wyniki przed zarządem, ale moje wartości wobec was pozostają niezmienne”.',
+            'Wniosek dydaktyczny dla czytelnika: Jeśli nie zdefiniujesz swojej roli świadomie, rola zdefiniuje Ciebie według najbardziej prymitywnych stereotypów.'
+          ]
         }
-      ]
+      ],
+      exerciseRef: chapterSixExerciseRoles
     },
     {
       id: 'sec-6-4',
       pageNumber: 238,
       sectionNumber: '6.4',
       title: 'Siła jednomyślności: Eksperymenty Ascha i anatomia konformizmu',
-      category: 'teoria',
+      category: 'studium-przypadku',
       readingTimeMinutes: 15,
       paragraphs: [
         'Wyobraź sobie klasyczne badanie Solomona Ascha: siedzisz przy stole z siedmioma innymi studentami. Badacz pokazuje dwie plansze. Na jednej jest odcinek wzorcowy X, na drugiej trzy odcinki: A, B i C. Zadanie jest banalne — wskazać, który odcinek ma tę samą długość co X. Różnica wynosi kilka centymetrów, pięcioletnie dziecko odpowiedziałoby bezbłędnie.',
         'Odpowiedzi udzielane są po kolei na głos. Jesteś przedostatni. Pierwszy uczestnik pewnym głosem mówi: „Odcinek B” (choć ewidentnie poprawny jest C!). Drugi bez wahania potwierdza: „Odcinek B”. Trzeci, czwarty, piąty, szósty — wszyscy mówią „B”. Nadchodzi Twoja kolej. Zegarek tyka. Siedem par oczu patrzy na Ciebie. Co robisz?',
-        'W eksperymentach Ascha aż 75% badanych przynajmniej raz uległo jednomyślnej grupie i wskazało ewidentną bzdurę. Średnio co trzecia odpowiedź była konformistyczna. Dlaczego dorośli, wykształceni ludzie zaprzeczali własnym oczom?'
+        'W eksperymentach Ascha aż 75% badanych przynajmniej raz uległo jednomyślnej grupie i wskazało ewidentną bzdurę. Średnio co trzecia odpowiedź była konformistyczna. Poniższe studium przypadku ukazuje, jak ten sam mechanizm niszczy relacje młodych ludzi w dobie cyfrowej.'
       ],
-      subsections: [
-        {
-          title: 'Trzy poziomy uległości wg Herberta Kelmana',
-          paragraphs: [
-            '1. Uleganie (Compliance): Wiesz, że grupa się myli, ale mówisz to co oni, aby uniknąć kłótni, wyśmiania lub wykluczenia (motywacja zewnętrzna).',
-            '2. Identyfikacja (Identification): Przyjmujesz zdanie grupy, ponieważ chcesz być postrzegany jako lojalny członek tej wspólnoty („Nasi eksperci wiedzą lepiej”).',
-            '3. Internalizacja (Internalization): Najgłębszy poziom — pod wpływem pewności siebie grupy Twoja percepcja naprawdę ulega przebudowie. Zaczynasz szczerze wierzyć, że odcinek B jest równy X („Może mam wadę wzroku?”, „Oni patrzą pod lepszym kątem”).'
-          ]
-        },
-        {
-          title: 'Magiczna moc jednego sojusznika',
-          paragraphs: [
-            'Najważniejszy wniosek z badań Ascha często umyka w podręcznikach: gdy badacz wprowadził do pokoju choćby jednego podstawionego uczestnika, który wyłamał się z fałszu i podał poprawną odpowiedź C (lub jakąkolwiek inną niż reszta!), konformizm spadał o ponad 80%!',
-            'Nie potrzebujesz większości, by obronić prawdę. Wystarczy jeden głos rozbijający monolit pozornej jednomyślności stada, by dać korze przedczołowej pozostałych odwagę do samodzielnego myślenia.'
-          ]
-        }
-      ]
+      caseStudyRef: chapterSixCaseStudySchool
     },
     {
       id: 'sec-6-5',
@@ -202,22 +445,19 @@ export const chapterSix: Chapter = {
       readingTimeMinutes: 16,
       paragraphs: [
         'Uniwersytet Yale, lipiec 1961 roku. Zaledwie trzy miesiące po rozpoczęciu procesu Adolfa Eichmanna w Jerozolimie, 27-letni psycholog Stanley Milgram zadaje fundamentalne pytanie: „Czy to możliwe, że Eichmann i miliony jego wspólników w Zagładzie po prostu wykonywali rozkazy? Czy zwykły, przyzwoity człowiek może stać się katem pod wpływem autorytetu?”.',
-        'Rekrutowani z ogłoszenia w gazecie zwykli obywatele — nauczyciele, urzędnicy, robotnicy — wcielają się w rolę „Nauczyciela”. Ich zadaniem jest karanie „Ucznia” (aktora ukrytego za ścianą) wstrząsami elektrycznymi za każdy błąd w teście pamięciowym. Generator ma 30 przełączników: od 15V („Lekki wstrząs”), przez 150V („Uczeń krzyczy z bólu i błaga o wypuszczenie”), 330V („Śmiertelne niebezpieczeństwo / brak reakcji”), aż po 450V oznaczone złowrogim symbolem „XXX”.',
-        'Przed eksperymentem Milgram poprosił 40 wybitnych psychiatrów o prognozę. Eksperci orzekli: „Nie więcej niż 1–2% skrajnych sadystów dojdzie do końca skali”. Wynik rzeczywisty wstrząsnął światem: 65% uczestników doszło do maksymalnego napięcia 450V, wciskając przełącznik na spokojne polecenie badacza w szarym fartuchu („Eksperyment wymaga, abyś kontynuował”).'
+        'Rekrutowani z ogłoszenia w gazecie zwykli obywatele — nauczyciele, urzędnicy, robotnicy — wcielają się w rolę „Nauczyciela”. Ich zadaniem jest karanie „Ucznia” (aktora ukrytego za ścianą) wstrząsami elektrycznymi za każdy błąd w teście pamięciowym. Generator ma 30 przełączników: od 15V, przez 150V, aż po 450V oznaczone symbolem „XXX”.',
+        'Wynik rzeczywisty wstrząsnął światem: 65% uczestników doszło do maksymalnego napięcia 450V, wciskając przełącznik na spokojne polecenie badacza w szarym fartuchu („Eksperyment wymaga, abyś kontynuował”). Milgram wykazał, że człowiek w obliczu autorytetu wchodzi w stan agentyczny — przestaje czuć się sprawcą i przenosi moralną odpowiedzialność na przełożonego.'
       ],
       subsections: [
         {
-          title: 'Stan autonomiczny a stan agentyczny',
+          title: 'PRZYKŁAD 3: Główna księgowa Teresa i kreatywna faktura',
           paragraphs: [
-            'Milgram sformułował teorię dwóch stanów funkcjonowania psychiki ludzkiej:',
-            'W stanie autonomicznym człowiek czuje się w pełni moralnie i przyczynowo odpowiedzialny za skutki swoich działań. Jego sumienie i kora przedczołowa sprawują nadzór nad zachowaniem.',
-            'W stanie agentycznym jednostka postrzega siebie wyłącznie jako mechaniczne narzędzie wykonujące wolę prawomocnego autorytetu. Odpowiedzialność zostaje wytransferowana w górę. Osoba może płakać, pocić się, gryźć wargi z nerwów (co działo się u Milgrama), ale nadal naciska guzik, mówiąc sobie: „To nie ja to robię, to on mi kazał”.'
-          ],
-          highlightBox: {
-            title: 'Most do Tomu I (Emocje i Rozdźwięk Poznawczy)',
-            content: 'Uczestnicy Milgrama doświadczali skrajnego porwania emocjonalnego (Tom I, Rozdział 2): drżeli, przeklinali, błagali badacza o przerwanie. Jednak autorytet unieważniał ich sygnały somatyczne za pomocą chłodnego komunikatu poznawczego.',
-            type: 'insight'
-          }
+            'Sytuacja i bohater: Teresa (54 lata), skrupulatna księgowa z 25-letnim stażem, otrzymuje od prezesa spółki polecenie zaksięgowania fikcyjnej faktury marketingowej na 120 000 zł, aby obniżyć podatek dochodowy przed końcem kwartału.',
+            'Działający mechanizm: Stan agentyczny Milgrama. Teresa myśli: „Prezes jest prawnikiem, to on podejmuje decyzje strategiczne i on podpisuje bilans. Ja tylko wykonuję operację techniczną w systemie”.',
+            'Jak rozpoznać w czasie rzeczywistym: Uczucie mdłości przy włączaniu komputera, odpychanie myśli o kontroli skarbowej, powtarzanie w myślach: „Przecież to nie moja wina, szef kazał”.',
+            'Możliwa konstruktywna reakcja: Wyjście ze stanu agentycznego i przejście do stanu autonomicznego: „Panie prezesie, ta operacja narusza art. 271 Kodeksu Karnego. Nie mogę podpisać tego dokumentu pod własnym nazwiskiem. Proszę o pisemne polecenie służbowe lub przekazanie sprawy do zewnętrznego doradcy podatkowego”.',
+            'Wniosek dydaktyczny dla czytelnika: Przekonanie, że „ja tylko wykonywałem polecenia”, nie chroni ani przed odpowiedzialnością prawną, ani przed erozją własnego kręgosłupa moralnego.'
+          ]
         }
       ]
     },
@@ -229,16 +469,18 @@ export const chapterSix: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 13,
       paragraphs: [
-        'Nowy Jork, Queens, 1964 rok. 28-letnia Kitty Genovese wraca w nocy z pracy. Zostaje zaatakowana i śmiertelnie ugodzona nożem w pobliżu swojego bloku. Artykuł na pierwszej stronie The New York Times donosi, że „38 szanowanych obywateli patrzyło przez okna na morderstwo przez ponad pół godziny i żaden nie zadzwonił na policję”. Choć późniejsze śledztwa wykazały, że liczba 38 była prasową hiperbolą, tragedia ta zapoczątkowała przełomowe badania Bibba Latané i Johna Darleya nad „efektem widza”.',
-        'Eksperyment z dymem w pokoju: Student wypełnia kwestionariusz. Nagle przez kratkę wentylacyjną do pokoju zaczyna wsączać się gęsty, gryzący dym. Gdy student jest sam, w 75% przypadków w ciągu 2 minut wstaje, wychodzi i alarmuje obsługę.',
-        'Gdy w pokoju siedzi trzech studentów (w tym dwóch podstawionych pomocników badacza, którzy na widok dymu tylko wzruszają ramionami i dalej piszą), zaledwie 10% badanych reaguje w ciągu 6 minut! Pozostali siedzą w kłębach dymu, kaszląc i przecierając oczy, paraliżowani przez dwa mechanizmy.'
+        'Nowy Jork, Queens, 1964 rok. Tragedia Kitty Genovese zapoczątkowała przełomowe badania Bibba Latané i Johna Darleya nad „efektem widza”. W eksperymencie z dymem w pokoju, student piszący ankietę w samotności reagował w 75% przypadków w ciągu 2 minut. Gdy w pokoju siedziało dwóch innych podstawionych uczestników ignorujących dym, wskaźnik reakcji spadał do 10%!',
+        'Dlaczego tak się dzieje? Odpowiada za to zjawisko niewiedzy wielu (Pluralistic Ignorance). Sytuacje kryzysowe są zazwyczaj niejednoznaczne. Co robi ludzki umysł w warunkach niepewności? Skanuje twarze innych świadków. Ponieważ każdy stara się zachować kamienną twarz, by nie wyjść na histeryka, wszyscy widzą wokół spokój i wyciągają wniosek: „Skoro nikt nie reaguje, widocznie nic złego się nie dzieje”.'
       ],
       subsections: [
         {
-          title: 'Mechanizm 1: Zjawisko niewiedzy wielu (Pluralistic Ignorance)',
+          title: 'PRZYKŁAD 4: Upadek emeryta na dworcu w Katowicach',
           paragraphs: [
-            'Sytuacje kryzysowe są zazwyczaj niejednoznaczne. Czy ten leżący na chodniku mężczyzna ma zawał, czy po prostu zasnął pijany? Czy ten krzyk w mieszkaniu obok to przemoc domowa, czy głośny film akcji?',
-            'Co robi ludzki umysł w warunkach niepewności? Skanuje twarze innych świadków (Bottom-up attention, Tom I). Jednak każdy świadek stara się zachować pokerową twarz, by nie wyjść na panikarza. W rezultacie wszyscy widzą wokół siebie spokój, więc każdy dochodzi do fałszywego wniosku: „Skoro nikt nie panikuje, to widocznie nic się nie dzieje”. Wszyscy tkwią w bezruchu, oszukując się nawzajem.'
+            'Sytuacja i bohater: 72-letni pan Stanisław potyka się na schodach peronu kolejowego i upada, uderzając głową o posadzkę. Obok przechodzi kilkudziesięciu podróżnych z walizkami, patrząc na leżącego kątem oka, ale nikt się nie zatrzymuje.',
+            'Działający mechanizm: Efekt widza sprzężony z niewiedzą wielu i stereotypem: „Pewnie pijany, albo zaraz wstanie, skoro nikt nie podchodzi”. Tłum wzajemnie utwierdza się w bezczynności.',
+            'Jak rozpoznać w czasie rzeczywistym: Odruch zwolnienia kroku z jednoczesnym spojrzeniem na innych: „Czy ktoś inny podszedł?”. Jeśli nie, mózg generuje automatyczną wymówkę: „Pociąg mi ucieknie”.',
+            'Możliwa konstruktywna reakcja: Natychmiastowe zatrzymanie się, uklęknięcie przy poszkodowanym i głośne zawołanie: „Halo, proszę pana, czy pan mnie słyszy?!”. W ułamku sekundy, widząc jedną aktywną osobę, z tłumu wybiega 3-4 kolejnych pomocników.',
+            'Wniosek dydaktyczny dla czytelnika: Tłum potrzebuje jednego katalizatora. Bądź pierwszą osobą, która zatrzyma krok — to zdejmie paraliż z pozostałych.'
           ]
         }
       ]
@@ -248,59 +490,51 @@ export const chapterSix: Chapter = {
       pageNumber: 250,
       sectionNumber: '6.7',
       title: 'Rozproszenie odpowiedzialności: Dlaczego tłum paraliżuje pomoc',
-      category: 'teoria',
-      readingTimeMinutes: 12,
+      category: 'cwiczenia',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Drugim filarem efektu widza jest czysta arytmetyka psychologiczna znana jako rozproszenie odpowiedzialności (Diffusion of Responsibility).',
-        'Kiedy jesteś jedynym świadkiem wypadku drogowego na pustej leśnej drodze, 100% ciężaru moralnego spoczywa na Twoich barkach. Jeśli miniesz ofiarę i odjedziesz, poczucie winy i potępienie społeczne obciążą wyłącznie Ciebie. Koszt zaniechania jest gigantyczny.',
-        'Gdy wokół stoi 50 osób na ruchliwym peronie metra, 100% odpowiedzialności zostaje podzielone przez 50. Każdy otrzymuje mikroskopijne 2% poczucia winy. Umysł podsuwa natychmiastowe racjonalizacje Systemu 1: „Na pewno ktoś już wezwał pogotowie”, „Przecież tamci dwaj stoją bliżej”, „Ten pan w garniturze wygląda na lekarza, niech on podejdzie”.',
-        'W efekcie człowiek umiera na oczach setki ludzi nie dlatego, że są oni pozbawionymi serca potworami, lecz dlatego, że każdy z nich czekał na ruch sąsiada.'
+        'Rozproszenie odpowiedzialności (Diffusion of Responsibility) to matematyczna pułapka psychiki. Jeśli jesteś jedynym świadkiem wypadku drogowego na pustej leśnej drodze, 100% odpowiedzialności za przeżycie rannego spoczywa na Twoich barkach. Twoja kora przedczołowa nie ma żadnej drogi ucieczki — musisz działać.',
+        'Jeśli jednak na poboczu stoi 20 samochodów, Twoja subiektywna odpowiedzialność zostaje podzielona przez dwadzieścia: wynosi zaledwie 5%. Każdy myśli: „Ktoś inny już na pewno zadzwonił pod numer alarmowy”, „Tamten kierowca wygląda na kogoś, kto lepiej zna się na pierwszej pomocy”. W rezultacie nikt nie wykonuje telefonu.',
+        'Poniższy warsztat pozwala wytrenować nawyk natychmiastowego przełamywania tego paraliżu w przestrzeni publicznej.'
       ],
-      subsections: [
-        {
-          title: 'JAK ZASTOSOWAĆ TO JUTRO? Protokół przełamywania efektu widza',
-          paragraphs: [
-            'Jeśli zasłabniesz w miejscu publicznym lub jesteś świadkiem wypadku, NIGDY nie krzycz ogólnie: „Niech ktoś wezwie pomoc!”. Słowo „ktoś” to psychologiczna próżnia, w której odpowiedzialność natychmiast ulega rozproszeniu.',
-            'Zamiast tego wskaż palcem konkretną osobę, nawiąż kontakt wzrokowy i wydaj precyzyjną dyrektywę:',
-            '„Panie w czerwonej kurtce! Tak, pan! Niech pan teraz wyjmie telefon i zadzwoni pod 112. Proszę mi powiedzieć, kiedy dyspozytor odbierze”.',
-            'W tym momencie rozbijasz anonimowość tłumu, nakładasz na jednostkę 100% odpowiedzialności i przywracasz jej stan autonomiczny.'
-          ]
-        }
-      ]
+      exerciseRef: chapterSixExerciseBystander
     },
     {
       id: 'sec-6-8',
       pageNumber: 254,
       sectionNumber: '6.8',
-      title: 'Status, hierarchia i chemia dominacji: Kto mówi, kto milczy',
-      category: 'teoria',
-      readingTimeMinutes: 14,
+      title: 'Status i hierarchia: Niewidzialna drabina dziobania',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Zanim homo sapiens wypowiedział pierwsze słowo w języku symbolicznym, przez setki tysięcy lat porozumiewał się językiem hierarchii naczelnych. Wystarczy wejść na dowolne spotkanie biznesowe, do pokoju nauczycielskiego czy na rodzinną kolację wigilijną, by bez znajomości języka po 30 sekundach wskazać, kto ma najwyższy status w stadzie.',
-        'Hierarchia nie jest konstruktem kulturowym — to biologiczny kompas oszczędzający energię grupy. Walka o każdy kęs jedzenia czy każde terytorium doprowadziłaby stado do samounicestwienia. Dlatego mózg wykształcił błyskawiczne detektory statusu: ton głosu o obniżonej częstotliwości, zajmowanie przestrzeni fizycznej, tempo mowy, a przede wszystkim: kto czeka na czyją aprobatę.',
-        'Osoby o wysokim postrzeganym statusie uwalniają w otoczeniu neurobiologiczną uległość. Kiedy szef zarządu rzuca słaby żart, wszyscy wybuchają śmiechem. Kiedy stażysta proponuje genialne rozwiązanie, sala często milczy lub przechodzi nad tym do porządku dziennego. Nasza uwaga (Tom I, Rozdział 3) jest automatycznie zasysana przez jednostki dominujące.'
+        'Z punktu widzenia neuroendokrynologii, status społeczny to nie abstrakcyjne pojęcie socjologiczne — to fizjologiczny przełącznik w Twoim pniu mózgu. U ssaków naczelnych pozycja w hierarchii reguluje poziom serotoniny i dopaminy oraz wrażliwość receptorów glikokortykoidowych.',
+        'Kiedy wchodzisz do pomieszczenia, w którym przebywa osoba o znacznie wyższym statusie (wielki autorytet naukowy, prezes korporacji, nestor zamożnego rodu), Twoje ciało w ciągu kilkunastu milisekund przyjmuje mikropostawę uległą: opuszczenie ramion, unikanie bezpośredniego kontaktu wzrokowego, ściszenie głosu.',
+        'W rodzinach wielopokoleniowych hierarchia potrafi zablokować rozwój dorosłych jednostek na całe dekady. Studium przypadku poniżej przedstawia dramatyczny mechanizm uległości wobec rodzinnego patriarchy.'
       ],
-      subsections: [
-        {
-          title: 'PRZYKŁAD Z ŻYCIA: Katastrofy lotnicze i indeks dystansu władzy',
-          paragraphs: [
-            'Malcolm Gladwell w książce „Poza schematem” opisał tragiczną serię katastrof linii Korean Air w latach 90. Śledztwa czarnych skrzynek wykazały zdumiewający mechanizm: w kokpicie piloci nie rozbijali się z powodu awarii silników, lecz z powodu skrajnej uległości drugiego pilota wobec kapitana.',
-            'W kulturze o wysokim dystansie władzy młodszy oficer widział błąd kapitana na wskaźnikach, ale używał zawoalowanych, grzecznościowych aluzji („Kapitanie, w tych rejonach radary bywają kapryśne”), zamiast krzyknąć: „Ściągaj wolant, zaraz uderzymy w zbocze!”. Strach przed naruszeniem hierarchii okazał się silniejszy niż instynkt samozachowawczy.'
-          ]
-        }
-      ]
+      caseStudyRef: chapterSixCaseStudyFamily
     },
     {
       id: 'sec-6-9',
       pageNumber: 258,
       sectionNumber: '6.9',
-      title: 'Pierwsze 100 milisekund: Jak mózg tworzy pierwsze wrażenie',
+      title: 'Pierwsze wrażenie: Wyrok mózgu w 100 milisekund',
       category: 'teoria',
-      readingTimeMinutes: 12,
+      readingTimeMinutes: 13,
       paragraphs: [
         'Według badań prof. Janine Willis i Alexandra Todorova z Uniwersytetu Princeton, ludzki mózg potrzebuje zaledwie 100 milisekund (jednej dziesiątej sekundy!), aby na podstawie samego widoku twarzy nieznajomego wygenerować wiążące oceny dotyczące jego wiarygodności, kompetencji, agresywności i statusu.',
-        'Wydłużenie czasu ekspresji twarzy do 500 czy 1000 milisekund nie zmieniało już pierwotnego osądu — zwiększało jedynie subiektywną pewność badanego, że ma rację! To podręcznikowy przykład działania Systemu 1 z Tomu I. Zanim informacja dotrze do kory wzrokowej V1 i zostanie poddana świadomej obróbce semantycznej, ciało migdałowate podjęło już decyzję afektywną: „Bezpieczny czy Zagrożenie?”.',
-        'Co najbardziej uderzające, badania Todorova dowiodły, że na podstawie samych 1-sekundowych niemych migawek twarzy kandydatów do Kongresu USA, badani potrafili z dokładnością niemal 70% przewidzieć wyniki rzeczywistych wyborów. Wyborcy wierzyli, że głosują na program gospodarczy; ich System 1 głosował na zarys szczęki i wyraz oczu sugerujący „kompetencję dominującą”.'
+        'Wydłużenie czasu ekspresji twarzy do 500 czy 1000 milisekund nie zmieniało już pierwotnego osądu — zwiększało jedynie subiektywną pewność badanego, że ma rację! To podręcznikowy przykład działania Systemu 1 z Tomu I. Zanim informacja dotrze do kory wzrokowej V1 i zostanie poddana świadomej obróbce semantycznej, ciało migdałowate podjęło już decyzję afektywną: „Bezpieczny czy Zagrożenie?”.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 5: Spotkanie rekrutacyjne i wyrok w korytarzu',
+          paragraphs: [
+            'Sytuacja i bohater: Anna (26 lat), wybitna programistka z rzadkimi umiejętnościami analizy danych, przychodzi na rozmowę o pracę w startupie fintechowym w nieco pogniecionej koszuli, unikając wzroku rekrutera i cicho odpowiadając na powitanie.',
+            'Działający mechanizm: Błyskawiczna heurystyka pierwszego wrażenia Todorova. Rekruter Systemem 1 w ułamku sekundy klasyfikuje ją jako „niepewną siebie, mało komunikatywną i niepasującą do dynamicznego zespołu”.',
+            'Jak rozpoznać w czasie rzeczywistym: Zwróć uwagę, jak pierwsze 30 sekund spotkania kształtuje resztę pytań. Rekruter zaczyna zadawać pytania podchwytliwe, szukając potwierdzenia swojej negatywnej hipotezy (błąd konfirmacji z Tomu I).',
+            'Możliwa konstruktywna reakcja: Rekruter świadomie zawiesza osąd: „Mój mózg reaguje na jej introwertyzm. Jednak to stanowisko wymaga skupienia i analityki, a nie sprzedaży bezpośredniej. Zbadajmy kod”.',
+            'Wniosek dydaktyczny dla czytelnika: Pierwsze wrażenie to prymitywny filtr bezpieczeństwa z sawanny, a nie trafna diagnoza talentu człowieka.'
+          ]
+        }
       ]
     },
     {
@@ -311,16 +545,18 @@ export const chapterSix: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Edward Thorndike w 1920 roku badał oceny wystawiane żołnierzom przez oficerów dowodzących. Zauważył zaskakującą korelację: jeśli żołnierz był wysoki, wysportowany i miał nienaganną postawę na zbiórce, oficerowie automatycznie oceniali go jako odważniejszego, bardziej inteligentnego, lojalnego i lepiej strzelającego. Zjawisko to nazwano Efektem Halo (aureoli).',
-        'Mechanizm polega na tym, że jedna wyrazista cecha — uroda, wzrost, elokwencja, ukończenie prestiżowej uczelni, luksusowy zegarek — staje się filtrem percepcyjnym (Tom I, Rozdział 4), przez który interpretowane są wszystkie pozostałe zachowania jednostki.',
-        'Jeśli atrakcyjny, charyzmatyczny kandydat spóźni się na rozmowę kwalifikacyjną, rekruter myśli: „Jest tak rozchwytywany, widocznie zamykał ważny projekt”. Jeśli to samo spóźnienie zaliczy kandydat nieatrakcyjny i introwertyczny, rekruter pomyśli: „Niezorganizowany, lekceważy naszą firmę”. Istnieje również mroczne odbicie tego zjawiska: Efekt Rogów (Horn Effect), gdzie jedna negatywna cecha z góry zatruwa ocenę całego człowieka.'
+        'Edward Thorndike w 1920 roku zauważył, że jeśli żołnierz był wysoki, wysportowany i miał nienaganną postawę na zbiórce, oficerowie automatycznie oceniali go jako odważniejszego, bardziej inteligentnego, lojalnego i lepiej strzelającego. Zjawisko to nazwano Efektem Halo (aureoli).',
+        'Mechanizm polega na tym, że jedna wyrazista cecha — uroda, wzrost, elokwencja, ukończenie prestiżowej uczelni, markowy garnitur — staje się filtrem percepcyjnym, przez który interpretowane są wszystkie pozostałe zachowania jednostki. Odwrotnością jest Efekt Rogów (Horns Effect), gdzie jedna drażniąca cecha z góry zatruwa ocenę całego człowieka.'
       ],
       subsections: [
         {
-          title: 'SPRAWDŹ SIĘ: Czy ulegasz efektowi aureoli w pracy?',
+          title: 'PRZYKŁAD 6: Szarmancki konsultant biznesowy',
           paragraphs: [
-            'Przypomnij sobie osobę w swoim zespole, która mówi najpłynniej, używa modnych anglicyzmów i prezentuje slajdy z niezachwianą pewnością siebie. Zadaj sobie bezwzględne pytanie:',
-            'Jakie są TWARDE, MIERZALNE DOWODY jakości jej pracy, gdy odejmiemy jej charyzmę i styl bycia? Bardzo często okazuje się, że za spektakularną formą kryje się przeciętna treść, podczas gdy cisi wykonawcy na zapleczu generują 80% realnej wartości firmy.'
+            'Sytuacja i bohater: Zarząd spółki meblarskiej zatrudnia konsultanta Artura za 80 000 zł miesięcznie. Artur ma perfekcyjny uśmiech, doskonałą dykcję, nosi szyty na miarę garnitur i używa modnego słownictwa z Doliny Krzemowej.',
+            'Działający mechanizm: Efekt Halo w biznesie. Charyzma i powierzchowna elegancja Artura sprawiły, że członkowie zarządu bezkrytycznie przyjęli jego chaotyczną, pozbawioną analizy finansowej strategię.',
+            'Jak rozpoznać w czasie rzeczywistym: Zauroczenie formą przy braku twardych liczb. Wszyscy kiwają głowami, czując się „nobilitowani” obecnością eksperta.',
+            'Możliwa konstruktywna reakcja: Wprowadzenie zasady „ślepego audytu”: ocena propozycji strategicznej w formie czystego tekstu bez nazwisk i bez prezentacji multimedialnej.',
+            'Wniosek dydaktyczny dla czytelnika: Zawsze oddzielaj retoryczny blask od merytorycznego fundamentu. Charyzma nie zastąpi kompetencji.'
           ]
         }
       ]
@@ -330,13 +566,14 @@ export const chapterSix: Chapter = {
       pageNumber: 266,
       sectionNumber: '6.11',
       title: 'Od schematu do samospełniającego się proroctwa: Stereotypy w działaniu',
-      category: 'teoria',
+      category: 'cwiczenia',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Z punktu widzenia oszczędności poznawczej (Tom I, Rozdział 1), stereotyp to nic innego jak heurystyka kategoryzacyjna. Mózg spotyka dziennie setki nowych obiektów i ludzi; gdyby musiał analizować każdą jednostkę od zera, zbankrutowałby energetycznie. Dlatego wrzuca ludzi do szufladek: „Niemiec”, „Informatyk”, „Nastolatek”, „Urzędnik”.',
-        'Problem pojawia się wtedy, gdy sztywny stereotyp przekształca się w uprzedzenie (komponent emocjonalny: niechęć lub faworyzacja), a następnie w dyskryminację (komponent behawioralny: nierówne traktowanie). Najbardziej fascynującym zjawiskiem socjopsychologicznym jest tu jednak samospełniające się proroctwo (Snyder, Tanke, Berscheid, 1977).',
-        'W eksperymencie mężczyźni rozmawiali przez telefon z kobietami, którym wcześniej przypisano fałszywe zdjęcia (jednym atrakcyjne, drugim nieatrakcyjne). Mężczyźni przekonani, że rozmawiają z pięknością, byli ciepli, dowcipni i zaangażowani. W odpowiedzi kobieta po drugiej stronie słuchawki stawała się otwarta, radosna i elokwentna! Ich pierwotne, fałszywe oczekiwanie wykreowało rzeczywistość.'
-      ]
+        'Z punktu widzenia oszczędności poznawczej (Tom I, Rozdział 1), stereotyp to heurystyka kategoryzacyjna. Gdyby mózg musiał badać każdego napotkanego człowieka od zera, zbankrutowałby energetycznie. Dlatego wrzuca ludzi do szufladek: „Niemiec”, „Informatyk”, „Nastolatek”, „Urzędnik”.',
+        'Problem pojawia się wtedy, gdy stereotyp przekształca się w samospełniające się proroctwo (Snyder, Tanke, Berscheid). Jeśli nauczyciel zakłada, że uczeń ze środowiska ubogiego jest mniej zdolny, poświęca mu mniej uwagi i traktuje go z dystansem. Uczeń traci motywację i osiąga słabe wyniki, potwierdzając pierwotne uprzedzenie pedagoga.',
+        'Poniższe ćwiczenie pozwala namierzyć własne ukryte stereotypy i zneutralizować ich destrukcyjny wpływ.'
+      ],
+      exerciseRef: chapterSixExerciseAttribution
     },
     {
       id: 'sec-6-12',
@@ -346,9 +583,21 @@ export const chapterSix: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Jedziesz samochodem lewym pasem. Nagle z prawej strony wcina się przed Ciebie czarny sedan bez kierunkowskazu, zmuszając Cię do ostrego hamowania. Jaka jest Twoja pierwsza, automatyczna myśl? „Co za bezczelny cham, idiota, psychopata za kółkiem!”. Przypisujesz jego zachowanie jego trwałym cechom charakteru (atrybucja wewnętrzna / dyspozycyjna).',
-        'Dwa tygodnie później to Ty spieszysz się z chorym dzieckiem do szpitala albo wioząc ważny dokument na lotnisko. Zmieniasz pas dynamicznie, zapominając o kierunkowskazie. Co myślisz o sobie? „Przepraszam, nie chciałem, ale mam krytyczną sytuację, to wyjątkowe okoliczności!” (atrybucja zewnętrzna / sytuacyjna). Ani przez ułamek sekundy nie pomyślisz: „Zrobiłem tak, bo jestem złym człowiekiem”.',
-        'To jest Podstawowy Błąd Atrybucji (Lee Ross). Mamy asymetrię poznawczą: cudze błędy tłumaczymy charakterem, własne — okolicznościami. Z kolei cudze sukcesy tłumaczymy szczęściem lub koneksjami („Miał farta”), a własne sukcesy — twardą pracą i talentem.'
+        'Jedziesz samochodem lewym pasem. Nagle z prawej strony wcina się przed Ciebie czarny sedan bez kierunkowskazu, zmuszając Cię do ostrego hamowania. Jaka jest Twoja pierwsza myśl? „Co za bezczelny cham, idiota, psychopata za kółkiem!”. Przypisujesz jego zachowanie jego trwałym cechom charakteru (atrybucja wewnętrzna / dyspozycyjna).',
+        'Dwa tygodnie później to Ty spieszysz się z chorym dzieckiem do lekarza. Zmieniasz pas dynamicznie bez kierunkowskazu. Co myślisz o sobie? „Przepraszam, mam wyjątkową sytuację kryzysową!” (atrybucja zewnętrzna / sytuacyjna). Ani przez ułamek sekundy nie pomyślisz: „Zrobiłem tak, bo jestem złym człowiekiem”.',
+        'To jest Podstawowy Błąd Atrybucji (Lee Ross). Mamy asymetrię poznawczą: cudze potknięcia tłumaczymy charakterem, własne — okolicznościami.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 7: Kłótnia małżeńska o niepozmywane naczynia',
+          paragraphs: [
+            'Sytuacja i bohater: Monika (35 lat) wraca z pracy i widzi zlew pełen naczyń po obiedzie męża Michała. Krzyczy: „Jesteś leniwy, samolubny i nigdy o mnie nie myślisz!”.',
+            'Działający mechanizm: Podstawowy błąd atrybucji w relacji intymnej. Zamiast zapytać o powody, Monika natychmiast przypisuje zaniechanie wadom charakteru partnera.',
+            'Jak rozpoznać w czasie rzeczywistym: Używanie wielkich kwantyfikatorów: „Ty zawsze...”, „Ty nigdy...”, „Jesteś taki a taki”. To sygnał, że mówi afekt i System 1.',
+            'Możliwa konstruktywna reakcja: Zastosowanie komunikatu faktów i uczuć: „Michał, widzę brudne naczynia w zlewie. Jestem bardzo zmęczona po dyżurze i jest mi przykro. Co sprawiło, że ich nie zmyłeś?”. Okazuje się, że Michał musiał nagle ratować klienta na telefonie.',
+            'Wniosek dydaktyczny dla czytelnika: Atak na tożsamość zamyka dialog; zapytanie o kontekst otwiera porozumienie.'
+          ]
+        }
       ]
     },
     {

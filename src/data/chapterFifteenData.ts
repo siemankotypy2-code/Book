@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 
 export const chapterFifteenExamQuestions: ExamQuestion[] = [
   {
@@ -45,7 +45,7 @@ export const chapterFifteenExamQuestions: ExamQuestion[] = [
   },
   {
     id: 4,
-    question: 'W technice „Pauzy Świętej” (The Sacred Pause) Tara Brach i Viktora Frankla (Sekcja 15.4), kluczowa przestrzeń wolności człowieka mieści się:',
+    question: 'W technice „Pauzy Świętej” (The Sacred Pause) Tary Brach i Viktora Frankla (Sekcja 15.4), kluczowa przestrzeń wolności człowieka mieści się:',
     topic: 'Pauza między Bodźcem a Reakcją Frankla',
     sectionRef: 'Sekcja 15.4',
     options: [
@@ -70,6 +70,34 @@ export const chapterFifteenExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Człowiek odporny psychicznie nie różni się od wrażliwego tym, że nie odczuwa bólu. Różni się tym, że ma gotowy system szybkiego powrotu do równowagi (Bounce-Back), który nie pozwala, by kryzys zamienił się w wielomiesięczną depresję.',
     keyTakeaway: 'Nie planuj życia bez kryzysów — zaprojektuj swój system szybkiego powrotu do pionu.'
+  },
+  {
+    id: 6,
+    question: 'Dlaczego koncepcja „Wyczerpania Ego” (Ego Depletion) Roya Baumeistera została zrewidowana przez Carol Dweck i nowsze badania (Sekcja 15.3)?',
+    topic: 'Mit Baterii Siły Woli a Przekonania Poznawcze',
+    sectionRef: 'Sekcja 15.3',
+    options: [
+      { label: 'A', text: 'Ponieważ kora mózgowa nie zużywa glukozy.', isCorrect: false },
+      { label: 'B', text: 'Badania Dweck wykazały, że wyczerpanie siły woli pojawia się głównie u osób, które WIERZĄ, że siła woli jest wyczerpalną baterią; ci, którzy postrzegają samokontrolę jako samoodnawialne źródło energii, utrzymują wysokie skupienie znacznie dłużej.', isCorrect: true },
+      { label: 'C', text: 'Ego w ogóle nie istnieje w psychologii poznawczej.', isCorrect: false },
+      { label: 'D', text: 'Wszyscy ludzie mają identyczny zasób siły woli każdego ranka.', isCorrect: false }
+    ],
+    explanation: 'Choć zmęczenie biologiczne istnieje, psychologiczne przekonania o własnych limitach determinują to, kiedy się poddajemy. Zmiana narracji wewnętrznej odblokowuje rezerwy energii.',
+    keyTakeaway: 'Twoje granice wytrzymałości są często granicami Twoich przekonań, a nie Twojej biologii.'
+  },
+  {
+    id: 7,
+    question: 'W protokole „Zasady 5 Sekund” Mel Robbins (Sekcja 15.6), odliczanie 5-4-3-2-1 ma na celu:',
+    topic: 'Zasada 5 Sekund a Odruch Prefrontalny',
+    sectionRef: 'Sekcja 15.6',
+    options: [
+      { label: 'A', text: 'Wystrzelenie rakiety kosmicznej.', isCorrect: false },
+      { label: 'B', text: 'Uruchomienie kory przedczołowej i wykonanie ruchu zanim ciało migdałowate i zwoje podstawy wygenerują racjonalizację i opór przed wysiłkiem.', isCorrect: true },
+      { label: 'C', text: 'Sprawdzenie sprawności aparatu mowy.', isCorrect: false },
+      { label: 'D', text: 'Uspokojenie rytmu serca przed snem.', isCorrect: false }
+    ],
+    explanation: 'Pomiędzy impulsem do działania a uruchomieniem sabotażu mija około 5 sekund. Odliczanie wstecz wymaga wysiłku kory przedczołowej i przerywa pętlę automatycznego lęku.',
+    keyTakeaway: 'Rusz się w ciągu 5 sekund, zanim Twój mózg przekona Cię, że to zły pomysł.'
   }
 ];
 
@@ -78,7 +106,7 @@ export const chapterFifteen: Chapter = {
   title: 'Samokontrola i Działanie: Ostatnia Twierdza Woli',
   subtitle: 'Co zrobić, kiedy wiesz, co powinieneś zrobić, ale nadal tego nie robisz — odporność, antyperfekcjonizm i system powrotu',
   leadParagraph: 'Dotarliśmy do punktu krytycznego całej podróży. Znasz już architekturę swojego umysłu z Tomu I: wiesz, jak System 1 walczy z Systemem 2, jak amygdala wzbudza afekt, jak uwaga selekcjonuje świat, jak percepcja tworzy iluzje i jak pamięć rekonstruuje przeszłość. Znasz mechanizmy grupy, komunikacji, wpływu, manipulacji, relacji, motywacji, nawyków i informacji z Tomu II. Masz całą wiedzę świata. I oto stajesz przed lustrem o 6:00 rano. Wszystko sprowadza się do tego jednego pytania: CO TERAZ ZROBISZ?',
-  totalEstimatedPages: 52,
+  totalEstimatedPages: 56,
   sections: [
     {
       id: 'sec-15-1',
@@ -101,142 +129,281 @@ export const chapterFifteen: Chapter = {
       id: 'sec-15-2',
       pageNumber: 716,
       sectionNumber: '15.2',
-      title: 'Samokontrola: Mięsień czy alokacja zasobów poznawczych?',
+      title: 'Biologia samokontroli: Kora przedczołowa w stanie deficytu metabolicznego',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Roy Baumeister zasłynął teorią Wyczerpania Ego (Ego Depletion) — hipotezą, że samokontrola przypomina mięsień, który po zużyciu porcji glukozy traci siłę. Nowsze badania neurokognitywne (m.in. Michaela Inzlichta z Uniwersytetu w Toronto) nakazują jednak zniuansowanie tego modelu.',
-        'Samokontrola nie tyle „fizycznie się wyczerpuje”, ile jest wynikiem kalkulacji alokacji uwagi: mózg po długotrwałym wysiłku przełącza priorytety z trybu „MUSZĘ” (kontrola wykonawcza, odpowiedzialność) na tryb „CHCĘ” (odpoczynek, szukanie natychmiastowej dopaminy).',
-        'Kiedy wiesz, że Twój mózg nie jest zepsuty, a jedynie włącza ewolucyjny program odpoczynku, przestajesz walczyć ze sobą wściekłą samokrytyką. Zamiast tego uczysz się mądrze zarządzać cyklami skupienia i regeneracji.'
+        'Samokontrola nie jest mistyczną cechą charakteru ani darem niebios. Jest fizjologicznym procesem zachodzącym w brzuszno-przyśrodkowej i grzbietowo-bocznej korze przedczołowej.',
+        'Kiedy jesteś niewyspany (mniej niż 7 godzin snu), poziom glukozy we krwi gwałtownie spada, a kora przedczołowa traci zdolność hamowania impulsów z ciała migdałowatego o ponad 40%. W tym stanie człowiek biologicznie cofa się w rozwoju do poziomu impulsywnego trzylatka.',
+        'PRZYKŁAD 1: Prawnik Michał po 14-godzinnym dniu pracy w kancelarii wraca do domu i zjada całe opakowanie lodów czekoladowych oraz paczkę chipsów, oglądając bezmyślnie telewizję do 2 w nocy, mimo że rano obiecywał sobie zdrową dietę. Nie była to „słabość charakteru” — jego mózg zużył całą dostępną glukozę na hamowanie emocji podczas trudnych procesów sądowych. Kora przedczołowa po prostu wyłączyła zasilanie.'
       ]
     },
     {
       id: 'sec-15-3',
       pageNumber: 720,
       sectionNumber: '15.3',
-      title: 'Emocja kontra cel: Kto trzyma stery w chwili kryzysu',
+      title: 'Mit nieskończonej woli: Od Baumeistera do Dweck',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Wyobraź sobie jeźdźca na słoniu (słynna metafora Jonathana Haidta). Jeździec to Twoja świadoma kora przedczołowa — ma mapę, kompas, wie, dokąd zmierzają, i potrafi czytać znaki drogowe. Słoń to Twój układ limbiczny — 6 ton czystych emocji, lęków, pożądań i biologicznych odruchów.',
-        'Dopóki słoń jest spokojny, jeździec może nim z gracją kierować. Ale w ułamku sekundy, gdy w zaroślach zaszeleszczy tygrys (atak paniki, nagła pokusa, wściekłość w kłótni), słoń rzuca się do szaleńczej ucieczki. Jeździec może ciągnąć za cugle z całej siły — słoń nawet tego nie poczuje.',
-        'Większość ludzi próbuje pokonać słonia przemocą („Muszę się zmusić!”). Prawdziwi mędrcy uczą się uspokajać słonia głębokim oddechem, karmić go odpowiednimi bodźcami i wybierać ścieżki, na których nie ma tygrysów.'
+        'Roy Baumeister ukuł słynną teorię „Wyczerpania Ego” (Ego Depletion) — twierdząc, że siła woli to mięsień, który męczy się przy każdym wysiłku.',
+        'Jednak rewolucyjne badania Carol Dweck z Stanford University rzuciły nowe światło na ten mechanizm. Okazało się, że wyczerpanie siły woli dotyczy głównie tych ludzi, którzy WIERZĄ, że wola jest ograniczona! Uczestnicy, którzy traktowali wysiłek umysłowy jako proces rozgrzewający i dający nową energię, osiągali znakomite wyniki nawet po długotrwałym teście.',
+        'Wniosek: Zarządzanie energią to nie tylko kalorie, to przede wszystkim Twoja wewnętrzna narracja o tym, czym jest zmęczenie.'
       ]
     },
     {
       id: 'sec-15-4',
       pageNumber: 724,
       sectionNumber: '15.4',
-      title: 'Pauza Święta: Magiczna szczelina między bodźcem a reakcją',
-      category: 'teoria',
+      title: 'Pauza Święta: Jak odzyskać władzę nad pierwszą reakcją',
+      category: 'cwiczenia',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Viktor Frankl, austriacki psychiatra i ocalały z Auschwitz, w arcydziele „Człowiek w poszukiwaniu sensu” zawarł zdanie, które powinno być wyryte nad każdym biurkiem na świecie:',
-        '„Pomiędzy bodźcem a reakcją istnieje przestrzeń. W tej przestrzeni leży nasza wolność i nasza moc wyboru odpowiedzi. W naszej odpowiedzi leży nasz rozwój i nasze szczęście”.',
-        'Zwierzę nie ma przestrzeni: bodziec → natychmiastowa reakcja. Człowiek nieświadomy również jej nie ma: ktoś rzuca złośliwy komentarz → natychmiastowy wybuch wściekłości.',
-        'Święta Pauza (The Sacred Pause) to umiejętność wstawienia zaledwie 3 sekund ciszy pomiędzy to, co się wydarzyło, a to, co zrobisz. Te 3 sekundy to czas, jakiego potrzebuje sygnał z drogi wysokiej LeDouxa (Tom I, Rozdział 2), by dotrzeć ze wzgórza do kory nowej. W ciągu 3 sekund odzyskujesz człowieczeństwo.'
-      ]
+        'Pomiędzy bodźcem (chęć sięgnięcia po papierosa, impuls do krzyku, chęć sprawdzenia telefonu) a reakcją motoryczną istnieje okno neurochemiczne trwające od 1 do 3 sekund.',
+        'Większość ludzi działa w trybie odruchowym: Bodziec → Reakcja. Człowiek dojrzały wprowadza w to miejsce „Pauzę Świętą” (Viktor Frankl, Tara Brach): Bodziec → PAUZA (1 głęboki wydech) → Świadomy Wybór.',
+        'PRZYKŁAD 2: Matka 4-letniego Tomka, Karolina, po raz trzeci prosi syna o założenie butów. Chłopiec rozrzuca klocki i krzyczy: „Nie!”. Karolina czuje falę gorąca zalewającą szyję (wzbudzenie ciała migdałowatego). Dawniej wrzasnęłaby na dziecko. Teraz stosuje Pauzę Świętą: opiera dłonie na kolanach, bierze głęboki wydech przez nos z przedłużonym wydechem przez usta (fizjologiczne westchnienie), czeka 4 sekundy. Tętno opada. Zamiast krzyku mówi spokojnym, cichym tonem: „Widzę, że świetnie się bawisz klockami, ale za 5 minut zamykają przedszkole. Pomożesz mi wybrać, którego klocka zabierzesz do kieszeni?”. Bunt dziecka natychmiast wygasa.'
+      ],
+      exerciseRef: {
+        id: 'ex-15-pauza-frankla',
+        title: 'Trening Pauzy Fizjologicznej: Od Odruchu do Wyboru',
+        subtitle: 'Wytrenuj 3-sekundowy bufor somatyczny hamujący automatyzmy układu limbicznego',
+        objective: 'Zainstalowanie odruchu pauzy fizjologicznej w momentach skrajnego pobudzenia emocjonalnego.',
+        durationMinutes: 15,
+        neuroScientificFoundation: 'Podwójny wdech z przedłużonym wydechem (Physiological Sigh) aktywuje węzeł zatokowo-przedsionkowy przez nerw błędny, gwałtownie obniżając częstotliwość akcji serca.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Zidentyfikuj swój zapalnik',
+            instruction: 'Określ bodziec, który najczęściej wywołuje u Ciebie automatyczną utratę panowania (np. marudzenie dziecka, powiadomienie ze Slacka, korek).',
+            promptText: 'Mój główny zapalnik emocjonalny:',
+            placeholder: 'Dźwięk powiadomienia od szefa po 17:00 wywołujący lęk i złość...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Kotwica fizjologiczna',
+            instruction: 'Połącz ten bodziec z natychmiastowym zatrzymaniem ciała i dwoma głębokimi wdechami przez nos.',
+            promptText: 'Mój gest kotwiczący:',
+            placeholder: 'Zaciśnięcie kciuka w dłoni i podwójny wdech z długim wydechem...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Sformułuj świadomy wybór',
+            instruction: 'Podczas wydechu zadaj sobie pytanie: „Kim chcę być w tej następnej minucie?”.',
+            promptText: 'Moje pytanie odblokowujące:',
+            placeholder: 'Wybieram spokój profesjonalisty zamiast paniki ofiary...'
+          }
+        ],
+        reflectionQuestions: [
+          'Jak zmieniło się Twoje poczucie sprawczości, gdy po raz pierwszy wytrzymałeś 5 sekund fali pragnienia bez ulegania?',
+          'O ile mniej energii kosztuje 5-sekundowa pauza niż późniejsze naprawianie skutków wybuchu złości?'
+        ]
+      }
     },
     {
       id: 'sec-15-5',
       pageNumber: 728,
       sectionNumber: '15.5',
-      title: 'Środowisko zamiast silnej woli: Ostateczne pożegnanie z mitem heroizmu',
+      title: 'Tarcie decyzyjne i architektura wyboru w praktyce',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Powtórzmy to z całą mocą: Poleganie na samej „silnej woli” to biologiczne samobójstwo.',
-        'Jeśli chcesz przestać pić alkohol, ale codziennie trzymasz w lodówce 4 butelki piwa „dla gości” — przegrasz. Jeśli chcesz skupić się na pisaniu doktoratu, ale telefon z włączonymi powiadomieniami leży 10 cm od Twojej dłoni — przegrasz.',
-        'Człowiek mądry projektuje swoje środowisko tak, by właściwe zachowanie było NAJŁATWIEJSZYM z możliwych wyborów (najniższe tarcie), a zachowanie destrukcyjne wymagało tytanicznego wysiłku. Chcesz rano biegać? Połóż buty, spodenki i zegarek na dywanie tuż obok łóżka, tak byś wstając, musiał na nie nadepnąć. Chcesz przestać grać w gry w nocy? Odłącz kabel zasilający konsoli i schowaj go na dnie szafy w piwnicy.'
-      ]
+        'Najlepszym sposobem na zachowanie siły woli jest... niestosowanie jej wcale. Każdy krok wymagający samokontroli to walka kory przedczołowej z miliardami lat ewolucyjnego lenistwa mózgu.',
+        'Profesjonaliści projektują środowisko tak, by złe nawyki miały MAKSYMALNE TARCIE (np. telefon zamknięty w sejfie z timerem w innym pokoju), a dobre nawyki miały ZEROWE TARCIE (np. mata do jogi rozłożona na podłodze, książka leżąca na poduszce zamiast pilota).',
+        'PRZYKŁAD 3: Student informatyki Bartek nie potrafił uczyć się do egzaminów, bo co 10 minut włączał gry wideo na komputerze. Zamiast walczyć ze sobą, wprowadził tarcie skrajne: odinstalował grę z dysku SSD, zaniósł kartę graficzną do pokoju współlokatora i poprosił go o schowanie jej do szafy na klucz do piątku. Ponowne uruchomienie gry wymagałoby 3 godzin pobierania i proszenia kolegi o klucz. W ten sposób Bartek zdał egzamin na ocenę bardzo dobrą bez zużywania ani grama siły woli.'
+      ],
+      caseStudyRef: {
+        id: 'cs-ch15-doktorat',
+        title: 'Paraliż Pracy Doktorskiej: Jak Aneta Pokonała Lukę Wiedza-Działanie i Ukończyła Rozprawę',
+        subtitle: 'Od 3 lat prokrastynacji i paraliżu perfekcjonizmu do obrony doktoratu z wyróżnieniem',
+        protagonist: 'Aneta (doktorantka biologii molekularnej, 29 lat) i jej promotor naukowy',
+        context: 'Ostatni rok przewodu doktorskiego. Aneta zebrała znakomite wyniki badań w laboratorium, ale od 2 lat nie była w stanie napisać pierwszego rozdziału pracy.',
+        story: [
+          'Aneta była wybitną badaczką. Jej badania nad ekspresją genów mogły przynieść przełom w terapii nowotworowej. Posiadała setki stron notatek i analiz statystycznych.',
+          'Jednak za każdym razem, gdy siadała do pustego dokumentu w edytorze Word, dopadał ją paniczny paraliż. Otwierała kolejną publikację naukową, tłumacząc sobie: „Muszę doczytać jeszcze ten jeden artykuł, zanim zacznę pisać”.',
+          'W rzeczywistości działała klasyczna Luka Wiedza-Działanie: czytanie artykułów dawało jej bezpieczne poczucie „pracy naukowej”, eliminując lęk przed wystawieniem własnego tekstu na krytykę promotora i recenzentów.',
+          'Gdy promotor zagroził zamknięciem przewodu doktorskiego, Aneta zgłosiła się do psychologa poznawczo-behawioralnego. Diagnoza: skrajny perfekcjonizm dezadaptacyjny i brak twardego tarcia behawioralnego.',
+          'Interwencja krok po kroku: 1. Redukcja celu do mikrokroku („Napisz 200 słów dziennie o najgorszej możliwej jakości — masz prawo napisać absolutny chłam, byle tekst znalazł się na ekranie”).',
+          '2. Wprowadzenie Twardego Tarcia: Praca bez internetu w bibliotece uniwersyteckiej od 8:00 do 11:00 rano z wyłączonym telefonem w depozycie.',
+          '3. Zastąpienie samobiczowania Samowspółczuciem: Kiedy Aneta czuła lęk, kładła dłoń na klatce piersiowej i mówiła: „To normalne, że się boisz. Każdy naukowiec odczuwa ten lęk. Oddychaj i napisz jeden akapit”.',
+          'W ciągu 5 miesięcy Aneta napisała 180 stron maszynopisu. Obroniła doktorat z wyróżnieniem, a dwa rozdziały zostały opublikowane w prestiżowym czasopiśmie „Nature Cell Biology”.'
+        ],
+        decisionTaken: 'Aneta zrezygnowała z iluzji napisania idealnego dzieła za pierwszym razem na rzecz codziennej dyscypliny „brudnopisu o niskiej stawce”.',
+        whatProtagonistSaw: 'Aneta widziała w sobie leniwą, niezdolną do pisania oszustkę, która nie zasługuje na tytuł doktora.',
+        whatWasMissed: 'Że paraliż nie wynikał z braku talentu, ale z wygórowanych standardów wewnętrznego krytyka, który żądał tekstu na poziomie Nagrody Nobla w pierwszym szkicu.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Perfekcjonizm lękowy maskowany jako poszukiwanie dodatkowych danych (prokrastynacja produktywna).',
+          cognitiveBiases: [
+            { name: 'Myślenie czarno-białe (Wszystko albo nic)', description: '„Jeśli ten akapit nie jest genialny, to jestem beznadziejną badaczką”.', impact: 'Kasowanie każdego napisanego zdania po 2 minutach.' },
+            { name: 'Efekt oszusta (Impostor Syndrome)', description: 'Głębokie przekonanie, że jej sukcesy były dziełem przypadku.', impact: 'Paraliżujący lęk przed weryfikacją tekstu.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Intelektualizacja', explanation: 'Ucieczka od lęku przed pisaniem w nieskończone studiowanie literatury obcej.' }
+          ],
+          emotionalDynamic: 'Przejście od rozpaczy i wstydu do wyzwalającej zgody na niedoskonałość pierwszego szkicu.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Grzbietowa część przedniej kory zakrętu obręczy (dACC)', role: 'Wykrywanie błędów i wzbudzanie alarmu wstydu', activationState: 'Nadaktywna przy każdej próbie pisania' },
+            { region: 'Lewa grzbietowo-boczna kora przedczołowa', role: 'Inicjacja sekwencji motorycznych pisania', activationState: 'Odblokowana po obniżeniu poprzeczki do 200 słów' }
+          ],
+          neurotransmitters: [
+            { name: 'Dopamina', roleInScenario: 'Przywrócenie regularnych wyrzutów dopaminy po odhaczeniu 200 słów każdego ranka' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Dzień 14 wdrożenia', process: 'Mózg przestaje kojarzyć otwieranie laptopa z paniką — pojawia się stan flow.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Księga Brudnopisów', script: '„Ten dokument ma tytuł: BRUDNOPIS PEŁEN BŁĘDÓW. Wolno mi tu napisać cokolwiek”.', rationale: 'Usuwa presję perfekcji z kory przedczołowej.' }
+          ]
+        },
+        alternativePath: 'Gdyby Aneta nie przełamała paraliżu, rada wydziału skreśliłaby ją z listy doktorantów, a 5 lat jej ciężkiej pracy laboratoryjnej poszłoby na marne.',
+        readerQuestion: 'Jaki wielki projekt w Twoim życiu czeka na realizację, sparaliżowany Twoim żądaniem, by od razu był arcydziełem?',
+        keyTakeaway: 'Lepszy skończony i niedoskonały projekt w świecie rzeczywistym niż idealne arcydzieło gnijące w cmentarzu Twojej wyobraźni.'
+      }
     },
     {
       id: 'sec-15-6',
       pageNumber: 732,
       sectionNumber: '15.6',
-      title: 'Stres i działanie: Krzywa Yerkesa-Dodsona i eustres',
+      title: 'Zasada 5 Sekund i techniki odpalania zapłonu kory mózgowej',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 13,
       paragraphs: [
-        'Stres nie jest Twoim wrogiem. Bez stresu nie byłbyś w stanie obronić pracy magisterskiej, wyhamować przed pieszym ani wystąpić przed publicznością.',
-        'Prawo Yerkesa-Dodsona z 1908 roku pokazuje zależność między pobudzeniem fizjologicznym a jakością wykonania zadania. Kiedy pobudzenie jest zbyt niskie (apatia, nuda) — wydajność jest marna. Kiedy pobudzenie rośnie, wchodzimy w pasmo optymalnego funkcjonowania: Eustres (stres adaptacyjny). Noradrenalina i dopamina wyostrzają wzrok, skracają czas reakcji i pompują krew do mięśni.',
-        'Katastrofa zaczyna się dopiero wtedy, gdy przekraczamy punkt przegięcia: Distres (przeciążenie). Wówczas uwaga ulega tunelowaniu, pamięć robocza blokuje się, a kora nowa kapituluje. Sztuka polega na utrzymywaniu pobudzenia w strefie optymalnej za pomocą oddechu przeponowego i reframingu poznawczego („To bicie serca to nie panika — to moje ciało przygotowujące się do wielkiego wyzwania!”).'
+        'Mel Robbins odkryła fenomen psychologiczny zwany Zasadą 5 Sekund. Kiedy w Twojej głowie pojawia się instynkt do działania ukierunkowanego na cel (wstać z łóżka, odezwać się na zebraniu, pójść pobiegać), masz dokładnie 5 sekund na wykonanie fizycznego ruchu.',
+        'Jeśli nie ruszysz się w ciągu 5 sekund, Twoje zwoje podstawy mózgu uruchomią automatyczny program ochronny: pojawią się wymówki, racjonalizacje, zmęczenie i lęk.',
+        'Odliczanie wstecz: 5 - 4 - 3 - 2 - 1 zmusza korę przedczołową do skupienia uwagi i przerywa pętlę wahania. Na słowo „1” wykonujesz ruch somatyczny.'
       ]
     },
     {
       id: 'sec-15-7',
       pageNumber: 736,
       sectionNumber: '15.7',
-      title: 'Porażka: Informacja zwrotna czy wyrok na tożsamość?',
+      title: 'Radzenie sobie ze stresem: Biologiczne regulatory układu nerwowego',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Carol Dweck ze Stanfordu w przełomowych badaniach nad Mentalnością Rozwojową (Growth Mindset) vs Mentalnością Sztywną (Fixed Mindset) odkryła, dlaczego dwoje ludzi o identycznym ilorazie inteligencji osiąga skrajnie różne rezultaty życiowe.',
-        'Człowiek o mentalności sztywnej uważa, że talent i inteligencja to cechy stałe. W jego oczach porażka (oblanie egzaminu, odrzucenie oferty handlowej) jest WYROKIEM NA JEGO WARTOŚĆ: „Nie nadaję się, jestem za głupi”. Taki człowiek unika wyzwań, by nie ryzykować kompromitacji.',
-        'Człowiek o mentalności rozwojowej wie, że mózg jest plastyczny jak mięsień. Dla niego porażka to po prostu BEZPŁATNA INFORMACJA ZWROTNA Z RZECZYWISTOŚCI: „Ta konkretna strategia nie zadziałała. Czego mogę się z tego nauczyć przed kolejną próbą?”. Porażka to nie tożsamość — to zdarzenie.'
+        'Kiedy poziom stresu przekracza próg tolerancji okna pobudzenia (Window of Tolerance), myślenie logiczne przestaje działać. Mózg znajduje się w stanie walki/ucieczki (sympatykomimetycznym) lub zamrożenia (grzbietowo-błędnym).',
+        'Zamiast próbować przekonać siebie myślami, użyj wejść somatycznych od dołu do góry (Bottom-Up Regulation):',
+        '1. Westchnienie Fizjologiczne (Physiological Sigh): Dwa szybkie wdechy przez nos (drugi dopompowuje pęcherzyki płucne) i długi, powolny wydech ustami. Dwa takie powtórzenia natychmiast wyrzucają nadmiar CO2 i stymulują nerw błędny.',
+        '2. Panoramiczne Pole Widzenia: Przełączenie wzroku z widzenia tunelowego (fokus na smartfonie lub problemie) na widzenie peryferyjne (rejestrowanie ścian pokoju, sufitu i horyzontu bez ruszania gałkami ocznymi). Fizjologicznie wyłącza to układ współczulny.',
+        'PRZYKŁAD 4: Doświadczony pilot linii lotniczych kapitan Tomasz podczas lądowania we mgle przy silnym wietrze bocznym słyszy alarm ostrzegający o uskoku wiatru (Windshear). Jego puls skacze do 140 uderzeń. Zamiast ulec panice, wykonuje jedno głębokie westchnienie fizjologiczne, rozszerza pole widzenia na wszystkie przyrządy pokładowe i ze stuprocentowym opanowaniem wykonuje procedurę Go-Around (odejście na drugi krąg), ratując 180 pasażerów.'
       ]
     },
     {
       id: 'sec-15-8',
       pageNumber: 740,
       sectionNumber: '15.8',
-      title: 'Odporność psychologiczna (Resilience): Sztuka bycia jak trzcina na wietrze',
+      title: 'Krytyk Wewnętrzny kontra Obserwator Współczujący',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Słowo Resilience w inżynierii materiałowej oznacza sprężystość — zdolność metalu do powrotu do pierwotnego kształtu po ustąpieniu potężnego odkształcenia mechanicznego.',
-        'Odporność psychiczna to nie bycie dębem, który sztywno stawia opór huraganowi, aż wreszcie pęka z hukiem u korzeni. Odporność psychiczna to bycie trzciną: potrafisz ugiąć się aż do samej ziemi pod naporem żałoby, kryzysu finansowego czy rozwodu, płaczesz, czujesz ból, ale gdy nawałnica mija — powoli i z godnością prostujesz się z powrotem do słońca.',
-        'Filary Resilience to: głębokie poczucie sensu (Nietzsche: „Kto ma po co żyć, zniesie niemal każde jak”), silna sieć wsparcia społecznego (Rozdział 10) oraz elastyczność poznawcza pozwalająca na zmianę planu, gdy rzeczywistość unieważnia dotychczasowe założenia.'
+        'Większość ludzi wierzy w archaiczny mit pedagogiczny: „Jeśli nie będę dla siebie bezwzględny, jeśli nie będę krzyczał na siebie w głowie, to rozleniwię się i niczego w życiu nie osiągnę”.',
+        'Neuronauka i badania Kristin Neff udowadniają coś dokładnie przeciwnego: Krytyk Wewnętrzny aktywuje ciało migdałowate i oś stresu HPA. Będąc swoim własnym katem, żyjesz w permanentnym stanie zagrożenia wewnętrznego. Rezultat? Chroniczne zmęczenie, depresja i unikanie trudnych wyzwań.'
       ]
     },
     {
       id: 'sec-15-9',
       pageNumber: 744,
       sectionNumber: '15.9',
-      title: 'Wewnętrzny krytyk a samowspółczucie: Rewolucja Kristin Neff',
-      category: 'teoria',
-      readingTimeMinutes: 14,
+      title: 'Samowspółczucie (Self-Compassion): Prawdziwe paliwo odporności',
+      category: 'cwiczenia',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Większość ambitnych ludzi żyje z potwornym lokatorem we własnej głowie. Kiedy popełniają błąd, ten Wewnętrzny Tyrann ryczy: „Ty idioto! Znowu wszystko popsułeś! Nigdy do niczego nie dojdziesz!”. Ludzie wierzą, że ten bicz jest im niezbędny, bo „gdyby nie krytyk, zleniwiałbym na kanapie”.',
-        'Kristin Neff z Uniwersytetu Teksaskiego w Austin udowodniła w setkach badań, że samokrytyka nie buduje sukcesu — niszczy go od środka. Aktywuje oś stresu HPA, zalewa hipokamp kortyzolem i prowadzi do depresji.',
-        'Odpowiedzią jest Samowspółczucie (Self-Compassion), składające się z trzech elementów:',
-        '1. Życzliwość dla siebie zamiast biczowania („Widzę, jak bardzo teraz cierpisz, to był trudny moment”).',
-        '2. Wspólne człowieczeństwo (Common Humanity) zamiast izolacji („Błędy i potknięcia są naturalną częścią ludzkiego losu, nie tylko ja przez to przechodzę”).',
-        '3. Uważność (Mindfulness) zamiast zlania z emocją („Zauważam ten smutek i lęk, nie muszę z nim walczyć ani w niego wierzyć”).'
-      ]
+        'Samowspółczucie (Self-Compassion) wg prof. Kristin Neff składa się z 3 nierozłącznych elementów:',
+        '1. Uważność (Mindfulness): Zauważenie własnego bólu bez wyolbrzymiania ani wypierania („To jest chwila cierpienia”).',
+        '2. Wspólne Człowieczeństwo (Common Humanity): Uświadomienie sobie, że cierpienie i błędy są nieodłączną częścią ludzkiego losu — nie jesteś jedynym, który nawalił („Wszyscy ludzie czasami zawodzą, to nie czyni mnie potworem”).',
+        '3. Życzliwość dla Samego Siebie (Self-Kindness): Potraktowanie siebie z takim samym ciepłem i wsparciem, z jakim potraktowałbyś płaczącego najlepszego przyjaciela.',
+        'PRZYKŁAD 5: Młody programista Marek po raz pierwszy wypuszcza kod na produkcję w dużej firmie fintechowej. W kodzie był krytyczny błąd, który na 20 minut zablokował transakcje kartowe klientów. Marek siedzi w toalecie, trzęsąc się z przerażenia, a w jego głowie rozbrzmiewa głos ojca: „Jesteś zerem, znowu wszystko zepsułeś, wyrzucą cię z wilczym biletem!”. Zamiast utonąć w ataku paniki, Marek stosuje procedurę samowspółczucia: kładzie dłoń na sercu, bierze głęboki oddech i mówi sobie: „Popełniłem poważny błąd. Czuję ogromny wstyd. Ale ten błąd nie definiuje mojej wartości jako człowieka. Każdy senior w tej firmie kiedyś położył serwer. Idę do zespołu, przyznam się do błędu i naprawimy to razem”. Zespół przyjął jego zgłoszenie z szacunkiem, błąd naprawiono w 15 minut, a Marek zyskał reputację dojrzałego, odpowiedzialnego inżyniera.'
+      ],
+      caseStudyRef: {
+        id: 'cs-ch15-samokrytyka-marek',
+        title: 'Cena Wewnętrznego Kata: Jak Marek Zastąpił Samobiczowanie Odpornością Psychiczną',
+        subtitle: 'Od ataków paniki przed prezentacjami do spokoju i pewności lidera zespołu technologicznego',
+        protagonist: 'Marek (Lead Software Engineer, 32 lata) i jego dyrektor techniczny (CTO)',
+        context: 'Przygotowanie do wdrożenia architektury chmurowej wartej 5 milionów dolarów dla globalnego klienta.',
+        story: [
+          'Marek od dziecka słyszał od ambitnego ojca: „Czwórka z plusem? A dlaczego nie piątka? Jeśli nie jesteś najlepszy, jesteś nikim”. Marek zinternalizował ten głos, tworząc w głowie potwornego Krytyka Wewnętrznego.',
+          'Przez lata ta surowość zdawała się działać: Marek skończył studia z wyróżnieniem i został najmłodszym liderem technicznym w firmie. Jednak cena była druzgocąca.',
+          'Przed każdym ważnym wystąpieniem przed zarządem Marek nie spał przez 3 noce. Zaczęły się ataki paniki, duszności, refluks żołądkowy i natrętne myśli o nagłej śmierci.',
+          'Wewnętrzny monolog Marka brzmiał jak wyrok sądu: „Odkryją, że jesteś oszustem. Wszyscy zobaczą, jak trzęsą ci się ręce. Zostaniesz wyśmiany”. Wreszcie podczas ważnego demo Marek zaniemówił i musiał wybiec z sali.',
+          'Trafił na psychoterapię opartą na Self-Compassion i Mindful Self-Compassion (MSC). Terapeuta zadał mu jedno pytanie: „Marku, czy odezwałbyś się do swojego młodszego brata lub przyjaciela tymi słowami, którymi biczujesz siebie w głowie?”. Marek zamarł. Odpowiedział: „Nigdy w życiu. Zabiłbym kogoś, kto tak do niego mówi”.',
+          'Nauka protokołu samowspółczucia: Marek nauczył się rozpoznawać głos Wewnętrznego Kata. Zaczął stosować dotyk kojący (dłoń na klatce piersiowej, wyzwalający oksytocynę) i frazy Neff.',
+          'Po 3 miesiącach Marek poprowadził kluczowe demo dla zarządu. Kiedy rzutnik odmówił posłuszeństwa, zamiast ataku paniki Marek uśmiechnął się, wziął oddech i powiedział: „Technologia testuje naszą cierpliwość, dajmy jej 2 minuty”. Zarząd nagrodził go brawami za opanowanie.'
+        ],
+        decisionTaken: 'Marek zdemontował iluzję, że surowość wobec siebie jest warunkiem sukcesu, i zastąpił ją dojrzałym wsparciem wewnętrznym.',
+        whatProtagonistSaw: 'Marek wierzył, że jego samokrytyka jest jedyną rzeczą, która chroni go przed staniem się leniwym nieudacznikiem.',
+        whatWasMissed: 'Że to właśnie samokrytyka wywoływała ataki paniki i paraliż, które niemal zniszczyły jego karierę zawodową.',
+        psychologicalAnalysis: {
+          coreMechanism: 'Traumatyczna internalizacja warunkowej miłości rodzicielskiej i próba zarządzania lękiem przez autoagresję.',
+          cognitiveBiases: [
+            { name: 'Personalizacja', description: 'Uznawanie każdej awarii technicznej za dowód własnej wady moralnej.', impact: 'Permanentne poczucie winy.' },
+            { name: 'Czytanie w myślach', description: 'Pewność, że wszyscy członkowie zarządu patrzą na niego z pogardą.', impact: 'Lęk społeczny.' }
+          ],
+          defenseMechanisms: [
+            { name: 'Identyfikacja z agresorem', explanation: 'Przyjęcie surowego głosu ojca jako własnego głosu tożsamościowego.' }
+          ],
+          emotionalDynamic: 'Przejście od terroru wewnętrznego do głębokiego poczucia wewnętrznego sojusznika.'
+        },
+        neurobiologicalAnalysis: {
+          brainRegions: [
+            { region: 'Układ nagrody i przywiązania (Oksytocyna/Opiaty endogenne)', role: 'Kojenie układu nerwowego przez ciepły dotyk somatyczny', activationState: 'Aktywowany po wdrożeniu ćwiczeń Neff' },
+            { region: 'Pień mózgu', role: 'Regulacja reakcji wegetatywnych (tętno, potliwość)', activationState: 'Ustabilizowany po opanowaniu oddechu' }
+          ],
+          neurotransmitters: [
+            { name: 'Oksytocyna', roleInScenario: 'Zmniejszenie lęku i wywołanie poczucia bezpieczeństwa socjalnego' }
+          ],
+          biologicalTimeline: [
+            { timeMs: 'Przed wejściem na salę', process: 'Położenie dłoni na sercu i 3 spokojne oddechy obniżają poziom adrenaliny o połowę.' }
+          ]
+        },
+        influenceAndManipulation: {
+          tacticsUsed: [],
+          counterMeasures: [
+            { step: 'Zwrot Sojusznika Wewnętrznego', script: '„Widzę twój lęk, Marku. Jestem z tobą. Niezależnie od wyniku tej prezentacji, jesteś wartościowym człowiekiem”.', rationale: 'Błyskawiczne ugaszenie pożaru w ciele migdałowatym.' }
+          ]
+        },
+        alternativePath: 'Gdyby Marek kontynuował spiralę samobiczowania, nabawiłby się przewlekłej depresji, uzależnienia od leków uspokajających lub doznał załamania nerwowego.',
+        readerQuestion: 'Jakim tonem głosu odzywasz się do siebie w myślach, kiedy popełnisz głupi błąd?',
+        keyTakeaway: 'Bądź dla siebie takim rodzicem, trenera i przyjacielem, jakiego zawsze potrzebowałeś w najtrudniejszych chwilach.'
+      }
     },
     {
       id: 'sec-15-10',
       pageNumber: 748,
       sectionNumber: '15.10',
-      title: 'Perfekcjonizm: Zbroja ze złota, która dusi właściciela',
+      title: 'Anatomia Perfekcjonizmu: Dlaczego dążenie do doskonałości niszczy wyniki',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Brené Brown nazywa perfekcjonizm „20-tonową zbroją, którą nosimy na sobie w nadziei, że uchroni nas przed zranieniem, a która w rzeczywistości nie pozwala nam nawet wziąć głębokiego oddechu”.',
-        'Perfekcjonizm nie ma nic wspólnego z doskonałością. Perfekcjonizm to przekonanie: „Jeśli będę idealnie wyglądać, idealnie pracować i nigdy nie popełnię błędu, uchronię się przed wstydem, krytyką i odrzuceniem”. To tarcza lękowa Systemu 1.',
-        'Cena perfekcjonizmu jest dewastująca: chroniczne opóźnienia projektów, niekończące się poprawki, wypalenie zawodowe i niemożność cieszenia się jakimkolwiek sukcesem. Antidotum na perfekcjonizm to koncepcja Good Enough (Wystarczająco Dobre) Donalda Winnicotta: 80% jakości dowiezione na czas jest warte nieskończenie więcej niż 100% doskonałości, która nigdy nie opuściła szuflady.'
+        'Brené Brown, wybitna badaczka wstydu i odporności psychicznej z University of Houston, postawiła bezlitosną diagnozę:',
+        '„Perfekcjonizm nie jest dążeniem do bycia najlepszym. Nie jest pracowitością ani samodoskonaleniem. Perfekcjonizm to ważąca 20 ton tarcza ochronna, którą nosimy ze sobą, wierząc, że uchroni nas przed zranieniem, krytyką, oceną i wstydem”.',
+        'Perfekcjonista mówi: „Jeśli będę idealnie wyglądać, idealnie pracować i idealnie żyć, nikt mnie nigdy nie skrzywdzi”. To tragiczna iluzja. Perfekcjonizm prowadzi do paraliżu decyzyjnego, paniki przed rozpoczęciem dzieła i chronicznego niezadowolenia.',
+        'Antidotum na perfekcjonizm jest Antyperfekcjonizm Pragmatyczny: skupienie się na procesie, miłość do powtarzalnych prób i duma z gotowości do popełniania błędów w służbie nauki.'
       ]
     },
     {
       id: 'sec-15-11',
       pageNumber: 752,
       sectionNumber: '15.11',
-      title: 'Wielkie Studium Przypadku: Zawał Dyrektora Piotra',
+      title: 'Studium przypadku: Od zawału serca do odporności psychicznej',
       category: 'studium-przypadku',
       readingTimeMinutes: 18,
       paragraphs: [
-        'Dramatyczna historia menedżera, który podporządkował całe swoje życie terrorowi perfekcjonizmu i samokontroli, doprowadzając organizm na krawędź śmierci w wieku 43 lat.'
+        'Wielu uważa, że człowiek sukcesu to tytan, który śpi po 4 godziny na dobę, pije 8 kaw i nigdy nie okazuje słabości.',
+        'Poniższe studium przypadku Piotra — prezesa zarządu holdingu logistycznego — pokazuje, jak ten toksyczny etos doprowadził do biologicznego załamania w wieku 44 lat i jak zmiana paradygmatu uratowała mu życie.'
       ],
       caseStudyRef: {
-        id: 'cs-ch15-zawrot',
-        title: 'Cena Perfekcji: Jak Piotr Musiał Prawie Umrzeć, by Nauczyć Się Żyć',
-        subtitle: 'Od 16 godzin pracy na dobę i pogardy dla słabości do autentycznego samowspółczucia',
-        protagonist: 'Piotr, Członek Zarządu spółki logistycznej (43 lata)',
-        context: 'Oddział Intensywnej Terapii Kardiologicznej w szpitalu klinicznym, wtorek rano.',
+        id: 'cs-ch15-zawodowiec',
+        title: 'Załamanie Tytana: Jak Zawał Serca w Sali Zarządu Zmusił Piotra do Przedefiniowania Sukcesu',
+        subtitle: 'Od toksycznej mitologii wiecznego wysiłku do mądrej regeneracji i samowspółczucia',
+        protagonist: 'Piotr (Prezes Holdingu Logistycznego, 44 lata) i dr Janina (kardiolog kliniczny)',
+        context: 'Wieloletnia praca na najwyższych obrotach w branży transportowej zmagającej się z kryzysami paliwowymi i geopolitycznymi.',
         story: [
-          'Piotr był legendą w branży. Nazywano go „Cyborgiem”. Nigdy nie chorował, spał po 4,5 godziny na dobę, nie wyjeżdżał na urlopy. Jego życiowym mottem było: „Odpoczniemy po śmierci. Ból to tylko informacja o słabości, którą należy stłumić”.',
-          'W rzeczywistości Piotr był zakładnikiem panicznego lęku przed byciem przeciętnym, wpojonego mu przez surowego ojca-wojskowego. Każdy błąd podwładnego wywoływał u niego furię, a każdy własny błąd — bezlitosne nocne biczowanie.',
+          'Piotr zbudował firmę od 3 ciężarówek do floty liczącej 600 zestawów drogowych. Szczycił się tym, że od 12 lat nie był na urlopie dłuższym niż 3 dni. Jego dewizą było: „Śpij szybciej, ból to tylko informacja o słabości”.',
+          'Ignorował powtarzające się sygnały ostrzegawcze: skoki ciśnienia do 170/110, bezsenność, kołatania serca i drżenie rąk. Na ból w klatce piersiowej brał podwójną dawkę tabletek przeciwbólowych i popijał espresso.',
           'Pewnego popołudnia, w trakcie finalizacji przejęcia konkurenta za 80 milionów złotych, w sali zarządu Piotr poczuł, jakby ktoś położył mu na klatce piersiowej rozgrzane kowadło. Zimny pot zalał mu czoło, lewa ręka zdrętwiała. Ostatnią myślą Piotra przed utratą przytomności nie była myśl o żonie ani o dzieciach; była to myśl: „Nie mogę teraz zemdleć, zepsuję prezentację dla banku!”.',
           'Ostry zawał ściany przedniej serca. Trzy stenty, 14 dni na OIOM-ie. Kardiolog powiedział wprost: „Panie Piotrze, pana serce było zalane kortyzolem przez 15 lat bez przerwy. Następnego zawału pan nie przeżyje. Albo pan zmieni system operacyjny w głowie, albo wybierze pan sobie kwaterę na cmentarzu”.',
           'W sanatorium kardiologicznym Piotr po raz pierwszy od 30 lat usiadł na ławce w parku bez telefonu i bez komputera. Rozpłakał się. Przeszedł intensywną psychoterapię ACT (Acceptance and Commitment Therapy). Zrozumiał, że jego heroiczna „silna wola” była jedynie desperacką ucieczką przed poczuciem bycia niewystarczającym.',
@@ -307,7 +474,42 @@ export const chapterFifteen: Chapter = {
         '2. Moje bezpieczne środowisko (Zasady dotyczące smartfona i pracy głębokiej).',
         '3. Moje zdanie odblokowujące w chwili lęku („Zrobione na 50% jest lepsze niż doskonałe w marzeniach”).',
         '4. Moja rada od najlepszego przyjaciela (Co powiedziałbyś ukochanej osobie, gdyby była w Twojej sytuacji?).'
-      ]
+      ],
+      exerciseRef: {
+        id: 'ex-15-manifest-odpornosci',
+        title: 'Konstruktor Osobistego Manifestu Odporności',
+        subtitle: 'Sformułuj swój nienaruszalny kodeks regeneracji i granic psychofizycznych',
+        objective: 'Zbudowanie twardej procedury ochronnej zapobiegającej załamaniu kardiologicznemu i wypaleniu.',
+        durationMinutes: 20,
+        neuroScientificFoundation: 'Wcześniejsze zdefiniowanie procedur awaryjnych (Implementation Intentions wg Gollwitzera) automatyzuje zachowania ochronne w stanach deficytu prefrontalnego.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Sygnały somatyczne wyczerpania',
+            instruction: 'Wypisz 3 wczesne objawy somatyczne, po których poznajesz zbliżanie się do granicy przeciążenia.',
+            promptText: 'Moje somatyczne sygnały ostrzegawcze:',
+            placeholder: 'Zaciskanie zębów, płytki oddech przez usta, nagła ochota na cukier i kofeinę...'
+          },
+          {
+            stepNumber: 2,
+            title: 'Procedura hamowania awaryjnego',
+            instruction: 'Zdefiniuj jedną regułę Emergency Stop, którą uruchamiasz po zauważeniu tych sygnałów.',
+            promptText: 'Mój protokół awaryjny:',
+            placeholder: 'Zamykam laptopa na 45 minut, kładę się na podłodze z nogami na krześle, zero ekranów...'
+          },
+          {
+            stepNumber: 3,
+            title: 'Mantra Samowspółczucia',
+            instruction: 'Zapisz zdanie, które powiesz swojemu wewnętrznemu krytykowi w chwili błędu.',
+            promptText: 'Moje zdanie kojące:',
+            placeholder: 'Jestem człowiekiem, a nie maszyną. Uczę się i mam prawo do potknięć...'
+          }
+        ],
+        reflectionQuestions: [
+          'Jak zmienia się Twoja odwaga życiowa, gdy wiesz, że po upadku masz gotowy system powrotu do pionu?',
+          'Czym różni się zdrowa dyscyplina od autodestrukcyjnego sadyzmu wewnętrznego?'
+        ]
+      }
     },
     {
       id: 'sec-15-14',

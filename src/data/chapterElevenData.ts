@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 
 export const chapterElevenExamQuestions: ExamQuestion[] = [
   {
@@ -10,7 +10,7 @@ export const chapterElevenExamQuestions: ExamQuestion[] = [
       { label: 'A', text: 'Dopamina jest „cząsteczką przyjemności i szczęścia”, która uwalnia się wyłącznie wtedy, gdy osiągamy cel i konsumujemy nagrodę.', isCorrect: false },
       { label: 'B', text: 'Dopamina odpowiada za POŻĄDANIE (Wanting) i antycypację nagrody (błąd predykcji nagrody), napędzając nas do wysiłku, podczas gdy za samą przyjemność i sytość (Liking) odpowiadają endogenne opioidy i receptory kannabinoidowe.', isCorrect: true },
       { label: 'C', text: 'Dopamina służy do spowalniania akcji serca podczas medytacji.', isCorrect: false },
-      { label: 'D', text: 'Wytwarzana jest wyłącznie w żołądku podczas trawienia węglowodanów.', isCorrect: false }
+      { label: 'D', text: 'Wytwarzana jest wyłącznie w żołądku podczas trawienia węglowodanów prostych.', isCorrect: false }
     ],
     explanation: 'Dopamina to waluta motywacyjna, a nie nagroda sama w sobie. Szczyt dopaminowy pojawia się W TRAKCIE POLOWANIA na cel i w oczekiwaniu na nagrodę. W chwili osiągnięcia celu poziom dopaminy gwałtownie spada.',
     keyTakeaway: 'Dopamina to głód drogi, a nie sytość u celu.'
@@ -70,14 +70,269 @@ export const chapterElevenExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Cel daje kierunek, ale to system tworzy postęp. Osiągnięcie celu przynosi ulgę na 10 minut, po czym wraca pustka. Zakochiwanie się w codziennym procesie uwalnia od wiecznego czekania na szczęście.',
     keyTakeaway: 'Nie wznosisz się do poziomu swoich celów — spadasz do poziomu swoich systemów.'
+  },
+  {
+    id: 6,
+    question: 'Czym jest zjawisko Dyskontowania Hiperbolicznego (Hyperbolic Discounting) i jak niszczy realizację celów długoterminowych (Sekcja 11.5)?',
+    topic: 'Dyskonto Hiperboliczne i Myopia Czasowa',
+    sectionRef: 'Sekcja 11.5',
+    options: [
+      { label: 'A', text: 'Zniżką procentową w hipermarketach spożywczych.', isCorrect: false },
+      { label: 'B', text: 'Ewolucyjną skłonnością mózgu do drastycznego zaniżania wartości nagrody odroczonej w czasie na rzecz małej, natychmiastowej nagrody dostępnej tu i teraz.', isCorrect: true },
+      { label: 'C', text: 'Błędem w obliczaniu trajektorii lotu rakiet.', isCorrect: false },
+      { label: 'D', text: 'Zaburzeniem wzroku polegającym na widzeniu podwójnych liter.', isCorrect: false }
+    ],
+    explanation: 'Dla układu limbicznego „ja za 5 lat” jest obcą osobą. Mózg woli 5 minut natychmiastowej dopaminy ze smartfona niż wizję zdrowego serca za 20 lat.',
+    keyTakeaway: 'Przyszłość jest dla mózgu abstrakcją; teraźniejszość jest jedyną biologiczną rzeczywistością.'
+  },
+  {
+    id: 7,
+    question: 'W jaki sposób manipulacja „Tarciem Środowiskowym” (Environmental Friction) pozwala wygrać z prokrastynacją (Sekcja 11.7)?',
+    topic: 'Architektura Środowiska i Tarcie Behawioralne',
+    sectionRef: 'Sekcja 11.7',
+    options: [
+      { label: 'A', text: 'Przez pocieranie dłoni przed rozpoczęciem pisania.', isCorrect: false },
+      { label: 'B', text: 'Poprzez maksymalne zwiększenie liczby przeszkód do zachowań niepożądanych (np. wyniesienie telefonu do innego pokoju) i maksymalne obniżenie tarcia do zachowań dobrych (otwarty notes i długopis na biurku).', isCorrect: true },
+      { label: 'C', text: 'Przez instalowanie dodatkowych dywanów w pokoju do pracy.', isCorrect: false },
+      { label: 'D', text: 'Przez całkowite zrezygnowanie z mebli w biurze.', isCorrect: false }
+    ],
+    explanation: 'Silna wola jest ograniczonym zasobem metabolicznym. Projektowanie środowiska tak, by złe nawyki wymagały wysiłku, a dobre działy się same, jest istotą dyscypliny bez cierpienia.',
+    keyTakeaway: 'Nie polegaj na silnej woli — zaprojektuj środowisko, które nie wymaga bohaterstwa.'
   }
 ];
+
+export const chapterElevenCaseStudyStudent: CaseStudy = {
+  id: 'cs-ch11-student-wypalenie',
+  title: 'Cudze Marzenie: Adam i Krach Motywacji Zewnętrznej',
+  subtitle: 'Jak 25-letni student medycyny zderzył się ze ścianą depresji, żyjąc z motywacji rodziców',
+  protagonist: 'Adam, 25 lat, student V roku medycyny',
+  context: 'Pokój w akademiku medycznym przed sesją egzaminacyjną z pediatrii i chorób wewnętrznych.',
+  story: [
+    'Adam od dziecka słyszał: „Będziesz wybitnym kardiochirurgiem jak dziadek i ojciec”. Nigdy nie zadał sobie pytania, czego sam pragnie. Przez 4 lata uczył się po nocach, zdając egzaminy na same piątki. Napędzała go wyłącznie motywacja zewnętrzna: lęk przed rozczarowaniem ojca i duma z prestiżu białego fartucha.',
+    'Na V roku coś pękło. Wszedł do pokoju, położył się na łóżku i... nie mógł wstać przez trzy dni. Na widok podręcznika farmakologii dostawał drgawek i mdłości. W głowie panowała absolutna, martwa pustka. Mózg całkowicie odmówił współpracy — poziom dopaminy spadł do zera.',
+    'Adam płakał w poduszkę, myśląc, że jest leniem i zdrajcą rodu. Ojciec przez telefon krzyczał: „Weź się w garść! Pij kawę i siadaj do książek, za rok masz staż!”. Ale poganiacz z batem przestał działać. System biologiczny wszedł w stan ostrego strajku generalnego.',
+    'Adam wziął urlop dziekański. Za radą terapeuty zaczął bezpłatny wolontariat w hospicjum onkologicznym dla dorosłych — bez ocen, bez punktów, bez wiedzy rodziców. Spędzał godziny na trzymaniu pacjentów za rękę, słuchaniu ich historii i przynoszeniu herbaty.',
+    'Po raz pierwszy w życiu poczuł, czym jest autonomia i sens relacyjny (SDT). Nikt go do tego nie zmuszał. Nagle motywacja wróciła, ale z zupełnie innego źródła: wrócił na uczelnię nie po to, by zadowolić ojca na kardiochirurgii, lecz by zostać lekarzem medycyny paliatywnej.'
+  ],
+  decisionTaken: 'Adam odrzucił zewnętrzną presję sukcesu kardiochirurgicznego i wybrał autonomiczną ścieżkę medycyny paliatywnej w oparciu o wewnętrzne wartości.',
+  whatProtagonistSaw: 'Początkowo widział swój paraliż jako lenistwo, brak charakteru i niewdzięczność wobec zamożnych rodziców.',
+  whatWasMissed: 'Że motywacja zewnętrzna ma skończony termin ważności metabolicznej — w pewnym momencie kora przedczołowa odcina energię, jeśli działanie jest całkowicie pozbawione wewnętrznej autonomii.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Załamanie motywacji zewnętrznej (Extrinsic Motivation Crash) połączone z Syndromem Narzuconego Losu i odzyskaniem autonomii wg Teorii Autodeterminacji Deciego i Ryana.',
+    cognitiveBiases: [
+      { name: 'Introjekcja przekonań', description: 'Bezkrytyczne przyjęcie ambicji ojca za własne cele tożsamościowe.', impact: 'Utrata kontaktu z własnym ja.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Depresyjne zamrożenie (Depressive Freeze)', explanation: 'Biologiczna blokada działania jako ostatnia linia obrony przed całkowitym zniszczeniem organizmu, zmuszająca do zatrzymania się.' }
+    ],
+    emotionalDynamic: 'Przejście od lęku przed odrzuceniem do głębokiego spokoju płynącego z autentycznego powołania.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Kolejny tom farmakologii i telefon ojca z oczekiwaniami.',
+    attentionFocus: 'Fizyczny brak sił i pustka emocjonalna.',
+    interpretation: '„Nie dam rady dłużej udawać kogoś, kim nie jestem”.',
+    emotion: 'Rozpacz, ulga z poddania się, wstyd.',
+    impulse: 'Uciec ze studiów, zniknąć.',
+    action: 'Urlop dziekański, wolontariat w hospicjum i przedefiniowanie specjalizacji.',
+    consequence: 'Uzdrowienie psychiczne, ukończenie studiów z pasją i autentyczny szacunek do siebie.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Brzuszne pole nakrywki (VTA)', role: 'Wytwarzanie dopaminy dla celów o wysokim sensie podmiotowym', activationState: 'Odblokowane w hospicjum' },
+      { region: 'Przednia kora zakrętu obręczy', role: 'Monitorowanie konfliktu między pragnieniem a przymusem', activationState: 'Uregulowana po zmianie decyzji' }
+    ],
+    neurotransmitters: [
+      { name: 'Dopamina i serotonina', roleInScenario: 'Odbudowa bazowego poziomu neuroprzekaźników po odzyskaniu autonomii' }
+    ],
+    biologicalTimeline: [
+      { timeMs: 'Dzień 1 kryzysu', process: 'Maksymalny wyrzut kortyzolu, załamanie homeostazy.' },
+      { timeMs: 'Miesiąc 3', process: 'Wolontariat: powrót endorfin i oksytocyny w relacji z pacjentami.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [
+      { tactic: 'Transgeneracyjny przymus sukcesu', description: 'Warunkowa miłość rodziców uzależniona od ocen i tytułu profesora.', vulnerabilityExploited: 'Potrzeba akceptacji synowskiej' }
+    ],
+    counterMeasures: [
+      { step: 'Deklaracja Autonomii Dorosłego', script: '„Tato, wiem, że marzyłeś o kardiochirurgii. Szanuję twoją drogę. Moją drogą jest medycyna paliatywna. Będę lekarzem, ale na własnych warunkach”.', rationale: 'Ustanawia granicę tożsamościową.' }
+    ]
+  },
+  alternativePath: 'Gdyby Adam zmusił się do zrobienia specjalizacji z kardiochirurgii pod dyktando ojca, w wieku 35 lat popełniłby błąd medyczny z przemęczenia lub popadł w ciężkie uzależnienie od alkoholu i leków.',
+  readerQuestion: 'Ile z Twoich obecnych codziennych obowiązków wynika z Twoich własnych wartości, a ile z lęku przed rozczarowaniem innych ludzi?',
+  keyTakeaway: 'Nie można wiecznie jechać na cudzym paliwie. Jeśli nie wiesz, DLACZEGO coś robisz dla siebie — Twój mózg w końcu zaciągnie hamulec ręczny.'
+};
+
+export const chapterElevenCaseStudyHomeOffice: CaseStudy = {
+  id: 'cs-ch11-homeoffice-tarcie',
+  title: 'Sofa zjadła karierę: Beata i Pułapka Niskiego Tarcia',
+  subtitle: 'Jak praca zdalna bez granic środowiskowych doprowadziła wybitną tłumaczkę do krachu',
+  protagonist: 'Beata, 44 lata, tłumaczka literatury i dokumentacji prawnej',
+  context: 'Dwupokojowe mieszkanie w kamienicy, praca w 100% zdalna.',
+  story: [
+    'Beata uważała się za osobę zorganizowaną, dopóki jej wydawnictwo nie przeszło w całości na model pracy z domu. Na początku była zachwycona: brak dojazdów, praca w dresie, kawa w ulubionym kubku.',
+    'Niezauważalnie jednak jej środowisko fizyczne uległo całkowitej degradacji decyzyjnej. Zaczęła pracować z laptopem na kolanach w łóżku. Telefon leżał 10 centymetrów od dłoni, co 4 minuty pikając powiadomieniami z portali informacyjnych i komunikatorów. Tarcie do wejścia w social media wynosiło ZERO sekund.',
+    'Tymczasem tarcie do tłumaczenia skomplikowanego tekstu prawniczego wymagało ogromnego wysiłku kory przedczołowej. W efekcie mózg Beaty co 3 minuty wybierał ścieżkę najmniejszego oporu metabolicznego: odsuwała plik z tekstem i otwierała Facebooka, mówiąc sobie: „Tylko na 30 sekund”.',
+    'Dni zlewały się w jedno. O 15:00 wciąż była w piżamie, z nieumytymi zębami, z poczuciem winy wielkim jak góra lodowa. Zaczęła nie dosypiać, tłumacząc w panice w nocy. Przegapiła kluczowy deadline na przekład 500-stronicowej monografii, co skutkowało zerwaniem kontraktu i karą umowną na 15 000 zł.',
+    'Ocaliła ją radykalna reżynieria środowiskowa (Environment Design). Kupiła prosty telefon bez internetu do rozmów. Wynajęła biurko w małym coworkingu 15 minut spacerem od domu. Wprowadziła rytuał: rano ubiera się jak do biura, wychodzi z mieszkania, a laptop zostawia w coworkingu. W ciągu dwóch tygodni jej produktywność skoczyła o 300% bez ani grama dodatkowej „siły woli”.'
+  ],
+  decisionTaken: 'Beata przestała walczyć z brakiem silnej woli i przebudowała architekturę fizycznego środowiska, wyprowadzając pracę z sypialni do coworkingu.',
+  whatProtagonistSaw: 'Beata obwiniała siebie o brak charakteru, lenistwo i starzenie się mózgu.',
+  whatWasMissed: 'Że w środowisku, w którym rozrywka wymaga 0 sekund tarcia, a praca wymaga skupienia, żaden ludzki mózg nie jest w stanie wygrać walki o uwagę.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Prawo Najmniejszego Oporu i Hipoteza Wyczerpania Woli (Ego Depletion) w zderzeniu z toksyczną architekturą środowiska domowego.',
+    cognitiveBiases: [
+      { name: 'Iluzja samokontroli', description: 'Przekonanie, że „mogę mieć telefon przed nosem i po prostu na niego nie patrzeć”.', impact: 'Ciągłe zużywanie zasobów metabolicznych na hamowanie impulsu.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Minimalizacja', explanation: '„Tylko sprawdzę jeden nagłówek wiadomości, to mi pomoże się rozbudzić”.' }
+    ],
+    emotionalDynamic: 'Permanentne poczucie winy i rozmycie granicy między pracą a odpoczynkiem.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Trudne zdanie prawnicze wymagające sprawdzenia w słowniku.',
+    attentionFocus: 'Powiadomienie na ekranie leżącego obok telefonu.',
+    interpretation: '„To za trudne, zrobię sobie małą przerwę na jeden artykuł”.',
+    emotion: 'Znudzenie, zmęczenie kognitywne, lęk przed błędem.',
+    impulse: 'Sięgnąć po telefon (0 sekund tarcia).',
+    action: '45 minut bezmyślnego scrollowania w łóżku.',
+    consequence: 'Zerwanie kontraktu, kara umowna, utrata reputacji w wydawnictwie.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Prążkowie (Striatum)', role: 'Wybór natychmiastowej mikro-dopaminy z telefonu', activationState: 'Automatyczny nawyk bez udziału kory' },
+      { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Hamowanie sięgania po smartfon', activationState: 'Wyczerpana po 30 próbach oporu w ciągu godziny' }
+    ],
+    neurotransmitters: [
+      { name: 'Dopamina', roleInScenario: 'Szarpana, przerywana stymulacja przez powiadomienia, wywołująca deficyt koncentracji głębokiej' }
+    ],
+    biologicalTimeline: [
+      { timeMs: 'Dzwonek telefonu', process: 'Wzbudzenie uwagi mimowolnej, odcięcie uwagi dowolnej (Tom I, Rozdział 3).' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [],
+    counterMeasures: [
+      { step: 'Zasada 20 Sekund Tarcia (Shawn Achor)', script: 'Schowanie telefonu do szuflady w drugim pokoju i wyłączenie routera. Każde rozproszenie musi wymagać co najmniej 20 sekund fizycznego wysiłku.', rationale: 'W ciągu 20 sekund kora przedczołowa zdąży się obudzić i zadać pytanie: „Czy ja naprawdę chcę to teraz robić?”.' }
+    ]
+  },
+  alternativePath: 'Gdyby Beata od początku oddzieliła strefę snu od strefy pracy i wyznaczyła sztywne godziny bez internetu, zrealizowałaby monografię 2 tygodnie przed terminem i otrzymała prestiżową nagrodę translatorską.',
+  readerQuestion: 'Ile centymetrów od Twojej dłoni znajduje się Twój telefon podczas najważniejszych zadań w ciągu dnia?',
+  keyTakeaway: 'Dyscyplina to nie walka z pokusą. Prawdziwa dyscyplina to usunięcie pokusy z pola widzenia, zanim walka w ogóle się rozpocznie.'
+};
+
+export const chapterElevenExerciseValueEquation: SelfExercise = {
+  id: 'ex-ch11-value-equation',
+  title: 'Ćwiczenie 11.1: Kalkulator Wartości Zadania (Piers Steel Procrastination Equation)',
+  subtitle: 'Zdiagnozuj, dlaczego odkładasz konkretne zadanie i podnieś jego współczynnik motywacyjny',
+  objective: 'Zastosowanie wzoru: Motywacja = (Oczekiwanie Sukcesu × Wartość Nagrody) / (Odroczenie w Czasie × Impulsywność).',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Świadoma dekompozycja składowych równania motywacji pozwala precyzyjnie zaadresować biologiczny punkt oporu w układzie dopaminergicznym.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Zdefiniuj odkładane zadanie',
+      instruction: 'Wybierz jedno konkretne zadanie, z którym zwlekasz od ponad 2 tygodni.',
+      promptText: 'Co to za zadanie i jak długo z nim zwlekasz?',
+      placeholder: 'Zwlekam z rozliczeniem podatków i wysłaniem dokumentów do księgowej od 3 tygodni...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Oceń 4 parametry w skali 1-10',
+      instruction: '1. Oczekiwanie (Czy wierzysz, że dasz radę bez błędu?), 2. Wartość (Jak bardzo zależy ci na nagrodzie?), 3. Odroczenie (Jak daleko w czasie jest deadline?), 4. Impulsywność (Jak łatwo się rozpraszasz?).',
+      promptText: 'Moje oceny parametrów:',
+      placeholder: 'Oczekiwanie: 4/10, Wartość: 3/10, Odroczenie: 8/10, Impulsywność: 9/10 (Wynik motywacji jest skrajnie niski)...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Zastosuj 2 interwencje naprawcze',
+      instruction: 'Zwiększ licznik (podnieś wiarę w sukces przez podział na kroki) lub zmniejsz mianownik (zmniejsz impulsywność przez odcięcie internetu na 45 minut).',
+      promptText: 'Moje 2 konkretne posunięcia operacyjne:',
+      placeholder: '1. Zamiast „zrobić podatki”, moim zadaniem na dziś jest tylko znaleźć 5 faktur w mailu. 2. Wyłączam telefon na 25 minut.'
+    }
+  ],
+  reflectionQuestions: [
+    'Który z 4 parametrów najczęściej sabotuje Twoją chęć do działania?',
+    'W jaki sposób możesz sprawić, by odległa nagroda stała się natychmiastowa tu i teraz?'
+  ]
+};
+
+export const chapterElevenExerciseMicrostepLab: SelfExercise = {
+  id: 'ex-ch11-microstep-lab',
+  title: 'Ćwiczenie 11.2: Generator Mikro-Kroków 2 Minut — Zezwolenie na Wersję 30%',
+  subtitle: 'Przełam paraliż perfekcjonizmu za pomocą bezczelnie małego pierwszego kroku',
+  objective: 'Zmniejszenie energii aktywacji do zera i wywołanie bezwładności poznawczej.',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Mikro-zadanie trwające 2 minuty nie jest interpretowane przez ciało migdałowate jako zagrożenie, co pozwala na płynną aktywację kory ruchowej bez wyrzutu kortyzolu.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Zidentyfikuj zadanie budzące lęk lub opór',
+      instruction: 'Wybierz projekt, przed którym czujesz paraliżujący ucisk w mostku.',
+      promptText: 'O jakim zadaniu mowa?',
+      placeholder: 'Przygotowanie 40 slajdów prezentacji strategicznej dla klienta...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Stwórz Mikro-Krok Śmiesznie Mały (Ridiculously Small)',
+      instruction: 'Zredukuj to zadanie do czynności, która zajmuje maksymalnie 120 sekund i której zrobienie jest tak łatwe, że odmowa byłaby absurdem.',
+      promptText: 'Mój 2-minutowy mikro-krok to:',
+      placeholder: 'Otworzyć PowerPointa, zapisać plik pod nazwą „Prezentacja_v1” i napisać tytuł na pierwszym slajdzie.'
+    },
+    {
+      stepNumber: 3,
+      title: 'Klauzula Brzydkiej Wersji (Shitty Draft License)',
+      instruction: 'Zadeklaruj sobie oficjalnie: „Robię to na 30% możliwości. Pierwsza wersja ma być koślawa, byle istniała”.',
+      promptText: 'Moja deklaracja wolności od perfekcjonizmu:',
+      placeholder: 'Daję sobie prawo do stworzenia brzydkich, roboczych slajdów bez formatowania przez pierwsze 20 minut.'
+    }
+  ],
+  reflectionQuestions: [
+    'O ile łatwiej jest zacząć, gdy wiesz, że nikt nie wymaga od Ciebie arcydzieła na starcie?',
+    'Ile razy w przeszłości okazało się, że po 2 minutach pracy po prostu kontynuowałeś działanie z lekkością?'
+  ]
+};
+
+export const chapterElevenExerciseResetProtocol: SelfExercise = {
+  id: 'ex-ch11-reset-protocol',
+  title: 'Ćwiczenie 11.3: 7-Dniowy Zeszyt Resetu Motywacyjnego',
+  subtitle: 'Wdrażaj jeden nawyk systemowy dziennie i zbadaj swój poziom energii życiowej',
+  objective: 'Przejście od zrywów motywacyjnych do stabilnego, powtarzalnego rytmu pracy głębokiej.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Systematyczne monitorowanie codziennych mikro-sukcesów wywołuje kontrolowane wyrzuty dopaminy, reinwestując energię w kolejne pętle działania.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Dzień 1-2: Środowisko i Tarcie',
+      instruction: 'Co konkretnie usuniesz ze swojego pola widzenia, by obniżyć tarcie do pracy, a zwiększyć tarcie do rozpraszaczy?',
+      promptText: 'Moja zmiana środowiskowa:',
+      placeholder: 'Kładę telefon w sypialni, a na biurku zostawiam tylko notes i szklankę wody...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Dzień 3-4: Złota Godzina Procesu',
+      instruction: 'Wybierz 45 minut każdego dnia, w których pracujesz w 100% offline nad najważniejszym zadaniem.',
+      promptText: 'Mój blok pracy głębokiej (godzina i miejsce):',
+      placeholder: 'Codziennie od 8:30 do 9:15, przy zamkniętych drzwiach pokoju...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Dzień 5-7: Zasada „Nigdy dwa razy z rzędu”',
+      instruction: 'Co zrobisz w dniu, w którym dopadnie Cię zmęczenie lub nieprzewidziane wydarzenia, by zachować ciągłość tożsamości?',
+      promptText: 'Mój awaryjny mikro-krok kryzysowy:',
+      placeholder: 'Jeśli nie dam rady ćwiczyć 40 minut, zrobię 5 pompek, by mój mózg wiedział: „Jestem kimś, kto nie odpuszcza”.'
+    }
+  ],
+  reflectionQuestions: [
+    'Kim stajesz się w swoich własnych oczach, gdy dzień po dniu dotrzymujesz małych obietnic składanych samemu sobie?',
+    'Dlaczego wierność systemowi daje stokroć więcej spokoju niż pogoń za iluzorycznym celem?'
+  ]
+};
 
 export const chapterEleven: Chapter = {
   number: 11,
   title: 'Motywacja: Dlaczego Chcemy, ale Nie Robimy',
   subtitle: 'Biochemia napędu, neurobiologia dopaminy, rozbijanie paraliżu i inżynieria systemów działania',
-  leadParagraph: 'Znasz to uczucie: w niedzielę wieczorem siedzisz na kanapie, pełen wzniosłych idei i postanowień. Od jutra zdrowa dieta, regularne bieganie, praca nad książką i zero scrollowania telefonu. W poniedziałek o 16:30 cała ta wspaniała motywacja wyparowuje jak kamfora, a Ty lądujesz z paczką chipsów przed serialem. Dlaczego człowiek jest jedyną istotą na Ziemi, która potrafi zaplanować swój sukces, a potem metodycznie go sabotować? Pora zajrzeć pod maskę układu napędowego.',
+  leadParagraph: 'Znasz to uczucie: w niedzielę wieczorem siedzisz na kanapie, pełen wzniosłych idei i postanowień. Od jutra zdrowa dieta, regularne bieganie, praca nad książką i zero scrollowania telefonu. W poniedziałek o 16:30 cała ta wspaniała motywacja wyparowuje jak kamfora, a Ty lądujesz z paczką chipsów przed serialem. Dlaczego człowiek jest jedyną istotą na Ziemi, która potrafi zaplanować swój sukces, a potem metodycznie go sabotować? Pora zajrzeć pod maskę układu napędowego: od dopaminowych pułapek po inżynierię systemów.',
   totalEstimatedPages: 50,
   sections: [
     {
@@ -101,136 +356,186 @@ export const chapterEleven: Chapter = {
       id: 'sec-11-2',
       pageNumber: 500,
       sectionNumber: '11.2',
-      title: 'Motywacja wewnętrzna a zewnętrzna: Pułapka marchewki i kija',
+      title: 'Motywacja wewnętrzna a zewnętrzna: Marchewka, kij i autonomia',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Przez dziesięciolecia przemysł i edukacja opierały się na prostym behawioryzmie B.F. Skinnera: daj człowiekowi premię finansową (marchewka) lub postrasz zwolnieniem (kij), a będzie pracował efektywnie. Edward Deci i Richard Ryan z Uniwersytetu w Rochester obalili ten dogmat w serii genialnych eksperymentów.',
-        'W słynnym badaniu studenci układali wciągające łamigłówki przestrzenne SOMA. Jednej grupie płacono dolara za każdą ułożoną figurę, drugiej nie płacono nic. W przerwie badacz wychodził na 8 minut, zostawiając badanych samych w pokoju. Co zrobili studenci, którym płacono? Natychmiast odkładali klocki i sięgali po gazety! Grupa, która nie dostawała pieniędzy, w czasie wolnym z fascynacją nadal układała klocki.',
-        'Zjawisko to nazwano Efektem Podkopania (Overjustification Effect). Gdy za czynność, która daje wewnętrzną radość, wprowadzisz zewnętrzną nagrodę pieniężną, mózg redefiniuje swoje działanie: „Nie robię tego dlatego, że to lubię. Robię to dla pieniędzy”. Gdy nagroda znika, znika cała motywacja.'
+        'Przez dziesięciolecia behawioryzm uczył nas, że ludzie działają jak psy Pawłowa: daj nagrodę, a zachowanie się powtórzy; daj karę, a wygaśnie. Współczesna psychologia humanistyczna i kognitywna (Deci & Ryan: Teoria Autodeterminacji) obaliły ten prymitywny schemat.',
+        'Okazuje się, że gdy płacisz komuś za robienie czegoś, co wcześniej sprawiało mu czystą frajdę (np. rysowanie, gra na gitarze, programowanie), niszczysz jego motywację wewnętrzną (tzw. Overjustification Effect). Mózg wnioskuje: „Skoro mi za to płacą, widocznie samo w sobie jest to nudne i przykre”. Trwały napęd wymaga Autonomii, Mistrzostwa i Sensu.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 1: Dziecko i pianino — Jak zabić pasję pieniędzmi',
+          paragraphs: [
+            'Sytuacja i bohater: 11-letnia Ola uwielbiała sama siadać do pianina i improwizować melodie. Rodzice, chcąc zmotywować ją do systematycznych ćwiczeń gamy, ogłosili: „Za każdą pełną godzinę ćwiczeń dostaniesz 15 zł kieszonkowego”.',
+            'Działający mechanizm: Efekt podkopania (Overjustification Effect). Motywacja wewnętrzna (radość tworzenia dźwięków) została wyparta przez motywację zewnętrzną (kalkulacja zarobku).',
+            'Jak rozpoznać w czasie rzeczywistym: Pojawienie się patrzenia na zegarek co 3 minuty i narastająca niechęć do instrumentu.',
+            'Możliwa konstruktywna reakcja: Wycofanie nagród finansowych i powrót do wspierania autonomii: „Olu, zachwyca mnie, jak eksperymentujesz z tym utworem. Jaki nastrój chciałaś w nim przekazać?”.',
+            'Wniosek dydaktyczny dla czytelnika: Zewnętrzne nagrody gaszą ogień pasji. Chwal wysiłek i proces, nigdy nie kupuj uległości.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-11-3',
       pageNumber: 504,
       sectionNumber: '11.3',
-      title: 'Anatomia nagrody: Jak mózg wycenia wartość wysiłku',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Piramida sensu: Dlaczego robimy rzeczy trudne bez nagrody',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Zanim Twój palec kliknie „Rozpocznij kurs” lub Twoje nogi wstaną z fotela, w jądrze półleżącym (Nucleus Accumbens) i korze oczodołowo-czołowej (OFC) zachodzi błyskawiczna kalkulacja ekonometryczna.',
-        'Wzór na subiektywną wartość zadania można uprościć do równania: Wartość = (Wielkość Nagrody × Prawdopodobieństwo Sukcesu) / (Opóźnienie w Czasie × Koszt Energetyczny).',
-        'Zauważ mianownik tego ułamka: im dalej w czasie znajduje się nagroda i im większego wysiłku fizjologicznego wymaga działanie, tym bliższa zeru staje się motywacja w chwili obecnej. Z kolei smartfon w Twojej kieszeni ma mianownik równy zero: koszt to jedno przesunięcie kciuka (mikrodżul energii), a opóźnienie wynosi 0,001 sekundy. W pojedynku z książką smartfon wygrywa chemicznie w przedbiegach.'
-      ]
+        'Człowiek jest w stanie znieść niemal każde „jak”, jeśli ma wystarczająco silne „dlaczego” (Viktor Frankl). Gdy działanie jest zakorzenione w tożsamości i służbie wyższym wartościom, kora przedczołowa potrafi zablokować sygnały bólu i wyczerpania.',
+        'Poniższe studium przypadku ukazuje zderzenie motywacji zewnętrznej (oczekiwania rodziny) z odzyskaniem autonomicznego sensu życia u młodego lekarza.'
+      ],
+      caseStudyRef: chapterElevenCaseStudyStudent
     },
     {
       id: 'sec-11-4',
       pageNumber: 508,
       sectionNumber: '11.4',
-      title: 'Dopamina bez mitu: Cząsteczka poszukiwania, nie spełnienia',
+      title: 'Dopamina: Cząsteczka pragnienia, nie spełnienia',
       category: 'teoria',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Internet zalała fala pseudonaukowych poradników o „detoksie dopaminowym” przedstawiających ten neuroprzekaźnik jako toksycznego wroga, którego należy „wyzerować”. To kompletne nieporozumienie biologiczne. Bez dopaminy leżałbyś na podłodze, niezdolny do sięgnięcia po szklankę wody, umierając z pragnienia obok kranu.',
-        'Przełomowe badania Kenta Berridge’a z Uniwersytetu Michigan ujawniły fundamentalny podział w układzie nagrody:',
-        '1. Pożądanie (Wanting) — sterowane przez szlak mezolimbiczny dopaminy. To głód, ciekawość, niepokój poszukiwania, napęd do działania.',
-        '2. Lubienie (Liking) — sterowane przez tzw. „wysepki hedonistyczne” (Hedonic Hotspots) wykorzystujące endogenne opioidy i kannabinoidy. To czysta zmysłowa rozkosz smaku czekolady na języku czy ciepła kąpieli.',
-        'Dopamina uwalnia się na długo przed nagrodą — uwalnia się na widok WSKAZÓWKI (Cue). Kiedy widzisz powiadomienie na ekranie, Twój mózg nie wie jeszcze, co tam jest, ale dopamina już wystrzeliła. To obietnica nagrody, a nie sama nagroda, trzyma Cię w szachu.'
+        'Największym nieporozumieniem pop-psychologii jest nazywanie dopaminy „hormonem szczęścia”. Dopamina nie ma nic wspólnego z poczuciem zadowolenia, wdzięczności czy błogostanu.',
+        'Dopamina to czysta ANTYCYPACJA. To silnik polowania. Szczyt dopaminowy wyrzuca się w momencie, gdy widzisz jelonka na horyzoncie lub gdy słyszysz powiadomienie w telefonie. W chwili, gdy zjesz posiłek lub przeczytasz posta, poziom dopaminy gwałtownie spada poniżej poziomu wyjściowego (Dopamine Baseline Drop), wywołując lekki dyskomfort i pragnienie „kolejnej dawki”.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 2: Scrollowanie w toalecie — Dopaminowa pętla głodu',
+          paragraphs: [
+            'Sytuacja i bohater: 29-letni Mateusz wchodzi do łazienki na 2 minuty, trzymając telefon. Mija 25 minut, nogi mu drętwieją, a on wciąż bezmyślnie przesuwa kciukiem kolejne krótkie rolki wideo.',
+            'Działający mechanizm: Nieregularne wzmocnienie dopaminowe (Variable Reward Schedule). Co piąty filmik jest śmieszny lub szokujący. Mózg Mateusza tkwi w stanie nieustannego błędu predykcji nagrody: „Może kolejny będzie genialny?”.',
+            'Jak rozpoznać w czasie rzeczywistym: Poczucie pustki i zmęczenia przy jednoczesnym fizycznym przymusie przesunięcia palcem jeszcze raz.',
+            'Możliwa konstruktywna reakcja: Zasada „Łazienka to strefa bez ekranu”. Zostawianie telefonu na ładowarce w przedpokoju.',
+            'Wniosek dydaktyczny dla czytelnika: Dopamina obiecuje szczęście za kolejnym rogiem, ale nigdy go tam nie dostarcza. Przerwij polowanie, by odzyskać spokój.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-11-5',
       pageNumber: 512,
       sectionNumber: '11.5',
-      title: 'Dlaczego motywacja spada? Wypłukanie afektu i błąd predykcji',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Wycena zadania: Model Piersa Steela i równanie prokrastynacji',
+      category: 'cwiczenia',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Kiedy rozpoczynasz nowy projekt — kupujesz karnet na siłownię, zapisujesz się na kurs hiszpańskiego — Twój mózg doświadcza tzw. Dodatniego Błędu Predykcji Nagrody (Positive Reward Prediction Error). Fantazjujesz o nowym, wysportowanym ciele, a kora wzrokowa maluje zachwycające obrazy. Dopamina szybuje.',
-        'Jednak po trzech tygodniach hiszpański okazuje się nudnym wkuwaniem nieregularnych czasowników, a siłownia to zakwasy i bolesne wstawanie o 6:00 rano. Rzeczywistość okazuje się gorsza od dopaminowej iluzji. Następuje Ujemny Błąd Predykcji: poziom dopaminy spada poniżej linii bazowej.',
-        'W tym momencie 90% ludzi rzuca ręcznik, mówiąc: „Wypaliłem się, to chyba nie moja pasja”. Prawda jest prosta: wyczerpał się darmowy kredyt dopaminowy nowości. Prawdziwe budowanie umiejętności zaczyna się dopiero wtedy, gdy gaśnie ekscytacja początkiem.'
-      ]
+        'Profesor Piers Steel po przeanalizowaniu setek badań nad motywacją sformułował Równanie Prokrastynacji: Użyteczność = (Oczekiwanie Sukcesu × Wartość Zadania) / (Odroczenie w Czasie × Impulsywność).',
+        'Jeśli chcesz przestać odkładać zadanie, musisz podnieść licznik (zwiększyć wiarę w powodzenie i nagrodę) lub drastycznie obniżyć mianownik (skrócić czas do mikro-nagrody i wyeliminować bodźce impulsywne).',
+        'Poniższy warsztat pozwala zastosować to równanie do Twojego najbardziej opornego zadania.'
+      ],
+      exerciseRef: chapterElevenExerciseValueEquation
     },
     {
       id: 'sec-11-6',
       pageNumber: 516,
       sectionNumber: '11.6',
-      title: 'Cel a system: Dlaczego marzenia przegrywają z rutyną',
+      title: 'Cele a systemy: Dlaczego marzenia o mecie przegrywają z procesem',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Społeczeństwo ma obsesję na punkcie celów. Mówi się nam: „Mierz w gwiazdy”, „Wizualizuj sukces”, „Napisz swój cel na tablicy marzeń”.',
-        'Zastanów się jednak: każdy sportowiec jadący na igrzyska olimpijskie ma dokładnie ten sam cel — zdobyć złoty medal. Każdy student ma ten sam cel — zdać egzamin. Skoro cel jest identyczny u zwycięzców i przegranych, to nie cel decyduje o wyniku!',
-        'Różnicę stanowi SYSTEM. Cel to pożądany punkt w przyszłości; system to to, co robisz o 7:15 rano we wtorek, kiedy pada deszcz i nikomu nie chce się wychodzić z łóżka. Człowiek zorientowany wyłącznie na cel żyje w stanie ciągłej porażki („Jeszcze nie osiągnąłem celu, więc jestem niepełny”), a po jego osiągnięciu doświadcza pustki post-sukcesowej. Człowiek zorientowany na system kocha sam proces biegania czy pisania kodu.'
+        'Skupienie na samym celu ma trzy wady: po pierwsze, zakłada, że szczęśliwy będziesz dopiero wtedy, gdy go osiągniesz (życie w poczekalni). Po drugie, gdy cel zostanie osiągnięty, motywacja natychmiast zapada się w próżnię. Po trzecie, cel nie mówi ani słowa o tym, jak pokonać wtorkowy kryzys o 14:00.',
+        'Zwycięzcy i przegrani mają te same cele. Różni ich SYSTEM — jakość codziennych, powtarzalnych rytuałów, które wykonujesz bez względu na to, czy masz motywację, czy nie.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 3: Cel „Schudnę 15 kg” kontra System',
+          paragraphs: [
+            'Sytuacja i bohater: Tomasz (40 lat) co roku w sylwestra zapisuje cel: „W tym roku schudnę 15 kg i przebiegnę maraton”. Kupuje karnet na siłownię, biega przez 10 dni do utraty tchu, po czym z zakwasami i kontuzją rezygnuje na kolejne 11 miesięcy.',
+            'Działający mechanizm: Szok adaptacyjny i pułapka heroizmu decyzyjnego. Tomasz skupił się na gigantycznym celu, ignorując fizjologię kory przedczołowej.',
+            'Jak rozpoznać w czasie rzeczywistym: Poczucie, że zmiana wymaga nadludzkiego bohaterstwa i cierpienia.',
+            'Możliwa konstruktywna reakcja: Zastąpienie celu systemem: „Mój system to: codziennie po wejściu do domu zdejmuję buty i idę na 20-minutowy spacer w strefie tętna tlenowego, a kolację jem bez pieczywa”.',
+            'Wniosek dydaktyczny dla czytelnika: Cel to kompas; system to nogi, które idą. Przestań wpatrywać się w igłę kompasu — zacznij stawiać małe kroki.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-11-7',
       pageNumber: 520,
       sectionNumber: '11.7',
-      title: 'Rozbijanie zadania: Architektura mikro-kroków poznawczych',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Architektura tarcia: Jak przestrzeń decyduje o Twoich wyborach',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Kiedy Twoja kora przedczołowa widzi na liście to-do pozycję: „Napisać biznesplan nowej firmy”, Twoje ciało migdałowate reaguje tak, jakby zobaczyło mamuta. Zadanie jest zbyt wielkie, zbyt wieloznaczne i niesie ryzyko porażki. Układ nerwowy wywołuje paraliż obronny.',
-        'Mistrzostwo motywacyjne polega na redukcji skali zadania do momentu, w którym amygdala przestaje widzieć w nim jakiekolwiek zagrożenie:',
-        'Krok 1 (Zbyt wielki): „Napiszę dziś rozdział książki”.',
-        'Krok 2 (Nadal trudny): „Napiszę 500 słów”.',
-        'Krok 3 (Mikro-krok neutralny): „Otworzę laptopa, uruchomię edytor tekstu i napiszę jedno zdanie podsumowujące dzisiejszy obiad”.',
-        'Zauważ: napisanie jednego zdania nie kosztuje żadnego wysiłku woli. Ale gdy usiądziesz przed otwartym plikiem i napiszesz pierwsze słowa, następuje zjawisko bezwładności poznawczej (Efekt Zeigarnik). Mózg nie lubi niedokończonych pętli i sam z siebie chce pisać dalej.'
-      ]
+        'Najważniejszą siłą kształtującą Twoje zachowanie nie jest Twoja wola, lecz TARCIE ŚRODOWISKOWE (Environmental Friction). Człowiek to istota skrajnie energooszczędna: zawsze wybierze to, co wymaga mniej energii metabolicznej tu i teraz.',
+        'Poniższe studium przypadku ilustruje dramat tłumaczki pracującej zdalnie, której kariera legła w gruzach przez brak granic fizycznych w mieszkaniu i zerowe tarcie do rozpraszaczy cyfrowych.'
+      ],
+      caseStudyRef: chapterElevenCaseStudyHomeOffice
     },
     {
       id: 'sec-11-8',
       pageNumber: 524,
       sectionNumber: '11.8',
-      title: 'Początek działania: Dlaczego motywacja przychodzi PO starcie',
+      title: 'Koszt aktywacji: Dlaczego najtrudniejsza jest pierwsza minuta',
       category: 'teoria',
       readingTimeMinutes: 13,
       paragraphs: [
-        'Największym kłamstwem kultury motywacyjnej jest sekwencja: Poczekaj na motywację → Zacznij działać → Osiągnij rezultat.',
-        'W rzeczywistości biologicznej ta pętla biegnie dokładnie w odwrotnym kierunku: Zacznij działać (bez motywacji) → Zauważ mikroskopijny postęp → Otrzymaj wyrzut dopaminy → Poczuj motywację do kontynuacji!',
-        'Działanie jest przyczyną motywacji, a nie jej skutkiem. Czekanie, aż „poczujesz ochotę” na posprzątanie garażu czy naukę statystyki, to czekanie na śnieg w lipcu. Prawdziwi profesjonaliści nie czekają na wenę; oni siadają do biurka, a wena dołącza do nich około piętnastej minuty pracy.'
+        'Wyobraź sobie pchanie zepsutego samochodu. Kiedy auto stoi w miejscu, musisz zaprzeć się nogami o asfalt i włożyć 100% siły, by przełamać opór spoczynkowy. W chwili, gdy koła wykonają pierwszy obrót, samochód zaczyna toczyć się lekko i możesz pchać go jedną ręką.',
+        'Dokładnie to samo dzieje się w mózgu. Kora przedczołowa zużywa 80% energii metabolicznej na sam moment przełączenia uwagi z bezruchu na zadanie. Kiedy już zaczniesz pisać raport, bezwładność poznawcza (Cognitive Momentum) niesie Cię sama.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 4: Zniechęcenie do nauki hiszpańskiego',
+          paragraphs: [
+            'Sytuacja i bohater: Kasia (27 lat) chce uczyć się hiszpańskiego. Jej podręcznik i płyty leżą na dnie szafy w pudle pod starymi ubraniami. Każdego wieczoru Kasia myśli: „Powinnam poćwiczyć, ale nie chce mi się tego wszystkiego wyciągać”.',
+            'Działający mechanizm: Wysoki koszt aktywacji fizycznej i poznawczej. Kilka drobnych przeszkód skutecznie gasi intencję Systemu 2.',
+            'Jak rozpoznać w czasie rzeczywistym: Westchnienie i automatyczna wymówka: „Zrobię to w weekend, jak będę miała więcej czasu”.',
+            'Możliwa konstruktywna reakcja: Redukcja tarcia: podręcznik leży otwarty na biurku na stronie z dzisiejszą lekcją, a długopis leży obok.',
+            'Wniosek dydaktyczny dla czytelnika: Przygotuj scenę do działania poprzedniego wieczoru. Usuń każdy kamyk z drogi do startu.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-11-9',
       pageNumber: 528,
       sectionNumber: '11.9',
-      title: 'Koszt aktywacji: Zasada tarcia i 20 sekund',
-      category: 'teoria',
+      title: 'Zasada 2 minut i mikro-kroki: Oszukiwanie ciała migdałowatego',
+      category: 'cwiczenia',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Shawn Achor z Harvardu opisał w książce „Przewaga szczęścia” Zasadę 20 Sekund. Zauważył, że jeśli chciał zacząć regularnie ćwiczyć grę na gitarze, ale instrument stał schowany w futerale w szafie na piętrze, przejście przez pokój, wyjęcie futerału i otwarcie zamków zajmowało około 20 sekund. To wystarczyło, by zmęczony mózg zrezygnował i włączył telewizor.',
-        'Co zrobił Achor? Wyjął gitarę z futerału i postawił ją na stojaku na samym środku salonu. Koszt aktywacji spadł z 20 sekund do 1 sekundy. Wystarczyło wyciągnąć rękę. W ciągu kolejnych trzech tygodni ćwiczył codziennie.',
-        'Jednocześnie, by przestać oglądać telewizję, wyjął baterie z pilota i schował je w szufladzie w kuchni. Aby włączyć telewizor, musiał wstać, pójść do kuchni, włożyć baterie. Te 20 sekund tarcia uratowało mu setki godzin życia. Kontroluj tarcie środowiskowe, a przejmiesz kontrolę nad nawykami.'
-      ]
+        'Kiedy mówisz swojemu mózgowi: „Napiszmy 50 stron pracy magisterskiej” albo „Zróbmy generalny remont garażu”, Twoje ciało migdałowate widzi górę lodową i uruchamia paraliż ucieczkowy.',
+        'Zasada 2 Minut polega na bezczelnym zmniejszeniu skali: „Nie piszemy pracy. Otwieramy plik i piszemy jedno koślawe zdanie przez 120 sekund. Po 2 minutach wolno nam przestać”. W 85% przypadków po upływie 2 minut kora przedczołowa kontynuuje pracę, bo opór zniknął.',
+        'Poniższy warsztat uczy projektowania mikro-kroków odpornych na perfekcjonizm.'
+      ],
+      exerciseRef: chapterElevenExerciseMicrostepLab
     },
     {
       id: 'sec-11-10',
       pageNumber: 532,
       sectionNumber: '11.10',
-      title: 'Natychmiastowa nagroda: Parowanie pokus i mosty dopaminowe',
+      title: 'Głęboka praca (Deep Work) a stan Flow: Wejście w strefę mistrzostwa',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Katy Milkman z Wharton School of Business badała technikę zwaną Parowaniem Pokus (Temptation Bundling).',
-        'Zasada jest genialnie prosta: Wolno ci połączyć natychmiastowe źródło przyjemności dopaminowej z czynnością, która wymaga wysiłku i samodyscypliny.',
-        'Przykłady z życia: Wolno ci słuchać Twojego ulubionego, wciągającego podcastu kryminalnego TYLKO I WYŁĄCZNIE wtedy, gdy Twoje nogi biegną na bieżni. Wolno ci pić pyszną, drogą kawę karmelową TYLKO I WYŁĄCZNIE wtedy, gdy sprawdzasz trudne maile od księgowej.',
-        'W ten sposób mózg tworzy warunkowanie klasyczne: niechciane zadanie przestaje być karą, ponieważ staje się jedyną bramą prowadzącą do pożądanej nagrody.'
+        'Mihaly Csikszentmihalyi opisał stan Flow — optymalne doświadczenie zaangażowania, w którym poczucie czasu znika, lęki ego wygasają, a działanie płynie bezwysiłkowo. Flow pojawia się na wąskiej grani między nudą (zadanie zbyt łatwe) a lękiem (zadanie zbyt trudne).',
+        'Z kolei Cal Newport w koncepcji Deep Work wykazuje, że zdolność do pracy w 100% skupieniu bez powiadomień staje się najrzadszą i najcenniejszą walutą XXI wieku. Czterdzieści minut pracy głębokiej generuje więcej wartości merytorycznej niż 8 godzin płytkiego klikania w biurze.'
       ]
     },
     {
       id: 'sec-11-11',
       pageNumber: 536,
       sectionNumber: '11.11',
-      title: 'Prokrastynacja: Anatomia znieczulenia lęku',
+      title: 'Prokrastynacja to nie lenistwo: Zagojenie rany lęku i perfekcjonizmu',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Dr Tim Pychyl, czołowy światowy badacz prokrastynacji, powtarza: Prokrastynacja nie jest lenistwem. Prokrastynacja to desperacka, nieadaptacyjna próba poradzenia sobie ze stresem emocjonalnym.',
-        'Gdy odkładasz napisanie trudnego maila do klienta, to nie dlatego, że nie masz siły uderzać w klawiaturę. Odkładasz to, ponieważ ten mail budzi w Tobie lęk przed odrzuceniem, poczucie winy z powodu opóźnienia lub wstyd przed własną niedoskonałością.',
-        'Kiedy zamykasz okno programu pocztowego i otwierasz TikToka lub zaczynasz nerwowo ścierać kurze z półek, Twój poziom kortyzolu natychmiast spada o 30%. Twój mózg uczy się błyskawicznego powiązania: „Ucieczka od zadania = natychmiastowa ulga i bezpieczeństwo”. Niestety, ta ulga jest pożyczką na lichwiarski procent. Za dwie godziny lęk wraca ze zdwojoną siłą, wzbogacony o potworne poczucie winy z powodu zmarnowanego czasu.'
+        'Prokrastynator nie jest człowiekiem leniwym. Lenistwo to stan błogiego relaksu na hamaku („Nic nie robię i jest mi wspaniale”). Prokrastynacja to piekło cierpienia i samobiczowania: nie robisz tego, co trzeba, a jednocześnie nie potrafisz cieszyć się odpoczynkiem, bo w Twoim ciele płonie poczucie winy.',
+        'Prokrastynacja to mechanizm obronny przed lękiem: lękiem przed porażką, lękiem przed sukcesem (i związaną z nim presją) oraz lękiem przed zdemaskowaniem własnej niedoskonałości. Przestań naprawiać kalendarz — zaopiekuj się lękiem.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 7: Telefon do urzędu skarbowego',
+          paragraphs: [
+            'Sytuacja i bohater: Przedsiębiorca Marcin (38 lat) od 10 dni odkłada telefon do urzędu w sprawie wyjaśnienia błędu w deklaracji VAT. W zamian za to segreguje maile, czyści klawiaturę i czyta artykuły branżowe.',
+            'Działający mechanizm: Prokrastynacja produktywna jako znieczulenie emocjonalne. Marcin unika rozmowy, bo boi się poczucia upokorzenia i krzyku urzędnika.',
+            'Jak rozpoznać w czasie rzeczywistym: Zastępowanie zadania kluczowego zadaniami pobocznymi, które dają fałszywe poczucie bycia zajętym.',
+            'Możliwa konstruktywna reakcja: Nazwanie emocji: „Boję się tej rozmowy, bo nie znam się na przepisach. To normalne. Wybieram numer teraz i powiem: Dzień dobry, potrzebuję państwa pomocy w zrozumieniu pisma”.',
+            'Wniosek dydaktyczny dla czytelnika: Zmierz się z emocją pod zadaniem, a samo zadanie skurczy się do 5-minutowej rozmowy.'
+          ]
+        }
       ]
     },
     {
@@ -302,15 +607,10 @@ export const chapterEleven: Chapter = {
       category: 'cwiczenia',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Zintegrujmy teorię tego rozdziału w konkretnym, 7-dniowym protokole przełamywania bezwładności:',
-        'Dzień 1: Wybierz JEDNO zadanie, które odkładasz najdłużej. Zdefiniuj dla niego mikro-krok trwający dokładnie 2 minuty.',
-        'Dzień 2: Usuń tarcie środowiskowe (przygotuj biurko, wyciągnij dokumenty wieczorem, połóż ubrania do biegania przy łóżku).',
-        'Dzień 3: Zastosuj Parowanie Pokus (połącz trudne zadanie z ulubionym podcastem lub napojem).',
-        'Dzień 4: Wykonaj zadanie z nastawieniem na „30% jakości” — zakaz poprawiania czegokolwiek w pierwszej fazie.',
-        'Dzień 5: Wprowadź zasadę „Nigdy nie opuszczaj dwóch dni z rzędu”. Jeśli wypadniesz z rytmu w czwartek, w piątek zrób choćby 60 sekund.',
-        'Dzień 6: Zmierz postęp — zapisz w zeszycie liczbę wykonanych mikro-kroków, dając sobie dopaminowy zastrzyk dumy.',
-        'Dzień 7: Świętowanie procesu — nagródź się nie za wynik, lecz za wierność systemowi.'
-      ]
+        'Zintegrujmy teorię tego rozdziału w konkretnym, 7-dniowym protokole przełamywania bezwładności i budowania dyscypliny opartej na architekturze środowiska.',
+        'Poniższy warsztat krok po kroku przeprowadzi Cię przez reset Twojego układu motywacyjnego.'
+      ],
+      exerciseRef: chapterElevenExerciseResetProtocol
     },
     {
       id: 'sec-11-14',

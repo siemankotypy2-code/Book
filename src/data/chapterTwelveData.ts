@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 
 export const chapterTwelveExamQuestions: ExamQuestion[] = [
   {
@@ -70,8 +70,262 @@ export const chapterTwelveExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Porażka w jeden dzień nie niszczy śladu pamięciowego nawyku. Jednak drugi dzień zaniechania uruchamia nową pętlę bezwładności i potwierdza tożsamość osoby, która „jednak nie dała rady”. Utrzymaj ciągłość za wszelką cenę, nawet symbolicznie.',
     keyTakeaway: 'W zły dzień nie chodzi o jakość treningu — chodzi o ocalenie tożsamości sportowca.'
+  },
+  {
+    id: 6,
+    question: 'Czym są „Nawyki Kluczowe” (Keystone Habits) opisane przez Charlesa Duhigga (Sekcja 12.5)?',
+    topic: 'Nawyki Kluczowe (Keystone Habits)',
+    sectionRef: 'Sekcja 12.5',
+    options: [
+      { label: 'A', text: 'Nawykami noszenia kluczy zawsze w lewej kieszeni.', isCorrect: false },
+      { label: 'B', text: 'Pojedynczymi nawykami, które po wdrożeniu wywołują efekt domina i automatycznie pociągają za sobą pozytywne zmiany w wielu innych sferach życia (np. regularny trening fizyczny poprawia dietę, sen i skupienie w pracy).', isCorrect: true },
+      { label: 'C', text: 'Nawykami, które można kupić w sklepie internetowym.', isCorrect: false },
+      { label: 'D', text: 'Nawykami występującymi wyłącznie u kadry zarządzającej.', isCorrect: false }
+    ],
+    explanation: 'Nawyki kluczowe przebudowują strukturę tożsamości. Kiedy zaczynasz regularnie ćwiczyć, Twój mózg zaczyna postrzegać Cię jako osobę dbającą o zdrowie, co bez wysiłku eliminuje śmieciowe jedzenie i alkohol.',
+    keyTakeaway: 'Nie musisz zmieniać wszystkiego naraz — znajdź jeden nawyk kluczowy, a reszta ułoży się sama.'
+  },
+  {
+    id: 7,
+    question: 'Na czym polega technika „Łączenia Nawyków” (Habit Stacking) opracowana przez BJ Fogga i Jamesa Cleara (Sekcja 12.6)?',
+    topic: 'Łączenie Nawyków (Habit Stacking)',
+    sectionRef: 'Sekcja 12.6',
+    options: [
+      { label: 'A', text: 'Wykonywaniu 5 różnych czynności jednocześnie podczas jazdy na rowerze.', isCorrect: false },
+      { label: 'B', text: 'Wykorzystaniu istniejącego, silnego nawyku jako kotwicy i wskazówki dla nowego zachowania według wzoru: „Zaraz po [obecny nawyk], zrobię [nowy nawyk]”.', isCorrect: true },
+      { label: 'C', text: 'Układaniu książek o samorozwoju w stosy na podłodze.', isCorrect: false },
+      { label: 'D', text: 'Piciu trzech kaw pod rząd każdego ranka.', isCorrect: false }
+    ],
+    explanation: 'Najtrudniejszym elementem nowego nawyku jest pamiętanie o wskazówce. Połączenie nowego zachowania ze starym (np. „Gdy tylko włączę ekspres do kawy rano, zrobię 10 przysiadów”) wykorzystuje gotowe autostrady synaptyczne.',
+    keyTakeaway: 'Podepnij nowy nawyk pod stary pociąg, który już pędzi po torach.'
   }
 ];
+
+export const chapterTwelveCaseStudySmoking: CaseStudy = {
+  id: 'cs-ch12-palenie-praca',
+  title: 'Dymna Przerwa: Tomasz i Prawdziwa Nagroda Papierosa',
+  subtitle: 'Jak 28-letni programista odkrył, że nie jest uzależniony od nikotyny, lecz od ucieczki od biurka',
+  protagonist: 'Tomasz, 28 lat, Full-Stack Developer',
+  context: 'Biuro firmy informatycznej, 14:30, po 4 godzinach debugowania kodu.',
+  story: [
+    'Tomasz wypalał paczkę papierosów dziennie. Od dwóch lat próbował rzucić: żuł gumy nikotynowe, naklejał plastry, czytał poradniki. Wszystko kończyło się fiaskiem przy pierwszym trudniejszym sprincie programistycznym.',
+    'Pewnego popołudnia, po kolejnej awarii serwera, Tomasz poczuł nieznośne ciśnienie w skroniach. Rzucił myszką, wstał i poszedł na schody ewakuacyjne na dymka. Zapalając papierosa, wziął głęboki oddech, spojrzał na chmury za oknem, a po chwili dołączył do niego kolega z innego zespołu, z którym uciął 5-minutową, pełną śmiechu pogawędkę.',
+    'Wracając do biurka, Tomasz poczuł spokój. Po raz pierwszy w życiu zadał sobie precyzyjne pytanie z psychologii behawioralnej: „Jaka była FAKTYCZNA nagroda biologiczna tej czynności?”.',
+    'Zrobił audyt pętli: Wskazówką nie był brak nikotyny we krwi — wskazówką było zmęczenie oczu, przebodźcowanie monitorem i samotność. Prawdziwą nagrodą były: głęboki oddech przeponowy na świeżym powietrzu, ruch fizyczny po schodach oraz 5 minut kontaktu społecznego bez ekranu! Papieros był jedynie pretekstem, jedynym społecznie akceptowanym biletem na 10 minut przerwy w korporacji.',
+    'Tomasz wdrożył Złotą Regułę Duhigga: zachował wskazówkę (zmęczenie o 14:00) i nagrodę (oddech, schody, pogawędka), ale wyrzucił papierosa. Kupił butelkę z filtrem na wodę. O 14:00 wstawał, schodził na parter do ogrodu biurowego, robił 3 głębokie wdechy i rozmawiał z kimś na patio. W ciągu miesiąca rzucił palenie bez ani jednego objawu głodu nikotynowego.'
+  ],
+  decisionTaken: 'Tomasz zdekodował ukrytą nagrodę nawyku i zastąpił rytuał tytoniowy spacerem po schodach z butelką wody.',
+  whatProtagonistSaw: 'Widział w sobie beznadziejnego nałogowca chemicznie uzależnionego od nikotyny.',
+  whatWasMissed: 'Że papieros był jedynie fizycznym nośnikiem dla głębokiej potrzeby regulacji sensorycznej i odpoczynku kory wzrokowej.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Złota Reguła Zmiany Nawyku (Duhigg) i demaskowanie ukrytej nagrody w pętli zwojów podstawy mózgu.',
+    cognitiveBiases: [
+      { name: 'Mylenie nośnika z nagrodą', description: 'Przekonanie, że ulgę przynosi dym tytoniowy, podczas gdy przynosił ją głęboki oddech i zmiana otoczenia.', impact: 'Poczucie bezsilności wobec substancji.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Racjonalizacja nałogu', explanation: '„Palenie pomaga mi lepiej myśleć przy kodowaniu”.' }
+    ],
+    emotionalDynamic: 'Ucieczka przed klaustrofobią open space’u i monotonią pracy umysłowej.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Błąd w kodzie i zmęczenie kognitywne o 14:30.',
+    attentionFocus: 'Napięcie w karku i chęć natychmiastowego odejścia od biurka.',
+    interpretation: '„Muszę zapalić, bo inaczej eksploduję”.',
+    emotion: 'Frustracja, przebodźcowanie, znużenie.',
+    impulse: 'Sięgnąć do kieszeni po zapalniczkę.',
+    action: 'Wyjście do ogrodu z butelką wody zamiast paczki papierosów.',
+    consequence: 'Trwałe uwolnienie od nałogu, oszczędność 600 zł miesięcznie i lepsza wydolność tlenowa.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Zwoje podstawy (Prążkowie)', role: 'Wyzwalanie automatycznego skryptu sięgania po ogień', activationState: 'Przekierowane na nowy wzorzec sięgania po butelkę' },
+      { region: 'Kora wyspy (Insula)', role: 'Rejestracja wewnętrznych sygnałów somatycznych głodu tlenowego', activationState: 'Ukojona przez oddechy przeponowe' }
+    ],
+    neurotransmitters: [
+      { name: 'Dopamina i acetylocholina', roleInScenario: 'Dopamina została powiązana ze spacerem po schodach zamiast z dymem tytoniowym' }
+    ],
+    biologicalTimeline: [
+      { timeMs: '14:30', process: 'Sygnał zmęczenia oczu aktywuje nawykową chęć wstania.' },
+      { timeMs: '14:35', process: 'Wdech świeżego powietrza na patio wygasza napięcie w układzie współczulnym.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [],
+    counterMeasures: [
+      { step: 'Dekonstrukcja Nagrody Ukrytej', script: '„Czego tak naprawdę potrzebuje teraz mój organizm? Nikotyny, czy po prostu 5 minut bez patrzenia w ekran?”.', rationale: 'Ujawnia prawdziwą biologiczną potrzebę.' }
+    ]
+  },
+  alternativePath: 'Gdyby Tomasz nadal walczył „silną wolą”, siedząc przy biurku i zakazując sobie palenia, po 3 dniach uległby frustracji i wypalił 5 papierosów pod rząd.',
+  readerQuestion: 'Jaki Twój zły nawyk (podjadanie, social media, kawa) jest w rzeczywistości wołaniem Twojego ciała o przerwę i oddech?',
+  keyTakeaway: 'Nie walcz z potrzebą stojącą za nawykiem — potrzeba jest zawsze zdrowa. Zmień tylko sposób, w jaki ją zaspokajasz.'
+};
+
+export const chapterTwelveCaseStudyPhoneJulia: CaseStudy = {
+  id: 'cs-ch12-telefon-julia',
+  title: 'Mikro-Nuda i Kciuk: Julia i 150 Sprawdzeń Ekranu',
+  subtitle: 'Jak 19-letnia studentka utraciła zdolność czytania książek przez automatyzm sięgania po smartfon',
+  protagonist: 'Julia, 19 lat, studentka psychologii',
+  context: 'Pokój w mieszkaniu studenckim, próba przeczytania 20 stron podręcznika akademickiego.',
+  story: [
+    'Julia kochała książki w liceum. Potrafiła spędzić całą niedzielę z powieścią. Jednak na pierwszym roku studiów zauważyła przerażającą zmianę: nie była w stanie przeczytać dwóch stron tekstu bez sięgnięcia po telefon.',
+    'Aplikacja monitorująca czas ekranowy pokazała bezlitosną prawdę: Julia odblokowywała telefon średnio 154 razy na dobę! Najbardziej uderzające było to, że w 80% przypadków działo się to całkowicie poza jej świadomością.',
+    'Wystarczyła mikrosekunda trudniejszego akapitu, moment zawahania przy pisaniu notatki czy 3 sekundy oczekiwania na zagotowanie wody w czajniku — jej dłoń sama, jak sterowana magnesem, wędrowała do kieszeni, odblokowywała ekran i kciuk otwierał Instagrama lub TikToka.',
+    'To był nawyk atomowy. Wskazówką była MIKRO-NUDA lub lekki dyskomfort kognitywny. Rutyną było dotknięcie ekranu. Nagrodą — mikro-zastrzyk dopaminy z nowego powiadomienia.',
+    'Julia zastosowała technikę Łączenia Nawyków (Habit Stacking) i Radykalnego Tarcia: kupiła fizyczny budzik, a telefon o 20:00 zamykała w pudełku z zamkiem czasowym (Kitchen Safe) w przedpokoju. Na biurku położyła czysty szkicownik z ołówkiem. Za każdym razem, gdy pojawiał się impuls sięgnięcia po telefon, miała nawyk zrobienia jednej małej bazgroły na kartce. W ciągu 3 tygodni jej zdolność głębokiej koncentracji powróciła.'
+  ],
+  decisionTaken: 'Julia wprowadziła fizyczną barierę czasową dla telefonu i zastąpiła odruch sięgania po ekran rysowaniem na papierze.',
+  whatProtagonistSaw: 'Julia bała się, że rozwija się u niej wczesne ADHD lub uszkodzenie mózgu.',
+  whatWasMissed: 'Że jej układ nerwowy został po prostu uwarunkowany instrumentalnie na szukanie ucieczki przed najmniejszym dyskomfortem braku stymulacji.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Nawyk automatycznego rozpraszania uwagi (Compulsive Checking Loop) połączony z nietolerancją mikronudy.',
+    cognitiveBiases: [
+      { name: 'Złudzenie wielozadaniowości', description: 'Przekonanie, że „sprawdzenie powiadomienia na 3 sekundy nie przerywa czytania”.', impact: 'Dramatyczny spadek retencji wiedzy (Tom I, Rozdział 3).' }
+    ],
+    defenseMechanisms: [
+      { name: 'Zautomatyzowane wyparcie', explanation: 'Sięganie po telefon bez udziału kory przedczołowej, uniemożliwiające świadomą ocenę.' }
+    ],
+    emotionalDynamic: 'Lęk przed ciszą i pustką poznawczą zamieniony w nałogowe poszukiwanie bodźców.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Trudniejszy fragment tekstu o neurobiologii.',
+    attentionFocus: 'Chwilowy spadek dopaminy i mikronuda.',
+    interpretation: 'Mózg szuka natychmiastowej stymulacji.',
+    emotion: 'Niepokój sensoryczny.',
+    impulse: 'Wyciągnąć telefon z kieszeni.',
+    action: 'Zablokowanie telefonu w pudełku i szkicowanie ołówkiem.',
+    consequence: 'Odzyskanie zdolności czytania monografii przez 60 minut bez przerwy.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Grzbietowe prążkowie', role: 'Sterowanie zautomatyzowanym ruchem kciuka', activationState: 'Wygaszone po 14 dniach braku dostępności bodźca' },
+      { region: 'Sieć wzbudzeń domyślnych (DMN)', role: 'Generowanie własnych myśli i refleksji w ciszy', activationState: 'Udana reaktywacja' }
+    ],
+    neurotransmitters: [
+      { name: 'Dopamina', roleInScenario: 'Przywrócenie wrażliwości receptorów D2 na wolniejsze, bardziej subtelne bodźce książkowe' }
+    ],
+    biologicalTimeline: [
+      { timeMs: 'Dzień 1-3', process: 'Silny niepokój odstawienny (Phantom Vibrations).' },
+      { timeMs: 'Dzień 14', process: 'Pojawienie się stanu Flow podczas lektury.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [],
+    counterMeasures: [
+      { step: 'Twarde Pudełko Czasowe (Time-Lock Safe)', script: 'Fizyczne uniemożliwienie sięgnięcia po bodziec przez wyznaczony czas.', rationale: 'Eliminuje konieczność podejmowania walki przez zmęczoną wolę.' }
+    ]
+  },
+  alternativePath: 'Gdyby Julia nie przerwała tego nawyku, oblałaby egzaminy z anatomii i zrezygnowała ze studiów, wierząc, że nie ma zdolności intelektualnych.',
+  readerQuestion: 'Co robisz w pierwszych 5 sekundach, gdy musisz na cokolwiek poczekać (winda, kolejka, czerwone światło)?',
+  keyTakeaway: 'Zdolność do znoszenia mikronudy bez ucieczki w ekran jest fundamentem wszelkiego głębokiego myślenia i kreatywności.'
+};
+
+export const chapterTwelveExerciseLoopDeconstruct: SelfExercise = {
+  id: 'ex-ch12-habit-loop-deconstruct',
+  title: 'Ćwiczenie 12.1: Dekonstruktor Pętli Nawyku (Duhigg & Graybiel)',
+  subtitle: 'Rozłóż swój automatyzm na 3 elementy: Wskazówkę, Rutynę i Prawdziwą Nagrodę',
+  objective: 'Zdemaskowanie nieświadomego schematu zwojów podstawy mózgu.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Świadoma analiza pętli nawyku zmusza korę przedczołową do ponownego przejęcia nadzoru nad zautomatyzowanymi obwodami prążkowia.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Zidentyfikuj nawyk, który chcesz zbadać',
+      instruction: 'Wybierz jedno automatyczne zachowanie, które wykonujesz codziennie, a którego chciałbyś się pozbyć.',
+      promptText: 'Co to za zachowanie i w jakich okolicznościach się pojawia?',
+      placeholder: 'Wieczorne scrollowanie telefonu w łóżku przed snem przez ponad godzinę...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Zidentyfikuj Wskazówkę (Trigger)',
+      instruction: 'Wskaż jeden z 5 uniwersalnych wyzwalaczy: Miejsce, Czas, Stan Emocjonalny, Inni Ludzie lub Poprzedzające Działanie.',
+      promptText: 'Jaka jest dokładna wskazówka wyzwalająca ten nawyk?',
+      placeholder: 'Miejsce: sypialnia, Czas: 22:30, Emocja: zmęczenie i lęk przed jutrzejszym dniem w pracy.'
+    },
+    {
+      stepNumber: 3,
+      title: 'Zidentyfikuj Prawdziwą Nagrodę Biologiczną',
+      instruction: 'Co tak naprawdę otrzymuje Twój mózg? (Podpowiedź: to rzadko jest sam telefon czy jedzenie — najczęściej to ucieczka od myśli, odpoczynek, poczucie więzi).',
+      promptText: 'Jaka jest głęboka nagroda afektywna?',
+      placeholder: 'Znieczulenie lęku i odroczenie momentu pójścia spać, by jutrzejszy dzień nie nadszedł zbyt szybko...'
+    }
+  ],
+  reflectionQuestions: [
+    'Dlaczego dotychczasowe próby „prostego zakazania sobie tego” kończyły się fiaskiem?',
+    'Jak możesz dostarczyć sobie tę samą nagrodę bez niszczenia swojego snu?'
+  ]
+};
+
+export const chapterTwelveExerciseReplacementLab: SelfExercise = {
+  id: 'ex-ch12-habit-replacement-lab',
+  title: 'Ćwiczenie 12.2: Laboratorium Złotej Reguły Podmiany Rutyny',
+  subtitle: 'Zachowaj starą wskazówkę i nagrodę — wymień jedynie rutynę w środku',
+  objective: 'Zaprojektowanie konkretnego zastępnika behawioralnego, który zaspokoi ten sam głód biologiczny.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Nadpisywanie śladu synaptycznego nową rutyną wykorzystuje istniejące połączenia neuronalne wskazówki, drastycznie skracając czas adaptacji.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Wybierz starą wskazówkę i nagrodę z ćwiczenia 12.1',
+      instruction: 'Wpisz wyzwalacz i pożądaną nagrodę biologiczną.',
+      promptText: 'Wskazówka oraz docelowa nagroda:',
+      placeholder: 'Wskazówka: Stres po ciężkiej naradzie. Nagroda: 5 minut głębokiego wyciszenia i ulgi.'
+    },
+    {
+      stepNumber: 2,
+      title: 'Zaprojektuj Nową, Zdrową Rutynę',
+      instruction: 'Jakie konstruktywne zachowanie dostarczy Ci dokładnie tę samą nagrodę w tym samym czasie?',
+      promptText: 'Moja nowa rutyna zamienna:',
+      placeholder: 'Zamiast słodyczy: 3 minuty ćwiczeń oddechowych 4-7-8 z zamkniętymi oczami i szklanka wody z cytryną.'
+    },
+    {
+      stepNumber: 3,
+      title: 'Zdefiniuj Intencję Wdrożeniową (Implementation Intention)',
+      instruction: 'Ułóż zdanie w formacie Petera Gollwitzera: „JEŚLI pojawi się [wskazówka], TO zrobię [nowa rutyna]”.',
+      promptText: 'Moja formuła JEŚLI-TO:',
+      placeholder: '„JEŚLI poczuję po naradzie ochotę na cukier, TO wstanę, założę słuchawki i włączę 3-minutowy utwór relaksacyjny”.'
+    }
+  ],
+  reflectionQuestions: [
+    'Czy Twoja nowa rutyna jest wystarczająco łatwa do wykonania w stanie wyczerpania?',
+    'W jaki sposób możesz nagrodzić siebie natychmiast po wykonaniu nowej rutyny?'
+  ]
+};
+
+export const chapterTwelveExerciseIdentityHabits: SelfExercise = {
+  id: 'ex-ch12-identity-habits',
+  title: 'Ćwiczenie 12.3: Dziennik Tożsamości Behawioralnej (James Clear)',
+  subtitle: 'Zamień walkę z zachowaniem w budowanie nowej tożsamości',
+  objective: 'Przekształcenie nawyków w głosy poparcia oddawane na człowieka, jakim pragniesz się stać.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Zmiana samopojęcia (Self-concept) angażuje przyśrodkową korę przedczołową (mPFC), integrując nawyk z rdzeniem tożsamości jednostki.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Zdefiniuj nową tożsamość w jednym zdaniu',
+      instruction: 'Nie pisz, co chcesz osiągnąć. Napisz, KIM jesteś lub kim chcesz być (np. „Jestem pisarzem”, „Jestem osobą dbającą o swoje serce”, „Jestem zorganizowanym profesjonalistą”).',
+      promptText: 'Kim jestem?',
+      placeholder: 'Jestem osobą, która szanuje swoje ciało i dba o czystość swojego umysłu...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Zdefiniuj 3 codzienne mikro-głosy poparcia',
+      instruction: 'Wypisz 3 małe, bezdyskusyjne nawyki, które będą niepodważalnym dowodem na to, że jesteś tą osobą.',
+      promptText: 'Moje 3 głosy poparcia:',
+      placeholder: '1. Każdego ranka piję szklankę wody przed kawą. 2. Ścielę łóżko zaraz po wstaniu. 3. Robię 10 minut spaceru bez telefonu.'
+    },
+    {
+      stepNumber: 3,
+      title: 'Pytanie bezpiecznikowe w chwili pokusy',
+      instruction: 'Sformułuj pytanie tożsamościowe, które zadasz sobie, gdy pojawi się pokusa powrotu do starego nawyku.',
+      promptText: 'Moje pytanie tożsamościowe:',
+      placeholder: '„Co w tej sytuacji zrobiłaby osoba, która prawdziwie dba o swoje zdrowie i szanuje swoje słowo?”'
+    }
+  ],
+  reflectionQuestions: [
+    'O ile lżej podejmuje się decyzje, gdy nie musisz negocjować z samym sobą, bo „po prostu taki jesteś”?',
+    'Kiedy ostatnio poczułeś dumę z małego zwycięstwa, o którym nie wiedział nikt poza Tobą?'
+  ]
+};
 
 export const chapterTwelve: Chapter = {
   number: 12,
@@ -101,146 +355,176 @@ export const chapterTwelve: Chapter = {
       id: 'sec-12-2',
       pageNumber: 554,
       sectionNumber: '12.2',
-      title: 'Wskazówka: Iskra w zapalniku nawyku',
+      title: 'Pętla nawyku: Wskazówka, rutyna i nagroda',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Żaden nawyk nie odpala się w próżni. Każda pętla automatyzmu potrzebuje Wskazówki (Cue) — bodźca sensorycznego, który informuje zwoje podstawy: „Rozpocznij program numer 4”.',
-        'Istnieje pięć uniwersalnych kategorii wskazówek nawykowych:',
-        '1. Czas: Godzina 15:00 (mózg zaczyna szukać kawy i czegoś słodkiego).',
-        '2. Miejsce: Wejście do sypialni (odruchowe sięgnięcie po telefon i położenie się do łóżka).',
-        '3. Stan emocjonalny: Nuda, lęk, frustracja po trudnym telefonie (odruchowe otwarcie lodówki lub Facebooka).',
-        '4. Inni ludzie: Spotkanie z konkretnym znajomym (odruchowe zapalenie papierosa).',
-        '5. Poprzedzające działanie: Wyjście spod prysznica (odruchowe zaparzenie herbaty).',
-        'Jeśli nie zidentyfikujesz precyzyjnie wskazówki, która uruchamia Twoje niechciane zachowanie, próba jego zmiany za pomocą samej siły woli jest skazana na porażkę.'
+        'Charles Duhigg w The Power of Habit zdefiniował uniwersalną architekturę każdego automatyzmu:',
+        '1. Wskazówka (Cue): Bodziec ze środowiska (miejsce, czas, emocja, dźwięk), który informuje zwoje podstawy: „Włącz ten konkretny program automatyczny”.',
+        '2. Rutyna (Routine): Samo zachowanie fizyczne, emocjonalne lub umysłowe (zjedzenie ciastka, zapalenie papierosa, zrobienie 20 przysiadów).',
+        '3. Nagroda (Reward): Zastrzyk neurochemiczny, który informuje mózg: „To zachowanie przyniosło ulgę lub przyjemność — zapamiętaj tę pętlę na przyszłość”.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 1: Poranna filiżanka kawy',
+          paragraphs: [
+            'Sytuacja i bohater: 35-letni Robert budzi się o 6:30. Nie myśli, nie analizuje. Nogi same niosą go do kuchni. Dłoń sama wciska przycisk ekspresu.',
+            'Działający mechanizm: Klasyczna pętla nawykowa. Dźwięk mielenia ziaren i zapach kawy to potężna wskazówka sensoryczna wyzwalająca wyrzut dopaminy jeszcze przed pierwszym łykiem.',
+            'Jak rozpoznać w czasie rzeczywistym: Wykonywanie czynności w stanie półsnu bez jakiegokolwiek wysiłku woli.',
+            'Możliwa konstruktywna reakcja: Wykorzystanie tego silnego nawyku jako kotwicy dla nowego zachowania (Habit Stacking).',
+            'Wniosek dydaktyczny dla czytelnika: Silne nawyki nie wymagają motywacji — działają z siłą grawitacji.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-12-3',
       pageNumber: 558,
       sectionNumber: '12.3',
-      title: 'Rutyna: Automatyczny skrypt działania',
+      title: 'Pożądanie w mózgu: Jak wskazówka wyzwala głód dopaminowy',
       category: 'teoria',
       readingTimeMinutes: 13,
       paragraphs: [
-        'Rutyna to samo zachowanie — to, co faktycznie robisz w odpowiedzi na wskazówkę. Może mieć charakter fizyczny (zjedzenie batona, obgryzanie paznokci), mentalny (katastrofizowanie, wchodzenie w spiralę samokrytyki) lub emocjonalny (wybuch gniewu w odpowiedzi na krytykę).',
-        'Co fascynujące, w trakcie wykonywania utrwalonej rutyny poziom świadomości jest minimalny. Gdyby ktoś zapytał Cię w trakcie scrollowania rolek na Instagramie: „Dlaczego to robisz?”, Twoja odpowiedź byłaby pusta, ponieważ decyzja została podjęta na poziomie podkorowym bez udziału kory nowej.'
+        'Kiedy nawyk jest już ukształtowany, dopamina przestaje uwalniać się przy samej nagrodzie. Uwalnia się już w ułamku sekundy po zarejestrowaniu WSKAZÓWKI!',
+        'To właśnie ten przedwczesny wyrzut dopaminy odczuwamy w ciele jako GŁÓD (Craving). Kiedy palacz widzi paczkę papierosów, w jego mózgu pojawia się natychmiastowe ssanie. Jeśli zachowanie nie nastąpi, poziom dopaminy spada poniżej zera, wywołując bolesne napięcie somatyczne.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 2: Sięganie po smartfon na czerwonym świetle',
+          paragraphs: [
+            'Sytuacja i bohater: Kierowca Michał zatrzymuje się na czerwonym świetle. Światło będzie czerwone przez 20 sekund. Dłoń Michała automatycznie sięga do uchwytu samochodowego po telefon.',
+            'Działający mechanizm: Wskazówką jest mikronuda spoczynkowa na skrzyżowaniu. Pragnieniem jest natychmiastowa mikro-stymulacja.',
+            'Jak rozpoznać w czasie rzeczywistym: Złapanie się na tym, że trzymasz telefon w ręku, zanim zdążyłeś pomyśleć, po co go wziąłeś.',
+            'Możliwa konstruktywna reakcja: Schowanie telefonu do schowka między fotelami na czas jazdy.',
+            'Wniosek dydaktyczny dla czytelnika: Zwoje podstawy działają szybciej niż świadomość. Kontroluj przestrzeń, by wyprzedzić automatyzm.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-12-4',
       pageNumber: 562,
       sectionNumber: '12.4',
-      title: 'Nagroda: Paliwo utrwalające ślad pamięciowy',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Dekonstrukcja pętli: Jak namierzyć prawdziwą nagrodę',
+      category: 'cwiczenia',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Dlaczego mózg zapamiętuje jedne rutyny, a inne odrzuca? Odpowiedzią jest Nagroda (Reward). Nagroda mówi zwojom podstawy: „To było świetne! Zapamiętaj tę sekwencję na przyszłość”.',
-        'Wielkim błędem jest jednak mylenie nagrody pozornej z nagrodą rzeczywistą. Kiedy o 16:00 w biurze idziesz do kuchni po drożdżówkę, co jest Twoją prawdziwą biologiczną nagrodą? Czy naprawdę Twój żołądek umiera z głodu? Najczęściej nie! Nagrodą może być:',
-        '- Chwilowa ulga od nudnego arkusza kalkulacyjnego (rozproszenie uwagi).',
-        '- Pięć minut plotek z koleżanką przy ekspresie (potrzeba więzi społecznej).',
-        '- Zastrzyk dopaminowy z cukru prostego (znieczulenie zmęczenia).',
-        'Dopóki nie odkryjesz, JAKĄ PRAWDZIWĄ POTRZEBĘ afektywną zaspokaja Twój nawyk, nigdy go nie zmienisz.'
-      ]
+        'Większość ludzi myli zewnętrzną formę zachowania z jego prawdziwą biologiczną nagrodą. Kiedy o 15:00 idziesz do firmowego automatu po batonik, Twoje ciało rzadko potrzebuje cukru. Najczęściej potrzebuje odejścia od biurka, rozprostowania nóg i zresetowania zmęczonej uwagi.',
+        'Poniższy warsztat uczy precyzyjnego dekonstruowania pętli nawyku i odkrywania ukrytej nagrody.'
+      ],
+      exerciseRef: chapterTwelveExerciseLoopDeconstruct
     },
     {
       id: 'sec-12-5',
       pageNumber: 566,
       sectionNumber: '12.5',
-      title: 'Pętla zachowania: Złoty Trójkąt Charlesa Duhigga',
-      category: 'teoria',
-      readingTimeMinutes: 14,
+      title: 'Nawyki kluczowe (Keystone Habits): Efekt domina w życiu',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Charles Duhigg w bestsellerze „Siła nawyku” połączył te elementy w model Pętli Nawyku (The Habit Loop): Wskazówka → Rutyna → Nagroda.',
-        'Z czasem w mózgu zachodzi zjawisko Neuroplastyczności (Tom I, Rozdział 1). Połączenia synaptyczne między wskazówką a nagrodą ulegają zmielinizowaniu — powstaje trwała autostrada neuronalna. Wskazówka zaczyna wywoływać Pragnienie (Craving) nagrody ZANIM jeszcze wykonasz rutynę.',
-        'To pragnienie jest biologicznym motorem uzależnienia. Kiedy słyszysz dźwięk powiadomienia, Twoje prążkowie już domaga się dopaminy. Jeśli nie spojrzysz w telefon, poziom napięcia rośnie do momentu, w którym ulegasz, byle tylko przywrócić homeostazę.'
-      ]
+        'Nie wszystkie nawyki są sobie równe. Istnieją tzw. Nawyki Kluczowe (Keystone Habits) — pojedyncze zachowania, które po wdrożeniu wywołują łańcuchową reakcję w całym systemie życiowym.',
+        'Gdy ktoś zaczyna regularnie ćwiczyć 3 razy w tygodniu, nagle — bez żadnego dodatkowego wysiłku — zaczyna lepiej jeść, wcześniej kłaść się spać, rzadziej sięgać po alkohol i pracować z większym skupieniem. Studium przypadku poniżej przedstawia demaskowanie ukrytej nagrody w nałogu nikotynowym.'
+      ],
+      caseStudyRef: chapterTwelveCaseStudySmoking
     },
     {
       id: 'sec-12-6',
       pageNumber: 570,
       sectionNumber: '12.6',
-      title: 'Nawyki cyfrowe: Gdy kieszeń dyktuje zachowanie',
+      title: 'Stos nawyków (Habit Stacking): Podłączanie pod istniejącą sieć',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Smartfon to najbardziej wyrafinowana maszyna do wytwarzania nawyków w historii ludzkości. Nir Eyal w książce „Hooked” opisał model projektowania produktów uzależniających: Zewnętrzny wyzwalacz (powiadomienie) zamienia się w wewnętrzny wyzwalacz (poczucie samotności, nuda, niepewność).',
-        'Zmienna Nagroda (Variable Reward): Podobnie jak w kasynie przy jednorękim bandycie, za każdym razem, gdy odświeżasz feed social mediów, nie wiesz, co zobaczysz. Raz to nudna reklama (brak nagrody), innym razem szokujący news lub setka lajków pod Twoim zdjęciem (wielka nagroda). Ta nieprzewidywalność powoduje gigantyczny wyrzut dopaminy w prążkowiu.',
-        'Inwestycja: Każdy Twój komentarz, dodany post czy lajk sprawia, że algorytm staje się lepiej dopasowany do Twoich słabości, zamykając pętlę uzależnienia na amen.'
+        'Próba wdrożenia nowego nawyku w próżni („Od jutra będę robić 10 minut rozciągania”) niemal zawsze kończy się porażką, ponieważ Twój mózg nie wie, KIEDY dokładnie ma to zrobić.',
+        'Technika Habit Stacking polega na wykorzystaniu silnego, istniejącego nawyku jako naturalnej kotwicy: „Zaraz po tym, jak [obecny nawyk], zrobię [nowy nawyk]”. Nowe zachowanie płynie po torach, które są już wyryte w zwojach podstawy mózgu.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 3: Łączenie nawyków porannych',
+          paragraphs: [
+            'Sytuacja i bohater: Anna (31 lat) chciała wdrożyć nawyk wdzięczności i planowania dnia. Stworzyła formułę stosu:',
+            '„Zaraz po tym, jak naleję poranną herbatę (stary nawyk), otwieram notes leżący obok czajnika i zapisuję 3 rzeczy, za które jestem wdzięczna, oraz 1 priorytet dnia (nowy nawyk)”.',
+            'Działający mechanizm: Habit Stacking. Herbata stała się automatycznym wyzwalaczem dla notesu.',
+            'Jak rozpoznać w czasie rzeczywistym: Brak konieczności pamiętania o zadaniu — sam widok czajnika przypomina o notesie.',
+            'Możliwa konstruktywna reakcja: Utrzymanie notesu zawsze w tym samym miejscu przy czajniku.',
+            'Wniosek dydaktyczny dla czytelnika: Połącz to, co chcesz robić, z tym, co już robisz bez myślenia.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-12-7',
       pageNumber: 574,
       sectionNumber: '12.7',
-      title: 'Projektowanie środowiska: Architektura przestrzeni zamiast silnej woli',
+      title: 'Projektowanie środowiska: Wskazówki wizualne decydują o losie',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Kiedy psycholog Wendy Wood badała studentów osiągających najwyższe wyniki akademickie, odkryła zdumiewający fakt: studenci ci nie mieli wcale większej „silnej woli” w testach laboratoryjnych niż ich koledzy o słabych ocenach. Czym więc się różnili?',
-        'Różnili się PROJEKTOWANIEM ŚRODOWISKA. Prymusi uczyli się w cichych czytelniach biblioteki uniwersyteckiej, zostawiając telefony w szafkach na parterze. Studenci ze słabymi wynikami próbowali uczyć się w hałaśliwym pokoju akademika, z telefonem leżącym obok klawiatury i otwartym Facebookiem na drugim monitorze.',
-        'Walka z pokusą zużywa glukozę w korze przedczołowej (Tom I, Rozdział 1: Budżet Poznawczy). Po 40 minutach walki z pokusą silna wola kapituluje. Prawdziwi mistrzowie nawyków nie walczą z pokusami — oni sprawiają, że pokusy są fizycznie niewidoczne i niedostępne w ich bezpośrednim polu widzenia.'
+        'Większość naszych nawyków jest wyzwalana wzrokowo. Jeśli na blacie w kuchni stoi talerz z pączkami, będziesz po nie sięgać za każdym razem, gdy przejdziesz obok, nawet jeśli nie jesteś głodny.',
+        'Najważniejszą zasadą inżynierii nawyków jest: Uczyń dobre nawyki WIDOCZNYMI i ŁATWYMI, a złe nawyki NIEWIDOCZNYMI i TRUDNYMI. Dyscyplina to nie walka z pokusą; dyscyplina to usunięcie pokusy z pola widzenia.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 4: Zmiana diety bez diety — Misa z owocami',
+          paragraphs: [
+            'Sytuacja i bohater: Rodzina Nowaków chciała jeść więcej owoców. Zamiast chować jabłka do dolnej szuflady lodówki, postawili wielką, ceramiczną misę ze świeżymi owocami na środku stołu jadalnego. Słodycze przenieśli do najwyższej szafki w spiżarni, wymagającej przyniesienia drabinki.',
+            'Działający mechanizm: Wskazówka wizualna + asymetria tarcia fizycznego.',
+            'Jak rozpoznać w czasie rzeczywistym: Automatyczne sięganie po jabłko podczas przechodzenia przez pokój.',
+            'Wniosek dydaktyczny dla czytelnika: Jesteś tym, co znajduje się na wysokości Twoich oczu.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-12-8',
       pageNumber: 578,
       sectionNumber: '12.8',
-      title: 'Złe nawyki: Dlaczego ich wykasowanie jest biologicznie niemożliwe',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Złota reguła zmiany nawyku: Nie eliminuj, lecz zastępuj',
+      category: 'cwiczenia',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Neuronauka ma złą wiadomość dla marzycieli: raz wytworzona ścieżka nawykowa w zwojach podstawy mózgu pozostaje tam NA ZAWSZE. Podobnie jak nie da się zapomnieć, jak jeździ się na rowerze, tak samo mózg alkoholika, palacza czy kompulsywnego objadacza pamięta schemat ucieczki w nałóg nawet po 20 latach abstynencji.',
-        'Wystarczy silny kryzys emocjonalny, zgon bliskiej osoby lub nagłe załamanie życiowe (odcięcie kory przedczołowej przez kortyzol), by dawna pętla nawykowa obudziła się w ułamku sekundy.',
-        'Dlatego próba „zlikwidowania” nawyku poprzez czysty zakaz („Od dziś nigdy więcej nie zapalę / nie tknę cukru”) tworzy potworne napięcie i niemal zawsze kończy się spektakularnym nawrotem zwanym Efektem Przebicia Tamy (The "What-the-Hell" Effect).'
-      ]
+        'Zwoje podstawy mózgu nie znają pojęcia „przestań to robić”. Próba wygaszenia nawyku samą negacją („Od jutra zero cukru / zero telefonu / zero złości”) tworzy próżnię neurologiczną, w której napięcie dopaminowe rośnie do poziomu krytycznego.',
+        'Złota reguła mówi: ZACHOWAJ WSKAZÓWKĘ, ZACHOWAJ NAGRODĘ, PODMIEŃ RUTYNĘ. Poniższy warsztat pozwala zaprojektować precyzyjną procedurę podmiany nawyku.'
+      ],
+      exerciseRef: chapterTwelveExerciseReplacementLab
     },
     {
       id: 'sec-12-9',
       pageNumber: 582,
       sectionNumber: '12.9',
-      title: 'Zastępowanie zachowania: Złota reguła neurokognitywna',
+      title: 'Pragnienie (Craving) i nagroda: Jak dopamina koduje wartość',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 13,
       paragraphs: [
-        'Złota Reguła Zmiany Nawyku głosi: Nie możesz zniszczyć pętli, ale możesz podmienić jej środkowy element.',
-        'Krok 1: Zachowaj tę samą WSKAZÓWKĘ (np. znużenie i spadek energii o 15:30).',
-        'Krok 2: Zidentyfikuj i dostarcz tę samą biologiczną NAGRODĘ (np. pobudzenie krążenia i zmiana bodźców wzrokowych).',
-        'Krok 3: Zmień wyłącznie RUTYNĘ. Zamiast iść do automatu po batonika i colę, załóż słuchawki, wyjdź na 6-minutowy energiczny spacer wokół biurowca po świeżym powietrzu i wypij szklankę zimnej wody z cytryną.',
-        'Twój mózg otrzymuje dotlenienie, spadek kortyzolu i zastrzyk nowości — czyli dokładnie tę samą ulgę, której szukał w cukrze, bez obciążania trzustki i wyrzutów sumienia.'
+        'Nagroda musi być natychmiastowa. Mózg zwierzęcy nie rozumie nagród odsuniętych o 6 miesięcy. Jeśli po treningu nie poczujesz natychmiastowego wyrzutu endorfin, ciepłego prysznica lub poczucia dumy, zwoje podstawy nie utrwalą zachowania.',
+        'Wprowadzaj mikro-nagrody bezpośrednie: pyszna kawa pita tylko w trakcie czytania trudnej książki, odhaczenie ptaszka w estetycznym planerze (zastrzyk dopaminy z ukończenia).'
       ]
     },
     {
       id: 'sec-12-10',
       pageNumber: 586,
       sectionNumber: '12.10',
-      title: 'Metoda Kaizen i mikro-nawyki: Potęga 1%',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Atomowe nawyki w praktyce: Potęga 1% poprawy każdego dnia',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Większość ludzi ponosi porażkę, bo próbuje zmienić wszystko naraz: od jutra biegam 10 km, jem wyłącznie jarmuż i czytam 100 stron książek dziennie. Taka rewolucja budzi natychmiastowy alarm w ciele migdałowatym.',
-        'Japońska filozofia Kaizen (oraz koncepcja Mini Habits Stephena Guise’a) uczy: Spraw, aby nawyk był tak mały, że nie sposób mu odmówić.',
-        '- Zamiast 50 pompek dziennie: JEDNA pompka po wyjściu z łóżka.',
-        '- Zamiast godziny czytania: JEDNA strona przed snem.',
-        '- Zamiast godzinnego sprzątania: umycie JEDNEGO widelca od razu po obiedzie.',
-        'Dlaczego to działa? Ponieważ jedna pompka nie wymaga żadnej motywacji ani silnej woli. Ale zrobienie tej jednej pompki każdego dnia przez 30 dni buduje nawykową tożsamość człowieka, który ćwiczy. A od jednej pompki nieskończenie łatwiej przejść do dziesięciu.'
-      ]
+        'Jeśli każdego dnia staniesz się o zaledwie 1% lepszy w danej dziedzinie, po roku będziesz 37 razy lepszy (1.01^365 = 37.78). Zmiany atomowe są z pozoru niewidoczne w skali tygodnia, ale tworzą gigantyczny procent składany w skali lat.',
+        'Studium przypadku poniżej przedstawia zmagania studentki z nawykiem nałogowego sięgania po telefon i odbudowę uwagi za pomocą reguł atomowych.'
+      ],
+      caseStudyRef: chapterTwelveCaseStudyPhoneJulia
     },
     {
       id: 'sec-12-11',
       pageNumber: 590,
       sectionNumber: '12.11',
-      title: 'Nawyki i tożsamość: Kim się stajesz z każdym powtórzeniem',
-      category: 'teoria',
+      title: 'Nawyki oparte na tożsamości: „Jestem kimś, kto...”',
+      category: 'cwiczenia',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Prawdziwa zmiana nawyków nie jest zmianą behawioralną — jest zmianą ontologiczną. Jest odpowiedzią na pytanie: „Kim jestem?”.',
-        'Słowo tożsamość (Identity) pochodzi z łaciny od essentitas (bycie) oraz identidem (raz za razem). Twoja tożsamość to dosłownie to, co robisz raz za razem.',
-        'Za każdym razem, gdy ścielesz rano łóżko — oddajesz jeden głos na tożsamość osoby zorganizowanej.',
-        'Za każdym razem, gdy odkładasz telefon na czas kolacji z rodziną — oddajesz głos na tożsamość kochającego partnera.',
-        'Za każdym razem, gdy siadasz do pisania, nawet gdy nie masz weny — oddajesz głos na tożsamość pisarza.',
-        'Nie musisz być idealny. Wystarczy, że w wyborach parlamentarnych swojego życia Twoja nowa tożsamość zdobędzie 51% głosów.'
-      ]
+        'Najwyższym poziomem zmiany behawioralnej jest tożsamość. Przestań mówić: „Próbuję biegać”. Mów: „Jestem biegaczem”. Kiedy nawyk staje się częścią Twojego poczucia tożsamości, nie musisz zmuszać się do działania — robisz to, bo zdrada nawyku byłaby zdradą samego siebie.',
+        'Poniższy warsztat uczy budowania dziennika tożsamości behawioralnej.'
+      ],
+      exerciseRef: chapterTwelveExerciseIdentityHabits
     },
     {
       id: 'sec-12-12',
@@ -251,8 +535,18 @@ export const chapterTwelve: Chapter = {
       readingTimeMinutes: 13,
       paragraphs: [
         'Życie to nie laboratorium. Prędzej czy później zachorujesz, wyjedziesz w podróż służbową lub spotka Cię kryzys rodzinny. Twój 30-dniowy ciąg porannych ćwiczeń czy nauki zostanie bezlitośnie przerwany.',
-        'W tym momencie amatorzy poddają się całkowicie: „Skoro złamałem dietę i zjadłem kawałek pizzy, to równie dobrze mogę zjeść całą blachę ciasta i zacząć od nowa od pierwszego stycznia”. To katastrofalny błąd uogólnienia.',
         'Zasada mistrzów brzmi: Jeden błąd to wypadek przy pracy; dwa błędy z rzędu to początek nowego nawyku zaniechania. Jeśli opuścisz jeden trening, Twoim absolutnym priorytetem jest pojawienie się na sali nazajutrz — choćby po to, by zrobić 5 przysiadów i wrócić do domu. Ocalenie tożsamości jest ważniejsze niż spalone kalorie.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 7: Opuszczony trening we wtorek — Zasada 5 pompek',
+          paragraphs: [
+            'Sytuacja i bohater: Michał (30 lat) wraca z delegacji wykończony o 22:00. Powinien iść na siłownię, ale ledwo stoi na nogach.',
+            'Działający mechanizm: Pułapka „Wszystko albo nic”. Zamiast zrezygnować całkowicie, Michał kładzie się na dywanie i robi 10 pompek.',
+            'Jak rozpoznać w czasie rzeczywistym: Poczucie, że mikroruch nie ma sensu fizycznego.',
+            'Wniosek dydaktyczny dla czytelnika: Te 10 pompek nie zmieniło jego tkanki mięśniowej, ale uratowało jego tożsamość człowieka, który nie odpuszcza dwóch dni z rzędu.'
+          ]
+        }
       ]
     },
     {

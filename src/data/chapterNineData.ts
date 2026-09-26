@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 
 export const chapterNineExamQuestions: ExamQuestion[] = [
   {
@@ -70,14 +70,275 @@ export const chapterNineExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Szantażysta liczy na to, że wciągnie cię w kłótnię o przeszłość lub wywoła paraliżujący wstyd. Uznanie faktu z jednoczesnym utrzymaniem granicy rozrywa manipulacyjną pętlę poczucia winy.',
     keyTakeaway: 'Możesz kochać człowieka i jednocześnie stanowczo odmówić spełnienia jego żądania.'
+  },
+  {
+    id: 6,
+    question: 'Na czym polega akronim DARVO (Deny, Attack, Reverse Victim and Offender) w toksycznych konfrontacjach (Sekcja 9.6)?',
+    topic: 'Mechanizm DARVO',
+    sectionRef: 'Sekcja 9.6',
+    options: [
+      { label: 'A', text: 'Na technice szybkiego zapamiętywania słówek języka obcego.', isCorrect: false },
+      { label: 'B', text: 'Sprawca zaprzecza faktom (Deny), atakuje osobę zgłaszającą krzywdę (Attack) oraz odwraca role, kreując siebie na niewinną ofiarę, a ofiarę na agresora (Reverse Victim and Offender).', isCorrect: true },
+      { label: 'C', text: 'Na wojskowym protokole szyfrowania radiowego.', isCorrect: false },
+      { label: 'D', text: 'Na systemie motywacyjnym dla pracowników handlowych.', isCorrect: false }
+    ],
+    explanation: 'DARVO (zdefiniowane przez prof. Jennifer Freyd) to manewr odwracania uwagi. Gdy sprawca zostaje przyłapany na kłamstwie lub krzywdzie, zaczyna krzyczeć: „Jak możesz mnie o to podejrzewać, po tym wszystkim to ja jestem tu niszczony!”.',
+    keyTakeaway: 'Kiedy oskarżony o krzywdę nagle staje się największą ofiarą rozmowy — obserwujesz DARVO.'
+  },
+  {
+    id: 7,
+    question: 'Czym różnią się „Dark Patterns” (Ciemne Wzorce Projektowe) w aplikacjach internetowych od zwykłego marketingu (Sekcja 9.11)?',
+    topic: 'Dark Patterns w Świecie Cyfrowym',
+    sectionRef: 'Sekcja 9.11',
+    options: [
+      { label: 'A', text: 'Wykorzystują wyłącznie czarny kolor tła na stronach internetowych.', isCorrect: false },
+      { label: 'B', text: 'Są to interfejsy zaprojektowane z premedytacją tak, by wykorzystać luki w ludzkiej percepcji (np. mylące przyciski, ukryte subskrypcje, shame-canceling: „Nie, wolę płacić więcej”), skłaniając do niekorzystnych decyzji.', isCorrect: true },
+      { label: 'C', text: 'Są tworzone wyłącznie przez hakerów działających w Darknecie.', isCorrect: false },
+      { label: 'D', text: 'Polegają na całkowitym wyłączeniu internetu w godzinach nocnych.', isCorrect: false }
+    ],
+    explanation: 'Dark Patterns exploitują zmęczenie decyzyjne, heurystykę domyślności i lęk przed odrzuceniem w kodzie UI/UX, omijając świadomą zgodę użytkownika.',
+    keyTakeaway: 'Jeśli interfejs zawstydza cię za próbę rezygnacji, to nie jest design — to cyfrowy szantaż.'
   }
 ];
+
+export const chapterNineCaseStudyFamilyGuilt: CaseStudy = {
+  id: 'cs-ch9-rodzina-fog',
+  title: 'Choroba na Zawołanie: Agnieszka i Niewidzialna Smycz Matki',
+  subtitle: 'Jak szantaż emocjonalny FOG (Strach, Obowiązek, Wina) niszczył niezależność 36-letniej córki',
+  protagonist: 'Agnieszka (36 lat, tłumaczka) i jej matka Teresa (64 lata, na emeryturze)',
+  context: 'Planowany pierwszy od trzech lat dwutygodniowy urlop Agnieszki z mężem i dziećmi za granicą.',
+  story: [
+    'Agnieszka od miesięcy marzyła o wyjeździe z mężem i dwójką dzieci do Grecji. Bilety były kupione, hotel opłacony. Gdy na trzy dni przed wylotem odwiedziła matkę Teresę, by przekazać zapasowe klucze, w mieszkaniu panował półmrok.',
+    'Matka leżała na kanapie z kompresem na czole i termometrem w dłoni. Słabym, łamiącym się głosem powiedziała: „Agnieszko... od wczoraj mam potworne kłucie w klatce piersiowej. Lekarz w przychodni powiedział, że to może być stan przedzawałowy ze stresu. Ale wy jedźcie, bawcie się dobrze w tym słońcu. Jakoś sobie poradzę. W razie czego sąsiedzi może wezwą pogotowie, jak nie będę odbierać”.',
+    'Agnieszka poczuła, jak grunt usuwa jej się spod nóg. W jej głowie eksplodowało poczucie winy: „Moja matka może umrzeć, a ja myślę o plaży. Jestem wyrodną córką, samolubną egoistką”. Zadzwoniła do męża ze łzami, że muszą odwołać urlop.',
+    'Mąż przypomniał jej, że dokładnie taka sama sytuacja wydarzyła się w zeszłym roku przed wyjazdem w Tatry, a dwa lata wcześniej w dniu obrony jej doktoratu — za każdym razem, gdy Agnieszka kierowała uwagę poza matkę, Teresa lądowała na kanapie z tajemniczą dolegliwością, która znikała 24 godziny po odwołaniu planów.',
+    'Agnieszka stanęła przed dramatycznym wyborem: ulec szantażowi i zniszczyć urlop dzieciom, czy postawić granicę i zmierzyć się z potwornym lękiem o zdrowie matki.'
+  ],
+  decisionTaken: 'Agnieszka zorganizowała profesjonalną opiekę medyczną dla matki na czas wyjazdu, odmawiając jednoczesnego odwołania urlopu rodzinnego.',
+  whatProtagonistSaw: 'Śmiertelnie chorą, samotną matkę, która potrzebuje jej obecności do przeżycia.',
+  whatWasMissed: 'Że somatyzacja Teresy była nieświadomą lub półświadomą bronią kontroli, wyuczoną w celu zapobiegania naturalnej separacji dorosłej córki.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Szantaż Emocjonalny FOG (Fear, Obligation, Guilt) połączony z wtórnymi korzyściami z choroby i triangulacją relacji małżeńskiej.',
+    cognitiveBiases: [
+      { name: 'Nadmierna odpowiedzialność moralna', description: 'Przekonanie Agnieszki, że odpowiada w 100% za stan emocjonalny i zdrowotny dorosłej matki.', impact: 'Paraliż autonomii życiowej.' },
+      { name: 'Katastrofizowanie', description: 'Wyobrażenie, że wyjazd do Grecji bezpośrednio spowoduje śmierć matki.', impact: 'Poddanie się presji szantażystki.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Somatyzacja u matki', explanation: 'Konwersja lęku przed opuszczeniem w realne, fizjologiczne objawy kłucia w klatce.' }
+    ],
+    emotionalDynamic: 'Klasyczny cykl FOG: Szantażysta stawia żądanie → ofiara stawia opór → szantażysta wzmaga presję chorobą/milczeniem → ofiara kapituluje → ulga → kolejny szantaż.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Widok cierpiącej matki na kanapie i komunikat o samotnej śmierci.',
+    attentionFocus: 'Własne poczucie winy i wizja telefonu ze szpitala podczas urlopu.',
+    interpretation: '„Jestem złą córką, która przedkłada basen nad życie matki”.',
+    emotion: 'Wina neurotyczna, panika, bezsilna złość na męża.',
+    impulse: 'Natychmiast rzucić bilety i zostać przy łóżku matki.',
+    action: 'Zastosowanie asertywnego protokołu: wezwanie prywatnej opieki pielęgniarskiej i wylot na urlop.',
+    consequence: 'Uzdrowienie granic w rodzinie, uratowanie małżeństwa i spadek częstotliwości rzekomych „zawałów” matki.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Przednia kora zakrętu obręczy (dACC)', role: 'Rejestracja bólu wywołanego oskarżeniem o brak empatii', activationState: 'Bardzo wysoka' },
+      { region: 'Prawostronna kora czołowa', role: 'Generowanie ruminacji i poczucia winy', activationState: 'Przeciążenie' }
+    ],
+    neurotransmitters: [
+      { name: 'Kortyzol', roleInScenario: 'Utrzymywanie stanu chronicznego czuwania i gotowości do ratowania matki' }
+    ],
+    biologicalTimeline: [
+      { timeMs: '0 - 300 ms', process: 'Słowa matki o umieraniu aktywują somatyczny ból w żołądku córki.' },
+      { timeMs: 'Dzień 1 wyjazdu', process: 'Kortyzol opada po potwierdzeniu przez pielęgniarkę, że parametry matki są idealne.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [
+      { tactic: 'Szantaż Cierpiętniczy (The Sufferer)', description: '„Jeśli nie zrobisz tego, co chcę, będę cierpieć przez ciebie”.', vulnerabilityExploited: 'Głęboko zaszczepione w dzieciństwie poczucie długu wobec rodzica' }
+    ],
+    counterMeasures: [
+      { step: 'Protokół Trzeźwego Pomagania', script: '„Mamo, bardzo niepokoi mnie twój stan. Ponieważ nie jestem lekarzem, wykupiłam na te 10 dni codzienną wizytę pielęgniarki i lekarza domowego, który będzie u ciebie codziennie o 10:00. My lecimy do Grecji i będziemy dzwonić wieczorami. Zdrowie twoje jest zabezpieczone”.', rationale: 'Rozbraja szantaż: zapewnia realną pomoc medyczną, jednocześnie odmawiając oddania własnej wolności.' }
+    ]
+  },
+  alternativePath: 'Gdyby Agnieszka odwołała wyjazd, po trzech dniach matka cudownie by wyzdrowiała, mąż złożyłby pozew rozwodowy z powodu braku granic, a Agnieszka spędziłaby resztę życia jako uwięziona opiekunka kaprysów matki.',
+  readerQuestion: 'W jakich relacjach pozwalasz innym na kontrolowanie Twoich planów za pomocą ich złego nastroju lub demonstracji cierpienia?',
+  keyTakeaway: 'Nie jesteś odpowiedzialny za cudze emocje, jeśli Twoje działania są uczciwe i pełne szacunku. Pozwól dorosłym ludziom przeżywać ich własne rozczarowania.'
+};
+
+export const chapterNineCaseStudyDarvo: CaseStudy = {
+  id: 'cs-ch9-darvo-finanse',
+  title: 'Odwrócona Klatka: Piotr, Klaudia i Manewr DARVO',
+  subtitle: 'Jak sprawca zdrady finansowej przekształcił siebie w ofiarę, a partnera w agresora',
+  protagonist: 'Piotr (28 lat, analityk) i Klaudia (27 lat, specjalistka PR)',
+  context: 'Wspólne mieszkanie po odkryciu przez Piotra tajemniczego długu na wspólnym koncie oszczędnościowym.',
+  story: [
+    'Piotr i Klaudia od dwóch lat zbierali na wkład własny na mieszkanie. Mieli wspólne konto, na które co miesiąc przelewali po 2000 zł. Pewnego wieczoru Piotr zalogował się do banku, by sprawdzić saldo. Ze zdumieniem odkrył, że z konta zniknęło 25 000 zł, a karta debetowa Klaudii była obciążona pożyczką gotówkową na luksusowe zakupy odzieżowe i wyjazd do SPA.',
+    'Piotr, zszokowany i zraniony, wszedł do pokoju z wydrukiem wyciągu bankowego i zapytał spokojnie, choć drżącym głosem: „Klaudia, co to jest? Dlaczego wypłaciłaś nasze oszczędności bez słowa?”.',
+    'W tym momencie Klaudia zastosowała podręcznikowy manewr DARVO:',
+    'Krok 1 (Deny - Zaprzeczenie): „To jakaś pomyłka banku! Albo prowizja, o której nie wiesz!”. Kiedy Piotr pokazał jej transakcje z jej imieniem, nastąpił zwrot.',
+    'Krok 2 (Attack - Atak): Klaudia zerwała się z fotela z błyskiem wściekłości w oku: „Ty mnie sprawdzasz?! Przeglądasz moje wyciągi za moimi plecami?! Jesteś chorym z zazdrości, kontrolującym paranoikiem! Żaden normalny facet nie szpieguje kobiety, z którą mieszka!”.',
+    'Krok 3 (Reverse Victim and Offender - Odwrócenie Ról): Klaudia zalała się łzami, osunęła na kolana i zaczęła łkać: „Moje przyjaciółki ostrzegały mnie przed tobą! Żyję w tym domu jak w więzieniu z klawiszem, który liczy mi każdy grosz! Nie mam prawa do odrobiny radości, bo pan i władca musi mieć wszystko w tabelkach! Czuję się zdeptana i poniżona!”.',
+    'Piotr zbaraniał. Zamiast rozmawiać o skradzionych 25 000 zł, po 15 minutach siedział na kanapie, podając Klaudii chusteczki i przepraszając ją za to, że „zrobił to tak niezręcznie i zranił jej uczucia”.'
+  ],
+  decisionTaken: 'Piotr wycofał się z rozliczenia kradzieży oszczędności i wziął na siebie winę za wywołanie kryzysu w związku.',
+  whatProtagonistSaw: 'Płaczącą, zranioną kobietę, która czuje się kontrolowana przez jego pedantyzm finansowy.',
+  whatWasMissed: 'Że furia i łzy Klaudii były precyzyjną zasłoną dymną mającą uniemożliwić rozliczenie oszustwa majątkowego.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Manewr DARVO (Deny, Attack, Reverse Victim and Offender) sprzężony z gaslightingiem relacyjnym i odwróceniem wektora winy.',
+    cognitiveBiases: [
+      { name: 'Zwątpienie we własną rację moralną', description: 'Piotr uwierzył, że sprawdzenie wspólnego konta było „szpiegowaniem”.', impact: 'Kapitulacja przed sprawcą.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Projekcja winy u Klaudii', explanation: 'Oskarżenie Piotra o despotyzm, aby nie musieć skonfrontować się z własnym uzależnieniem od zakupów.' }
+    ],
+    emotionalDynamic: 'Agresor przejmuje status ofiary, wymuszając na prawdziwej ofierze rolę ratownika i przepraszającego.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Konfrontacja z twardymi dowodami zdrady finansowej.',
+    attentionFocus: 'Oskarżenie o szpiegowanie i histeria partnerki.',
+    interpretation: '„Jestem złym, zaborczym partnerem, który doprowadził ukochaną do płaczu”.',
+    emotion: 'Wstyd, konfuzja, paraliż decyzyjny.',
+    impulse: 'Zakończyć awanturę i pocieszyć płaczącą kobietę.',
+    action: 'Schowanie wyciągów i przeprosiny za „brak taktu”.',
+    consequence: 'Dalsze zadłużanie wspólnego majątku i całkowita utrata szacunku w relacji.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Kora zakrętu obręczy (ACC)', role: 'Poczucie dysonansu moralnego u Piotra', activationState: 'Ekstremalna dezorientacja' },
+      { region: 'Brzuszno-boczna kora przedczołowa', role: 'Utrzymanie linii obrony faktów', activationState: 'Zablokowana przez empatię wobec płaczu Klaudii' }
+    ],
+    neurotransmitters: [
+      { name: 'Oksytocyna', roleInScenario: 'Odruch opiekuńczy wywołany łzami manipulatorki unieważnia sygnał zdrady' }
+    ],
+    biologicalTimeline: [
+      { timeMs: '0 - 1 minuta', process: 'Faza zaprzeczenia i krzyk: aktywacja lęku przed konfliktem u Piotra.' },
+      { timeMs: '2 - 5 minuta', process: 'Płacz i rola ofiary: przejście Piotra w tryb uległości ratowniczej.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [
+      { tactic: 'DARVO i Odwrócenie Wektora Sprawstwa', description: 'Przekształcenie własnego czynu przestępczego w dyskusję o metodzie jego ujawnienia.', vulnerabilityExploited: 'Rycerskość, lęk przed byciem uznanym za tyrana' }
+    ],
+    counterMeasures: [
+      { step: 'Technika Żelaznego Punktu Ciężkości (Anchoring to Facts)', script: '„Klaudio, widzę, że płaczesz i słyszę twoje zarzuty dotyczące sprawdzania konta. Porozmawiamy o zasadach wglądu w konto później. W tej chwili rozmawiamy WYŁĄCZNIE o zniknięciu 25 000 zł ze wspólnych oszczędności. Gdzie są te pieniądze i jak zamierzasz je zwrócić?”.', rationale: 'Całkowita odmowa wejścia w dyskusję o „metodzie szpiegowania” i trzymanie manipulatora przy twardym fakcie pierwotnym.' }
+    ]
+  },
+  alternativePath: 'Gdyby Piotr utrzymał żelazny punkt ciężkości, Klaudia musiałaby skonfrontować się z własnym nałogiem zakupowym, podjąć terapię i podpisać rozdzielność majątkową, co uratowałoby ich przyszłość.',
+  readerQuestion: 'Ile razy w życiu zacząłeś rozmowę o czyjejś krzywdzącej postawie, a skończyłeś na przepraszaniu za to, w jaki sposób o tym powiedziałeś?',
+  keyTakeaway: 'Nie pozwól, aby sprawca dyktował temat rozmowy o swojej winie. Trzymaj się pierwotnego faktu jak skały.'
+};
+
+export const chapterNineExerciseGuiltDecoder: SelfExercise = {
+  id: 'ex-ch9-guilt-decoder',
+  title: 'Ćwiczenie 9.1: Dekoder Poczucia Winy — Wina Zdrowa a Wina Neurotyczna',
+  subtitle: 'Naucz się odróżniać sygnał sumienia od manipulacyjnego sznurka pociąganego przez innych',
+  objective: 'Zdemaskowanie nieuzasadnionego poczucia winy wzbudzanego przez otoczenie i odzyskanie spokoju sumienia.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Świadome rozróżnienie winy adaptacyjnej (związanej z realną szkodą) od winy narzuconej aktywuje lewostronną grzbietowo-boczną korę przedczołową, wygaszając nadmierną reaktywność wyspy.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Zidentyfikuj sytuację gryzące poczucie winy',
+      instruction: 'Przypomnij sobie odmowę lub decyzję, z powodu której czujesz się „złym człowiekiem” wobec kogoś bliskiego lub szefa.',
+      promptText: 'Wobec kogo czujesz winę i jaka sytuacja ją wywołała?',
+      placeholder: 'Czuję winę wobec brata, bo odmówiłem pożyczenia mu 10 000 zł na kolejny ryzykowny interes...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Test 3 Pytań Rzeczywistości',
+      instruction: 'Odpowiedz twardo na pytania: 1. Czy złamałem wcześniejszą, dobrowolną obietnicę? 2. Czy celowo wyrządziłem tej osobie realną krzywdę? 3. Czy ta osoba próbuje przerzucić na mnie odpowiedzialność za własne wybory?',
+      promptText: 'Odpowiedzi na 3 pytania sprawdzające:',
+      placeholder: '1. Nie obiecywałem pożyczki. 2. Nie skrzywdziłem go, chronię własne oszczędności. 3. Tak, brat sam doprowadził do długu i oczekuje, że go uratuję.'
+    },
+    {
+      stepNumber: 3,
+      title: 'Sformułuj Asertywne Zwolnienie z Winy',
+      instruction: 'Napisz zdanie ugruntowujące, które wypowiesz sobie w duchu za każdym razem, gdy powróci fałszywe poczucie winy.',
+      promptText: 'Moja formuła wewnętrznego spokoju:',
+      placeholder: '„Mam prawo chronić swoje bezpieczeństwo finansowe. Odmowa pożyczki nie jest brakiem miłości braterskiej”.'
+    }
+  ],
+  reflectionQuestions: [
+    'Kto w Twoim dzieciństwie najskuteczniej kontrolował Cię za pomocą obrażania się i milczenia?',
+    'Czego tak naprawdę obawiasz się, gdybyś całkowicie przestał ulegać cudzym fochom?'
+  ]
+};
+
+export const chapterNineExerciseGaslightJournal: SelfExercise = {
+  id: 'ex-ch9-gaslight-journal',
+  title: 'Ćwiczenie 9.2: Dziennik Faktów — Tarcza Przeciwko Gaslightingowi',
+  subtitle: 'Stwórz nienaruszalny zewnętrzny nośnik pamięci, którego nikt nie zdoła zakwestionować',
+  objective: 'Zbudowanie nawyku dokumentowania ustaleń, słów i faktów w relacjach o wysokim poziomie manipulacji.',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Zewnętrzny zapis faktów zdejmuje z hipokampa ciężar pamięciowy i zapobiega efektowi podatności na dezinformację Elizabeth Loftus.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Wybierz relację, w której czujesz zamęt poznawczy',
+      instruction: 'Wskaż osobę, przy której regularnie słyszysz: „Nigdy tego nie mówiłem”, „Źle pamiętasz”, „Wymyślasz problemy”.',
+      promptText: 'Kto wywołuje w Tobie to zwątpienie i jakie słowa padają najczęściej?',
+      placeholder: 'Mój wspólnik / partner często mówi: „Przecież ustaliliśmy inaczej, masz fatalną pamięć”...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Wprowadź Zasadę Podsumowania Mailowego (Paper Trail)',
+      instruction: 'Po każdej ważnej rozmowie wyślij krótkie, rzeczowe podsumowanie: „Dziękuję za rozmowę. Podsumowując: do piątku robisz X, a ja robię Y. Jeśli coś pominąłem, daj znać”.',
+      promptText: 'Wpisz treść szablonu podsumowania, którego użyjesz:',
+      placeholder: '„Cześć, w nawiązaniu do naszej dzisiejszej rozmowy, potwierdzam nasze ustalenia: 1... 2... Pozdrawiam serdecznie”.'
+    },
+    {
+      stepNumber: 3,
+      title: 'Zapisz 3 twarde kotwice rzeczywistości',
+      instruction: 'Wypisz 3 niezaprzeczalne fakty z ostatnich tygodni, które manipulator próbował podważyć, a które są w 100% prawdziwe.',
+      promptText: 'Moje 3 kotwice prawdy:',
+      placeholder: '1. Widziałem tę fakturę na własne oczy 12 maja. 2. Poinformowałem o urlopie 3 tygodnie temu. 3. Moje zmysły działają bezbłędnie.'
+    }
+  ],
+  reflectionQuestions: [
+    'Dlaczego tak łatwo przychodzi Ci uwierzyć w cudzą pewność siebie, kosztem własnej pamięci?',
+    'Jakie to uczucie wiedzieć, że masz czarno na białym dowód na to, że miałeś rację?'
+  ]
+};
+
+export const chapterNineExerciseAssertiveScripts: SelfExercise = {
+  id: 'ex-ch9-assertive-scripts',
+  title: 'Ćwiczenie 9.3: Skryptor Granic — Technika Zdartej Płyty i Zamglonej Tarczy',
+  subtitle: 'Wytrenuj gotowe formuły językowe, które neutralizują agresję i próby naruszania granic',
+  objective: 'Zbudowanie automatyzmu asertywnego, który nie pozwala wciągnąć Cię w pyskówki i manipulacyjne bagna.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Gotowy, zautomatyzowany skrypt lingwistyczny redukuje obciążenie kory przedczołowej w warunkach stresu, chroniąc przed reakcją walcz-lub-uciekaj.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Wybierz natrętną prośbę lub atak',
+      instruction: 'Opisz powtarzającą się sytuację, w której ktoś próbuje wymusić na Tobie coś wbrew Twojej woli (np. pożyczka, darmowa praca, wtrącanie się w wychowanie dzieci).',
+      promptText: 'Jaki nacisk jest na Ciebie wywierany?',
+      placeholder: 'Teściowa mówi: „Musicie ochrzcić dziecko w tradycyjny sposób, co powie rodzina!”...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Skonstruuj Zdartą Płytę (Broken Record)',
+      instruction: 'Ułóż jedno neutralne, krótkie zdanie odmowne i zobowiąż się powtórzyć je 3 razy z rzędu bez zmiany ani jednego słowa.',
+      promptText: 'Moja Zdarta Płyta:',
+      placeholder: '„Rozumiem pani zdanie, i jednocześnie podjęliśmy z mężem decyzję, że chrzest odbędzie się w wąskim gronie”.'
+    },
+    {
+      stepNumber: 3,
+      title: 'Skonstruuj Zamgloną Tarczę (Fogging)',
+      instruction: 'Zgódź się z częścią prawdy lub prawem rozmówcy do własnej opinii, nie ustępując ani na milimetr ze swojej decyzji.',
+      promptText: 'Moja Zamglona Tarcza:',
+      placeholder: '„To prawda, rodzina może być zaskoczona. I jednocześnie nasza decyzja pozostaje niezmienna”.'
+    }
+  ],
+  reflectionQuestions: [
+    'Dlaczego próba tłumaczenia się i podawania 10 powodów odmowy jest największym prezentem dla manipulatora?',
+    'Jak zmienia się Twoja siła wewnętrzna, gdy mówisz spokojnym, cichym i nieugiętym głosem?'
+  ]
+};
 
 export const chapterNine: Chapter = {
   number: 9,
   title: 'Manipulacja: Anatomia Psychologicznego Sabotażu',
   subtitle: 'Jak rozpoznawać ukryte techniki wpływu, neutralizować szantaż emocjonalny i budować nienaruszalne granice',
-  leadParagraph: 'Nie każde nieprzyjemne zachowanie jest manipulacją. Czasem to po prostu ludzki błąd, zły dzień, różnica temperamentów czy brak kompetencji komunikacyjnych. Prawdziwa manipulacja zaczyna się tam, gdzie pojawia się ukryta agenda, asymetria informacji i celowe sabotowanie zdolności poznawczych drugiego człowieka. W tym rozdziale zapalimy światło w najciemniejszych zakamarkach psychologicznych gier.',
+  leadParagraph: 'Nie każde nieprzyjemne zachowanie jest manipulacją. Czasem to po prostu ludzki błąd, zły dzień, różnica temperamentów czy brak kompetencji komunikacyjnych. Prawdziwa manipulacja zaczyna się tam, gdzie pojawia się ukryta agenda, asymetria informacji i celowe sabotowanie zdolności poznawczych drugiego człowieka. W tym rozdziale zapalimy światło w najciemniejszych zakamarkach psychologicznych gier: od gaslightingu i DARVO, przez szantaż FOG, po obronę asertywną.',
   totalEstimatedPages: 52,
   sections: [
     {
@@ -101,20 +362,22 @@ export const chapterNine: Chapter = {
       id: 'sec-9-2',
       pageNumber: 392,
       sectionNumber: '9.2',
-      title: 'Zegar tyka: Sztuczna presja czasu jako wyłącznik kory nowej',
+      title: 'Sztuczna presja czasu: Kradzież tlenu kory przedczołowej',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 14,
       paragraphs: [
-        '„Tylko dziś do godziny 18:00!”, „Mam drugiego klienta, który czeka z gotówką w ręku — decyduje pan teraz, albo oferta przepada bezpowrotnie!”, „Podpisz to oświadczenie natychmiast, bo inaczej nie mamy o czym rozmawiać!”.',
-        'Dlaczego manipulatorzy tak desperacko uwielbiają zegary? Ponieważ doskonale wiedzą, jak działa neurobiologia mózgu (Tom I, Rozdział 1 i 2). Aby kora przedczołowa mogła zweryfikować prawdziwość faktów, przeliczyć koszty alternatywne i skonsultować się z doradcą, potrzebuje tlenu i CZASU.',
-        'Gdy wstrzykniesz do sytuacji sztuczny pośpiech, poziom kortyzolu i adrenaliny gwałtownie rośnie. Mózg przełącza się z myślenia strategicznego (System 2) na przetrwaniowe (System 1). W panice przed utratą szansy (FOMO) podpisujemy umowy, których nigdy nie przeczytaliśmy, i oddajemy oszczędności życia oszustom „na wnuczka” czy „na policjanta”.'
+        'System 2 — Twój logiczny, analityczny procesor opisany w Tomie I — ma jedną fundamentalną wadę: jest powolny i energochłonny. Aby przeanalizować umowę, zważyć ryzyka i skonsultować się z ekspertem, potrzebujesz minut, godzin lub dni.',
+        'Manipulator doskonale o tym wie. Dlatego jego pierwszą bronią jest zawsze SZTUCZNA PRESJA CZASU (Artificial Urgency). Komunikaty w stylu: „Decyzję musisz podjąć w tej chwili”, „Mam trzech innych chętnych za drzwiami”, „Promocja kończy się za 60 sekund” mają jeden cel: zalać mózg noradrenaliną, odciąć zasilanie od dlPFC i zmusić Cię do reakcji limbicznej.'
       ],
       subsections: [
         {
-          title: 'JAK ZASTOSOWAĆ TO JUTRO? Żelazna Reguła Spowolnienia',
+          title: 'PRZYKŁAD 1: Pokaz garnków i pościeli dla seniorów',
           paragraphs: [
-            'Wprowadź do swojego życia żelazną zasadę: Nigdy nie podejmuj decyzji finansowej, zawodowej ani relacyjnej w obecności osoby, która wywiera na Ciebie presję czasu.',
-            'Użyj prostego skryptu lingwistycznego: „Jeśli muszę zdecydować natychmiast, moja odpowiedź brzmi: NIE. Jeśli zależy panu na mojej rzetelnej analizie, potrzebuję 24 godzin na zapoznanie się z dokumentem”. Zobaczysz, jak w ułamku sekundy „nieprzekraczalny termin” natychmiast staje się elastyczny.'
+            'Sytuacja i bohater: 73-letnia pani Danuta trafia na „bezpłatne badanie krążenia”, połączone z prezentacją mat magnetycznych za 9 000 zł.',
+            'Działający mechanizm: Sztuczna presja czasu połączona z izolacją społeczną. Prowadzący krzyczy do mikrofonu: „Tylko pierwsze 3 osoby, które podejdą do stolika w ciągu 3 minut, otrzymają dotację unijną 4000 zł! Kto pierwszy, ten lepszy!”.',
+            'Jak rozpoznać w czasie rzeczywistym: Kołatanie serca, suchość w ustach, panika przed utratą niepowtarzalnej okazji.',
+            'Możliwa konstruktywna reakcja: Wstanie z krzesła, opuszczenie sali i żelazna zasada: „Nigdy nie podpisuję żadnych umów w trakcie prezentacji marketingowych”.',
+            'Wniosek dydaktyczny dla czytelnika: Jeśli oferta jest naprawdę dobra dzisiaj, będzie równie dobra w poniedziałek rano. Pośpiech to znak ostrzegawczy numer jeden.'
           ]
         }
       ]
@@ -123,131 +386,149 @@ export const chapterNine: Chapter = {
       id: 'sec-9-3',
       pageNumber: 396,
       sectionNumber: '9.3',
-      title: 'Poczucie winy: Dług, którego nigdy nie zaciągnąłeś',
-      category: 'teoria',
-      readingTimeMinutes: 14,
+      title: 'Poczucie winy jako sznurek: Anatomia szantażu emocjonalnego',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Poczucie winy to jeden z najbardziej wyrafinowanych i energochłonnych stanów afektywnych. Ewolucyjnie służyło naprawie więzi w stadzie — gdy zraniłeś współplemieńca, wyrzut sumienia zmuszał Cię do zadośćuczynienia.',
-        'Manipulator przekształca ten mechanizm w niewyczerpane źródło szantażu. Wystarczy, że zaszczepi w Tobie przekonanie, że jesteś przyczyną jego cierpienia, porażki życiowej lub złego nastroju: „Przez ciebie rozbolała mnie głowa”, „Gdybyś naprawdę mnie kochała, nie wychodziłabyś dziś z koleżankami”, „Po tym wszystkim, co dla ciebie poświęciłem, ty masz czelność prosić o podwyżkę?”.',
-        'Zauważ mechanizm: manipulator nie mówi o swoich potrzebach wprost. Zamiast tego stawia się w roli Męczennika lub Ofiary, automatycznie obsadzając Ciebie w roli Oprawcy. Aby uciec przed piętnem „złego człowieka”, ulegasz żądaniu, oddając swoją wolność za chwilową ulgę sumienia.'
-      ]
+        'Susan Forward zdefiniowała syndrom FOG (Fear, Obligation, Guilt — Strach, Obowiązek, Wina). Poczucie winy jest dla mózgu społecznym odpowiednikiem bólu fizycznego. Kiedy czujesz, że kogoś zraniłeś, włącza się silny przymus naprawienia szkody.',
+        'Szantażysta emocjonalny wytwarza sztuczną winę z niczego: Twoje prawo do odpoczynku, własnych pasji czy ochrony budżetu przedstawia jako dowód Twojego egoizmu i braku serca. Poniższe studium przypadku ukazuje destrukcyjną dynamikę szantażu cierpiętniczego w relacji matki z córką.'
+      ],
+      caseStudyRef: chapterNineCaseStudyFamilyGuilt
     },
     {
       id: 'sec-9-4',
       pageNumber: 400,
       sectionNumber: '9.4',
-      title: 'Waluta strachu: Zarządzanie lękiem przed porzuceniem i kompromitacją',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Fabryka strachu: Paraliżowanie wyobraźni najczarniejszym scenariuszem',
+      category: 'cwiczenia',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Strach to najstarszy system operacyjny ssaczego mózgu. Manipulator wie, jakie są Twoje pierwotne lęki: lęk przed samotnością, lęk przed zwolnieniem z pracy, lęk przed publicznym upokorzeniem czy utratą statusu.',
-        'W korporacji manipulacja strachem rzadko przybiera formę otwartej groźby (to byłoby zbyt łatwe do zaskarżenia do sądu pracy). Przybiera formę zawoalowanych, trujących aluzji:',
-        '„Tomaszu, na rynku jest teraz bardzo ciężko dla specjalistów w Twoim wieku... Warto dbać o to, co się ma, prawda?”.',
-        '„Nie chciałbyś chyba, żeby zarząd dowiedział się o tamtym drobnym błędzie w zeszłomiesięcznym raporcie?”.',
-        'Te zdania są jak mikroskopijne nakłucia igłą z kurarą. Mózg zalewa się przewlekłym lękiem, który paraliżuje wszelką asertywność.'
-      ]
+        'Strach to najstarszy ewolucyjnie klawisz w ludzkim mózgu. Kiedy manipulator roztacza przed Tobą wizję katastrofy („Jeśli nie zrobisz tego, zwolnią cię”, „Twoje dzieci będą żebrakami”, „Nikt cię nigdy nie pokocha”), ciało migdałowate przejmuje pełną kontrolę.',
+        'W stanie paniki człowiek oddaje wolność i majątek każdemu, kto obieca mu choćby pozorne bezpieczeństwo. Poniższy warsztat uczy, jak dekodować poczucie winy i oddzielać realną odpowiedzialność od manipulacji.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 2: Agresywna kampania ubezpieczeniowa',
+          paragraphs: [
+            'Sytuacja i bohater: Agent ubezpieczeniowy pokazuje młodemu ojcu Piotrowi drastyczne zdjęcia z wypadków samochodowych i pyta: „Czy kocha pan swoje dzieci? Bo jeśli zginie pan jutro na trasie, to z czego pana żona zapłaci za ich jedzenie w przyszłym miesiącu?”.',
+            'Działający mechanizm: Szantaż moralny oparty na strachu i winie (Fear Appeal). Próba wywołania paraliżu afektywnego w celu natychmiastowego podpisania najdroższej polisy.',
+            'Jak rozpoznać w czasie rzeczywistym: Ścisk w mostku i poczucie bycia potwornym rodzicem w razie wahania.',
+            'Możliwa konstruktywna reakcja: „Panie agencie, zadbam o bezpieczeństwo mojej rodziny w oparciu o chłodną kalkulację finansową, a nie o drastyczne zdjęcia. Poproszę o OWU na maila, porównam oferty 3 towarzystw i podejmę decyzję za tydzień”.',
+            'Wniosek dydaktyczny dla czytelnika: Nie pozwól nikomu sprzedawać ci polis na bazie terroru emocjonalnego.'
+          ]
+        }
+      ],
+      exerciseRef: chapterNineExerciseGuiltDecoder
     },
     {
       id: 'sec-9-5',
       pageNumber: 404,
       sectionNumber: '9.5',
-      title: 'Gaslighting: Gdy zaczynasz wątpić we własne zmysły i pamięć',
+      title: 'Gaslighting: Gdy ktoś podmienia Ci rzeczywistość pod powiekami',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Termin pochodzi z klasycznej sztuki teatralnej Patricka Hamiltona z 1938 roku „Gas Light” (oraz słynnego filmu z Ingrid Bergman). Mąż manipuluje lampami gazowymi w domu, sprawiając, że światło przygasa. Kiedy żona zwraca na to uwagę, on ze spokojem i troską w głosie wmawia jej, że nic takiego się nie dzieje, a ona traci zmysły.',
-        'Współczesny gaslighting to metodyczna operacja na Twoim układzie poznawczym. Manipulator używa standardowego arsenału fraz:',
-        '„Nigdy czegoś takiego nie powiedziałem, znowu przekręcasz fakty”.',
-        '„Jesteś chora z zazdrości, wymyślasz niestworzone historie”.',
-        '„Wszyscy w biurze widzą, że ostatnio sobie nie radzisz z pamięcią”.',
-        'Nawiązując bezpośrednio do Rozdziału 5 Tomu I (Pamięć jako Rekonstrukcja): ludzka pamięć jest plastyczna i podatna na sugestię. Jeśli osoba, której ufasz, z kamienną twarzą powtarza przez pół roku, że to Ty masz problemy z percepcją, w Twoim mózgu rodzi się głęboka erozja zaufania do własnych oczu i uszu. Zaczynasz notować rozmowy na kartkach, boisz się odezwać, a wreszcie całkowicie oddajesz sterowanie swoim życiem w ręce oprawcy.'
+        'Nazwa pochodzi ze sztuki teatralnej Gas Light (1938), w której mąż celowo przykręcał lampy gazowe w domu, a gdy żona mówiła, że światło przygasa, wmawiał jej, że traci zmysły.',
+        'Współczesny gaslighting to wyrafinowana forma przemocy psychologicznej polegająca na konsekwentnym podważaniu percepcji, pamięci i zdrowia psychicznego ofiary. Zdania-klucze: „Jesteś przewrażliwiona”, „Nigdy czegoś takiego nie mówiłem”, „Masz paranoję”, „Wszyscy widzą, że coś z tobą nie tak”.'
       ]
     },
     {
       id: 'sec-9-6',
       pageNumber: 408,
       sectionNumber: '9.6',
-      title: 'Przerzucanie odpowiedzialności: Odwrócenie ról kata i ofiary (DARVO)',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Odwracanie ról (DARVO): Sprawca staje się ofiarą',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Profesor psychologii Jennifer Freyd opisała akronim DARVO, który z fotograficzną precyzją dokumentuje schemat zachowania manipulatora przyłapanego na gorącym uczynku:',
-        'D (Deny): Zaprzeczenie („Nic takiego nie zrobiłem!”).',
-        'A (Attack): Atak („Jak śmiesz mnie oskarżać? Jesteś podłą, niewdzięczną osobą!”).',
-        'RVO (Reverse Victim and Offender): Odwrócenie ról ofiary i sprawcy („To ja jestem tutaj prawdziwą ofiarą twojej obsesji i agresji! Zobacz, do jakiego stanu mnie doprowadziłeś!”).',
-        'Zauważ potęgę tej figury: wchodzisz do pokoju z uzasadnioną pretensją o to, że partner zdradził Twoje zaufanie, a po 20 minutach rozmowy to Ty siedzisz na podłodze, płaczesz i przepraszasz go za to, że zadałeś pytanie zbyt ostrym tonem! Sprawca stał się męczennikiem.'
-      ]
+        'Prof. Jennifer Freyd opisała zjawisko DARVO (Deny, Attack, Reverse Victim and Offender). To uniwersalny mechanizm obronny stosowany przez osoby przyłapane na kłamstwie, zdradzie lub nadużyciu.',
+        'Zamiast przeprosić, sprawca natychmiast zaprzecza faktom, atakuje osobę zgłaszającą problem za to, że „śmiała zapytać”, a na koniec urządza spektakl własnego cierpienia, w którym to on staje się udręczoną ofiarą. Studium przypadku poniżej przedstawia mechanizm DARVO w zderzeniu z kradzieżą majątku.'
+      ],
+      caseStudyRef: chapterNineCaseStudyDarvo
     },
     {
       id: 'sec-9-7',
       pageNumber: 412,
       sectionNumber: '9.7',
-      title: 'Fałszywy wybór: Iluzja wolności w klatce pozorów',
+      title: 'Fałszywy dylemat: Zamykanie ofiary w korytarzu dwóch złych wyborów',
       category: 'teoria',
       readingTimeMinutes: 13,
       paragraphs: [
-        'Kiedy polityk mówi: „Albo poprzecie tę ustawę podatkową, albo chcecie, żeby nasze dzieci głodowały w szkołach”, uprawia klasyczną manipulację fałszywego wyboru (Fałszywa Dychotomia).',
-        'W relacjach codziennych technika ta polega na narzuceniu ram (Framing, Rozdział 8), które całkowicie wykluczają opcje racjonalne:',
-        '„Albo pojedziesz ze mną do moich rodziców, albo udowodnisz, że ten związek nic dla ciebie nie znaczy”.',
-        '„Czy woli pan zapłacić gotówką dzisiaj, czy przelewem w dwóch ratach do jutra?” (Ukryte założenie: to, że w ogóle kupujesz ten produkt, zostało już bezprawnie przesądzone).',
-        'Umysł, skonfrontowany z dwoma złymi opcjami, często odruchowo wybiera „mniej bolesną”, nie zauważając, że prawdziwa wolność leży poza narzuconym korytarzem wyboru: „Nie wybieram ani A, ani B. Proponuję zupełnie inne rozwiązanie C”.'
+        'Człowiek ma naturalną tendencję do myślenia binarnego: tak/nie, białe/czarne, zysk/strata. Manipulator wykorzystuje tę lukę, stawiając fałszywą alternatywę: „Albo zostajesz po godzinach, albo firma upadnie”, „Albo mi ufasz i dasz hasło do telefonu, albo mnie zdradzasz”.',
+        'W rzeczywistości między opcją A i B istnieje całe spektrum innych możliwości (C, D, E). Obrona przed fałszywym dylematem polega na odmowie wyboru i rozbiciu samej ramy pytania.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 5: Fałszywy dylemat u szefa zespołu',
+          paragraphs: [
+            'Sytuacja i bohater: Kierownik projektu rzuca do programisty Rafała w piątek o 17:00: „Rafał, albo zostaniesz dziś do 23:00 i dokończysz ten moduł, albo w poniedziałek powiem dyrektorowi, że przez ciebie straciliśmy klienta”.',
+            'Działający mechanizm: Fałszywy dylemat (szantaż binarny) maskujący błędy w planowaniu harmonogramu przez menedżera.',
+            'Jak rozpoznać w czasie rzeczywistym: Poczucie bycia przypartym do muru bez dobrego wyjścia.',
+            'Możliwa konstruktywna reakcja: Rozbicie binarnego wyboru: „Tomaszu, nie wybieram żadnej z tych dwóch opcji. Kończę pracę o 17:00 zgodnie z kodeksem pracy, a w poniedziałek od 8:00 wspólnie z dyrektorem przeanalizujemy, dlaczego harmonogram wdrożenia był nierealny od samego początku”.',
+            'Wniosek dydaktyczny dla czytelnika: Zawsze pytaj: „Jakie są inne opcje poza tymi dwiema, które mi narzucasz?”.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-9-8',
       pageNumber: 416,
       sectionNumber: '9.8',
-      title: 'Szantaż emocjonalny: Piekielny trójkąt FOG (Strach, Obowiązek, Wina)',
+      title: 'Cicha agresja: Obrażanie się, karanie ciszą i podwójne wiązanie',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Susan Forward wprowadziła genialny akronim FOG (Mgła): Fear (Strach), Obligation (Obowiązek) i Guilt (Wina). Te trzy emocje tworzą gęstą mgłę poznawczą, w której człowiek traci orientację w terenie.',
-        'Szantaż emocjonalny to kontrakt mafijny w białych rękawiczkach. Szantażysta mówi Ci podprogowo: „Jeśli nie zrobisz tego, czego chcę, sprawię, że będziesz cierpieć”.',
-        'Istnieją cztery typy szantażystów wg Forward:',
-        '1. Prokurator: Grozi bezpośrednią karą („Jeśli mnie zostawisz, zniszczę ci karierę i odbiorę dzieci”).',
-        '2. Biczownik: Grozi samookaleczeniem lub krzywdą dla siebie („Jeśli odmówisz, chyba ze sobą skończę, a moja krew spadnie na twoje ręce”).',
-        '3. Męczennik: W milczeniu demonstruje swoje cierpienie i chorobę, wpędzając w poczucie winy („Idź, baw się dobrze, ja tu poleżę w ciemności z moim chorym sercem”).',
-        '4. Kusiciel: Obiecuje złote góry, ale pod warunkiem bezwzględnego posłuszeństwa („Dostaniesz ten awans, musisz tylko udowodnić swoją pełną lojalność wobec mnie”).'
+        'Karanie ciszą (Silent Treatment) to jedna z najbardziej toksycznych form biernej agresji. Odcięcie kontaktu wzrokowego i werbalnego aktywuje w mózgu ofiary przednią korę zakrętu obręczy — dokładnie ten sam obszar, który rejestruje ból fizyczny.',
+        'Ofiara nie może się bronić, bo nie ma z kim rozmawiać. Chodzi po domu na palcach, błagając o słowo wyjaśnienia, gotowa na każde ustępstwo, byle przerwać lodowaty mur ciszy. To ewolucyjny koszmar wykluczenia ze stada przeniesiony do domowego salonu.'
       ]
     },
     {
       id: 'sec-9-9',
       pageNumber: 420,
       sectionNumber: '9.9',
-      title: 'Izolowanie od innych: Odcinanie linii ratunkowych',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Izolacja społeczna: Odcinanie gałęzi wsparcia',
+      category: 'cwiczenia',
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Nawiązując bezpośrednio do Rozdziału 6 (Asch i sojusznicy): pamiętasz, że obecność choćby jednego niezależnego świadka obniża uległość o 80%? Manipulator doskonale o tym wie, choćby nigdy nie czytał podręcznika psychologii.',
-        'Dlatego pierwszą rzeczą, jaką robi sekta, toksyczny partner czy narcystyczny lider zespołu, jest powolne, chirurgiczne odcinanie ofiary od jej naturalnej sieci wsparcia.',
-        'Zaczyna się od niewinnych uwag: „Twoja przyjaciółka Kasia jest taka toksyczna, zazdrości ci sukcesu, po co się z nią spotykasz?”, „Twoja rodzina cię nie rozumie, tylko ja naprawdę wiem, kim jesteś”. Krok po kroku ofiara ogranicza kontakty z bliskimi. W chwili, gdy zostaje sama w pokoju z manipulatorem, nie ma już nikogo, kto mógłby spojrzeć z boku i powiedzieć: „Hej, to co on ci robi, nie jest normalne! Obudź się!”.'
-      ]
+        'Zanim drapieżnik zaatakuje ofiarę, odcina ją od stada. Toksyczny partner lub sekta zawsze zaczyna od subtelnego obrzydzania Twoich przyjaciół i rodziny: „Oni cię nie rozumieją”, „Twoja matka ci zazdrości”, „Twoi znajomi mają zły wpływ na nasz związek”.',
+        'Kiedy ofiara zerwie relacje z bliskimi, manipulator staje się jej jedynym punktem odniesienia do rzeczywistości — nie ma już nikogo, kto mógłby powiedzieć: „Hej, to co on ci robi, nie jest normalne!”.',
+        'Poniższy warsztat uczy budowania dziennika faktów jako nienaruszalnej tarczy przed manipulacją.'
+      ],
+      exerciseRef: chapterNineExerciseGaslightJournal
     },
     {
       id: 'sec-9-10',
       pageNumber: 424,
       sectionNumber: '9.10',
-      title: 'Love bombing: Gdy intensywność podszywa się pod bliskość',
+      title: 'Cykl przemocy psychicznej: Od Love Bombingu do dewaluacji',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Nic nie otwiera drzwi do psychiki tak skutecznie, jak poczucie bycia bezgranicznie kochanym i podziwianym. Love bombing (bombardowanie miłością) to broń o zasięgu międzykontynentalnym.',
-        'W pierwszych tygodniach relacji manipulator zalewa Cię lawiną komplementów: „Jesteś kobietą/mężczyzną mojego życia”, „Nigdy w życiu z nikim tak nie rozmawiałem”, „Jesteśmy dwiema połówkami tej samej duszy”. Zasypuje Cię wiadomościami co 10 minut, planuje wspólne życie na 20 lat w przód, obsypuje prezentami.',
-        'W Twoim mózgu eksploduje koktajl dopaminy, oksytocyny i endorfin (Tom I, Rozdział 2). Czujesz euforię. I właśnie wtedy, gdy jesteś całkowicie odurzony tym stanem, następuje nagły zwrot akcji: Deewaluacja. Manipulator nagle staje się chłodny, znika na dwa dni, rzuca krytyczną uwagę o Twoim wyglądzie. Dlaczego? Ponieważ Twój mózg, będący na głodzie dopaminowym, zrobi teraz absolutnie wszystko, poniży się i odda każdą granicę, byle tylko odzyskać tę dawną, cudowną dawkę miłości z fazy pierwszej.'
+        'Relacje z manipulatorami nie zaczynają się od kłótni i przemocy. Zaczynają się od bajki. Love Bombing (bombardowanie miłością) to zalew komplementami, prezentami i deklaracjami dozgonnej miłości po kilku dniach znajomości.',
+        'Mózg zostaje zalany dopaminą i oksytocyną. Kiedy pułapka się zatrzaśnie, następuje faza druga: Dewaluacja (krytyka, chłód, wyśmiewanie). Ofiara zrobi wszystko, by odzyskać „tamtego cudownego człowieka z początku”, wchodząc w mechanizm uzależnienia przerywanego (jak hazardzista przy jednorękim bandycie).'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 6: Nowy adorator na portalu randkowym',
+          paragraphs: [
+            'Sytuacja i bohater: 30-letnia Marta poznaje przez internet Konrada. Konrad wysyła jej bukiety kwiatów do biura drugiego dnia, dzwoni 15 razy na dobę i po tygodniu mówi: „Jesteś kobietą mojego życia, musimy natychmiast zamieszkać razem”.',
+            'Działający mechanizm: Love Bombing jako wstęp do przejęcia kontroli. Po miesiącu Konrad zaczyna żądać usunięcia kont w mediach społecznościowych pod hasłem: „Skoro mnie kochasz, nie potrzebujesz uwagi innych facetów”.',
+            'Jak rozpoznać w czasie rzeczywistym: Poczucie zawrotu głowy, przyspieszone tempo relacji, pomijanie naturalnych etapów poznawania się.',
+            'Możliwa konstruktywna reakcja: Świadome zwolnienie tempa: „Dziękuję za kwiaty, ale spotykamy się dopiero tydzień. Poznajmy się spokojnie przez kolejne miesiące”. Obserwuj reakcję: manipulator wpadnie we wściekłość lub natychmiast zniknie.',
+            'Wniosek dydaktyczny dla czytelnika: Jeśli coś wygląda zbyt pięknie, by było prawdziwe — najczęściej jest pułapką na Twoje neurony nagrody.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-9-11',
       pageNumber: 428,
       sectionNumber: '9.11',
-      title: 'Ciemna strona internetu: Dark patterns i algorytmiczna manipulacja',
+      title: 'Manipulacja w świecie cyfrowym: Dark Patterns i algorytmiczne sidła',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Manipulacja nie jest domeną wyłącznie relacji twarzą w twarz. W świecie cyfrowym armie inżynierów behawioralnych i kognitywistów projektują interfejsy zwane Dark Patterns (Zwodniczymi Wzorcami).',
-        'Roach Motel (Pułapka na karaluchy): Sytuacja, w której założenie subskrypcji wymaga jednego kliknięcia, ale jej anulowanie wymaga przejścia przez 6 podstron, wykonania telefonu do call center w innym kraju w godzinach 10–12 i wysłania listu poleconego.',
-        'Confirmshaming (Zawstydzanie przy rezygnacji): Przycisk akceptacji newslettera głosi: „Tak, chcę być mądry i oszczędzać pieniądze!”, podczas gdy przycisk odrzucenia brzmi: „Nie, dziękuję, wolę przepłacać i być ignorantem”. To manipulacja bazująca na pierwotnym wstydzie.',
-        'Sneak into Basket: Automatyczne dorzucanie do koszyka ubezpieczenia lub dodatkowej opłaty w nadziei, że zmęczona uwaga użytkownika (Tom I, Rozdział 3) przeoczy ten fakt przed kliknięciem „Kupuję i płacę”.'
+        'Dark Patterns (Ciemne Wzorce Projektowe) to manipulacja wbudowana bezpośrednio w architekturę aplikacji i serwisów www. Inżynierowie behawioralni wykorzystują zmęczenie uwagowe, by wyciągnąć od Ciebie zgodę na subskrypcję lub zakup.',
+        'Przykłady: Confirmshaming (przycisk rezygnacji z rabatu o treści: „Nie, dziękuję, wolę przepłacać”), Ukryte koszty dodawane na ostatnim kroku płatności czy celowo utrudniony proces kasowania konta (Roach Motel — łatwo wejść, niemożliwe wyjść).'
       ]
     },
     {
@@ -255,15 +536,16 @@ export const chapterNine: Chapter = {
       pageNumber: 432,
       sectionNumber: '9.12',
       title: 'Jak reagować? Tarcza asertywności i protokoły obronne',
-      category: 'teoria',
+      category: 'cwiczenia',
       readingTimeMinutes: 15,
       paragraphs: [
         'Oto cztery bezbłędne, sprawdzone klinicznie narzędzia asertywnej samoobrony poznawczej:',
-        '1. Technika Zdartej Płyty (Broken Record): Wybierz jedno proste, pozbawione agresji zdanie i powtarzaj je ze stałym, spokojnym tonem głosu, niezależnie od tego, jakie manipulacje i oskarżenia rzuca oponent:',
-        '„Rozumiem twoje stanowisko, i jednocześnie moja decyzja w tej sprawie jest negatywna”. Manipulator liczy na to, że wciągnie cię w dyskusję; gdy odbija się od ściany stałego komunikatu, jego skrypt ulega wyczerpaniu.',
-        '2. Stawianie Granicy z Konsekwencją: „Jeśli będziesz podnosił na mnie głos, w tym momencie kończę rozmowę i wychodzę z pokoju”. A potem bezwzględnie zrób to, co zapowiedziałeś! Granica bez konsekwencji to tylko pusta prośba.',
-        '3. Demaskowanie Gry: Nazwij mechanizm wprost, bez wrogości: „Zauważam, że za każdym razem, gdy proszę cię o rozliczenie faktury, zaczynasz opowiadać o swoich problemach ze zdrowiem. Porozmawiajmy najpierw o fakturze, a potem chętnie zapytam o twoje samopoczucie”.'
-      ]
+        '1. Technika Zdartej Płyty: Powtarzanie stałej formuły odmownej bez wchodzenia w dyskusję.',
+        '2. Zamglona Tarcza (Fogging): Zgoda z prawem rozmówcy do własnej oceny przy jednoczesnym utrzymaniu własnej granicy.',
+        '3. Demaskowanie Gry: Nazwanie mechanizmu wprost bez wrogości.',
+        'Poniższy warsztat pozwala wytrenować własne skrypty asertywne.'
+      ],
+      exerciseRef: chapterNineExerciseAssertiveScripts
     },
     {
       id: 'sec-9-13',

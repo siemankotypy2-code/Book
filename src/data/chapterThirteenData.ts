@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 
 export const chapterThirteenExamQuestions: ExamQuestion[] = [
   {
@@ -70,8 +70,266 @@ export const chapterThirteenExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Oszuści potrafią perfekcyjnie podrobić wygląd wiarygodnego portalu medycznego czy naukowego. Czytanie wertykalne (badanie samej strony) wprowadza w błąd. Jedynym ratunkiem jest wyjście poza stronę i sprawdzenie zewnętrznych rejestrów i konsensusu naukowego.',
     keyTakeaway: 'Nie badaj tego, co strona mówi o sobie. Zbadaj to, co świat mówi o tej stronie.'
+  },
+  {
+    id: 6,
+    question: 'Dlaczego algorytmy platform społecznościowych promują treści wywołujące wściekłość i moralne oburzenie (tzw. Ragebait) (Sekcja 13.8)?',
+    topic: 'Ragebait i Ekonomia Oburzenia',
+    sectionRef: 'Sekcja 13.8',
+    options: [
+      { label: 'A', text: 'Inżynierowie oprogramowania są z natury złośliwi.', isCorrect: false },
+      { label: 'B', text: 'Oburzenie moralne generuje najwyższy wskaźnik zaangażowania (Engagement Rate): ludzie piszą 4 razy więcej komentarzy i spędzają 3 razy więcej czasu w aplikacji, co maksymalizuje przychody z reklam.', isCorrect: true },
+      { label: 'C', text: 'Komputery działają sprawniej w wysokiej temperaturze emocjonalnej.', isCorrect: false },
+      { label: 'D', text: 'Wymagają tego międzynarodowe traktaty handlowe.', isCorrect: false }
+    ],
+    explanation: 'Algorytm nie ma moralności — optymalizuje jeden parametr: czas spędzony przed ekranem (Time on Platform). Gniew i oburzenie są najsilniejszym biologicznym klejem uwagi.',
+    keyTakeaway: 'Twoja wściekłość to ich zysk bilansowy. Kiedy jesteś oburzony w sieci — zostałeś zmonetyzowany.'
+  },
+  {
+    id: 7,
+    question: 'Na czym polega zasada „Diety Niskoinformacyjnej” (Low-Information Diet) Tima Ferrissa (Sekcja 13.4)?',
+    topic: 'Dieta Informacyjna i Higiena Kognitywna',
+    sectionRef: 'Sekcja 13.4',
+    options: [
+      { label: 'A', text: 'Na całkowitym zakazie czytania jakichkolwiek książek.', isCorrect: false },
+      { label: 'B', text: 'Na radykalnej selekcji źródeł: eliminacji wiadomości bieżących (newsów sensacyjnych) na rzecz długich, pogłębionych analiz i wiedzy ponadczasowej, która nie traci wartości po 48 godzinach.', isCorrect: true },
+      { label: 'C', text: 'Na jedzeniu posiłków wyłącznie w ciemności.', isCorrect: false },
+      { label: 'D', text: 'Na instalacji 50 dodatkowych aplikacji z powiadomieniami.', isCorrect: false }
+    ],
+    explanation: 'Większość newsów z nagłówków nie ma żadnego wpływu na Twoje realne życie. Karmienie mózgu bieżącym szumem niszczy skupienie i rodzi bezradność poznawczą. Chroń swój umysł jak żołądek.',
+    keyTakeaway: 'Większość wiadomości to śmieciowe kalorie dla Twojego mózgu. Czytaj to, co będzie aktualne za 10 lat.'
   }
 ];
+
+export const chapterThirteenCaseStudyRadicalization: CaseStudy = {
+  id: 'cs-ch13-banka-janusz',
+  title: 'Królicza Nora: Janusz i Algorytmiczne Oddalenie od Rodziny',
+  subtitle: 'Jak 52-letni inżynier wpadł w komorę echa teorii spiskowych i zerwał więź z dziećmi',
+  protagonist: 'Janusz, 52 lata, inżynier mechanik',
+  context: 'Dom na przedmieściach, wieczory przed ekranem tabletu po przejściu dzieci na swoje.',
+  story: [
+    'Janusz zawsze był człowiekiem pragmatycznym. Po wyprowadzce dorosłych dzieci z domu poczuł pustkę i samotność. Kupił tablet i zaczął spędzać wieczory na YouTube i Facebooku.',
+    'Zaczęło się niewinnie: obejrzał film o zanieczyszczeniu powietrza i smugach kondensacyjnych samolotów. Algorytm rekomendacji zarejestrował wysoki czas oglądania (Watch Time) i natychmiast podsunął kolejny film: „Czego rządy nie mówią o chemtrails?”.',
+    'W ciągu 6 miesięcy algorytm zamknął Janusza w szczelnej Bańce Filtrującej (Filter Bubble). 90% postów na jego tablicy dotyczyło „światowego spisku elit”, „fałszywych pandemii” i „trucizn w wodzie”. W jego mózgu zadziałała Heurystyka Dostępności (Tom I, Rozdział 4): skoro widzi te treści codziennie setki razy, uznał, że mówi o tym cały świat.',
+    'Podczas świątecznego obiadu Janusz nie potrafił rozmawiać o niczym innym. Kiedy jego 26-letnia córka lekarka próbowała sprostować fake newsa o szczepionkach badaniami z The Lancet, Janusz wpadł we wściekłość: „Jesteś zmanipulowana przez korporacje medyczne! Sprzedałaś duszę systemowi!”.',
+    'Córka wybiegła z płaczem. Przez kolejny rok dzieci przestały go odwiedzać. Janusz został sam ze swoim tabletem, otoczony wirtualnymi „przyjaciółmi z grupy prawdy”, przekonany, że jest samotnym obrońcą ludzkości przed apokalipsą.'
+  ],
+  decisionTaken: 'Janusz uznał algorytmicznie podsuwane teorie za jedyną obiektywną prawdę i poświęcił realne relacje rodzinne w imię wirtualnej komory echa.',
+  whatProtagonistSaw: 'Janusz widział siebie jako przebudzonego wojownika prawdy, a rodzinę jako naiwne owce sterowane przez media.',
+  whatWasMissed: 'Że algorytm platformy karmił go skrajnymi treściami wyłącznie po to, by utrzymać jego wzrok na ekranie i sprzedawać reklamy suplementów diety.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Radykalizacja w komorze echa (Echo Chamber) napędzana błędem konfirmacji i ewolucyjną potrzebą unikalnego statusu (Gnostycka duma: „Wiem to, czego nie wiedzą inni”).',
+    cognitiveBiases: [
+      { name: 'Błąd konfirmacji (Confirmation Bias)', description: 'Janusz szukał wyłącznie źródeł potwierdzających teorię spiskową, odrzucając całą literaturę recenzowaną.', impact: 'Utrata zdolności do korekty poglądów.' },
+      { name: 'Heurystyka dostępności', description: 'Ciągłe widzenie tych samych haseł na tablicy wywołało iluzję powszechności zjawiska.', impact: 'Zniekształcenie obrazu świata.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Projekcja manipulacji', explanation: 'Oskarżanie wszystkich innych o uleganie manipulacji w celu obrony własnej klatki poznawczej.' }
+    ],
+    emotionalDynamic: 'Głęboka samotność i lęk przed starzeniem się przekształcone w poczucie przynależności do tajemnego bractwa.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Pierwsze kliknięcie w sensacyjny nagłówek o samolotach.',
+    attentionFocus: 'Dreszcz emocji i poczucie odkrywania sekretu.',
+    interpretation: '„Oficjalna nauka kłamie, ja odkryłem prawdę”.',
+    emotion: 'Ekscytacja, wyższość moralna, lęk przed spiskiem.',
+    impulse: 'Udostępniać posty dalej i nawracać rodzinę.',
+    action: 'Agresywny atak na córkę przy świątecznym stole.',
+    consequence: 'Całkowita izolacja od dzieci i wnuków, chroniczny stres paranoiczny.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Prążkowie brzuszne', role: 'Wyrzut dopaminy przy każdym „odkryciu prawdy”', activationState: 'Uwarunkowanie uzależniające' },
+      { region: 'Ciało migdałowate', role: 'Podtrzymywanie stanu stałego zagrożenia spiskowego', activationState: 'Hiperaktywacja' }
+    ],
+    neurotransmitters: [
+      { name: 'Dopamina i kortyzol', roleInScenario: 'Toksyczny koktajl pobudzenia i strachu' }
+    ],
+    biologicalTimeline: [
+      { timeMs: 'Miesiąc 1', process: 'Ciekawość (VTA).' },
+      { timeMs: 'Miesiąc 6', process: 'Komora echa zamyka synapsy na jakiekolwiek argumenty przeciwne.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [
+      { tactic: 'Algorytmiczne uzależnienie od oburzenia', description: 'Platforma podsuwa coraz bardziej skrajne materiały, by wydłużyć czas sesji.', vulnerabilityExploited: 'Poczucie osamotnienia na emeryturze i potrzeba znaczenia' }
+    ],
+    counterMeasures: [
+      { step: 'Zasada Równoległej Diety Poznawczej', script: 'Wymuszenie czytania źródeł o odmiennym punkcie widzenia i tygodniowy detoks od algorytmów społecznościowych.', rationale: 'Przywraca elastyczność poznawczą kory przedczołowej.' }
+    ]
+  },
+  alternativePath: 'Gdyby córka zamiast wyśmiewać ojca przy stole, zapytała: „Tato, widzę, że bardzo się tym martwisz. Skąd to się w tobie wzięło? Opowiedz mi o swoich emocjach”, mogłaby zaopiekować się jego samotnością bez walki o fakty.',
+  readerQuestion: 'W jakiej bańce informacyjnej tkwisz Ty sam? Kiedy ostatnio przeczytałeś z szacunkiem artykuł kogoś, z kim fundamentalnie się nie zgadzasz?',
+  keyTakeaway: 'Kiedy algorytm podsuwa Ci tylko to, co lubisz — nie jesteś poinformowany. Jesteś hodowany w klatce własnych uprzedzeń.'
+};
+
+export const chapterThirteenCaseStudyFomoMaja: CaseStudy = {
+  id: 'cs-ch13-fomo-maja',
+  title: 'Iluzja Perfekcji: Maja i Lustro Instagrama',
+  subtitle: 'Jak 16-letnia licealistka popadła w depresję, porównując swoje kulisy z cudzą sceną',
+  protagonist: 'Maja, 16 lat, uczennica liceum ogólnokształcącego',
+  context: 'Pokój nastolatki, 1:30 w nocy, światło ekranu smartfona oświetlające twarz w ciemności.',
+  story: [
+    'Maja była bystrą, zdolną dziewczyną z talentem plastycznym. W jej telefonie mieszkał jednak potwór: Instagram i TikTok. Spędzała w nich średnio 6 godzin na dobę.',
+    'Każdej nocy, leżąc pod kołdrą, oglądała relacje rówieśniczek: egzotyczne wakacje na Bali, idealnie gładkie cery bez ani jednego wyprysku, markowe ubrania, uśmiechnięte paczki przyjaciół na imprezach. W jej głowie odpalał się bezlitosny mechanizm porównań społecznych Leona Festingera.',
+    'Maja nie rozumiała, że ogląda wyreżyserowaną, przefiltrowaną scenę, podczas gdy siebie obserwuje od kulis — w starym dresie, z nieodrobioną matematyką i zmęczeniem. W jej układzie limbicznym wybuchło ostre zjawisko FOMO: „Wszyscy żyją wspaniale, tylko ja jestem beznadziejna, brzydka i samotna”.',
+    'Zaczęła unikać spotkań w realnym świecie, bo wstydziła się swojego wyglądu bez cyfrowego filtra. Przestała malować obrazy. Schudła 8 kg, głodząc się, by dorównać ciałom z rolek. O 2:00 w nocy budziła się, by sprawdzić liczbę polubień pod swoim nowym zdjęciem — brak lajków odczuwała jak fizyczny cios w twarz.',
+    'Ratunek przyszedł, gdy telefon Mai uległ zniszczeniu na wycieczce szkolnej. Przez pierwsze 4 dni przeżywała piekło zespołu odstawiennego: drżenie rąk, płacz, panikę. Piątego dnia wyszła na spacer do lasu bez aparatu. Zauważyła zapach mchu, zieleń liści, usłyszała śpiew ptaków. Jej mózg po raz pierwszy od 3 lat wyszedł ze stanu ciągłego skanowania statusowego. Po powrocie poprosiła rodziców o telefon klawiszowy bez dostępu do social mediów.'
+  ],
+  decisionTaken: 'Maja podjęła radykalną decyzję o rezygnacji ze smartfona na rzecz telefonu bez aplikacji społecznościowych, ratując swoje zdrowie psychiczne.',
+  whatProtagonistSaw: 'Widziała obiektywny dowód na własną brzydotę i nieadekwatność w porównaniu z „idealnymi ludźmi” z sieci.',
+  whatWasMissed: 'Że obrazy na ekranie były produktem inżynierii optycznej, filtrów AI i sponsoringu, a dziewczyny z ekranów cierpiały na dokładnie takie same lęki i zaburzenia odżywiania.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Porównania Społeczne w Górę (Upward Social Comparison) spotęgowane przez zniekształcenie algorytmiczne i pętlę uzależnienia dopaminowego.',
+    cognitiveBiases: [
+      { name: 'Błąd reprezentatywności', description: 'Uznanie 5-sekundowej, wyretuszowanej migawki za wierny obraz całego życia drugiej osoby.', impact: 'Głęboka autodewaluacja.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Autoagresja', explanation: 'Karanie własnego ciała głodówkami za to, że nie przypomina awatara z ekranu.' }
+    ],
+    emotionalDynamic: 'Chroniczny wstyd tożsamościowy i panika przed byciem niewidzialną dla rówieśników.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Widok zdjęcia koleżanki na plaży z 1000 polubień.',
+    attentionFocus: 'Własne niedoskonałości fizyczne w lustrze.',
+    interpretation: '„Jestem gorsza, nikt mnie nie chce”.',
+    emotion: 'Zawiść, wstyd, rozpacz, samotność.',
+    impulse: 'Nie jeść kolacji i zrobić 50 selfie z filtrem w poszukiwaniu aprobaty.',
+    action: 'Detoks cyfrowy i zamiana smartfona na telefon klawiszowy.',
+    consequence: 'Powrót apetytu, ustąpienie stanów lękowych i powrót do pasji malarskiej.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Przednia wyspa', role: 'Generowanie bólu odrzucenia społecznego pod wpływem widoku cudzych sukcesów', activationState: 'Permanentny stan zapalny' },
+      { region: 'Ciało migdałowate', role: 'Lęk przed wypadnięciem z hierarchii stada', activationState: 'Hiperaktywacja nocna' }
+    ],
+    neurotransmitters: [
+      { name: 'Kortyzol i dopamina', roleInScenario: 'Zaburzenie rytmu dobowego melatoniny przez niebieskie światło ekranu i skoki kortyzolu' }
+    ],
+    biologicalTimeline: [
+      { timeMs: 'Nocne scrollowanie', process: 'Blokada melatoniny, spłycenie snu REM, brak regeneracji kory czołowej.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [
+      { tactic: 'Interfejs Slot Machine (Pociągnij, by odświeżyć)', description: 'Mechanizm kasyna wbudowany w aplikację wywołuje przymus ciągłego sprawdzania.', vulnerabilityExploited: 'Krucha tożsamość dojrzewającego mózgu' }
+    ],
+    counterMeasures: [
+      { step: 'Higiena Cyfrowa Sypialni', script: 'Telefon nigdy nie przekracza progu sypialni. Ładowarka zostaje w kuchni na noc.', rationale: 'Chroni najświętszy czas regeneracji mózgu przed zatruciem algorytmicznym.' }
+    ]
+  },
+  alternativePath: 'Gdyby Maja nadal spędzała 6 godzin na Instagramie, rozwinęłaby kliniczną anoreksję i wylądowała na oddziale psychiatrycznym z próbą samobójczą.',
+  readerQuestion: 'Jak czujesz się w swoim ciele i życiu po 30 minutach scrollowania mediów społecznościowych — jesteś pełen energii, czy czujesz pustkę i zmęczenie?',
+  keyTakeaway: 'Nigdy nie porównuj swoich kulis z cudzą sceną. W sieci nikt nie publikuje swoich porażek, samotności i łez.'
+};
+
+export const chapterThirteenExerciseDietAudit: SelfExercise = {
+  id: 'ex-ch13-diet-audit',
+  title: 'Ćwiczenie 13.1: Audyt Diety Informacyjnej (Białko vs Cukier Cyfrowy)',
+  subtitle: 'Zbadaj, czym karmisz swój mózg i usuń toksyczne kalorie poznawcze',
+  objective: 'Zidentyfikowanie źródeł wywołujących niepokój i zastąpienie ich wiedzą głęboką.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Ograniczenie chaotycznych bodźców cyfrowych obniża tonus układu współczulnego i przywraca naturalną gęstość receptorów dopaminergicznych D2 w prążkowiu.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Audyt 24 godzin konsumpcji',
+      instruction: 'Sprawdź w ustawieniach telefonu czas ekranowy z wczorajszego dnia. Wypisz 3 aplikacje, które pożarły najwięcej Twojego czasu.',
+      promptText: 'Moje 3 aplikacje pożerające uwagę i łączny czas ekranowy:',
+      placeholder: 'Czas łączny: 4h 15 min. Aplikacje: 1. TikTok (1h 40m), 2. Instagram (1h 10m), 3. Portale informacyjne (45m)...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Klasyfikacja: Białko czy Pusty Cukier?',
+      instruction: 'Oceń, ile z tych treści realnie wzbogaciło Twoje życie i kompetencje (Białko), a ile było bezmyślnym zapychaczem wywołującym niepokój (Cukier).',
+      promptText: 'Procentowy udział cukru w mojej diecie informacyjnej:',
+      placeholder: 'Około 85% to był pusty cukier emocjonalny (oburzenie, plotki, memy)...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Plan Odchudzania Informacyjnego',
+      instruction: 'Wybierz jedno konkretne cięcie na ten tydzień (np. usunięcie TikToka z telefonu, wyciszenie powiadomień ze wszystkich portali newsowych).',
+      promptText: 'Moje jedno radykalne cięcie cyfrowe:',
+      placeholder: 'Usuwam aplikacje newsowe z telefonu. Wiadomości sprawdzam tylko raz w tygodniu w sobotę na komputerze.'
+    }
+  ],
+  reflectionQuestions: [
+    'Co zmieniłoby się w Twoim poziomie lęku, gdybyś przez miesiąc nie wiedział o żadnym skandalu ze świata polityki?',
+    'Na jaką pasję lub relację przeznaczyłbyś te 2 godziny dziennie odzyskane z ekranu?'
+  ]
+};
+
+export const chapterThirteenExerciseBubbleBreaker: SelfExercise = {
+  id: 'ex-ch13-bubble-breaker',
+  title: 'Ćwiczenie 13.2: Przebijanie Bańki Filtrującej — Wizyta w Świecie Oponenta',
+  subtitle: 'Wytrenuj intelektualną odwagę i przeczytaj argumenty drugiej strony bez pogardy',
+  objective: 'Rozbicie iluzji jednomyślności i poszerzenie horyzontu poznawczego.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Konfrontacja z odmienną perspektywą bez odpalania agresji aktywuje grzbietowo-boczną korę przedczołową, budując elastyczność poznawczą (Cognitive Flexibility).',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Wybierz temat, w którym masz skrajnie wyrazisty pogląd',
+      instruction: 'Wskaż kwestię polityczną, społeczną lub gospodarczą, w której uważasz drugą stronę za „szkodników lub idiotów”.',
+      promptText: 'Jaki to temat i jakie jest Twoje stanowisko?',
+      placeholder: 'Temat: Transformacja energetyczna i zakaz aut spalinowych. Moje zdanie: konieczne natychmiast...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Znajdź najmądrzejszego reprezentanta przeciwnej strony (Steel-manning)',
+      instruction: 'Nie szukaj internetowych krzykaczy. Znajdź rzetelny artykuł lub esej wybitnego intelektualisty o przeciwnych poglądach. Przeczytaj go w całości.',
+      promptText: 'Kogo przeczytałeś i jaki był jego najsilniejszy argument merytoryczny?',
+      placeholder: 'Przeczytałem analizę ekonomisty wskazującą na ubóstwo energetyczne emerytów w małych miastach bez transportu publicznego...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Uznaj ziarno prawdy oponenta',
+      instruction: 'Sformułuj jedno zdanie pokazujące, że rozumiesz racjonalne obawy drugiej strony, nawet jeśli wciąż się z nią nie zgadzasz.',
+      promptText: 'Co zrozumiałem z perspektywy mojego oponenta?',
+      placeholder: 'Zrozumiałem, że ich opór nie wynika ze złośliwości, lecz z realnego lęku przed wykluczeniem komunikacyjnym i brakiem środków do życia.'
+    }
+  ],
+  reflectionQuestions: [
+    'O ile trudniej jest nienawidzić człowieka, gdy zrozumiesz jego lęki i motywacje?',
+    'Jak zmieniłaby się debata publiczna, gdybyśmy zamiast wyśmiewać karykatury przeciwnika, dyskutowali z jego najlepszymi argumentami?'
+  ]
+};
+
+export const chapterThirteenExerciseLateralReading: SelfExercise = {
+  id: 'ex-ch13-lateral-reading-lab',
+  title: 'Ćwiczenie 13.3: Laboratorium Czytania Horyzontalnego (Fact-Checking w 3 Minuty)',
+  subtitle: 'Przetestuj szokującą wiadomość w sieci za pomocą technik profesjonalnych weryfikatorów',
+  objective: 'Zbudowanie odruchu otwierania nowych kart i sprawdzania źródeł przed kliknięciem „Udostępnij”.',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Zahamowanie impulsu natychmiastowego podania wiadomości dalej angażuje prawą korę czołowo-oczodołową, rozbijając manipulację afektywną twórców fake newsa.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Wybierz sensacyjny nagłówek z sieci',
+      instruction: 'Znajdź post lub artykuł z ostatnich dni, który wywołał w Tobie szok, oburzenie lub strach.',
+      promptText: 'Jaki to nagłówek i z jakiej strony pochodzi?',
+      placeholder: '„Szokujące odkrycie: ten powszechny dodatek do chleba niszczy neurony u dzieci!”...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Otwórz 3 nowe karty (Czytanie Horyzontalne)',
+      instruction: 'Wpisz w wyszukiwarkę nazwisko autora + „afiliacja naukowa” oraz kluczowe tezy + „fact-check” / „badania kliniczne”.',
+      promptText: 'Co mówią niezależne źródła o autorze i tym twierdzeniu?',
+      placeholder: 'Autor nie ma wykształcenia medycznego, sprzedaje na tej samej stronie własne suplementy, a oficjalne instytucje dawno obaliły ten mit...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Werdykt i zasada higieny',
+      instruction: 'Napisz krótki werdykt krytyczny i zobowiąż się do nieudostępniania niesprawdzonych treści.',
+      promptText: 'Mój werdykt poznawczy:',
+      placeholder: 'Artykuł to klasyczny clickbait handlowy grający na lęku rodziców w celu sprzedaży witamin. Usuwam i nie podaję dalej.'
+    }
+  ],
+  reflectionQuestions: [
+    'Dlaczego mózg tak chętnie wierzy w przerażające informacje bez sprawdzania pieczątek?',
+    'Jak możesz stać się ambasadorem spokoju i prawdy w swoich grupach na komunikatorach?'
+  ]
+};
 
 export const chapterThirteen: Chapter = {
   number: 13,
@@ -101,148 +359,173 @@ export const chapterThirteen: Chapter = {
       id: 'sec-13-2',
       pageNumber: 608,
       sectionNumber: '13.2',
-      title: 'Nadmiar informacji: Syndrom zmęczenia informacyjnego (IFS)',
+      title: 'Ekonomia uwagi: Kiedy uwaga człowieka staje się towarem',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'David Lewis w latach 90. opisał zjawisko Information Fatigue Syndrome (IFS). Kiedy wolumen danych przekracza fizjologiczną przepustowość pamięci roboczej (Tom I, Rozdział 3), mózg wchodzi w stan paraliżu analitycznego.',
-        'Objawy przeciążenia informacyjnego są identyczne z objawami chronicznego stresu pourazowego: drażliwość, trudności z podjęciem najprostszej decyzji (np. co zjeść na obiad), obniżenie empatii oraz kompulsywna potrzeba sprawdzania kolejnych wiadomości (tzw. Pętla Szukania Pewności).',
-        'Im więcej sprzecznych artykułów czytasz na dany temat, tym mniej wiesz, co robić. Paradoksalnie, dostęp do nieskończonej liczby opinii wcale nie czyni nas mądrzejszymi — czyni nas bardziej zalęknionymi i podatnymi na radykalne, uproszczone hasła populistów.'
+        'Herbert Simon już w 1971 roku proroczo zauważył: „W świecie bogatym w informacje, bogactwo informacji oznacza ubóstwo czegoś innego: niedobór tego, co informacja konsumuje. A informacja konsumuje uwagę swoich odbiorców”.',
+        'Najcenniejszym zasobem na Ziemi nie jest już ropa naftowa ani złoto. Jest nim Twoja uwaga. Modele biznesowe gigantów technologicznych opierają się na jednym wskaźniku: Time on Screen (Czas przed Ekranem). Im dłużej patrzysz na ekran, tym więcej reklam można Ci wyświetlić i tym więcej danych o Twoich lękach i słabościach można zebrać.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 1: Poranne sprawdzanie powiadomień w łóżku',
+          paragraphs: [
+            'Sytuacja i bohater: 36-letni Grzegorz budzi się o 7:00. Jeszcze przed wstaniem z łóżka sięga po telefon. Przez 20 minut czyta nagłówki o kryzysie gospodarczym, wypadkach drogowych i kłótniach politycznych.',
+            'Działający mechanizm: Zalanie układu nerwowego kortyzolem w stanie hipnopompocznym (przejście ze snu do czuwania). Zanim postawił stopę na podłodze, jego kora przedczołowa została wrzucona w tryb zagrożenia.',
+            'Jak rozpoznać w czasie rzeczywistym: Ciężar w klatce piersiowej i niechęć do rozpoczęcia dnia mimo przespanej nocy.',
+            'Możliwa konstruktywna reakcja: Zasada „Złotej Pierwszej Godziny”: pierwsze 60 minut dnia całkowicie bez ekranów i bez wiadomości.',
+            'Wniosek dydaktyczny dla czytelnika: Kto zaczyna dzień od cudzych wiadomości, oddaje stery swojego nastroju w ręce obcych ludzi.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-13-3',
       pageNumber: 612,
       sectionNumber: '13.3',
-      title: 'Clickbait i luka informacyjna: Jak nagłówki porywają prążkowie',
+      title: 'Clickbait i luka informacyjna: Jak nagłówki porywają mózg',
       category: 'teoria',
       readingTimeMinutes: 13,
       paragraphs: [
-        '„Zrobił jedną rzecz przed snem. Gdy lekarze to zobaczyli, zaniemówili!”. Dlaczego tak trudno nie kliknąć w tak absurdalny nagłówek?',
-        'George Loewenstein z Carnegie Mellon University sformułował Teorię Luki Informacyjnej (Information Gap Theory). Ciekawość nie rodzi się z całkowitej niewiedzy ani z pełnej wiedzy — rodzi się wtedy, gdy mózg uświadamia sobie, że ISTNIEJE WĄSKA PRZEPAŚĆ między tym, co wie, a tym, czego nie wie.',
-        'Luka informacyjna jest dla kory nowej jak swędzące ukąszenie komara. Mózg odczuwa fizyczny dyskomfort deprywacyjny, którego może pozbyć się tylko w jeden sposób: klikając w link. Twórcy clickbaitów to profesjonalni inżynierowie wywoływania sztucznego swędzenia poznawczego.'
+        'George Loewenstein opisał teorię luki informacyjnej (Information Gap Theory). Ciekawość pojawia się w mózgu w momencie, gdy zdamy sobie sprawę z luki między tym, co wiemy, a tym, czego nie wiemy. Ta luka odczuwana jest w układzie nagrody jako nieprzyjemne swędzenie, którego mózg pragnie się pozbyć.',
+        'Clickbaity są inżynieryjnym wykorzystaniem tej luki: „Nie uwierzysz, co stało się potem...”, „Popełniasz ten jeden błąd każdego dnia”. Mózg musi kliknąć, by zamknąć pętlę dopaminową, po czym okazuje się, że treść artykułu jest banalna lub kłamliwa.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 2: Zagadka zepsutego nagłówka',
+          paragraphs: [
+            'Sytuacja i bohater: Magda widzi na portalu nagłówek: „Znana polska aktorka miała straszny wypadek! Lekarze walczą o jej życie!”. Klika w panice, obawiając się o ulubioną artystkę. W artykule okazuje się, że chodzi o rolę filmową w serialu z 2008 roku.',
+            'Działający mechanizm: Manipulacja luką informacyjną i strachem w celu wymuszenia odsłony reklamowej.',
+            'Jak rozpoznać w czasie rzeczywistym: Uczucie bycia oszukanym połączone z niesmakiem.',
+            'Wniosek dydaktyczny dla czytelnika: Każdy klik w clickbait to finansowe zasilenie fabryki kłamstwa. Ignoruj luki, które nie mają wpływu na Twoje życie.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-13-4',
       pageNumber: 616,
       sectionNumber: '13.4',
-      title: 'Algorytmiczna selekcja: Karmienie bestii zaangażowania',
-      category: 'teoria',
+      title: 'Dieta niskoinformacyjna: Selekcja pokarmu dla neuronów',
+      category: 'cwiczenia',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Algorytmy rekomendacji na YouTube, Facebooku, Instagramie czy TikToku nie mają żadnego kręgosłupa moralnego. Nie dbają o to, czy informacja jest prawdziwa, budująca, naukowa czy szlachetna. Mają jedną jedyną funkcję celu zapisaną w kodzie optymalizacyjnym:',
-        'MAXIMIZE TIME ON PLATFORM (Maksymalizuj czas spędzony na platformie).',
-        'A co najsilniej przykuwa ludzką uwagę i zmusza do pisania komentarzy? Badania neuroafektywne nie pozostawiają złudzeń: OBRURZENIE MORALNE (Moral Outrage). Wiadomość, która wzbudza wściekłość na przeciwną frakcję polityczną, generuje średnio 4-krotnie więcej udostępnień niż wyważona analiza ekspercka. Algorytm promuje ekstremizm nie dlatego, że jest zły — promuje go, bo to się po prostu klika.'
-      ]
+        'Podobnie jak nie wlewasz do baku luksusowego auta brudnej wody z kałuży, tak samo nie możesz wlewać do swojej kory przedczołowej śmieciowego szumu medialnego, oczekując, że będziesz podejmować genialne decyzje życiowe.',
+        'Dieta niskoinformacyjna (Low-Information Diet) polega na radykalnej selekcji źródeł: eliminacji wiadomości bieżących na rzecz wiedzy głębokiej i książek. Poniższy warsztat uczy, jak przeprowadzić audyt własnej konsumpcji cyfrowej.'
+      ],
+      exerciseRef: chapterThirteenExerciseDietAudit
     },
     {
       id: 'sec-13-5',
       pageNumber: 620,
       sectionNumber: '13.5',
-      title: 'Bańki filtrujące: Zamknięci w lustrzanym labiryncie Eli Parisera',
+      title: 'Bańki filtrujące (Filter Bubbles): Klatka uszyta z Twoich lajków',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Eli Pariser w przełomowej książce „The Filter Bubble” (2011) ujawnił przerażającą prawdę: dwóch ludzi siedzących obok siebie w kawiarni, wpisujących w wyszukiwarkę Google dokładnie to samo hasło (np. „zmiany klimatyczne” lub „szczepienia”), otrzymuje drastycznie różne wyniki!',
-        'Wyszukiwarka zna Twoją historię kliknięć, Twój model telefonu, Twoje poglądy i lokalizację. Nie pokazuje Ci „obiektywnego internetu”. Pokazuje Ci internet spersonalizowany — taki, w który najchętniej klikniesz.',
-        'W ten sposób powstaje bańka filtrująca: niewidzialna ściana poznawcza, która odcina Cię od informacji sprzecznych z Twoimi obecnymi przekonaniami. Zaczynasz żyć w ułudzie, że „przecież wszyscy mądrzy ludzie myślą tak jak ja”, bo na Twojej tablicy nie pojawia się nikt inny.'
+        'Eli Pariser ukuł termin Filter Bubble. Algorytmy Google, Facebooka czy TikToka nie pokazują Ci obiektywnego świata. Pokazują Ci świat, który potwierdza Twoje dotychczasowe kliknięcia, lajki i wyszukiwania.',
+        'W rezultacie dwóch sąsiadów mieszkających drzwi w drzwi, wpisując to samo hasło w wyszukiwarkę, otrzymuje całkowicie odmienne zestawy wyników. Każdy z nich żyje w innym uniwersum poznawczym, święcie przekonany, że „przecież wszyscy tak myślą”.'
       ]
     },
     {
       id: 'sec-13-6',
       pageNumber: 624,
       sectionNumber: '13.6',
-      title: 'Echo chamber: Psychologia plemiennej polaryzacji',
-      category: 'teoria',
-      readingTimeMinutes: 13,
+      title: 'Komory echa: Kiedy plemię krzyczy do własnego odbicia',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Gdy bańka filtrująca algorytmu połączy się z ludzką potrzebą przynależności do stada (Rozdział 6), powstaje Komora Echa (Echo Chamber).',
-        'W komorze echa poglądy grupy odbijają się od ścian i wracają ze zdwojoną siłą, stając się z każdym powtórzeniem coraz bardziej skrajne. Każdy, kto wnosi wątpliwość lub próbuje niuansować temat, zostaje natychmiast uznany za zdrajcę, symetrystę lub wroga.',
-        'W komorze echa nie chodzi o poszukiwanie prawdy. Chodzi o rytuał wspólnego linczowania oponentów, który dostarcza członkom stada silnych wyrzutów oksytocyny wewnątrzgrupowej i poczucia moralnej wyższości nad „tamtymi barbarzyńcami”.'
-      ]
+        'Podczas gdy bańka filtrująca jest dziełem algorytmu, komora echa (Echo Chamber) jest dziełem ludzkiego plemienia. W komorze echa wszelkie głosy krytyczne lub zniuansowane są natychmiast wyciszane, wyśmiewane i banowane jako „zdrada”.',
+        'Poniższe studium przypadku ukazuje tragedię inżyniera, który wpadł w komorę echa teorii spiskowych, niszcząc więź z własnymi dziećmi.'
+      ],
+      caseStudyRef: chapterThirteenCaseStudyRadicalization
     },
     {
       id: 'sec-13-7',
       pageNumber: 628,
       sectionNumber: '13.7',
-      title: 'Reklama podprogowa i jawna: Sprzedawanie tożsamości zamiast produktu',
-      category: 'teoria',
+      title: 'Przełamywanie bańki: Technika Steel-Manningu',
+      category: 'cwiczenia',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Nikt nie kupuje drogiego zegarka szwajcarskiego za 40 000 zł, by sprawdzać godzinę. Do sprawdzania godziny zegarek w smartfonie za 500 zł jest 100 razy dokładniejszy.',
-        'Współczesna reklama dawno przestała sprzedawać cechy użytkowe produktów. Reklama sprzedaje Tożsamość i Przynależność Społeczną (Rozdział 6 i 12). Reklama mówi Ci podświadomie:',
-        '„Kiedy kupisz ten samochód z napędem 4x4, staniesz się nieustraszonym poszukiwaczem przygód, który nie boi się niczego (nawet jeśli stoisz w korku w drodze do korporacji)”.',
-        '„Kiedy kupisz te buty, staniesz się artystą, który myśli inaczej”.',
-        'Nawiązując do Tomu I (Emocje i Heurystyki): reklama paruje produkt z potężnym archetypem kulturowym, omijając analityczny System 2 i celując prosto w głód statusu i akceptacji.'
-      ]
+        'W erystyce istnieje pojęcie Straw Mana (Chochoła) — stworzenie prymitywnej, karykaturalnej wersji argumentu oponenta, by łatwo go obalić. Znakomici myśliciele stosują technikę przeciwną: STEEL-MANNING.',
+        'Polega ona na sformułowaniu argumentu przeciwnika w najsilniejszej, najbardziej inteligentnej i przekonującej postaci, zanim spróbujesz z nim polemizować. Poniższy warsztat uczy, jak przebijać własną bańkę filtrującą.'
+      ],
+      exerciseRef: chapterThirteenExerciseBubbleBreaker
     },
     {
       id: 'sec-13-8',
       pageNumber: 632,
       sectionNumber: '13.8',
-      title: 'Cena i kotwica: Jak promocje wyłączają zdrowy rozsądek',
+      title: 'Ekonomia oburzenia (Ragebait): Dlaczego złość jest najbardziej zyskowna',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Czarny Piątek (Black Friday) to coroczne święto załamania kory przedczołowej. Wchodzisz do sklepu i widzisz wielką czerwoną tabliczkę: „STARA CENA: 999 ZŁ — TERAZ TYLKO 399 ZŁ!”.',
-        'Z punktu widzenia czystej logiki powinieneś zadać sobie pytanie: „Czy ten przedmiot jest dla mnie warty 399 zł i czy naprawdę go potrzebuję?”. Ale Twój System 1 nie zadaje tego pytania. Twój System 1 patrzy na przekreśloną liczbę 999 zł (Kotwica, Rozdział 8) i liczy: „Właśnie ZAROBIŁEM 600 zł! Gdybym tego nie kupił, straciłbym taką okazję!”.',
-        'Badania behawioralne pokazują, że ponad 70% produktów na wyprzedażach ma sztucznie zawyżane ceny wyjściowe na 30 dni przed promocją. Płacisz dokładnie tyle, ile rzecz była warta od początku, ale Twój mózg jest odurzony iluzją wygranego polowania.'
+        'Badania laboratoryjne dowodzą, że ze wszystkich ludzkich emocji to OBURZENIE MORALNE wywołuje najszybszą i najtrwalszą reakcję behawioralną w mediach społecznościowych. Treści budzące złość rozprzestrzeniają się 4 razy szybciej niż treści budzące radość czy spokój.',
+        'Algorytmy nie są złe moralnie — są obojętne. Po prostu zoptymalizowano je pod kątem czasu spędzonego na platformie. A ponieważ nic nie trzyma człowieka przed ekranem tak mocno jak nienawiść do oponenta politycznego, platformy celowo podsuwają Ci treści, które wyprowadzają Cię z równowagi.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD 4: Złość na forum internetowym pod postem politycznym',
+          paragraphs: [
+            'Sytuacja i bohater: Paweł (42 lata) po powrocie z pracy czyta komentarze pod postem o podatkach. Trafia na chamski, prowokacyjny wpis oponenta. W Pawle gotuje się krew. Poświęca 45 minut na pisanie 5-akapitowej, pełnej jadu riposty.',
+            'Działający mechanizm: Ragebait. Paweł nie przekonał oponenta do swoich racji. Oddał 45 minut swojego życia platformie, która w tym czasie wyświetliła mu 12 reklam.',
+            'Jak rozpoznać w czasie rzeczywistym: Poczucie moralnego przymusu „wyjaśnienia komuś w internecie, jak bardzo się myli”.',
+            'Możliwa konstruktywna reakcja: Natychmiastowe zamknięcie karty i uświadomienie sobie: „Moje oburzenie to ich zysk. Odmawiam karmienia tej bestii”.',
+            'Wniosek dydaktyczny dla czytelnika: Nigdy nie kłóć się z nieznajomymi w internecie. To walka na arenie zbudowanej po to, by sprzedawać bilety na Twoją wściekłość.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-13-9',
       pageNumber: 636,
       sectionNumber: '13.9',
-      title: 'FOMO: Przemysłowy lęk przed przegapionym życiem',
-      category: 'teoria',
-      readingTimeMinutes: 14,
+      title: 'FOMO: Ewolucyjny lęk przed wykluczeniem ze stada w erze cyfrowej',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Fear of Missing Out (FOMO) to plaga XXI wieku. Siedzisz w piątek wieczorem w domu z książką i herbatą. Jest miło i spokojnie. Wyciągasz telefon i otwierasz Instagram Stories.',
-        'Widzisz: znajomi na imprezie na dachu wieżowca, koleżanka z pracy na plaży na Bali, były kolega ze studiów odbierający nagrodę biznesową. W ułamku sekundy Twój spokój zamienia się w popiół.',
-        'W Twoim ciele odpala się ból wykluczenia (Rozdział 6). Porównujesz swoje niefiltrowane, zwykłe życie od środka z wyreżyserowanym, najlepszym zwiastunem filmowym z życia innych ludzi (Highlight Reel). Zapominasz, że nikt nie wrzuca na Instagram zdjęć, gdy kłóci się z partnerem, płacze ze zmęczenia czy zmaga się ze zgagą na sedesie. FOMO to porównywanie własnych kulis z cudzą sceną główną.'
-      ]
+        'FOMO (Fear of Missing Out) to nie jest wymysł współczesnych nastolatków. To prastary obwód przetrwania hominida. Na sawannie opuszczenie narady stada czy przeoczenie sygnału o zagrożeniu oznaczało śmierć w paszczy drapieżnika.',
+        'W erze cyfrowej ten sam obwód jest bombardowany tysiącami relacji z imprez, sukcesów i zakupów innych ludzi. Studium przypadku poniżej przedstawia dramat nastolatki w pułapce wiecznych porównań społecznych na Instagramie.'
+      ],
+      caseStudyRef: chapterThirteenCaseStudyFomoMaja
     },
     {
       id: 'sec-13-10',
       pageNumber: 640,
       sectionNumber: '13.10',
-      title: 'Wiadomości i emocje: Skrzywienie ku negatywności w mediach masowych',
+      title: 'Kultura influencerów i zniekształcenie rzeczywistości',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'W redakcjach informacyjnych od stu lat obowiązuje cyniczne powiedzenie: „If it bleeds, it leads” (Jeśli leje się krew, ląduje na pierwszej stronie).',
-        'Dlaczego serwisy informacyjne nie zaczynają się od wiadomości: „Dzisiaj w Polsce 38 milionów ludzi bezpiecznie dojechało do pracy, a 150 tysięcy lekarzy z sukcesem pomogło pacjentom”? Ponieważ taka wiadomość nie wzbudza strachu, więc nikt by jej nie obejrzał.',
-        'Nawiązując bezpośrednio do Rozdziału 2 Tomu I: ludzki mózg ma ewolucyjne Skrzywienie ku Negatywności (Negativity Bias). Informacja o drapieżniku czy katastrofie miała znaczenie krytyczne dla przetrwania. Kiedy codziennie oglądasz wiadomości, Twój mózg dochodzi do fałszywego wniosku, że świat stoi na krawędzi zagłady (Syndrom Wrogiego Świata - Mean World Syndrome George’a Gerbnera), co rodzi chroniczny lęk i apatię.'
+        'Przemysł influencerski to multimiliardowy biznes oparty na handlu pozorami. Widzisz 20-letniego chłopaka opierającego się o wynajęte Lamborghini lub uśmiechniętą modelkę z idealną cerą wygładzoną filtrem AI.',
+        'Kiedy porównujesz swoje szare, zwyczajne kulisy z cudzym, precyzyjnie oświetlonym spektaklem, Twój mózg doświadcza trwałego spadku dopaminy bazowej. Zapominasz, że to, co widzisz na ekranie, jest pracą aktorów reklamowych, a nie realnym życiem.'
       ]
     },
     {
       id: 'sec-13-11',
       pageNumber: 644,
       sectionNumber: '13.11',
-      title: 'Dezinformacja i fake news: Jak wirus kłamstwa infekuje umysł',
+      title: 'Fake news i dezinformacja: Dlaczego fałsz jest bardziej pociągający niż prawda',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Współczesna dezinformacja nie polega na prymitywnym kłamstwie, które łatwo obalić. To zaawansowana wojna kognitywna. Eksperci rozróżniają trzy poziomy zatrucia informacyjnego:',
-        '1. Misinformation: Fałszywa informacja powielana w dobrej wierze przez nieświadomych użytkowników.',
-        '2. Disinformation: Celowo sfabrykowane kłamstwo tworzone przez farmy trolli czy służby specjalne w celu wywołania chaosu i podziału społecznego.',
-        '3. Malinformation: Prawdziwa informacja wyrwana z kontekstu lub opublikowana z naruszeniem prawa, by zniszczyć reputację oponenta.',
-        'Najgroźniejszym zjawiskiem jest Efekt Prawdziwości Iluzorycznej (Illusory Truth Effect, Hasher, Goldstein, Toppino, 1977). Jeśli usłyszysz dowolną, nawet najbardziej absurdalną bzdurę 15 razy z różnych źródeł, Twój mózg zaczyna traktować ją jako znajomą. A to, co znajome (Płynność Poznawcza, Tom I), System 1 automatycznie klasyfikuje jako PRAWDĘ.'
+        'Prawda jest skomplikowana, nudna i obwarowana zastrzeżeniami („Badania wskazują na umiarkowaną korelację przy uwzględnieniu czynników X i Y”). Fałsz jest prosty, absolutny i spektakularny („Ten owoc niszczy 100% komórek raka!”).',
+        'Z punktu widzenia ewolucji, mózg poszukuje nowości (Novelty Seeking). Prawda rzadko bywa szokująco nowa; fake news zawsze oferuje tani zastrzyk nowości, co sprawia, że użytkownicy podają go dalej 6 razy szybciej niż rzetelną wiadomość.'
       ]
     },
     {
       id: 'sec-13-12',
       pageNumber: 648,
       sectionNumber: '13.12',
-      title: 'Sprawdzanie informacji: Warsztat myślenia krytycznego i Lateral Reading',
-      category: 'teoria',
+      title: 'Czytanie horyzontalne (Lateral Reading): Jak weryfikować źródła jak zawodowiec',
+      category: 'cwiczenia',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Jak nie dać zrobić sobie wody z mózgu? Stanford History Education Group pod kierownictwem prof. Sama Wineburga zbadała, jak z informacjami w sieci radzą sobie trzy grupy: wybitni profesorowie akademiccy, studenci oraz zawodowi weryfikatorzy faktów (Fact-checkerzy). Wynik był szokujący: profesorowie i studenci dali się oszukać w ponad 60% przypadków!',
-        'Dlaczego? Ponieważ stosowali Czytanie Wertykalne — wczytywali się w tekst fałszywej strony, analizowali przypisy, szatę graficzną i tytuły naukowe autorów (które były zmyślone).',
-        'Z kolei fact-checkerzy stosowali Czytanie Horyzontalne (Lateral Reading). Po wejściu na nieznaną stronę, spędzali na niej 3 sekundy, po czym natychmiast otwierali 5 NOWYCH KART w przeglądarce i sprawdzali: „Kto finansuje tę organizację?”, „Co o tym badaniu piszą recenzowane czasopisma medyczne?”, „Czy autor w ogóle istnieje w bazach naukowych?”. Zanim przeczytasz artykuł, dowiedz się, kim jest ten, kto go napisał.'
-      ]
+        'Badania Stanford University dowiodły, że czytanie wertykalne (zagłębianie się w sam podejrzany artykuł) jest gwarancją bycia oszukanym. Profesjonalni fact-checkerzy stosują czytanie horyzontalne: natychmiast otwierają nowe karty i sprawdzają źródło od zewnątrz.',
+        'Poniższy warsztat uczy, jak przeprowadzić 3-minutowy fact-checking dowolnej wiadomości.'
+      ],
+      exerciseRef: chapterThirteenExerciseLateralReading
     },
     {
       id: 'sec-13-13',
