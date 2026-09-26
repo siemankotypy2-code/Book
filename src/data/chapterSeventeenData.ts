@@ -26,12 +26,12 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
       { label: 'C', text: 'Trwałe unikanie kontaktów z ludźmi z innych krajów.', isCorrect: false },
       { label: 'D', text: 'Przekonanie, że każdy człowiek ma dokładnie te same cechy charakteru.', isCorrect: false }
     ],
-    explanation: 'Potrzeba spójności może sprawiać, że zachowanie niepasujące do przyjętej etykiety wywołuje napięcie lub skłania do wyjaśniania sytuacji w sposób zgodny z dotychczasowym obrazem siebie. Nie należy jednak przypisywać tej reakcji jednemu obszarowi mózgu.',
+    explanation: 'Mózg dąży do spójności (cognitive consistency). Gdy przyjmujesz etykietę „nieśmiałego”, ciało migdałowate traktuje próbę publicznego zabrania głosu jako złamanie wewnętrznego skryptu.',
     keyTakeaway: 'Etykieta staje się samospełniającą się przepowiednią, gdy pomylisz chwilowy nawyk ze sztywną cechą.'
   },
   {
     id: 3,
-    question: 'W jaki sposób aktywność Domyślnej Sieci Neuronalnej (Default Mode Network – DMN) może wiązać się z przetwarzaniem informacji o sobie i własnej przeszłości?',
+    question: 'W jaki sposób Domyślna Sieć Neuronalna (Default Mode Network – DMN) uczestniczy w tworzeniu narracji autobiograficznej?',
     topic: 'Neuronauka Tożsamości',
     sectionRef: 'Sekcja 17.1',
     options: [
@@ -40,8 +40,8 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
       { label: 'C', text: 'Aktywuje się wyłącznie w trakcie rozwiązywania skomplikowanych równań różniczkowych.', isCorrect: false },
       { label: 'D', text: 'Jest odpowiedzialna za skurcze mięśni gładkich układu pokarmowego.', isCorrect: false }
     ],
-    explanation: 'Aktywność DMN jest związana między innymi z przetwarzaniem informacji o sobie, wspomnieniami autobiograficznymi i wyobrażeniami dotyczącymi przyszłości. Nie oznacza to, że cała narracja o sobie powstaje wyłącznie w tej sieci.',
-    keyTakeaway: 'Tożsamość jest związana z wieloma współdziałającymi procesami poznawczymi i społecznymi, a nie z jednym mechanizmem mózgowym.'
+    explanation: 'Gdy nie rozwiązujemy zadania celowego, DMN generuje wewnętrzny monolog i opowieść autobiograficzną. To tam rekonstruowane są sensy i interpretacje minionych zdarzeń.',
+    keyTakeaway: 'Tożsamość jest wynikiem ciągłej pracy DMN, a nie jednorazowo wykutej rzeźby.'
   },
   {
     id: 4,
@@ -101,7 +101,7 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
   },
   {
     id: 8,
-    question: 'Jak nastawienie na rozwój (Growth Mindset) zmienia interpretację niepowodzenia?',
+    question: 'Co według Carol Dweck dzieje się w mózgu osoby o nastawieniu na rozwój (Growth Mindset), gdy napotyka porażkę tożsamościową?',
     topic: 'Growth Mindset a Tożsamość',
     sectionRef: 'Sekcja 17.13',
     options: [
@@ -129,7 +129,7 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
   },
   {
     id: 10,
-    question: 'Jakie zagrożenie niesie ze sobą silna tendencja do obrony dotychczasowego obrazu siebie w obliczu nowych, sprzecznych danych?',
+    question: 'Jakie zagrożenie niesie ze sobą nadmierna obrona obrazu siebie (Identity Preservation Bias) w obliczu nowych, twardych faktów?',
     topic: 'Obrona Obrazu Siebie',
     sectionRef: 'Sekcja 17.10',
     options: [
@@ -253,18 +253,6 @@ export const chapterSeventeenExamQuestions: ExamQuestion[] = [
     explanation: 'Tożsamość procesowa pozwala na ciągły rozwój bez lęku, że zmiana poglądu jest dowodem na „zdradę samego siebie”.',
     keyTakeaway: 'Możesz zmieniać poglądy i zachowania, pozostając wiernym swojej drodze rozwoju.'
   }
-,
-  { id: "deep-17.22", pageNumber:40, sectionNumber:"17.22", title:"Tożsamość jako model roboczy", category:"teoria", readingTimeMinutes:8, paragraphs:["Tożsamość można traktować jako model roboczy, za pomocą którego człowiek porządkuje informacje o sobie. Model nie jest fotografią całej osoby. Wybiera pewne cechy, role, wspomnienia i znaczenia, ponieważ nie da się jednocześnie utrzymywać w centrum uwagi całej historii życia. Dlatego opis siebie zmienia się wraz z kontekstem, aktualnymi celami i doświadczeniami.","Ważne jest rozróżnienie stabilności od niezmienności. Stabilność oznacza, że pewne wzorce utrzymują się wystarczająco długo, aby można było na nich polegać. Niezmienność oznaczałaby brak realnej możliwości rozwoju. Człowiek może zachowywać poczucie ciągłości, a jednocześnie zmieniać role, kompetencje, poglądy i sposób działania.","Pomocne pytanie brzmi nie tylko „jaki jestem?”, lecz także „w jakich warunkach taki się staję?”. Osoba opisująca siebie jako nieśmiałą może być cicha w nowej grupie, ale bardzo rozmowna wśród bliskich. Ta różnica jest informacją o kontekście, a nie automatycznym dowodem hipokryzji."] },
-  { id: "deep-17.23", pageNumber:41, sectionNumber:"17.23", title:"Pamięć autobiograficzna nie jest nagraniem", category:"teoria", readingTimeMinutes:8, paragraphs:["Wspomnienie może być jednocześnie związane z rzeczywistym doświadczeniem i rekonstruowane podczas przypominania. Pamięć autobiograficzna nie działa jak kamera, która przechowuje pełny zapis wydarzenia. Przywoływanie korzysta z wcześniejszych informacji, ale znaczenie wydarzenia może być modyfikowane przez późniejsze doświadczenia i aktualną interpretację.","Ma to znaczenie dla obrazu siebie. Jeśli ktoś pamięta siebie jako „zawsze słabego ucznia”, kilka porażek może dominować nad mniej spektakularnymi sukcesami. Z kolei osoba przekonana, że „zawsze dawała sobie radę”, może pomijać okresy zależności od innych. Nie musi to oznaczać świadomego kłamstwa. Selekcja i dostępność wspomnień wpływają na narrację.","Dojrzała praca z przeszłością nie polega na zamianie jednej opowieści na bardziej pochlebną. Polega na poszerzeniu zbioru danych: co rzeczywiście pamiętam, co można sprawdzić, czego nie wiem i jakie inne znaczenie jest zgodne z faktami?"] },
-  { id: "deep-17.24", pageNumber:42, sectionNumber:"17.24", title:"Etykieta opisuje, ale czasem zaczyna nakazywać", category:"teoria", readingTimeMinutes:8, paragraphs:["Zdanie „jestem sportowcem” może być użyteczne, jeśli pomaga organizować trening i cele. Problem pojawia się wtedy, gdy etykieta zaczyna działać jak reguła: „sportowiec nie może odpoczywać”, „humanista nie powinien interesować się matematyką”, „odpowiedzialna osoba nie popełnia błędów”. Opis zmienia się wtedy w normę.","Warto rozróżniać etykietę opisową od preskryptywnej. Pierwsza mówi, że coś jest częścią obecnej historii. Druga mówi, że skoro jestem taki, muszę zawsze zachowywać się w określony sposób. To może utrudniać uczenie się, bo zachowanie odbiegające od etykiety zaczyna wyglądać jak zagrożenie dla całego obrazu siebie.","Pomocna jest zamiana globalnego sądu na opis warunkowy. Zamiast „jestem nieśmiały” można powiedzieć: „w nowych grupach potrzebuję czasu, zanim zabiorę głos”. Druga wersja nie usuwa trudności, ale wskazuje sytuację, zachowanie i możliwość sprawdzenia zmiany."] },
-  { id: "deep-17.25", pageNumber:43, sectionNumber:"17.25", title:"Ciągłość bez zamrożenia", category:"teoria", readingTimeMinutes:8, paragraphs:["Zmiana szkoły, pracy, miejsca zamieszkania, związku albo sposobu życia może osłabić dotychczasowe odpowiedzi na pytania „kim jestem?” i „gdzie należę?”. Nie każdy taki okres oznacza kryzys kliniczny. Często jest to zwykły koszt przebudowy modelu siebie, gdy stare role przestają wystarczać.","Jednym ze sposobów zachowania ciągłości jest wskazanie elementów, które przetrwały zmianę: wartości, ważne relacje, zainteresowania, sposób rozwiązywania problemów albo długoterminowy kierunek. Inne elementy mogą zostać porzucone. Dzięki temu zmiana nie musi wyglądać jak wymiana całej osoby na nową.","Nowe środowisko dostarcza też danych. Osoba przekonana, że jest „kiepska w wystąpieniach”, może odkryć, że największą trudność powodował brak przygotowania lub nieznajomość grupy. Nowe doświadczenie nie kasuje automatycznie starego przekonania, ale może zmienić jego zakres."] },
-  { id: "deep-17.26", pageNumber:44, sectionNumber:"17.26", title:"Tożsamość jako proces do obserwowania", category:"teoria", readingTimeMinutes:8, paragraphs:["Tożsamość nie musi być traktowana jako ukryty przedmiot, który trzeba kiedyś odnaleźć. Jest także sposobem organizowania doświadczeń: rozpoznawania ról, wybierania znaczeń, przewidywania własnego zachowania i utrzymywania poczucia ciągłości.","Użyteczny opis siebie powinien pomagać przewidywać zachowanie, podejmować decyzje i uczyć się. Jeśli zaczyna blokować informacje sprzeczne z rzeczywistością, warto go skorygować. Pytanie „kim jestem?” dobrze uzupełnić pytaniami „co robię?”, „w jakich warunkach?”, „co jest dla mnie ważne?” i „jakie dane mogłyby zmienić mój opis?”.","To przygotowuje następny rozdział. Skoro obraz siebie zawiera interpretacje, trzeba przyjrzeć się przekonaniom, które wpływają na to, jak człowiek rozumie wydarzenia i samego siebie."] },
-
-  { id:19, question:"Co najlepiej odróżnia opis faktu od interpretacji?", topic:"Tożsamość — kim właściwie jestem?", sectionRef:"Sekcja 17.22", options:[{"label":"A","text":"Opis faktu można w większym stopniu sprawdzić niezależnie od znaczenia, które mu nadajemy.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
-  { id:20, question:"Co jest przykładem rozsądnej aktualizacji przekonania?", topic:"Tożsamość — kim właściwie jestem?", sectionRef:"Sekcja 17.23", options:[{"label":"A","text":"Zmiana stopnia pewności po pojawieniu się istotnych danych, bez konieczności przechodzenia do przeciwnej skrajności.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
-  { id:21, question:"Dlaczego warto uwzględniać kontekst przy ocenie siebie?", topic:"Tożsamość — kim właściwie jestem?", sectionRef:"Sekcja 17.24", options:[{"label":"A","text":"To samo zachowanie może mieć różne znaczenie i częstość w zależności od sytuacji.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
-  { id:22, question:"Co zwiększa wartość informacji zwrotnej?", topic:"Tożsamość — kim właściwie jestem?", sectionRef:"Sekcja 17.25", options:[{"label":"A","text":"Wskazanie konkretnego zachowania, warunku lub wyniku, który można ponownie zaobserwować.","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
-  { id:23, question:"Które pytanie ma charakter metapoznawczy?", topic:"Tożsamość — kim właściwie jestem?", sectionRef:"Sekcja 17.26", options:[{"label":"A","text":"Co wiem, skąd to wiem i jakie dane mogłyby pokazać, że mój wniosek jest nietrafny?","isCorrect":true},{"label":"B","text":"Pierwsza intuicja zawsze jest najlepszym źródłem prawdy.","isCorrect":false},{"label":"C","text":"Najlepiej oceniać siebie wyłącznie na podstawie opinii jednej osoby.","isCorrect":false},{"label":"D","text":"Nowa informacja powinna zawsze całkowicie odwracać wcześniejszy pogląd.","isCorrect":false}], explanation:"Poprawna odpowiedź wykorzystuje mechanizm opisany w rozdziale i uwzględnia ograniczenia prostych, kategorycznych wniosków.", keyTakeaway:"Precyzyjne rozumowanie wymaga danych, kontekstu i gotowości do korekty." },
 ];
 
 export const caseStudiesChapterSeventeen: CaseStudy[] = [
@@ -698,72 +686,7 @@ export const caseStudiesChapterSeventeen: CaseStudy[] = [
     alternativePath: 'Gdyby Kamil trwał w żalu i odrzucał rekonstrukcję, popadłby w uzależnienie od alkoholu lub środków przeciwbólowych.',
     readerQuestion: 'Gdyby sytuacja losowa odebrała Ci Twoją główną sprawność lub atut, co pozostałoby Twoim fundamentem?',
     keyTakeaway: 'Nigdy nie opieraj swojego self-concept na jednym filarze. Dojrzała tożsamość to stabilny wielokąt.'
-  },
-  {
-    id:"17-deep-8", title:"uczeń: jedna sytuacja nie definiuje całej osoby", subtitle:"Rozbudowane studium przypadku",
-    protagonist:"uczeń", context:"Sytuacja codzienna wymagająca analizy własnego modelu siebie i danych.",
-    story:["Bohaterem jest uczeń, który w sytuacji związanej z tematem rozdziału interpretuje pojedyncze doświadczenie jako informację o całym sobie.","Pierwsza interpretacja pojawia się szybko: wydarzenie zostaje połączone z wcześniejszym przekonaniem. Emocja sprawia, że wniosek wydaje się bardziej oczywisty, niż wynika to z samych danych.","W dalszej analizie bohater rozdziela fakt, interpretację i przewidywanie. Odkrywa również dane, które nie pasują do pierwszego wyjaśnienia. Nie oznacza to, że pierwsza intuicja była całkowicie błędna; była po prostu szersza niż dostępne dowody.","Bohater wybiera działanie, które pozwala zebrać kolejną informację. Dzięki temu zmiana nie polega na przyjęciu przeciwnej skrajności, lecz na doprecyzowaniu własnego modelu."],
-    decisionTaken:"Bohater zatrzymał pierwszy wniosek i sprawdził jego zakres.",
-    whatProtagonistSaw:"Zdarzenie oraz własną natychmiastową reakcję.",
-    whatWasMissed:"Kontekst, dane przeciwne i alternatywne wyjaśnienia.",
-    psychologicalAnalysis:{
-      coreMechanism:"Konfrontacja globalnego samoopisu z konkretnymi danymi i kontekstem.",
-      cognitiveBiases:[
-        {name:"nadmierna generalizacja",description:"Pojedyncze doświadczenie zostało rozszerzone na szerszy sąd.",impact:"Zmniejszyło precyzję samoopisu lub oceny sytuacji."},
-        {name:"selekcja informacji",description:"Dane zgodne z pierwszą hipotezą były łatwiejsze do zauważenia.",impact:"Wzmacniało początkową interpretację."}
-      ],
-      defenseMechanisms:[{name:"racjonalizacja",explanation:"Nieprzyjemna informacja została początkowo wyjaśniona w sposób chroniący wcześniejszy obraz siebie."}],
-      emotionalDynamic:"Napięcie zwiększało atrakcyjność szybkiego wyjaśnienia; spokojne zebranie danych poszerzyło pole możliwych interpretacji."
-    },
-    decisionProcessAnalysis:{trigger:"konkretne zdarzenie",attentionFocus:"element zgodny z wcześniejszym modelem",interpretation:"pierwszy wniosek",emotion:"napięcie lub niepewność",impulse:"szybko wyjaśnić sytuację",action:"zebrać dodatkowe dane",consequence:"bardziej precyzyjna decyzja"},
-    neurobiologicalAnalysis:{
-      brainRegions:[
-        {region:"sieci uwagi i kontroli poznawczej",role:"wspierają utrzymanie celu i porównywanie informacji",activationState:"udział zależny od zadania i kontekstu"},
-        {region:"systemy pamięci",role:"dostarczają informacji o wcześniejszych doświadczeniach",activationState:"nie są pojedynczym ośrodkiem określonego zachowania"}
-      ],
-      neurotransmitters:[{name:"układy neuromodulacyjne",roleInScenario:"mogą modulować pobudzenie, uwagę i uczenie się; nie stanowią samodzielnego wyjaśnienia całej reakcji."}],
-      biologicalTimeline:[{timeMs:"brak sztywnej osi",process:"Zachowanie powstaje poprzez współdziałanie wielu procesów, dlatego unikamy pozornej precyzji czasowej."}]
-    },
-    influenceAndManipulation:{tacticsUsed:[],counterMeasures:[
-      {step:"Oddziel dane od wniosku",script:"Najpierw zapiszę, co faktycznie wiem.",rationale:"Zmniejsza ryzyko pomylenia hipotezy z faktem."},
-      {step:"Poszukaj alternatywy",script:"Jakie są dwa inne rozsądne wyjaśnienia?",rationale:"Chroni przed zbyt szybkim zamknięciem interpretacji."}
-    ]},
-    alternativePath:"Można było wcześniej ustalić, jakie dane mogłyby zmienić wniosek.",
-    readerQuestion:"Który fragment historii jest faktem, a który interpretacją?",
-    keyTakeaway:"Dobra analiza nie usuwa pierwszej intuicji; sprawdza jej zakres i warunki."
-  },  {
-    id:"17-deep-9", title:"pracownik zmieniający środowisko: decyzja pod presją własnego modelu", subtitle:"Rozbudowane studium przypadku",
-    protagonist:"pracownik zmieniający środowisko", context:"Sytuacja codzienna wymagająca analizy własnego modelu siebie i danych.",
-    story:["Drugi przypadek dotyczy pracownik zmieniający środowisko, który musi podjąć decyzję pod presją własnego obrazu sytuacji.","Najpierw próbuje zachować spójność z dotychczasowym opisem siebie. Argumenty zgodne z wcześniejszym poglądem przychodzą łatwiej, a dane sprzeczne wymagają dodatkowego namysłu.","Punkt zwrotny pojawia się wtedy, gdy bohater pyta, jakie informacje zmieniłyby jego zdanie. Okazuje się, że dotąd nie miał jasnego warunku aktualizacji.","Po zebraniu danych bohater nie otrzymuje jednej magicznej odpowiedzi. Zyskuje natomiast bardziej precyzyjny sposób podejmowania decyzji: rozpoznaje ograniczenia, koszty, alternatywy i poziom własnej pewności."],
-    decisionTaken:"Bohater zatrzymał pierwszy wniosek i sprawdził jego zakres.",
-    whatProtagonistSaw:"Zdarzenie oraz własną natychmiastową reakcję.",
-    whatWasMissed:"Kontekst, dane przeciwne i alternatywne wyjaśnienia.",
-    psychologicalAnalysis:{
-      coreMechanism:"Konflikt między potrzebą spójności a koniecznością aktualizacji modelu na podstawie nowych danych.",
-      cognitiveBiases:[
-        {name:"nadmierna generalizacja",description:"Pojedyncze doświadczenie zostało rozszerzone na szerszy sąd.",impact:"Zmniejszyło precyzję samoopisu lub oceny sytuacji."},
-        {name:"selekcja informacji",description:"Dane zgodne z pierwszą hipotezą były łatwiejsze do zauważenia.",impact:"Wzmacniało początkową interpretację."}
-      ],
-      defenseMechanisms:[{name:"racjonalizacja",explanation:"Nieprzyjemna informacja została początkowo wyjaśniona w sposób chroniący wcześniejszy obraz siebie."}],
-      emotionalDynamic:"Napięcie zwiększało atrakcyjność szybkiego wyjaśnienia; spokojne zebranie danych poszerzyło pole możliwych interpretacji."
-    },
-    decisionProcessAnalysis:{trigger:"konkretne zdarzenie",attentionFocus:"element zgodny z wcześniejszym modelem",interpretation:"pierwszy wniosek",emotion:"napięcie lub niepewność",impulse:"szybko wyjaśnić sytuację",action:"zebrać dodatkowe dane",consequence:"bardziej precyzyjna decyzja"},
-    neurobiologicalAnalysis:{
-      brainRegions:[
-        {region:"sieci uwagi i kontroli poznawczej",role:"wspierają utrzymanie celu i porównywanie informacji",activationState:"udział zależny od zadania i kontekstu"},
-        {region:"systemy pamięci",role:"dostarczają informacji o wcześniejszych doświadczeniach",activationState:"nie są pojedynczym ośrodkiem określonego zachowania"}
-      ],
-      neurotransmitters:[{name:"układy neuromodulacyjne",roleInScenario:"mogą modulować pobudzenie, uwagę i uczenie się; nie stanowią samodzielnego wyjaśnienia całej reakcji."}],
-      biologicalTimeline:[{timeMs:"brak sztywnej osi",process:"Zachowanie powstaje poprzez współdziałanie wielu procesów, dlatego unikamy pozornej precyzji czasowej."}]
-    },
-    influenceAndManipulation:{tacticsUsed:[],counterMeasures:[
-      {step:"Oddziel dane od wniosku",script:"Najpierw zapiszę, co faktycznie wiem.",rationale:"Zmniejsza ryzyko pomylenia hipotezy z faktem."},
-      {step:"Poszukaj alternatywy",script:"Jakie są dwa inne rozsądne wyjaśnienia?",rationale:"Chroni przed zbyt szybkim zamknięciem interpretacji."}
-    ]},
-    alternativePath:"Można było wcześniej ustalić, jakie dane mogłyby zmienić wniosek.",
-    readerQuestion:"Który fragment historii jest faktem, a który interpretacją?",
-    keyTakeaway:"Dobra analiza nie usuwa pierwszej intuicji; sprawdza jej zakres i warunki."
-  },
+  }
 ];
 
 export const selfExercisesChapterSeventeen: SelfExercise[] = [
@@ -773,7 +696,7 @@ export const selfExercisesChapterSeventeen: SelfExercise[] = [
     subtitle: 'Przekształcanie sztywnych przekonań tożsamościowych w plastyczne opisy behawioralne',
     objective: 'Identyfikacja ograniczających etykiet na własny temat i zamiana ich na elastyczny opis sytuacji oraz nawyków.',
     durationMinutes: 20,
-    neuroScientificFoundation: 'Zmiana sposobu myślenia i działania może wiązać się z uczeniem i plastycznością układu nerwowego; nie wymaga jednak prostego modelu „przełamywania obwodów DMN”.',
+    neuroScientificFoundation: 'Neuroplastyczność kory przedczołowej wymaga przełamania utrwalonych obwodów Domyślnej Sieci Neuronalnej (DMN), które automatycznie aktywują starą narrację o sobie.',
     steps: [
       {
         stepNumber: 1,
@@ -979,9 +902,7 @@ export const selfExercisesChapterSeventeen: SelfExercise[] = [
     reflectionQuestions: [
       'Jak ta nowa deklaracja zmienia Twoje podejście do dzisiejszych, najtrudniejszych zadań?'
     ]
-  },
-  {id:"deep-17-ex-a",title:"Analiza przypadku krok po kroku",subtitle:"Od automatycznej oceny do sprawdzalnej hipotezy",objective:"Nauczyć się oddzielać dane od interpretacji i planować następny krok.",durationMinutes:18,neuroScientificFoundation:"Ćwiczenie rozwija metapoznawcze monitorowanie własnych ocen; nie zakłada jednego mechanizmu neuronalnego.",steps:[{stepNumber:1,title:"Zapisz konkretną sytuację.",instruction:"Zapisz konkretną sytuację.",promptText:"Co dokładnie się wydarzyło?",placeholder:"Zapisz odpowiedź tutaj."},{stepNumber:2,title:"Oddziel obserwowalne fakty od własnego wniosku.",instruction:"Oddziel obserwowalne fakty od własnego wniosku.",promptText:"Co dopowiedziałem?",placeholder:"Zapisz odpowiedź tutaj."},{stepNumber:3,title:"Wypisz dwa alternatywne wyjaśnienia.",instruction:"Wypisz dwa alternatywne wyjaśnienia.",promptText:"Co jeszcze może być prawdą?",placeholder:"Zapisz odpowiedź tutaj."},{stepNumber:4,title:"Zaplanuj mały test lub działanie.",instruction:"Zaplanuj mały test lub działanie.",promptText:"Co mogę sprawdzić?",placeholder:"Zapisz odpowiedź tutaj."}],reflectionQuestions:["Co było faktem?","Który wniosek był najbardziej niepewny?","Jak zmienił się plan działania?"]},
-  {id:"deep-17-ex-b",title:"Eksperyment z własnym opisem",subtitle:"Sprawdź, czy opis siebie przewiduje zachowanie",objective:"Porównać etykietę lub przekonanie z rzeczywistymi danymi z kilku sytuacji.",durationMinutes:20,neuroScientificFoundation:"Ćwiczenie wykorzystuje obserwację zachowania i aktualizację modelu siebie na podstawie powtarzających się danych.",steps:[{stepNumber:1,title:"Wybierz jedno zdanie o sobie.",instruction:"Wybierz jedno zdanie o sobie.",promptText:"Jak brzmi mój obecny opis?",placeholder:"Zapisz obserwacje."},{stepNumber:2,title:"Przez tydzień zbieraj konkretne przykłady za i przeciw.",instruction:"Przez tydzień zbieraj konkretne przykłady za i przeciw.",promptText:"Jakie mam dane?",placeholder:"Zapisz obserwacje."},{stepNumber:3,title:"Zaznacz warunki, w których opis działa.",instruction:"Zaznacz warunki, w których opis działa.",promptText:"Kiedy opis jest mniej trafny?",placeholder:"Zapisz obserwacje."},{stepNumber:4,title:"Przepisz zdanie tak, aby uwzględniało kontekst.",instruction:"Przepisz zdanie tak, aby uwzględniało kontekst.",promptText:"Jak brzmi bardziej precyzyjna wersja?",placeholder:"Zapisz obserwacje."}],reflectionQuestions:["Czy etykieta była zbyt globalna?","Jakie warunki miały znaczenie?","Co chcę sprawdzić ponownie?"]},
+  }
 ];
 
 export const chapterSeventeen: Chapter = {
@@ -1006,7 +927,7 @@ export const chapterSeventeen: Chapter = {
       },
       paragraphs: [
         'Wielu ludzi spędza całe życie na poszukiwaniu tzw. „prawdziwego ja”, żywiąc głębokie przekonanie, że gdzieś wewnątrz nich istnieje stały, nieprzetworzony rdzeń osobowości. Oczekują, że pewnego dnia natrafią na ten fundament i odtąd wszystkie decyzje staną się proste. Jest to jednak jedna z najbardziej powszechnych iluzji poznawczych.',
-        'Nie ma jednego „ośrodka jaźni”. Obraz siebie jest związany z działaniem wielu współpracujących procesów i sieci mózgowych. DMN jest jedną z sieci istotnych dla przetwarzania informacji związanych z sobą, pamięcią autobiograficzną i wyobrażaniem przyszłości, ale nie wyjaśnia całej tożsamości samodzielnie.',
+        'Współczesna neuronauka poznawcza wyraźnie pokazuje, że mózg nie posiada jednego „ośrodka jaźni”. Wyobrażenie o sobie powstaje w wyniku skoordynowanej pracy Domyślnej Sieci Neuronalnej (Default Mode Network – DMN), która łączy fragmenty wspomnień, wyobrażenia przyszłości, oceny społeczne i sygnały z ciała w jedną, spójną opowieść.',
         'Gdy mówisz „Jestem introwertykiem”, „Jestem urodzonym liderem” lub „Nie mam talentu do języków”, nie opisujesz obiektywnego faktu fizycznego, takiego jak wzrost czy grupa krvi. Wyrażasz w ten sposób zrekonstruowaną hipotezę tożsamościową, do której Twój umysł dopasował wybrane dowody z przeszłości.',
         'Ta hipoteza staje się soczewką, przez którą przesiewasz każde nowe doświadczenie. Zrozumienie procesowego charakteru tożsamości zdejmuje z nas ciężar esencjalizmu i otwiera przestrzeń do świadomej autotransformacji.'
       ],
@@ -1015,7 +936,7 @@ export const chapterSeventeen: Chapter = {
           title: 'Dynamiczna rekonstrukcja self-concept',
           paragraphs: [
             'Obraz siebie (self-concept) ulega nieustannej aktualizacji. Każde nowe doświadczenie, odniesiony sukces czy poniesiona porażka jest przesiewana przez istniejące filtry, ale ma też potencjał do modyfikacji całej struktury.',
-            'Problem polega na tym, że człowiek może silnie preferować spójność dotychczasowego obrazu siebie. W efekcie może szukać uzasadnień, pomijać część danych lub reinterpretować informacje, które są z nim sprzeczne. Nie jest to jedna formalna „tendencja” wyjaśniająca każde zachowanie.'
+            'Problem polega na tym, że umysł wykazuje potężny odruch zachowawczy (Identity Preservation Bias). Woli trzymać się znanej, nawet krzywdzącej etykiety, niż wejść w stan niepewności związany ze zmianą wyobrażenia o sobie.'
           ],
           highlightBox: {
             title: 'Wgląd Neuronaukowy: DMN a narracja o sobie',
@@ -1082,7 +1003,7 @@ export const chapterSeventeen: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 9,
       paragraphs: [
-        'Kiedy powtarzasz sobie „ja już taki jestem”, możesz wzmacniać interpretację nowych sytuacji przez dotychczasowy opis siebie. Próba odezwania się na forum może wtedy wywołać napięcie nie dlatego, że istnieje jeden mózgowy „ośrodek etykiety”, lecz dlatego, że sytuacja koliduje z oczekiwaniami i wcześniejszym doświadczeniem.',
+        'Kiedy powtarzasz sobie lub innym: „Ja już taki jestem”, uruchamiasz potężny mechanizm poznawczy. Mózg dąży do spójności (cognitive consistency). Jeśli uwierzysz, że jesteś osobą nieśmiałą, każda próba odezwania się na forum będzie traktowana przez ciało migdałowate jako zagrożenie dla przyjętej tożsamości.',
         'Etykiety działają jak soczewka, która przepuszcza tylko te dowody, które potwierdzają przyjęty schemat. Błąd potłuczenia szklanki przez osobę o etykiecie „gajowy i niezgrabny” zostanie uznany za dowód reguły, podczas gdy u osoby o etykiecie „zręcznego sportowca” zostanie potraktowany jako przypadek.',
         'Proces ten, zwany self-stereotyping, sprawia, że ludzie dobrowolnie nakładają na siebie ograniczenia, unikając wyzwań, które mogłyby wzbogacić ich kompetencje.'
       ],
@@ -1097,7 +1018,7 @@ export const chapterSeventeen: Chapter = {
       readingTimeMinutes: 10,
       paragraphs: [
         'Większość ludzi wierzy, że wspomnienia są przechowywane w mózgu jak pliki MP4 na twardym dysku. Tymczasem odnajdywanie wspomnień jest procesem twórczym. Każde przywołanie wydarzenia z przeszłości jest jego ponownym przepisaniem w kontekście aktualnego stanu emocjonalnego.',
-        'W koncepcji tożsamości narracyjnej Dana McAdamsa człowiek organizuje część doświadczeń w opowieść o własnym życiu, nadając wydarzeniom znaczenie i budując poczucie ciągłości.',
+        'Dan McAdams, badacz psychologii narracyjnej, wykazał, że tożsamość to wyreżyserowana opowieść, w której człowiek przydziela sobie rolę ofiary, bohatera, uciekiniera lub męczennika.',
         'Zmieniając sposób opowiadania o swoich porażkach z przeszłości, zmienia się struktura połączeń neuronalnych odpowiedzialnych za odczuwanie lęku i sprawczości.'
       ]
     },
@@ -1280,7 +1201,7 @@ export const chapterSeventeen: Chapter = {
       category: 'podsumowanie',
       readingTimeMinutes: 6,
       paragraphs: [
-        '1. Tożsamość nie jest sztywnym rdzeniem; jest kształtowana przez współdziałanie procesów poznawczych, społecznych, rozwojowych i biologicznych.',
+        '1. Tożsamość nie jest sztywnym rdzeniem, lecz dynamicznym procesem rekonstruowanym przez DMN.',
         '2. Etykiety „ja taki jestem” działają jak samospełniające się przepowiednie, blokujące neuroplastyczność.',
         '3. Zamiana zdań esencjalistycznych na opisy behawioralne odzyskuje sprawczość w dlPFC.',
         '4. Zrównoważona tożsamość stoi na wielu niezależnych filarach i elastyczności w odgrywaniu ról.'
