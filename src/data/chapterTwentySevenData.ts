@@ -155,6 +155,90 @@ export const chapterTwentySevenExamQuestions: ExamQuestion[] = [
     ],
     explanation: 'Człowiek to system zoptymalizowany pod kątem oszczędzania energii. Jeśli sięgnięcie po rozpraszacz wymaga 0 sekund, a skupienie na nauce wymaga ciągłego hamowania impulsu, układ nerwowy w końcu wybierze ścieżkę najmniejszego oporu. Zmiana geometrii otoczenia chroni zasoby kory przedczołowej.',
     keyTakeaway: 'Nie tocz codziennych heroicznych bitew z pokusami. Zaprojektuj przestrzeń tak, by nie wymagała bohaterstwa.'
+  },
+  {
+    id: 11,
+    question: 'Dlaczego to samo zdarzenie fizjologiczne (np. przyspieszony rytm serca, ściśnięty żołądek) może zostać przeżyte jako paniczny lęk, ekscytacja lub gniew (Sekcja 27.4)?',
+    topic: 'Teorie Emocji: Ciało, Pobudzenie i Znaczenie Poznawcze',
+    sectionRef: 'Sekcja 27.4',
+    options: [
+      { label: 'A', text: 'Ponieważ każda emocja ma uniwersalny, niezmienny biologiczny „odcisk palca”, który zawsze da się bezbłędnie zmierzyć aparaturą medyczną.', isCorrect: false },
+      { label: 'B', text: 'Zgodnie z teoriami oceny poznawczej (appraisal) oraz podejściem Schachtera i Singera, samo pobudzenie autonomiczne nie wyznacza jeszcze jakości emocji — to interpretacja kontekstu, relacja do celów i nadane znaczenie decydują o subiektywnym doświadczeniu.', isCorrect: true },
+      { label: 'C', text: 'Emocje nie mają żadnego związku z ciałem i są wyłącznie abstrakcyjnymi ideami filozoficznymi.', isCorrect: false },
+      { label: 'D', text: 'Ludzie nigdy nie odczuwają przyspieszonego bicia serca przy pozytywnych emocjach.', isCorrect: false }
+    ],
+    explanation: 'Pojedynczy komponent fizjologiczny nie wystarcza do opisu procesu emocjonalnego. Tętno rośnie przy bieganiu, kofeinie, radości i panice. Dopiero ocena poznawcza („Czy to zagrożenie dla moich celów? Czy mam nad tym kontrolę?”) nadaje pobudzeniu określony wektor psychologiczny.',
+    keyTakeaway: 'Stan ciała dostarcza energii i sygnału pobudzenia, ale to poznawcza ocena znaczenia konstruuje treść emocji.'
+  },
+  {
+    id: 12,
+    question: 'W modelu procesowym Jamesa Grossa wyróżnia się pięć etapów regulacji emocji. Dlaczego poznawcza reinterpretacja (Cognitive Reappraisal) jest zazwyczaj bardziej adaptacyjna niż chroniczne tłumienie ekspresji (Expressive Suppression) (Sekcja 27.9)?',
+    topic: 'Model Regulacji Emocji Jamesa Grossa',
+    sectionRef: 'Sekcja 27.9',
+    options: [
+      { label: 'A', text: 'Ponieważ tłumienie emocji zawsze natychmiast powoduje zawał serca u każdego człowieka.', isCorrect: false },
+      { label: 'B', text: 'Reinterpretacja zachodzi na wczesnym etapie procesu (zmienia znaczenie sytuacji, zanim afekt zdominuje ciało), podczas gdy tłumienie blokuje jedynie zewnętrzną ekspresję przy utrzymującym się wysokim pobudzeniu somatycznym i kosztach poznawczych.', isCorrect: true },
+      { label: 'C', text: 'Reinterpretacja polega na bezkrytycznym, naiwnym myśleniu pozytywnym za wszelką cenę.', isCorrect: false },
+      { label: 'D', text: 'Tłumienie jest jedyną zalecaną techniką w psychologii klinicznej.', isCorrect: false }
+    ],
+    explanation: 'Tłumienie to próba powstrzymania rzeki tamą u samego ujścia — wymaga ciągłego wysiłku kory przedczołowej i obciąża układ krążenia. Reinterpretacja reguluje emocję u źródła, zmieniając interpretację poznawczą („On nie odpisuje nie dlatego, że mnie nienawidzi, lecz dlatego, że prowadzi auto”).',
+    keyTakeaway: 'Regulacja emocji nie polega na zaciskaniu zębów. Polega na elastycznym doborze strategii — od modyfikacji środowiska po zmianę interpretacji.'
+  },
+  {
+    id: 13,
+    question: 'W eksperymentach nad ślepotą nieuwagi (Inattentional Blindness) uczestnicy liczący podania piłki nie zauważają osoby przechodzącej przez środek kadru w stroju goryla. Jakie fundamentalne prawo uwagi wyjaśnia to zjawisko w podejmowaniu decyzji (Sekcja 27.3)?',
+    topic: 'Ślepota Nieuwagi i Iluzja Kamery',
+    sectionRef: 'Sekcja 27.3',
+    options: [
+      { label: 'A', text: 'Ludzki umysł działa jak kamera wideo i zawsze rejestruje wszystkie obiekty w polu widzenia.', isCorrect: false },
+      { label: 'B', text: 'Fizyczny dostęp sensoryczny do bodźca nie gwarantuje jego świadomego zauważenia i przetworzenia — uwaga sterowana odgórnie (top-down) silnie filtruje bodźce, sprawiając, że nawet wyraźne fakty mogą pozostać poza świadomością.', isCorrect: true },
+      { label: 'C', text: 'Ślepota nieuwagi występuje wyłącznie u osób z uszkodzeniami płata potylicznego.', isCorrect: false },
+      { label: 'D', text: 'Wszyscy uczestnicy eksperymentu celowo kłamali badaczom.', isCorrect: false }
+    ],
+    explanation: 'Uwaga to ograniczony zasób selekcyjny. Gdy kora przedczołowa koncentruje się na konkretnym celu (np. liczeniu podań lub szukaniu błędu w arkuszu), bodźce niezwiązane z tym celem są aktywnie wygaszane. Dlatego partner lub współpracownik może autentycznie nie zauważyć gestu, choć patrzył w naszą stronę.',
+    keyTakeaway: 'Widzieć to nie to samo co zauważyć. Dostęp sensoryczny nie jest tożsamy ze świadomym przetworzeniem.'
+  },
+  {
+    id: 14,
+    question: 'Dlaczego tzw. multitasking przy złożonych zadaniach umysłowych jest biologiczną iluzją, niszczącą jakość decyzji (Sekcja 27.3)?',
+    topic: 'Koszt Przełączania Uwagi (Attentional Switching Cost)',
+    sectionRef: 'Sekcja 27.3',
+    options: [
+      { label: 'A', text: 'Mózg nie wykonuje dwóch wymagających poznawczo operacji równolegle, lecz gwałtownie przełącza się między nimi, płacąc za każde przejście kosztem metabolicznym (rekonfiguracja pamięci roboczej, spadek płynności, ryzyko błędu).', isCorrect: true },
+      { label: 'B', text: 'Mózg posiada nieograniczone zasoby uwagi i potrafi bez problemu pisać dwa trudne raporty naraz.', isCorrect: false },
+      { label: 'C', text: 'Multitasking jest szkodliwy tylko dla osób po 70. roku życia.', isCorrect: false },
+      { label: 'D', text: 'Dźwięki powiadomień zwiększają poziom ilorazu inteligencji o 15 punktów.', isCorrect: false }
+    ],
+    explanation: 'Możemy łączyć czynności wysoce zautomatyzowane (spacer i rozmowa), ale dwa zadania wymagające kontroli wykonawczej rywalizują o te same obwody czołowe. Przełączanie uwagi co 3 minuty wywołuje „resztkowe zaangażowanie uwagi” (attention residue) i dramatycznie obniża jakość przetwarzania.',
+    keyTakeaway: 'Czas spędzony przy biurku nie równa się czasowi skupienia. Prawdziwa głębia wymaga ochrony uwagi przed ciągłą fragmentacją.'
+  },
+  {
+    id: 15,
+    question: 'Jak powstaje pętla sprzężenia zwrotnego: Lęk → Selektywność Uwagi → Błąd Potwierdzenia → Decyzja Obronna (Sekcja 27.5)?',
+    topic: 'Afektywne Meblowanie Uwagi i Pętla Zagrożenia',
+    sectionRef: 'Sekcja 27.5',
+    options: [
+      { label: 'A', text: 'Lęk automatycznie zwiększa obiektywizm i otwiera umysł na wszystkie możliwe fakty w otoczeniu.', isCorrect: false },
+      { label: 'B', text: 'Stan afektywny podnosi istotność bodźców zgodnych z obawą; uwaga selektywnie wyławia neutralne sygnały (np. krótką odpowiedź, pauzę), interpretuje je jako wrogie, co wzmacnia lęk i prowadzi do nieadaptacyjnych decyzji obronnych.', isCorrect: true },
+      { label: 'C', text: 'Uwaga i emocje działają w całkowicie odrębnych półkulach mózgu i nie wpływają na siebie.', isCorrect: false },
+      { label: 'D', text: 'Zjawisko to występuje wyłącznie u dzieci w wieku przedszkolnym.', isCorrect: false }
+    ],
+    explanation: 'Emocja nie tylko informuje o stanie organizmu, ale staje się soczewką dla uwagi. Osoba obawiająca się odrzucenia zauważa każde mrugnięcie okiem i każdą zwłokę w odpisaniu, ignorując sygnały życzliwości. Ta asymetria uwagi utrwala fałszywą interpretację sytuacji.',
+    keyTakeaway: 'To, że zauważasz coś częściej pod wpływem emocji, nie oznacza, że występuje to częściej w obiektywnym świecie.'
+  },
+  {
+    id: 16,
+    question: 'W psychologii emocji moralnych i samoświadomych fundamentalne znaczenie ma rozróżnienie między WST YDEM a POCZUCIEM WINY (badania June Tangney). Dlaczego różnica ta decyduje o jakości uczenia się po błędzie (Sekcja 27.4 & 27.10)?',
+    topic: 'Wstyd a Poczucie Winy w Pętli Retrospekcji',
+    sectionRef: 'Sekcja 27.4',
+    options: [
+      { label: 'A', text: 'Wstyd dotyczy wyłącznie spraw finansowych, a poczucie winy dotyczy diety.', isCorrect: false },
+      { label: 'B', text: 'Wstyd jest negatywną oceną całego „ja” („Jestem beznadziejny”) i wywołuje wycofanie, zaprzeczenie lub agresję obronną; poczucie winy ocenia konkretne zachowanie („Zrobiłem błąd”) i mobilizuje do zadośćuczynienia oraz naprawy procesu.', isCorrect: true },
+      { label: 'C', text: 'Wstyd jest zawsze adaptacyjny, a poczucie winy zawsze patologiczne.', isCorrect: false },
+      { label: 'D', text: 'Te terminy oznaczają w języku naukowym dokładnie to samo.', isCorrect: false }
+    ],
+    explanation: 'Gdy po porażce uruchamia się wstyd, jednostka skupia się na obronie tożsamości (ucieczka w racjonalizację, atak na innych, prokrastynacja). Poczucie winy oddziela tożsamość od zachowania: „Jestem wartościowym człowiekiem, który podjął złą decyzję — co mogę naprawić w procesie?”.',
+    keyTakeaway: 'Oddziel ocenę swojego postępowania od oceny swojej wartości jako człowieka. Tylko wtedy błąd staje się lekcją zamiast wyrokiem.'
   }
 ];
 
@@ -386,14 +470,185 @@ export const chapterTwentySevenExerciseCounterfactualLab: SelfExercise = {
   ]
 };
 
+export const chapterTwentySevenCaseStudyRelationalConflict: CaseStudy = {
+  id: 'cs-ch27-relational-conflict',
+  title: 'Wiadomość o 22:15: Kaskada Uwagi, Lęku i Złości w Zespole',
+  subtitle: 'Jak identyczny komunikat cyfrowy uruchomił trzy skrajne trajektorie emocjonalne i o mały włos nie rozbił projektu',
+  protagonist: 'Robert (Project Lead), Marta (Senior Dev) i Kacper (Junior Dev)',
+  context: 'Czwartkowy wieczór, godzina 22:15. Zespół kończy wyczerpujący sprint przed wdrożeniem systemu płatności. Wszyscy trzej otrzymują lakoniczny e-mail od wiceprezesa zarządu: „Musimy jutro o 8:30 porozmawiać o module płatności”.',
+  story: [
+    'Obiektywny fakt był jeden: zdanie o spotkaniu o 8:30. Nie zawierało ono ani słowa oceny, przymiotnika ani wykrzyknika. Jednak w ułamku sekundy w umysłach Roberta, Marty i Kacpra uruchomiły się całkowicie odmienne procesy uwagi i oceny znaczenia (appraisal).',
+    'Robert od tygodnia żył w stanie podwyższonego napięcia. Na widok wiadomości jego ciało migdałowate zinterpretowało komunikat jako natychmiastowe zagrożenie tożsamości: „Klient złożył reklamację, prezes mnie zwolni”. Serce zabiło w tempie 115 bpm. Reflektor uwagi Roberta uległ gwałtownemu zwężeniu (threat-induced attentional tunneling) — przez 4 godziny w nocy gorączkowo przeszukiwał logi serwera, szukając wyłącznie dowodów na własne błędy (confirmation trap). Rano przyszedł na spotkanie po nieprzespanej nocy, roztrzęsiony, z garścią tabletek uspokajających.',
+    'Marta weszła w inną trajektorię. Dwa dni wcześniej prosiła zarząd o nieprzesyłanie spraw po 20:00. Wiadomość o 22:15 oceniła jako bezczelne naruszenie jej granic i brak szacunku. Wzrosło ciśnienie krwi, zacisnęła szczęki. W jej ciele zapłonęła złość. Zamiast sprawdzić alternatywne hipotezy, utożsamiła interpretację z faktem: „Robią to specjalnie, by pokazać swoją władzę”. O 23:10, pod wpływem impulsu i braku modulacji somatycznej, wysłała agresywną odpowiedź na ogólny adres: „To jest mobbing organizacyjny. Nie będę uczestniczyć w spotkaniach zwoływanych w środku nocy!”.',
+    'Kacper, który pracował dopiero od 3 miesięcy, przeczytał maila w łóżku. Z powodu braku wcześniejszego doświadczenia poczuł paraliżujący wstyd: „Na pewno odkryli, że nie umiem pisać testów (Syndrom Oszusta). Zostanę wyrzucony przed końcem okresu próbnego”. Wycofał się pod kołdrę, wyłączył telefon i podjął decyzję o zaniechaniu — postanowił rano nie przyjść do biura i wysłać zwolnienie lekarskie.',
+    'O 8:30 prawda wyszła na jaw: wiceprezes zarządu wszedł do salki z uśmiechem i kartonem świeżych croissantów. Główny inwestor firmy podpisał rano kluczowy kontrakt i prezes chciał osobiście podziękować zespołowi, zaoferować 30% premii za wdrożenie i zaproponować przesunięcie deadline’u o dwa tygodnie, by zespół mógł odpocząć.',
+    'Skutki braku regulacji były jednak druzgocące: Robert był na skraju wyczerpania nerwowego, Marta musiała tłumaczyć się przed działem HR z agresywnego maila rozesłanego do zarządu, a Kacper spędził poranek w gabinecie lekarskim w ataku paniki. Ta sama informacja — trzy różne światy psychologiczne.'
+  ],
+  dialogue: [
+    { speaker: 'E-mail od Wiceprezesa', text: 'Musimy jutro o 8:30 porozmawiać o module płatności.', subtext: 'Czysty fakt bez zabarwienia afektywnego — neutralny bodziec wejściowy.' },
+    { speaker: 'Robert (myśli)', text: 'Wiedziałem. Wykryli błąd w autoryzacji transakcji. To koniec mojego awansu.', subtext: 'Lęk wywołany katastrofizacją i projektowaniem zagrożenia na niejednoznaczny bodziec.' },
+    { speaker: 'Marta (do partnera)', text: 'Specjalnie to robią! Testują, na ile mogą sobie pozwolić. Nie odpuszczę im tego.', subtext: 'Złość wywołana bezrefleksyjnym przypisaniem wrogich intencji nadawcy.' },
+    { speaker: 'Wiceprezes (rano)', text: 'Chciałem wam osobiście podziękować i ogłosić premie, zanim rozejdziecie się do zadań.', subtext: 'Rzeczywista intencja nadawcy, całkowicie sprzeczna z nocnymi hipotezami zespołu.' }
+  ],
+  decisionTaken: 'Marta wysłała agresywnego maila eskalującego konflikt, Robert spędził bezsenną noc na kompulsywnym szukaniu winy, a Kacper uciekł w zwolnienie lekarskie — wszystkie te decyzje zapadły pod wpływem nieuregulowanego afektu.',
+  whatProtagonistSaw: 'Każdy widział wyłącznie własną projekcję emocjonalną: Robert widział zwolnienie, Marta widziała demonstrację władzy, Kacper widział demaskację niekompetencji.',
+  whatWasMissed: 'Obiektywny fakt, że lakoniczna wiadomość nie zawierała żadnych negatywnych treści; możliwość zadania pytania wyjaśniającego; istnienie hipotez neutralnych i pozytywnych.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Kaskada: Niedookreślony bodziec → Afektywne ukierunkowanie uwagi → Błąd atrybucji intencji → Brak pauzy poznawczej i regulacji emocji wg Grossa → Destrukcyjna decyzja.',
+    cognitiveBiases: [
+      { name: 'Wrogie przypisanie intencji (Hostile Attribution Bias)', description: 'Marta zinterpretowała neutralne zachowanie jako celowy atak na swoje granice.', impact: 'Agresywna eskalacja w relacji z pracodawcą.' },
+      { name: 'Katastrofizacja i Filtr Negatywny', description: 'Robert wyobraził sobie najgorszy możliwy scenariusz utraty pracy.', impact: 'Ciężki stan somatyczny i bezsenność.' },
+      { name: 'Selektywność Uwagi (Selective Attention)', description: 'Uwaga skupiła się wyłącznie na słowach „musimy porozmawiać”, ignorując neutralny kontekst.', impact: 'Zablokowanie poszukiwania alternatywnych interpretacji.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Projekcja', explanation: 'Przypisywanie szefowi własnych lęków i ukrytej agresji.' },
+      { name: 'Ucieczka / Unikanie (Kacper)', explanation: 'Ucieczka w chorobę jako znieczulenie przed lękiem zdemaskowania.' }
+    ],
+    emotionalDynamic: 'Przejście od neutralnego bodźca przez gwałtowne pobudzenie autonomiczne aż po zachowania obronne, które wykreowały realny kryzys w zespole.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Lakoniczny e-mail o 22:15.',
+    attentionFocus: 'Słowo „musimy porozmawiać” + późna pora (paliwo dla lęku).',
+    interpretation: 'Robert: „zwolnienie”; Marta: „atak na granice”; Kacper: „kara”.',
+    emotion: 'Lęk (Robert), Gniew (Marta), Wstyd i panika (Kacper).',
+    impulse: 'Szukać błędów w logach (Robert), zaatakować w mailu (Marta), uciec (Kacper).',
+    action: 'Działania zgodne z pierwszym impulsem bez zastosowania pauzy poznawczej.',
+    consequence: 'Wyczerpanie, interwencja HR, kryzys zaufania w zespole.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Ciało migdałowate (Amygdala)', role: 'Wykrywanie niejednoznaczności jako bezpośredniego zagrożenia', activationState: 'Maksymalne pobudzenie u wszystkich trzech bohaterów' },
+      { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Hamowanie impulsów i generowanie hipotez alternatywnych', activationState: 'Wyłączona przez nocny wyrzut noradrenaliny i kortyzolu' },
+      { region: 'Wyspa (Insula)', role: 'Przetwarzanie somatycznych sygnałów napięcia żołądka i tętna', activationState: 'Wzmacniała przekonanie: „skoro moje ciało tak reaguje, to na pewno katastrofa”' }
+    ],
+    neurotransmitters: [
+      { name: 'Kortyzol i adrenalina', roleInScenario: 'Zablokowały sen i wywołały tunelowe widzenie u Roberta.' }
+    ],
+    biologicalTimeline: [
+      { timeMs: '22:15 (Dźwięk powiadomienia)', process: 'Wzbudzenie układu współczulnego, skok tętna o 30 bpm.' },
+      { timeMs: '23:10 (Wysłanie maila przez Martę)', process: 'Działanie w szczycie afektu bez fazy modulacji poznawczej.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [],
+    counterMeasures: [
+      { step: '1. Zasada Kwarantanny Nocnych Emocji', script: '„Po 21:00 nie wysyłam żadnych wiadomości o charakterze konfrontacyjnym. Jeśli czuję gniew, zapisuję szkic w notatniku, a decyzję podejmuję po 8 godzinach snu”.', rationale: 'Regeneracja kory przedczołowej i obniżenie poziomu katecholamin przed podjęciem działania.' },
+      { step: '2. Protokół 3 Hipotez Interpretacyjnych', script: '„Fakt to spotkanie o 8:30. Hipoteza 1 (pesymistyczna): problem techniczny. Hipoteza 2 (neutralna): bieżąca synchronizacja harmonogramu. Hipoteza 3 (optymistyczna): dobre wieści od klienta”.', rationale: 'Zgodnie z teoriami oceny Lazarusa, rozbicie monopolu jednej katastroficznej interpretacji neutralizuje afekt.' }
+    ]
+  },
+  alternativePath: 'Gdyby Marta i Robert zastosowali pauzę poznawczą i technikę reinterpretacji, oboje przespali by spokojnie noc, a o 8:30 w doskonałych nastrojach odebrali premie od wiceprezesa.',
+  readerQuestion: 'Ile razy w życiu wysłałeś pod wpływem złości lub lęku wiadomość, której żałowałeś już 10 minut później?',
+  keyTakeaway: 'Emocja jest cenną informacją o stanie Twojego organizmu, ale nigdy nie powinna być jedynym autorem Twoich decyzji. Oddziel fakt od interpretacji, zanim naciśniesz „Wyślij”.'
+};
+
+export const chapterTwentySevenExerciseEmotionAttentionAudit: SelfExercise = {
+  id: 'ex-ch27-emotion-attention-audit',
+  title: 'Ćwiczenie 27.3: Protokół Rozplątywania Pętli: Fakt → Uwaga → Interpretacja → Emocja → Działanie',
+  subtitle: 'Zatrzymaj automatyczną reakcję i przejmij kontrolę nad łańcuchem poznawczo-afektywnym',
+  objective: 'Nauczenie się precyzyjnego rozróżniania poszczególnych ogniw reakcji na trudny bodziec.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Świadoma werbalizacja i kategoryzacja poszczególnych etapów (affect labeling) obniża reaktywność ciała migdałowatego i przywraca łączność funkcjonalną kory przedczołowej.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Czysty Fakt (Co zarejestrowałaby kamera?)',
+      instruction: 'Opisz zdarzenie bez ani jednego słowa oceniającego, przymiotnika czy domysłu intencji.',
+      promptText: 'Obiektywny fakt:',
+      placeholder: 'Współpracownik nie odpowiedział na mojego maila przez 24 godziny, mimo że napisał post na firmowym czacie...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Reflektor Uwagi (Na co patrzę, a co ignoruję?)',
+      instruction: 'Co natychmiast przyciągnęło Twoją uwagę? Jakie inne informacje o tej osobie lub sytuacji mogły umknąć Twojemu reflektorowi?',
+      promptText: 'Ognisko uwagi i pominięte tło:',
+      placeholder: 'Moja uwaga skupiła się wyłącznie na jego aktywności na czacie. Pominąłem fakt, że wczoraj kończył kwartalny raport dla zarządu...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Ocena Znaczenia (Co to dla mnie oznacza?)',
+      instruction: 'Jaką historię opowiedział Twój umysł? Czy potraktowałeś sytuację jako zagrożenie, naruszenie granic czy stratę?',
+      promptText: 'Moja interpretacja:',
+      placeholder: 'Zinterpretowałem to jako brak szacunku dla mojej pracy i demonstrację wyższości...'
+    },
+    {
+      stepNumber: 4,
+      title: 'Reakcja Ciała i Nazwanie Emocji (Co mówi organizm?)',
+      instruction: 'Jakie zmiany zaszły w ciele (napięcie barków, ucisk w klatce, ściśnięty żołądek)? Nazwij emocję: lęk, złość, wstyd, smutek czy rozczarowanie?',
+      promptText: 'Stan ciała i nazwana emocja:',
+      placeholder: 'Napięcie w karku, płytki oddech. Emocja: złość połączona z niepewnością i lękiem przed byciem pominiętym...'
+    },
+    {
+      stepNumber: 5,
+      title: 'Dwie Alternatywne Hipotezy i Świadomy Wybór Działania',
+      instruction: 'Sformułuj 2 alternatywne wyjaśnienia sytuacji i wybierz reakcję zgodną z Twoim celem nadrzędnym.',
+      promptText: 'Hipotezy alternatywne i mój kolejny krok:',
+      placeholder: 'Hipoteza A: Miał awarię skrzynki pocztowej. Hipoteza B: Jest przeciążony zadaniami zarządu. Działanie: Zapytam go osobiście w kuchni: „Cześć, widziałem, że masz urwanie głowy. Daj znać, kiedy spojrzysz na mój temat”.'
+    }
+  ],
+  reflectionQuestions: [
+    'O ile łatwiej opanować impuls, gdy widzisz, że Twoja pierwsza złość była oparta na domyśle, a nie na twardym fakcie?',
+    'Jak technika 3 hipotez chroni Twoje relacje przed eskalacją niepotrzebnych konfliktów?'
+  ]
+};
+
+export const chapterTwentySevenExerciseGrossRegulator: SelfExercise = {
+  id: 'ex-ch27-gross-regulator',
+  title: 'Ćwiczenie 27.4: Laboratorium Regulacji Emocji wg Modelu Grossa — 5 Dźwigni w Trudnej Decyzji',
+  subtitle: 'Wybierz optymalną strategię radzenia sobie z afektem zamiast destrukcyjnego tłumienia',
+  objective: 'Praktyczne przetestowanie 5 poziomów regulacji emocjonalnej w realnej sytuacji decyzyjnej.',
+  durationMinutes: 25,
+  neuroScientificFoundation: 'Dopasowanie strategii regulacyjnej do chronologii powstawania emocji (od wyboru środowiska po modulację oddechu) pozwala zoptymalizować bilans energetyczny układu nerwowego.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Zdefiniuj sytuację wywołującą chroniczny dyskomfort',
+      instruction: 'Wybierz powtarzającą się sytuację, która regularnie wytrąca Cię z równowagi decyzyjnej.',
+      promptText: 'Opis sytuacji zapalnej:',
+      placeholder: 'Poranne zebrania statusowe, na których jeden z członków zarządu podnosi głos i krytykuje harmonogram...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Dźwignia 1: Wybór Sytuacji (Situation Selection)',
+      instruction: 'Czy w ogóle musisz tam być? Czy możesz podjąć autonomiczną decyzję o uniknięciu tego środowiska bez szkody dla celów?',
+      promptText: 'Możliwość wyboru sytuacji:',
+      placeholder: 'Mogę poprosić o przesyłanie podsumowań asynchronicznie lub zamienić się dyżurami z liderem technicznym...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Dźwignia 2: Modyfikacja Sytuacji (Situation Modification)',
+      instruction: 'Jeśli musisz uczestniczyć, jak możesz zmienić fizyczne warunki (ustawienie krzeseł, obecność sojusznika, sztywna agenda czasowa)?',
+      promptText: 'Możliwa modyfikacja warunków:',
+      placeholder: 'Wprowadzenie zasady, że każdy mówi po 3 minuty z zegarem w ręku; siadam obok zaufanej osoby...'
+    },
+    {
+      stepNumber: 4,
+      title: 'Dźwignia 3: Przekierowanie Uwagi (Attentional Deployment)',
+      instruction: 'Na czym skupisz swój reflektor uwagi w trakcie trudnego momentu (notowanie argumentów, obserwacja mowy ciała zamiast skupiania się na tonie głosu)?',
+      promptText: 'Zarządzanie uwagą w trakcie zdarzenia:',
+      placeholder: 'Zamiast skupiać się na agresywnym tonie głosu, skupiam uwagę na notowaniu konkretnych liczb na kartce w punktach...'
+    },
+    {
+      stepNumber: 5,
+      title: 'Dźwignia 4 i 5: Reinterpretacja i Modulacja Reakcji',
+      instruction: 'Jak przeformułujesz znaczenie sytuacji („On krzyczy nie dlatego, że ja zawiodłem, lecz dlatego, że sam panicznie boi się inwestorów”)? Jaki protokół fizjologiczny zastosujesz (np. podwójny wdech nosem i powolny wydech ustami)?',
+      promptText: 'Nowa interpretacja i kotwica fizjologiczna:',
+      placeholder: 'Reinterpretacja: Jego krzyk to objaw jego bezradności, nie mojej winy. Modulacja: Dłuższy wydech niż wdech, stopy twardo oparte o podłogę, 5 sekund pauzy przed zabraniem głosu.'
+    }
+  ],
+  reflectionQuestions: [
+    'Która z 5 dźwigni modelu Grossa jest Twoim najsłabszym ogniwem, a która przychodzi Ci najbardziej naturalnie?',
+    'Dlaczego przygotowanie strategii ZANIM wejdziesz w trudną sytuację daje stokroć lepsze rezultaty niż improwizacja w trakcie porwania emocjonalnego?'
+  ]
+};
+
 export const chapterTwentySeven: Chapter = {
   number: 27,
   volume: 3,
   volumeChapterNumber: 11,
   title: 'Rozdział 11: Integracja Wiedzy — Od Pojedynczych Rozdziałów do Jednego Systemu',
-  subtitle: 'Etap 1: Architektura procesów decyzyjnych, pętle sprzężeń zwrotnych i fundament sprawczości (Zwieńczenie Rozdziałów 1–10)',
-  leadParagraph: 'Dotarłeś do wielkiego punktu zbieżności. Przez poprzednie dziesięć rozdziałów badałeś poszczególne elementy ludzkiego funkcjonowania: mechanizmy decyzji, architekturę środowiska, filtry informacyjne, samoocenę, wartości, metapoznanie, samoregulację, nawyki i psychologię zmiany. Jednak w prawdziwym życiu żaden z tych procesów nie działa w izolacji. W każdym codziennym wyborze — od odpisania na trudnego maila po strategiczny zwrot życiowy — wszystkie te siły oddziałują na siebie jednocześnie. Niniejszy rozdział jest zwieńczeniem Tomu III i wielkim laboratorium integracyjnym. W tym pierwszym etapie wznosimy fundament: łączymy wiedzę o wyborach, heurystykach, kosztach poznawczych i sprawczości w spójny model 10-etapowej pętli decyzyjnej, przygotowując precyzyjne porty pod kolejne wymiary ludzkiego umysłu.',
-  totalEstimatedPages: 64,
+  subtitle: 'Etap 2: Architektura Procesów Decyzyjnych, Dynamika Emocji i Filtry Uwagi (Wielka Integracja Rozdziałów 1, 2 i 3)',
+  leadParagraph: 'Dotarłeś do wielkiego punktu zbieżności. Przez poprzednie rozdziały badałeś poszczególne elementy ludzkiego funkcjonowania: mechanizmy decyzji, architekturę środowiska, stany emocjonalne, filtry uwagowe i strategie samoregulacji. Jednak w prawdziwym życiu żaden z tych procesów nie działa w próżni. W każdym codziennym wyborze — od odebrania trudnej wiadomości po strategiczny zwrot życiowy — decyzje, emocje i uwaga oddziałują na siebie w ciągłej, dynamicznej pętli sprzężeń zwrotnych. Niniejszy rozdział jest wielkim laboratorium integracyjnym. Na obecnym etapie łączymy fundament decyzyjny z biologiczną dynamiką afektu (Rozdział 2) oraz mechaniką reflektora uwagi (Rozdział 3) w spójny model 10-etapowej pętli poznawczo-emocjonalnej.',
+  totalEstimatedPages: 78,
   sections: [
     {
       id: 'sec-27-1',
@@ -408,40 +663,40 @@ export const chapterTwentySeven: Chapter = {
       },
       paragraphs: [
         'Wyobraź sobie mechanika, który rozłożył nowoczesny silnik samochodowy na tysiąc pojedynczych śrub, zaworów i uszczelek. Zna dokładną wagę tłoka, skład chemiczny oleju i twardość każdej sprężyny. Jednak dopóki nie zobaczy, jak paliwo pod ciśnieniem spotyka się z iskrą, jak temperatura zmienia gęstość cieczy i jak praca wału korbowego przekłada się na obrót kół, nie rozumie dynamiki pojazdu. Dokładnie to samo dzieje się w psychologii, gdy redukujemy człowieka do izolowanych pojęć.',
-        'Wielu czytelników literatury popularnonaukowej wpada w pułapkę redukcjonizmu: „Znam definicję heurystyki dostępności, wiem, czym jest confirmation bias, przeczytałem o kosztach utopionych — rozumiem więc ludzkie zachowanie”. To iluzja. W rzeczywistym świecie żaden błąd poznawczy ani żadna heurystyka nie pojawia się w stanie czystym. W realnej sytuacji biznesowej, rodzinnej czy osobistej mamy do czynienia ze zderzeniem ograniczonej uwagi, emocjonalnego lęku, presji czasu, zmęczenia metabolicznego, konfliktu wartości i skomplikowanego środowiska zewnętrznego.',
-        'Celem tego rozdziału jest transformacja Twojego myślenia: przejście od poziomu analitycznego katalogowania pojedynczych mechanizmów do poziomu holistycznej syntezy systemowej. Nie pytamy już tylko: „Co oznacza to pojęcie?”. Pytamy: „W jakich warunkach mechanizm A wchodzi w interakcję z mechanizmem B, w jaki sposób zniekształca ocenę sytuacji i w którym konkretnym punkcie procesu człowiek może odzyskać sprawczość?”.',
-        'Niniejszy rozdział stanowi ETAP 1 wielkiego procesu integracyjnego. Opieramy się na fundamencie wiedzy wypracowanym w Rozdziale 1: naturze procesów decyzyjnych, heurystykach, błędach poznawczych, problematyce ryzyka i niepewności oraz architekturze sprawczości. Nie udajemy, że znamy szczegóły przyszłych rozdziałów — zamiast tego budujemy stabilną, otwartą architekturę procesową, w której wyznaczamy precyzyjne „porty integracyjne”. W miarę jak będziesz poznawał kolejne wymiary funkcjonowania człowieka, ten system będzie się rozszerzał i wzbogacał o nowe pętle sprzężeń zwrotnych.'
+        'Wielu czytelników literatury popularnonaukowej wpada w pułapkę redukcjonizmu: „Znam definicję heurystyki dostępności, wiem, czym jest confirmation bias, przeczytałem o kosztach utopionych — rozumiem więc ludzkie zachowanie”. To iluzja. W rzeczywistym świecie żaden błąd poznawczy, żadna emocja ani żaden filtr uwagi nie pojawia się w stanie laboratoryjnej izolacji. W realnej sytuacji biznesowej, rodzinnej czy osobistej mamy do czynienia ze zderzeniem ograniczonej pojemności uwagi, somatycznego napięcia w ciele, presji czasu, lęku przed odrzuceniem, konfliktu wartości i skomplikowanego środowiska zewnętrznego.',
+        'Celem tego rozdziału jest transformacja Twojego myślenia: przejście od poziomu analitycznego katalogowania pojedynczych mechanizmów do poziomu holistycznej syntezy systemowej. Nie pytamy już tylko: „Co oznacza to pojęcie?”. Pytamy: „W jakich warunkach filtr uwagi (Rozdział 3) zniekształca interpretację sytuacji, jak wzbudzona emocja (Rozdział 2) zawęża pole widzenia i w którym konkretnym punkcie procesu decyzyjnego (Rozdział 1) człowiek może odzyskać sprawczość?”.',
+        'Niniejszy rozdział stanowi ETAP 2 wielkiego procesu integracyjnego. Łączymy w nim fundament procesów decyzyjnych (Rozdział 1) z dwoma nowo wdrożonymi filarami: naturą procesów emocjonalnych (Rozdział 2: od oceny poznawczej Lazarusa po model regulacji Grossa) oraz architekturą selekcji uwagi (Rozdział 3: od procesów odgórnych i oddolnych po koszty przełączania i ślepotę nieuwagi). Tworzy to spójną, organiczną całość, przygotowując grunt pod kolejne wymiary funkcjonowania człowieka.'
       ]
     },
     {
       id: 'sec-27-2',
       pageNumber: 765,
       sectionNumber: '27.2',
-      title: 'Wielka Mapa Procesu Decyzyjnego — Rdzeń Systemu (Wersja 1.0)',
+      title: 'Wielka Mapa Procesu Decyzyjnego — Rdzeń Systemu (Wersja 2.0: Podłączenie Portów Uwagi i Emocji)',
       category: 'teoria',
       readingTimeMinutes: 18,
       paragraphs: [
         'Jednym z największych błędów potocznego myślenia o człowieku jest traktowanie decyzji jako pojedynczego punktu w czasie — jako błysku woli, w którym ktoś mówi: „Wybieram to”. W rzeczywistości decyzja jest zaledwie siódmym lub ósmym krokiem w skomplikowanym łańcuchu przetwarzania informacji. Jeżeli chcesz zrozumieć, dlaczego ktoś podjął pozornie irracjonalny krok, nie patrz na sam moment wyboru. Prześledź całą trajektorię od pierwszego kontaktu z bodźcem.',
-        'W oparciu o wiedzę z Rozdziału 1 definiujemy kompletny, 10-etapowy model pętli decyzyjnej. Model ten nie zakłada, że człowiek zawsze świadomie i sekwencyjnie wykonuje każdy krok. Jest on mapą diagnostyczną, która pozwala rozłożyć dowolne zachowanie na elementarne czynniki pierwsze i zidentyfikować punkty awarii systemu.'
+        'W oparciu o zintegrowaną wiedzę z Rozdziałów 1, 2 i 3 definiujemy kompletny, 10-etapowy model pętli decyzyjno-afektywnej. Model ten nie zakłada, że człowiek zawsze świadomie i sekwencyjnie wykonuje każdy krok. Jest on mapą diagnostyczną, która pozwala rozłożyć dowolne zachowanie na elementarne czynniki pierwsze i zidentyfikować punkty awarii systemu.'
       ],
       subsections: [
         {
-          title: 'Anatomia 10 Etapów Pętli Decyzyjnej',
+          title: 'Anatomia 10 Etapów Pętli Decyzyjno-Afektywnej (Zintegrowane Wpięcia)',
           paragraphs: [
-            'ETAP 1: BODZIEC I CZYSTA INFORMACJA. Do narządów zmysłów dociera strumień surowych danych ze środowiska (liczba na koncie, dźwięk telefonu, gest rozmówcy, treść dokumentu). Na tym etapie informacja jest obiektywna i pozbawiona znaczenia. [Źródło: Rozdział 1.1]',
-            'ETAP 2: FILTR I UKIERUNKOWANIE UWAGI. Ponieważ mózg nie jest w stanie przetworzyć całości docierających danych, zasoby uwagi dokonują drastycznej selekcji. Reflektor uwagi jest mimowolnie przyciągany przez bodźce o wysokim kontraście, natężeniu, nowości lub znajomości. To, co nie trafia pod reflektor, przestaje istnieć dla dalszego procesu decyzyjnego. [Otwarte wpięcie: Port Uwagowy i Percepcyjny]',
-            'ETAP 3: INTERPRETACJA POZNAWCZA I HEURYSTYKI. Zauważona informacja zostaje natychmiast zinterpretowana. Mózg nie rejestruje biernie faktów, lecz tworzy o nich opowieść. W tym momencie uaktywniają się heurystyki: zakotwiczenie (wpływ pierwszej liczby), framing (czy sytuacja jawi się jako zysk, czy jako strata), dostępność (łatwość przywołania analogicznych wspomnień) oraz confirmation bias (dopasowanie faktu do wcześniejszych przekonań). [Źródło: Rozdział 1.3 & 1.4]',
-            'ETAP 4: AKTYWACJA STANÓW AFEKTYWNYCH, CELÓW I WARTOŚCI. Interpretacja wywołuje natychmiastową reakcję wartościującą. Pojawia się konflikt celów: natychmiastowa ulga vs długoterminowy plan, lojalność wobec innych vs własny interes, bezpieczeństwo vs rozwój. W tym punkcie definiuje się to, „o co właściwie toczy się gra”. [Źródło: Rozdział 1.6 & 1.7, Otwarte wpięcie: Port Afektywny]',
-            'ETAP 5: WYCENA SUBIEKTYWNA I OCENA NIEPEWNOŚCI (Value-based Choice). Mózg przypisuje wagę dostępnym możliwościom. Zgodnie z teorią perspektywy potencjalne straty ważą psychologicznie więcej niż odpowiadające im zyski. Umysł musi także rozstrzygnąć, czy działa w warunkach policzalnego RYZYKA, czy w warunkach głębokiej NIEPEWNOŚCI, gdzie brakuje wiarygodnych danych. [Źródło: Rozdział 1.5 & 1.11.2]',
-            'ETAP 6: PRZEWIDYWANIE KONSEKWENCJI I SYMULACJA W CZASIE. Wyobrażenie przyszłych skutków. Tutaj uderzają dwa zniekształcenia: present bias (zaniżanie wartości odroczonych kosztów na rzecz bieżącej przyjemności/ulgi) oraz optimism bias (nierealistyczna wiara, że „mnie negatywne skutki ominą”). [Źródło: Rozdział 1.4]',
-            'ETAP 7: WYBÓR (Decyzja Aktywna vs Zaniechanie). Moment rozstrzygnięcia. Może przybrać formę deklaratywnego wyboru określonej ścieżki działania lub pozornego braku działania (status quo). Jak dowiedliśmy w Rozdziale 1.1.2, zaniechanie jest w istocie pełnoprawnym wyborem o potężnych konsekwencjach.',
-            'ETAP 8: PRZEJŚCIE DO DZIAŁANIA I KOSZT AKTYWACJI. Zamiar spotyka się z materią. Sama decyzja nie gwarantuje wykonania. Kora przedczołowa musi przełamać opór spoczynkowy i tarcie środowiskowe. Jeśli otoczenie stawia bariery, intencja może ulec załamaniu na rzecz automatycznego nawyku. [Źródło: Rozdział 1.2]',
+            'ETAP 1: BODZIEC I CZYSTA INFORMACJA. Do narządów zmysłów dociera strumień surowych danych ze środowiska (liczba na koncie, dźwięk powiadomienia o 22:15, lakoniczny ton głosu, treść dokumentu). Na tym etapie informacja jest czysto fizyczna, obiektywna i pozbawiona psychologicznego znaczenia. [Źródło: Rozdział 1.1 & 2.2.1]',
+            'ETAP 2: FILTR I UKIERUNKOWANIE UWAGI (PORT UWAGOWY — AKTYWNY). Ponieważ mózg nie jest w stanie przetworzyć całości docierających danych, zasoby uwagi dokonują drastycznej selekcji. Działają tu dwa wektory: odgórny (top-down — sterowany aktualnym celem i wiedzą) oraz oddolny (bottom-up — automatycznie przechwytywany przez kontrast, głośność, ruch lub bodźce związane z zagrożeniem). Pamiętaj: fizyczna obecność bodźca w polu widzenia nie gwarantuje jego świadomego zauważenia (zjawisko ślepoty nieuwagi). [Źródło: Rozdział 3.1–3.4 & 3.8]',
+            'ETAP 3: INTERPRETACJA POZNAWCZA I HEURYSTYKI. Zauważona informacja zostaje natychmiast zinterpretowana. Mózg nie rejestruje biernie faktów, lecz konstruuje o nich spójną hipotezę. W tym momencie uaktywniają się heurystyki: zakotwiczenie (wpływ pierwszej liczby), framing (ramowanie w kategoriach straty vs zysku), dostępność skojarzeń oraz confirmation bias (wyszukiwanie wyłącznie faktów pasujących do wstępnej hipotezy). [Źródło: Rozdział 1.3, 1.4 & 3.15]',
+            'ETAP 4: AKTYWACJA STANÓW AFEKTYWNYCH, OCENA ZNACZENIA I EMOCJE (PORT AFEKTYWNY — AKTYWNY). Zgodnie z teoriami oceny emocjonalnej (appraisal theories Richarda Lazarusa), emocja nie wynika z samego faktu, lecz ze znaczenia, jakie nadajemy zdarzeniu w relacji do naszych celów, wartości i poczucia kontroli. Uruchamiają się zmiany w organizmie (tętno, oddech, napięcie mięśni — układ autonomiczny) oraz subiektywne uczucie i tendencja do działania (unikanie przy lęku, konfrontacja przy złości, wycofanie przy smutku). Emocja staje się potężnym sygnałem wartościującym. [Źródło: Rozdział 2.1–2.4 & 2.12]',
+            'ETAP 5: WYCENA SUBIEKTYWNA I OCENA NIEPEWNOŚCI (Value-based Choice). Mózg przypisuje wagę dostępnym możliwościom. Zgodnie z teorią perspektywy potencjalne straty ważą psychologicznie silniej niż odpowiadające im zyski (asymetria afektywna). Umysł musi także rozstrzygnąć, czy działa w warunkach policzalnego RYZYKA, czy w warunkach głębokiej NIEPEWNOŚCI, gdzie brakuje wiarygodnych danych. [Źródło: Rozdział 1.5 & 1.11.2]',
+            'ETAP 6: PRZEWIDYWANIE KONSEKWENCJI I SYMULACJA W CZASIE. Wyobrażenie przyszłych skutków. Tutaj uderzają dwa zniekształcenia: present bias (zaniżanie wartości odroczonych kosztów na rzecz bieżącej ulgi emocjonalnej) oraz optimism bias (nierealistyczna wiara, że „mnie negatywne skutki ominą”). [Źródło: Rozdział 1.4 & 2.6]',
+            'ETAP 7: WYBÓR (Decyzja Aktywna vs Zaniechanie). Moment rozstrzygnięcia. Może przybrać formę deklaratywnego wyboru określonej ścieżki działania lub pozornego braku działania (status quo). Jak dowiedliśmy w Rozdziale 1.1.2 i 2.6, unikanie i zaniechanie są w istocie pełnoprawnym wyborem służącym krótkoterminowej redukcji napięcia.',
+            'ETAP 8: PRZEJŚCIE DO DZIAŁANIA I KOSZT AKTYWACJI. Zamiar spotyka się z materią. Sama decyzja nie gwarantuje wykonania. Kora przedczołowa musi przełamać opór spoczynkowy i tarcie środowiskowe. Jeśli otoczenie stawia bariery, intencja może ulec załamaniu na rzecz automatycznego nawyku lub rozproszenia cyfrowego. [Źródło: Rozdział 1.2 & 3.9]',
             'ETAP 9: REAKCJA ŚRODOWISKA, INNYCH LUDZI I OBIEKTYWNY WYNIK. Wykonane działanie zderza się z rzeczywistością, zmiennymi losowymi oraz reakcjami otoczenia. Rezultat nie zależy wyłącznie od jakości decyzji — w grę wchodzi przypadek, szczęście i czynniki niezależne od człowieka.',
-            'ETAP 10: RETROSPEKCJA, UCZENIE SIĘ I PĘTLA SPRZĘŻENIA ZWROTNEGO. Rezultat staje się nową informacją. Umysł dokonuje bilansu: pojawia się myślenie kontrfaktyczne („co by było, gdybym...”), ryzyko błędu oceny wstecznej (hindsight bias — „od początku wiedziałem, że tak będzie”) oraz żal lub satysfakcja. Nowe doświadczenie rekonfiguruje oczekiwania na przyszłość i staje się bazą dla kolejnego cyklu. [Źródło: Rozdział 1.9 & 1.10]'
+            'ETAP 10: RETROSPEKCJA, UCZENIE SIĘ I PĘTLA SPRZĘŻENIA ZWROTNEGO. Rezultat staje się nową informacją wejściową. Umysł dokonuje bilansu: pojawia się myślenie kontrfaktyczne („co by było, gdybym...”), ryzyko błędu oceny wstecznej (hindsight bias) oraz stany afektywne: wstyd vs poczucie winy, żal lub satysfakcja. Nowe doświadczenie rekonfiguruje pamięć i oczekiwania, zamykając wielką pętlę. [Źródło: Rozdział 1.9, 1.10, 2.12 & 2.15]'
           ],
           highlightBox: {
-            title: 'Zasada Sprzężenia Zwrotnego',
-            content: 'Pętla decyzyjna nigdy się nie zamyka. Wynik dzisiejszego działania staje się filtrem interpretacyjnym jutrzejszego bodźca. Jeśli w KROKU 10 zinterpretujesz błąd jako dowód na własną „beznadziejność”, w kolejnym cyklu Twoje poczucie samoskuteczności (self-efficacy) drastycznie spadnie, co zablokuje podjęcie wysiłku w KROKU 8.',
+            title: 'Wielka Pętla Sprzężenia Zwrotnego',
+            content: 'Pętla decyzyjna nigdy się nie zamyka. Wynik działania i towarzysząca mu emocja w KROKU 10 stają się filtrem uwagi w KROKU 2 kolejnego cyklu. Jeśli lęk po błędzie nie zostanie zregulowany, uwaga w następnej sytuacji automatycznie zawęzi się wyłącznie do poszukiwania zagrożeń, paraliżując proces decyzyjny.',
             type: 'insight'
           }
         }
@@ -451,7 +706,107 @@ export const chapterTwentySeven: Chapter = {
       id: 'sec-27-3',
       pageNumber: 771,
       sectionNumber: '27.3',
-      title: 'Konflikt wielopoziomowy: Negocjacje celów, ról i tożsamości',
+      title: 'Architektura Uwagi w Systemie Decyzyjnym: Selekcja, Ślepota Nieuwagi i Koszt Przełączania',
+      category: 'teoria',
+      readingTimeMinutes: 16,
+      paragraphs: [
+        'Jednym z najbardziej zwodniczych mitów na temat ludzkiego umysłu jest traktowanie go jak kamery wideo, która biernie i wiernie rejestruje obiektywną rzeczywistość. W języku codziennym powtarzamy: „Nie zwracasz uwagi”, „Patrz uważnie”, jakby uwaga była prostym włącznikiem. W rzeczywistości uwaga jest wyrafinowanym, wąskoprzepustowym systemem selekcji i bramą do świadomości.',
+        'Spośród milionów bitów informacji sensorycznej docierających co sekundę do naszych receptorów, zaledwie ułamek otrzymuje priorytet dalszego przetwarzania. To oznacza fundamentalną zasadę integracyjną: ZANIM ZACZNIESZ DECYDOWAĆ, TWOJA UWAGA JUŻ ZDEFINIOWAŁA, CO W TEJ SYTUACJI W OGÓLE ISTNIEJE. To, co nie znajdzie się pod reflektorem, nie wejdzie do kalkulacji Systemu 2.'
+      ],
+      subsections: [
+        {
+          title: 'Dwa Wektory Reflektora: Procesy Odgórne (Top-Down) i Oddolne (Bottom-Up)',
+          paragraphs: [
+            'PROCESY ODGÓRNE (STEROWANE CELEM): Gdy szukasz czerwonego samochodu na wielkim parkingu, Twoja kora przedczołowa nakłada filtr: czerwone obiekty zyskują natychmiastowy priorytet poznawczy. Cel mebluje przestrzeń postrzegania. Dokładnie to samo dzieje się w relacjach: jeśli wchodzisz na spotkanie z założeniem „oni chcą mnie skrytykować”, Twój reflektor odgórny będzie aktywnie skanował salę w poszukiwaniu najmniejszych grymasów twarzy.',
+            'PROCESY ODDOLNE (PRZECHWYTYWANE PRZEZ BODZIEC): Nagły huk, błyskawiczny ruch za oknem, jaskrawy kolor lub powiadomienie na ekranie smartfona przechwytują uwagę automatycznie, bez żadnej uprzedniej decyzji woli. System nerwowy traktuje nagłą zmianę jako potencjalne zagrożenie lub szansę ewolucyjną.',
+            'W codziennym życiu oba wektory nieustannie walczą o ograniczone zasoby. Klasycznym dowodem elastyczności tego filtra jest efekt cocktail-party: w głośnej, zatłoczonej kawiarni prowadzisz rozmowę z jedną osobą, ignorując dziesiątki innych głosów, dopóki ktoś przy stoliku obok nie wypowie Twojego imienia. Umysł nie wyłącza tła całkowicie — monitoruje je w trybie niskiego poboru energii, gotowy do natychmiastowego przełączenia reflektora.'
+          ]
+        },
+        {
+          title: 'Ślepota Nieuwagi i Koszt Przełączania: Iluzja Multitaskingu',
+          paragraphs: [
+            'W słynnych eksperymentach nad ślepotą nieuwagi (inattentional blindness) badani, których uwagę pochłonęło trudne zadanie liczenia podań piłki, nie zauważyli człowieka w stroju goryla tańczącego pośrodku kadru. To nie była wada wzroku — to dowód, że FIZYCZNY DOSTĘP SENSORYCZNY NIE JEST TOŻSAMY ZE ŚWIADOMYM ZAUWAŻENIEM.',
+            'Zjawisko to doskonale ilustruje kazus Michała (Rozdział 3.19): wracając do domu, głęboko przeżywał trudną rozmowę z nauczycielem, myślał o odebranym SMS-ie i planował odpowiedź. Gdy spotkał kolegę, który machał do niego z odległości trzech metrów, minął go obojętnie. Kolega uznał to za celowe lekceważenie („On mnie ignoruje”), podczas gdy Michał fizycznie nie zarejestrował sygnału w świadomości. W relacjach międzyludzkich ograniczenia uwagi są notorycznie mylone ze złą wolą.',
+            'Kolejną pułapką jest tzw. wielozadaniowość (multitasking). Mózg potrafi łączyć czynności automatyczne (chodzenie i rozmowa), ale zadania wymagające kontroli poznawczej (pisanie raportu i sprawdzanie komunikatora) zmuszają go do ciągłego przełączania uwagi (task switching). Każde takie przełączenie generuje koszt metaboliczny: kora przedczołowa musi wygasić stary kontekst, załadować do pamięci roboczej nowy, a po powrocie mozolnie odtwarzać: „Na czym to ja skończyłem?”. Czas spędzony przy biurku nie jest miarą skupienia — 30 minut poszarpanych powiadomieniami daje mniejszy efekt niż 10 minut nieprzerwanej pracy głębokiej.'
+          ],
+          highlightBox: {
+            title: 'Prawo Dostępności Uwagi',
+            content: 'To, że zauważasz coś częściej (np. biegaczy na ulicy po tym, jak sam zacząłeś biegać, albo wady partnera po kłótni), nie oznacza, że tych zjawisk w świecie przybyło. Zmieniła się wyłącznie kategoria dostępności dla Twojego reflektora uwagi.',
+            type: 'warning'
+          }
+        }
+      ]
+    },
+    {
+      id: 'sec-27-4',
+      pageNumber: 777,
+      sectionNumber: '27.4',
+      title: 'Emocje jako System Nawigacji i Wartościowania: Od Ciała do Oceny Znaczenia',
+      category: 'teoria',
+      readingTimeMinutes: 18,
+      paragraphs: [
+        'Czy emocje są wrogiem racjonalnego myślenia, jak twierdziły wieki potocznej filozofii? Współczesna neuronauka i psychologia emocji odpowiadają jednoznacznie: NIE. Człowiek pozbawiony emocji nie staje się bezbłędnym komputerem — staje się bezradnym obserwatorem niezdolnym do dokonania jakiegokolwiek wyboru.',
+        'Emocja to złożony, dynamiczny proces przygotowujący organizm do działania w odpowiedzi na znaczenie nadane sytuacji. Nie jest ona jedynie abstrakcyjną myślą, ani nie jest samym tylko pobudzeniem fizjologicznym. Obejmuje ocenę sytuacji, zmiany autonomiczne (tętno, oddech, hormony), subiektywne doświadczenie, ekspresję oraz specyficzną tendencję do działania.'
+      ],
+      subsections: [
+        {
+          title: 'Rozróżnienia Pojęciowe i Ewolucja Teorii Emocji',
+          paragraphs: [
+            'W języku naukowym precyzujemy pojęcia: AFEKT to fundamentalny wymiar walencji (przyjemny/nieprzyjemny) i poziomu pobudzenia; UCZUCIE to subiektywnie przeżywana strona doświadczenia („Jak to jest tego doświadczać?”); EMOCJA to pełny, wielokomponentowy proces związany ze znaczeniem konkretnego zdarzenia; NASTRÓJ to stan bardziej rozlany, trwający godzinami lub dniami, często bez wyraźnego pojedynczego punktu zapalnego.',
+            'Historia badań nad emocjami pokazuje zmagania z pytaniem: co pojawia się pierwsze — ciało czy myśl? Teoria Jamesa-Langego podkreśliła rolę somatyki: „Widzę niedźwiedzia → moje ciało ucieka i serce wali → czuję strach”. Cannon i Bard wykazali równoległość procesów wzgórzowo-korowych. Z kolei Schachter i Singer oraz teorie oceny poznawczej (Appraisal Theories Lazarusa) udowodniły, że SAMO POBUDZENIE AUTONOMICZNE NIE WYSTARCZA DO NASTANIA EMOCJI. Przyspieszone bicie serca może oznaczać lęk, złość, podniecenie lub po prostu wypicie mocnej kawy. To POZNAWCZA OCENA ZNACZENIA („Co to dla mnie znaczy? Czy zagraża moim celom? Czy mam nad tym kontrolę?”) nadaje pobudzeniu określony wektor psychologiczny.',
+            'Współczesne podejście konstrukcjonistyczne (teoria skonstruowanej emocji Lisy Feldman Barrett) idzie jeszcze dalej: mózg nie posiada wbudowanych „modułów złości” czy „modułów strachu”. Konstruuje emocję na bieżąco na podstawie sygnałów z ciała (interocepcja), wcześniejszych doświadczeń, pojęć językowych i kontekstu społecznego.'
+          ]
+        },
+        {
+          title: 'Dynamika Emocji Podstawowych i Społecznych w Wyborach',
+          paragraphs: [
+            'STRACH A LĘK: Strach dotyczy bezpośredniego, obecnego zagrożenia (pies biegnący w moją stronę), mobilizując do ucieczki lub walki. Lęk dotyczy antycypacji przyszłej niepewności (jutrzejsza rozmowa kwalifikacyjna). Unikanie lękowego zadania daje natychmiastową ulgę afektywną (nagroda tu i teraz), ale blokuje dopływ informacji korygującej — w ten sposób ucieczka utrwala lęk i prowadzi do przewlekłej prokrastynacji.',
+            'ZŁOŚĆ A AGRESJA: To fundamentalne rozróżnienie. Złość jest naturalnym sygnałem informującym o naruszeniu granic, zablokowaniu celu lub niesprawiedliwości. Agresja jest tylko jednym z możliwych (często dysfunkcyjnych) zachowań. Człowiek dojrzały potrafi czuć silną złość i wybrać asertywne wyznaczenie granic zamiast ataku.',
+            'WSTYD VS POCZUCIE WINY: Zgodnie z badaniami June Tangney, wstyd atakuje tożsamość („Jestem beznadziejny”) i wywołuje odruch ukrycia się, zaprzeczenia lub agresji obronnej. Poczucie winy ocenia konkretne zachowanie („Zrobiłem błąd”) i mobilizuje do zadośćuczynienia oraz korekty procesu decyzyjnego. W pętli uczenia się zamiana wstydu w poczucie winy jest warunkiem koniecznym zachowania sprawczości.',
+            'ZAZDROŚĆ JAKO KOMPAS WARTOŚCI: Zamiast traktować zazdrość jako wstydliwą wadę charakteru, systemowe podejście odczytuje w niej cenną informację decyzyjną: „Jeśli zazdroszczę koledze awansu lub publikacji książki, to znak, że ten cel jest dla mnie stokroć ważniejszy, niż dotąd sądziłem”.'
+          ],
+          highlightBox: {
+            title: 'Sygnał to Nie Rozkaz',
+            content: 'Emocja jest bezcennym sygnałem informującym o relacji między środowiskiem a Twoimi potrzebami. Jednak sygnał to nie instrukcja wykonawcza. To, że czujesz złość, nie daje prawa do krzyku; to, że czujesz lęk, nie oznacza, że sytuacja jest obiektywnie niebezpieczna.',
+            type: 'insight'
+          }
+        }
+      ]
+    },
+    {
+      id: 'sec-27-5',
+      pageNumber: 785,
+      sectionNumber: '27.5',
+      title: 'Sprzężenie Zwrotne: Jak Emocje Meblują Uwagę, a Uwaga Kształtuje Decyzje',
+      category: 'teoria',
+      readingTimeMinutes: 16,
+      paragraphs: [
+        'Teraz możemy połączyć wszystkie trzy wymiary w jeden nierozerwalny mechanizm. Decyzja nie zaczyna się w izolowanej korze przedczołowej, a uwaga i emocje nie są niezależnymi modułami. Funkcjonują w nieustannej pętli sprzężeń zwrotnych:',
+        'STAN AFEKTYWNY → REFLEKTOR UWAGI → FILTRACJA PERCEPCYJNA → OCENA ZNACZENIA → DECYZJA → ZACHOWANIE → NOWY STAN CIAŁA'
+      ],
+      subsections: [
+        {
+          title: 'Mechanizm Tunelowania Afektywnego i Potwierdzania Obaw',
+          paragraphs: [
+            'Wyobraź sobie sytuację Anny z Rozdziału 3.20: Anna rozmawia z przyjaciółką w kawiarni. Telefon przyjaciółki kilkakrotnie się rozświetla, a ta odpisuje na wiadomość. U Anny pojawia się myśl: „Nie jestem dla niej ważna”, która natychmiast wywołuje ukłucie rozczarowania i lęku przed odrzuceniem.',
+            'Co dzieje się w ułamku sekundy? Wzbudzona emocja natychmiast przejmuje kontrolę nad jej reflektorem uwagi (Affective Attentional Biasing). Anna przestaje słuchać treści słów przyjaciółki. Jej uwaga zaczyna gorączkowo i selektywnie rejestrować wyłącznie sygnały pasujące do hipotezy o odrzuceniu: spojrzenie na zegarek, poprawienie włosów, chwilowe ziewnięcie.',
+            'Każdy z tych neutralnych gestów (wynikających ze zmęczenia po pracy) staje się dla umysłu Anny „niepodważalnym dowodem”. W ciągu 10 minut powstaje potężna eskalacja interpretacyjna, która prowadzi do decyzji: Anna zamyka się w sobie, odpowiada chłodnymi monosylabami, a na koniec demonstracyjnie wychodzi. Przyjaciółka czuje się zdezorientowana i zraniona — w ten sposób emocjonalne zniekształcenie uwagi wygenerowało realny konflikt w świecie fizycznym.'
+          ]
+        },
+        {
+          title: 'Stres a Uwaga: Czujność (Hypervigilance) to Nie Koncentracja',
+          paragraphs: [
+            'Kolejnym krytycznym zjawiskiem w podejmowaniu decyzji jest wpływ stresu na jakość przetwarzania. Pod wpływem ostrego wyrzutu kortyzolu i noradrenaliny układ nerwowy wchodzi w stan wysokiej czujności. Wielu ludzi myli ten stan ze skupieniem: „Jestem pobudzony, więc działam wydajnie”.',
+            'To błąd. Wysoka czujność (hypervigilance) polega na chaotycznym, oddolnym wychwytywaniu każdego ruchu, szmeru i potencjalnego zagrożenia. Równolegle drastycznie spada zdolność do elastycznego, odgórnego utrzymywania uwagi na skomplikowanym zadaniu logicznym. Człowiek w silnym stresie rejestruje skrzypienie podłogi za ścianą, ale nie jest w stanie dostrzec błędu w założeniach wielomilionowej umowy biznesowej. Zrozumienie tej dynamiki wymusza zasadę kwarantanny decyzyjnej w momentach somatycznego wzburzenia.'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'sec-27-6',
+      pageNumber: 791,
+      sectionNumber: '27.6',
+      title: 'Konflikt wielopoziomowy: Negocjacje celów, emocji, ról i tożsamości',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
