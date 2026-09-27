@@ -378,10 +378,11 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.2',
       title: 'Dlaczego sama wiedza nie wystarcza? Powrót do starych kolein neuronowych',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Najczęstszą frustracją dorosłego człowieka jest świadomość własnych błędów przy jednoczesnej niezdolności do ich powstrzymania. Przeczytałeś dziesiątki książek, wiesz dokładnie, dlaczego prokrastynujesz lub ulegasz złości, a mimo to w trudnym momencie powtarzasz ten sam schemat.',
-        'Wynika to z faktu, że wiedza merytoryczna jest zapisana w korze deklaratywnej, podczas gdy nawykowe zachowanie pod wpływem stresu jest wywoływane przez obwody podkorowe (jądra podstawy, prążkowie). Stare koleiny neuronowe są jak wyżłobione koryta rzek — w chwili zmęczenia woda płynie tam, gdzie opór jest najmniejszy. Budowanie nowej ścieżki wymaga powtarzalnego treningu fizycznego w świecie realnym.'
+        'Najczęstszą i najbardziej bolesną frustracją dorosłego człowieka jest rozziew pomiędzy posiadaną wiedzą a codzienną praktyką. Przeczytałeś dziesiątki książek psychologicznych, znasz pojęcia prokrastynacji, wiesz, jak szkodliwy jest cukier i brak snu, potrafisz bezbłędnie wyjaśnić mechanizmy stresu — a mimo to w trudnym momencie sięgasz po niezdrowe nawyki lub wybuchasz złością.',
+        'Zjawisko to nie jest dowodem na Twój rzekomy „brak silnej woli” ani defekt moralny. Wynika z fundamentalnej organizacji architektury mózgu: WIEDZA DEKLARATYWNA (fakty, pojęcia, zrozumienie) jest kodowana w płatach skroniowych i korze przedczołowej, podczas gdy NAWYKOWE ZACHOWANIE (pamięć proceduralna) jest zapisane w podkorowych strukturach prążkowia i jąder podstawy.',
+        'Stare obwody behawioralne przypominają głęboko wyżłobione koryta rzeczne. Kiedy pojawia się zmęczenie, pośpiech lub stres (czyli spadek dostępności glukozy w korze przedczołowej), impuls nerwowy płynie po ścieżce najmniejszego oporu — do starego koryta. Sama wiedza w korze jest jak mapa papierowa leżąca w plecaku — w trakcie powodzi nie zatrzyma wody. Zmiana wymaga wykopania NOWEGO koryta poprzez powtarzalny, fizyczny trening zachowania w środowisku.'
       ]
     },
     {
@@ -390,10 +391,13 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.3',
       title: 'Rola środowiska i architektury wyboru: Przeszkody i gładkość',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Najpotężniejszym, niewidzialnym reżyserem Twoich zachowań jest Twoje ŚRODOWISKO. Richard Thaler i Cass Sunstein w Teorii Szturchania (Nudge Theory) wykazali, że ludzie wybierają to, co jest najprostsze i najbardziej dostępne w ich bezpośrednim otoczeniu.',
-        'Jeśli chcesz zmienić zachowanie, przestań trenować silną wolę w skażonym środowisku. Przeprojektuj otoczenie tak, aby zachowania niepożądane wymagały wielkiego wysiłku (Inżynieria Tarcia / Friction Addition), a zachowania pożądane były natychmiastowe i bezwysepkowe (Friction Reduction).'
+        'Jednym z najważniejszych odkryć współczesnej psychologii behawioralnej i ekonomii behawioralnej (Richard Thaler, Cass Sunstein, Kurt Lewin) jest fakt, że to ŚRODOWISKO FIZYCZNE I SPOŁECZNE jest głównym reżyserem naszych codziennych wyborów. Człowiek rzadko podejmuje decyzje z poziomu absolutnej wolnej woli — wybiera zazwyczaj to, co w jego bezpośrednim otoczeniu jest najłatwiejsze, najbardziej widoczne i wymaga najmniejszego wysiłku.',
+        'Kluczową technologią zmiany zachowania jest Inżynieria Tarcia (Friction Engineering):',
+        '1. DLA ZACHOWAŃ SZKODLIWYCH: Maksymalnie zwiększamy tarcie środowiskowe (Friction Addition). Jeśli chcesz mniej korzystać ze smartfona, nie trenuj heroizmu — wyłącz powiadomienia, ustaw ekran w skali szarości, wyloguj się z aplikacji i zostawiaj telefon w innym pokoju. Zmuszenie kory przedczołowej do przejścia 10 kroków i wpisania hasła daje 5-sekundową pauzę poznawczą, która pozwala zatrzymać automatyczny odruch prążkowia.',
+        '2. DLA ZACHOWAŃ POŻĄDANYCH: Maksymalnie redukujemy tarcie środowiskowe (Friction Reduction). Jeśli chcesz biegać rano, połóż buty i strój sportowy tuż przy łóżku wieczorem; jeśli chcesz pić wodę, postaw pełną karafkę bezpośrednio na biurku przy klawiaturze.',
+        'Nie zmieniaj siebie poprzez walkę ze swoimi skłonnościami — zmień geometrię swojego pokoju, kuchni i biura tak, aby dobre zachowanie było ścieżką o najniższym oporze.'
       ]
     },
     {
@@ -402,10 +406,11 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.4',
       title: 'Siła mikrokroków (Atomic Habits): Budowanie tożsamości przez dowody z działania',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Małe zmiany przynoszą gigantyczne skumulowane rezultaty. Wykonanie prostej czynności trwającej 2 minuty (np. przeczytanie jednej strony, zrobienie dwóch pompek, wypicie szklanki wody) wydaje się śmiesznie małe, lecz ma potężną moc psychologiczną.',
-        'Oszukuje ciało migdałowate (nie wywołuje lęku przed zmianą) oraz dostarcza umysłowi empirycznego dowodu: „Jestem człowiekiem, który to robi”. Każde wykonane mikrodziałanie jest głosem oddanym na nową wersję siebie.'
+        'Kiedy próbujemy wprowadzić wielką, monumentalną zmianę (np. „Od jutra uczę się 3 godziny dziennie i biegam 10 km”), ciało migdałowate odbiera to jako gwałtowne zachwianie homeostazy i wysyła potężny sygnał lęku oraz oporu. W rezultacie po 4 dniach poddajemy się w poczuciu bezsilności.',
+        'Metoda mikrokroków (BJ Fogg — Tiny Habits, James Clear — Atomic Habits) opiera się na radykalnym zmniejszeniu poprzeczki wejściowej zachowania do progu, który jest neurobiologicznie „niewidzialny dla lęku”: 2 minuty czytania, 1 pompka, 30 sekund rozciągania. Wykonanie tak małej czynności nie wymaga mobilizacji silnej woli i nie generuje stresu.',
+        'Prawdziwa potęga mikrokroku nie leży w jego bezpośrednim rezultacie fizycznym, lecz w jego funkcji tożsamościowej. Każdy zrobiony mikrokrok jest twardym, empirycznym dowodem dla Twojego układu nerwowego: „Jestem osobą, która codziennie pisze”, „Jestem osobą, która dba o ciało”. Tożsamość nie zmienia się pod wpływem afirmacji — zmienia się pod wpływem powtarzalnych dowodów z działania.'
       ]
     },
     {
@@ -414,10 +419,11 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.5',
       title: 'Planowanie działania i algorytmy „Jeśli-To”: Odciążanie kory przedczołowej',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Peter Gollwitzer w badaniach nad Intencjami Implementacyjnymi dowiódł, że osoby, które zaplanowały dokładny czas, miejsce i wzorzec zachowania w postaci reguły „Jeśli X, to zbiór Y”, mają o 300% wyższą skuteczność wdrożenia zmiany niż osoby polegające na czystej intencji.',
-        'Reguła „Jeśli-To” przekazuje kontrolę wykonawczą na bodziec środowiskowy. Nie musisz zastanawiać się w zmęczeniu — wyzwalacz automatycznie uruchamia zaprogramowany skrypt.'
+        'Peter Gollwitzer w przełomowych badaniach nad Intencjami Implementacyjnymi udowodnił, że ogólne intencje w rodzaju „Będę się zdrowiej odżywiać” lub „Będę częściej odpoczywać” mają zaledwie 20% szans na realizację. Natomiast osoby, które sformułowały swoje postanowienie w postaci precyzyjnego algorytmu warunkowego „JEŚLI pojawi się sytuacja X, TO wykonam działanie Y”, osiągają wskaźnik skuteczności rzędu 60–80%.',
+        'Algorytm „Jeśli-To” działa jak skrót programistyczny dla mózgu. Zamiast zmuszać zmęczoną korę przedczołową do podejmowania decyzji w ogniu pokusy (np. „Co mam zjeść na mieście, gdy jestem głodny?”), przekazuje kontrolę wykonawczą na konkretny wyzwalacz środowiskowy: „JEŚLI kelner zapyta o napój, TO poproszę o wodę niegazowaną z cytryną”.',
+        'Kiedy bodziec X pojawia się w polu percepcji, mózg nie deliberuje — od razu odpala zaprogramowane zachowanie Y, chroniąc zasoby samoregulacji.'
       ]
     },
     {
@@ -426,10 +432,11 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.6',
       title: 'Przezwyciężanie oporu i lęku przed zmianą: Współpraca z homeostazą',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Opór przed zmianą jest naturalnym mechanizmem obronnym organizmu chroniącym homeostazę. Każda nowość jest dla układu nerwowego potencjalnym zagrożeniem.',
-        'Aby pokonać opór, należy obniżyć poprzeczkę trudności do poziomu, który wywołuje uśmiech, oraz zaopiekować się lękiem poprzez bezpieczne eksperymenty behawioralne.'
+        'Każdy żywy organizm dąży do utrzymania homeostazy — dynamicznej równowagi fizjologicznej i psychologicznej. Dla Twojego podświadomego układu nerwowego każdy znany nawyk (nawet jeśli obiektywnie szkodliwy) jest traktowany jako stan bezpieczny, ponieważ pozwolił Ci przetrwać do dnia dzisiejszego. Nowe zachowanie jest nieznane, a zatem ewolucyjnie podejrzane.',
+        'Opór przed zmianą, wewnętrzny sabotaż czy nagły spadek energii na myśl o rozpoczęciu projektu nie są dowodem na Twoje lenistwo — są naturalnym, biologicznym mechanizmem ochronnym homeostazy. Walka z oporem za pomocą samobiczowania tylko nasila wyrzut kortyzolu i paraliż.',
+        'Współpraca z homeostazą wymaga strategii powolnej adaptacji: wprowadzania zmian w mikrodawkach, oswajania lęku poprzez bezpieczne eksperymenty oraz zapewniania sobie fizjologicznego poczucia bezpieczeństwa (sen, odżywienie, życzliwość wobec siebie).'
       ]
     },
     {
@@ -438,10 +445,12 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.7',
       title: 'Nawroty i błędy w procesie zmiany: Od katastrofizacji do wyrozumiałego realizmu',
       category: 'studium-przypadku',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Proces zmiany NIE JEST liniowy. Potknięcia są nieodłącznym elementem uczenia się nowych wzorców.',
-        'Poniższe studia przypadków ukazują, jak nieliniowo przebiega zmiana w redukcji masy ciała oraz w wychodzeniu z nałogowych zachowań.'
+        'Jednym z najbardziej niebezpiecznych zjawisk w psychologii zmiany jest tzw. Efekt „A niech to!” (What-the-Hell Effect / Abstinence Violation Effect). Polega on na tym, że po jednorazowym potknięciu (np. zjedzenie ciastka podczas diety, pominięcie jednego treningu, sięgnięcie po papierosa) człowiek wpada w czarno-białą katastrofizację: „Skoro złamałem zasadę, cały plan jest zrujnowany, jestem beznadziejny, więc mogę zjeść całą blachę ciasta”.',
+        'W psychologii behawioralnej kluczowe jest rozróżnienie pomiędzy POTKNIĘCIEM (Lapse — jednorazowy błąd taktyczny) a NAWROTEM (Relapse — całkowity powrót do starego wzorca). To nie samo potknięcie niszczy postęp, lecz reakcja emocjonalna na potknięcie.',
+        'Badania Kristin Neff nad Samowspółczuciem (Self-Compassion) pokazują, że osoby, które po błędzie traktują siebie z życzliwym realizmem mentora („Potknąłem się, bo byłem przemęczony. Zbadajmy, co poszło nie tak i wróćmy do planu”), mają wielokrotnie wyższe szanse na trwałą zmianę niż osoby stosujące samokrytykę.',
+        'Poniższe studium przypadku ukazuje proces wychodzenia z pułapki katastrofizacji u menedżera, który zredukował masę ciała dzięki trwałemu systemowi.'
       ],
       caseStudyRef: caseStudiesChapterTwentySix[0]
     },
@@ -451,10 +460,12 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.8',
       title: 'Chwilowa motywacja a trwały system: Dlaczego potrzebujesz rurociągu, a nie wiadra',
       category: 'studium-przypadku',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Motywacja jest jak deszczówka — pojawia się gwałtownie, ale szybko wysycha. System jest jak rurociąg — dostarcza wodę codziennie, niezależnie od pogody.',
-        'Poniższe studium przypadku ilustruje proces budowania autentycznego systemu samoregulacji w uwalnianiu się od nawykowego sięgania po alkohol po pracy.'
+        'Motywacja jest zjawiskiem neurochemicznym opartym na wyrzucie dopaminy. Jest z natury kapryśna, fluktuująca i silnie zależna od jakości snu, poziomu stresu, pogody czy opinii innych ludzi. Poleganie na motywacji w długoterminowym rozwoju przypomina noszenie wody ze studni dziurawym wiadrem — wymaga ciągłego, heroicznego wysiłku i kończy się porażką w gorszy dzień.',
+        'System jest jak podziemny rurociąg: wymaga precyzyjnego zaprojektowania i zbudowania, lecz gdy już działa, dostarcza wodę codziennie, bez względu na to, czy masz na to ochotę. System to połączenie: architektury otoczenia, reguł Jeśli-To, mikronawyków i procedur awaryjnych na trudne dni.',
+        'Jak mawiał James Clear: „Nie podnosisz się do poziomu swoich celów — opadasz do poziomu swoich systemów”.',
+        'Poniższe studium przypadku ilustruje proces budowania autorskiego systemu samoregulacji w uwalnianiu się od nawykowego sięgania po alkohol i budowaniu zdrowego stylu życia.'
       ],
       caseStudyRef: caseStudiesChapterTwentySix[1]
     },
@@ -464,9 +475,13 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.9',
       title: 'Mierzenie i monitorowanie postępów: Dzienniki sprawczości i twarde dane',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'To, co jest mierzone, może być zarządzane. Prowadzenie prostego rejestru wykonania zachowań daje umysłowi poczucie ciągłości i stymuluje uwalnianie dopaminy z celebracji postępu.'
+        'Zgodnie z klasyczną maksymą nauk o zarządzaniu i psychologii poznawczej: To, co jest mierzone, może być świadomie kształtowane. Kiedy nie prowadzisz żadnego zapisu swoich zachowań, Twój mózg posługuje się zniekształceniami pamięciowymi — albo idealizuje postępy, wywołując przedwczesne spoczęcie na laurach, albo dramatyzuje brak efektów pod wpływem chwilowego spadku nastroju.',
+        'Prosty, wizualny rejestr nawyków (Habit Tracker) spełnia trzy potężne funkcje psychologiczne:',
+        '1. PRZYPOMNIENIE: Sam widok kalendarza lub notesu stanowi wyzwalacz środowiskowy dla wykonania czynności.',
+        '2. ATRAKCYJNOŚĆ I NAGRODA: Skreślenie kratki po wykonaniu zadania daje natychmiastowy, mikroskopijny wyrzut dopaminy, zamykając pętlę wzmocnienia.',
+        '3. DOWÓD CIĄGŁOŚCI: Widok nieprzerwanego łańcucha wykonanych działań buduje silną motywację do ochrony dotychczasowego dorobku (tzw. zasada „Nie przerywaj łańcucha”).'
       ]
     },
     {
@@ -475,9 +490,11 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.10',
       title: 'Eksperymentowanie behawioralne: Bądź naukowcem we własnym życiu',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Porzuć surową postawę sędziego na rzecz dociekliwej postawy naukowca. Przetestuj daną metodę przez 14 dni. Jeśli przynosi rezultaty — utrwal ją. Jeśli nie przynosi — zmień zmienną i testuj dalej bez poczucia winy.'
+        'Najważniejszym przesunięciem paradygmatu w dojrzałym rozwoju osobistym jest porzucenie roli surowego sędziego na rzecz dociekliwego badacza i naukowca behawioralnego.',
+        'Kiedy podchodzisz do siebie jak sędzia, każda nieudana próba (np. nieudany poranny trening) jest traktowana jako wyrok na Twojej tożsamości („Jestem beznadziejny, nie nadaję się do tego”). Kiedy podchodzisz do siebie jak naukowiec, każda próba jest traktowana jako HIPOTEZA BADAWCZA: „Hipoteza: jeśli przygotuję ubranie wieczorem, wstanę o 6:30. Wynik: nie wstałem, bo poszedłem spać o 1:00 w nocy. Wniosek: zmienną krytyczną nie jest ubranie, lecz godzina gaszenia światła. Modyfikuję zmienną i testuję kolejną hipotezę”.',
+        'Naukowiec nie obraża się na dane, nie rozpacza i nie porzuca laboratorium. Mierzy, modyfikuje zmienne środowiskowe i iteracyjnie doskonali swój system.'
       ]
     },
     {
@@ -486,10 +503,11 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.11',
       title: 'Utrwalanie nowych zachowań i zmiana tożsamościowa: Od próby do bycia',
       category: 'cwiczenia',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Ostatecznym celem zmiany zachowania jest ZMIANA TOŻSAMOŚCIOWA. Zamiast mówić: „Próbuję nie jeść słodyczy”, zaczynasz mówić: „Jestem człowiekiem, który dba o swoje zdrowie”. Zachowanie staje się naturalną ekspresją kim jesteś.',
-        'Poniższy warsztat prowadzi przez projektowanie kompletnego algorytmu WOOP.'
+        'Ostatecznym celem każdego procesu samokształtowania jest przesunięcie zmiany z poziomu zewnętrznego przymusu na poziom głębokiej tożsamości osobistej.',
+        'Różnicę tę widać w języku: człowiek funkcjonujący na poziomie walki mówi: „Próbuję nie jeść cukru i zmuszam się do biegania, ale to strasznie trudne”. Człowiek po transformacji tożsamościowej mówi po prostu: „Dziękuję, nie jem słodyczy, jestem osobą, która dba o zdrowie”. W drugim przypadku zachowanie nie wymaga już ciągłej walki — staje się naturalną, bezwysiłkową ekspresją tego, kim jesteś.',
+        'Poniższy warsztat prowadzi przez procedurę WOOP (Wish, Outcome, Obstacle, Plan — Gabriele Oettingen), która łączy kontrastowanie mentalne z programowaniem implementacyjnym, torując drogę do trwałej integracji tożsamościowej.'
       ],
       exerciseRef: selfExercisesChapterTwentySix[0]
     },
@@ -499,16 +517,17 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.12',
       title: 'Tworzenie własnego systemu samodoskonalenia: Synteza drogi autonomii',
       category: 'cwiczenia',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Oto wielka synteza procesu, który przeszliśmy:',
-        '1. MYŚL / INTERPRETACJA (Zauważ jak nadajesz znaczenie bodźcom).',
-        '2. EMOCJA (Zaopiekuj się stanem somatycznym w ciele).',
-        '3. DECYZJA (Podejmij wybór w oparciu o kompas wartości i pauzę).',
-        '4. ZACHOWANIE (Wykonaj konkretny, mikrokrok w świecie fizycznym).',
-        '5. KONSEKWENCJA (Zbadaj obiektywne rezultaty bez iluzji).',
-        '6. ZMIANA (Dostosuj środowisko i utrwal nowy system).',
-        'Poniższy warsztat uczy inżynierii tarcia środowiskowego.'
+        'Dotarłeś do punktu kulminacyjnego całej ścieżki rozwoju psychologicznego. Przeszliśmy kompletną drogę wyjaśniającą funkcjonowanie człowieka:',
+        '1. WIEDZA I INTERPRETACJA: Zrozumienie, jak filtry poznawcze i uwaga nadają znaczenie rzeczywistości.',
+        '2. EMOCJE I CIAŁO: Odczytywanie znaczników somatycznych i bezpieczna regulacja pobudzenia.',
+        '3. DECYZJA: Świadomy wybór oparty na kompasie wartości i pauzie poznawczej.',
+        '4. ZACHOWANIE: Fizyczne wykonanie mikrokroku w świecie rzeczywistym.',
+        '5. KONSEKWENCJE I INFORMACJA ZWROTNA: Obiektywny audyt wyników bez zniekształceń ego.',
+        '6. KOREKTA I INŻYNIERIA ŚRODOWISKA: Dopasowanie oporów i ułatwień w codziennym otoczeniu.',
+        '7. UTRWALENIE I TOŻSAMOŚĆ: Przekształcenie powtarzalnej praktyki w trwałą strukturę charakteru.',
+        'Poniższy warsztat uczy projektowania kompletnego, osobistego systemu inżynierii tarcia środowiskowego na Twoje kluczowe cele życiowe.'
       ],
       exerciseRef: selfExercisesChapterTwentySix[1]
     },

@@ -403,10 +403,22 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.3',
       title: 'Zachowania automatyczne a kontrolowane: Sterowanie z jąder podstawy',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Nasze zachowania dzielą się na dwie wielkie kategorie: zachowania celowe (Goal-Directed), wymagające uwagi kory przedczołowej, oraz zachowania nawykowe (Habitual), obsługiwane automatycznie przez jądra podstawy i prążkowie.',
-        'Gdy zachowanie zostanie powtórzone dostatecznie wiele razy w obecności tego samego wyzwalacza, mózg przenosi kontrolę z energochłonnej kory do automatycznych struktur podkorowych. Nawykowe zachowanie odpala się jak gotowy program komputerowy — często bez udziału naszej świadomej zgody.'
+        'Wszystkie działania, jakie człowiek podejmuje od momentu przebudzenia, dzielą się na dwie fundamentalne kategorie neurobiologiczne: zachowania kontrolowane (Goal-Directed Actions) oraz zachowania automatyczne i nawykowe (Habitual Behaviors).',
+        'Zachowania kontrolowane wymagają pełnej obecności uwagi, angażują grzbietowo-boczną korę przedczołową (dlPFC) oraz pamięć roboczą. Są zorientowane na cel — mózg nieustannie kalkuluje bieżącą wartość nagrody i weryfikuje, czy wykonywane działanie przybliża nas do zamierzonego rezultatu. Przykładem jest nauka prowadzenia samochodu w pierwszych godzinach kursu lub pisanie trudnego dokumentu prawnego.',
+        'Kiedy jednak dane zachowanie zostanie powtórzone dziesiątki lub setki razy w obecności tego samego wyzwalacza środowiskowego, mózg — dążąc do minimalizacji wydatku energetycznego — przenosi kontrolę wykonawczą do podkorowych jąder podstawy (prążkowia grzbietowo-bocznego). W tym momencie zachowanie przestaje być zależne od bieżącej wartości celu — odpala się automatycznie jak gotowy skrypt w odpowiedzi na bodziec.',
+        'Większość dorosłych ludzi funkcjonuje w trybie automatycznym przez niemal 45-50% każdego dnia. Oznacza to, że sięgasz po telefon, otwierasz lodówkę po powrocie do domu lub zaczynasz tłumaczyć się uległym tonem nie dlatego, że podjąłeś taką decyzję, lecz dlatego, że jądra podstawy uruchomiły utrwalony obwód neuronowy bez pytania kory przedczołowej o zgodę.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD: Automatyczny scroll przed snem',
+          paragraphs: [
+            'Sytuacja i bohater: Aneta (29 lat), kładąc się do łóżka ze zmęczeniem, odruchowo sięga po smartfon i przez 90 minut bezmyślnie przewija krótkie filmy w mediach społecznościowych, mimo że rano musi wstać na ważne spotkanie.',
+            'Mechanizm pętli: Bodziec (leżenie w ciemnym pokoju) -> Interpretacja („jestem zmęczona, chcę tylko na 2 minuty zerknąć”) -> Zachowanie nawykowe (odblokowanie ekranu i scroll) -> Krótkoterminowa konsekwencja (dopamina, odcięcie od myśli o jutrze) -> Długoterminowa konsekwencja (brak snu, wyczerpanie) -> Wzmocnienie schematu (obniżona kontrola korowa jutro sprzyja ponownemu scrollowaniu).',
+            'Kluczowy wniosek: Nie zmienisz tego zachowania „obietnicą złożoną rano”. Zmiana wymaga przerwania fizycznego łańcucha bodźca (np. zostawienie telefonu w przedpokoju).'
+          ]
+        }
       ]
     },
     {
@@ -415,7 +427,7 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.4',
       title: 'Prawa Uczenia się: Nagroda, kara i siła wzmocnienia negatywnego',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 16,
       paragraphs: [
         'B.F. Skinner i Badaacze behawioralni wykazali, że zachowanie jest kształtowane przez swoje konsekwencje. Jeśli po konkretnym zachowaniu następuje Wzmocnienie Pozytywne (nagroda, chwalba, zastrzyk dopaminy) lub Wzmocnienie Negatywne (usunięcie bólu, ulga od lęku), prawdopodobieństwo powtórzenia tego zachowania wzrasta.',
         'Wielkim błędem jest niedocenianie siły Wzmocnienia Negatywnego. Ucieczka przed nieprzyjemną emocją (np. sięgnięcie po alkohol czy wyjście z trudnego zebrania) daje natychmiastową ulgę, co silnie utrwala nawyk ucieczkowy.'
@@ -427,10 +439,12 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.5',
       title: 'Strategia unikania (Avoidance Behavior): Krótkoterminowa ulga, długoterminowe więzienie',
       category: 'studium-przypadku',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Unikanie jest najbardziej rozpowszechnionym i niszczycielskim zachowaniem w psychologii ludzkiej. Kiedy unykasz trudnej rozmowy, konfrontacji z długami czy napisania raportu, odczuwasz natychmiastowy spadek napięcia somatycznego.',
-        'Poniższe studium przypadku ukazuje, jak mechanizm unikania i prokrastynacji zniszczył spokój analityka finansowego.'
+        'Zachowanie unikania (Avoidance Behavior) jest jednym z najbardziej podstępnych i destrukcyjnych mechanizmów w ludzkiej psychice. Polega na podejmowaniu działań mających na celu ucieczkę przed bezpośrednią konfrontacją z bodźcem, sytuacją lub wewnętrznym stanem emocjonalnym, który wywołuje lęk, poczucie bezradności lub dyskomfort.',
+        'Z punktu widzenia neurobiologii unikanie jest potężnie wzmacniane przez mechanizm Wzmocnienia Negatywnego (Negative Reinforcement). W momencie, gdy wycofujesz się z trudnej rozmowy, odsuwasz otwarcie wezwania do zapłaty czy rezygnujesz ze złożenia aplikacji o pracę, w Twoim ciele następuje gwałtowny, fizjologiczny spadek napięcia — ciśnienie krwi spada, a układ współczulny się wycisza. Mózg rejestruje tę chwilową ulgę jako gigantyczny sukces adaptacyjny: „Ucieczka uratowała nas przed cierpieniem!”.',
+        'Cena, jaką płacimy za tę chwilową ulgę, jest jednak dewastująca. Każdy akt unikania wysyła do ciała migdałowatego sygnał potwierdzający: „Uniknięta sytuacja była śmiertelnie groźna, a ja nie mam zasobów, by jej stawić czoła”. W rezultacie lęk ulega utrwaleniu i eskalacji, pole życiowej sprawczości kurczy się, a nierozwiązany problem narasta w tle.',
+        'Poniższe studium przypadku ukazuje pełną anatomię pętli unikania u starszego analityka finansowego, który w obliczu lęku przed oceną uciekał w kompulsywne porządkowanie otoczenia.'
       ],
       caseStudyRef: caseStudiesChapterTwentyFive[0]
     },
@@ -440,10 +454,12 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.6',
       title: 'Prokrastynacja jako zachowanie: Ucieczka przed trudną emocją, a nie brakiem czasu',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Prokrastynacja nie jest problemem złego zarządzania czasem czy braku kalendarza. Jest zachowaniem ucieczkowym służącym do regulacji nieprzyjemnego stanu afektywnego (Mood Repair).',
-        'Zamiast konfrontować się z lękiem przed porażką, nudą czy bezradnością na widok trudnego zadania, umysł wybiera zachowanie zastępcze (sprzątanie, media społecznościowe), które dostarcza natychmiastowej dopaminy.'
+        'Jednym z najbardziej rozpowszechnionych mitów na temat prokrastynacji jest przekonanie, że wynika ona ze złej organizacji czasu, braku odpowiednich aplikacji do zarządzania zadaniami czy lenistwa charakteru. Psychologia poznawczo-behawioralna (Timothy Pychyl, Fuschia Sirois) jednoznacznie dowodzi, że prokrastynacja jest zaburzeniem regulacji emocjonalnej, a nie deficytem zarządzania czasem.',
+        'Kiedy stajesz przed zadaniem, które budzi w Tobie niepewność, nudę, lęk przed porażką (lub lęk przed sukcesem i związaną z nim presją), Twój układ limbiczny traktuje to zadanie jak zagrożenie afektywne. W tym momencie uruchamia się mechanizm natychmiastowej naprawy nastroju (Short-Term Mood Repair).',
+        'Zamiast zmierzyć się z dyskomfortem zadania, umysł wybiera natychmiastowe zachowanie zastępcze (przeglądanie wiadomości, sprawdzanie poczty, sprzątanie mieszkania), które przynosi natychmiastowy zastrzyk dopaminy i redukcję somatycznego napięcia. Człowiek kupuje sobie chwilowy spokój za cenę późniejszego wstydu, paniki i spadku jakości wykonanej pracy.',
+        'Przełamanie prokrastynacji nie polega na kupieniu nowego terminarza, lecz na wykształceniu tolerancji na wstępny dyskomfort emocjonalny (Emotional Distress Tolerance) i zmniejszeniu pierwszego kroku działania do skali, która nie wyzwala alarmu lękowego.'
       ]
     },
     {
@@ -452,10 +468,11 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.7',
       title: 'Luka Intencja-Działanie (Intention-Behavior Gap): Dlaczego robimy to, czego nie chcemy',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Wszyscy znamy stan Akrasii — robienia rzeczy sprzecznych z naszym własnym, roztropnym postanowieniem. Posiadanie czystej intencji w korze przedczołowej odpowiada za zaledwie 20-30% wariancji rzeczywistego zachowania.',
-        'Luka pomiędzy intencją a działaniem powstaje w momencie, gdy bodźce środowiskowe i nawyki podkorowe okazują się silniejsze od wyczerpanych zasobów kontroli zarządczej.'
+        'Zjawisko znane w filozofii starożytnej jako Akrasia (działanie wbrew lepszemu rozeznaniu), a we współczesnej psychologii jako Luka Intencja-Działanie (Intention-Behavior Gap), stanowi jedną z największych zagadek ludzkiej natury. Dlaczego ludzie, którzy szczerze chcą zdrowo się odżywiać, regularnie ćwiczyć, oszczędzać pieniądze i zachowywać spokój w relacjach, tak często postępują dokładnie odwrotnie?',
+        'Metaanalizy badań behawioralnych pokazują, że posiadanie silnej, pozytywnej intencji w korze przedczołowej tłumaczy zaledwie 20–30% wariancji w rzeczywistym, obserwowalnym zachowaniu. Oznacza to, że w 70–80% przypadków o naszym ruchu decydują czynniki pozaświadome: bieżący stan zmęczenia fizjologicznego, dostępność wyzwalaczy w środowisku oraz siła wyuczonych automatyzmów podkorowych.',
+        'Mostem pozwalającym przekroczyć tę lukę nie jest „bardziej intensywne chcenie”, lecz inżynieria behawioralna: planowanie implementacyjne (reguły Jeśli-To), modyfikacja środowiska fizycznego oraz redukcja oporu wejściowego dla pożądanych zachowań.'
       ]
     },
     {
@@ -464,10 +481,12 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.8',
       title: 'Dwie waluty czasu: Krótkoterminowa ulga vs długoterminowa katastrofa',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Niemal każde zachowanie ma dwie taryfy konsekwencji: cenę płaconą TERAZ oraz cenę płaconą PÓŹNIEJ. Zachowania szkodliwe (np. wybuch złości, obżarstwo, odkładanie pracy) dają korzyść TERAZ (ulga, przyjemność) i nakładają wielki koszt PÓŹNIEJ (utrata relacji, zdrowia, kariery).',
-        'Zachowania prozdrowotne i rozwojowe wymagają poniesienia trudu i dyskomfortu TERAZ, dając nagrodę PÓŹNIEJ.'
+        'Niemal każde zachowanie człowieka jest rozliczane w dwóch zupełnie różnych walutach czasowych: w walucie TERAZ (natychmiastowy bilans sensoryczno-afektywny) oraz w walucie PÓŹNIEJ (skumulowane konsekwencje życiowe).',
+        'Główna asymetria ludzkiego zachowania polega na tym, że zachowania autodestrukcyjne (objadanie się, wybuch agresji, ucieczka w nałóg, bierność) oferują natychmiastową wypłatę w walucie TERAZ (przyjemność dopaminowa, ulga od napięcia, brak wysiłku), odraczając potężny koszt w walucie PÓŹNIEJ (choroby kardiometaboliczne, rozpad relacji, utrata kariery, utrata szacunku do siebie).',
+        'Z kolei zachowania prozdrowotne i rozwojowe (trening siłowy, trudna rozmowa asertywna, nauka trudnych umiejętności, oszczędzanie) wymagają natychmiastowego uiszczenia kosztu w walucie TERAZ (wysiłek fizyczny, dyskomfort somatyczny, powstrzymanie pokusy), oferując wielką nagrodę dopiero w odległej walucie PÓŹNIEJ.',
+        'Ewolucyjnie nasz mózg preferuje walutę TERAZ. Budowanie dojrzałej sprawczości polega na świadomym równoważeniu tego bilansu poprzez nagradzanie małych kroków tu i teraz oraz wizualizację kosztu odroczonego.'
       ]
     },
     {
@@ -476,10 +495,12 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.9',
       title: 'Zachowania społeczne i konformizm: Jak grupa modyfikuje nasz ruch',
       category: 'studium-przypadku',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'W obecności innych ludzi nasze zachowanie ulega automatycznej modyfikacji (Efekt Widza, Konformizm Ascha, Uległość wobec Autorytetu Milgrama). Często wykrzykujemy rzeczy lub milczymy w sposób, którego nigdy nie powtórzylibyśmy w samotności.',
-        'Poniższe studium przypadku ukazuje dramat menedżerki, której nawykowa reakcja agresywno-obronna wybuchła podczas zebrania operacyjnego.'
+        'Człowiek w samotności zachowuje się zupełnie inaczej niż ten sam człowiek w obecności innych ludzi. Obecność grupy aktywuje specyficzne obwody neuronalne związane z empatią, oceną hierarchii oraz lękiem przed wykluczeniem społecznym.',
+        'W klasycznych eksperymentach Solomona Ascha, Stanleya Milgrama czy Bibba Latané udowodniono, że presja grupy potrafi skłonić racjonalną jednostkę do zaprzeczenia własnym zmysłom, podporządkowania się destrukcyjnym rozkazom autorytetu czy biernego przyglądania się tragedii drugiego człowieka (Efekt Widza / Rozproszenie Odpowiedzialności).',
+        'W środowisku zawodowym i relacyjnym presja społeczna często manifestuje się w postaci tzw. złośliwej uległości, biernej agresji lub lękowego potakiwania na zebraniach, gdzie nikt nie ma odwagi nazwać błędów zarządu.',
+        'Poniższe studium przypadku ukazuje dynamikę zachowania menedżerki podczas burzliwego zebrania zespołowego i analizuje jej reakcję na presję otoczenia.'
       ],
       caseStudyRef: caseStudiesChapterTwentyFive[1]
     },
@@ -489,9 +510,11 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.10',
       title: 'Reakcja na krytykę, porażkę i sukces: Defensywność vs uczenie się',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'To, jak zachowujesz się w ułamku sekundy po otrzymaniu trudnej informacji zwrotnej lub poniesieniu porażki, jest najszybszym sprawdzianem Twojej dojrzałości psychicznej. Reakcje nawykowe obejmują: defensywne zaprzeczenie, kontratak (DARVO), wycofanie się w oburzone milczenie lub samobiczowanie.'
+        'To, jak człowiek zachowuje się w pierwszych 5 sekundach po usłyszeniu krytyki, doświadczeniu porażki lub osiągnięciu spektakularnego sukcesu, jest najbardziej precyzyjnym testem jego dojrzałości psychologicznej i elastyczności układu nerwowego.',
+        'Niedojrzałe ego reaguje na krytykę w sposób obronno-plemienny. Uruchamia mechanizm DARVO (Deny, Attack, and Reverse Victim and Offender — Zaprzecz, Zaatakuj, Odwróć role Ofiary i Sprawcy), ucieka w agresywną defensywę, oburzone milczenie lub teatralne samobiczowanie („Tak, wiem, jestem najgorszy, wszystko moja wina!”), które ma na celu wymuszenie na rozmówcy pocieszenia.',
+        'Dojrzała reakcja behawioralna opiera się na pauzie poznawczej i dekonstrukcji informacji: oddzieleniu emocjonalnego tonu rozmówcy od merytorycznej zawartości komunikatu. Zdolność do przyjęcia trudnej informacji zwrotnej bez rozpadu poczucia własnej wartości jest cechą ludzi o tzw. nastawieniu na rozwój (Growth Mindset, Carol Dweck).'
       ]
     },
     {
@@ -500,10 +523,11 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.11',
       title: 'Powtarzające się schematy życiowe: Dlaczego wciąż lądujemy w tych samych miejscach',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Jeśli zauważasz, że w różnych relacjach, pracach i miejscach wciąż powtarzasz ten sam dramatyczny scenariusz (np. wchodzenie w relacje z nieprzystępnymi osobami, doprowadzanie do konfliktów z szefem), obserwujesz działanie Schematów Behawioralnych.',
-        'Umysł dąży do spójności — nawet jeśli dany schemat jest dla nas bolesny, jest znany i przewidywalny dla naszego podświadomego układu nerwowego.'
+        'Wielu ludzi z przerażeniem odkrywa, że mimo zmian partnerów, przeprowadzek do innych miast i zmian stanowisk pracy, wciąż lądują w niemal identycznych konfiguracjach problemowych: wchodzą w relacje z emocjonalnie niedostępnymi osobami, popadają w te same konflikty z przełożonymi lub w tym samym momencie sabotują swój sukces finansowy.',
+        'W terapii schematów (Jeffrey Young) zjawisko to nazywane jest Pułapką Schematu (Schema Trap) lub przymusem powtarzania. Ludzki mózg traktuje to, co jest mu znane z dzieciństwa (nawet jeśli było to odrzucenie, chłód emocjonalny czy chaos), jako bezpieczną strefę przewidywalności.',
+        'Nieświadomie wybieramy partnerów i sytuacje, które pasują do naszego starego schematu, po czym reagujemy na nie dawnymi, dziecięcymi strategiami radzenia sobie (uległość, unikanie lub nadkompensacja), utrwalając to samo błędne koło na kolejne lata. Przerwanie tego przymusu wymaga uświadomienia sobie schematu i podjęcia nowego, ryzykownego emocjonalnie zachowania.'
       ]
     },
     {
@@ -512,10 +536,11 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.12',
       title: 'Analiza i Audyt Własnego Zachowania: Jak badać siebie jak naukowiec',
       category: 'cwiczenia',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Aby zmienić zachowanie, musisz najpierw przestać je oceniać moralnie („jestem zły, jestem nieudacznikiem”) i zacząć je opisywać w sposób naukowy.',
-        'Poniższe ćwiczenie uczy przeprowadzenia precyzyjnej wiwisekcji łańcucha behawioralnego krok po kroku.'
+        'Najczęstszą przeszkodą w zmianie zachowania jest moralizowanie i samokrytyka. Kiedy po niepożądanym czynie mówisz sobie: „Jestem beznadziejny, nie mam silnej woli, nigdy mi się nie uda”, wywołujesz wstyd, który aktywuje układ stresowy i prowadzi do kolejnego aktu ucieczki w nawyk.',
+        'Dojrzały audyt behawioralny wymaga przyjęcia postawy życzliwego badacza i rozłożenia zdarzenia na obiektywny łańcuch przyczynowo-skutkowy: bodziec wyzwalający -> interpretacja poznawcza -> stan emocjonalno-somatyczny -> wykonane zachowanie fizyczne -> konsekwencja krótkoterminowa -> konsekwencja długoterminowa.',
+        'Poniższy warsztat uczy prowadzenia precyzyjnej dekompozycji łańcucha behawioralnego krok po kroku bez samobiczowania.'
       ],
       exerciseRef: selfExercisesChapterTwentyFive[0]
     },
@@ -525,10 +550,11 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.13',
       title: 'Obserwacja mikrokroków: Dziennik faktów vs narracje ego',
       category: 'cwiczenia',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Ego uwielbia tworzyć usprawiedliwiające opowieści. Prawdziwa wiedza o sobie pochodzi ze śledzenia twardych, codziennych faktów.',
-        'Poniższe ćwiczenie uczy prowadzenia Dziennika Obserwacji Mikrokroków.'
+        'Nasze ego ma tendencję do tworzenia ubarwionych narracji: wyolbrzymia nasze sukcesy, kiedy chcemy czuć się lepsi od innych, lub wyolbrzymia nasze porażki, kiedy wpadamy w rolę bezradnej ofiary. Żadna z tych narracji nie pomaga w budowaniu trwałej sprawczości.',
+        'Prawdziwy obraz naszego funkcjonowania wyłania się z obserwacji mikrokroków — twardych, policzalnych faktów zarejestrowanych w świecie fizycznym: ile minut spacerowałem? ile stron przeczytałem? o której godzinie poszedłem spać? jak zareagowałem na odmowę?',
+        'Poniższy warsztat prowadzi przez procedurę prowadzenia Dziennika Faktów Behawioralnych, który uczy widzieć siebie w prawdzie pozbawionej iluzji.'
       ],
       exerciseRef: selfExercisesChapterTwentyFive[1]
     },
@@ -538,9 +564,11 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.14',
       title: 'Możliwość zmiany zachowania: Przygotowanie podłoża pod rewolucję',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Najważniejsza wiadomość z zakresu neuroplastyczności brzmi: Żadna ścieżka behawioralna w Twoim mózgu nie jest zapisana na stałe. Zmiana zachowania jest możliwa w każdym wieku, pod warunkiem, że przestaniesz walczyć ze swoim charakterem, a zaczniesz mądrze modyfikować łańcuch bodziec-reakcja.'
+        'Fundamentalnym odkryciem współczesnej neuronauki jest neuroplastyczność mózgu dorosłego człowieka. Oznacza to, że żadna ścieżka synaptyczna, żaden nawyk i żaden schemat reakcji nie są w Twoim układzie nerwowym „wykute w skale” raz na zawsze.',
+        'Zmiana zachowania nie polega jednak na magicznym wymazaniu dawnych ścieżek neuronowych — stare koryta rzeczne pozostają w mózgu w stanie uśpionym. Prawdziwa zmiana polega na powtarzalnym wydeptywaniu NOWEJ ścieżki alternatywnej, która z czasem staje się dla impulsów nerwowych szlakiem szybszym i bardziej energooszczędnym niż stary nawyk.',
+        'W ten sposób przygotowujemy fundament pod kolejny rozdział: przejście od biernego rozumienia problemu do aktywnego projektowania własnego środowiska, nawyków i nowej tożsamości.'
       ]
     },
     {

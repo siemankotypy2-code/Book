@@ -133,7 +133,158 @@ export const chapterTwentyNineCaseStudyMonika: CaseStudy = {
       { step: 'Zasada Bufora Czasowego', script: '„Nie odpowiadam na prośby natychmiast. Wrócę do ciebie z odpowiedzią po 15 minutach”.', rationale: 'Rozrywa pętlę automatycznej uległości i pozwala na chłodną ocenę własnych zasobów.' }
     ]
   },
+  alternativePath: 'Wersja uległa: dalsze branie nadgodzin i hospitalizacja z powodu wyczerpania. Wersja agresywna: wulgarna awantura przy szefie niszcząca reputację. Wersja asertywna: stabilna, krótka odmowa chroniąca grafik i zdrowie.',
+  readerQuestion: 'W jakiej jednej powtarzalnej sytuacji w Twoim życiu mówisz „tak”, choć Twoje ciało krzyczy „nie”? Jak brzmiałaby Twoja 2-zdaniowa czysta odmowa bez tłumaczenia się?',
   keyTakeaway: 'Mówiąc „tak” innym ludziom wbrew sobie, za każdym razem mówisz „nie” własnemu zdrowiu, marzeniom i spokojowi ducha. Twoje „nie” dla innych jest Twoim „tak” dla siebie.'
+};
+
+/**
+ * STUDIUM PRZYPADKU 1 (RELACJA Z PARTNEREM):
+ * Toksyczny Związek Partnerski, Gaslighting, Kontrola i Odzyskiwanie Autonomii
+ */
+export const chapterTwentyNineCaseStudyPartnerJakub: CaseStudy = {
+  id: 'cs-ch29-jakub-toksyczny-partner',
+  title: 'Wielkie Studium Przypadku: W Kleszczach Iluzji — Jakub i Granice w Toksycznym Związku',
+  subtitle: 'Analiza syndromu więzi urazowej (trauma bonding), gaslightingu relacyjnego i protokołu wyjścia z uwikłania',
+  protagonist: 'Jakub, 32 lata, architekt wnętrz, w 3-letnim związku z Klarą',
+  context: 'Jakub żyje w stanie permanentnego napięcia. Związek z Klarą zaczął się od euforycznego bombardowania miłością (love bombing), jednak po 6 miesiącach pojawiły się cykliczne „ciche dni”, wściekłe wybuchy z błahego powodu, kontrola kontaktów towarzyskich i podważanie jego poczytalności („znowu przesadzasz, jesteś nienormalny, wymyślasz problemy”). Klara żądała wglądu w jego telefon, zakazywała wyjazdów na męskie wypady rowerowe i groziła samookaleczeniem przy każdej próbie postawienia granicy.',
+  story: [
+    'W sobotni poranek Jakub szykuje się na dawno zaplanowane spotkanie z wieloletnim przyjacielem z czasów studiów, Michałem. Klara wchodzi do kuchni z posępną miną i demonstracyjnie trzaska szafkami.',
+    'Gdy Jakub pyta, czy wszystko w porządku, Klara odpowiada z lodowatym sarkazmem: „Wspaniale. Ty oczywiście wolisz pić piwo z kolegami, podczas gdy ja muszę sama siedzieć w domu z bólem głowy. Zawsze stawiałeś obcych ludzi ponad naszą miłość”.',
+    'Jakub czuje natychmiastowy paraliż w klatce piersiowej. Wie z doświadczenia, co oznacza ten ton: 3 dni karzącego milczenia, odmowę snu w jednym łóżku i niekończące się oskarżenia.',
+    'Dotychczasowy odruch Jakuba to natychmiastowa kapitulacja: odwoływał spotkanie, przepraszał na kolanach i spędzał cały dzień na próbach poprawienia nastroju Klary, czując jednocześnie dławiącą wściekłość na samego siebie.',
+    'Przełom nastąpił, gdy Jakub podczas psychoterapii rozpoznał mechanizm cyklu przemocy psychicznej i tzw. trauma bondingu (więzi z oprawcą opartej na nieregularnych wzmocnieniach). Zrozumiał, że uleganie fochom i szantażom nie ratuje związku, lecz karmi destrukcję.',
+    'Wdrożył twardy protokół granic: nie odwołał spotkania, spokojnie poinformował partnerkę o swoich planach, odmówił udziału w kłótni opartej na szantażu emocjonalnym i postawił warunek podjęcia wspólnej terapii par pod rygorem definitywnego rozstania.',
+    'Gdy Klara zareagowała eskalacją furii i próbą zniszczenia jego laptopa roboczego, Jakub wyegzekwował konsekwencję: spakował walizkę i wyprowadził się do wynajętego mieszkania, przerywając 3-letni koszmar współuzależnienia.'
+  ],
+  dialogue: [
+    { speaker: 'Klara (ton pełen jadu i łez)', text: 'Jeśli dziś wyjdziesz do Michała, to znaczy, że nigdy mnie nie kochałeś. Zobaczysz, coś mi się stanie i to będzie twoja wina!', subtext: 'Klasyczny szantaż FOG (Fear, Obligation, Guilt) połączony z groźbą samokarania.' },
+    { speaker: 'Jakub (wersja uległa — dawny schemat)', text: 'Klaro, kochanie, nie płacz... już piszę do Michała, że nie przyjadę. Zostanę z tobą, tylko proszę, przestań...', subtext: 'Zdrada własnych potrzeb i nagradzanie terroryzmu emocjonalnego uległością.' },
+    { speaker: 'Jakub (wersja agresywna — nieskuteczna)', text: 'Jesteś toksyczną wariatką! Nienawidzę cię! Zniszczyłaś mi życie!', subtext: 'Eskalacja awantury dostarczająca manipulatorce paliwa do roli „niewinnej ofiary”.' },
+    { speaker: 'Jakub (wersja asertywna — przełom)', text: 'Klaro, bardzo zależy mi na naszej relacji, ale nie zgadzam się na szantaż emocjonalny ani decydowanie o moich przyjaźniach. Wychodzę o 11:00 i wrócę o 16:00. Jeśli źle się czujesz, zadzwońmy po pomoc medyczną. Porozmawiamy spokojnie po moim powrocie.', subtext: 'Twarde oddzielenie własnej odpowiedzialności, spokój fonacyjny i zrealizowanie planu.' }
+  ],
+  decisionTaken: 'Przerwanie błędnego koła uległości: odmowa zrezygnowania ze spotkania towarzyskiego, zdemaskowanie szantażu FOG i wyegzekwowanie separacji fizycznej po naruszeniu nietykalności mienia.',
+  whatProtagonistSaw: 'Jakub wierzył w błędne przekonanie: „Jeśli będę jeszcze bardziej cierpliwy, czuły i zrezygnuję ze swoich pasji, ona wreszcie poczuje się bezpieczna i przestanie mnie atakować”.',
+  whatWasMissed: 'Że toksyczna kontrola nie wynika z braku miłości partnera, lecz z głębokich zaburzeń osobowościowych agresora; każda uległość stanowi nagrodę behawioralną i wzmacnia przekonanie, że szantaż jest w 100% skuteczny.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Więź urazowa (Trauma Bonding) wywołana przerywanym wzmocnieniem (intermittent reinforcement) — naprzemiennością uniesień miłosnych i psychicznego terroru.',
+    cognitiveBiases: [
+      { name: 'Pułapka kosztów utopionych w relacji', description: 'Trwanie w niszczącym związku ze względu na 3 lata zainwestowanych emocji, wspólne plany i kredyt mieszkaniowy.', impact: 'Paraliż przed rozstaniem.' },
+      { name: 'Iluzja zmiany partnera (Rescuer Fantasy)', description: 'Naiwna wiara, że własnym poświęceniem i uległością można „wyleczyć” drugą osobę z narcyzmu lub zaburzeń borderline.', impact: 'Permanentna autoagresja.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Racjonalizacja', explanation: 'Usprawiedliwianie agresji partnerki jej trudnym dzieciństwem lub stresem w pracy.' }
+    ],
+    emotionalDynamic: 'Huśtawka biochemiczna: od wyrzutów dopaminy podczas fazy godzenia się do zalewu kortyzolu i lęku w fazie napięcia.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Zarzut Klary o brak miłości z powodu wyjścia z kolegą.',
+    attentionFocus: 'Lęk przed wybuchem cichych dni i poczucie winy.',
+    interpretation: '„Jestem złym partnerem, niszczę nasz spokój”.',
+    emotion: 'Dławiący lęk i bezsilna złość.',
+    impulse: 'Zostać w domu i przeprosić.',
+    action: 'Świadome zatrzymanie impulsu, wypowiedzenie formuły granicznej i wyjście z domu.',
+    consequence: 'Krótkotrwała eskalacja wściekłości partnerki, ale długofalowe odzyskanie szacunku do samego siebie i suwerenności.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Przednia kora wyspowa (Anterior Insula)', role: 'Rejestracja bólu psychicznego i wstrętu emocjonalnego', activationState: 'Skrajnie przeciążona manipulacją' },
+      { region: 'Brzuszno-przyśrodkowa kora przedczołowa (vmPFC)', role: 'Weryfikacja wartości osobistych i suwerenności Ja', activationState: 'Uruchomiona dzięki psychoterapii' },
+      { region: 'Układ nagrody (Jądro Półleżące)', role: 'Uzależnienie od cyklu godzenia się (Dopaminowy rollercoaster)', activationState: 'Stopniowo wygaszany' }
+    ],
+    neurotransmitters: [
+      { name: 'Dopamina', roleInScenario: 'Gwałtowne spadki podczas cichych dni i skoki podczas pojednania tworzące uzależnienie biochemiczne.' },
+      { name: 'Kortyzol', roleInScenario: 'Chroniczny stan gotowości obronnej wywołujący bezsenność i nerwicę wegetatywną.' }
+    ],
+    biologicalTimeline: [
+      { timeMs: 'Słowa Klary: „Gdybyś mnie kochał...”', process: 'Skok tętna do 115 bpm, zaciśnięcie żołądka, aktywacja ciała migdałowatego.' },
+      { timeMs: 'Wydech i pauza 10 sekund', process: 'Hamowanie przedczołowe, obniżenie napięcia mięśniowego i spokojna mowa.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [
+      { tactic: 'Szantaż FOG i Odwracanie Ról (DARVO)', description: 'Deny, Attack, and Reverse Victim and Offender — zrobienie z siebie ofiary wyjścia Jakuba.', vulnerabilityExploited: 'Wysoka empatia Jakuba i lęk przed byciem uznanym za samolubnego.' }
+    ],
+    counterMeasures: [
+      { step: 'Technika Szarego Kamienia (Gray Rock Method)', script: '„Rozumiem twoje zdanie. Moje plany na dziś pozostają bez zmian”. (Brak emocjonalnego karmienia dramatu).', rationale: 'Pozbawia manipulatora paliwa emocjonalnego i uniemożliwia wciągnięcie w awanturę.' },
+      { step: 'Protokół Konsekwencji Ostatecznej', script: '„Jeśli niszczysz moje rzeczy i stosujesz groźby, opuszczam to mieszkanie i zgłaszam sprawę odpowiednim służbom”.', rationale: 'Stawia twardą barierę prawno-fizyczną wobec eskalacji przemocy.' }
+    ]
+  },
+  alternativePath: 'Scenariusz uległy: Jakub zostaje w domu, po 5 latach traci wszystkich znajomych, wpada w ciężką depresję kliniczną. Scenariusz agresywny: dochodzi do rękoczynów i interwencji policji. Scenariusz asertywny: konsekwentna obrona granic, zerwanie toksycznej więzi i powrót do zdrowego życia.',
+  readerQuestion: 'Czy w Twojej bliskiej relacji zdarza Ci się rezygnować ze swoich przyjaciół, pasji lub wartości ze strachu przed „karzącym milczeniem” partnera? Jakie jedno nienegocjowalne prawo osobiste wdrożysz od dzisiaj?',
+  keyTakeaway: 'Miłość nigdy nie wymaga wyrzeczenia się własnej tożsamości, przyjaciół ani godności. Jeśli warunkiem bycia z kimś jest Twoja uległość, to nie jest miłość — to niewola emocjonalna.'
+};
+
+/**
+ * STUDIUM PRZYPADKU 2 (RELACJA Z RODZICEM):
+ * Toksyczny Rodzic, Parentyfikacja, Wymuszony Dług Wdzięczności i Roszczenia Finansowe
+ */
+export const chapterTwentyNineCaseStudyRodzicTomasz: CaseStudy = {
+  id: 'cs-ch29-tomasz-toksyczny-rodzic',
+  title: 'Wielkie Studium Przypadku: Dług, Którego Nie Było — Tomasz i Granice Wobec Roszczeniowego Ojca',
+  subtitle: 'Przełamanie parentyfikacji, dekonstrukcja lojalności plemiennej i przejście do relacji Dorosły-Dorosły',
+  protagonist: 'Tomasz, 36 lat, dyrektor finansowy, mąż i ojciec dwójki dzieci',
+  context: 'Ojciec Tomasza, Edward (65 lat), przez całe życie stosował w rodzinie despotyczny model władzy połączony z mechanizmem wzbudzania permanentnego poczucia winy: „Ja dla was zaharowywałem się na śmierć, a wy jesteście niewdzięcznikami”. Po przejściu na emeryturę Edward zaczął popadać w długi na skutek ryzykownych spekulacji giełdowych. Notorycznie dzwonił do Tomasza, żądając natychmiastowych przelewów po 5–10 tysięcy złotych, szantażując go zawałem serca i wtrącając się w życie małżeńskie syna. Tomasz, czując dławiący obowiązek wdzięczności, przelewał pieniądze z oszczędności rodzinnych, ukrywając to przed żoną, co doprowadziło do ostrego kryzysu małżeńskiego.',
+  story: [
+    'We wtorek w południe podczas kluczowego zebrania zarządu telefon Tomasza dzwoni pięciokrotnie. Gdy Tomasz oddzwania w przerwie, ojciec krzyczy do słuchawki: „Tomek, natychmiast musisz mi przelać 8 tysięcy! Do jutra komornik zablokuje mi konto! Jak możesz nie odbierać, gdy twój ojciec tonie?! Po to cię wykształciłem?!”.',
+    'Tomasz czuje, jak ziemia usuwa mu się spod nóg. Dwa miesiące temu dał ojcu 12 tysięcy na „spłatę wszystkich zaległości”, a ojciec przysięgał, że to ostatni raz.',
+    'Żona Tomasza, Ania, postawiła ultimatum: „Albo postawisz ojcu twarde granice i przestaniesz finansować jego nałóg giełdowy naszymi oszczędnościami na edukację dzieci, albo składam pozew o rozdzielność majątkową i wyprowadzam się z dziećmi”.',
+    'Tomasz stanął przed najtrudniejszą konfrontacją w życiu. Podczas sesji terapeutycznej zrozumiał, że od 7. roku życia tkwił w pułapce parentyfikacji — czuł się odpowiedzialny za emocje, finanse i stabilność dorosłego ojca.',
+    'Zrozumiał fundamentalną prawdę: DZIECKO NIE MA DŁUGU WOBEC RODZICA ZA TO, ŻE ZOSTAŁO POWOŁANE NA ŚWIAT I WYCHOWANE. Opieka nad dzieckiem to obowiązek rodzicielski, a nie kredyt hipoteczny podlegający spłacie z odsetkami.',
+    'Tomasz umówił się z ojcem na neutralnym gruncie w kawiarni. Przedstawił twardy, nienegocjowalny kontrakt: zero gotówki, pomoc wyłącznie w postaci opłacenia rachunków za prąd i leków bezpośrednio u dostawców (maksymalnie 800 zł miesięcznie) oraz warunek podjęcia przez ojca terapii uzależnień finansowych.',
+    'Gdy ojciec wpadł we wściekłość, rzucił filiżanką i krzyknął: „Wypieraj się ojca, gówniarzu!”, Tomasz nie ugiął się, zapłacił rachunek i spokojnie opuścił lokal. Po 3 miesiącach ojciec zgłosił się do fundacji wspierającej osoby zadłużone.'
+  ],
+  dialogue: [
+    { speaker: 'Ojciec Edward (agresja i moralny szantaż)', text: 'Wstydziłbyś się! Śpisz na pieniądzach, a rodzony ojciec ma iść pod most?! Wszystko, co masz, zawdzięczasz mnie!', subtext: 'Eksploatacja skryptu synowskiej uległości i fałszywego długu egzystencjalnego.' },
+    { speaker: 'Tomasz (przed zmianą — wersja uległa)', text: 'Tato, błagam, nie krzycz... przeleję te pieniądze wieczorem, ale obiecaj, że to ostatni raz...', subtext: 'Kapitulacja przed lękiem z dzieciństwa i zdrada własnego małżeństwa.' },
+    { speaker: 'Tomasz (po terapii — wersja asertywna)', text: 'Tato, bardzo cię szanuję jako mojego ojca, ale nie przelam ci ani złotówki na spłatę długów giełdowych. Moja rodzina i dzieci są moim pierwszym zobowiązaniem. Mogę opłacać twoje rachunki za leki i prąd do kwoty 800 zł miesięcznie pod warunkiem, że udasz się do doradcy zadłużeniowego. Decyzja należy do ciebie.', subtext: 'Dojrzała postawa Dorosły-Dorosły: jasna granica, realna pomoc celowa, brak zgody na eksploatację.' }
+  ],
+  decisionTaken: 'Zatrzymanie patologicznego drenażu finansowego, odrzucenie roli „rodzica własnego ojca”, ochrona budżetu własnego małżeństwa i wprowadzenie pomocy celowej zamiast przekazywania gotówki.',
+  whatProtagonistSaw: 'Tomasz postrzegał ojca jako wszechwładnego sędziego, a siebie jako małego, winnego chłopca, który musi zadowalać rodzica, by zasłużyć na prawo do istnienia.',
+  whatWasMissed: 'Że uleganie finansowemu szantażowi ojca nie pomagało mu, lecz umożliwiało trwanie w destrukcyjnym nałogu spekulacji giełdowych; odcięcie gotówki było jedynym realnym aktem ratującym godność obojga.',
+  psychologicalAnalysis: {
+    coreMechanism: 'Destrukcyjna parentyfikacja i uwikłanie w lojalność transgeneracyjną (Ivan Boszormenyi-Nagy).',
+    cognitiveBiases: [
+      { name: 'Błąd Wiecznego Długu Synowskiego', description: 'Przekonanie, że dorosłe dziecko ma obowiązek bezwarunkowego podporządkowania się żądaniom rodzica bez względu na krzywdę własnej rodziny.', impact: 'Niszczenie własnego małżeństwa.' }
+    ],
+    defenseMechanisms: [
+      { name: 'Rozszczepienie i Zaprzeczanie', explanation: 'Ukrywanie prawdy przed żoną w złudnym przekonaniu, że uda się zadowolić obie strony naraz.' }
+    ],
+    emotionalDynamic: 'Przejście od dławiącego lęku przed odrzuceniem rodzicielskim do bolesnej, ale uwalniającej suwerenności dorosłego mężczyzny.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Histeryczny telefon ojca żądającego 8 tysięcy złotych.',
+    attentionFocus: 'Ultimatum żony i wspomnienia krzyków z dzieciństwa.',
+    interpretation: '„Jeśli odmówię, ojciec mnie przeklnie; jeśli dam pieniądze, stracę żonę i dzieci”.',
+    emotion: 'Skrajny konflikt wewnętrzny, ucisk w gardle, wstyd.',
+    impulse: 'Ukradkiem wziąć pożyczkę i wysłać pieniądze ojcu.',
+    action: 'Zatrzymanie odruchu, konsultacja z terapeutą, postawienie twardego kontraktu pomocowego.',
+    consequence: 'Krótkotrwały wybuch złości ojca, odbudowa zaufania w małżeństwie i zmuszenie ojca do zmierzenia się z realiami prawnymi.'
+  },
+  neurobiologicalAnalysis: {
+    brainRegions: [
+      { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Kalkulacja długofalowych konsekwencji dla budżetu domowego', activationState: 'Odzyskała kontrolę nad odruchem uległości' },
+      { region: 'Przednia kora obręczy (ACC)', role: 'Przetwarzanie ostrego konfliktu lojalności', activationState: 'Ustabilizowana po podjęciu decyzji' }
+    ],
+    neurotransmitters: [
+      { name: 'Kortyzol', roleInScenario: 'Spadek poziomu po zakończeniu tajemnic finansowych przed żoną.' }
+    ],
+    biologicalTimeline: [
+      { timeMs: 'Krzyk ojca w telefonie', process: 'Impuls paniki limbicznej (regresja do wieku 8 lat).' },
+      { timeMs: 'Spotkanie w kawiarni', process: 'Utrzymanie wyprostowanej postawy, kontakt wzrokowy, spokojny ton głosu.' }
+    ]
+  },
+  influenceAndManipulation: {
+    tacticsUsed: [
+      { tactic: 'Szantaż biologiczny i egzystencjalny', description: '„Wszystko mi zawdzięczasz, przez ciebie wyląduję pod mostem”.', vulnerabilityExploited: 'Poczucie odpowiedzialności za życie i zdrowie rodzica.' }
+    ],
+    counterMeasures: [
+      { step: 'Model Pomocy Celowej (In-Kind Only)', script: '„Nie przekazuję gotówki. Mogę bezpośrednio opłacić rachunek za prąd lub leki do kwoty X”.', rationale: 'Eliminuje finansowanie nałogów i stawia tamę roszczeniom bez odrzucania elementarnej troski.' }
+    ]
+  },
+  alternativePath: 'Wersja uległa: Tomasz bierze kredyty, traci małżeństwo i kontakt z dziećmi, a ojciec przegrywa kolejne 100 tysięcy na giełdzie. Wersja agresywna: Tomasz rzuca się na ojca z pięściami podczas rodzinnego obiadu. Wersja asertywna: twardy kontrakt finansowy, ochrona własnego ogniska domowego i dojrzała separacja.',
+  readerQuestion: 'W jakich sprawach w Twojej relacji z rodzicami nadal zachowujesz się jak uległe dziecko szukające aprobaty, zamiast jak suwerenny Dorosły rozmawiający z innym Dorosłym?',
+  keyTakeaway: 'Dojrzałość dorosłego człowieka zaczyna się w dniu, w którym przestaje on żyć życiem swoich rodziców i bierze pełną odpowiedzialność za własną rodzinę i własne granice.'
 };
 
 export const chapterTwentyNineExerciseBoundaryMap: SelfExercise = {
@@ -706,6 +857,7 @@ export const chapterTwentyNine: Chapter = {
       title: 'Granice w rodzinie — Odcięcie pępowiny psychologicznej, indywiduacja i relacja Dorosły-Dorosły',
       category: 'teoria',
       readingTimeMinutes: 18,
+      caseStudyRef: chapterTwentyNineCaseStudyRodzicTomasz,
       paragraphs: [
         'W relacjach rodzinnych stawianie granic budzi najsilniejsze opory i największe poczucie winy, ponieważ dotyka pierwotnych lojalności, tabu i skryptów z dzieciństwa. Wielu 40-letnich dorosłych ludzi w obecności swoich rodziców natychmiast cofa się emocjonalnie do roli bezradnego, zastraszonego 8-latka.',
         'Proces indywiduacji (Carl Gustav Jung, Murray Bowen) wymaga symbolicznego przecięcia pępowiny emocjonalnej. Jako dorosły człowiek masz niezbywalne prawo decydować o swoim małżeństwie, finansach, wychowaniu dzieci, diecie, religii i sposobie spędzania świąt bez konieczności uzyskiwania aprobaty rodziców.',
@@ -758,6 +910,7 @@ export const chapterTwentyNine: Chapter = {
       title: 'Granice w związku, szkole, pracy i internecie — Zintegrowany przegląd stref społecznych',
       category: 'teoria',
       readingTimeMinutes: 19,
+      caseStudyRef: chapterTwentyNineCaseStudyPartnerJakub,
       paragraphs: [
         'W ZWIĄZKU PARTNERSKIM: Granice chronią tożsamość obojga partnerów. Dojrzały związek to formuła: „Ja + Ty = My”, a nie „Rozpływam się w Tobie i zapominam, kim jestem”. Obejmują prawo do własnych pasji, osobistego budżetu, czasu dla siebie i przyjaciół.',
         'W SZKOLE I NA UCZELNI: Obrona przed presją rówieśniczą (używki, hejtowanie słabszych, ściąganie z Twojej kartki) oraz prawo do kulturalnego dopytania nauczyciela o kryteria oceny bez lęku przed odwetem.',

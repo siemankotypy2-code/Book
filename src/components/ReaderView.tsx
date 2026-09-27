@@ -46,6 +46,7 @@ import { chapterTwentySevenExamQuestions } from '../data/chapterTwentySevenData'
 import { chapterTwentyEightExamQuestions } from '../data/chapterTwentyEightData';
 import { chapterTwentyNineExamQuestions } from '../data/chapterTwentyNineData';
 import { chapterThirtyExamQuestions } from '../data/chapterThirtyData';
+import { chapterThirtyOneExamQuestions } from '../data/chapterThirtyOneData';
 import { SocialInfluenceLab } from './SocialInfluenceLab';
 import { CommunicationLab } from './CommunicationLab';
 import { PersuasionLab } from './PersuasionLab';
@@ -868,6 +869,23 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={30}
               chapterTitle="Asertywność — Sztuka Komunikacji w Zgodzie ze Sobą (Rozdział 30)"
               examQuestions={chapterThirtyExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 31 (Tom III Rozdział 15: Autonomia i Sprawczość) WIDGETS --- */}
+        {(activeSection.sectionNumber === '31.3' || activeSection.sectionNumber === '31.21') && (
+          <div className="my-10">
+            <DecisionSystemLab />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '31.26' || activeSection.sectionNumber === '31.28') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={31}
+              chapterTitle="Autonomia i Sprawczość: Jak Stać się Architektem Własnego Życia (Rozdział 31)"
+              examQuestions={chapterThirtyOneExamQuestions}
             />
           </div>
         )}

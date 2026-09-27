@@ -444,9 +444,21 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.6',
       title: 'Cień przeszłości: Jak dawne doświadczenia i pamięć programują dzisiejszy wybór',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Żadna decyzja nie powstaje w próżni. Wstępny filtr decyzyjny jest budowany przez pamięć epizodyczną i uwarunkowania z przeszłości. Jeśli w przeszłości odważna decyzja o odezwaniu się w grupie skończyła się wyśmianiem, dzisiejszy układ limbiczny natychmiast wygeneruje silny sygnał lękowy na myśl o podjęciu ryzyka.'
+        'Żadna decyzja nie powstaje w poznawczej próżni. Kiedy stajesz przed koniecznością wyboru, Twój mózg nie analizuje sytuacji od zera jak czysty algorytm komputerowy. W ułamku sekundy układ pamięci epizodycznej (hipokamp) oraz struktury emocjonalne (ciało migdałowate i kora wyspowa) dokonują automatycznego skanowania przeszłych doświadczeń w poszukiwaniu analogii i skojarzeń.',
+        'Zjawisko to opiera się na kodowaniu afektywnym dawnych konsekwencji. Jeśli we wczesnej dorosłości odważna decyzja zawodowa lub wyrażenie własnego zdania w grupie skończyły się dotkliwą karą społeczną, wyśmianiem lub odrzuceniem, mózg zakodował to wydarzenie jako zagrażające przetrwaniu. Dzisiaj, gdy pojawia się z pozoru podobna szansa (np. wystąpienie na konferencji lub negocjacja podwyżki), układ nerwowy odruchowo generuje somatyczny sygnał awersyjny, zanim kora przedczołowa zdąży przeliczyć obiektywne szanse sukcesu.',
+        'W ten sposób dawne traumy, błędy wychowawcze, ale także nieświadomie przyswojone skrypty rodzinne stają się „niewidzialnymi recenzentami” naszych bieżących wyborów. Dojrzałość decyzyjna wymaga odróżnienia realnego ryzyka tu i teraz od echa dawnego zranienia, które próbuje nas nadmiernie chronić kosztem życiowego rozwoju.'
+      ],
+      subsections: [
+        {
+          title: 'PRZYKŁAD: Blokada inwestycyjna po błędzie sprzed lat',
+          paragraphs: [
+            'Sytuacja i bohater: Grzegorz (41 lat), doświadczony inżynier, od 6 lat trzyma wszystkie oszczędności na nieoprocentowanym rachunku bieżącym, tracąc realną wartość kapitału na skutek inflacji. Kiedy doradca finansowy proponuje mu zdywersyfikowany, bezpieczny portfel obligacji skarbowych, Grzegorz odczuwa paraliżujący ścisk w żołądku i odrzuca propozycję.',
+            'Mechanizm psychologiczny: 10 lat wcześniej Grzegorz stracił sporą kwotę na spekulacyjnych akcjach pojedynczej spółki technologicznej. Jego układ limbiczny zgeneralizował to bolesne doświadczenie: każde słowo związane z „inwestycją” odpala ten sam alarm lękowy, uniemożliwiając logiczne odróżnienie ryzykownej spekulacji od bezpiecznego oszczędzania.',
+            'Wniosek i interwencja: Uświadomienie sobie, że dzisiejsza awersja nie wynika z parametrów obligacji, lecz ze starego, nieprzepracowanego wstydu po błędzie giełdowym, pozwoliło Grzegorzowi oddzielić przeszłość od teraźniejszości i podjąć racjonalną decyzję kapitałową.'
+          ]
+        }
       ]
     },
     {
@@ -479,10 +491,12 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.9',
       title: 'Strach przed konsekwencjami i paraliż analityczny (Analysis Paralysis)',
       category: 'studium-przypadku',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Gdy stawka decyzji rośnie, w głowie człowieka uruchamia się proces nadmiernego analizowania. Gromadzenie kolejnych danych nie służy już zdobywaniu wiedzy, lecz obniżaniu lęku.',
-        'Wpadamy wówczas w pętlę Analysis Paralysis. Poniższe studium przypadku ukazuje dramat dyrektora, który przez 8 miesięcy analizował zmianę pracy, aż szansa została mu odebrana.'
+        'Gdy waga decyzji rośnie, a stawka osobista lub finansowa staje się wysoka, w umyśle uruchamia się mechanizm obronny w postaci nadmiernej, obsesyjnej analizy danych. Zjawisko to w psychologii poznawczej i teorii decyzji nosi nazwę Paraliżu Analitycznego (Analysis Paralysis).',
+        'W paraliżu analitycznym człowiek wchodzi w iluzję, że jeśli zbierze jeszcze jeden raport, przeczyta kolejne 20 opinii w internecie lub stworzy jeszcze bardziej szczegółowy arkusz kalkulacyjny, całkowicie wyeliminuje niepewność i ryzyko błędu. W rzeczywistości gromadzenie kolejnych gigabajtów danych nie służy już poszerzaniu wiedzy merytorycznej — staje się wyrafinowaną formą regulacji emocjonalnej służącą odraczaniu momentu konfrontacji z odpowiedzialnością.',
+        'Nadmierna analiza obciąża pamięć roboczą i prowadzi do wyczerpania zasobów poznawczych. Im dłużej analizujemy, tym większy chaos odczuwamy, aż wreszcie szansa zostaje bezpowrotnie utracona lub decyzja zostaje podjęta za nas przez bieg wydarzeń zewnętrznych.',
+        'Poniższe studium przypadku ukazuje mechanizm lęku przed wyborem u menedżera, który przez 8 miesięcy nie potrafił podjąć decyzji o awansie, aż oferta została wycofana.'
       ],
       caseStudyRef: caseStudiesChapterTwentyFour[0]
     },
@@ -504,10 +518,12 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.11',
       title: 'Zmęczenie decyzyjne (Decision Fatigue) i pośpiech: Kiedy kora przedczołowa gasi światło',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Kora przedczołowa zużywa ogromne ilości glukozy i tlenu. Po podjęciu kilkudziesięciu trudnych decyzji w ciągu dnia jej zdolności wykonawcze drastycznie spadają. Zjawisko to nazywamy Zmęczeniem Decyzyjnym (Decision Fatigue).',
-        'W stanie zmęczenia decyzyjnego umysł przełącza się na dwa proste automatyzmy: ślepą uległość wobec impulsów albo pasywne trwanie przy opcji domyślnej (Status Quo), bez względu na koszty.'
+        'Grzbietowo-boczna kora przedczołowa (dlPFC) oraz przednia kora zakrętu obręczy (ACC) stanowią centrum zarządzania funkcjami wykonawczymi. Odpowiadają za hamowanie impulsów, porównywanie abstrakcyjnych kryteriów i utrzymywanie koncentracji. Są to jednak struktury o skrajnie wysokim zapotrzebowaniu metabolicznym na tlen i glukozę.',
+        'Każdy wybór dokonywany w ciągu dnia — od decyzji, w co się ubrać i na którego maila odpisać, po negocjacje z klientem — zużywa tę samą pulę zasobów samoregulacji. Zjawisko to, zbadane m.in. przez Roya Baumeistera i Johna Tierneya, nosi nazwę Zmęczenia Decyzyjnego (Decision Fatigue).',
+        'W stanie wyczerpania decyzyjnego układ nerwowy odcina energochłonny System 2 i przełącza się na dwie proste strategie awaryjne: albo ulega natychmiastowym impulsom dopaminowym (kupowanie niepotrzebnych rzeczy przy kasie, objadanie się wieczorem, wybuchy złości), albo bezrefleksyjnie wybiera opcję domyślną (Status Quo), odmawiając jakichkolwiek zmian.',
+        'Zrozumienie biologii zmęczenia decyzyjnego nakazuje strategiczne zarządzanie kalendarzem: kluczowe decyzje życiowe i strategiczne należy podejmować w pierwszej połowie dnia, chroniąc poranne zasoby przed zalewem trywialnych mikro-wyborów.'
       ]
     },
     {
@@ -516,10 +532,12 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.12',
       title: 'Decyzje pod presją otoczenia: Konformizm i wstrząs społeczny',
       category: 'studium-przypadku',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Jesteśmy istotami głęboko społecznymi. Podczas podejmują decyzji nasz mózg nieustannie kalkuluje ryzyko odrzucenia przez grupę. Często podejmujemy decyzje sprzeczne z własnym sumieniem i logiką, byle tylko uniknąć wykluczenia ze stada.',
-        'Poniższe studium przypadku ilustruje, jak mechanizm zakotwiczenia cenowego i presja sprzedawcy doprowadziły do poważnej straty finansowej.'
+        'Ewolucyjnie mózg człowieka jest zaprogramowany do traktowania wykluczenia z plemienia jako śmiertelnego zagrożenia. Z tego powodu kora zakrętu obręczy i wyspa reagują na brak aprobaty społecznej w niemal identyczny sposób jak na fizyczny ból somatyczny.',
+        'W warunkach presji grupy, autorytetu czy pośpiechu narzuconego przez drugą stronę, nasz indywidualny proces decyzyjny ulega silnemu zniekształceniu. Uruchamia się zjawisko społecznego dowodu słuszności (Social Proof) oraz uległość wobec autorytetu, które potrafią całkowicie wyłączyć logiczne myślenie i skłonić człowieka do decyzji sprzecznych z jego interesem i wartościami.',
+        'Sprytni negocjatorzy i sprzedawcy celowo łączą presję społeczną ze sztucznym deficytem czasu („Ta oferta jest ważna tylko przez godzinę, inni klienci już stoją w kolejce”), zmuszając klienta do panicznego skrótu poznawczego.',
+        'Poniższe studium przypadku ukazuje dramatyczny błąd decyzyjny popełniony pod wpływem techniki zakotwiczenia cenowego i pośpiechu narzuconego przez dewelopera.'
       ],
       caseStudyRef: caseStudiesChapterTwentyFour[1]
     },
@@ -529,9 +547,13 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.13',
       title: 'Impulsywność a Paradoks Wyboru: Od bezmyślności do paraliżu',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Skrajności decyzyjne są równie niebezpieczne. Z jednej strony mamy impulsywność — działanie pod wpływem chwilowego zrywu dopaminowego bez udziału kory przedczołowej. Z drugiej strony — Paradoks Wyboru Schwartza, gdzie zbyt wielka liczba alternatyw odbiera nam zdolność podjęcia jakiejkolwiek decyzji.'
+        'W psychologii decyzyjnej obserwujemy dwa skrajne bieguny dysfunkcji wyboru: z jednej strony impulsywność, z drugiej — paraliż wywołany nadmiarem alternatyw.',
+        'Impulsywność to podjęcie działania w ułamku sekundy, bez zaangażowania procesów kory przedczołowej. Bodziec sensoryczny bezpośrednio aktywuje prążkowie i układ limbiczny, generując natychmiastowe zachowanie. Impulsywny decydent nie waży konsekwencji — jest całkowicie podporządkowany bieżącemu stanowi pobudzenia emocjonalnego.',
+        'Na przeciwnym biegunie znajduje się zjawisko opisane przez Barry’ego Schwartza jako Paradoks Wyboru (Paradox of Choice). Współczesna kultura wmawia nam, że im więcej opcji posiadamy (setki modeli telefonów, dziesiątki ścieżek kariery, tysiące profili na aplikacjach randkowych), tym większą wolność i satysfakcję osiągniemy.',
+        'Empiryczne badania psychologiczne dowodzą jednak czegoś odwrotnego: powyżej pewnego progu (zwykle 4–6 opcji) każda kolejna alternatywa drastycznie podnosi koszt poznawczy porównań, potęguje lęk przed utratą innych możliwości (Opportunity Cost) i dramatycznie obniża ostateczną satysfakcję z wybranego wariantu. Człowiek zamiast cieszyć się wyborem, obsesyjnie myśli o wszystkich porzuconych opcjach.',
+        'Optymalna strategia decyzyjna polega na postawie „satysfakcjonera” (Satisficer) zamiast „maksymalizatora” (Maximizer): ustalamy jasne, minimalne kryteria jakości i wybieramy pierwszą opcję, która je spełnia, zamiast bez końca polować na hipotetyczny ideał.'
       ]
     },
     {
@@ -540,10 +562,11 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.14',
       title: 'Kompas wartości: Decyzje spójne a decyzje w konflikcie moralnym',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Zaufanie do samego siebie i poczucie sprawczości rosną wtedy, gdy podejmujemy decyzje zgodne z naszym nadrzędnym kompasem wartości, nawet jeśli wiąże się to z poniesieniem dotkliwego kosztu krótkoterminowego.',
-        'Decyzja podjęta wbrew własnym wartościom generuje bolesny dysonans moralny, który drąży psychikę przez całe lata.'
+        'Większość codziennych trudności decyzyjnych nie wynika z braku kalkulatora w głowie, lecz z głębokiego konfliktu pomiędzy natychmiastową ulgą somatyczną a nadrzędnymi wartościami osobistymi.',
+        'Wartości to nie abstrakcyjne hasła na ścianie — to fundamentalne priorytety, które określają, jakim człowiekiem chcesz być i jaką cenę jesteś gotów za to zapłacić. Kiedy stajesz przed wyborem (np. powiedzenie niewygodnej prawdy w pracy vs uległe milczenie), Twój układ nerwowy odczuwa natychmiastowy lęk przed konfliktem. Jeśli podejmiesz decyzję z poziomu unikania lęku, zyskujesz chwilową ulgę w ciele, lecz płacisz za to wysoką cenę w postaci wewnętrznego rozpadu, wstydu i utraty szacunku do samego siebie.',
+        'Decyzja oparta na wartościach wymaga zgody na krótkoterminowy dyskomfort somatyczny (drżenie rąk, przyspieszone bicie serca, niepewność) w imię długoterminowej integralności tożsamościowej. To właśnie zdolność do udźwignięcia chwilowego napięcia w imię wyższego sensu stanowi fundament dojrzałej sprawczości i odporności psychicznej.'
       ]
     },
     {
@@ -552,10 +575,11 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.15',
       title: '„Dobra decyzja” a dobry rezultat: Rozdzielanie myślenia od losowości (Outcome Bias)',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Jednym z największych błędów poznawczych jest Outcome Bias — ocenianie mądrości decyzji wyłącznie po jej rezultacie. Świat jest systemem probabilistycznym pełnym szumu i losowości. Świetna decyzja procesowa może przynieść zły rezultat z powodu unikalnego zbiegu okoliczności, a katastrofalnie głupia decyzja może przynieść zysk dzięki ślepemu szczęściu.',
-        'Dojrzały człowiek ocenia siebie za jakość procesu decyzyjnego, a nie za czynniki losowe, na które nie miał wpływu.'
+        'Jednym z najbardziej toksycznych zniekształceń w ocenie ludzkich wyborów jest Błąd Oceny po Wyniku (Outcome Bias). Polega on na ocenianiu jakości i mądrości procesu decyzyjnego wyłącznie przez pryzmat ostatecznego rezultatu, ignorując stan wiedzy, niepewność i czynniki losowe występujące w momencie podejmowania decyzji.',
+        'Świat nie jest deterministycznym zegarem, lecz złożonym systemem probabilistycznym. Oznacza to, że można podjąć wybitną pod względem metodologicznym decyzję (np. rzetelnie skalkulowana inwestycja oparta na dywersyfikacji i twardych danych) i ponieść stratę z powodu niespodziewanego kataklizmu geopolitycznego. Z drugiej strony — można podjąć skrajnie bezmyślną, niebezpieczną decyzję (np. jazda z prędkością 180 km/h po pijanemu w nocy) i dojechać bezpiecznie do domu dzięki czystemu przypadkowi.',
+        'Jeśli oceniasz siebie wyłącznie po wyniku, zaczniesz nagradzać swoje głupie decyzje, które przypadkowo się udały, oraz karać się za znakomite procesowo decyzje, które zderzyły się z nieprzewidywalną losowością. Dojrzały decydent rozlicza siebie z JAKOŚCI PROCESU: czy zebrałem kluczowe fakty? czy zbadałem alternatywy? czy uwzględniłem ryzyko? Jeśli tak — rezultat, nawet niepomyślny, przyjmuje ze spokojem jako koszt poruszania się w świecie niepewności.'
       ]
     },
     {
@@ -564,9 +588,11 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.16',
       title: 'Błędy w przewidywaniu przyszłości (Affective Forecasting): Dlaczego nie wiemy, co nas uszczęśliwi',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Podejmując decyzję, tak naprawdę próbujemy kupić sobie określony stan emocjonalny w przyszłości. Problem polega na tym, że ludzki umysł jest fatalny w prognozowaniu afektywnym (Affective Forecasting). Przeceniamy to, jak bardzo ucieszy nas awans, i jak bardzo zniszczy nas porażka (Impact Bias).'
+        'Każda decyzja jest w gruncie rzeczy próbą zakupu określonego stanu emocjonalnego w przyszłości. Wybieramy kierunek studiów, zmieniamy partnera, kupujemy dom lub auto, ponieważ nasz umysł projektuje: „Gdy to osiągnę, będę nareszcie szczęśliwy i wolny od lęku”.',
+        'Problem polega na tym, że badania Daniela Gilberta i Timothy’ego Wilsona nad Prognozowaniem Afektywnym (Affective Forecasting) dowodzą, iż ludzie są systematycznie i dramatycznie omylni w przewidywaniu swoich przyszłych stanów emocjonalnych. Wpadamy w błąd zwany Impact Bias — przeceniamy zarówno intensywność, jak i czas trwania przyszłego szczęścia po sukcesie oraz cierpienia po ewentualnej porażce.',
+        'Nasz umysł w trakcie prognozowania ignoruje zjawisko Adaptacji Hedonistycznej (szybki powrót do bazowego poziomu nastroju po zakupie nowego auta czy awansie) oraz nie docenia działania wrodzonego „psychologicznego układu odpornościowego”, który po porażce uruchamia racjonalizację i pozwala odzyskać równowagę znacznie szybciej, niż podpowiadał to paniczny lęk przed decyzją.'
       ]
     },
     {
@@ -575,10 +601,11 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.17',
       title: 'Żal po decyzji i zmiana zdania: Dysonans podecyzyjny',
       category: 'cwiczenia',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Po dokonaniu wyboru umysł naturalnie wchodzi w stan dysonansu podecyzyjnego („A co, jeśli druga opcja była lepsza?”). Zmiana decyzji jest czasem oznaką mądrości i elastyczności, a czasem objawem chwiejności emocjonalnej.',
-        'Poniższy warsztat uczy prowadzenia rzetelnego audytu procesu decyzyjnego na twardych danych.'
+        'W momencie, w którym klamka zapada i dokonujesz nieodwracalnego wyboru, w psychice natychmiast pojawia się zjawisko Dysonansu Podecyzyjnego (Leon Festinger). Mózg zaczyna wyolbrzymiać wady wybranej opcji oraz idealizować odrzucone alternatywy, wywołując bolesne poczucie żalu (Buyer’s Remorse).',
+        'Zdolność do zarządzania żalem podecyzyjnym wymaga zrozumienia, że żal jest naturalnym kosztem wolności wyboru. Zmiana zdania w obliczu nowych, twardych faktów jest wyrazem dojrzałej elastyczności poznawczej (aktualizacja bayesowska), podczas gdy nerwowe skakanie między opcjami pod wpływem chwilowego dyskomfortu jest objawem niedojrzałości emocjonalnej.',
+        'Poniższy warsztat uczy, jak przeprowadzić 10-krokowy audyt procesu decyzyjnego, aby rozdzielić jakość myślenia od przypadkowości wyniku i wyciągnąć konstruktywne wnioski na przyszłość.'
       ],
       exerciseRef: selfExercisesChapterTwentyFour[0]
     },
@@ -588,10 +615,11 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.18',
       title: 'Brak decyzji jako forma działania: Pasywna akceptacja konsekwencji',
       category: 'cwiczenia',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Brak wyboru nie zatrzymuje biegu wydarzeń. Bierność jest w rzeczywistości decyzją o pozwoleniu, aby to inne osoby, przypadek lub upływający czas ukształtowały Twoją przyszłość.',
-        'Poniższy warsztat uczy stosowania protokołu Pre-Mortem do zabezpieczania decyzji przed klęską.'
+        'Wielu ludzi ucieka przed odpowiedzialnością za wybór w stan pasywnego zawieszenia. Mówią sobie: „Jeszcze się nie zdecydowałem”, „Poczekam, aż sytuacja sama się wyklaruje”. Jest to jedna z najgroźniejszych iluzji poznawczych zwana Błędem Zaniechania (Omission Bias) oraz Błędem Status Quo.',
+        'Czas i otoczenie nie zatrzymują się w miejscu, gdy Ty unikasz wyboru. Odwlekanie decyzji o zmianie pracy, podjęciu leczenia czy zakończeniu toksycznej relacji jest w 100% równoznaczne z podjęciem aktywnej decyzji o pozostaniu w dotychczasowych warunkach i zapłaceniu pełnego kosztu zdrowotnego, emocjonalnego i finansowego tego trwania.',
+        'Brak decyzji to decyzja o oddaniu sterów swojego życia w ręce przypadku, innych ludzi lub upływającego czasu. Poniższy warsztat uczy protokołu Pre-Mortem (antycypacji katastrofy), który pozwala przełamać paraliż i zabezpieczyć swoje plany przed zaniechaniem.'
       ],
       exerciseRef: selfExercisesChapterTwentyFour[1]
     },
@@ -601,14 +629,16 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.19',
       title: 'Budowanie świadomego procesu decyzyjnego: Od chaosu do protokołu sprawczości',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Świadomy proces decyzyjny opiera się na 5 filarach:',
-        '1. Stworzenie pauzy poznawczej (odroczenie reakcji na bodziec).',
-        '2. Jawne nazwanie i przetestowanie ramowania (ramy zysku vs straty).',
-        '3. Oddzielenie obiektywnych faktów od emocjonalnych wyobrażeń.',
-        '4. Zastosowanie protokołu Pre-Mortem i weryfikacji najgorszego scenariusza.',
-        '5. Wyznaczenie nieprzekraczalnego terminu decyzji (deadline).'
+        'Świadomy proces decyzyjny nie polega na eliminacji emocji, lecz na stworzeniu powtarzalnego, bezpiecznego protokołu myślowego, który chroni korę przedczołową przed pułapkami pośpiechu, zmęczenia i zniekształceń poznawczych.',
+        'Kompletny protokół dojrzałego decydenta opiera się na 6 zintegrowanych filarach:',
+        '1. PAUZA POZNAWCZA (Stop-Reflect): Odroczenie reakcji na bodziec o minimum 24 godziny przy kluczowych decyzjach, aby wygasić afektywne porwanie ciała migdałowatego.',
+        '2. DEKONSTRUKCJA RAMOWANIA: Świadome przepisanie problemu w dwóch przeciwstawnych ramach — jako ochrona zysku oraz jako zarządzanie stratą — w celu neutralizacji asymetrii awersji do straty.',
+        '3. TRÓJKĄT INFORMACYJNY: Jasne rozdzielenie twardych faktów (dane obiektywne), założeń (nasze domysły) oraz niewiadomych (obszary czystej niepewności).',
+        '4. ZASADA TRZECH ALTERNATYW: Ograniczenie pola wyboru do maksymalnie 3 zdefiniowanych opcji, by uniknąć paraliżu wielości w myśl Paradoksu Wyboru.',
+        '5. TEST KOMPASU WARTOŚCI: Zadanie sobie pytania: „Czy ta decyzja służy mojemu długoterminowemu wzrostowi i integralności, czy jest jedynie ucieczką przed chwilowym lękiem?”.',
+        '6. PROTOKÓŁ PRE-MORTEM I SZTYWNY DEADLINE: Wyobrażenie sobie porażki planu, zabezpieczenie słabych punktów i wyznaczenie nieprzekraczalnej daty podjęcia ostatecznego kroku.'
       ]
     },
     {

@@ -192,52 +192,74 @@ export const chapterThirtyCaseStudyAgresja: CaseStudy = {
 
 export const chapterThirtyCaseStudyKonfliktGranice: CaseStudy = {
   id: 'cs-ch30-karolina-konflikt',
-  title: 'Studium Przypadku: W Kleszczach Gaslightingu — Karolina i Konfrontacja z Przełożoną',
-  subtitle: 'Zastosowanie technik zamgławiania, dopytywania i asertywnej obrony faktów wobec manipulacji',
-  protagonist: 'Karolina, 27 lat, specjalistka ds. PR',
-  context: 'Szefowa Karoliny, Beata, stosowała subtelny gaslighting: zmieniała wytyczne w rozmowach w cztery oczy, a na spotkaniach z klientami twierdziła, że Karolina wszystko zmyśliła lub źle zrozumiała: „Karolinko, chyba masz problemy z pamięcią, nigdy czegoś takiego nie mówiłam!”. Karolina zaczęła wątpić we własne zmysły, czując narastający niepokój i obniżenie samooceny.',
+  title: 'Wielkie Studium Przypadku: W Kleszczach Mobbingowego Gaslightingu — Karolina i Toksyczna Przełożona',
+  subtitle: 'Wieloetapowa dekonstrukcja manipulacji w miejscu pracy, protokół Paper Trail i asertywna obrona faktów',
+  protagonist: 'Karolina, 27 lat, starsza specjalistka ds. PR w międzynarodowej korporacji technologicznej',
+  context: 'Szefowa Karoliny, Dyrektor Beata (46 lat), stosowała wyrafinowany mobbing relacyjny i subtelny gaslighting. W rozmowach w cztery oczy wydawała ustne dyspozycje, po czym na forum zarządu lub przed klientami wypierała się własnych słów, ośmieszając Karolinę: „Karolinko, czy ty znowu zapomniałaś wziąć leków? Przecież nigdy czegoś takiego nie mówiłam!”. Karolina przez 8 miesięcy żyła w paraliżującym stresie, zaczęła prowadzić obsesyjne notatki, a jej samoocena spadła do zera.',
   story: [
-    'Przed kluczową kampanią Beata ustnie poleciła Karolinie przygotowanie kreacji w kolorystyce pastelowej. Na spotkaniu z zarządem Beata skrytykowała projekt: „Kto zatwierdził te blade pastele? Karolina, chyba znowu żyjesz w swoim świecie!”.',
-    'Karolina poczuła, jak krew odpływa jej z twarzy. Zamiast jednak rozpłakać się lub wejść w histeryczną kłótnię, zastosowała protokół asertywnej weryfikacji.',
-    'Otworzyła laptopa i spokojnym głosem powiedziała: „Beato, 12 października o 14:30 wysłałam notatkę podsumowującą nasze ustalenia z prośbą o wdrożenie kolorystyki pastelowej, którą zatwierdziłaś mailem o 15:10. Wyświetlam tę korespondencję na ekranie”.',
-    'Beata zmieszała się, próbowała obrócić sytuację w żart: „Oj, nie bądź taka drobiazgowa, po prostu trzeba było myśleć elastycznie!”.',
-    'Karolina zastosowała technikę zdartej płyty: „Projekt został wykonany w 100% zgodnie z pisemnymi wytycznymi. Jeśli zarząd decyduje o zmianie palety, przygotuję wersję kontrastową do jutra do 12:00”.',
-    'Zarząd docenił profesjonalizm Karoliny. Od tego momentu Beata przestała stosować gaslighting i zaczęła traktować Karolinę z respektem.'
+    'Przed strategicznym launchem nowej platformy technologicznej, Beata wezwała Karolinę do gabinetu i bez obecności świadków poleciła: „Wyrzucamy krzykliwą czerwień, przygotuj całą identyfikację w uspokajających pastelach. Zarząd chce ocieplenia wizerunku”.',
+    'Karolina, pamiętając poprzednie pułapki, spędziła noc na dopracowaniu palety pastelowej i natychmiast po powrocie do biurka wysłała do Beaty maila z podsumowaniem ustaleń i prośbą o akceptację. Beata odpisała zwięzłym: „Zatwierdzam”.',
+    'Na wielkim zebraniu z wiceprezesem firmy, gdy Karolina wyświetliła slajdy, Beata z teatralnym oburzeniem przerwała prezentację: „Na litość boską, co to za blade mdłości?! Kto zatwierdził te pastele?! Karolina, czy ty w ogóle rozumiesz brief? Nasz produkt ma krzyczeć energią, a ty serwujesz nam nudę!”.',
+    'W sali zapadła martwa cisza. Wiceprezes zmarszczył brwi, a koledzy z zespołu spuścili wzrok. Dawna Karolina zalałaby się rumieńcem, zaczęła przepraszać i jąkać się, biorąc całą winę na siebie.',
+    'Tym razem Karolina wzięła głęboki przeponowy oddech, wyprostowała kręgosłup i spokojnym, opanowanym głosem przeszła do ekranu ze skrzynką pocztową: „Dyrektor Beato, 12 października o godzinie 14:30 przesłałam drogą mailową notatkę z naszej rozmowy w cztery oczy, zawierającą jednoznaczne polecenie zastosowania palety pastelowej. O 15:10 otrzymałam z Pani adresu mailowego jednoznaczną akceptację o treści ‘Zatwierdzam’, którą w tej chwili wyświetlam na ekranie głównym”.',
+    'W sali zapanowała absolutna cisza. Beata zbladła, po czym próbowała obrócić sytuację w żart: „Oj, Karola, nie bądź taka sztywna, trzeba umieć elastycznie reagować na dynamikę rynku!”.',
+    'Karolina nie wdała się w pyskówkę, lecz zastosowała technikę zdartej płyty: „Projekt został zrealizowany w 100% zgodnie z pisemną dyspozycją i oficjalnym zatwierdzeniem. Jeśli zarząd podejmuje decyzję o zmianie strategii wizualnej na kontrastową, przygotuję nową wersję do jutra do godziny 12:00”.',
+    'Wiceprezes przerwał zebranie, podziękował Karolinie za profesjonalizm i transparentność procesową. Tydzień później sprawą zajął się dział Compliance i HR, a Karolina została bezpośrednio podporządkowana nowemu dyrektorowi marketingu.'
   ],
-  decisionTaken: 'Wprowadzenie żelaznej zasady archiwizacji ustaleń (paper trail), publiczna konfrontacja oparta na faktach i odrzucenie manipulacji pamięcią.',
-  whatProtagonistSaw: 'Perfekcyjną manipulatorkę, której słowo zawsze będzie miało większą wagę niż jej własne.',
-  whatWasMissed: 'Że gaslighting żywi się brakiem twardych dowodów i niepewnością ofiary; konfrontacja z pisemnym faktem natychmiast rozbraja iluzję kłamcy.',
+  dialogue: [
+    { speaker: 'Beata (agresywny ton przed zarządem)', text: 'Kto zatwierdził te blade pastele?! Karolina, chyba znowu żyjesz w swoim urojonym świecie i sabotujesz projekt!', subtext: 'Publiczne upokorzenie, podważenie poczytalności pracownika i zrzucenie winy za własną złą decyzję.' },
+    { speaker: 'Karolina (wersja uległa — dawny schemat)', text: 'Ja... przepraszam... wydawało mi się, że tak ustalaliśmy... bardzo przepraszam zarząd, moja wina...', subtext: 'Kapitulacja, przyjęcie niezasłużonej winy i utrwalenie pozycji ofiary mobbingu.' },
+    { speaker: 'Karolina (wersja agresywna — nieskuteczna)', text: 'Kłamiesz, ty podła żmijo! Sama mi kazałaś to zrobić! Wszyscy wiedzą, jak manipulujesz!', subtext: 'Eskalacja afektywna skutkująca dyscyplinarnym zwolnieniem za złamanie zasad etyki korporacyjnej.' },
+    { speaker: 'Karolina (wersja asertywna — twarde fakty)', text: '12 października o 14:30 przesłałam pisemną notatkę z dyspozycją o pastelach, którą zatwierdziła Pani o 15:10. Wyświetlam tę korespondencję. Projekt jest w 100% zgodny z procedurą.', subtext: 'Spokojna, niepodważalna obrona faktograficzna neutralizująca kłamstwo w zarodku.' }
+  ],
+  decisionTaken: 'Wdrożenie żelaznej procedury Paper Trail (dokumentowania każdego ustnego polecenia), odmowa przyjęcia winy za cudze błędy, publiczna asertywna konfrontacja oparta na faktach i zgłoszenie mobbingu do struktur etycznych.',
+  whatProtagonistSaw: 'Karolina wierzyła w błędne przekonanie: „Jeśli będę idealnie miła, bezkonfliktowa i będę brać winę na siebie, szefowa wreszcie mnie doceni i przestanie mnie atakować”.',
+  whatWasMissed: 'Że toksyczny przełożony nie szuka kompetentnego partnera, lecz wygodnego kozła ofiarnego; uległość jest zaproszeniem do nasilenia mobbingu, a jedyną skuteczną barierą są twarde, zarchiwizowane fakty.',
   psychologicalAnalysis: {
-    coreMechanism: 'Obrona przed gaslightingiem i manipulacją relacyjną poprzez asertywne ugruntowanie w faktach i protokół pisemny.',
+    coreMechanism: 'Mobbing relacyjny i gaslighting instytucjonalny dekonstruowany za pomocą asertywnej transparentności faktograficznej.',
     cognitiveBiases: [
-      { name: 'Zwątpienie We Własną Percepcję (Gaslighting Effect)', description: 'Uleganie autosugestii, że to ja popełniam błąd, pod wpływem pewności siebie agresora.', impact: 'Erozja zaufania do siebie.' }
+      { name: 'Zwątpienie We Własną Percepcję (Gaslighting Effect)', description: 'Uleganie manipulacji przełożonej wmawiającej problemy z pamięcią i niestabilność emocjonalną.', impact: 'Chroniczny lęk i paraliż decyzyjny.' },
+      { name: 'Autorytet Instytucjonalny (Syndrom Milgrama)', description: 'Nierefleksyjny lęk przed zakwestionowaniem słów osoby wyższej rangą w hierarchii korporacyjnej.', impact: 'Bierność wobec bezprawia.' }
     ],
     defenseMechanisms: [
-      { name: 'Ucieczka w dokumentację', explanation: 'Konstruktywna adaptacja polegająca na tworzeniu faktograficznego bufora bezpieczeństwa.' }
+      { name: 'Ucieczka w dokumentację procesową', explanation: 'Konstruktywny mechanizm adaptacyjny polegający na tworzeniu bufora dowodowego chroniącego prawdę.' }
     ],
-    emotionalDynamic: 'Uwolnienie od neurotycznego poczucia winy i odzyskanie pełnego zaufania do własnych zmysłów i pamięci.'
+    emotionalDynamic: 'Przejście od lęku i paraliżu przed publicznym linczem do chłodnego, precyzyjnego spokoju płynącego z posiadania niezaprzeczalnych dowodów.'
+  },
+  decisionProcessAnalysis: {
+    trigger: 'Publiczny atak Beaty na forum zarządu i oskarżenie o sabotaż projektu.',
+    attentionFocus: 'Zamiast na lęku przed kompromitacją, uwaga skupiona na ekranie laptopa i procedurze dowodowej.',
+    interpretation: '„To jest próba zrobienia ze mnie kozła ofiarnego — mam dowód, prawda jest po mojej stronie”.',
+    emotion: 'Początkowy skok adrenaliny opanowany głębokim wydechem i poczuciem moralnej słuszności.',
+    impulse: 'Przeprosić lub wybiec z płaczem z sali.',
+    action: 'Podłączenie laptopa do rzutnika, zacytowanie maila i użycie techniki zdartej płyty.',
+    consequence: 'Błyskawiczna neutralizacja manipulatorki, uznanie zarządu i wszczęcie audytu etycznego.'
   },
   neurobiologicalAnalysis: {
     brainRegions: [
-      { region: 'Hipokamp i Kora Przedczołowa', role: 'Przywoływanie faktów epizodycznych i stabilizacja logiki', activationState: 'W pełni zsynchronizowane' }
+      { region: 'Hipokamp i Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Błyskawiczne odtworzenie chronologii zdarzeń i precyzyjna kontrola werbalna', activationState: 'Wysoka integracja poznawcza' },
+      { region: 'Ciało migdałowate', role: 'Alarm paniki w sytuacji publicznego ataku', activationState: 'Zahamowane przez powolną fonację i skupienie na faktach' }
     ],
     neurotransmitters: [
-      { name: 'Acetylocholina', roleInScenario: 'Wspierająca precyzję myślenia i spokój pod presją.' }
+      { name: 'Noradrenalina i Acetylocholina', roleInScenario: 'Mobilizacja uwagi wykonawczej bez wejścia w destrukcyjną panikę.' }
     ],
     biologicalTimeline: [
-      { timeMs: 'Atak gaslightingowy Beaty', process: 'Krótki impuls konsternacji zastąpiony otwarciem archiwum mailowego.' },
-      { timeMs: 'Odczytanie faktów', process: 'Natychmiastowe uspokojenie tętna i odzyskanie dominacji merytorycznej.' }
+      { timeMs: 'Krzyk Beaty na zebraniu', process: 'Skok tętna do 120 bpm -> świadomy wdech 4s, wydech 6s -> spadek tętna do 85 bpm.' },
+      { timeMs: 'Wyświetlenie maila na rzutniku', process: 'Wyrzut dopaminy związany z odzyskaniem poczucia sprawczości i bezpieczeństwa.' }
     ]
   },
   influenceAndManipulation: {
     tacticsUsed: [
-      { tactic: 'Gaslighting i podważanie poczytalności', description: '„Masz problemy z pamięcią, znowu żyjesz w swoim świecie”.', vulnerabilityExploited: 'Młody wiek i naturalna niepewność w nowym zespole.' }
+      { tactic: 'Publiczny lincz i gaslighting instytucjonalny', description: 'Atakowanie kompetencji przed decydentami w celu uniemożliwienia obrony.', vulnerabilityExploited: 'Lęk Karoliny przed utratą pracy i reputacji zawodowej.' }
     ],
     counterMeasures: [
-      { step: 'Protokół Paper Trail (Ślad Pisemny)', script: '„Po każdej rozmowie ustnej wysyłam maila z podsumowaniem: ‘Zgodnie z naszą rozmową wdrażam opcję X’”.', rationale: 'Uniemożliwia wyparcie się ustaleń i chroni integralność pracownika.' }
+      { step: 'Zasada Paper Trail (Ślad Cyfrowy)', script: '„Po każdej rozmowie ustnej wysyłam maila podsumowującego: ‘Zgodnie z ustaleniami z godziny 14:00 realizuję wariant X. W razie uwag proszę o informację do jutra’”.', rationale: 'Uniemożliwia wyparcie się ustaleń i stanowi dowód w sporze prawno-pracowniczym.' },
+      { step: 'Asertywne Zamknięcie Zdartej Płyty', script: '„Projekt jest zgodny z zatwierdzeniem. Jeśli zmieniają się wytyczne, wdrożę je w terminie X”.', rationale: 'Odcina emocje i sprowadza rozmowę na grunt czysto operacyjny.' }
     ]
   },
-  keyTakeaway: 'Najlepszą tarczą przeciwko manipulacji, kłamstwu i podważaniu Twojej wartości są twarde, spokojnie przedstawione fakty. Nie musisz krzyczeć, gdy masz rację zapisaną czarno na białym.'
+  alternativePath: 'Scenariusz uległy: Karolina przyjmuje naganę, po 3 miesiącach zostaje zwolniona z wilczym biletem, leczy depresję kliniczną. Scenariusz agresywny: Karolina robi karczemną awanturę i zostaje dyscyplinarnie zwolniona za brak kultury korporacyjnej. Scenariusz asertywny: spokojna prezentacja maila, pełne oczyszczenie z zarzutów i ochrona kariery.',
+  readerQuestion: 'Czy w Twoim środowisku zawodowym zdarzają się sytuacje, w których ustalenia ustne są zmieniane na Twoją niekorzyść? Jak wdrożysz zasadę pisemnego podsumowania (Paper Trail) od najbliższego poniedziałku?',
+  keyTakeaway: 'W środowisku zawodowym Twoim najpotężniejszym sprzymierzeńcem nie są emocje, lecz precyzyjnie udokumentowane fakty. Zapisuj ustalenia, stawiaj spokojne granice i nigdy nie bierz na siebie odpowiedzialności za cudze manipulacje.'
 };
 
 export const chapterThirtyExerciseAssertivenessLab: SelfExercise = {
