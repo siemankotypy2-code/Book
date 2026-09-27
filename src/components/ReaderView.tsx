@@ -38,6 +38,10 @@ import { chapterNineteenExamQuestions } from '../data/chapterNineteenData';
 import { chapterTwentyExamQuestions } from '../data/chapterTwentyData';
 import { chapterTwentyOneExamQuestions } from '../data/chapterTwentyOneData';
 import { chapterTwentyTwoExamQuestions } from '../data/chapterTwentyTwoData';
+import { chapterTwentyThreeExamQuestions } from '../data/chapterTwentyThreeData';
+import { chapterTwentyFourExamQuestions } from '../data/chapterTwentyFourData';
+import { chapterTwentyFiveExamQuestions } from '../data/chapterTwentyFiveData';
+import { chapterTwentySixExamQuestions } from '../data/chapterTwentySixData';
 import { SocialInfluenceLab } from './SocialInfluenceLab';
 import { CommunicationLab } from './CommunicationLab';
 import { PersuasionLab } from './PersuasionLab';
@@ -723,6 +727,74 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={22}
               chapterTitle="Samoregulacja i Kierowanie Zachowaniem"
               examQuestions={chapterTwentyTwoExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 23 (Tom III Rozdział 7) WIDGETS --- */}
+        {(activeSection.sectionNumber === '23.8' || activeSection.sectionNumber === '23.12' || activeSection.sectionNumber === '23.17') && (
+          <div className="my-10">
+            <HabitLoopLab />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '23.27' || activeSection.sectionNumber === '23.28') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={23}
+              chapterTitle="Nawyki — jak zachowania stają się częścią codzienności"
+              examQuestions={chapterTwentyThreeExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 24 (Tom III Rozdział 8: Decyzje) WIDGETS --- */}
+        {(activeSection.sectionNumber === '24.9' || activeSection.sectionNumber === '24.13') && (
+          <div className="my-10">
+            <InteractiveDecisionSim />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '24.23' || activeSection.sectionNumber === '24.25') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={24}
+              chapterTitle="Decyzje i Proces Wybierania (Tom III Rozdział 8)"
+              examQuestions={chapterTwentyFourExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 25 (Tom III Rozdział 9: Zachowanie) WIDGETS --- */}
+        {(activeSection.sectionNumber === '25.3' || activeSection.sectionNumber === '25.6') && (
+          <div className="my-10">
+            <HabitLoopLab />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '25.18' || activeSection.sectionNumber === '25.19') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={25}
+              chapterTitle="Zachowanie: Od Intencji do Działania (Tom III Rozdział 9)"
+              examQuestions={chapterTwentyFiveExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 26 (Tom III Rozdział 10: Zmiana) WIDGETS --- */}
+        {(activeSection.sectionNumber === '26.3' || activeSection.sectionNumber === '26.8') && (
+          <div className="my-10">
+            <SelfRegulationLabWidget />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '26.16' || activeSection.sectionNumber === '26.18') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={26}
+              chapterTitle="Zmiana: Od Zrozumienia do Działania (Tom III Rozdział 10)"
+              examQuestions={chapterTwentySixExamQuestions}
             />
           </div>
         )}
