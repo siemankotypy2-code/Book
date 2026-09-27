@@ -84,5 +84,61 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDef: 'Sieci neuronalne aktywujące się zarówno podczas wykonywania czynności, jak i podczas obserwowania jej u kogoś innego.',
     detailedExplanation: 'Zlokalizowane w korze przedruchowej i dolnym płaciku ciemieniowym. Stanowią neurobiologiczny fundament empatii, pozwalając nam dosłownie „czuć w ciele” napięcie, ból lub radość drugiego człowieka.',
     everydayExample: 'Automatyczne napinanie mięśni brzucha i grymas na twarzy, gdy widzisz, jak ktoś na chodniku potyka się i uderza kolanem o beton.'
+  },
+  {
+    term: 'Decyzje Drzwi Typu 1 i Typu 2',
+    category: 'Podejmowanie Decyzji',
+    shortDef: 'Koncepcja Jeffa Bezosa rozróżniająca wybory nieodwracalne (Typ 1) od łatwo odwracalnych (Typ 2).',
+    detailedExplanation: 'Decyzje Typu 1 (jednokierunkowe) wymagają głębokiej deliberacji i ostrożności, gdyż ich cofnięcie niesie ogromne straty. Decyzje Typu 2 (dwukierunkowe) można podjąć szybko przy ~70% danych, ponieważ w razie błędu wystarczy wrócić do punktu wyjścia.',
+    everydayExample: 'Zakup subskrypcji z prawem rezygnacji w 30 dni (Typ 2) kontra sprzedaż firmy czy zaciągnięcie 30-letniego kredytu (Typ 1).'
+  },
+  {
+    term: 'Głęboka Niepewność Knighta (Knightian Uncertainty)',
+    category: 'Podejmowanie Decyzji',
+    shortDef: 'Sytuacja, w której nieznany jest matematyczny rozkład prawdopodobieństw możliwych zdarzeń w przyszłości.',
+    detailedExplanation: 'Wprowadzony przez Franka Knighta podział oddziela ryzyko (gdzie prawdopodobieństwo jest policzalne, np. w kasynie) od niepewności otwartego świata, w którym kluczem staje się odporność na błąd i elastyczność zamiast sztywnej optymalizacji.',
+    everydayExample: 'Inwestowanie w nowo powstający rynek technologiczny AI o niesprecyzowanych jeszcze regulacjach prawnych.'
+  },
+  {
+    term: 'Szantaż Emocjonalny FOG',
+    category: 'Zdrowe Granice',
+    shortDef: 'Manipulacja bazująca na wywoływaniu Lęku (Fear), Poczucia Obowiązku (Obligation) i Poczucia Winy (Guilt).',
+    detailedExplanation: 'Opisany przez Susan Forward mechanizm, w którym manipulator zmusza drugą osobę do uległości i łamania własnych granic pod groźbą wycofania miłości, kary emocjonalnej lub oskarżeń o egoizm.',
+    everydayExample: '„Gdybyś naprawdę mnie kochał, zrezygnowałbyś z tego wyjazdu z przyjaciółmi”.'
+  },
+  {
+    term: 'Uwikłanie Emocjonalne (Enmeshment)',
+    category: 'Zdrowe Granice',
+    shortDef: 'Patologiczne zlanie się granic psychologicznych w relacji uniemożliwiające odróżnienie własnych emocji od cudzych.',
+    detailedExplanation: 'Zjawisko powszechne w rodzinach dysfunkcyjnych, gdzie autonomia jednostki jest traktowana jako zdrada, a samopoczucie każdego członka staje się niewolnikiem nastroju dominującego rodzica lub partnera.',
+    everydayExample: 'Dorosły syn czujący paraliżujący lęk przed podjęciem samodzielnej decyzji o wyprowadzce z domu rodziców.'
+  },
+  {
+    term: 'Komunikat „JA” (I-Statement)',
+    category: 'Asertywność',
+    shortDef: 'Struktura wypowiedzi oparta na opisie obiektywnego faktu, własnych emocji, konsekwencji i oczekiwań.',
+    detailedExplanation: 'Zastępuje oskarżycielskie komunikaty typu „TY” językiem odpowiedzialności. Zmniejsza opór limbiczny u odbiorcy i deeskaluje konflikt, ułatwiając merytoryczne porozumienie.',
+    everydayExample: '„Kiedy przerywasz mi wypowiedź, czuję zniecierpliwienie. Proszę, pozwól mi dokończyć to zdanie”.'
+  },
+  {
+    term: 'Model FUKO w Informacji Zwrotnej',
+    category: 'Asertywność',
+    shortDef: 'Czteroetapowy algorytm konstruktywnej krytyki: Fakty, Uczucia, Konsekwencje, Oczekiwania.',
+    detailedExplanation: 'Nowoczesny standard komunikacji krytycznej odrzucający manipulacyjną „metodę kanapki”. Skupia się na faktach i pożądanym standardzie bez atakowania tożsamości i godności rozmówcy.',
+    everydayExample: '„Raport spóźnił się o 2 dni [F]. Niepokoi mnie to [U], bo zarząd czeka na dane [K]. Oczekuję przesłania pliku do 14:00 [O]”.'
+  },
+  {
+    term: 'Zamgławianie (Fogging)',
+    category: 'Asertywność',
+    shortDef: 'Technika radzenia sobie z krytyką polegająca na zgodzeniu się z prawdziwą częścią zarzutu bez przyjmowania ocen i poczucia winy.',
+    detailedExplanation: 'Opracowana przez Manuela Smitha technika jujitsu psychologicznego. Rozbraja agresora, ponieważ nie spotyka on oporu ani kontrataku, lecz spokojną akceptację nagich faktów.',
+    everydayExample: '„Zgadzam się, spóźniłem się dziś 10 minut [fakt]. Nie zgadzam się z opinią, że jestem człowiekiem bezwartościowym [ocena]”.'
+  },
+  {
+    term: 'Technika Zdartej Płyty (Broken Record)',
+    category: 'Asertywność',
+    shortDef: 'Monotonne, spokojne powtarzanie swojego stanowiska odmownego w obliczu ponawianego nacisku manipulatora.',
+    detailedExplanation: 'Uniemożliwia wciągnięcie w labirynt zbędnych dyskusji i usprawiedliwień. Po 3–4 spokojnych powtórzeniach manipulator rezygnuje z dalszego ataku.',
+    everydayExample: '„Rozumiem, że ci zależy, jednak moja decyzja o niepożyczaniu samochodu jest ostateczna”.'
   }
 ];

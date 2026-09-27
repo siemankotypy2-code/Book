@@ -94,9 +94,10 @@ export const chapterThirtyCaseStudyUleglosc: CaseStudy = {
     'Dominik był w szoku, próbował żartować, ale widząc żelazny spokój Piotra, musiał ustąpić. Piotr odzyskał poczucie godności i pozycję eksperta w firmie.'
   ],
   dialogue: [
-    { speaker: 'Dominik (z uśmiechem)', text: 'Piotrek, daj ten kod, ja go ładnie opakuję i pokażę szefom, ty przecież nie lubisz wystąpień.', subtext: 'Manipulacja paternalistyczna i kradzież dorobku pod płaszczykiem troski.' },
-    { speaker: 'Piotr (uległy)', text: 'No dobra... ale wspomnij o mnie, dobrze?', subtext: 'Błagalna uległość oddająca pełną władzę manipulatorowi.' },
-    { speaker: 'Piotr (asertywny)', text: 'Dominik, doceniam chęć pomocy, jednak to jest mój projekt i to ja zaprezentuję go zarządowi.', subtext: 'Jasna, spokojna i niepodważalna deklaracja autorstwa i odpowiedzialności.' }
+    { speaker: 'Dominik (protekcjonalnie)', text: 'Piotrek, daj ten kod, ja go ładnie opakuję i pokażę szefom, ty przecież nie lubisz wystąpień publicznych.', subtext: 'Paternalistyczna manipulacja i kradzież dorobku pod pozorem pomocy.' },
+    { speaker: 'Piotr (wersja uległa — przed zmianą)', text: 'No dobra... ale wspomnij o mnie chociaż jednym słowem, dobrze?', subtext: 'Kapitulacja i oddanie pełnej władzy manipulatorowi.' },
+    { speaker: 'Piotr (wersja agresywna — nieskuteczna)', text: 'Odpierdol się od mojego projektu, ty złodzieju! Zawsze tylko żerujesz na innych!', subtext: 'Wybuch furii skutkujący naganą dyscyplinarną za wulgaryzmy.' },
+    { speaker: 'Piotr (wersja asertywna — skuteczna)', text: 'Dominik, doceniam twoją gotowość do wystąpienia, jednak to jest mój autorski projekt i to ja zaprezentuję go zarządowi.', subtext: 'Jasna, spokojna i niepodważalna deklaracja autorstwa.' }
   ],
   decisionTaken: 'Porzucenie uległości i biernego czekania na sprawiedliwość dziejową na rzecz bezpośredniego, publicznego ogłoszenia własnego autorstwa i granic zawodowych.',
   whatProtagonistSaw: 'Dominika jako wszechmocnego manipulatora, a siebie jako bezbronną ofiarę okoliczności.',
@@ -149,6 +150,10 @@ export const chapterThirtyCaseStudyAgresja: CaseStudy = {
     'Nauczył się modelu FUKO (Fakty, Uczucia, Konsekwencje, Oczekiwania) oraz panowania nad markerami gniewu (obniżanie tonu głosu zamiast krzyku, pauza na oddech).',
     'Gdy 4 miesiące później doszło do kolejnego błędu w dostawie, Kamil nie podniósł głosu. Wezwał kierownika do gabinetu, usiadł naprzeciwko i powiedział: „Mamy 48 godzin opóźnienia na linii 3 [FAKT]. Jestem bardzo zaniepokojony tą sytuacją [UCZUCIE], ponieważ naraża to firmę na kary umowne [KONSEKWENCJA]. Oczekuję, że do godziny 14:00 przedstawisz mi plan transportu zastępczego [OCZEKIWANIE]. W czym mogę ci pomóc, aby to zrealizować?”.',
     'Kierownik zamiast uciekać w zwolnienie, rozwiązał problem w 3 godziny. Kamil po raz pierwszy poczuł, czym jest prawdziwy, dojrzały autorytet oparty na asertywności.'
+  ],
+  dialogue: [
+    { speaker: 'Kamil (krzyk, purpura na twarzy)', text: 'Idioci! Nic bez was nie potrafię zrobić! Wszyscy wylecicie!', subtext: 'Reakcja agresywna maskująca bezradność i paniczny lęk przed zarządem.' },
+    { speaker: 'Kamil (po treningu FUKO)', text: 'Mamy 48h opóźnienia. Jestem zaniepokojony. Oczekuję planu naprawczego do 14:00. Jak mogę pomóc?', subtext: 'Spokojna, twarda dla problemu i szanująca człowieka asertywność.' }
   ],
   decisionTaken: 'Całkowite odrzucenie agresji słownej i terroru na rzecz asertywnego modelu komunikacji krytycznej FUKO połączonego ze wsparciem wykonawczym.',
   whatProtagonistSaw: 'Swoją agresję jako jedyny skuteczny sposób na wymuszenie dyscypliny i efektów.',
@@ -241,7 +246,7 @@ export const chapterThirtyExerciseAssertivenessLab: SelfExercise = {
   subtitle: 'Praktyczny trening przepisywania skryptów rozmów i budowania komunikatów JA w 4 kluczowych obszarach życia',
   objective: 'Opanowanie umiejętności natychmiastowej zamiany reakcji uległej lub agresywnej na precyzyjny, asertywny komunikat.',
   durationMinutes: 30,
-  neuroScientificFoundation: 'Aktywne ćwiczenie nowych ścieżek językowych tworzy trwałe połączenia synaptyczne w obszarze Broki i lewej kory przedczołowej.',
+  neuroScientificFoundation: 'Aktywne ćwiczenie nowych ścieżek językowych tworzy trwałe połączenia synaptyczne w ośrodku Broki i lewej korze przedczołowej.',
   steps: [
     {
       stepNumber: 1,
@@ -285,7 +290,7 @@ export const chapterThirty: Chapter = {
   title: 'Rozdział 30: Asertywność — Sztuka Komunikacji w Zgodzie ze Sobą, Wyrażanie Granic i Spójność Działania',
   subtitle: 'Od obrony własnych praw i kanonu Manuela Smitha do mistrzowskich technik komunikacji bezprzemocowej, radzenia sobie z krytyką i pełnej integracji dzieła',
   leadParagraph: 'Asertywność jest ukoronowaniem całej drogi, jaką przeszedłeś przez 30 rozdziałów tej książki. Nie jest to zbiór sprytnych trików retorycznych ani technika wygrywania sprzeczek przy niedzielnym obiedzie. Prawdziwa asertywność to głęboka, dojrzała postawa egzystencjalna — to stan, w którym znasz swoją wartość, szanujesz swoje granice, potrafisz otwarcie i bez lęku wyrażać swoje myśli oraz dajesz dokładnie takie samo prawo każdemu drugiemu człowiekowi. W tym finałowym rozdziale zbadamy 30 filarów dojrzałej asertywności: odróżnimy ją od agresji i uległości, zdekodujemy Kanon Praw Asertywności, opanujesz techniki zamgławiania, komunikatu JA, zdartej płyty i deeskalacji konfliktów oraz połączymy całą wiedzę Tomu I, II i III w jeden zintegrowany, potężny system samokształtowania człowieka.',
-  totalEstimatedPages: 102,
+  totalEstimatedPages: 115,
   sections: [
     // BLOK I — ZROZUMIENIE ASERTYWNOŚCI (30.1 - 30.5)
     {
@@ -294,16 +299,30 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.1',
       title: 'Czym jest asertywność? Filozofia „Ja jestem OK — Ty jesteś OK”, godność i odwaga cywilna',
       category: 'wstep',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 16,
       quote: {
         text: 'Asertywność nie polega na tym, by mieć rację. Polega na tym, by mieć odwagę stanąć po swojej stronie bez potrzeby deptania praw innych.',
         author: 'Manuel J. Smith'
       },
       paragraphs: [
-        'W potocznym rozumieniu asertywność bywa często wypaczana i mylona z bezwzględnością, arogancją lub umiejętnością twardego odmawiania w każdej sytuacji. W rzeczywistości asertywność jest jedną z najbardziej szlachetnych i wymagających form dojrzałości psychologicznej, jaką człowiek może wypracować.',
-        'Jej fundamentem jest filozoficzna postawa opisana w analizie transakcyjnej przez Thomasa Harrisa: „Ja jestem OK — Ty jesteś OK”. Oznacza to głębokie przekonanie, że moje potrzeby, emocje, prawa i granice są ważne i godne szacunku — i dokładnie tak samo ważne i godne szacunku są potrzeby, emocje, prawa i granice drugiego człowieka.',
-        'Asertywność to złoty środek między uległością (gdzie rezygnujesz ze swoich praw, by przypodobać się innym) a agresją (gdzie wymuszasz swoje prawa, raniąc i poniżając innych).',
-        'To odwaga bycia autentycznym w świecie, który nieustannie wywiera presję na uległość lub walkę.'
+        'W potocznym dyskursie asertywność bywa rażąco spłycana i mylona z bezwzględnością, arogancją lub umiejętnością „twardego odmawiania” w każdej sytuacji. W rzeczywistości asertywność jest jedną z najbardziej szlachetnych, wymagających i dojrzałych postaw psychologicznych, jakie człowiek może w sobie ukształtować.',
+        'Jej fundamentem jest filozoficzna postawa opisana w analizie transakcyjnej przez Thomasa Harrisa: „Ja jestem OK — Ty jesteś OK”. Oznacza to głębokie, niezachwiane przekonanie, że moje potrzeby, emocje, myśli, wartości i granice są ważne i godne szacunku — i dokładnie tak samo ważne i godne szacunku są potrzeby, emocje, myśli, wartości i granice każdego drugiego człowieka.',
+        'Asertywność to złoty środek między ULEGŁOŚCIĄ (gdzie uznajesz: „Ty jesteś OK — Ja nie jestem OK” i rezygnujesz ze swoich praw, by zadowolić innych) a AGRESJĄ (gdzie uznajesz: „Ja jestem OK — Ty nie jesteś OK” i wymuszasz swoje prawa przemocą, upokarzając rozmówcę).',
+        'To odwaga bycia autentycznym w świecie, który nieustannie wywiera presję na konformistyczną uległość lub barbarzyńską walkę.'
+      ],
+      subsections: [
+        {
+          title: 'Asertywność to nie zestaw trików',
+          paragraphs: [
+            'Jeśli nauczysz się samych formułek językowych, ale w środku będziesz czuć się gorszy lub będziesz pragnąć zemsty, rozmówca natychmiast wyczuje Twój fałsz w tonie głosu i mikrogrymasach twarzy.',
+            'Prawdziwa asertywność zaczyna się w Twojej relacji z samym sobą — w głębokiej zgodzie na własną niedoskonałość i w poczuciu niezbywalnej godności ludzkiej.'
+          ],
+          highlightBox: {
+            title: 'Filozofia Harrisowska',
+            content: 'Postawa asertywna to jedyna relacja symetryczna: stajesz przed drugim człowiekiem jak równy z równym — bez klękania i bez wywyższania się.',
+            type: 'insight'
+          }
+        }
       ]
     },
     {
@@ -312,11 +331,12 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.2',
       title: 'Asertywność a agresja — Siła spokoju kontra przemoc, dominacja i narzucanie woli',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Człowiek agresywny dąży do dominacji. Postrzega świat jako arenę walki o sumie zerowej: „Albo ja ciebie zniszczę, albo ty zniszczysz mnie”. Agresja posługuje się krzykiem, sarkazmem, etykietowaniem, przerwaniem wypowiedzi, szantażem i zastraszaniem.',
-        'Paradoksalnie, agresja nie jest dowodem siły — jest najbardziej jaskrawym przejawem ukrytego lęku, poczucia zagrożenia i bezsilności poznawczej. Agresor krzyczy, ponieważ nie wierzy, że jego spokojne słowo może mieć jakąkolwiek wagę.',
-        'Asertywność nie potrzebuje krzyku. Człowiek asertywny mówi cicho, spokojnie i precyzyjnie. Jego siła leży w nieugiętej pewności własnych praw i gotowości do ponoszenia konsekwencji swoich wyborów.'
+        'Człowiek agresywny dąży do dominacji. Postrzega każdą rozmowę jako wojnę o sumie zerowej: „Albo ja ciebie zniszczę i narzucę swoje zdanie, albo ty zrobisz to ze mną”. Agresja posługuje się krzykiem, przerwaniem wypowiedzi, sarkazmem, wulgaryzmami, groźbami i manipulacją.',
+        'Wielu ludzi myli agresję z siłą i zdecydowaniem. W rzeczywistości agresja jest najbardziej jaskrawym dowodem skrajnej bezsilności emocjonalnej i panicznego lęku przed utratą kontroli. Agresor krzyczy, ponieważ podświadomie nie wierzy, że jego spokojne słowo może mieć jakąkolwiek wagę.',
+        'Asertywność nie potrzebuje podnoszenia głosu ani prężenia muskułów. Człowiek asertywny mówi cicho, spokojnie, precyzyjnie i powoli. Jego siła wypływa z nieugiętej pewności własnych praw oraz gotowości do poniesienia pełnej odpowiedzialności za swoje wybory.',
+        'Bądź twardy dla problemu i miękki dla człowieka — to fundament dojrzałej asertywności.'
       ]
     },
     {
@@ -325,11 +345,12 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.3',
       title: 'Asertywność a uległość — Cena pozornego pokoju, tłumiona złość i autodestrukcja',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Postawa uległa opiera się na założeniu: „Ty jesteś ważny — ja jestem nieważny”. Osoba uległa milczy, gdy łamane są jej prawa, zgadza się na niechciane zadania, przeprasza za to, że żyje i nieustannie kłania się oczekiwaniom otoczenia.',
-        'Cena uległości jest jednak niszczycielska. Tłumiona złość i żal nie znikają — zamieniają się w autoagresję, depresję, migreny, nerwice żołądkowe oraz skrajne poczucie bezwartościowości.',
-        'Ponadto uległość demoralizuje otoczenie: uczysz innych ludzi, że mogą bezkarnie po Tobie deptać, co prowadzi do nieuchronnego rozpadu relacji.'
+        'Postawa uległa opiera się na założeniu: „Twoje potrzeby są święte — moje nie mają żadnego znaczenia”. Osoba uległa milczy, gdy łamane są jej prawa, godzi się na niechciane nadgodziny, uśmiecha się, gdy ktoś ją obraża, i nieustannie przeprasza za to, że żyje.',
+        'Cena takiego pozornego „świętego spokoju” jest niszczycielska dla całego organizmu. Tłumiona złość i żal nie znikają — zamieniają się w autoagresję, przewlekłą depresję, bezsenność, nerwice natręctw oraz skrajne poczucie bezwartościowości.',
+        'Ponadto uległość demoralizuje otoczenie: uczysz innych ludzi, że mogą bezkarnie po Tobie deptać i traktować Cię jak darmowego wykonawcę swoich zadań. Zamiast szacunku, zyskujesz lekceważenie.',
+        'Uległość nie jest cnotą — jest lękiem przebranym za dobroć.'
       ]
     },
     {
@@ -338,11 +359,12 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.4',
       title: 'Asertywność a bierność — Prokrastynacja relacyjna, milczenie i unikanie odpowiedzialności',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 16,
       paragraphs: [
-        'Bierność w relacjach to strategia udawania, że problem nie istnieje. Osoba bierna nie mówi „tak”, nie mówi „nie”, lecz dryfuje z prądem zdarzeń, licząc na to, że czas rozwiąże konflikt za nią.',
-        'Bierność jest formą ucieczki przed odpowiedzialnością. Pozwala zachować fałszywe poczucie czystości rąk („ja nic nie zrobiłem, to oni tak zdecydowali”), lecz odbiera człowiekowi wszelkie poczucie sprawstwa i kontroli nad własnym losem.',
-        'Asertywność wymaga aktywnego zajęcia stanowiska: nawet jeśli sytuacja jest trudna i niejednoznaczna, człowiek asertywny wchodzi w dialog i współtworzy rzeczywistość.'
+        'Bierność (pasywność) w relacjach to strategia udawania, że konflikt nie istnieje. Osoba bierna nie mówi „tak”, nie mówi „nie”, lecz dryfuje z prądem zdarzeń, licząc na to, że czas, przypadek lub inni ludzie rozwiążą trudną sytuację za nią.',
+        'Częstą odmianą bierności jest postawa bierno-agresywna (passive-aggressive): ciche dni, ostentacyjne wzdychanie, przewracanie oczami, celowe spóźnianie się i sabotowanie zadań zamiast otwartej rozmowy.',
+        'Bierność pozwala zachować fałszywe poczucie „czystości rąk” („przecież ja nic złego nie powiedziałem”), lecz odbiera człowiekowi wszelkie poczucie sprawstwa i szacunku do samego siebie.',
+        'Asertywność wymaga odwagi cywilnej: stanięcia twarzą w twarz z problemem i podjęcia otwartego, bezpośredniego dialogu.'
       ]
     },
     {
@@ -351,15 +373,15 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.5',
       title: 'Ćwiczenie Praktyczne — Rozpoznawanie Stylu Komunikacji w 4 Sytuacjach Codziennych',
       category: 'cwiczenia',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
       paragraphs: [
-        'Rozpoznaj, który styl reprezentują poniższe wypowiedzi (Uległy, Agresywny, Bierny, Asertywny):',
-        'SYTUACJA 1: Ktoś wpycha się przed Ciebie w kolejce w sklepie.',
-        'A: „Przepraszam... no trudno...” [Styl Uległy].',
-        'B: „Gdzie się pchasz, ślepy jesteś czy bezczelny?!” [Styl Agresywny].',
-        'C: (Ciche wzdychanie i przewracanie oczami bez słowa) [Styl Bierny/Bierno-agresywny].',
-        'D: „Przepraszam, koniec kolejki znajduje się za mną. Proszę stanąć na końcu” [Styl Asertywny].',
-        'ZADANIE: Zapisz w swoim dzienniku, w których relacjach (z partnerem, szefem, rodzicami) najczęściej osuwasz się w uległość, a w których w agresję.'
+        'Przeanalizuj poniższe 4 sytuacje i przyporządkuj wypowiedzi do czterech stylów: Uległego, Agresywnego, Bierno-Agresywnego i Asertywnego:',
+        'SYTUACJA: Ktoś wpycha się przed Ciebie w kolejce do kasy w markecie.',
+        '• WERSJA A: „Przepraszam... no trudno, widocznie panu się spieszy...” [Styl Uległy].',
+        '• WERSJA B: „Gdzie się pchasz, ślepy chamie?! Do okulisty idź!” [Styl Agresywny].',
+        '• WERSJA C: (Głośne wzdychanie, stukanie stopą i komentowanie pod nosem: „Co za ludzie w tym kraju...”) [Styl Bierno-Agresywny].',
+        '• WERSJA D: „Przepraszam, koniec kolejki znajduje się za mną. Proszę stanąć na końcu” [Styl Asertywny].',
+        'ZADANIE: Wybierz jedną bliską relację (partner, rodzic, szef) i zapisz w dzienniku, w których momentach najczęściej osuwasz się w uległość, a w których w agresję.'
       ]
     },
 
@@ -370,11 +392,12 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.6',
       title: 'Prawo do własnego zdania — Różnica zdań bez lęku przed odrzuceniem i konformizmem',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Masz pełne, niezbywalne prawo do posiadania własnych opinii, gustów, przekonań politycznych, filozoficznych i życiowych — nawet jeśli 99% ludzi w Twoim otoczeniu uważa zupełnie inaczej.',
-        'Nie masz obowiązku dostosowywać swoich poglądów do grupy tylko po to, by zyskać chwilową aprobatę. Odwaga do powiedzenia: „Rozumiem wasze stanowisko, ale ja widzę tę sprawę inaczej” jest fundamentem niezależności intelektualnej.',
-        'Prawdziwa wspólnota nie wymaga jednomyślności — wymaga wzajemnego szacunku dla różnorodności myśli.'
+        'Masz pełne, niezbywalne prawo do posiadania własnych opinii, gustów, upodobań, przekonań politycznych, filozoficznych i życiowych — nawet jeśli 99% ludzi w Twoim otoczeniu uważa zupełnie inaczej.',
+        'Nie masz żadnego moralnego ani społecznego obowiązku dostosowywać swoich poglądów do grupy tylko po to, by przypodobać się większości lub uniknąć chwilowego dyskomfortu.',
+        'Odwaga do wypowiedzenia słów: „Rozumiem waszą perspektywę, ale ja widzę tę sprawę inaczej” jest fundamentem niezależności intelektualnej i suwerenności poznawczej.',
+        'Dojrzała wspólnota nie polega na jednomyślności klonów — polega na wzajemnym szacunku dla różnorodności ludzkiego myślenia.'
       ]
     },
     {
@@ -383,11 +406,11 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.7',
       title: 'Prawo do odmowy — Dlaczego „nie” jest kompletnym zdaniem chroniącym integralność',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Kanon Praw Asertywności jednoznacznie stwierdza: masz prawo powiedzieć „nie” bez poczucia winy i bez konieczności przedstawiania usprawiedliwień.',
-        'Odmowa nie jest atakiem na drugiego człowieka — jest odmową wykonania konkretnej czynności. Twoje zasoby są ograniczone i masz moralne prawo decydować, na co przeznaczasz swoje życie.',
-        'Osoby dojrzałe przyjmują odmowę z szacunkiem; osoby manipulujące obrażają się. Twoje „nie” pozwala natychmiast rozpoznać, z kim masz do czynienia.'
+        'Kanon Praw Asertywności jednoznacznie stwierdza: masz prawo powiedzieć „nie” bez poczucia winy, bez lęku przed odrzuceniem i bez konieczności składania raportu ze swojego życia.',
+        'Odmowa nie jest atakiem na drugiego człowieka — jest odmową wykonania konkretnej czynności. Twoje zasoby czasu, energii i pieniędzy są skończone i masz pełne prawo decydować, w co je inwestujesz.',
+        'Osoby dojrzałe przyjmują odmowę z szacunkiem; osoby manipulujące obrażają się. Twoje spokojne „nie” jest najszybszym testem dojrzałości Twoich relacji.'
       ]
     },
     {
@@ -396,11 +419,13 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.8',
       title: 'Prawo do własnych potrzeb — Legitymizacja odpoczynku, samotności i osobistych celów',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Masz prawo stawiać swoje fundamentalne potrzeby (zdrowie, sen, spokój psychiczny, rozwój osobisty) na pierwszym miejscu bez bycia nazywanym „egoistą”.',
-        'Istnieje zasadnicza różnica między ZDROWYM EGOIZMEM (dbaniem o własne zasoby, aby móc funkcjonować i wspierać innych) a EGOCENTRYZMEM (wykorzystywaniem innych do własnych celów).',
-        'Z pustego dzbana nikt się nie napije. Jeśli sam nie zadbasz o napełnienie własnego dzbana energią, nie będziesz miał nic do zaoferowania światu.'
+        'Masz pełne prawo stawiać swoje fundamentalne potrzeby — zdrowie, sen, spokój psychiczny, rozwój pasji i samotność — na pierwszym miejscu bez obawy przed byciem nazwanym „egoistą”.',
+        'NALEŻY ODRÓŻNIĆ ZDROWY EGOIZM OD EGOCENTRYZMU:',
+        '• ZDROWY EGOIZM: dbanie o własne zasoby i napełnianie własnego dzbana energią, aby móc zdrowo żyć i wspierać innych.',
+        '• EGOCENTRYZM: wykorzystywanie innych ludzi jako narzędzi do zaspokajania własnych zachcianek kosztem ich godności.',
+        'Z pustego dzbana nikt się nie napije. Jeśli sam nie zadbasz o swoje potrzeby, wkrótce nie będziesz miał nic wartościowego do zaoferowania światu.'
       ]
     },
     {
@@ -409,11 +434,12 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.9',
       title: 'Prawo do popełniania błędów — Przełamanie perfekcjonizmu, odpowiedzialność za pomyłki i pokora',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Manuel Smith podkreślał: masz prawo popełniać błędy — i ponosić za nie pełną odpowiedzialność. Nie musisz być doskonały, by zasługiwać na szacunek i miłość.',
-        'Wielu ludzi żyje w paraliżującym lęku przed wpadką, co zmusza ich do ukrywania pomyłek, kłamstw i obwiniania innych. Taka postawa niszczy zaufanie.',
-        'Człowiek asertywny potrafi bez wstydu i lęku powiedzieć: „Popełniłem błąd w tym raporcie. Przepraszam za zamieszanie, naprawię to do jutra do 12:00”. Taka postawa buduje potężny autorytet.'
+        'Manuel J. Smith w swoim klasycznym podręczniku asertywności sformułował fundamentalną zasadę: Masz prawo popełniać błędy — i ponosić za nie pełną odpowiedzialność.',
+        'Wielu ludzi żyje w paraliżującym lęku przed jakąkolwiek pomyłką, co zmusza ich do ukrywania wpadek, kłamstw, zrzucania winy na podwładnych i chorobliwego perfekcjonizmu.',
+        'Człowiek asertywny nie boi się prawdy o swojej omylności. Potrafi bez wstydu i lęku powiedzieć: „Myliłem się. W tym raporcie popełniłem błąd obliczeniowy. Przepraszam za zamieszanie, naprawię to do jutra do 12:00”.',
+        'Taka postawa buduje potężny autorytet osobisty i rozbraja każdą próbę szantażu emocjonalnego.'
       ]
     },
     {
@@ -422,15 +448,15 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.10',
       title: 'Ćwiczenie Praktyczne — Moje Prawa w Komunikacji: Osobisty Dekalog Suwerenności',
       category: 'cwiczenia',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
       paragraphs: [
-        'Przeczytaj uważnie 5 Fundamentalnych Praw Asertywności Manuela J. Smitha i wybierz to, które najtrudniej przychodzi Ci wdrożyć:',
+        'Przeczytaj uważnie 5 Fundamentalnych Praw Asertywności Manuela J. Smitha i wybierz to, które najtrudniej przychodzi Ci wdrożyć w codziennym życiu:',
         '1. Masz prawo do samodzielnej oceny własnego zachowania, myśli i emocji oraz ponoszenia odpowiedzialności za ich skutki.',
         '2. Masz prawo nie tłumaczyć się i nie usprawiedliwiać swojego zachowania przed innymi.',
-        '3. Masz prawo do zmiany zdania.',
+        '3. Masz prawo do zmiany zdania w świetle nowych faktów.',
         '4. Masz prawo do popełniania błędów i ponoszenia za nie odpowiedzialności.',
         '5. Masz prawo powiedzieć: „Nie wiem”, „Nie rozumiem”, „Nie zależy mi na tym”.',
-        'Napisz krótki esej refleksyjny: Kto w Twoim otoczeniu próbuje odbierać Ci te prawa i jak odpowiesz mu przy następnej rozmowie?'
+        'ZADANIE: Napisz osobistą deklarację suwerenności: Wobec kogo (szefa, teściowej, znajomego) zaczniesz stosować to prawo od jutra?'
       ]
     },
 
@@ -441,11 +467,15 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.11',
       title: 'Komunikat „JA” — Anatomia języka odpowiedzialności i deeskalacji obrony rozmówcy',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Komunikat „JA” (I-statement) to najważniejsze narzędzie gramatyczne asertywności. Zastępuje on oskarżycielskie komunikaty typu „TY” („Ty zawsze mnie lekceważysz!”) językiem opisu faktów i własnych stanów wewnętrznych.',
-        'Struktura komunikatu „JA” składa się z czterech elementów: 1. FAKT: „Kiedy zdarza się [konkretne zachowanie]...” 2. EMOCJA: „...czuję [nazwa emocji]...” 3. KONSEKWENCJA: „...ponieważ [wpływ na mnie]...” 4. OCZEKIWANIE: „...dlatego proszę / oczekuję [konkretna zmiana]”.',
-        'Taki komunikat nie atakuje tożsamości rozmówcy, dzięki czemu nie uruchamia w jego mózgu odruchowej reakcji obronnej ciała migdałowatego.'
+        'Komunikat „JA” (I-statement) to najważniejsze gramatyczne narzędzie asertywności. Zastępuje on oskarżycielskie, agresywne komunikaty typu „TY” („Ty zawsze wszystko niszczysz!”, „Jesteś nieodpowiedzialny!”) językiem opisu faktów i własnych stanów wewnętrznych.',
+        'STRUKTURA KOMUNIKATU „JA” SKŁADA SIĘ Z 4 CZĘŚCI:',
+        '1. FAKT: „Kiedy zdarza się [konkretne zachowanie opisane okiem kamery]...”',
+        '2. EMOCJA: „...czuję [nazwa emocji bez oskarżeń: złość, zaniepokojenie, bezradność]...”',
+        '3. KONSEKWENCJA: „...ponieważ [realny wpływ tego faktu na mój czas/budżet/zdrowie]...”',
+        '4. OCZEKIWANIE: „...dlatego oczekuję / proszę, aby [konkretna, mierzalna zmiana]”.',
+        'Komunikat „JA” nie ocenia i nie etykietuje rozmówcy, dzięki czemu nie wywołuje w jego mózgu odruchowego oporu ciała migdałowatego i otwiera przestrzeń do porozumienia.'
       ]
     },
     {
@@ -454,11 +484,11 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.12',
       title: 'Jak mówić konkretnie? Eliminacja kwantyfikatorów wielkich („zawsze”, „nigdy”) i język kamery wideo',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Najszybszym sposobem na wywołanie awantury w relacji jest użycie kwantyfikatorów wielkich: „Ty ZAWSZE się spóźniasz!”, „NIGDY mnie nie słuchasz!”, „Wszyscy wiedzą, jaki jesteś!”.',
-        'Mózg rozmówcy natychmiast znajduje jeden wyjątek z przeszłości („To nieprawda, w zeszły wtorek byłem na czas!”) i cała rozmowa zbacza na jałowy spór o definicje, zamiast rozwiązać problem.',
-        'Mów precyzyjnie jak kamera wideo: „Dziś spóźniłeś się 20 minut na spotkanie”. Z faktami się nie dyskutuje.'
+        'Najszybszym sposobem na wywołanie awantury i zablokowanie porozumienia jest użycie kwantyfikatorów wielkich: „Ty ZAWSZE się spóźniasz!”, „NIGDY mnie nie słuchasz!”, „WSZYSCY przez ciebie cierpią!”.',
+        'Gdy mózg rozmówcy słyszy słowo „zawsze”, natychmiast przeszukuje pamięć i znajduje jeden wyjątek z przeszłości („To kłamstwo! W zeszły wtorek byłem 5 minut przed czasem!”). W ułamku sekundy cała rozmowa zbacza z rozwiązania problemu na jałowy spór o definicje i sprawiedliwość dziejową.',
+        'ASERTACJA WYMAGA JĘZYKA KAMERY WIDEO: Kamera nie widzi „zawsze” ani „jesteś leniwy”. Kamera widzi twarde fakty: „Dziś spóźniłeś się 25 minut na spotkanie”. Z obiektywnymi faktami nikt nie jest w stanie dyskutować.'
       ]
     },
     {
@@ -467,11 +497,11 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.13',
       title: 'Jak mówić o emocjach? Nazywanie afektu bez oskarżeń i rola Affect Labeling w neuronauce',
       category: 'neuronauka',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Wielu ludzi unika mówienia o emocjach, obawiając się, że wyjdą na słabych lub przewrażliwionych. Neuronauka wykazuje zjawisko odwrotne: werbalne nazwanie emocji (affect labeling) drastycznie obniża pobudzenie ciała migdałowatego i przywraca kontrolę kory przedczołowej.',
-        'Mówienie o emocjach w sposób asertywny nie polega na histerycznym wybuchu, lecz na chłodnym nazwaniu stanu: „Czuję złość”, „Czuję bezradność”, „Czuję głębokie rozczarowanie”.',
-        'Uczucia są faktami psychologicznymi — nikt nie może powiedzieć Ci: „Wcale tego nie czujesz”.'
+        'Wielu ludzi unika mówienia o swoich emocjach, obawiając się, że wyjdą na osoby słabe, przewrażliwione lub histeryczne. Neuronauka dowodzi zjawiska dokładnie odwrotnego: werbalne nazwanie emocji (affect labeling, Matthew Lieberman) drastycznie aktywuje prawą brzuszno-boczną korę przedczołową (rvlPFC), co wysyła potężny sygnał hamujący do ciała migdałowatego i obniża tętno u obu rozmówców.',
+        'Mówienie o emocjach w sposób asertywny nie polega na dramatycznym wybuchu, lecz na chłodnym nazwaniu stanu: „Czuję złość”, „Czuję głębokie rozczarowanie”, „Czuję bezradność w tej sytuacji”.',
+        'Twoje uczucia są faktami psychologicznymi — nikt nie ma prawa powiedzieć Ci: „Wcale tego nie czujesz”. Nazwanie emocji odbiera im niszczycielską siłę i pozwala przejść do rozwiązań.'
       ]
     },
     {
@@ -480,11 +510,15 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.14',
       title: 'Jak wyrażać krytykę? Model FUKO (Fakty, Uczucia, Konsekwencje, Oczekiwania) vs fałszywa kanapka',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Popularna niegdyś „metoda kanapki” (pochwała – krytyka – pochwała) jest dziś uznawana za manipulacyjną i nieskuteczną. Pracownicy szybko uczą się ignorować pochwały, czekając z niepokojem na „ale...”.',
-        'Nowoczesnym standardem jest model FUKO: 1. FAKTY (opis bez oceny), 2. UCZUCIA (mój stan afektywny), 3. KONSEKWENCJE (realny wpływ błędu na zespół lub proces), 4. OCZEKIWANIA (jasne zdefiniowanie pożądanego standardu na przyszłość).',
-        'Krytyka FUKO jest podawana w cztery oczy, z szacunkiem i z orientacją na rozwiązanie problemu, a nie na upokorzenie pracownika.'
+        'Popularna w podręcznikach zarządzania z lat 90. „metoda kanapki” (pochwała – krytyka – pochwała) jest dziś uznawana za manipulacyjną, nieszczerą i nieskuteczną. Pracownicy szybko uczą się ignorować wstępne pochwały, czekając z napięciem na niszczące „ale...”.',
+        'NOWOCZESNYM STANDARDEM JEST MODEL FUKO:',
+        '1. F — FAKTY: „Wczorajszy raport został przesłany 3 godziny po wyznaczonym terminie”.',
+        '2. U — UCZUCIA: „Jestem zaniepokojony i poirytowany tą sytuacją”.',
+        '3. K — KONSEKWENCJE: „Ponieważ zarząd musiał czekać na dane i opóźniło to decyzję budżetową”.',
+        '4. O — OCZEKIWANIA: „Oczekuję, że kolejny raport zostanie przesłany w piątek do 12:00. W czym mogę ci pomóc, aby to zrealizować?”.',
+        'Krytyka FUKO jest podawana w cztery oczy, ze spokojem i z pełnym szacunkiem dla godności pracownika.'
       ]
     },
     {
@@ -493,11 +527,12 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.15',
       title: 'Jak przyjmować krytykę? Technika Zamgławiania (Fogging), dopytywanie i oddzielanie faktów od ocen',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 19,
       paragraphs: [
-        'Gdy ktoś Cię krytykuje, naturalnym odruchem jest kontratak lub paniczna obrona. Asertywność proponuje techniki oparte na jujitsu psychologicznym: ZAMGŁAWIANIE (Fogging) oraz DOPYTYWANIE.',
-        'ZAMGŁAWIANIE polega na spokojnym zgodzeniu się z tą częścią krytyki, która jest prawdziwa lub prawdopodobna, bez przyjmowania złośliwych uogólnień. Jeśli szef mówi: „Spóźniłeś się z raportem, jesteś kompletnie nieodpowiedzialny!”, odpowiadasz: „Zgadzam się, spóźniłem się z raportem o 2 godziny [fakt]. Nie zgadzam się z opinią, że jestem nieodpowiedzialny [ocena]”.',
-        'DOPYTYWANIE polega na poproszeniu o szczegóły: „Co konkretnie w moim zachowaniu sprawiło, że tak uważasz?”. To zmusza krytykującego do zejścia na poziom faktów i rozbraja emocjonalny atak.'
+        'Gdy ktoś Cię krytykuje, naturalnym odruchem układu limbicznego jest paniczny kontratak („Sam jesteś beznadziejny!”) lub załamanie i uległość. Asertywność proponuje techniki oparte na jujitsu komunikacyjnym: ZAMGŁAWIANIE (Fogging) oraz DOPYTYWANIE.',
+        'ZAMGŁAWIANIE (Manuel Smith) polega na spokojnym zgodzeniu się z tą częścią krytyki, która jest prawdziwa lub prawdopodobna, bez przyjmowania złośliwych uogólnień i etykiet. Jeśli szef mówi: „Spóźniłeś się z raportem, jesteś kompletnie nieodpowiedzialny!”, odpowiadasz:',
+        '„Zgadzam się, spóźniłem się z raportem o 2 godziny [FAKT]. Nie zgadzam się z opinią, że jestem nieodpowiedzialny [OCENA]”.',
+        'DOPYTYWANIE polega na poproszeniu o szczegóły: „Co konkretnie w moim wystąpieniu sprawiło, że uznałeś je za mało przekonujące?”. To zmusza agresora do zejścia na poziom faktów i natychmiast rozbraja emocjonalny atak.'
       ]
     },
 
@@ -508,11 +543,11 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.16',
       title: 'Co robić, gdy ktoś naciska? Odmowa stopniowana, bufor czasowy i utrzymanie granic',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'W obliczu agresywnego nacisku czasowego („Musisz podjąć decyzję teraz, zaraz okazja przepadnie!”) pierwszym krokiem człowieka asertywnego jest natychmiastowe spowolnienie tempa.',
-        'Zastosuj bufor czasowy: „Zasada, którą stosuję, nie pozwala mi podejmować takich decyzji pod presją. Odpowiem ci jutro o 10:00”.',
-        'Jeśli rozmówca nalega: „Albo teraz, albo wcale!”, asertywna odpowiedź brzmi: „W takim razie w tym momencie moja odpowiedź brzmi: nie”. Zawsze wybieraj kontrolę nad własnym procesem decyzyjnym.'
+        'W obliczu agresywnego nacisku czasowego („Musisz podpisać tę umowę teraz, za 10 minut oferta wygasa!”) pierwszym krokiem człowieka asertywnego jest natychmiastowe spowolnienie tempa interakcji.',
+        'Zastosuj BUFOR CZASOWY: „Zasada, którą stosuję w życiu, nie pozwala mi podejmować decyzji finansowych pod presją czasu. Zapoznam się z dokumentem i dam odpowiedź jutro o 10:00”.',
+        'Jeśli rozmówca nadal naciska: „Albo teraz, albo wcale!”, asertywna odpowiedź brzmi: „W takim razie w tym momencie moja odpowiedź brzmi: NIE”. Nigdy nie oddawaj kontroli nad własnym czasem.'
       ]
     },
     {
@@ -521,10 +556,12 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.17',
       title: 'Powtarzanie komunikatu — Klaryfikacja, parafraza intencji rozmówcy i stanowczość',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Gdy rozmówca próbuje obejść Twoją odmowę, wspaniałą techniką jest połączenie empatii z niezłomnością: 1. Nazwij potrzebę rozmówcy („Słyszę, że bardzo zależy ci na szybkim załatwieniu tej sprawy”); 2. Ponów swoje stanowisko („Jednocześnie nie wezmę dziś nadgodzin”).',
-        'Dzięki temu rozmówca czuje się usłyszany, co redukuje jego złość, ale jednocześnie nie uzyskuje ustępstwa w sprawie Twojej granicy.'
+        'Gdy rozmówca próbuje obejść Twoją odmowę, wspaniałą techniką jest połączenie empatii z niezłomnością:',
+        '1. NAZWIJ POTRZEBĘ ROZMÓWCY (Parafraza): „Słyszę, jak bardzo zależy ci na szybkim załatwieniu tej sprawy...”.',
+        '2. PONÓW SWOJE STANOWISKO (Twarda granica): „...jednocześnie moja decyzja o nieprzejmowaniu tego projektu pozostaje niezmienna”.',
+        'Dzięki takiemu połączeniu rozmówca czuje się usłyszany i potraktowany poważnie, co gasi jego złość, ale jednocześnie nie uzyskuje żadnego ustępstwa w sprawie Twojej granicy.'
       ]
     },
     {
@@ -533,11 +570,11 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.18',
       title: 'Technika zdartej płyty — Zasady stosowania, spokój fonacyjny i neutralizacja manipulacji',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
         'Technika zdartej płyty (Broken Record) polega na spokojnym, monotonnym powtarzaniu tego samego zdania-odmowy bez wdawania się w dyskusje poboczne, usprawiedliwienia czy kontrataki.',
-        'Każda próba wciągnięcia Cię w dyskusję przez rozmówcę („No ale dlaczego?”, „Inni się zgodzili!”, „Chyba mnie nie lubisz!”) jest kwitowana parafrazą i powtórzeniem zdania bazowego: „Rozumiem, że inni się zgodzili, jednak moja decyzja jest odmowna”.',
-        'Kluczem do sukcesu jest zachowanie stałego, cichego tonu głosu i rozluźnionego ciała. Po 3–4 powtórzeniach manipulator rezygnuje, zdając sobie sprawę, że trafił na granitową ścianę spokoju.'
+        'Każda próba wciągnięcia Cię w labirynt argumentacyjny przez rozmówcę („No ale dlaczego?”, „Inni się zgodzili!”, „Chyba mnie nie lubisz!”) jest kwitowana parafrazą i powtórzeniem zdania bazowego: „Rozumiem, że inni się zgodzili, jednak moja decyzja jest odmowna”.',
+        'Kluczem do sukcesu jest zachowanie niezmiennego, cichego tonu głosu i rozluźnionego ciała. Po 3–4 powtórzeniach manipulator rezygnuje, zdając sobie sprawę, że trafił na granitową ścianę spokoju.'
       ]
     },
     {
@@ -546,11 +583,12 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.19',
       title: 'Reagowanie na prowokację — Pauza taktyczna, metakomunikat i odcięcie paliwa emocjonalnego',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Celem prowokacji jest wytrącenie Cię z równowagi, zmuszenie do wybuchu złości i przejęcie kontroli nad rozmową. Ktokolwiek doprowadza Cię do wściekłości, ten staje się Twoim panem.',
-        'Odpowiedzią na prowokację jest METAKOMUNIKAT — przejście z poziomu treści na poziom procesu komunikacji: „Widzę, że próbujesz mnie sprowokować i podnosisz głos. W ten sposób nie będziemy rozmawiać. Porozmawiamy, gdy będziemy oboje spokojni”.',
-        'Następnie natychmiast zamilknij lub wyjdź z pomieszczenia. Brak reakcji emocjonalnej jest dla prowokatora najcięższą porażką.'
+        'Jedynym celem prowokacji jest wytrącenie Cię z równowagi, zmuszenie do wybuchu złości i przejęcie kontroli nad rozmową. Ktokolwiek doprowadza Cię do wściekłości, ten staje się Twoim panem.',
+        'ODPOWIEDZIĄ NA PROWOKACJĘ JEST METAKOMUNIKAT — przejście z poziomu treści na poziom procesu komunikacji:',
+        '„Widzę, że próbujesz mnie sprowokować i podnosisz głos. W ten sposób nie będziemy rozmawiać. Wrócimy do tematu, gdy oboje będziemy spokojni”.',
+        'Następnie natychmiast zamilknij lub wyjdź z pomieszczenia. Brak reakcji emocjonalnej jest dla prowokatora najcięższą klęską.'
       ]
     },
     {
@@ -559,11 +597,12 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.20',
       title: 'Reagowanie na wzbudzanie poczucia winy — Demaskowanie szantażu FOG i zachowanie spokoju',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Gdy ktoś próbuje manipulować Twoim poczuciem winy („Przez ciebie znowu będę musiał siedzieć po godzinach!”, „Dobra córka by tak nie postąpiła!”), najważniejszą zasadą jest nieprzyjmowanie tego ładunku do swojego wnętrza.',
-        'Nazwij mechanizm na głos z pełną życzliwością: „Przykro mi, że jesteś w trudnej sytuacji. Jednocześnie nie wyrażam zgody na obarczanie mnie odpowiedzialnością za Twoje wybory”.',
-        'Oddziel empatię od uległości: możesz współczuć czyjemuś dyskomfortowi, nie zmieniając ani o milimetr swojej suwerennej decyzji.'
+        'Gdy ktoś próbuje manipulować Twoim poczuciem winy („Przez ciebie będę musiał siedzieć po godzinach!”, „Dobra córka by tak nie postąpiła!”), najważniejszą zasadą jest nieprzyjmowanie tego ładunku do swojego wnętrza.',
+        'Zdemaskuj mechanizm na głos z pełną życzliwością:',
+        '„Przykro mi, że jesteś w trudnej sytuacji. Jednocześnie nie wyrażam zgody na obarczanie mnie odpowiedzialnością za Twoje wybory życiowe”.',
+        'Oddziel empatię od uległości: możesz szczerze współczuć czyjemuś dyskomfortowi, nie zmieniając ani o milimetr swojej suwerennej decyzji.'
       ]
     },
 
@@ -574,11 +613,13 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.21',
       title: 'Asertywność wobec znajomego — Pieniądze, przysługi, zaproszenia i higiena relacji',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
         'W gronie znajomych asertywność jest niezbędna do utrzymania czystości relacji. Dotyczy to pożyczania pieniędzy, niechcianych wyjść towarzyskich, uczestnictwa w zbiórkach czy darmowych porad eksperckich.',
-        'Masz pełne prawo odmówić pożyczki („Z zasady nie pożyczam pieniędzy znajomym, zależy mi na naszej relacji”) lub odmówić udziału w imprezie („Dziękuję za zaproszenie, ten weekend spędzam w domu odpoczywając”).',
-        'Prawdziwi znajomi uszanują Twoje wybory; ludzie szukający darmowych korzyści szybko poszukają innej ofiary.'
+        'DIALOG PORÓWNAWCZY (Prośba o pożyczkę 2000 zł):',
+        '• WERSJA ULEGŁA: „No wiesz... sam nie mam za dużo, ale dobra, jakoś dam radę, tylko oddaj do pierwszego...” (potem 6 miesięcy stresu i niszczenia relacji).',
+        '• WERSJA AGRESYWNA: „Co ty sobie myślisz, że jestem bankomatem?! Sam weź się do roboty!”.',
+        '• WERSJA ASERTYWNA: „Rozumiem, że jesteś w trudnej sytuacji, jednak z zasady nie pożyczam pieniędzy znajomym. Zależy mi na naszej relacji i nie chcę wprowadzać napięć finansowych”.'
       ]
     },
     {
@@ -587,11 +628,13 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.22',
       title: 'Asertywność wobec rodziny — Szacunek bez uległości, tradycja kontra własna autonomia',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
         'W relacjach rodzinnych asertywność wymaga największego kunsztu. Chodzi o to, by zachować miłość i szacunek do rodziców, jednocześnie stanowczo broniąc granic własnej dorosłości.',
-        'Nie pozwól na ingerowanie w Twój styl wychowania dzieci, Twoje wydatki czy Twoje wybory partnerskie. Formuła brzmi: „Dziękuję za radę, mamo. Razem z mężem podjęliśmy już decyzję w tej sprawie i prosimy o jej uszanowanie”.',
-        'Dojrzałość rodzinna polega na przejściu z relacji Rodzic-Dziecko do relacji Dorosły-Dorosły.'
+        'DIALOG PORÓWNAWCZY (Wtrącanie się w wychowanie wnuków):',
+        '• WERSJA ULEGŁA: (Milczenie, zgrzytanie zębami i uleganie naciskom matki).',
+        '• WERSJA AGRESYWNA: „Nienawidzę, jak się wtrącasz! Zniszczyłaś mi dzieciństwo, a teraz chcesz zniszczyć moje dzieci!”.',
+        '• WERSJA ASERTYWNA: „Mamo, bardzo doceniam twoją miłość do wnuków. Jednak zasady żywieniowe i ekranowe ustalamy z mężem samodzielnie i prosimy o ich bezwzględne przestrzeganie w naszym domu”.'
       ]
     },
     {
@@ -600,11 +643,11 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.23',
       title: 'Asertywność w szkole i na uczelni — Odpowiedzi przed grupą, relacje z nauczycielami i presja rówieśnicza',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
         'W środowisku edukacyjnym młodzi ludzie nieustannie mierzą się z presją grupy (alkohol, używki, hejtowanie słabszych, ściąganie) oraz z trudnymi relacjami z kadrą pedagogiczną.',
-        'Asertywność to odwaga powiedzenia grupie: „Nie, nie wezmę w tym udziału” oraz odwaga do kulturalnego dopytania wykładowcy o kryteria oceniania bez lęku i bez arogancji.',
-        'Budowanie asertywności w wieku szkolnym i studenckim procentuje przez całe dorosłe życie zawodowe.'
+        'Asertywność rówieśnicza to odwaga powiedzenia grupie: „Nie, nie wezmę w tym udziału” bez konieczności moralizowania innych.',
+        'W relacji z wykładowcą asertywność polega na kulturalnym dopytaniu o kryteria oceniania bez lęku i bez arogancji: „Panie profesorze, chciałbym zrozumieć, jakie konkretnie elementy w mojej pracy zadecydowały o ocenie, aby móc poprawić je w przyszłości”.'
       ]
     },
     {
@@ -613,11 +656,13 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.24',
       title: 'Asertywność w pracy — Negocjacje wynagrodzenia, odmowa nadgodzin i obrona projektów',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
         'W środowisku biznesowym asertywność jest kluczową kompetencją decydującą o sukcesie zawodowym i zdrowiu psychicznym. Obejmuje ona: negocjowanie podwyżek w oparciu o twarde dane rynkowe, odmawianie brania dodatkowych zadań bez poszerzenia budżetu lub czasu oraz asertywną obronę własnych koncepcji przed zarządem.',
-        'Pracownicy asertywni są wyżej cenieni przez dojrzałych liderów niż potakujący konformiści — wnoszą bowiem do firmy realną wartość merytoryczną i stabilność operacyjną.',
-        'Bądź twardy dla problemów i miękki dla ludzi — to złota zasada profesjonalnej asertywności.'
+        'DIALOG PORÓWNAWCZY (Prośba szefa o nadgodziny w piątek o 16:30):',
+        '• WERSJA ULEGŁA: „No dobrze... jakoś zostanę...” (narastająca frustracja).',
+        '• WERSJA AGRESYWNA: „Czy pan oszalał?! Kodeks pracy pana nie obowiązuje?!”.',
+        '• WERSJA ASERTYWNA: „Dziś o 17:00 kończę pracę i mam zaplanowane zobowiązania prywatne. Mogę zająć się tym zadaniem w poniedziałek od 8:00 rano”.'
       ]
     },
     {
@@ -626,26 +671,26 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.25',
       title: 'Asertywność w internecie — Komentarze, spory w social mediach, cyberprzemoc i higiena uwagi',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
         'W przestrzeni cyfrowej asertywność oznacza przede wszystkim umiejętność nieangażowania się w jałowe pyskówki i wojenki komentarzowe.',
-        'Pamiętaj: nie masz obowiązku odpowiadać na każdy komentarz pod swoim postem ani prostować każdej nieprawdy w sieci. Twoja uwaga jest cenną walutą.',
-        'Stosuj zasadę: 1 merytoryczna odpowiedź (jeśli rozmówca pyta w dobrej wierze), a w razie hejtu i trollingu — natychmiastowe wyciszenie lub zablokowanie bez wchodzenia w emocje.'
+        'PAMIĘTAJ: Nie masz żadnego obowiązku odpowiadać na każdy komentarz pod swoim postem ani prostować każdej bzdury w sieci. Twoja uwaga jest najcenniejszą walutą.',
+        'CYFROWY STANDARD ASERTYWNOŚCI: 1 merytoryczna odpowiedź (jeśli rozmówca pyta w dobrej wierze), a w razie hejtu, trollingu lub wulgaryzmów — natychmiastowe zablokowanie i usunięcie komentarza bez wdawania się w dyskusje.'
       ]
     },
 
-    // BLOK VI — INTEGRACJA (30.26 - 30.30)
+    // BLOK VI — STUDIA PRZYPADKU I WIELKA INTEGRACJA DZIEŁA (30.26 - 30.30)
     {
       id: 'sec-30-26',
       pageNumber: 1260,
       sectionNumber: '30.26',
       title: 'Studium Przypadku — Osoba Uległa: Cena Wiecznego Milczenia Piotra',
       category: 'studium-przypadku',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 22,
       caseStudyRef: chapterThirtyCaseStudyUleglosc,
       paragraphs: [
-        'W tym studium przypadku analizujemy dramat Piotra (30 lat), analityka danych, którego uległość doprowadziła do kradzieży jego autorskiego projektu przez dominującego kolegę z pokoju.',
-        'Zapoznaj się ze szczegółową analizą mechanizmów bierności, dialogami oraz nowym, asertywnym skryptem obrony dorobku opisanym w interaktywnej karcie powyżej.'
+        'W tym studium przypadku analizujemy dramat Piotra (30 lat), wybitnego analityka danych, którego uległość i lęk przed konfrontacją doprowadziły do kradzieży jego autorskiego algorytmu przez dominującego kolegę.',
+        'Przeanalizuj interaktywną kartę powyżej: dekompozycję reakcji zamrożenia (Freezing) w istocie szarej okołowodociągowej (PAG) oraz nowy, 3-krokowy skrypt obrony autorstwa, który pozwolił mu odzyskać status eksperta.'
       ]
     },
     {
@@ -654,7 +699,7 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.27',
       title: 'Studium Przypadku — Osoba Reagująca Agresją: Płonące Mosty Kamila',
       category: 'studium-przypadku',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 22,
       caseStudyRef: chapterThirtyCaseStudyAgresja,
       paragraphs: [
         'W drugim studium przypadku przyglądamy się Kamilowi — dyrektorowi operacyjnemu, który mylił autorytet z terrorem i agresją, niszcząc morale całego zakładu produkcyjnego.',
@@ -667,11 +712,11 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.28',
       title: 'Studium Przypadku — Konflikt i Granice: Karolina w Kleszczach Gaslightingu',
       category: 'studium-przypadku',
-      readingTimeMinutes: 19,
+      readingTimeMinutes: 20,
       caseStudyRef: chapterThirtyCaseStudyKonfliktGranice,
       paragraphs: [
         'Trzecie studium przypadku ilustruje walkę Karoliny z subtelnym gaslightingiem przełożonej za pomocą twardych faktów i techniki Paper Trail.',
-        'Przeanalizuj, w jaki sposób zachowanie żelaznego spokoju i odwołanie się do dokumentacji rozbraja każdą próbę manipulacji pamięcią.'
+        'Przeanalizuj, w jaki sposób zachowanie żelaznego spokoju i odwołanie się do pisemnej dokumentacji rozbraja każdą próbę manipulacji pamięcią.'
       ]
     },
     {
@@ -680,7 +725,7 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.29',
       title: 'Wielki Trening Asertywności — Laboratorium Transformacji Komunikacyjnej',
       category: 'cwiczenia',
-      readingTimeMinutes: 22,
+      readingTimeMinutes: 25,
       exerciseRef: chapterThirtyExerciseAssertivenessLab,
       paragraphs: [
         'Wykonaj kompleksowy trening asertywności w 4 scenariuszach życiowych (znajomi, rodzina, praca, audyt praw Smitha), korzystając z interaktywnego formularza ćwiczenia 30.1 powyżej.',
@@ -693,23 +738,24 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.30',
       title: 'Wielkie Podsumowanie Dzieła — Integracja Tomu I, II i III oraz Architektura Samoświadomego Człowieka',
       category: 'podsumowanie',
-      readingTimeMinutes: 24,
+      readingTimeMinutes: 26,
       quote: {
         text: 'Poznanie samego siebie to dopiero początek. Prawdziwym celem jest świadome ukształtowanie siebie i swojego miejsca w świecie.',
-        author: 'Synteza Dzieła'
+        author: 'Synteza Dzieła: Anatomia Umysłu'
       },
       paragraphs: [
         'WIELKA SYNTEZA TRZECH TOMÓW:',
-        '• TOM I (Jak działa umysł?): Odkryliśmy neurobiologiczną architekturę percepcji, uwagi, pamięci, emocji i procesów myślenia. Zrozumiałeś, że nie jesteś bezwolnym niewolnikiem swoich impulsów, lecz plastycznym systemem poznawczym.',
-        '• TOM II (Jak człowiek funkcjonuje wśród innych ludzi?): Zbadaliśmy dynamikę wpływu społecznego, perswazji, relacji, konformizmu i manipulacji. Nauczyłeś się widzieć niewidzialne siły kształtujące zachowania w grupach.',
-        '• TOM III (Jak człowiek kształtuje siebie i swoje zachowanie?): W finałowej części przeszliśmy przez nawyki, motywację, odporność psychiczną, podejmowanie decyzji (Rozdział 28), stawianie zdrowych granic (Rozdział 29) aż po dojrzałą asertywność (Rozdział 30).',
+        '• TOM I (Jak działa umysł? — Rozdziały 1–10): Odkryliśmy neurobiologiczną architekturę percepcji, uwagi, pamięci, emocji i procesów myślenia. Zrozumiałeś, że nie jesteś bezwolnym niewolnikiem swoich impulsów limbicznych, lecz plastycznym systemem poznawczym zdolnym do samoregulacji.',
+        '• TOM II (Jak człowiek funkcjonuje wśród innych ludzi? — Rozdziały 11–20): Zbadaliśmy dynamikę wpływu społecznego, perswazji, relacji, konformizmu, manipulacji i dynamiki grupowej. Nauczyłeś się widzieć niewidzialne siły kształtujące zachowania ludzi w interakcjach.',
+        '• TOM III (Jak człowiek kształtuje siebie i swoje zachowanie? — Rozdziały 21–30): W finałowej części przeszliśmy przez nawyki, motywację, odporność psychiczną, podejmowanie decyzji w warunkach niepewności (Rozdział 28), stawianie zdrowych granic (Rozdział 29) aż po mistrzostwo asertywności (Rozdział 30).',
         'SŁOWNIK KLUCZOWYCH POJĘĆ ROZDZIAŁU 30:',
         '• ASERTYWNOŚĆ — bezpośrednie, uczciwe wyrażanie siebie z pełnym poszanowaniem godności innych („Ja OK — Ty OK”).',
         '• KOMUNIKAT „JA” — struktura: Fakt + Emocja + Konsekwencja + Oczekiwanie.',
         '• MODEL FUKO — Fakty, Uczucia, Konsekwencje, Oczekiwania w konstruktywnej krytyce.',
         '• ZAMGŁAWIANIE (Fogging) — zgoda z prawdziwą częścią krytyki przy odrzuceniu złośliwej oceny.',
         '• TECHNIKA ZDARTEJ PŁYTY — monotonne powtarzanie jasnego stanowiska w obliczu manipulacyjnego nacisku.',
-        'ZAKOŃCZENIE KSIĄŻKI: Wiedza, którą zdobyłeś na kartach tej książki, nie jest martwą teorią akademicką. Jest Twoim kompasem i tarczą na całe dorosłe życie. Używaj jej z mądrością, odwagą i empatią.'
+        '• METAKOMUNIKAT — przejście z poziomu treści na poziom analizy procesu komunikacji w obliczu prowokacji.',
+        'ZAKOŃCZENIE KSIĄŻKI: Wiedza, którą zdobyłeś na kartach tej 30-rozdziałowej książki, nie jest martwą teorią akademicką. Jest Twoim kompasem i tarczą na całe dorosłe życie. Używaj jej z mądrością, odwagą i empatią.'
       ]
     }
   ]

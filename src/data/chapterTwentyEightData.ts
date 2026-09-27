@@ -82,15 +82,20 @@ export const chapterTwentyEightCaseStudyTrudnaDecyzja: CaseStudy = {
   id: 'cs-ch28-krzysztof-kariera',
   title: 'Wielkie Studium Przypadku: Dylemat Dwóch Dróg — Zmiana Kariery Krzysztofa',
   subtitle: 'Analiza paraliżu decyzyjnego, lęku przed stratą i konfrontacji między stabilizacją a rozwojem',
-  protagonist: 'Krzysztof, 34 lata, starszy specjalista ds. logistyki w stabilnym koncernie',
+  protagonist: 'Krzysztof, 34 lata, starszy specjalista ds. logistyki w stabilnym koncernie międzynarodowym',
   context: 'Krzysztof od 8 lat pracuje w międzynarodowej korporacji logistycznej. Ma stałą pensję, bezpieczny kontrakt i powtarzalne obowiązki, które od dwóch lat wywołują w nim głębokie poczucie wypalenia i znużenia. Otrzymał propozycję przejścia do dynamicznego software-house’u na stanowisko Product Managera wdrażającego innowacyjne systemy AI w logistyce. Wynagrodzenie zasadnicze jest nieco niższe, ale umowa przewiduje wysokie premie i ogromne możliwości rozwoju. Krzysztof od trzech miesięcy nie potrafi podjąć decyzji — tworzy niekończące się tabele w Excelu, nie śpi po nocach i cierpi na dolegliwości żołądkowe.',
   story: [
     'Krzysztof każdego wieczoru otwiera swój arkusz kalkulacyjny. Ma tam 47 kolumn: od przewidywanego poziomu inflacji, przez odległość biura od domu, aż po subiektywną ocenę „stabilności branży technologicznej w horyzoncie 5 lat”.',
     'Za każdym razem, gdy szala przechyla się w stronę nowej oferty, pojawia się nagły wyrzut adrenaliny i natrętna myśl: „A co, jeśli startup zbankrutuje w pół roku? Co powiem żonie? Mam przecież kredyt hipoteczny”.',
     'Gdy z kolei decyduje, że zostanie w obecnej firmie, natychmiast ogarnia go przytłaczający smutek, bezsilność i złość na samego siebie: „Zostanę tu na kolejne 10 lat, mój mózg zardzewieje, a technologia mnie ominie”.',
-    'Krzysztof wpadł w klasyczny stan ambiwalencji decyzyjnej. Zamiast podejmować decyzję, zbierał kolejne dane: czytał fora internetowe, analizował wypowiedzi byłych pracowników i pytał o zdanie każdego znajomego. Każda nowa opinia rodziła kolejne pytania, potęgując chaos.',
+    'Krzysztof wpadł w klasyczny stan ambiwalencji decyzyjnej. Zamiast podejmować decyzję, zbierał kolejne dane: czytał fora internetowe, analizował wypowiedzi byłych pracowników i pytał o zdanie każdego znajomego. Każda nowa opinia rodziła kolejne pytania, potęgując chaos poznawczy.',
     'Przełom nastąpił podczas sesji z psychologiem biznesu, gdy Krzysztof musiał zrekonstruować swoje ukryte założenia. Zrozumiał, że szukał decyzji „bezkosztowej” — takiej, która zagwarantuje bezpieczeństwo i jednocześnie da pełną ekscytację rozwojem.',
     'Wprowadził model: zdefiniował twardy bufor finansowy (6 miesięcy kosztów życia), ustalił z nowym pracodawcą 6-miesięczny okres ewaluacji z mierzalnymi KPI oraz podzielił decyzję na sekwencję testowalnych kroków. Podjął nowe wyzwanie i po 12 miesiącach awansował na dyrektora wdrożeń.'
+  ],
+  dialogue: [
+    { speaker: 'Krzysztof (do żony, godzina 23:30)', text: 'Jeśli zostanę, będę żałować do końca życia. Ale jeśli pójdę i polegnę, zniszczę naszą stabilność. Nie widzę dobrego wyjścia.', subtext: 'Dychotomizacja sytuacji i uwięzienie w pułapce wyboru zero-jedynkowego.' },
+    { speaker: 'Żona (spokojnie)', text: 'Krzysiek, patrzysz na to tak, jakbyś podpisywał cyrograf na 20 lat. Co najgorszego stanie się, jeśli za rok wrócisz do zwykłej logistyki z nowym wpisem w CV?', subtext: 'Odsłonięcie odwracalności decyzji (Drzwi Typu 2).' },
+    { speaker: 'Krzysztof (po chwili milczenia)', text: 'Rzeczywiście... przecież rynek logistyków nie zniknie za rok. Straciłbym tylko dumę, a zyskałbym wiedzę.', subtext: 'Przełamanie katastrofizowania i obniżenie pobudzenia limbicznego.' }
   ],
   decisionTaken: 'Przejście od próby wyeliminowania wszelkiego ryzyka do zarządzania ryzykiem: zabezpieczenie bufora finansowego, podpisanie nowej umowy z jasnymi kryteriami weryfikacji i zaakceptowanie przejściowego dyskomfortu.',
   whatProtagonistSaw: 'Fałszywą dychotomię: „całkowite bezpieczeństwo i nuda” kontra „skrajne ryzyko i katastrofa finansowa”.',
@@ -146,6 +151,10 @@ export const chapterTwentyEightCaseStudyPresjaCzasu: CaseStudy = {
     'Wycisza szum, prosi dwóch głównych inżynierów o podanie jednego twardego faktu (nie opinii), odrzuca opcję panicznego restartu i decyduje o izolacji węzła.',
     'Po 8 minutach system wznawia działanie w trybie bezpiecznym bez utraty ani jednego rekordu finansowego. Decyzja okazała się optymalna, a późniejszy audyt wykazał, że restart spowodowałby wielomilionowe straty w wyniku uszkodzenia struktury tabel transakcyjnych.'
   ],
+  dialogue: [
+    { speaker: 'Dyrektor (krzycząc)', text: 'Magda, na co ty czekasz?! Klikaj restart! Każda sekunda to tysiące złotych!', subtext: 'Paniczny przymus działania (Action Bias) zrzucany na podwładnego.' },
+    { speaker: 'Magda (głos obniżony, kontakt wzrokowy)', text: 'Rozumiem stawkę finansową. Jeśli zrobimy restart teraz, uszkodzimy tabele płatności i straty będą nieodwracalne. Izoluję węzeł. Potrzebuję 90 sekund.', subtext: 'Asertywne ugruntowanie w faktach i odzyskanie dowodzenia.' }
+  ],
   decisionTaken: 'Zatrzymanie panicznej eskalacji emocjonalnej, odrzucenie presji hierarchicznej i wdrożenie ustrukturyzowanego algorytmu decyzyjnego w oparciu o hierarchię wartości (integralność danych ponad chwilowy przestój).',
   whatProtagonistSaw: 'Krzyczącego przełożonego, licznik strat finansowych i paraliżujący lęk przed zwolnieniem z pracy.',
   whatWasMissed: 'Że presja czasu często zmusza ludzi do pozornych działań, które przynoszą natychmiastową ulgę psychiczną, ale katastrofalne skutki systemowe.',
@@ -199,6 +208,11 @@ export const chapterTwentyEightCaseStudyEmocjeAnaliza: CaseStudy = {
     'Zidentyfikowali, co dla Ewy stanowi esencję klimatu (światło, wysokość, zieleń za oknem) oraz co dla Tomasza stanowi nienegocjowalną granicę bezpieczeństwa (maksymalna rata nieprzekraczająca 30% dochodu netto, brak ukrytych wad konstrukcyjnych budynku).',
     'Odrzucili oba skrajne lokale i w ciągu 3 tygodni znaleźli Mieszkanie C — w zrewitalizowanej kamienicy z nową infrastrukturą techniczną, które spełniało 85% wymogów estetycznych Ewy i 90% kryteriów bezpieczeństwa finansowego Tomasza.'
   ],
+  dialogue: [
+    { speaker: 'Tomasz', text: 'Spójrz na tę tabelę. Koszt remontu kamienicy przekracza nasz budżet o 180 tysięcy. To obłęd.', subtext: 'Używanie liczb jako tarczy obronnej przed lękiem o bezpieczeństwo.' },
+    { speaker: 'Ewa', text: 'Rozumiem liczby, Tomek, ale ja w tym bloku uschnę z rozpaczy. Będę nienawidzić każdego powrotu do domu.', subtext: 'Obrona potrzeby piękna i dobrostanu psychicznego.' },
+    { speaker: 'Tomasz (po zastosowaniu metody kryteriów)', text: 'Zdefiniujmy to inaczej: czy możemy znaleźć miejsce z wysokim sufitem i dużymi oknami, ale w budynku z nowym pionem hydraulicznym i w naszym budżecie?', subtext: 'Wyjście z fałszywej dychotomii ku poszukiwaniu Trzeciej Drogi.' }
+  ],
   decisionTaken: 'Porzucenie fałszywego kompromisu (w którym jedna strona czuje się przegrana) na rzecz zdefiniowania głębokich kryteriów brzegowych i poszukiwania trzeciej opcji integrującej emocje z logiką.',
   whatProtagonistSaw: 'Wojnę między „chłodnym rozsądkiem” a „życiową pasją”.',
   whatWasMissed: 'Że emocje sygnalizują fundamentalne wartości ludzkie (potrzeba piękna, harmonii, regeneracji), a logika jest narzędziem weryfikacji wykonalności — te dwa systemy powinny ze sobą współpracować, a nie zwalczać się nawzajem.',
@@ -237,44 +251,44 @@ export const chapterTwentyEightCaseStudyEmocjeAnaliza: CaseStudy = {
 
 export const chapterTwentyEightExerciseDecisionMatrix: SelfExercise = {
   id: 'ex-ch28-decision-matrix',
-  title: 'Ćwiczenie Praktyczne: Wielokryterialna Matryca Świadomego Wyboru i Protokół Pre-Mortem',
-  subtitle: 'Praktyczny warsztat podejmowania złożonych decyzji osobistych i zawodowych',
-  objective: 'Przejście od chaotycznego zamartwiania się do ustrukturyzowanego procesu wyboru opartego na wagach kryteriów i testowaniu odporności.',
+  title: 'Wielkie Ćwiczenie Praktyczne: Zbuduj Własny System Podejmowania Decyzji i Protokół Pre-Mortem',
+  subtitle: 'Kompleksowy warsztat podejmowania złożonych decyzji osobistych, zawodowych i relacyjnych',
+  objective: 'Przejście od chaotycznego zamartwiania się do ustrukturyzowanego procesu wyboru opartego na wagach kryteriów, usuwaniu fałszywych dychotomii i testowaniu odporności scenariusza.',
   durationMinutes: 30,
-  neuroScientificFoundation: 'Zewnętrzna wizualizacja kryteriów i wag odciąża grzbietowo-boczną korę przedczołową, redukując lęk limbiczny wywołany niepewnością.',
+  neuroScientificFoundation: 'Zewnętrzna wizualizacja kryteriów i wag odciąża grzbietowo-boczną korę przedczołową (dlPFC), redukując lęk limbiczny wywołany niepewnością i przeciążeniem pamięci roboczej.',
   steps: [
     {
       stepNumber: 1,
-      title: 'Zdefiniuj dylemat w formie otwartego pytania',
-      instruction: 'Zamiast pytania zamkniętego („Czy powinienem zrobić X?”), sformułuj problem w postaci: „W jaki sposób mogę osiągnąć [cel], minimalizując [główne ryzyko]?”.',
+      title: 'Zdefiniuj dylemat w formie otwartego pytania wyjściowego',
+      instruction: 'Zamiast pytania wąskiego i dychotomicznego („Czy powinienem rzucić pracę X?”), sformułuj problem w postaci szerokiej: „W jaki sposób mogę osiągnąć [główny cel rozwoju/satysfakcji], minimalizując [główne ryzyko finansowe/relacyjne]?”.',
       promptText: 'Moje precyzyjnie zdefiniowane pytanie decyzyjne:',
-      placeholder: 'W jaki sposób mogę zmienić profil zawodowy, zachowując płynność finansową rodziny?'
+      placeholder: 'W jaki sposób mogę przejść do branży nowoczesnych technologii, zachowując płynność finansową rodziny na najbliższe 12 miesięcy?'
     },
     {
       stepNumber: 2,
-      title: 'Wygeneruj minimum 3 realne opcje (w tym opcję hybrydową)',
-      instruction: 'Wypisz opcję A (status quo z modyfikacją), opcję B (radykalna zmiana) oraz opcję C (krok pośredni / eksperyment pilotażowy).',
+      title: 'Wygeneruj minimum 3 realne opcje (w tym opcję hybrydową C)',
+      instruction: 'Wypisz opcję A (status quo z modyfikacją procesową), opcję B (radykalna, pełna zmiana kierunku) oraz opcję C (krok pośredni, mikrokrok testowy lub eksperyment pilotażowy).',
       promptText: 'Moje 3 opcje decyzyjne:',
-      placeholder: 'Opcja A: Zostaję i negocjuję nowe projekty. Opcja B: Natychmiastowe odejście. Opcja C: 6 miesięcy kursu + 2 zlecenia freelanserskie w weekendy.'
+      placeholder: 'Opcja A: Zostaję w firmie i negocjuję 1 dzień pracy zdalnej na naukę. Opcja B: Natychmiastowe odejście i kurs dzienny. Opcja C: Kurs wieczorowy + realizacja 2 zleceń testowych w weekendy przez 6 miesięcy.'
     },
     {
       stepNumber: 3,
       title: 'Ustal 4 kluczowe kryteria i przypisz im wagi (suma wag = 100%)',
-      instruction: 'Co naprawdę ma znaczenie? Np. Wzrost kompetencji (30%), Bezpieczeństwo finansowe (30%), Równowaga życiowa (20%), Spójność z wartościami (20%).',
-      promptText: 'Moje kryteria i wagi:',
-      placeholder: '1. Finanse (30%), 2. Satysfakcja i rozwój (35%), 3. Czas dla rodziny (20%), 4. Poziom stresu (15%).'
+      instruction: 'Co w tej decyzji jest obiektywnie najważniejsze? Przypisz wagi procentowe: np. Wzrost kompetencji rynkowych (35%), Bezpieczeństwo finansowe (30%), Równowaga życiowa i czas dla bliskich (20%), Poziom stresu i zdrowie (15%).',
+      promptText: 'Moje kryteria i wagi procentowe:',
+      placeholder: '1. Bezpieczeństwo finansowe (30%), 2. Satysfakcja i rozwój intelektualny (35%), 3. Czas dla rodziny (20%), 4. Poziom stresu (15%). Suma = 100%.'
     },
     {
       stepNumber: 4,
       title: 'Przeprowadź Analizę Pre-Mortem dla wybranej opcji faworyzowanej',
-      instruction: 'Wyobraź sobie, że minął rok, a Twoja decyzja okazała się całkowitą katastrofą. Co dokładnie poszło nie tak? Wypisz 3 główne przyczyny i zaprojektuj środki zaradcze już dzisiaj.',
-      promptText: 'Moje wnioski z Pre-Mortem i zabezpieczenia:',
-      placeholder: 'Główna pułapka: brak klientów w 3. miesiącu. Zabezpieczenie: stworzę bazę 20 kontaktów przed podpisaniem wypowiedzenia.'
+      instruction: 'Wyobraź sobie, że minął dokładnie rok od wdrożenia Twojej decyzji, a projekt zakończył się całkowitą klapą. Co dokładnie poszło nie tak? Wypisz 3 najbardziej prawdopodobne przyczyny porażki i zaprojektuj konkretne zabezpieczenia (bezpieczniki) już dzisiaj.',
+      promptText: 'Moje wnioski z Pre-Mortem i zaprojektowane bezpieczniki:',
+      placeholder: 'Główna pułapka: wypalenie z powodu braku odpoczynku w weekendy. Bezpiecznik: ustalam sztywny limit 8 godzin nauki w tygodniu i 1 pełny dzień całkowitego offline.'
     }
   ],
   reflectionQuestions: [
-    'Która z opcji wywołuje w Tobie największy spokój w ciele, gdy patrzysz na nią przez pryzmat 5 lat?',
-    'Jaki jest najmniejszy, odwracalny eksperyment, który możesz przeprowadzić w ciągu najbliższych 72 godzin, by przetestować tę decyzję w praktyce?'
+    'Która z opcji wywołuje w Twoim ciele największe poczucie spokoju i stabilności, gdy wyobrażasz sobie swoje życie za 5 lat?',
+    'Jaki jest najmniejszy, w 100% odwracalny mikrokrok (Drzwi Typu 2), który możesz wykonać w ciągu najbliższych 48 godzin, by przetestować tę decyzję w praktyce?'
   ]
 };
 
@@ -285,7 +299,7 @@ export const chapterTwentyEight: Chapter = {
   title: 'Rozdział 28: Podejmowanie Decyzji — Mechanizmy Wyboru, Informacje, Emocje, Błędy Poznawcze i System Świadomego Decydowania',
   subtitle: 'Od psychologicznych pułapek myślenia i paraliżu analitycznego do wielokryterialnych modeli decyzyjnych w warunkach niepewności',
   leadParagraph: 'Każdego dnia człowiek podejmuje od kilkuset do kilkunastu tysięcy decyzji — od trywialnych mikrowyborów dotyczących porannej kawy po fundamentalne rozstrzygnięcia kształtujące karierę, relacje, finanse i zdrowie na całe dekady. Choć lubimy myśleć o sobie jako o racjonalnych architektach własnego losu, psychologia poznawcza i neuronauka bezlitośnie obnażają ograniczenia ludzkiego aparatu decyzyjnego. W tym rozdziale przeprowadzimy Cię przez 30 szczegółowych etapów anatomii decyzji: odróżnimy wybór od zaangażowania, zbadamy naturę niepewności i ryzyka, przeanalizujemy podstępne błędy poznawcze (takie jak koszty utopione czy kotwiczenie) oraz wyposażymy Cię w kompletny, odporny na kryzys system podejmowania świadomych decyzji.',
-  totalEstimatedPages: 96,
+  totalEstimatedPages: 110,
   sections: [
     // BLOK I — PODSTAWY PODEJMOWANIA DECYZJI (28.1 - 28.5)
     {
@@ -294,16 +308,30 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.1',
       title: 'Czym właściwie jest decyzja? Definicja psychologiczna, proces wartościowania i alokacja zasobów',
       category: 'wstep',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 16,
       quote: {
         text: 'Decyzja nie jest pojedynczym momentem olśnienia, lecz ukoronowaniem długiego łańcucha selekcji, wartościowania i odrzucania alternatyw.',
         author: 'Herbert A. Simon'
       },
       paragraphs: [
-        'W potocznym rozumieniu słowo „decyzja” kojarzy się z jednym, spektakularnym punktem w czasie: podpisaniem umowy, wypowiedzeniem sakramentalnego „tak” czy kliknięciem przycisku „kup teraz”. W ujęciu psychologii poznawczej i neuronauki decyzja jest jednak czymś znacznie głębszym — to wieloetapowy proces psychiczny polegający na przetworzeniu informacji, przypisaniu subiektywnej wartości dostępnym scenariuszom, zredukowaniu wielości opcji do jednego kierunku oraz alokacji realnych zasobów (czasu, energii, uwagi i pieniędzy).',
-        'Każda autentyczna decyzja wiąże się z zamknięciem innych ścieżek. Etymologia łacińskiego słowa decidere dosłownie oznacza „odciąć”. Podjęcie decyzji to akt odwagi poznawczej, w którym jednostka godzi się na odcięcie możliwości alternatywnych w imię zaangażowania w wybraną drogę.',
-        'Wielu ludzi myli stan intencji („chciałbym kiedyś zmienić pracę”) ze stanem decyzji. Intencja nie ponosi kosztów i nie rodzi konsekwencji; decyzja zmienia stan rzeczywistości i reorganizuje zachowanie całego organizmu.',
-        'Kiedy decydujesz, rezygnujesz z iluzji, że możesz mieć wszystko naraz. Dojrzałość decyzyjna polega na pełnej zgodzie na nieodwracalny koszt rezygnacji z opcji odrzuconych.'
+        'W potocznym rozumieniu słowo „decyzja” kojarzy się z jednym, spektakularnym punktem w czasie: podpisaniem umowy o pracę, wypowiedzeniem sakramentalnego „tak” na ślubnym kobiercu czy kliknięciem przycisku „kup teraz” w sklepie internetowym. W ujęciu psychologii poznawczej i neuronauki decyzja jest jednak czymś znacznie głębszym i bardziej złożonym — to wieloetapowy proces psychiczny polegający na przetworzeniu informacji, przypisaniu subiektywnej wartości dostępnym scenariuszom, zredukowaniu wielości opcji do jednego kierunku oraz alokacji realnych zasobów: czasu, energii, uwagi i pieniędzy.',
+        'Wielu ludzi myli stan biernej intencji („chciałbym kiedyś schudnąć”, „planuję kiedyś zmienić branżę”) z faktycznym stanem decyzji. Intencja nie ponosi kosztów i nie rodzi natychmiastowych konsekwencji behawioralnych; możesz przez 10 lat chcieć napisać książkę i nie napisać ani jednego zdania. Decyzja natomiast bezpowrotnie zmienia stan rzeczywistości — reorganizuje zachowanie całego organizmu i przestawia priorytety kory przedczołowej.',
+        'Każda autentyczna decyzja wiąże się z zamknięciem innych ścieżek. Etymologia łacińskiego słowa decidere dosłownie oznacza „odciąć” (de- od, caedere ciąć). Podjęcie decyzji to akt odwagi poznawczej, w którym jednostka godzi się na odcięcie możliwości alternatywnych w imię pełnego zaangażowania w wybraną drogę. Kiedy mówisz „tak” jednemu projektowi, nieuchronnie mówisz „nie” dziesiątkom innych.',
+        'Dojrzałość decyzyjna nie polega na posiadaniu stuprocentowej pewności, że wybrana opcja okaże się idealna — polega na pełnej, dorosłej zgodzie na poniesienie kosztów rezygnacji z opcji odrzuconych.'
+      ],
+      subsections: [
+        {
+          title: 'Wybór zewnętrzny a decyzja wewnętrzna',
+          paragraphs: [
+            'Wybór (choice) to struktura otoczenia — to fizyczna półka w sklepie z 30 rodzajami herbaty lub lista 5 ofert pracy w portalu rekrutacyjnym. Decyzja (decision) to wewnętrzny akt podmiotu, który waży swoje wartości, redukuje szum i przypisuje zaangażowanie jednemu wariantowi.',
+            'Często tkwimy w iluzji, że posiadanie wielu wyborów czyni nas wolnymi. Jednak bez wypracowanego wewnętrznego aparatu decyzyjnego bogactwo zewnętrznych wyborów zamienia się w koszmar paraliżu i chronicznego niezadowolenia.'
+          ],
+          highlightBox: {
+            title: 'Zasada Odcięcia (Decidere)',
+            content: 'Dopóki nie odrzuciłeś pozostałych opcji i nie zaakceptowałeś utraty korzyści z alternatyw, nie podjąłeś decyzji — tkwisz jedynie w poczekalni intencji.',
+            type: 'insight'
+          }
+        }
       ]
     },
     {
@@ -312,12 +340,30 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.2',
       title: 'Jak powstaje decyzja? 7 kluczowych faz procesu: od problemu do konsekwencji',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'W ujęciu psychologicznym każda świadoma decyzja przebiega przez sekwencję 7 powiązanych etapów: 1. Identyfikacja problemu (dostrzeżenie rozbieżności między stanem obecnym a pożądanym); 2. Zbieranie informacji; 3. Generowanie wariantów (stworzenie puli opcji); 4. Wartościowanie i ocena (ważenie zysków, strat i ryzyk); 5. Wybór (akt woli eliminujący opcje gorsze); 6. Działanie (wdrożenie behawioralne); 7. Informacja zwrotna i konsekwencje.',
-        'Zaburzenie procesu na którymkolwiek z tych etapów prowadzi do dysfunkcji. Jeśli błędnie zdefiniujesz problem w punkcie 1, nawet genialna analiza w punkcie 4 doprowadzi Cię do niewłaściwego celu.',
-        'Jeśli z kolei zatrzymasz się na etapie 4, tworząc niekończące się porównania bez przejścia do etapu 5 i 6, popadasz w chroniczny paraliż decyzyjny.',
-        'Wysokiej jakości decydowanie wymaga świadomości tego, w której fazie procesu aktualnie się znajdujesz.'
+        'Z punktu widzenia psychologii decyzji każdy świadomy wybór, od zakupu mieszkania po wybór strategii firmowej, przebiega przez sekwencję 7 powiązanych faz. Zrozumienie tej architektury pozwala natychmiast zdiagnozować, w którym punkcie najczęściej dochodzi u nas do zacięcia.',
+        'FAZA 1: Identyfikacja problemu (dostrzeżenie rozbieżności między stanem obecnym a stanem pożądanym). Bez trafnej diagnozy problemu cały dalszy wysiłek jest chybiony.',
+        'FAZA 2: Zbieranie informacji (pozyskanie danych o ograniczeniach, kosztach i realiach otoczenia).',
+        'FAZA 3: Generowanie wariantów (twórcze tworzenie puli potencjalnych rozwiązań — minimum 3 opcji).',
+        'FAZA 4: Wartościowanie i ocena (porównanie opcji według przyjętych kryteriów, ważenie zysków i strat).',
+        'FAZA 5: Akt wyboru (redukcja alternatyw i podjęcie wewnętrznego zobowiązania).',
+        'FAZA 6: Wdrożenie i działanie (behawioralna alokacja zasobów w świecie fizycznym).',
+        'FAZA 7: Ewaluacja i informacja zwrotna (analiza konsekwencji i aktualizacja bazy doświadczeń).'
+      ],
+      subsections: [
+        {
+          title: 'Gdzie najczęściej pęka łańcuch decyzyjny?',
+          paragraphs: [
+            'Większość ludzi nie ma problemu z fazą 2 (zbieraniem informacji) — wręcz przeciwnie, zbierają ich za dużo. Prawdziwy zator powstaje między fazą 4 (oceną) a fazą 5 (aktem wyboru) oraz między fazą 5 a fazą 6 (działaniem).',
+            'Jeśli utkniesz w fazie 4, wpadasz w paraliż analityczny. Jeśli zatrzymasz się na fazie 5 i nie przejdziesz do fazy 6, Twoja decyzja pozostaje martwym zapisem w notatniku, generującym frustrację i poczucie nieskuteczności.'
+          ],
+          highlightBox: {
+            title: 'Błędna Intuicja Decyzyjna',
+            content: 'Wydaje nam się, że najtrudniejszą częścią jest znalezienie „najlepszej opcji”. W rzeczywistości najtrudniejszą częścią jest zaakceptowanie nieuchronnych wad i ograniczeń opcji wybranej.',
+            type: 'warning'
+          }
+        }
       ]
     },
     {
@@ -326,12 +372,23 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.3',
       title: 'Dlaczego podejmowanie decyzji może być trudne? Ewolucyjne źródła lęku, sprzeczne cele i ciężar odpowiedzialności',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Złożoność procesu decyzyjnego wynika z faktu, że ludzki mózg nie ewoluował w świecie wielkich, abstrakcyjnych dylematów strategicznych, lecz w środowisku bezpośredniego przetrwania. W pierwotnych warunkach błędna decyzja (np. podejście do nieznanego krzaka) mogła skutkować natychmiastową śmiercią lub wykluczeniem z plemienia.',
-        'Współczesne decyzje rzadko niosą bezpośrednie zagrożenie biologiczne, jednak nasze obwody limbiczne (przede wszystkim ciało migdałowate i przednia kora obręczy) reagują na niepewność i potencjalny błąd dokładnie takim samym alarmem fizjologicznym.',
-        'Trudność decyzji rośnie wykładniczo, gdy w grę wchodzi konflikt fundamentalnych wartości: bezpieczeństwo kontra wolność, lojalność wobec rodziny kontra własny rozwój, natychmiastowa przyjemność kontra długoterminowe zdrowie.',
-        'Dodatkowym ciężarem jest odpowiedzialność egzystencjalna: świadomość, że za skutki wyboru nie można winić nikogo innego poza sobą samym.'
+        'Trudność w podejmowaniu decyzji nie jest dowodem słabości charakteru ani deficytu intelektualnego — jest bezpośrednią konsekwencją biologicznej ewolucji naszego mózgu. Ludzki układ nerwowy kształtował się w warunkach plemiennych sawanny, gdzie większość wyborów dotyczyła bezpośredniego, fizycznego przetrwania (gdzie polować, czy zaufać obcemu, kiedy uciekać przed drapieżnikiem). Błędna decyzja niosła za sobą natychmiastową śmierć lub wykluczenie z grupy.',
+        'Współczesny człowiek musi podejmować decyzje w zupełnie innym środowisku: abstrakcyjnym, wielowymiarowym i odroczonym w czasie (np. wybór profilu studiów, inwestycja w fundusz emerytalny, zmiana ścieżki kariery). Mimo to nasze struktury limbiczne — w tym ciało migdałowate i przednia kora obręczy — traktują każdy potencjalny błąd decyzyjny tak, jakby groził nam śmiercią głodową.',
+        'Dodatkową trudnością jest wewnętrzny konflikt celów. W każdym z nas współistnieją sprzeczne motywacje: potrzeba bezpieczeństwa walczy z pragnieniem ekscytacji i rozwoju, lojalność wobec rodziny ściera się z dążeniem do autonomii, a chęć natychmiastowej gratyfikacji zderza się z celami długoterminowymi.',
+        'Wreszcie, decyzja niesie ze sobą ciężar odpowiedzialności egzystencjalnej. Jak pisał Jean-Paul Sartre, człowiek jest „skazany na wolność”. Podjęcie decyzji oznacza, że za jej konsekwencje nie będziesz mógł winić rządu, rodziców ani pecha — odpowiedzialność spocznie wyłącznie na Tobie.'
+      ],
+      subsections: [
+        {
+          title: 'Minićwiczenie: Rozpoznanie źródła oporu',
+          paragraphs: [
+            'Gdy stoisz przed decyzją i czujesz paraliżujący opór, zadaj sobie trzy pytania diagnostyczne:',
+            '1. Czy boję się błędu merytorycznego (utraty pieniędzy/czasu)?',
+            '2. Czy boję się oceny społecznej (wstydu przed innymi, etykiety porażki)?',
+            '3. Czy boję się żalu z powodu rezygnacji z drugiej opcji?'
+          ]
+        }
       ]
     },
     {
@@ -340,12 +397,22 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.4',
       title: 'Koszt decyzji — Koszt alternatywny, zasoby poznawcze i wyczerpywanie energii woli',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Każda decyzja niesie za sobą dwa fundamentalne rodzaje kosztów: koszt psychobiologiczny oraz koszt alternatywny (opportunity cost).',
-        'Koszt psychobiologiczny wiąże się ze zużyciem glukozy i energii metabolicznej w obwodach grzbietowo-bocznej kory przedczołowej (dlPFC). Zjawisko to, opisane jako zmęczenie decyzyjne (decision fatigue), powoduje, że pod koniec dnia pełnego wyborów nasza zdolność do samokontroli i logicznej oceny drastycznie spada.',
-        'Koszt alternatywny to z kolei ekonomiczna i psychologiczna wartość tego, z czego musisz zrezygnować, wybierając daną ścieżkę. Decydując się spędzić wieczór na nauce języka, płacisz kosztem odpoczynku, spotkania ze znajomymi lub snu.',
-        'Niezdolność do zaakceptowania kosztu alternatywnego rodzi frustrację i poczucie, że „zawsze coś nas omija” (FOMO).'
+        'Każda decyzja niesie za sobą dwa fundamentalne rodzaje kosztów: koszt psychobiologiczny oraz koszt alternatywny (opportunity cost). Ignorowanie któregokolwiek z nich prowadzi do chronicznego wyczerpania i błędów życiowych.',
+        'Koszt psychobiologiczny wiąże się ze zużyciem zasobów glukozy i neuroprzekaźników w grzbietowo-bocznej korze przedczołowej (dlPFC). Zjawisko to, zbadane m.in. przez Roya Baumeistera jako zmęczenie decyzyjne (decision fatigue), sprawia, że po podjęciu kilkudziesięciu wyborów w ciągu dnia nasza zdolność do samokontroli i logicznej oceny drastycznie spada. Pod koniec intensywnego dnia podejmujemy decyzje skrajnie impulsywne lub całkowicie bierne.',
+        'Koszt alternatywny to pojęcie zaczerpnięte z ekonomii, mające gigantyczne znaczenie psychologiczne. Oznacza ono wartość najlepszej z opcji, z których musisz zrezygnować, wybierając dany wariant. Jeśli decydujesz się spędzić sobotę na nadgodzinach w biurze, zarabiasz określoną kwotę, ale kosztem alternatywnym jest brak regeneracji, brak kontaktu z dziećmi i zaniedbanie relacji partnerskiej.',
+        'Wielu ludzi cierpi na syndrom FOMO (Fear of Missing Out) właśnie dlatego, że nie potrafią zaakceptować nieuchronności kosztu alternatywnego. Chcą mieć ciastko i zjeść ciastko, co prowadzi do powierzchowności i ciągłego rozproszenia uwagi.'
+      ],
+      subsections: [
+        {
+          title: 'Jak mądrze zarządzać budżetem decyzyjnym?',
+          paragraphs: [
+            '1. Automatyzuj decyzje trywialne: ustal stały zestaw ubrań roboczych, powtarzalne menu śniadaniowe i stały harmonogram treningów (tak jak robili to Steve Jobs czy Barack Obama).',
+            '2. Podejmuj decyzje strategiczne i trudnoodwracalne w pierwszej fazie dnia, gdy poziom energii kory przedczołowej jest najwyższy.',
+            '3. Nigdy nie podejmuj decyzji finansowych ani relacyjnych w stanie głodu, niewyspania lub ostrego stresu.'
+          ]
+        }
       ]
     },
     {
@@ -354,14 +421,14 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.5',
       title: 'Ćwiczenie Praktyczne — Analiza Własnej Trudnej Decyzji: Dekompozycja Dylematu',
       category: 'cwiczenia',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
       paragraphs: [
-        'Pora przenieść teorię pierwszego bloku na grunt Twojego osobistego doświadczenia. Wybierz jedną trudną decyzję, przed którą aktualnie stoisz (lub decyzję z przeszłości, która wciąż wywołuje w Tobie wątpliwości).',
-        'KROK 1: Zdefiniuj dylemat w jednym zdaniu. Czego dokładnie dotyczy wybór?',
-        'KROK 2: Wypisz dwie główne opcje (Opcja A i Opcja B).',
-        'KROK 3: Zidentyfikuj ukryty konflikt wartości: Jaka wartość stoi za Opcją A (np. stabilność finansowa), a jaka za Opcją B (np. samorealizacja)?',
-        'KROK 4: Oblicz koszt alternatywny: Z czego dokładnie rezygnujesz, jeśli wybierzesz A? Z czego rezygnujesz, jeśli wybierzesz B?',
-        'KROK 5: Ocena somatyczna: Wyobraź sobie, że rzuciłeś monetą i wypadła Opcja A. Zwróć uwagę na pierwszą reakcję swojego ciała — poczułeś ulgę czy zawód? Ciało jest Twoim najszybszym kompasem aksjologicznym.'
+        'Pora przenieść teorię pierwszego bloku na grunt Twojego osobistego doświadczenia. Wybierz jeden trudny dylemat decyzyjny, przed którym aktualnie stoisz (lub decyzję z przeszłości, która wciąż budzi w Tobie wątpliwości i niepokój).',
+        'KROK 1: Zdefiniuj dylemat w jednym precyzyjnym zdaniu. Czego dokładnie dotyczy wybór?',
+        'KROK 2: Wypisz dwie główne opcje (Opcja A i Opcja B), unikając oceniania ich na tym etapie.',
+        'KROK 3: Zidentyfikuj ukryty konflikt wartości: Jaka fundamentalna wartość stoi za Opcją A (np. stabilność, przewidywalność, akceptacja otoczenia), a jaka za Opcją B (np. wolność, rozwój, autentyczność)?',
+        'KROK 4: Oblicz realny koszt alternatywny: Z czego dokładnie i bezpowrotnie rezygnujesz, jeśli wybierzesz Opcję A? Z czego rezygnujesz, jeśli wybierzesz Opcję B?',
+        'KROK 5: Test Somatyczny: Wyobraź sobie, że rzuciłeś monetą i orzeł wskazał Opcję A. Zwróć uwagę na pierwszą, bezrefleksyjną reakcję swojego ciała — poczułeś ulgę czy nagły skurcz zawodu? Ciało jest Twoim najszybszym rejestratorem ukrytych preferencji aksjologicznych.'
       ]
     },
 
@@ -372,12 +439,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.6',
       title: 'Ile informacji naprawdę potrzebujemy? Sygnał vs szum i reguła 70% informacji',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Powszechnym mitem jest przekonanie, że dobra decyzja wymaga zebrania „wszystkich możliwych informacji”. W epoce cyfrowej zbiór wszystkich informacji jest nieskończony, co oznacza, że dążenie do pełnej wiedzy jest prostą drogą do paraliżu.',
-        'Do podjęcia wysokiej jakości decyzji potrzebujemy jedynie wąskiego wycinka danych o wysokiej sile dyskryminacyjnej (tzw. sygnału), odrzucając tysiące nieistotnych zmiennych (szumu).',
-        'Współczesna psychologia zarządzania i wojskowości stosuje tzw. regułę 70%: jeśli posiadasz około 70% potrzebnych informacji, masz optymalną podstawę do podjęcia decyzji. Czekanie na 90% danych powoduje, że koszt zwłoki przewyższa korzyści z dodatkowej precyzji, a sytuacja w otoczeniu ulega zmianie.',
-        'Kluczem jest wcześniejsze określenie: jakie 3 twarde dane są niezbędne, by ruszyć z miejsca?'
+        'Powszechnym mitem kulturowym jest przekonanie, że dobra decyzja wymaga zebrania „wszystkich możliwych informacji”. W epoce cyfrowej zbiór wszystkich dostępnych danych jest praktycznie nieskończony, co oznacza, że dążenie do absolutnej kompletności wiedzy jest prostą drogą do paraliżu i wyczerpania.',
+        'W teorii informacji (Nate Silver, Claude Shannon) kluczowe jest rozróżnienie między SYGNAŁEM a SZUMEM. Sygnał to wąska grupa faktów o wysokiej sile dyskryminacyjnej, które rzeczywiście wpływają na prawdopodobieństwo sukcesu. Szum to tysiące nieistotnych zmiennych, plotek, marginalnych opinii i szczegółów technicznych, które jedynie zanieczyszczają pole uwagi.',
+        'W psychologii zarządzania i doktrynach wojskowych powszechnie stosuje się tzw. Regułę 70% (często przypisywaną gen. Colinowi Powellowi i Jeffowi Bezosowi). Zasada ta głosi: jeśli posiadasz mniej niż 40% informacji, działasz po omacku i podejmujesz ślepe ryzyko. Jednak jeśli czekasz, aż zgromadzisz ponad 70–80% danych, jest już za późno — koszt zwłoki przewyższy korzyść z dodatkowej precyzji, a sytuacja w dynamicznym otoczeniu ulegnie zmianie.',
+        'Świadomy decydent zadaje sobie pytanie: „Jakie 3 krytyczne fakty są mi niezbędne, by ruszyć z miejsca?” i po ich ustaleniu podejmuje działanie.'
       ]
     },
     {
@@ -386,11 +453,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.7',
       title: 'Decyzje przy niepełnych danych — Heurystyka satysfakcjonowania Simona i myślenie probabilistyczne',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Laureat Nagrody Nobla Herbert Simon sformułował koncepcję ograniczonej racjonalności (bounded rationality). Człowiek nigdy nie dysponuje pełną wiedzą, nieograniczonym czasem ani nieskończoną mocą obliczeniową. W praktyce nie szukamy więc opcji absolutnie idealnej (maksymalizacja), lecz opcji wystarczająco dobrej, spełniającej przyjęte progi akceptacji (satysfakcjonowanie — satisficing).',
-        'Myślenie probabilistyczne polega na zaakceptowaniu, że decyzje podejmuje się w kategoriach szans i rozkładów prawdopodobieństwa, a nie 100% gwarancji.',
-        'Maksymalizatorzy (osoby szukające wyłącznie doskonałości) podejmują decyzje dłużej, odczuwają większy żal podestowy i częściej cierpią na stany lękowe niż satysfakcjonatorzy, którzy potrafią powiedzieć: „To rozwiązanie spełnia moje kryteria i jest wystarczająco dobre”.'
+        'Laureat Nagrody Nobla Herbert Simon sformułował rewolucyjną koncepcję ograniczonej racjonalności (bounded rationality). Klasyczna ekonomia zakładała istnienie Homo oeconomicus — istoty o nieskończonej mocy obliczeniowej, która bezbłędnie optymalizuje każdy wybór. Simon udowodnił, że ludzki mózg nigdy nie dysponuje pełną wiedzą ani nieograniczonym czasem.',
+        'W rzeczywistości ludzie dzielą się na dwa typy decydentów: MAKSYMALIZATORÓW (Maximizers) oraz SATYSFAKCJONATORÓW (Satisficers). Maksymalizator próbuje przeanalizować każdą dostępną ofertę na rynku, szukając wariantu absolutnie perfekcyjnego. Satysfakcjonator z góry definiuje kryteria brzegowe („chcę mieszkania do 600 tys. zł, minimum 50 m², z balkonem i do 10 min od metra”) i wybiera pierwszą opcję, która spełnia te standardy.',
+        'Badania psychologiczne jednoznacznie wykazują, że maksymalizatorzy — mimo że czasami uzyskują obiektywnie odrobinę lepsze wyniki finansowe — są znacznie mniej szczęśliwi, odczuwają wyższy poziom lęku, chroniczny żal podestowy i częściej wpadają w depresję niż satysfakcjonatorzy.',
+        'Myślenie probabilistyczne polega na traktowaniu decyzji w kategoriach szans i rozkładów prawdopodobieństwa (np. „ta opcja daje 75% szans na sukces i 25% ryzyka straty”), a nie w kategoriach magicznych gwarancji.'
       ]
     },
     {
@@ -399,12 +467,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.8',
       title: 'Ryzyko a niepewność — Różnica Knighta, przewidywalność i asymetria konsekwencji',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'W ekonomii i psychologii fundamentalne znaczenie ma rozróżnienie wprowadzone przez Franka Knighta: podział na ryzyko i niepewność.',
-        'RYZYKO dotyczy sytuacji, w których znamy możliwe scenariusze i możemy przypisać im matematyczne prawdopodobieństwo (np. ruletka, rzut monetą, tabele ubezpieczeniowe). W warunkach ryzyka sprawdzają się modele statystyczne.',
-        'GŁĘBOKA NIEPEWNOŚĆ (Knightian uncertainty) występuje wtedy, gdy nie znamy nawet pełnej listy możliwych wyników, nie mówiąc o ich prawdopodobieństwie (np. rozwój nowej technologii, załamanie geopolityczne, wybór partnera życiowego na 40 lat).',
-        'Próba traktowania niepewności za pomocą modeli ryzyka rodzi fałszywą pewność siebie. W warunkach niepewności najważniejszą strategią nie jest matematyczna optymalizacja, lecz budowanie odporności na błąd (antykruchości) i zachowanie elastyczności operacyjnej.'
+        'W 1921 roku ekonomista Frank Knight wprowadził rozróżnienie, które do dziś stanowi fundament teorii podejmowania decyzji: podział na RYZYKO i GŁĘBOKĄ NIEPEWNOŚĆ.',
+        'RYZYKO dotyczy sytuacji, w których znany jest pełen katalog możliwych wyników oraz matematyczny rozkład ich prawdopodobieństwa. Przykładem jest rzut symetryczną monetą (50% orzeł, 50% reszka), ruletka czy tabele aktuarialne firm ubezpieczeniowych szacujące ryzyko zgonu w danej grupie wiekowej. W warunkach ryzyka można stosować ścisłe modele statystyczne.',
+        'NIEPEWNOŚĆ (Knightian uncertainty) występuje wtedy, gdy sytuacja jest unikalna, otwarta i dynamiczna — nie znamy nie tylko prawdopodobieństw, ale nawet pełnej listy możliwych scenariuszy przyszłości. Przykładem jest wybór kierunku rozwoju nowej technologii (np. AI), wybuch wojny czy decyzja o wejściu w związek małżeński na 40 lat.',
+        'Tragicznym błędem współczesnego człowieka jest próba traktowania niepewności za pomocą modeli ryzyka. Prowadzi to do fałszywej pewności siebie i katastrofalnych pomyłek (Czarne Łabędzie Nassima Taleba). W warunkach niepewności kluczem nie jest kalkulacja matematyczna, lecz budowanie odporności na błąd (antykruchości), dywersyfikacja i unikanie ryzyka ruiny.'
       ]
     },
     {
@@ -413,11 +481,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.9',
       title: 'Efekt nadmiaru informacji — Information Overload, paradoks wyboru i wyczerpanie pamięci roboczej',
       category: 'neuronauka',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Intuicja podpowiada, że im więcej możliwości mamy do wyboru, tym większą wolność i satysfakcję odczuwamy. Badania Barry’ego Schwartza nad paradoksem wyboru (The Paradox of Choice) dowodzą, że powyżej pewnego poziomu liczba opcji staje się destrukcyjna.',
-        'W słynnym eksperymencie z dżemami (Iyengar & Lepper) stoisko z 6 smakami przyciągnęło mniej gapiów, ale zaowocowało dziesięciokrotnie wyższą sprzedażą niż stoisko z 24 smakami. Nadmiar opcji wywołuje przeciążenie pamięci roboczej w korze przedczołowej, paraliż decyzyjny oraz potęguje żal po podjęciu wyboru („gdybym wybrał tamto drugie, na pewno byłoby lepsze”).',
-        'Świadomy decydent celowo ogranicza liczbę analizowanych wariantów do maksymalnie 3–4 najsilniejszych kandydatów.'
+        'Powszechna intuicja głosi: „im więcej opcji i danych mam do dyspozycji, tym większą wolność i satysfakcję osiągnę”. Odkrycia Barry’ego Schwartza opisane w książce Paradoks wyboru (The Paradox of Choice) dowodzą, że powyżej pewnego progu liczba możliwości staje się psychologiczną trucizną.',
+        'W słynnym eksperymencie Sheeny Iyengar i Marka Leppera na stoisku degustacyjnym wystawiono 24 smaki ekskluzywnych dżemów lub 6 smaków. Stoisko z 24 dżemami przyciągnęło więcej gapiów (60% vs 40%), jednak zakupu dokonało zaledwie 3% osób oglądających duży zestaw, podczas gdy przy zestawie 6 dżemów zakupu dokonało aż 30% klientów (dziesięciokrotnie wyższa konwersja!).',
+        'Z punktu widzenia neuronauki nadmiar informacji powoduje gwałtowne przeciążenie pamięci roboczej (working memory) zlokalizowanej w grzbietowo-bocznej korze przedczołowej, która może jednocześnie operować zaledwie na 4–7 jednostkach informacyjnych (chunks). Gdy mózg zostaje zalany dziesiątkami parametrów, kora wyłącza analityczne myślenie i zaczyna opierać się na losowych, prymitywnych heurystykach.',
+        'Świadomy decydent celowo ogranicza liczbę analizowanych opcji do maksymalnie 3 najsilniejszych kandydatów.'
       ]
     },
     {
@@ -426,12 +495,22 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.10',
       title: 'Analiza Sytuacji — Kiedy dalsze analizowanie przestaje pomagać? Historia Marka i audyt pętli paraliżu',
       category: 'studium-przypadku',
-      readingTimeMinutes: 19,
+      readingTimeMinutes: 20,
       paragraphs: [
-        'Marek, 31 lat, przez 9 miesięcy planował zakup samochodu. Przeczytał 140 testów branżowych, obejrzał 200 godzin recenzji na YouTube i stworzył bazę 50 modeli z oceną grubości lakieru i pojemności bagażnika. Za każdym razem, gdy miał jechać do salonu, pojawiała się nowa informacja o faceliftingu innego modelu, co cofało go do punktu wyjścia. W tym czasie wydał 4500 zł na taksówki i wynajem aut, a chroniczne poczucie niezdecydowania zatruwało mu każdy weekend.',
-        'ANALIZA PSYCHOLOGICZNA: Co działo się w umyśle Marka? Działała u niego iluzja całkowitej kontroli oraz ucieczka w analizę (intelektualizacja) przed lękiem przed podjęciem niedoskonałej decyzji. Gromadzenie danych dawało mu dopaminową nagrodę pozornego działania bez ponoszenia ryzyka zaangażowania.',
-        'JAK PRZERWAĆ TĘ PĘTLĘ? Wprowadzenie kryterium „stop-loss” czasowego: wyznaczenie sztywnego terminu (np. 14 dni), po którym następuje obligatoryjny wybór najlepszej dostępnej opcji z krótkiej listy.',
-        'PYTANIA DLA CZYTELNIKA: 1. W jakiej sprawie w Twoim życiu zbierasz informacje dłużej niż 3 miesiące bez podjęcia kroku? 2. Co najgorszego stanie się, jeśli wybierzesz opcję na poziomie 80% doskonałości?'
+        'HISTORIA MARKA: Marek, 31-letni programista, przez 9 miesięcy planował zakup pierwszego samochodu. Przeczytał 140 testów motoryzacyjnych, obejrzał 200 godzin recenzji na YouTube i stworzył arkusz kalkulacyjny z 50 modelami, porównując spalanie z dokładnością do 0,1 litra, grubość lakieru i dostępność części zamiennych. Za każdym razem, gdy miał jechać do salonu, pojawiała się nowa informacja o planowanym faceliftingu innego modelu, co cofało go do punktu wyjścia. W tym czasie wydał 4800 zł na taksówki i wynajem aut, a chroniczne poczucie niezdecydowania zatruwało mu każdy weekend.',
+        'ANALIZA PSYCHOLOGICZNA: Co działo się w umyśle Marka? Działała u niego iluzja całkowitej kontroli oraz ucieczka w analizę (mechanizm intelektualizacji) przed lękiem przed podjęciem niedoskonałej decyzji. Ciągłe gromadzenie danych dawało mu dopaminową nagrodę pozornego działania bez ponoszenia ryzyka zaangażowania i bez konfrontacji z rzeczywistością.',
+        'PUNKTY ZWROTNE: Marek nie zauważył, że koszt zbierania informacji (czas, energia, pieniądze wydane na taksówki, frustracja) dawno przewyższył potencjalną stratę z zakupu nieco gorszego auta.',
+        'PROTOKÓŁ PRZEŁAMANIA PĘTLI: 1. Wprowadzenie twardego limitu czasowego (Stop-Loss czasu); 2. Redukcja listy do 2 modeli; 3. Zasada rzutu monetą w przypadku remisu parametrów.'
+      ],
+      subsections: [
+        {
+          title: 'Pytania refleksyjne dla czytelnika',
+          paragraphs: [
+            '1. W jakiej sprawie w Twoim obecnym życiu zbierasz informacje dłużej niż 3 miesiące bez podjęcia realnego kroku?',
+            '2. Jakie koszty ukryte ponosisz każdego dnia, odwlekając ten wybór?',
+            '3. Co najgorszego stanie się, jeśli podejmiesz decyzję wystarczająco dobrą na poziomie 80% doskonałości?'
+          ]
+        }
       ]
     },
 
@@ -442,12 +521,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.11',
       title: 'Emocje podczas podejmowania decyzji — Markery somatyczne Antonio Damasio i rola vmPFC',
       category: 'neuronauka',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 19,
       paragraphs: [
-        'Przez stulecia w filozofii zachodniej dominował pogląd, że idealna decyzja to decyzja całkowicie wyprana z emocji. Rewolucja neurobiologiczna zapoczątkowana przez Antonio Damasio zburzyła ten mit.',
-        'W badaniach nad pacjentami z uszkodzeniem brzuszno-przyśrodkowej kory przedczołowej (vmPFC), którzy zachowali wysokie IQ, lecz utracili zdolność odczuwania emocji, Damasio odkrył zjawisko paradoksalne: ludzie ci nie stali się doskonałymi maszynami logicznymi — stali się całkowicie niezdolni do podejmowania jakichkolwiek decyzji. Potrafili godzinami analizować wady i zalety dwóch dat spotkania, nie mogąc dokonać wyboru.',
-        'Zgodnie z hipotezą markerów somatycznych, emocje to cielesne sygnały (skurcz żołądka, przyspieszenie tętna, poczucie lekkości) powstałe na bazie wcześniejszych doświadczeń, które błyskawicznie zawężają pole poszukiwań i nadają wagę opcjom logicznym.',
-        'Zdrowe decydowanie to dialog między logiką kory czołowej a czuciem markerów somatycznych.'
+        'Przez ponad dwa tysiące lat w zachodniej tradycji filozoficznej dominował pogląd Platona i Kartezjusza, że idealna decyzja to decyzja czysto racjonalna, całkowicie oczyszczona z emocji, które postrzegano jako zakłócający „szum”. Przełom neurobiologiczny dokonany przez Antonio Damasio w latach 90. XX wieku bezpowrotnie zburzył ten mit.',
+        'W klasycznych badaniach nad pacjentami z uszkodzeniem brzuszno-przyśrodkowej kory przedczołowej (vmPFC) — z których najsłynniejszym był współczesny odpowiednik Phineasa Gage’a, pacjent Elliot — Damasio zaobserwował zjawisko wstrząsające: osoby te zachowały nienaruszone IQ, doskonałą pamięć i bezbłędną logikę formalną, jednak utraciły zdolność odczuwania emocji. Rezultat? Stali się całkowicie niezdolni do podejmowania jakichkolwiek decyzji życiowych. Potrafili przez 4 godziny analizować wady i zalety dwóch terminów wizyty u fryzjera, nie potrafiąc dokonać ostatecznego wyboru.',
+        'Zgodnie z Hipotezą Markerów Somatycznych Damasio, emocje to cielesne sygnały afektywne (skurcz żołądka, zmiana rytmu serca, napięcie mięśniowe, poczucie lekkości), wykształcone na bazie wcześniejszych doświadczeń życiowych. Markery somatyczne działają jak błyskawiczny radar — w ułamku sekundy eliminują opcje niebezpieczne i nadają wagę emocjonalną wariantom korzystnym, odciążając wolną korę przedczołową.',
+        'Zdrowe decydowanie to nie eliminacja emocji, lecz zharmonizowany dialog między logiczną kalkulacją kory grzbietowej a cielesną mądrością markerów somatycznych.'
       ]
     },
     {
@@ -456,11 +535,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.12',
       title: 'Strach przed konsekwencjami — Katastrofizacja, antycypowany żal i unikanie decyzyjne',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Jednym z najsilniejszych hamulców decyzyjnych jest antycypowany żal (anticipated regret) — wyobrażanie sobie przyszłego bólu, jeśli wybrana opcja okaże się pomyłką.',
-        'Gdy w umyśle uruchamia się katastrofizacja („jeśli to się nie uda, moje życie będzie zrujnowane”), mózg przechodzi w tryb unikania decyzyjnego (decision avoidance). Strategia ta przybiera formy: delegowania wyboru na innych („zdecyduj za mnie”), wybierania opcji bezpiecznej instytucjonalnie lub odwlekania decyzji aż okoliczności zewnętrzne wymuszą cokolwiek.',
-        'Warto pamiętać: zaniechanie działania jest również wyborem, który w długiej perspektywie generuje znacznie głębszy żal egzystencjalny niż błędy popełnione w wyniku aktywnego działania.'
+        'Jednym z najpotężniejszych emocjonalnych hamulców procesu decyzyjnego jest antycypowany żal (anticipated regret) — psychologiczna projekcja przyszłego cierpienia, wstydu i samooskarżeń w sytuacji, gdyby wybrana opcja zakończyła się niepowodzeniem.',
+        'Gdy w umyśle uruchamia się zniekształcenie poznawcze w postaci katastrofizacji („jeśli zmienię pracę i sobie nie poradzę, zniszczę życie mojej rodziny, stracę dom i już nigdy nikt mnie nie zatrudni”), mózg przełącza się w tryb unikania decyzyjnego (decision avoidance).',
+        'Unikanie decyzyjne przybiera trzy typowe maski: 1. Delegowanie wyboru („zdecyduj za mnie, kochanie” — zrzucenie odpowiedzialności); 2. Wybieranie opcji domyślnej / status quo (bierne trwanie w znoszonym schemacie); 3. Prokrastynacja strategiczna (odwlekanie decyzji tak długo, aż czynniki zewnętrzne lub inni ludzie podejmą decyzję za nas).',
+        'Pamiętaj: brak decyzji jest również decyzją — decyzją o oddaniu kontroli nad własnym losem w ręce przypadku i innych ludzi.'
       ]
     },
     {
@@ -469,11 +549,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.13',
       title: 'Decyzje podejmowane pod wpływem złości — Porwanie emocjonalne, zawężenie perspektywy i impulsywność',
       category: 'neuronauka',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Złość i gniew są emocjami o wysokim ładunku mobilizacyjnym, zaprojektowanymi ewolucyjnie do walki i usuwania przeszkód. Pod wpływem ostrego gniewu dochodzi do tzw. porwania przez ciało migdałowate (amygdala hijack).',
-        'Zmniejsza się percepcja ryzyka — człowiek czuje fałszywą wszechmoc i gotowość do podejmowania skrajnie ryzykownych kroków (np. trzaśnięcie drzwiami i natychmiastowe rzucenie pracy, wysłanie wściekłego maila do klienta, zerwanie wieloletniej przyjaźni pod wpływem jednej kłótni).',
-        'Zasada operacyjna: Nigdy nie podejmuj ostatecznych decyzji w stanie ostrego wzbudzenia adrenergicznego. Wprowadź twardą regułę 24-godzinnej kwarantanny afektywnej przed wysłaniem wiadomości lub podpisaniem dokumentu.'
+        'Gniew i wściekłość to stany afektywne o potężnym ładunku mobilizacyjnym, ewolucyjnie zaprojektowane do ataku, niszczenia przeszkód i obrony terytorium. Pod wpływem ostrej złości dochodzi do tzw. porwania przez ciało migdałowate (amygdala hijack).',
+        'W stanie wzbudzenia adrenergicznego dochodzi do dramatycznego zniekształcenia percepcji ryzyka: człowiek odczuwa iluzoryczną wszechmoc i skrajnie lekceważy niebezpieczeństwo. Złość zmusza do natychmiastowych, radykalnych kroków: trzaśnięcia drzwiami i natychmiastowego rzucenia pracy, wysłania wściekłego, wulgarnego maila do klienta czy zerwania wieloletniej relacji pod wpływem jednej sprzeczki.',
+        'Po opadnięciu fali neurochemicznej (spadku adrenaliny i noradrenaliny) kora przedczołowa odzyskuje sprawność i człowiek staje w obliczu zdewastowanej rzeczywistości oraz przytłaczającego poczucia winy.',
+        'ŻELAZNA ZASADA OPERACYJNA: Wprowadź twardą regułę 24-godzinnej kwarantanny emocjonalnej. W stanie ostrego wzburzenia masz zakaz wysyłania wiadomości, podpisywania dokumentów i podejmowania ostatecznych deklaracji.'
       ]
     },
     {
@@ -482,11 +563,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.14',
       title: 'Presja czasu — Wpływ ostrego stresu, tunel poznawczy i kompromis między szybkością a precyzją',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Presja czasu drastycznie zmienia architekturę przetwarzania informacji. Pod wpływem uciekających minut mózg przełącza się z wolnego, deliberatywnego Systemu 2 na szybki, odruchowy System 1 (Kahneman).',
-        'Zjawisko tunelu poznawczego sprawia, że uwaga skupia się wyłącznie na parametrach najbardziej wyrazistych i krzykliwych, ignorując kontekst, długoterminowe skutki i alternatywne opcje.',
-        'W warunkach presji czasu nie wznosisz się na poziom swoich oczekiwań — spadasz na poziom swoich nawyków i wcześniej przygotowanych procedur operacyjnych. Dlatego profesjonaliści w warunkach kryzysu stosują wcześniej opracowane listy kontrolne (checklists).'
+        'Presja czasu drastycznie zmienia architekturę przetwarzania informacji w mózgu. W obliczu uciekających sekund układ nerwowy przełącza się z wolnego, refleksyjnego Systemu 2 na szybki, odruchowy System 1 (Kahneman).',
+        'Zjawisko tunelu poznawczego (cognitive tunneling) sprawia, że pole uwagi zawęża się wyłącznie do bodźców najbardziej krzykliwych, jaskrawych i bezpośrednich, ignorując tło, kontekst, długofalowe konsekwencje oraz opcje alternatywne.',
+        'W warunkach silnej presji czasu i stresu człowiek nie wznosi się na poziom swoich oczekiwań — spada na poziom swoich najbardziej utrwalonych nawyków i procedur operacyjnych. Dlatego piloci, chirurdzy i służby ratunkowe w sytuacjach kryzysowych nie polegają na improwizacji, lecz na bezwzględnym stosowaniu wcześniej przygotowanych list kontrolnych (checklists).',
+        'Kiedy ktoś wywiera na Ciebie sztuczną presję czasu („decyduj natychmiast, bo okazja przepadnie!”), niemal zawsze masz do czynienia z próbą manipulacji mającą na celu wyłączenie Twojej kory przedczołowej.'
       ]
     },
     {
@@ -495,14 +577,14 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.15',
       title: 'Ćwiczenie Praktyczne — Rozum czy Emocje? Protokół Rozdzielenia 4 Warstw Poznawczych',
       category: 'cwiczenia',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
       paragraphs: [
-        'Aby podjąć klarowną decyzję w sytuacji silnego napięcia emocjonalnego, należy rozłożyć sytuację na 4 odrębne kategorie w tabeli czteropolowej:',
-        'KOLUMNA 1: FAKTY (Co widzi kamera wideo? Bez ocen i przymiotników. Np. „Pracodawca zaproponował 10% niższą pensję podstawową i 20% premii”).',
-        'KOLUMNA 2: EMOCJE (Co fizycznie czuję w ciele? Np. lęk, rozczarowanie, złość, ekscytacja).',
-        'KOLUMNA 3: INTERPRETACJE (Jakie narracje tworzy mój umysł? Np. „Chcą mnie wykorzystać”, „Nie doceniają mnie”).',
-        'KOLUMNA 4: PRZEWIDYWANIA (Jakie są realne, testowalne scenariusze przyszłości zamiast czarnych wizji?).',
-        'Dopiero po rozdzieleniu faktów od emocji i interpretacji zyskujesz przestrzeń na suwerenny, dojrzały wybór.'
+        'Aby podjąć klarowną decyzję w sytuacji silnego napięcia afektywnego, zastosuj tabelę dekompozycji czteropolowej, która rozbija chaos myśli na cztery precyzyjne składowe:',
+        'KOLUMNA 1: FAKTY (Opisz sytuację językiem kamery wideo — bez przymiotników, ocen i domysłów. Np. „Pracodawca przedstawił aneks do umowy zmniejszający podstawę o 10% i wprowadzający 25% premii od wyników”).',
+        'KOLUMNA 2: EMOCJE I MARKERY SOMATYCZNE (Co fizycznie rejestruje Twoje ciało? Np. ścisk w żołądku, przyspieszone tętno, lęk, złość, ekscytacja).',
+        'KOLUMNA 3: INTERPRETACJE I NARRACJE (Jakie automatyczne myśli tworzy Twój umysł? Np. „Chcą mnie wykorzystać”, „Nie szanują mojego wkładu”, „To dowód, że jestem dla nich nikim”).',
+        'KOLUMNA 4: PRZEWIDYWANIA I TESTOWALNE HIPOTEZY (Jakie są realne, weryfikowalne scenariusze przyszłości zamiast czarno-białych wizji katastrofy?).',
+        'Dopiero po rozdzieleniu nagich faktów od subiektywnych interpretacji i reakcji ciała zyskujesz przestrzeń na dojrzały, suwerenny wybór.'
       ]
     },
 
@@ -513,11 +595,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.16',
       title: 'Decyzja impulsywna — Krótkoterminowa dopamina, dyskontowanie odroczone i zasada tarcia czasowego',
       category: 'neuronauka',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Decyzja impulsywna to akt, w którym dominację nad zachowaniem przejmuje układ nagrody (brzuszne pole nakrywki i jądro półleżące), obiecujący natychmiastowy wyrzut dopaminowy w odpowiedzi na bliski bodziec.',
-        'Zjawisko dyskontowania odroczonego (hyperbolic discounting) sprawia, że ludzki mózg wycenia nagrodę dostępną natychmiast znacznie wyżej niż nagrodę odległą w czasie (np. batonik teraz vs zdrowie za 10 lat).',
-        'Najskuteczniejszą obroną przed impulsywnością nie jest walka siłą woli w momencie pokusy, lecz wprowadzenie tzw. fizycznego tarcia (friction): zasady 48 godzin przed dokonaniem nieplanowanego zakupu powyżej określonej kwoty lub usunięcia aplikacji zakupowych z ekranu głównego telefonu.'
+        'Decyzja impulsywna to akt, w którym kontrolę nad motoryką i zachowaniem przejmuje układ nagrody (brzuszne pole nakrywki VTA i jądro półleżące), obiecujący natychmiastowy wyrzut dopaminy w odpowiedzi na bliski bodziec zmysłowy.',
+        'Neuroekonomia opisuje ten mechanizm jako dyskontowanie odroczone (hyperbolic discounting). Ludzki mózg wycenia nagrodę dostępną natychmiast nieproporcjonalnie wyżej niż nagrodę odległą w czasie. Zjedzenie batonika teraz daje pewną dopaminę w 5 sekund; zgrabna sylwetka i zdrowie za 5 lat to abstrakcyjna obietnica, z którą obwody limbiczne nie potrafią się utożsamić.',
+        'Najskuteczniejszą obroną przed decyzjami impulsywnymi nie jest walka siłą woli w momencie pokusy (siła woli ulega szybkiemu wyczerpaniu), lecz wprowadzenie tzw. fizycznego tarcia (behavioral friction).',
+        'Przykłady tarcia: zasada 72 godzin przed zakupem dowolnej rzeczy niebędącej artykułem pierwszej potrzeby, usunięcie danych karty kredytowej z przeglądarki, schowanie telefonu do innego pokoju podczas pracy.'
       ]
     },
     {
@@ -526,11 +609,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.17',
       title: 'Wpływ pierwszej informacji — Kotwiczenie (Anchoring Bias), manipulacja punktem odniesienia i obrona',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Efekt kotwiczenia to błąd poznawczy polegający na tym, że pierwsza informacja liczbowa lub jakościowa, z jaką zetknie się nasz umysł, staje się niewidzialnym punktem odniesienia dla wszystkich kolejnych szacunków.',
-        'W negocjacjach cenowych osoba, która rzuca pierwszą kwotę, kotwiczy percepcję drugiej strony. W relacjach pierwsza etykieta przypisana nowemu projektowi lub człowiekowi zniekształca interpretację jego zachowań przez całe miesiące.',
-        'Obrona przed kotwiczeniem wymaga aktywnego wygenerowania niezależnych punktów odniesienia przed przystąpieniem do negocjacji oraz celowego zadania sobie pytania: „Gdybym nie usłyszał tej pierwszej liczby, jaka byłaby moja obiektywna wycena?”.'
+        'Efekt kotwiczenia (anchoring bias), odkryty przez Daniela Kahnemana i Amosa Tversky’ego, to błąd poznawczy polegający na tym, że pierwsza informacja liczbowa lub jakościowa, z jaką zetknie się nasz umysł, staje się niewidzialnym punktem odniesienia dla wszystkich kolejnych szacunków.',
+        'W negocjacjach handlowych strona, która jako pierwsza rzuca kwotę (nawet absurdalnie zawyżoną), kotwiczy percepcję drugiej strony. W relacjach międzyludzkich pierwsza etykieta przypisana nowemu pracownikowi lub projektowi („to będzie trudny klient”) potrafi zniekształcić interpretację faktów na całe miesiące.',
+        'Kotwiczenie działa podprogowo — nawet eksperci z wieloletnim stażem (np. sędziowie orzekający wyroki czy rzeczoznawcy majątkowi) ulegają wpływowi losowych liczb, jeśli zostały one wcześniej wyeksponowane.',
+        'OBRONA PRZED KOTWICZENIEM: Zawsze ustalaj własne, niezależne widełki wyceny i kryteria PRZED rozpoczęciem rozmów. Jeśli usłyszysz agresywną kotwicę, natychmiast ją zneutralizuj: „Ta kwota jest całkowicie poza zakresem naszych realiów, odłóżmy ją na bok i zacznijmy od parametrów bazowych”.'
       ]
     },
     {
@@ -539,11 +623,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.18',
       title: 'Koszt utopiony — Pułapka Sunk Cost Fallacy, syndrom Concorde i racjonalizacja minionych strat',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Pułapka kosztów utopionych polega na kontynuowaniu nieopłacalnego projektu, tkwieniu w destrukcyjnym związku czy utrzymywaniu nierentownej inwestycji tylko dlatego, że włożono już w to dużo wysiłku, czasu lub pieniędzy.',
-        'Klasycznym przykładem historycznym był naddźwiękowy samolot Concorde — rządy Wielkiej Brytanii i Francji wiedziały, że projekt jest komercyjną klapą, lecz pompowały weń kolejne miliardy, argumentując: „zainwestowaliśmy już zbyt wiele, by się teraz wycofać”.',
-        'Z punktu widzenia czystej logiki i ekonomii, przeszłe koszty są nieodwracalne i powinny wynosić zero w bieżącym równaniu decyzyjnym. Pytanie decyzyjne brzmi wyłącznie: „Czy w świetle dzisiejszej wiedzy zainwestowałbym w to chociaż jedną złotówkę i jedną godzinę?”. Jeśli nie — wycofaj się natychmiast.'
+        'Pułapka kosztów utopionych (sunk cost fallacy) to tendencja do kontynuowania nierentownego projektu, tkwienia w toksycznym związku czy utrzymywania chybionej inwestycji tylko dlatego, że włożono już w to dużo czasu, pieniędzy lub emocji.',
+        'Klasycznym przykładem historycznym był naddźwiękowy samolot pasażerski Concorde. Rządy Wielkiej Brytanii i Francji już w połowie lat 70. wiedziały, że samolot jest komercyjną katastrofą, jednak pompowały weń kolejne miliardy funtów i franków, argumentując: „zainwestowaliśmy już zbyt wiele, by się teraz wycofać” (stąd druga nazwa: Syndrom Concorde).',
+        'Z punktu widzenia czystej logiki i ekonomii koszty przeszłe są nieodwracalne i powinny wynosić dokładnie ZERO w bieżącym równaniu decyzyjnym. Pieniądze, które wydałeś wczoraj, przepadły bez względu na to, co zrobisz dzisiaj.',
+        'Jedyne racjonalne pytanie decyzyjne brzmi: „Czy w świetle dzisiejszej wiedzy, zaczynając od zera, zainwestowałbym w ten projekt choćby jedną złotówkę i jedną godzinę?”. Jeśli odpowiedź brzmi „nie” — wycofaj się natychmiast bez oglądania się za siebie.'
       ]
     },
     {
@@ -552,11 +637,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.19',
       title: 'Nadmierna pewność siebie — Efekt Overconfidence, błąd planowania (Planning Fallacy) i pokora poznawcza',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Nadmierna pewność siebie to tendencja do przeceniania własnej wiedzy, umiejętności przewidywania przyszłości oraz stopnia kontroli nad biegiem zdarzeń.',
-        'Przejawia się m.in. w błędzie planowania (planning fallacy) — niemal każdy remont, projekt IT czy praca dyplomowa zajmuje 2–3 razy więcej czasu i kosztuje 50% więcej, niż pierwotnie z optymizmem zakładano.',
-        'Antidotum na nadmierną pewność siebie jest pokora epistemiczna: systematyczne uwzględnianie tzw. bazy zewnętrznej (outside view) — sprawdzanie, ile średnio czasu i środków zajmuje podobny projekt innym ludziom, zamiast opierania się wyłącznie na własnych życzeniach.'
+        'Efekt nadmiernej pewności siebie (overconfidence bias) sprawia, że ludzie systematycznie przeceniają swoją wiedzę, trafność własnych prognoz oraz stopień kontroli nad przypadkowym biegiem wydarzeń.',
+        'Najczęstszym przejawem tego błędu jest błąd planowania (planning fallacy, Kahneman & Tversky) — niemal każdy remont mieszkania, wdrożenie systemu IT czy pisanie pracy magisterskiej zajmuje 2–3 razy więcej czasu i kosztuje 50–100% więcej, niż pierwotnie z optymizmem zakładano. Mózg skupia się na scenariuszu idealnym, ignorując nieuchronne tarcia, awarie i opóźnienia podwykonawców.',
+        'Antidotum na nadmierną pewność siebie jest stosowanie perspektywy zewnętrznej (outside view): zamiast pytać siebie „w ile czasu ja to zrobię?”, sprawdź twarde dane statystyczne: „ile średnio czasu zajmuje to przedsięwzięcie 100 innym osobom w podobnej sytuacji?”.',
+        'Pokora poznawcza polega na założeniu, że rzeczywistość zawsze okaże się bardziej skomplikowana niż nasz najbardziej elegancki plan.'
       ]
     },
     {
@@ -565,11 +651,15 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.20',
       title: 'Paraliż decyzyjny — Ambiwalencja, perfekcjonizm i algorytm przełamywania impasu decyzyjnego',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Paraliż decyzyjny to stan zawieszenia, w którym koszt niepodjęcia żadnej decyzji zaczyna przewyższać koszt ewentualnego błędu w wybranej opcji.',
-        'Źródłem paraliżu jest zazwyczaj ukryty perfekcjonizm — nierealistyczne pragnienie znalezienia decyzji idealnej, która da same zyski bez żadnych strat.',
-        'Algorytm przełamywania paraliżu obejmuje: 1. Zdefiniowanie decyzji minimalnej (odwracalnego mikrokroku testowego); 2. Narzucenie twardego limitu czasowego (zasada „decyzji do piątku do 15:00”); 3. Metodę eliminacji negatywnej — zamiast szukać najlepszego wariantu, odrzuć najpierw opcje najgorsze, zawężając wybór do dwóch możliwości.'
+        'Paraliż decyzyjny (analysis paralysis) to stan chronicznego zawieszenia, w którym koszt niepodjęcia żadnej decyzji dawno przewyższył potencjalny koszt pomyłki w wybranym wariancie.',
+        'Głównym korzeniem paraliżu jest ukryty, neurotyczny perfekcjonizm — nierealistyczne pragnienie znalezienia decyzji „bezkosztowej”, która zapewni same zyski bez jakichkolwiek strat, wątpliwości czy dyskomfortu.',
+        'ALGORYTM PRZEŁAMYWANIA IMPASU:',
+        '1. Metoda Eliminacji Negatywnej: zamiast szukać opcji najlepszej, odrzuć najpierw opcje najgorsze, zawężając wybór do dwóch możliwości.',
+        '2. Kryterium „Wystarczająco Dobre” (Good Enough): wybierz opcję, która spełnia 80% Twoich kluczowych wymagań.',
+        '3. Narzucenie Sztywnego Terminu: wyznacz twardą godzinę (np. „piątek, godzina 15:00”), po której następuje obligatoryjny wybór — w razie remisu decyduje rzut monetą.',
+        '4. Zdefiniowanie Mikrokroku Testowego: zamiast skakać na głęboką wodę, wykonaj mały, bezpieczny eksperyment sondujący.'
       ]
     },
 
@@ -580,11 +670,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.21',
       title: 'Jak prawidłowo zdefiniować problem? Efekt ramowania (Framing Effect) i sztuka pytań pierwotnych',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Sposób, w jaki sformułujesz pytanie wyjściowe, determinuje zbiór dostępnych odpowiedzi. Jeśli zadasz pytanie wąskie i dychotomiczne: „Czy powinienem rzucić pracę?”, Twój mózg zamyka się w pułapce wyboru zero-jedynkowego.',
-        'Jeśli przekształcisz problem w pytanie otwarte: „W jaki sposób mogę zwiększyć satysfakcję zawodową i zarobki, zachowując stabilność życiową?”, otwierasz przestrzeń dla kilkunastu nowych wariantów (negocjacja warunków, kurs doszkalający, zmiana działu, zlecenia poboczne).',
-        'Zawsze poświęć pierwsze 30% czasu decyzyjnego na precyzyjne i szerokie zdefiniowanie problemu bazowego.'
+        'Sposób, w jaki sformułujesz pytanie wyjściowe, w 90% determinuje zbiór dostępnych odpowiedzi. Zjawisko to w psychologii nosi nazwę efektu ramowania (framing effect).',
+        'Jeśli zadasz pytanie wąskie i uwięzione w fałszywej dychotomii: „Czy powinienem rzucić pracę?”, Twój mózg zamyka się w pułapce zero-jedynkowej: albo rezygnacja i skok w nieznane, albo trwanie w frustracji.',
+        'Jeśli przekształcisz problem w pytanie otwarte oparte na potrzebach: „W jaki sposób mogę zwiększyć satysfakcję zawodową i dochody, zachowując stabilność finansową rodziny?”, otwierasz przestrzeń dla kilkunastu nowych wariantów (renegocjacja warunków, przejście na 4/5 etatu, zmiana działu, kurs wieczorowy, zlecenia freelanserskie w weekendy).',
+        'Zawsze poświęć pierwsze 30% czasu decyzyjnego na precyzyjne, szerokie przeformułowanie problemu bazowego.'
       ]
     },
     {
@@ -593,11 +684,14 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.22',
       title: 'Jak stworzyć możliwe opcje? Myślenie lateralne, poszukiwanie trzeciej drogi i usuwanie fałszywych dychotomii',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Większość ludzi popełnia błąd przedwczesnego domknięcia — widzą tylko dwie skrajne opcje (A lub B) i natychmiast przechodzą do sporu o to, która jest lepsza.',
-        'Tymczasem najlepsze rozwiązania leżą niemal zawsze w strefie opcji C (hybrydowej, kompromisowej lub nowatorskiej). Aby ją znaleźć, zastosuj technikę eliminacji opcji oczywistych: „Gdyby Opcja A i Opcja B były prawnie zakazane, co innego mógłbym zrobić?”.',
-        'Zmuszenie kory przedczołowej do wygenerowania minimum 3 realnych wariantów drastycznie podnosi jakość ostatecznego wyboru.'
+        'Większość ludzi popełnia błąd przedwczesnego domknięcia (premature closure) — dostrzegają tylko dwie najbardziej oczywiste, skrajne opcje (A lub B) i natychmiast przechodzą do sporu o to, która jest lepsza.',
+        'Tymczasem w złożonych problemach życiowych najlepsze rozwiązania leżą niemal zawsze w strefie Opcji C — opcji hybrydowej, kompromisowej lub całkowicie nowatorskiej.',
+        'TECHNIKI GENEROWANIA TRZECIEJ DROGI:',
+        '1. Test Znikających Opcji: „Gdyby Opcja A i Opcja B były fizycznie niemożliwe i prawnie zakazane, co innego mógłbyś zrobić?”. Ta technika natychmiast zmusza korę przedczołową do wyjścia poza utarte schematy.',
+        '2. Opcja Hybrydowa: „W jaki sposób mogę połączyć 30% zalet Opcji A z 70% bezpieczeństwa Opcji B?”.',
+        'Nigdy nie podejmuj decyzji strategicznej, dopóki nie masz przed sobą minimum 3 realnych, jakościowych wariantów.'
       ]
     },
     {
@@ -606,11 +700,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.23',
       title: 'Jak porównywać konsekwencje? Myślenie drugiego i trzeciego rzędu (Second-Order Thinking)',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Myślenie pierwszego rzędu pyta: „Jaki będzie natychmiastowy, bezpośredni skutek mojego wyboru?”. Jest szybkie, proste i powierzchowne (np. „Jeśli zjem ciastko, poczuję przyjemność”).',
-        'Myślenie drugiego i trzeciego rzędu (Howard Marks) pyta: „A co stanie się potem? Jakie będą konsekwencje tych konsekwencji za 6 miesięcy, 2 lata i 5 lat?”.',
-        'Wielkie sukcesy życiowe i zawodowe wynikają z wyboru opcji, które w pierwszym rzędzie niosą wysiłek i dyskomfort (nauka, trening, oszczędzanie), lecz w drugim i trzecim rzędzie przynoszą wykładnicze korzyści i stabilność.'
+        'Myślenie pierwszego rzędu pyta: „Jaki będzie natychmiastowy, bezpośredni skutek mojego wyboru?”. Jest proste, szybkie i powierzchowne (np. „Jeśli wezmę pożyczkę na wakacje, pojadę do ciepłych krajów i poczuję radość”).',
+        'Myślenie drugiego i trzeciego rzędu (Howard Marks, Shane Parrish) pyta: „A co stanie się potem? Jakie będą konsekwencje tych konsekwencji za 6 miesięcy, 2 lata i 5 lat?”. (Np. „W drugim rzędzie będę spłacać raty przez 2 lata, co ograniczy mój budżet na kursy; w trzecim rzędzie brak kursów opóźni mój awans i zwiększy chroniczny stres”).',
+        'Większość wielkich błędów życiowych i biznesowych wynika z wyboru opcji, które w pierwszym rzędzie dają natychmiastową przyjemność i ulgę (prokrastynacja, alkohol, unikanie trudnej rozmowy), lecz w drugim i trzecim rzędzie przynoszą katastrofalne koszty skumulowane.',
+        'Mądrość decyzyjna polega na wybieraniu działań, które w pierwszym rzędzie niosą wysiłek i dyskomfort (trening, nauka, asertywna konfrontacja), lecz w kolejnych rzędach przynoszą wykładnicze zyski i spokój.'
       ]
     },
     {
@@ -619,12 +714,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.24',
       title: 'Decyzje odwracalne i nieodwracalne — Model Drzwi Typu 1 i Drzwi Typu 2 Jeffa Bezosa',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Jeff Bezos zaproponował genialną typologię decyzji biznesowych i osobistych:',
-        'DECYZJE TYPU 1 (Drzwi Jednokierunkowe): Decyzje nieodwracalne lub o potężnych, trudnych do cofnięcia konsekwencjach (np. sprzedaż firmy, narodziny dziecka, poważna operacja). Te decyzje wymagają głębokiej deliberacji, czasu, konsultacji i ostrożności.',
-        'DECYZJE TYPU 2 (Drzwi Dwukierunkowe): Decyzje odwracalne (np. zmiana układu strony internetowej, wypróbowanie nowego hobby, zakup sprzętu z prawem zwrotu). Jeśli decyzja okaże się pomyłką, można po prostu otworzyć drzwi i wrócić do punktu wyjścia.',
-        'Największym błędem decyzyjnym jest traktowanie decyzji Typu 2 jakby były Typem 1 — prowadzi to do paraliżu i marnowania zasobów na drobiazgi.'
+        'Jednym z najbardziej eleganckich i praktycznych modeli podejmowania decyzji jest podział wprowadzony przez Jeffa Bezosa w listach do akcjonariuszy Amazon:',
+        'DECYZJE TYPU 1 (Drzwi Jednokierunkowe): Decyzje nieodwracalne lub skrajnie trudne do cofnięcia (np. sprzedaż firmy, podpisanie 30-letniego kredytu na granicy płynności, narodziny dziecka, poważna operacja chirurgiczna). Przejście przez te drzwi zatrzaskuje je za Tobą. Te decyzje wymagają głębokiej deliberacji, konsultacji z ekspertami, zbierania danych i wielotygodniowej ostrożności.',
+        'DECYZJE TYPU 2 (Drzwi Dwukierunkowe): Decyzje odwracalne (np. wypróbowanie nowego oprogramowania, zmiana układu strony www, zatrudnienie stażysty na 3-miesięczny okres próbny, wyjazd na weekend w nowe miejsce). Jeśli decyzja okaże się błędem, wystarczy po prostu otworzyć drzwi i wrócić do punktu wyjścia przy minimalnym koszcie.',
+        'NAJWIĘKSZY BŁĄD ORGANIZACJI I LUDZI: Traktowanie decyzji Typu 2 tak, jakby były Typem 1! Prowadzi to do powolności, paraliżu i marnowania zasobów na debaty o drobiazgach. Decyzje Typu 2 należy podejmować szybko (przy 70% danych) i korygować w marszu.'
       ]
     },
     {
@@ -633,26 +728,29 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.25',
       title: 'Jak ustalać kryteria decyzji? Bramki nienegocjowalne (Must-Have) i wagi punktowe',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Aby uniknąć subiektywnego dryfowania, profesjonalny proces decyzyjny wymaga ustalenia kryteriów PRZED przystąpieniem do oceny konkretnych wariantów.',
-        'Wyróżniamy dwa poziomy kryteriów: 1. BRAMKI NIENEGOCJOWALNE (Deal-breakers / Must-Have): warunki progowe, których brak natychmiast dyskwalifikuje daną opcję (np. maksymalna cena, brak toksycznych zapisów w umowie); 2. KRYTERIA WAŻONE: parametry podlegające ocenie punktowej (np. lokalizacja, prestiż, elastyczność czasu pracy) z przypisanymi wagami procentowymi.',
-        'W ten sposób oddzielasz chłodne wymogi bezpieczeństwa od preferencji estetycznych i optymalizacyjnych.'
+        'Aby uniknąć subiektywnego dryfowania pod wpływem chwilowych emocji, profesjonalny proces decyzyjny wymaga ustalenia kryteriów PRZED przystąpieniem do oceny konkretnych wariantów.',
+        'KRYTERIA NALEŻY PODZIELIĆ NA DWA POZIOMY:',
+        '1. BRAMKI NIENEGOCJOWALNE (Deal-Breakers / Must-Have): warunki progowe, których brak natychmiast i bezdyskusyjnie dyskwalifikuje daną opcję (np. maksymalny budżet 500 tys. zł, brak toksycznych klauzul w umowie, praca wyłącznie w promieniu 30 km od domu). Jeśli opcja nie spełnia choćby jednej bramki, odpada z konkursu.',
+        '2. KRYTERIA PUNKTOWE (Ważone): parametry, które podlegają ocenie w skali 1–10 (np. prestiż, atmosfera w zespole, perspektywy rozwoju, elastyczność czasu pracy) z przypisanymi wagami procentowymi (suma wag = 100%).',
+        'Dzięki takiemu rozdzieleniu oddzielasz chłodne wymogi elementarnego bezpieczeństwa od elastycznych preferencji optymalizacyjnych.'
       ]
     },
 
-    // BLOK VI — PRAKTYCZNA INTEGRACJA (28.26 - 28.30)
+    // BLOK VI — WIELKIE STUDIA PRZYPADKU I PRAKTYCZNA INTEGRACJA (28.26 - 28.30)
     {
       id: 'sec-28-26',
       pageNumber: 1000,
       sectionNumber: '28.26',
       title: 'Wielkie Studium Przypadku — Dylemat Dwóch Dróg: Zmiana Kariery Krzysztofa',
       category: 'studium-przypadku',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 22,
       caseStudyRef: chapterTwentyEightCaseStudyTrudnaDecyzja,
       paragraphs: [
-        'W tym studium przypadku analizujemy głęboki dylemat Krzysztofa (34 lata), który przez 3 miesiące tkwił w paraliżu decyzyjnym między bezpieczną, lecz wypalającą posadą w korporacji logistycznej a dynamiczną ofertą w startupie technologicznym.',
-        'Zapoznaj się ze szczegółową analizą psychologiczną, dekompozycją błędów poznawczych (awersja do straty, bias status quo) oraz protokołem wyjścia z kryzysu opisanym w interaktywnej karcie powyżej.'
+        'W tym studium przypadku poddajemy drobiazgowej wiwisekcji 3-miesięczny paraliż decyzyjny Krzysztofa (34 lata), starszego specjalisty ds. logistyki, uwięzionego między wypalającą stabilnością a ryzykowną ofertą w startupie AI.',
+        'Zwróć szczególną uwagę na to, w jaki sposób Krzysztof uciekał w mechanizm intelektualizacji (tworzenie 47 kolumn w arkuszu kalkulacyjnym) przed konfrontacją z egzystencjalnym lękiem przed utratą bezpieczeństwa.',
+        'Przeanalizuj interaktywną kartę studium przypadku powyżej: dekompozycję błędów poznawczych (awersja do straty, bias status quo), analizę neurobiologiczną przeciążenia kory dlPFC oraz protokół wyjścia z impasu poprzez zdefiniowanie bufora bezpieczeństwa i odwracalności wyboru.'
       ]
     },
     {
@@ -661,11 +759,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.27',
       title: 'Studium Przypadku — Decyzja pod Presją Czasu: Awaria Systemu Magdy',
       category: 'studium-przypadku',
-      readingTimeMinutes: 19,
+      readingTimeMinutes: 20,
       caseStudyRef: chapterTwentyEightCaseStudyPresjaCzasu,
       paragraphs: [
-        'W drugim studium przypadku przyglądamy się Magdzie — liderce zespołu inżynierii danych, która w ciągu 3 minut musiała podjąć krytyczną decyzję operacyjną w trakcie awarii serwerów podczas Black Friday, pod ostrzałem krzyczącego dyrektora.',
-        'Zwróć uwagę na to, w jaki sposób 30-sekundowa pauza taktyczna i przejście do procedury awaryjnej uchroniły system przed wielomilionową katastrofą.'
+        'Drugie studium przypadku ilustruje dramat operacyjny Magdy — liderki inżynierii danych, która w ciągu 3 minut musiała podjąć krytyczną decyzję technologiczną podczas Black Friday, pod ostrzałem krzyczącego dyrektora handlowego.',
+        'Przeanalizuj zjawisko Action Bias (odruchu bezrefleksyjnego działania) oraz zobacz, jak 30-sekundowa pauza taktyczna i asertywne przejęcie kontroli ocaliły bazy transakcyjne przed wielomilionową katastrofą.',
+        'Wnioski z tego przypadku mają bezpośrednie zastosowanie w każdej sytuacji ostrego kryzysu: od awarii w pracy po nagłe wypadki w życiu prywatnym.'
       ]
     },
     {
@@ -674,11 +773,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.28',
       title: 'Studium Przypadku — Konflikt Emocji i Racjonalnej Analizy: Wybór Mieszkania Tomasza i Ewy',
       category: 'studium-przypadku',
-      readingTimeMinutes: 19,
+      readingTimeMinutes: 20,
       caseStudyRef: chapterTwentyEightCaseStudyEmocjeAnaliza,
       paragraphs: [
-        'Trzecie studium przypadku ilustruje wojnę między twardą kalkulacją w arkuszu kalkulacyjnym Tomasza a intuicyjnym zachwytem estetycznym Ewy przy zakupie pierwszego mieszkania.',
-        'Zobacz, jak odrzucenie walki pozycyjnej i zdefiniowanie wspólnych fundamentalnych wartości pozwoliło parze odnaleźć Opcję C — lokal spełniający 90% wymogów bezpieczeństwa i 85% wymogów klimatu.'
+        'Trzecie studium przypadku odsłania dynamikę konfliktu decyzyjnego w parze: wojnę między chłodnym arkuszem kalkulacyjnym Tomasza a intuicyjną wrażliwością estetyczną Ewy przy zakupie mieszkania na 25-letni kredyt.',
+        'Zobacz, jak próba narzucenia własnej „waluty wartościowania” doprowadziła partnerów na skraj rozstania i jak zastosowanie metody poszukiwania Trzeciej Drogi (Opcji C) pozwoliło zintegrować logikę finansową z potrzebami emocjonalnymi.',
+        'Zapoznaj się z matrycą integrowania wartości nienegocjowalnych opisaną w interaktywnej karcie powyżej.'
       ]
     },
     {
@@ -687,11 +787,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.29',
       title: 'Wielkie Ćwiczenie Praktyczne — Zbuduj Własny System Podejmowania Decyzji i Protokół Pre-Mortem',
       category: 'cwiczenia',
-      readingTimeMinutes: 22,
+      readingTimeMinutes: 25,
       exerciseRef: chapterTwentyEightExerciseDecisionMatrix,
       paragraphs: [
-        'Nadszedł czas na skompletowanie Twojego osobistego protokołu decyzyjnego. Skorzystaj z interaktywnego formularza ćwiczenia 28.1 powyżej, aby przejść przez 4 kroki: od sformułowania pytania otwartego, przez generowanie 3 opcji i wag kryteriów, aż po bezcenny protokół Pre-Mortem (Gary Klein).',
-        'Analiza Pre-Mortem polega na założeniu, że za rok Twoja decyzja poniosła klapę — zidentyfikowaniu potencjalnych przyczyn i wdrożeniu zabezpieczeń już teraz.'
+        'Nadszedł czas na skompletowanie Twojego osobistego, odpornego na kryzys systemu decyzyjnego. Skorzystaj z interaktywnego warsztatu ćwiczenia 28.1 powyżej.',
+        'Przejdź przez 4 kluczowe fazy: 1. Przeformułowanie pytania w postać otwartą; 2. Wygenerowanie minimum 3 wariantów (w tym opcji hybrydowej); 3. Ustalenie 4 wag kryteriów (suma = 100%); 4. Przeprowadzenie bezcennej analizy Pre-Mortem (Gary Klein).',
+        'Analiza Pre-Mortem to najskuteczniejsza znana metoda prewencji porażek decyzyjnych: wyobrażenie sobie, że projekt za rok poniósł całkowitą klapę, zidentyfikowanie przyczyn i wdrożenie bezpieczników już dzisiaj.'
       ]
     },
     {
@@ -700,15 +801,17 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.30',
       title: 'Podsumowanie Rozdziału 28 — Słownik Pojęć, Kluczowe Idee i Most do Rozdziału 29',
       category: 'podsumowanie',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 18,
       paragraphs: [
         'SŁOWNIK KLUCZOWYCH POJĘĆ ROZDZIAŁU 28:',
-        '• DECYZJA — proces psychiczny selekcji, wartościowania i alokacji zasobów w wybrany kierunek przy rezygnacji z alternatyw.',
-        '• KOSZT ALTERNATYWNY (Opportunity Cost) — utracona wartość najlepszej z niewybranych opcji.',
-        '• RYZYKO vs NIEPEWNOŚĆ — sytuacja o mierzalnym rozkładzie prawdopodobieństwa (ryzyko) kontra sytuacja o nieznanych parametrach przyszłości (niepewność Knighta).',
-        '• KOSZTY UTOPIONE (Sunk Costs) — nakłady przeszłe, których nie można cofnąć i które nie powinny wpływać na bieżący wybór.',
-        '• DECYZJE TYPU 1 i TYPU 2 — podział na wybory nieodwracalne (jednokierunkowe) i łatwo odwracalne (dwukierunkowe).',
-        '• MARKERY SOMATYCZNE — cielesne sygnały afektywne wspierające proces wartościowania w korze brzuszno-przyśrodkowej.',
+        '• DECYZJA (Decidere) — wewnętrzny akt poznawczo-afektywny polegający na wartościowaniu, odcięciu alternatyw i alokacji realnych zasobów w wybrany kierunek.',
+        '• KOSZT ALTERNATYWNY (Opportunity Cost) — utracona wartość najlepszej z niewybranych opcji, z której musimy bezpowrotnie zrezygnować.',
+        '• RYZYKO vs NIEPEWNOŚĆ (Knight) — mierzalny rozkład prawdopodobieństw (ryzyko) kontra sytuacja unikalna o nieznanych parametrach przyszłości (niepewność).',
+        '• KOSZTY UTOPIONE (Sunk Costs) — nakłady przeszłe, których nie można odzyskać i które powinny wynosić zero w bieżącej kalkulacji decyzyjnej.',
+        '• DRZWI TYPU 1 i TYPU 2 (Bezos) — podział na wybory nieodwracalne (jednokierunkowe) i łatwo odwracalne (dwukierunkowe).',
+        '• MARKERY SOMATYCZNE (Damasio) — cielesne sygnały afektywne wspierające proces wartościowania w korze brzuszno-przyśrodkowej (vmPFC).',
+        '• HEURYSTYKA SATYSFAKCJONOWANIA (Simon) — wybór opcji spełniającej kryteria progowe (wystarczająco dobrej) zamiast paraliżującej maksymalizacji.',
+        '• PRE-MORTEM (Klein) — technika antycypacji porażki przed podjęciem ostatecznego działania w celu zaprojektowania bezpieczników.',
         'PYTANIA SPRAWDZAJĄCE I REFLEKSYJNE: 1. Jak odróżniasz w swoim życiu dylematy odwracalne od nieodwracalnych? 2. W jakich sytuacjach dajesz się złapać w pułapkę kosztów utopionych? 3. Jakie twarde zabezpieczenia stosujesz, podejmując decyzje pod presją czasu?',
         'MOST DO ROZDZIAŁU 29: Kiedy podejmiesz już decyzję o swoich celach i wartościach, stajesz przed wyzwaniem obrony tych wyborów w środowisku społecznym. W kolejnym rozdziale zbadamy, jak stawiać zdrowe granice osobiste, by nie pozwolić innym na dewastację Twojej autonomii decyzyjnej.'
       ]
