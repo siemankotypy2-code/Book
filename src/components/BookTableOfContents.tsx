@@ -114,7 +114,7 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
             onClick={() => setVolumeFilter('tom3')}
             className={`px-2.5 py-1 rounded-md transition whitespace-nowrap ${volumeFilter === 'tom3' ? 'bg-amber-800 text-white font-bold' : 'bg-white/80 text-stone-700 hover:bg-white'}`}
           >
-            Tom III (17-27)
+            Tom III (17-30)
           </button>
         </div>
 

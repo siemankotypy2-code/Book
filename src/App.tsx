@@ -226,11 +226,11 @@ export default function App() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 pt-6 border-t border-white/10">
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Zakres Dzieła</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">27 Rozdziałów (320 sekcji)</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">{allChapters.length} Rozdziałów</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Struktura Tomów</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">Tom I (1-5) • Tom II (6-16) • Tom III (17-27)</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">Tom I (1-5) • Tom II (6-16) • Tom III (17-30)</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Laboratoria & Egzaminy</span>

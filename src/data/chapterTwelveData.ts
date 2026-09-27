@@ -3,629 +3,674 @@ import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
 export const chapterTwelveExamQuestions: ExamQuestion[] = [
   {
     id: 1,
-    question: 'W badaniach Ann Graybiel w MIT nad zwojami podstawy mózgu (Basal Ganglia), proces powstawania nawyku polega na tzw. „Grupowaniu Behawioralnym” (Chunking). Co dzieje się z aktywnością kory przedczołowej, gdy zachowanie staje się w pełni nawykowe (Sekcja 12.1)?',
-    topic: 'Neurobiologia Nawyków: Zwoje Podstawy vs Kora Przedczołowa',
+    question: 'Dlaczego w psychologii motywacji twierdzenie „jeśli ktoś nie działa, to znaczy, że mu nie zależy” jest uznawane za zbyt uproszczone?',
+    topic: 'Luka między intencją a działaniem',
     sectionRef: 'Sekcja 12.1',
     options: [
-      { label: 'A', text: 'Kora przedczołowa pracuje na maksymalnych obrotach przez cały czas trwania czynności.', isCorrect: false },
-      { label: 'B', text: 'Aktywność kory nowej gwałtownie spada w trakcie trwania rutyny — kora włącza się na początku (przy wskazówce) i na końcu (przy nagrodzie), a cała sekwencja w środku jest wykonywana przez automatyczne zwoje podstawy bez udziału świadomej woli.', isCorrect: true },
-      { label: 'C', text: 'Zwoje podstawy mózgu ulegają całkowitemu zanikowi.', isCorrect: false },
-      { label: 'D', text: 'Mózg przestaje zużywać glukozę przez kolejne 24 godziny.', isCorrect: false }
+      { label: 'A', text: 'Ponieważ ludzie zawsze działają zgodnie ze swoimi deklaracjami, o ile wiedzą, jak coś zrobić.', isCorrect: false },
+      { label: 'B', text: 'Ponieważ pomiędzy pragnieniem a wykonaniem działania znajduje się skomplikowany system procesów: oczekiwanie wysiłku, lęk przed porażką, ocena kompetencji i stymulacja natychmiastowymi nagrodami.', isCorrect: true },
+      { label: 'C', text: 'Ponieważ motywacja zależy wyłącznie od poziomu glukozy we krwi.', isCorrect: false },
+      { label: 'D', text: 'Ponieważ brak działania wynika zawsze z genetycznych uwarunkowań osobowości.', isCorrect: false }
     ],
-    explanation: 'Ewolucyjnym celem nawyku jest oszczędzanie cennej energii metabolicznej kory przedczołowej. Zwoje podstawy przekształcają skomplikowany ciąg ruchów (np. prowadzenie auta, mycie zębów) w jeden automatyczny pakiet, uwalniając uwagę na inne zadania.',
-    keyTakeaway: 'Nawyk to sposób mózgu na uśpienie kory przedczołowej w celu oszczędzania glukozy.'
+    explanation: 'Wysoka wartość celu może współistnieć z niską gotowością do podjęcia konkretnego kroku, gdy przewidywany koszt emocjonalny lub poznawczy wydaje się w danym momencie zbyt duży.',
+    keyTakeaway: '„Chcę” nie jest równoznaczne z „robię” — intencja wymaga przełożenia na konkretne warunki wykonania.'
   },
   {
     id: 2,
-    question: 'W „Złotej Regule Zmiany Nawyków” Charlesa Duhigga (Sekcja 12.8 i 12.9), aby trwale wyeliminować destrukcyjny nawyk (np. sięganie po słodycze pod wpływem stresu), należy:',
-    topic: 'Złota Reguła Zmiany Nawyku',
-    sectionRef: 'Sekcja 12.9',
+    question: 'W jaki sposób dekonstrukcja celu na konkretne zachowania zmniejsza dystans między intencją a działaniem (Sekcja 12.2)?',
+    topic: 'Cel a konkretne działanie',
+    sectionRef: 'Sekcja 12.2',
     options: [
-      { label: 'A', text: 'Próbować całkowicie stłumić impuls samą siłą woli i karaniem samego siebie.', isCorrect: false },
-      { label: 'B', text: 'Zachować tę samą wskazówkę (stres o 15:00) i tę samą nagrodę biologiczną (ulga emocjonalna, spadek kortyzolu), ale wymienić samą RUTYNĘ w środku (np. zamiast pączka — 5 minut szybkiego spaceru lub rozmowa z przyjacielem).', isCorrect: true },
-      { label: 'C', text: 'Przestać jeść jakiekolwiek posiłki do końca tygodnia.', isCorrect: false },
-      { label: 'D', text: 'Zmienić nazwisko i wyjechać za granicę.', isCorrect: false }
+      { label: 'A', text: 'Poprzez zastąpienie ogólnego obrazu rezultatu („Zdam egzamin”) precyzyjnym skryptem czynności w czasie i przestrzeni („O 17:00 usiądę przy biurku i rozwiążę 10 zadań”).', isCorrect: true },
+      { label: 'B', text: 'Poprzez powtarzanie pozytywnych afirmacji przed pójściem spać.', isCorrect: false },
+      { label: 'C', text: 'Poprzez rezygnację z wyznaczania jakichkolwiek terminów.', isCorrect: false },
+      { label: 'D', text: 'Poprzez wyznaczanie celów tak trudnych, by wywołać maksymalny stres mobilizujący.', isCorrect: false }
     ],
-    explanation: 'Starych ścieżek neuronalnych nie da się wykasować jak pliku z dysku. Można je jedynie nadpisać nową, bardziej adaptacyjną rutyną, która dostarcza tę samą nagrodę afektywną.',
-    keyTakeaway: 'Złego nawyku nie da się zlikwidować — złe zachowanie można jedynie ZASTĄPIĆ innym.'
+    explanation: 'Mózg nie potrafi wykonać „celu końcowego”; potrafi wykonać jedynie konkretną mikroczynność. Przejście od celu do planu i konkretnego zachowania usuwa niepewność decyzyjną.',
+    keyTakeaway: 'Cel wskazuje kierunek, ale to konkretne zachowanie uruchamia działanie.'
   },
   {
     id: 3,
-    question: 'W koncepcji „Nawyków Opartych na Tożsamości” (Identity-Based Habits) Jamesa Cleara (Sekcja 12.11), najgłębsza i najtrwalsza zmiana zachowania zachodzi wtedy, gdy:',
-    topic: 'Tożsamość a Nawyki Behawioralne',
-    sectionRef: 'Sekcja 12.11',
+    question: 'Dlaczego prokrastynacja jest w swej istocie mechanizmem regulacji emocji, a nie zwykłym lenistwem (Sekcja 12.5)?',
+    topic: 'Prokrastynacja jako system',
+    sectionRef: 'Sekcja 12.5',
     options: [
-      { label: 'A', text: 'Skupiasz się wyłącznie na tym, co chcesz OSIĄGNĄĆ (np. „chcę schudnąć 10 kg”).', isCorrect: false },
-      { label: 'B', text: 'Skupiasz się na tym, KIM CHCESZ SIĘ STAĆ, a każdy pojedynczy nawyk traktujesz jako głos poparcia oddany na nową tożsamość („Jestem osobą, która dba o swoje ciało i nie opuszcza treningów”).', isCorrect: true },
-      { label: 'C', text: 'Płacisz trenerowi personalnemu za krzyczenie na ciebie.', isCorrect: false },
-      { label: 'D', text: 'Wytatuujesz sobie listę zadań na przedramieniu.', isCorrect: false }
+      { label: 'A', text: 'Ponieważ osoba odkładająca zadanie nie wie, co ma zrobić.', isCorrect: false },
+      { label: 'B', text: 'Ponieważ odłożenie zadania wywołującego napięcie, niepewność lub lęk przed oceną przynosi natychmiastową ulgę emocjonalną, co wzmacnia wzorzec unikania na przyszłość.', isCorrect: true },
+      { label: 'C', text: 'Ponieważ prokrastynacja występuje tylko u osób o niskim ilorazie inteligencji.', isCorrect: false },
+      { label: 'D', text: 'Ponieważ prokrastynacja polega wyłącznie na braku higieny snu.', isCorrect: false }
     ],
-    explanation: 'Cele mówią o tym, co chcesz dostać; tożsamość mówi o tym, kim jesteś. Kiedy niepalący odmawia papierosa, mówi: „Dziękuję, nie palę”. Kiedy rzucający mówi: „Dziękuję, próbuję rzucić”, wciąż identyfikuje się jako palacz zmuszający się do abstynencji.',
-    keyTakeaway: 'Najwyższą formą nawyku jest tożsamość: nie robisz tego z wysiłku — robisz to, bo taki jesteś.'
+    explanation: 'Mózg uczy się, że odsunięcie trudnego zadania przynosi szybką spadek napięcia i nagrodę w postaci odwrócenia uwagi (np. telefonem), co utrwala pętlę unikania.',
+    keyTakeaway: 'Prokrastynacja jest krótkoterminową ucieczką przed dyskomfortem emocjonalnym.'
   },
   {
     id: 4,
-    question: 'Dlaczego w projektowaniu środowiska (Environment Design) usunięcie wskazówki wizualnej jest 10 razy skuteczniejsze niż walka z pokusą (Sekcja 12.7)?',
-    topic: 'Architektura Wyboru i Wskazówki Środowiskowe',
-    sectionRef: 'Sekcja 12.7',
+    question: 'Na czym polega różnica między kontrolą impulsu a kontrolą środowiska w samokontroli (Sekcja 12.6)?',
+    topic: 'Projektowanie środowiska vs siła woli',
+    sectionRef: 'Sekcja 12.6',
     options: [
-      { label: 'A', text: 'Ludzie z natury są niewidomi na pokusy.', isCorrect: false },
-      { label: 'B', text: 'Samokontrola to ograniczony zasób metaboliczny. Jeśli miska z cukierkami stoi na Twoim biurku, Twój mózg musi 50 razy w ciągu dnia powiedzieć „nie”, co wyczerpuje korę nową. Schowanie miski do szafy eliminuje konieczność podejmowania walki.', isCorrect: true },
-      { label: 'C', text: 'Słodycze w ciemności tracą kalorie.', isCorrect: false },
-      { label: 'D', text: 'Wskazówki środowiskowe działają tylko na małe dzieci.', isCorrect: false }
+      { label: 'A', text: 'Kontrola impulsu polega na usunięciu rozpraszaczy z pokoju, a kontrola środowiska na walce z pokusą.', isCorrect: false },
+      { label: 'B', text: 'Kontrola impulsu polega na ciągłym opieraniu się pokusie siłą woli, podczas gdy kontrola środowiska zmienia sytuację tak, by wyeliminować konieczność podejrzewania pokusy.', isCorrect: true },
+      { label: 'C', text: 'Nie ma żadnej różnicy merytorycznej między tymi pojęciami.', isCorrect: false },
+      { label: 'D', text: 'Kontrola środowiska działa tylko u dzieci, a kontrola impulsu u dorosłych.', isCorrect: false }
     ],
-    explanation: 'Ludzie o rzekomo „najsilniejszej woli” w rzeczywistości używają jej najrzadziej — ponieważ tak zaprojektowali swoje otoczenie, by nie wystawiać się na pokusy. Dyscyplina to architektura przestrzeni.',
-    keyTakeaway: 'Nie bądź bohaterem walczącym z pokusą — bądź mądrym architektem swojego pokoju.'
+    explanation: 'Osoby osiągające wysokie wyniki nie polegają wyłącznie na nieustannym wysiłku woli — projektują swoje otoczenie w sposób, który redukuje liczbę pokus i zderzeń decyzyjnych.',
+    keyTakeaway: 'Nie musisz pokonywać każdej przeszkody siłą woli — mądrzej jest usunąć ją z pola widzenia.'
   },
   {
     id: 5,
-    question: 'Na czym polega zasada „Nigdy nie opuszczaj dwóch dni z rzędu” w budowaniu ciągłości nawyku (Sekcja 12.12)?',
-    topic: 'Zarządzanie Porażką i Ciągłość Nawykowa',
-    sectionRef: 'Sekcja 12.12',
+    question: 'Co dzieje się ze względu na zjawisko dyskontowania przyszłości w wyborze między nagrodą natychmiastową a przyszłą korzyścią (Sekcja 12.4)?',
+    topic: 'Odraczanie gratyfikacji',
+    sectionRef: 'Sekcja 12.4',
     options: [
-      { label: 'A', text: 'Jeśli opuścisz jeden dzień, musisz następnego dnia ćwiczyć przez 8 godzin bez przerwy.', isCorrect: false },
-      { label: 'B', text: 'Jeden opuszczony dzień to wypadek losowy; dwa opuszczone dni z rzędu to początek nowego, destrukcyjnego nawyku zaniechania. W gorszy dzień liczy się zrobienie choćby wersji awaryjnej (np. 1 minuta zamiast 30 minut).', isCorrect: true },
-      { label: 'C', text: 'Po opuszczeniu jednego dnia cały licznik nawyku zeruje się bezpowrotnie.', isCorrect: false },
-      { label: 'D', text: 'Należy zapłacić karę finansową na konto organizacji charytatywnej.', isCorrect: false }
+      { label: 'A', text: 'Przyszła korzyść jest w umyśle subiektywnie pomniejszana, co sprawia, że mniejsza, ale natychmiastowa nagroda zyskuje przewagę w decyzji.', isCorrect: true },
+      { label: 'B', text: 'Ludzie zawsze wybierają większą nagrodę odległą w czasie.', isCorrect: false },
+      { label: 'C', text: 'Wartość nagrody wzrasta liniowo z każdym dniem oczekiwania.', isCorrect: false },
+      { label: 'D', text: 'Mózg nie odróżnia teraźniejszości od przyszłości.', isCorrect: false }
     ],
-    explanation: 'Porażka w jeden dzień nie niszczy śladu pamięciowego nawyku. Jednak drugi dzień zaniechania uruchamia nową pętlę bezwładności i potwierdza tożsamość osoby, która „jednak nie dała rady”. Utrzymaj ciągłość za wszelką cenę, nawet symbolicznie.',
-    keyTakeaway: 'W zły dzień nie chodzi o jakość treningu — chodzi o ocalenie tożsamości sportowca.'
+    explanation: 'Im bardziej odległa jest korzyść (np. egzamin za miesiąc, zdrowie za rok), tym mniejsza jest jej natychmiastowa wartość psychologiczna w starciu z szybkim bodźcem (np. telefon teraz).',
+    keyTakeaway: 'Walka z dyskontowaniem wymaga przybliżenia poczucia postępu i nagrody do teraźniejszości.'
   },
   {
     id: 6,
-    question: 'Czym są „Nawyki Kluczowe” (Keystone Habits) opisane przez Charlesa Duhigga (Sekcja 12.5)?',
-    topic: 'Nawyki Kluczowe (Keystone Habits)',
-    sectionRef: 'Sekcja 12.5',
+    question: 'W historii Michała (Sekcja 12.8), w jaki sposób przerwana została pętla unikania nauki przed egzaminem?',
+    topic: 'Studia przypadku — zmiana systemu',
+    sectionRef: 'Sekcja 12.8',
     options: [
-      { label: 'A', text: 'Nawykami noszenia kluczy zawsze w lewej kieszeni.', isCorrect: false },
-      { label: 'B', text: 'Pojedynczymi nawykami, które po wdrożeniu wywołują efekt domina i automatycznie pociągają za sobą pozytywne zmiany w wielu innych sferach życia (np. regularny trening fizyczny poprawia dietę, sen i skupienie w pracy).', isCorrect: true },
-      { label: 'C', text: 'Nawykami, które można kupić w sklepie internetowym.', isCorrect: false },
-      { label: 'D', text: 'Nawykami występującymi wyłącznie u kadry zarządzającej.', isCorrect: false }
+      { label: 'A', text: 'Michał zaczął powtarzać, że ma nieskończoną motywację i zakazał sobie odpoczynku.', isCorrect: false },
+      { label: 'B', text: 'Michał zmienił strukturę działania: rozbił materiał na małe części, wyznaczył stałą godzinę, odłożył telefon poza pokój i ustalił krótki, 25-minutowy blok nauki.', isCorrect: true },
+      { label: 'C', text: 'Michał poczekał na ostatnie 24 godziny przed egzaminem, by wykorzystać maksymalny stres.', isCorrect: false },
+      { label: 'D', text: 'Michał zatrudnił osobistego trenera, który pilnował go przez całą dobę.', isCorrect: false }
     ],
-    explanation: 'Nawyki kluczowe przebudowują strukturę tożsamości. Kiedy zaczynasz regularnie ćwiczyć, Twój mózg zaczyna postrzegać Cię jako osobę dbającą o zdrowie, co bez wysiłku eliminuje śmieciowe jedzenie i alkohol.',
-    keyTakeaway: 'Nie musisz zmieniać wszystkiego naraz — znajdź jeden nawyk kluczowy, a reszta ułoży się sama.'
+    explanation: 'Zmiana nie nastąpiła przez abstrakcyjne „zwiększenie motywacji”, lecz przez modyfikację środowiska i zmniejszenie progu rozpoczęcia pierwszej czynności.',
+    keyTakeaway: 'Kiedy system działania ulega poprawie, gotowość do podjęcia wysiłku wzrasta automatycznie.'
   },
   {
     id: 7,
-    question: 'Na czym polega technika „Łączenia Nawyków” (Habit Stacking) opracowana przez BJ Fogga i Jamesa Cleara (Sekcja 12.6)?',
-    topic: 'Łączenie Nawyków (Habit Stacking)',
-    sectionRef: 'Sekcja 12.6',
+    question: 'Jaka jest rola poczucia postępu w podtrzymywaniu działania (Sekcja 12.7)?',
+    topic: 'Poczucie postępu i informacja zwrotna',
+    sectionRef: 'Sekcja 12.7',
     options: [
-      { label: 'A', text: 'Wykonywaniu 5 różnych czynności jednocześnie podczas jazdy na rowerze.', isCorrect: false },
-      { label: 'B', text: 'Wykorzystaniu istniejącego, silnego nawyku jako kotwicy i wskazówki dla nowego zachowania według wzoru: „Zaraz po [obecny nawyk], zrobię [nowy nawyk]”.', isCorrect: true },
-      { label: 'C', text: 'Układaniu książek o samorozwoju w stosy na podłodze.', isCorrect: false },
-      { label: 'D', text: 'Piciu trzech kaw pod rząd każdego ranka.', isCorrect: false }
+      { label: 'A', text: 'Poczucie postępu nie ma żadnego wpływu na zaangażowanie.', isCorrect: false },
+      { label: 'B', text: 'Widoczna informacja zwrotna o zmniejszaniu dystansu do celu wzmacnia poczucie kompetencji i obniża odczuwany koszt kontynuowania pracy.', isCorrect: true },
+      { label: 'C', text: 'Poczucie postępu działa wyłącznie wtedy, gdy osiągnie się 100% celu końcowego.', isCorrect: false },
+      { label: 'D', text: 'Poczucie postępu osłabia motywację, bo wywołuje samozadowolenie.', isCorrect: false }
     ],
-    explanation: 'Najtrudniejszym elementem nowego nawyku jest pamiętanie o wskazówce. Połączenie nowego zachowania ze starym (np. „Gdy tylko włączę ekspres do kawy rano, zrobię 10 przysiadów”) wykorzystuje gotowe autostrady synaptyczne.',
-    keyTakeaway: 'Podepnij nowy nawyk pod stary pociąg, który już pędzi po torach.'
+    explanation: 'Człowiek potrzebuje wiedzieć nie tylko, czy osiągnął cel końcowy, ale również czy dzisiejszy wysiłek rzeczywiście przybliża go do rezultatu.',
+    keyTakeaway: 'Mierzalne etapy i informacja zwrotna karmią poczucie kompetencji i chronią przed zniechęceniem.'
   }
 ];
 
-export const chapterTwelveCaseStudySmoking: CaseStudy = {
-  id: 'cs-ch12-palenie-praca',
-  title: 'Dymna Przerwa: Tomasz i Prawdziwa Nagroda Papierosa',
-  subtitle: 'Jak 28-letni programista odkrył, że nie jest uzależniony od nikotyny, lecz od ucieczki od biurka',
-  protagonist: 'Tomasz, 28 lat, Full-Stack Developer',
-  context: 'Biuro firmy informatycznej, 14:30, po 4 godzinach debugowania kodu.',
+export const chapterTwelveCaseStudyMichal: CaseStudy = {
+  id: 'cs-ch12-michal-egzamin',
+  title: 'Pętla Odłączonego Działania: Michał i Egzamin za Miesiąc',
+  subtitle: 'Anatomia racjonalizacji, paraliżu przed wysiłkiem i systemowej przebudowy procesu uczenia się',
+  protagonist: 'Michał, 17 lat, uczeń szkoły średniej',
+  context: 'Pokój młodzieżowy, 16:30, miesiąc przed kluczowym egzaminem końcowym.',
   story: [
-    'Tomasz wypalał paczkę papierosów dziennie. Od dwóch lat próbował rzucić: żuł gumy nikotynowe, naklejał plastry, czytał poradniki. Wszystko kończyło się fiaskiem przy pierwszym trudniejszym sprincie programistycznym.',
-    'Pewnego popołudnia, po kolejnej awarii serwera, Tomasz poczuł nieznośne ciśnienie w skroniach. Rzucił myszką, wstał i poszedł na schody ewakuacyjne na dymka. Zapalając papierosa, wziął głęboki oddech, spojrzał na chmury za oknem, a po chwili dołączył do niego kolega z innego zespołu, z którym uciął 5-minutową, pełną śmiechu pogawędkę.',
-    'Wracając do biurka, Tomasz poczuł spokój. Po raz pierwszy w życiu zadał sobie precyzyjne pytanie z psychologii behawioralnej: „Jaka była FAKTYCZNA nagroda biologiczna tej czynności?”.',
-    'Zrobił audyt pętli: Wskazówką nie był brak nikotyny we krwi — wskazówką było zmęczenie oczu, przebodźcowanie monitorem i samotność. Prawdziwą nagrodą były: głęboki oddech przeponowy na świeżym powietrzu, ruch fizyczny po schodach oraz 5 minut kontaktu społecznego bez ekranu! Papieros był jedynie pretekstem, jedynym społecznie akceptowanym biletem na 10 minut przerwy w korporacji.',
-    'Tomasz wdrożył Złotą Regułę Duhigga: zachował wskazówkę (zmęczenie o 14:00) i nagrodę (oddech, schody, pogawędka), ale wyrzucił papierosa. Kupił butelkę z filtrem na wodę. O 14:00 wstawał, schodził na parter do ogrodu biurowego, robił 3 głębokie wdechy i rozmawiał z kimś na patio. W ciągu miesiąca rzucił palenie bez ani jednego objawu głodu nikotynowego.'
+    'Michał wiedział, że egzamin za miesiąc zdecyduje o jego dostaniu się na wymarzony kierunek studiów. BARDZO chciał zdać go na wysoki wynik. Każdego wieczora powtarzał sobie: „Zależy mi na tym. To mój główny cel”.',
+    'Jednak każdego popołudnia scenariusz wyglądał identycznie: wracał ze szkoły zmęczony, siadał na łóżku z intencją „tylko na 5 minut sprawdzę telefon”, po czym spędzał dwie godziny na oglądaniu krótkich filmów. Gdy czuł pierwsze ukłucie winy, mówił sobie: „Przecież jest jeszcze dużo czasu, zacznę jutro od rana”.',
+    'To zdanie było klasyczną racjonalizacją — mechanizmem obronnym zmniejszającym nieprzyjemne napięcie tu i teraz. Unikanie nauki przynosiło chwilową ulgę od wyobrażonego trudnego wysiłku i lęku przed konfrontacją ze złą wiedzą.',
+    'Po dwóch tygodniach ucieczki zaległość urosła. Wraz z mniejszą ilością czasu wzrósł stres. A im większy stres, tym silniejsza potrzeba natychmiastowej ulgi i tym większa chęć ucieczki w telefon. Powstała pętla samonapędzającego się unikania.',
+    'Przełom nastąpił, gdy Michał przestał czekać na nadejście „wielkiej motywacji” i zreorganizował system działania: wyznaczył konkretny blok (17:00–17:25), odniósł telefon do drugiego pokoju, rozbił materiał na 5 mniejszych działów i zaplanował pierwsze, bezdyskusyjnie łatwe zadanie na start. Po 3 dniach zobaczył pierwszy mierzalny postęp, a lęk ustąpił miejsca poczuciu kontroli.'
   ],
-  decisionTaken: 'Tomasz zdekodował ukrytą nagrodę nawyku i zastąpił rytuał tytoniowy spacerem po schodach z butelką wody.',
-  whatProtagonistSaw: 'Widział w sobie beznadziejnego nałogowca chemicznie uzależnionego od nikotyny.',
-  whatWasMissed: 'Że papieros był jedynie fizycznym nośnikiem dla głębokiej potrzeby regulacji sensorycznej i odpoczynku kory wzrokowej.',
+  decisionTaken: 'Michał przestał polegać na deklaracjach słownych i sile woli, a stworzył zewnętrzny system wykonawczy oparty na jasnym pierwszym kroku i kontroli środowiska.',
+  whatProtagonistSaw: 'Michał widział w sobie osobę „bez charakteru” i „leniwa”, która nie potrafi się zmobilizować.',
+  whatWasMissed: 'Że jego problem nie tkwił w braku pragnienia sukcesu, lecz w braku przejścia od celu końcowego do konkretnej czynności oraz w łatwej dostępności natychmiastowej ulgi.',
   psychologicalAnalysis: {
-    coreMechanism: 'Złota Reguła Zmiany Nawyku (Duhigg) i demaskowanie ukrytej nagrody w pętli zwojów podstawy mózgu.',
+    coreMechanism: 'Systemowa pętla prokrastynacji napędzana unikaniem dyskomfortu emocjonalnego i wzmacniana natychmiastową nagrodą ze smartfona.',
     cognitiveBiases: [
-      { name: 'Mylenie nośnika z nagrodą', description: 'Przekonanie, że ulgę przynosi dym tytoniowy, podczas gdy przynosił ją głęboki oddech i zmiana otoczenia.', impact: 'Poczucie bezsilności wobec substancji.' }
+      { name: 'Dyskontowanie przyszłości', description: 'Przecenianie natychmiastowej ulgi ze scrollowania w stosunku do odległej nagrody ze zdanego egzaminu.', impact: 'Ciągłe odkładanie pracy.' },
+      { name: 'Racjonalizacja', description: 'Używanie usprawiedliwień typu „mam jeszcze czas”, aby znieczulić poczucie winy.', impact: 'Podtrzymywanie bezczynności.' }
     ],
     defenseMechanisms: [
-      { name: 'Racjonalizacja nałogu', explanation: '„Palenie pomaga mi lepiej myśleć przy kodowaniu”.' }
+      { name: 'Unikanie afektywne', explanation: 'Ucieczka od zadania wywołującego niepokój w stronę bezpiecznych bodźców rozpraszających.' }
     ],
-    emotionalDynamic: 'Ucieczka przed klaustrofobią open space’u i monotonią pracy umysłowej.'
+    emotionalDynamic: 'Napięcie przed wysiłkiem → ucieczka w telefon → ulga → poczucie winy → narastający stres → powtórzenie pętli.'
   },
   decisionProcessAnalysis: {
-    trigger: 'Błąd w kodzie i zmęczenie kognitywne o 14:30.',
-    attentionFocus: 'Napięcie w karku i chęć natychmiastowego odejścia od biurka.',
-    interpretation: '„Muszę zapalić, bo inaczej eksploduję”.',
-    emotion: 'Frustracja, przebodźcowanie, znużenie.',
-    impulse: 'Sięgnąć do kieszeni po zapalniczkę.',
-    action: 'Wyjście do ogrodu z butelką wody zamiast paczki papierosów.',
-    consequence: 'Trwałe uwolnienie od nałogu, oszczędność 600 zł miesięcznie i lepsza wydolność tlenowa.'
+    trigger: 'Powrót ze szkoły i widok podręcznika na biurku.',
+    attentionFocus: 'Przewidywany trud i nieprzyjemne napięcie.',
+    interpretation: '„To będzie męczące i trudne, nie mam teraz siły”.',
+    emotion: 'Niepokój, znużenie, przytłoczenie.',
+    impulse: 'Sięgnąć po telefon dla odwrócenia uwagi.',
+    action: 'Oglądanie filmów przez 2 godziny.',
+    consequence: 'Chwilowa ulga, narastająca zaległość i większy stres kolejnego dnia.'
   },
   neurobiologicalAnalysis: {
     brainRegions: [
-      { region: 'Zwoje podstawy (Prążkowie)', role: 'Wyzwalanie automatycznego skryptu sięgania po ogień', activationState: 'Przekierowane na nowy wzorzec sięgania po butelkę' },
-      { region: 'Kora wyspy (Insula)', role: 'Rejestracja wewnętrznych sygnałów somatycznych głodu tlenowego', activationState: 'Ukojona przez oddechy przeponowe' }
+      { region: 'Kora przedczołowa', role: 'Planowanie i hamowanie impulsów', activationState: 'Przeciążona i wyciszona po całym dniu w szkole' },
+      { region: 'Układ nagrody (Prążkowie)', role: 'Poszukiwanie szybkiej dopaminy', activationState: 'Aktywowany przez powiadomienia w telefonie' }
     ],
     neurotransmitters: [
-      { name: 'Dopamina i acetylocholina', roleInScenario: 'Dopamina została powiązana ze spacerem po schodach zamiast z dymem tytoniowym' }
+      { name: 'Dopamina i kortyzol', roleInScenario: 'Kortyzol wywoływał niepokój przed zadaniem, a dopamina ze smartfona dawała szybką ucieczkę.' }
     ],
     biologicalTimeline: [
-      { timeMs: '14:30', process: 'Sygnał zmęczenia oczu aktywuje nawykową chęć wstania.' },
-      { timeMs: '14:35', process: 'Wdech świeżego powietrza na patio wygasza napięcie w układzie współczulnym.' }
+      { timeMs: '16:30', process: 'Sygnał niepokoju uruchamia odruch sięgnięcia po ekran.' },
+      { timeMs: '16:31', process: 'Pierwsza rolka wyzwala mikro-wyrzut dopaminy i spadek kortyzolu (ulga).' }
     ]
   },
   influenceAndManipulation: {
     tacticsUsed: [],
     counterMeasures: [
-      { step: 'Dekonstrukcja Nagrody Ukrytej', script: '„Czego tak naprawdę potrzebuje teraz mój organizm? Nikotyny, czy po prostu 5 minut bez patrzenia w ekran?”.', rationale: 'Ujawnia prawdziwą biologiczną potrzebę.' }
+      { step: 'Twarda Redukcja Tarcza', script: 'Telefon opuszcza pokój na czas bloku nauki.', rationale: 'Eliminuje natychmiastowy nośnik ucieczki emocjonalnej.' }
     ]
   },
-  alternativePath: 'Gdyby Tomasz nadal walczył „silną wolą”, siedząc przy biurku i zakazując sobie palenia, po 3 dniach uległby frustracji i wypalił 5 papierosów pod rząd.',
-  readerQuestion: 'Jaki Twój zły nawyk (podjadanie, social media, kawa) jest w rzeczywistości wołaniem Twojego ciała o przerwę i oddech?',
-  keyTakeaway: 'Nie walcz z potrzebą stojącą za nawykiem — potrzeba jest zawsze zdrowa. Zmień tylko sposób, w jaki ją zaspokajasz.'
+  alternativePath: 'Gdyby Michał nie zmienił struktury działania, przez kolejne tygodnie tkwiłby w poczuciu winy, aż do panicznego zarywania nocy przed samym egzaminem ze słabym rezultatem.',
+  readerQuestion: 'W jakich sytuacjach powtarzasz sobie „zacznę od jutra”, aby znieczulić chwilowe napięcie przed trudnym zadaniem?',
+  keyTakeaway: 'Nie walcz z brakiem motywacji siłą woli — obniż próg pierwszego kroku i usuń z pola widzenia źródła natychmiastowej ulgi.'
 };
 
-export const chapterTwelveCaseStudyPhoneJulia: CaseStudy = {
-  id: 'cs-ch12-telefon-julia',
-  title: 'Mikro-Nuda i Kciuk: Julia i 150 Sprawdzeń Ekranu',
-  subtitle: 'Jak 19-letnia studentka utraciła zdolność czytania książek przez automatyzm sięgania po smartfon',
-  protagonist: 'Julia, 19 lat, studentka psychologii',
-  context: 'Pokój w mieszkaniu studenckim, próba przeczytania 20 stron podręcznika akademickiego.',
-  story: [
-    'Julia kochała książki w liceum. Potrafiła spędzić całą niedzielę z powieścią. Jednak na pierwszym roku studiów zauważyła przerażającą zmianę: nie była w stanie przeczytać dwóch stron tekstu bez sięgnięcia po telefon.',
-    'Aplikacja monitorująca czas ekranowy pokazała bezlitosną prawdę: Julia odblokowywała telefon średnio 154 razy na dobę! Najbardziej uderzające było to, że w 80% przypadków działo się to całkowicie poza jej świadomością.',
-    'Wystarczyła mikrosekunda trudniejszego akapitu, moment zawahania przy pisaniu notatki czy 3 sekundy oczekiwania na zagotowanie wody w czajniku — jej dłoń sama, jak sterowana magnesem, wędrowała do kieszeni, odblokowywała ekran i kciuk otwierał Instagrama lub TikToka.',
-    'To był nawyk atomowy. Wskazówką była MIKRO-NUDA lub lekki dyskomfort kognitywny. Rutyną było dotknięcie ekranu. Nagrodą — mikro-zastrzyk dopaminy z nowego powiadomienia.',
-    'Julia zastosowała technikę Łączenia Nawyków (Habit Stacking) i Radykalnego Tarcia: kupiła fizyczny budzik, a telefon o 20:00 zamykała w pudełku z zamkiem czasowym (Kitchen Safe) w przedpokoju. Na biurku położyła czysty szkicownik z ołówkiem. Za każdym razem, gdy pojawiał się impuls sięgnięcia po telefon, miała nawyk zrobienia jednej małej bazgroły na kartce. W ciągu 3 tygodni jej zdolność głębokiej koncentracji powróciła.'
-  ],
-  decisionTaken: 'Julia wprowadziła fizyczną barierę czasową dla telefonu i zastąpiła odruch sięgania po ekran rysowaniem na papierze.',
-  whatProtagonistSaw: 'Julia bała się, że rozwija się u niej wczesne ADHD lub uszkodzenie mózgu.',
-  whatWasMissed: 'Że jej układ nerwowy został po prostu uwarunkowany instrumentalnie na szukanie ucieczki przed najmniejszym dyskomfortem braku stymulacji.',
-  psychologicalAnalysis: {
-    coreMechanism: 'Nawyk automatycznego rozpraszania uwagi (Compulsive Checking Loop) połączony z nietolerancją mikronudy.',
-    cognitiveBiases: [
-      { name: 'Złudzenie wielozadaniowości', description: 'Przekonanie, że „sprawdzenie powiadomienia na 3 sekundy nie przerywa czytania”.', impact: 'Dramatyczny spadek retencji wiedzy (Tom I, Rozdział 3).' }
-    ],
-    defenseMechanisms: [
-      { name: 'Zautomatyzowane wyparcie', explanation: 'Sięganie po telefon bez udziału kory przedczołowej, uniemożliwiające świadomą ocenę.' }
-    ],
-    emotionalDynamic: 'Lęk przed ciszą i pustką poznawczą zamieniony w nałogowe poszukiwanie bodźców.'
-  },
-  decisionProcessAnalysis: {
-    trigger: 'Trudniejszy fragment tekstu o neurobiologii.',
-    attentionFocus: 'Chwilowy spadek dopaminy i mikronuda.',
-    interpretation: 'Mózg szuka natychmiastowej stymulacji.',
-    emotion: 'Niepokój sensoryczny.',
-    impulse: 'Wyciągnąć telefon z kieszeni.',
-    action: 'Zablokowanie telefonu w pudełku i szkicowanie ołówkiem.',
-    consequence: 'Odzyskanie zdolności czytania monografii przez 60 minut bez przerwy.'
-  },
-  neurobiologicalAnalysis: {
-    brainRegions: [
-      { region: 'Grzbietowe prążkowie', role: 'Sterowanie zautomatyzowanym ruchem kciuka', activationState: 'Wygaszone po 14 dniach braku dostępności bodźca' },
-      { region: 'Sieć wzbudzeń domyślnych (DMN)', role: 'Generowanie własnych myśli i refleksji w ciszy', activationState: 'Udana reaktywacja' }
-    ],
-    neurotransmitters: [
-      { name: 'Dopamina', roleInScenario: 'Przywrócenie wrażliwości receptorów D2 na wolniejsze, bardziej subtelne bodźce książkowe' }
-    ],
-    biologicalTimeline: [
-      { timeMs: 'Dzień 1-3', process: 'Silny niepokój odstawienny (Phantom Vibrations).' },
-      { timeMs: 'Dzień 14', process: 'Pojawienie się stanu Flow podczas lektury.' }
-    ]
-  },
-  influenceAndManipulation: {
-    tacticsUsed: [],
-    counterMeasures: [
-      { step: 'Twarde Pudełko Czasowe (Time-Lock Safe)', script: 'Fizyczne uniemożliwienie sięgnięcia po bodziec przez wyznaczony czas.', rationale: 'Eliminuje konieczność podejmowania walki przez zmęczoną wolę.' }
-    ]
-  },
-  alternativePath: 'Gdyby Julia nie przerwała tego nawyku, oblałaby egzaminy z anatomii i zrezygnowała ze studiów, wierząc, że nie ma zdolności intelektualnych.',
-  readerQuestion: 'Co robisz w pierwszych 5 sekundach, gdy musisz na cokolwiek poczekać (winda, kolejka, czerwone światło)?',
-  keyTakeaway: 'Zdolność do znoszenia mikronudy bez ucieczki w ekran jest fundamentem wszelkiego głębokiego myślenia i kreatywności.'
-};
-
-export const chapterTwelveExerciseLoopDeconstruct: SelfExercise = {
-  id: 'ex-ch12-habit-loop-deconstruct',
-  title: 'Ćwiczenie 12.1: Dekonstruktor Pętli Nawyku (Duhigg & Graybiel)',
-  subtitle: 'Rozłóż swój automatyzm na 3 elementy: Wskazówkę, Rutynę i Prawdziwą Nagrodę',
-  objective: 'Zdemaskowanie nieświadomego schematu zwojów podstawy mózgu.',
-  durationMinutes: 20,
-  neuroScientificFoundation: 'Świadoma analiza pętli nawyku zmusza korę przedczołową do ponownego przejęcia nadzoru nad zautomatyzowanymi obwodami prążkowia.',
+export const chapterTwelveExerciseGoalAnalysis: SelfExercise = {
+  id: 'ex-ch12-goal-analysis',
+  title: 'Ćwiczenie 12.1: Analiza Własnego Celu i Pragnienia',
+  subtitle: 'Zbadaj strukturę celu, którego obecnie nie realizujesz',
+  objective: 'Odkrycie źródeł oporu i precyzyjne nazwanie wartości celu.',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Nazwanie sprzeczności poznawczych pobudza korę przedczołową do weryfikacji nieracjonalnych oczekiwań.',
   steps: [
     {
       stepNumber: 1,
-      title: 'Zidentyfikuj nawyk, który chcesz zbadać',
-      instruction: 'Wybierz jedno automatyczne zachowanie, które wykonujesz codziennie, a którego chciałbyś się pozbyć.',
-      promptText: 'Co to za zachowanie i w jakich okolicznościach się pojawia?',
-      placeholder: 'Wieczorne scrollowanie telefonu w łóżku przed snem przez ponad godzinę...'
+      title: 'Wybierz cel, którego nie realizujesz',
+      instruction: 'Zapisz cel, na którym niby bardzo Ci zależy, ale nie podejmujesz w jego kierunku regularnych działań.',
+      promptText: 'Mój cel:',
+      placeholder: 'Chcę nauczyć się płynnie mówić po angielsku...'
     },
     {
       stepNumber: 2,
-      title: 'Zidentyfikuj Wskazówkę (Trigger)',
-      instruction: 'Wskaż jeden z 5 uniwersalnych wyzwalaczy: Miejsce, Czas, Stan Emocjonalny, Inni Ludzie lub Poprzedzające Działanie.',
-      promptText: 'Jaka jest dokładna wskazówka wyzwalająca ten nawyk?',
-      placeholder: 'Miejsce: sypialnia, Czas: 22:30, Emocja: zmęczenie i lęk przed jutrzejszym dniem w pracy.'
+      title: 'Zbadaj źródło pragnienia',
+      instruction: 'Czy ten cel jest Twój własny (motywacja wewnętrzna), czy wynika z presji otoczenia (motywacja zewnętrzna)?',
+      promptText: 'Dlaczego tego chcesz?',
+      placeholder: 'Chcę swobodnie podróżować i czytać książki branżowe (wewnętrzna) vs czuję wstyd przy znajomych (zewnętrzna)...'
     },
     {
       stepNumber: 3,
-      title: 'Zidentyfikuj Prawdziwą Nagrodę Biologiczną',
-      instruction: 'Co tak naprawdę otrzymuje Twój mózg? (Podpowiedź: to rzadko jest sam telefon czy jedzenie — najczęściej to ucieczka od myśli, odpoczynek, poczucie więzi).',
-      promptText: 'Jaka jest głęboka nagroda afektywna?',
-      placeholder: 'Znieczulenie lęku i odroczenie momentu pójścia spać, by jutrzejszy dzień nie nadszedł zbyt szybko...'
+      title: 'Nazwij przewidywany koszt',
+      instruction: 'Jaki trud, nieprzyjemne emocje lub dyskomfort kojarzysz z realizacją tego celu?',
+      promptText: 'Co sprawia, że odsuwasz ten cel?',
+      placeholder: 'Lęk przed robieniem błędów gramatycznych, zmęczenie po pracy, nuda przy wkuwaniu słówek...'
     }
   ],
   reflectionQuestions: [
-    'Dlaczego dotychczasowe próby „prostego zakazania sobie tego” kończyły się fiaskiem?',
-    'Jak możesz dostarczyć sobie tę samą nagrodę bez niszczenia swojego snu?'
+    'Czy Twój cel jest wystarczająco ważny, aby zaakceptować związany z nim dyskomfort?',
+    'Jakie przekonanie o sobie blokuje Twój pierwszy krok?'
   ]
 };
 
-export const chapterTwelveExerciseReplacementLab: SelfExercise = {
-  id: 'ex-ch12-habit-replacement-lab',
-  title: 'Ćwiczenie 12.2: Laboratorium Złotej Reguły Podmiany Rutyny',
-  subtitle: 'Zachowaj starą wskazówkę i nagrodę — wymień jedynie rutynę w środku',
-  objective: 'Zaprojektowanie konkretnego zastępnika behawioralnego, który zaspokoi ten sam głód biologiczny.',
+export const chapterTwelveExerciseBreakdown: SelfExercise = {
+  id: 'ex-ch12-goal-breakdown',
+  title: 'Ćwiczenie 12.2: Rozbicie Celu na Konkretne Działania',
+  subtitle: 'Przełóż odległy rezultat na operacyjny ciąg wykonawczy',
+  objective: 'Zmniejszenie dystansu poznawczego między intencją a konkretną czynnością.',
   durationMinutes: 20,
-  neuroScientificFoundation: 'Nadpisywanie śladu synaptycznego nową rutyną wykorzystuje istniejące połączenia neuronalne wskazówki, drastycznie skracając czas adaptacji.',
+  neuroScientificFoundation: 'Konkretne planowanie sekwencji działań redukuje obciążenie pamięci roboczej i wycisza lęk przed nieznanym.',
   steps: [
     {
       stepNumber: 1,
-      title: 'Wybierz starą wskazówkę i nagrodę z ćwiczenia 12.1',
-      instruction: 'Wpisz wyzwalacz i pożądaną nagrodę biologiczną.',
-      promptText: 'Wskazówka oraz docelowa nagroda:',
-      placeholder: 'Wskazówka: Stres po ciężkiej naradzie. Nagroda: 5 minut głębokiego wyciszenia i ulgi.'
+      title: 'Cel końcowy',
+      instruction: 'Zapisz swój cel główny.',
+      promptText: 'Cel końcowy:',
+      placeholder: 'Zdać egzamin z matematyki na 80%...'
     },
     {
       stepNumber: 2,
-      title: 'Zaprojektuj Nową, Zdrową Rutynę',
-      instruction: 'Jakie konstruktywne zachowanie dostarczy Ci dokładnie tę samą nagrodę w tym samym czasie?',
-      promptText: 'Moja nowa rutyna zamienna:',
-      placeholder: 'Zamiast słodyczy: 3 minuty ćwiczeń oddechowych 4-7-8 z zamkniętymi oczami i szklanka wody z cytryną.'
+      title: 'Cele pośrednie',
+      instruction: 'Podziel cel na 3 kamienie milowe.',
+      promptText: 'Cele pośrednie:',
+      placeholder: '1. Opanować algebrę. 2. Przerobić geometrię. 3. Rozwiązać 5 arkuszy pokazowych...'
     },
     {
       stepNumber: 3,
-      title: 'Zdefiniuj Intencję Wdrożeniową (Implementation Intention)',
-      instruction: 'Ułóż zdanie w formacie Petera Gollwitzera: „JEŚLI pojawi się [wskazówka], TO zrobię [nowa rutyna]”.',
-      promptText: 'Moja formuła JEŚLI-TO:',
-      placeholder: '„JEŚLI poczuję po naradzie ochotę na cukier, TO wstanę, założę słuchawki i włączę 3-minutowy utwór relaksacyjny”.'
+      title: 'Zadanie na dziś i Konkretna czynność',
+      instruction: 'Zdefiniuj dokładnie jedno działanie na dzisiaj z podaniem godziny, miejsca i czasu trwania.',
+      promptText: 'Konkretne działanie:',
+      placeholder: 'Dzisiaj o 17:00 przy biurku przez 25 minut rozwiążę 5 zadań z równań kwadratowych...'
     }
   ],
   reflectionQuestions: [
-    'Czy Twoja nowa rutyna jest wystarczająco łatwa do wykonania w stanie wyczerpania?',
-    'W jaki sposób możesz nagrodzić siebie natychmiast po wykonaniu nowej rutyny?'
+    'O ile łatwiej wyobrazić sobie wykonanie 25-minutowego zadania niż „naukę do egzaminu”?',
+    'Co zrobisz, gdy po 25 minutach poczujesz chęć kontynuowania pracy?'
   ]
 };
 
-export const chapterTwelveExerciseIdentityHabits: SelfExercise = {
-  id: 'ex-ch12-identity-habits',
-  title: 'Ćwiczenie 12.3: Dziennik Tożsamości Behawioralnej (James Clear)',
-  subtitle: 'Zamień walkę z zachowaniem w budowanie nowej tożsamości',
-  objective: 'Przekształcenie nawyków w głosy poparcia oddawane na człowieka, jakim pragniesz się stać.',
-  durationMinutes: 20,
-  neuroScientificFoundation: 'Zmiana samopojęcia (Self-concept) angażuje przyśrodkową korę przedczołową (mPFC), integrując nawyk z rdzeniem tożsamości jednostki.',
+export const chapterTwelveExerciseIntentionGap: SelfExercise = {
+  id: 'ex-ch12-intention-gap',
+  title: 'Ćwiczenie 12.3: Analiza Luki Między Intencją a Działaniem',
+  subtitle: 'Zidentyfikuj, w którym miejscu Twoje „chcę” przestaje zamieniać się w „robię”',
+  objective: 'Zlokalizowanie punktu załamania procesu motywacyjnego.',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Analiza błędów decyzyjnych wzmacnia funkcje monitorowania w kory przedczołowej.',
   steps: [
     {
       stepNumber: 1,
-      title: 'Zdefiniuj nową tożsamość w jednym zdaniu',
-      instruction: 'Nie pisz, co chcesz osiągnąć. Napisz, KIM jesteś lub kim chcesz być (np. „Jestem pisarzem”, „Jestem osobą dbającą o swoje serce”, „Jestem zorganizowanym profesjonalistą”).',
-      promptText: 'Kim jestem?',
-      placeholder: 'Jestem osobą, która szanuje swoje ciało i dba o czystość swojego umysłu...'
+      title: 'Przeanalizuj Ostatnie Zaniechanie',
+      instruction: 'Przypomnij sobie sytuację z tego tygodnia, w której zaplanowałeś działanie, ale go nie wykonałeś.',
+      promptText: 'Co miałeś zrobić, a czego nie zrobiłeś?',
+      placeholder: 'Miałem pójść pobiegać o 18:00...'
     },
     {
       stepNumber: 2,
-      title: 'Zdefiniuj 3 codzienne mikro-głosy poparcia',
-      instruction: 'Wypisz 3 małe, bezdyskusyjne nawyki, które będą niepodważalnym dowodem na to, że jesteś tą osobą.',
-      promptText: 'Moje 3 głosy poparcia:',
-      placeholder: '1. Każdego ranka piję szklankę wody przed kawą. 2. Ścielę łóżko zaraz po wstaniu. 3. Robię 10 minut spaceru bez telefonu.'
+      title: 'Ustal Moment Przełamania',
+      instruction: 'W którym dokładnie momencie podjąłeś decyzję o zaniechaniu? Co było wyzwalaczem?',
+      promptText: 'Gdzie pękła intencja?',
+      placeholder: 'Gdy usiadłem na kanapie po powrocie do domu i poczułem chłód za oknem...'
     },
     {
       stepNumber: 3,
-      title: 'Pytanie bezpiecznikowe w chwili pokusy',
-      instruction: 'Sformułuj pytanie tożsamościowe, które zadasz sobie, gdy pojawi się pokusa powrotu do starego nawyku.',
-      promptText: 'Moje pytanie tożsamościowe:',
-      placeholder: '„Co w tej sytuacji zrobiłaby osoba, która prawdziwie dba o swoje zdrowie i szanuje swoje słowo?”'
+      title: 'Zaprojektuj Zmianę Reakcji',
+      instruction: 'Co zrobisz następnym razem w tym samym momencie przełamania?',
+      promptText: 'Nowy skrypt na moment oporu:',
+      placeholder: 'Nie będę siadał na kanapie — strój do biegania założę od razu po przekroczeniu progu domu...'
     }
   ],
   reflectionQuestions: [
-    'O ile lżej podejmuje się decyzje, gdy nie musisz negocjować z samym sobą, bo „po prostu taki jesteś”?',
-    'Kiedy ostatnio poczułeś dumę z małego zwycięstwa, o którym nie wiedział nikt poza Tobą?'
+    'Jaka myśl racjonalizująca pojawiła się w Twojej głowie tuż przed odłożeniem zadania?',
+    'Jak możesz przygotować się na tę myśl następnym razem?'
+  ]
+};
+
+export const chapterTwelveExerciseProcrastinationMap: SelfExercise = {
+  id: 'ex-ch12-procrastination-map',
+  title: 'Ćwiczenie 12.4: Mapa Prokrastynacji jako Systemu',
+  subtitle: 'Rozłóż swój wzorzec odkładania na 7 etapów pętli',
+  objective: 'Ujawnienie emocjonalnej i nagradzającej funkcji prokrastynacji.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Świadome prześledzenie pętli unikania odłącza automatyczny odruch nawykowy w zwojach podstawy.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Etap 1 i 2 — Zadanie i Przewidywanie',
+      instruction: 'Wpisz trudne zadanie oraz swoją myślową ocenę wysiłku.',
+      promptText: 'Zadanie i myśl:',
+      placeholder: 'Zadanie: Napisanie raportu. Myśl: To zajmie mnóstwo czasu i będzie nudne...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Etap 3, 4 i 5 — Emocja, Unikanie i Ulga',
+      instruction: 'Jaka emocja się pojawia? Co robisz zamiast pracy? Jaka ulga następuje?',
+      promptText: 'Emocja, zachowanie zastępcze i ulga:',
+      placeholder: 'Emocja: niepokój i znużenie. Zachowanie: sprzątanie biurka i przeglądanie wiadomości. Ulga: natychmiastowe opadnięcie napięcia...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Etap 6 i 7 — Nagroda i Uczenie się',
+      instruction: 'Jaką szybką nagrodę dostaje Twój mózg i czego się uczy?',
+      promptText: 'Nagroda i wniosek mózgu:',
+      placeholder: 'Nagroda: stymulacja nowościami w internecie. Wniosek mózgu: unikanie raportu przynosi szybki spokój...'
+    }
+  ],
+  reflectionQuestions: [
+    'Przed jaką konkretną emocją próbujesz uciec, odkładając to zadanie?',
+    'Jak inaczej możesz uregulować tę emocję bez uciekania w rozpraszacze?'
+  ]
+};
+
+export const chapterTwelveExerciseImmediateRewards: SelfExercise = {
+  id: 'ex-ch12-immediate-rewards',
+  title: 'Ćwiczenie 12.5: Analiza Natychmiastowych Nagród',
+  subtitle: 'Zbadaj konflikt między nagrodą teraz a korzyścią w przyszłości',
+  objective: 'Zidentyfikowanie rywalizujących bodźców natychmiastowych i wyrównanie ich wpływu.',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Uświadomienie sobie mechanizmu dyskontowania przyszłości obniża subiektywną atrakcyjność pokusy.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Wskazanie Rywala Natychmiastowego',
+      instruction: 'Jaka natychmiastowa przyjemność lub ulga wygrywa z Twoim długoterminowym celem?',
+      promptText: 'Pokusa natychmiastowa:',
+      placeholder: 'Słodka przekąska / film na telefonie / gra wideo...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Zderzenie Wartości Psychologicznej',
+      instruction: 'Porównaj co daje pokusa TERAZ z tym co daje cel ZA MIESIĄC/ROK.',
+      promptText: 'Porównanie opcji:',
+      placeholder: 'Teraz: 10 minut słodkiego smaku vs Za 6 miesięcy: zdrowa sylwetka i wysokie poczucie własnej wartości...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Wprowadzenie Mikro-Nagrody Natychmiastowej do Ważnego Zadania',
+      instruction: 'Jak możesz dodać małą, zdrową nagrodę natychmiast po wykonaniu bloku trudnej pracy?',
+      promptText: 'Moja mikro-nagroda wykonawcza:',
+      placeholder: 'Aromatyczna herbata pusta tylko po skończonym 25-minutowym bloku nauki...'
+    }
+  ],
+  reflectionQuestions: [
+    'Za ile dni/miesięcy odczujesz realny owoc swojego obecnego wysiłku?',
+    'W jaki sposób możesz przypominać sobie o tym owocu w chwili pokusy?'
+  ]
+};
+
+export const chapterTwelveExerciseEnvironmentDesign: SelfExercise = {
+  id: 'ex-ch12-environment-design',
+  title: 'Ćwiczenie 12.6: Projektowanie Środowiska Działania',
+  subtitle: 'Przenieś samokontrolę z poziomu walki woli na poziom inżynierii otoczenia',
+  objective: 'Usunięcie przeszkód i rozpraszaczy z pola widzenia i przestrzeni fizycznej.',
+  durationMinutes: 20,
+  neuroScientificFoundation: 'Redukcja wskazówek rozpraszających eliminuje odruchowe pobudzenie układu dopaminergicznego.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Zidentyfikuj Pokusy w Polu Widzenia',
+      instruction: 'Wypisz przedmioty i bodźce, które najczęściej odciągają Cię od zaplanowanego działania.',
+      promptText: 'Główni rozpraszacze przestrzenni:',
+      placeholder: 'Telefon leżący na biurku, włączone powiadomienia w przeglądarce, bałagan w dokumentach...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Zwiększ Tarcie dla Pokus (Krok Twardy)',
+      instruction: 'Zaprojektuj modyfikację otoczenia, która utrudni sięgnięcie po pokusę.',
+      promptText: 'Zwiększenie tarcia:',
+      placeholder: 'Telefon wynoszę do drugiego pokoju, blokuję aplikacje na 2 godziny, wyłączam Wi-Fi...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Zmniejsz Tarcie dla Właściwego Zachowania',
+      instruction: 'Jak możesz ułatwić i przygotować przestrzeń do rozpoczęcia właściwego zadania?',
+      promptText: 'Zmniejszenie tarcia:',
+      placeholder: 'Książki i otwarty notes kładę na biurku już wieczorem poprzedniego dnia...'
+    }
+  ],
+  reflectionQuestions: [
+    'O ile mniej energii zużyjesz na siłę woli, gdy pokusa zniknie z pokoju?',
+    'Jakie jeszcze ułatwienie przestrzenne możesz wprowadzić na swoim stanowisku pracy?'
+  ]
+};
+
+export const chapterTwelveExerciseProgressSense: SelfExercise = {
+  id: 'ex-ch12-progress-sense',
+  title: 'Ćwiczenie 12.7: Analiza Poczucia Postępu i Informacji Zwrotnej',
+  subtitle: 'Zbuduj wizualny wskaźnik posuwania się do przodu',
+  objective: 'Wzmocnienie poczucia kompetencji poprzez obserwowalne dowody rozwoju.',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Obserwowanie mierzalnych dowodów postępu stymuluje wydzielanie dopaminy, wzmacniając chęć kontynuowania wysiłku.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Wybierz Obszar i Miernik',
+      instruction: 'Wybierz czynność i ustal dla niej mierzalny wskaźnik wykonania.',
+      promptText: 'Obszar i miernik:',
+      placeholder: 'Nauka słówek -> liczba opanowanych fiszek dziennie...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Zaprojektuj Wizualny Rejestrator',
+      instruction: 'W jaki sposób będziesz rejestrować wykonanie zadania (lista zadań, wykres, kalendarz)?',
+      promptText: 'Forma rejestracji:',
+      placeholder: 'Papierowa tarcza na ścianie, na której odhaczam każdy zrobiony 25-minutowy blok...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Ustal Przegląd Tygodniowy',
+      instruction: 'Kiedy w tygodniu podsumujesz wykonaną pracę i wyciągniesz wnioski?',
+      promptText: 'Czas przeglądu:',
+      placeholder: 'Każda niedziela o 19:00 — sprawdzam liczbę odhaczonych bloków i planuję kolejny tydzień...'
+    }
+  ],
+  reflectionQuestions: [
+    'Jak czujesz się, widząc ciąg skreślonych zadań na swojej karcie?',
+    'Dlaczego brak jakiejkolwiek informacji zwrotnej tak szybko gasi zapał?'
+  ]
+};
+
+export const chapterTwelveExerciseStartingProcess: SelfExercise = {
+  id: 'ex-ch12-starting-process',
+  title: 'Ćwiczenie 12.8: Analiza Własnego Procesu Rozpoczynania Działania',
+  subtitle: 'Zbuduj bezdyskusyjny mikro-rytuał startowy',
+  objective: 'Obniżenie oporu wejściowego w pierwszych 120 sekundach pracy.',
+  durationMinutes: 15,
+  neuroScientificFoundation: 'Zautomatyzowany mikro-rytuał inicjujący redukuje napięcie decyzyjne w kory przedczołowej.',
+  steps: [
+    {
+      stepNumber: 1,
+      title: 'Zdefiniuj Trudne Rozpoczęcie',
+      instruction: 'Z jaką czynnością masz największy problem, aby w ogóle siąść i zacząć?',
+      promptText: 'Trudne rozpoczęcie:',
+      placeholder: 'Pisanie prac dyplomowej / ćwiczenia fizyczne po pracy...'
+    },
+    {
+      stepNumber: 2,
+      title: 'Stwórz Mikro-Krok 2-Minutowy',
+      instruction: 'Jaki jest najmniejszy możliwy krok startowy, który nie wywołuje żadnego oporu?',
+      promptText: 'Mikro-krok 2-minutowy:',
+      placeholder: 'Otworzyć plik z pracą i napisać jedno pierwsze zdanie / założyć buty do biegania i stanąć na przedpokoju...'
+    },
+    {
+      stepNumber: 3,
+      title: 'Ustal Regułę Dozwolonej Rezygnacji',
+      instruction: 'Daj sobie prawo do przerwania po 2 minutach, jeśli nadal będziesz czuć opór.',
+      promptText: 'Moja umowa z samym sobą:',
+      placeholder: 'Jeśli po napisaniu jednego zdania i 2 minutach pracy nadal będę chciał przestać, mam prawo to zrobić bez poczucia winy...'
+    }
+  ],
+  reflectionQuestions: [
+    'Jak często po wykonaniu pierwszego 2-minutowego kroku kontynuujesz pracę?',
+    'Dlaczego pokonanie tataraku bezczynności w pierwszych 2 minutach jest najtrudniejszą częścią całego zadania?'
   ]
 };
 
 export const chapterTwelve: Chapter = {
   number: 12,
-  title: 'Nawyki: Anatomia Bezwysiłkowego Działania',
-  subtitle: 'Jak zachowania stają się automatyczne, jak przeprogramować pętlę prążkowia i zamienić walkę w tożsamość',
-  leadParagraph: 'Około 40 do 45% wszystkiego, co robisz w ciągu każdego dnia swojego życia — od sposobu, w jaki zakładasz buty, przez sięganie po telefon po przebudzeniu, po trasę do pracy i sposób reagowania na stres — nie jest wynikiem świadomych decyzji kory nowej. To czyste automatyzmy nawykowe zawiadywane przez prastare zwoje podstawy mózgu. Jeśli nie przejmiesz kontroli nad swoimi nawykami, to one przejmą kontrolę nad Twoim losem.',
-  totalEstimatedPages: 52,
+  title: 'Motywacja, Cele i Uruchamianie Działania',
+  subtitle: 'Psychologia pragnienia, luka między intencją a działaniem, prokrastynacja jako system i inżynieria wykonawcza',
+  leadParagraph: 'Człowiek może bardzo czegoś chcieć i jednocześnie tego nie robić. To zdanie na pierwszy rzut oka wydaje się sprzeczne. Jeżeli ktoś chce zdać egzamin, dlaczego nie zaczyna się uczyć? Jeżeli chce poprawić kondycję, dlaczego nie wychodzi pobiegać? W codziennym języku zbywamy ten problem hasłem „brak motywacji”. W rzeczywistości pomiędzy pragnieniem a zachowaniem znajduje się skomplikowany system procesów psychologicznych. W tym rozdziale przejdziemy od prostego pytania „Czego chcę?” do użytecznego: „Dlaczego w określonych warunkach robię to, co robię?”.',
+  totalEstimatedPages: 58,
   sections: [
     {
       id: 'sec-12-1',
       pageNumber: 550,
       sectionNumber: '12.1',
-      title: 'Czym jest nawyk? Zwoje podstawy i grupowanie behawioralne',
+      title: 'Czym jest motywacja? Potrzeba, pragnienie, cel i intencja',
       category: 'wstep',
-      readingTimeMinutes: 12,
+      readingTimeMinutes: 14,
       quote: {
-        text: 'Najpierw my tworzymy nasze nawyki, potem nasze nawyki tworzą nas.',
-        author: 'John Dryden'
+        text: 'Nic nie jest tak wyczerpujące jak wieczne wiszenie niezrealizowanego zadania.',
+        author: 'William James'
       },
       paragraphs: [
-        'Przypomnij sobie swój pierwszy dzień za kierownicą samochodu. Twoja uwaga była napięta do granic możliwości. Musiałeś świadomie myśleć o wszystkim: sprzęgło w podłogę, prawy bieg, lusterko wsteczne, kierunkowskaz, gaz, hamulec ręczny, obserwacja pieszych. Po 30 minutach jazdy po mieście czułeś się tak wyczerpany, jakbyś napisał egzamin z fizyki kwantowej. Dlaczego? Ponieważ każdy ten mikroruch angażował zasoby kory przedczołowej.',
-        'A teraz pomyśl, jak prowadzisz auto dzisiaj, po dziesięciu latach. Wsiadasz, odpalasz silnik, rozmawiasz z pasażerem, słuchasz wiadomości radiowych i nagle orientujesz się, że przejechałeś 15 kilometrów przez zakorkowane miasto, nie pamiętając ani jednej zmiany biegów. Jak to możliwe?',
-        'W Twoim mózgu zaszło zjawisko Chunkingu (Grupowania Behawioralnego). W laboratorium MIT prof. Ann Graybiel odkryła, że gdy zachowanie jest powtarzane w stałym kontekście, zwoje podstawy mózgu (Basal Ganglia) kodują całą tę sekwencję w jeden automatyczny plik wykonywalny. Kora przedczołowa idzie spać, a ciało działa samo.'
+        'Człowiek może bardzo czegoś chcieć i jednocześnie tego nie robić. Jeżeli ktoś chce zdać egzamin, dlaczego nie zaczyna się uczyć? Jeżeli chce poprawić kondycję, dlaczego nie wychodzi pobiegać? Jeżeli chce zaoszczędzić pieniądze, dlaczego ponownie kupuje rzeczy, których właściwie nie potrzebuje?',
+        'W codziennym języku często rozwiązujemy ten problem jednym słowem: „brak motywacji”. Takie wyjaśnienie jest jednak zbyt proste. Motywacja nie jest przełącznikiem, który znajduje się w pozycji ON albo OFF. Jest procesem zależnym od wielu czynników. Na zachowanie wpływają między innymi potrzeby, oczekiwania, emocje, wartość celu, przewidywane konsekwencje, poczucie kompetencji, środowisko, wcześniejsze doświadczenia oraz dostępność natychmiastowych nagród.',
+        'Dlatego dwie osoby mogą mieć dokładnie ten sam cel, a mimo tego zachowywać się zupełnie inaczej. Jedna rozpocznie działanie natychmiast. Druga będzie odkładała je przez kilka dni. Obie mogą twierdzić, że naprawdę im zależy. Nie oznacza to automatycznie, że jedna z nich „chce bardziej”. Oznacza to, że pomiędzy samym pragnieniem a zachowaniem znajduje się cały system procesów psychologicznych.',
+        'Warto precyzyjnie odróżnić podstawowe pojęcia:',
+        '1. Potrzeba — wskazuje na pewien brak lub stan, który organizm chce zmienić (np. bezpieczeństwo, kompetencja, relacje, autonomia).',
+        '2. Pragnienie — bezpośrednie doświadczenie psychiczne: „chcę dostać tę rzecz”, „chcę zdać egzamin”. Pragnienie może być silne, ale sama jego obecność nie gwarantuje działania.',
+        '3. Cel — wskazuje na pożądany rezultat („chcę opanować ten język na poziomie B2”).',
+        '4. Intencja — oznacza zamiar wykonania działania („jutro o 17:00 usiądę do ćwiczeń”). Pojawia się zamiar, ale nadal pomiędzy intencją a wykonaniem istnieje luka — luka między decyzją a działaniem.',
+        'Jednym z najważniejszych wniosków jest fakt, że „chcę” nie oznacza „robię”. Wyobraźmy sobie dwie osoby mówiące: „Chcę nauczyć się angielskiego”. Pierwsza codziennie przez 20 minut wykonuje ćwiczenia. Druga ogląda filmy o nauce języków, kupuje zeszyty, tworzy plany, ale nie zaczyna. Druga osoba wcale nie musi „nie chcieć” — jej problem może polegać na oczekiwaniu zbyt dużego wysiłku, lęku przed błędami, braku jasnego pierwszego kroku czy środowisku pełnym natychmiastowych nagród.'
       ]
     },
     {
       id: 'sec-12-2',
-      pageNumber: 554,
+      pageNumber: 555,
       sectionNumber: '12.2',
-      title: 'Pętla nawyku: Wskazówka, rutyna i nagroda',
+      title: 'Cel a działanie: Dekonstrukcja celu końcowego na czynności',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Charles Duhigg w The Power of Habit zdefiniował uniwersalną architekturę każdego automatyzmu:',
-        '1. Wskazówka (Cue): Bodziec ze środowiska (miejsce, czas, emocja, dźwięk), który informuje zwoje podstawy: „Włącz ten konkretny program automatyczny”.',
-        '2. Rutyna (Routine): Samo zachowanie fizyczne, emocjonalne lub umysłowe (zjedzenie ciastka, zapalenie papierosa, zrobienie 20 przysiadów).',
-        '3. Nagroda (Reward): Zastrzyk neurochemiczny, który informuje mózg: „To zachowanie przyniosło ulgę lub przyjemność — zapamiętaj tę pętlę na przyszłość”.'
+        'Cel końcowy jest obrazem tego, co człowiek chce osiągnąć. Problem polega na tym, że mózg i zachowanie muszą przełożyć odległy rezultat na działania możliwe do wykonania teraz. „Chcę zdać egzamin” jest celem — nie jest jednak konkretnym działaniem.',
+        'Działaniem może być otworzenie podręcznika, przeczytanie pięciu stron, rozwiązanie dziesięciu zadań czy powtórzenie definicji. Właśnie dlatego pomocne jest rozdzielenie celu końcowego od celów pośrednich i konkretnych zadań:',
+        '• Cel końcowy: „Chcę zdać egzamin.”',
+        '• Cele pośrednie: „Muszę opanować pięć działów.”',
+        '• Zadanie: „Dzisiaj powtórzę pierwszy dział.”',
+        '• Konkretne działanie: „O godzinie 17:00 usiądę przy biurku i przez 25 minut rozwiążę zadania.”',
+        'Każde kolejne przejście zmniejsza odległość pomiędzy pragnieniem a zachowaniem. Samo ustalenie celu nie wystarcza, gdy cel jest zbyt odległy, zbyt ogólny, zbyt trudny lub pozbawiony planu oraz informacji zwrotnej. Plan jest mechanizmem tłumaczącym intencję na zachowanie według ciągu:',
+        'cel → plan → konkretna czynność → wykonanie → informacja zwrotna → korekta.',
+        'To znacznie bardziej użyteczny model niż uproszczony schemat: cel → sukces.'
       ],
-      subsections: [
-        {
-          title: 'PRZYKŁAD 1: Poranna filiżanka kawy',
-          paragraphs: [
-            'Sytuacja i bohater: 35-letni Robert budzi się o 6:30. Nie myśli, nie analizuje. Nogi same niosą go do kuchni. Dłoń sama wciska przycisk ekspresu.',
-            'Działający mechanizm: Klasyczna pętla nawykowa. Dźwięk mielenia ziaren i zapach kawy to potężna wskazówka sensoryczna wyzwalająca wyrzut dopaminy jeszcze przed pierwszym łykiem.',
-            'Jak rozpoznać w czasie rzeczywistym: Wykonywanie czynności w stanie półsnu bez jakiegokolwiek wysiłku woli.',
-            'Możliwa konstruktywna reakcja: Wykorzystanie tego silnego nawyku jako kotwicy dla nowego zachowania (Habit Stacking).',
-            'Wniosek dydaktyczny dla czytelnika: Silne nawyki nie wymagają motywacji — działają z siłą grawitacji.'
-          ]
-        }
-      ]
+      exerciseRef: chapterTwelveExerciseBreakdown
     },
     {
       id: 'sec-12-3',
-      pageNumber: 558,
+      pageNumber: 560,
       sectionNumber: '12.3',
-      title: 'Pożądanie w mózgu: Jak wskazówka wyzwala głód dopaminowy',
+      title: 'Motywacja wewnętrzna i zewnętrzna: Autonomia i poczucie kompetencji',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 14,
       paragraphs: [
-        'Kiedy nawyk jest już ukształtowany, dopamina przestaje uwalniać się przy samej nagrodzie. Uwalnia się już w ułamku sekundy po zarejestrowaniu WSKAZÓWKI!',
-        'To właśnie ten przedwczesny wyrzut dopaminy odczuwamy w ciele jako GŁÓD (Craving). Kiedy palacz widzi paczkę papierosów, w jego mózgu pojawia się natychmiastowe ssanie. Jeśli zachowanie nie nastąpi, poziom dopaminy spada poniżej zera, wywołując bolesne napięcie somatyczne.'
+        'Ludzie podejmują działania z różnych powodów. Czasami działanie samo w sobie jest interesujące — jak uczeń rozwiązujący zadania matematyczne dla satysfakcji ze znalezienia wyniku (motywacja wewnętrzna). Innym razem działanie jest środkiem do uzyskania czegoś innego, np. oceny, pochwały, wynagrodzenia czy uniknięcia kary (motywacja zewnętrzna).',
+        'W praktycznym życiu obie formy motywacji mogą współistnieć. Człowiek może lubić swoją pracę, a jednocześnie chcieć otrzymać wynagrodzenie. Uczeń może interesować się historią, ale równocześnie zależeć mu na dobrej ocenie.',
+        'Kluczowymi filarami gotowości do działania są:',
+        '1. Autonomia — poczucie, że człowiek ma wpływ na swoje decyzje. Poczucie „sam wybrałem ten cel” daje inne doświadczenie niż „muszę to zrobić, bo ktoś mi kazał”. Z czasem narzucone wymogi mogą zostać zaakceptowane, gdy człowiek dostrzeże ich sens.',
+        '2. Poczucie kompetencji — przekonanie, że jest się w stanie wykonać zadanie. Zadanie typu „przeczytaj jedną stronę” buduje gotowość, podczas gdy „opanuj cały przedmiot w trzy dni” wywołuje poczucie bezradności.',
+        'Wtedy pojawia się interesujące zjawisko: wysoka wartość celu może współistnieć z niską gotowością do działania. Nie dlatego, że cel przestał być ważny, lecz dlatego, że przewidywany koszt wydaje się zbyt duży.'
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 2: Sięganie po smartfon na czerwonym świetle',
+          title: 'Paradoks wysokiej wartości i braku działania',
           paragraphs: [
-            'Sytuacja i bohater: Kierowca Michał zatrzymuje się na czerwonym świetle. Światło będzie czerwone przez 20 sekund. Dłoń Michała automatycznie sięga do uchwytu samochodowego po telefon.',
-            'Działający mechanizm: Wskazówką jest mikronuda spoczynkowa na skrzyżowaniu. Pragnieniem jest natychmiastowa mikro-stymulacja.',
-            'Jak rozpoznać w czasie rzeczywistym: Złapanie się na tym, że trzymasz telefon w ręku, zanim zdążyłeś pomyśleć, po co go wziąłeś.',
-            'Możliwa konstruktywna reakcja: Schowanie telefonu do schowka między fotelami na czas jazdy.',
-            'Wniosek dydaktyczny dla czytelnika: Zwoje podstawy działają szybciej niż świadomość. Kontroluj przestrzeń, by wyprzedzić automatyzm.'
-          ]
+            'Często im ważniejszy cel (np. egzamin dojrzałości, kluczowy projekt w pracy), tym większe napięcie emocjonalne wywołuje praca nad nim. W konsekwencji człowiek параdoksalnie opóźnia rozpoczęcie działania przy najważniejszych zadaniach.'
+          ],
+          highlightBox: {
+            title: 'Wgląd psychologiczny',
+            content: 'Gdy cel jest bardzo ważny, wyzwala duży lęk przed niepowodzeniem. Wysoka wartość celu zwiększa stawkę emocjonalną, a to rodzi potrzebę ucieczki.',
+            type: 'insight'
+          }
         }
       ]
     },
     {
       id: 'sec-12-4',
-      pageNumber: 562,
+      pageNumber: 565,
       sectionNumber: '12.4',
-      title: 'Dekonstrukcja pętli: Jak namierzyć prawdziwą nagrodę',
-      category: 'cwiczenia',
-      readingTimeMinutes: 15,
+      title: 'Natychmiastowa nagroda kontra przyszła korzyść: Odraczanie gratyfikacji',
+      category: 'teoria',
+      readingTimeMinutes: 13,
       paragraphs: [
-        'Większość ludzi myli zewnętrzną formę zachowania z jego prawdziwą biologiczną nagrodą. Kiedy o 15:00 idziesz do firmowego automatu po batonik, Twoje ciało rzadko potrzebuje cukru. Najczęściej potrzebuje odejścia od biurka, rozprostowania nóg i zresetowania zmęczonej uwagi.',
-        'Poniższy warsztat uczy precyzyjnego dekonstruowania pętli nawyku i odkrywania ukrytej nagrody.'
+        'Jednym z podstawowych problemów motywacji jest różnica między tym, co można otrzymać TERAZ, a tym, co można otrzymać PÓŹNIEJ. Telefon daje natychmiastową możliwość rozrywki, informacji, kontaktu i nowości. Nauka może dać korzyść dopiero za kilka tygodni. Sport przynosi efekty po wielu treningach.',
+        'W takich sytuacjach pojawia się problem odraczania gratyfikacji. Człowiek musi zdecydować, czy ważniejsza jest mniejsza nagroda teraz, czy większa, ale późniejsza korzyść.',
+        'Psychologia opisuje tu zjawisko dyskontowania przyszłości. Ludzie nie traktują przyszłej nagrody tak samo jak obecnej. Im bardziej odległy rezultat, tym łatwiej zostaje psychologicznie „pomniejszony”. Dlatego komunikat „Zdam egzamin za miesiąc” przegrywa z „Jeszcze tylko jeden film”. Problem nie polega na braku zrozumienia konsekwencji, lecz na tym, że obie opcje mają zupełnie inną natychmiastową wartość psychologiczną.'
       ],
-      exerciseRef: chapterTwelveExerciseLoopDeconstruct
+      exerciseRef: chapterTwelveExerciseImmediateRewards
     },
     {
       id: 'sec-12-5',
-      pageNumber: 566,
+      pageNumber: 570,
       sectionNumber: '12.5',
-      title: 'Nawyki kluczowe (Keystone Habits): Efekt domina w życiu',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 16,
+      title: 'Prokrastynacja jako system regulacji emocjonalnej',
+      category: 'teoria',
+      readingTimeMinutes: 15,
       paragraphs: [
-        'Nie wszystkie nawyki są sobie równe. Istnieją tzw. Nawyki Kluczowe (Keystone Habits) — pojedyncze zachowania, które po wdrożeniu wywołują łańcuchową reakcję w całym systemie życiowym.',
-        'Gdy ktoś zaczyna regularnie ćwiczyć 3 razy w tygodniu, nagle — bez żadnego dodatkowego wysiłku — zaczyna lepiej jeść, wcześniej kłaść się spać, rzadziej sięgać po alkohol i pracować z większym skupieniem. Studium przypadku poniżej przedstawia demaskowanie ukrytej nagrody w nałogu nikotynowym.'
+        'Prokrastynacja jest często sprowadzana do zwykłego „lenistwa”. To uproszczenie. Prokrastynacja jest odkładaniem zaplanowanego działania pomimo świadomości, że opóźnienie może przynieść negatywne konsekwencje.',
+        'Kluczowe jest prześledzenie pełnego systemu prokrastynacji:',
+        '• Etap 1 (Zadanie): „Muszę się nauczyć / napisać raport.”',
+        '• Etap 2 (Przewidywanie): „To będzie trudne i nieprzyjemne.”',
+        '• Etap 3 (Emocja): Pojawia się napięcie, nuda, niepewność lub lęk przed porażką.',
+        '• Etap 4 (Unikanie): „Najpierw sprawdzę telefon / posprzątam biurko.”',
+        '• Etap 5 (Chwilowa ulga): Napięcie związane z zadaniem natychmiast opada.',
+        '• Etap 6 (Nagroda): Telefon dostarcza rozrywki, stymulacji i kontaktu.',
+        '• Etap 7 (Uczenie się): Mózg otrzymuje informację: „Kiedy zadanie powoduje nieprzyjemne napięcie, odsunięcie go przynosi szybką ulgę.”',
+        'I właśnie tu powstaje pętla: zadanie → przewidywanie → nieprzyjemna emocja → unikanie → ulga → nagroda → większa gotowość do unikania następnym razem.',
+        'Prokrastynacja nasila się przed ważnymi zadaniami, ponieważ im ważniejsze zadanie, tym większy lęk przed oceną, poczuciem niekompetencji i możliwością porażki. Prokrastynacja pełni więc krótkoterminową funkcję regulowania emocji, nawet jeśli długoterminowo pogarsza sytuację.'
       ],
-      caseStudyRef: chapterTwelveCaseStudySmoking
+      exerciseRef: chapterTwelveExerciseProcrastinationMap
     },
     {
       id: 'sec-12-6',
-      pageNumber: 570,
+      pageNumber: 575,
       sectionNumber: '12.6',
-      title: 'Stos nawyków (Habit Stacking): Podłączanie pod istniejącą sieć',
-      category: 'teoria',
+      title: 'Samokontrola: Kontrola impulsu kontra projektowanie środowiska',
+      category: 'cwiczenia',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Próba wdrożenia nowego nawyku w próżni („Od jutra będę robić 10 minut rozciągania”) niemal zawsze kończy się porażką, ponieważ Twój mózg nie wie, KIEDY dokładnie ma to zrobić.',
-        'Technika Habit Stacking polega na wykorzystaniu silnego, istniejącego nawyku jako naturalnej kotwicy: „Zaraz po tym, jak [obecny nawyk], zrobię [nowy nawyk]”. Nowe zachowanie płynie po torach, które są już wyryte w zwojach podstawy mózgu.'
+        'Samokontrola często kojarzy się wyłącznie z siłą woli. Jednak poleganie wyłącznie na sile woli jest wysoce ryzykowne. Jeżeli człowiek codziennie musi podejmować tę samą trudną decyzję („Czy teraz użyję telefonu, czy będę się uczył?”), to za każdym razem uruchamia konflikt wewnętrzny.',
+        'Skuteczniejszym podejściem jest zmiana środowiska:',
+        '• Telefon zostawiony w innym pomieszczeniu,',
+        '• Wyłączone powiadomienia,',
+        '• Przygotowane wcześniej materiały do pracy,',
+        '• Ustala konkretna godzina rozpoczęcia,',
+        '• Ograniczona liczba rozpraszaczy.',
+        'Wtedy część pracy zostaje przeniesiona z poziomu kontroli zachowania na poziom projektowania sytuacji. Pierwsza osoba trzyma telefon na biurku i za każdym razem walczy z impulsem. Druga odkłada telefon do innego pokoju. Obie mogą osiągnąć cel, ale druga usunęła konieczność ciągłego wysiłku woli. Zasada brzmi: Nie każdą przeszkodę trzeba pokonywać siłą. Czasami można ją usunąć z drogi.'
       ],
-      subsections: [
-        {
-          title: 'PRZYKŁAD 3: Łączenie nawyków porannych',
-          paragraphs: [
-            'Sytuacja i bohater: Anna (31 lat) chciała wdrożyć nawyk wdzięczności i planowania dnia. Stworzyła formułę stosu:',
-            '„Zaraz po tym, jak naleję poranną herbatę (stary nawyk), otwieram notes leżący obok czajnika i zapisuję 3 rzeczy, za które jestem wdzięczna, oraz 1 priorytet dnia (nowy nawyk)”.',
-            'Działający mechanizm: Habit Stacking. Herbata stała się automatycznym wyzwalaczem dla notesu.',
-            'Jak rozpoznać w czasie rzeczywistym: Brak konieczności pamiętania o zadaniu — sam widok czajnika przypomina o notesie.',
-            'Możliwa konstruktywna reakcja: Utrzymanie notesu zawsze w tym samym miejscu przy czajniku.',
-            'Wniosek dydaktyczny dla czytelnika: Połącz to, co chcesz robić, z tym, co już robisz bez myślenia.'
-          ]
-        }
-      ]
+      exerciseRef: chapterTwelveExerciseEnvironmentDesign
     },
     {
       id: 'sec-12-7',
-      pageNumber: 574,
+      pageNumber: 580,
       sectionNumber: '12.7',
-      title: 'Projektowanie środowiska: Wskazówki wizualne decydują o losie',
+      title: 'Poczucie postępu i rola informacji zwrotnej',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 13,
       paragraphs: [
-        'Większość naszych nawyków jest wyzwalana wzrokowo. Jeśli na blacie w kuchni stoi talerz z pączkami, będziesz po nie sięgać za każdym razem, gdy przejdziesz obok, nawet jeśli nie jesteś głodny.',
-        'Najważniejszą zasadą inżynierii nawyków jest: Uczyń dobre nawyki WIDOCZNYMI i ŁATWYMI, a złe nawyki NIEWIDOCZNYMI i TRUDNYMI. Dyscyplina to nie walka z pokusą; dyscyplina to usunięcie pokusy z pola widzenia.'
+        'Motywację wzmacnia informacja, że człowiek rzeczywiście posuwa się do przodu. Jeżeli ktoś przez tydzień pracuje, ale nie widzi żadnego efektu, pojawia się myśli: „To nie ma sensu”. Z kolei widoczny postęp zwiększa poczucie kompetencji.',
+        'Dlatego wysoce użyteczne są:',
+        '• Listy wykonanych zadań,',
+        '• Mierzalne etapy wykonania,',
+        '• Testy kontrolne i sprawdzenia wiedzy,',
+        '• Obserwowalny rozwój umiejętności.',
+        'Nie chodzi o obsesyjne mierzenie wszystkiego, lecz o dostarczanie informacji zwrotnej. Człowiek potrzebuje wiedzieć nie tylko „Czy osiągnąłem cel?”, ale również „Czy jestem bliżej niż wcześniej?”.'
       ],
-      subsections: [
-        {
-          title: 'PRZYKŁAD 4: Zmiana diety bez diety — Misa z owocami',
-          paragraphs: [
-            'Sytuacja i bohater: Rodzina Nowaków chciała jeść więcej owoców. Zamiast chować jabłka do dolnej szuflady lodówki, postawili wielką, ceramiczną misę ze świeżymi owocami na środku stołu jadalnego. Słodycze przenieśli do najwyższej szafki w spiżarni, wymagającej przyniesienia drabinki.',
-            'Działający mechanizm: Wskazówka wizualna + asymetria tarcia fizycznego.',
-            'Jak rozpoznać w czasie rzeczywistym: Automatyczne sięganie po jabłko podczas przechodzenia przez pokój.',
-            'Wniosek dydaktyczny dla czytelnika: Jesteś tym, co znajduje się na wysokości Twoich oczu.'
-          ]
-        }
-      ]
+      exerciseRef: chapterTwelveExerciseProgressSense
     },
     {
       id: 'sec-12-8',
-      pageNumber: 578,
+      pageNumber: 585,
       sectionNumber: '12.8',
-      title: 'Złota reguła zmiany nawyku: Nie eliminuj, lecz zastępuj',
-      category: 'cwiczenia',
-      readingTimeMinutes: 15,
-      paragraphs: [
-        'Zwoje podstawy mózgu nie znają pojęcia „przestań to robić”. Próba wygaszenia nawyku samą negacją („Od jutra zero cukru / zero telefonu / zero złości”) tworzy próżnię neurologiczną, w której napięcie dopaminowe rośnie do poziomu krytycznego.',
-        'Złota reguła mówi: ZACHOWAJ WSKAZÓWKĘ, ZACHOWAJ NAGRODĘ, PODMIEŃ RUTYNĘ. Poniższy warsztat pozwala zaprojektować precyzyjną procedurę podmiany nawyku.'
-      ],
-      exerciseRef: chapterTwelveExerciseReplacementLab
-    },
-    {
-      id: 'sec-12-9',
-      pageNumber: 582,
-      sectionNumber: '12.9',
-      title: 'Pragnienie (Craving) i nagroda: Jak dopamina koduje wartość',
-      category: 'teoria',
-      readingTimeMinutes: 13,
-      paragraphs: [
-        'Nagroda musi być natychmiastowa. Mózg zwierzęcy nie rozumie nagród odsuniętych o 6 miesięcy. Jeśli po treningu nie poczujesz natychmiastowego wyrzutu endorfin, ciepłego prysznica lub poczucia dumy, zwoje podstawy nie utrwalą zachowania.',
-        'Wprowadzaj mikro-nagrody bezpośrednie: pyszna kawa pita tylko w trakcie czytania trudnej książki, odhaczenie ptaszka w estetycznym planerze (zastrzyk dopaminy z ukończenia).'
-      ]
-    },
-    {
-      id: 'sec-12-10',
-      pageNumber: 586,
-      sectionNumber: '12.10',
-      title: 'Atomowe nawyki w praktyce: Potęga 1% poprawy każdego dnia',
+      title: 'Studium przypadku: Michał i egzamin za miesiąc',
       category: 'studium-przypadku',
       readingTimeMinutes: 16,
       paragraphs: [
-        'Jeśli każdego dnia staniesz się o zaledwie 1% lepszy w danej dziedzinie, po roku będziesz 37 razy lepszy (1.01^365 = 37.78). Zmiany atomowe są z pozoru niewidoczne w skali tygodnia, ale tworzą gigantyczny procent składany w skali lat.',
-        'Studium przypadku poniżej przedstawia zmagania studentki z nawykiem nałogowego sięgania po telefon i odbudowę uwagi za pomocą reguł atomowych.'
+        'Poniższe studium przypadku ilustruje przejście od racjonalizacji i unikania do przebudowy systemu wykonawczego u 17-letniego Michała.'
       ],
-      caseStudyRef: chapterTwelveCaseStudyPhoneJulia
+      caseStudyRef: chapterTwelveCaseStudyMichal
     },
     {
-      id: 'sec-12-11',
+      id: 'sec-12-9',
       pageNumber: 590,
-      sectionNumber: '12.11',
-      title: 'Nawyki oparte na tożsamości: „Jestem kimś, kto...”',
+      sectionNumber: '12.9',
+      title: 'Zbiór Warsztatów i Ćwiczeń Rozwojowych z Rozdziału 12',
       category: 'cwiczenia',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Najwyższym poziomem zmiany behawioralnej jest tożsamość. Przestań mówić: „Próbuję biegać”. Mów: „Jestem biegaczem”. Kiedy nawyk staje się częścią Twojego poczucia tożsamości, nie musisz zmuszać się do działania — robisz to, bo zdrada nawyku byłaby zdradą samego siebie.',
-        'Poniższy warsztat uczy budowania dziennika tożsamości behawioralnej.'
+        'W tej sekcji zebrano kompletny zestaw warsztatów pozwalających na przeanalizowanie własnego procesu motywacyjnego, celów, luki wykonawczej oraz pętli prokrastynacji.'
       ],
-      exerciseRef: chapterTwelveExerciseIdentityHabits
+      exerciseRef: chapterTwelveExerciseStartingProcess
     },
     {
-      id: 'sec-12-12',
+      id: 'sec-12-10',
       pageNumber: 594,
-      sectionNumber: '12.12',
-      title: 'Przerwanie ciągu: Jak wracać po wykolejeniu',
+      sectionNumber: '12.10',
+      title: 'Połączenia z innymi rozdziałami: Motywacja, Stres i Tożsamość',
       category: 'teoria',
       readingTimeMinutes: 13,
       paragraphs: [
-        'Życie to nie laboratorium. Prędzej czy później zachorujesz, wyjedziesz w podróż służbową lub spotka Cię kryzys rodzinny. Twój 30-dniowy ciąg porannych ćwiczeń czy nauki zostanie bezlitośnie przerwany.',
-        'Zasada mistrzów brzmi: Jeden błąd to wypadek przy pracy; dwa błędy z rzędu to początek nowego nawyku zaniechania. Jeśli opuścisz jeden trening, Twoim absolutnym priorytetem jest pojawienie się na sali nazajutrz — choćby po to, by zrobić 5 przysiadów i wrócić do domu. Ocalenie tożsamości jest ważniejsze niż spalone kalorie.'
-      ],
-      subsections: [
-        {
-          title: 'PRZYKŁAD 7: Opuszczony trening we wtorek — Zasada 5 pompek',
-          paragraphs: [
-            'Sytuacja i bohater: Michał (30 lat) wraca z delegacji wykończony o 22:00. Powinien iść na siłownię, ale ledwo stoi na nogach.',
-            'Działający mechanizm: Pułapka „Wszystko albo nic”. Zamiast zrezygnować całkowicie, Michał kładzie się na dywanie i robi 10 pompek.',
-            'Jak rozpoznać w czasie rzeczywistym: Poczucie, że mikroruch nie ma sensu fizycznego.',
-            'Wniosek dydaktyczny dla czytelnika: Te 10 pompek nie zmieniło jego tkanki mięśniowej, ale uratowało jego tożsamość człowieka, który nie odpuszcza dwóch dni z rzędu.'
-          ]
-        }
+        'Motywacja nie działa w izolacji od pozostałych procesów psychicznych:',
+        '1. Motywacja ↔ Stres: Stres i pobudzenie afektywne mogą dramatycznie zmieniać gotowość do działania. Wysoki stres zawęża uwagę i skłania do natychmiastowej ucieczki w ulgę (prokrastynacja). Z kolei brak stresu może powodować niewystarczające pobudzenie do rozpoczęcia pracy.',
+        '2. Motywacja ↔ Tożsamość: To, jak człowiek postrzega siebie („Jestem kimś, kto kończy zadania” vs „Jestem leniwy”), definiuje filtr decyzyjny. Z kolei powtarzalne przekraczanie luki wykonawczej dostarcza dowodów, które zmieniają obraz siebie.',
+        '3. Motywacja ↔ Nawyki: Gdy konkretne zachowanie powtarzane jest w stałym kontekście, przestaje wymagać bieżącej motywacji i staje się automatyzmem.'
       ]
     },
     {
-      id: 'sec-12-13',
+      id: 'sec-12-11',
       pageNumber: 598,
-      sectionNumber: '12.13',
-      title: 'Wielkie Studium Przypadku: Pętla Nocnego Objadania Magdaleny',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 18,
-      paragraphs: [
-        'Wnikliwa wiwisekcja behawioralna walki z nawykiem nocnego sięgania po słodycze i seriale. Zobaczmy, jak dekonstrukcja wskazówek i architektura środowiska uratowały zdrowie bohaterki.'
-      ],
-      caseStudyRef: {
-        id: 'cs-ch12-nawyk',
-        title: 'Lodówka o Północy: Jak Magdalena Przeprogramowała Pętlę Stresu',
-        subtitle: 'Od bezsilnej walki z silną wolą do inżynierii przestrzeni i nowej tożsamości',
-        protagonist: 'Magdalena, Dyrektor Finansowa (39 lat)',
-        context: 'Kuchnia Magdaleny, 23:15, po 12 godzinach zamykania budżetu rocznego.',
-        story: [
-          'Magdalena była uosobieniem żelaznej dyscypliny w pracy. Zarządzała 30-osobowym zespołem, dowoziła audyty, kontrolowała miliony złotych. Ale w jej życiu istniała czarna dziura, o której nie wiedział nikt: nocne napady jedzenia.',
-          'Codziennie około 23:00, gdy mąż i dzieci spali, a ona siadała wreszcie na kanapie z laptopem, w jej głowie budził się potwór. Szła do kuchni jak zahipnotyzowana. Otwierała szafkę: czekolada z orzechami, ciastka, chipsy. Zjadała wszystko w ciągu 15 minut przed telewizorem. Rano budziła się z opuchniętą twarzą, zgagą i rozrywającym poczuciem wstydu.',
-          'Przez dwa lata próbowała „wziąć się w garść”. Przyklejała na lodówce kartki: „Nie żryj!”, kupowała kłódki, piła ocet jabłkowy. Nic nie działało. Kora przedczołowa po 12 godzinach pracy z liczbami była dosłownie wyczerpana z glukozy (Tom I, Rozdział 1: Ego Depletion). Zwoje podstawy przejmowały kontrolę bez walki.',
-          'Przełom nastąpił po audycie pętli nawyku z psychodietetykiem:',
-          'Wskazówka: Cisza w domu po 23:00 + samotność na kanapie + ekran włączonego telewizora.',
-          'Rutyna: Spożycie 800 kcal cukru i tłuszczu.',
-          'Prawdziwa Nagroda: Nie był to głód fizyczny! Nagrodą była ULGIA OD CIĄGŁEJ ODPOWIEDZIALNOŚCI. Przez te 15 minut Magdalena nie musiała być idealną szefową ani idealną matką; mogła znieczulić przeciążony układ nerwowy.',
-          'Wdrożono plan przeprogramowania środowiska:',
-          '1. Usunięcie wskazówek: Zakaz kupowania słodyczy do domu. Jeśli mąż chciał ciastka, trzymał je w zamkniętym schowku w garażu.',
-          '2. Podmiana rutyny: O 22:45 Magdalena parzyła duży kubek gorącej herbaty z melisą i cynamonem, wchodziła do wanny z olejkami lawendowymi i czytała papierową powieść kryminalną przy świecach.',
-          'Mózg otrzymał dokładnie tę samą nagrodę: zmysłowe ciepło, samotność, odcięcie od maili i głęboki relaks — ale bez ani jednego grama rafinowanego cukru. W ciągu pół roku Magdalena schudła 14 kg, odzyskała głęboki sen i spokój sumienia.'
-        ],
-        decisionTaken: 'Magdalena przestała polegać na sile woli o 23:00 i zainwestowała w architekturę środowiska oraz rytuał kąpieli jako nową rutynę.',
-        whatProtagonistSaw: 'Widziała w sobie słabą, beznadziejną kobietę bez kręgosłupa moralnego.',
-        whatWasMissed: 'Że jej biologia domagała się odpoczynku i znieczulenia po heroicznym dniu pracy, a jedzenie było jedynym znanym jej narzędziem szybkiej redukcji kortyzolu.',
-        psychologicalAnalysis: {
-          coreMechanism: 'Przełamanie pętli zwojów podstawy mózgu poprzez podmianę rutyny i usunięcie wskazówek sensorycznych.',
-          cognitiveBiases: [
-            { name: 'Iluzja siły woli', description: 'Wiara, że zmęczony mózg w nocy potrafi oprzeć się cukrowi stojącemu na wyciągnięcie ręki.', impact: 'Chroniczne pasmo porażek.' }
-          ],
-          defenseMechanisms: [
-            { name: 'Regresja', explanation: 'Sięganie po słodycze jako powrót do dziecięcego poczucia bezpieczeństwa.' }
-          ],
-          emotionalDynamic: 'Ucieczka przed samotnością i ciężarem dorosłej odpowiedzialności.'
-        },
-        neurobiologicalAnalysis: {
-          brainRegions: [
-            { region: 'Zwoje podstawy (Grzbietowe prążkowie)', role: 'Wykonywanie automatycznego skryptu jedzenia', activationState: 'Bardzo wysoka automatyzacja' },
-            { region: 'Brzuszno-boczna kora przedczołowa', role: 'Kontrola impulsów', activationState: 'Całkowity brak paliwa metabolicznego o 23:00' }
-          ],
-          neurotransmitters: [
-            { name: 'Dopamina', roleInScenario: 'Spadek poziomu bazowego pod koniec dnia wywoływał głód stymulacji' }
-          ],
-          biologicalTimeline: [
-            { timeMs: '23:00', process: 'Dźwięk cichnącego domu odpala automatyczny krok w stronę szafki.' }
-          ]
-        },
-        influenceAndManipulation: {
-          tacticsUsed: [],
-          counterMeasures: [
-            { step: 'Czysty Dom (Zero Tarcza)', script: '„Jeśli nie ma tego w szafce, nie muszę z tym walczyć o 23:00”.', rationale: 'Przenosi decyzję na moment zakupów w sklepie w stanie sytości.' }
-          ]
-        },
-        alternativePath: 'Gdyby Magdalena nadal polegała na „silnej woli”, w ciągu kolejnych 5 lat rozwinęłaby insulinooporność i cukrzycę typu 2, tonąc w depresji.',
-        readerQuestion: 'Jaki niechciany nawyk powtarzasz wieczorem, gdy Twoja kora przedczołowa nie ma już siły się bronić?',
-        keyTakeaway: 'Nie testuj swojej silnej woli w nocy. Zadbaj o swoje środowisko w dzień, kiedy Twój umysł jest wypoczęty.'
-      }
-    },
-    {
-      id: 'sec-12-14',
-      pageNumber: 602,
-      sectionNumber: '12.14',
-      title: 'Eksperyment 14-Dniowy, Podsumowanie i Egzamin Końcowy',
+      sectionNumber: '12.11',
+      title: 'Podsumowanie i Słownik Pojęć Rozdziału 12',
       category: 'podsumowanie',
       readingTimeMinutes: 12,
       paragraphs: [
-        'Zrozumieliśmy biomechanikę nawyków: zwoje podstawy, pętlę wskazówka-rutyna-nagroda, złotą regułę podmiany zachowania oraz potęgę tożsamości. Nawyki to szyny, po których toczy się pociąg Twojego życia.',
-        'Jednak na nasze decyzje i nawyki wpływa coś jeszcze — środowisko, w którym jesteśmy zanurzeni przez 16 godzin na dobę: ŚRODOWISKO INFORMACYJNE. Reklamy, clickbaity, algorytmy TikToka, bańki filtrujące i armie dezinformacji.',
-        'W Rozdziale 13 przejdziemy do wielkiej bitwy o Twoją uwagę w świecie cyfrowym: zbadamy ekonomię uwagi, zjawisko FOMO, psychologię fake newsów i zbudujemy system higieny informacyjnej.',
-        'Sprawdź swoją wiedzę w poniższym Egzaminie Końcowym z Rozdziału 12.'
+        'Najważniejsze idee do zapamiętania z Rozdziału 12:',
+        '• Motywacja to proces uruchamiania, kierowania, intensyfikowania i podtrzymywania działania, a nie stan jednowymiarowy.',
+        '• Pomiędzy intencją a działaniem istnieje luka — samo „chcę” nie gwarantuje wykonania.',
+        '• Cel końcowy należy przełożyć na cele pośrednie, zadanie i konkretną czynność wyznaczoną w czasie i przestrzeni.',
+        '• Prokrastynacja jest krótkoterminową regulacją emocji nieprzyjemnych (lęk, nuda, niepewność), a nie zwykłym lenistwem.',
+        '• Kontrola środowiska (usuwanie pokus) jest skuteczniejsza niż ciągłe poleganie na sile woli.',
+        '• Widoczne poczucie postępu obniża koszt dalszego wysiłku.',
+        'Słownik terminów Rozdziału 12:',
+        '• Luka wykonawcza (Intention-Behavior Gap) — rozbieżność pomiędzy sformułowaną intencją a faktycznie podjętym zachowaniem.',
+        '• Dyskontowanie przyszłości (Temporal Discounting) — psychologiczne pomniejszanie wartości nagrody w zależności od jej odległości w czasie.',
+        '• Prokrastynacja — nieadaptacyjne odkładanie zaplanowanego działania pomimo świadomości negatywnych konsekwencji.',
+        '• Autonomia — poczucie sprawczości i własnego wyboru w podejmowaniu działań.',
+        '• Poczucie kompetencji — przekonanie o posiadaniu zasobów i umiejętności potrzebnych do wykonania zadania.'
+      ]
+    },
+    {
+      id: 'sec-12-12',
+      pageNumber: 602,
+      sectionNumber: '12.12',
+      title: 'Sprawdzian Wiedzy i Egzamin Końcowy z Rozdziału 12',
+      category: 'podsumowanie',
+      readingTimeMinutes: 15,
+      paragraphs: [
+        'Sprawdź swój poziom zrozumienia mechanizmów motywacji, dekonstrukcji celów, dyskontowania przyszłości oraz pętli prokrastynacji w poniższym teście sytuacyjnym.'
       ]
     }
   ]

@@ -43,6 +43,9 @@ import { chapterTwentyFourExamQuestions } from '../data/chapterTwentyFourData';
 import { chapterTwentyFiveExamQuestions } from '../data/chapterTwentyFiveData';
 import { chapterTwentySixExamQuestions } from '../data/chapterTwentySixData';
 import { chapterTwentySevenExamQuestions } from '../data/chapterTwentySevenData';
+import { chapterTwentyEightExamQuestions } from '../data/chapterTwentyEightData';
+import { chapterTwentyNineExamQuestions } from '../data/chapterTwentyNineData';
+import { chapterThirtyExamQuestions } from '../data/chapterThirtyData';
 import { SocialInfluenceLab } from './SocialInfluenceLab';
 import { CommunicationLab } from './CommunicationLab';
 import { PersuasionLab } from './PersuasionLab';
@@ -820,6 +823,51 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={27}
               chapterTitle="Rozdział 11: Integracja Wiedzy — Od Pojedynczych Rozdziałów do Jednego Systemu"
               examQuestions={chapterTwentySevenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 28 (Tom III Rozdział 12: Podejmowanie Decyzji) WIDGETS --- */}
+        {(activeSection.sectionNumber === '28.24' || activeSection.sectionNumber === '28.29') && (
+          <div className="my-10">
+            <InteractiveDecisionSim />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '28.30') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={28}
+              chapterTitle="Podejmowanie Decyzji — Mechanizmy Wyboru i Niepewność (Rozdział 28)"
+              examQuestions={chapterTwentyEightExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 29 (Tom III Rozdział 13: Zdrowe Granice) WIDGETS --- */}
+        {(activeSection.sectionNumber === '29.20' || activeSection.sectionNumber === '29.30') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={29}
+              chapterTitle="Zdrowe Granice — Ochrona Autonomii i Psychologia Odmowy (Rozdział 29)"
+              examQuestions={chapterTwentyNineExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 30 (Tom III Rozdział 14: Asertywność) WIDGETS --- */}
+        {(activeSection.sectionNumber === '30.12' || activeSection.sectionNumber === '30.18') && (
+          <div className="my-10">
+            <CommunicationLab />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '30.30') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={30}
+              chapterTitle="Asertywność — Sztuka Komunikacji w Zgodzie ze Sobą (Rozdział 30)"
+              examQuestions={chapterThirtyExamQuestions}
             />
           </div>
         )}
