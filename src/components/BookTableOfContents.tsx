@@ -61,10 +61,12 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
           <div>
             <span className="text-[11px] font-mono uppercase tracking-widest text-amber-800 font-bold block">
               {currentTabChapter.number <= 5
-                ? 'Tom I • Architektura Umysłu'
+                ? `Tom I • Architektura Umysłu (Rozdział ${currentTabChapter.number})`
                 : currentTabChapter.number <= 16
-                ? 'Tom II • Człowiek Wśród Ludzi'
-                : 'Tom III • Autonomia & Samokształtowanie'}
+                ? `Tom II • Człowiek Wśród Ludzi (Rozdział ${currentTabChapter.number - 5})`
+                : currentTabChapter.number === 27
+                ? 'Tom III • Autonomia & Samokształtowanie • Rozdział 11 (Integracja Wiedzy Rozdziałów 1–10)'
+                : `Tom III • Autonomia & Samokształtowanie (Rozdział ${currentTabChapter.number - 16})`}
             </span>
             <h3 className="font-serif text-lg font-bold text-stone-900 mt-0.5">
               Spis Treści i Nawigacja Książki
@@ -112,7 +114,7 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
             onClick={() => setVolumeFilter('tom3')}
             className={`px-2.5 py-1 rounded-md transition whitespace-nowrap ${volumeFilter === 'tom3' ? 'bg-amber-800 text-white font-bold' : 'bg-white/80 text-stone-700 hover:bg-white'}`}
           >
-            Tom III (17-23)
+            Tom III (17-27)
           </button>
         </div>
 
@@ -120,6 +122,13 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
         <div className="px-4 py-3 bg-stone-100 border-b border-stone-200 flex space-x-1.5 overflow-x-auto text-xs font-mono">
           {filteredChapters.map((ch) => {
             const isTabActive = ch.number === selectedChapterTab;
+            const displayLabel = ch.number <= 5
+              ? `T1: R${ch.number}`
+              : ch.number <= 16
+              ? `T2: R${ch.number - 5}`
+              : ch.number === 27
+              ? 'T3: R11 (Integracja)'
+              : `T3: R${ch.number - 16}`;
             return (
               <button
                 key={ch.number}
@@ -131,7 +140,7 @@ export const BookTableOfContents: React.FC<BookTableOfContentsProps> = ({
                 }`}
               >
                 <BookOpen className="w-3.5 h-3.5" />
-                <span>Rozdz. {ch.number}</span>
+                <span>{displayLabel}</span>
               </button>
             );
           })}

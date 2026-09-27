@@ -330,6 +330,8 @@ export const chapterElevenExerciseResetProtocol: SelfExercise = {
 
 export const chapterEleven: Chapter = {
   number: 11,
+  volume: 2,
+  volumeChapterNumber: 6,
   title: 'Motywacja: Dlaczego Chcemy, ale Nie Robimy',
   subtitle: 'Biochemia napędu, neurobiologia dopaminy, rozbijanie paraliżu i inżynieria systemów działania',
   leadParagraph: 'Znasz to uczucie: w niedzielę wieczorem siedzisz na kanapie, pełen wzniosłych idei i postanowień. Od jutra zdrowa dieta, regularne bieganie, praca nad książką i zero scrollowania telefonu. W poniedziałek o 16:30 cała ta wspaniała motywacja wyparowuje jak kamfora, a Ty lądujesz z paczką chipsów przed serialem. Dlaczego człowiek jest jedyną istotą na Ziemi, która potrafi zaplanować swój sukces, a potem metodycznie go sabotować? Pora zajrzeć pod maskę układu napędowego: od dopaminowych pułapek po inżynierię systemów.',

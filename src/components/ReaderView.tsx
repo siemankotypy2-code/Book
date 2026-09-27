@@ -42,11 +42,13 @@ import { chapterTwentyThreeExamQuestions } from '../data/chapterTwentyThreeData'
 import { chapterTwentyFourExamQuestions } from '../data/chapterTwentyFourData';
 import { chapterTwentyFiveExamQuestions } from '../data/chapterTwentyFiveData';
 import { chapterTwentySixExamQuestions } from '../data/chapterTwentySixData';
+import { chapterTwentySevenExamQuestions } from '../data/chapterTwentySevenData';
 import { SocialInfluenceLab } from './SocialInfluenceLab';
 import { CommunicationLab } from './CommunicationLab';
 import { PersuasionLab } from './PersuasionLab';
 import { ManipulationDetector } from './ManipulationDetector';
 import { RelationshipMap } from './RelationshipMap';
+import { DecisionSystemLab } from './DecisionSystemLab';
 import { MotivationSystemSim } from './MotivationSystemSim';
 import { HabitLoopLab } from './HabitLoopLab';
 import { InformationDietAudit } from './InformationDietAudit';
@@ -156,7 +158,13 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
         <div className="mb-10 pb-6 border-b border-stone-300/60 flex flex-wrap items-center justify-between gap-4">
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-amber-700 font-bold block mb-1">
-              {chapter.number <= 5 ? 'Tom I • Architektura Umysłu' : chapter.number <= 16 ? 'Tom II • Człowiek Wśród Ludzi' : `Tom III • Autonomia & Samokształtowanie (Rozdział ${chapter.number - 16})`}
+              {chapter.number <= 5
+                ? `Tom I • Architektura Umysłu (Rozdział ${chapter.number})`
+                : chapter.number <= 16
+                ? `Tom II • Człowiek Wśród Ludzi (Rozdział ${chapter.number - 5})`
+                : chapter.number === 27
+                ? 'Tom III • Autonomia & Samokształtowanie • Rozdział 11 (Integracja Wiedzy Rozdziałów 1–10)'
+                : `Tom III • Autonomia & Samokształtowanie (Rozdział ${chapter.number - 16})`}
             </span>
             <div className="text-sm font-sans font-medium text-stone-500">
               {chapter.title}
@@ -795,6 +803,23 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={26}
               chapterTitle="Zmiana: Od Zrozumienia do Działania (Tom III Rozdział 10)"
               examQuestions={chapterTwentySixExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 27 (Tom III Rozdział 11: Integracja Wiedzy Rozdziałów 1–10) WIDGETS --- */}
+        {(activeSection.sectionNumber === '27.2' || activeSection.sectionNumber === '27.4' || activeSection.sectionNumber === '27.12') && (
+          <div className="my-10">
+            <DecisionSystemLab />
+          </div>
+        )}
+
+        {activeSection.sectionNumber === '27.14' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={27}
+              chapterTitle="Rozdział 11: Integracja Wiedzy — Od Pojedynczych Rozdziałów do Jednego Systemu"
+              examQuestions={chapterTwentySevenExamQuestions}
             />
           </div>
         )}

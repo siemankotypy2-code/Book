@@ -226,19 +226,19 @@ export default function App() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 pt-6 border-t border-white/10">
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Zakres Dzieła</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">21 Rozdziałów (318 sekcji)</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">27 Rozdziałów (320 sekcji)</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Struktura Tomów</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">Tom I (1-5) • Tom II (6-16) • Tom III (17-21)</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">Tom I (1-5) • Tom II (6-16) • Tom III (17-27)</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Laboratoria & Egzaminy</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">29 interaktywnych modułów</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">30 interaktywnych modułów</span>
               </div>
               <div className="p-3 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-[11px] font-mono text-stone-400 block uppercase">Studia Przypadków</span>
-                <span className="text-lg font-bold text-amber-300 font-mono">28 pełnych analiz A–J</span>
+                <span className="text-lg font-bold text-amber-300 font-mono">29 pełnych analiz A–J</span>
               </div>
             </div>
           </div>
@@ -265,12 +265,12 @@ export default function App() {
         <div className="p-2.5 rounded-2xl bg-stone-200/70 dark:bg-stone-800/80 border border-stone-300/80 dark:border-stone-700 flex items-center space-x-2 overflow-x-auto font-sans text-xs">
           <span className="text-[10px] font-mono uppercase tracking-wider text-stone-500 font-bold px-2 shrink-0 flex items-center gap-1">
             <Layers className="w-3.5 h-3.5 text-amber-700" />
-            {activeChapterNumber <= 5 ? 'Tom I (Umysł):' : activeChapterNumber <= 16 ? 'Tom II (Człowiek):' : 'Tom III (Autonomia):'}
+            {activeChapterNumber <= 5 ? 'Tom I (Architektura Umysłu):' : activeChapterNumber <= 16 ? 'Tom II (Człowiek Wśród Ludzi):' : 'Tom III (Autonomia & Integracja):'}
           </span>
           {allChapters.map((ch) => {
             const isCurrent = ch.number === activeChapterNumber;
             const tomLabel = ch.number <= 5 ? 'T1' : ch.number <= 16 ? 'T2' : 'T3';
-            const displayChapterNum = ch.number <= 16 ? ch.number : ch.number - 16;
+            const displayChapterNum = ch.number <= 5 ? ch.number : ch.number <= 16 ? ch.number - 5 : ch.number - 16;
             return (
               <button
                 key={ch.number}
