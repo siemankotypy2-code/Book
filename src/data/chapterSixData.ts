@@ -387,11 +387,15 @@ export const chapterSix: Chapter = {
         {
           title: 'PRZYKŁAD 1: Szpitalny oddział ratunkowy — Niepisana norma milczenia',
           paragraphs: [
-            'Sytuacja i bohater: Młody lekarz rezydent, dr Paweł (28 lat), zauważa, że starszy ordynator, dyżurujący 26. godzinę z rzędu, pomylił dawki leku przeciwkrzepliwego dla pacjenta z zawałem.',
-            'Działający mechanizm: Kolizja normy nakazowej (kodeks etyki lekarskiej: ratuj życie za wszelką cenę) z potężną normą opisową oddziału („Nigdy nie podważaj autorytetu ordynatora przy personelu, jeśli chcesz ukończyć specjalizację”).',
-            'Jak rozpoznać w czasie rzeczywistym: Suchość w ustach, drżenie rąk, natrętna myśl: „Może ordynator wie coś, czego ja nie doczytałem?”. To System 1 próbuje racjonalizować bierność, by uniknąć kary społecznej.',
-            'Możliwa konstruktywna reakcja: Użycie techniki bezpiecznego pytania (graded assertiveness): „Panie ordynatorze, czy w dokumentacji pacjenta wpisujemy 5000 czy 2500 jednostek, bo w wytycznych z tego roku zalecają niższą dawkę przy tej masie ciała?”. Pozwala to przełożonemu skorygować błąd bez utraty twarzy.',
-            'Wniosek dydaktyczny dla czytelnika: Kultura milczenia w organizacji zawsze opiera się na normach opisowych. Zmiana zachowania wymaga stworzenia psychologicznego bezpieczeństwa, a nie kolejnych regulaminów.'
+            '1. Obiektywna sytuacja i fakty: Młody lekarz rezydent, dr Paweł (28 lat), dyżuruje na oddziale intensywnej terapii kardiologicznej. Starszy ordynator, dyżurujący 26. godzinę z rzędu z powodu braków kadrowych, wpisuje do zlecenia dawkę leku przeciwkrzepliwego dwukrotnie wyższą od rekomendowanej dla pacjenta z ostrą niewydolnością nerek.',
+            '2. Co bohater zauważył: Wzrok Pawła zatrzymuje się na rubryce z dawką miligramową. Zauważa rozszerzone źrenice i spowolnione ruchy ordynatora, a także obecność dwóch pielęgniarek, które bez słowa przygotowują strzykawki.',
+            '3. Interpretacja i automatyczne założenia: W umyśle Pawła błyskawicznie rodzi się konflikt interpretacyjny. Z jednej strony: „Ta dawka wywoła krwotok wewnętrzny”. Z drugiej strony natychmiast odpala się wyuczone założenie społeczne: „Ordynator ma 30 lat doświadczenia. Jeśli zwrócę mu uwagę przy personelu, uzna to za publiczne podważenie autorytetu, a moja opinia specjalizacyjna legnie w gruzach”.',
+            '4. Emocje i stan somatyczny: Suchość w gardle, nagły ucisk w klatce piersiowej, przyspieszone tętno i impuls do zamrożenia (freeze response) — chęć odwrócenia wzroku i udawania, że nie widziało się zlecenia.',
+            '5. Mechanizm psychologiczny: Kolizja formalnej normy nakazowej (kodeks etyki lekarskiej: nadrzędne dobro pacjenta) z potężną, niepisaną normą opisową oddziału („Młodsi nie korygują ordynatora na forum, hierarchia chroni przed chaosem”). Dodatkowo działa efekt rozproszenia odpowiedzialności na obecne pielęgniarki.',
+            '6. Alternatywne wyjaśnienia: Paweł może zakładać, że ordynator jest złośliwy lub arogancki. Bardziej precyzyjne wyjaśnienie naukowe wskazuje jednak na skrajne zmęczenie poznawcze przełożonego (wyczerpanie zasobów glukozy w korze przedczołowej po 26 godzinach czuwania) — ordynator nie działał ze złej woli, lecz popełnił błąd uwagi.',
+            '7. Konsekwencje: Bierność oznaczałaby bezpośrednie zagrożenie życia pacjenta oraz wielomiesięczny, niszczący wyrzut sumienia u Pawła. Z kolei agresywny atak wywołałby obronne wyparcie ordynatora.',
+            '8. Konstruktywna reakcja alternatywna: Zastosowanie techniki stopniowanej asertywności (Graded Assertiveness / protokół CUS): Paweł podchodzi bliżej i mówi cichym, spokojnym głosem bez świadków: „Panie ordynatorze, chcę się upewnić przy zleceniu dla pana Nowaka — przy jego klirensie kreatyniny norma z tego roku wskazuje 2500 jednostek. Czy modyfikujemy dawkę pod ten profil?”. Ordynator z ulgą orientuje się w pomyłce i poprawia wpis bez utraty twarzy.',
+            '9. Wniosek edukacyjny dla czytelnika: Kultura milczenia w grupie opiera się na normach opisowych i strachu przed odrzuceniem. Bezpieczeństwo psychologiczne w zespole nie polega na braku hierarchii, lecz na procedurach umożliwiających bezkarne zadawanie pytań o fakty.'
           ]
         }
       ]
@@ -410,13 +414,17 @@ export const chapterSix: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 2: Kamila i nowa rola kierownicza',
+          title: 'PRZYKŁAD 2: Kamila i nowa rola kierownicza — Wchłonięcie przez skrypt persony',
           paragraphs: [
-            'Sytuacja i bohater: Kamila (32 lata), dotąd serdeczna i pomocna koleżanka z zespołu marketingu, po awansie na stanowisko dyrektorskie nagle staje się chłodna, autorytarna i zaczyna rozliczać dawnych przyjaciół z każdej minuty spóźnienia.',
-            'Działający mechanizm: Wchłonięcie przez rolę społeczną. Kamila nieświadomie odtwarza skrypt „silnego przywódcy”, jaki widziała u swoich dawnych, surowych przełożonych, myląc profesjonalizm z emocjonalnym dystansem.',
-            'Jak rozpoznać w czasie rzeczywistym: Ciągłe napięcie mięśniowe poza pracą, poczucie wyobcowania i wewnętrzny dysonans: „Dlaczego zachowuję się wobec nich jak ktoś, kogo sama nie cierpiałam?”.',
-            'Możliwa konstruktywna reakcja: Świadome rozróżnienie między jasnością wymagań biznesowych a szacunkiem relacyjnym. Szczera rozmowa z zespołem: „Moja rola się zmieniła i odpowiadam za wyniki przed zarządem, ale moje wartości wobec was pozostają niezmienne”.',
-            'Wniosek dydaktyczny dla czytelnika: Jeśli nie zdefiniujesz swojej roli świadomie, rola zdefiniuje Ciebie według najbardziej prymitywnych stereotypów.'
+            '1. Obiektywna sytuacja i fakty: Kamila (32 lata), dotychczas specjalistka w zespole marketingu i bliska koleżanka pozostałych czterech osób, awansuje na stanowisko dyrektorki działu. Od pierwszego poniedziałku przestaje jadać z nimi obiady w kuchni i wprowadza bezwzględny wymóg raportowania mailowego każdego wyjścia z biura dłuższego niż 10 minut.',
+            '2. Co zauważają obie strony: Zespół widzi usztywnioną postawę ciała Kamili, formalny ton głosu i unikanie żartów. Kamila z kolei rejestruje ciche szepty kolegów w aneksie kuchennym i unikanie jej wzroku na korytarzu.',
+            '3. Interpretacja i założenia: Koledzy interpretują zmianę jako zdradę i pychę: „Dostała stołek i natychmiast uderzyła jej woda sodowa do głowy”. Kamila z kolei tworzy własne założenie obronne: „Jeśli okażę jakąkolwiek słabość lub poufałość, natychmiast wejdą mi na głowę, a zarząd uzna, że nie mam cech przywódczych”.',
+            '4. Emocje i stan afektywny: W zespole dominuje rozczarowanie i wrogość. U Kamili — podszyty samotnością lęk przed utratą kontroli i poczucie presji ze strony zarządu.',
+            '5. Mechanizm psychologiczny: Zjawisko wchłonięcia przez rolę społeczną (Role Internalization). Kamila nie wymyśliła tego zachowania na poczekaniu — pobrała z kultury korporacyjnej gotowy, archaiczny skrypt „autorytarnego szefa”, myląc profesjonalizm z emocjonalnym chłodem.',
+            '6. Alternatywne wyjaśnienia: Zamiast zakładać, że Kamila zmieniła swój charakter, bardziej rzetelna analiza wskazuje na brak przygotowania menedżerskiego i deficyt narzędzi asertywności — jej chłód nie był wyrazem arogancji, lecz zbroją chroniącą przed własną niepewnością.',
+            '7. Konsekwencje: Spadek zaangażowania zespołu o 30%, odejście najlepszej copywriterki i wypalenie emocjonalne samej Kamili, która po 6 miesiącach czuła się w biurze jak w twierdzy.',
+            '8. Konstruktywna reakcja alternatywna: Jawne nazwanie nowej dynamiki w rozmowie z zespołem: „Moja rola formalna się zmieniła i odpowiadam za budżet przed zarządem. Nadal jednak szanuję nasze relacje i chcę wspólnie wypracować zasady współpracy, w których jest miejsce na wzajemny szacunek i wysokie standardy”.',
+            '9. Wniosek edukacyjny dla czytelnika: Jeśli nie zdefiniujesz swojej nowej roli świadomie w oparciu o własne wartości, rola zdefiniuje Ciebie według najbardziej prymitywnych stereotypów kulturowych.'
           ]
         }
       ],
@@ -444,19 +452,24 @@ export const chapterSix: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
-        'Uniwersytet Yale, lipiec 1961 roku. Zaledwie trzy miesiące po rozpoczęciu procesu Adolfa Eichmanna w Jerozolimie, 27-letni psycholog Stanley Milgram zadaje fundamentalne pytanie: „Czy to możliwe, że Eichmann i miliony jego wspólników w Zagładzie po prostu wykonywali rozkazy? Czy zwykły, przyzwoity człowiek może stać się katem pod wpływem autorytetu?”.',
-        'Rekrutowani z ogłoszenia w gazecie zwykli obywatele — nauczyciele, urzędnicy, robotnicy — wcielają się w rolę „Nauczyciela”. Ich zadaniem jest karanie „Ucznia” (aktora ukrytego za ścianą) wstrząsami elektrycznymi za każdy błąd w teście pamięciowym. Generator ma 30 przełączników: od 15V, przez 150V, aż po 450V oznaczone symbolem „XXX”.',
-        'Wynik rzeczywisty wstrząsnął światem: 65% uczestników doszło do maksymalnego napięcia 450V, wciskając przełącznik na spokojne polecenie badacza w szarym fartuchu („Eksperyment wymaga, abyś kontynuował”). Milgram wykazał, że człowiek w obliczu autorytetu wchodzi w stan agentyczny — przestaje czuć się sprawcą i przenosi moralną odpowiedzialność na przełożonego.'
+        'Uniwersytet Yale, lipiec 1961 roku. Zaledwie trzy miesiące po rozpoczęciu procesu Adolfa Eichmanna w Jerozolimie, 27-letni psycholog Stanley Milgram zadaje fundamentalne pytanie: „Czy to możliwe, że Eichmann i miliony jego współpracowników w Zagładzie po prostu wykonywali rozkazy? Czy zwykły, ułożony obywatel może posunąć się do zadania drugiemu człowiekowi skrajnego cierpienia pod wpływem autorytetu?”.',
+        'Rekrutowani z ogłoszenia w gazecie dorośli mężczyźni — nauczyciele, urzędnicy, inżynierowie, robotnicy — wcielają się w rolę „Nauczyciela”. Ich zadaniem jest karanie „Ucznia” (w rzeczywistości 47-letniego księgowego, aktora ukrytego za ścianą) wstrząsami elektrycznymi za każdy błąd w zadaniu skojarzeń słownych. Generator ma 30 przełączników: od 15V, przez 150V, aż po 450V oznaczone groźnym symbolem „XXX”.',
+        'Wynik wywołał szok w świecie naukowym: 65% uczestników doszło do maksymalnego napięcia 450V. Jednak współczesna rewizja badań Milgrama (m.in. Gina Perry, Jerry Burger) nakazuje unikać uproszczenia, że ludzie są bezdusznymi robotami. Uczestnicy NIE byli obojętni — pocili się, drżeli, obgryzali paznokcie, błagali eksperymentatora o przerwanie próby. Co ciekawe, gdy badacz stosował czwarte, najbardziej bezpośrednie polecenie w stylu rozkazu wojskowego: „Nie masz innego wyboru, musisz kontynuować”, badani niemal zawsze odmawiali! Posłuszeństwo utrzymywało się dopóki perswazja odwoływała się do dobra nauki („Eksperyment wymaga kontynuacji”).',
+        'Milgram sformułował pojęcie Stanu Agentycznego (Agentic State): w hierarchii człowiek ma tendencję do redefiniowania siebie nie jako autonomicznego sprawcy z pełną odpowiedzialnością moralną, lecz jako „narzędzia” realizującego wolę wyższej instancji.'
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 3: Główna księgowa Teresa i kreatywna faktura',
+          title: 'PRZYKŁAD 3: Główna księgowa Teresa i kreatywna faktura — Stan agentyczny w biurze',
           paragraphs: [
-            'Sytuacja i bohater: Teresa (54 lata), skrupulatna księgowa z 25-letnim stażem, otrzymuje od prezesa spółki polecenie zaksięgowania fikcyjnej faktury marketingowej na 120 000 zł, aby obniżyć podatek dochodowy przed końcem kwartału.',
-            'Działający mechanizm: Stan agentyczny Milgrama. Teresa myśli: „Prezes jest prawnikiem, to on podejmuje decyzje strategiczne i on podpisuje bilans. Ja tylko wykonuję operację techniczną w systemie”.',
-            'Jak rozpoznać w czasie rzeczywistym: Uczucie mdłości przy włączaniu komputera, odpychanie myśli o kontroli skarbowej, powtarzanie w myślach: „Przecież to nie moja wina, szef kazał”.',
-            'Możliwa konstruktywna reakcja: Wyjście ze stanu agentycznego i przejście do stanu autonomicznego: „Panie prezesie, ta operacja narusza art. 271 Kodeksu Karnego. Nie mogę podpisać tego dokumentu pod własnym nazwiskiem. Proszę o pisemne polecenie służbowe lub przekazanie sprawy do zewnętrznego doradcy podatkowego”.',
-            'Wniosek dydaktyczny dla czytelnika: Przekonanie, że „ja tylko wykonywałem polecenia”, nie chroni ani przed odpowiedzialnością prawną, ani przed erozją własnego kręgosłupa moralnego.'
+            '1. Obiektywna sytuacja i fakty: Teresa (54 lata), skrupulatna główna księgowa z 25-letnim stażem, otrzymuje od prezesa spółki polecenie zaksięgowania fikcyjnej faktury za „usługi doradcze” na kwotę 120 000 zł, wystawionej przez powiązaną spółkę cypryjską tuż przed zamknięciem roku obrotowego.',
+            '2. Co Teresa zauważa: Zauważa brak jakiejkolwiek dokumentacji wykonawczej (brak raportów, analiz czy korespondencji) oraz formalny podpis prezesa i jego pewny, nieznoszący sprzeciwu ton głosu: „Pani Tereso, proszę to puścić w dzisiejszej sesji, to uzgodnione z właścicielem”.',
+            '3. Interpretacja i automatyczne myśli: W umyśle Teresy pojawia się racjonalizacja obronna: „Prezes jest doktorem prawa, ma radców prawnych i to on ponosi odpowiedzialność strategiczną. Ja jestem tylko pracownikiem wykonawczym wprowadzającym cyfry do programu księgowego”.',
+            '4. Emocje i reakcja fizjologiczna: Ścisk w żołądku, mdłości przy uruchamianiu programu ERP, bezsenność i lęk przed kontrolą skarbową, tłumiony poczuciem lojalności wobec firmy.',
+            '5. Mechanizm psychologiczny: Klasyczny stan agentyczny Milgrama połączony z rozmyciem odpowiedzialności i lękiem przed utratą statusu zawodowego tuż przed wiekiem emerytalnym.',
+            '6. Alternatywne wyjaśnienia: Teresa mogłaby uważać prezesa za cynicznego przestępcę. W rzeczywistości prezes mógł sam działać w stanie paniki pod presją banku żądającego spełnienia kowenantów kredytowych — co nie zmienia faktu, że żądanie było bezprawne.',
+            '7. Konsekwencje: Zaksięgowanie faktury naraziło Teresę na osobistą odpowiedzialność karną skarbową (art. 271 KK), a w razie kontroli prezes z łatwością mógłby zeznać: „Ja podpisałem setki pism, to księgowa odpowiada za rzetelność ksiąg”.',
+            '8. Konstruktywna reakcja alternatywna: Spokojne przejście do stanu autonomicznego: „Panie prezesie, ta faktura nie posiada protokołu odbioru usług. Obowiązujące przepisy uniemożliwiają mi jej zaksięgowanie bez weryfikacji przez biegłego rewidenta. Prześlę panu formalne zapytanie na piśmie”. W 80% przypadków prezes wycofuje się z próby wciągnięcia pracownika w przestępstwo, gdy ten wymaga śladu procesowego.',
+            '9. Wniosek edukacyjny dla czytelnika: Przekonanie „ja tylko wykonywałem polecenia przełożonego” nie stanowi tarczy ochronnej ani przed prawem, ani przed utratą poczucia własnej godności.'
           ]
         }
       ]
@@ -469,18 +482,23 @@ export const chapterSix: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 13,
       paragraphs: [
-        'Nowy Jork, Queens, 1964 rok. Tragedia Kitty Genovese zapoczątkowała przełomowe badania Bibba Latané i Johna Darleya nad „efektem widza”. W eksperymencie z dymem w pokoju, student piszący ankietę w samotności reagował w 75% przypadków w ciągu 2 minut. Gdy w pokoju siedziało dwóch innych podstawionych uczestników ignorujących dym, wskaźnik reakcji spadał do 10%!',
-        'Dlaczego tak się dzieje? Odpowiada za to zjawisko niewiedzy wielu (Pluralistic Ignorance). Sytuacje kryzysowe są zazwyczaj niejednoznaczne. Co robi ludzki umysł w warunkach niepewności? Skanuje twarze innych świadków. Ponieważ każdy stara się zachować kamienną twarz, by nie wyjść na histeryka, wszyscy widzą wokół spokój i wyciągają wniosek: „Skoro nikt nie reaguje, widocznie nic złego się nie dzieje”.'
+        'Nowy Jork, Queens, 1964 rok. Tragedia Kitty Genovese zapoczątkowała przełomowe badania Bibba Latané i Johna Darleya nad „efektem widza”. Warto w tym miejscu wprowadzić kluczowe sprostowanie metodologiczne: jak wykazały późniejsze analizy archiwalne (m.in. Manning, Levine i Collins, 2007), pierwotny artykuł w „The New York Times” o „38 świadkach, którzy z zimną krwią patrzyli na morderstwo i nikt nie zadzwonił” był publicystyczną przesadą. Wielu sąsiadów słyszało jedynie urywki krzyków, nie widząc zdarzenia z okien, dwie osoby wezwały pomoc, a jedna z sąsiadek zbiegła na dół i trzymała umierającą Kitty w ramionach.',
+        'Jednak laboratoryjne eksperymenty Latané i Darleya dowiodły czegoś znacznie głębszego: obecność biernych świadków realnie paraliżuje gotowość do pomocy. W klasycznym badaniu z dymem w pokoju, student piszący ankietę w samotności reagował w 75% przypadków w ciągu 2 minut. Gdy w pokoju siedziało dwóch innych podstawionych pomocników eksperymentatora ignorujących dym, wskaźnik reakcji spadał dramatycznie do 10%!',
+        'Dlaczego tak się dzieje? Odpowiada za to zjawisko niewiedzy wielu (Pluralistic Ignorance). Sytuacje kryzysowe są zazwyczaj niejednoznaczne. Co robi ludzki umysł w warunkach niepewności? Skanuje twarze innych świadków. Ponieważ każdy stara się zachować kamienną twarz, by nie wyjść na histeryka, wszyscy widzą wokół pozorny spokój i wyciągają błędny wniosek: „Skoro nikt nie reaguje, widocznie nic złego się nie dzieje”.'
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 4: Upadek emeryta na dworcu w Katowicach',
+          title: 'PRZYKŁAD 4: Upadek emeryta na dworcu w Katowicach — Niewiedza wielu w tłumie',
           paragraphs: [
-            'Sytuacja i bohater: 72-letni pan Stanisław potyka się na schodach peronu kolejowego i upada, uderzając głową o posadzkę. Obok przechodzi kilkudziesięciu podróżnych z walizkami, patrząc na leżącego kątem oka, ale nikt się nie zatrzymuje.',
-            'Działający mechanizm: Efekt widza sprzężony z niewiedzą wielu i stereotypem: „Pewnie pijany, albo zaraz wstanie, skoro nikt nie podchodzi”. Tłum wzajemnie utwierdza się w bezczynności.',
-            'Jak rozpoznać w czasie rzeczywistym: Odruch zwolnienia kroku z jednoczesnym spojrzeniem na innych: „Czy ktoś inny podszedł?”. Jeśli nie, mózg generuje automatyczną wymówkę: „Pociąg mi ucieknie”.',
-            'Możliwa konstruktywna reakcja: Natychmiastowe zatrzymanie się, uklęknięcie przy poszkodowanym i głośne zawołanie: „Halo, proszę pana, czy pan mnie słyszy?!”. W ułamku sekundy, widząc jedną aktywną osobę, z tłumu wybiega 3-4 kolejnych pomocników.',
-            'Wniosek dydaktyczny dla czytelnika: Tłum potrzebuje jednego katalizatora. Bądź pierwszą osobą, która zatrzyma krok — to zdejmie paraliż z pozostałych.'
+            '1. Obiektywna sytuacja i fakty: Na peronie 3 dworca kolejowego w Katowicach 72-letni pan Stanisław potyka się na schodach i upada, uderzając głową o posadzkę. Z czoła sączy się krew, mężczyzna leży nieruchomo. Obok przechodzi w obu kierunkach kilkudziesięciu podróżnych z walizkami spieszących się na pociągi.',
+            '2. Co widzi bohater (subiektywne postrzeżenie podróżnego): 31-letni Tomasz idzie z kawą w ręku. Kątem oka rejestruje leżącego, widzi obojętne twarze innych pasażerów i myśli: „Pewnie bezdomny pod wpływem alkoholu, albo ktoś już wezwał ochronę dworca. Nikt się nie zatrzymuje, więc sytuacja nie wymaga mojej interwencji”.',
+            '3. Czego bohater nie widzi (martwe pole): Tomasz nie wie, że starszy pan doznał udaru mózgu i każda minuta decyduje o jego przeżyciu. Nie dostrzega także, że każdy z mijających pasażerów czuje wewnętrzny dyskomfort, ale patrzy na innych i paraliżuje się ich bezczynnością.',
+            '4. Działający mechanizm psychologiczny: Efekt widza (Bystander Effect) napędzany zjawiskiem niewiedzy wielu (Pluralistic Ignorance) oraz stereotypową kategoryzacją obronną („to pewnie margines społeczny”), służącą redukcji dysonansu poznawczego.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W toku ewolucji publiczne wywołanie fałszywego alarmu w grupie wiązało się z ryzykiem kompromitacji, wyśmiania i utraty statusu. Czekanie na reakcję dominujących członków stada było bezpieczniejszą strategią biologiczną.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się odruchu zwolnienia kroku z jednoczesnym rozglądaniem się na boki w poszukiwaniu reakcji innych. Jeśli zauważysz u siebie myśl: „Ktoś inny na pewno zareaguje”, to niezawodny sygnał działania rozproszenia odpowiedzialności.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Natychmiastowe zatrzymanie się, podejście do poszkodowanego, uklęknięcie i głośne przełamanie anonimowości tłumu poprzez wskazanie konkretnej osoby palcem: „Pan w granatowej kurtce! Proszę natychmiast zadzwonić pod 112 i wezwać pogotowie!”.',
+            '8. Konsekwencje alternatywnego wyboru: Wskazanie konkretnej jednostki palcem redukuje rozproszenie odpowiedzialności ze 100% rozproszonych na 100% zogniskowanych. Człowiek w granatowej kurtce nie ma drogi ucieczki — wyciąga telefon, a widok jednej aktywnej osoby natychmiast uwalnia pomocowość u kolejnych 3-4 świadków.',
+            '9. Wniosek dydaktyczny dla czytelnika: Tłum potrzebuje jednego katalizatora, by przełamać paraliż. Jeśli jesteś świadkiem wypadku w miejscu publicznym, nigdy nie krzycz: „Niech ktoś pomoże!”, lecz wydawaj zindywidualizowane polecenia.'
           ]
         }
       ]
@@ -526,13 +544,17 @@ export const chapterSix: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 5: Spotkanie rekrutacyjne i wyrok w korytarzu',
+          title: 'PRZYKŁAD 5: Spotkanie rekrutacyjne i wyrok w korytarzu — Heurystyka pierwszego wrażenia',
           paragraphs: [
-            'Sytuacja i bohater: Anna (26 lat), wybitna programistka z rzadkimi umiejętnościami analizy danych, przychodzi na rozmowę o pracę w startupie fintechowym w nieco pogniecionej koszuli, unikając wzroku rekrutera i cicho odpowiadając na powitanie.',
-            'Działający mechanizm: Błyskawiczna heurystyka pierwszego wrażenia Todorova. Rekruter Systemem 1 w ułamku sekundy klasyfikuje ją jako „niepewną siebie, mało komunikatywną i niepasującą do dynamicznego zespołu”.',
-            'Jak rozpoznać w czasie rzeczywistym: Zwróć uwagę, jak pierwsze 30 sekund spotkania kształtuje resztę pytań. Rekruter zaczyna zadawać pytania podchwytliwe, szukając potwierdzenia swojej negatywnej hipotezy (błąd konfirmacji z Tomu I).',
-            'Możliwa konstruktywna reakcja: Rekruter świadomie zawiesza osąd: „Mój mózg reaguje na jej introwertyzm. Jednak to stanowisko wymaga skupienia i analityki, a nie sprzedaży bezpośredniej. Zbadajmy kod”.',
-            'Wniosek dydaktyczny dla czytelnika: Pierwsze wrażenie to prymitywny filtr bezpieczeństwa z sawanny, a nie trafna diagnoza talentu człowieka.'
+            '1. Obiektywna sytuacja i fakty: Anna (26 lat), utalentowana analityczka danych i programistka z dorobkiem w algorytmach optymalizacyjnych, przychodzi na rozmowę rekrutacyjną do warszawskiego fintechu. Z powodu ulewy jej koszula jest lekko pognieciona, a z powodu introwertycznego temperamentu wita się cicho i unika przedłużonego kontaktu wzrokowego.',
+            '2. Co widzi bohater (rekruter Krzysztof, 38 lat): Krzysztof widzi młodą kobietę z opuszczonymi ramionami, która nie uścisnęła dłoni z siłą i mówi niepewnym tonem. W głowie rekrutera natychmiast formuje się sąd: „Osoba wycofana, prawdopodobnie o niskich kompetencjach społecznych, nie poradzi sobie w dynamicznym zespole korporacyjnym”.',
+            '3. Czego bohater nie widzi (martwe pole): Krzysztof nie widzi, że kod Anny na repozytorium GitHub bije na głowę wszystkich dotychczasowych kandydatów, a jej introwertyzm wiąże się z rzadką zdolnością wielogodzinnego, głębokiego skupienia (Deep Work) bez rozpraszania się.',
+            '4. Działający mechanizm psychologiczny: Błyskawiczna heurystyka pierwszego wrażenia (Todorov) sprzężona z błędem konfirmacji. W ciągu pierwszych 100 milisekund układ afektywny podjął arbitralną decyzję, a przez kolejne 45 minut rozmowy Krzysztof zadaje wyłącznie podchwytliwe pytania, by udowodnić swoją pierwotną tezę.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W warunkach plemiennych szybka kategoryzacja obcego na podstawie mimiki i postawy decydowała o przeżyciu przed ewentualną napaścią.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się natychmiastowej sympatii lub niechęci do nowo poznanej osoby w pierwszych sekundach, zanim padnie choć jedno merytoryczne zdanie.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Wdrożenie ustrukturyzowanego wywiadu opartego na kompetencjach (Structured Behavioral Interview) z przygotowanym wcześniej arkuszem oceniania i zanonimizowaną próbką zadania technicznego.',
+            '8. Konsekwencje alternatywnego wyboru: Firma zatrudnia wybitną specjalistkę, zamiast powierzchownie elokwentnego kandydata, który świetnie się prezentuje, ale ma braki warsztatowe.',
+            '9. Wniosek dydaktyczny dla czytelnika: Twoje pierwsze wrażenie to automatyczna reakcja ewolucyjna, a nie nieomylna intuicja. Zawsze oddzielaj powierzchowność od rzeczywistych kompetencji.'
           ]
         }
       ]
@@ -550,13 +572,17 @@ export const chapterSix: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 6: Szarmancki konsultant biznesowy',
+          title: 'PRZYKŁAD 6: Szarmancki konsultant biznesowy — Urok formy nad treścią',
           paragraphs: [
-            'Sytuacja i bohater: Zarząd spółki meblarskiej zatrudnia konsultanta Artura za 80 000 zł miesięcznie. Artur ma perfekcyjny uśmiech, doskonałą dykcję, nosi szyty na miarę garnitur i używa modnego słownictwa z Doliny Krzemowej.',
-            'Działający mechanizm: Efekt Halo w biznesie. Charyzma i powierzchowna elegancja Artura sprawiły, że członkowie zarządu bezkrytycznie przyjęli jego chaotyczną, pozbawioną analizy finansowej strategię.',
-            'Jak rozpoznać w czasie rzeczywistym: Zauroczenie formą przy braku twardych liczb. Wszyscy kiwają głowami, czując się „nobilitowani” obecnością eksperta.',
-            'Możliwa konstruktywna reakcja: Wprowadzenie zasady „ślepego audytu”: ocena propozycji strategicznej w formie czystego tekstu bez nazwisk i bez prezentacji multimedialnej.',
-            'Wniosek dydaktyczny dla czytelnika: Zawsze oddzielaj retoryczny blask od merytorycznego fundamentu. Charyzma nie zastąpi kompetencji.'
+            '1. Obiektywna sytuacja i fakty: Zarząd spółki produkcyjnej zatrudnia zewnętrznego doradcę strategicznego Artura za 80 000 zł miesięcznie. Artur ma nienaganny uśmiech, nosi szyty na miarę garnitur, posługuje się modnym żargonem z Doliny Krzemowej i prezentuje slajdy z animacjami 3D.',
+            '2. Co widzi bohater (prezes zarządu Janusz): Widzi w Arturze zbawcę firmy, człowieka sukcesu światowego formatu, którego sama obecność podnosi prestiż organizacji.',
+            '3. Czego bohater nie widzi (martwe pole): Janusz nie zauważa, że w 60-slajdowej prezentacji Artura nie ma ani jednego realistycznego wskaźnika ROI, modelu przepływów pieniężnych ani analizy wąskich gardeł w fabryce.',
+            '4. Działający mechanizm psychologiczny: Pozytywny Efekt Halo. Atrakcyjność fizyczna, wysoki status materialny i charyzma retoryczna Artura przeniosły się na bezkrytyczną ocenę merytorycznej wartości jego strategii.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Mózg dąży do spójności poznawczej (Cognitive Consistency) — z perspektywy energetycznej łatwiej założyć, że atrakcyjny i pewny siebie osobnik jest także mądry i kompetentny.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Poczucie zachwytu formą i charyzmą rozmówcy połączone z brakiem weryfikacji twardych danych liczbowych.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Wdrożenie procedury „ślepej ewaluacji dokumentów” — oddzielenie oceny samej noty strategicznej (w formie czystego tekstu bez nazwiska autora) od wystąpienia ustnego.',
+            '8. Konsekwencje alternatywnego wyboru: Audyt merytoryczny natychmiast obnaża luki logiczne, a zarząd oszczędza setki tysięcy złotych, unikając chybionych inwestycji.',
+            '9. Wniosek dydaktyczny dla czytelnika: Błyszczące opakowanie nie mówi nic o zawartości przesyłki. W biznesie i życiu prywatnym mierz ludzi ich owocami, a nie ich autoprezentacją.'
           ]
         }
       ]
@@ -589,13 +615,17 @@ export const chapterSix: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 7: Kłótnia małżeńska o niepozmywane naczynia',
+          title: 'PRZYKŁAD 7: Kłótnia o niepozmywane naczynia — Asymetria atrybucyjna w parze',
           paragraphs: [
-            'Sytuacja i bohater: Monika (35 lat) wraca z pracy i widzi zlew pełen naczyń po obiedzie męża Michała. Krzyczy: „Jesteś leniwy, samolubny i nigdy o mnie nie myślisz!”.',
-            'Działający mechanizm: Podstawowy błąd atrybucji w relacji intymnej. Zamiast zapytać o powody, Monika natychmiast przypisuje zaniechanie wadom charakteru partnera.',
-            'Jak rozpoznać w czasie rzeczywistym: Używanie wielkich kwantyfikatorów: „Ty zawsze...”, „Ty nigdy...”, „Jesteś taki a taki”. To sygnał, że mówi afekt i System 1.',
-            'Możliwa konstruktywna reakcja: Zastosowanie komunikatu faktów i uczuć: „Michał, widzę brudne naczynia w zlewie. Jestem bardzo zmęczona po dyżurze i jest mi przykro. Co sprawiło, że ich nie zmyłeś?”. Okazuje się, że Michał musiał nagle ratować klienta na telefonie.',
-            'Wniosek dydaktyczny dla czytelnika: Atak na tożsamość zamyka dialog; zapytanie o kontekst otwiera porozumienie.'
+            '1. Obiektywna sytuacja i fakty: Monika (35 lat) wraca po 9 godzinach pracy i widzi w zlewie brudne naczynia pozostawione przez męża Michała (36 lat). Michał siedzi w fotelu przed otwartym laptopem.',
+            '2. Co widzi bohater (Monika): Widzi brak szacunku, lekceważenie jej wysiłku i lenistwo partnera. Natychmiast krzyczy: „Znowu nic nie zrobiłeś! Jesteś skrajnym egoistą i masz gdzieś ten dom!”.',
+            '3. Czego bohater nie widzi (martwe pole): Monika nie wie, że Michałowi 20 minut wcześniej zawiesił się serwer klienta zagranicznego, a on w stresie walczy z awarią techniczną grożącą zerwaniem kontraktu.',
+            '4. Działający mechanizm psychologiczny: Podstawowy Błąd Atrybucji połączony z egotyzmem atrybucyjnym. Monika tłumaczy zachowanie męża wadą jego charakteru („egoista”), ignorując czynniki sytuacyjne.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Obserwacja drugiego człowieka koncentruje wzrok na jego sylwetce, a nie na niewidzialnym kontekście zewnętrznym. Przypisanie cechy stałej jest szybsze niż żmudne dochodzenie przyczyn.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się w kłótni słów absolutnych: „Ty zawsze...”, „Ty nigdy...”, „Jesteś po prostu...”. To dowód, że osąd przeszedł z poziomu faktów na poziom ataku na tożsamość.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Komunikat NVC oddzielający obserwację od interpretacji: „Michał, widzę naczynia w zlewie. Jestem bardzo zmęczona po pracy. Co sprawiło, że nie zdążyłeś ich sprzątnąć?”.',
+            '8. Konsekwencje alternatywnego wyboru: Michał podnosi wzrok bez poczucia bycia atakowanym, wyjaśnia awarię serwera i prosi o 15 minut na dokończenie zgłoszenia, po czym zmywa naczynia bez eskalacji konfliktu.',
+            '9. Wniosek dydaktyczny dla czytelnika: Zanim nazwiesz kogoś złym człowiekiem, zapytaj o sytuację, w jakiej się znalazł. Przypisywanie złych intencji to najkrótsza droga do zniszczenia relacji.'
           ]
         }
       ]
@@ -638,15 +668,15 @@ export const chapterSix: Chapter = {
         },
         neurobiologicalAnalysis: {
           brainRegions: [
-            { region: 'Przednia kora zakrętu obręczy (dACC)', role: 'Sygnalizacja błędu i lęku przed wyłamaniem się', activationState: 'Ekstremalna aktywacja hamująca mowę' },
-            { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Logiczna ocena błędu w kodzie', activationState: 'Stłumiona przez wyrzut kortyzolu' }
+            { region: 'Grzbietowa przednia kora zakrętu obręczy (dACC) i przednia wyspa', role: 'Detekcja konfliktu poznawczego i bolesnego zagrożenia wykluczeniem społecznym', activationState: 'Wysoka aktywacja sieci istotności (Salience Network) sygnalizująca ryzyko kary grupowej' },
+            { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Analityczna ocena ryzyka technicznego i kontrola hamowania', activationState: 'Zasoby przekierowane na tłumienie impulsu wypowiedzi pod wpływem stresu ostrego' }
           ],
           neurotransmitters: [
-            { name: 'Kortyzol', roleInScenario: 'Paraliż decyzyjny i uległość wobec autorytetu zarządu' }
+            { name: 'Noradrenalina i hormon stresu (kortyzol)', roleInScenario: 'Aktywacja współczulnego układu nerwowego i osi HPA wywołująca suchość w ustach, tachykardię i zawężenie uwagi do natychmiastowego unikania zagrożenia' }
           ],
           biologicalTimeline: [
-            { timeMs: '0 - 200 ms', process: 'Pytanie wiceprezes: skan wzrokowy twarzy uczestników.' },
-            { timeMs: '200 - 800 ms', process: 'Brak reakcji innych wywołuje niewiedzę wielu i paraliż somatyczny.' }
+            { timeMs: '0 - 200 ms', process: 'Pytanie wiceprezes: wzrokowy skan mikroekspresji twarzy uczestników i rejestracja powszechnego bezruchu.' },
+            { timeMs: '200 - 800 ms', process: 'Brak reakcji otoczenia wywołuje niewiedzę wielu i somatyczny sygnał zahamowania behawioralnego.' }
           ]
         },
         influenceAndManipulation: {

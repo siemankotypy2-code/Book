@@ -355,7 +355,10 @@ export const chapterEight: Chapter = {
       paragraphs: [
         'Wielu ludzi czuje wstręt na samo słowo „wpływ” czy „sprzedaż”. Kojarzy im się to z natrętnym domokrążcą wciskającym wadliwe garnki lub politykiem składającym obietnice bez pokrycia. Przyjmują postawę: „Prawda obroni się sama. Jeśli mój pomysł jest dobry, ludzie sami to zrozumieją”.',
         'To naiwny idealizm poznawczy. W świecie zalanym szumem informacyjnym (Tom I, Rozdział 3: Uwaga) prawda nie obroni się sama, jeśli nikt jej nie usłyszy i nie zrozumie. Lekarz przekonujący pacjenta do rzucenia palenia, nauczyciel rozbudzający pasję w uczniu czy inżynier walczący o wdrożenie procedury bezpieczeństwa — wszyscy oni uprawiają perswazję.',
-        'Wpływ jest naturalnym spoiwem tkanki społecznej. Różnica między nim a manipulacją leży w trzech kryteriach: Czystość intencji (czy zależy mi także na dobru odbiorcy?), Przejrzystość danych (czy nie ukrywam wad i ryzyk?) oraz Autonomia wyboru (czy druga strona może bezpiecznie powiedzieć „nie” bez bycia ukaraną emocjonalnie?).'
+        'Wpływ jest naturalnym spoiwem tkanki społecznej. Różnica między etyczną perswazją a manipulacją leży w trzech fundamentalnych kryteriach:',
+        '1. Czystość intencji i symetria korzyści: Czy sukces perswadowanego rozwiązania służy także długofalowo odbiorcy, czy wyłącznie nadawcy?',
+        '2. Przejrzystość informacji i alternatyw: Czy nadawca przedstawia pełny obraz sytuacji (w tym koszty i ryzyka), czy celowo ukrywa niewygodne fakty?',
+        '3. Nienaruszalna autonomia wyboru: Czy odbiorca może bez strachu powiedzieć „NIE”, nie narażając się na odwet emocjonalny, poczucie winy, agresję pasywną czy kary społeczne? Jeśli odmowa wiąże się z karą, mamy do czynienia z przemocą lub manipulacją, a nie z perswazją.'
       ]
     },
     {
@@ -384,13 +387,17 @@ export const chapterEight: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 1: Profesor z siwą brodą w reklamie pasty',
+          title: 'PRZYKŁAD 1: Reklama pasty ze stetoskopem — Peryferyjna heurystyka autorytetu',
           paragraphs: [
-            'Sytuacja i bohater: Aktor w białym fartuchu laboratoryjnym ze stetoskopem na szyi poleca pastę do zębów z „zaawansowaną formułą mikrokryształów”.',
-            'Działający mechanizm: Peryferyjny sygnał autorytetu. Mózg widza nie analizuje składu chemicznego pasty; System 1 odczytuje atrybuty statusu (fartuch, siwe włosy, gabinet) i automatycznie nadaje etykietę: „Ekspert medyczny poleca, produkt jest bezpieczny”.',
-            'Jak rozpoznać w czasie rzeczywistym: Bezrefleksyjne zaufanie wywołane samym rekwizytem lub tytułem przed nazwiskiem.',
-            'Możliwa konstruktywna reakcja: Włączenie toru centralnego: „Kim jest ta osoba? Czy to lekarz, czy aktor? Jakie niezależne badania kliniczne potwierdzają tę skuteczność?”.',
-            'Wniosek dydaktyczny dla czytelnika: Zawsze oddzielaj insygnia władzy i autorytetu od twardych faktów merytorycznych.'
+            '1. Obiektywna sytuacja i fakty: W telewizyjnym bloku reklamowym pojawia się 45-letni mężczyzna w nieskazitelnie białym kitlu laboratoryjnym, ze stetoskopem przewieszonym przez szyję, na tle mikroskopów. Z powagą rekomenduje pastę do zębów z „nowatorskim kompleksem bio-krzemianów”. Na dole ekranu widnieje mały napis: „Aktor gra postać”.',
+            '2. Co widzi bohater (widz Marek, 52 lata): Marek widzi wybitnego lekarza stomatologa lub naukowca, który bezinteresownie dzieli się przełomowym odkryciem medycznym.',
+            '3. Czego bohater nie widzi (martwe pole): Marek nie dostrzega mikro-napisu o aktorze, nie analizuje chemicznego składu pasty (który jest identyczny ze zwykłą pastą z dyskontu za 4 zł) i nie weryfikuje braku niezależnych badań klinicznych.',
+            '4. Działający mechanizm psychologiczny: Peryferyjny sygnał autorytetu w modelu ELM. Kiedy zasoby poznawcze widza są zredukowane wieczornym zmęczeniem, System 1 automatycznie łączy atrybuty statusu (kitel, stetoskop, mikroskop) z kompetencją i wiarygodnością.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W społecznościach przedpiśmiennych zaufanie starszyźnie i wyspecjalizowanym zielarzom oszczędzało czas i chroniło przed zatruciem.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się bezrefleksyjnego przekonania: „Skoro profesor to zaleca, to musi działać”, połączone z brakiem chęci zajrzenia do karty produktu.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Przełączenie na tor centralny: „Kim jest ta postać? Jaki jest faktyczny skład chemiczny? Czy produkt posiada atest niezależnego towarzystwa stomatologicznego?”.',
+            '8. Konsekwencje alternatywnego wyboru: Oszczędność pieniędzy i wybór produktów w oparciu o stężenie fluoru/hydroksyapatytu, a nie o kostium aktora.',
+            '9. Wniosek dydaktyczny dla czytelnika: Rekwizyty autorytetu to najtańsza waluta w marketingu. Zawsze oddzielaj insygnia wiedzy od twardych dowodów merytorycznych.'
           ]
         }
       ]
@@ -412,24 +419,26 @@ export const chapterEight: Chapter = {
       id: 'sec-8-5',
       pageNumber: 350,
       sectionNumber: '8.5',
-      title: 'Emocje w perswazji: Kiedy serce otwiera bramę dla rozumu',
+      title: 'Emocje w perswazji: Znaczniki somatyczne Damasio i waga argumentu',
       category: 'teoria',
       readingTimeMinutes: 14,
       paragraphs: [
-        'Czysta logika bez emocji jest impotentna. Antonio Damasio w swoich badaniach nad pacjentami z uszkodzeniem kory brzuszno-przyśrodkowej (przypadek Phineasa Gage’a i pacjenta Elliota) dowiódł, że człowiek pozbawiony dostępu do emocji staje się całkowicie niezdolny do podjęcia jakiejkolwiek decyzji — potrafi godzinami analizować wady i zalety koloru długopisu.',
-        'Emocja w perswazji nie służy do ogłupienia odbiorcy, lecz do nadania wagi i priorytetu argumentom. Bez zaangażowania afektywnego kora przedczołowa nie dokona alokacji energii metabolicznej.'
+        'Czysta logika bez emocji jest decyzyjnie bezpłodna. Antonio Damasio w swojej hipotezie znaczników somatycznych (Somatic Marker Hypothesis) udowodnił, badając pacjentów z uszkodzeniami brzuszno-przyśrodkowej kory przedczołowej (vmPFC) i przedniej wyspy, że odcięcie informacji afektywnej paraliżuje proces wyboru. Człowiek pozbawiony „podpowiedzi ciała” potrafi spędzić 4 godziny na bezowocnym porównywaniu dwóch dat spotkania w kalendarzu.',
+        'Emocja w etycznej perswazji nie służy do ogłupienia odbiorcy, lecz do nadania wagi poznawczej (Salience) przedstawianym faktom. Kora przedczołowa musi wiedzieć, co z przedstawionych danych jest dla organizmu rzeczywiście ważne, a co jest tylko szumem statystycznym.'
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 2: Efekt identyfikowalnej ofiary w zbiórce charytatywnej',
+          title: 'PRZYKŁAD 2: Zbiórka charytatywna — Statystyka kontra identyfikowalna ofiara',
           paragraphs: [
-            'Sytuacja i bohater: Fundacja humanitarna testuje dwa apele o wsparcie w kryzysie głodowym w Afryce.',
-            'Wersja A (Statystyka): „Trzy miliony dzieci w rejonie Sahelu cierpi z powodu niedożywienia”. Średnia wpłata: 12 zł.',
-            'Wersja B (Identyfikowalna ofiara): „Oto 7-letnia Rokia z Mali. Jej rodzina żyje za 1 dolara dziennie. Twoja wpłata 50 zł zapewni jej posiłki i naukę przez cały miesiąc”. Średnia wpłata: 48 zł (czterokrotnie więcej!).',
-            'Działający mechanizm: Abstrakcyjne miliony nie poruszają układu limbicznego — dla mózgu to chłodna statystyka. Jedna konkretna twarz i imię natychmiast aktywują empatię i neurony lustrzane.',
-            'Jak rozpoznać w czasie rzeczywistym: Pojawienie się wzruszenia somatycznego i odruchu sięgnięcia do portfela.',
-            'Możliwa konstruktywna reakcja: Połączenie empatii z analizą operacyjną: zweryfikowanie, jaki procent wpłat fundacji faktycznie trafia do potrzebujących.',
-            'Wniosek dydaktyczny dla czytelnika: Jeśli chcesz poruszyć ludzi do wielkich czynów, nie pokazuj im suchych wykresów — pokaż im konkretnego człowieka.'
+            '1. Obiektywna sytuacja i fakty: Międzynarodowa fundacja humanitarna wysyła do 10 000 darczyńców dwa warianty listu z apelem o wsparcie rejonu Sahelu dotkniętego suszą.',
+            '2. Co widzi bohater (wariant A vs wariant B): Odbiorca wariantu A czyta: „Trzy miliony dzieci w Afryce Subsaharyjskiej jest zagrożonych śmiercią głodową”. Odbiorca wariantu B widzi zdjęcie 7-letniej dziewczynki: „Oto Rokia z Mali. Twoja wpłata 50 zł zapewni jej żywność i dostęp do szkoły na cały miesiąc”.',
+            '3. Czego bohater nie widzi (martwe pole): Darczyńca wariantu B nie analizuje makroekonomicznych uwarunkowań głodu w Afryce; darczyńca wariantu A zostaje przytłoczony skalą problemu i czuje bezradność poznawczą („Co może zmienić moje 50 zł wobec 3 milionów?”).',
+            '4. Działający mechanizm psychologiczny: Efekt Identyfikowalnej Ofiary (Identifiable Victim Effect — Small, Loewenstein, Slovic). Układ limbiczny i neurony lustrzane reagują na konkretną, jednostkową narrację z twarzą i imieniem. Wielkie liczby aktywują chłodne przetwarzanie pojęciowe i paraliżującą apatię (Psychic Numbing).',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Nasi przodkowie żyli w małych grupach plemiennych (50-150 osób). Empatia i współdzielenie zasobów wyewoluowały wobec konkretnych członków klanu, a nie wobec wielomilionowych abstrakcji statystycznych.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się natychmiastowego ściśnięcia klatki piersiowej, wzruszenia i odruchu sięgnięcia do portfela pod wpływem portretu jednej osoby.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Zintegrowanie empatii z oceną efektywności: darczyńca kieruje się sercem wobec Roku, ale rozumem sprawdza raport finansowy fundacji (jaki procent środków realnie dociera do beneficjentów).',
+            '8. Konsekwencje alternatywnego wyboru: Wariant B generuje 400% wyższe wpłaty, pozwalając na realną pomoc, a świadomy darczyńca wspiera organizację transparentną.',
+            '9. Wniosek dydaktyczny dla czytelnika: Jeśli chcesz poruszyć ludzi do działania, nie zasypuj ich tabelami danych. Pokaż im człowieka, któremu ta zmiana ratuje życie.'
           ]
         }
       ]
@@ -447,13 +456,17 @@ export const chapterEight: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 3: Pusta restauracja a kolejka na mrozie w Krakowie',
+          title: 'PRZYKŁAD 3: Pusta restauracja a kolejka na mrozie w Krakowie — Pętla dowodu społecznego',
           paragraphs: [
-            'Sytuacja i bohater: Dwie włoskie restauracje na krakowskim Kazimierzu, oddalone o 30 metrów. W lokalu A jest pusto, kelner znudzony stoi w drzwiach. Przed lokalem B stoi w deszczu 15 osób czekających na stolik.',
-            'Działający mechanizm: Społeczny dowód słuszności (Social Proof). Nowi turyści bez wahania stają na końcu kolejki przed lokalem B, myśląc: „Skoro ludzie marzną, jedzenie musi być wybitne. W lokalu A na pewno trują”.',
-            'Jak rozpoznać w czasie rzeczywistym: Niechęć do wejścia do pustego lokalu mimo głodu.',
-            'Możliwa konstruktywna reakcja: Sprawdzenie menu i podjęcie autonomicznej decyzji w oparciu o własne kryteria, zamiast bezrefleksyjnego stania w deszczu.',
-            'Wniosek dydaktyczny dla czytelnika: Tłum często przyciąga tłum na zasadzie sprzężenia zwrotnego, niezależnie od obiektywnej jakości oferty.'
+            '1. Obiektywna sytuacja i fakty: Na ulicy Szerokiej w Krakowie działają dwie włoskie restauracje oddalone o 25 metrów. W lokalu A jest pusto, kelner wygląda przez szybę. Przed lokalem B w ulewnym deszczu stoi w kolejce 18 osób czekających na stolik.',
+            '2. Co widzi bohater (turysta Michał, 31 lat): Michał idzie z narzeczoną, oboje są głodni i zmarznięci. Widząc kolejkę, Michał bez wahania staje na jej końcu i mówi: „Skoro ci ludzie marzną na deszczu, to pizza musi być wybitna. W tej pustej obok na pewno mają nieświeże jedzenie”.',
+            '3. Czego bohater nie widzi (martwe pole): Michał nie wie, że lokal B ma zaledwie 5 stolików (więc szybko się zapełnia) i został opisany na profilu popularnego influencera, podczas gdy lokal A ma 20 stolików, własny piec opalany drewnem i wybitnego kucharza z Neapolu, lecz nie zainwestował w marketing.',
+            '4. Działający mechanizm psychologiczny: Społeczny Dowód Słuszności (Social Proof) jako kaskada informacyjna (Informational Cascade). W warunkach braku bezpośredniej wiedzy o jakości produktu zachowanie innych ludzi staje się dominującą heurystyką zastępczą.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Ewolucyjnie podążanie za wyborem większości stada drastycznie redukowało ryzyko zjedzenia trującej rośliny czy wejścia na terytorium drapieżnika.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się silnego wewnętrznego oporu przed wejściem do pustego lokalu („A co, jeśli się zatruję?”) połączonego z gotowością do ponoszenia niewygody (stanie na deszczu), byle być w grupie.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Weryfikacja kryteriów obiektywnych: podejście do lokalu A, obejrzenie karty menu, zapytanie kelnera o świeżość ciasta i składniki D.O.P., a następnie wejście i zjedzenie posiłku w ciepłym wnętrzu bez kolejki.',
+            '8. Konsekwencje alternatywnego wyboru: Zjedzenie doskonałego posiłku od ręki w cichej atmosferze za 60% ceny modnego lokalu, z zaoszczędzeniem 45 minut stania na deszczu.',
+            '9. Wniosek dydaktyczny dla czytelnika: Tłum najczęściej przyciąga tłum na zasadzie samonapędzającej się pętli widoczności, a nie obiektywnej wyższości jakościowej.'
           ]
         }
       ]
@@ -485,13 +498,17 @@ export const chapterEight: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 4: Znikające pokoje na portalu rezerwacyjnym',
+          title: 'PRZYKŁAD 4: Znikające pokoje na portalu rezerwacyjnym — FOMO i sztuczny pośpiech',
           paragraphs: [
-            'Sytuacja i bohater: Tomasz planuje wyjazd z partnerką na weekend. Na ekranie pojawia się czerwony baner: „Tylko 1 pokój w tej cenie! 14 osób właśnie przegląda tę ofertę!”.',
-            'Działający mechanizm: Sztuczna reguła niedostępności połączona ze społecznym dowodem słuszności wywołująca lęk przed utratą (Loss Aversion).',
-            'Jak rozpoznać w czasie rzeczywistym: Nagły skok tętna i impuls, by kliknąć „Rezerwuj teraz” bez sprawdzania opinii i warunków anulacji.',
-            'Możliwa konstruktywna reakcja: Zamknięcie karty przeglądarki na 15 minut i ochłonięcie — pokój zazwyczaj nadal jest dostępny.',
-            'Wniosek dydaktyczny dla czytelnika: Sztuczny pośpiech to najczęstsza broń służąca do wyłączenia kory przedczołowej.'
+            '1. Obiektywna sytuacja i fakty: Użytkownik Piotr (29 lat) przegląda w piątkowy wieczór portal rezerwacji hoteli. Przy wybranym apartamencie w górach pojawia się pulsujący czerwony napis: „Ostatni pokój w tej cenie! 19 osób właśnie przegląda tę ofertę!”. Dodatkowo odlicza zegar: „Promocja ważna jeszcze przez 8 minut”.',
+            '2. Co widzi bohater (Piotr): Piotr czuje, że jeśli nie kliknie w ciągu kilku sekund, straci życiową okazję, a wymarzony wyjazd z partnerką przepadnie na rzecz innych użytkowników.',
+            '3. Czego bohater nie widzi (martwe pole): Piotr nie wie, że algorytmy platformy generują komunikaty o „przeglądających osobach” na podstawie całego regionu lub danych z ostatnich 48 godzin, a hotel na własnej stronie www dysponuje jeszcze czterema wolnymi pokojami w niższej cenie.',
+            '4. Działający mechanizm psychologiczny: Reguła niedostępności połączona z awersją do straty (Kahneman & Tversky) i sztucznie wywołaną presją czasu. Wyrzut noradrenaliny blokuje analityczne myślenie dlPFC.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W środowisku niedoboru (ubytek wody w oazie, znikające stado antylop) natychmiastowa reakcja chwytania zasobu decydowała o przetrwaniu klanu.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Przyspieszone bicie serca, płytki oddech i nerwowe sięganie po kartę płatniczą bez doczytania warunków anulacji rezerwacji.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Wdrożenie protokołu 20-minutowego ochłodzenia: zamknięcie karty portalu, bezpośredni telefon do recepcji hotelu i porównanie warunków bez pośredników.',
+            '8. Konsekwencje alternatywnego wyboru: Uzyskanie lepszego pokoju ze śniadaniem bezpośrednio od właściciela i uniknięcie niepodlegającej zwrotowi prowizji portalu.',
+            '9. Wniosek dydaktyczny dla czytelnika: Kiedy interfejs cyfrowy zmusza Cię do pośpiechu czerwonym kolorem i stoperem, to dowód, że ktoś próbuje odebrać Ci kontrolę nad portfelem.'
           ]
         }
       ],
@@ -510,13 +527,17 @@ export const chapterEight: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 5: Petycja o zieleń i późniejsza darowizna',
+          title: 'PRZYKŁAD 5: Petycja o zieleń i późniejsza darowizna — Technika stopy w drzwiach',
           paragraphs: [
-            'Sytuacja i bohater: Na ulicy aktywista prosi Macieja jedynie o podpis pod petycją o posadzenie 10 drzew w parku (zerowy koszt). Maciej podpisuje.',
-            'Działający mechanizm: Technika stopy w drzwiach i potrzeba spójności tożsamościowej. Tydzień później ten sam aktywista puka do drzwi z prośbą o 200 zł stałego zlecenia na fundację. Maciej, chcąc pozostać spójny ze swoim wizerunkiem „człowieka dbającego o zieleń”, zgadza się na płatność.',
-            'Jak rozpoznać w czasie rzeczywistym: Myśl: „Przecież już wcześniej poparłem tę akcję, głupio byłoby teraz odmówić”.',
-            'Możliwa konstruktywna reakcja: Rozdzielenie małego gestu od dużej decyzji finansowej i asertywna odmowa bez poczucia winy.',
-            'Wniosek dydaktyczny dla czytelnika: Poparcie idei nie obliguje Cię do sponsorowania każdej związanej z nią inicjatywy.'
+            '1. Obiektywna sytuacja i fakty: Na deptaku miejskim uśmiechnięty wolontariusz podchodzi do Macieja (26 lat) z prośbą o podpisanie petycji do prezydenta miasta o posadzenie 20 lip w parku miejskim. Złożenie podpisu zajmuje 10 sekund i nic nie kosztuje. Maciej podpisuje.',
+            '2. Co widzi bohater (Maciej): Widzi siebie jako świadomego, dobrego obywatela, który wspiera lokalną przyrodę jednym ruchem długopisu.',
+            '3. Czego bohater nie widzi (martwe pole): Maciej nie wie, że złożenie podpisu zmieniło jego wewnętrzny autowizerunek (Self-Perception Theory Daryla Bema) — z człowieka neutralnego stał się w swoich oczach „aktywistą ekologicznym”. Dwa tygodnie później ta sama organizacja puka do jego drzwi z prośbą o stałe zlecenie 150 zł miesięcznie.',
+            '4. Działający mechanizm psychologiczny: Potrzeba spójności tożsamościowej i technika stopy w drzwiach (Freedman & Fraser). Odmowa darowizny wywołałaby w mózgu Macieja bolesny dysonans poznawczy z wcześniej podjętym zobowiązaniem.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W społecznościach plemiennych osoby niespójne, zmieniające zdanie z dnia na dzień, były uznawane za nielojalne i wykluczane z sojuszy.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Wewnętrzny głos: „Skoro powiedziałem A, to głupio teraz nie powiedzieć B, co ten człowiek o mnie pomyśli?”.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Rozdzielenie spraw i asertywne postawienie granicy: „Cieszę się, że podpisałem petycję o drzewa, ale mój budżet nie przewiduje stałych darowizn finansowych. Mówię nie”.',
+            '8. Konsekwencje alternatywnego wyboru: Ochrona własnych finansów bez poczucia winy i bez konieczności bycia zakładnikiem własnego niewinnego podpisu.',
+            '9. Wniosek dydaktyczny dla czytelnika: Zgoda na mały krok nie obliguje Cię do wzięcia udziału w maratonie. Zawsze masz prawo zmienić zdanie w obliczu nowych żądań.'
           ]
         }
       ],
@@ -535,13 +556,17 @@ export const chapterEight: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 6: Zgoda na operację kardiologiczną — zysk a strata',
+          title: 'PRZYKŁAD 6: Zgoda na operację kardiologiczną — Ramowanie zysku kontra straty',
           paragraphs: [
-            'Sytuacja i bohater: Pacjent przed trudną operacją by-passów. Gdy kardiochirurg mówi: „90% pacjentów przeżywa ten zabieg bez powikłań”, pacjent podpisuje zgodę ze spokojem. Gdy inny lekarz mówi: „Istnieje 10% ryzyka zgonu na stole”, ten sam pacjent wpada w panikę i żąda wypisu.',
-            'Działający mechanizm: Ramowanie zysku vs straty (Kahneman & Tversky). Liczby są matematycznie identyczne, ale aktywują skrajnie różne sieci neuronalne.',
-            'Jak rozpoznać w czasie rzeczywistym: Sprawdzenie, czy perswazja opiera się na perspektywie negatywnej (strach), czy pozytywnej (korzyść).',
-            'Możliwa konstruktywna reakcja: Samodzielne przeliczenie ramy na drugą stronę medalu przed podjęciem decyzji.',
-            'Wniosek dydaktyczny dla czytelnika: Zawsze pytaj o drugą stronę ramy, zanim podejmiesz kluczowy wybór.'
+            '1. Obiektywna sytuacja i fakty: Pacjent Jan (60 lat) stoi przed decyzją o operacji wszczepienia by-passów. Dwa zespoły lekarskie przedstawiają tę samą statystykę w odmienny sposób.',
+            '2. Co widzi bohater (Jan): Gdy lekarz A mówi: „90% pacjentów przeżywa ten zabieg bez powikłań i wraca do pełnej sprawności”, Jan czuje spokój, nadzieję i podpisuje zgodę. Gdy lekarz B mówi: „Istnieje 10% ryzyka zgonu śródoperacyjnego”, ten sam Jan wpada w panikę, wycofuje zgodę i ucieka ze szpitala.',
+            '3. Czego bohater nie widzi (martwe pole): Jan nie dostrzega, że matematyczna treść obu komunikatów jest co do joty identyczna. Widzi jedynie emocjonalną barwę ramy.',
+            '4. Działający mechanizm psychologiczny: Efekt Ramowania (Framing Effect — Amos Tversky, Daniel Kahneman). Ludzie wykazują silną awersję do ryzyka w ramie zysków („przeżycie”), a skłonność do unikania działania lub paniki w ramie strat („zgon”).',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Potencjalna strata zasobu (życia, pożywienia) była ewolucyjnie bardziej dotkliwa niż symetryczny zysk, stąd układ nerwowy nadmiernie reaguje na semantykę zagrożenia.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Nagła zmiana decyzji pod wpływem samej zmiany doboru słów opisujących ten sam fakt.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Samodzielne odwracanie ramy (Reframing): za każdym razem, gdy słyszysz statystykę w ramie straty, przelicz ją na zysk (i odwrotnie), by ocenić surowe prawdopodobieństwo.',
+            '8. Konsekwencje alternatywnego wyboru: Podjęcie racjonalnej, dojrzałej decyzji ratującej życie w oparciu o rzetelny bilans medyczny, a nie o afektywne przerażenie.',
+            '9. Wniosek dydaktyczny dla czytelnika: Kto kontroluje ramę wypowiedzi, kontroluje emocje odbiorcy. Zawsze zdejmuj ramę ze słów, by zobaczyć nagi fakt.'
           ]
         }
       ],
@@ -560,13 +585,17 @@ export const chapterEight: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 7: Negocjacja ceny mieszkania z rynku wtórnego',
+          title: 'PRZYKŁAD 7: Negocjacja ceny mieszkania z rynku wtórnego — Pułapka pierwszej liczby',
           paragraphs: [
-            'Sytuacja i bohater: Sprzedający wystawia mieszkanie warte rynkowo 720 000 zł za kwotę 850 000 zł (agresywna kotwica). Kupujący po długich, wyczerpujących negocjacjach zbija cenę do 780 000 zł.',
-            'Działający mechanizm: Efekt kotwiczenia połączony z regułą wzajemności ustępstw. Kupujący odchodzi w euforii: „Zbiłem cenę aż o 70 000 zł, jestem geniuszem negocjacji!”.',
-            'Jak rozpoznać w czasie rzeczywistym: Poczucie triumfu oparte na wielkości rabatu zamiast na obiektywnej wycenie rynkowej.',
-            'Możliwa konstruktywna reakcja: Całkowite odrzucenie kotwicy sprzedającego i rozpoczęcie rozmowy od własnego, twardego operatu szacunkowego.',
-            'Wniosek dydaktyczny dla czytelnika: Nigdy nie negocjuj w oparciu o kotwicę drugiej strony. Zresetuj stół rozmów własnymi danymi.'
+            '1. Obiektywna sytuacja i fakty: Sprzedający wystawia mieszkanie na warszawskiej Woli o realnej rynkowej wartości 730 000 zł za kwotę ofertową 850 000 zł (agresywna kotwica). Kupujący Krzysztof po wyczerpujących, tygodniowych negocjacjach zbija cenę do 790 000 zł.',
+            '2. Co widzi bohater (Krzysztof): Krzysztof czuje triumf i euforię. Opowiada rodzinie: „Zbiłem cenę aż o 60 000 zł, jestem mistrzem negocjacji!”.',
+            '3. Czego bohater nie widzi (martwe pole): Krzysztof nie zauważa, że przepłacił za mieszkanie 60 000 zł powyżej średniej rynkowej z operatów szacunkowych. Negocjował z kotwicą sprzedającego, a nie z rynkiem.',
+            '4. Działający mechanizm psychologiczny: Heurystyka Zakotwiczenia i Niewystarczającego Dopasowania (Anchoring and Adjustment). Pierwsza rzucona kwota stała się grawitacyjnym centrum negocjacji, ściągając wszystkie kontroferty w swoją stronę.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W warunkach braku obiektywnych pomiarów pierwsza dostępna informacja ilościowa służyła jako punkt orientacyjny, od którego mózg dokonywał drobnych korekt.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Poczucie zadowolenia wynikające z wielkości „rabatu”, zamiast z obiektywnej relacji ceny do wartości nabywanego dobra.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Całkowite odrzucenie kotwicy i reset stołu negocjacyjnego: „Z całym szacunkiem, kwota 850 000 zł jest oderwana od realiów transakcyjnych w tej dzielnicy. Przyniosłem wyciąg z aktów notarialnych z ostatnich 3 miesięcy. Moja oferta to 710 000 zł”.',
+            '8. Konsekwencje alternatywnego wyboru: Zakup nieruchomości w uczciwej cenie rynkowej lub szybkie wycofanie się z transakcji bez straty dziesiątek tysięcy złotych.',
+            '9. Wniosek dydaktyczny dla czytelnika: Nigdy nie negocjuj w korytarzu wyznaczonym przez kotwicę drugiej strony. Zbuduj własną kotwicę opartą na faktach.'
           ]
         }
       ]
@@ -620,15 +649,15 @@ export const chapterEight: Chapter = {
         },
         neurobiologicalAnalysis: {
           brainRegions: [
-            { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Kalkulacja wieloletniego bilansu kosztów', activationState: 'Uruchomiona u radnych dzięki liczbom Joanny' },
-            { region: 'Brzuszno-przyśrodkowa kora przedczołowa (vmPFC)', role: 'Integracja zysków moralnych i finansowych', activationState: 'Wysoka' }
+            { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Kalkulacja wieloletniego bilansu kosztów i logiczna analiza wskaźników', activationState: 'Uruchomiona u radnych dzięki twardym liczbom Joanny' },
+            { region: 'Brzuszno-przyśrodkowa kora przedczołowa (vmPFC)', role: 'Integracja znaczników somatycznych: zysków moralnych i ochrony budżetu', activationState: 'Wysoka spójność decyzyjna' }
           ],
           neurotransmitters: [
-            { name: 'Dopamina', roleInScenario: 'Perspektywa sukcesu pilotażu dała radnym nadzieję na sukces polityczny' }
+            { name: 'Układ dopaminergiczny i modulacja noradrenergiczna', roleInScenario: 'Wykonalny plan pilotażu uruchamia projekcje dopaminergiczne związane z antycypacją sukcesu politycznego, obniżając poziom lęku obronnego' }
           ],
           biologicalTimeline: [
-            { timeMs: 'Pierwsze 5 minut', process: 'Rozbrojenie obrony radnych brakiem agresji.' },
-            { timeMs: '20 minuta', process: 'Pokazanie wykresu kosztów zewnętrznych przełącza salę na tor centralny.' }
+            { timeMs: 'Pierwsze 5 minut', process: 'Rozbrojenie obrony radnych brakiem agresji i szacunkiem dla trudnej sytuacji budżetowej.' },
+            { timeMs: '20 minuta', process: 'Pokazanie wykresu kosztów zewnętrznych przełącza salę na analityczny tor centralny (ELM).' }
           ]
         },
         influenceAndManipulation: {

@@ -349,8 +349,9 @@ export const chapterTen: Chapter = {
       },
       paragraphs: [
         'Wyobraź sobie niemowlę płaczące w łóżeczku. Jego kora przedczołowa jest jeszcze nieukształtowana; samo nie potrafi obniżyć poziomu kortyzolu ani uspokoić bicia serca. Matka lub ojciec biorą je w ramiona, przytulają do klatki piersiowej i nucą kołysankę. W ciągu minuty oddech dziecka zwalnia, a ciało wiotczeje w bezpiecznym śnie.',
-        'To jest współregulacja (Co-regulation). Myślimy, że jako dorośli stajemy się całkowicie samowystarczalnymi wyspami biologicznymi. To mit. Kiedy wracasz po koszmarnym dniu w pracy, Twój układ współczulny płonie. Wystarczy jedno ciepłe, bezpieczne spojrzenie zaufanego partnera, mocny uścisk dłoni i słowa: „Jestem przy tobie”, by Twój nerw błędny natychmiast obniżył ciśnienie krwi.',
-        'Relacja to nie abstrakcyjny status na Facebooku czy podpisana umowa. Relacja to żywy obwód bioelektryczny między dwoma mózgami. Jeśli w tym obwodzie płynie bezpieczeństwo — kwitniesz. Jeśli płynie w nim ciągłe napięcie, lęk i krytyka — Twoje ciało powoli umiera w chronicznym stanie zapalnym.'
+        'To jest współregulacja (Co-regulation). Myślimy, że jako dorośli stajemy się całkowicie samowystarczalnymi wyspami biologicznymi. To mit. Kiedy wracasz po koszmarnym dniu w pracy, Twój układ współczulny płonie. Wystarczy jedno ciepłe, bezpieczne spojrzenie zaufanego partnera, mocny uścisk dłoni i słowa: „Jestem przy tobie”, by Twój układ przywspółczulny (tonus nerwu błędnego) natychmiast wyrównał rytm serca i obniżył ciśnienie krwi.',
+        'Warto zauważyć, że choć Teoria Poliwagalna Stephena Porgesa budzi dyskusje wśród neuroanatomów ewolucyjnych co do filogenezy gałęzi nerwu błędnego, sam mechanizm współregulacji somatycznej i synchronizacji zmienności rytmu zatokowego (HRV) między bliskimi osobami jest bezspornym faktem fizjologicznym.',
+        'Relacja to nie abstrakcyjny status czy podpisana umowa. Relacja to żywy obwód bioelektryczny między dwoma układami nerwowymi. Jeśli w tym obwodzie płynie bezpieczeństwo — organizm regeneruje tkanki i obniża stany zapalne. Jeśli płynie w nim ciągłe napięcie, lęk i krytyka — ciało funkcjonuje w wyniszczającym, przewlekłym stresie.'
       ]
     },
     {
@@ -366,13 +367,17 @@ export const chapterTen: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 1: Poranny powrót z dyżuru — Współregulacja w działaniu',
+          title: 'PRZYKŁAD 1: Poranny powrót z dyżuru na SORze — Fizjologia współregulacji',
           paragraphs: [
-            'Sytuacja i bohater: Lekarka ratunkowa Monika (34 lata) wraca po 24-godzinnym dramatycznym dyżurze na SORze. Jej tętno wynosi 95 bpm, mięśnie karku są jak skała, w głowie huczy od krzyków pacjentów.',
-            'Działający mechanizm: Współregulacja poliwagalna. Mąż Piotr nie zasypuje jej pytaniami: „Jak było? Co zjadłaś?”. Wita ją w drzwiach, zdejmuje z niej kurtkę, podaje ciepłą herbatę i przytula ją mocno w milczeniu przez 3 minuty.',
-            'Jak rozpoznać w czasie rzeczywistym: Głębokie westchnienie ulgi, opuszczenie ramion, spadek tętna do 68 bpm.',
-            'Możliwa konstruktywna reakcja: Pozwolenie sobie na oparcie się o drugiego człowieka bez konieczności bycia dzielnym.',
-            'Wniosek dydaktyczny dla czytelnika: Największym darem w relacji jest uregulowany, spokojny układ nerwowy obecny obok.'
+            '1. Obiektywna sytuacja i fakty: Lekarka rezydentka Monika (34 lata) wraca do domu po 24-godzinnym, skrajnie obciążającym dyżurze na szpitalnym oddziale ratunkowym, podczas którego reanimowała dwóch pacjentów. Jej tętno wynosi 96 bpm, mięśnie karku są zesztywniałe, a w uszach wciąż słyszy piski kardiomonitorów.',
+            '2. Co widzi bohater (Monika): Monika czuje, że zaraz eksploduje z przebodźcowania sensorycznego. Boi się, że w domu spotka grad pytań i obowiązków, na które nie ma ani grama energii metabolicznej.',
+            '3. Czego bohater nie widzi (martwe pole): Monika nie dostrzega, że jej mąż Piotr (36 lat) przez ostatnie pół godziny wyciszył mieszkanie, przygotował ciepłą kąpiel i świadomie uspokoił własny oddech, by stworzyć dla niej bezpieczną przestrzeń.',
+            '4. Działający mechanizm psychologiczny: Współregulacja autonomiczna (Co-regulation) i somatyczne ugruntowanie bezpieczeństwa. Sygnały prospołeczne (niski, ciepły tembr głosu, brak pośpiechu, łagodny kontakt wzrokowy) aktywują przywspółczulny hamulec nerwu błędnego.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): U ssaków powrót z polowania do bezpiecznego stada wymagał natychmiastowego obniżenia czujności obronnej, by umożliwić regenerację i sen.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się głębokiego, mimowolnego westchnienia, opadnięcie uniesionych ramion i spadek napięcia mięśni żwaczy.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Piotr wita żonę w progu bez słowa, delikatnie zdejmuje z niej kurtkę, podaje kubek ciepłego naparu i przytula ją mocno, stabilnym chwytem przez 3 minuty w całkowitej ciszy.',
+            '8. Konsekwencje alternatywnego wyboru: Tętno Moniki spada do 70 bpm w ciągu kilku minut, poziom pobudzenia adrenergicznego opada, a ciało wchodzi w stan regeneracji bez konieczności relacjonowania koszmaru dyżuru.',
+            '9. Wniosek dydaktyczny dla czytelnika: Czasami największym darem miłości nie są mądre słowa czy rady, lecz uregulowany, spokojny układ nerwowy obecny obok.'
           ]
         }
       ]
@@ -417,13 +422,17 @@ export const chapterTen: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 3: Przyjaciółka dzwoniąca o 23:30 z monologiem',
+          title: 'PRZYKŁAD 3: Przyjaciółka dzwoniąca o 23:30 — Nocne pogotowie emocjonalne',
           paragraphs: [
-            'Sytuacja i bohater: Do 32-letniej Magdy o 23:30 dzwoni przyjaciółka Kasia, po raz czwarty w tym tygodniu płacząc nad swoim toksycznym romansem. Magda rano wstaje o 6:00 do pracy.',
-            'Działający mechanizm: Uległość wobec cudzych emocji kosztem własnego zdrowia biologicznego.',
-            'Jak rozpoznać w czasie rzeczywistym: Złość przy patrzeniu na świecący ekran telefonu połączona z poczuciem winy: „Muszę odebrać, bo zrobi sobie krzywdę”.',
-            'Możliwa konstruktywna reakcja: Asertywna granica: „Kasiu, bardzo zależy mi na tobie, ale jest 23:30 i muszę się wyspać. Porozmawiamy jutro po 17:00 przy kawie. Śpij dobrze, do jutra”. I wyciszenie telefonu.',
-            'Wniosek dydaktyczny dla czytelnika: Nie jesteś całodobowym pogotowiem emocjonalnym dla dorosłych ludzi. Ustalaj godziny bezpiecznego kontaktu.'
+            '1. Obiektywna sytuacja i fakty: O godzinie 23:30 do 32-letniej Magdy dzwoni jej bliska przyjaciółka Kasia. To czwarty taki telefon w tym tygodniu; Kasia po raz kolejny płacze z powodu tego samego toksycznego romansu. Magda rano o 6:00 wstaje do odpowiedzialnej pracy w laboratorium.',
+            '2. Co widzi bohater (Magda): Magda czuje rozrywające rozdarcie między wyczerpaniem fizycznym a poczuciem winy: „Jeśli nie odbiorę, będę podłą przyjaciółką, a ona może zrobić sobie coś złego”.',
+            '3. Czego bohater nie widzi (martwe pole): Magda nie dostrzega, że jej nocna dyspozycyjność nie pomaga Kasi rozwiązać problemu, lecz utrwala jej rolę biernej ofiary i uzależnia ją od zewnętrznego rozładowywania emocji.',
+            '4. Działający mechanizm psychologiczny: Brak granic osobistych i syndrom ratownika (Karpman Drama Triangle). Uległość wobec cudzych emocji kosztem własnej integralności biologicznej.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Lęk przed odrzuceniem przez członka stada i utrwalone w dzieciństwie przekonanie: „Moja wartość zależy od tego, jak bardzo jestem użyteczna dla innych”.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się fali złości na dźwięk dzwonka telefonu, połączonej z natychmiastowym tłumieniem tej złości i podnoszeniem słuchawki z udawanym uśmiechem.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Wypowiedzenie życzliwej, nienaruszalnej granicy: „Kasiu, bardzo cię kocham i zależy mi na tobie, ale jest 23:30 i muszę się wyspać do pracy. Nie porozmawiamy teraz. Zdzwońmy się jutro o 17:30 przy kawie, wtedy poświęcę ci pełną uwagę. Śpij spokojnie, dobrej nocy”. I wyciszenie telefonu.',
+            '8. Konsekwencje alternatywnego wyboru: Magda przesypia 7 godzin, wstaje zregenerowana, a Kasia uczy się samoregulacji i wieczornego wyciszenia.',
+            '9. Wniosek dydaktyczny dla czytelnika: Granice chronią relację przed Twoją własną ukrytą nienawiścią. Kiedy mówisz szczere „NIE” cudzym roszczeniom, mówisz „TAK” swojemu zdrowiu i autentyczności więzi.'
           ]
         }
       ]
@@ -470,13 +479,17 @@ export const chapterTen: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 4: Pogarda w towarzystwie — Przewrócenie oczami',
+          title: 'PRZYKŁAD 4: Pogarda w towarzystwie — Przewrócenie oczami i publiczna kpina',
           paragraphs: [
-            'Sytuacja i bohater: Na kolacji u znajomych mąż Marek opowiada historię z wakacji. Żona Ilona głośno parska śmiechem, ostentacyjnie przewraca oczami do innych gości i mówi: „Jasne, Marek znowu fantazjuje, jakby w ogóle tam był”.',
-            'Działający mechanizm: Trzeci Jeździec (Pogarda). Komunikat wyższości i publicznego ośmieszenia partnera.',
-            'Jak rozpoznać w czasie rzeczywistym: Spięcie w żołądkach wszystkich obecnych przy stole świadków i skurcz twarzy Marka.',
-            'Możliwa konstruktywna reakcja: Spokojna konfrontacja na osobności: „Ilono, przewracanie oczami i kradzież mojej opowieści przy znajomych to pogarda. Nie wyrażam zgody na takie traktowanie”.',
-            'Wniosek dydaktyczny dla czytelnika: Pogarda zabija miłość szybciej niż jakikolwiek konflikt merytoryczny. Wyeliminuj sarkazm ze swojego języka relacji.'
+            '1. Obiektywna sytuacja i fakty: Na kolacji u wspólnych znajomych mąż Marek (36 lat) z entuzjazmem opowiada anegdotę z ich wyprawy w Tatry. Żona Ilona (35 lat) głośno parska śmiechem, ostentacyjnie przewraca oczami do pozostałych gości i rzuca z kpiną: „Marek znowu fantazjuje, jakby w ogóle tam był. Daj spokój, nic takiego nie miało miejsca”.',
+            '2. Co widzi bohater (Marek): Marek czuje nagły paraliż krtani i piekący wstyd. Czuje się publicznie obdarty z godności przez najbliższą osobę, z którą dzieli życie.',
+            '3. Czego bohater nie widzi (martwe pole): Marek nie dostrzega, że zachowanie Ilony to kumulacja wielotygodniowej frustracji i poczucia osamotnienia, które zamiast wprost w rozmowie, wybiły w postaci jadowitej pogardy.',
+            '4. Działający mechanizm psychologiczny: Trzeci Jeździec Gottmana (Pogarda / Contempt). Komunikat wyższości moralnej i intelektualnej połączony z publicznym upokorzeniem. Gottman wykazał, że ekspresja pogardy u partnera jest najsilniejszym predyktorem rozpadu więzi i osłabienia odporności biologicznej u drugiego małżonka.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W społecznościach plemiennych ostracyzm i kpina służyły degradacji statusu osobnika w hierarchii.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Zaciśnięcie żołądka, asymetryczny uśmieszek z uniesieniem jednego kącika ust (mikroekspresja pogardy) i paraliżująca cisza przy stole.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Spokojne postawienie twardej granicy w cztery oczy: „Ilono, przewracanie oczami i ośmieszanie mnie przy znajomych to pogarda. To zachowanie niszczy naszą bliskość i szacunek. Nie wyrażam zgody na taki ton ani prywatnie, ani publicznie. Jeśli jesteś na mnie zła, porozmawiajmy w domu o faktach”.',
+            '8. Konsekwencje alternatywnego wyboru: Ilona zatrzymuje eskalację jadu, uświadamia sobie destrukcyjną siłę swojego sarkazmu i konfrontuje się z rzeczywistymi źródłami swojego żalu.',
+            '9. Wniosek dydaktyczny dla czytelnika: Pogarda jest kwasem siarkowym dla relacji. Jeśli w Waszym języku pojawił się sarkazm i przewracanie oczami, natychmiast zneutralizujcie ten jad, zanim wypali zaufanie do zera.'
           ]
         }
       ]
@@ -496,21 +509,29 @@ export const chapterTen: Chapter = {
         {
           title: 'PRZYKŁAD 5: Paraliż i zamrożenie w samochodzie — Flooding u partnera',
           paragraphs: [
-            'Sytuacja i bohater: Podczas powrotu z rodzinnego obiadu Paulina gwałtownie wyrzuca mężowi Karolowi, że nie obronił jej przed uszczypliwą uwagą teściowej. Karol nagle milknie, wpatruje się tępo w drogę i nie odpowiada na kolejne pytania.',
-            'Działający mechanizm: Czwarty Jeździec Gottmana (Stonewalling) wywołany somatycznym zalaniem (Flooding). Tętno powyżej 110 bpm wyłączyło korę przedczołową Karola.',
-            'Jak rozpoznać w czasie rzeczywistym: Bladość twarzy, zaciśnięte dłonie na kierownicy, płytki oddech, całkowity brak kontaktu wzrokowego.',
-            'Możliwa konstruktywna reakcja: Rozpoznanie przeciążenia i natychmiastowe zarządzenie przerwy fizjologicznej: „Karol, widzę, że cię odcięło. Zjedźmy na parking, napijmy się kawy w ciszy przez 20 minut, wrócimy do tematu w domu, gdy opadną emocje”.',
-            'Wniosek dydaktyczny dla czytelnika: Dyskusja z człowiekiem w stanie zalania jest bezcelowa biologicznie — kora przedczołowa nie przetwarza wtedy argumentów.'
+            '1. Obiektywna sytuacja i fakty: Podczas powrotu samochodem z niedzielnego obiadu u teściów Paulina gwałtownie i z podniesionym głosem wyrzuca mężowi Karolowi, że nie stanął w jej obronie podczas złośliwego komentarza matki. Karol prowadzi auto, nagle milknie, wpatruje się tępo w asfalt przed maską i przestaje odpowiadać na pytania.',
+            '2. Co widzi bohater (Paulina): Paulina widzi bezduszną, arogancką ścianę. Myśli: „On ma mnie gdzieś, ja tu płaczę, a on nawet na mnie nie spojrzy!”.',
+            '3. Czego bohater nie widzi (martwe pole): Paulina nie widzi, że tętno Karola wynosi 118 bpm, ciśnienie skoczyło do 160/100, a jego mózg wszedł w stan somatycznego zalania (Flooding). Odcięcie mowy nie jest wyborem moralnym, lecz fizjologicznym paraliżem układu autonomicznego.',
+            '4. Działający mechanizm psychologiczny: Czwarty Jeździec Gottmana (Stonewalling) wywołany przeciążeniem adrenergicznym. Powyżej progu 100 bpm grzbietowo-boczna kora przedczołowa traci zdolność przetwarzania semantycznego.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W obliczu przytłaczającego ataku odruch znieruchomienia (Freeze) redukował widoczność dla drapieżnika i chronił układ krążenia przed zapaścią.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Bladość twarzy, zesztywnienie karku, płytki oddech, wbicie wzroku w jeden punkt i brak reakcji na wołanie po imieniu.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Rozpoznanie biologicznego floodingu i zarządzenie 20-minutowego resetu: „Karol, widzę, że cię odcięło. Zjedźmy na najbliższą stację, napijmy się wody w ciszy przez 20 minut bez wracania do tematu. Pogadamy w domu, gdy obojgu spadnie tętno”.',
+            '8. Konsekwencje alternatywnego wyboru: Autonomiczny układ nerwowy odzyskuje równowagę, krew wraca do kory przedczołowej, a wieczorna rozmowa w domu odbywa się na poziomie merytorycznym bez krzyku.',
+            '9. Wniosek dydaktyczny dla czytelnika: Próba wymuszenia rozmowy na osobie w stanie zalania fizjologicznego jest biologicznie bezsensowna. Kiedy tętno przekracza 100 bpm, kora logiczna nie odbiera komunikatów.'
           ]
         },
         {
-          title: 'PRZYKŁAD 6: Pseudoprzeprosiny vs Prawdziwa naprawa w zespole',
+          title: 'PRZYKŁAD 6: Pseudoprzeprosiny vs Prawdziwa naprawa w zespole projektowym',
           paragraphs: [
-            'Sytuacja i bohater: Kierownik projektu Tomasz spóźnił się z kluczową dokumentacją, przez co graficzka Joanna musiała pracować w weekend. W poniedziałek Tomasz mówi: „Przepraszam cię, Joanna, jeśli poczułaś presję, ale klient zmienił wymagania”.',
-            'Działający mechanizm: Pseudoprzeprosiny zrzucające winę na wrażliwość ofiary („jeśli poczułaś”) i okoliczności zewnętrzne („ale klient”).',
-            'Jak rozpoznać w czasie rzeczywistym: Pojawienie się słów „jeśli” oraz „ale”, które unieważniają całą intencję skruchy.',
-            'Możliwa konstruktywna reakcja: Prawdziwe przeprosiny: „Joanno, przepraszam cię. Mój brak organizacji naruszył twój prywatny czas i zmusił cię do pracy w weekend. Biorę za to pełną odpowiedzialność. Odbierz sobie dwa dni wolnego, a w kolejnych sprintach wprowadzam 48-godzinny bufor”.',
-            'Wniosek dydaktyczny dla czytelnika: Dojrzałe przeprosiny biorą 100% odpowiedzialności za skutki i natychmiast proponują realne zadośćuczynienie.'
+            '1. Obiektywna sytuacja i fakty: Kierownik projektu Tomasz spóźnił się z dostarczeniem specyfikacji technicznej o 4 dni, przez co graficzka Joanna musiała pracować po 12 godzin w sobotę i niedzielę, rezygnując z rodzinnego wyjazdu. W poniedziałek Tomasz rzuca w biegu: „Joanno, przepraszam cię, JEŚLI poczułaś presję, ALE klient zmienił zdanie”.',
+            '2. Co widzi bohater (Joanna): Joanna czuje wściekłość i bezsilność. Słyszy komunikat: „To twoja wina, że jesteś przewrażliwiona, a ja jestem niewinny”.',
+            '3. Czego bohater nie widzi (martwe pole): Tomasz nie dostrzega, że używając słów-wytrychów („jeśli”, „ale”), próbuje obronić własne kruche ego przed poczuciem winy, niszcząc zaufanie w zespole.',
+            '4. Działający mechanizm psychologiczny: Pseudoprzeprosiny (Non-apology apology) zrzucające odpowiedzialność na wrażliwość odbiorcy i okoliczności zewnętrzne.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Obrona statusu i unikanie przyznania się do błędu chroniło pozycję dominującą w klanie.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się w przeprosinach warunku: „jeśli poczułeś” lub spójnika kasującego: „przepraszam, ale...”.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Pełny protokół dojrzałych przeprosin: „Joanno, zawaliłem organizację tego etapu i biorę za to 100% odpowiedzialności. Mój błąd zniszczył twój wolny weekend z rodziną. Przepraszam cię. Odbierz proszę dwa dni wolnego w tym tygodniu, a w kolejnych sprintach wprowadzam 48-godzinny bufor bezpieczeństwa”.',
+            '8. Konsekwencje alternatywnego wyboru: Zranienie zostaje uznane, Joanna odzyskuje szacunek do lidera, a zespół zyskuje bezpieczniejsze procedury.',
+            '9. Wniosek dydaktyczny dla czytelnika: Prawdziwe przeprosiny nie zawierają słowa „ALE”. Prawdziwe przeprosiny to uznanie bólu drugiego człowieka i konkretne zadośćuczynienie.'
           ]
         }
       ]
@@ -541,13 +562,17 @@ export const chapterTen: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 7: Zdrada wspólnika biznesowego',
+          title: 'PRZYKŁAD 7: Zdrada wspólnika biznesowego — Wybaczenie wewnętrzne a brak pojednania',
           paragraphs: [
-            'Sytuacja i bohater: Wspólnik Robert wyprowadził ze spółki bazę klientów i założył konkurencyjną firmę. Wspólnik Grzegorz przez 2 lata żył w żądzy zemsty, niszcząc własne zdrowie i relację z żoną.',
-            'Działający mechanizm: Ruminacja zdrady i chroniczny stan zapalny wywołany nienawiścią.',
-            'Jak rozpoznać w czasie rzeczywistym: Budzenie się o 4:00 rano z zaciśniętymi pięściami i układanie w głowie procesów sądowych.',
-            'Możliwa konstruktywna reakcja: Akt wybaczenia dla siebie: „Odcinam Roberta ze swoich myśli. Zamykam tę sprawę prawnie i nie poświęcę mu już ani jednej sekundy mojej energii życiowej”.',
-            'Wniosek dydaktyczny dla czytelnika: Wybaczenie nie uniewinnia sprawcy — wybaczenie uwalnia Ciebie z roli więźnia przeszłości.'
+            '1. Obiektywna sytuacja i fakty: Wspólnik Robert po 6 latach współpracy potajemnie wyprowadził ze spółki kluczowych klientów i założył konkurencyjny podmiot. Poszkodowany wspólnik Grzegorz przez 2 lata żył wyłącznie żądzą odwetu, budząc się w nocy z zaciśniętymi pięściami i niszcząc relacje z żoną.',
+            '2. Co widzi bohater (Grzegorz): Grzegorz uważa, że dopóki nie zniszczy Roberta w sądach i nie doprowadzi go do ruiny, nie zazna spokoju. Myśli, że nienawiść daje mu siłę do walki.',
+            '3. Czego bohater nie widzi (martwe pole): Grzegorz nie zauważa, że to nie Robert niszczy jego obecne życie, lecz jego własna chroniczna ruminacja zdrady, która wywołuje stały wyrzut kortyzolu, nadciśnienie tętnicze i emocjonalne odcięcie od dzieci.',
+            '4. Działający mechanizm psychologiczny: Pętla ruminacji krzywdy (Trauma-related Rumination) i rozróżnienie między wybaczeniem (procesem wewnątrzpsychicznym) a pojednaniem (procesem relacyjnym).',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Pamięć o zdradzie miała zapobiegać ponownemu zaufaniu zdradzieckiemu osobnikowi, ale w formie obsesyjnej staje się chorobą autoimmunologiczną psychiki.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Ciągłe odtwarzanie w myślach dialogów ze sprawcą, monitorowanie jego profilu w sieci i niemożność cieszenia się sukcesami w teraźniejszości.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Akt wybaczenia dla własnego zdrowia: „Uwalniam Roberta ze swoich myśli. Przekazuję sprawę radcy prawnemu i nie poświęcę mu już ani jednej sekundy mojej energii życiowej. Zamykam ten rozdział, by żyć tu i teraz”. Jednocześnie brak jakiejkolwiek zgody na ponowną współpracę biznesową.',
+            '8. Konsekwencje alternatywnego wyboru: Poziom kortyzolu spada, Grzegorz przesypia całą noc, odzyskuje radość w rodzinie i z sukcesem buduje nowy projekt technologiczny.',
+            '9. Wniosek dydaktyczny dla czytelnika: Wybaczenie nie oznacza, że to, co zrobił sprawca, było w porządku. Wybaczenie oznacza jedynie, że nie pozwalasz już sprawcy mieszkać za darmo w Twojej głowie.'
           ]
         }
       ]
@@ -603,14 +628,14 @@ export const chapterTen: Chapter = {
         },
         neurobiologicalAnalysis: {
           brainRegions: [
-            { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Hamowanie agresywnych impulsów słownych', activationState: 'Porażenie metaboliczne z powodu braku snu wolnofalowego (NREM)' },
-            { region: 'Ciało migdałowate', role: 'Generowanie reakcji obronnych', activationState: 'Permanentna hiperaktywacja' }
+            { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Hamowanie agresywnych impulsów słownych i racjonalny nadzór', activationState: 'Porażenie metaboliczne z powodu głębokiego deficytu snu wolnofalowego (NREM)' },
+            { region: 'Ciało migdałowate i przednia wyspa', role: 'Detekcja zagrożenia i generowanie afektu obronnego', activationState: 'Utrata przedczołowego hamowania odgórnego (Top-down Inhibition), skutkująca permanentną nadreaktywnością' }
           ],
           neurotransmitters: [
-            { name: 'Serotonina', roleInScenario: 'Drastyczny spadek wywołał chwiejność nastroju i drażliwość' }
+            { name: 'Układ monoaminergiczny i deficyt snu', roleInScenario: 'Chroniczna deprywacja faz NREM/REM rozregulowuje homeostazę serotoninergiczną i noradrenergiczną, obniżając próg tolerancji frustracji do zera' }
           ],
           biologicalTimeline: [
-            { timeMs: '3:00 w nocy', process: 'Płacz dziecka odcina resztki zasobów cierpliwości.' }
+            { timeMs: '3:00 w nocy', process: 'Płacz dziecka w stanie wyczerpania fizjologicznego wywołuje nagłe odcięcie resztek kontroli korowej.' }
           ]
         },
         influenceAndManipulation: {

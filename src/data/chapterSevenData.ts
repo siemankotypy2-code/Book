@@ -368,13 +368,17 @@ export const chapterSeven: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 1: Poranna kawa w kuchni — „Nie ma już mleka”',
+          title: 'PRZYKŁAD 1: Poranna kawa w kuchni — Cztery poziomy komunikatu „Nie ma już mleka”',
           paragraphs: [
-            'Sytuacja i bohater: Tomasz (40 lat) otwiera lodówkę rano i mówi do żony Agaty: „Nie ma już mleka”. Agata trzaska szafką i odpowiada ze złością: „A czy ja jestem twoją służącą, żeby o wszystkim pamiętać?!”.',
-            'Działający mechanizm: Rozdźwięk płaszczyzn komunikacyjnych. Tomasz nadał komunikat Uchem Rzeczowym (stwierdzenie faktu pustej półki). Agata odebrała go Uchem Relacji i Apelu („Oskarżasz mnie o zaniedbanie i żądasz, żebym natychmiast biegła do sklepu”).',
-            'Jak rozpoznać w czasie rzeczywistym: Gwałtowna reakcja emocjonalna nieproporcjonalna do merytorycznej treści zdania.',
-            'Możliwa konstruktywna reakcja: Tomasz natychmiast wyjaśnia intencję: „Kochanie, stwierdziłem tylko fakt. Sam chętnie zejdę do sklepu, chciałem tylko zapytać, czy kupić też pieczywo”.',
-            'Wniosek dydaktyczny dla czytelnika: Jeśli nie sprecyzujesz, na jakiej płaszczyźnie nadajesz, odbiorca niemal zawsze wybierze płaszczyznę relacyjną jako najbardziej zagrażającą.'
+            '1. Obiektywna sytuacja i fakty: Tomasz (40 lat) otwiera lodówkę rano przed wyjściem do pracy, wyjmuje pusty karton po mleku i wypowiada neutralnym tonem w stronę żony Agaty (39 lat): „Nie ma już mleka”. Agata przygotowuje śniadanie dla dzieci.',
+            '2. Co widzi bohater (subiektywne postrzeżenie Agaty): Agata słyszy oskarżenie o zaniedbanie domowe. Odbiera komunikat jako zarzut: „Jesteś złą gospodynią, znowu nie dopilnowałaś zakupów”. Trzaska drzwiczkami szafki i odpowiada z furią: „A czy ja jestem twoją służącą, żeby o wszystkim pamiętać?!”.',
+            '3. Czego bohater nie widzi (martwe pole): Agata nie widzi, że Tomasz nie miał w głowie żadnego ukrytego roszczenia ani pretensji — jego myśl robocza dotyczyła jedynie faktu, że napije się czarnej kawy lub skoczy do sklepu. Tomasz z kolei nie dostrzega, że Agata od tygodnia dźwiga 90% niewidzialnej pracy planistycznej (Mental Load) i żyje na skraju wyczerpania.',
+            '4. Działający mechanizm psychologiczny: Kwadrat Komunikacyjny Schulza von Thuna. Rozdźwięk między Płaszczyzną Rzeczową nadawcy a Uchem Relacyjnym i Apelowym odbiorcy. W warunkach chronicznego przeciążenia uwaga odbiorcy automatycznie skanuje komunikaty pod kątem zagrożenia relacyjnego.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W ewolucji wykrycie ukrytej nagany lub wykluczenia ze strony partnera miało wyższy priorytet przetrwania niż neutralna informacja o zasobach pożywienia.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Poczucie natychmiastowego ukłucia w żołądku i impuls do agresywnej obrony przy z pozoru niewinnym zdaniu informacyjnym.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Klaryfikacja płaszczyzny: Tomasz natychmiast precyzuje: „Agato, nadaję wyłącznie na poziomie faktu — zauważyłem pusty karton. Sam chętnie zejdę do sklepu, chciałem tylko zapytać, czy potrzebujesz czegoś jeszcze”. Agata: „Przepraszam, jestem po prostu wykończona tą listą spraw”.',
+            '8. Konsekwencje alternatywnego wyboru: Zamiast 3-godzinnej awantury i cichych dni, para wymienia uścisk, a Tomasz przejmuje część obowiązków porannych.',
+            '9. Wniosek dydaktyczny dla czytelnika: Jeśli nie zdefiniujesz płaszczyzny swojego komunikatu, zmęczony odbiorca niemal zawsze zinterpretuje go jako atak na swoją wartość.'
           ]
         }
       ]
@@ -392,13 +396,17 @@ export const chapterSeven: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 2: Rozmowa matki z córką o ślubie',
+          title: 'PRZYKŁAD 2: Rozmowa matki z córką o sukni ślubnej — Intencja troski kontra efekt odrzucenia',
           paragraphs: [
-            'Sytuacja i bohater: Matka Helena (58 lat) mówi do 26-letniej córki Magdy: „Czy jesteś pewna, że ta skromna sukienka bez welonu jest odpowiednia na ślub kościelny? Co powie rodzina Piotra?”. Magda zamyka się w sobie i płacze.',
-            'Działający mechanizm: Rozdźwięk intencji i efektu. Intencją matki była troska o komfort córki i uniknięcie plotek ze strony konserwatywnych teściów. Efektem było poczucie Magdy, że matka jej się wstydzi i nie akceptuje jej wyborów.',
-            'Jak rozpoznać w czasie rzeczywistym: Pojawienie się żalu i poczucia niezrozumienia u nadawcy: „Przecież ja tylko pytam z miłości!”.',
-            'Możliwa konstruktywna reakcja: Córka nazywa efekt: „Mamo, wiem, że się martwisz, ale kiedy tak mówisz, czuję, że nie podobam ci się w najważniejszym dniu mojego życia. Potrzebuję twojego wsparcia, a nie oceniania”.',
-            'Wniosek dydaktyczny dla czytelnika: Dobre intencje nie unieważniają bólu wywołanego nieostrożnym słowem. Uznaj najpierw efekt, zanim zaczniesz tłumaczyć intencję.'
+            '1. Obiektywna sytuacja i fakty: Matka Helena (58 lat) przychodzi z 26-letnią córką Magdą do salonu sukien ślubnych. Magda wybiera minimalistyczną, prostą kreację bez welonu. Helena marszczy czoło i pyta: „Czy jesteś pewna, że to odpowiednie na ślub kościelny? Co powie rodzina Piotra?”.',
+            '2. Co widzi bohater (Magda): Magda widzi brak akceptacji, wstyd ze strony matki i próbę podporządkowania jej najważniejszego dnia w życiu cudzym opiniom. Magda wybucha płaczem i zamyka się w przymierzalni.',
+            '3. Czego bohater nie widzi (martwe pole): Magda nie widzi, że Helena nosi w sobie traumę z własnej młodości, kiedy została publicznie skrytykowana przez teściową na wiejskim weselu. Intencją matki jest paniczna chęć uchronienia córki przed obmową rodzinną.',
+            '4. Działający mechanizm psychologiczny: Asymetria intencji i efektu. Czysta intencja protekcyjna nadawcy wywołała toksyczny efekt unieważnienia autonomii u odbiorcy.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Starsze pokolenie operuje skryptami konformizmu społecznego (ochrona przed ostracyzmem wspólnoty), podczas gdy młodsze poszukuje ekspresji tożsamościowej.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się u nadawcy świętego oburzenia: „Przecież ja chcę dla ciebie jak najlepiej, a ty znowu robisz ze mnie potwora!”.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Rozdzielenie intencji od efektu przez Magdę: „Mamo, wiem, że bardzo zależy ci, żebym była szczęśliwa i bezpieczna przed komentarzami rodziny. Jednak gdy tak mówisz, czuję, że wstydzisz się mojego wyboru. W tej sukni czuję się w 100% sobą i potrzebuję wiedzieć, że cieszysz się razem ze mną”.',
+            '8. Konsekwencje alternatywnego wyboru: Helena uświadamia sobie swój lęk, bierze córkę za rękę i przeprasza za niefortunne sformułowanie.',
+            '9. Wniosek dydaktyczny dla czytelnika: Dobre intencje nigdy nie unieważniają bólu wywołanego słowem. Dojrzałość wymaga uznania efektu emocjonalnego, zanim zacznie się tłumaczyć własne motywy.'
           ]
         }
       ]
@@ -443,13 +451,17 @@ export const chapterSeven: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 3: Wizyta u mechanika samochodowego',
+          title: 'PRZYKŁAD 3: Wizyta u mechanika samochodowego — Odruch obronny kontra pytanie eksploracyjne',
           paragraphs: [
-            'Sytuacja i bohater: Klient Wojciech (48 lat) odbiera samochód po naprawie hamulców i pyta agresywnie: „Czy wy w ogóle wiecie, co robicie? Pedał hamulca bierze za nisko!”.',
-            'Działający mechanizm: Odruch obronny usługodawcy kontra aktywne pytanie otwarte. Mechanik zamiast kłócić się: „Wszystko zrobiliśmy dobrze, pan się nie zna”, bierze głęboki oddech.',
-            'Jak rozpoznać w czasie rzeczywistym: Poczucie oporu i chęć natychmiastowego udowodnienia swojej racji.',
-            'Możliwa konstruktywna reakcja: Mechanik pyta spokojnie: „Panie Wojciechu, zależy mi, żeby czuł się pan bezpiecznie. Jak dokładnie zachowuje się pedał przy hamowaniu z większej prędkości? Przejedźmy się kawałek razem, żebym to poczuł”.',
-            'Wniosek dydaktyczny dla czytelnika: Ciekawość i zaproszenie do wspólnego zbadania problemu rozbrajają wrogość szybciej niż jakikolwiek certyfikat kompetencji.'
+            '1. Obiektywna sytuacja i fakty: Klient Wojciech (48 lat) odbiera samochód po kompleksowej wymianie układu hamulcowego, wraca do warsztatu po 10 minutach i mówi podniesionym tonem do właściciela serwisu: „Czy wy w ogóle potraficie cokolwiek zrobić porządnie?! Pedał hamulca bierze za nisko, mało nie wjechałem w barierki!”.',
+            '2. Co widzi bohater (właściciel serwisu Adam, 45 lat): Adam widzi niesprawiedliwy, agresywny atak na renomę swojego warsztatu i swoich mechaników. W jego głowie natychmiast formuje się kontratak: „Kolejny pieniacz, który nie ma pojęcia o hydraulice w nowoczesnych autach”.',
+            '3. Czego bohater nie widzi (martwe pole): Adam nie dostrzega, że Wojciech przed chwilą przeżył realny strach na skrzyżowaniu z powodu innej charakterystyki pracy nowego wspomagania hamulców, do której nie przywykł. Agresja klienta jest wtórną osłoną pierwotnego lęku.',
+            '4. Działający mechanizm psychologiczny: Wąskie gardło pamięci roboczej i odruch obrony statusowej. Przełączenie się na generowanie riposty odcina słuchanie merytoryczne.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W sytuacji ataku werbalnego układ współczulny mobilizuje zasoby do natychmiastowej walki o dominację, blokując ugodowość.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Zaciśnięcie pięści, wstrzymanie oddechu i układanie w myślach zdania: „Zaraz mu pokażę, kto tu jest ekspertem”.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Wzięcie oddechu i zadanie pytania kalibrującego: „Panie Wojciechu, bezpieczeństwo pana i pańskiej rodziny to dla nas absolutny priorytet. Wsiądźmy razem do auta, niech pan poprowadzi, a ja dokładnie zaobserwuję skok pedału i ciśnienie w układzie. Sprawdzimy to od ręki”.',
+            '8. Konsekwencje alternatywnego wyboru: Napięcie u klienta opada w 30 sekund; podczas jazdy próbnej okazuje się, że układ działa poprawnie, ale mechanik bezpłatnie koryguje luz pedału według życzenia klienta, zyskując lojalnego ambasadora serwisu.',
+            '9. Wniosek dydaktyczny dla czytelnika: Kiedy rozmówca krzyczy ze strachu, logiczny kontratak dolewa oliwy do ognia. Zaproszenie do wspólnej obserwacji problemu gasi agresję.'
           ]
         }
       ]
@@ -458,22 +470,26 @@ export const chapterSeven: Chapter = {
       id: 'sec-7-7',
       pageNumber: 304,
       sectionNumber: '7.7',
-      title: 'Komunikacja niewerbalna: Prawda o mikroekspresjach i postawie ciała',
+      title: 'Komunikacja niewerbalna: Prawda o mikroekspresjach, mit Mehrabiana i kontekst',
       category: 'teoria',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Ciało ludzkie nie potrafi kłamać w taki sam sposób, jak słowa. W ułamku sekundy przed tym, jak kora przedczołowa sformułuje gładkie, poprawne politycznie zdanie, układ limbiczny wysyła impulsy do mięśni mimicznych twarzy i układu autonomicznego.',
-        'Mikroekspresje (trwające od 1/25 do 1/5 sekundy) ujawniają pierwotną reakcję afektywną: mikro-błysk pogardy (uniesienie jednego kącika ust), mikro-strach (uniesienie brwi i rozszerzenie źrenic) czy zaciśnięcie szczęki świadczące o tłumionym gniewie.'
+        'BŁĘDNA INTUICJA: Mit o „niewerbalnej prawdzie” i rzekomej regule 7-38-55 Alberta Mehrabiana. W pop-psychologii nagminnie powtarza się twierdzenie, jakoby „słowa stanowiły zaledwie 7% komunikatu, a reszta to ton głosu (38%) i mowa ciała (55%)”. Sam prof. Mehrabian wielokrotnie protestował przeciwko takiemu uogólnianiu swoich badań z 1967 roku! Jego formuła dotyczyła WYŁĄCZNIE sytuacji, w których komunikat emocjonalny i mimika były sztucznie skonfliktowane w laboratoryjnych testach z pojedynczymi słowami nagranymi na taśmę. Gdyby słowa stanowiły 7%, nikt nie byłby w stanie przeczytać umowy kredytowej ani zrozumieć podręcznika anatomii.',
+        'W rzeczywistości słowa niosą treść semantyczną, a sygnały niewerbalne pełnią funkcję modulacyjną i relacyjną. Co więcej, badania kryminalistyczne i kognitywne (m.in. Hartwig & Bond, 2011; Vrij, 2019) jednoznacznie obaliły mit mikroekspresji jako „magicznego wykrywacza kłamstw”. Ciało ludzkie nie ma dedykowanego przełącznika nieszczerości. Drżenie rąk, pocenie się czy unikanie kontaktu wzrokowego są sygnałami ogólnego pobudzenia układu autonomicznego lub lęku społecznego — a nie niezawodnym dowodem fałszu.'
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 4: Nauczyciel licealny i uczeń z opuszczoną głową',
+          title: 'PRZYKŁAD 4: Nauczyciel matematyki i uczeń przy tablicy — Odczytywanie inkongruencji w kontekście',
           paragraphs: [
-            'Sytuacja i bohater: Nauczyciel matematyki pan Robert pyta 16-letniego Kamila: „Rozumiesz to zadanie ze stereometrii?”. Kamil patrzy w podłogę, bawi się nerwowo mankietem bluzy i cicho odpowiada: „Tak, rozumiem”.',
-            'Działający mechanizm: Niespójność kanałów (inkongruencja). Słowa mówią „tak”, ale mikroekspresja i mowa ciała krzyczą: „boję się ośmieszenia przed klasą”.',
-            'Jak rozpoznać w czasie rzeczywistym: Dysonans między komunikatem werbalnym a somatycznym.',
-            'Możliwa konstruktywna reakcja: Nauczyciel nie bierze słów za dobrą monetę, ale nie zawstydza ucznia publicznie: „To zadanie jest bardzo podchwytliwe. Podejdź do mnie na przerwie, pokażę ci prosty trik z rzutowaniem figur”.',
-            'Wniosek dydaktyczny dla czytelnika: Zawsze wierz mowie ciała i oczom, gdy są sprzeczne z grzecznymi deklaracjami werbalnymi.'
+            '1. Obiektywna sytuacja i fakty: Nauczyciel matematyki pan Robert (50 lat) pyta 16-letniego Kamila stojącego przy tablicy: „Kamilu, czy ten dowód geometryczny jest dla ciebie w pełni jasny?”. Kamil patrzy w posadzkę, nerwowo skubie mankiet bluzy i odpowiada cicho: „Tak, panie profesorze, rozumiem”.',
+            '2. Co widzi bohater (pan Robert): Nauczyciel widzi sprzeczność między deklaracją werbalną a postawą somatyczną ucznia. Zamiast jednak wyciągać wniosek: „Kamil ze mnie drwi i kłamie”, odczytuje kontekst sytuacyjny.',
+            '3. Czego bohater nie widzi (martwe pole): Robert nie wie, że poprzedniego dnia Kamil został wyśmiany przez rówieśników na czacie klasowym po pomyłce na lekcji fizyki, co wywołało u nastolatka ostry lęk przed jakąkolwiek publiczną ekspozycją niewiedzy.',
+            '4. Działający mechanizm psychologiczny: Inkongruencja kanałów werbalnych i niewerbalnych na tle lęku przed kompromitacją w grupie odniesienia.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): U ludzi młodych lęk przed utratą statusu w stadzie rówieśniczym aktywuje silniejsze hamowanie wypowiedzi niż chęć uzyskania pomocy dydaktycznej.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Niespójność między twierdzącą odpowiedzią a unikaniem wzroku, spłyconym oddechem i postawą wycofania.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Ochrona statusu ucznia przed klasą: „Ten dowód bywa zdradliwy nawet na studiach politechnicznych. Zrobimy teraz 5 minut pracy w parach przy ławkach, a ja podejdę do ciebie i wspólnie rozpiszemy ten kąt”.',
+            '8. Konsekwencje alternatywnego wyboru: Kamil nie zostaje publicznie obnażony, na osobności przyznaje się do braku zrozumienia kroku trzeciego i po 3 minutach opanowuje materiał.',
+            '9. Wniosek dydaktyczny dla czytelnika: Mowa ciała nie służy do oskarżania ludzi o kłamstwo, lecz do odczytywania ich poziomu napięcia i potrzebowania wsparcia.'
           ]
         }
       ]
@@ -491,13 +507,17 @@ export const chapterSeven: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 5: Jedno westchnienie na infolinii bankowej',
+          title: 'PRZYKŁAD 5: Jedno westchnienie na infolinii bankowej — Destrukcyjna siła prozodii',
           paragraphs: [
-            'Sytuacja i bohater: Klientka Grażyna (62 lata) ma problem z zalogowaniem się do nowej aplikacji bankowej i zadaje po raz trzeci to samo pytanie o hasło jednorazowe. Konsultant odpowiada merytorycznie poprawnie, ale przed pierwszym słowem głośno i ciężko wzdycha do mikrofonu.',
-            'Działający mechanizm: Destrukcyjna prozodia emocjonalna. Westchnienie zostało przez układ nerwowy klientki odkodowane jako: „Uważam panią za osobę niepełnosprawną intelektualnie i marnuje pani mój cenny czas”.',
-            'Jak rozpoznać w czasie rzeczywistym: Natychmiastowy skok ciśnienia i wybuch agresji u klienta: „Niech pan na mnie nie wzdycha, żądam rozmowy z kierownikiem!”.',
-            'Możliwa konstruktywna reakcja: Świadoma kontrola oddechu u konsultanta przed wciśnięciem przycisku rozmowy i modulacja głosu na ciepły, wspierający rejestr.',
-            'Wniosek dydaktyczny dla czytelnika: Mikro-westchnienia, chrząknięcia i tempo mowy komunikują Twój stosunek do człowieka głośniej niż treść wypowiedzi.'
+            '1. Obiektywna sytuacja i fakty: Klientka Grażyna (62 lata) dzwoni na infolinię bankową po raz trzeci, gubiąc się w procedurze uwierzytelnienia dwuetapowego aplikacji mobilnej. Konsultant Maciej (24 lata) przed odpowiedzią głośno, ciężko wzdycha do mikrofonu, po czym podaje merytorycznie bezbłędną instrukcję.',
+            '2. Co widzi bohater (pani Grażyna): Grażyna nie rejestruje merytorycznych słów. Jej układ nerwowy odczytuje westchnienie jako komunikat: „Uważam cię za osobę niepełnosprawną intelektualnie, jesteś dla mnie ciężarem i marnujesz mój czas”. Wybucha złością: „Niech pan na mnie nie wzdycha, żądam natychmiast rozmowy z kierownikiem!”.',
+            '3. Czego bohater nie widzi (martwe pole): Grażyna nie wie, że Maciej pracuje 11. godzinę na słuchawkach pod presją rygorystycznego wskaźnika AHT (średni czas rozmowy), a jego westchnienie było fizjologicznym odruchem niedotlenienia, a nie osobistą pogardą.',
+            '4. Działający mechanizm psychologiczny: Dominacja prozodii i sygnałów parawerbalnych nad treścią semantyczną wypowiedzi w warunkach stresu technologicznego.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Sygnały dźwiękowe o charakterze westchnienia lub warknięcia były ewolucyjnie pierwotniejsze niż język artykułowany i natychmiast informowały o odrzuceniu lub frustracji osobnika.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się u rozmówcy nagłej agresji w odpowiedzi na merytorycznie poprawne zdanie.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Świadoma higiena oddechowa konsultanta (mikropauza z wyciszonym mikrofonem) oraz natychmiastowa naprawa relacji: „Pani Grażyno, przepraszam za to westchnienie, to zmęczenie po całym dniu, a nie zniecierpliwienie panią. Jestem tu po to, by spokojnie przejść z panią przez każdy krok logowania”.',
+            '8. Konsekwencje alternatywnego wyboru: Klientka uspokaja się, napięcie znika, a logowanie zostaje ukończone w 2 minuty bez eskalacji skargi do centrali.',
+            '9. Wniosek dydaktyczny dla czytelnika: Ton głosu, tempo i oddechy to podkład muzyczny Twoich słów. Jeśli muzyka jest agresywna, nikt nie doceni tekstu piosenki.'
           ]
         }
       ]
@@ -555,13 +575,17 @@ export const chapterSeven: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 7: Architekt wnętrz Ewa przyjmująca ostrą krytykę',
+          title: 'PRZYKŁAD 7: Architekt wnętrz Ewa przyjmująca ostrą krytykę — Protokół deeskalacji zarzutu',
           paragraphs: [
-            'Sytuacja i bohater: Klient rzuca w stronę Ewy (29 lat) po obejrzeniu projektu salonu: „To wygląda jak tania poczekalnia u dentysty, kompletnie pani nie ma smaku!”.',
-            'Działający mechanizm: Agresywna krytyka tożsamościowa uderzająca w poczucie wartości zawodowej.',
-            'Jak rozpoznać w czasie rzeczywistym: Ścisk w gardle, ochota na natychmiastowe wybuchnięcie płaczem lub odpyskowanie.',
-            'Możliwa konstruktywna reakcja: Ewa bierze wdech i stosuje klaryfikację faktów: „Słyszę, że ten projekt jest daleki od pana oczekiwań i bardzo pana zirytował. Proszę wskazać: które konkretnie elementy — kolory ścian, oświetlenie czy układ mebli — wywołują to wrażenie chłodu?”. Klient zbity z pantałyku odpowiada: „Te szare kafelki na podłodze, chciałem ciepłe drewno”.',
-            'Wniosek dydaktyczny dla czytelnika: Przekształcenie ogólnego ataku w precyzyjne pytania techniczne natychmiast gasi pożar emocjonalny i przywraca grunt merytoryczny.'
+            '1. Obiektywna sytuacja i fakty: Architekt wnętrz Ewa (29 lat) prezentuje w biurze projekt salonu dla zamożnego klienta Janusza. Janusz ogląda wizualizacje, rzuca teczkę na stół i mówi opryskliwie: „To wygląda jak tania poczekalnia u dentysty, kompletnie pani nie ma smaku ani pojęcia o estetyce!”.',
+            '2. Co widzi bohater (Ewa): Ewa czuje bolesne upokorzenie i atak na swoją tożsamość zawodową. W żołądku pojawia się ostry skurcz, a w myślach chęć wybiegnięcia z płaczem lub odcięcia się: „Skoro pan się nie zna na nowoczesnym minimalizmie, to proszę sobie zatrudnić dekoratora z jarmarku!”.',
+            '3. Czego bohater nie widzi (martwe pole): Ewa w pierwszej chwili nie dostrzega, że Janusz używa agresji tożsamościowej, ponieważ brakuje mu słownictwa technicznego do opisania tego, co budzi jego dyskomfort. Dla laika chłodna szarość betonu architektonicznego kojarzy się z chłodem szpitalnym, którego szczerze nie znosi.',
+            '4. Działający mechanizm psychologiczny: Krytyka tożsamościowa vs merytoryczna oraz protokół klaryfikacji faktów. Agresja werbalna uruchamia natychmiastową defensywność, chyba że zostanie przefiltrowana przez racjonalną dekonstrukcję.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Podważenie pozycji i kompetencji w grupie społecznej wywołuje pierwotną reakcję walki lub ucieczki.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Ścisk w gardle, fala gorąca na twarzy i ochota na natychmiastowy odwet słowny.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Zastosowanie 4-sekundowej pauzy somatycznej, głęboki wydech i przejście na konkret: „Panie Januszu, słyszę, że ten projekt wywołuje w panu poczucie chłodu i jest daleki od pana oczekiwań. Zależy mi na tym, by czuł się pan w tym domu doskonale. Proszę wskazać: które konkretnie elementy — barwa ścian, oświetlenie czy materiał posadzki — sprawiają wrażenie szpitalnej poczekalni?”.',
+            '8. Konsekwencje alternatywnego wyboru: Janusz zbity z pantałyku brakiem oporu obniża ton głosu: „Te szare wielkie kafle na podłodze. Chciałem ciepłe, naturalne drewno dębowe i miękki dywan”. Ewa: „Rozumiem. Podmienimy podłogę na olejowany dąb i dodamy ciepłe oświetlenie 2700K”. Klient wychodzi uspokojony.',
+            '9. Wniosek dydaktyczny dla czytelnika: Przekształcenie emocjonalnego ataku tożsamościowego w serię pytań o parametry techniczne odbiera agresorowi wiatr z żagli i przywraca współpracę.'
           ]
         }
       ]
@@ -605,15 +629,15 @@ export const chapterSeven: Chapter = {
         },
         neurobiologicalAnalysis: {
           brainRegions: [
-            { region: 'Przednia wyspa (Anterior Insula)', role: 'Rejestracja bólu niesprawiedliwości i zdrady', activationState: 'Bardzo wysoka' },
-            { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Ewaluacja długofalowej kariery', activationState: 'Zablokowana przez oburzenie afektywne' }
+            { region: 'Przednia kora wyspy i grzbietowa ACC', role: 'Rejestracja społecznego bólu niesprawiedliwości i zdrady', activationState: 'Nagła kaskada pobudzenia sieci istotności (Salience Network)' },
+            { region: 'Grzbietowo-boczna kora przedczołowa (dlPFC)', role: 'Długofalowa ewaluacja kariery i hamowanie agresji', activationState: 'Zasoby wyczerpane przez poczucie zranienia emocjonalnego' }
           ],
           neurotransmitters: [
-            { name: 'Noradrenalina', roleInScenario: 'Spowodowała natychmiastowe przyjęcie postawy bojowej' }
+            { name: 'Noradrenalina i pobudzenie adrenergiczne', roleInScenario: 'Mobilizacja współczulna: wzrost ciśnienia krwi, zwężenie źrenic i nastawienie na obronę terytorium psychicznego' }
           ],
           biologicalTimeline: [
             { timeMs: '0 - 150 ms', process: 'Słowo „zastraszanie” trafia do ciała migdałowatego Marka.' },
-            { timeMs: '500 ms', process: 'Wzrost tętna, spięcie karku, zamknięcie pola widzenia.' }
+            { timeMs: '500 ms', process: 'Wzrost tętna, spięcie karku, zamknięcie pola widzenia i przygotowanie agresywnej riposty.' }
           ]
         },
         influenceAndManipulation: {

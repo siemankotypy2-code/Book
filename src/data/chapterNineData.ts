@@ -354,8 +354,9 @@ export const chapterNine: Chapter = {
       },
       paragraphs: [
         'Wyobraź sobie grę w szachy, w której przeciwnik nie tylko wykonuje ruchy figurami na planszy, ale gdy odwracasz wzrok, przesuwa Twojego piona, a gdy pytasz o to z zaskoczeniem, patrzy Ci w oczy z zatroskaną miną i pyta: „Czy ty na pewno dobrze się czujesz? Przecież sam go tam postawiłeś dziesięć sekund temu”.',
-        'To jest istota manipulacji: instrumentalne potraktowanie drugiego człowieka jako pionka w cudzej partii, przy jednoczesnym zatarciu śladów samej ingerencji. Słowo „manipulacja” pochodzi od łacińskiego manus (ręka) i manipulare (kierować, sterować). Manipulator trzyma rękę na Twoich sznurkach emocjonalnych.',
-        'Wielkim błędem jest jednak polowanie na czarownice i etykietowanie każdego szefa, partnera czy sprzedawcy jako „narcyza i socjopaty”. Większość manipulacji w życiu codziennym to zachowania nieświadome — wyuczone w dzieciństwie schematy bezradności („Jeśli będę płakać i dąsać się, mama wreszcie kupi mi zabawkę”). Niezależnie jednak od tego, czy manipulacja jest wyrachowaną strategią, czy nieświadomym odruchem, jej niszczycielski wpływ na Twoje neurony jest dokładnie taki sam.'
+        'To jest istota manipulacji: instrumentalne potraktowanie drugiego człowieka jako pionka w cudzej partii, przy jednoczesnym zatarciu śladów samej ingerencji. Słowo „manipulacja” pochodzi od łacińskiego manus (ręka) i manipulare (kierować, sterować). Manipulator trzyma rękę na Twoich sznurkach emocjonalnych, ukrywając swoje rzeczywiste intencje i ograniczając Twoje pole wyboru.',
+        'BŁĘDNA INTUICJA: Powszechne w pop-psychologii jest amatorskie diagnozowanie każdego trudnego człowieka jako „narcyza”, „socjopaty” czy „toksyka”. Należy wprowadzić tu fundamentalne rozróżnienie merytoryczne. Nie każde krzywdzące zachowanie jest wyrachowaną manipulacją. Wiele osób stosuje nieświadome, obronne mechanizmy wyuczone w rodzinie pochodzenia (np. wycofywanie się w milczenie, lękowe wyolbrzymianie problemów, szukanie uwagi przez skargę) z powodu deficytów komunikacyjnych i braku samoregulacji emocjonalnej.',
+        'Manipulacja instrumentalna to systematyczne, asymetryczne działanie mające na celu pozbawienie drugiej osoby sprawczości, zniekształcenie jej percepcji lub wymuszenie korzyści kosztem jej dobrostanu. Niezależnie jednak od tego, czy zachowanie wynika z cynizmu, czy z niedojrzałości, Twoja odpowiedzialność polega na postawieniu nienaruszalnych granic.'
       ]
     },
     {
@@ -371,13 +372,17 @@ export const chapterNine: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 1: Pokaz garnków i pościeli dla seniorów',
+          title: 'PRZYKŁAD 1: Pokaz garnków i mat magnetycznych dla seniorów — Kradzież czasu decyzyjnego',
           paragraphs: [
-            'Sytuacja i bohater: 73-letnia pani Danuta trafia na „bezpłatne badanie krążenia”, połączone z prezentacją mat magnetycznych za 9 000 zł.',
-            'Działający mechanizm: Sztuczna presja czasu połączona z izolacją społeczną. Prowadzący krzyczy do mikrofonu: „Tylko pierwsze 3 osoby, które podejdą do stolika w ciągu 3 minut, otrzymają dotację unijną 4000 zł! Kto pierwszy, ten lepszy!”.',
-            'Jak rozpoznać w czasie rzeczywistym: Kołatanie serca, suchość w ustach, panika przed utratą niepowtarzalnej okazji.',
-            'Możliwa konstruktywna reakcja: Wstanie z krzesła, opuszczenie sali i żelazna zasada: „Nigdy nie podpisuję żadnych umów w trakcie prezentacji marketingowych”.',
-            'Wniosek dydaktyczny dla czytelnika: Jeśli oferta jest naprawdę dobra dzisiaj, będzie równie dobra w poniedziałek rano. Pośpiech to znak ostrzegawczy numer jeden.'
+            '1. Obiektywna sytuacja i fakty: 73-letnia emerytka Danuta zostaje zaproszona do hotelowej sali konferencyjnej na „bezpłatne profilaktyczne badanie krążenia”. Po 15 minutach badania rozpoczyna się 2-godzinna agresywna prezentacja wełnianej pościeli i mat leczniczych za 8 900 zł.',
+            '2. Co widzi bohater (pani Danuta): Danuta widzi troskliwego młodego prezentera, który roztacza wizję udarów i zawałów grożących seniorom, a następnie krzyczy do mikrofonu: „Tylko pierwsze 3 osoby, które podejdą do stolika w ciągu 180 sekund, otrzymają dotację unijną 4000 zł! Zegar tyka!”. Danuta czuje, że musi biec do stolika, by nie stracić szansy na zdrowie.',
+            '3. Czego bohater nie widzi (martwe pole): Danuta nie dostrzega, że żadna „dotacja unijna” nie istnieje, cena 8 900 zł jest ośmiokrotnie zawyżona, a pośpiech służy wyłącznie temu, by nie zdążyła zadzwonić do syna ani przeczytać 12-stronicowej umowy kredytowej.',
+            '4. Działający mechanizm psychologiczny: Sztuczna presja czasu (Artificial Urgency) połączona z apelem o charakterze lękowym (Fear Appeal) i izolacją od otoczenia wspierającego.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W sytuacji realnego zagrożenia fizycznego (atak drapieżnika) brak natychmiastowej reakcji oznaczał śmierć; kora analityczna zostaje wygaszona na rzecz pnia mózgu.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Kołatanie serca, suchość w ustach, drżenie dłoni i natarczywa myśl: „Muszę podpisać teraz, bo za chwilę będzie za późno”.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Zastosowanie żelaznej reguły 24 godzin: Danuta wstaje, zabiera prospekt i mówi: „Nigdy nie podpisuję żadnych umów w trakcie prezentacji. Przeanalizuję warunki w domu z rodziną i jeśli uznam to za korzystne, wrócę w poniedziałek”.',
+            '8. Konsekwencje alternatywnego wyboru: Prezenter traci panowanie nad sobą (co demaskuje manipulację), a Danuta zachowuje oszczędności całego życia.',
+            '9. Wniosek dydaktyczny dla czytelnika: Jeśli oferta jest naprawdę rzetelna i uczciwa dzisiaj, będzie równie dobra za 48 godzin. Żądanie natychmiastowego podpisu to stuprocentowy sygnał manipulacji.'
           ]
         }
       ]
@@ -408,13 +413,17 @@ export const chapterNine: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 2: Agresywna kampania ubezpieczeniowa',
+          title: 'PRZYKŁAD 2: Agresywna kampania ubezpieczeniowa — Wymuszanie decyzji przez terror moralny',
           paragraphs: [
-            'Sytuacja i bohater: Agent ubezpieczeniowy pokazuje młodemu ojcu Piotrowi drastyczne zdjęcia z wypadków samochodowych i pyta: „Czy kocha pan swoje dzieci? Bo jeśli zginie pan jutro na trasie, to z czego pana żona zapłaci za ich jedzenie w przyszłym miesiącu?”.',
-            'Działający mechanizm: Szantaż moralny oparty na strachu i winie (Fear Appeal). Próba wywołania paraliżu afektywnego w celu natychmiastowego podpisania najdroższej polisy.',
-            'Jak rozpoznać w czasie rzeczywistym: Ścisk w mostku i poczucie bycia potwornym rodzicem w razie wahania.',
-            'Możliwa konstruktywna reakcja: „Panie agencie, zadbam o bezpieczeństwo mojej rodziny w oparciu o chłodną kalkulację finansową, a nie o drastyczne zdjęcia. Poproszę o OWU na maila, porównam oferty 3 towarzystw i podejmę decyzję za tydzień”.',
-            'Wniosek dydaktyczny dla czytelnika: Nie pozwól nikomu sprzedawać ci polis na bazie terroru emocjonalnego.'
+            '1. Obiektywna sytuacja i fakty: Młody ojciec Piotr (30 lat) spotyka się z doradcą ubezpieczeniowym. Agent zamiast analizy bilansu finansowego kładzie na stole album ze zdjęciami zmiażdżonych aut i pyta lodowatym głosem: „Czy kocha pan swoje dzieci? Bo jeśli zginie pan jutro na trasie, z czego pana żona kupi jedzenie w przyszłym miesiącu? Jak pan spojrzy w oczy synowi?”.',
+            '2. Co widzi bohater (Piotr): Piotr widzi siebie jako wyrodnego, nieodpowiedzialnego ojca, który skazuje własne dzieci na nędzę, jeśli natychmiast nie wykupi najdroższego pakietu z prowizją 600 zł miesięcznie.',
+            '3. Czego bohater nie widzi (martwe pole): Piotr nie widzi, że proponowana polisa zawiera rażące wyłączenia odpowiedzialności (OWU) i nie chroni rodziny w większości realnych ryzyk, a agent gra na pierwotnym lęku rodzicielskim.',
+            '4. Działający mechanizm psychologiczny: Moralny szantaż lękowy (Fear Appeal) połączony z indukowaniem poczucia winy. Próba wywołania paraliżu afektywnego, w którym zakup staje się jedyną przepustką do odkupienia moralnego.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Troska o potomstwo i lęk przed osieroceniem to najsilniejszy biologiczny imperatyw ssaków.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Pojawienie się duszącego ucisku w mostku i poczucia wstydu za zadawanie merytorycznych pytań o koszty.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Asertywne odrzucenie szantażu: „Panie agencie, zadbam o bezpieczeństwo moich dzieci w oparciu o chłodną kalkulację ryzyk, a nie o drastyczne zdjęcia. Dziękuję za to spotkanie. Proszę przesłać OWU na maila, porównam oferty trzech towarzystw i sam podejmę decyzję”.',
+            '8. Konsekwencje alternatywnego wyboru: Piotr wybiera czyste ubezpieczenie terminowe na życie za 70 zł miesięcznie z sumą ubezpieczenia 1 000 000 zł, chroniąc rodzinę i oszczędzając 530 zł co miesiąc.',
+            '9. Wniosek dydaktyczny dla czytelnika: Kto w relacji biznesowej zaczyna od kwestionowania Twojej miłości do bliskich, ten nie jest doradcą, lecz emocjonalnym szantażystą.'
           ]
         }
       ],
@@ -435,11 +444,15 @@ export const chapterNine: Chapter = {
         {
           title: 'PRZYKŁAD 3: Gaslighting w korporacji — Znikające ustalenia projektowe',
           paragraphs: [
-            'Sytuacja i bohater: Starsza analityczka Ewa przygotowała raport zgodnie z ustaleniami z dyrektorem Dariuszem. Na zebraniu zarządu dyrektor publicznie gani Ewę: „Przecież mówiłem pani wyraźnie, że wskaźniki EBITDA liczymy według nowego wzoru. Jak mogła pani popełnić tak szkolny błąd?”. Ewa pamięta, że na spotkaniu w cztery oczy Dariusz nakazał stary wzór, lecz nie ma notatki mailowej.',
-            'Działający mechanizm: Gaslighting biurowy jako tarcza ochronna menedżera przed zarządem kosztem zaufania pracownika do własnej pamięci.',
-            'Jak rozpoznać w czasie rzeczywistym: Poczucie zawrotu głowy i gorączkowe zastanawianie się: „Czy ja naprawdę oszalałam i tego nie dosłyszałam?”.',
-            'Możliwa konstruktywna reakcja: Zasada „Paper Trail” (ślad papierowy): od tego momentu każde ustalenie z Dariuszem kończy się podsumowaniem mailowym: „Zgodnie z naszą rozmową, przyjmuję wskaźnik X”.',
-            'Wniosek dydaktyczny dla czytelnika: W relacjach z manipulatorem fakty istnieją tylko wtedy, gdy są zapisane na piśmie.'
+            '1. Obiektywna sytuacja i fakty: Starsza analityczka Ewa przygotowała kwartalny raport finansowy dokładnie według instrukcji udzielonych jej ustnie przez dyrektora Dariusza w cztery oczy. Na zebraniu zarządu dyrektor publicznie krytykuje Ewę: „Pani Ewo, przecież wyraźnie mówiłem pani o nowym wzorze EBITDA. Jak mogła pani popełnić tak szkolny błąd? Ostatnio jest pani strasznie roztargniona”.',
+            '2. Co widzi bohater (Ewa): Ewa czuje szok, zawrót głowy i gorączkowe zwątpienie: „Przecież pamiętam, że mówił inaczej... A może to ja się pomyliłam? Może przez te nadgodziny tracę pamięć?”.',
+            '3. Czego bohater nie widzi (martwe pole): Ewa nie widzi, że Dariusz sam zapomniał poinformować zarząd o zmianie metodologii i z zimną krwią poświęca reputację analityczki, by zatuszować własną niekompetencję.',
+            '4. Działający mechanizm psychologiczny: Gaslighting korporacyjny. Celowe podważanie zaufania pracownika do własnej pamięci i zmysłów w celu ochrony własnego statusu.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W hierarchiach dominacyjnych przerzucenie winy na osobnika niżej w drabinie dziobania chroniło status samca alfa.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Poczucie dysocjacji, stałe wracanie do starych rozmów z pytaniem: „Czy ze mną jest coś nie tak?”, połączone z brakiem obiektywnych dowodów.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Wdrożenie żelaznej zasady śladu dokumentacyjnego (Paper Trail): natychmiastowe wysyłanie podsumowań mailowych po każdej rozmowie ustnej: „Dariuszu, podsumowując naszą rozmowę z 14:00, do raportu przyjmuję wskaźnik X”.',
+            '8. Konsekwencje alternatywnego wyboru: Na kolejnym zebraniu Ewa spokojnie wyświetla maila potwierdzającego polecenie dyrektora, neutralizując manipulację faktami.',
+            '9. Wniosek dydaktyczny dla czytelnika: W relacjach z manipulatorem ustalenia ustne nie istnieją. Twoją jedyną tarczą przed podmienianiem rzeczywistości jest pisemny zapis faktów.'
           ]
         }
       ]
@@ -470,13 +483,17 @@ export const chapterNine: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 5: Fałszywy dylemat u szefa zespołu',
+          title: 'PRZYKŁAD 5: Fałszywy dylemat u kierownika projektu — Zamykanie w sztucznym korytarzu',
           paragraphs: [
-            'Sytuacja i bohater: Kierownik projektu rzuca do programisty Rafała w piątek o 17:00: „Rafał, albo zostaniesz dziś do 23:00 i dokończysz ten moduł, albo w poniedziałek powiem dyrektorowi, że przez ciebie straciliśmy klienta”.',
-            'Działający mechanizm: Fałszywy dylemat (szantaż binarny) maskujący błędy w planowaniu harmonogramu przez menedżera.',
-            'Jak rozpoznać w czasie rzeczywistym: Poczucie bycia przypartym do muru bez dobrego wyjścia.',
-            'Możliwa konstruktywna reakcja: Rozbicie binarnego wyboru: „Tomaszu, nie wybieram żadnej z tych dwóch opcji. Kończę pracę o 17:00 zgodnie z kodeksem pracy, a w poniedziałek od 8:00 wspólnie z dyrektorem przeanalizujemy, dlaczego harmonogram wdrożenia był nierealny od samego początku”.',
-            'Wniosek dydaktyczny dla czytelnika: Zawsze pytaj: „Jakie są inne opcje poza tymi dwiema, które mi narzucasz?”.'
+            '1. Obiektywna sytuacja i fakty: W piątek o 16:55 kierownik projektu Tomasz wchodzi do pokoju programisty Rafała (27 lat) i stawia ultimatum: „Rafał, albo zostaniesz dziś do 23:00 i dokończysz ten moduł, albo w poniedziałek powiem dyrektorowi, że przez twoje lenistwo straciliśmy klienta i nie dostaniesz premii”.',
+            '2. Co widzi bohater (Rafał): Rafał czuje panikę i złość. Widzi tylko dwie drogi: albo poświęcić prywatny wieczór i rodzinę, albo stać się kozłem ofiarnym w oczach zarządu.',
+            '3. Czego bohater nie widzi (martwe pole): Rafał nie dostrzega, że Tomasz stawia fałszywy dylemat, by zamaskować własne rażące błędy w harmonogramie wdrożenia, a klient wcale nie zażądał kodu w weekend, lecz w kolejną środę.',
+            '4. Działający mechanizm psychologiczny: Błąd fałszywego dylematu (False Dilemma) połączony z szantażem utraty reputacji zawodowej.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W obliczu zagrożenia umysł ma tendencję do redukowania złożoności do prostych kategorii binarnych (walcz albo uciekaj).',
+            '6. Jak rozpoznać w czasie rzeczywistym: Poczucie klaustrofobii decyzyjnej i obecność spójnika: „Albo zrobisz X, albo stanie się straszne Y”.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Rozbicie binarnej ramy i wyjście poza korytarz: „Tomaszu, nie wybieram żadnej z tych dwóch opcji. Zgodnie z kodeksem pracy kończę zmianę o 17:00. W poniedziałek o 8:00 wspólnie z dyrektorem przeanalizujemy status modułu i zaproponujemy realny termin testów na środę”.',
+            '8. Konsekwencje alternatywnego wyboru: Tomasz wycofuje się z gróźb, Rafał chroni swoje zdrowie i granice, a w poniedziałek zarząd koryguje nierealny harmonogram.',
+            '9. Wniosek dydaktyczny dla czytelnika: Kiedy ktoś stawia Cię pod ścianą z dwoma złymi wyborami, zawsze odrzuć ścianę i zapytaj o opcję trzecią i czwartą.'
           ]
         }
       ]
@@ -494,13 +511,17 @@ export const chapterNine: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 4: Trzy dni ciszy po odmowie wyjazdu do teściów',
+          title: 'PRZYKŁAD 4: Trzy dni ciszy po odmowie wyjazdu — Przemoc lodowatego muru',
           paragraphs: [
-            'Sytuacja i bohater: Łukasz (35 lat) powiedział żonie Kamili, że w nadchodzący weekend chce odpocząć w domu i nadrobić sen, zamiast jechać na 3-dniowy zjazd rodzinny. Kamila bez słowa wyszła z pokoju i przez kolejne 72 godziny nie odezwała się do niego ani słowem, ostentacyjnie trzaskając naczyniami.',
-            'Działający mechanizm: Karanie ciszą (Silent Treatment) jako kara za postawienie zdrowej granicy i próba wymuszenia uległości bez otwartej konfrontacji.',
-            'Jak rozpoznać w czasie rzeczywistym: Poczucie duszącego napięcia w mieszkaniu i automatyczna chęć natychmiastowego ugięcia się („Dobra, pojedziemy, tylko przestań milczeć”).',
-            'Możliwa konstruktywna reakcja: Odmowa tańczenia w tym spektaklu: „Kamila, widzę, że wybrałaś milczenie. Szanuję twoją potrzebę samotności. Kiedy zechcesz porozmawiać normalnym głosem o naszych planach, jestem do dyspozycji”. Następnie Łukasz zajmuje się własnymi sprawami bez żebrania o kontakt.',
-            'Wniosek dydaktyczny dla czytelnika: Karanie ciszą żywi się Twoim lękiem przed odrzuceniem. Gdy przestajesz prosić o kontakt, technika ta traci całą swoją moc operacyjną.'
+            '1. Obiektywna sytuacja i fakty: Łukasz (35 lat) informuje żonę Kamilę w czwartek wieczorem, że w nadchodzący weekend potrzebuje zostać w domu, odespać wyczerpujący tydzień i pobyć w ciszy, zamiast jechać na 3-dniowy zjazd jej dalszej rodziny. Kamila bez słowa odwraca się na pięcie i przez kolejne 72 godziny nie odzywa się do męża ani jednym słowem, ostentacyjnie ignorując jego obecność i trzaskając drzwiami.',
+            '2. Co widzi bohater (Łukasz): Łukasz czuje narastające, obezwładniające poczucie winy i lęku. Ma wrażenie, że w mieszkaniu brakuje tlenu, a jego potrzeba odpoczynku była zbrodnią niszczącą małżeństwo.',
+            '3. Czego bohater nie widzi (martwe pole): Łukasz nie dostrzega, że milczenie Kamili nie jest „smutkiem”, lecz wyuczoną, potężną bronią dominacyjną mającą zmusić go do kapitulacji i zrzeczenia się prawa do własnych granic.',
+            '4. Działający mechanizm psychologiczny: Karanie ciszą (Silent Treatment / Ostracyzm relacyjny). Aktywacja bólu wykluczenia społecznego w dACC w celu złamania oporu partnera.',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): W społecznościach pierwotnych banicja i wykluczenie ze wspólnoty były równoznaczne z wyrokiem śmierci.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Poczucie przymusu „przeproszenia za cokolwiek”, byle tylko druga strona zaczęła normalnie odpowiadać.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Neutralna odmowa udziału w spektaklu: „Kamilo, widzę, że wybrałaś milczenie. Szanuję twoją potrzebę wyciszenia. Kiedy zechcesz porozmawiać o naszych planach dorosłym głosem, jestem w salonie”. Następnie Łukasz zajmuje się swoimi sprawami bez żebrania o kontakt.',
+            '8. Konsekwencje alternatywnego wyboru: Kamila po 24 godzinach orientuje się, że karanie ciszą nie przynosi uległości, przerywa blokadę i rozpoczyna rozmowę o swoich obawach przed reakcją rodziców.',
+            '9. Wniosek dydaktyczny dla czytelnika: Karanie ciszą żywi się Twoją paniką przed odrzuceniem. Kiedy przestajesz przepraszać za swoje granice, mur obojętności natychmiast traci swoją moc operacyjną.'
           ]
         }
       ]
@@ -532,13 +553,17 @@ export const chapterNine: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD 6: Nowy adorator na portalu randkowym',
+          title: 'PRZYKŁAD 6: Nowy adorator na portalu randkowym — Pętla Love Bombingu',
           paragraphs: [
-            'Sytuacja i bohater: 30-letnia Marta poznaje przez internet Konrada. Konrad wysyła jej bukiety kwiatów do biura drugiego dnia, dzwoni 15 razy na dobę i po tygodniu mówi: „Jesteś kobietą mojego życia, musimy natychmiast zamieszkać razem”.',
-            'Działający mechanizm: Love Bombing jako wstęp do przejęcia kontroli. Po miesiącu Konrad zaczyna żądać usunięcia kont w mediach społecznościowych pod hasłem: „Skoro mnie kochasz, nie potrzebujesz uwagi innych facetów”.',
-            'Jak rozpoznać w czasie rzeczywistym: Poczucie zawrotu głowy, przyspieszone tempo relacji, pomijanie naturalnych etapów poznawania się.',
-            'Możliwa konstruktywna reakcja: Świadome zwolnienie tempa: „Dziękuję za kwiaty, ale spotykamy się dopiero tydzień. Poznajmy się spokojnie przez kolejne miesiące”. Obserwuj reakcję: manipulator wpadnie we wściekłość lub natychmiast zniknie.',
-            'Wniosek dydaktyczny dla czytelnika: Jeśli coś wygląda zbyt pięknie, by było prawdziwe — najczęściej jest pułapką na Twoje neurony nagrody.'
+            '1. Obiektywna sytuacja i fakty: Marta (30 lat) poznaje na aplikacji randkowej Konrada (33 lata). Konrad po 48 godzinach przysyła kosze 100 róż do jej pracy, dzwoni kilkanaście razy dziennie, a po tygodniu oświadcza: „Jesteś kobietą mojego życia, musimy natychmiast zamieszkać razem i rzucić twoją pracę, ja o wszystko zadbam”.',
+            '2. Co widzi bohater (Marta): Marta czuje euforyczny haj dopaminowy. Myśli, że spotkała wymarzonego księcia z bajki, który kocha ją tak mocno, jak nikt dotąd.',
+            '3. Czego bohater nie widzi (martwe pole): Marta nie dostrzega, że tempo relacji jest patologicznie przyspieszone, a Konrad nie kocha jej (bo jej jeszcze nie zna), lecz buduje w jej mózgu uzależnienie biochemiczne, po którym nastąpi faza dewaluacji i całkowitej izolacji.',
+            '4. Działający mechanizm psychologiczny: Love Bombing jako wstęp do cyklu przemocy psychicznej i wytworzenia więzi traumatycznej (Trauma Bonding).',
+            '5. Dlaczego ten mechanizm powstał (rola adaptacyjna): Ewolucyjny mechanizm przywiązania i głodu akceptacji społecznej uaktywnia zalew oksytocyny, wyłączając krytyczne obwody czołowe.',
+            '6. Jak rozpoznać w czasie rzeczywistym: Poczucie przytłoczenia intensywnością, przyspieszone tempo decyzji i presja na natychmiastowe zrywanie innych relacji.',
+            '7. Możliwa konstruktywna reakcja (alternatywa): Świadome spowolnienie dynamiki: „Konradzie, dziękuję za miłe słowa, ale znamy się dopiero 7 dni. Potrzebuję co najmniej kilku miesięcy spokojnego poznawania się, zanim podejmiemy jakiekolwiek wspólne decyzje”. Obserwacja reakcji: w obliczu oporu manipulator wpada w złość lub natychmiast znika.',
+            '8. Konsekwencje alternatywnego wyboru: Ochrona własnej niezależności, mieszkania i stabilności emocjonalnej przed toksycznym cyklem dewaluacji.',
+            '9. Wniosek dydaktyczny dla czytelnika: Prawdziwa miłość i szacunek potrzebują czasu, by wyrosnąć. Jeśli ktoś próbuje wbić się w Twoje życie z impetem taranu, to nie pasja — to próba przejęcia kontroli.'
           ]
         }
       ]
@@ -610,14 +635,14 @@ export const chapterNine: Chapter = {
         },
         neurobiologicalAnalysis: {
           brainRegions: [
-            { region: 'Hipokamp', role: 'Rekonstrukcja wspomnień z kawiarni', activationState: 'Zdestabilizowana przez powtarzający się fałszywy przekaz Wiktora' },
-            { region: 'Przednia kora zakrętu obręczy (ACC)', role: 'Rejestracja stałego konfliktu poznawczego', activationState: 'Chroniczny stan alarmowy' }
+            { region: 'Hipokamp', role: 'Rekonstrukcja i konsolidacja wspomnień epizodycznych z kawiarni', activationState: 'Zdestabilizowana przez powtarzający się fałszywy przekaz Wiktora (błąd podatności na sugestię)' },
+            { region: 'Przednia kora zakrętu obręczy (ACC) i sieć istotności', role: 'Rejestracja stałego konfliktu poznawczego między zmysłami a narracją autorytetu', activationState: 'Chroniczny stan alarmowy wyczerpujący zasoby wolicjonalne' }
           ],
           neurotransmitters: [
-            { name: 'Kortyzol', roleInScenario: 'Chroniczny stres doprowadził do bezsenności i mgły mózgowej' }
+            { name: 'Oś HPA i hormony stresu (kortyzol)', roleInScenario: 'Chroniczny stres neuroendokrynny: przedłużony wyrzut glikokortykoidów upośledza plastyczność synaptyczną hipokampa, wywołując bezsenność i mgłę poznawczą' }
           ],
           biologicalTimeline: [
-            { timeMs: 'Rozmowa z Wiktorem', process: 'Ciepły ton głosu wyłącza obronę amygdali, pozwalając na wstrzyknięcie fałszywej sugestii.' }
+            { timeMs: 'Rozmowa z Wiktorem', process: 'Ciepły ton głosu i pozorna troska obniżają czujność ciała migdałowatego, ułatwiając zaszczepienie fałszywej sugestii autobiograficznej.' }
           ]
         },
         influenceAndManipulation: {
