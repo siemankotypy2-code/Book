@@ -86,11 +86,11 @@ export const chapterTwentyNineCaseStudyMonika: CaseStudy = {
   context: 'Monika jest uważana za „duszę firmy” — zawsze uśmiechnięta, pierwsza do pomocy, nigdy nikomu nie odmawia. Zostaje po godzinach, by dokończyć raporty za leniwych kolegów, w weekendy odbiera telefony od klientów, a w życiu prywatnym organizuje przeprowadzki znajomym i opiekuje się psem sąsiadki. Od 6 miesięcy cierpi na przewlekłą bezsenność, napady migreny i permanentne poczucie pustki.',
   story: [
     'W piątek o 16:45 kolega z zespołu podchodzi do biurka Moniki z miną pełną skruchy: „Monia, ratuj, mam dziś randkę życia, a muszę złożyć prezentację dla klienta. Zrobisz to za mnie? Jesteś w tym najlepsza!”.',
-    'Wewnątrz Moniki odzywa się natychmiastowy krzyk buntu i potworne zmęczenie — planowała spędzić ten wieczór w wannie i wreszcie się wyspać.',
-    'Jednak zanim kora przedczołowa zdoła sformułować odmowę, w ciele migdałowatym eksploduje lęk: „Jeśli odmówię, Bartek pomyśli, że jestem samolubna, obrazi się, powie innym, że nie można na mnie liczyć”.',
-    'Z ust Moniki, wbrew jej woli, wypływa automatyczne: „No jasne, Bartek, nie ma sprawy, leć!”. Bartek rzuca „jesteś aniołem!” i wybiega z biura, a Monika zostaje sama w pustym open space, zalewając się łzami bezsilnej wściekłości.',
+    'Wewnątrz Moniki odzywa się natychmiastowy krzyk buntu i potworne zmęczenie — planowała spędzić ten wieczór w wannie i wreszcie się wyspać po 60-godzinnym tygodniu pracy.',
+    'Jednak zanim kora przedczołowa zdoła sformułować odmowę, w ciele migdałowatym eksploduje lęk: „Jeśli odmówię, Bartek pomyśli, że jestem samolubna, obrazi się, powie innym na open space, że nie można na mnie liczyć”.',
+    'Z ust Moniki, wbrew jej woli, wypływa automatyczne: „No jasne, Bartek, nie ma sprawy, leć!”. Bartek rzuca „jesteś aniołem!” i wybiega z biura, a Monika zostaje sama w pustym biurze, zalewając się łzami bezsilnej wściekłości.',
     'Ten schemat powtarzał się w jej życiu setki razy: uległość → złość na siebie i innych → tłumienie emocji → wyczerpanie somatyczne.',
-    'Przełom nastąpił, gdy podczas ataku paniki trafiła do gabinetu terapeutycznego. Zrozumiała, że jej „uczynność” nie była altruizmem, lecz strategią lękową — próbą kupienia bezpieczeństwa i akceptacji kosztem niszczenia własnego zdrowia.',
+    'Przełom nastąpił, gdy podczas ataku paniki w metrze trafiła do gabinetu psychoterapeutycznego. Zrozumiała, że jej „uczynność” nie była altruizmem, lecz strategią lękową — próbą kupienia bezpieczeństwa i akceptacji kosztem niszczenia własnego zdrowia.',
     'Wdrożyła zasadę „Pauzy Decyzyjnej”: na każdą niespodziewaną prośbę odpowiadała formułą: „Muszę sprawdzić grafik, dam ci znać za 30 minut”. Zaczęła odmawiać w drobnych sprawach i ze zdumieniem odkryła, że świat się nie zawalił, a szacunek zespołu do niej wzrósł.'
   ],
   dialogue: [
@@ -201,21 +201,21 @@ export const chapterTwentyNine: Chapter = {
         author: 'Prentis Hemphill'
       },
       paragraphs: [
-        'W potocznym rozumieniu słowo „granica” kojarzy się z murem obronnym, drutem kolczastym, chłodem emocjonalnym i egoistycznym odgradzaniem się od świata. W nowoczesnej psychologii relacji i teorii przywiązania granica osobista jest czymś zgoła odmiennym — to dynamiczna, półprzepuszczalna membrana psychologiczna, która określa, gdzie kończą się moje myśli, emocje, wartości, ciało i odpowiedzialność, a gdzie zaczyna się przestrzeń drugiego człowieka.',
-        'Zdrowe granice pełnią podwójną funkcję: z jednej strony chronią nasze wnętrze przed toksycznymi wpływami, manipulacją, eksploatacją i nadużyciami, z drugiej zaś pozwalają na swobodną, bezpieczną wymianę ciepła, miłości, wsparcia i informacji z otoczeniem. Człowiek z elastycznymi granicami potrafi otworzyć się na bliskość, nie tracąc przy tym poczucia własnej tożsamości.',
-        'Człowiek pozbawiony granic nie posiada w istocie własnego Ja — staje się emocjonalną gąbką bezwiednie wchłaniającą nastroje innych ludzi lub bezwolnym wykonawcą cudzych scenariuszy życiowych. Gdy ktoś w jego otoczeniu jest smutny, on czuje przymus naprawienia tego nastroju; gdy ktoś żąda przysługi, on czuje przymus uległości.',
-        'Stawianie granic to nie akt agresji wobec drugiego człowieka, lecz akt elementarnej opieki nad własnym istnieniem i warunek konieczny autentycznej miłości.'
+        'W potocznym rozumieniu słowo „granica” kojarzy się z murem obronnym, drutem kolczastym, chłodem emocjonalnym i egoistycznym odgradzaniem się od świata. W nowoczesnej psychologii relacji, teorii systemów rodzinnych i teorii przywiązania granica osobista jest czymś zgoła odmiennym — to dynamiczna, półprzepuszczalna membrana psychologiczna, która określa, gdzie kończą się moje myśli, emocje, wartości, ciało, czas i odpowiedzialność, a gdzie zaczyna się przestrzeń drugiego człowieka.',
+        'Zdrowe granice pełnią podwójną funkcję: z jednej strony chronią nasze wnętrze przed toksycznymi wpływami, manipulacją, pasożytnictwem emocjonalnym i naruszeniami godności, z drugiej zaś umożliwiają swobodną, bezpieczną wymianę ciepła, miłości, wsparcia i informacji z otoczeniem. Człowiek o elastycznych granicach potrafi otworzyć się na głęboką intymność, nie obawiając się, że utraci w niej własną tożsamość.',
+        'Osoba pozbawiona granic nie posiada w istocie własnego Ja — staje się emocjonalną gąbką bezwiednie wchłaniającą nastroje innych ludzi lub bezwolnym wykonawcą cudzych scenariuszy życiowych. Gdy ktoś w jej otoczeniu jest smutny, ona odczuwa przymus naprawienia tego nastroju; gdy ktoś żąda przysługi, ona czuje paraliżujący przymus uległości.',
+        'Stawianie granic to nie akt wrogości ani egoizmu wobec drugiego człowieka, lecz akt elementarnej opieki nad własnym istnieniem i warunek konieczny budowania autentycznych więzi.'
       ],
       subsections: [
         {
-          title: 'Granica to nie kontrola nad innymi',
+          title: 'Granica to nie kontrola nad innymi ludźmi',
           paragraphs: [
-            'Fundamentalnym błędem jest mylenie granicy z próbą kontrolowania drugiego człowieka. Komunikat: „Musisz natychmiast przestać krzyczeć!” jest próbą kontroli cudzego zachowania (często nieskuteczną).',
-            'Prawdziwa granica dotyczy wyłącznie CIEBIE i TWOICH działań: „Nie zgadzam się na podnoszenie na mnie głosu. Jeśli będziesz krzyczeć, wyjdę z pokoju i wrócimy do rozmowy, gdy będziemy oboje spokojni”.'
+            'Fundamentalnym i nagminnym błędem jest mylenie granicy z próbą kontrolowania drugiego człowieka. Komunikat: „Musisz natychmiast przestać krzyczeć!” lub „Zabraniam ci spotykać się ze znajomymi!” jest próbą kontroli cudzego zachowania — najczęściej nieskuteczną i rodzącą agresywny opór.',
+            'Prawdziwa granica dotyczy wyłącznie CIEBIE, TWOJEJ zgody i TWOICH działań: „Nie zgadzam się na podnoszenie na mnie głosu. Jeśli będziesz krzyczeć, wyjdę z pokoju i wrócimy do rozmowy, gdy będziemy oboje spokojni”. Granica określa, co JA zrobię, aby ochronić swoje bezpieczeństwo.'
           ],
           highlightBox: {
-            title: 'Zasada Samookreślenia',
-            content: 'Granica nie mówi drugiemu człowiekowi, kim ma być. Granica mówi światu: kim jestem ja, na co wyrażam zgodę, a co zrobię, jeśli moje bezpieczeństwo zostanie naruszone.',
+            title: 'Zasada Samookreślenia (Self-Definition)',
+            content: 'Granica nie mówi drugiemu człowiekowi, kim ma być ani co ma myśleć. Granica mówi światu: kim jestem ja, na co wyrażam zgodę, a co zrobię, jeśli moje terytorium psychiczne zostanie naruszone.',
             type: 'insight'
           }
         }
@@ -225,28 +225,49 @@ export const chapterTwentyNine: Chapter = {
       id: 'sec-29-2',
       pageNumber: 1034,
       sectionNumber: '29.2',
-      title: 'Dlaczego granice są potrzebne? Ochrona integralności, prewencja wypalenia i autentyczność',
+      title: 'Dlaczego granice są potrzebne? Ochrona integralności, prewencja wypalenia i paradoks empatii',
       category: 'teoria',
       readingTimeMinutes: 17,
       paragraphs: [
-        'Brak wyraźnych granic osobistych prowadzi do nieuchronnego bankructwa energetycznego, relacyjnego i zdrowotnego. Kiedy pozwalasz wszystkim na swobodny dostęp do swojego czasu, emocji i zasobów, Twoje życie przestaje należeć do Ciebie.',
-        'W przełomowych badaniach socjolożki Brené Brown nad ludźmi o najwyższym poziomie dobrostanu i empatii wykazano paradoksalną zależność: osoby najbardziej współczujące, życzliwe i zdolne do bezwarunkowej miłości to jednocześnie osoby o najbardziej bezwzględnych, precyzyjnych i nieprzekraczalnych granicach osobistych.',
-        'Dlaczego tak jest? Ponieważ granice zapobiegają narastaniu cichej urazy (resentment). Kiedy potrafisz w porę i ze spokojem powiedzieć „nie”, Twoje późniejsze „tak” jest w 100% czyste, szczere i pozbawione ukrytego jadu. Kiedy mówisz „tak”, a w duchu myślisz „nie”, każda minuta spędzona na pomaganiu rodzi w Tobie nienawiść do osoby, której pomagasz.',
-        'Granice są jedynym trwałym fundamentem długoterminowych relacji partnerskich, przyjacielskich i zawodowych.'
+        'Brak wyraźnych granic osobistych prowadzi do nieuchronnego bankructwa energetycznego, relacyjnego i somatycznego. Kiedy pozwalasz wszystkim na swobodny dostęp do swojego czasu, emocji i zasobów, Twoje życie przestaje należeć do Ciebie, a Ty zamieniasz się w zmęczonego rekwizyt w teatrze innych ludzi.',
+        'W przełomowych badaniach socjolożki Brené Brown nad osobami o najwyższym poziomie dobrostanu psychicznego, empatii i satysfakcji ze związków wykazano zjawisko określane mianem PARADOKSU GRANIC: ludzie najbardziej współczujący, ciepli, życzliwi i zdolni do bezwarunkowej miłości to jednocześnie ludzie posiadający najbardziej bezwzględne, precyzyjne i nieprzekraczalne granice osobiste.',
+        'Dlaczego tak się dzieje? Ponieważ granice zapobiegają narastaniu cichej urazy (resentment). Kiedy potrafisz w porę i ze spokojem powiedzieć „nie”, Twoje późniejsze „tak” jest w 100% czyste, szczere i pozbawione ukrytego jadu. Kiedy natomiast mówisz „tak”, a w duchu czujesz złość i bezsilność, każda minuta spędzona na pomaganiu rodzi w Tobie nienawiść do osoby, której pomagasz.',
+        'Granice nie oddalają ludzi od siebie — są jedynym bezpiecznym mostem, po którym dwie suwerenne jednostki mogą do siebie podejść bez lęku przed zniszczeniem.'
+      ],
+      subsections: [
+        {
+          title: 'Trzy typy architektury granic',
+          paragraphs: [
+            '1. GRANICE ROZMYTE (Nieszczelne / Gąbka): brak umiejętności odmowy, branie odpowiedzialności za emocje całego świata, zależność od cudzej aprobaty.',
+            '2. GRANICE SZTYWNE (Mur / Twierdza): odcięcie emocjonalne, nieufność, brak dopuszczania bliskości, izolacja obronna wywołana wcześniejszą traumą.',
+            '3. GRANICE ZDROWE (Półprzepuszczalna Membrana): elastyczność, selektywny dostęp do intymności, ochrona zasobów i szacunek dla granic innych.'
+          ]
+        }
       ]
     },
     {
       id: 'sec-29-3',
       pageNumber: 1038,
       sectionNumber: '29.3',
-      title: 'Granice fizyczne — Ciało, przestrzeń osobista, dotyk i prawo do nietykalności',
+      title: 'Granice fizyczne — Ciało, przestrzeń osobista, dotyk i prawo do nietykalności cielesnej',
       category: 'teoria',
       readingTimeMinutes: 17,
       paragraphs: [
-        'Najbardziej pierwotnym i biologicznym poziomem są granice fizyczne. Obejmują one Twoje ciało, strefę dystansu personalnego (proksemikę), potrzebę odpoczynku, snu, pożywienia oraz prawo do decydowania o tym, kto, kiedy i w jaki sposób może Cię dotykać.',
-        'Naruszenie granic fizycznych to nie tylko bezpośrednia przemoc cielesna — to także zmuszanie dzieci do całowania i przytulania dalekich krewnych wbrew ich woli („daj buziaka wujkowi, bo będzie mu przykro”), klepanie po plecach w biurze, wchodzenie do czyjegoś pokoju bez pukania czy wymuszanie pracy fizycznej w stanie skrajnej choroby i gorączki.',
-        'Odzyskanie kontaktu z granicami fizycznymi wymaga ponownego wsłuchania się w sygnały autonomicznego układu nerwowego: nagłe napięcie mięśni karku, ucisk w klatce piersiowej czy mimowolny odruch cofnięcia się są bezpośrednią biologiczną informacją, że ktoś przekroczył bezpieczny dystans.',
-        'Masz pełne prawo powiedzieć: „Nie lubię uścisków na powitanie, wolę podać rękę” — bez konieczności tłumaczenia się ze swojej wrażliwości zmysłowej.'
+        'Najbardziej pierwotnym i biologicznym fundamentem autonomii są granice fizyczne. Obejmują one Twoje ciało, strefę dystansu personalnego (proksemikę), potrzebę odpoczynku, snu, jedzenia oraz prawo do decydowania o tym, kto, kiedy i w jaki sposób może Cię dotykać.',
+        'Naruszenie granic fizycznych w życiu codziennym rzadko przybiera formę jawnego ataku — znacznie częściej jest znormalizowaną mikronaciskowością kulturową: zmuszaniem dzieci do całowania i przytulania dalekich krewnych wbrew ich woli („daj buziaka wujkowi, bo będzie mu przykro”), klepaniem po ramieniu lub łapaniem za talię w biurze, wchodzeniem do czyjegoś pokoju bez pukania czy wymuszaniem pracy w stanie gorączki.',
+        'Odzyskanie kontaktu z granicami fizycznymi wymaga ponownego wsłuchania się w sygnały układu trzewnego: nagłe napięcie mięśni karku, ucisk w klatce piersiowej czy mimowolny odruch cofnięcia się w tył są bezpośrednią, biologiczną informacją, że ktoś przekroczył bezpieczny dystans intymny.',
+        'Masz pełne, niezbywalne prawo powiedzieć: „Nie lubię uścisków na powitanie, wolę podać rękę” — bez konieczności tłumaczenia się ze swojej wrażliwości dotykowej.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Dotyk i Przestrzeń w Pracy',
+          paragraphs: [
+            'SYTUACJA: Współpracownik podczas rozmowy przy ekspresie do kawy staje zbyt blisko (na odległość 20 cm) i kładzie dłoń na Twoim ramieniu, co wywołuje w Tobie ostry dyskomfort.',
+            '• REAKCJA ULEGŁA: Uśmiechasz się nerwowo, kosisz wzrok w podłogę, kurczysz ramiona i czekasz w męczarniach, aż skończy mówić.',
+            '• REAKCJA AGRESYWNA: „Co ty sobie wyobrażasz, zboku?! Łapy przy sobie!”. (Awantura na korytarzu, wrogość w zespole).',
+            '• REAKCJA ASERTYWNA: Robisz wyraźny krok w tył, utrzymujesz spokojny kontakt wzrokowy i mówisz cichym, pewnym głosem: „Proszę, zachowajmy dystans fizyczny. Źle się czuję, gdy ktoś mnie dotyka podczas rozmowy zawodowej”.'
+          ]
+        }
       ]
     },
     {
@@ -261,6 +282,17 @@ export const chapterTwentyNine: Chapter = {
         'Gdy granice emocjonalne ulegają zatarciu, pojawia się patologiczne zjawisko uwikłania (enmeshment), typowe dla rodzin dysfunkcyjnych. W takim układzie samopoczucie jednostki staje się całkowitym zakładnikiem nastroju innej osoby: „Jeśli ojciec wraca z pracy wściekły, cały dom musi chodzić na palcach”, „Jeśli mój partner ma doła, ja nie mam prawa cieszyć się ze swojego sukcesu zawodowego”.',
         'Dojrzała empatia polega na współodczuwaniu z zachowaniem pełnej odrębności psychicznej: mogę usiąść obok Ciebie, wysłuchać Twojego cierpienia, potrzymać Cię za rękę i wesprzeć, nie stając się jednocześnie Twoim cierpieniem i nie niszcząc własnego spokoju.',
         'Nie jesteś emocjonalnym koszem na śmieci, do którego każdy ma prawo bezkarnie wylewać swoje frustracje.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Zlewanie się z emocjami partnera',
+          paragraphs: [
+            'SYTUACJA: Partner wraca z pracy sfrustrowany i rzuca torbę w kąt, wzdychając ciężko.',
+            '• WERSJA UWIKŁANA (Uległa): Natychmiast wpadasz w panikę: „Kochanie, co zrobiłam nie tak? Przepraszam! Zaraz zrobię obiad, tylko się nie denerwuj!”.',
+            '• WERSJA AGRESYWNA: „Znowu psujesz atmosferę w domu! Wiecznie tylko twoje humory!”.',
+            '• WERSJA ZE ZDROWĄ GRANICĄ: „Widzę, że miałeś ciężki dzień w pracy i jesteś spięty. Jeśli chcesz pogadać, jestem w salonie, a jeśli potrzebujesz pół godziny ciszy, zostawiam ci przestrzeń”.'
+          ]
+        }
       ]
     },
     {
@@ -293,6 +325,17 @@ export const chapterTwentyNine: Chapter = {
         'Naruszenia granic czasowych przybierają postać: chronicznego spóźniania się innych na spotkania z Tobą, telefonów służbowych o godzinie 21:30, niekończących się zebrań bez agendy czy wymuszania natychmiastowych odpowiedzi na komunikatorach internetowych.',
         'Twoja dostępność jest Twoim suwerennym wyborem, a nie dobrem publicznym. Jeśli nie wyznaczysz sztywnych ram własnego kalendarza, inni ludzie bez wahania zapełnią Twoje luki swoimi priorytetami.',
         'ASERTACJA CZASOWA W PRAKTYCE: „Przykro mi, ale o 17:00 kończę pracę. Chętnie omówię ten temat jutro o 9:00 rano”.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Chroniczne spóźnialstwo znajomego',
+          paragraphs: [
+            'SYTUACJA: Umawiasz się ze znajomym na kawę o 18:00. O 18:35 znajomy wchodzi do kawiarni bez słowa uprzedzenia.',
+            '• REAKCJA ULEGŁA: „Hej, nic się nie stało! Czekałam tylko pół godzinki, poczytałam artykuły...”.',
+            '• REAKCJA AGRESYWNA: „Jesteś bezczelny! Zawsze masz mnie gdzieś, jesteś skończonym egoistą!”.',
+            '• REAKCJA ASERTYWNA: „Cieszę się, że dotarłeś, jednak kiedy spóźniasz się 35 minut bez wiadomości, mój czas jest marnowany. Dziś mogę posiedzieć tylko do 19:15, bo o 19:30 mam kolejne plany. Umówmy się na przyszłość: jeśli spóźnienie przekracza 15 minut bez telefonu, nie czekam”.'
+          ]
+        }
       ]
     },
     {
@@ -307,6 +350,17 @@ export const chapterTwentyNine: Chapter = {
         'W relacjach toksycznych i uwikłanych prywatność bywa perfidnie mylona z tajemnicą lub zdradą („skoro mnie kochasz i nie masz nic do ukrycia, dlaczego nie chcesz dać mi hasła do swojego telefonu?”). Taka postawa nie wynika z miłości, lecz z paranoicznego lęku i pragnienia totalitarnej kontroli nad partnerem.',
         'Zdrowy związek opiera się na zaufaniu i poszanowaniu odrębności, a nie na wzajemnej inwigilacji. Szanowanie zamkniętych drzwi partnera lub dziecka jest fundamentem bezpieczeństwa emocjonalnego.',
         'Masz prawo odpowiedzieć: „Mój telefon i mój dziennik to moja prywatna przestrzeń. Szanuję twoją prywatność i oczekuję tego samego”.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Żądanie hasła do telefonu w związku',
+          paragraphs: [
+            'SYTUACJA: Partner mówi: „Daj mi hasło do swojego telefonu. Jeśli nie masz nic do ukrycia, to żaden problem”.',
+            '• WERSJA ULEGŁA: Oddajesz telefon z poczuciem poniżenia i ściśniętym żołądkiem: „Masz, bierz... przecież wiesz, że cię nie zdradzam”.',
+            '• WERSJA AGRESYWNA: „Sam jesteś zdradzieckim psychopatą! Odczep się od mojego telefonu!”.',
+            '• WERSJA ASERTYWNA: „Nie podam ci hasła do mojego telefonu. Moja prywatność nie oznacza braku miłości ani nielojalności. Chcę budować nasz związek na zaufaniu, a nie na inwigilacji. Co takiego sprawia, że czujesz niepokój?”.'
+          ]
+        }
       ]
     },
     {
@@ -321,6 +375,17 @@ export const chapterTwentyNine: Chapter = {
         'Zjawisko oversharingu (natychmiastowego, nadmiernego odsłaniania się przed nowo poznanymi ludźmi w internecie lub w pracy) bywa fałszywie promowane jako „autentyczność”. W rzeczywistości jest ono objawem nieszczelnych granic i desperacką próbą wymuszenia przedwczesnej bliskości.',
         'Podobnie na spotkaniach rodzinnych często padają wścibskie, naruszające pytania: „A kiedy ślub?”, „Ile zarabiasz?”, „Dlaczego jeszcze nie macie dzieci?”. Osoba o słabych granicach zaczyna się gęsto tłumaczyć, rumienić i pocić.',
         'Osoba o zdrowych granicach odpowiada z uśmiechem i żelaznym spokojem: „To moja prywatna sprawa, nie rozmawiam o tym przy obiedzie. Podasz mi sałatkę?”.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Wścibskie pytania przy stole wigilijnym',
+          paragraphs: [
+            'SYTUACJA: Wujek pyta przy całej rodzinie: „A ty ile właściwie wyciągasz w tej nowej robocie? Bo słyszałem, że w marketingu to tylko kawę pijecie”.',
+            '• REAKCJA ULEGŁA: Czerwienisz się, jąkasz: „No... zależy od miesiąca, czasem 4 tysiące, czasem 5... ale koszty życia są duże...”.',
+            '• REAKCJA AGRESYWNA: „A co wujka to obchodzi?! Lepiej niech wujek policzy swoje długi!”.',
+            '• REAKCJA ASERTYWNA: Spokojny uśmiech, kontakt wzrokowy: „Kwestie moich zarobków to moja prywatna sprawa, nie rozmawiam o finansach przy świątecznym stole. Jak udała się wujkowi tegoroczna podróż w góry?”.'
+          ]
+        }
       ]
     },
     {
@@ -396,6 +461,17 @@ export const chapterTwentyNine: Chapter = {
         '1. POCZUCIE WINY REALNE (Moralne): pojawia się, gdy rzeczywiście złamałeś swoje zasady etyczne, celowo kogoś skrzywdziłeś, okradłeś, okłamałeś lub złamałeś dobrowolną obietnicę. Wtedy właściwą reakcją są przeprosiny i zadośćuczynienie.',
         '2. POCZUCIE WINY INDUKOWANE (Fałszywe / Neurotyczne): pojawia się, gdy po prostu odmówiłeś spełnienia cudzego roszczenia kosztem siebie i pozwoliłeś drugiej osobie poczuć jej własne rozczarowanie.',
         'Nie jesteś odpowiedzialny za to, jak dorośli ludzie radzą sobie ze swoimi emocjami w odpowiedzi na Twoje uprawnione granice.'
+      ],
+      subsections: [
+        {
+          title: 'Algorytm Rozbrajania Neurotycznego Poczucia Winy',
+          paragraphs: [
+            'Gdy po odmowie czujesz ucisk w klatce piersiowej i wyrzuty sumienia, przeprowadź test 3 pytań:',
+            '1. Czy złamałem prawo lub przysięgę? (Nie).',
+            '2. Czy moim celem było sprawienie komuś bólu? (Nie, moim celem była ochrona mojego odpoczynku/zdrowia).',
+            '3. Czy ta osoba jest dorosła i posiada zasoby, by poradzić sobie z własnym rozczarowaniem? (Tak).'
+          ]
+        }
       ]
     },
     {
@@ -473,6 +549,17 @@ export const chapterTwentyNine: Chapter = {
         '2. Technika Stopy w Drzwiach: wyłudzenie mikroskopijnej przysługi („pożycz mi tylko 10 zł”), aby po kilku dniach zażądać wielkiego zobowiązania („pożycz mi 1000 zł”).',
         '3. Sztuczny Dług Wdzięczności: wyświadczenie nieproszonej przysługi (np. przyniesienie drogiej kawy), aby wywołać w Tobie paraliżujący przymus odwzajemnienia się ustępstwem.',
         'Zachowaj czujność: nie jesteś zobowiązany do spłacania długów, o których zaciągnięcie nigdy nie prosiłeś.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Nieproszony prezent ze zobowiązaniem',
+          paragraphs: [
+            'SYTUACJA: Sąsiad przynosi Ci skrzynkę jabłek ze swojego ogrodu, po czym po 2 godzinach przychodzi z prośbą: „Skoro dałem ci jabłka, to pożycz mi na weekend swoją kosiarkę spalinową”.',
+            '• REAKCJA ULEGŁA: „No tak... skoro dał jabłka, to muszę mu dać kosiarkę, choć wiem, że ją zepsuje...”.',
+            '• REAKCJA AGRESYWNA: „Zabieraj te swoje parszywe jabłka i wynoś się stąd!”.',
+            '• REAKCJA ASERTYWNA: „Bardzo dziękuję za jabłka, były pyszne. Jeśli chodzi o kosiarkę, nie pożyczam sprzętu spalinowego. Mogę ci oddać jabłka lub zapłacić za nie, jeśli to był warunek”.'
+          ]
+        }
       ]
     },
     {
@@ -504,6 +591,17 @@ export const chapterTwentyNine: Chapter = {
         '3. CIERPIĘTNICY (Sufferers): grają bezbronną, niemą ofiarę czekającą na ratunek, wzdychają i płaczą, wmawiając otoczeniu: „Przez ciebie tak cierpię”.',
         '4. KUSICIELE (Tantalizers): obiecują wspaniałą nagrodę (awans, miłość, pieniądze), ale stawiają warunek bezwzględnego posłuszeństwa.',
         'WYJŚCIE Z MGŁY FOG: Zdemaskuj mechanizm na głos: „Widzę, że próbujesz wzbudzić we mnie poczucie winy. Bardzo mi przykro z powodu twojej sytuacji, jednak moja decyzja jest niezmienna”.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Szantaż cierpieniem matki',
+          paragraphs: [
+            'SYTUACJA: Matka mówi do dorosłej córki: „Jeśli nie przyjedziesz w tę niedzielę na obiad, to chyba pęknie mi serce. Przez ciebie znowu wyląduję w szpitalu z nadciśnieniem”.',
+            '• REAKCJA ULEGŁA: „Mamo, proszę, nie denerwuj się! Już kasuję swoje plany i przyjadę, tylko bądź zdrowa!”. (Wyczerpanie, narastająca nienawiść do matki).',
+            '• REAKCJA AGRESYWNA: „Jesteś wstrętną manipulatorką! Zawsze mną sterujesz swoimi chorobami!”.',
+            '• REAKCJA ASERTYWNA: „Mamo, bardzo zależy mi na twoim zdrowiu i jeśli źle się czujesz, wezwijmy lekarza. Jednocześnie w tę niedzielę mam inne zobowiązania i nie przyjadę. Odwiedzę cię w następną sobotę o 16:00”.'
+          ]
+        }
       ]
     },
 
@@ -570,6 +668,17 @@ export const chapterTwentyNine: Chapter = {
         '• GROŹBA (Agresja): ma na celu ukaranie, zastraszenie i kontrolowanie drugiej osoby („Jeśli jeszcze raz to zrobisz, zniszczę cię / pożałujesz tego!”). Rodzi opór i chęć zemsty.',
         '• KONSEKWENCJA (Asertywność): jest spokojną informacją o Twoim własnym zachowaniu chroniącym („Jeśli podczas naszej rozmowy będziesz używać wulgaryzmów, przerwę to spotkanie i wyjdę z gabinetu. Wrócimy do tematu, gdy będziesz gotowy rozmawiać z szacunkiem”).',
         'Konsekwencja musi być realistyczna, proporcjonalna i w 100% możliwa do natychmiastowego zrealizowania przez Ciebie.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Przekraczanie granic podczas kłótni małżeńskiej',
+          paragraphs: [
+            'SYTUACJA: Partner podczas sporu o finanse zaczyna na Ciebie krzyczeć i uderza dłonią w stół.',
+            '• REAKCJA ULEGŁA: Zwijasz się w kłębek, płaczesz i przepraszasz, że w ogóle poruszyłeś temat.',
+            '• REAKCJA AGRESYWNA (Groźba): „Jeszcze raz uderz w stół, a wyrzucę twoje rzeczy przez okno i złożę pozew o rozwód!”.',
+            '• REAKCJA ASERTYWNA (Konsekwencja): Wstajesz spokojnie: „Nie rozmawiam w atmosferze krzyku i agresji fizycznej. Wychodzę na 20-minutowy spacer. Porozmawiamy, kiedy oboje opuścimy poziom emocji”. (Wychodzisz natychmiast).'
+          ]
+        }
       ]
     },
     {
@@ -599,9 +708,20 @@ export const chapterTwentyNine: Chapter = {
       readingTimeMinutes: 18,
       paragraphs: [
         'W relacjach rodzinnych stawianie granic budzi najsilniejsze opory i największe poczucie winy, ponieważ dotyka pierwotnych lojalności, tabu i skryptów z dzieciństwa. Wielu 40-letnich dorosłych ludzi w obecności swoich rodziców natychmiast cofa się emocjonalnie do roli bezradnego, zastraszonego 8-latka.',
-        'Proces indywiduacji (Carl Gustav Jung) wymaga symbolicznego przecięcia pępowiny emocjonalnej. Jako dorosły człowiek masz niezbywalne prawo decydować o swoim małżeństwie, finansach, wychowaniu dzieci, diecie, religii i sposobie spędzania świąt bez konieczności uzyskiwania aprobaty rodziców.',
+        'Proces indywiduacji (Carl Gustav Jung, Murray Bowen) wymaga symbolicznego przecięcia pępowiny emocjonalnej. Jako dorosły człowiek masz niezbywalne prawo decydować o swoim małżeństwie, finansach, wychowaniu dzieci, diecie, religii i sposobie spędzania świąt bez konieczności uzyskiwania aprobaty rodziców.',
         'Przejście od toksycznego uwikłania do dojrzałej relacji wymaga życzliwej stanowczości:',
         '„Mamo, tato, bardzo was kocham i szanuję wasze doświadczenie. Jednak w sprawie wychowania naszych dzieci podjęliśmy z żoną własną decyzję i prosimy o jej uszanowanie”.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Wtrącanie się teściów w wychowanie dziecka',
+          paragraphs: [
+            'SYTUACJA: Teściowa przychodzi bez zapowiedzi i krytykuje dietę Twojego 3-letniego dziecka: „Dajesz mu same warzywa, zagłodzisz go! Masz, zjedz czekoladkę od babci”.',
+            '• REAKCJA ULEGŁA: Milczysz ze ściśniętym gardłem, pozwalając na złamanie zasad dietetycznych ustalonych z lekarzem.',
+            '• REAKCJA AGRESYWNA: „Proszę stąd natychmiast wyjść! Nie chcę pani widzieć w tym domu!”.',
+            '• REAKCJA ASERTYWNA: Zabierasz czekoladkę ze stołu i mówisz spokojnie: „Mamo, cieszymy się z twoich odwiedzin, ale prosimy o uprzedzenie telefonem przed przyjściem. Zasady żywienia naszego syna ustalamy my jako rodzice. Jeśli chcesz dać mu przysmak, spytaj nas wcześniej”.'
+          ]
+        }
       ]
     },
     {
@@ -618,6 +738,17 @@ export const chapterTwentyNine: Chapter = {
         '• „Nie pożyczę ci tych pieniędzy, ponieważ zależy mi na naszej przyjaźni i nie chcę wprowadzać napięć finansowych”.',
         '• „Nie mogę dziś z tobą porozmawiać, jestem wyczerpany. Zadzwonię w czwartek”.',
         'Prawdziwy przyjaciel przyjmie te słowa z pełnym zrozumieniem; wampir emocjonalny obrazi się i poszuka innej ofiary do wysysania energii.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Przyjaciółka dzwoniąca tylko po to, by narzekać (Trauma Dumping)',
+          paragraphs: [
+            'SYTUACJA: Znajoma dzwoni o 22:00 po raz czwarty w tym tygodniu i przez godzinę opowiada o swoim toksycznym partnerze, ignorując pytania o Twoje samopoczucie.',
+            '• REAKCJA ULEGŁA: Trzymasz telefon przy uchu do północy, czując mdłości ze zmęczenia, po czym nie możesz zasnąć.',
+            '• REAKCJA AGRESYWNA: „Przestań wreszcie truć mi dupę swoimi facetami! Masz obsesję!”.',
+            '• REAKCJA ASERTYWNA: „Aniu, słyszę, jak bardzo jesteś przytłoczona tą sytuacją. Dziś o 22:30 kładę się spać i kończę rozmowę. Zachęcam cię do konsultacji z terapeutą par, bo ta sprawa wymaga profesjonalnej pomocy”.'
+          ]
+        }
       ]
     },
     {
@@ -632,6 +763,17 @@ export const chapterTwentyNine: Chapter = {
         'W SZKOLE I NA UCZELNI: Obrona przed presją rówieśniczą (używki, hejtowanie słabszych, ściąganie z Twojej kartki) oraz prawo do kulturalnego dopytania nauczyciela o kryteria oceny bez lęku przed odwetem.',
         'W PRACY: Granice zawodowe wyznaczają godziny dostępności, zakres obowiązków w umowie oraz kategoryczny brak zgody na mobbing, krzyk, seksizm i zrzucanie cudzych zadań.',
         'W INTERNECIE: Higiena cyfrowa obejmuje wyciszanie powiadomień, nieodpowiadanie na hejt, nieuczestniczenie w wojennych dyskusjach w komentarzach oraz natychmiastowe blokowanie profili naruszających Twoją godność.'
+      ],
+      subsections: [
+        {
+          title: 'Dialog Porównawczy: Szef żądający pracy w niedzielę',
+          paragraphs: [
+            'SYTUACJA: W niedzielę o 11:00 szef pisze na WhatsAppie: „Musisz przygotować te zestawienia na jutro rano, klient czeka”.',
+            '• REAKCJA ULEGŁA: Otwierasz laptopa z płaczem i pracujesz przez całą niedzielę.',
+            '• REAKCJA AGRESYWNA: „Chyba pan oszalał! Kodeks pracy zabrania takich rzeczy, zgłoszę to do PIP!”.',
+            '• REAKCJA ASERTYWNA: (W poniedziałek o 8:00 rano): „Dzień dobry. W weekendy moja skrzynka jest wyłączona. Od 8:00 pracuję nad zestawieniem, ukończę je zgodnie z procedurą do godziny 12:00”.'
+          ]
+        }
       ]
     },
     {
