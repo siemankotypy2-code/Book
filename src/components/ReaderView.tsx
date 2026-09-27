@@ -814,7 +814,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </div>
         )}
 
-        {activeSection.sectionNumber === '27.14' && (
+        {activeSection.sectionNumber === '27.18' && (
           <div className="my-10">
             <ChapterExamWidget
               chapterNumber={27}
