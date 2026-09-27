@@ -9,10 +9,11 @@ import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
  * - Następuje po Rozdziale 10 Tomu III (Rozdział 26: „Zmiana: Od Zrozumienia do Działania”).
  * - Stanowi wielką integrację i syntezę Rozdziałów 1–10.
  *
- * Źródło wiedzy bazowej na Etapie 1:
- * - Rozdział 1: Decyzje, działanie umysłu i sprawczość (modele wyboru, procesy automatyczne vs kontrolowane,
+ * Źródło wiedzy bazowej — rozszerzane etapowo:
+ * - Rozdział 1: decyzje, procesy automatyczne vs kontrolowane, heurystyki, zniekształcenia, ryzyko, sprawczość.
  *   heurystyki, zniekształcenia poznawcze, ryzyko i niepewność, konflikt celów, teoria perspektywy,
- *   samoskuteczność, myślenie kontrfaktyczne, rozróżnienie jakości procesu od wyniku).
+ * - Rozdziały 2–3: emocje, regulacja, uwaga i percepcja.
+ * - Rozdziały 12–14: motywacja i luka intencja–działanie, stres i ocena sytuacji, tożsamość i przekonania o sobie.
  */
 
 export const chapterTwentySevenExamQuestions: ExamQuestion[] = [
@@ -242,6 +243,90 @@ export const chapterTwentySevenExamQuestions: ExamQuestion[] = [
   }
 ];
 
+  {
+    id: 15,
+    question: 'Michał odkłada naukę przed ważnym egzaminem. Która analiza najlepiej pokazuje jednoczesne działanie motywacji, stresu i tożsamości?',
+    topic: 'Motywacja–Stres–Tożsamość',
+    sectionRef: 'Sekcja 27.14',
+    options: [
+      { label: 'A', text: 'Problem wynika wyłącznie z braku silnej woli.', isCorrect: false },
+      { label: 'B', text: 'Ważny, odroczony cel konkuruje z natychmiastową nagrodą; napięcie związane z zadaniem sprzyja unikaniu, a przekonanie o własnej niekompetencji może wzmacniać interpretację trudności jako dowodu przeciw sobie.', isCorrect: true },
+      { label: 'C', text: 'Stres zawsze zwiększa wydajność, więc nie może uczestniczyć w pętli prokrastynacji.', isCorrect: false },
+      { label: 'D', text: 'Tożsamość nie ma żadnego związku z zachowaniem.', isCorrect: false }
+    ],
+    explanation: 'W sytuacji Michała działają równocześnie odroczona nagroda, przewidywany wysiłek, chwilowa ulga po unikaniu, wzrost stresu oraz przekonania o własnych możliwościach.',
+    keyTakeaway: 'Zachowanie warto analizować jako pętlę wzajemnie wpływających procesów.'
+  },
+  {
+    id: 16,
+    question: 'Który punkt interwencji najlepiej odpowiada zasadzie projektowania środowiska?',
+    topic: 'Samokontrola i środowisko',
+    sectionRef: 'Sekcja 27.15',
+    options: [
+      { label: 'A', text: 'Pozostawić rozpraszacze na biurku i wielokrotnie powtarzać sobie, że trzeba być silnym.', isCorrect: false },
+      { label: 'B', text: 'Usunąć telefon z bezpośredniego zasięgu, przygotować materiały i z góry ustalić pierwszy krótki blok działania.', isCorrect: true },
+      { label: 'C', text: 'Czekać na moment maksymalnej motywacji.', isCorrect: false },
+      { label: 'D', text: 'Zwiększyć presję poprzez globalne etykietowanie siebie.', isCorrect: false }
+    ],
+    explanation: 'Zmiana środowiska zmniejsza liczbę momentów, w których trzeba aktywnie hamować konkurencyjny impuls.',
+    keyTakeaway: 'Część samokontroli można zastąpić wcześniejszym projektowaniem sytuacji.'
+  },
+  {
+    id: 17,
+    question: 'Uczeń przed wystąpieniem publicznym myśli: „Wszyscy zauważą każdy mój błąd”. Co należy rozdzielić, aby przeanalizować sytuację zgodnie z modelem stresu?',
+    topic: 'Stresor, ocena i interpretacja',
+    sectionRef: 'Sekcja 27.13',
+    options: [
+      { label: 'A', text: 'Stresor, ocenę znaczenia sytuacji, poczucie kontroli i dostępne zasoby.', isCorrect: true },
+      { label: 'B', text: 'Wyłącznie poziom inteligencji.', isCorrect: false },
+      { label: 'C', text: 'Wyłącznie fizjologiczne objawy pobudzenia.', isCorrect: false },
+      { label: 'D', text: 'Tylko opinię innych osób.', isCorrect: false }
+    ],
+    explanation: 'Stresor nie jest tym samym co reakcja stresowa. Znaczenie ma również ocena sytuacji, kontrola i zasoby.',
+    keyTakeaway: 'Oddziel zdarzenie od znaczenia, jakie mu nadajesz.'
+  },
+  {
+    id: 18,
+    question: 'Dlaczego zdanie „jestem osobą, która zawsze odkłada” może utrudniać zmianę bardziej niż opis konkretnego zachowania?',
+    topic: 'Tożsamość i samowzmacniające się przekonania',
+    sectionRef: 'Sekcja 27.13',
+    options: [
+      { label: 'A', text: 'Globalna etykieta może stać się przewidywaniem i filtrem interpretacyjnym, podczas gdy opis zachowania wskazuje konkretny wzorzec możliwy do zmiany.', isCorrect: true },
+      { label: 'B', text: 'Każda etykieta o sobie jest zawsze fałszywa.', isCorrect: false },
+      { label: 'C', text: 'Tożsamość nigdy nie wpływa na decyzje.', isCorrect: false },
+      { label: 'D', text: 'Zachowanie nie wpływa na obraz siebie.', isCorrect: false }
+    ],
+    explanation: 'Globalna etykieta może wpływać na oczekiwania i zachowanie, a następnie być przez nie wzmacniana.',
+    keyTakeaway: 'Opis procesu daje więcej możliwości interwencji niż globalny sąd o całej osobie.'
+  },
+  {
+    id: 19,
+    question: 'Co jest przykładem funkcjonalnego myślenia kontrfaktycznego po nieudanej decyzji?',
+    topic: 'Kontrfaktyczność i uczenie się',
+    sectionRef: 'Sekcja 27.15',
+    options: [
+      { label: 'A', text: '„Jestem beznadziejny i powinienem bez końca wracać do tej porażki.”', isCorrect: false },
+      { label: 'B', text: '„Który element procesu mogłem zmienić i jaki konkretny eksperyment wykonam następnym razem?”', isCorrect: true },
+      { label: 'C', text: '„Skoro wynik był zły, cały proces musiał być zły.”', isCorrect: false },
+      { label: 'D', text: '„Nie ma sensu analizować sytuacji, bo przeszłości nie można zmienić.”', isCorrect: false }
+    ],
+    explanation: 'Kontrfaktyczność może służyć uczeniu się, gdy prowadzi do identyfikacji punktu interwencji i przyszłej zmiany zachowania.',
+    keyTakeaway: 'Dobre pytanie kontrfaktyczne kończy się regułą na przyszłość.'
+  },
+  {
+    id: 20,
+    question: 'Który ciąg najlepiej pokazuje sprzężenie zwrotne opisane w nowej części Rozdziału 11?',
+    topic: 'System samowzmacniający',
+    sectionRef: 'Sekcja 27.16',
+    options: [
+      { label: 'A', text: 'Cel → działanie → zawsze sukces.', isCorrect: false },
+      { label: 'B', text: 'Cel → przewidywany wysiłek → napięcie → unikanie → natychmiastowa ulga → zaległość → większy stres → negatywna interpretacja siebie → dalsze unikanie.', isCorrect: true },
+      { label: 'C', text: 'Stres → zawsze lepsza uwaga → zawsze lepsza decyzja.', isCorrect: false },
+      { label: 'D', text: 'Tożsamość → zachowanie, ale zachowanie nigdy nie wpływa na tożsamość.', isCorrect: false }
+    ],
+    explanation: 'Pętla integruje motywację, regulację napięcia, stres, interpretację i tożsamość. Jest modelem diagnostycznym, a nie twierdzeniem, że każda sytuacja przebiega identycznie.',
+    keyTakeaway: 'Najważniejszym obiektem analizy jest pętla i sprzężenia zwrotne, a nie pojedyncza etykieta.'
+  },
 export const chapterTwentySevenCaseStudyMateusz: CaseStudy = {
   id: 'cs-ch27-mateusz-rozstaje',
   title: 'Skrzyżowanie Dróg Mateusza: Wiwisekcja Wielopoziomowego Wyboru',
@@ -646,9 +731,9 @@ export const chapterTwentySeven: Chapter = {
   volume: 3,
   volumeChapterNumber: 11,
   title: 'Rozdział 11: Integracja Wiedzy — Od Pojedynczych Rozdziałów do Jednego Systemu',
-  subtitle: 'Etap 2: Architektura Procesów Decyzyjnych, Dynamika Emocji i Filtry Uwagi (Wielka Integracja Rozdziałów 1, 2 i 3)',
-  leadParagraph: 'Dotarłeś do wielkiego punktu zbieżności. Przez poprzednie rozdziały badałeś poszczególne elementy ludzkiego funkcjonowania: mechanizmy decyzji, architekturę środowiska, stany emocjonalne, filtry uwagowe i strategie samoregulacji. Jednak w prawdziwym życiu żaden z tych procesów nie działa w próżni. W każdym codziennym wyborze — od odebrania trudnej wiadomości po strategiczny zwrot życiowy — decyzje, emocje i uwaga oddziałują na siebie w ciągłej, dynamicznej pętli sprzężeń zwrotnych. Niniejszy rozdział jest wielkim laboratorium integracyjnym. Na obecnym etapie łączymy fundament decyzyjny z biologiczną dynamiką afektu (Rozdział 2) oraz mechaniką reflektora uwagi (Rozdział 3) w spójny model 10-etapowej pętli poznawczo-emocjonalnej.',
-  totalEstimatedPages: 78,
+  subtitle: 'Etap 3: Integracja Decyzji, Emocji, Uwagi, Motywacji, Stresu i Tożsamości (Rozdziały 1–3 oraz 12–14)',
+  leadParagraph: 'Dotarłeś do wielkiego punktu zbieżności. Przez poprzednie rozdziały badałeś decyzje, emocje, uwagę, środowisko i samoregulację. Teraz do tej samej mapy dołączamy motywację, stres i tożsamość. Człowiek może chcieć osiągnąć cel, ale przewidywany wysiłek może wywołać napięcie; napięcie może zmienić uwagę; uwaga może wpłynąć na interpretację; obraz siebie może zmienić ocenę własnych możliwości; decyzja może zmienić zachowanie; a zachowanie może stworzyć doświadczenie, które ponownie wpłynie na obraz siebie. Rozdział 11 staje się więc wspólnym modelem dynamicznym, a nie katalogiem oddzielnych pojęć.',
+  totalEstimatedPages: 92,
   sections: [
     {
       id: 'sec-27-1',
@@ -676,6 +761,7 @@ export const chapterTwentySeven: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 18,
       paragraphs: [
+        'Do mapy decyzji należy teraz dopisać trzy pytania: czego człowiek chce i jak bardzo nagradzane jest działanie natychmiastowe, jak ocenia wymagania sytuacji i własne zasoby oraz jaki obraz siebie wnosi do decyzji. Dzięki temu luka między intencją a działaniem, stres i przekonania o sobie stają się elementami tej samej pętli.',
         'Jednym z największych błędów potocznego myślenia o człowieku jest traktowanie decyzji jako pojedynczego punktu w czasie — jako błysku woli, w którym ktoś mówi: „Wybieram to”. W rzeczywistości decyzja jest zaledwie siódmym lub ósmym krokiem w skomplikowanym łańcuchu przetwarzania informacji. Jeżeli chcesz zrozumieć, dlaczego ktoś podjął pozornie irracjonalny krok, nie patrz na sam moment wyboru. Prześledź całą trajektorię od pierwszego kontaktu z bodźcem.',
         'W oparciu o zintegrowaną wiedzę z Rozdziałów 1, 2 i 3 definiujemy kompletny, 10-etapowy model pętli decyzyjno-afektywnej. Model ten nie zakłada, że człowiek zawsze świadomie i sekwencyjnie wykonuje każdy krok. Jest on mapą diagnostyczną, która pozwala rozłożyć dowolne zachowanie na elementarne czynniki pierwsze i zidentyfikować punkty awarii systemu.'
       ],
@@ -745,6 +831,7 @@ export const chapterTwentySeven: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 18,
       paragraphs: [
+        'Stresor i reakcja stresowa nie są tym samym. Ocena znaczenia sytuacji, poczucie kontroli i dostępne zasoby mogą zmieniać uwagę, emocje oraz wybór działania. Wysokie pobudzenie nie musi automatycznie prowadzić do błędu, ale może zmieniać warunki, w których człowiek analizuje informacje.',
         'Czy emocje są wrogiem racjonalnego myślenia, jak twierdziły wieki potocznej filozofii? Współczesna neuronauka i psychologia emocji odpowiadają jednoznacznie: NIE. Człowiek pozbawiony emocji nie staje się bezbłędnym komputerem — staje się bezradnym obserwatorem niezdolnym do dokonania jakiegokolwiek wyboru.',
         'Emocja to złożony, dynamiczny proces przygotowujący organizm do działania w odpowiedzi na znaczenie nadane sytuacji. Nie jest ona jedynie abstrakcyjną myślą, ani nie jest samym tylko pobudzeniem fizjologicznym. Obejmuje ocenę sytuacji, zmiany autonomiczne (tętno, oddech, hormony), subiektywne doświadczenie, ekspresję oraz specyficzną tendencję do działania.'
       ],
@@ -810,6 +897,7 @@ export const chapterTwentySeven: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
+        'Sprawczość obejmuje także projektowanie środowiska. Usunięcie telefonu z zasięgu, wyłączenie powiadomień, przygotowanie materiałów i ustalenie konkretnego momentu rozpoczęcia zmniejszają liczbę sytuacji, w których trzeba polegać wyłącznie na kontroli impulsu.',
         'W klasycznych modelach ekonomicznych zakłada się, że człowiek ma jeden, jasno zdefiniowany cel: maksymalizację użyteczności. W psychologii wiemy, że to fikcja. W dowolnym momencie w Twoim umyśle toczy się zażarta negocjacja pomiędzy wieloma autentycznymi, ale wykluczającymi się potrzebami.',
         'W ujęciu integracyjnym wyróżniamy cztery fundamentalne poziomy konfliktu decyzyjnego, które nakładają się na siebie w każdej ważnej życiowo sytuacji:'
       ],
@@ -936,6 +1024,7 @@ export const chapterTwentySeven: Chapter = {
       category: 'studium-przypadku',
       readingTimeMinutes: 20,
       paragraphs: [
+        'Do procesu decyzyjnego można włączyć również obraz siebie. Przekonanie „nie radzę sobie pod presją” może wpływać na oczekiwania, stres i zachowanie, a wynik tego zachowania może następnie zostać potraktowany jako potwierdzenie przekonania. Pojedynczy rezultat nie musi jednak uzasadniać globalnego sądu o całej osobie.',
         'Przyjrzyjmy się teraz pełnej, wielowymiarowej wiwisekcji realnego dramatu decyzyjnego. Zobaczmy, w jaki sposób zakotwiczenie na statusie, pułapka kosztów utopionych, agresywny framing przełożonego i konflikt ról doprowadziły doświadczonego lidera technologicznego do podjęcia decyzji, która kosztowała go zdrowie, reputację i kryzys małżeński.',
         'Poniższe studium przypadku ilustruje działanie wszystkich 10 kroków pętli decyzyjnej w warunkach ostrego stresu korporacyjnego.'
       ],
@@ -962,6 +1051,7 @@ export const chapterTwentySeven: Chapter = {
       category: 'cwiczenia',
       readingTimeMinutes: 16,
       paragraphs: [
+        'Warto dodatkowo sprawdzić, czy odkładanie zadania daje natychmiastową ulgę. Jeżeli tak, unikanie może być wzmacniane właśnie przez tę krótkoterminową konsekwencję. Punkt interwencji może znajdować się w środowisku, sposobie rozpoczęcia zadania, regulacji napięcia albo zmianie dostępności natychmiastowej nagrody.',
         'Teoria bez praktyki pozostaje jedynie jałową wiedzą encyklopedyczną. Aby zintegrowany model decyzji stał się Twoim codziennym nawykiem poznawczym, musisz przećwiczyć dekompozycję własnych wyborów na czynniki pierwsze.',
         'Poniższy warsztat przeprowadzi Cię przez procedurę rozbicia dowolnej trudnej decyzji z ostatnich 30 dni na 10 kroków pętli systemowej. Twoim zadaniem jest bezwzględne oddzielenie czystych faktów od heurystycznych opowieści Twojego umysłu.'
       ],
@@ -975,6 +1065,7 @@ export const chapterTwentySeven: Chapter = {
       category: 'cwiczenia',
       readingTimeMinutes: 16,
       paragraphs: [
+        'Kontrfaktyczna analiza może dotyczyć całej pętli: czego oczekiwałem, jak oceniłem zagrożenie, gdzie skupiła się moja uwaga, jakie przekonanie o sobie zostało uruchomione i w którym miejscu mogłem zmienić warunki procesu. Celem jest znalezienie przyszłego punktu interwencji, a nie wyłącznie obwinienie siebie.',
         'Wielu ludzi niszczy swoje poczucie sprawczości poprzez toksyczny żal: godzinami odtwarzają przeszłe błędy, powtarzając w myślach: „Dlaczego byłem taki głupi?”. Z perspektywy psychologii poznawczej to błąd: nakładasz swoją dzisiejszą wiedzę na ówczesny stan niepewności.',
         'Poniższy warsztat uczy funkcjonalnego myślenia kontrfaktycznego. Zamiast atakować własną tożsamość, zrekonstruujesz ówczesny stan informacji i zidentyfikujesz 3 punkty interwencji, które zamienisz w żelazną regułę decyzyjną na przyszłość.'
       ],
@@ -1054,8 +1145,103 @@ export const chapterTwentySeven: Chapter = {
     },
     {
       id: 'sec-27-13',
-      pageNumber: 833,
+      pageNumber: 839,
       sectionNumber: '27.13',
+      title: 'Motywacja, stres i tożsamość — trzy siły działające w jednej pętli',
+      category: 'teoria',
+      readingTimeMinutes: 22,
+      paragraphs: [
+        'Do modelu decyzji dołączamy trzy pytania: czego człowiek chce, jak ocenia obciążenie sytuacji oraz co mówi o sobie, kiedy próbuje działać. Nie są to trzy osobne „moduły człowieka”, lecz procesy, które mogą wzajemnie zmieniać swoje działanie.',
+        'Motywacja nie jest przełącznikiem. Człowiek może bardzo cenić cel i jednocześnie nie wykonać działania, jeżeli przewidywany wysiłek jest wysoki, pierwsza czynność jest niejasna, nagroda jest odroczona, a alternatywa dostarcza szybkiej przyjemności lub ulgi. Dlatego „chcę” i „robię” trzeba analizować jako dwa różne punkty procesu.',
+        'Stresor również nie jest tym samym co reakcja stresowa. Znaczenie ma ocena sytuacji: co się dzieje, co to oznacza, jaki mam wpływ i czy mam zasoby. Ocena zagrożenia może zmienić uwagę, interpretację i wybór działania. Z kolei doświadczenie kontroli może zmienić przebieg reakcji.',
+        'Tożsamość dodaje warstwę przewidywania. Zdanie „jestem osobą, która zawsze odkłada” może działać nie tylko jako opis przeszłości, ale także jako oczekiwanie przyszłego zachowania. Powtarzalne zachowania mogą natomiast dostarczać nowych doświadczeń i stopniowo aktualizować obraz siebie.',
+        'Jedna z możliwych pętli wygląda tak: ważny cel → przewidywany wysiłek → napięcie → unikanie → natychmiastowa ulga → zaległość → większy stres → bardziej negatywna interpretacja własnych możliwości → dalsze unikanie. To model diagnostyczny, nie uniwersalne prawo.',
+        'Przeciwna pętla może wyglądać następująco: jasny cel → mały konkretny krok → wykonanie → informacja zwrotna → widoczny postęp → większe poczucie kompetencji → łatwiejsze rozpoczęcie kolejnego kroku. Działanie nie musi więc czekać na idealny stan motywacji; może dostarczać danych, które pomagają ją podtrzymać.',
+        'Żaden z tych modeli nie oznacza, że każde zachowanie ma jedną przyczynę. Na działanie wpływają również środowisko, relacje, wiedza, zasoby, aktualny stan organizmu, sytuacja społeczna i przypadek.'
+      ],
+      subsections: [
+        {
+          title: 'Mapa diagnostyczna',
+          paragraphs: [
+            'Cel → przewidywany koszt i nagroda → ocena sytuacji → obraz siebie → uwaga → emocja i pobudzenie → decyzja → działanie → natychmiastowa konsekwencja → długoterminowy rezultat → aktualizacja przekonań.',
+            'Mapa nie zakłada liniowego działania psychiki. Jej funkcją jest znalezienie miejsca, w którym można wprowadzić zmianę i sprawdzić jej konsekwencje.'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'sec-27-14',
+      pageNumber: 846,
+      sectionNumber: '27.14',
+      title: 'Wielkie studium przypadku — Michał przed egzaminem',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 25,
+      paragraphs: [
+        'Michał ma siedemnaście lat. Za miesiąc czeka go ważny egzamin. Wie, że wynik jest istotny, więc mówi: „Od jutra będę uczył się trzy godziny dziennie”. Następnego dnia wraca zmęczony, widzi telefon i zaczyna oglądać krótkie filmy. Po dwudziestu minutach mówi: „Jest jeszcze dużo czasu”.',
+        'Cel jest ważny, ale odległy. Telefon oferuje natychmiastową nagrodę. Nauka wiąże się z przewidywanym wysiłkiem i możliwością konfrontacji z brakami wiedzy. Odkładanie daje chwilową ulgę, więc zachowanie unikania może zostać wzmocnione.',
+        'Po tygodniu zaległość zwiększa stres. Uwaga przesuwa się z pytania „czego mam się nauczyć?” na „co będzie, jeśli nie zdam?”. Trudne zadanie może zostać potraktowane jako dowód przekonania „nie jestem dobry z tego przedmiotu”. W tym momencie motywacja, stres, uwaga i obraz siebie działają jednocześnie.',
+        'Punkty interwencji nie znajdują się tylko w „silniejszej motywacji”. Michał może rozbić egzamin na pięć działów, wyznaczyć pierwszy blok 25 minut, odłożyć telefon poza pokój, sprawdzać kilka zadań po każdym bloku i zapisywać postęp. Może też zamienić pytanie „czy jestem dobry?” na „jaką konkretną umiejętność mogę poprawić?”.',
+        'Jeżeli po kilku dniach rozwiązuje więcej zadań, otrzymuje nowe doświadczenie. Nie jest to dowód nagłej doskonałości, ale jest informacją, która może skorygować globalną etykietę. W ten sposób zachowanie może wpływać na obraz siebie.'
+      ],
+      subsections: [
+        {
+          title: 'Wiwisekcja pętli',
+          paragraphs: [
+            'Zadanie → przewidywany wysiłek → napięcie → telefon → natychmiastowa nagroda i ulga → odroczenie nauki → mniejszy postęp → większa zaległość → większy stres → negatywna interpretacja własnych możliwości → dalsze unikanie.',
+            'Alternatywna pętla: mały krok → wykonanie → informacja zwrotna → widoczny postęp → większe poczucie kompetencji → mniejsze tarcie rozpoczęcia → kolejne działanie.'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'sec-27-15',
+      pageNumber: 855,
+      sectionNumber: '27.15',
+      title: 'Laboratorium integracyjne — ćwiczenia z motywacji, stresu i tożsamości',
+      category: 'cwiczenia',
+      readingTimeMinutes: 28,
+      paragraphs: [
+        'Ćwiczenie 1 — Mapa luki intencja–działanie. Wybierz ważny cel, którego obecnie nie realizujesz. Zapisz: cel końcowy → najbliższe działanie → przewidywany wysiłek → emocję przed rozpoczęciem → natychmiastową alternatywną nagrodę → konsekwencję długoterminową. Wskaż jedno miejsce, w którym możesz zmienić środowisko.',
+        'Ćwiczenie 2 — Fakty, interpretacje i stres. Opisz trudną sytuację w trzech kolumnach: co zarejestrowałaby kamera, co dopowiada mój umysł, czego obawiam się w konsekwencji. Następnie zapisz, co kontrolujesz, czego nie kontrolujesz i jakie zasoby są dostępne.',
+        'Ćwiczenie 3 — Etykieta kontra zachowanie. Zapisz jedno globalne zdanie o sobie, np. „jestem osobą, która zawsze odkłada”. Następnie zamień je na opis obserwowalnego zachowania z konkretnego okresu. Sprawdź, jakie dodatkowe możliwości działania pojawiają się po tej zmianie opisu.',
+        'Ćwiczenie 4 — Punkt interwencji. Rozpisz sytuację jako: bodziec → uwaga → interpretacja → emocja → impuls → decyzja → działanie → konsekwencja. Znajdź co najmniej trzy miejsca, w których inna reguła mogłaby zmienić przebieg.',
+        'Ćwiczenie 5 — Kontrfaktyczność funkcjonalna. Zamiast „dlaczego jestem taki?” odpowiedz: co wiedziałem wtedy, czego nie wiedziałem, jaki mechanizm działał, jaki parametr środowiska mogę zmienić i jakie zachowanie przetestuję następnym razem.',
+        'Ćwiczenie 6 — Projektowanie następnych 24 godzin. Ustal konkretny czas, miejsce, pierwszy krok trwający maksymalnie 25 minut, jeden usunięty rozpraszacz, sposób pomiaru postępu i plan na moment pojawienia się napięcia.',
+        'Ćwiczenie 7 — Trzy scenariusze. Wybierz sytuację, w której stres wpłynął na decyzję. Porównaj wersję bez zmiany, wersję ze zmianą interpretacji oraz wersję ze zmianą środowiska lub kolejności działania. Zapisz możliwe konsekwencje krótkoterminowe i długoterminowe.'
+      ],
+      subsections: [
+        {
+          title: 'Pytania do samodzielnej analizy',
+          paragraphs: [
+            'Co było rzeczywistym celem, a co tylko deklaracją?',
+            'Która nagroda była dostępna natychmiast?',
+            'Jak oceniłem zagrożenie i własną kontrolę?',
+            'Na czym skupiła się moja uwaga?',
+            'Jakie przekonanie o sobie zostało uruchomione?',
+            'Które zachowanie wzmocniło to przekonanie?',
+            'Gdzie znajdował się najmniejszy, ale realny punkt zmiany?'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'sec-27-16',
+      pageNumber: 864,
+      sectionNumber: '27.16',
+      title: 'Synteza — od pojedynczej decyzji do systemu samowzmacniającego',
+      category: 'podsumowanie',
+      readingTimeMinutes: 18,
+      paragraphs: [
+        'Najważniejszą zmianą jest odejście od szukania jednej przyczyny zachowania. Człowiek może jednocześnie mieć ważny cel, bać się jego konsekwencji, odczuwać wysokie pobudzenie, skupiać uwagę na zagrożeniu, mieć przekonanie o własnej niekompetencji i znajdować się w środowisku pełnym natychmiastowych nagród.',
+        'Dlatego pytanie „czy mam motywację?” jest często zbyt ogólne. Bardziej użyteczne jest pytanie: co próbuję osiągnąć, czego oczekuję, czego unikam, co dostaję natychmiast, jak oceniam sytuację, co kontroluję, jaki obraz siebie uruchamiam i jakie doświadczenie tworzę swoim zachowaniem?',
+        'Wiedza integracyjna ma służyć znalezieniu punktu interwencji, a nie etykietowaniu siebie lub innych. Czasem będzie to zmiana środowiska, czasem rozbicie zadania, czasem sprawdzenie faktów, czasem regulacja pobudzenia, a czasem zakwestionowanie globalnego sądu o sobie.',
+        'Dojrzała sprawczość nie oznacza kontroli każdego wyniku. Oznacza rozpoznanie granic wpływu oraz świadome projektowanie procesu tam, gdzie wpływ rzeczywiście istnieje.'
+      ]
+    },
+    {
+      id: 'sec-27-17',
+      pageNumber: 873,
+      sectionNumber: '27.17',
       title: 'Pomost do Kolejnych Wymiarów Umysłu: Zapowiedź Rozszerzenia Systemu',
       category: 'podsumowanie',
       readingTimeMinutes: 14,
@@ -1070,9 +1256,9 @@ export const chapterTwentySeven: Chapter = {
       ]
     },
     {
-      id: 'sec-27-14',
-      pageNumber: 839,
-      sectionNumber: '27.14',
+      id: 'sec-27-18',
+      pageNumber: 879,
+      sectionNumber: '27.18',
       title: 'Wielki Egzamin Analityczny z Integracji Decyzyjnej (Etap 1)',
       category: 'podsumowanie',
       readingTimeMinutes: 20,
