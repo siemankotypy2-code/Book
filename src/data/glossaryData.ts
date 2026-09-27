@@ -140,5 +140,33 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDef: 'Monotonne, spokojne powtarzanie swojego stanowiska odmownego w obliczu ponawianego nacisku manipulatora.',
     detailedExplanation: 'Uniemożliwia wciągnięcie w labirynt zbędnych dyskusji i usprawiedliwień. Po 3–4 spokojnych powtórzeniach manipulator rezygnuje z dalszego ataku.',
     everydayExample: '„Rozumiem, że ci zależy, jednak moja decyzja o niepożyczaniu samochodu jest ostateczna”.'
+  },
+  {
+    term: 'Odporność Psychiczna (Resilience)',
+    category: 'Adaptacja i Odporność',
+    shortDef: 'Dynamiczny proces powrotu do równowagi psychobiologicznej i adaptacji po doświadczeniu przeciwności losu.',
+    detailedExplanation: 'Odporność nie oznacza braku stresu czy niewrażliwości na ból, lecz zdolność do elastycznego angażowania zasobów poznawczych, behawioralnych i społecznych w celu odbudowy sprawczości.',
+    everydayExample: 'Zdolność do przeżycia smutku po utracie pracy, a następnie spokojnego ułożenia nowego portfolio i wejścia na rynek z zaktualizowaną strategią.'
+  },
+  {
+    term: 'Dychotomia Kontroli (Dichotomy of Control)',
+    category: 'Adaptacja i Odporność',
+    shortDef: 'Fundament stoicki i poznawczy: podział rzeczywistości na rzeczy zależne w 100% od nas oraz rzeczy od nas niezależne.',
+    detailedExplanation: 'Inwestowanie energii wyłącznie w strefę własnych decyzji, reakcji i mikrokroków, przy jednoczesnej akceptacji zewnętrznych rezultatów, opinii innych ludzi i zdarzeń losowych.',
+    everydayExample: 'Skupienie się na doskonałym przygotowaniu do rozmowy rekrutacyjnej bez zadręczania się tym, jakich innych kandydatów zaprosił zarząd.'
+  },
+  {
+    term: 'Elastyczność Psychologiczna (Psychological Flexibility)',
+    category: 'Adaptacja i Odporność',
+    shortDef: 'Zdolność do trwania w kontakcie z chwilą obecną i zmiany strategii w służbie wybranym wartościom pomimo trudnych emocji.',
+    detailedExplanation: 'Rdzeń Terapii Akceptacji i Zaangażowania (ACT). Pozwala zachować wierność celom nadrzędnym przy jednoczesnej plastyczności taktyk i otwartości na błędy.',
+    everydayExample: 'Gdy kontuzja uniemożliwia bieganie, osoba elastyczna przechodzi na pływanie i rehabilitację, zamiast porzucać aktywność fizyczną w poczuciu bezradności.'
+  },
+  {
+    term: 'Tolerancja Niepewności (Tolerance of Uncertainty)',
+    category: 'Adaptacja i Odporność',
+    shortDef: 'Umiejętność podejmowania działań i zachowania spokoju w warunkach braku pełnych danych i gwarancji wyniku.',
+    detailedExplanation: 'Niska tolerancja niepewności prowadzi do kompulsywnego sprawdzania, natrętnego szukania zapewnień lub przedwczesnych, błędnych decyzji podejmowanych wyłącznie w celu uciszenia lęku.',
+    everydayExample: 'Wysłanie ważnej oferty do klienta i spokojne zajęcie się kolejnym zadaniem zamiast odświeżania skrzynki pocztowej co 30 sekund.'
   }
 ];

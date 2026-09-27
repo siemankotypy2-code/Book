@@ -47,6 +47,8 @@ import { chapterTwentyEightExamQuestions } from '../data/chapterTwentyEightData'
 import { chapterTwentyNineExamQuestions } from '../data/chapterTwentyNineData';
 import { chapterThirtyExamQuestions } from '../data/chapterThirtyData';
 import { chapterThirtyOneExamQuestions } from '../data/chapterThirtyOneData';
+import { chapterThirtyTwoExamQuestions } from '../data/chapterThirtyTwoData';
+import { AdaptationLabWidget } from './AdaptationLabWidget';
 import { SocialInfluenceLab } from './SocialInfluenceLab';
 import { CommunicationLab } from './CommunicationLab';
 import { PersuasionLab } from './PersuasionLab';
@@ -886,6 +888,23 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={31}
               chapterTitle="Autonomia i Sprawczość: Jak Stać się Architektem Własnego Życia (Rozdział 31)"
               examQuestions={chapterThirtyOneExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 32 (Tom III Rozdział 16: Odpowiedzialność, Odporność i Adaptacja) WIDGETS --- */}
+        {(activeSection.sectionNumber === '32.18' || activeSection.sectionNumber === '32.24' || activeSection.sectionNumber === '32.25') && (
+          <div className="my-10">
+            <AdaptationLabWidget />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '32.28' || activeSection.sectionNumber === '32.32') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={32}
+              chapterTitle="Odpowiedzialność, Odporność, Adaptacja i Praca z Niepewnością (Rozdział 32)"
+              examQuestions={chapterThirtyTwoExamQuestions}
             />
           </div>
         )}
