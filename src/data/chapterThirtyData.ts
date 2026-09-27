@@ -24,7 +24,7 @@ export const chapterThirtyExamQuestions: ExamQuestion[] = [
     id: 2,
     question: 'W jaki sposób technika „Zamgławiania” (Fogging) chroni przed destrukcyjnym atakiem krytycznym i prowokacją?',
     topic: 'Techniki Asertywnego Przyjmowania Krytyki',
-    sectionRef: 'Sekcja 30.16',
+    sectionRef: 'Sekcja 30.15',
     options: [
       { label: 'A', text: 'Polega na spokojnym zgodzeniu się z tą częścią krytyki, która zawiera ziarno prawdy lub prawdopodobieństwa, bez przyjmowania uogólnień, poczucia winy ani kontrataku emocjonalnego.', isCorrect: true },
       { label: 'B', text: 'Polega na natychmiastowym wyparciu się wszystkiego i oskarżeniu krytykującego o kłamstwo.', isCorrect: false },
@@ -38,7 +38,7 @@ export const chapterThirtyExamQuestions: ExamQuestion[] = [
     id: 3,
     question: 'Na czym polega różnica między strukturą komunikatu typu „TY” a komunikatu typu „JA” (I-statement)?',
     topic: 'Komunikat JA w Komunikacji Asertywnej',
-    sectionRef: 'Sekcja 30.12',
+    sectionRef: 'Sekcja 30.11',
     options: [
       { label: 'A', text: 'Komunikat „TY” zawiera oskarżenie, etykietowanie i wzbudza natychmiastową obronę („Ty zawsze wszystko niszczysz”), natomiast komunikat „JA” opisuje obiektywny fakt, moje własne emocje i konkretne oczekiwanie („Kiedy przerywasz mi wypowiedź, czuję irytację. Chcę dokończyć zdanie”).', isCorrect: true },
       { label: 'B', text: 'Komunikat „TY” jest zawsze po angielsku, a komunikat „JA” po polsku.', isCorrect: false },
@@ -80,8 +80,8 @@ export const chapterThirtyExamQuestions: ExamQuestion[] = [
 
 export const chapterThirtyCaseStudyUleglosc: CaseStudy = {
   id: 'cs-ch30-piotr-uleglosc',
-  title: 'Studium Przypadku 1: Cena Wiecznego Milczenia — Piotr i Uległość w Zespole',
-  subtitle: 'Jak brak asertywnego sprzeciwu doprowadził do kradzieży autorstwa i utraty awansu',
+  title: 'Studium Przypadku: Cena Wiecznego Milczenia — Piotr i Uległość w Zespole',
+  subtitle: 'Jak brak asertywnego sprzeciwu doprowadził do kradzieży autorstwa i jak odzyskać głos',
   protagonist: 'Piotr, 30 lat, analityk danych w firmie doradczej',
   context: 'Piotr od 6 miesięcy pracował po nocach nad autorskim algorytmem predykcji churnu klientów. Jego kolega z pokoju, Dominik — osoba głośna, dominująca i charyzmatyczna — stale podglądał postępy prac Piotra, rzucając protekcjonalne uwagi. Na tydzień przed prezentacją dla zarządu Dominik przyszedł do Piotra z prośbą o udostępnienie kodu, twierdząc, że „chce tylko sprawdzić formatowanie”. Piotr czuł głęboki niepokój, ale bał się odmówić, by nie wyjść na niekoleżeńskiego.',
   story: [
@@ -137,8 +137,8 @@ export const chapterThirtyCaseStudyUleglosc: CaseStudy = {
 
 export const chapterThirtyCaseStudyAgresja: CaseStudy = {
   id: 'cs-ch30-kamil-agresja',
-  title: 'Studium Przypadku 2: Płonące Mosty — Kamil i Pułapka Reakcji Agresywnej',
-  subtitle: 'Jak mylenie siły z agresją zniszczyło zaufanie zespołu i jak trening asertywności odbudował autorytet',
+  title: 'Studium Przypadku: Płonące Mosty — Kamil i Pułapka Reakcji Agresywnej',
+  subtitle: 'Jak mylenie siły z agresją zniszczyło autorytet i jak trening asertywności odbudował zaufanie',
   protagonist: 'Kamil, 38 lat, dyrektor operacyjny w firmie produkcyjnej',
   context: 'Kamil uważał się za człowieka „bezkompromisowego i twardego”. Gdy pracownicy popełniali błędy, krzyczał, uderzał pięścią w stół, używał wulgaryzmów i publicznie wyśmiewał ich kompetencje. Sądził, że buduje w ten sposób szacunek i dyscyplinę. W rzeczywistości w firmie panowała atmosfera terroru: najlepsi inżynierowie składali wypowiedzenia, pracownicy ukrywali awarie maszyn z lęku przed wybuchem Kamila, a koszty przestojów wzrosły o 300%.',
   story: [
@@ -185,9 +185,9 @@ export const chapterThirtyCaseStudyAgresja: CaseStudy = {
   keyTakeaway: 'Krzyk nie jest dowodem siły — jest najbardziej jaskrawym dowodem utraty panowania nad sobą. Prawdziwa siła wyraża się w cichym, precyzyjnym i nieubłaganym spokoju.'
 };
 
-export const chapterThirtyCaseStudyKonfrontacja: CaseStudy = {
+export const chapterThirtyCaseStudyKonfliktGranice: CaseStudy = {
   id: 'cs-ch30-karolina-konflikt',
-  title: 'Studium Przypadku 3: W Kleszczach Gaslightingu — Karolina i Konfrontacja z Przełożoną',
+  title: 'Studium Przypadku: W Kleszczach Gaslightingu — Karolina i Konfrontacja z Przełożoną',
   subtitle: 'Zastosowanie technik zamgławiania, dopytywania i asertywnej obrony faktów wobec manipulacji',
   protagonist: 'Karolina, 27 lat, specjalistka ds. PR',
   context: 'Szefowa Karoliny, Beata, stosowała subtelny gaslighting: zmieniała wytyczne w rozmowach w cztery oczy, a na spotkaniach z klientami twierdziła, że Karolina wszystko zmyśliła lub źle zrozumiała: „Karolinko, chyba masz problemy z pamięcią, nigdy czegoś takiego nie mówiłam!”. Karolina zaczęła wątpić we własne zmysły, czując narastający niepokój i obniżenie samooceny.',
@@ -237,8 +237,8 @@ export const chapterThirtyCaseStudyKonfrontacja: CaseStudy = {
 
 export const chapterThirtyExerciseAssertivenessLab: SelfExercise = {
   id: 'ex-ch30-assertiveness-lab',
-  title: 'Ćwiczenie 30.1: Wielkie Laboratorium Transformacji Komunikacyjnej — Od Uległości i Agresji do Czystej Asertywności',
-  subtitle: 'Praktyczny trening przepisywania skryptów rozmów i budowania komunikatów JA w 5 kluczowych obszarach życia',
+  title: 'Wielki Trening Asertywności: Laboratorium Transformacji Komunikacyjnej',
+  subtitle: 'Praktyczny trening przepisywania skryptów rozmów i budowania komunikatów JA w 4 kluczowych obszarach życia',
   objective: 'Opanowanie umiejętności natychmiastowej zamiany reakcji uległej lub agresywnej na precyzyjny, asertywny komunikat.',
   durationMinutes: 30,
   neuroScientificFoundation: 'Aktywne ćwiczenie nowych ścieżek językowych tworzy trwałe połączenia synaptyczne w obszarze Broki i lewej kory przedczołowej.',
@@ -287,6 +287,7 @@ export const chapterThirty: Chapter = {
   leadParagraph: 'Asertywność jest ukoronowaniem całej drogi, jaką przeszedłeś przez 30 rozdziałów tej książki. Nie jest to zbiór sprytnych trików retorycznych ani technika wygrywania sprzeczek przy niedzielnym obiedzie. Prawdziwa asertywność to głęboka, dojrzała postawa egzystencjalna — to stan, w którym znasz swoją wartość, szanujesz swoje granice, potrafisz otwarcie i bez lęku wyrażać swoje myśli oraz dajesz dokładnie takie samo prawo każdemu drugiemu człowiekowi. W tym finałowym rozdziale zbadamy 30 filarów dojrzałej asertywności: odróżnimy ją od agresji i uległości, zdekodujemy Kanon Praw Asertywności, opanujesz techniki zamgławiania, komunikatu JA, zdartej płyty i deeskalacji konfliktów oraz połączymy całą wiedzę Tomu I, II i III w jeden zintegrowany, potężny system samokształtowania człowieka.',
   totalEstimatedPages: 102,
   sections: [
+    // BLOK I — ZROZUMIENIE ASERTYWNOŚCI (30.1 - 30.5)
     {
       id: 'sec-30-1',
       pageNumber: 1160,
@@ -301,7 +302,8 @@ export const chapterThirty: Chapter = {
       paragraphs: [
         'W potocznym rozumieniu asertywność bywa często wypaczana i mylona z bezwzględnością, arogancją lub umiejętnością twardego odmawiania w każdej sytuacji. W rzeczywistości asertywność jest jedną z najbardziej szlachetnych i wymagających form dojrzałości psychologicznej, jaką człowiek może wypracować.',
         'Jej fundamentem jest filozoficzna postawa opisana w analizie transakcyjnej przez Thomasa Harrisa: „Ja jestem OK — Ty jesteś OK”. Oznacza to głębokie przekonanie, że moje potrzeby, emocje, prawa i granice są ważne i godne szacunku — i dokładnie tak samo ważne i godne szacunku są potrzeby, emocje, prawa i granice drugiego człowieka.',
-        'Asertywność to złoty środek między uległością (gdzie rezygnujesz ze swoich praw, by przypodobać się innym) a agresją (gdzie wymuszasz swoje prawa, raniąc i poniżając innych).'
+        'Asertywność to złoty środek między uległością (gdzie rezygnujesz ze swoich praw, by przypodobać się innym) a agresją (gdzie wymuszasz swoje prawa, raniąc i poniżając innych).',
+        'To odwaga bycia autentycznym w świecie, który nieustannie wywiera presję na uległość lub walkę.'
       ]
     },
     {
@@ -325,7 +327,7 @@ export const chapterThirty: Chapter = {
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
-        'Postawa uległa (podporządkowana) opiera się na założeniu: „Ty jesteś ważny — ja jestem nieważny”. Osoba uległa milczy, gdy łamane są jej prawa, zgadza się na niechciane zadania, przeprasza za to, że żyje i nieustannie kłania się oczekiwaniom otoczenia.',
+        'Postawa uległa opiera się na założeniu: „Ty jesteś ważny — ja jestem nieważny”. Osoba uległa milczy, gdy łamane są jej prawa, zgadza się na niechciane zadania, przeprasza za to, że żyje i nieustannie kłania się oczekiwaniom otoczenia.',
         'Cena uległości jest jednak niszczycielska. Tłumiona złość i żal nie znikają — zamieniają się w autoagresję, depresję, migreny, nerwice żołądkowe oraz skrajne poczucie bezwartościowości.',
         'Ponadto uległość demoralizuje otoczenie: uczysz innych ludzi, że mogą bezkarnie po Tobie deptać, co prowadzi do nieuchronnego rozpadu relacji.'
       ]
@@ -347,15 +349,21 @@ export const chapterThirty: Chapter = {
       id: 'sec-30-5',
       pageNumber: 1176,
       sectionNumber: '30.5',
-      title: 'Asertywność a manipulacja — Przejrzystość intencji kontra gry psychologiczne i ukryte agendy',
-      category: 'teoria',
-      readingTimeMinutes: 16,
+      title: 'Ćwiczenie Praktyczne — Rozpoznawanie Stylu Komunikacji w 4 Sytuacjach Codziennych',
+      category: 'cwiczenia',
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Manipulator relacyjny działa w cieniu. Nie mówi wprost, czego chce, lecz stosuje podchody, aluzje, wzbudzanie litości, fochy i sztuczne długi wdzięczności, by zmusić drugą stronę do określonego zachowania.',
-        'Manipulacja jest wyrazem głębokiego braku szacunku dla autonomii drugiego człowieka — traktuje partnera nie jako podmiot, lecz jako przedmiot do osiągnięcia celu.',
-        'Asertywność jest radykalnie przejrzysta. Człowiek asertywny wykłada karty na stół: „Chcę X. Czy jesteś gotów mi to dać?”. Taka postawa buduje niezłomne zaufanie i oczyszcza relacje ze wszelkich toksycznych toksyn.'
+        'Rozpoznaj, który styl reprezentują poniższe wypowiedzi (Uległy, Agresywny, Bierny, Asertywny):',
+        'SYTUACJA 1: Ktoś wpycha się przed Ciebie w kolejce w sklepie.',
+        'A: „Przepraszam... no trudno...” [Styl Uległy].',
+        'B: „Gdzie się pchasz, ślepy jesteś czy bezczelny?!” [Styl Agresywny].',
+        'C: (Ciche wzdychanie i przewracanie oczami bez słowa) [Styl Bierny/Bierno-agresywny].',
+        'D: „Przepraszam, koniec kolejki znajduje się za mną. Proszę stanąć na końcu” [Styl Asertywny].',
+        'ZADANIE: Zapisz w swoim dzienniku, w których relacjach (z partnerem, szefem, rodzicami) najczęściej osuwasz się w uległość, a w których w agresję.'
       ]
     },
+
+    // BLOK II — PRAWA I POTRZEBY (30.6 - 30.10)
     {
       id: 'sec-30-6',
       pageNumber: 1180,
@@ -399,7 +407,7 @@ export const chapterThirty: Chapter = {
       id: 'sec-30-9',
       pageNumber: 1192,
       sectionNumber: '30.9',
-      title: 'Prawo do błędów — Przełamanie perfekcjonizmu, odpowiedzialność za pomyłki i pokora',
+      title: 'Prawo do popełniania błędów — Przełamanie perfekcjonizmu, odpowiedzialność za pomyłki i pokora',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
@@ -412,32 +420,25 @@ export const chapterThirty: Chapter = {
       id: 'sec-30-10',
       pageNumber: 1196,
       sectionNumber: '30.10',
-      title: 'Prawo do zmiany zdania — Ewolucja poglądów, elastyczność poznawcza i suwerenność',
-      category: 'teoria',
-      readingTimeMinutes: 15,
+      title: 'Ćwiczenie Praktyczne — Moje Prawa w Komunikacji: Osobisty Dekalog Suwerenności',
+      category: 'cwiczenia',
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Masz pełne prawo zmienić zdanie w świetle nowych informacji, zmiany wartości lub własnego samopoczucia. Nie jesteś niewolnikiem swoich deklaracji z przeszłości.',
-        'Manipulatorzy często próbują uwięzić ofiarę zasadą fałszywej konsekwencji: „Przecież w zeszłym roku mówiłeś, że lubisz góry, dlaczego teraz chcesz jechać nad morze?!”.',
-        'Odpowiedź asertywna brzmi: „Tak, wtedy tak uważałem. Dziś potrzebuję czegoś innego i zmieniłem zdanie”. Masz prawo ewoluować.'
+        'Przeczytaj uważnie 5 Fundamentalnych Praw Asertywności Manuela J. Smitha i wybierz to, które najtrudniej przychodzi Ci wdrożyć:',
+        '1. Masz prawo do samodzielnej oceny własnego zachowania, myśli i emocji oraz ponoszenia odpowiedzialności za ich skutki.',
+        '2. Masz prawo nie tłumaczyć się i nie usprawiedliwiać swojego zachowania przed innymi.',
+        '3. Masz prawo do zmiany zdania.',
+        '4. Masz prawo do popełniania błędów i ponoszenia za nie odpowiedzialności.',
+        '5. Masz prawo powiedzieć: „Nie wiem”, „Nie rozumiem”, „Nie zależy mi na tym”.',
+        'Napisz krótki esej refleksyjny: Kto w Twoim otoczeniu próbuje odbierać Ci te prawa i jak odpowiesz mu przy następnej rozmowie?'
       ]
     },
+
+    // BLOK III — JĘZYK ASERTYWNY (30.11 - 30.15)
     {
       id: 'sec-30-11',
       pageNumber: 1200,
       sectionNumber: '30.11',
-      title: 'Prawo do prywatności — Niewypowiadanie się, nieodpowiadanie na wścibskie pytania i tajemnica',
-      category: 'teoria',
-      readingTimeMinutes: 15,
-      paragraphs: [
-        'Nie masz obowiązku odpowiadać na każde zadane pytanie. Masz prawo powiedzieć: „Nie chcę o tym rozmawiać”, „To moja prywatna sprawa”, „Nie wiem” lub „Nie rozumiem”.',
-        'Nie musisz tłumaczyć się ze swoich zarobków, planów małżeńskich, decyzji o posiadaniu dzieci czy historii zdrowotnej przed wścibskimi znajomymi lub rodziną.',
-        'Twoje milczenie i Twoje granice informacyjne są Twoją twierdzą, której nikt nie ma prawa naruszać bez Twojej wyraźnej zgody.'
-      ]
-    },
-    {
-      id: 'sec-30-12',
-      pageNumber: 1204,
-      sectionNumber: '30.12',
       title: 'Komunikat „JA” — Anatomia języka odpowiedzialności i deeskalacji obrony rozmówcy',
       category: 'teoria',
       readingTimeMinutes: 16,
@@ -448,10 +449,10 @@ export const chapterThirty: Chapter = {
       ]
     },
     {
-      id: 'sec-30-13',
-      pageNumber: 1208,
-      sectionNumber: '30.13',
-      title: 'Mówienie konkretnie — Eliminacja kwantyfikatorów wielkich („zawsze”, „nigdy”) i język faktów',
+      id: 'sec-30-12',
+      pageNumber: 1204,
+      sectionNumber: '30.12',
+      title: 'Jak mówić konkretnie? Eliminacja kwantyfikatorów wielkich („zawsze”, „nigdy”) i język kamery wideo',
       category: 'teoria',
       readingTimeMinutes: 15,
       paragraphs: [
@@ -461,10 +462,10 @@ export const chapterThirty: Chapter = {
       ]
     },
     {
-      id: 'sec-30-14',
-      pageNumber: 1212,
-      sectionNumber: '30.14',
-      title: 'Mówienie o emocjach — Nazywanie afektu bez oskarżeń i rola Affect Labeling w neuronauce',
+      id: 'sec-30-13',
+      pageNumber: 1208,
+      sectionNumber: '30.13',
+      title: 'Jak mówić o emocjach? Nazywanie afektu bez oskarżeń i rola Affect Labeling w neuronauce',
       category: 'neuronauka',
       readingTimeMinutes: 17,
       paragraphs: [
@@ -474,10 +475,10 @@ export const chapterThirty: Chapter = {
       ]
     },
     {
-      id: 'sec-30-15',
-      pageNumber: 1216,
-      sectionNumber: '30.15',
-      title: 'Wyrażanie krytyki — Model FUKO (Fakty, Uczucia, Konsekwencje, Oczekiwania) vs fałszywa kanapka',
+      id: 'sec-30-14',
+      pageNumber: 1212,
+      sectionNumber: '30.14',
+      title: 'Jak wyrażać krytykę? Model FUKO (Fakty, Uczucia, Konsekwencje, Oczekiwania) vs fałszywa kanapka',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
@@ -487,10 +488,10 @@ export const chapterThirty: Chapter = {
       ]
     },
     {
-      id: 'sec-30-16',
-      pageNumber: 1220,
-      sectionNumber: '30.16',
-      title: 'Przyjmowanie krytyki — Technika Zamgławiania (Fogging), dopytywanie i oddzielanie faktów od ocen',
+      id: 'sec-30-15',
+      pageNumber: 1216,
+      sectionNumber: '30.15',
+      title: 'Jak przyjmować krytykę? Technika Zamgławiania (Fogging), dopytywanie i oddzielanie faktów od ocen',
       category: 'teoria',
       readingTimeMinutes: 17,
       paragraphs: [
@@ -499,17 +500,31 @@ export const chapterThirty: Chapter = {
         'DOPYTYWANIE polega na poproszeniu o szczegóły: „Co konkretnie w moim zachowaniu sprawiło, że tak uważasz?”. To zmusza krytykującego do zejścia na poziom faktów i rozbraja emocjonalny atak.'
       ]
     },
+
+    // BLOK IV — ASERTYWNOŚĆ POD PRESJĄ (30.16 - 30.20)
     {
-      id: 'sec-30-17',
-      pageNumber: 1224,
-      sectionNumber: '30.17',
-      title: 'Reagowanie na nacisk — Odmowa stopniowana, bufor czasowy i utrzymanie granic',
+      id: 'sec-30-16',
+      pageNumber: 1220,
+      sectionNumber: '30.16',
+      title: 'Co robić, gdy ktoś naciska? Odmowa stopniowana, bufor czasowy i utrzymanie granic',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
         'W obliczu agresywnego nacisku czasowego („Musisz podjąć decyzję teraz, zaraz okazja przepadnie!”) pierwszym krokiem człowieka asertywnego jest natychmiastowe spowolnienie tempa.',
         'Zastosuj bufor czasowy: „Zasada, którą stosuję, nie pozwala mi podejmować takich decyzji pod presją. Odpowiem ci jutro o 10:00”.',
         'Jeśli rozmówca nalega: „Albo teraz, albo wcale!”, asertywna odpowiedź brzmi: „W takim razie w tym momencie moja odpowiedź brzmi: nie”. Zawsze wybieraj kontrolę nad własnym procesem decyzyjnym.'
+      ]
+    },
+    {
+      id: 'sec-30-17',
+      pageNumber: 1224,
+      sectionNumber: '30.17',
+      title: 'Powtarzanie komunikatu — Klaryfikacja, parafraza intencji rozmówcy i stanowczość',
+      category: 'teoria',
+      readingTimeMinutes: 15,
+      paragraphs: [
+        'Gdy rozmówca próbuje obejść Twoją odmowę, wspaniałą techniką jest połączenie empatii z niezłomnością: 1. Nazwij potrzebę rozmówcy („Słyszę, że bardzo zależy ci na szybkim załatwieniu tej sprawy”); 2. Ponów swoje stanowisko („Jednocześnie nie wezmę dziś nadgodzin”).',
+        'Dzięki temu rozmówca czuje się usłyszany, co redukuje jego złość, ale jednocześnie nie uzyskuje ustępstwa w sprawie Twojej granicy.'
       ]
     },
     {
@@ -542,7 +557,7 @@ export const chapterThirty: Chapter = {
       id: 'sec-30-20',
       pageNumber: 1236,
       sectionNumber: '30.20',
-      title: 'Reagowanie na wywoływanie poczucia winy — Demaskowanie szantażu FOG i zachowanie spokoju',
+      title: 'Reagowanie na wzbudzanie poczucia winy — Demaskowanie szantażu FOG i zachowanie spokoju',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
@@ -551,11 +566,13 @@ export const chapterThirty: Chapter = {
         'Oddziel empatię od uległości: możesz współczuć czyjemuś dyskomfortowi, nie zmieniając ani o milimetr swojej suwerennej decyzji.'
       ]
     },
+
+    // BLOK V — ASERTYWNOŚĆ W PRAKTYCZNYCH SYTUACJACH (30.21 - 30.25)
     {
       id: 'sec-30-21',
       pageNumber: 1240,
       sectionNumber: '30.21',
-      title: 'Asertywność wobec znajomych — Pieniądze, przysługi, zaproszenia i higiena relacji',
+      title: 'Asertywność wobec znajomego — Pieniądze, przysługi, zaproszenia i higiena relacji',
       category: 'teoria',
       readingTimeMinutes: 15,
       paragraphs: [
@@ -607,87 +624,92 @@ export const chapterThirty: Chapter = {
       id: 'sec-30-25',
       pageNumber: 1256,
       sectionNumber: '30.25',
-      title: 'Asertywność w internecie — Komentarze, spory w social mediach, cyberprzemoc i prawo do milczenia',
+      title: 'Asertywność w internecie — Komentarze, spory w social mediach, cyberprzemoc i higiena uwagi',
       category: 'teoria',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Świat cyfrowy kusi do nieustannego wikłania się w jałowe wojny komentarzowe. Asertywność w sieci to przede wszystkim asertywność własnej uwagi i energii.',
-        'Nie masz obowiązku odpowiadać na hejt, prostować każdego kłamstwa ani tłumaczyć się obcym ludziom pod postami. Zastosuj zasadę: jedno merytoryczne wyjaśnienie faktów (jeśli sprawa dotyczy Twojej firmy) lub całkowite zignorowanie i zablokowanie trolla.',
-        'Twoja uwaga jest walutą najwyższej próby — nie płać nią ludziom, którzy żywią się cudzym wzburzeniem.'
+        'W przestrzeni cyfrowej asertywność oznacza przede wszystkim umiejętność nieangażowania się w jałowe pyskówki i wojenki komentarzowe.',
+        'Pamiętaj: nie masz obowiązku odpowiadać na każdy komentarz pod swoim postem ani prostować każdej nieprawdy w sieci. Twoja uwaga jest cenną walutą.',
+        'Stosuj zasadę: 1 merytoryczna odpowiedź (jeśli rozmówca pyta w dobrej wierze), a w razie hejtu i trollingu — natychmiastowe wyciszenie lub zablokowanie bez wchodzenia w emocje.'
       ]
     },
+
+    // BLOK VI — INTEGRACJA (30.26 - 30.30)
     {
       id: 'sec-30-26',
       pageNumber: 1260,
       sectionNumber: '30.26',
-      title: 'Studium Przypadku 1 — Cena Wiecznego Milczenia: Piotr i Uległość w Zespole',
+      title: 'Studium Przypadku — Osoba Uległa: Cena Wiecznego Milczenia Piotra',
       category: 'studium-przypadku',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
       caseStudyRef: chapterThirtyCaseStudyUleglosc,
       paragraphs: [
-        'W pierwszym studium przypadku analizujemy historię 30-letniego analityka Piotra, którego chroniczna uległość i lęk przed konfrontacją doprowadziły do kradzieży jego autorskiego projektu przez dominującego kolegę.',
-        'Przypadek ten dekonstruuje mechanizm uległości i pokazuje krok po kroku, jak przeprowadzić skuteczną, spokojną interwencję asertywną przywracającą szacunek i sprawiedliwość w zespole.'
+        'W tym studium przypadku analizujemy dramat Piotra (30 lat), analityka danych, którego uległość doprowadziła do kradzieży jego autorskiego projektu przez dominującego kolegę z pokoju.',
+        'Zapoznaj się ze szczegółową analizą mechanizmów bierności, dialogami oraz nowym, asertywnym skryptem obrony dorobku opisanym w interaktywnej karcie powyżej.'
       ]
     },
     {
       id: 'sec-30-27',
       pageNumber: 1266,
       sectionNumber: '30.27',
-      title: 'Studium Przypadku 2 — Płonące Mosty: Kamil i Pułapka Reakcji Agresywnej',
+      title: 'Studium Przypadku — Osoba Reagująca Agresją: Płonące Mosty Kamila',
       category: 'studium-przypadku',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
       caseStudyRef: chapterThirtyCaseStudyAgresja,
       paragraphs: [
-        'Drugie studium przypadku bada przypadek dyrektora Kamila, który mylił agresję i krzyk z autorytetem, doprowadzając firmę do kryzysu kadrowego i procesów o mobbing.',
-        'Analizujemy transformację agresji w dojrzałą komunikację FUKO, opanowanie neurobiologicznych markerów furii oraz budowanie prawdziwego autorytetu opartego na spokojnej konsekwencji.'
+        'W drugim studium przypadku przyglądamy się Kamilowi — dyrektorowi operacyjnemu, który mylił autorytet z terrorem i agresją, niszcząc morale całego zakładu produkcyjnego.',
+        'Zobacz, jak trening asertywnego przywództwa w oparciu o model FUKO uratował jego karierę i przywrócił zaufanie zespołu.'
       ]
     },
     {
       id: 'sec-30-28',
       pageNumber: 1272,
       sectionNumber: '30.28',
-      title: 'Studium Przypadku 3 — W Kleszczach Gaslightingu: Karolina i Konfrontacja z Przełożoną',
+      title: 'Studium Przypadku — Konflikt i Granice: Karolina w Kleszczach Gaslightingu',
       category: 'studium-przypadku',
-      readingTimeMinutes: 18,
-      caseStudyRef: chapterThirtyCaseStudyKonfrontacja,
+      readingTimeMinutes: 19,
+      caseStudyRef: chapterThirtyCaseStudyKonfliktGranice,
       paragraphs: [
-        'Trzecie studium przypadku przyglądamy się obronie młodej specjalistki PR przed wyrafinowanym gaslightingiem szefowej podważającej jej pamięć i kompetencje.',
-        'Analiza demonstruje siłę protokołu pisemnego (paper trail), technikę zamgławiania i publiczne, spokojne przedstawienie faktów niszczące kłamstwo manipulatora.'
+        'Trzecie studium przypadku ilustruje walkę Karoliny z subtelnym gaslightingiem przełożonej za pomocą twardych faktów i techniki Paper Trail.',
+        'Przeanalizuj, w jaki sposób zachowanie żelaznego spokoju i odwołanie się do dokumentacji rozbraja każdą próbę manipulacji pamięcią.'
       ]
     },
     {
       id: 'sec-30-29',
       pageNumber: 1278,
       sectionNumber: '30.29',
-      title: 'Praktyczne Warsztaty Komunikacyjne — Wielkie Laboratorium Transformacji Asertywnej',
+      title: 'Wielki Trening Asertywności — Laboratorium Transformacji Komunikacyjnej',
       category: 'cwiczenia',
       readingTimeMinutes: 22,
       exerciseRef: chapterThirtyExerciseAssertivenessLab,
       paragraphs: [
-        'Przejdź do praktycznego warsztatu asertywności. W tym module przećwiczysz zamianę uległych i agresywnych skryptów na czyste komunikaty JA, przetestujesz technikę zamgławiania i zdartej płyty oraz podpiszesz swoją osobistą Deklarację Suwerenności Asertywnej.'
+        'Wykonaj kompleksowy trening asertywności w 4 scenariuszach życiowych (znajomi, rodzina, praca, audyt praw Smitha), korzystając z interaktywnego formularza ćwiczenia 30.1 powyżej.',
+        'Przepisz swoje stare reakcje uległe lub agresywne na czyste, pewne komunikaty JA.'
       ]
     },
     {
       id: 'sec-30-30',
       pageNumber: 1284,
       sectionNumber: '30.30',
-      title: 'Wielka Synteza Dzieła — Integracja Tomu I, II i III oraz Architektura Kompletnego Człowieka',
+      title: 'Wielkie Podsumowanie Dzieła — Integracja Tomu I, II i III oraz Architektura Samoświadomego Człowieka',
       category: 'podsumowanie',
-      readingTimeMinutes: 25,
+      readingTimeMinutes: 24,
+      quote: {
+        text: 'Poznanie samego siebie to dopiero początek. Prawdziwym celem jest świadome ukształtowanie siebie i swojego miejsca w świecie.',
+        author: 'Synteza Dzieła'
+      },
       paragraphs: [
-        'Dotarłeś do końca 30-rozdziałowej podróży przez psychologię, neuronaukę i funkcjonowanie człowieka. Spójrzmy na całe dzieło z lotu ptaka:',
-        'TOM I (ARCHITEKTURA UMYSŁU — Rozdziały 1–5): Poznałeś biologiczne i poznawcze fundamenty człowieka — jak uwaga, emocje, percepcja, pamięć i podwójne procesy przetwarzania (System 1 i 2) tworzą Twój wewnętrzny teatr świadomości.',
-        'TOM II (CZŁOWIEK WŚRÓD LUDZI — Rozdziały 6–16): Zbadałeś dynamikę społeczną — mechanizmy wpływu, perswazji, manipulacji, konformizmu, komunikacji, konfliktów oraz relacji grupowych, odkrywając, jak środowisko mebluje nasze zachowanie.',
-        'TOM III (AUTONOMIA I SAMOKSZTAŁTOWANIE — Rozdziały 17–30): Odkryłeś narzędzia świadomego kształtowania siebie — od tożsamości, przekonań, wartości, metapoznania i nawyków, przez motywację, odporność na stres i podejmowanie decyzji w warunkach niepewności (Rozdział 28), aż po stawianie żelaznych granic (Rozdział 29) i mistrzowską asertywność (Rozdział 30).',
-        'CZŁOWIEK JAKO ZINTEGROWANY SYSTEM:',
-        'Nie jesteś niewolnikiem swoich genów, traum z dzieciństwa ani presji otoczenia. Nie jesteś też bezdusznym robotem logicznym. Jesteś plastycznym, samoświadomym systemem, który posiada zdolność do nieustannego uczenia się, decydowania i przekraczania własnych ograniczeń.',
-        'SŁOWNIK POJĘĆ ROZDZIAŁU 30:',
-        '• Assertiveness (Asertywność) — postawa oparta na bezpośrednim, uczciwym i spokojnym wyrażaniu siebie z poszanowaniem praw innych ludzi.',
-        '• I-Statement (Komunikat JA) — formuła komunikacyjna opisująca fakty, własne uczucia, konsekwencje i oczekiwania bez oskarżania rozmówcy.',
-        '• Fogging (Zamgławianie) — technika asertywnego przyjmowania krytyki polegająca na zgodzeniu się z częścią prawdy bez przyjmowania uogólnień.',
-        '• Broken Record Technique (Technika Zdartej Płyty) — powtarzanie swojego stanowiska bazowego stałym, spokojnym tonem w odpowiedzi na manipulacyjny nacisk.',
-        '• Kanon Praw Smitha — zbiór niezbywalnych praw psychologicznych człowieka, w tym prawo do błędów, odmowy, zmiany zdania i prywatności.',
-        'Ta książka nie kończy się w tym miejscu — ona zaczyna się jutro rano w Twoich codziennych decyzjach, Twoich granicach i Twojej odwadze bycia wolnym, odpowiedzialnym człowiekiem.'
+        'WIELKA SYNTEZA TRZECH TOMÓW:',
+        '• TOM I (Jak działa umysł?): Odkryliśmy neurobiologiczną architekturę percepcji, uwagi, pamięci, emocji i procesów myślenia. Zrozumiałeś, że nie jesteś bezwolnym niewolnikiem swoich impulsów, lecz plastycznym systemem poznawczym.',
+        '• TOM II (Jak człowiek funkcjonuje wśród innych ludzi?): Zbadaliśmy dynamikę wpływu społecznego, perswazji, relacji, konformizmu i manipulacji. Nauczyłeś się widzieć niewidzialne siły kształtujące zachowania w grupach.',
+        '• TOM III (Jak człowiek kształtuje siebie i swoje zachowanie?): W finałowej części przeszliśmy przez nawyki, motywację, odporność psychiczną, podejmowanie decyzji (Rozdział 28), stawianie zdrowych granic (Rozdział 29) aż po dojrzałą asertywność (Rozdział 30).',
+        'SŁOWNIK KLUCZOWYCH POJĘĆ ROZDZIAŁU 30:',
+        '• ASERTYWNOŚĆ — bezpośrednie, uczciwe wyrażanie siebie z pełnym poszanowaniem godności innych („Ja OK — Ty OK”).',
+        '• KOMUNIKAT „JA” — struktura: Fakt + Emocja + Konsekwencja + Oczekiwanie.',
+        '• MODEL FUKO — Fakty, Uczucia, Konsekwencje, Oczekiwania w konstruktywnej krytyce.',
+        '• ZAMGŁAWIANIE (Fogging) — zgoda z prawdziwą częścią krytyki przy odrzuceniu złośliwej oceny.',
+        '• TECHNIKA ZDARTEJ PŁYTY — monotonne powtarzanie jasnego stanowiska w obliczu manipulacyjnego nacisku.',
+        'ZAKOŃCZENIE KSIĄŻKI: Wiedza, którą zdobyłeś na kartach tej książki, nie jest martwą teorią akademicką. Jest Twoim kompasem i tarczą na całe dorosłe życie. Używaj jej z mądrością, odwagą i empatią.'
       ]
     }
   ]

@@ -12,7 +12,7 @@ export const chapterTwentyNineExamQuestions: ExamQuestion[] = [
     topic: 'Definicja i Funkcja Granic',
     sectionRef: 'Sekcja 29.1',
     options: [
-      { label: 'A', text: 'Niewidzialną linią oddzielającą moją tożsamość, emocje, czas i odpowiedzialność od tożsamości, oczekiwań i żądań innych ludzi, chroniącą integralność jednostki bez konieczności izolacji.', isCorrect: true },
+      { label: 'A', text: 'Niewidzialną, półprzepuszczalną membraną psychologiczną oddzielającą moją tożsamość, emocje, czas i odpowiedzialność od tożsamości i oczekiwań innych ludzi, chroniącą integralność bez izolacji.', isCorrect: true },
       { label: 'B', text: 'Murem obronnym uniemożliwiającym nawiązanie jakiejkolwiek bliskiej relacji z drugim człowiekiem.', isCorrect: false },
       { label: 'C', text: 'Zasadami prawnymi określającymi własność nieruchomości.', isCorrect: false },
       { label: 'D', text: 'Zestawem manipulacyjnych technik służących do podporządkowywania sobie otoczenia.', isCorrect: false }
@@ -22,9 +22,9 @@ export const chapterTwentyNineExamQuestions: ExamQuestion[] = [
   },
   {
     id: 2,
-    question: 'W jaki sposób funkcjonuje tzw. Szantaż Emocjonalny (FOG: Fear, Obligation, Guilt wg Susan Forward)?',
+    question: 'W jaki sposób funkcjonuje mechanizm Szantażu Emocjonalnego FOG (Fear, Obligation, Guilt wg Susan Forward)?',
     topic: 'Manipulacja i Szantaż Emocjonalny',
-    sectionRef: 'Sekcja 29.16',
+    sectionRef: 'Sekcja 29.20',
     options: [
       { label: 'A', text: 'Szantażysta wykorzystuje Lęk (Fear), Poczucie Obowiązku (Obligation) i Poczucie Winy (Guilt) ofiary, aby wymusić uległość pod groźbą kary emocjonalnej, odrzucenia lub eskalacji pretensji.', isCorrect: true },
       { label: 'B', text: 'Polega wyłącznie na groźbach przemocy fizycznej w miejscu publicznym.', isCorrect: false },
@@ -38,7 +38,7 @@ export const chapterTwentyNineExamQuestions: ExamQuestion[] = [
     id: 3,
     question: 'Jaka jest fundamentalna różnica między PROŚBĄ a NACISKIEM (żądaniem zamaskowanym pod postacią prośby)?',
     topic: 'Prośba a Nacisk',
-    sectionRef: 'Sekcja 29.13',
+    sectionRef: 'Sekcja 29.17',
     options: [
       { label: 'A', text: 'W przypadku autentycznej prośby druga strona ma pełną wolność powiedzenia „nie” bez obawy o karę, fochy czy wycofanie życzliwości; w przypadku nacisku odmowa spotyka się z atakiem, fochem lub poczuciem winy.', isCorrect: true },
       { label: 'B', text: 'Prośba zawsze dotyczy małych rzeczy, a nacisk dużych kwot finansowych.', isCorrect: false },
@@ -52,7 +52,7 @@ export const chapterTwentyNineExamQuestions: ExamQuestion[] = [
     id: 4,
     question: 'Jak powinna wyglądać prawidłowa struktura komunikowania konsekwencji naruszenia granicy w relacji?',
     topic: 'Egzekwowanie Granic i Konsekwencje',
-    sectionRef: 'Sekcja 29.20',
+    sectionRef: 'Sekcja 29.24',
     options: [
       { label: 'A', text: 'Opis faktu + nazwanie własnej granicy + jasne określenie mojego działania w razie powtórzenia (np. „Jeśli będziesz na mnie krzyczeć, przerwę tę rozmowę i wyjdę z pokoju”).', isCorrect: true },
       { label: 'B', text: 'Wielominutowy krzyk i wyliczanie wszystkich błędów rozmówcy z ostatnich 5 lat.', isCorrect: false },
@@ -66,7 +66,7 @@ export const chapterTwentyNineExamQuestions: ExamQuestion[] = [
     id: 5,
     question: 'Dlaczego ludzie o wysokim poziomie ugodowości (Agreeableness) i niskiej asertywności odczuwają paraliżujące poczucie winy podczas mówienia „nie”?',
     topic: 'Psychologia Poczucia Winy przy Odmowie',
-    sectionRef: 'Sekcja 29.10',
+    sectionRef: 'Sekcja 29.13',
     options: [
       { label: 'A', text: 'Ponieważ mylą własną odpowiedzialność (odpowiadam za swoje czyny) z odpowiedzialnością za cudze emocje (nie odpowiadam za to, czy ktoś poczuje dyskomfort w reakcji na moją odmowę).', isCorrect: true },
       { label: 'B', text: 'Ponieważ biologicznie brakuje im receptorów serotoninowych w ciele modzelowatym.', isCorrect: false },
@@ -80,7 +80,7 @@ export const chapterTwentyNineExamQuestions: ExamQuestion[] = [
 
 export const chapterTwentyNineCaseStudyMonika: CaseStudy = {
   id: 'cs-ch29-monika-uleglosc',
-  title: 'Studium Przypadku 1: Niewolnica Uczynności — Wypalenie i Kryzys Granic Moniki',
+  title: 'Wielkie Studium Przypadku: Niewolnica Uczynności — Wypalenie i Kryzys Granic Moniki',
   subtitle: 'Jak lęk przed odrzuceniem i niezdolność do mówienia „nie” doprowadziły do somatycznego wyczerpania',
   protagonist: 'Monika, 28 lat, koordynatorka projektów w agencji kreatywnej',
   context: 'Monika jest uważana za „duszę firmy” — zawsze uśmiechnięta, pierwsza do pomocy, nigdy nikomu nie odmawia. Zostaje po godzinach, by dokończyć raporty za leniwych kolegów, w weekendy odbiera telefony od klientów, a w życiu prywatnym organizuje przeprowadzki znajomym i opiekuje się psem sąsiadki. Od 6 miesięcy cierpi na przewlekłą bezsenność, napady migreny i permanentne poczucie pustki.',
@@ -136,157 +136,46 @@ export const chapterTwentyNineCaseStudyMonika: CaseStudy = {
   keyTakeaway: 'Mówiąc „tak” innym ludziom wbrew sobie, za każdym razem mówisz „nie” własnemu zdrowiu, marzeniom i spokojowi ducha. Twoje „nie” dla innych jest Twoim „tak” dla siebie.'
 };
 
-export const chapterTwentyNineCaseStudySzantazEmocjonalny: CaseStudy = {
-  id: 'cs-ch29-marek-rodzina',
-  title: 'Studium Przypadku 2: W Pajęczynie Winy — Marek i Szantaż Emocjonalny Matki',
-  subtitle: 'Dekompozycja mechanizmu FOG (Fear, Obligation, Guilt) i odzyskanie dorosłej autonomii w rodzinie',
-  protagonist: 'Marek, 32 lata, architekt, w związku małżeńskim od 3 lat',
-  context: 'Matka Marka, pani Teresa (65 lat), jest samotną wdową o silnie manipulacyjnym profilu relacyjnym. Każda próba spędzenia świąt z żoną lub wyjazdu na urlop spotyka się z atakiem serca, płaczem i oskarżeniami: „Poświęciłam dla ciebie całe życie, a ty teraz wolisz obcą kobietę. Przez ciebie wyląduję w szpitalu”. Marek od lat żyje w ciągłym poczuciu winy, co niszczy jego małżeństwo z Karoliną.',
-  story: [
-    'Marek dzwoni do matki, by poinformować, że w tym roku Wigilię spędzą u rodziców Karoliny, a do niej przyjadą w pierwszy dzień świąt.',
-    'W słuchawce zapada grobowa cisza, po czym następuje ciężki szloch: „Wiedziałam. Wiedziałam, że na starość zostanę sama jak pies. Twój zmarły ojciec przewraca się w grobie. Serce mnie tak kłuje, że zaraz wezwę pogotowie”.',
-    'Marek czuje, jak ziemia usuwa mu się spod nóg. Żołądek skręca się w supeł, a w głowie rozbrzmiewa: „Jestem potworem, zabijam własną matkę”.',
-    'Jego pierwszy odruch to przeprosić, ulec i odwołać wyjazd do teściów. Karolina jednak stawia sprawę jasno: „Marek, twoja mama ma 65 lat i jest zdrowa. To jest szantaż. Jeśli teraz znowu ulegniesz, nasz związek tego nie przetrwa”.',
-    'Marek stanął przed najtrudniejszą konfrontacją w życiu. Podczas konsultacji psychologicznej nauczył się rozpoznawać strukturę szantażu FOG (Lęk, Obowiązek, Wina).',
-    'Podczas kolejnej rozmowy zastosował technikę „Zdartej Płyty” i „Oddzielenia Troski od Uległości”: „Mamo, bardzo cię kocham i zależy mi na twoim zdrowiu. Jeśli źle się czujesz, natychmiast wezwij pogotowie. Nasza decyzja co do Wigilii pozostaje niezmienna — będziemy u ciebie 25 grudnia o 11:00”.',
-    'Gdy matka zaczęła krzyczeć, Marek spokojnie powiedział: „Nie będę rozmawiał, gdy na mnie krzyczysz. Zadzwonię jutro” i rozłączył się. Po trzech miesiącach konsekwentnego trzymania ram matka przestała symulować ataki paniki i zaczęła traktować Marka jak dorosłego partnera.'
-  ],
-  decisionTaken: 'Odrzucenie roli wykonawcy emocjonalnych zachcianek matki, wyznaczenie sztywnej granicy czasowo-komunikacyjnej i ochrona autonomii własnego małżeństwa.',
-  whatProtagonistSaw: 'Śmiertelnie chorą, zrozpaczoną matkę, którą rani swoją „samolubnością”.',
-  whatWasMissed: 'Że matka stosowała wyuczoną przez dekady strategię manipulacyjną, używając poczucia winy jako smyczy do kontrolowania dorosłego syna.',
-  psychologicalAnalysis: {
-    coreMechanism: 'Uwikłanie rodzinne (Enmeshment) i szantaż emocjonalny FOG oparty na odwróceniu ról (Parentyfikacja).',
-    cognitiveBiases: [
-      { name: 'Personalizacja', description: 'Błędne przekonanie, że stan zdrowia i samopoczucie innej dorosłej osoby są w 100% zależne od moich decyzji.', impact: 'Paraliżujące poczucie winy.' }
-    ],
-    defenseMechanisms: [
-      { name: 'Racjonalizacja uległości', explanation: 'Wmawianie sobie: „ustąpię dla świętego spokoju, starszym ludziom się nie odmawia”.' }
-    ],
-    emotionalDynamic: 'Przełamanie toksycznej lojalności i transformacja lęku przed odrzuceniem w dojrzałą autonomię.'
-  },
-  neurobiologicalAnalysis: {
-    brainRegions: [
-      { region: 'Przednia wyspa (Anterior Insula)', role: 'Generowanie trzewnego bólu emocjonalnego i wstrętu moralnego', activationState: 'Ukojona po rozróżnieniu faktów od szantażu' },
-      { region: 'Przyśrodkowa kora przedczołowa', role: 'Diferencjacja Ja od Innych', activationState: 'Wzmocniona w procesie indywiduacji' }
-    ],
-    neurotransmitters: [
-      { name: 'Oksytocyna', roleInScenario: 'Używana wcześniej jako narzędzie emocjonalnego uwięzienia, zrównoważona przez dopaminę sprawczości.' }
-    ],
-    biologicalTimeline: [
-      { timeMs: 'Szloch matki w słuchawce', process: 'Błyskawiczny wyrzut kortyzolu i skurcz naczyń trzewnych.' },
-      { timeMs: 'Wypowiedzenie formuły granicy', process: 'Aktywacja dlPFC i powrót stabilnego rytmu serca.' }
-    ]
-  },
-  influenceAndManipulation: {
-    tacticsUsed: [
-      { tactic: 'Szantaż Somatyczno-Egzystencjalny', description: '„Wyląduję w szpitalu przez ciebie, ojciec przewraca się w grobie”.', vulnerabilityExploited: 'Synowska lojalność i lęk przed byciem przyczyną czyjejś śmierci.' }
-    ],
-    counterMeasures: [
-      { step: 'Protokół Oddzielenia Medycznego', script: '„Jeśli Twoje życie jest zagrożone, natychmiast dzwonię pod 112. Moja decyzja o wyjeździe pozostaje bez zmian”.', rationale: 'Rozbraja blef szantażysty, pokazując realną troskę bez kapitulacji decyzyjnej.' }
-    ]
-  },
-  keyTakeaway: 'Prawdziwa miłość rodzinna szanuje wolność i odrębność drugiego człowieka. Jeśli czyjaś obecność w Twoim życiu jest wymuszana poczuciem winy, nie jest to relacja — to niewola emocjonalna.'
-};
-
-export const chapterTwentyNineCaseStudyKonfliktPraca: CaseStudy = {
-  id: 'cs-ch29-jakub-praca',
-  title: 'Studium Przypadku 3: Granica w Korporacyjnej Dżungli — Jakub i Toksyczny Menedżer',
-  subtitle: 'Obrona granic profesjonalnych wobec autorytarnego przełożonego bez eskalacji agresji',
-  protagonist: 'Jakub, 35 lat, senior developer w międzynarodowej firmie technologicznej',
-  context: 'Nowy dyrektor działu, Robert, wprowadził styl zarządzania oparty na zastraszaniu i mikrozarządzaniu. Dzwoni do inżynierów w niedziele o 22:00, pisze wiadomości z wykrzyknikami na komunikatorze i publicznie upokarza pracowników na spotkaniach statusowych, kwitując ich uwagi słowami: „Jak się komuś nie podoba tempo, na jego miejsce czeka dziesięciu”. Większość zespołu siedzi cicho z obawy o premie. Jakub postanawia postawić granicę.',
-  story: [
-    'W niedzielę o 21:30 telefon Jakuba wibruje — Robert dzwoni z żądaniem natychmiastowego zbadania błędu na środowisku testowym. Jakub nie odbiera.',
-    'W poniedziałek o 9:00 na forum całego 15-osobowego zespołu Robert zaczyna tyradę: „Jakub, chyba ci się priorytety pomyliły! Dzwonię w ważnej sprawie, a ty ignorujesz dyrektora. Albo jesteś w tym zespole na 100%, albo poszukaj sobie innej posadki!”.',
-    'W sali zapada martwa cisza. Wszyscy patrzą w podłogę. Jakub czuje skok ciśnienia, lecz pamięta o protokole komunikacji bezprzemocowej (NVC).',
-    'Patrzy Robertowi prosto w oczy, zachowuje neutralny ton głosu i mówi: „Robercie, w niedzielę o 21:30 byłem poza godzinami pracy i spędzałem czas z rodziną. Mój kontrakt określa dostępność od poniedziałku do piątku w godzinach 8:00–16:00. Jestem w 100% zaangażowany w projekt w tych godzinach i chętnie rozwiążę ten problem teraz. Jednocześnie oczekuję, że będziemy rozmawiać profesjonalnie i bez podnoszenia głosu”.',
-    'Robert czerwienieje na twarzy, próbuje rzucić kolejną złośliwość: „Nie bądź taki delikatny!”.',
-    'Jakub nie wchodzi w pyskówkę, lecz stosuje technikę zdarta płyta: „Oczekuję profesjonalnej komunikacji. Przejdźmy do analizy logów błędu”.',
-    'Robert traci impet i przechodzi do spraw technicznych. Od tego dnia Robert nigdy więcej nie zadzwonił do Jakuba w weekend ani nie podniósł na niego głosu na forum, a inni członkowie zespołu zaczęli brać z Jakuba przykład.'
-  ],
-  decisionTaken: 'Odrzucenie zastraszenia, zdefiniowanie granicy w oparciu o fakty i kontrakt prawny oraz publiczne, spokojne zażądanie profesjonalnego szacunku.',
-  whatProtagonistSaw: 'Wściekłego przełożonego o ogromnej władzy instytucjonalnej i ryzyko utraty pracy.',
-  whatWasMissed: 'Że agresorzy relacyjni żywią się uległością i lękiem; spokojna, nieagresywna, lecz żelazna postawa obnaża brak merytorycznych argumentów atakującego.',
-  psychologicalAnalysis: {
-    coreMechanism: 'Ustalenie granic profesjonalnych (Professional Boundaries) poprzez asertywny komunikat faktograficzny z neutralizacją zastraszania.',
-    cognitiveBiases: [
-      { name: 'Konformizm Informacyjny (Asch Effect)', description: 'Uleganie presji milczenia tylko dlatego, że reszta zespołu boi się odezwać.', impact: 'Podtrzymywanie patologii w organizacji.' }
-    ],
-    defenseMechanisms: [
-      { name: 'Identyfikacja z agresorem', explanation: 'Pokusa usprawiedliwiania szefa („taka jest specyfika branży, trzeba zacisnąć zęby”).' }
-    ],
-    emotionalDynamic: 'Opanowanie lęku hierarchicznego i przejęcie kontroli nad ramą rozmowy.'
-  },
-  neurobiologicalAnalysis: {
-    brainRegions: [
-      { region: 'Grzbietowo-boczna kora przedczołowa', role: 'Utrzymanie spokoju i kontroli mowy w obliczu agresji', activationState: 'Maksymalnie stabilna' },
-      { region: 'Ciało migdałowate', role: 'Reakcja walki lub ucieczki', activationState: 'Świadomie wyciszona głębokim oddechem' }
-    ],
-    neurotransmitters: [
-      { name: 'Acetylocholina', roleInScenario: 'Odpowiedzialna za skupienie i precyzję wysławiania się pod ostrzałem.' }
-    ],
-    biologicalTimeline: [
-      { timeMs: 'Atak słowny Roberta', process: 'Przejściowy skok tętna do 110 bpm.' },
-      { timeMs: 'Spokojna odpowiedź Jakuba', process: 'Stabilizacja parametrów życiowych i spadek napięcia mięśni karku.' }
-    ]
-  },
-  influenceAndManipulation: {
-    tacticsUsed: [
-      { tactic: 'Publiczne upokorzenie i szantaż egzystencjalny', description: '„Na twoje miejsce czeka dziesięciu”.', vulnerabilityExploited: 'Lęk o bezpieczeństwo finansowe i status zawodowy.' }
-    ],
-    counterMeasures: [
-      { step: 'Kotwica Kontraktowa i Ramy Profesjonalizmu', script: '„Mój kontrakt określa godziny pracy. Oczekuję profesjonalnej komunikacji bez podnoszenia głosu”.', rationale: 'Przenosi spór z emocjonalnej dominacji na twardy grunt prawny i etyczny.' }
-    ]
-  },
-  keyTakeaway: 'Ludzie traktują Cię dokładnie tak, jak ich tego nauczysz. Jeśli pozwalasz na przekraczanie granic w milczeniu, dajesz ciche przyzwolenie na dalszą eskalację przemocy.'
-};
-
-export const chapterTwentyNineExerciseBoundarySystem: SelfExercise = {
-  id: 'ex-ch29-boundary-system',
-  title: 'Ćwiczenie 29.1: Czterostopniowy Protokół Budowania i Egzekwowania Granic (Model D-E-S-C)',
-  subtitle: 'Praktyczny warsztat komunikacji asertywnej odmowy i ochrony własnej przestrzeni',
-  objective: 'Zidentyfikowanie strefy chronicznego przekraczania granic w Twoim życiu i przygotowanie precyzyjnego skryptu rozmowy.',
+export const chapterTwentyNineExerciseBoundaryMap: SelfExercise = {
+  id: 'ex-ch29-boundary-map',
+  title: 'Ćwiczenie Praktyczne: Moja Osobista Mapa Granic i Audyt Szczelności',
+  subtitle: 'Diagnostyka 4 stref granic w Twoim życiu: fizycznej, emocjonalnej, czasowej i informacyjnej',
+  objective: 'Precyzyjne zidentyfikowanie miejsc, w których Twoje granice są zbyt sztywne (mur), zbyt nieszczelne (gąbka) lub optymalnie elastyczne (membrana).',
   durationMinutes: 25,
-  neuroScientificFoundation: 'Strukturyzacja skryptu słownego obniża aktywację ciała migdałowatego i zapobiega paraliżowi mowy pod wpływem stresu.',
+  neuroScientificFoundation: 'Świadome nazwanie i narysowanie granic aktywuje przyśrodkową korę przedczołową, wzmacniając poczucie odrębności i tożsamości.',
   steps: [
     {
       stepNumber: 1,
-      title: 'Zidentyfikuj nieszczelną granicę i osobę naruszającą',
-      instruction: 'W jakiej relacji (praca, rodzina, partner, przyjaciele) czujesz chroniczną złość, wykorzystanie lub wyczerpanie?',
-      promptText: 'Moja nieszczelna granica i sytuacja:',
-      placeholder: 'Szef dzwoni po godzinach / Znajoma pożycza pieniądze i nie oddaje / Matka krytykuje moje wychowanie dzieci...'
+      title: 'Audyt Granic Czasowych i Dostępności',
+      instruction: 'Oceń w skali 1–10: W jakim stopniu kontrolujesz swój kalendarz? Czy odbierasz telefony służbowe w weekendy? Kto kradnie Twój czas bez pytania?',
+      promptText: 'Moje granice czasowe (ocena i analiza):',
+      placeholder: 'Ocena: 4/10. Notorycznie odbieram maile o 23:00 z lęku, że szef uzna mnie za niezaangażowanego.'
     },
     {
       stepNumber: 2,
-      title: 'Krok 1 (Describe): Opisz fakt bez oceny i uogólnień',
-      instruction: 'Napisz jedno zdanie opisujące konkretne, obserwowalne zachowanie (bez słów „zawsze”, „nigdy”, „jesteś toksyczny”).',
-      promptText: 'D — Opis faktu:',
-      placeholder: '„Wczoraj podczas obiadu rodzinnego skomentowałaś mój wygląd przy wszystkich gościach”.'
+      title: 'Audyt Granic Emocjonalnych',
+      instruction: 'Oceń w skali 1–10: W jakim stopniu przejmujesz nastroje partnera/rodziców? Czy czujesz się winny, gdy ktoś w Twojej obecności jest smutny lub zły?',
+      promptText: 'Moje granice emocjonalne (ocena i analiza):',
+      placeholder: 'Ocena: 3/10. Kiedy mama wzdycha, natychmiast rzucam wszystko i próbuję poprawić jej humor.'
     },
     {
       stepNumber: 3,
-      title: 'Krok 2 (Express): Wyraź swoje odczucia i nazwij granicę (Komunikat JA)',
-      instruction: 'Powiedz, co czujesz i jak definiujesz swoją zasadę osobistą.',
-      promptText: 'E — Wyrażenie emocji i granicy:',
-      placeholder: '„Poczułam się zawstydzona i zła. Nie wyrażam zgody na publiczne ocenianie mojego ciała”.'
+      title: 'Audyt Granic Informacyjnych i Prywatności',
+      instruction: 'Oceń w skali 1–10: Czy dzielisz się swoimi intymnymi sprawami z ludźmi, którzy nie zasłużyli na zaufanie? Czy pozwalasz na wścibskie pytania o zarobki lub życie osobiste?',
+      promptText: 'Moje granice informacyjne (ocena i analiza):',
+      placeholder: 'Ocena: 6/10. Z trudem odpowiadam „to moja prywatna sprawa” na obiedzie rodzinnym.'
     },
     {
       stepNumber: 4,
-      title: 'Krok 3 (Specify): Sprecyzuj pożądane zachowanie',
-      instruction: 'Czego konkretnie oczekujesz na przyszłość?',
-      promptText: 'S — Oczekiwanie:',
-      placeholder: '„Oczekuję, że jeśli masz jakieś uwagi, przekażesz mi je na osobności i z szacunkiem”.'
-    },
-    {
-      stepNumber: 5,
-      title: 'Krok 4 (Consequences): Określ konsekwencję naruszenia',
-      instruction: 'Co TY zrobisz, jeśli ta granica zostanie ponownie przekroczona?',
-      promptText: 'C — Moja konsekwencja:',
-      placeholder: '„Jeśli ta sytuacja się powtórzy, wstanę od stołu i zakończę wizytę”.'
+      title: 'Jedna Twarda Granica na Ten Tydzień',
+      instruction: 'Wybierz jeden obszar o najniższej ocenie i sformułuj jedną, konkretną regułę ochronną, którą wdrożysz w ciągu 48 godzin.',
+      promptText: 'Moja nowa reguła graniczna:',
+      placeholder: '„Od godziny 19:00 wyciszam powiadomienia ze skrzynki służbowej”.'
     }
   ],
   reflectionQuestions: [
-    'Jaki lęk powstrzymywał Cię do tej pory przed wypowiedzeniem tych słów?',
-    'Jak zmieni się jakość Twojego życia i poczucie godności, gdy wdrożysz tę granicę w praktyce?'
+    'Jaki najgorszy scenariusz podpowiada Ci Twój lęk, gdy myślisz o wdrożeniu tej reguły?',
+    'Co zyskasz (w energii, zdrowiu i spokoju), gdy ta granica stanie się Twoim trwałym standardem?'
   ]
 };
 
@@ -296,9 +185,10 @@ export const chapterTwentyNine: Chapter = {
   volumeChapterNumber: 13,
   title: 'Rozdział 29: Zdrowe Granice — Ochrona Autonomii, Psychologia Odmowy i Zarządzanie Relacjami',
   subtitle: 'Od lęku przed odrzuceniem i manipulacji poczuciem winy do dojrzałego stawiania granic w rodzinie, pracy i życiu osobistym',
-  leadParagraph: 'Nie możesz zbudować autentycznej bliskości, poczucia własnej wartości ani stabilności psychicznej, dopóki Twoje granice osobiste pozostają dziurawe jak sito. Wielu ludzi wierzy, że bycie dobrym człowiekiem polega na nieustannym zadowalaniu innych, unikaniu konfliktów za wszelką cenę i natychmiastowym godzeniu się na każdą prośbę. W rzeczywistości uległość nie rodzi miłości — rodzi ukrytą złość, wyczerpanie somatyczne i relacyjny rozpad. W tym rozdziale przeprowadzimy Cię przez 30 szczegółowych etapów architektury granic: zdefiniujemy granice fizyczne, emocjonalne, czasowe i informacyjne, zdemaskujemy mechanizmy szantażu emocjonalnego (FOG), nauczymy Cię odmawiać bez agresji i poczucia winy oraz pokażemy, jak skutecznie egzekwować konsekwencje wobec osób przekraczających Twoją godność.',
+  leadParagraph: 'Nie możesz zbudować autentycznej bliskości, poczucia własnej wartości ani stabilności psychicznej, dopóki Twoje granice osobiste pozostają dziurawe jak sito. Wielu ludzi wierzy, że bycie dobrym człowiekiem polega na nieustannym zadowalaniu innych, unikaniu konfliktów za wszelką cenę i natychmiastowym godzeniu się na każdą prośbę. W rzeczywistości uległość nie rodzi miłości — rodzi ukrytą złość, wyczerpanie somatyczne i relacyjny rozpad. W tym rozdziale przeprowadzimy Cię przez 30 szczegółowych etapów architektury granic: zdefiniujemy granice fizyczne, emocjonalne, czasowe i informacyjne, zdemaskujemy mechanizmy szantażu emocjonalnego (FOG), nauczymy Cię odmawiać bez agresji i poczucia winy oraz pokażemy, jak skutecznie egzekwować konsekwencje wobec osób naruszających Twoją godność.',
   totalEstimatedPages: 98,
   sections: [
+    // BLOK I — ZROZUMIENIE GRANIC (29.1 - 29.5)
     {
       id: 'sec-29-1',
       pageNumber: 1030,
@@ -313,26 +203,40 @@ export const chapterTwentyNine: Chapter = {
       paragraphs: [
         'W potocznym rozumieniu granice kojarzą się z murem, drutem kolczastym, chłodem emocjonalnym i egoistycznym odgradzaniem się od świata. W nowoczesnej psychologii relacji i teorii przywiązania granica jest jednak czymś zgoła odmiennym — to dynamiczna, półprzepuszczalna membrana psychologiczna, która określa, gdzie kończą się moje myśli, emocje, wartości i odpowiedzialność, a gdzie zaczyna się przestrzeń drugiego człowieka.',
         'Zdrowe granice pełnią podwójną funkcję: z jednej strony chronią nasze wnętrze przed toksycznymi wpływami, eksploatacją i nadużyciami, z drugiej zaś pozwalają na swobodną wymianę ciepła, miłości, wsparcia i informacji z otoczeniem.',
-        'Człowiek pozbawiony granic nie posiada w istocie własnego Ja — staje się emocjonalną gąbką wchłaniającą nastroje innych ludzi lub bezwolnym wykonawcą cudzych scenariuszy życiowych.'
+        'Człowiek pozbawiony granic nie posiada w istocie własnego Ja — staje się emocjonalną gąbką wchłaniającą nastroje innych ludzi lub bezwolnym wykonawcą cudzych scenariuszy życiowych.',
+        'Stawianie granic to nie akt agresji wobec innych, lecz akt elementarnej opieki nad własnym istnieniem.'
       ]
     },
     {
       id: 'sec-29-2',
       pageNumber: 1034,
       sectionNumber: '29.2',
-      title: 'Granice fizyczne — Ciało, przestrzeń osobista, dotyk i prawo do nietykalności',
+      title: 'Dlaczego granice są potrzebne? Ochrona integralności, prewencja wypalenia i autentyczność',
       category: 'teoria',
       readingTimeMinutes: 15,
       paragraphs: [
-        'Najbardziej podstawowym, pierwotnym poziomem są granice fizyczne. Obejmują one Twoje ciało, strefę dystansu personalnego (proksemikę), potrzebę odpoczynku, snu, jedzenia oraz prawo do decydowania o tym, kto, kiedy i w jaki sposób może Cię dotykać.',
-        'Naruszenie granic fizycznych to nie tylko bezpośrednia przemoc cielesna — to także wymuszanie uścisków na dzieciach wbrew ich woli („daj buziaka cioci”), naruszanie strefy intymnej w pracy, wchodzenie do czyjegoś pokoju bez pukania czy zmuszanie do pracy ponad siły fizjologiczne.',
-        'Odzyskanie kontaktu z własnymi granicami fizycznymi zaczyna się od wsłuchania się w sygnały ciała: napięcie w karku, ucisk w klatce piersiowej czy odruch cofnięcia się są bezpośrednią informacją o naruszeniu naszej przestrzeni.'
+        'Brak wyraźnych granic prowadzi do nieuchronnego bankructwa energetycznego i psychicznego. Kiedy pozwalasz wszystkim na swobodny dostęp do swojego czasu i emocji, Twoje zasoby ulegają całkowitej erozji.',
+        'Badania Brené Brown nad ludźmi o wysokim poczuciu dobrostanu wykazały paradoksalną zależność: osoby najbardziej współczujące, życzliwe i głęboko kochające to jednocześnie osoby o najbardziej bezwzględnych i precyzyjnych granicach osobistych.',
+        'Granice zapobiegają narastaniu cichej urazy (resentment). Kiedy potrafisz w porę powiedzieć „nie”, Twoje późniejsze „tak” jest w 100% autentyczne i pozbawione ukrytego jadu.'
       ]
     },
     {
       id: 'sec-29-3',
       pageNumber: 1038,
       sectionNumber: '29.3',
+      title: 'Granice fizyczne — Ciało, przestrzeń osobista, dotyk i prawo do nietykalności',
+      category: 'teoria',
+      readingTimeMinutes: 15,
+      paragraphs: [
+        'Najbardziej pierwotnym poziomem są granice fizyczne. Obejmują one Twoje ciało, strefę dystansu personalnego (proksemikę), potrzebę odpoczynku, snu, jedzenia oraz prawo do decydowania o tym, kto, kiedy i w jaki sposób może Cię dotykać.',
+        'Naruszenie granic fizycznych to nie tylko bezpośrednia przemoc cielesna — to także wymuszanie uścisków na dzieciach wbrew ich woli („daj buziaka cioci”), naruszanie strefy intymnej w pracy, wchodzenie do czyjegoś pokoju bez pukania czy zmuszanie do pracy ponad siły fizjologiczne.',
+        'Odzyskanie kontaktu z własnymi granicami fizycznymi zaczyna się od wsłuchania się w sygnały ciała: napięcie w karku, ucisk w klatce piersiowej czy odruch cofnięcia się są bezpośrednią informacją o naruszeniu naszej przestrzeni.'
+      ]
+    },
+    {
+      id: 'sec-29-4',
+      pageNumber: 1042,
+      sectionNumber: '29.4',
       title: 'Granice emocjonalne — Separacja uczuć, empatia kontra zlewanie się (Enmeshment)',
       category: 'teoria',
       readingTimeMinutes: 16,
@@ -343,10 +247,25 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-4',
-      pageNumber: 1042,
-      sectionNumber: '29.4',
-      title: 'Granice czasowe — Własność kalendarza, szacunek do czasu i asertywność harmonogramu',
+      id: 'sec-29-5',
+      pageNumber: 1046,
+      sectionNumber: '29.5',
+      title: 'Ćwiczenie Praktyczne — Moja Mapa Granic: Audyt Czterech Stref Życiowych',
+      category: 'cwiczenia',
+      readingTimeMinutes: 18,
+      exerciseRef: chapterTwentyNineExerciseBoundaryMap,
+      paragraphs: [
+        'Wykonaj kompleksowy audyt swoich granic w czterech kluczowych wymiarach: fizycznym, emocjonalnym, czasowym i informacyjnym, korzystając z formularza ćwiczenia 29.1 powyżej.',
+        'Zidentyfikuj relację, w której Twoja granica jest najbardziej nieszczelna i przygotuj jedną konkretną mikro-zmianę na nadchodzący tydzień.'
+      ]
+    },
+
+    // BLOK II — RÓŻNE RODZAJE GRANIC (29.6 - 29.10)
+    {
+      id: 'sec-29-6',
+      pageNumber: 1050,
+      sectionNumber: '29.6',
+      title: 'Granice dotyczące czasu — Własność kalendarza, szacunek do czasu i asertywność harmonogramu',
       category: 'teoria',
       readingTimeMinutes: 15,
       paragraphs: [
@@ -356,9 +275,9 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-5',
-      pageNumber: 1046,
-      sectionNumber: '29.5',
+      id: 'sec-29-7',
+      pageNumber: 1054,
+      sectionNumber: '29.7',
       title: 'Granice prywatności — Pokoje, telefony, dzienniki i prawo do własnego wewnętrznego świata',
       category: 'teoria',
       readingTimeMinutes: 15,
@@ -369,9 +288,9 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-6',
-      pageNumber: 1050,
-      sectionNumber: '29.6',
+      id: 'sec-29-8',
+      pageNumber: 1058,
+      sectionNumber: '29.8',
       title: 'Granice dotyczące informacji — Oversharing, prawo do milczenia i selektywne odsłanianie siebie',
       category: 'teoria',
       readingTimeMinutes: 16,
@@ -382,75 +301,109 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-7',
-      pageNumber: 1054,
-      sectionNumber: '29.7',
-      title: 'Dlaczego trudno stawiać granice? Wczesnodziecięce skrypty i syndrom grzecznego dziecka',
-      category: 'teoria',
-      readingTimeMinutes: 16,
-      paragraphs: [
-        'Niezdolność do stawiania granic rzadko rodzi się w dorosłym życiu. Jej korzenie niemal zawsze tkwią we wczesnym dzieciństwie, w którym miłość rodzicielska była warunkowa i uzależniona od posłuszeństwa.',
-        'Wielu z nas zostało wychowanych w kulcie bycia „grzecznym”, „uczynnym” i „bezproblemowym”. Wyrażenie złości, odmowa zjedzenia posiłku czy obrona własnej zabawki były karane odrzuceniem, fochem rodzica lub etykietą „jesteś samolubny i niegrzeczny”.',
-        'Dziecko uczy się wówczas tragicznego równania: „Aby zasłużyć na miłość i bezpieczeństwo, muszę porzucić własne potrzeby i zadowalać innych”. Ten dziecięcy skrypt przetrwania staje się w dorosłości przyczyną relacyjnego paraliżu.'
-      ]
-    },
-    {
-      id: 'sec-29-8',
-      pageNumber: 1058,
-      sectionNumber: '29.8',
-      title: 'Potrzeba akceptacji — Ewolucyjny lęk przed ostracyzmem i biologia przynależności',
-      category: 'neuronauka',
-      readingTimeMinutes: 17,
-      paragraphs: [
-        'Z biologicznego punktu widzenia potrzeba akceptacji społecznej jest jedną z najpotężniejszych sił sterujących ludzkim mózgiem. Dla naszych przodków na sawannie wykluczenie z plemienia oznaczało nieuchronną śmierć z głodu lub w szponach drapieżników.',
-        'Badania neuroobrazowe (Eisenberger & Lieberman) wykazały, że ból wywołany odrzuceniem społecznym aktywuje dokładnie te same struktury w mózgu (grzbietową część przedniej kory obręczy — dACC oraz przednią wyspę), co fizyczny ból po złamaniu kości czy oparzeniu.',
-        'Dlatego gdy mamy odmówić komuś bliskiemu, nasze ciało migdałowate wszczyna alarm, interpretując potencjalne niezadowolenie drugiej strony jako bezpośrednie zagrożenie egzystencjalne.'
-      ]
-    },
-    {
       id: 'sec-29-9',
       pageNumber: 1062,
       sectionNumber: '29.9',
-      title: 'Strach przed konfliktem — Unikanie napięcia za cenę powolnej autodestrukcji',
-      category: 'teoria',
+      title: 'Granice dotyczące energii i dostępności — Zarządzanie baterią społeczną i prawo do wycofania',
+      category: 'neuronauka',
       readingTimeMinutes: 16,
       paragraphs: [
-        'Dla wielu osób każda, nawet najmniejsza różnica zdań jest utożsamiana z katastrofą relacyjną. Taki lęk przed konfliktem (conflict avoidance) zmusza do ciągłego ustępowania, przełykania żalu i udawania, że wszystko jest w porządku.',
-        'Cena takiego pozornego „świętego spokoju” jest jednak gigantyczna. Zamiast rozwiązać problem na wczesnym etapie, człowiek gromadzi w sobie tłumioną złość (resentment), która po miesiącach lub latach eksploduje w postaci nagłego zerwania relacji lub ciężkich chorób psychosomatycznych.',
-        'Dojrzały konflikt nie jest końcem miłości — jest narzędziem kalibracji relacji. Relacja, która nie jest w stanie przetrwać Twojego spokojnego „nie”, od początku była oparta na iluzji.'
+        'Twoja energia psychiczna (social battery) jest zasobem skończonym, regulowanym m.in. przez poziom neuroprzekaźników i stan pobudzenia układu autonomicznego.',
+        'Granice dostępności polegają na uznaniu, że nie musisz być „pod telefonem” 24 godziny na dobę dla każdego znajomego w kryzysie. Jeśli Twoja bateria jest wyczerpana, masz prawo nie odebrać telefonu i odpisać dopiero po regeneracji.',
+        'Próba bycia nieustannym pogotowiem emocjonalnym dla wszystkich dookoła kończy się ciężkim stanem anhedonii i znieczulicy współczuciowej (compassion fatigue).'
       ]
     },
     {
       id: 'sec-29-10',
       pageNumber: 1066,
       sectionNumber: '29.10',
-      title: 'Poczucie winy — Fałszywa odpowiedzialność za cudze emocje i dekonstrukcja wyrzutów sumienia',
-      category: 'teoria',
-      readingTimeMinutes: 16,
+      title: 'Analiza Sytuacji — Kiedy zwykła prośba zaczyna być naciskiem? Studium rozmowy Marty i Szymona',
+      category: 'studium-przypadku',
+      readingTimeMinutes: 18,
       paragraphs: [
-        'Poczucie winy pojawiające się po postawieniu granicy jest najczęstszą pułapką, w którą wpadają osoby uczące się asertywności. Człowiek mówi „nie”, po czym przez trzy dni nie może spać, zastanawiając się, czy nie zachował się jak potwór.',
-        'Należy odróżnić POCZUCIE WINY REALNE (kiedy rzeczywiście złamałeś swoje zasady etyczne, skrzywdziłeś kogoś celowo lub złamałeś obietnicę) od POCZUCIA WINY NEUROTYCZNEGO / INDUKOWANEGO (kiedy po prostu odmówiłeś spełnienia cudzego żądania kosztem siebie).',
-        'Gdy ktoś reaguje smutkiem, złością czy fochem na Twoją uprawnioną granicę, ten dyskomfort należy do NIEGO. Masz prawo pozwolić dorosłemu człowiekowi przeżyć jego własne rozczarowanie.'
+        'SCENARIUSZ: Szymon prosi Martę o pożyczenie samochodu na weekend. Marta odpowiada spokojnie: „Przykro mi, ale w ten weekend sama go potrzebuję”. Szymon zmienia ton: „Marta, daj spokój, przecież możesz pojechać pociągiem! Ja mam ważną sprawę, a ty robisz problem o byle co. Myślałem, że jesteśmy przyjaciółmi!”.',
+        'ANALIZA PSYCHOLOGICZNA: W którym momencie prośba zamieniła się w nacisk? W momencie, gdy Szymon nie przyjął odmowy jako prawomocnej odpowiedzi. Zamiast uszanować decyzję Marty, zaczął podważać ważność jej planów („możesz jechać pociągiem”) oraz uderzył w więź relacyjną („myślałem, że jesteśmy przyjaciółmi”).',
+        'BŁĄD MARTY: Jeśli Marta w tym momencie ulegnie i odda kluczyki, nagrodzi manipulacyjne zachowanie Szymona i nauczy go, że nacisk emocjonalny działa.',
+        'PRAWIDŁOWA REAKCJA: Marta zachowuje spokój i stosuje technikę zdartej płyty: „Rozumiem, że to dla ciebie ważne, jednak moja decyzja jest niezmienna — samochód zostaje ze mną”.'
       ]
     },
+
+    // BLOK III — DLACZEGO TAK TRUDNO STAWIAĆ GRANICE? (29.11 - 29.15)
     {
       id: 'sec-29-11',
       pageNumber: 1070,
       sectionNumber: '29.11',
-      title: 'Strach przed odrzuceniem — Odróżnienie porzucenia od zdrowego dystansu w relacji',
-      category: 'teoria',
-      readingTimeMinutes: 15,
+      title: 'Potrzeba akceptacji — Ewolucyjny lęk przed ostracyzmem i biologia przynależności w dACC',
+      category: 'neuronauka',
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Lęk przed odrzuceniem (fear of rejection) podpowiada katastroficzny scenariusz: „Jeśli powiem szefowi, że nie przyjdę w sobotę, natychmiast mnie zwolni”, „Jeśli powiem partnerowi, że potrzebuję wieczoru dla siebie, przestanie mnie kochać i odejdzie”.',
-        'Warto poddać te myśli testowi empirycznemu. W 95% przypadków ludzie reagują na spokojną, uprzejmą granicę pełnym zrozumieniem i dostosowaniem się. A jeśli ktoś rzeczywiście odrzuca Cię za to, że masz własne granice — otrzymujesz bezcenną informację zwrotną, że ta osoba nie kochała Ciebie, lecz Twoją uległość i użyteczność.',
-        'Stawianie granic jest najlepszym filtrem odsiewającym relacje autentyczne od pasożytniczych.'
+        'Z biologicznego punktu widzenia potrzeba akceptacji społecznej jest jedną z najpotężniejszych sił sterujących ludzkim mózgiem. Dla naszych przodków na sawannie wykluczenie z plemienia oznaczało nieuchronną śmierć z głodu lub w szponach drapieżników.',
+        'Badania neuroobrazowe (Eisenberger & Lieberman) wykazały, że ból wywołany odrzuceniem społecznym aktywuje dokładnie te same struktury w mózgu (grzbietową część przedniej kory obręczy — dACC oraz przednią wyspę), co fizyczny ból po oparzeniu.',
+        'Dlatego gdy mamy odmówić komuś bliskiemu, nasze ciało migdałowate wszczyna alarm, interpretując potencjalne niezadowolenie drugiej strony jako bezpośrednie zagrożenie biologiczne.',
+        'Przełamanie tego lęku wymaga świadomego uświadomienia sobie przez korę przedczołową: „Niezadowolenie rozmówcy nie zagraża mojemu życiu. Jestem bezpieczny”.'
       ]
     },
     {
       id: 'sec-29-12',
       pageNumber: 1074,
       sectionNumber: '29.12',
-      title: 'Rozpoznawanie przekraczania granic — Sygnały somatyczne, narastająca frustracja i utrata energii',
+      title: 'Strach przed konfliktem — Unikanie napięcia za cenę chronicznej autodestrukcji',
+      category: 'teoria',
+      readingTimeMinutes: 16,
+      paragraphs: [
+        'Dla wielu osób każda, nawet najmniejsza różnica zdań jest utożsamiana z katastrofą relacyjną. Taki lęk przed konfliktem (conflict avoidance) zmusza do ciągłego ustępowania, przełykania żalu i udawania, że wszystko jest w porządku.',
+        'Cena takiego pozornego „świętego spokoju” jest jednak gigantyczna. Zamiast rozwiązać problem na wczesnym etapie, człowiek gromadzi w sobie tłumioną złość, która po miesiącach eksploduje w postaci nagłego zerwania relacji lub chorób psychosomatycznych.',
+        'Dojrzały konflikt nie jest końcem miłości — jest narzędziem kalibracji relacji. Relacja, która nie jest w stanie przetrwać Twojego spokojnego „nie”, od początku była oparta na iluzji.'
+      ]
+    },
+    {
+      id: 'sec-29-13',
+      pageNumber: 1078,
+      sectionNumber: '29.13',
+      title: 'Poczucie winy — Fałszywa odpowiedzialność za cudze emocje i dekonstrukcja wyrzutów sumienia',
+      category: 'teoria',
+      readingTimeMinutes: 16,
+      paragraphs: [
+        'Poczucie winy pojawiające się po postawieniu granicy jest najczęstszą pułapką osób uczących się asertywności. Człowiek mówi „nie”, po czym przez trzy dni nie może spać, zastanawiając się, czy nie zachował się jak potwór.',
+        'Należy odróżnić POCZUCIE WINY REALNE (kiedy rzeczywiście złamałeś swoje zasady etyczne, skrzywdziłeś kogoś celowo lub złamałeś umowę) od POCZUCIA WINY INDUKOWANEGO (kiedy po prostu odmówiłeś spełnienia cudzego żądania kosztem siebie).',
+        'Gdy ktoś reaguje smutkiem, złością czy fochem na Twoją uprawnioną granicę, ten dyskomfort należy do NIEGO. Masz prawo pozwolić dorosłemu człowiekowi przeżyć jego własne rozczarowanie.'
+      ]
+    },
+    {
+      id: 'sec-29-14',
+      pageNumber: 1082,
+      sectionNumber: '29.14',
+      title: 'Strach przed odrzuceniem — Odróżnienie porzucenia od zdrowego dystansu w relacji',
+      category: 'teoria',
+      readingTimeMinutes: 15,
+      paragraphs: [
+        'Lęk przed odrzuceniem podpowiada katastroficzny scenariusz: „Jeśli powiem szefowi, że nie przyjdę w sobotę, natychmiast mnie zwolni”, „Jeśli powiem partnerowi, że potrzebuję wieczoru dla siebie, przestanie mnie kochać i odejdzie”.',
+        'Warto poddać te myśli testowi empirycznemu. W 95% przypadków ludzie reagują na spokojną, uprzejmą granicę pełnym zrozumieniem i dostosowaniem się. A jeśli ktoś rzeczywiście odrzuca Cię za to, że masz własne granice — otrzymujesz bezcenną informację zwrotną, że ta osoba nie kochała Ciebie, lecz Twoją uległość i użyteczność.',
+        'Stawianie granic jest najlepszym filtrem odsiewającym relacje autentyczne od pasożytniczych.'
+      ]
+    },
+    {
+      id: 'sec-29-15',
+      pageNumber: 1086,
+      sectionNumber: '29.15',
+      title: 'Ćwiczenie Praktyczne — Dlaczego trudno mi powiedzieć „nie”? Rekonstrukcja Wczesnych Skryptów',
+      category: 'cwiczenia',
+      readingTimeMinutes: 18,
+      paragraphs: [
+        'Odpowiedz na poniższe 4 pytania w swoim dzienniku refleksyjnym:',
+        '1. JAK REAGOWANO W MOIM DOMU RODZINNYM NA ODMOWĘ? Czy dziecko mówiące „nie” było wysłuchiwane, czy karane karcącym wzrokiem, fochem rodzica lub etykietą „niegrzeczny”?',
+        '2. JAKIE JEST MOJE GŁÓWNE ZDANIE-PRZEKONANIE O ODMOWIE? (np. „Odmawianie jest samolubne”, „Muszę najpierw zadbać o wszystkich innych”).',
+        '3. CO NAJGORSZEGO STAŁOBY SIĘ, GDYBYSZ PRZESTAŁ ZADOWALAĆ INNYCH? Zapisz swój najgłębszy ukryty lęk.',
+        '4. ZAPISZ NOWE PRZEKONANIE RATUNKOWE: „Moje potrzeby są równie ważne jak potrzeby innych. Mam prawo mówić NIE bez poczucia winy”. Powtórz je trzykrotnie na głos.'
+      ]
+    },
+
+    // BLOK IV — PRZEKRACZANIE GRANIC (29.16 - 29.20)
+    {
+      id: 'sec-29-16',
+      pageNumber: 1090,
+      sectionNumber: '29.16',
+      title: 'Jak rozpoznać przekraczanie granic? Sygnały somatyczne, narastająca frustracja i złość jako dzwonek alarmowy',
       category: 'neuronauka',
       readingTimeMinutes: 17,
       paragraphs: [
@@ -459,13 +412,13 @@ export const chapterTwentyNine: Chapter = {
         '2. Poczucie drenowania z energii i chronicznego zmęczenia po rozmowie.',
         '3. Narastająca, cicha złość, sarkazm i zniecierpliwienie wobec próśb drugiej strony.',
         '4. Odruch unikania kontaktu wzrokowego lub niechęć do odbierania telefonu.',
-        'Złość nie jest grzechem — jest biologicznym dzwonkiem alarmowym informującym Cię, że ktoś właśnie wtargnął na Twoje terytorium psychiczne.'
+        'Złość nie jest wadą charakteru — jest biologicznym dzwonkiem alarmowym informującym Cię, że ktoś właśnie wtargnął na Twoje terytorium psychiczne.'
       ]
     },
     {
-      id: 'sec-29-13',
-      pageNumber: 1078,
-      sectionNumber: '29.13',
+      id: 'sec-29-17',
+      pageNumber: 1094,
+      sectionNumber: '29.17',
       title: 'Prośba a nacisk — Jak odróżnić wolność wyboru od ukrytego roszczenia i przymusu',
       category: 'teoria',
       readingTimeMinutes: 16,
@@ -476,10 +429,10 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-14',
-      pageNumber: 1082,
-      sectionNumber: '29.14',
-      title: 'Prośba a manipulacja — Ukryte intencje, pochlebstwa i technika stopy w drzwiach',
+      id: 'sec-29-18',
+      pageNumber: 1098,
+      sectionNumber: '29.18',
+      title: 'Prośba a manipulacja — Pochlebstwa, technika stopy w drzwiach i sztuczny dług wdzięczności',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
@@ -489,10 +442,10 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-15',
-      pageNumber: 1086,
-      sectionNumber: '29.15',
-      title: 'Krytyka a przekraczanie granic — Konstruktywna informacja zwrotna kontra atak na godność',
+      id: 'sec-29-19',
+      pageNumber: 1102,
+      sectionNumber: '29.19',
+      title: 'Krytyka a naruszanie granic — Konstruktywny feedback kontra atak personalny na godność',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
@@ -502,9 +455,9 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-16',
-      pageNumber: 1090,
-      sectionNumber: '29.16',
+      id: 'sec-29-20',
+      pageNumber: 1106,
+      sectionNumber: '29.20',
       title: 'Szantaż emocjonalny — Anatomia syndromu FOG (Fear, Obligation, Guilt) Susan Forward',
       category: 'teoria',
       readingTimeMinutes: 18,
@@ -514,11 +467,13 @@ export const chapterTwentyNine: Chapter = {
         'Wyjście z mgły FOG wymaga przejścia od automatycznej reakcji uległości do świadomej obserwacji: „Widzę, że próbujesz wzbudzić we mnie poczucie winy. Moja decyzja pozostaje niezmienna”.'
       ]
     },
+
+    // BLOK V — STAWIANIE GRANIC W PRAKTYCE (29.21 - 29.25)
     {
-      id: 'sec-29-17',
-      pageNumber: 1094,
-      sectionNumber: '29.17',
-      title: 'Jak powiedzieć „nie”? — Anatomia czystej odmowy bez zbędnych usprawiedliwień i kłamstw',
+      id: 'sec-29-21',
+      pageNumber: 1110,
+      sectionNumber: '29.21',
+      title: 'Jak powiedzieć „nie”? Anatomia czystej odmowy bez zbędnych usprawiedliwień i kłamstw',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
@@ -528,10 +483,10 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-18',
-      pageNumber: 1098,
-      sectionNumber: '29.18',
-      title: 'Jak odmawiać bez agresji? — Spokój, kontakt wzrokowy i postawa pewności siebie',
+      id: 'sec-29-22',
+      pageNumber: 1114,
+      sectionNumber: '29.22',
+      title: 'Jak odmawiać bez agresji? Spokój fonacyjny, kontakt wzrokowy i postawa pewności siebie',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
@@ -541,10 +496,10 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-19',
-      pageNumber: 1102,
-      sectionNumber: '29.19',
-      title: 'Jak komunikować potrzeby? — Przejście od pretensji i domysłów do jasnych próśb',
+      id: 'sec-29-23',
+      pageNumber: 1118,
+      sectionNumber: '29.23',
+      title: 'Jak komunikować własne potrzeby? Przejście od pretensji i domysłów do jasnych próśb',
       category: 'teoria',
       readingTimeMinutes: 16,
       paragraphs: [
@@ -554,10 +509,10 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-20',
-      pageNumber: 1106,
-      sectionNumber: '29.20',
-      title: 'Jak komunikować konsekwencje? — Różnica między szantażem a informacją o własnym działaniu',
+      id: 'sec-29-24',
+      pageNumber: 1122,
+      sectionNumber: '29.24',
+      title: 'Jak komunikować konsekwencje? Różnica między groźbą a informacją o własnym działaniu',
       category: 'teoria',
       readingTimeMinutes: 17,
       paragraphs: [
@@ -567,10 +522,10 @@ export const chapterTwentyNine: Chapter = {
       ]
     },
     {
-      id: 'sec-29-21',
-      pageNumber: 1110,
-      sectionNumber: '29.21',
-      title: 'Co zrobić, gdy ktoś ignoruje granicę? — Eskalacja kroków i protokół ochrony siebie',
+      id: 'sec-29-25',
+      pageNumber: 1126,
+      sectionNumber: '29.25',
+      title: 'Co zrobić, kiedy ktoś ignoruje granicę? Protokół eskalacji kroków i zjawisko Extinction Burst',
       category: 'teoria',
       readingTimeMinutes: 17,
       paragraphs: [
@@ -579,132 +534,78 @@ export const chapterTwentyNine: Chapter = {
         'Jeśli ktoś notorycznie i z premedytacją ignoruje Twoje granice mimo wielokrotnych upomnień, jedyną skuteczną granicą pozostaje fizyczne lub relacyjne zdystansowanie się od tej osoby.'
       ]
     },
-    {
-      id: 'sec-29-22',
-      pageNumber: 1114,
-      sectionNumber: '29.22',
-      title: 'Granice w rodzinie — Odcięcie pępowiny psychologicznej, lojalność i prawo do własnego życia',
-      category: 'teoria',
-      readingTimeMinutes: 17,
-      paragraphs: [
-        'Stawianie granic w rodzinie pochodzenia jest dla większości ludzi najtrudniejszym wyzwaniem emocjonalnym. Rodzice często mają poczucie dożywotniego prawa własności do swoich dorosłych dzieci, ingerując w ich wybory partnerskie, finanse, wychowanie wnuków i plany wakacyjne.',
-        'Proces indywiduacji (stawania się odrębną jednostką) wymaga odwagi do zaryzykowania przejściowego rozczarowania rodziców. Nie jesteś przedłużeniem niespełnionych ambicji swojej matki ani naprawiaczem błędów swojego ojca.',
-        'Możesz kochać swoich rodziców, szanować ich i jednocześnie stanowczo nie pozwalać im na sterowanie Twoim domem.'
-      ]
-    },
-    {
-      id: 'sec-29-23',
-      pageNumber: 1118,
-      sectionNumber: '29.23',
-      title: 'Granice w przyjaźni — Jednostronne relacje, wampiry energetyczne i higiena wzajemności',
-      category: 'teoria',
-      readingTimeMinutes: 16,
-      paragraphs: [
-        'Prawdziwa przyjaźń opiera się na fundamencie wzajemności i równowagi. Zdarza się jednak, że relacje przyjacielskie przekształcają się w jednostronne wysypiska emocjonalne, w których jedna strona dzwoni wyłącznie po to, by godzinami narzekać na swoje życie, kompletnie nie interesując się losem drugiej.',
-        'Postawienie granicy w przyjaźni polega na przerwaniu roli bezpłatnego psychoterapeuty: „Bardzo ci współczuję, ale mam dziś tylko 15 minut na rozmowę”, „Chętnie cię wysłucham, ale chciałbym też opowiedzieć ci o tym, co dzieje się u mnie”.',
-        'Przyjaciele warci Twojego czasu uszanują Twoją przestrzeń; osoby nastawione wyłącznie na czerpanie korzyści szybko znikną z Twojego otoczenia.'
-      ]
-    },
-    {
-      id: 'sec-29-24',
-      pageNumber: 1122,
-      sectionNumber: '29.24',
-      title: 'Granice w związku — Równowaga między „Ja”, „Ty” a „My” w dojrzałej relacji intymnej',
-      category: 'teoria',
-      readingTimeMinutes: 17,
-      paragraphs: [
-        'Dojrzały związek partnerski nie polega na całkowitym zlaniu się w jedno i porzuceniu własnych pasji, znajomych i samotności. Taka fuzja prowadzi do szybkiego wypalenia pożądania i narastania frustracji.',
-        'Zdrowa relacja intymna składa się z trzech odrębnych bytów: Mojego Świata (moje cele, przyjaciele, pasje), Twojego Świata oraz Naszego Wspólnego Świata (wspólne plany, wartości, bliskość).',
-        'Prawo do spędzenia weekendu bez partnera, prawo do własnego konta oszczędnościowego czy prawo do własnych przekonań nie są dowodem braku miłości — są warunkiem jej długowieczności.'
-      ]
-    },
-    {
-      id: 'sec-29-25',
-      pageNumber: 1126,
-      sectionNumber: '29.25',
-      title: 'Granice w szkole i pracy — Nadgodziny, mikrozarządzanie, mobbing i kultura dostępności 24/7',
-      category: 'teoria',
-      readingTimeMinutes: 17,
-      paragraphs: [
-        'Środowisko zawodowe jest terenem nieustannych prób rozciągania granic pracowników pod hasłami „elastyczności”, „rodzinnej atmosfery” i „zaangażowania ponad normę”.',
-        'Ochrona granic w pracy obejmuje: nieodbieranie telefonów i maili poza godzinami kontraktowymi, odmawianie brania na siebie zadań kolegów bez rekompensaty oraz natychmiastowe reagowanie na przejawy mobbingu, złośliwych komentarzy czy zastraszania.',
-        'Pamiętaj: dla firmy jesteś zasobem wymiennym; dla swojego zdrowia i rodziny jesteś niezastąpiony.'
-      ]
-    },
+
+    // BLOK VI — GRANICE W RELACJACH (29.26 - 29.30)
     {
       id: 'sec-29-26',
       pageNumber: 1130,
       sectionNumber: '29.26',
-      title: 'Granice w internecie — Higiena cyfrowa, hejt, prawo do nieodpowiadania i blokowanie',
+      title: 'Granice w rodzinie — Odcięcie pępowiny psychologicznej, indywiduacja i relacja Dorosły-Dorosły',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Przestrzeń cyfrowa stworzyła iluzję natychmiastowej i powszechnej dostępności każdego człowieka. Wielu ludzi czuje przymus odpisywania na wiadomości w ciągu 60 sekund oraz wchodzi w jałowe, wyczerpujące dyskusje z anonimowymi trollami w komentarzach.',
-        'Granice cyfrowe to: wyłączenie powiadomień push, ustalenie okien czasowych na sprawdzanie poczty, nieudostępnianie intymnych szczegółów ze swojego życia w social mediach oraz bezwzględne korzystanie z przycisku „zablokuj” wobec osób stosujących hejt i agresję słowną.',
-        'Twój profil i Twoja skrzynka odbiorcza to Twój cyfrowy dom — masz pełne prawo nie wpuszczać do niego wandali.'
+        'W relacjach rodzinnych stawianie granic budzi najsilniejsze opory, ponieważ dotyka pierwotnych lojalności i skryptów z dzieciństwa. Wielu dorosłych ludzi w obecności rodziców natychmiast cofa się do roli bezradnego, uległego dziecka.',
+        'Proces indywiduacji (Jung) wymaga symbolicznego przecięcia pępowiny emocjonalnej. Masz prawo decydować o swoim małżeństwie, finansach, wychowaniu dzieci i sposobie spędzania świąt bez uzyskiwania zgody rodziców.',
+        'Przejście z toksycznego uwikłania do dojrzałej relacji wymaga życzliwej stanowczości: „Kocham was, ale w tej sprawie podejmuję własną decyzję”.'
       ]
     },
     {
       id: 'sec-29-27',
       pageNumber: 1134,
       sectionNumber: '29.27',
-      title: 'Studium Przypadku 1 — Niewolnica Uczynności: Wypalenie i Kryzys Granic Moniki',
-      category: 'studium-przypadku',
-      readingTimeMinutes: 18,
-      caseStudyRef: chapterTwentyNineCaseStudyMonika,
+      title: 'Granice w przyjaźni — Higiena wzajemności, eliminacja wampiryzmu emocjonalnego i szacunek',
+      category: 'teoria',
+      readingTimeMinutes: 16,
       paragraphs: [
-        'W pierwszym studium przypadku analizujemy historię 28-letniej Moniki, która z powodu lęku przed odrzuceniem i potrzeby bycia lubianą przez wszystkich doprowadziła swój organizm na skraj somatycznego wyczerpania.',
-        'Przypadek ten dekonstruuje syndrom People Pleasing i pokazuje krok po kroku, jak wdrożyć pauzę decyzyjną oraz asertywną odmowę w miejscu pracy.'
+        'Prawdziwa przyjaźń opiera się na symetrii i wzajemności. Jeśli relacja polega na tym, że jedna strona wyłącznie mówi o sobie, wylewa frustracje i oczekuje ciągłej pomocy, a nigdy nie słucha i nie wspiera — mamy do czynienia z relacją pasożytniczą.',
+        'Postawienie granicy w przyjaźni brzmi: „Chętnie cię wysłucham przez 20 minut, ale potem muszę wracać do swoich obowiązków”, „Nie mogę dziś rozmawiać, odezwę się w czwartek”.',
+        'Prawdziwy przyjaciel uszanuje Twoją przestrzeń; osoba szukająca darmowego terapeuty szybko poszuka innego słuchacza.'
       ]
     },
     {
       id: 'sec-29-28',
-      pageNumber: 1140,
+      pageNumber: 1138,
       sectionNumber: '29.28',
-      title: 'Studium Przypadku 2 — W Pajęczynie Winy: Marek i Szantaż Emocjonalny Matki',
-      category: 'studium-przypadku',
+      title: 'Granice w związku, szkole, pracy i internecie — Zintegrowany przegląd stref społecznych',
+      category: 'teoria',
       readingTimeMinutes: 18,
-      caseStudyRef: chapterTwentyNineCaseStudySzantazEmocjonalny,
       paragraphs: [
-        'Drugie studium przypadku bada toksyczną dynamikę szantażu emocjonalnego FOG w relacji matka-dorosły syn, gdzie odmowa uległości była karana symulowaniem ataków serca i oskarżeniami o brak serca.',
-        'Analizujemy mechanizmy uwikłania rodzinnego, technikę oddzielenia troski medycznej od uległości decyzyjnej oraz proces odzyskiwania męskiej autonomii.'
+        'W ZWIĄZKU: Granice chronią tożsamość obojga partnerów — formuła brzmi: „Ja + Ty = My”, a nie „Ja rozpływam się w Tobie”. Obejmują czas na własne pasje, finanse i prywatność.',
+        'W PRACY I SZKOLE: Granice zawodowe określają godziny dostępności, zakres obowiązków oraz brak zgody na mobbing, krzyk i publiczne upokarzanie.',
+        'W INTERNECIE: Higiena cyfrowa obejmuje wyciszanie powiadomień, nieodpowiadanie na hejt i zaczepki oraz blokowanie użytkowników naruszających Twoją godność. Twoja uwaga cyfrowa jest Twoją własnością.'
       ]
     },
     {
       id: 'sec-29-29',
-      pageNumber: 1146,
+      pageNumber: 1144,
       sectionNumber: '29.29',
-      title: 'Studium Przypadku 3 — Granica w Korporacyjnej Dżungli: Jakub i Toksyczny Menedżer',
+      title: 'Wielkie Studium Przypadku — Osoba, która nie potrafi odmawiać: Przemiana Moniki',
       category: 'studium-przypadku',
-      readingTimeMinutes: 18,
-      caseStudyRef: chapterTwentyNineCaseStudyKonfliktPraca,
+      readingTimeMinutes: 20,
+      caseStudyRef: chapterTwentyNineCaseStudyMonika,
       paragraphs: [
-        'W trzecim studium przypadku przyglądamy się starciu inżyniera Jakuba z autorytarnym dyrektorem stosującym publiczne upokorzenia i przymus pracy w weekendy.',
-        'Analiza demonstruje siłę spokojnego, nieagresywnego komunikatu opartego na faktach i kontrakcie oraz technikę zdartej płyty w konfrontacji z agresorem relacyjnym.'
+        'W tym studium przypadku szczegółowo analizujemy historię Moniki (28 lat), koordynatorki projektów, której patologiczna uczynność i lęk przed odrzuceniem doprowadziły do somatycznego załamania zdrowotnego.',
+        'Prześledź interaktywną analizę mechanizmu People Pleasing, dialogi przed i po terapii oraz protokół budowania bufora czasowego w karcie studium przypadku powyżej.'
       ]
     },
     {
       id: 'sec-29-30',
-      pageNumber: 1152,
+      pageNumber: 1150,
       sectionNumber: '29.30',
-      title: 'Podsumowanie, Słownik Pojęć i Własny System Budowania Granic (Model D-E-S-C)',
+      title: 'Ćwiczenia Końcowe, Podsumowanie i Słownik Pojęć Rozdziału 29',
       category: 'podsumowanie',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 17,
       paragraphs: [
-        'Podsumowując 30 fundamentalnych kroków budowania zdrowych granic osobistych:',
-        '1. Granice nie są murem izolującym — są półprzepuszczalną membraną chroniącą Twoją tożsamość, czas i godność.',
-        '2. Poczucie winy po odmowie jest zjawiskiem naturalnym, wynikającym z ewolucyjnego lęku przed odrzuceniem — nie oznacza, że zrobiłeś coś złego.',
-        '3. Szantaż emocjonalny (FOG) traci moc w chwili, gdy przestajesz bać się cudzego niezadowolenia i pozwalasz innym na przeżywanie ich własnych emocji.',
-        '4. Czyste „nie” jest kompletnym zdaniem — nie wymaga usprawiedliwień, kłamstw ani przepraszania za własne istnienie.',
-        'SŁOWNIK POJĘĆ ROZDZIAŁU 29:',
-        '• Personal Boundaries (Granice Osobiste) — psychologiczne reguły określające dopuszczalne sposoby traktowania jednostki przez innych ludzi.',
-        '• Enmeshment (Uwikłanie) — patologiczne zatarcie granic w relacji, w którym jednostki tracą autonomię emocjonalną i zlewają się w jeden system.',
-        '• Emotional Blackmail (Szantaż Emocjonalny) — forma manipulacji wykorzystująca lęk, obowiązek i poczucie winy (FOG) do wymuszenia uległości.',
-        '• Model D-E-S-C — czterostopniowy protokół asertywnej komunikacji granic: Describe (Opisz fakt), Express (Wyraź emocje), Specify (Sprecyzuj oczekiwanie), Consequences (Określ konsekwencje).',
-        '• People Pleasing — nawykowe podporządkowywanie własnych potrzeb oczekiwaniom innych w celu uniknięcia odrzucenia.',
-        'W kolejnym, wieńczącym dzieło Rozdziale 30 przejdziemy od tematu wyznaczania granic do mistrzowskiej sztuki ich wyrażania w działaniu — do pełnowymiarowej psychologii Asertywności i Integralności Osobistej.'
-      ],
-      exerciseRef: chapterTwentyNineExerciseBoundarySystem
+        'SŁOWNIK KLUCZOWYCH POJĘĆ ROZDZIAŁU 29:',
+        '• GRANICE OSOBISTE — półprzepuszczalna membrana psychologiczna określająca tożsamość, wartości i dopuszczalne zachowania innych wobec nas.',
+        '• ENMESHMENT (Uwikłanie) — zlanie się emocjonalne w rodzinie lub parze, uniemożliwiające odróżnienie własnych uczuć od cudzych.',
+        '• SZANTAŻ EMOCJONALNY FOG — manipulacja wykorzystująca Lęk (Fear), Poczucie Obowiązku (Obligation) i Poczucie Winy (Guilt).',
+        '• EXTINCTION BURST — gwałtowne nasilenie ataku i prób złamania granicy przez manipulatora tuż przed ostatecznym zaakceptowaniem odmowy.',
+        '• PROKSEMIKA — psychologia dystansu fizycznego i przestrzeni osobistej.',
+        '• CZYSTA ODMOWA — zwięzłe, nieagresywne „nie” bez zbędnych usprawiedliwień i kłamstw.',
+        'PYTANIA SPRAWDZAJĄCE: 1. W jakim obszarze życia Twoje granice są zbyt nieszczelne? 2. Czy odróżniasz realną winę od poczucia winy indukowanego przez drugą osobę? 3. Jak reagujesz na próby manipulacji szantażem FOG?',
+        'MOST DO ROZDZIAŁU 30: Gdy wiesz już, czym są granice i dlaczego są niezbędne, pojawia się kluczowe pytanie wykonawcze: JAK je wyrażać w codziennej rozmowie bez agresji i bez uległości? W kolejnym rozdziale wkroczymy w sztukę Asertywności — mistrzowskiego języka dialogu w zgodzie ze sobą.'
+      ]
     }
   ]
 };
