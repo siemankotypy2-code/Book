@@ -72,6 +72,98 @@ export interface BookSection {
   }[];
   caseStudyRef?: CaseStudy;
   exerciseRef?: SelfExercise;
+  interactiveWindowRef?: InteractiveWindowData;
+}
+
+export type InteractiveWindowType = 
+  | 'microscope'         // Człowiek pod mikroskopem
+  | 'dual_perspectives'   // Dwa spojrzenia (Osoba A / Osoba B)
+  | 'what_if'            // Co zmieniłoby sytuację? / Zmień jeden element
+  | 'counter_case'       // Kontrprzypadek
+  | 'what_we_know'       // Co naprawdę wiemy? (Fakty vs Interpretacje)
+  | 'loop';              // Pętla relacji / konfliktu
+
+export interface MicroscopeLayer {
+  stepNumber: number;
+  label: string;
+  question: string;
+  content: string;
+  subtext?: string;
+}
+
+export interface DualPerspectiveData {
+  situation: string;
+  personA: {
+    name: string;
+    quote: string;
+    whatTheyKnow: string;
+    whatTheyMiss: string;
+    interpretation: string;
+    coreNeed: string;
+    fear: string;
+    action: string;
+  };
+  personB: {
+    name: string;
+    quote: string;
+    whatTheyKnow: string;
+    whatTheyMiss: string;
+    interpretation: string;
+    coreNeed: string;
+    fear: string;
+    action: string;
+  };
+  synthesis: string;
+}
+
+export interface WhatIfOption {
+  id: string;
+  changeLabel: string;
+  resultingInterpretation: string;
+  resultingBehavior: string;
+  psychologicalImpact: string;
+}
+
+export interface FactInterpretationItem {
+  id: string;
+  statement: string;
+  category: 'fakt' | 'interpretacja' | 'hipoteza' | 'motyw';
+  explanation: string;
+}
+
+export interface RelationalLoopStep {
+  step: number;
+  title: string;
+  actor: string;
+  action: string;
+  interpretationByOther: string;
+  emotionalTrigger: string;
+  counterAction: string;
+}
+
+export interface InteractiveWindowData {
+  id: string;
+  type: InteractiveWindowType;
+  title: string;
+  subtitle?: string;
+  context: string;
+  microscopeLayers?: MicroscopeLayer[];
+  dualPerspective?: DualPerspectiveData;
+  whatIfOptions?: {
+    defaultScenario: string;
+    options: WhatIfOption[];
+  };
+  counterCase?: {
+    standardTheory: string;
+    counterExample: string;
+    whyItDefiesRule: string;
+    deeperLesson: string;
+  };
+  whatWeKnow?: {
+    items: FactInterpretationItem[];
+  };
+  loopSteps?: RelationalLoopStep[];
+  takeaway: string;
 }
 
 export interface Chapter {

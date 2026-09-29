@@ -203,5 +203,47 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDef: 'Złudzenie poznawcze, że manipulacje, reklamy i propaganda działają na „innych ludzi”, a ja jestem w 100% odporny.',
     detailedExplanation: 'Największy sojusznik manipulatora — człowiek przekonany o swojej absolutnej suwerenności wyłącza czujność krytyczną i racjonalizuje narzucone wybory jako własne.',
     everydayExample: 'Kupowanie markowych ubrań ze statusem i tłumaczenie sobie, że „kierowałem się wyłącznie unikalnym designem, a reklamy nie mają na mnie wpływu”.'
+  },
+  {
+    term: 'Wewnętrzny Model Operacyjny (Internal Working Model)',
+    category: 'Relacje i Więzi',
+    shortDef: 'Poznawczo-afektywny schemat relacyjny ukształtowany we wczesnym dzieciństwie, określający, czy inni są godni zaufania i czy ja zasługuję na miłość.',
+    detailedExplanation: 'Koncepcja Johna Bowlby’ego. Działa jak filtr percepcyjny w dorosłych relacjach intymnych, determinując styl przywiązania (bezpieczny, lękowo-ambiwalentny, unikający, zdezorganizowany).',
+    everydayExample: 'Interpretowanie milczenia partnera po pracy jako dowodu odrzucenia (styl lękowy) lub jako naturalnej potrzeby odpoczynku (styl bezpieczny).'
+  },
+  {
+    term: 'Czterej Jeźdźcy Apokalipsy (Gottman)',
+    category: 'Konflikt i Komunikacja',
+    shortDef: 'Cztery toksyczne wzorce komunikacyjne w parze zwiastujące rozpad relacji: Krytyka, Pogarda, Defensywność i Mur Obojętności.',
+    detailedExplanation: 'Zidentyfikowane w wieloletnich badaniach Johna Gottmana. Szczególnie niszczycielska jest Pogarda (sarkazm, przewracanie oczami), która świadczy o braku szacunku i dekapitalizuje więź.',
+    everydayExample: 'Zamiast „Złości mnie, że zapomniałeś o rachunku”, mówienie z uśmieszkiem wyższości: „Jak zwykle jesteś zbyt nieodpowiedzialny, żeby zaufać ci z czymkolwiek prostym”.'
+  },
+  {
+    term: 'Podwójna Zdrada Epistemiczna',
+    category: 'Relacje i Zaufanie',
+    shortDef: 'Sytuacja, w której zdrada podważa nie tylko zaufanie do partnera, ale przede wszystkim zaufanie do własnych zmysłów i zdolności oceny rzeczywistości.',
+    detailedExplanation: 'Osoba zdradzona zadaje sobie pytanie: „Skoro nie zauważyłem podwójnego życia bliskiej osoby przez trzy lata, to skąd mam wiedzieć, czy cokolwiek, co postrzegam, jest prawdą?”.',
+    everydayExample: 'Kwestionowanie wszystkich wspomnień z udanych wakacji po odkryciu, że partner prowadził w tym czasie równoległy romans.'
+  },
+  {
+    term: 'Polaryzacja Grupowa (Group Polarization)',
+    category: 'Wpływ Społeczny',
+    shortDef: 'Tendencja grupy do podejmowania decyzji znacznie bardziej skrajnych niż średnia początkowych opinii jej członków.',
+    detailedExplanation: 'Wynika z jednostronnej wymiany argumentów (perswazyjny basen argumentacyjny) oraz porównań społecznych (chęć zaprezentowania się jako wzorcowy, bezkompromisowy reprezentant grupy).',
+    everydayExample: 'Grupa umiarkowanych sceptyków jakiejś technologii po godzinie wspólnej dyskusji staje się zagorzałymi radykałami żądającymi jej całkowitego zakazu.'
+  },
+  {
+    term: 'Stan Pośredniczący (Agentic State)',
+    category: 'Władza i Autorytet',
+    shortDef: 'Stan psychiczny, w którym jednostka przestaje czuć się osobiście odpowiedzialna za swoje czyny, widząc siebie wyłącznie jako narzędzie wykonujące wolę autorytetu.',
+    detailedExplanation: 'Zidentyfikowany przez Stanleya Milgrama kluczowy mechanizm uległości. Człowiek zrzuca ciężar moralny na osobę wydającą polecenia lub instytucję.',
+    everydayExample: 'Księgowa lub urzędnik podpisujący szkodliwe decyzje ze słowami: „Ja tylko realizuję wytyczne zarządu, dyrektor o wszystkim wie”.'
+  },
+  {
+    term: 'Syndrom Pychy Władzy (Hubris Syndrome)',
+    category: 'Władza i Autorytet',
+    shortDef: 'Zaburzenie nabyte pod wpływem długotrwałego sprawowania władzy, objawiające się arogancją, brakiem empatii i poczuciem bycia ponad prawem.',
+    detailedExplanation: 'Opisany przez Davida Owena stan, w którym izolacja od krytyki i ciągłe pochlebstwa otoczenia prowadzą do utraty kontaktu z realiami i traktowania sprzeciwu jako zdrady.',
+    everydayExample: 'Prezes firmy ignorujący ostrzeżenia inżynierów i prawników, przekonany, że jego intuicja jest nieomylna.'
   }
 ];

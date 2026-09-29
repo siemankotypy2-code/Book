@@ -49,8 +49,14 @@ import { chapterThirtyExamQuestions } from '../data/chapterThirtyData';
 import { chapterThirtyOneExamQuestions } from '../data/chapterThirtyOneData';
 import { chapterThirtyTwoExamQuestions } from '../data/chapterThirtyTwoData';
 import { chapterThirtyThreeExamQuestions } from '../data/chapterThirtyThreeData';
+import { chapterThirtyFourExamQuestions } from '../data/chapterThirtyFourData';
+import { chapterThirtyFiveExamQuestions } from '../data/chapterThirtyFiveData';
+import { chapterThirtySixExamQuestions } from '../data/chapterThirtySixData';
+import { chapterThirtySevenExamQuestions } from '../data/chapterThirtySevenData';
+import { chapterThirtyEightExamQuestions } from '../data/chapterThirtyEightData';
 import { AdaptationLabWidget } from './AdaptationLabWidget';
 import { SocialInfluenceLabWidget } from './SocialInfluenceLabWidget';
+import { InteractiveAnalyticalWindowCard } from './InteractiveAnalyticalWindowCard';
 import { SocialInfluenceLab } from './SocialInfluenceLab';
 import { CommunicationLab } from './CommunicationLab';
 import { PersuasionLab } from './PersuasionLab';
@@ -313,6 +319,13 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
         {activeSection.exerciseRef && activeSection.sectionNumber !== '1.8' && (
           <div className="my-10">
             <SelfReflectExercises exercises={[activeSection.exerciseRef]} />
+          </div>
+        )}
+
+        {/* Interactive Analytical Window if present on regular sections */}
+        {activeSection.interactiveWindowRef && (
+          <div className="my-10">
+            <InteractiveAnalyticalWindowCard data={activeSection.interactiveWindowRef} />
           </div>
         )}
 
@@ -924,6 +937,61 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={33}
               chapterTitle="Wpływ Społeczny: Jak Inni Ludzie Kształtują Nasze Decyzje i Zachowania (Rozdział 33)"
               examQuestions={chapterThirtyThreeExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 34 (Przywiązanie, Bliskość i Potrzeba Więzi) WIDGETS --- */}
+        {activeSection.sectionNumber === '34.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={34}
+              chapterTitle="Przywiązanie, Bliskość i Potrzeba Więzi (Rozdział 34)"
+              examQuestions={chapterThirtyFourExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 35 (Konflikt i Eskalacja) WIDGETS --- */}
+        {activeSection.sectionNumber === '35.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={35}
+              chapterTitle="Konflikt i Eskalacja (Rozdział 35)"
+              examQuestions={chapterThirtyFiveExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 36 (Zaufanie, Zdrada i Odbudowa) WIDGETS --- */}
+        {activeSection.sectionNumber === '36.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={36}
+              chapterTitle="Zaufanie, Zdrada i Odbudowa (Rozdział 36)"
+              examQuestions={chapterThirtySixExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 37 (Konformizm i Presja Grupy) WIDGETS --- */}
+        {activeSection.sectionNumber === '37.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={37}
+              chapterTitle="Konformizm i Presja Grupy (Rozdział 37)"
+              examQuestions={chapterThirtySevenExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 38 (Władza, Autorytet i Posłuszeństwo) WIDGETS --- */}
+        {activeSection.sectionNumber === '38.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={38}
+              chapterTitle="Władza, Autorytet i Posłuszeństwo (Rozdział 38)"
+              examQuestions={chapterThirtyEightExamQuestions}
             />
           </div>
         )}
