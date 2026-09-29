@@ -168,5 +168,40 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDef: 'Umiejętność podejmowania działań i zachowania spokoju w warunkach braku pełnych danych i gwarancji wyniku.',
     detailedExplanation: 'Niska tolerancja niepewności prowadzi do kompulsywnego sprawdzania, natrętnego szukania zapewnień lub przedwczesnych, błędnych decyzji podejmowanych wyłącznie w celu uciszenia lęku.',
     everydayExample: 'Wysłanie ważnej oferty do klienta i spokojne zajęcie się kolejnym zadaniem zamiast odświeżania skrzynki pocztowej co 30 sekund.'
+  },
+  {
+    term: 'Wpływ Informacyjny vs Normatywny',
+    category: 'Wpływ Społeczny',
+    shortDef: 'Wpływ informacyjny wynika z dążenia do prawdy w niepewności; wpływ normatywny z lęku przed odrzuceniem i chęci bycia akceptowanym.',
+    detailedExplanation: 'Zdefiniowany przez Deutscha i Gerarda (1955). Wpływ informacyjny prowadzi do trwałej prywatnej akceptacji, podczas gdy wpływ normatywny skutkuje często publicznym konformizmem bez wewnętrznej zgody.',
+    everydayExample: 'Wchodzisz do restauracji pełnej gości (informacyjny) vs zamawiasz drogie danie, którego nie lubisz, bo wszyscy znajomi je zamówili (normatywny).'
+  },
+  {
+    term: 'Stan Agentalny (Agentic State)',
+    category: 'Wpływ Społeczny',
+    shortDef: 'Stan psychiczny, w którym człowiek uważa się za wykonawcę woli autorytetu, zwalniając się z odpowiedzialności moralnej.',
+    detailedExplanation: 'Kluczowe pojęcie ze słynnych badań Stanleya Milgrama nad posłuszeństwem. W stanie agentalnym sumienie zostaje podporządkowane hierarchii i procedurze („ja tylko wykonywałem rozkazy”).',
+    everydayExample: 'Pracownik banku sprzedający toksyczne polisolokaty starszym osobom z poczuciem, że „taki jest cel sprzedażowy narzucony przez centralę”.'
+  },
+  {
+    term: 'Myślenie Grupowe (Groupthink)',
+    category: 'Wpływ Społeczny',
+    shortDef: 'Patologia decyzyjna w spójnych zespołach, gdzie pragnienie pozornej zgody i lojalności niszczy krytyczną ocenę faktów.',
+    detailedExplanation: 'Sformułowane przez Irvinga Janisa. Charakteryzuje się iluzją nieomylności, cenzurowaniem wątpliwości przez samych uczestników i uciszaniem krytyków.',
+    everydayExample: 'Zarząd firmy jednogłośnie zatwierdzający ryzykowną inwestycję, bo nikt nie chciał wyjść na „czarnowidza” psującego entuzjazm prezesa.'
+  },
+  {
+    term: 'Efekt Widza (Bystander Effect)',
+    category: 'Wpływ Społeczny',
+    shortDef: 'Zmniejszenie prawdopodobieństwa udzielenia pomocy poszkodowanemu wraz ze wzrostem liczby biernych świadków zdarzenia.',
+    detailedExplanation: 'Wynika z rozproszenia odpowiedzialności („ktoś inny zareaguje”) oraz pluralistycznej ignorancji („skoro inni nie reagują, to widocznie nic się nie stało”). Odkryty przez Darleya i Latané.',
+    everydayExample: 'Dziesiątki ludzi mijających leżącego na chodniku człowieka bez zatrzymania się, dopóki ktoś nie wyda bezpośredniego polecenia konkretnej osobie.'
+  },
+  {
+    term: 'Efekt Trzeciej Osoby (Third-Person Effect)',
+    category: 'Wpływ Społeczny',
+    shortDef: 'Złudzenie poznawcze, że manipulacje, reklamy i propaganda działają na „innych ludzi”, a ja jestem w 100% odporny.',
+    detailedExplanation: 'Największy sojusznik manipulatora — człowiek przekonany o swojej absolutnej suwerenności wyłącza czujność krytyczną i racjonalizuje narzucone wybory jako własne.',
+    everydayExample: 'Kupowanie markowych ubrań ze statusem i tłumaczenie sobie, że „kierowałem się wyłącznie unikalnym designem, a reklamy nie mają na mnie wpływu”.'
   }
 ];

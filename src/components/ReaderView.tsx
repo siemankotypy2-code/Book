@@ -48,7 +48,9 @@ import { chapterTwentyNineExamQuestions } from '../data/chapterTwentyNineData';
 import { chapterThirtyExamQuestions } from '../data/chapterThirtyData';
 import { chapterThirtyOneExamQuestions } from '../data/chapterThirtyOneData';
 import { chapterThirtyTwoExamQuestions } from '../data/chapterThirtyTwoData';
+import { chapterThirtyThreeExamQuestions } from '../data/chapterThirtyThreeData';
 import { AdaptationLabWidget } from './AdaptationLabWidget';
+import { SocialInfluenceLabWidget } from './SocialInfluenceLabWidget';
 import { SocialInfluenceLab } from './SocialInfluenceLab';
 import { CommunicationLab } from './CommunicationLab';
 import { PersuasionLab } from './PersuasionLab';
@@ -905,6 +907,23 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={32}
               chapterTitle="Odpowiedzialność, Odporność, Adaptacja i Praca z Niepewnością (Rozdział 32)"
               examQuestions={chapterThirtyTwoExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 33 (Wpływ Społeczny: Jak Inni Ludzie Kształtują Nasze Decyzje i Zachowania) WIDGETS --- */}
+        {(activeSection.sectionNumber === '33.4' || activeSection.sectionNumber === '33.6' || activeSection.sectionNumber === '33.8' || activeSection.sectionNumber === '33.17' || activeSection.sectionNumber === '33.19') && (
+          <div className="my-10">
+            <SocialInfluenceLabWidget />
+          </div>
+        )}
+
+        {(activeSection.sectionNumber === '33.21' || activeSection.sectionNumber === '33.22') && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={33}
+              chapterTitle="Wpływ Społeczny: Jak Inni Ludzie Kształtują Nasze Decyzje i Zachowania (Rozdział 33)"
+              examQuestions={chapterThirtyThreeExamQuestions}
             />
           </div>
         )}
