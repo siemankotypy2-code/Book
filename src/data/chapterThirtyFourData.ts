@@ -195,6 +195,19 @@ export const chapterThirtyFour: Chapter = {
         'Przez stulecia filozofia zachodnia promowała mit izolowanego, suwerennego podmiotu — racjonalnej jednostki, która najpierw w samotności definiuje swoje „ja”, a dopiero później, z własnej woli, zawiera umowy i wchodzi w relacje ze światem zewnętrznym. Współczesna psychologia rozwojowa, neuronauka społeczna i biologia ewolucyjna bezlitośnie obalają ten pogląd.',
         'Człowiek nie staje się sobą w samotności. Ludzki mózg jest narządem społecznie programowalnym. Kora przedczołowa, układ limbiczny, a nawet autonomiczny układ nerwowy dojrzewają i kalibrują się wyłącznie w obecności drugiego człowieka — poprzez kontakt wzrokowy, ton głosu, dotyk i współregulację afektu.',
         'Potrzeba przynależności i więzi nie jest luksusem emocjonalnym ani cechą osób „słabych”. Jest biologicznym imperatywem przetrwania. Bezpieczny kontakt z drugim człowiekiem obniża poziom bazowego kortyzolu, stabilizuje rytm serca i aktywuje grzbietową część kory przedczołowej odpowiedzialną za myślenie perspektywiczne. Zrozumienie relacji nie jest zatem dodatkiem do wiedzy o umyśle — jest fundamentem rozumienia człowieka.'
+      ],
+      subsections: [
+        // Warstwa pogłębienia — 34.1
+        {
+          title: 'Relacyjność nie oznacza utraty autonomii',
+          paragraphs: [
+            'Jednym z najczęstszych nieporozumień dotyczących więzi jest przeciwstawianie sobie dwóch rzekomo konkurencyjnych stanów: zależności i niezależności. W praktyce człowiek może potrzebować innych ludzi i jednocześnie posiadać silne poczucie własnej odrębności. Problem zaczyna się wtedy, gdy autonomia jest definiowana jako całkowity brak potrzeb relacyjnych albo gdy bliskość jest definiowana jako rezygnacja z własnych granic. Oba skrajne modele są zbyt proste. Dojrzała relacyjność oznacza raczej możliwość utrzymania dwóch informacji naraz: „jesteś dla mnie ważny” oraz „nie jesteś całym moim systemem regulacji”.',
+            'Ta podwójność jest szczególnie widoczna w momentach stresu. Kiedy człowiek doświadcza zagrożenia, dostępność innych może zmieniać sposób, w jaki ocenia własne możliwości. Prośba o pomoc nie musi być dowodem bezradności; może być racjonalnym wykorzystaniem zasobów społecznych. Z drugiej strony ciągłe przenoszenie każdej trudności na drugą osobę może ograniczać rozwój własnych kompetencji. Dlatego pytanie nie powinno brzmieć „czy potrzebuję ludzi?”, lecz „w jaki sposób korzystam z relacji i co dzieje się ze mną, kiedy relacja jest chwilowo niedostępna?”.',
+            'Relacyjność wpływa również na obraz siebie. Człowiek uczy się, jak jest odbierany, poprzez powtarzające się informacje społeczne. Nie oznacza to jednak, że opinia innych tworzy całą tożsamość. Informacja zwrotna może być trafna, częściowo trafna albo zależna od kontekstu. Osoba, która w jednej grupie jest postrzegana jako spokojna, w innej może być odbierana jako wycofana. Ta różnica pokazuje, że obraz siebie powstaje w interakcji między własnym doświadczeniem a reakcjami środowiska.',
+            'Warto także pamiętać, że potrzeba więzi nie jest jednorodna. Możemy potrzebować emocjonalnego zrozumienia, praktycznej pomocy, obecności fizycznej, wspólnego działania albo samego poczucia, że istnieje osoba, do której możemy się zwrócić. Różne potrzeby mogą pojawiać się w różnych momentach. Człowiek może chcieć rozmowy jednego dnia, a ciszy następnego. Jeżeli relacja jest wystarczająco bezpieczna, zmienność ta nie musi oznaczać niestabilności. Może być zwykłym dostosowaniem do aktualnego stanu organizmu i sytuacji.',
+            'Najbardziej użyteczny model relacyjności jest więc dynamiczny. Zamiast pytać, czy ktoś jest „zależny” albo „niezależny”, pytamy, jak przechodzi między zbliżeniem, dystansem, poszukiwaniem wsparcia i samodzielnym działaniem. Dopiero obserwacja wielu takich przejść pozwala zrozumieć wzorzec. Pojedyncze zachowanie może być wynikiem aktualnego stresu, zmęczenia, konfliktu albo wyjątkowej stawki sytuacji.'
+          ]
+        },
       ]
     },
 
@@ -212,6 +225,19 @@ export const chapterThirtyFour: Chapter = {
         'Czym zatem jest autentyczna WIĘŹ (attachment bond)? Zgodnie z kryteriami psychologii przywiązania, relacja staje się więzią dopiero wtedy, gdy spełnia cztery specyficzne warunki:',
         '1. Dążenie do bliskości (Proximity Seeking): W warunkach dyskomfortu jednostka spontanicznie szuka fizycznego lub emocjonalnego kontaktu z obiektem przywiązania.\n2. Bezpieczna przystań (Safe Haven): Obecność drugiej osoby pozwala ukoić pobudzenie lękowe i odzyskać równowagę somatyczną.\n3. Bezpieczna baza (Secure Base): Poczucie, że druga osoba jest dostępna, umożliwia odważną eksplorację świata, podejmowanie ryzyka i naukę.\n4. Ból separacyjny (Separation Distress): Niechciane zerwanie kontaktu wywołuje ostry dyskomfort psychobiologiczny.',
         'Wielu ludzi uczestniczy w setkach powierzchownych relacji, nie doświadczając ani jednej bezpiecznej więzi — co tworzy paradoks „samotności w tłumie”.'
+      ],
+      subsections: [
+        // Warstwa pogłębienia — 34.2
+        {
+          title: 'Dlaczego intensywność nie jest miarą jakości więzi?',
+          paragraphs: [
+            'Intensywne relacje są łatwe do zauważenia, dlatego często wydają się psychologicznie ważniejsze od relacji spokojnych. Wysokie pobudzenie, częste wiadomości, gwałtowne pojednania i konflikty tworzą silne wspomnienia. Nie oznacza to jednak, że wysoka intensywność jest równoznaczna z bezpieczeństwem. Z punktu widzenia regulacji relacyjnej istotna jest również przewidywalność: czy człowiek wie, czego może oczekiwać, czy może komunikować potrzeby bez ciągłego testowania drugiej osoby i czy konflikt prowadzi do naprawy, czy do kolejnej rundy zagrożenia.',
+            'Można porównać dwie pary. Pierwsza pisze do siebie niemal bez przerwy, ale każda zmiana tonu wywołuje podejrzenia. Druga nie wymienia dziesiątek wiadomości dziennie, jednak obie osoby mają pewność, że mogą zadzwonić w trudnym momencie. W pierwszej relacji częstotliwość kontaktu jest wysoka, ale przewidywalność niska. W drugiej kontakt może być rzadszy, lecz jego znaczenie jest bardziej stabilne. Sama liczba interakcji nie rozstrzyga więc o jakości więzi.',
+            'Podobnie nie należy utożsamiać cierpienia z głębokością miłości. Jeśli człowiek nie może spać, jeść ani skupić się z powodu niepewności relacji, fakt ten mówi przede wszystkim o poziomie pobudzenia, a nie automatycznie o wartości związku. Silne emocje są informacją o stanie człowieka. Nie są samodzielnym dowodem na temat jakości drugiej osoby ani przyszłości relacji.',
+            'W praktyce warto obserwować trzy wymiary jednocześnie: znaczenie, bezpieczeństwo i autonomię. Znaczenie odpowiada na pytanie, jak ważna jest druga osoba. Bezpieczeństwo dotyczy przewidywalności i możliwości szukania wsparcia. Autonomia mówi o tym, czy człowiek zachowuje własne cele, granice i zdolność do funkcjonowania poza relacją. Dopiero ich zestaw daje bardziej użyteczny obraz niż prosta skala „mocno kocham — słabo kocham”.',
+            'To rozróżnienie chroni również przed romantyzowaniem niestabilności. Relacja pełna ciągłych zerwań i powrotów może być emocjonalnie intensywna, ale jej intensywność może wynikać z niepewności. Jeśli czytelnik zapamięta tylko jedną rzecz, powinna ona brzmieć: dramat nie jest jednostką pomiaru więzi.'
+          ]
+        },
       ]
     },
 
@@ -227,6 +253,19 @@ export const chapterThirtyFour: Chapter = {
         'W latach 50. XX wieku John Bowlby, brytyjski psychoanalityk i psychiatra dziecięcy, rzucił wyzwanie ówczesnemu dogmatowi głoszącemu, że niemowlę przywiązuje się do matki wyłącznie dlatego, że ta zaspokaja jego głód fizjologiczny (tzw. teoria popędowa).',
         'Inspirując się etologią (badaniami Konrada Lorenza nad wdrukowaniem u gęsi oraz eksperymentami Harry’ego Harlowa z młodymi rezusami wybierającymi miękką kukłę z tkaniny zamiast drucianej kukły podającej mleko), Bowlby sformułował rewolucyjną tezę: System przywiązania jest wrodzonym, ewolucyjnie ukształtowanym mechanizmem motywacyjnym.',
         'Dziecko nie szuka matki z powodu jedzenia — szuka ochrony przed drapieżnikami i regulacji termiczno-emocjonalnej. Bowlby wprowadził pojęcie WEWNĘTRZNYCH MODELI OPERACYJNYCH (Internal Working Models — IWM): poznawczo-afektywnych map, które mózg buduje w pierwszych latach życia. Model ten odpowiada na dwa kluczowe pytania: „Czy świat i inni ludzie są dostępni i bezpieczni?” oraz „Czy ja sam zasługuję na troskę i miłość?”.'
+      ],
+      subsections: [
+        // Warstwa pogłębienia — 34.3
+        {
+          title: 'Od teorii do modelu hipotez',
+          paragraphs: [
+            'Historia teorii przywiązania pokazuje, jak łatwo popularna psychologia zamienia model naukowy w jedną efektowną metaforę. Bowlby nie stworzył instrukcji obsługi każdego związku. Zaproponował ramę, w której zachowania związane z bliskością można rozumieć jako część systemu mającego znaczenie adaptacyjne. To przesunięcie było ważne, ponieważ pozwoliło patrzeć na zachowanie dziecka nie tylko przez pryzmat nagrody i kary, ale również przez pryzmat bezpieczeństwa, eksploracji i dostępności opiekuna.',
+            'Jednocześnie każda teoria naukowa musi być oddzielona od jej późniejszych uproszczeń. Jeżeli model mówi, że dostępność opiekuna wpływa na organizację zachowania, nie wynika z tego, że każdy późniejszy problem relacyjny ma jedną przyczynę w dzieciństwie. Rozwój jest wieloczynnikowy. Wpływ mają temperament, środowisko, rówieśnicy, kultura, późniejsze związki, stres, zasoby i sposób uczenia się. Wczesne doświadczenia mogą tworzyć oczekiwania, ale nowe doświadczenia mogą je modyfikować.',
+            'Szczególnie ważne jest pojęcie wewnętrznych modeli operacyjnych. Model nie musi być świadomym zdaniem typu „ludzie mnie opuszczają”. Może działać jako szybka przewidywana odpowiedź: „jeśli pokażę potrzebę, druga osoba się odsunie”. Taki model może wpływać na uwagę jeszcze przed pełną refleksją. Człowiek może szybciej zauważać sygnały potwierdzające przewidywanie, a pomijać sygnały sprzeczne. Nie jest to jednak mechanizm nieodwracalny. Model jest hipotezą organizującą zachowanie, którą doświadczenie może aktualizować.',
+            'Dlatego przydatnym sposobem czytania własnych reakcji jest traktowanie ich jako danych o przewidywaniach, a nie jako dowodów o rzeczywistości. Jeśli ktoś po opóźnionej odpowiedzi natychmiast przewiduje odrzucenie, warto zapytać: „jaką regułę o relacjach właśnie zastosowałem?”. Następnie można sprawdzić, czy nowe dane tę regułę potwierdzają, osłabiają czy wymagają jej zmiany.',
+            'Taki sposób myślenia jest znacznie bardziej elastyczny niż etykieta. Etykieta zamyka pytanie. Model hipotez je otwiera. Zamiast „jestem lękowy” można zapytać „w jakich sytuacjach mój system bezpieczeństwa szybko interpretuje niepewność jako zagrożenie?”. Zamiast „jestem unikający” można zapytać „kiedy bliskość zaczyna być przeze mnie odbierana jako utrata kontroli?”. To różnica między opisem człowieka a analizą procesu.'
+          ]
+        },
       ]
     },
 
@@ -242,6 +281,19 @@ export const chapterThirtyFour: Chapter = {
         'Mary Ainsworth przeniosła intuicje Bowlby’ego na grunt precyzyjnych badań empirycznych, tworząc procedurę „Obcej Sytuacji” (Strange Situation). Roczne dziecko przechodziło przez serię 8 epizodów: zabawa z matką, wejście obcej osoby, wyjście matki, pozostanie z obcym, samotność w pokoju, powrót matki.',
         'Kluczowe odkrycie Ainsworth nie dotyczyło tego, czy dzieci płaczą podczas separacji (płacze większość). Prawdziwa różnica ujawniła się w MOMENCIE POWROTU opiekuna:\n- Grupa B (Przywiązanie bezpieczne, ~65%): Dziecko wita matkę, szuka ukojenia, po 1-2 minutach uspokaja się i wraca do zabawy.\n- Grupa A (Przywiązanie lękowo-unikające, ~20%): Dziecko udaje obojętność, unika kontaktu wzrokowego, ignoruje matkę. Pomiary fizjologiczne wykazały jednak, że tętno i poziom kortyzolu u tych dzieci były równie wysokie jak u płaczących — ich spokój był maską behawioralną służącą uniknięciu kolejnego odrzucenia.\n- Grupa C (Przywiązanie lękowo-ambiwalentne/oporne, ~15%): Dziecko krzyczy, lgnie do matki, a jednocześnie bije ją rączkami i odpycha zabawki. Nie potrafi ukoić pobudzenia.',
         'WAŻNE OGRANICZENIE NAUKOWE: Obca Sytuacja badała zachowanie w 20-minutowym oknie w sztucznym laboratorium. Badania longitudynalne (np. Alana Sroufe’a) pokazują, że wzorzec z 12. miesiąca życia nie determinuje dorosłości w 100%. Bezpieczna relacja z nauczycielem, mentorem lub dorosłym partnerem może zreorganizować układ nerwowy (tzw. przywiązanie nabyte bezpieczne — earned secure).'
+      ],
+      subsections: [
+        // Warstwa pogłębienia — 34.4
+        {
+          title: 'Jak czytać badania Ainsworth bez tworzenia psychologicznych etykiet?',
+          paragraphs: [
+            'Procedura Strange Situation jest dobrym przykładem tego, że badanie może być jednocześnie bardzo wpływowe i ograniczone zakresem. Najpierw trzeba dokładnie określić populację: badane były małe dzieci w określonym wieku, w konkretnej procedurze rozdzielenia i ponownego połączenia z opiekunem. Dopiero później można pytać, jakie wzorce zachowania zaobserwowano. Każde rozszerzenie wniosku poza tę populację wymaga dodatkowych danych.',
+            'Warto też rozróżnić klasyfikację od diagnozy. Klasyfikacja opisuje podobieństwo obserwowanego zachowania do pewnego wzorca. Diagnoza sugeruje znacznie szerszy i bardziej stabilny wniosek o funkcjonowaniu człowieka. Nie należy więc mówić, że procedura „wykrywa zaburzenie przywiązania” u każdego dziecka. To zupełnie inny poziom twierdzenia.',
+            'Drugim ważnym elementem jest kontekst kulturowy. Różne środowiska mogą inaczej organizować kontakt dziecka z opiekunem, niezależność, obecność innych dorosłych czy sposób reagowania na obcych. Jeżeli zachowanie jest częściowo zależne od norm społecznych, jego znaczenie nie może być odczytywane bez uwzględnienia kontekstu. To nie unieważnia badań. Pokazuje jedynie, że dobra interpretacja wymaga więcej niż jednego uniwersalnego schematu.',
+            'Trzecia kwestia dotyczy rozwoju. Nawet jeśli wczesne doświadczenia mają znaczenie, człowiek nie przestaje się uczyć po dzieciństwie. Nowe relacje mogą dostarczać powtarzalnych doświadczeń korekcyjnych: ktoś mówi, że wróci, rzeczywiście wraca; człowiek ujawnia potrzebę i nie zostaje wyśmiany; konflikt kończy się naprawą. Takie doświadczenia mogą zmieniać przewidywania dotyczące dostępności innych.',
+            'Najbardziej naukowo ostrożny wniosek jest więc skromniejszy, ale bardziej użyteczny: badania Ainsworth pokazały, że sposób reagowania małego dziecka na separację i ponowne spotkanie może układać się w rozpoznawalne wzorce. Nie oznacza to, że jeden epizod przewiduje całe życie. Nie oznacza również, że człowiek jest „zaprogramowany” na jeden styl. Badanie daje punkt wyjścia do dalszych pytań, nie gotowy wyrok.'
+          ]
+        },
       ]
     },
 
@@ -258,6 +310,22 @@ export const chapterThirtyFour: Chapter = {
         'Jednak pod powierzchnią tych spotkań każde z nich wnosiło do relacji zupełnie inny bagaż doświadczeń i predykcji. Piotr dorastał w domu, w którym miłość była warunkowa i nagle odbierana w chwilach dziecięcego błędu. W jego mózgu bliskość była nierozerwalnie połączona z lękiem przed nagłym porzuceniem.',
         'Julia z kolei wychowała się w rodzinie o wysokim stopniu kontroli, gdzie rodzice czytali jej pamiętniki i nie szanowali zamkniętych drzwi pokoju. Dla niej intymność niosła podświadome zagrożenie utraty suwerenności i „połknięcia”.',
         'W czwartym tygodniu znajomości nastąpił z pozoru błahy incydent: Julia wyjechała na weekendowy warsztat jogi z zasadą offline, uprzedzając dzień wcześniej: „Będę miała wyłączony telefon do niedzieli wieczorem”. Jak zareagował umysł Piotra?'
+      ],
+      subsections: [
+        // Warstwa pogłębienia — 34.5
+        {
+          title: 'Analiza historii: kiedy brak informacji staje się paliwem dla więzi',
+          paragraphs: [
+            'Historia Leny jest interesująca dlatego, że nie potrzebuje złego bohatera. Nikt nie musi celowo manipulować, aby powstała spirala niepewności. Wystarczy mało informacji, wysoka stawka społeczna i szybka interpretacja. To częsty mechanizm w nowych grupach: człowiek nie zna jeszcze reguł środowiska, dlatego pojedyncze zdarzenia mają większą wartość informacyjną niż w ustabilizowanej relacji.',
+            'Możemy potraktować pierwsze tygodnie jako proces uczenia się modelu grupy. Lena zbiera dane: kto inicjuje rozmowy, kto żartuje, kto odpowiada szybko, kto planuje spotkania. Problem polega na tym, że dane są niepełne. Jedno pominięcie może być przypadkowe, ale umysł musi mimo wszystko podjąć działanie. Nie można czekać miesiącami z każdą decyzją społeczną. Dlatego powstają hipotezy robocze.',
+            'Jeżeli hipoteza brzmi „nie jestem mile widziana”, zmienia ona uwagę. Lena zaczyna zauważać przede wszystkim zachowania zgodne z tą wersją. Jeżeli ktoś nie odpowie, zapamięta to. Jeżeli ktoś ją zaprosi, może uznać, że „pewnie robi to z grzeczności”. W ten sposób nie trzeba nawet świadomie kłamać, aby powstała selektywna historia. Wystarczy nierównomierna waga przyznawana różnym informacjom.',
+            'Kolejny krok jest jeszcze ważniejszy: zachowanie wynikające z interpretacji staje się nową informacją dla innych. Lena wycofuje się, więc grupa ma mniej okazji do kontaktu. Mniejszy kontakt jest następnie przez Lenę odczytywany jako potwierdzenie. To klasyczny przykład sprzężenia zwrotnego, w którym początkowa hipoteza wpływa na zachowanie, a zachowanie zmienia środowisko.',
+            'Najbardziej dojrzałą reakcją nie jest zatem zmuszenie siebie do „pozytywnego myślenia”. Byłoby to kolejnym uproszczeniem. Lepszym celem jest utrzymanie kilku hipotez wystarczająco długo, aby zdobyć więcej informacji. „Może mnie pominięto celowo”, „może to było spontaniczne”, „może grupa jeszcze mnie nie zna”, „może ktoś zakładał, że mam inne plany” — te możliwości nie muszą być równie prawdopodobne. Ważne, że żadna nie zostaje przedwcześnie uznana za pewnik.',
+            'Właśnie tutaj więź łączy się z epistemologią codziennego życia. Bliskość wymaga nie tylko emocji, ale także zarządzania niepewnością. Im ważniejsza osoba lub grupa, tym większa pokusa, aby szybko zamknąć niejednoznaczność. Człowiek chce wiedzieć, czy jest bezpieczny. Paradoksalnie zbyt szybka pewność może jednak utrudnić zdobycie informacji, ponieważ uruchamia zachowania, które zmieniają reakcje otoczenia.',
+            'Dlatego historia Leny nie kończy się prostą instrukcją „zawsze pytaj wprost”. Pytanie wprost też może być nieadekwatne, jeśli stawka jest niska, a koszt konfrontacji wysoki. Chodzi o dobór działania do niepewności. Czasem najlepszą strategią jest obserwacja kolejnych sytuacji. Czasem rozmowa z jedną osobą. Czasem bezpośrednie pytanie. Czasem zaakceptowanie, że nie każda grupa będzie źródłem bliskości. Dojrzałość polega na tym, że człowiek nie potrzebuje jednej uniwersalnej reakcji.',
+            'Ta historia wprowadza również ważny motyw na dalsze części rozdziału: relacje są układami dwustronnymi. Nie wystarczy analizować, co dzieje się „we mnie”. Trzeba również zapytać, jak moje zachowanie staje się informacją dla innych. To właśnie z takich kolejnych rund powstają stabilne wzorce relacyjne.'
+          ]
+        },
       ]
     },
 
