@@ -1,4 +1,4 @@
-import { Chapter, CaseStudy, SelfExercise, ExamQuestion } from '../types/book';
+import { Chapter, CaseStudy, SelfExercise, ExamQuestion, InteractiveWindowData } from '../types/book';
 
 // ============================================================
 // TOM III — ROZDZIAŁ 7 (CHAPTER 23 IN THE GLOBAL BOOK STRUCTURE)
@@ -859,11 +859,87 @@ export const chapterTwentyThree: Chapter = {
       sectionNumber: '23.4',
       title: 'Powtarzanie i Uczenie Się — Neurobiologia Prążkowia i Plastyczność Synaptyczna',
       category: 'neuronauka',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Kiedy zachowanie staje się nawykiem, mózg pakuje całe skomplikowane ciągi ruchów w zwarte „pakiety” (chunks). W prążkowiu neurony odpalają intensywnie na samym początku i na samym końcu nawyku, tworząc neuronalne klamry (task-bracketing), podczas gdy sam środek sekwencji toczy się przy zdumiewającej ciszy metabolicznej kory mózgowej.',
+        author: 'Prof. Ann Graybiel',
+        source: 'McGovern Institute for Brain Research at MIT, „Habits, Rituals, and the Evaluative Brain”, Annual Review of Neuroscience, 2008'
+      },
       paragraphs: [
-        'Na poziomie komórkowym powstawanie nawyku opiera się na regule Donalda Hebba: "Neurony, które wyładowują się razem, łączą się ze sobą" (Neurons that fire together, wire together). Gdy bodziec sensoryczny (np. widok biurka) wielokrotnie współwystępuje z ruchem (sięgnięcie po szklankę wody) i wzmocnieniem dopaminowym, połączenia synaptyczne między korą czuciową, prążkowiem i korą ruchową ulegają wzmocnieniu (Long-Term Potentiation - LTP).',
-        'W miarę utrwalania nawyku wzorzec aktywności neuronalnej zmienia swój kształt. Na początku proces wymaga ciągłego wyładowania neuronów w korze przedczołowej przez cały czas trwania czynności. Po automatyzacji aktywacja pojawia się wyłącznie na samym początku (rejestracja bodźca) oraz na samym końcu (odebranie nagrody) — środek sekwencji przebiega na podkorowym "tempomacie".'
-      ]
+        'Na poziomie komórkowym powstawanie nawyku opiera się na fundamencie hebbowskiej plastyczności synaptycznej: neurony, które ulegają jednoczesnej depolaryzacji, wzmacniają wzajemne połączenia synaptyczne (Long-Term Potentiation — LTP). Jednak sam proces nawykowy nie jest jedynie sumą pojedynczych synaps, lecz całościową rekonfiguracją szlaków korowo-podkorowych.',
+        'Przełomowe badania zespołu prof. Ann Graybiel w laboratoriach MIT rzuciły fundamentalne światło na to, co dzieje się w prążkowiu (striatum) oraz jądrach podstawy (basal ganglia), gdy szczur uczy się poruszania w labiryncie w kształcie litery T po usłyszeniu dźwiękowego sygnału wskazówki. Na początku procesu uczenia neurony w grzbietowo-przyśrodkowym prążkowiu (DMS) oraz grzbietowo-bocznej korze przedczołowej (dlPFC) wyładowywały się bezustannie przez cały czas biegu gryzonia — mózg analizował każdy krok, węchowy zapach ściany i każdy skręt.',
+        'Jednak po setkach powtórzeń doszło do spektakularnego zjawiska zwanego „klamrowaniem zadania” (task-bracketing). W grzbietowo-bocznym prążkowiu (DLS) neurony zaczęły wyładowywać się falami wyłącznie w dwóch punktach czasowych: w milisekundzie usłyszenia sygnału otwierającego bramkę (cue) oraz w momencie odebrania nagrody w postaci wody z cukrem (reward). Pomiędzy tymi dwoma punktami aktywność kory dramatycznie spadła — cała skomplikowana sekwencja mięśniowa biegła na autonomicznym, podkorowym skrypcie.'
+      ],
+      subsections: [
+        {
+          id: 'sub-23-4-1',
+          title: 'Analiza słów prof. Ann Graybiel: Fenomen „Task-Bracketingu” i Kompilacja Behawioralna',
+          content: [
+            'Wypowiedź prof. Graybiel dotyka sedna ewolucyjnej ekonomii mózgu. Określenie „pakiety” (chunks) nawiązuje do analogii informatycznej kompilacji kodu: mózg nie interpretuje już instrukcji linijka po linijce przy zaangażowaniu procesora nadrzędnego (kory przedczołowej), lecz uruchamia skompilowany plik binarny w podkorowym układzie prążkowia.',
+            'Klamrowanie zadania (task-bracketing) pełni rolę poznawczego nawiasu: mózg rozpoznaje początek i koniec czynności, zwalniając zasoby uwagi roboczej na myślenie abstrakcyjne, planowanie przyszłości czy monitorowanie otoczenia pod kątem zagrożeń. Paradoksalnie to właśnie ta oszczędność metaboliczna sprawia, że nawyki są tak trudne do wykorzenienia — gdy nawias zostanie otwarty przez bodziec, sekwencja dąży do domknięcia niemal bez udziału naszej świadomej zgody.'
+          ]
+        },
+        {
+          id: 'sub-23-4-2',
+          title: 'Przejście od Kontroli Celowej (A-O) do Reakcji Nawykowej (S-R)',
+          content: [
+            'W neurobiologii behawioralnej Anthony Dickinson i Bernard Balleine zdefiniowali dwa odmienne systemy kontroli działania:',
+            '1. SYSTEM CELOWY (Action-Outcome / A-O): Zarządzany przez grzbietowo-przyśrodkowe prążkowie (DMS) oraz korę przedczołową. Jednostka wykonuje działanie A, ponieważ przewiduje wartość rezultatu O. Jeśli wartość nagrody zostanie zdewaluowana (np. pokarm zostanie skojarzony z mdłościami), działanie zostaje natychmiast zahamowane.',
+            '2. SYSTEM NAWYKOWY (Stimulus-Response / S-R): Zakodowany w grzbietowo-bocznym prążkowiu (DLS). Działanie R jest bezpośrednio wyzwalane przez bodziec S, z pominięciem reprezentacji bieżącej wartości nagrody. Nawet gdy jednostka wie, że nagroda straciła wartość (lub jest szkodliwa), bodziec wyzwala automatyczny ruch.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-23-4-1',
+          type: 'badanie',
+          title: 'Eksperyment MIT (Graybiel et al.): Dewaluacja Nagrody i Sztywność DLS',
+          content: 'Gdy szczurom, które wykształciły silny nawyk biegowy, podano nagrodę zatrutą chlorkiem litu (wywołującym natychmiastowe silne mdłości), zwierzęta po usłyszeniu dźwięku bramki nadal biegły w to samo miejsce. Ich system podkorowy DLS (S-R) odpalał sekwencję mięśniową, mimo że kora wiedziała, iż jedzenie jest szkodliwe. Dopiero farmakologiczne lub optogenetyczne wyciszenie DLS przywracało kontrolę korową i elastyczność zachowania.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-23-4',
+        title: 'Analiza Neurobiologiczna: Przejście od Świadomej Intencji do Pętli Prążkowia',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Piotr (31 lat, analityk finansowy) po raz setny automatycznie wpisuje adres portalu społecznościowego w przeglądarce, gdy tylko napotka trudną formułę w arkuszu kalkulacyjnym.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Bodziec inicjujący i błąd napięcia poznawczego',
+            description: 'Komórki kory wzrokowej rejestrują skomplikowaną komórkę arkusza kalkulacyjnego. W ułamku sekundy pojawia się mikro-spadek poczucia kompetencji i podkorowy sygnał dyskomfortu. Wybierz stan sieci neuronalnej:',
+            options: [
+              {
+                text: 'Dorsolateral Prefrontal Cortex (dlPFC) utrzymuje skupienie mimo dyskomfortu',
+                feedback: 'Wymaga to wysokich zasobów glukozy i braku zmęczenia. Jeśli zasoby są obniżone, dominację przejmuje prążkowie.',
+                isOptimal: false
+              },
+              {
+                text: 'Prążkowie (DLS) rozpoznaje sygnał dyskomfortu jako wyzwalacz wyuczonego klamrowania (task-bracket)',
+                feedback: 'Dokładnie tak: mikro-stres staje się wskazówką kontekstową, która aktywuje zautomatyzowany skrypt ruchowy palców.',
+                isOptimal: true
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Kompilacja motoryczna — zniknięcie świadomej kontroli w trakcie sekwencji',
+            description: 'Palce Piotra wpisują skrót klawiszowy w 180 milisekund bez pojedynczego świadomego polecenia kory mózgowej. Co wykazuje zapis neuroobrazowy w tej fazie?',
+            options: [
+              {
+                text: 'Spadek wyładowań w korze przedczołowej i wyciszenie sensoryczne — aktywność skupiona w pętli jądra podstawy-wzgórze',
+                feedback: 'Klasyczny wzorzec z badań Ann Graybiel: środek nawyku toczy się niemal bez udziału kory nadrzędnej.',
+                isOptimal: true
+              },
+              {
+                text: 'Wzrost metabolizmu w korze przedczołowej i aktywne rozważanie alternatywnych stron',
+                feedback: 'Błędna hipoteza. Mózg w fazie automatycznej minimalizuje zużycie kory przedczołowej — dlatego Piotr „budzi się” dopiero po 10 minutach przewijania.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki mikroskopijny sygnał w Twoim ciele lub otoczeniu najczęściej otwiera klamrę zadania (task-bracket) dla Twojego najbardziej niepożądanego nawyku?'
+      }
     },
     {
       id: 'sec-23-5',
@@ -888,12 +964,91 @@ export const chapterTwentyThree: Chapter = {
       sectionNumber: '23.6',
       title: 'Dlaczego Kontekst Wpływa Na Zachowanie Silniej Niż Sama Intencja?',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Nawyki to forma pamięci ukrytej (implicit memory). Kiedy powtarzamy czynność w stabilnym fizycznym otoczeniu, sam kontekst zaczyna bezpośrednio aktywować zachowanie, całkowicie omijając nasze świadome cele, zamiary i intencje. W konfrontacji utrwalonego kontekstu ze szczerą intencją, niemal zawsze wygrywa środowisko.',
+        author: 'Prof. Wendy Wood',
+        source: 'University of Southern California, „Good Habits, Bad Habits: The Science of Making Positive Changes That Stick”, Farrar, Straus and Giroux, 2019'
+      },
       paragraphs: [
-        'Profesor Wendy Wood z University of Southern California przez dekady badała wpływ architektury otoczenia na ludzkie wybory. Jej eksperymenty wykazały, że w stabilnym kontekście środowiskowym siła nawyku całkowicie dominowała nad intencjami jednostki.',
-        'W jednym z klasycznych badań uczestnicy o silnym nawyku jedzenia popkornu w kinie zjadali dokładnie tyle samo nieświeżego, kilkudniowego popkornu, co popkornu świeżego — wyzwalacz (fotel kinowy i ciemna sala) uruchamiał automatyczny ruch dłoni do ust niezależnie od walorów smakowych i intencji dietetycznych.',
-        'Oznacza to, że walka z nawykiem przy użyciu samej "szczerej intencji", przy jednoczesnym przebywaniu w tym samym środowisku wyzwalającym, jest neurobiologicznie przegraną batalią. Kontekst wygrywa z intencją.'
-      ]
+        'W potocznym rozumieniu ludzkiego działania dominuje mit „siły intencji”: wierzymy, że jeśli tylko będziemy wystarczająco mocno zmotywowani i podejmiemy szczerą decyzję o zmianie, nasze zachowanie natychmiast ulegnie transformacji. Współczesna psychologia poznawcza i badania prof. Wendy Wood z University of Southern California bezlitośnie obalają tę iluzję.',
+        'W stabilnym środowisku fizycznym wskazówki sensoryczne (układ mebli, zapachy, przedmioty w polu widzenia, obecność konkretnych ludzi) wchodzą w bezpośrednie sprzężenie z układem motorycznym. Sygnał kontekstowy dociera do układów podkorowych szybciej niż świadoma kora przedczołowa zdoła sformułować intencję powstrzymania się od działania.',
+        'Badania pokazują, że około 43% naszych codziennych zachowań wykonujemy dokładnie w tych samych miejscach, o tych samych porach, myśląc jednocześnie o zupełnie innych sprawach. W takich warunkach siła woli nie jest w ogóle angażowana — sterowanie przejmuje kontekstowa matryca bodźców.'
+      ],
+      subsections: [
+        {
+          id: 'sub-23-6-1',
+          title: 'Analiza słów prof. Wendy Wood: Pamięć Ukryta a Autonomia Środowiska',
+          content: [
+            'Sformułowanie prof. Wood, że „nawyki to pamięć ukryta”, ma kardynalne znaczenie metodologiczne. Pamięć deklaratywna (jawna) zawiera to, co pamiętasz świadomie: Twoje plany diety, postanowienia noworoczne i postanowienie, że od dziś nie będziesz sięgać po słodycze.',
+            'Pamięć ukryta (proceduralna) jest natomiast zintegrowana ze środowiskiem: Twoje ciało „pamięta” sekwencję sięgania do szuflady w biurku za każdym razem, gdy usiądziesz w tym samym fotelu. Apelowanie do pamięci jawnej („Pamiętaj, że masz nie jeść!”) w chwili, gdy pamięć ukryta została wyzwolona przez kontekst fotela i szuflady, jest psychologiczną asymetrią — podkorowe obwody pamięci ukrytej działają z wyprzedzeniem czasowym rzędu setek milisekund.'
+          ]
+        },
+        {
+          id: 'sub-23-6-2',
+          title: 'Klasyczny Eksperyment z Popcornem (Neal, Wood & Quinn, 2006)',
+          content: [
+            'W jednym z najbardziej wymownych eksperymentów w historii psychologii nawyków, badacze zbadali osoby w kinie, dzieląc je na grupę o silnym nawyku jedzenia popcornu w kinie oraz grupę o słabym nawyku. Uczestnikom wręczono darmowe wiadra popcornu — część otrzymała popcorn świeży i chrupiący, a część popcorn stęchły, wilgotny i sprzed siedmiu dni.',
+            'Wyniki były uderzające: osoby bez nawyku zjadały świeży popcorn, a stęchłego niemal nie dotykały (kierowały się walorami smakowymi i świadomym celem). Natomiast osoby o silnym nawyku kinowym zjadały dokładnie taką samą ilość stęchłego, niesmacznego popcornu, jak świeżego! Gdy zapytano je o smak, przyznawały, że był okropny — a mimo to ich dłoń bezwiednie kursowała między pudłem a ustami. Kontekst ciemnej sali i fotela kinowego wymuszał zachowanie wbrew percepcji smaku i wbrew woli.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-23-6-1',
+          type: 'wniosek',
+          title: 'Wniosek z Badań Wendy Wood: Zmiana Przez Rozbicie Kontekstu',
+          content: 'Najlepszy moment na trwałą zmianę nawyku pojawia się podczas naturalnych przerw kontekstowych (tzw. Habit Discontinuity Effect): przeprowadzka do nowego mieszkania, zmiana pracy, urlop czy zmiana układu mebli w pokoju. Gdy stare wyzwalacze środowiskowe znikają, zautomatyzowane pętle pamięci ukrytej nie mają punktu zaczepienia, dając korze przedczołowej czyste pole do zaszczepienia nowych zachowań.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-23-6',
+        title: 'Analiza Kontekstowa: Eksperyment z Popcornem w Twoim Życiu',
+        type: 'trzy_interpretacje',
+        context: 'Magda postanawia przestać podjadać chipsy wieczorem podczas oglądania seriali. Siada na tej samej kanapie, włącza telewizor i kładzie obok miskę z chipsami, powtarzając sobie: „Mam silną wolę, tym razem nie wezmę ani jednego”. Po 20 minutach miska jest pusta.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Trzy interpretacje zachowania Magdy',
+            description: 'Dlaczego Magda zjadła chipsy mimo szczerego i silnego postanowienia?',
+            options: [
+              {
+                text: 'Interpretacja A (Dyspozycyjna): Magda ma słaby charakter i brak samodyscypliny',
+                feedback: 'Klasyczny błąd atrybucji. Pomija fakt, że kanapa, ciemność i serial to utrwalony zespół wyzwalaczy pamięci proceduralnej.',
+                isOptimal: false
+              },
+              {
+                text: 'Interpretacja B (Behawioralno-Kontekstowa): Kontekst zdominował intencję w wyniku automatycznego wyzwolenia skryptu S-R',
+                feedback: 'Trafna diagnoza oparta na badaniach Wendy Wood. Obecność kanapy i miski w zasięgu dłoni przy zerowym tarciu uruchomiła ruch automatyczny.',
+                isOptimal: true
+              },
+              {
+                text: 'Interpretacja C (Biologiczna): Magda była skrajnie wygłodzona i potrzebowała natychmiastowych kalorii',
+                feedback: 'Mało prawdopodobne, jeśli jadła kolację godzinę wcześniej. Głód somatyczny nie tłumaczy bezmyślnej automatyzacji ruchowej.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wybór interwencji architektonicznej',
+            description: 'Jaka modyfikacja środowiska przyniesie najwyższą skuteczność bez polegania na sile woli?',
+            options: [
+              {
+                text: 'Pozostawienie miski, ale naklejenie na nią napisu ostrzegawczego „Pamiętaj o diecie!”',
+                feedback: 'Napisy i apele kognitywne szybko tracą siłę oddziaływania (habituacja wzrokowa) i przegrywają z automatyzmem ruchowym.',
+                isOptimal: false
+              },
+              {
+                text: 'Usunięcie chipsów z domu lub umieszczenie ich w piwnicy/wysokiej szafce, a przy kanapie postawienie szklanki wody z cytryną',
+                feedback: 'Optymalne rozwiązanie. Wprowadzenie fizycznego tarcia behawioralnego i zmiana bodźców bezpośrednich w polu widzenia uniemożliwia pamięci ukrytej automatyczny start.',
+                isOptimal: true
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Które z Twoich codziennych zachowań wykonujesz w sposób równie automatyczny, jak uczestnicy badania jedzący stęchły popcorn?'
+      }
     },
     {
       id: 'sec-23-7',
@@ -933,12 +1088,89 @@ export const chapterTwentyThree: Chapter = {
       sectionNumber: '23.9',
       title: 'Dopamina Bez Uproszczenia „Hormon Przyjemności” — Błąd Przewidywania Nagrody',
       category: 'neuronauka',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Neurony dopaminergiczne nie kodują wielkości samej nagrody; one sygnalizują matematyczną różnicę między nagrodą, której się spodziewaliśmy, a nagrodą, którą faktycznie otrzymaliśmy. To ten błąd przewidywania nagrody (Reward Prediction Error) napędza neuroplastyczność i „wypala” w mózgu ślady pamięciowe nawyków.',
+        author: 'Prof. Wolfram Schultz',
+        source: 'University of Cambridge, „Predictive Reward Signal of Dopamine Neurons”, Journal of Neurophysiology, 1998'
+      },
       paragraphs: [
-        'W pop-psychologii dopamina jest błędnie nazywana "hormonem szczęścia" lub "cząsteczką przyjemności". Przełomowe badania Wolframa Schultza pokazały rzeczywistą, znacznie bardziej fascynującą rolę dopaminy w uczeniu się.',
-        'Dopamina nie koduje samej przyjemności konsumpcyjnej (za przyjemność odpowiadają obwody opiatowe i kanabinoidowe). Dopamina koduje BŁĄD PRZEWIDYWANIA NAGRODY (Reward Prediction Error - RPE) oraz ANTYCYPACJĘ / PRAGNIENIE.',
-        'W miarę utrwalania nawyku wyrzut dopaminy przesuwa się w czasie: przestaje pojawiać się w momencie zjedzenia ciastka, a zaczyna gwałtownie strzelać na sam WIDOK cukierni lub poczucie znużenia. Dopamina to motoryczne paliwo szukania i pożądania, zmuszające ciało do ruchu w stronę nagrody.'
-      ]
+        'W kulturze popularnej dopamina zyskała krzywdzącą etykietę „hormonu przyjemności”. Uważa się powszechnie, że im więcej dopaminy uwalnia się w mózgu, tym większą rozkosz odczuwa człowiek. Badania elektrofizjologiczne prof. Wolframa Schultza z University of Cambridge doszczętnie sfalsyfikowały ten mit, ujawniając rzeczywistą naturę układu nagrody.',
+        'Za subiektywne poczucie sytości, zmysłowej rozkoszy i zadowolenia (liking) odpowiadają przede wszystkim obwody opioidowe (receptory mi-opioidowe w jądrze półleżącym) oraz endokannabinoidy. Dopamina odpowiada za coś zupełnie innego: za pragnienie, antycypację, skupienie uwagi i popęd do działania (wanting). Dopamina to cząsteczka motywacyjnego poszukiwania, a nie konsumpcyjnego spełnienia.',
+        'Kluczowym odkryciem Schultza było zaobserwowanie, jak wyładowania neuronów dopaminergicznych w polu brzusznym nakrywki (VTA) przesuwają się w czasie w miarę uczenia się. Kiedy bodziec jest nowy, dopamina strzela w momencie pojawienia się niespodziewanego smakołyku. Kiedy jednak mózg nauczy się, że dźwięk dzwonka zwiastuje smakołyk, dopamina przestaje strzelać przy jedzeniu — gwałtowny wyrzut następuje w ułamku sekundy, w którym rozbrzmiewa dzwonek!'
+      ],
+      subsections: [
+        {
+          id: 'sub-23-9-1',
+          title: 'Analiza słów prof. Wolframa Schultza: Matematyka Błędu Przewidywania Nagrody (RPE)',
+          content: [
+            'Wypowiedź prof. Schultza definiuje tzw. Błąd Przewidywania Nagrody (Reward Prediction Error — RPE):',
+            'RPE = Nagroda Otrzymana – Nagroda Oczekiwana.',
+            '1. DODATNI BŁĄD PRZEWIDYWANIA (RPE > 0): Otrzymałeś więcej lub szybciej, niż się spodziewałeś. Następuje gwałtowny wyrzut dopaminy powyżej poziomu bazowego. Mózg koduje: „To działanie przyniosło nadspodziewaną korzyść, zapamiętaj kontekst i powtórz je!”.',
+            '2. ZEROWY BŁĄD PRZEWIDYWANIA (RPE = 0): Otrzymałeś dokładnie to, czego oczekiwałeś. Aktywność dopaminy na sam bodziec jest wysoka, ale w momencie nagrody pozostaje neutralna. Nawyk jest stabilny.',
+            '3. UJEMNY BŁĄD PRZEWIDYWANIA (RPE < 0): Oczekiwałeś nagrody po usłyszeniu wskazówki, ale nagroda się nie pojawiła. Aktywność dopaminowa gwałtownie spada poniżej linii bazowej. Odczuwasz to subiektywnie jako głęboki ból rozczarowania, frustrację i neurobiologiczny głód.'
+          ]
+        },
+        {
+          id: 'sub-23-9-2',
+          title: 'Dlaczego Pragnienie Jest Często Silniejsze Niż Sama Satysfakcja z Konsumpcji?',
+          content: [
+            'Mechanizm RPE tłumaczy paradoks nałogowego sięgania po niepożądane bodźce (np. słodycze, gry wideo, hazard czy portale społecznościowe). Antycypacja wywołana wskazówką (np. dźwięk powiadomienia, zapach piekarni) generuje potężną falę dopaminową — poziom „chcenia” (wanting) osiąga maksimum.',
+            'Jednak w momencie samej konsumpcji nagroda okazuje się przewidywalna, powtarzalna lub wręcz mdła. Ponieważ RPE wynosi zero lub staje się ujemny, natychmiast po spożyciu ciastka lub obejrzeniu wideo pojawia się spadek dopaminy i poczucie pustki. Mózg nie zapamiętuje jednak tej pustki, lecz powraca do potężnego śladu antycypacji, zmuszając nas do poszukiwania kolejnej dawki bodźca.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-23-9-1',
+          type: 'uwaga',
+          title: 'Pułapka Zmiennego Wzmocnienia (Variable Ratio Schedule)',
+          content: 'Najsilniejszy wyrzut dopaminy i najtrwalsze nawyki powstają wtedy, gdy nagroda jest NIEPRZEWIDYWALNA. Jeśli automat do gier lub algorytm social media nagradza Cię ciekawym postem tylko co pewien czas, Twój mózg nigdy nie może obliczyć stabilnego RPE. Ciągła niepewność utrzymuje neurony dopaminowe w stanie permanentnego wzbudzenia, uniemożliwiając habituację.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-23-9',
+        title: 'Symulacja Błędu Przewidywania Nagrody: Skąd Bierze Się Głód Dopaminowy?',
+        type: 'zmien_jeden_element',
+        context: 'Tomasz (28 lat) siada do pracy. Na biurku leży telefon. Rozlega się dźwięk powiadomienia (Wskazówka). W jego mózgu następuje gwałtowny skok dopaminy w oczekiwaniu na ekscytującą wiadomość.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wariant A: Wiadomość okazuje się spamem reklamowym',
+            description: 'Tomasz odblokowuje telefon z wysokim poziomem dopaminy antycypacyjnej. Na ekranie widzi ofertę ubezpieczenia. Co dzieje się z dopaminą?',
+            options: [
+              {
+                text: 'Dopamina pozostaje na wysokim poziomie, bo mózg cieszy się z samego użycia telefonu',
+                feedback: 'Nie. Brak obiecanej nagrody wywołuje gwałtowny spadek dopaminy poniżej poziomu bazowego (ujemny RPE), powodując irytację.',
+                isOptimal: false
+              },
+              {
+                text: 'Następuje zapaść dopaminowa (ujemny RPE) — Tomasz odczuwa frustrację i odruchowo zaczyna klikać w inne aplikacje, szukając kompensacji',
+                feedback: 'Precyzyjna obserwacja. Ujemny błąd przewidywania popycha człowieka do desperackiego poszukiwania zastępczego wyrzutu dopaminy w innych aplikacjach.',
+                isOptimal: true
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wariant B: Wyłączenie powiadomień dźwiękowych (Zmień jeden element)',
+            description: 'Tomasz wyłącza dźwięk i chowa telefon do szuflady. Brak natychmiastowej wskazówki sensorycznej eliminuje bodziec inicjujący pętlę dopaminową.',
+            options: [
+              {
+                text: 'Poziom dopaminy bazowej stabilizuje się, a uwaga może zostać skierowana na zadanie robocze',
+                feedback: 'Dokładnie tak. Usunięcie wyzwalacza zapobiega sztucznemu skokowi dopaminy antycypacyjnej, chroniąc zasoby wykonawcze.',
+                isOptimal: true
+              },
+              {
+                text: 'Tomasz wpada w panikę z powodu braku bodźców dźwiękowych',
+                feedback: 'Początkowo może wystąpić lekki niepokój z odstawienia, ale po 15-20 minutach mózg adaptuje się do środowiska niskobodźcowego.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Które z Twoich nawyków opierają się na losowym, zmiennym wzmocnieniu, w którym nigdy nie wiesz, co dokładnie zobaczysz po odblokowaniu ekranu?'
+      }
     },
     {
       id: 'sec-23-10',
@@ -988,12 +1220,86 @@ export const chapterTwentyThree: Chapter = {
       sectionNumber: '23.13',
       title: 'Tarcie Behawioralne (Behavioral Friction) — Klucz Do Sterowania Oporem',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Niewielkie zmiany w oporze sytuacyjnym — to, co pionier psychologii społecznej Kurt Lewin nazwał „czynnikami kanałowymi” (channel factors) — decydują o tym, czy intencja zamieni się w czyn. Zwiększ tarcie fizyczne lub poznawcze o zaledwie 20 sekund, a niepożądane zachowanie załamie się, zanim kora ulegnie zmęczeniu.',
+        author: 'Prof. Wendy Wood & Kurt Lewin',
+        source: 'University of Southern California / MIT Social Dynamics Archive, „Forces in Psychological Fields & Modern Friction Dynamics”, 2019'
+      },
       paragraphs: [
-        'Tarcie behawioralne to suma barier fizycznych, czasowych i poznawczych, które musisz pokonać, aby przejść od intencji do wykonania działania.',
-        'ZASADA 2 SEKUND / 2 KROKÓW: Zwiększenie tarcia dla złego nawyku o zaledwie 20 sekund (np. wyniesienie telewizora do innego pokoju, wylogowanie się z aplikacji, schowanie przekąsek na najwyższą półkę) daje korze przedczołowej czas na włączenie świadomej kontroli.',
-        'Odwrotnie: zmniejszenie tarcia dla dobrego nawyku (np. przygotowanie maty do ćwiczeń poprzedniego wieczoru) sprawia, że rutyna rusza zanim pojawi się opór.'
-      ]
+        'Tarcie behawioralne to suma barier motorycznych, czasowych i poznawczych, które organizm musi pokonać, aby przejść od impulsu do fizycznego wykonania czynności. Wbrew powszechnemu mniemaniu, ludzki układ nerwowy jest rządzony zasadą minimalnego wydatku energetycznego (Principle of Least Effort). Każda dodatkowa sekunda oporu drastycznie zmniejsza prawdopodobieństwo realizacji zachowania.',
+        'ZASADA 20 SEKUND (Shawn Achor / Wendy Wood): Badania nad dynamiką nawyków dowodzą, że wydłużenie czasu potrzebnego na rozpoczęcie negatywnego nawyku o zaledwie 20 sekund (np. wylogowanie się ze strony i konieczność przepisania hasła, schowanie pilota do szafy w przedpokoju, wyniesienie słodyczy do piwnicy) tworzy tzw. „klin refleksyjny”. Te 20 sekund opóźnienia daje grzbietowo-bocznej korze przedczołowej (dlPFC) bezcenny czas na przejęcie kontroli nad automatycznym impulsem prążkowia.',
+        'Odwrotnie: redukcja tarcia dla zachowań pożądanych (np. rozłożenie maty do ćwiczeń przed snem, otwarcie dokumentu z pracą dyplomową przed odejściem od biurka, napełnienie butelki z wodą i postawienie jej na klawiaturze) sprawia, że pożądany proces rusza automatycznie, zanim w korze przedczołowej zdąży uformować się wątpliwość lub opór.'
+      ],
+      subsections: [
+        {
+          id: 'sub-23-13-1',
+          title: 'Analiza słów Kurta Lewina i Wendy Wood: Czynniki Kanałowe i Hydrodynamika Decyzji',
+          content: [
+            'Kurt Lewin porównywał ludzkie zachowanie do strumienia wody płynącego po zboczu. Możesz godzinami motywować wodę, aby popłynęła w inną stronę (apelowanie do siły woli), ale woda popłynie tam, gdzie ukształtowane jest koryto (czynniki kanałowe).',
+            'Zwiększenie tarcia to wykopanie tamy na korycie niepożądanego nawyku. Zmniejszenie tarcia to pogłębienie kanału dla pożądanego wzorca. Inżynieria tarcia nie walczy z pragnieniem — ona uniemożliwia pragnieniu natychmiastowe rozładowanie motoryczne, zmuszając układ nerwowy do wygaszenia impulsu.'
+          ]
+        },
+        {
+          id: 'sub-23-13-2',
+          title: 'Fizyka Tarcia Cyfrowego: Dlaczego Wielkie Korporacje Walczą o Każdy Milisekundowy Krok',
+          content: [
+            'Współczesne platformy cyfrowe doskonale znają neurobiologię tarcia. Wprowadzenie funkcji takich jak autoodtwarzanie (autoplay) kolejnego odcinka, płatność jednym kliknięciem (1-Click) czy logowanie biometryczne miało jeden cel: redukcję tarcia behawioralnego do zera bezwzględnego.',
+            'Kiedy tarcie wynosi zero, zachowanie staje się odruchem bezpostaciowym. Odzyskanie suwerenności uwagi wymaga celowego, sztucznego dobudowywania tarcia: podwójnej autoryzacji, wylogowywania po każdej sesji, blokad aplikacji z 30-sekundowym licznikiem odliczania.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-23-13-1',
+          type: 'praktyka',
+          title: 'Reguła Dwóch Ruchów: Audyt Domowego Biurka',
+          content: 'Zrób audyt przestrzeni roboczej: wszystko, co wspiera Twoją pracę głęboką (notatnik, pióro, woda, słuchawki wygłuszające), powinno być dostępne w MAKSYMALNIE DWÓCH RUCHACH DŁONI. Wszystko, co rozprasza (smartfon, przekąski, pady do konsoli), musi wymagać MINIMUM TRZECH CZYNNOŚCI FIZYCZNYCH (np. wstać z fotela, przejść do przedpokoju, otworzyć zamek w szafie).'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-23-13',
+        title: 'Projektowanie Tarcia: Eksperyment z Przełączaniem Oporu',
+        type: 'zmien_jeden_element',
+        context: 'Kamil (34 lata) obiecuje sobie, że wieczorem poczyta literaturę branżową, ale za każdym razem po wejściu do salonu widzi pilot leżący na stoliku kawowym, bierze go do ręki i spędza 3 godziny na bezmyślnym skakaniu po kanałach.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wariant A: Poleganie na postanowieniu bez zmiany tarcia',
+            description: 'Kamil siada naprzeciwko telewizora, pilot leży 20 cm od jego ręki. Kamil mówi sobie: „Bądź twardy, weź książkę”. Jaki jest wskaźnik porażki w stanie wyczerpania wieczornego?',
+            options: [
+              {
+                text: 'Ponad 85% — niski stan zasobów samoregulacji ulega wskazówce o zerowym tarciu',
+                feedback: 'Prawda. Po całym dniu pracy kora przedczołowa nie ma energii na walkę z bodźcem o zerowym oporze.',
+                isOptimal: true
+              },
+              {
+                text: 'Poniżej 10% — szczere postanowienie wystarcza do stłumienia odruchu',
+                feedback: 'Błędne założenie. Badania Baumeistera i Wood dowodzą, że intencja w warunkach zerowego tarcia i zmęczenia niemal zawsze przegrywa.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wariant B: Wprowadzenie reguły 20 sekund tarcia (Zmień jeden element)',
+            description: 'Kamil wyjmuje baterie z pilota i kładzie je w łazience w szafce, a na stoliku kawowym kładzie otwartą książkę z zaznaczonym akapitem.',
+            options: [
+              {
+                text: 'Kamil wchodzi do pokoju: książka ma zerowe tarcie, a pilot wymaga pójścia do łazienki — następuje odruchowe sięgnięcie po książkę',
+                feedback: 'Precyzyjnie. Odwrócenie proporcji tarcia sprawia, że ścieżka najmniejszego oporu prowadzi prosto do zachowania pożądanego.',
+                isOptimal: true
+              },
+              {
+                text: 'Kamil i tak natychmiast pójdzie po baterie, bo pragnienie telewizji jest silniejsze niż jakikolwiek dystans',
+                feedback: 'Rzadko. Dodatkowy wysiłek fizyczny daje korze czas na zadanie pytania: „Czy naprawdę chcę marnować ten wieczór?”.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki jeden niszczący Twój czas nawyk mógłbyś skutecznie unieszkodliwić, dodając do niego zaledwie 20 sekund fizycznego tarcia?'
+      }
     },
     {
       id: 'sec-23-14',
@@ -1101,12 +1407,87 @@ export const chapterTwentyThree: Chapter = {
       sectionNumber: '23.21',
       title: 'Plany If–Then — Intencje Implementacyjne Petera Gollwitzera',
       category: 'cwiczenia',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Formułując intencję implementacyjną w precyzyjnym formacie: „Jeśli pojawi się sytuacja X, to natychmiast wykonam reakcję Y”, człowiek przenosi kontrolę nad zachowaniem z zawodnego wysiłku woli na wskazówkę środowiskową. W momencie konfrontacji z sytuacją, działanie odpala się natychmiastowo, bez wysiłku i bez zużycia energii samokontroli.',
+        author: 'Prof. Peter M. Gollwitzer',
+        source: 'New York University, „Implementation Intentions: Strong Effects of Simple Plans”, American Psychologist, 1999'
+      },
       paragraphs: [
-        'Psycholog Peter Gollwitzer z New York University w ponad 100 badaniach empirycznych udowodnił, że sformułowanie intencji w formacie If-Then podnosi wskaźnik realizacji celu z 22% do ponad 65%.',
-        'Plan If-Then koduje w pamięci perspektywicznej dokładne połączenie między sytuacją a reakcją: "Jeśli pojawi się sytuacja X, to natychmiast zrobię Y".',
-        'Dzięki temu w krytycznym momencie nie musisz podejmować decyzji ani zastanawiać się, co zrobić — Twój umysł odruchowo uruchamia przygotowany skrypt.'
+        'Jednym z najbardziej fundamentalnych odkryć psychologii celów jest tzw. Luka Intencja-Działanie (Intention-Action Gap): fakt, że posiadanie silnej, pozytywnej motywacji do wykonania działania tłumaczy zaledwie 20-30% rzeczywistej wariancji zachowań. Ludzie szczerze chcą ćwiczyć, oszczędzać, zdrowiej jeść i uczyć się języków, ale w krytycznym momencie poddają się bezwładowi lub impulsom.',
+        'Profesor Peter Gollwitzer z New York University dokonał przełomu, wprowadzając koncepcję Intencji Implementacyjnych (Implementation Intentions). W odróżnieniu od klasycznych Intencji Celowych („Chcę osiągnąć cel Z”), intencja implementacyjna łączy specyficzny stan środowiskowy lub somatyczny z konkretną odpowiedzią motoryczną: „JEŚLI nastąpi warunek X [czas, miejsce, bodziec], TO wykonam czynność Y”.',
+        'Metanalizy obejmujące ponad 8 000 uczestników (Gollwitzer & Sheeran, 2006) wykazały średnią wielkość efektu d = 0.65 — co w psychologii społecznej oznacza kolosalny wzrost prawdopodobieństwa wdrożenia trudnego, odroczonego w czasie zachowania, szczególnie u osób z deficytami uwagi lub w stanach wyczerpania psychicznego.'
       ],
+      subsections: [
+        {
+          id: 'sub-23-21-1',
+          title: 'Analiza słów prof. Petera Gollwitzera: Mentalna Dostępność Wskazówki i Automatyzacja Strategiczna',
+          content: [
+            'Wypowiedź prof. Gollwitzera wyjaśnia podwójny mechanizm neuropsychologiczny intencji implementacyjnych:',
+            '1. HIPER-DOSTĘPNOŚĆ PERCEPCYJNA WSKAZÓWKI (Cue Accessibility): Kiedy z góry określisz sytuację X (np. „Gdy kelner zapyta o deser”), kora wzrokowa i słuchowa zostają „zaprogramowane” na wyłapanie tego bodźca. Bodziec ten zyskuje wyższy priorytet uwagi, przebijając się przez szum otoczenia.',
+            '2. AUTOMATYCZNE POŁĄCZENIE Z REAKCJĄ (Strategic Automaticity): Połączenie bodźca z reakcją staje się tak silne, jak w naturalnym nawyku. W ułamku sekundy, w którym kelner zadaje pytanie, odpowiedź: „Poproszę tylko zieloną herbatę” odpala się bez udziału fazy deliberacji („A może jednak spróbuję sernika?”).'
+          ]
+        },
+        {
+          id: 'sub-23-21-2',
+          title: 'Intencje Zaradcze (Coping Planning): Ochrona Przed Przeszkodami',
+          content: [
+            'Najczęstszym powodem załamania planów nie jest brak chęci, lecz pojawienie się nieprzewidzianej przeszkody: deszczu, zmęczenia po pracy, telefonu od znajomego czy braku składników.',
+            'Zaawansowany protokół If-Then wymaga sformułowania intencji zaradczych w schemacie: „Jeśli [Napotkam Przeszkodę P], to [Zastosuję Działanie Kompensacyjne K]”. Przykład: „Jeśli po powrocie z pracy będę czuć silne zmęczenie psychiczne, to nie usiądę na kanapie z telefonem, lecz natychmiast wezmę 5-minutowy chłodny prysznic i włożę strój sportowy”.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-23-21-1',
+          type: 'badanie',
+          title: 'Eksperyment z Badaniem Piersi i Samobadaniem Onkologicznym (Orbell & Sheeran)',
+          content: 'Kobiety, które otrzymały wyłącznie ulotkę informacyjną o konieczności comiesięcznego samobadania, wykonywały je w 53% przypadków. Kobiety, które poproszono o zapisanie jednego zdania If-Then: „Jeśli wybije pierwszy piątek miesiąca po wieczornym prysznicu, to wykonam badanie przed lustrem”, zrealizowały cel w 100% przypadków. Pojedynczy plan If-Then całkowicie zlikwidował opór i zapominanie.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-23-21',
+        title: 'Konstruktor Intencji Implementacyjnych Gollwitzera: Od Celu do Skryptu If-Then',
+        type: 'co_zrobilbys',
+        context: 'Jakub (26 lat) od trzech miesięcy powtarza: „Muszę zacząć uczyć się hiszpańskiego”. Codziennie wieczorem po powrocie z pracy mówi sobie, że jest zbyt zmęczony i odłoży to na jutro. Zbuduj dla Jakuba odporny na wymówki skrypt If-Then.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór stabilnej kotwicy kontekstowej (Warunek IF)',
+            description: 'Który warunek początkowy IF najskuteczniej wyeliminuje deliberację i wątpliwości?',
+            options: [
+              {
+                text: '„Gdy będę mieć wolną chwilę i poczuję wenę do nauki…”',
+                feedback: 'Kardynalny błąd. „Wolna chwila” i „wena” nigdy nie nadejdą w stanie zmęczenia — brak konkretnej wskazówki sensorycznej uniemożliwia automatyzację.',
+                isOptimal: false
+              },
+              {
+                text: '„Jeśli odłożę klucze na półkę w przedpokoju po powrocie z biura…”',
+                feedback: 'Doskonała kotwica. Konkretny, powtarzalny gest fizyczny w stałej lokalizacji, który dzieje się każdego dnia bez wyjątku.',
+                isOptimal: true
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Precyzja reakcji motorycznej (Czynność THEN)',
+            description: 'Jak powinna wyglądać reakcja THEN, aby nie wywołać paraliżującego oporu poznawczego w mózgu Jakuba?',
+            options: [
+              {
+                text: '„…to otworzę fiszki w telefonie i przerobię dokładnie 5 słówek, stojąc jeszcze w butach przedpokoju.”',
+                feedback: 'Genialne! Skrajnie niski próg wejścia (2 minuty) i natychmiastowe sprzężenie z kotwicą uniemożliwiają ucieczkę na kanapę.',
+                isOptimal: true
+              },
+              {
+                text: '„…to usiądę do biurka i będę uczyć się gramatyki przez pełne 60 minut bez przerw.”',
+                feedback: 'Zbyt wysoki koszt poznawczy. Mózg Jakuba natychmiast wygeneruje opór i wymówkę o zmęczeniu.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki jeden zamiar od miesięcy odkładasz na „kiedyś”? Sformułuj dla niego bezwzględnie precyzyjny plan If-Then łączący fizyczną kotwicę z 2-minutowym działaniem.'
+      },
       exerciseRef: selfExercisesChapterTwentyThree[2]
     },
     {

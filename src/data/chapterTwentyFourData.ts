@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 export const chapterTwentyFourExamQuestions: ExamQuestion[] = [
   {
@@ -467,11 +467,86 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.7',
       title: 'Architektura ramowania (Framing): Rzeczywistość w ramy ujęta',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Reakcja na straty jest w ludzkim umyśle nieporównywalnie silniejsza niż reakcja na odpowiadające im zyski. Ta asymetria — awersja do straty — jest wbudowaną cechą naszej architektury poznawczej. Sprawia ona, że ludzie gotowi są podjąć katastrofalne, desperackie ryzyko wyłącznie po to, by uniknąć pewnej, gwarantowanej straty.',
+        author: 'Prof. Daniel Kahneman & Amos Tversky',
+        source: 'Princeton University / Stanford University, „Prospect Theory: An Analysis of Decision under Risk”, Econometrica, 1979'
+      },
       paragraphs: [
-        'Daniel Kahneman i Amos Tversky w Teorii Perspektywy udowodnili, że ludzkie decyzje zależą w sposób dramatyczny od tego, czy problem zostanie ujęty w Ramie Zysku, czy w Ramie Straty. Ludzie wykazują silną asymetrię afektywną: ból straty 1000 złotych boli około 2–2.5 razy mocniej niż radość z wygrania tej samej kwoty.',
-        'Kiedy sytuacja zostanie wykadrowana jako unikanie straty, jesteśmy skłonni do podejmowania szalonego, nieuzasadnionego ryzyka. Kiedy ta sama sytuacja zostanie ujęta w ramie ochrony zysku, stajemy się skrajnie zachowawczy.'
-      ]
+        'Daniel Kahneman i Amos Tversky w rewolucyjnej Teorii Perspektywy (nagrodzonej Nagrodą Nobla) obalili klasyczną teorię oczekiwanej użyteczności, udowadniając, że ludzkie decyzje zależą w sposób dramatyczny nie od obiektywnego stanu posiadania, lecz od tego, czy problem decyzyjny zostanie ujęty w Ramie Zysku (Gain Frame), czy w Ramie Straty (Loss Frame).',
+        'Ludzki mózg wykazuje silną nieliniowość afektywną: ból psychologiczny wywołany stratą 1000 złotych jest subiektywnie odczuwany jako ponad 2 do 2.5 razy intensywniejszy niż przyjemność ze zdobycia dokładnie tej samej kwoty. Krzywa funkcji wartości jest wklęsła dla zysków (co rodzi awersję do ryzyka) i stroma oraz wypukła dla strat (co rodzi skłonność do podejmowania skrajnego ryzyka).',
+        'Kiedy decydent widzi sytuację w ramie ochrony tego, co już posiada (zysku), woli bezpieczny wróbel w garści niż gołębia na dachu. Kiedy jednak ta sama obiektywnie sytuacja zostanie zdefiniowana jako konieczność zaakceptowania straty, decydent wchodzi w tryb „wszystko albo nic” — staje się hazardzistą gotowym postawić na szali cały swój majątek, reputację czy zdrowie, byle tylko mieć cień szansy na uniknięcie bólu utraty.'
+      ],
+      subsections: [
+        {
+          id: 'sub-24-7-1',
+          title: 'Analiza słów Kahnemana i Tversky’ego: Asymetria Neuroafektywna i Architektura Wyboru',
+          content: [
+            'Wypowiedź twórców Teorii Perspektywy obnaża ewolucyjne korzenie naszej psychiki. Dla organizmu żyjącego na granicy przetrwania strata 50% zasobów żywności oznaczała śmierć głodową, podczas gdy zdobycie 50% więcej pożywienia dawało jedynie przejściowy komfort. Nasz układ nerwowy jest potomkiem tych, którzy panicznie bali się strat.',
+            'Współcześnie ta pierwotna adaptacja staje się źródłem potężnych pułapek. Wystarczy zamienić słowo „przeżywalność” na „śmiertelność” w diagnozie lekarskiej, albo „zniżka za gotówkę” na „dopłata za kartę”, by całkowicie odwrócić odsetek ludzi akceptujących daną propozycję. Ramowanie nie zmienia faktów matematycznych — zmienia stan pobudzenia ciała migdałowatego i wyspy.'
+          ]
+        },
+        {
+          id: 'sub-24-7-2',
+          title: 'Słynny Dylemat Azjatyckiej Choroby (Asian Disease Problem)',
+          content: [
+            'W klasycznym eksperymencie Tversky i Kahneman przedstawili badanym sytuację epidemii grożącej śmiercią 600 osób. W grupie I (rama zysku: ilu ludzi ocaleje) zaoferowano program A (200 osób ocaleje na pewno) oraz program B (1/3 szansy, że 600 ocali się, 2/3 szansy, że nikt nie ocaleje). Aż 72% wybrało opcję A — unikając ryzyka.',
+            'W grupie II (rama straty: ilu ludzi umrze) przedstawiono ten sam dylemat: program C (400 osób umrze na pewno) i program D (1/3 szansy, że nikt nie umrze, 2/3 szansy, że umrze 600 osób). W tej grupie aż 78% wybrało opcję D (ryzykowną!). Matematycznie programy A i C oraz B i D są identyczne. Zmiana jednego słowa („ocaleje” na „umrze”) sprawiła, że większość ludzi z ostrożnych asekurantów przedzierzgnęła się w ryzykantów.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-24-7-1',
+          type: 'badanie',
+          title: 'Neuroobrazowanie Efektu Ramowania (De Martino et al., Science, 2006)',
+          content: 'Badania fMRI wykazały, że uleganie efektowi ramowania wiąże się z gwałtownym skokiem aktywności ciała migdałowatego (emocjonalna reakcja na słowa-klucze). Natomiast osoby, które potrafiły oprzeć się ramowaniu i podjąć racjonalną, spójną matematycznie decyzję, wykazywały wysoką aktywność w korze oczodołowo-czołowej (OFC) oraz brzuszno-przyśrodkowej korze przedczołowej (vmPFC), która neutralizowała emocjonalny alarm migdała.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-24-7',
+        title: 'Laboratorium Ramowania Decyzji: Zysk czy Strata?',
+        type: 'trzy_interpretacje',
+        context: 'Lekarz przedstawia Rafałowi (45 lat) dwie metody leczenia przewlekłego schorzenia kręgosłupa: operację chirurgiczną oraz długą rehabilitację.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wariant I: Przedstawienie operacji w Ramie Sukcesu',
+            description: 'Lekarz mówi: „90% pacjentów po tej operacji odzyskuje pełną sprawność i wraca do normalnego życia”. Jak zareaguje układ decyzyjny Rafała?',
+            options: [
+              {
+                text: 'Kora przedczołowa interpretuje to jako wysokie bezpieczeństwo i Rafał z dużą ulgą zgadza się na zabieg',
+                feedback: 'Prawda. Rama 90% sukcesu aktywuje pozytywne markery afektywne i obniża poczucie zagrożenia.',
+                isOptimal: true
+              },
+              {
+                text: 'Rafał skupia się na 10% niepowodzeń i ucieka z gabinetu',
+                feedback: 'Mało prawdopodobne przy takim sformułowaniu — uwaga kory wzrokowej i pamięci roboczej jest zakotwiczona w słowie „sukces”.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wariant II: Przedstawienie tej samej operacji w Ramie Porażki',
+            description: 'Inny lekarz mówi: „U 10 na 100 pacjentów operacja ta kończy się powikłaniami lub brakiem poprawy”. Co dzieje się w mózgu pacjenta?',
+            options: [
+              {
+                text: 'Ciało migdałowate podnosi alarm awersyjny przed stratą zdrowia — Rafał gwałtownie odrzuca opcję operacji',
+                feedback: 'Dokładnie tak działa asymetria Kahnemana: informacja o 10% powikłań wywołuje wielokrotnie silniejszy lęk niż radość z 90% sukcesu.',
+                isOptimal: true
+              },
+              {
+                text: 'Rafał wylicza w pamięci, że 10% powikłań to to samo co 90% sukcesu, i podejmuje taką samą decyzję',
+                feedback: 'Tylko nieliczne osoby o wybitnym treningu statystycznym i wysokiej samoregulacji potrafią zignorować ramę słowną.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakich ważnych decyzjach Twojego życia przedstawienie problemu jako „straty czegoś” skłoniło Cię do podjęcia niebezpiecznego, chaotycznego ryzyka?'
+      }
     },
     {
       id: 'sec-24-8',
@@ -479,11 +554,86 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.8',
       title: 'Emocje jako kompas i zakłócenie: Hipoteza Znaczników Somatycznych',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Kiedy emocje zostają całkowicie odcięte od procesu rozumowania — jak dzieje się to przy uszkodzeniach kory brzuszno-przyśrodkowej — rozum wcale nie staje się czysty i nieskazitelny. Wręcz przeciwnie: człowiek gubi się w nieskończonym regresie trywialnych obliczeń, tracąc zdolność do podjęcia najprostszej życiowej decyzji.',
+        author: 'Prof. Antonio Damasio',
+        source: 'University of Southern California / Salk Institute, „Błąd Kartezjusza: Emocje, rozum i ludzki mózg”, 1994'
+      },
       paragraphs: [
-        'Przez wieki filozofia kartezjańska przeciwstawiała rozum emocjom, twierdząc, że idealna decyzja to decyzja całkowicie pozbawiona uczuć. Antonio Damasio obalił ten mit poprzez badania nad pacjentami z uszkodzeniem kory brzuszno-przyśrodkowej (vmPFC).',
-        'Pacjenci ci posiadali nienaruszone IQ i idealną logikę matematyczną, ale z powodu braku sygnałów somatycznych (znaczników afektywnych z ciała) byli całkowicie niezdolni do podjęcia jakiejkolwiek decyzji w życiu realnym. Emocje są niezbędnym nawigatorem, który zawęża pole nieskończonych możliwości do kilku sensownych opcji.'
-      ]
+        'Przez ponad trzysta lat zachodnia myśl filozoficzna i naukowa tkwiła w uścisku kartezjańskiego dualizmu: uważano, że rozum i emocje to dwie wrogie siły, a optymalna decyzja to taka, z której z chirurgiczną precyzją usunięto wszelki ślad uczuć. Antonio Damasio, jeden z najwybitniejszych neurobiologów naszych czasów, definitywnie obalił ten mit w swojej przełomowej Hipotezie Znaczników Somatycznych (Somatic Marker Hypothesis).',
+        'Punktem wyjścia dla Damasio były badania nad pacjentami z uszkodzeniem brzuszno-przyśrodkowej kory przedczołowej (vmPFC), z których najbardziej znanym stał się pacjent Elliot. Przed operacją usunięcia guza mózgu Elliot był błyskotliwym prawnikiem, kochającym mężem i cenionym obywatelem. Po uszkodzeniu vmPFC jego iloraz inteligencji (IQ), pamięć robocza, zdolności językowe i logiczne pozostały nienaruszone — potrafił z łatwością rozwiązywać abstrakcyjne testy logiczne.',
+        'W życiu realnym Elliot stał się jednak całkowicie sparaliżowany decyzyjnie. Potrafił spędzić całe popołudnie na debatowaniu nad tym, czy zapisać notatkę niebieskim czy czarnym długopisem, rozważając setki nieistotnych argumentów. Podpisywał skrajnie naiwne umowy z oszustami, doprowadzając się do bankructwa. Ponieważ jego mózg nie generował emocjonalnych „znaczników somatycznych” (szybkich sygnałów z ciała: przyspieszonego tętna, napięcia mięśni, ucisku w żołądku), każda opcja wydawała mu się równie dobra i równie obojętna.'
+      ],
+      subsections: [
+        {
+          id: 'sub-24-8-1',
+          title: 'Analiza słów prof. Antonio Damasio: Znaczniki Somatyczne Jako Nawigator',
+          content: [
+            'Wypowiedź Damasio uderza w sedno problemu złożoności decyzyjnej. Gdy stajesz przed wyborem życiowym, liczba możliwych scenariuszy, zmiennych i konsekwencji dąży do nieskończoności. Czysty kalkulator logiczny (grzbietowo-boczna kora przedczołowa) nie jest w stanie w ułamku sekundy przeliczyć drzewa prawdopodobieństw — doszłoby do natychmiastowego przegrzania pamięci operacyjnej.',
+            'W tym momencie do gry wkraczają znaczniki somatyczne generowane przez układ vmPFC-wyspa-ciało migdałowate. W oparciu o pamięć dawnych doświadczeń ciało wysyła błyskawiczny mikrosygnał afektywny: „ta opcja grozi niebezpieczeństwem” (ścisk w brzuchu) lub „ta opcja rokuje nadzieję” (rozluźnienie). Znaczniki te nie podejmują decyzji za nas — one BŁYSKAWICZNIE ODRZUCAJĄ 90% niebezpiecznych lub bezsensownych wariantów, pozwalając chłodnej logice skupić się na dwóch lub trzech najlepszych alternatywach.'
+          ]
+        },
+        {
+          id: 'sub-24-8-2',
+          title: 'Eksperyment Iowa Gambling Task (IGT): Mądrość Ciała Przed Świadomością Umysłu',
+          content: [
+            'W słynnym teście IGT uczestnicy ciągnęli karty z czterech talii. Dwie talie (A i B) były „złe” (oferowały wysokie natychmiastowe wygrane, ale potężne, katastrofalne kary okresowe, przynosząc stratę). Dwie talie (C i D) były „dobre” (małe wygrane, ale minimalne kary, przynosząc długoterminowy zysk).',
+            'Wyniki badań neurobiologicznych zaszokowały świat: u osób zdrowych już po około 10 kartach skóra na dłoniach zaczynała wykazywać mikroskopijną reakcję galwaniczną (GSR — sygnał stresu autonomicznego) ZA KAŻDYM RAZEM, gdy ich dłoń zbliżała się do talii ryzykownych. Ciało „wiedziało”, że talie są niebezpieczne, na długo przed tym, jak uczestnicy potrafili to świadomie wyjaśnić (świadoma wiedza pojawiła się dopiero około 50-80 karty!). Pacjenci z uszkodzeniem vmPFC nigdy nie wytworzyli reakcji skórnej i konsekwentnie bankrutowali, wybierając talie A i B.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-24-8-1',
+          type: 'wniosek',
+          title: 'Podwójna Natura Emocji w Decyzjach: Kompas i Zakłócenie',
+          content: 'Emocje są niezbędne jako automatyczny filtr selekcyjny, ale stają się destrukcyjne, gdy osiągają skrajną intensywność (afekt paniki, furia, skrajna euforia) lub gdy wynikają z niepowiązanych bodźców zewnętrznych (tzw. Incidental Emotion — np. podjęcie ryzykownej decyzji finansowej tylko dlatego, że przed chwilą obejrzałeś przerażający film w telewizji). Dojrzałość polega na słuchaniu sygnałów z ciała, ale weryfikowaniu ich przez korę przedczołową.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-24-8',
+        title: 'Iowa Gambling Task w Praktyce: Odczytywanie Znaczników Somatycznych',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Marek (38 lat) otrzymuje propozycję dołączenia do nowo powstającego startupu. Oferta brzmi fantastycznie na papierze (wysokie zarobki, prestiżowe stanowisko), ale podczas rozmowy z prezesem Marek czuje subtelny skurcz w dołku podsercowym i suchość w ustach.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Sygnał z wyspy i ciała migdałowatego (Znacznik Somatyczny)',
+            description: 'Układ nerwowy Marka zarejestrował mikromimikę prezesa, niespójność w tonie głosu oraz dawne wspomnienia manipulacji. Co powinien zrobić Marek z tym sygnałem ciała?',
+            options: [
+              {
+                text: 'Całkowicie go zignorować jako „irracjonalny stres” i podpisać umowę, bo cyfry w Excelu się zgadzają',
+                feedback: 'Błąd w stylu pacjenta Elliota. Odcięcie sygnałów somatycznych prowadzi do ignorowania ukrytych zagrożeń relacyjnych.',
+                isOptimal: false
+              },
+              {
+                text: 'Uznać sygnał somatyczny za alarm wczesnego ostrzegania i zarządzić pogłębiony audyt prawno-finansowy spółki',
+                feedback: 'Wzorcowe zachowanie. Znacznik somatyczny nie mówi „uciekaj bez powodu”, lecz alarmuje: „zbadaj to uważniej, zanim podejmiesz ryzyko”.',
+                isOptimal: true
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Weryfikacja intuicji przez analityczną korę przedczołową (dlPFC)',
+            description: 'Marek prosi o wgląd w księgi rachunkowe i odkrywa, że spółka ma zatajone 2 miliony złotych długu. Co to oznacza w kontekście teorii Damasio?',
+            options: [
+              {
+                text: 'Znacznik somatyczny uratował go przed katastrofą — ciało podkorowo wyczuło fałsz szybciej niż świadomość logiczna',
+                feedback: 'Precyzyjna konkluzja z Iowa Gambling Task. Emocje somatyczne i logika korowa muszą działać w nierozerwalnym tandemie.',
+                isOptimal: true
+              },
+              {
+                text: 'To był czysty przypadek, nie mający związku z fizjologią ciała',
+                feedback: 'Badania neurobiologiczne wykluczają przypadek: ciało rejestruje subtelne wskaźniki kłamstwa i niebezpieczeństwa poza polem jawnej uwagi.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakiej sytuacji życiowej Twoje ciało wysyłało wyraźny sygnał ostrzegawczy („coś tu jest nie tak”), który zignorowałeś na rzecz pozornej logiki — i jak się to skończyło?'
+      }
     },
     {
       id: 'sec-24-9',
@@ -547,14 +697,87 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.13',
       title: 'Impulsywność a Paradoks Wyboru: Od bezmyślności do paraliżu',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Maksymalizatorzy dążą do podjęcia wyłącznie absolutnie optymalnego wyboru. Jednak w świecie obfitości alternatyw poszukiwanie ideału staje się niezawodną receptą na decyzyjny paraliż, chroniczną niepewność i bolesny żal podecyzyjny. Prawdziwie mądry decydent to satysfakcjoner — ktoś, kto potrafi zdefiniować próg „wystarczająco dobrego” i zamknąć deliberację.',
+        author: 'Prof. Barry Schwartz & Herbert Simon',
+        source: 'Swarthmore College / Carnegie Mellon University, „The Paradox of Choice: Why More Is Less”, Harper Perennial, 2004'
+      },
       paragraphs: [
-        'W psychologii decyzyjnej obserwujemy dwa skrajne bieguny dysfunkcji wyboru: z jednej strony impulsywność, z drugiej — paraliż wywołany nadmiarem alternatyw.',
-        'Impulsywność to podjęcie działania w ułamku sekundy, bez zaangażowania procesów kory przedczołowej. Bodziec sensoryczny bezpośrednio aktywuje prążkowie i układ limbiczny, generując natychmiastowe zachowanie. Impulsywny decydent nie waży konsekwencji — jest całkowicie podporządkowany bieżącemu stanowi pobudzenia emocjonalnego.',
-        'Na przeciwnym biegunie znajduje się zjawisko opisane przez Barry’ego Schwartza jako Paradoks Wyboru (Paradox of Choice). Współczesna kultura wmawia nam, że im więcej opcji posiadamy (setki modeli telefonów, dziesiątki ścieżek kariery, tysiące profili na aplikacjach randkowych), tym większą wolność i satysfakcję osiągniemy.',
-        'Empiryczne badania psychologiczne dowodzą jednak czegoś odwrotnego: powyżej pewnego progu (zwykle 4–6 opcji) każda kolejna alternatywa drastycznie podnosi koszt poznawczy porównań, potęguje lęk przed utratą innych możliwości (Opportunity Cost) i dramatycznie obniża ostateczną satysfakcję z wybranego wariantu. Człowiek zamiast cieszyć się wyborem, obsesyjnie myśli o wszystkich porzuconych opcjach.',
-        'Optymalna strategia decyzyjna polega na postawie „satysfakcjonera” (Satisficer) zamiast „maksymalizatora” (Maximizer): ustalamy jasne, minimalne kryteria jakości i wybieramy pierwszą opcję, która je spełnia, zamiast bez końca polować na hipotetyczny ideał.'
-      ]
+        'W psychologii decyzji obserwujemy dwa skrajne bieguny dysfunkcji wyboru: z jednej strony impulsywność (podjęcie działania bez udziału kory przedczołowej pod wpływem nagłego afektu), z drugiej strony — paraliż wywołany nadmiarem alternatyw.',
+        'Koncepcja Paradoksu Wyboru (Paradox of Choice) sformułowana przez Barry’ego Schwartza oraz teoria Ograniczonej Racjonalności Herberta Simona rzucają wyzwanie dogmatowi współczesnej kultury wolnorynkowej, która głosi, że maksymalizacja liczby opcji jest tożsama z maksymalizacją wolności i dobrostanu.',
+        'W rzeczywistości ludzki aparat poznawczy posiada ścisłe ograniczenia przepustowości pamięci operacyjnej (ok. 4±1 jednostki informacji w ujęciu Nelsona Cowana). Kiedy stajemy przed wyborem spośród 30 modeli laptopów, 50 planów taryfowych czy setek profili na portalu randkowym, każda kolejna alternatywa drastycznie podnosi koszt porównań, obciąża korę przedczołową i generuje lęk przed utratą korzyści płynących z odrzuconych opcji (Opportunity Cost).'
+      ],
+      subsections: [
+        {
+          id: 'sub-24-13-1',
+          title: 'Analiza słów Schwartza i Simona: Maksymalizator vs Satysfakcjoner',
+          content: [
+            'Herbert Simon, laureat Nagrody Nobla, jako pierwszy wprowadził pojęcie „satysfakcjonowania” (satisficing — neologizm z połączenia satisfy i suffice):',
+            '1. MAKSYMALIZATOR (Maximizer): Dąży do wyboru opcji absolutnie najlepszej ze wszystkich możliwych. Przed podjęciem decyzji musi sprawdzić każdy sklep, przeczytać każdą recenzję i porównać każdy parametr. W efekcie spędza tygodnie na poszukiwaniach, a po zakupie nie czuje radości, lecz żal i podejrzenie, że gdzieś istniała jeszcze lepsza oferta.',
+            '2. SATYSFAKCJONER (Satisficer): Określa z góry sztywne, obiektywne kryteria minimalne („Szukam hotelu z czystą łazienką, do 300 zł za dobę, w odległości 1 km od centrum”). Przegląda oferty i wybiera PIERWSZĄ, która spełnia te kryteria, natychmiast kończąc proces poszukiwań. Psychologicznie satysfakcjonerzy są znacznie szczęśliwsi, wolni od lęku i rzadziej doświadczają depresji decyzyjnej.'
+          ]
+        },
+        {
+          id: 'sub-24-13-2',
+          title: 'Słynny Eksperyment z Dżemem (Iyengar & Lepper, 2000)',
+          content: [
+            'W luksusowym supermarkecie badacze wystawili stoisko degustacyjne z dżemami. W pierwszym wariancie wystawiono 24 rodzaje dżemu — stoisko przyciągnęło 60% przechodniów (duża ciekawość), ale tylko 3% z nich zdecydowało się na zakup słoika.',
+            'W drugim wariancie wystawiono jedynie 6 rodzajów dżemu — stoisko przyciągnęło mniej osób (40%), ale aż 30% z nich dokonało zakupu! Ograniczenie liczby opcji aż dziesięciokrotnie zwiększyło realną konwersję zakupową, eliminując paraliż decyzyjny i lęk przed złym wyborem.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-24-13-1',
+          type: 'praktyka',
+          title: 'Strategia Ograniczania Opcji: Heurystyka Trzech Wariantów',
+          content: 'Zastosuj regułę satysfakcjonera w codziennym życiu: przy każdym zakupie lub wyborze ścieżki działania zredukuj pole poszukiwań do MAKSYMALNIE TRZECH alternatyw spełniających Twoje kryteria progowe. Gdy wybierzesz jedną z nich, bezwzględnie przestań przeglądać pozostałe oferty, blokując odruch „a może było coś lepszego”.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-24-13',
+        title: 'Diagnoza Stylu Decyzyjnego: Maksymalizator czy Satysfakcjoner?',
+        type: 'co_zrobilbys',
+        context: 'Łukasz (29 lat) planuje weekendowy wyjazd i od trzech tygodni codziennie po 2 godziny przegląda portale rezerwacyjne, mając otwartych 48 kart w przeglądarce. Czuje ogromne zmęczenie i irytację.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Diagnoza pułapki decyzyjnej Łukasza',
+            description: 'Jaki mechanizm psychologiczny zablokował zdolność Łukasza do rezerwacji noclegu?',
+            options: [
+              {
+                text: 'Typowy syndrom maksymalizatora napędzany paraliżem wyboru i lękiem przed kosztem alternatywnym',
+                feedback: 'Dokładnie tak. Łukasz boi się, że wybierając hotel X, bezpowrotnie straci hipotetyczne korzyści z hotelu Y.',
+                isOptimal: true
+              },
+              {
+                text: 'Brak wystarczającej liczby filtrów sortujących w wyszukiwarkach internetowych',
+                feedback: 'Wręcz przeciwnie — im więcej filtrów, tym głębsza obsesja optymalizacji każdego mikroskopijnego parametru.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wdrożenie protokołu satysfakcjonera',
+            description: 'Jaką instrukcję powinien wdrożyć Łukasz, aby zamknąć proces w 10 minut?',
+            options: [
+              {
+                text: 'Spisać 3 twarde kryteria (cena, lokalizacja, ocena > 8.0) i zarezerwować pierwszy napotkany obiekt spełniający warunki',
+                feedback: 'Znakomita interwencja Simona i Schwartza. Odcina pętlę deliberacji i przywraca spokój psychiczny.',
+                isOptimal: true
+              },
+              {
+                text: 'Przejrzeć jeszcze 20 kolejnych ofert, aby upewnić się, że nie przegapił promocji życia',
+                feedback: 'To tylko pogłębi paraliż analityczny i wyczerpie resztki zasobów wykonawczych kory przedczołowej.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakich obszarach Twojego życia (zakupy, relacje, praca) zachowujesz się jak nieszczęśliwy maksymalizator zamiast spokojnego satysfakcjonera?'
+      }
     },
     {
       id: 'sec-24-14',
@@ -575,12 +798,87 @@ export const chapterTwentyFour: Chapter = {
       sectionNumber: '24.15',
       title: '„Dobra decyzja” a dobry rezultat: Rozdzielanie myślenia od losowości (Outcome Bias)',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Wynikizm (resulting) to nasz wrodzony, toksyczny odruch utożsamiania jakości decyzji z jakością jej ostatecznego rezultatu. Życie nie jest jednak szachami, lecz pokerem — grą w warunkach niepełnej informacji i losowości. Możesz rozegrać rozdanie po mistrzowsku i przegrać przez pecha, tak jak możesz zagrać bezmyślnie i wygrać przez czysty fuks. Aby doskonalić swoje wybory, musisz bezwzględnie rozwieść jakość procesu z kaprysami losu.',
+        author: 'Annie Duke',
+        source: 'Mistrzyni World Series of Poker, kognitywistka, „Thinking in Bets: Making Smarter Decisions When You Don\'t Have All the Facts”, Portfolio / Penguin, 2018'
+      },
       paragraphs: [
-        'Jednym z najbardziej toksycznych zniekształceń w ocenie ludzkich wyborów jest Błąd Oceny po Wyniku (Outcome Bias). Polega on na ocenianiu jakości i mądrości procesu decyzyjnego wyłącznie przez pryzmat ostatecznego rezultatu, ignorując stan wiedzy, niepewność i czynniki losowe występujące w momencie podejmowania decyzji.',
-        'Świat nie jest deterministycznym zegarem, lecz złożonym systemem probabilistycznym. Oznacza to, że można podjąć wybitną pod względem metodologicznym decyzję (np. rzetelnie skalkulowana inwestycja oparta na dywersyfikacji i twardych danych) i ponieść stratę z powodu niespodziewanego kataklizmu geopolitycznego. Z drugiej strony — można podjąć skrajnie bezmyślną, niebezpieczną decyzję (np. jazda z prędkością 180 km/h po pijanemu w nocy) i dojechać bezpiecznie do domu dzięki czystemu przypadkowi.',
-        'Jeśli oceniasz siebie wyłącznie po wyniku, zaczniesz nagradzać swoje głupie decyzje, które przypadkowo się udały, oraz karać się za znakomite procesowo decyzje, które zderzyły się z nieprzewidywalną losowością. Dojrzały decydent rozlicza siebie z JAKOŚCI PROCESU: czy zebrałem kluczowe fakty? czy zbadałem alternatywy? czy uwzględniłem ryzyko? Jeśli tak — rezultat, nawet niepomyślny, przyjmuje ze spokojem jako koszt poruszania się w świecie niepewności.'
-      ]
+        'Jednym z najbardziej destrukcyjnych zniekształceń w ocenie ludzkich wyborów jest Błąd Oceny po Wyniku (Outcome Bias), w psychologii decyzji nazywany przez Annie Duke „wynikizmem” (resulting). Polega on na retrospektywnym ocenianiu mądrości, kompetencji i rzetelności decydenta wyłącznie przez pryzmat tego, co ostatecznie się wydarzyło, z całkowitym zignorowaniem stanu wiedzy, bilansu prawdopodobieństw i niepewności istniejącej w punkcie wyboru.',
+        'Nasz świat nie jest układem deterministycznym, w którym określone działanie ze 100% pewnością przynosi identyczny skutek. Jest środowiskiem wysoce probabilistycznym, w którym pomiędzy naszą decyzją a ostatecznym wynikiem zawsze pośredniczy czynnik losowości (szumu środowiskowego, nieprzewidywalnych zdarzeń, zachowań innych ludzi).',
+        'Z tego wynika fundamentalny paradoks: można podjąć wybitną pod każdym względem decyzję (zgodną z twardymi danymi, dywersyfikacją i chłodną kalkulacją ryzyka) i ponieść bolesną porażkę na skutek zbiegu nieszczęśliwych okoliczności. Jednocześnie można podjąć skrajnie idiotyczną, lekkomyślną decyzję (np. zainwestowanie oszczędności życia w podejrzaną piramidę finansową) i przypadkowo osiągnąć zysk, ponieważ bańka spekulacyjna pękła tydzień po wycofaniu środków.'
+      ],
+      subsections: [
+        {
+          id: 'sub-24-15-1',
+          title: 'Analiza słów Annie Duke: Pułapka Uczenia Się na Złych Informacjach Zwrotnych',
+          content: [
+            'Wypowiedź Annie Duke dotyka największego niebezpieczeństwa wynikizmu: rozregulowania mechanizmu adaptacyjnego uczenia się. Kiedy oceniasz decyzję po wyniku:',
+            '1. NAGRADZASZ GŁUPIE RYZYKO: Jeśli pijany kierowca przejedzie skrzyżowanie na czerwonym świetle i nikogo nie potrąci, a w domu powie sobie: „Widzisz, świetnie prowadzę po alkoholu, nic się nie stało”, wzmacnia katastrofalny nawyk, który prędzej czy później doprowadzi do tragedii.',
+            '2. KARZESZ ROZSĄDNE WYBORY: Jeśli menedżer podejmie decyzję o projekcie z 80% szansą na sukces i 20% szansą na porażkę (matematycznie doskonała relacja), a zrealizuje się scenariusz 20% pecha, i zostanie za to zwolniony lub skrytykowany — w przyszłości nikt w organizacji nie podejmie żadnego innowacyjnego ryzyka.'
+          ]
+        },
+        {
+          id: 'sub-24-15-2',
+          title: 'Pokerowa Metafora Życia: Myślenie Zakładami (Thinking in Bets)',
+          content: [
+            'W szachach nie ma ukrytych informacji ani losowości rzutu kostką — jeśli przegrasz, popełniłeś błąd. Jednak w prawdziwym życiu niemal każda decyzja (wybór partnera, zmiana pracy, zakup mieszkania) przypomina partię pokera: podejmujesz decyzję przy niepełnych danych, a o wyniku decyduje splot Twoich umiejętności i rozdania kart przez los.',
+            'Dojrzałość decyzyjna polega na zadaniu pytania: „Czy biorąc pod uwagę to, co wiedziałem w tamtej minucie, podjąłem najlepszy możliwy zakład probabilistyczny?”. Jeśli odpowiedź brzmi „tak”, to nawet w przypadku przegranej decydent odczuwa spokój sumienia i nie wpada w autodestrukcyjne poczucie winy.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-24-15-1',
+          type: 'wniosek',
+          title: 'Zasada Annie Duke: Rozliczaj Proces, a Nie Rezultat',
+          content: 'Nigdy nie pytaj po fakcie wyłącznie: „Czy to się udało?”. Zadaj trzy pytania procesowe: 1) Czy uwzględniłem kluczowe fakty dostępne przed decyzją? 2) Czy zdefiniowałem możliwe ryzyka i scenariusze awaryjne? 3) Czy moja kalkulacja szans była racjonalna? Jeśli tak — proces był poprawny, a niepomyślny wynik jest kosztem wariancji probabilistycznej świata.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-24-15',
+        title: 'Rozprawa z Wynikizmem: Analiza Sukcesu Fuksowego i Porażki Szlachetnej',
+        type: 'fakt_czy_interpretacja',
+        context: 'Konrad (33 lata) podjął rzetelnie skalkulowaną decyzję o otwarciu kawiarni w nowo powstającym centrum biznesowym. Dwa miesiące po otwarciu wybuchła globalna pandemia i ogłoszono lockdown. Konrad zbankrutował i uważa się za „totalnego życiowego nieudacznika”.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Oddzielenie faktów decyzyjnych od losowości',
+            description: 'Czy Konrad popełnił błąd merytoryczny w procesie podejmowania decyzji?',
+            options: [
+              {
+                text: 'Fakt procesowy: Biznesplan był rzetelny, a lockdown był zdarzeniem typu „Czarny Łabędź” (skrajna losowość nieprzewidywalna)',
+                feedback: 'Dokładnie tak. Jakość procesu decyzyjnego Konrada była wysoka — bankructwo było skutkiem losowego szoku makroekonomicznego.',
+                isOptimal: true
+              },
+              {
+                text: 'Interpretacja wynikistyczna: Skoro zbankrutował, to znaczy, że jego decyzja była bezmyślna i głupia',
+                feedback: 'Klasyczna pułapka Outcome Bias. Ocenianie decyzji z perspektywy wiedzy po fakcie (hindsight bias) jest błędem logicznym.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Aktualizacja przekonań na przyszłość',
+            description: 'Jaki wniosek powinien wyciągnąć Konrad dla swojego poczucia wartości i przyszłych decyzji?',
+            options: [
+              {
+                text: 'Mój proces myślenia był zdrowy — przegrałem zakład z losem, ale zachowuję kompetencje i wiarę w swoje zdolności analityczne',
+                feedback: 'Zdrowa, odporna psychicznie postawa oparta na myśleniu probabilistycznym Annie Duke.',
+                isOptimal: true
+              },
+              {
+                text: 'Nigdy więcej nie podejmę żadnego ryzyka, bo świat zawsze obróci się przeciwko mnie',
+                feedback: 'Katastrofizacja i nadmierna generalizacja prowadząca do paraliżu wyuczonej bezradności.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Przypomnij sobie sytuację, w której podjąłeś znakomitą, przemyślaną decyzję, ale los przyniósł porażkę — czy potrafisz dziś przestać się za nią biczować?'
+      }
     },
     {
       id: 'sec-24-16',

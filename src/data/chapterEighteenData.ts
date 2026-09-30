@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 export const chapterEighteenExamQuestions: ExamQuestion[] = [
   {
@@ -1104,12 +1104,60 @@ export const chapterEighteen: Chapter = {
       sectionNumber: '18.3',
       title: 'Schematy Poznawcze Jako Soczewki Percepcji — Aron Beck i Terapia CBT',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Jeśli nasze myślenie jest proste i jasne, jesteśmy lepiej przygotowani do osiągania naszych celów. Jeśli jest zniekształcone przez schematy, cierpimy z powodu problemów, które sami sobie stwarzamy.',
+        author: 'Aaron T. Beck (Cognitive Therapy of Depression, 1979)'
+      },
       paragraphs: [
-        'Aron Beck, twórca terapii poznawczo-behawioralnej (CBT), opisał schematy poznawcze jako trwałe matryce pojęciowe, które organizują dopływające informacje.',
-        'Schemat działa jak filtr kolorystyczny w okularach: jeśli nosisz okulary o zielonych szkłach, cała rzeczywistość wydaje się zielona. Jeśli posiadasz schemat „Jestem nieadekwatny”, Twój umysł automatycznie wyłowi z otoczenia wszelkie sygnały potwierdzające tę tezę, całkowicie ignorując dowody sukcesu.',
-        'Zniekształcenia poznawcze (np. myślenie zero-jedynkowe, katastrofizacja, personalizacja) są automatycznymi produktami wygenerowanymi przez aktywne schematy poznawcze.'
+        'Aaron T. Beck, twórca terapii poznawczo-behawioralnej (CBT), zrewolucjonizował rozumienie ludzkiego cierpienia, dowodząc, że zaburzenia nastroju i dysfunkcyjne zachowania nie wynikają bezpośrednio z traumatycznych zdarzeń, lecz z nieuświadomionych, sztywnych matryc pojęciowych zwanych schematami poznawczymi (Cognitive Schemas).',
+        'Schemat poznawczy to utrwalona sieć neuronalna kodująca uogólnioną wiedzę o sobie, innych i świecie. Działa jak automatyczny algorytm kompresji danych: selekcjonuje docierające bodźce, uzupełnia brakujące informacje domysłami i narzuca gotową interpretację, zanim kora nowa zdoła przeprowadzić świadomą refleksję.',
+        'W ujęciu Becka schematy poznawcze dzielą się na trzy hierarchiczne poziomy:',
+        '1. PRZEKONANIA RDZENNE (Core Beliefs): Najgłębszy, bezwzględny fundament tożsamości, uformowany we wczesnym dzieciństwie pod wpływem relacji z opiekunami i doświadczeń rówieśniczych (np. „Jestem bezradny”, „Jestem nie do pokochania”, „Świat jest wrogi”).\n2. PRZEKONANIA POŚREDNIE (Intermediate Beliefs): Zasady, normy i założenia kompensacyjne, które chronią przed konfrontacją z bolesnym przekonaniem rdzennym (np. „Jeśli nigdy nie popełnię błędu, nikt nie odkryje, że jestem niekompetentny”).\n3. AUTOMATYCZNE MYŚLI (Automatic Thoughts): Błyskawiczne, telegraficzne zdania i obrazy pojawiające się w ułamku sekundy w odpowiedzi na konkretne zdarzenie zewnętrzne (np. „Szef krzywo na mnie spojrzał — zaraz mnie zwolni”).'
       ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Aarona Becka: Jak schemat przejmuje kontrolę nad uwagą?',
+          paragraphs: [
+            'Beck w swoich pracach klinicznych podkreślał zjawisko „poznawczej ślepoty na dowody sprzeczne” (Cognitive Exclusion). Kiedy schemat zostaje wzbudzony przez bodziec spustowy, układ nerwowy przechodzi w tryb asymilacji: każde zjawisko jest naginane tak, by pasowało do matrycy.',
+            'Jeśli student z aktywnym schematem nieadekwatności otrzyma 99 punktów na 100 z trudnego egzaminu, jego umysł nie zarejestruje 99 sukcesów. Skupi się na jedynym utraconym punkcie, uznając go za „ostateczny dowód własnej głupoty”. To nie jest błąd logiczny, który da się naprawić prostym pouczeniem — to strukturalne zaburzenie filtra percepcyjnego.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny Becka: Myśl to hipoteza, nie wyrok',
+            content: '„Największym błędem człowieka jest traktowanie własnych myśli automatycznych jako obiektywnych faktów biologicznych. Myśl to zaledwie hipoteza robocza układu nerwowego, która może być całkowicie fałszywa”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-18-3-mikroskop-becka',
+        type: 'microscope',
+        title: 'Człowiek pod mikroskopem: Michał i aktywacja schematu niekompetencji',
+        subtitle: 'Wiwisekcja 19 etapów przetwarzania poznawczego podczas zebrania zarządu',
+        context: 'Michał (34 lata, główny analityk finansowy) prezentuje kwartalny raport przed zarządem spółki.',
+        microscopeSteps: [
+          { stepNumber: 1, label: 'SYTUACJA', question: 'Co dokładnie się wydarzyło w świecie fizycznym?', content: 'Wiceprezes spółki przerwał prezentację Michała na slajdzie 8 i zapytał: „Czy marża EBITDA na rynku niemieckim uwzględnia wahania kursu euro z ostatniego wtorku?”.', subtext: 'Czysty fakt audialny i wizualny, neutralne zapytanie merytoryczne.' },
+          { stepNumber: 2, label: 'INFORMACJE ZNANE', question: 'Co Michał rzeczywiście wie w tej sekundzie?', content: 'Wie, że model kalkulacyjny opierał się na uśrednionym kursie miesięcznym, co jest standardem sprawozdawczym w firmie.', subtext: 'Obiektywna wiedza matematyczna i proceduralna.' },
+          { stepNumber: 3, label: 'BRAK INFORMACJI', question: 'Czego Michał NIE wie o motywach wiceprezesa?', content: 'Nie wie, czy wiceprezes zadaje pytanie z czystej ciekawości, czy sam jest zestresowany audytem, czy próbuje go sprawdzić.', subtext: 'Luka informacyjna, którą umysł natychmiast zapełni domysłem.' },
+          { stepNumber: 4, label: 'UWAGA', question: 'Gdzie kieruje się reflektor uwagi Michała?', content: 'Błyskawicznie odrywa się od liczb na ekranie i zogniskowuje na zmarszczonych brwiach wiceprezesa i własnym ściśniętym gardle.', subtext: 'Zawężenie pola percepcyjnego — tunel poznawczy.' },
+          { stepNumber: 5, label: 'PERCEPCJA', question: 'Co faktycznie rejestrują jego zmysły?', content: 'Rejestruje ciszę na sali trwającą 3 sekundy, szelest papierów dyrektora generalnego i własne przyspieszone tętno.', subtext: 'Bodźce neutralne interpretowane jako sygnały wrogości.' },
+          { stepNumber: 6, label: 'INTERPRETACJA', question: 'Jakie znaczenie nadaje sytuacji aparat poznawczy?', content: '„On wie, że jestem oszustem. Znalazł błąd w moim modelu. Zostanę publicznie zmiażdżony i zwolniony”.', subtext: 'Błyskawiczna katastrofizacja i myślenie czarno-białe wg Becka.' },
+          { stepNumber: 7, label: 'EMOCJE', question: 'Co odczuwa w ciele w ułamku sekundy?', content: 'Gwałtowny wyrzut wstydu, paraliżujący lęk przed zdemaskowaniem i upokorzeniem.', subtext: 'Aktywacja ciała migdałowatego i osi stresu HPA.' },
+          { stepNumber: 8, label: 'POBUDZENIE', question: 'Jak zmienia się stan somatyczny organizmu?', content: 'Tętno skacze do 135 bpm, odpływ krwi z kory przedczołowej do mięśni szkieletowych, suchość w ustach, drżenie dłoni.', subtext: 'Fizjologiczny stan „walcz lub uciekaj” w klimatyzowanej sali konferencyjnej.' },
+          { stepNumber: 9, label: 'POTRZEBA', question: 'Czego w tej chwili fundamentalnie potrzebuje Michał?', content: 'Natychmiastowego bezpieczeństwa, zachowania twarzy i ucieczki przed publiczną kompromitacją.', subtext: 'Biologiczna potrzeba ochrony integralności społecznej.' },
+          { stepNumber: 10, label: 'MOTYWACJA', question: 'Do czego dąży jego układ motywacyjny?', content: 'Nie do precyzyjnego wyjaśnienia metodologii, lecz do defensywnego zneutralizowania ataku.', subtext: 'Motywacja ucieczkowo-obronna zamiast zadaniowej.' },
+          { stepNumber: 11, label: 'OBAWY', question: 'Jaki jest jego najczarniejszy scenariusz mentalny?', content: 'Utrata pracy, zrujnowanie reputacji na rynku, powrót do domu i konieczność przyznania się żonie do porażki.', subtext: 'Eskalacja katastroficzna w odcięciu od realiów.' },
+          { stepNumber: 12, label: 'CEL', question: 'Jaki krótkoterminowy cel wybiera kora przedczołowa?', content: 'Szybko zakończyć ten wątek, nie wchodząc w dyskusję merytoryczną.', subtext: 'Redukcja napięcia kosztem jakości merytorycznej.' },
+          { stepNumber: 13, label: 'ALTERNATYWY', question: 'Jakie inne drogi reakcji miał do dyspozycji?', content: 'Mógł spokojnie powiedzieć: „Model bazuje na średniej miesięcznej. Sprawdźmy wpływ wtorkowego kursu — możemy przeliczyć to w 2 minuty po spotkaniu”.', subtext: 'Ścieżka dojrzałego partnerstwa merytorycznego.' },
+          { stepNumber: 14, label: 'DECYZJA', question: 'Dlaczego wybiera opcję defensywną?', content: 'Ponieważ schemat „Jestem niekompetentny” podpowiedział, że każda próba obrony zostanie uznana za bezczelność.', subtext: 'Paraliż decyzyjny narzucony przez schemat dziecięcy.' },
+          { stepNumber: 15, label: 'ZACHOWANIE', question: 'Co Michał fizycznie robi i mówi?', content: 'Spuszcza wzrok, czerwieni się, mówi cichym, przepraszającym głosem: „Aha... no tak, przepraszam, mogłem to przeoczyć... poprawię to”.', subtext: 'Zachowanie uległo-defensywne, sygnalizujące winę, której nie ma.' },
+          { stepNumber: 16, label: 'REAKCJA INNYCH', question: 'Jak reaguje zarząd na takie zachowanie?', content: 'Wiceprezes jest zaskoczony przeprosinami i zaczyna myśleć: „Skoro tak panikuje, to chyba cały raport jest nierzetelny”. Zaczyna drążyć kolejne slajdy.', subtext: 'Samospełniająca się przepowiednia: defensywa wywołała podejrzenia.' },
+          { stepNumber: 17, label: 'KONSEKWENCJE', question: 'Jaki jest obiektywny bilans spotkania?', content: 'Zarząd traci zaufanie do obliczeń Michała, zleca zewnętrzny audyt, a Michał wraca do biurka wyczerpany i roztrzęsiony.', subtext: 'Realne straty wizerunkowe spowodowane nie błędem w danych, lecz błędem schematu.' },
+          { stepNumber: 18, label: 'AKTUALIZACJA PRZEKONAŃ', question: 'Czego umysł Michała „uczy się” z tego wydarzenia?', content: 'Zamiast dostrzec błąd we własnej reakcji, Michał mówi sobie: „Wiedziałem! Znowu udowodniłem, że się do tego nie nadaję. Następnym razem muszę jeszcze bardziej unikać wystąpień”.', subtext: 'Wzmocnienie i zabetonowanie pierwotnego schematu rdzennego.' },
+          { stepNumber: 19, label: 'KOLEJNA RUNDA', question: 'Jak wpłynie to na jego zachowanie za miesiąc?', content: 'Przed kolejnym zebraniem weźmie zwolnienie lekarskie, pogłębiając ucieczkę behawioralną i niszcząc swoją karierę.', subtext: 'Błędne koło unikania utrwalające nerwicowy schemat.' }
+        ],
+        takeaway: 'To nie pytanie wiceprezesa zniszczyło prezentację Michała — zrobił to jego własny, nieuświadomiony schemat poznawczy, który zamienił merytoryczną uwagę w egzystencjalny wyrok.'
+      },
       caseStudyRef: caseStudiesChapterEighteen[3]
     },
     {
@@ -1118,11 +1166,30 @@ export const chapterEighteen: Chapter = {
       sectionNumber: '18.4',
       title: 'Interpretacja Rzeczywistości: Surowy Bodziec vs Znaczenie Nadane Przez Umysł',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 18,
+      quote: {
+        text: 'Ludzi nie niepokoją same rzeczy, lecz przekonania, jakie o nich mają.',
+        author: 'Epiktet / Albert Ellis (Reason and Emotion in Psychotherapy, 1962)'
+      },
       paragraphs: [
-        'Pomiędzy surowym bodźcem z zewnętrznego świata a naszą reakcją emocjonalną i behawioralną istnieje przestrzeń interpretacji poznawczej (Model ABC Alberta Ellisa).',
-        'A (Activating Event) — Zdarzenie aktywujące (np. szef nie odpowiedział na e-mail); B (Beliefs) — Przekonania i interpretacja („Szef jest na mnie wściekły, zaraz mnie zwolni”); C (Consequences) — Konsekwencje emocjonalne i fizjologiczne (Lęk, ścisk w żołądku, spadek wydajności).',
-        'To nie zdarzenie A wywołuje emocję C, lecz przekonanie B. Zmiana interpretacji B natychmiast modyfikuje reakcję biologiczną C.'
+        'Pomiędzy surowym bodźcem ze świata fizycznego a naszą reakcją emocjonalną, somatyczną i behawioralną istnieje przestrzeń interpretacji poznawczej, którą Albert Ellis, twórca Racjonalno-Emotywnej Terapii Zachowania (REBT), ujął w klasyczny Model ABC.',
+        'Model ABC Ellisa rozbija ludzkie doświadczenie na trzy precyzyjne komponenty:',
+        'A (Activating Event) — Zdarzenie aktywujące: obiektywny, możliwy do zarejestrowania kamerą fakt (np. partner spóźnia się 30 minut na kolację; klient odrzuca ofertę handlową).\nB (Beliefs) — Przekonania i interpretacje: wewnętrzny filtr znaczeń, myśli i założeń, przez które umysł przepuszcza zdarzenie A (np. „On robi to celowo, żeby mnie upokorzyć”; „Muszę zadowolić każdego, inaczej jestem nikim”).\nC (Consequences) — Konsekwencje: reakcja emocjonalna (wściekłość, rozpacz), fizjologiczna (podwyższone ciśnienie) i behawioralna (awantura, trzaskanie drzwiami).',
+        'Najważniejszy wgląd Ellisa brzmi: PUNKTY A NIGDY NIE POWODUJĄ PUNKTÓW C. Pomiędzy A i C zawsze stoi B. To nie spóźnienie partnera (A) wywołuje szał (C), lecz przekonanie B: „On MA OBOWIĄZEK zawsze być na czas, a skoro się spóźnił, to znaczy, że ma mnie za nic!”. Zmiana przekonania B natychmiast modyfikuje odpowiedź biologiczną C.'
+      ],
+      subsections: [
+        {
+          title: 'Analiza słów Alberta Ellisa: Tyrania powinności („Musturbation”)',
+          paragraphs: [
+            'Ellis stworzył ironiczny termin „musturbation” (tyrania powinności), aby opisać neurotyczny nawyk przekształcania ludzkich pragnień w sztywne, bezwzględne żądania pod adresem wszechświata. Ludzie wpadają w rozpacz nie dlatego, że coś poszło nie po ich myśli, lecz dlatego, że wierzą, iż świat MUSI być sprawiedliwy, inni ludzie MUSZĄ ich lubić, a sukces MUSI przychodzić bez trudu.',
+            'Dojrzałość poznawcza według Ellisa polega na zamianie sztywnego żądania („Świat MUSI taki być”) w racjonalną preferencję („Bardzo chciałbym, aby tak było, ale jeśli tak nie jest, potrafię z tym żyć i konstruktywnie działać”).'
+          ],
+          highlightBox: {
+            title: 'Wgląd Ellisa: Trzy neurotyczne aksjomaty paraliżu',
+            content: '1. „Muszę odnosić sukcesy we wszystkim, co robię, inaczej jestem bezwartościowy”. 2. „Inni ludzie muszą traktować mnie sprawiedliwie i z szacunkiem, a jeśli tego nie robią, są potworami”. 3. „Warunki mojego życia muszą być łatwe i bezstresowe, inaczej nie da się wytrzymać”. Zdemaskuj te trzy zdania w swoim umyśle, a odzyskasz wolność.',
+            type: 'insight'
+          }
+        }
       ]
     },
     {
@@ -1145,12 +1212,46 @@ export const chapterEighteen: Chapter = {
       sectionNumber: '18.6',
       title: 'Błąd Potwierdzenia (Confirmation Bias) i Filtrowanie Dowodów',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Umysł ludzki w obliczu nowej hipotezy nie szuka faktów, które mogłyby ją obalić, lecz niestrudzenie poluje na okruchy, które mogą ją poprzeć, ślepy na ocean dowodów przeciwnych.',
+        author: 'Peter C. Wason (On the failure to eliminate hypotheses in a conceptual task, 1960)'
+      },
       paragraphs: [
-        'Błąd Potwierdzenia (Confirmation Bias) jest jednym z najpotężniejszych i najbardziej powszechnych zniekształceń poznawczych w ludzkim umyśle.',
-        'Gdy umysł przyjmie jakąś hipotezę jako prawdziwą, zaczyna wybiórczo przeszukiwać otoczenie w poszukiwaniu dowodów ją potwierdzających (confirming evidence), jednocześnie aktywnie ignorując lub umniejszając wagę dowodów sprzecznych (disconfirming evidence).',
-        'W efekcie im dłużej w coś wierzymy, tym bardziej wydaje nam się to oczywiste i niepodważalne, gdyż nasza pamięć gromadzi niemal wyłącznie dane samopotwierdzające.'
+        'Błąd Potwierdzenia (Confirmation Bias), opisany po raz pierwszy eksperymentalnie przez Petera Wasona w 1960 roku, jest najbardziej uniwersalnym i podstępnym mechanizmem poznawczym ludzkiego mózgu.',
+        'W słynnym zadaniu 2-4-6 Wason podawał badanym ciąg liczb i prosił o odgadnięcie ukrytej reguły poprzez generowanie własnych trójek liczb, na które badacz odpowiadał: „zgodna z regułą” lub „niezgodna”. Badani błyskawicznie formułowali skomplikowaną hipotezę („liczby rosnące o 2”) i testowali wyłącznie trójki potwierdzające ich domysł (np. 6-8-10, 20-22-24). Otrzymując potwierdzenie, nabierali 100% pewności, że odkryli prawdę.',
+        'Gdy Wason informował ich, że rzeczywista reguła brzmiała po prostu: «dowolne trzy liczby w porządku rosnącym», badani byli w szoku. Ani razu nie spróbowali podać ciągu, który mógłby obalić ich hipotezę (np. 2-3-4 lub 1-5-100).',
+        'Confirmation Bias działa na trzech poziomach przetwarzania informacji:',
+        '1. SELEKTYWNA UWAGA: Zauważasz wyłącznie artykuły, wypowiedzi i sytuacje, które potwierdzają Twoje poglądy polityczne lub medyczne.\n2. SELEKTYWNA INTERPRETACJA: Niejednoznaczne dane tłumaczysz tak, by pasowały do Twojego schematu (np. spadek giełdy interpretujesz jako dowód na krach, a wzrost jako manipulację banków centralnych).\n3. SELEKTYWNA PAMIĘĆ: Bez trudu przypominasz sobie sytuacje, gdy „miałeś rację”, całkowicie wypierając ze wspomnień setki pomyłek.'
       ],
+      subsections: [
+        {
+          title: 'Analiza słów Petera Wasona: Dlaczego mózg nienawidzi falsyfikacji?',
+          paragraphs: [
+            'Wason zauważył, że falsyfikacja własnych przekonań wymaga od kory przedczołowej ogromnego wydatku metabolicznego i zdolności do tolerowania niepewności poznawczej. Potwierdzenie hipotezy aktywuje układ nagrody (strzał dopaminy: „miałem rację!”).',
+            'Obalenie hipotezy aktywuje natomiast przednią korę obręczy (ACC) i wyspę — te same obszary, które odpowiadają za ból somatyczny. Mózg woli żyć w błędnej, ale spójnej iluzji, niż znosić bolesny chaos rewizji poglądów.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Wasona: Złota zasada Karola Darwina',
+            content: 'Karol Darwin pisał w swojej autobiografii: „Zawsze nosiłem przy sobie notes i natychmiast zapisywałem każdy fakt lub obserwację, która przeczyła mojej teorii ewolucji. Wiedziałem z doświadczenia, że sprzeczne dowody ulatują z pamięci o wiele szybciej niż te, które nam schlebiają”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-18-6-wason-startup',
+        type: 'counter_case',
+        title: 'Kontrprzypadek: Ślepota falsyfikacyjna w zarządzie startupu MedTech',
+        subtitle: 'Jak 5 milionów złotych stopniało w pogoni za samopotwierdzeniem',
+        context: 'Projekt inteligentnej opaski diagnostycznej VitalBand monitorującej poziom stresu pracowników.',
+        counterCase: {
+          standardTheory: 'Założyciele wierzyli w aksjomat: „Każda korporacja natychmiast kupi naszą opaskę, ponieważ stres obniża produktywność, a menedżerowie pragną dbać o dobrostan podwładnych”.',
+          counterExample: 'Podczas testów pilotażowych w 3 bankach aż 82% pracowników odmówiło noszenia opasek ze strachu przed inwigilacją i mobbingiem przez HR. Zamiast uznać ten fakt za fundamentalne obalenie założeń biznesowych, prezes startupu stwierdził: „Banki są zbyt konserwatywne, a pracownicy niedoedukowani. Musimy po prostu zrobić lepszą kampanię PR i zainwestować kolejne miliony w marketing!”. Zamiast zmienić model na anonimowy audyt, przepalili budżet i zbankrutowali.',
+          whyItDefiesRule: 'Założyciele potraktowali dane rynkowe nie jako sygnał do korekty, lecz jako opór głupiego świata, który trzeba przełamać siłą.',
+          deeperLesson: 'Prawdziwy przedsiębiorca i naukowiec zakochuje się w problemie klienta, a nie we własnym rozwiązaniu. Szukaj dowodów na to, dlaczego Twój pomysł może upaść, zanim rynek zweryfikuje go brutalną stratą kapitału.'
+        },
+        takeaway: 'Najcenniejszą informacją na świecie nie jest ta, która potwierdza Twój geniusz, lecz ta, która bezlitośnie obnaża Twoją ślepą plamę.'
+      },
       caseStudyRef: caseStudiesChapterEighteen[0]
     },
     {
@@ -1159,12 +1260,65 @@ export const chapterEighteen: Chapter = {
       sectionNumber: '18.7',
       title: 'Dysonans Poznawczy Leona Festingera i Strategie Jego Redukcji',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Dysonans poznawczy może być postrzegany jako stan motywacyjny, który popycha człowieka do redukcji napięcia z taką samą siłą, z jaką głód popycha go do poszukiwania pożywienia.',
+        author: 'Leon Festinger (A Theory of Cognitive Dissonance, 1957)'
+      },
       paragraphs: [
-        'Leon Festinger w 1957 roku sformułował Teorię Dysonansu Poznawczego, opisując nieprzyjemne napięcie psychiczne pojawiające się, gdy człowiek posiada dwie sprzeczne informacje lub gdy jego zachowanie stoi w sprzeczności z jego przekonaniami.',
-        'Mózg dąży do usunięcia dysonansu za wszelką cenę. Istnieją trzy główne drogi redukcji dysonansu: 1. Zmiana zachowania (najtrudniejsza); 2. Zmiana przekonania; 3. Dodanie nowych racjonalizacji (najczęstsza).',
-        'Przykładowo, palacz znający dane o szkodliwości palenia redukuje dysonans racjonalizacją: „Mój dziadek palił i żył 90 lat” lub „Przynajmniej się nie stresuję”.'
-      ]
+        'Leon Festinger w 1957 roku opublikował teorię, która na zawsze zmieniła psychologię społeczną: Teorię Dysonansu Poznawczego (Cognitive Dissonance).',
+        'Dysonans to stan dotkliwego dyskomfortu psychicznego i fizjologicznego, który pojawia się, gdy jednostka jednocześnie utrzymuje dwa sprzeczne elementy poznawcze (przekonania, opinie, wiedzę) lub gdy jej realne zachowanie stoi w rażącej sprzeczności z wyznawanym systemem wartości.',
+        'W klasycznym eksperymencie Festingera i Carla Carlsmitha (1959) badani wykonywali przez godzinę skrajnie nudne czynności: przekręcali drewniane kołki o ćwierć obrotu. Następnie eksperymentator prosił ich, by skłamali kolejnemu uczestnikowi, mówiąc, że zadanie było fascynujące.',
+        'Części badanych zapłacono za to kłamstwo 20 dolarów (duża kwota w 1959 r.), a części zaledwie 1 dolara. Gdy później badano ich prywatne, autentyczne opinie o zadaniu, stała się rzecz paradoksalna: osoby, które dostały 20 dolarów, szczerze przyznały, że zadanie było koszmarnie nudne (miały jasne zewnętrzne usprawiedliwienie: „skłamałem dla 20 dolców”). Natomiast osoby, które dostały 1 dolara, zaczęły szczerze twierdzić, że zadanie było całkiem ciekawe i pouczające!',
+        'Dlaczego? Ponieważ 1 dolar był zbyt małą nagrodą, by usprawiedliwić kłamstwo. Ich umysł stanął w obliczu dysonansu: «Jestem uczciwym człowiekiem, a skłamałem za marnego dolara». Aby usunąć ten potworny dysonans, mózg nieświadomie zrekonstruował przekonanie: «Właściwie to wcale nie skłamałem, to zadanie naprawdę miało walory naukowe!».'
+      ],
+      subsections: [
+        {
+          title: 'Głęboka analiza słów Festingera: Anatomia samousprawiedliwienia',
+          paragraphs: [
+            'Festinger wykazał, że istnieją trzy drogi radzenia sobie z dysonansem:',
+            'DROGA 1: Zmiana zachowania (np. rzucenie palenia, zwrot ukradzionych pieniędzy) — droga najuczciwsza, ale wymagająca potężnego wysiłku i samokontroli.\nDROGA 2: Zmiana pierwotnego przekonania pod wpływem nowych faktów — droga racjonalna, wymagająca pokory epistemicznej.\nDROGA 3: Dodanie nowych przekonań konsonantycznych (racjonalizacji) — droga najłatwiejsza, którą kora nowa wybiera w 90% przypadków.',
+            'Kiedy zachowanie jest nieodwracalne (np. zdrada małżeńska, zakup niepotrzebnego drogiego auta, głosowanie na polityka, który okazał się oszustem), człowiek nie może cofnąć czasu. Wtedy machina racjonalizacji rusza pełną parą: «Ona sama mnie do tego zmusiła», «To auto to inwestycja w prestiż», «Inni politycy byliby jeszcze gorsi».'
+          ],
+          highlightBox: {
+            title: 'Ostrzeżenie Festingera: Dlaczego inteligentni ludzie wierzą w bzdury',
+            content: '„Im wyższy iloraz inteligencji i elokwencja człowieka, tym sprawniej potrafi on wygenerować wyrafinowane racjonalizacje redukujące dysonans. Inteligencja bez pokory staje się adwokatem diabła chroniącym własne błędy”.',
+            type: 'warning'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-18-7-dysonans-lekarza',
+        type: 'dual_perspectives',
+        title: 'Dwie Perspektywy: Dr Tomasz — Kardiolog i Skryty Palacz',
+        subtitle: 'Konfrontacja wiedzy naukowej z mechanizmami redukcji dysonansu',
+        context: 'Ordynator oddziału kardiologii, palący paczkę papierosów dziennie w ukryciu na tarasie szpitala.',
+        dualPerspective: {
+          situation: 'Dr Tomasz właśnie przeprowadził udaną reanimację 48-letniego pacjenta z zawałem serca spowodowanym nikotynizmem. Pół godziny później wychodzi na papierosa.',
+          personA: {
+            name: 'Dr Tomasz (Głos Naukowca / Kardiologa)',
+            quote: '„Każdy wdech dymu uszkadza śródbłonek naczyniowy, podnosi ciśnienie i przyspiesza agregację płytek krwi. Sam widzę te zwapniałe tętnice na stole operacyjnym”.',
+            whatTheyKnow: 'Zna na pamięć setki badań o śmiertelności z powodu chorób układu krążenia.',
+            whatTheyMiss: 'Ignoruje fakt, że jego własne naczynia wieńcowe podlegają dokładnie tym samym prawom fizjologii.',
+            interpretation: '„Jestem hipokrytą, który oszukuje swoich pacjentów i niszczy własne serce”.',
+            coreNeed: 'Spójność etyczna i poczucie autentyczności w roli lekarza.',
+            fear: 'Wczesna śmierć, kompromitacja w środowisku medycznym i osierocenie dzieci.',
+            action: 'Wyrzucenie napoczętej paczki do kosza z obietnicą: «od jutra rzucam».'
+          },
+          personB: {
+            name: 'Dr Tomasz (Głos Układu Limbicznego i Racjonalizacji)',
+            quote: '„Gdybym teraz nie zapalił po tej 6-godzinnej operacji, dostałbym zawału ze stresu. Papieros utrzymuje mnie w pionie”.',
+            whatTheyKnow: 'Czuje natychmiastową ulgę i spadek napięcia mięśniowego po zaciągnięciu się nikotyną.',
+            whatTheyMiss: 'Nie zauważa, że to sam głód nikotynowy wygenerował większość tego napięcia.',
+            interpretation: '„Moja praca jest zbyt obciążająca, bym mógł żyć jak mnich. Należy mi się mała ulga”.',
+            coreNeed: 'Błyskawiczne obniżenie poziomu kortyzolu i ucieczka przed psychicznym wyczerpaniem.',
+            fear: 'Że bez nikotyny nie poradzi sobie z presją sali operacyjnej.',
+            action: 'Wyciągnięcie papierosa, zapalenie i usprawiedliwienie: «Moje geny są silne, dziadek dożył setki».'
+          },
+          synthesis: 'Tomasz nie pali dlatego, że brakuje mu wiedzy medycznej. Pali, ponieważ jego kora przedczołowa mistrzowsko redukuje dysonans za pomocą fałszywego bilansu: «lepiej palić niż zwariować ze stresu». Dopóki nie znajdzie innych narzędzi regulacji układu nerwowego, dysonans będzie niszczył jego serce pod osłoną racjonalizacji.'
+        },
+        takeaway: 'Wiedza nie chroni przed autodestrukcją. Chroni przed nią dopiero gotowość do zmierzenia się z bólem dysonansu bez ucieczki w wymówki.'
+      }
     },
     {
       id: 'sec-18-8',
@@ -1172,12 +1326,47 @@ export const chapterEighteen: Chapter = {
       sectionNumber: '18.8',
       title: 'Efekt Backfire (Efekt Odbicia) — Dlaczego Fakty Zagrażają Przekonaniom?',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Kiedy korygujemy fałszywe informacje, które są głęboko splecione z tożsamością człowieka, próba naprostowania błędu może nie tylko zawieść, lecz wręcz zabetonować pierwotne złudzenie.',
+        author: 'Brendan Nyhan & Jason Reifler (When Corrections Fail: The Persistence of Political Misperceptions, 2010)'
+      },
       paragraphs: [
-        'Zjawisko Backfire Effect wykazuje, że w przypadku głębokich przekonań tożsamościowych (np. poglądy polityczne, religijne, wizja wychowania) przedstawienie twardych dowodów naukowych sprzecznych z tezą jednostki NIE powoduje zmiany zdania.',
-        'Przeciwnie: konfrontacja z faktami aktywuje ciało migdałowate i reakcję zagrożenia ego. Umysł zaczyna gorączkowo szukać kontrargumentów, co w rezultacie sprawia, że człowiek wychodzi ze sporu jeszcze bardziej utwierdzony w swoim pierwotnym poglądzie.',
-        'Zrozumienie Efektu Odbicia jest kluczem do skutecznej komunikacji i negocjacji: zasypywanie rozmówcy wykresami tylko potęguje jego opór.'
+        'W 2010 roku politolodzy Brendan Nyhan z Dartmouth College i Jason Reifler z University of Exeter opisali zjawisko, które wywołało konsternację wśród edukatorów i dziennikarzy: Efekt Odbicia (Backfire Effect).',
+        'W serii rygorystycznych eksperymentów badacze podsuwali osobom o określonych sympatiach politycznych artykuły prasowe zawierające popularne mity (np. o obecności broni masowego rażenia w Iraku przed inwazją w 2003 r.). Następnie grupie eksperymentalnej przedstawiono jednoznaczną, autorytatywną korektę opartą na raporcie komisji rządu USA (raport Duelfera), który stwierdził brak broni masowego rażenia.',
+        'Rezultat był szokujący: u osób silnie konserwatywnych zapoznanie się z oficjalnym raportem rządowym doprowadziło do WZROSTU przekonania, że Irak taką broń posiadał! Zamiast zweryfikować pogląd, badani zaczęli interpretować sam raport jako dowód na „spisek liberałów”, „ukrywanie faktów przez CIA” i jeszcze żarliwiej bronili swojej wersji.',
+        'Neuroobrazowanie funkcjonalne (fMRI) przeprowadzone przez Jonasa Kaplana i Sama Harrisa wyjaśniło neurobiologiczne podłoże Backfire Effect: gdy kwestionowane są przekonania tożsamościowe, mózg wykazuje wzmożoną aktywację w ciele migdałowatym i grzbietowo-przyśrodkowej korze przedczołowej — tych samych obszarach, które reagują na widok szarżującego drapieżnika. Mózg traktuje podważenie poglądu politycznego lub religijnego jako próbę biologicznego zniszczenia organizmu.'
       ],
+      subsections: [
+        {
+          title: 'Analiza słów Nyhana i Reiflera: Kiedy fakt staje się atakiem na przynależność plemienną',
+          paragraphs: [
+            'Nyhan i Reifler wykazali, że przekonania tożsamościowe nie pełnią funkcji deskryptywnej (nie służą do precyzyjnego opisu praw fizyki). Pełnią funkcję SPOIWEM PLEMIENNEGO (Tribal Epistemology). Wyznawanie określonego poglądu jest biletem wstępu do grupy rówieśniczej, partii lub rodziny.',
+            'Jeśli przyjęcie faktu naukowego wiąże się z ryzykiem ostracyzmu i wykluczenia ze stada, układ limbiczny wybiera lojalność wobec grupy kosztem prawdy obiektywnej. Dla naszych przodków na sawannie wykluczenie ze stada oznaczało natychmiastową śmierć biologiczną. Dlatego ewolucja wyposażyła nas w mechanizm obrony przekonań za wszelką cenę.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Jak rozmawiać bez wywoływania Backfire Effect?',
+            content: 'Nigdy nie zaczynaj od: „Mylisz się, oto dowody”. Najpierw zbuduj bezpieczeństwo tożsamościowe: potwierdź wartość rozmówcy, doceń jego intencje i zadawaj pytania sokratejskie: „Jakie warunki musiałyby zajść, abyś dopuścił możliwość alternatywnego wyjaśnienia?”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-18-8-petla-backfire',
+        type: 'loop',
+        title: 'Gdzie zaczęła się pętla? — Anatomia zerwania relacji podczas wigilijnej kłótni',
+        subtitle: 'Jak zasypywanie faktami uruchomiło eskalację wrogości między ojcem a synem',
+        context: 'Dyskusja przy rodzinnym stole o transformacji energetycznej i zmianach klimatycznych.',
+        loopStages: [
+          { stageNumber: 1, label: 'BODZIEC WYJŚCIOWY', description: 'Ojciec (62 lata, inżynier górnictwa) rzuca przy zupie uwagę: „Całe to ocieplenie klimatu to wymysł brukselskich urzędników, żeby zarobić na wiatrakach”.' },
+          { stageNumber: 2, label: 'ATAK FAKTAMI', description: 'Syn (28 lat, programista) wyciąga smartfon i w agresywnym tonie mówi: „Tato, jak możesz być taki ciemny? 99,9% recenzowanych prac naukowych NASA i IPCC potwierdza antropogeniczne ocieplenie. Przeczytaj sobie ten raport!”.' },
+          { stageNumber: 3, label: 'ALARM BIOLOGICZNY W EGO OJCA', description: 'Dla ojca raport NASA nie jest dokumentem naukowym — jest symbolem arogancji młodego pokolenia, które unieważnia 40 lat jego ciężkiej pracy w przemyśle i traktuje go jak ignoranta.' },
+          { stageNumber: 4, label: 'REAKCJA ODBICIA (BACKFIRE)', description: 'Ojciec podnosi głos: „Ci twoi naukowcy biorą miliony z grantów, żeby pisać to, co każe im Bruksela! Prawdziwi inżynierowie wiedzą, jak wygląda rzeczywistość!”. Jego przekonanie o spisku ulega zabetonowaniu.' },
+          { stageNumber: 5, label: 'ESKALACJA PERSONALNA', description: 'Syn krzyczy: „Z tobą się nie da rozmawiać, żyjesz w średniowieczu!”. Wstaje od stołu i trzaska drzwiami. Wigilia zrujnowana.' },
+          { stageNumber: 6, label: 'PUNKT PRZEŁAMANIA PĘTLI', description: 'Syn mógł powiedzieć: „Tato, wiem, jak ogromną wiedzę masz o energetyce i ile dekad przepracowałeś w przemyśle. Ciekawi mnie, jak z perspektywy inżyniera widzisz dane o emisjach CO2 z ostatnich 50 lat?”. Szacunek dla tożsamości zdejmuje blokadę limbiczną.' }
+        ],
+        takeaway: 'Jeśli zaatakujesz czyjąś tożsamość za pomocą faktów, rozmówca odrzuci fakty, by ocalić tożsamość. Najpierw zbuduj most szacunku, a dopiero potem kładź na nim twarde dane.'
+      },
       caseStudyRef: caseStudiesChapterEighteen[1]
     },
     {
@@ -1212,12 +1401,60 @@ export const chapterEighteen: Chapter = {
       sectionNumber: '18.11',
       title: 'Pętla Aktualizacji Przekonań (Belief Updating) i Wnioskowanie Bayesowskie',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Mózg jest maszyną wnioskowania bayesowskiego, która nieustannie minimalizuje błąd przewidywania. Kiedy stajemy się dogmatyczni, to nie rzeczywistość się myli — to my sztucznie wyciszamy sygnały zmysłowe, by chronić nasz wyjściowy model świata.',
+        author: 'Karl Friston (The Free-Energy Principle: A Unified Brain Theory?, 2010)'
+      },
       paragraphs: [
-        'Wnioskowanie bayesowskie jest matematycznym i psychologicznym modelem opisującym, jak racjonalny umysł powinien aktualizować swoje przekonania w obliczu nowych danych.',
-        'Model Bayesowski łączy wiedzę pierwotną (Prior Probability — jak bardzo wierzyłem w hipotezę przed zobaczeniem danych) z wagą nowych dowodów (Likelihood), dając zaktualizowane przekonanie końcowe (Posterior Probability).',
-        'Dojrzałość poznawcza polega na ciągłym przeprowadzaniu aktualizacji bayesowskiej: im silniejszy i bardziej wiarygodny dowód empiryczny, tym większa zmiana subiektywnego prawdopodobieństwa przekonania.'
-      ]
+        'Wnioskowanie bayesowskie, wywodzące się z XVIII-wiecznego twierdzenia matematycznego wielebnego Thomasa Bayesa, stało się w ostatnich dekadach wiodącym paradygmatem w neuronauce kognitywnej (Model Przetwarzania Predykcyjnego — Predictive Processing, Andy Clark, Karl Friston).',
+        'Zgodnie z tym modelem mózg nie jest biernym odbiornikiem bodźców ze świata. Jest potężnym generatorem hipotez, który nieustannie rzutuje na rzeczywistość swoje przewidywania (Priors — prawdopodobieństwo pierwotne). Dopływające bodźce zmysłowe są porównywane z tymi przewidywaniami, generując tzw. błąd przewidywania (Prediction Error).',
+        'Wzór Bayesa opisuje, jak racjonalny umysł powinien aktualizować swoje przekonania: P(H|E) = [P(E|H) * P(H)] / P(E).',
+        'W ujęciu psychologicznym oznacza to:',
+        '1. PRAWDOPODOBIEŃSTWO PIERWOTNE (Prior): Z jaką siłą wierzyłem w dane twierdzenie ZANIM zobaczyłem nowe dowody?\n2. WIARYGODNOŚĆ DOWODU (Likelihood): Jak prawdopodobne jest zaobserwowanie takiego dowodu, jeśli moja hipoteza jest prawdziwa vs jeśli jest fałszywa?\n3. PRAWDOPODOBIEŃSTWO ZAKTUALIZOWANE (Posterior): Z jaką siłą powinienem wierzyć w twierdzenie PO zintegrowaniu nowego dowodu?',
+        'Człowiek dojrzały poznawczo nigdy nie mówi: „To na 100% prawda” ani „To na 100% fałsz”. Posługuje się kategoriami prawdopodobieństwa: „Na podstawie obecnych danych oceniam prawdopodobieństwo tej hipotezy na 80%. Jeśli pojawią się rzetelne dowody przeciwne, bez wahania obniżę ten wskaźnik do 30%”.'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Karla Fristona: Dogmatyzm jako patologia predykcji',
+          paragraphs: [
+            'Karl Friston z University College London wykazał, że w zdrowym mózgu waga przypisywana błędowi przewidywania (Precision Weighting) jest dynamicznie regulowana przez dopaminę i acetylocholinę. Gdy pojawia się nowy, twardy dowód, kora nowa aktualizuje model wyjściowy.',
+            'W stanach dogmatyzmu ideologicznego lub paranoi układ nerwowy sztucznie zawyża precyzję pierwotnego przekonania do nieskończoności, redukując wagę błędu przewidywania do zera. Wtedy żadne fakty, wykresy ani zdjęcia nie są w stanie zmienić przekonania — umysł odrzuca sygnał zmysłowy jako „szum”.'
+          ],
+          highlightBox: {
+            title: 'Zasada Johna Maynarda Keynesa: Elastyczność mistrza',
+            content: 'Gdy krytyk zarzucił słynnemu ekonomiście zmianę stanowiska w kluczowej kwestii walutowej, Keynes odpowiedział: „Kiedy zmieniają się fakty, zmieniam zdanie. A pan co robi, panie kolego?”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-18-11-bayes-inwestor',
+        type: 'what_if',
+        title: 'Zmień jeden parametr: Od dogmatyka do badacza bayesowskiego',
+        subtitle: 'Symulacja decyzji inwestycyjnej dyrektora finansowego wobec spadków spółki',
+        context: 'Marek (dyrektor inwestycyjny) ulokował 2 miliony złotych w akcjach spółki technologicznej BioGreen.',
+        whatIfOptions: {
+          defaultScenario: 'Marek traktuje swój wybór jako sprawę honoru. Mimo kolejnych 4 fatalnych raportów kwartalnych dokupuje akcji, twierdząc, że rynek jest w błędzie i manipulowany.',
+          options: [
+            {
+              id: 'c18-opt-b1',
+              changeLabel: 'Zastosowanie reguły Bayesa: redukcja wagi hipotezy o 20% po każdym negatywnym raporcie audytorskim',
+              resultingInterpretation: 'Marek uznaje, że prawdopodobieństwo sukcesu spółki spadło z 80% do 25%, co zdejmuje presję obrony własnego ego.',
+              resultingBehavior: 'Zamyka pozycję ze stratą 15%, ratując 1,7 miliona złotych kapitału i inwestuje w zdywersyfikowany fundusz obligacji.',
+              psychologicalImpact: 'Poczucie profesjonalizmu i ulgi: strata finansowa potraktowana jako koszt rynkowy, a nie zniszczenie tożsamości.'
+            },
+            {
+              id: 'c18-opt-b2',
+              changeLabel: 'Utrzymanie dogmatu tożsamościowego („Nigdy się nie mylę, jestem wybitnym inwestorem”) do samego końca',
+              resultingInterpretation: 'Marek traktuje bankructwo spółki jako spisek konkurencji, wpadając w głęboki kryzys tożsamościowy i depresję.',
+              resultingBehavior: 'Utrata całego kapitału, zwolnienie dyscyplinarne z funduszu i chroniczny lęk przed podejmowaniem jakichkolwiek decyzji.',
+              psychologicalImpact: 'Całkowita katastrofa tożsamościowa spowodowana brakiem epistemicznej pokory.'
+            }
+          ]
+        },
+        takeaway: 'Prawdziwa siła umysłu nie polega na twardym trzymaniu się raz obranej opinii, lecz na płynnej kalibracji swoich przekonań proporcjonalnie do wagi nowych dowodów.'
+      }
     },
     {
       id: 'sec-18-12',

@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 /**
  * TOM III — ROZDZIAŁ 16 (GLOBALNIE ROZDZIAŁ 32 W STRUKTURZE DZIEŁA)
@@ -625,10 +625,11 @@ export const chapterThirtyTwo: Chapter = {
       sectionNumber: '32.1',
       title: 'Czym jest odporność psychiczna? Proces, zasoby i powrót do równowagi',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 22,
       quote: {
-        text: 'Dąb opiera się burzy i łamie; wierzba ugina się pod podmuchem i wstaje, gdy wiatr cichnie.',
-        author: 'Metafora Adaptacyjna'
+        text: 'Odporność psychiczna (resilience) nie jest rzadką, heroiczną cechą nielicznych wybrańców. To powszechna, głęboko zakorzeniona w ludzkiej biologii siła adaptacyjna, którą nazywam „zwyczajną magią” (ordinary magic). Wyłania się ona z normalnego działania podstawowych systemów ochronnych człowieka: zdrowego mózgu, wspierających relacji i zdolności do elastycznego rozwiązywania problemów.',
+        author: 'Prof. Ann S. Masten',
+        source: 'University of Minnesota, „Ordinary Magic: Resilience in Development”, American Psychologist, 2001'
       },
       paragraphs: [
         'W potocznym dyskursie odporność psychiczna (resilience) bywa błędnie utożsamiana z granitowym pancerzem — niewzruszonością, brakiem emocji, twardością czy bezwzględnym parciem naprzód pomimo bólu. To szkodliwy mit, który w praktyce prowadzi do wypalenia, somatyzacji i nagłych załamań nerwowych.',
@@ -638,20 +639,58 @@ export const chapterThirtyTwo: Chapter = {
       ],
       subsections: [
         {
+          id: 'sub-32-1-1',
+          title: 'Analiza słów prof. Ann Masten: Demistyfikacja Heroizmu na Rzecz Biologicznej Adaptacji',
+          content: [
+            'Koncepcja „zwyczajnej magii” prof. Masten to kopernikański przewrót w badaniach nad traumą i stresem. Zamiast szukać nadprzyrodzonej siły woli, Masten skierowała uwagę nauki na podstawowe regulatory homeostazy. Gdy mózg ma zapewnione poczucie bezpieczeństwa fizycznego i choć jedną stabilną więź społeczną, naturalne mechanizmy neuroplastyczności same dążą do samonaprawy.',
+            'Zrozumienie tej zasady uwalnia człowieka z toksycznego przymusu bycia „niezniszczalnym”. Po doznaniu kryzysu nie musisz natychmiast triumfować — Twoim pierwszym zadaniem jest zabezpieczenie biologii: sen, nawodnienie, ograniczenie bodźców i pozwolenie układowi przywspółczulnemu na wygaszenie kaskady kortyzolowej.'
+          ]
+        },
+        {
+          id: 'sub-32-1-2',
           title: 'Czym odporność NIE JEST:',
-          paragraphs: [
+          content: [
             '• NIE JEST brakiem emocji ani chłodem emocjonalnym.',
             '• NIE JEST nakazem natychmiastowej produktywności po stracie.',
             '• NIE JEST ignorowaniem realnych problemów pod maską toksycznego optymizmu.',
             '• NIE JEST samotną walką bez proszenia o wsparcie.'
-          ],
-          highlightBox: {
-            title: 'Kluczowy Wgląd:',
-            content: 'Prawdziwie odporny człowiek po ciężkim uderzeniu pozwala sobie na odpoczynek, opatruje rany, prosi o pomoc, a gdy układ nerwowy odzyska równowagę — stawia kolejny mały krok.',
-            type: 'insight'
-          }
+          ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-32-1-1',
+          type: 'insight',
+          title: 'Wierzba i Dąb: Paradoks Giętkości',
+          content: 'Dąb opiera się wichurze całą swoją sztywną masą — i przy potężnym huraganie zostaje wyrwany z korzeniami. Wierzba ugina się niemal do samej ziemi pod podmuchem wiatru, pozwalając energii żywiołu przepłynąć przez swoje gałęzie, by po przejściu burzy powrócić do pionu. Odporność to elastyczność wierzby, a nie sztywność dębu.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-32-1',
+        title: 'Diagnoza Reakcji Kryzysowej: Sztywny Dąb czy Elastyczna Wierzba?',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Jakub (38 lat) po nagłej likwidacji jego działu w korporacji zaciska zęby, mówi żonie: „Nic się nie stało, jestem twardy”, śpi po 3 godziny w nocy i rozsyła po 50 CV dziennie, ignorując narastający ból w klatce piersiowej.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Ocena postawy Jakuba w świetle badań prof. Ann Masten',
+            description: 'Czy zachowanie Jakuba jest przejawem odporności psychicznej?',
+            options: [
+              {
+                text: 'Nie, to sztywność adaptacyjna i tłumienie afektu (postawa dębu), która grozi załamaniem kardiologicznym i wypaleniem zasobów poznawczych',
+                feedback: 'Precyzyjna ocena: Jakub myli odporność z negacją bólu. Brak snu i brak autentycznego kontaktu z emocjami uniemożliwia rzetelną aktualizację strategii.',
+                isOptimal: true
+              },
+              {
+                text: 'Tak, to wzorowa postawa męskiego lidera nieokazującego słabości',
+                feedback: 'Szkodliwy mit kulturowy prowadzący prosto na oddział kardiologii.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakich trudnych sytuacjach udajesz „niewzruszony dąb”, zamiast pozwolić sobie na elastyczność i regenerację wierzby?'
+      }
     },
     {
       id: 'sec-32-2',
@@ -659,7 +698,12 @@ export const chapterThirtyTwo: Chapter = {
       sectionNumber: '32.2',
       title: 'Odporność ≠ Niewrażliwość: Pułapki tłumienia, unikania i sztywności',
       category: 'teoria',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 22,
+      quote: {
+        text: 'Tłumienie ekspresji emocjonalnej (suppression) jest strategią o ogromnym koszcie fizjologicznym. Kiedy zmuszasz się do kamiennej twarzy w obliczu cierpienia lub zagrożenia, twoje ciało migdałowate nadal wyładowuje się z pełną mocą, ciśnienie krwi gwałtownie rośnie, a zasoby kory przedczołowej ulegają wyczerpaniu. Prawdziwa adaptacja wymaga przewartościowania poznawczego (reappraisal), a nie maskowania prawdy.',
+        author: 'Prof. James J. Gross',
+        source: 'Stanford University, „Emotion Regulation: Affective, Cognitive, and Social Consequences”, Psychophysiology, 2002'
+      },
       paragraphs: [
         'Konieczne jest precyzyjne odróżnienie autentycznej odporności od mechanizmów obronnych, które na zewnątrz mogą ją powierzchownie przypominać, lecz w rzeczywistości niszczą organizm od środka.',
         'Tłumienie afektu (emotional suppression) to aktywny wysiłek kory przedczołowej mający na celu ukrycie ekspresji emocjonalnej. Badania Jamesa Grossa dowodzą, że tłumienie nie obniża pobudzenia ciała migdałowatego, a wręcz zwiększa ciśnienie tętnicze i wyrzut kortyzolu, pogarszając jednocześnie pamięć roboczą.',
@@ -667,15 +711,58 @@ export const chapterThirtyTwo: Chapter = {
       ],
       subsections: [
         {
+          id: 'sub-32-2-1',
+          title: 'Analiza słów prof. Jamesa Grossa: Neurobiologiczna Cena Tłumienia',
+          content: [
+            'Prof. Gross w setkach eksperymentów laboratoryjnych wykazał, że tłumienie emocji to najgorsza możliwa strategia regulacji afektu. Osoby tłumiące nie tylko cierpią na tachykardię i skurcz naczyń krwionośnych, lecz także dramatycznie gorzej zapamiętują treść rozmów i są odbierane przez rozmówców jako nieszczere i zagrażające.',
+            'Alternatywą Grossa jest Przewartościowanie Poznawcze (Cognitive Reappraisal) — zmiana znaczenia sytuacji ZANIM afekt całkowicie zaleje korę mózgową. Zamiast mówić sobie: „Nie wolno mi się bać”, człowiek mówi: „To naturalne, że czuję lęk przed tą operacją, ale ten lęk oznacza, że zależy mi na życiu. Skupię się na instrukcjach lekarza”.'
+          ]
+        },
+        {
+          id: 'sub-32-2-2',
           title: 'Tabela: Pozorna Siła vs Rzeczywisty Stan Psychobiologiczny',
-          paragraphs: [
+          content: [
             '1. ODPORNOŚĆ (Resilience):\n• Pozorny wygląd: „Idę dalej, choć jest trudno”.\n• Co faktycznie się dzieje: Człowiek uznaje ból, nie wypiera faktów, reguluje układ nerwowy i dostosowuje działanie do nowych warunków.\n• Koszt długoterminowy: Niski — buduje mądrość i poczucie sprawczości.',
             '2. TŁUMIENIE (Suppression):\n• Pozorny wygląd: „Nic mnie to nie obchodzi, nie mam czasu na mazgajenie się”.\n• Co faktycznie się dzieje: Emocja zostaje uwięziona w ciele; rośnie napięcie mięśniowe, bezsenność i ryzyko chorób psychosomatycznych.\n• Koszt długoterminowy: Bardzo wysoki — ryzyko nagłego wybuchu lub depresji.',
             '3. UNIKANIE (Avoidance):\n• Pozorny wygląd: „Nie będę o tym myśleć, skupię się na serialach/pracy/grach”.\n• Co faktycznie się dzieje: Problem narasta w tle, a lęk przed konfrontacją rośnie z każdym dniem.\n• Koszt długoterminowy: Erozja zaufania do własnej sprawczości.',
             '4. SZTYWNOŚĆ (Rigidity):\n• Pozorny wygląd: „Muszę zrealizować pierwotny plan co do milimetra bez względu na wszystko”.\n• Co faktycznie się dzieje: Ignorowanie nowych danych rynkowych i biologicznych z lęku przed przyznaniem się do błędu.\n• Koszt długoterminowy: Katastrofalne zderzenie z rzeczywistością.'
           ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-32-2-1',
+          type: 'badanie',
+          title: 'Eksperyment Grossa: Koszt Społeczny Tłumienia',
+          content: 'Gdy badani mieli za zadanie tłumić emocje podczas rozmowy na trudne tematy, u ich Bogu ducha winnych partnerów rozmowy odnotowano... gwałtowny wzrost ciśnienia tętniczego! Układ nerwowy drugiego człowieka podświadomie wyczuwa brak spójności między napiętym ciałem a kamienną twarzą, interpretując to jako sygnał podstępu i zagrożenia.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-32-2',
+        title: 'Przełączenie Strategii: Od Tłumienia (Gross) do Sprawczego Reappraisal',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Sylwia (31 lat) prezentuje strategię przed zarządem. Odczuwa silne drżenie rąk i suchość w ustach. Powtarza w kółko: „Przestań się bać, idioto, opanuj się!”, co wywołuje u niej atak hiperwentylacji.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór techniki regulacji emocji wg Jamesa Grossa',
+            description: 'Jak Sylwia powinna przeformułować swój stan fizjologiczny?',
+            options: [
+              {
+                text: 'Zastosować Cognitive Reappraisal: „Moje serce bije szybko, bo kora nadnerczy pompuje tlen do mózgu, bym mogła precyzyjnie odpowiadać na trudne pytania. To mobilizacja do walki, a nie zawał”.',
+                feedback: 'Doskonałe przewartościowanie poznawcze: zamiana interpretacji „zagrożenie” na „wyzwanie” gasi spiralę paniki.',
+                isOptimal: true
+              },
+              {
+                text: 'Próbować jeszcze mocniej stłumić drżenie rąk, zaciskając pięści do białości',
+                feedback: 'Błąd: jeszcze większy skurcz naczyń krwionośnych i gwarantowany paraliż mowy.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakiej sytuacji zawodowej lub osobistej tłumisz emocje, fundując swojemu sercu niepotrzebny koszt nadciśnieniowy?'
+      }
     },
 
     // CZĘŚĆ II — ADAPTACJA (32.3 - 32.5)
@@ -685,13 +772,62 @@ export const chapterThirtyTwo: Chapter = {
       sectionNumber: '32.3',
       title: 'Adaptacja: Jak człowiek aktualizuje model rzeczywistości',
       category: 'teoria',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 22,
+      quote: {
+        text: 'Mózg jest maszyną minimalizującą wolną energię (Free Energy Principle) — nieustannie generuje odgórne hipotezy i przewidywania dotyczące świata. Kiedy rzeczywistość przeczy oczekiwaniom, powstaje sygnał błędu predykcji (prediction error). Adaptacja to nic innego jak gotowość układu nerwowego do skorygowania wewnętrznej mapy zamiast zmuszania świata, by dopasował się do naszych urojeń.',
+        author: 'Prof. Karl J. Friston',
+        source: 'University College London (UCL), „The Free-Energy Principle: A Unified Brain Theory?”, Nature Reviews Neuroscience, 2010'
+      },
       paragraphs: [
         'Mózg człowieka jest organem predykcyjnym (Predictive Processing Model wg Karla Fristona). Nie rejestrujemy świata biernie — nieustannie generujemy przewidywania dotyczące tego, co powinno się wydarzyć, i porównujemy je z napływającymi danymi sensorycznymi.',
         'Gdy rzeczywistość burzy nasz plan, powstaje gwałtowny błąd predykcji (Prediction Error). Człowiek staje przed wyborem: albo zignorować dane i upierać się przy starym modelu, albo przejść przez bolesny proces aktualizacji mapy umysłu.',
         'Uniwersalny cykl adaptacji przebiega według schematu:\nSTARY MODEL RZECZYWISTOŚCI $\\rightarrow$ NOWE ZDARZENIE $\\rightarrow$ KONFLIKT POZNAWCZY $\\rightarrow$ AKTUALIZACJA MODELU $\\rightarrow$ NOWE SKALIBROWANE DZIAŁANIE.',
         'Przykłady adaptacji w różnych sferach życia:\n• Egzamin: Otrzymanie oceny niedostatecznej $\\rightarrow$ aktualizacja wiedzy o wymogach profesora $\\rightarrow$ zmiana techniki notowania.\n• Utrata pracy: Zwolnienie grupowe $\\rightarrow$ porzucenie złudzenia stałości korporacji $\\rightarrow$ audyt kompetencji i nowe portfolio.\n• Zmiana relacji: Odrzucenie propozycji wspólnego wyjazdu $\\rightarrow$ akceptacja granic drugiej strony $\\rightarrow$ przeorganizowanie własnego czasu.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-32-3-1',
+          title: 'Analiza słów prof. Karla Fristona: Zasada Wolnej Energii a Opór przed Zmianą',
+          content: [
+            'Model Fristona rewolucjonizuje rozumienie uporu poznawczego. Kiedy nasze plany biorą w łeb, błąd predykcji wywołuje gwałtowny wzrost tzw. wolnej energii wariacyjnej — co subiektywnie odczuwamy jako ostry ból poznawczy, lęk i frustrację.',
+            'Umysł sztywny próbuje zminimalizować ten błąd poprzez wyparcie faktów lub wściekłość („to niemożliwe, oni się pomylili, ja miałem rację!”). Umysł adaptacyjny bierze głęboki oddech i aktualizuje wagi synaptyczne (Bayesian belief updating): „Mój model rynku był błędny. Prawda jest inna. Przepisuję założenia”.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-32-3-1',
+          type: 'insight',
+          title: 'Aktualizacja Bayesowska w Życiu Codziennym',
+          content: 'Thomas Bayes sformułował twierdzenie probabilistyczne, które jest dziś fundamentem sztucznej inteligencji: Twoje obecne przekonanie (a priori) powinno ulec modyfikacji pod wpływem nowych dowodów empirycznych. Jeśli dowody zaprzeczają Twojej teorii, trzymanie się starej opinii nie jest „lojalnością”, lecz dogmatyczną głupotą.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-32-3',
+        title: 'Aktualizacja Modelu Rzeczywistości: Reakcja na Błąd Predykcji Fristona',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Damian (27 lat) założył platformę e-commerce, inwestując 40 000 zł. Przez 3 miesiące nie dokonał ani jednej sprzedaży, a budżet na reklamy się wyczerpał.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór ścieżki adaptacji poznawczej Damiana',
+            description: 'Jak Damian powinien zareagować na potężny błąd predykcji rynkowej?',
+            options: [
+              {
+                text: 'Zaakceptować sygnał błędu Fristona: przeprowadzić wywiady z 20 potencjalnymi klientami, dowiedzieć się, dlaczego nie kupują, i zaktualizować model oferty przed wydaniem kolejnej złotówki',
+                feedback: 'Doskonała bayesowska aktualizacja modelu: Damian traktuje brak sprzedaży jako cenną informację rynkową, a nie wyrok na swoją wartość.',
+                isOptimal: true
+              },
+              {
+                text: 'Wziąć 50 000 zł pożyczki i przepompować ją w te same reklamy, twierdząc, że klienci są zbyt głupi, by zrozumieć jego produkt',
+                feedback: 'Sztywność poznawcza i próba wymuszenia na rzeczywistości dopasowania się do błędnego modelu.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Który z Twoich planów zderzył się w ostatnim roku z błędem predykcji i czy zaktualizowałeś swój model świata?'
+      }
     },
     {
       id: 'sec-32-4',
@@ -699,7 +835,12 @@ export const chapterThirtyTwo: Chapter = {
       sectionNumber: '32.4',
       title: 'Niepewność i potrzeba przewidywalności: Dlaczego mózg pragnie gwarancji',
       category: 'neuronauka',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Nasz mózg woli niemal każdą pewną złą wiadomość od przedłużającej się niepewności. W badaniach laboratoryjnych ludzie wykazują wyższe pobudzenie układu współczulnego i wyższy poziom kortyzolu, gdy istnieje 50% szans na bolesny szok elektryczny, niż wtedy, gdy mają 100% pewności, że szok nastąpi. Niepewność zamienia mózg w generator paranoi.',
+        author: 'Prof. Jack B. Nitschke',
+        source: 'University of Wisconsin-Madison, „Anticipating Hurt: Functional Neuroimaging of Pain Anticipation and Uncertainty”, PNAS, 2006'
+      },
       paragraphs: [
         'Z punktu widzenia biologii ewolucyjnej niepewność oznaczała potencjalną śmierć w paszczy drapieżnika. Dlatego brak informacji jest rejestrowany przez pień mózgu i ciało migdałowate jako sygnał alarmowy, zużywający znaczne zasoby metaboliczne glukozy.',
         'Warto zauważyć kluczową różnicę: PRZEWIDYWANIE to nasza wewnętrzna hipoteza statystyczna, podczas gdy WIEDZA dotyczy faktów już zaistniałych. Mózg w warunkach braku danych ma tendencję do tworzenia skrajnie czarnych scenariuszy. Dlaczego? Ponieważ z ewolucyjnego punktu widzenia bezpieczniej było pomylić szum wiatru z tygrysem szablastozębnym (fałszywy alarm), niż pomylić tygrysa z wiatrem (błąd śmiertelny).',
@@ -707,21 +848,59 @@ export const chapterThirtyTwo: Chapter = {
       ],
       subsections: [
         {
+          id: 'sub-32-4-1',
+          title: 'Analiza słów prof. Jacka Nitschke: Koszt Neurobiologiczny Zawieszenia',
+          content: [
+            'Wypowiedź prof. Nitschke rzuca światło na powszechne zjawisko: dlaczego pacjenci czekający na diagnozę onkologiczną często mówią, że najgorszy był okres oczekiwania na wyniki, a po otrzymaniu nawet złej diagnozy poczuli paradoksalną ulgę. Kiedy pojawia się fakt (choćby bolesny), mózg może natychmiast uruchomić procedurę adaptacyjną.',
+            'W stanie niepewności kora przedczołowa nie może zamknąć żadnej pętli decyzyjnej. Dlatego kluczem do nawigacji po niepewności jest tzw. Odroczenie Wyroku i budowanie procedur contingencyjnych („Jeśli wariant A, robię X; jeśli wariant B, robię Y”), co natychmiast zdejmuje ładunek lękowy z ciała migdałowatego.'
+          ]
+        },
+        {
+          id: 'sub-32-4-2',
           title: 'ANALIZA CZŁOWIEKA: Julia (17 lat) — Presja szkolna i lęk przed nieznanym',
-          paragraphs: [
+          content: [
             '• Sytuacja: Julia czeka na wyniki egzaminów próbnych do liceum dwujęzycznego. Przez 5 dni nie może spać, odświeża stronę szkoły co 15 minut.',
             '• Obawa i założenie: „Jeśli nie zdam na 90%, moja przyszłość legnie w gruzach i zawiodę rodziców”.',
             '• Reakcja somatyczna: Ścisk w żołądku, ból głowy, wycofanie z kontaktu z rówieśnikami.',
             '• Błąd poznawczy: Uznanie czarnego scenariusza za 100% fakt, zanim pojawiły się jakiekolwiek liczby.',
             '• Interwencja adaptacyjna: Zatrzymanie pętli odświeżania strony, spisanie planu na wypadek niższego wyniku (rekrutacja uzupełniająca) i spacer regeneracyjny.'
-          ],
-          highlightBox: {
-            title: 'Lekcja:',
-            content: 'Napięcie niepewności obniża się nie przez ciągłe sprawdzanie, lecz przez przygotowanie procedury na każdy możliwy wariant.',
-            type: 'insight'
-          }
+          ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-32-4-1',
+          type: 'insight',
+          title: 'Lekcja:',
+          content: 'Napięcie niepewności obniża się nie przez ciągłe sprawdzanie, lecz przez przygotowanie procedury na każdy możliwy wariant.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-32-4',
+        title: 'Opanowanie Paraliżu Niepewności: Protokół 50% Nitschke',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Kamil (33 lata) złożył ofertę na zakup wymarzonego mieszkania. Właściciel poinformował, że podejmie decyzję w piątek. Kamil od wtorku nie może pracować, wydzwania do pośrednika i ma mdłości z nerwów.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Interwencja poznawcza zdejmująca alarm z ciała migdałowatego',
+            description: 'Co Kamil powinien zrobić, by odzyskać spokój przed piątkiem?',
+            options: [
+              {
+                text: 'Zamknąć laptopa, zaakceptować, że sprawa leży w Strefie C do piątku do 15:00, i znaleźć 3 alternatywne ogłoszenia mieszkań spełniające 85% wymagań',
+                feedback: 'Doskonałe przygotowanie procedury awaryjnej: stworzenie planu B natychmiast wygasza panikę Nitschke i przywraca poczucie kontroli.',
+                isOptimal: true
+              },
+              {
+                text: 'Dzwonić do właściciela co 2 godziny, podnosząc ofertę o kolejne kwoty ze stresu',
+                feedback: 'Reaktywna panika obniżająca pozycję negocjacyjną i zwiększająca chaos emocjonalny.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Przed jaką niewiadomą stoisz obecnie i jak plan awaryjny może obniżyć Twoje napięcie fizjologiczne?'
+      }
     },
     {
       id: 'sec-32-5',

@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 export const chapterNineteenExamQuestions: ExamQuestion[] = [
   {
@@ -932,14 +932,69 @@ export const chapterNineteen: Chapter = {
       id: 'sec-19-4',
       pageNumber: 10,
       sectionNumber: '19.4',
-      title: 'Poczucie Skuteczności (Albert Bandura) — 4 Filar Sprawczości',
+      title: 'Poczucie Skuteczności (Albert Bandura) — 4 Filary Sprawczości',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Przekonania ludzi na temat ich skuteczności wpływają na to, jakie cele sobie wyznaczają, ile wysiłku wkładają w ich realizację, jak długo są wytrwali w obliczu trudności oraz jak radzą sobie z porażkami.',
+        author: 'Albert Bandura (Self-Efficacy: The Exercise of Control, 1997)'
+      },
       paragraphs: [
-        'Albert Bandura zidentyfikował cztery główne źródła budowania Poczucia Skuteczności (Self-Efficacy):',
-        '1. Doświadczenia opanowania (Mastery Experiences) — najbardziej wpływy filar: osobiste przeżycie sukcesu wywalczonego pokonaniem przeszkód; 2. Doświadczenia zastępcze (Vicarious Experiences) — obserwowanie modela podobnego do nas, który osiąga cel; 3. Perswazja społeczna — merytoryczne wsparcie ze strony autorytetu; 4. Stan fizjologiczny i emocjonalny — interpretacja sygnałów z ciała (np. drżenie rąk jako mobilizacji, a nie paraliżu).',
-        'Budowanie Self-Efficacy wymaga stwarzania sytuacji, w których człowiek dostarcza swojemu umysłowi dowodów sprawczości krok po kroku.'
-      ]
+        'Albert Bandura z Uniwersytetu Stanforda, jeden z najbardziej wpływowych psychologów XX wieku, dokonał przełomowego odkrycia: to nie sama inteligencja ani obiektywne zdolności decydują o sukcesie człowieka, lecz jego poczucie własnej skuteczności (Self-Efficacy).',
+        'Poczucie skuteczności to podmiotowe przekonanie jednostki, że posiada zdolność do zmobilizowania zasobów poznawczych, motywacji oraz ciągów działań niezbędnych do sprostania wymogom określonej sytuacji.',
+        'Bandura precyzyjnie zidentyfikował cztery niezastąpione źródła budowania Self-Efficacy:',
+        '1. DOŚWIADCZENIA OPANOWANIA (Mastery Experiences): Najpotężniejszy fundament. Prawdziwe poczucie sprawczości rodzi się wyłącznie z pokonania realnej przeszkody własnym wysiłkiem. Łatwe sukcesy rodzą kruchą iluzję pewności siebie, która pryska przy pierwszym oporze. Potrzebujesz doświadczeń przezwyciężenia porażki, by Twój umysł nauczył się, że błąd jest etapem nauki, a nie wyrokiem.\n2. DOŚWIADCZENIA ZASTĘPCZE (Vicarious Experiences / Modeling): Obserwowanie ludzi podobnych do nas pod względem wieku, statusu czy punktu wyjścia, którzy osiągają sukces dzięki wytrwałości. Myśl: „Skoro on, będąc w takiej samej sytuacji, dał radę, to ja również mogę się tego nauczyć”.\n3. PERSWAZJA SPOŁECZNA (Social Persuasion): Konstruktywna, wiarygodna informacja zwrotna od szanowanego mentora lub autorytetu, który wskazuje realne możliwości rozwoju, zamiast pustego pochlebstwa.\n4. STANY FIZJOLOGICZNE I EMOCJONALNE (Somatic & Emotional States): Zdolność do interpretacji pobudzenia autonomicznego (przyspieszone tętno, suchość w ustach) nie jako dowodu na zbliżającą się katastrofę („Boże, paraliżuje mnie!”), lecz jako mobilizacji organizmu do walki („Moje ciało pompuje tlen do mózgu, bym był maksymalnie skupiony”).'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Alberta Bandury: Dlaczego afirmacje bez działania nie działają?',
+          paragraphs: [
+            'Bandura wprost kpił z pop-poradników zalecających powtarzanie przed lustrem: „Jestem zwycięzcą”. Kora przedczołowa i układ limbiczny nie dają się oszukać werbalnym zaklinaniem rzeczywistości. Jeśli stoisz przed wyzwaniem i nie posiadasz w hipokampie śladów pamięciowych realnie pokonanych trudności (Mastery Experiences), układ nerwowy odrzuci afirmację jako fałsz.',
+            'Sprawczość jest konstruowana empirycznie. Jedynym sposobem na uciszenie lęku jest podjęcie mikrodziałania w świecie fizycznym, które zakończy się mierzalnym rezultatem, dostarczając układowi nerwowemu twardego dowodu sprawstwa.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Alberta Bandury: Różnica między optymizmem a sprawczością',
+            content: '„Naiwny optymista wierzy, że wszystko ułoży się samo z siebie. Człowiek o wysokim Self-Efficacy nie wierzy w magiczne szczęście — wierzy, że cokolwiek się wydarzy, posiada zdolność do adaptacji, nauki i wypracowania rozwiązania”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-19-4-bandura-sprawczosc',
+        type: 'what_we_know',
+        title: 'Co naprawdę wiemy? — Demontaż Mitów o Pewności Siebie wg Bandury',
+        subtitle: 'Oddzielenie faktów naukowych od iluzji coachingu motywacyjnego',
+        context: 'Przygotowanie pracownika do objęcia roli lidera nowego projektu.',
+        whatWeKnow: {
+          items: [
+            {
+              id: 'c19-bnd-1',
+              statement: 'Prawdziwe poczucie skuteczności buduje się wyłącznie poprzez osobiste przezwyciężenie trudnych sytuacji (Mastery Experiences).',
+              category: 'fakt',
+              explanation: 'To centralna teza Bandury poparta dekadami badań eksperymentalnych: umysł potrzebuje empirycznych dowodów z działania.'
+            },
+            {
+              id: 'c19-bnd-2',
+              statement: 'Wystarczy codziennie powtarzać pozytywne afirmacje, by trwale podnieść poczucie własnej wartości i odnieść sukces.',
+              category: 'interpretacja',
+              explanation: 'Mit obalony naukowo (Wood et al., 2009). U osób o niskiej samoocenie powtarzanie nierealistycznych afirmacji wywołuje dysonans poznawczy i pogłębia depresję.'
+            },
+            {
+              id: 'c19-bnd-3',
+              statement: 'Drżenie rąk i przyspieszone tętno przed prezentacją oznaczają, że nie nadajesz się na mówcę i powinieneś zrezygnować.',
+              category: 'interpretacja',
+              explanation: 'Błąd interpretacji somatycznej. Badania Alii Crum pokazują, że przekadrowanie pobudzenia (arousal reappraisal) jako energii do działania drastycznie podnosi jakość wystąpienia.'
+            },
+            {
+              id: 'c19-bnd-4',
+              statement: 'Obserwacja rówieśnika lub osoby o podobnych zasobach pokonującej problem (modelowanie) skutecznie podnosi własne Self-Efficacy.',
+              category: 'fakt',
+              explanation: 'Doświadczenie zastępcze (Vicarious Experience) aktywuje neurony lustrzane i redukuje wyuczoną bezradność.'
+            }
+          ]
+        },
+        takeaway: 'Nie czekaj, aż poczujesz pewność siebie, by zacząć działać. Zacznij działać w mikroskali, by Twoje działanie wytworzyło pewność siebie jako produkt uboczny.'
+      }
     },
     {
       id: 'sec-19-5',
@@ -947,12 +1002,63 @@ export const chapterNineteen: Chapter = {
       sectionNumber: '19.5',
       title: 'Porównania Społeczne (Leon Festinger): Porównania w Górę i w Dół',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'W ludzkim umyśle istnieje niepowstrzymany pęd do oceniania własnych zdolności i opinii. W braku obiektywnych fizycznych standardów człowiek bezwzględnie porównuje się z innymi ludźmi.',
+        author: 'Leon Festinger (A Theory of Social Comparison Processes, 1954)'
+      },
       paragraphs: [
-        'Teoria Porównań Społecznych Festingera wskazuje, że ludzie mają wbudowany automat do oceniania swoich możliwości poprzez zestawianie się z innymi.',
-        'Porównania w górę (Upward Comparison) z osobami osiagającymi lepsze wyniki mogą działać jako motywacja do rozwoju, lecz przy nierealistycznym punkcie odniesienia niszczą samoocenę.',
-        'Porównania w dół (Downward Comparison) z osobami w gorszej sytuacji dają chwilową ulgę, lecz nie budują trwałej kompetencji.'
-      ]
+        'Leon Festinger w 1954 roku sformułował Teorię Porównań Społecznych (Social Comparison Theory), odkrywając jeden z najbardziej fundamentalnych napędów ludzkiej psychiki.',
+        'Większość ludzi wierzy, że ocenia swoje życie według obiektywnych kryteriów: „Zarabiam X, mam dach nad głową, moje zdrowie jest stabilne”. Festinger dowiódł, że mózg ludzki jest biologicznie niezdolny do oceny dobrostanu w próżni. Wszelkie pojęcia takie jak „sukces”, „bogactwo”, „atrakcyjność” czy „mądrość” są definiowane wyłącznie relacyjnie — poprzez zestawienie z grupą odniesienia (Reference Group).',
+        'Festinger podzielił porównania na dwa wektory o odmiennej dynamice psychologicznej:',
+        '1. PORÓWNANIA W GÓRĘ (Upward Social Comparison): Zestawianie się z osobami osiągającymi wyższy status, większe zarobki lub lepsze wyniki. W warunkach adaptacyjnych może inspirować do nauki i wyznaczać kierunek rozwoju. Jednak w dobie cyfrowej, gdy obiektem porównania stają się wyreżyserowane profile celebrytów, generuje chroniczny wstyd, poczucie ubytku statusowego i depresję.\n2. PORÓWNANIA W DÓŁ (Downward Social Comparison): Zestawianie się z osobami w gorszym położeniu biologicznym lub finansowym. Daje natychmiastową ulgę i podbija samoocenę („Przynajmniej nie jestem w tak fatalnej sytuacji jak on”), lecz jest to proteza krucha i pasywna — nie buduje realnej kompetencji, a jedynie znieczula ból egzystencjalny.'
+      ],
+      subsections: [
+        {
+          title: 'Analiza słów Festingera: Pułapka asymetrii poznawczej',
+          paragraphs: [
+            'Współczesna psychologia rozwinęła tezę Festingera o zjawisko „asymetrii kulis i sceny”. Porównując się z innymi w życiu społecznym lub w internecie, popełniamy kardynalny błąd logiczny: porównujemy swoje WŁASNE KULISY (nasz wewnętrzny chaos, lęki, wstyd, zmęczenie i poranne wątpliwości) z CUDZĄ SCENĄ (wyprasowanym garniturem, uśmiechem na konferencji, wyretuszowanym zdjęciem z wakacji).',
+            'Ta asymetria sprawia, że własne życie wydaje się żałosne i wybrakowane, podczas gdy cudze życie jawi się jako pasmo nieustających triumfów bez cienia cierpienia.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Festingera: Jak wybierać grupę odniesienia?',
+            content: '„Nie możesz przestać się porównywać — tak został ukształtowany Twój mózg przez miliony lat ewolucji w stadzie. Możesz jednak świadomie wybrać grupę odniesienia. Zamiast porównywać się z miliarderami z Instagrama, porównuj się z samym sobą z przeszłości”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-19-5-porownanie-spoleczne',
+        type: 'dual_perspectives',
+        title: 'Dwie Perspektywy: Magda i Ewa — Porównanie Społeczne na LinkedIn',
+        subtitle: 'Konfrontacja wyidealizowanego wizerunku sukcesu z rzeczywistym kosztem psychicznym',
+        context: 'Magda przegląda post Ewy ogłaszający awans na partnera zarządzającego w międzynarodowej korporacji.',
+        dualPerspective: {
+          situation: 'Wtorek, godzina 22:30. Magda siedzi w dresie przy biurku, poprawiając zaległe arkusze, i widzi na ekranie profesjonalne zdjęcie uśmiechniętej Ewy z kwiatami i gratulacjami.',
+          personA: {
+            name: 'Magda (Ofiara porównania w górę)',
+            quote: '„Ewa ma wszystko: spektakularną karierę, idealną figurę i czas na konferencje. Ja mam 32 lata, tkwię na średnim szczeblu i marnuję swoje życie”.',
+            whatTheyKnow: 'Zna wszystkie swoje błędy z tego tygodnia, chroniczne zmęczenie i niepewność co do przyszłości.',
+            whatTheyMiss: 'Nie ma pojęcia, że Ewa od roku zmaga się z ciężką bezsennością i rozwodzi się z mężem.',
+            interpretation: '„Jestem leniwa, gorsza i nieudolna w porównaniu z Ewą”.',
+            coreNeed: 'Poczucie uznania, sensu własnej pracy i spokój tożsamościowy.',
+            fear: 'Przeciętność, życiowa porażka i bycie niewidzialną dla otoczenia.',
+            action: 'Zamknięcie laptopa w poczuciu bezsilności, bezsenna noc pełna ruminacji i spadek energii rano.'
+          },
+          personB: {
+            name: 'Ewa (Autorka wyreżyserowanej sceny)',
+            quote: '„Jeśli nie wstawię tego posta o awansie, zarząd uzna, że brakuje mi siły przebicia. W środku czuję absolutną pustkę”.',
+            whatTheyKnow: 'Wie, że za ten awans zapłaciła rozpadem małżeństwa, wrzodami żołądka i brakiem kontaktu z córką.',
+            whatTheyMiss: 'Nie wie, że jej znajome z roku patrzą na nią z zawiścią i niszczą własną samoocenę jej kosztem.',
+            interpretation: '„Muszę utrzymać tę maskę sukcesu za wszelką cenę, bo jeśli pęknie, zostanę z niczym”.',
+            coreNeed: 'Prawdziwa bliskość, odpoczynek i uwolnienie od morderczych oczekiwań rady nadzorczej.',
+            fear: 'Utrata statusu, demaskacja kryzysu osobistego i samotność.',
+            action: 'Wymuszone pozowanie do zdjęć, pisanie autopromocyjnego tekstu i zażycie tabletki nasennej.'
+          },
+          synthesis: 'Magda zazdrości Ewie czegoś, co w rzeczywistości nie istnieje: poczucia spełnienia. Porównuje swój autentyczny ból z marketingową fasadą Ewy, nie dostrzegając, że Ewa oddałaby połowę swojej pensji za jeden spokojny wieczór, jaki Magda mogłaby spędzić z bliskimi.'
+        },
+        takeaway: 'Nigdy nie zazdrość nikomu jego sukcesu, dopóki nie poznasz ceny, jaką za niego płaci za zamkniętymi drzwiami.'
+      }
     },
     {
       id: 'sec-19-6',
@@ -987,12 +1093,60 @@ export const chapterNineteen: Chapter = {
       sectionNumber: '19.8',
       title: 'Lęk Przed Oceną i Syndrom Oszusta (Impostor Syndrome)',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Mimo wybitnych dowodów zewnętrznych na sukces, osoby te zachowują niezłomne przekonanie, że są oszustami i nie zasługują na swój status. Każdy sukces uważają za przypadek, a każdą pochwałę za pomyłkę otoczenia.',
+        author: 'Pauline R. Clance & Suzanne A. Imes (The Impostor Phenomenon in High Achieving Women, 1978)'
+      },
       paragraphs: [
-        'Lęk przed oceną (Evaluation Apprehension) opiera się na złudzeniu, że oczy wszystkich wokół są skierowane na nasze potknięcia (Spotlight Effect).',
-        'Syndrom Oszusta sprawia, że nawet wybitne osiągnięcia (nagrody, awanse) są przypisywane przypatkowi lub ślepocie otoczenia. Człowiek żyje w ciągłym przerażeniu, że „zaraz wszyscy zobaczą, że nic nie umiem”.',
-        'Terapia Syndromu Oszusta wymaga kategorycznego oddzielenia subiektywnego lęku od obiektywnych faktów i ocen merytorycznych.'
+        'W 1978 roku psychoterapeutki Pauline Rose Clance i Suzanne Imes opisały zjawisko, które dotyka nawet do 70% wybitnych specjalistów, naukowców, artystów i liderów biznesu: Zjawisko Oszusta (Impostor Phenomenon).',
+        'Syndrom Oszusta nie jest jednostką chorobową w klasyfikacji psychiatrycznej, lecz specyficznym, utrwalonym zniekształceniem atrybucyjnym. Osoba dotknięta tym syndromem stosuje podwójny standard interpretacyjny:',
+        '1. SUKCESY przypisuje wyłącznie czynnikom zewnętrznym, niestabilnym i niezależnym od siebie: „To był czysty przypadek”, „Miałem szczęście”, „Komisja miała słabszy dzień”, „Pomogli mi koledzy”, „Po prostu dobrze ściemniałem na rozmowie”.\n2. PORAŻKI przypisuje bezwzględnie czynnikom wewnętrznym, stałym i tożsamościowym: „Stało się tak, bo jestem głupi, niekompetentny i leniwy”.',
+        'W rezultacie żaden, nawet najbardziej spektakularny sukces (uzyskanie doktoratu, wygranie przetargu na 10 milionów, nagroda literacka) nie zasila rezerwuaru samooceny. Wręcz przeciwnie: każdy awans potęguje lęk! Człowiek myśli: «Teraz postawiono mi jeszcze wyższe wymagania — stawka wzrosła i tym łatwiej będzie im odkryć, że nic nie umiem».'
       ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Clance i Imes: Cykl Oszusta i mechanizmy obronne',
+          paragraphs: [
+            'Clance i Imes zmapowały tzw. Cykl Oszusta (Impostor Cycle). Gdy przed jednostką staje nowe zadanie, pojawia się paraliżujący lęk przed demaskacją. Umysł wybiera jedną z dwóch strategii kompensacyjnych:',
+            'STRATEGIA 1: Nadmierne przygotowanie (Over-preparation) — praca po 18 godzin na dobę, czytanie setek artykułów, sprawdzanie każdego przecinka. Gdy przychodzi sukces, człowiek mówi: „Udało się tylko dlatego, że harowałem ponad siły. Gdybym pracował normalnie, ponisłbym klęskę”.\nSTRATEGIA 2: Prokrastynacja i panika w ostatniej chwili — odkładanie zadania do ostatniej nocy. Gdy przychodzi sukces, człowiek mówi: „To był fart, znowu udało mi się prześlizgnąć”. W obu przypadkach wiara w rzeczywiste kompetencje pozostaje zerowa.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Kliniczny: Kto najczęściej cierpi na Syndrom Oszusta?',
+            content: 'Prawdziwi ignoranci i hochsztaplerzy nigdy nie cierpią na Syndrom Oszusta (działa u nich Efekt Dunninga-Krugera). Zjawisko to dotyka niemal wyłącznie ludzi sumiennych, inteligentnych i etycznych, których standardy są tak wysokie, że żadne ludzkie wykonanie nie może im sprostać.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-19-8-mikroskop-oszusta',
+        type: 'microscope',
+        title: 'Człowiek pod mikroskopem: Dr Paweł i panika przed odebraniem nagrody',
+        subtitle: 'Wiwisekcja 19 etapów zniekształcenia atrybucyjnego w gabinecie dziekana',
+        context: 'Dr Paweł (35 lat, neurobiolog) dowiaduje się o przyznaniu mu prestiżowego europejskiego grantu badawczego ERC.',
+        microscopeSteps: [
+          { stepNumber: 1, label: 'SYTUACJA', question: 'Co fizycznie zaszło?', content: 'Dziekan wydziału wchodzi do laboratorium Pawła z oficjalnym pismem z Brukseli potwierdzającym przyznanie 1,5 mln euro na badania nad biomarkerami alzheimera.', subtext: 'Fakt instytucjonalny najwyższej rangi merytorycznej.' },
+          { stepNumber: 2, label: 'INFORMACJE ZNANE', question: 'Co Paweł wie o swoim wniosku?', content: 'Wie, że pracował nad wnioskiem przez 8 miesięcy, zebrał rzetelne dane pilotażowe na 200 próbkach i zaproponował unikalną metodologię.', subtext: 'Twardy rejestr faktograficzny.' },
+          { stepNumber: 3, label: 'BRAK INFORMACJI', question: 'Czego Paweł NIE wie o recenzentach?', content: 'Nie znał osobiście członków panelu oceniającego w Brukseli ani ich wewnętrznych dyskusji.', subtext: 'Luka w wiedzy o procesie oceny.' },
+          { stepNumber: 4, label: 'UWAGA', question: 'Na czym natychmiast skupia się uwaga Pawła?', content: 'Na pojedynczym zdaniu z recenzji, w którym recenzent 3 zauważył: „Wielkość próby w kohorcie C mogłaby być w przyszłości poszerzona”.', subtext: 'Hiper-selektywność negatywna.' },
+          { stepNumber: 5, label: 'PERCEPCJA', question: 'Co rejestrują zmysły?', content: 'Widzi uśmiech dziekana, ale słyszy w głowie wycie syreny alarmowej.', subtext: 'Rozejście między sygnałem społecznym a stanem wewnętrznym.' },
+          { stepNumber: 6, label: 'INTERPRETACJA', question: 'Jakie znaczenie nadaje pismu?', content: '„Musieli się pomylić. Przypadkowo zamienili wnioski. Jeśli wezmę te pieniądze, po roku odkryją, że moje hipotezy są banalne i wylecę z uczelni w niesławie”.', subtext: 'Zniekształcenie atrybucyjne Syndromu Oszusta.' },
+          { stepNumber: 7, label: 'EMOCJE', question: 'Co czuje w ciele?', content: 'Lodowaty strach, ucisk w mostku, dławienie w gardle i wszechogarniający wstyd.', subtext: 'Brak radości; reakcja grozy zamiast triumfu.' },
+          { stepNumber: 8, label: 'POBUDZENIE', question: 'Fizjologiczny stan organizmu?', content: 'Gwałtowny skok kortyzolu, drżenie mięśni czwórogłowych, spadek temperatury dłoni.', subtext: 'Stan ostrego zagrożenia biologicznego.' },
+          { stepNumber: 9, label: 'POTRZEBA', question: 'Czego potrzebuje?', content: 'Natychmiastowego zrzucenia z siebie odpowiedzialności i ucieczki przed oczekiwaniami.', subtext: 'Potrzeba bezpieczeństwa przed demaskacją.' },
+          { stepNumber: 10, label: 'MOTYWACJA', question: 'Do czego dąży?', content: 'Do umniejszenia wagi sukcesu w oczach dziekana.', subtext: 'Defensywna autodeprecjacja.' },
+          { stepNumber: 11, label: 'OBAWY', question: 'Najczarniejszy scenariusz?', content: 'Konferencja prasowa, na której dziennikarze zadają mu pytanie, a on nie potrafi odpowiedzieć, stając się memem w środowisku akademickim.', subtext: 'Lęk przed publiczną kompromitacją.' },
+          { stepNumber: 12, label: 'CEL', question: 'Co postanawia?', content: 'Zminimalizować entuzjazm dziekana i przygotować go na klapę.', subtext: 'Obniżanie poprzeczki oczekiwań.' },
+          { stepNumber: 13, label: 'ALTERNATYWY', question: 'Co mógł zrobić dojrzały naukowiec?', content: 'Uśmiechnąć się, uścisnąć dłoń dziekana i powiedzieć: „Dziękuję, to owoc ciężkiej pracy całego naszego zespołu. Cieszę się, że Europa doceniła naszą koncepcję”.', subtext: 'Asertywne przyjęcie sukcesu.' },
+          { stepNumber: 14, label: 'DECYZJA', question: 'Dlaczego wybiera umniejszenie?', content: 'By stworzyć sobie poduszkę powietrzną na wypadek trudności badawczych.', subtext: 'Mechanizm asekuracji ego.' },
+          { stepNumber: 15, label: 'ZACHOWANIE', question: 'Co mówi na głos?', content: '„Panie dziekanie, nie cieszmy się za wcześnie... To chyba jakaś pomyłka w Brukseli, konkurencja musiała złożyć słabe projekty, a recenzent 3 miał spore uwagi”.', subtext: 'Dewaluacja własnego osiągnięcia.' },
+          { stepNumber: 16, label: 'REAKCJA INNYCH', question: 'Jak reaguje dziekan?', content: 'Dziekan jest skonsternowany: „Paweł, opamiętaj się, to najwyżej oceniony grant w Polsce w tej edycji. Przestań się wiecznie biczować”.', subtext: 'Zderzenie z obiektywną oceną z zewnątrz.' },
+          { stepNumber: 17, label: 'KONSEKWENCJE', question: 'Bilans sytuacji?', content: 'Paweł zamiast świętować z zespołem sukces, zamyka się w toalecie i wymiotuje ze stresu. Zespół traci zapał, widząc przerażonego lidera.', subtext: 'Zatrucie sukcesu neurotycznym lękiem.' },
+          { stepNumber: 18, label: 'AKTUALIZACJA PRZEKONAŃ', question: 'Czego uczy się umysł Pawła?', content: '„Skoro dziekan tak we mnie wierzy, to presja jest jeszcze potworniejsza. Muszę pracować po nocach, bo inaczej koniec”.', subtext: 'Kolejny obrót Cyklu Oszusta.' },
+          { stepNumber: 19, label: 'KOLEJNA RUNDA', question: 'Co nastąpi za 3 miesiące?', content: 'Skrajne wypalenie zawodowe, bezsenność i konieczność farmakoterapii przeciwlękowej mimo posiadania miliona euro na koncie.', subtext: 'Cena nieprzepracowanego syndromu oszusta.' }
+        ],
+        takeaway: 'Sukces nie uleczy Syndromu Oszusta — wręcz przeciwnie, podniesie stawkę lęku. Uleczyć go może jedynie zmiana wewnętrznej reguły przypisywania zasług i akceptacja własnej wystarczalności.'
+      },
       caseStudyRef: caseStudiesChapterNineteen[0]
     },
     {
@@ -1014,12 +1168,45 @@ export const chapterNineteen: Chapter = {
       sectionNumber: '19.10',
       title: 'Nadmierna Pewność Siebie (Efekt Dunninga-Krugera) vs Zaniżanie Możliwości',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Ludzie niekompetentni w danej dziedzinie cierpią na podwójne przekleństwo: nie tylko dochodzą do błędnych wniosków i podejmują fatalne decyzje, ale sam brak kompetencji pozbawia ich aparatu metapoznawczego niezbędnego do zdania sobie sprawy z własnej ignorancji.',
+        author: 'David Dunning & Justin Kruger (Unskilled and Unaware of It, 1999)'
+      },
       paragraphs: [
-        'Zaburzenia kalibracji pewności siebie przybierają dwie skrajne formy.',
-        'Efekt Dunninga-Krugera to ślepa pewność debiutanta na Szczycie Głupoty — brak wiedzy uniemożliwia dostrzeżenie własnych braków.',
-        'Z drugiej strony wybitni eksperci często zaniżają swoje możliwości, zakładając, że skoro dla nich dane zadanie jest łatwe, to dla każdego innego również musi takie być.'
+        'W 1999 roku psychologowie David Dunning i Justin Kruger z Cornell University opublikowali pracę, która stała się jednym z najbardziej cytowanych klasyków psychologii poznawczej. Punktem wyjścia była historia McArthura Wheelera, który obrabował dwa banki w Pittsburghu w biały dzień bez maski, uprzednio wysmarowawszy twarz sokiem z cytryny — był święcie przekonany, że skoro sok z cytryny służy jako atrament sympatyczny, to w kamerach monitoringu jego twarz będzie całkowicie niewidzialna.',
+        'Dunning i Kruger przeprowadzili serię rygorystycznych badań na studentach, testując ich kompetencje w logice, gramatyce i poczuciu humoru, a następnie prosząc o oszacowanie własnego wyniku na tle grupy.',
+        'Wyniki ukazały fundamentalną asymetrię poznawczą:',
+        '1. NAJMNIEJ KOMPETENTNI (dolne 25%): Drastycznie przeszacowywali swoje zdolności. Średnio plasowali się w 12. percentylu rzeczywistych umiejętności, lecz byli przekonani, że znajdują się w 62. percentylu! Brak wiedzy z logiki uniemożliwiał im odróżnienie poprawnego wnioskowania od bzdury. Znajdowali się na tzw. SZCZYCIE GŁUPOTY (Mount Stupid).\n2. NAJBARDZIEJ KOMPETENTNI (górne 25%): Niedoszacowywali swojej pozycji! Będąc w 90. percentylu, sądzili, że wypadli przeciętnie (ok. 70. percentyla). Zakładali błędnie, że skoro dla nich zadania logiczne były oczywiste i proste, to dla wszystkich innych również muszą być banalne (tzw. Klątwa Wiedzy — Curse of Knowledge).'
       ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Dunninga i Krugera: Metapoznanie jako warunek pokory',
+          paragraphs: [
+            'Dunning i Kruger sformułowali kluczową definicję: brak kompetencji to przede wszystkim DEFICYT METAPOZNAWCZY (Metacognitive Deficit). Aby wiedzieć, jak słaby jesteś w medycynie, prawie czy kodowaniu, musisz najpierw posiąść wystarczającą wiedzę o złożoności tych dziedzin.',
+            'Dopiero gdy człowiek zaczyna się uczyć i wkracza w tzw. DOLINĘ ROZPACZY (Valley of Despair), zdaje sobie sprawę z oceanu własnej niewiedzy. Prawdziwa pewność siebie rośnie powoli na STOKU OŚWIECENIA (Slope of Enlightenment) i charakteryzuje się precyzyjną świadomością granic własnych kompetencji.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Dunninga: Dlaczego debiutanci są najgłośniejsi w dyskusji?',
+            content: '„Na Szczycie Głupoty nie masz żadnych wątpliwości. Świat wydaje się czarno-biały, a rozwiązania problemów ekonomicznych czy zdrowotnych — dziecinnie proste. Im mniej wiesz, z tym większą agresją i pewnością siebie narzucasz swoje zdanie otoczeniu”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-19-10-dunning-kruger-startup',
+        type: 'counter_case',
+        title: 'Kontrprzypadek: Gdy „Szczyt Głupoty” doprowadził do katastrofy inwestycyjnej',
+        subtitle: 'Jak 3-tygodniowy kurs krypto stworzył „eksperta”, który stracił oszczędności rodziny',
+        context: 'Decyzje inwestycyjne młodego inwestora detalicznego w dobie hossy.',
+        counterCase: {
+          standardTheory: 'Intuicja podpowiada: człowiek, który włożył oszczędności całego życia w ryzykowny instrument finansowy, z pewnością gruntownie przestudiował analizę fundamentalną, matematykę finansową i prawo rynków kapitałowych.',
+          counterExample: 'Krzysztof (26 lat, z wykształcenia fizjoterapeuta) po obejrzeniu kilkunastu filmów na YouTube i przeczytaniu dwóch e-booków poczuł się absolutnym geniuszem tradingu. Z uśmiechem pouczał swojego wuja (od 30 lat profesora ekonomii), że „tradycyjne finanse to przeżytek dla dinozaurów, a on zarobi 500% w kwartał”. Wziął kredyt na 200 tysięcy złotych z dźwignią finansową 1:20. Gdy nastąpiła 15-procentowa korekta rynkowa, jego pozycja została zlikwidowana w 4 minuty. Został z długiem na 15 lat.',
+          whyItDefiesRule: 'Krzysztof nie miał pojęcia o pojęciu płynności rynkowej, ryzyku korelacyjnym ani matematyce likwidacji lewarowanej — właśnie ta ignorancja dała mu 100% pewności siebie.',
+          deeperLesson: 'Prawdziwy ekspert nieustannie mówi o ryzyku, scenariuszach awaryjnych i prawdopodobieństwie. Jeśli ktoś w złożonej dziedzinie gwarantuje 100% sukcesu i wyśmiewa ryzyko — masz przed sobą człowieka stojącego na samym czubku Szczytu Głupoty Dunninga-Krugera.'
+        },
+        takeaway: 'Bądź podejrzliwy wobec własnej pewności siebie za każdym razem, gdy zaczynasz nową dziedzinę. Prawdziwa wiedza zaczyna się od bolesnego uświadomienia sobie, jak niewiele wiesz.'
+      },
       caseStudyRef: caseStudiesChapterNineteen[3]
     },
     {
@@ -1039,14 +1226,60 @@ export const chapterNineteen: Chapter = {
       id: 'sec-19-12',
       pageNumber: 34,
       sectionNumber: '19.12',
-      title: 'Samoocena Niestabilna (Contingent) vs Samoocena Ugruntowana',
+      title: 'Samoocena Niestabilna (Contingent) vs Samoocena Ugruntowana i Samowspółczucie',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Samowspółczucie nie polega na litowaniu się nad sobą ani na pobłażliwości dla lenistwa. To traktowanie siebie z taką samą życzliwością, troską i konstruktywnym wsparciem, z jakim potraktowalibyśmy serdecznego przyjaciela w chwili jego największej porażki.',
+        author: 'Kristin Neff (Self-Compassion: The Proven Power of Being Kind to Yourself, 2011)'
+      },
       paragraphs: [
-        'Samoocena niestabilna (Contingent Self-Esteem) stoi na zewnętrznych szczudłach: statusie, marży, polubieniach, komplimencach. Jeden zły dzień niszczy cały budynek.',
-        'Samoocena ugruntowana opiera się na wewnętrznym kompasie etycznym, autentycznych relacjach i szacunku do własnej pracy.',
-        'Człowiek o samoocenie ugruntowanej potrafi przetrwać bankructwo czy porażkę zawodową bez utraty godności i sensu życia.'
+        'Przełomowe badania prof. Jennifer Crocker z University of Michigan nad Samooceną Warunkową (Contingent Self-Esteem) oraz prof. Kristin Neff z University of Texas nad Samowspółczuciem (Self-Compassion) przyniosły rewolucję w nowoczesnej psychologii dobrostanu.',
+        'Crocker wykazała, że tradycyjna samoocena opiera się na tzw. podstawach warunkowych (Contingencies of Self-Worth): wyglądzie fizycznym, aprobacie społecznej, statusie materialnym czy wybitnych osiągnięciach. Kiedy człowiek opiera swoją wartość na sukcesach zawodowych, każdy spadek sprzedaży czy uwaga szefa traktowany jest przez układ nerwowy jako śmiertelne zagrożenie egzystencjalne.',
+        'W odpowiedzi na wady samooceny warunkowej, Kristin Neff zaproponowała alternatywny, znacznie stabilniejszy model relacji ze sobą — SAMOWSPÓŁCZUCIE (Self-Compassion). Model ten składa się z trzech nierozerwalnych filarów:',
+        '1. ŻYCZLIWOŚĆ DLA SIEBIE (Self-Kindness) vs Samokrytyka: Gdy ponosisz porażkę, Twój wewnętrzny dialog nie zamienia się w chłostę („Jesteś beznadziejny, znowu wszystko zepsułeś”), lecz przybiera ton dojrzałego, wspierającego trenera: „To trudny moment. Zrobiłeś błąd, ale to nie przekreśla Twojej wartości. Sprawdźmy na spokojnie, co poszło nie tak”.\n2. WSPÓLNE CZŁOWIECZEŃSTWO (Common Humanity) vs Izolacja: Świadomość, że cierpienie, błędy, niedoskonałość i potknięcia są uniwersalnym, wspólnym doświadczeniem wszystkich ludzi na Ziemi, a nie Twoją osobistą, haniebną ułomnością.\n3. UWAŻNOŚĆ (Mindfulness) vs Nadmierna Identyfikacja: Zdolność do zauważenia bolesnych emocji bez ich wypierania, ale i bez katastroficznego nakręcania się w spiralę rozpaczy.'
       ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Kristin Neff: Neurobiologia samobiczowania vs samowspółczucia',
+          paragraphs: [
+            'Neff wraz z neurobiologami wykazała, że gdy człowiek bezlitośnie krytykuje samego siebie, jego układ nerwowy aktywuje układ zagrożenia (Threat-Defense System). Kora przedczołowa staje się napastnikiem, a ciało migdałowate ofiarą — organizm zalewa się kortyzolem i noradrenaliną, co prowadzi do chronicznego wyczerpania i depresji.',
+            'Kiedy natomiast stosujemy samowspółczucie, aktywujemy układ opieki i ukojenia (Caregiving / Soothing System) powiązany z wyrzutem oksytocyny i endorfin. Tętno zwalnia, układ przywspółczulny przejmuje kontrolę, co przywraca korze przedczołowej pełną jasność myślenia niezbędną do naprawienia błędu.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Kristin Neff: Samowspółczucie to nie pobłażliwość',
+            content: '„Najczęstszy mit głosi, że jeśli będziesz dla siebie życzliwy, staniesz się leniwy i osiądziesz na laurach. Badania pokazują coś dokładnie odwrotnego: samokrytyka paraliżuje lękiem przed kolejnym błędem, podczas gdy samowspółczucie daje odwagę do podejmowania najtrudniejszych wyzwań, bo wiesz, że w razie potknięcia nie zostaniesz skatowany przez samego siebie”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-19-12-samowspolczucie-neff',
+        type: 'what_if',
+        title: 'Zmień jeden element: Od samobiczowania do samowspółczucia po stracie kontraktu',
+        subtitle: 'Symulacja reakcji dyrektora handlowego po odrzuceniu kluczowej oferty',
+        context: 'Robert (39 lat, dyrektor sprzedaży) traci kluczowego klienta wartego 2 miliony złotych rocznie na rzecz konkurencji.',
+        whatIfOptions: {
+          defaultScenario: 'Robert wraca do domu i przez 5 godzin pije alkohol, powtarzając sobie w myślach: „Jestem skończonym zerem, przez moją głupotę firma pójdzie na dno, nie nadaję się na dyrektora”. Następnego dnia przychodzi do biura wrogi, wyżywa się na zespole i popełnia kolejne błędy operacyjne.',
+          options: [
+            {
+              id: 'c19-opt-n1',
+              changeLabel: 'Zastosowanie protokołu Self-Compassion Neff: pauza uważności, życzliwość i perspektywa wspólnego człowieczeństwa',
+              resultingInterpretation: 'Robert bierze głęboki oddech i mówi sobie: „To potężny cios i boli. Każdy handlowiec na świecie traci czasem wielkie kontrakty. To nie oznacza, że jestem zerem — to oznacza, że musimy zrewidować naszą ofertę cenową”.',
+              resultingBehavior: 'Spokojny wieczór z rodziną, regenerujący sen, a rano rzeczowa, inspirująca narada z zespołem analizująca ofertę konkurencji.',
+              psychologicalImpact: 'Ocalenie zasobów metabolicznych mózgu, zachowanie zaufania zespołu i wygranie kolejnego przetargu miesiąc później.'
+            },
+            {
+              id: 'c19-opt-n2',
+              changeLabel: 'Eskalacja samooceny warunkowej: próba udowodnienia swojej wartości przez pracę 16h na dobę w poczuciu paniki',
+              resultingInterpretation: 'Robert traktuje utratę klienta jako osobistą zniewagę, którą musi natychmiast zmazać za wszelką cenę.',
+              resultingBehavior: 'Terror w dziale sprzedaży, przymusowe nadgodziny, odejście z pracy dwóch najlepszych handlowców.',
+              psychologicalImpact: 'Wzrost poziomu lęku w całym zespole, zawał serca u Roberta w wieku 41 lat.'
+            }
+          ]
+        },
+        takeaway: 'Nie możesz zbudować trwałego sukcesu na fundamencie nienawiści do samego siebie. Prawdziwa siła rodzi się z życzliwości, która pozwala podnieść się po każdej porażce z podniesioną głową.'
+      },
       caseStudyRef: caseStudiesChapterNineteen[4]
     },
     {

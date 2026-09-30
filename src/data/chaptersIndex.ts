@@ -37,6 +37,11 @@ import { chapterThirtyFive } from './chapterThirtyFiveData';
 import { chapterThirtySix } from './chapterThirtySixData';
 import { chapterThirtySeven } from './chapterThirtySevenData';
 import { chapterThirtyEight } from './chapterThirtyEightData';
+import { chapterThirtyNine } from './chapterThirtyNineData';
+import { chapterForty } from './chapterFortyData';
+import { chapterFortyOne } from './chapterFortyOneData';
+import { chapterFortyTwo } from './chapterFortyTwoData';
+import { chapterFortyThree } from './chapterFortyThreeData';
 
 export const allChapters: Chapter[] = [
   chapterOne,
@@ -76,7 +81,12 @@ export const allChapters: Chapter[] = [
   chapterThirtyFive,
   chapterThirtySix,
   chapterThirtySeven,
-  chapterThirtyEight
+  chapterThirtyEight,
+  chapterThirtyNine,
+  chapterForty,
+  chapterFortyOne,
+  chapterFortyTwo,
+  chapterFortyThree
 ];
 
 export {
@@ -117,5 +127,10 @@ export {
   chapterThirtyFive,
   chapterThirtySix,
   chapterThirtySeven,
-  chapterThirtyEight
+  chapterThirtyEight,
+  chapterThirtyNine,
+  chapterForty,
+  chapterFortyOne,
+  chapterFortyTwo,
+  chapterFortyThree
 };

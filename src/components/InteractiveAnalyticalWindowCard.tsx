@@ -46,13 +46,17 @@ export const InteractiveAnalyticalWindowCard: React.FC<Props> = ({ data }) => {
   // State for Loop
   const [activeLoopStep, setActiveLoopStep] = useState<number>(1);
 
+  // State for Step-based decision/microscope
+  const [selectedOptions, setSelectedOptions] = useState<Record<number, number>>({});
+
   const toggleReveal = (id: string) => {
     setRevealedItems(prev => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const getBadgeForType = (type: InteractiveWindowData['type']) => {
+  const getBadgeForType = (type: string) => {
     switch (type) {
       case 'microscope':
+      case 'czlowiek_pod_mikroskopem':
         return { label: 'Człowiek pod mikroskopem', icon: Search, bg: 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 border-indigo-500/20' };
       case 'dual_perspectives':
         return { label: 'Dwa spojrzenia (Dwie perspektywy)', icon: Users2, bg: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/20' };
@@ -64,10 +68,12 @@ export const InteractiveAnalyticalWindowCard: React.FC<Props> = ({ data }) => {
         return { label: 'Co naprawdę wiemy? (Fakty vs Interpretacje)', icon: CheckCircle2, bg: 'bg-sky-500/10 text-sky-700 dark:text-sky-400 border-sky-500/20' };
       case 'loop':
         return { label: 'Pętla wzajemnego oddziaływania', icon: Repeat, bg: 'bg-purple-500/10 text-purple-700 dark:text-purple-400 border-purple-500/20' };
+      default:
+        return { label: 'Analiza Sytuacji i Zachowania', icon: Search, bg: 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 border-indigo-500/20' };
     }
   };
 
-  const badge = getBadgeForType(data.type);
+  const badge = getBadgeForType(data.type || 'microscope');
   const BadgeIcon = badge.icon;
 
   return (
@@ -490,14 +496,102 @@ export const InteractiveAnalyticalWindowCard: React.FC<Props> = ({ data }) => {
           </div>
         )}
 
-        {/* Bottom Takeaway */}
-        <div className="mt-6 pt-4 border-t border-stone-200 dark:border-stone-800 flex items-start gap-2.5 text-xs sm:text-sm text-stone-700 dark:text-stone-300">
-          <Sparkles className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-          <div>
-            <strong className="text-stone-900 dark:text-stone-100">Kluczowa lekcja analityczna: </strong>
-            {data.takeaway}
+        {/* 7. STEP-BASED DECISION / CZŁOWIEK POD MIKROSKOPEM (steps) */}
+        {(data as any).steps && Array.isArray((data as any).steps) && (data as any).steps.length > 0 && (
+          <div className="space-y-6">
+            <div className="space-y-5">
+              {(data as any).steps.map((st: any, sIdx: number) => {
+                const chosenOptIdx = selectedOptions[sIdx];
+                return (
+                  <div key={sIdx} className="p-5 rounded-2xl bg-indigo-50/40 dark:bg-stone-900/70 border border-indigo-200/50 dark:border-stone-800 space-y-4">
+                    <div className="flex items-center gap-2">
+                      <span className="w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs font-bold font-mono">
+                        {st.stepNumber || sIdx + 1}
+                      </span>
+                      <h4 className="font-serif font-bold text-base sm:text-lg text-stone-900 dark:text-stone-100">
+                        {st.title}
+                      </h4>
+                    </div>
+                    {st.description && (
+                      <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed font-serif">
+                        {st.description}
+                      </p>
+                    )}
+
+                    {st.options && (
+                      <div className="space-y-2.5 pt-2">
+                        <span className="text-[11px] font-mono uppercase tracking-wider text-stone-500 font-semibold block">
+                          Wybierz ścieżkę analityczną / działanie:
+                        </span>
+                        {st.options.map((opt: any, oIdx: number) => {
+                          const isSelected = chosenOptIdx === oIdx;
+                          return (
+                            <div key={oIdx} className="space-y-2">
+                              <button
+                                type="button"
+                                onClick={() => setSelectedOptions(prev => ({ ...prev, [sIdx]: oIdx }))}
+                                className={`w-full text-left p-3.5 rounded-xl border text-xs sm:text-sm transition flex items-start gap-2.5 ${
+                                  isSelected
+                                    ? opt.isOptimal
+                                      ? 'bg-emerald-50/80 dark:bg-emerald-950/40 border-emerald-400 text-emerald-900 dark:text-emerald-100 font-medium'
+                                      : 'bg-amber-50/80 dark:bg-amber-950/40 border-amber-400 text-amber-900 dark:text-amber-100 font-medium'
+                                    : 'bg-white dark:bg-stone-800/80 border-stone-200 dark:border-stone-700 hover:border-indigo-300 text-stone-800 dark:text-stone-200'
+                                }`}
+                              >
+                                <span className={`w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-[10px] font-mono font-bold mt-0.5 ${
+                                  isSelected
+                                    ? opt.isOptimal ? 'bg-emerald-600 text-white' : 'bg-amber-600 text-white'
+                                    : 'bg-stone-200 dark:bg-stone-700 text-stone-600 dark:text-stone-300'
+                                }`}>
+                                  {String.fromCharCode(65 + oIdx)}
+                                </span>
+                                <span>{opt.text}</span>
+                              </button>
+
+                              {isSelected && opt.feedback && (
+                                <div className={`p-3.5 rounded-xl text-xs sm:text-sm border animate-fadeIn ${
+                                  opt.isOptimal
+                                    ? 'bg-emerald-100/60 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-800 text-emerald-950 dark:text-emerald-200'
+                                    : 'bg-amber-100/60 dark:bg-amber-950/60 border-amber-300 dark:border-amber-800 text-amber-950 dark:text-amber-200'
+                                }`}>
+                                  <div className="flex items-center gap-1.5 font-bold mb-1">
+                                    <Sparkles className="w-3.5 h-3.5" />
+                                    <span>{opt.isOptimal ? 'Optymalna ścieżka analityczna' : 'Pułapka poznawcza / konsekwencja'}</span>
+                                  </div>
+                                  <p>{opt.feedback}</p>
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+
+            {(data as any).reflectionPrompt && (
+              <div className="p-4 rounded-xl bg-purple-500/10 border border-purple-500/20 text-xs sm:text-sm text-purple-950 dark:text-purple-200">
+                <strong className="block text-purple-800 dark:text-purple-300 font-bold mb-1">
+                  Pytanie do autorefleksji i obserwacji własnego zachowania:
+                </strong>
+                {(data as any).reflectionPrompt}
+              </div>
+            )}
           </div>
-        </div>
+        )}
+
+        {/* Bottom Takeaway */}
+        {(data.takeaway || (data as any).keyTakeaway) && (
+          <div className="mt-6 pt-4 border-t border-stone-200 dark:border-stone-800 flex items-start gap-2.5 text-xs sm:text-sm text-stone-700 dark:text-stone-300">
+            <Sparkles className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+            <div>
+              <strong className="text-stone-900 dark:text-stone-100">Kluczowa lekcja analityczna: </strong>
+              {data.takeaway || (data as any).keyTakeaway}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

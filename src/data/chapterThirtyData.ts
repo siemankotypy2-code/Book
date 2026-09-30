@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 /**
  * TOM III — ROZDZIAŁ 14 (GLOBALNIE ROZDZIAŁ 30 W STRUKTURZE DZIEŁA)
@@ -321,10 +321,11 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.1',
       title: 'Czym jest asertywność? Filozofia „Ja jestem OK — Ty jesteś OK”, godność i odwaga cywilna',
       category: 'wstep',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
       quote: {
-        text: 'Asertywność nie polega na tym, by mieć rację. Polega na tym, by mieć odwagę stanąć po swojej stronie bez potrzeby deptania praw innych.',
-        author: 'Manuel J. Smith'
+        text: 'Nikt nie może zmusić cię do poczucia niższości ani do uległości bez twojej własnej zgody. Masz fundamentalne, niezbywalne prawo do bycia ostatecznym sędzią własnego postępowania, swoich myśli i swoich emocji oraz do ponoszenia pełnej odpowiedzialności za ich powstanie i konsekwencje.',
+        author: 'Dr Manuel J. Smith',
+        source: 'University of California, Los Angeles (UCLA), „When I Say No, I Feel Guilty”, Bantam Books, 1975'
       },
       paragraphs: [
         'W potocznym dyskursie asertywność bywa rażąco spłycana i mylona z bezwzględnością, arogancją lub umiejętnością „twardego odmawiania” w każdej sytuacji. W rzeczywistości asertywność jest jedną z najbardziej szlachetnych, wymagających i dojrzałych postaw psychologicznych, jakie człowiek może w sobie ukształtować.',
@@ -334,18 +335,64 @@ export const chapterThirty: Chapter = {
       ],
       subsections: [
         {
-          title: 'Asertywność to nie zestaw trików',
-          paragraphs: [
-            'Jeśli nauczysz się samych formułek językowych, ale w środku będziesz czuć się gorszy lub będziesz pragnąć zemsty, rozmówca natychmiast wyczuje Twój fałsz w tonie głosu i mikrogrymasach twarzy.',
-            'Prawdziwa asertywność zaczyna się w Twojej relacji z samym sobą — w głębokiej zgodzie na własną niedoskonałość i w poczuciu niezbywalnej godności ludzkiej.'
-          ],
-          highlightBox: {
-            title: 'Filozofia Harrisowska',
-            content: 'Postawa asertywna to jedyna relacja symetryczna: stajesz przed drugim człowiekiem jak równy z równym — bez klękania i bez wywyższania się.',
-            type: 'insight'
-          }
+          id: 'sub-30-1-1',
+          title: 'Analiza słów dr. Manuela J. Smitha: Suwerenność Poznawcza i Pierwotne Prawo Asertywności',
+          content: [
+            'Wnikliwa dekonstrukcja Pierwszego Prawa Asertywności Manuela Smitha dotyka sedna autonomii jednostki. Przez całe dzieciństwo i okres socjalizacji jesteśmy programowani zewnętrznymi strukturami oceny: rodzice, nauczyciele i instytucje uczą nas, że o naszej wartości decyduje aprobata autorytetu.',
+            'Smith dowodzi, że dojrzałość polega na odebraniu otoczeniu mandatu do decydowania o tym, czy jesteśmy „wystarczająco dobrzy”. Kiedy stajesz się ostatecznym sędzią samego siebie, manipulacja oparta na zawstydzaniu traci rację bytu — nie potrzebujesz cudzego certyfikatu na to, by mieć prawo do własnych uczuć, odmowy czy odpoczynku.'
+          ]
+        },
+        {
+          id: 'sub-30-1-2',
+          title: 'Cztery Pozycje Życiowe Thomasa Harrisa i Poziomica Relacyjna',
+          content: [
+            'W klasycznym modelu analizy transakcyjnej relacje międzyludzkie determinowane są przez jedną z czterech pozycji życiowych:',
+            '1. JA NIE JESTEM OK — TY JESTEŚ OK (Pozycja Uległa / Depresyjna): wycofanie, poczucie gorszości, wieczne przepraszanie.',
+            '2. JA JESTEM OK — TY NIE JESTEŚ OK (Pozycja Agresywna / Paranoiczna): arogancja, oskarżenia, pogarda i tyrania.',
+            '3. JA NIE JESTEM OK — TY NIE JESTEŚ OK (Pozycja Rezygnacyjna / Nihilistyczna): cynizm, marazm, brak wiary w porozumienie.',
+            '4. JA JESTEM OK — TY JESTEŚ OK (Pozycja Asertywna / Dojrzała): partnerski szacunek, komunikacja bez masek, poszukiwanie rozwiązań win-win.'
+          ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-30-1-1',
+          type: 'insight',
+          title: 'Filozofia Harrisowska: Symetria Relacji',
+          content: 'Postawa asertywna to jedyna relacja symetryczna: stajesz przed drugim człowiekiem jak równy z równym — bez klękania i bez wywyższania się. Nie potrzebujesz zmniejszać drugiego człowieka, by samemu poczuć się wielkim.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-30-1',
+        title: 'Diagnoza Pozycji Egzystencjalnej: Uległość, Agresja czy Harrisowskie OK-OK?',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Wojciech (34 lata) dowiaduje się, że kolega z zespołu przypisał sobie wyłączną zasługę za trzymiesięczny projekt analityczny przygotowany w 80% przez Wojciecha podczas prezentacji przed zarządem.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór strategii reakcji Wojciecha',
+            description: 'Która reakcja reprezentuje pozycję dojrzałej asertywności (Ja jestem OK — Ty jesteś OK)?',
+            options: [
+              {
+                text: 'Spokojna rozmowa w cztery oczy z faktami: „Na dzisiejszym zebraniu przedstawiłeś dane jako swój samodzielny projekt. Włożyłem w niego 80% pracy analitycznej. Oczekuję, że wyślesz dziś maila do zarządu ze sprostowaniem autorstwa”.',
+                feedback: 'Podręcznikowa asertywność: szacunek dla faktów, ochrona własnej godności i praw bez krzyku i bez wyparcia.',
+                isOptimal: true
+              },
+              {
+                text: 'Pójście do toalety, płacz i pocieszenie się myślą: „Trudno, widocznie nie zasłużyłem na awans, nie będę robił kwasów w zespole”.',
+                feedback: 'Pozycja uległa (Ja nie jestem OK), która nagradza kradzież intelektualną i rodzi destrukcyjną frustrację.',
+                isOptimal: false
+              },
+              {
+                text: 'Wpadnięcie do gabinetu kolegi z wrzaskiem: „Jesteś bezczelnym złodziejem i oszustem, zniszczę cię!”.',
+                feedback: 'Agresja (Ty nie jesteś OK): eskalacja wojen na korytarzu, która odbiera Wojciechowi profesjonalną wiarygodność.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakiej relacji w Twoim życiu najczęściej osuwasz się w uległość lub agresję zamiast pozostać w pozycji Ja jestem OK — Ty jesteś OK?'
+      }
     },
     {
       id: 'sec-30-2',
@@ -519,12 +566,61 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.13',
       title: 'Jak mówić o emocjach? Nazywanie afektu bez oskarżeń i rola Affect Labeling w neuronauce',
       category: 'neuronauka',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Kiedy ubierasz swoje emocje w precyzyjne słowa (affect labeling), nie wzmacniasz ich — wręcz przeciwnie: wciskasz hamulec bezpieczeństwa w swoim mózgu. Aktywacja prawej brzuszno-bocznej kory przedczołowej (rvlPFC) wywołuje bezpośrednie hamowanie wyładowań w ciele migdałowatym, redukując pobudzenie autonomicznego układu nerwowego.',
+        author: 'Prof. Matthew D. Lieberman',
+        source: 'University of California, Los Angeles (UCLA), „Putting Feelings Into Words: Affect Labeling Disrupts Amygdala Activity to Affective Stimuli”, Psychological Science, 2007'
+      },
       paragraphs: [
         'Wielu ludzi unika mówienia o swoich emocjach, obawiając się, że wyjdą na osoby słabe, przewrażliwione lub histeryczne. Neuronauka dowodzi zjawiska dokładnie odwrotnego: werbalne nazwanie emocji (affect labeling, Matthew Lieberman) drastycznie aktywuje prawą brzuszno-boczną korę przedczołową (rvlPFC), co wysyła potężny sygnał hamujący do ciała migdałowatego i obniża tętno u obu rozmówców.',
         'Mówienie o emocjach w sposób asertywny nie polega na dramatycznym wybuchu, lecz na chłodnym nazwaniu stanu: „Czuję złość”, „Czuję głębokie rozczarowanie”, „Czuję bezradność w tej sytuacji”.',
         'Twoje uczucia są faktami psychologicznymi — nikt nie ma prawa powiedzieć Ci: „Wcale tego nie czujesz”. Nazwanie emocji odbiera im niszczycielską siłę i pozwala przejść do rozwiązań.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-30-13-1',
+          title: 'Analiza słów prof. Matthew Liebermana: Dlaczego Precyzja Afektywna Wycisza Pień Mózgu',
+          content: [
+            'Wypowiedź prof. Liebermana wyjaśnia neurobiologiczny mechanizm sukcesu asertywności. Gdy człowiek tłumi złość lub lęk, ciało migdałowate pompuje adrenalinę do krwiobiegu, co skutkuje drżeniem głosu, spięciem mięśni i odruchową agresją. Z kolei próba „wygadania się” w furii (tzw. wentylacja) jedynie nakręca neuronalną pętlę pobudzenia.',
+            'Asertywne Affect Labeling to chirurgiczny kompromis: precyzyjne nazwanie emocji bez obwiniania („Czuję narastającą frustrację, kiedy spotkanie przedłuża się o godzinę”) zmusza korę rvlPFC do przejęcia sterów metabolicznych. Wyhamowanie ciała migdałowatego przywraca kontrolę nad tonem głosu i logicznym myśleniem.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-30-13-1',
+          type: 'badanie',
+          title: 'Badanie fMRI UCLA: Wyższość Etykietowania nad Tłumieniem',
+          content: 'Badani oglądali przerażające i gniewne twarze. W grupie, która miała za zadanie jedynie dobrać słowo opisujące emocję („złość”, „strach”), aktywacja ciała migdałowatego spadła o ponad 40% w porównaniu z grupą biernie oglądającą zdjęcia. Mózg ludzki traktuje precyzyjne słowo jak neuronalny lek uspokajający.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-30-13',
+        title: 'Affect Labeling w Trudnej Rozmowie: Hamowanie Ciała Migdałowatego',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Karolina (29 lat) podczas oceny rocznej słyszy od przełożonego, że jej premia zostaje obcięta o połowę z powodów „ogólnej sytuacji rynkowej”, mimo że zrealizowała 120% planu.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór reakcji emocjonalnej Karoliny',
+            description: 'Jak Karolina może wykorzystać mechanizm Affect Labeling Liebermana?',
+            options: [
+              {
+                text: '„Panie dyrektorze, czuję głębokie rozczarowanie i zaniepokojenie tą decyzją, ponieważ zrealizowałam 120% celów. Chcę zrozumieć, jakie konkretne wskaźniki zdecydowały o tej zmianie”.',
+                feedback: 'Podręcznikowe zastosowanie affect labelingu: nazwanie emocji studzi układ limbiczny Karoliny i wymusza na dyrektorze przejście do twardych faktów.',
+                isOptimal: true
+              },
+              {
+                text: 'Rozpłakać się i wybiec z gabinetu, trzaskając drzwiami',
+                feedback: 'Całkowita utrata samokontroli i dominacja ciała migdałowatego nad korą przedczołową.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Którą trudną emocję zazwyczaj tłumisz w pracy lub w związku i jak możesz ją precyzyjnie nazwać bez agresji?'
+      }
     },
     {
       id: 'sec-30-14',
@@ -549,13 +645,62 @@ export const chapterThirty: Chapter = {
       sectionNumber: '30.15',
       title: 'Jak przyjmować krytykę? Technika Zamgławiania (Fogging), dopytywanie i oddzielanie faktów od ocen',
       category: 'teoria',
-      readingTimeMinutes: 19,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Zamgławianie to technika psychologicznego jujitsu. Kiedy ktoś rzuca w ciebie kamieniem krytyki, nie stawiaj twardego muru obronnego, o który kamień rozbije się z hukiem, ani nie uciekaj. Bądź jak gęsta mgła: zaoferuj brak oporu. Zgódź się z każdą prawdą zawartą w słowach krytyka, zgódź się z prawdopodobieństwem jego hipotez, ale zachowaj całkowitą suwerenność w ocenie samego siebie.',
+        author: 'Dr Manuel J. Smith',
+        source: 'University of California, Los Angeles (UCLA), „When I Say No, I Feel Guilty”, 1975'
+      },
       paragraphs: [
         'Gdy ktoś Cię krytykuje, naturalnym odruchem układu limbicznego jest paniczny kontratak („Sam jesteś beznadziejny!”) lub załamanie i uległość. Asertywność proponuje techniki oparte na jujitsu komunikacyjnym: ZAMGŁAWIANIE (Fogging) oraz DOPYTYWANIE.',
         'ZAMGŁAWIANIE (Manuel Smith) polega na spokojnym zgodzeniu się z tą częścią krytyki, która jest prawdziwa lub prawdopodobna, bez przyjmowania złośliwych uogólnień i etykiet. Jeśli szef mówi: „Spóźniłeś się z raportem, jesteś kompletnie nieodpowiedzialny!”, odpowiadasz:',
         '„Zgadzam się, spóźniłem się z raportem o 2 godziny [FAKT]. Nie zgadzam się z opinią, że jestem nieodpowiedzialny [OCENA]”.',
         'DOPYTYWANIE polega na poproszeniu o szczegóły: „Co konkretnie w moim wystąpieniu sprawiło, że uznałeś je za mało przekonujące?”. To zmusza agresora do zejścia na poziom faktów i natychmiast rozbraja emocjonalny atak.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-30-15-1',
+          title: 'Analiza słów dr. Manuela J. Smitha: Dlaczego Zamgławianie Odbiera Paliwo Krytykowi',
+          content: [
+            'Wnikliwa dekonstrukcja techniki Foggingu ujawnia mechanizm psychologiczny złośliwego ataku. Krytykujący rzadko dąży do poprawy sytuacji — zazwyczaj szuka potwierdzenia własnej dominacji, chce wywołać w Tobie poczucie winy, wstyd lub sprowokować Cię do agresywnego wybuchu, by móc ogłosić: „Widzicie, jaki on jest niezrównoważony!”.',
+            'Kiedy odpowiadasz spokojnym: „Masz rację, popełniłem błąd w tych wyliczeniach” lub „Rzeczywiście, to mogło wyglądać na nieporozumienie”, krytyk wpada w próżnię poznawczą. Nie ma z kim walczyć. Brak oporu gasi agresję i zmusza rozmówcę do powrotu do poziomu dorosłego dialogu.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-30-15-1',
+          type: 'insight',
+          title: 'Trzy Poziomy Zgody w Zamgławianiu',
+          content: '1. Zgoda z FAKTEM: „To prawda, nie odpisałem na Twój mail wczoraj”. 2. Zgoda z PRAWDOPODOBIEŃSTWEM: „Masz rację, to mogło wywołać w Tobie złość”. 3. Zgoda z LOGIKĄ KRYTYKA: „Zgadzam się, że gdyby ktoś zrobił to celowo, byłoby to nieeleganckie”. Żaden z tych poziomów nie oznacza kapitulacji ani potępienia samego siebie!'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-30-15',
+        title: 'Pojedynek z Toksyczną Krytyką: Zastosowanie Techniki Foggingu',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Teściowa mówi przy obiedzie do synowej: „Znowu przesoliłaś zupę! Ty w ogóle nie potrafisz gotować, mój syn zmarnieje przy tobie!”.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór asertywnej odpowiedzi w technice Zamgławiania',
+            description: 'Jak synowa powinna odpowiedzieć, by rozbroić atak bez wszczynania awantury?',
+            options: [
+              {
+                text: '„Rzeczywiście, zupa wyszła dziś bardziej słona niż zwykle [zgoda z faktem]. Dziękuję za uwagę, następnym razem dam mniej soli [spokojna kropka]”.',
+                feedback: 'Doskonałe zamgławienie wg Manuela Smitha: potwierdzenie faktu (słona zupa) bez polemiki z obraźliwą oceną („nie potrafisz gotować”). Atak traci impet.',
+                isOptimal: true
+              },
+              {
+                text: '„A mama to w ogóle nic nie potrafi ugotować, te mama kotlety smakują jak podeszwa!”.',
+                feedback: 'Kontratak agresywny wywołujący rodzinną awanturę i dający teściowej rolę „pokrzywdzonej ofiary”.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Z kim w Twoim otoczeniu technika Zamgławiania uchroniłaby Cię przed wciągnięciem w jałową kłótnię?'
+      }
     },
 
     // BLOK IV — ASERTYWNOŚĆ POD PRESJĄ (30.16 - 30.20)

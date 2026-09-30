@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 export const chapterTwentyFiveExamQuestions: ExamQuestion[] = [
   {
@@ -403,23 +403,90 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.3',
       title: 'Zachowania automatyczne a kontrolowane: Sterowanie z jąder podstawy',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Przejście od działania zorientowanego na cel do nawyku oznacza fundamentalną rekonfigurację kontroli neuronalnej: zachowanie przestaje być kierowane przewidywaną wartością rezultatu, a staje się mechanicznie wyzwalane przez bodźce uprzednie, „wypalone” w grzbietowo-bocznym prążkowiu.',
+        author: 'Prof. Anthony Dickinson & Bernard Balleine',
+        source: 'University of Cambridge / University of Sydney, „The Role of Learning in the Generation of Action”, Psychological Research, 1994'
+      },
       paragraphs: [
-        'Wszystkie działania, jakie człowiek podejmuje od momentu przebudzenia, dzielą się na dwie fundamentalne kategorie neurobiologiczne: zachowania kontrolowane (Goal-Directed Actions) oraz zachowania automatyczne i nawykowe (Habitual Behaviors).',
-        'Zachowania kontrolowane wymagają pełnej obecności uwagi, angażują grzbietowo-boczną korę przedczołową (dlPFC) oraz pamięć roboczą. Są zorientowane na cel — mózg nieustannie kalkuluje bieżącą wartość nagrody i weryfikuje, czy wykonywane działanie przybliża nas do zamierzonego rezultatu. Przykładem jest nauka prowadzenia samochodu w pierwszych godzinach kursu lub pisanie trudnego dokumentu prawnego.',
-        'Kiedy jednak dane zachowanie zostanie powtórzone dziesiątki lub setki razy w obecności tego samego wyzwalacza środowiskowego, mózg — dążąc do minimalizacji wydatku energetycznego — przenosi kontrolę wykonawczą do podkorowych jąder podstawy (prążkowia grzbietowo-bocznego). W tym momencie zachowanie przestaje być zależne od bieżącej wartości celu — odpala się automatycznie jak gotowy skrypt w odpowiedzi na bodziec.',
-        'Większość dorosłych ludzi funkcjonuje w trybie automatycznym przez niemal 45-50% każdego dnia. Oznacza to, że sięgasz po telefon, otwierasz lodówkę po powrocie do domu lub zaczynasz tłumaczyć się uległym tonem nie dlatego, że podjąłeś taką decyzję, lecz dlatego, że jądra podstawy uruchomiły utrwalony obwód neuronowy bez pytania kory przedczołowej o zgodę.'
+        'Wszystkie działania, jakie człowiek podejmuje od momentu otwarcia oczu, dzielą się na dwie fundamentalne kategorie neurobiologiczne: zachowania kontrolowane (Goal-Directed Actions) oraz zachowania automatyczne i nawykowe (Habitual Behaviors).',
+        'Zachowania kontrolowane wymagają pełnej obecności uwagi, angażują grzbietowo-boczną korę przedczołową (dlPFC) oraz pamięć roboczą. Są zorientowane na cel (Action-Outcome / A-O) — mózg nieustannie kalkuluje bieżącą wartość nagrody i weryfikuje, czy wykonywane działanie przybliża nas do zamierzonego rezultatu. Przykładem jest nauka prowadzenia samochodu w pierwszych godzinach kursu, manewrowanie na śliskiej drodze lub pisanie trudnego pisma procesowego.',
+        'Kiedy jednak dane zachowanie zostanie powtórzone dziesiątki lub setki razy w obecności tego samego wyzwalacza środowiskowego, mózg — w ramach ewolucyjnej ekonomii energetycznej — przenosi kontrolę wykonawczą do podkorowych jąder podstawy (prążkowia grzbietowo-bocznego, DLS). W tym momencie zachowanie przestaje być zależne od bieżącej wartości celu — odpala się automatycznie jak gotowy skrypt w odpowiedzi na bodziec (Stimulus-Response / S-R).',
+        'Większość dorosłych ludzi funkcjonuje w trybie automatycznym przez niemal 45-50% każdego dnia. Oznacza to, że sięgasz po telefon, otwierasz lodówkę po wejściu do kuchni lub zaczynasz tłumaczyć się uległym tonem nie dlatego, że podjąłeś taką decyzję, lecz dlatego, że jądra podstawy uruchomiły utrwalony obwód neuronowy bez pytania kory przedczołowej o zgodę.'
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD: Automatyczny scroll przed snem',
-          paragraphs: [
-            'Sytuacja i bohater: Aneta (29 lat), kładąc się do łóżka ze zmęczeniem, odruchowo sięga po smartfon i przez 90 minut bezmyślnie przewija krótkie filmy w mediach społecznościowych, mimo że rano musi wstać na ważne spotkanie.',
-            'Mechanizm pętli: Bodziec (leżenie w ciemnym pokoju) -> Interpretacja („jestem zmęczona, chcę tylko na 2 minuty zerknąć”) -> Zachowanie nawykowe (odblokowanie ekranu i scroll) -> Krótkoterminowa konsekwencja (dopamina, odcięcie od myśli o jutrze) -> Długoterminowa konsekwencja (brak snu, wyczerpanie) -> Wzmocnienie schematu (obniżona kontrola korowa jutro sprzyja ponownemu scrollowaniu).',
-            'Kluczowy wniosek: Nie zmienisz tego zachowania „obietnicą złożoną rano”. Zmiana wymaga przerwania fizycznego łańcucha bodźca (np. zostawienie telefonu w przedpokoju).'
+          id: 'sub-25-3-1',
+          title: 'Analiza słów Dickinsona i Balleine’a: Test Dewaluacji Nagrody Jako Próba Złota Nawyków',
+          content: [
+            'Wypowiedź Dickinsona i Balleine’a opisuje zjawisko autonomizacji ruchowej. W klasycznym paradygmacie laboratoryjnym dowiedziono, że:',
+            '1. W FAZIE WCZESNEJ (A-O): Jeśli zwierzę nauczy się naciskać dźwignię dla słodkiego syropu, a badacz zepsuje smak syropu lub wywoła nudności (dewaluacja celu), zwierzę NATYCHMIAST PRZESTAJE naciskać dźwignię. Zachowanie jest w pełni kontrolowane przez świadomą wartość wyniku.',
+            '2. W FAZIE NAWYKOWEJ (S-R): Po wielomiesięcznym przetrenowaniu, to samo zwierzę poddane dewaluacji syropu NADAL NACISKA DŹWIGNIĘ w odpowiedzi na zapalenie lampki. Dźwignia stała się odruchem prążkowia całkowicie odciętym od realnej potrzeby organizmu. Dokładnie ten sam proces zachodzi u człowieka, który bezmyślnie sięga po kolejnego papierosa lub otwiera portal informacyjny, czując mdłości i znużenie.'
+          ]
+        },
+        {
+          id: 'sub-25-3-2',
+          title: 'Neurobiologiczny Przełącznik: DMS vs DLS',
+          content: [
+            'W mózgu ssaka istnieją dwa rywalizujące ze sobą podsystemy w obrębie prążkowia:',
+            '• Grzbietowo-przyśrodkowe prążkowie (DMS): Połączone gęstą siecią aksonów z korą przedczołową, odpowiada za elastyczne, celowe wybory adaptacyjne.',
+            '• Grzbietowo-boczne prążkowie (DLS): Połączone bezpośrednio z korą czuciowo-ruchową, odpowiada za sztywne, bezmyślne automatyzmy motoryczne.',
+            'Stres, zmęczenie i niedobór snu drastycznie wyciszają układ DMS, oddając bezwzględną władzę układowi DLS. Dlatego po ciężkim dniu tak łatwo wracamy do naszych najgorszych, podkorowych nawyków.'
           ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-25-3-1',
+          type: 'wniosek',
+          title: 'Wniosek Neurokognitywny: Nie Negocjuj z Prążkowiem w Środowisku Bodźca',
+          content: 'Kiedy znajdziesz się w obecności bodźca inicjującego utrwaloną pętlę S-R (np. leżenie w łóżku z telefonem na szafce nocnej), grzbietowo-boczne prążkowie odpala ruch w kilkadziesiąt milisekund. Próba prowadzenia wewnętrznego dialogu („Nie powinienem tego robić”) angażuje powolną korę, która przegrywa z szybkością podkorowego skryptu. Jedyną skuteczną obroną jest fizyczne usunięcie bodźca wyzwalającego ze środowiska.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-25-3',
+        title: 'Dekompozycja Behawioralna: Odruch S-R czy Działanie Celowe A-O?',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Karol (32 lata) wraca do domu po 10 godzinach wyczerpującej pracy. Wchodzi do przedpokoju, rzuca torbę na podłogę, idzie prosto do kuchni i bez namysłu otwiera lodówkę, wpatrując się w jej zawartość, mimo że nie odczuwa głodu fizjologicznego.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Analiza neurobiologicznego źródła zachowania',
+            description: 'Co steruje zachowaniem Karola w tym momencie?',
+            options: [
+              {
+                text: 'System S-R w grzbietowo-bocznym prążkowiu (DLS) uruchomiony przez wyzwalacz wejścia do kuchni i spadek energii korowej',
+                feedback: 'Precyzyjna diagnoza oparta na modelu Dickinsona i Balleine’a. Zachowanie Karola to automatyczny skrypt S-R z jąder podstawy.',
+                isOptimal: true
+              },
+              {
+                text: 'Świadoma kalkulacja zapotrzebowania kalorycznego w grzbietowo-bocznej korze przedczołowej (dlPFC)',
+                feedback: 'Błędne założenie. Karol nie odczuwa głodu i nie kalkuluje kalorii — kora przedczołowa jest w stanie wyczerpania.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wybór interwencji przerywającej pętlę',
+            description: 'Jak Karol może zablokować to automatyczne zachowanie w przyszłości?',
+            options: [
+              {
+                text: 'Powiesić kartkę na lodówce: „Karolu, pamiętaj o diecie!”',
+                feedback: 'Niska skuteczność. Wyczerpane prążkowie habituuje się do napisów w ciągu 3 dni.',
+                isOptimal: false
+              },
+              {
+                text: 'Zmienić układ przestrzenny: po wejściu do domu skierować się natychmiast do łazienki na 5-minutowy prysznic, omijając kuchnię',
+                feedback: 'Znakomite rozwiązanie. Przełamanie łańcucha kontekstowego blokuje odpalenie skryptu S-R w prążkowiu.',
+                isOptimal: true
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Które z Twoich codziennych czynności powrotu do domu wykonujesz na całkowitym „autopilocie” prążkowia bez jakiejkolwiek świadomej intencji?'
+      }
     },
     {
       id: 'sec-25-4',
@@ -427,11 +494,89 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.4',
       title: 'Prawa Uczenia się: Nagroda, kara i siła wzmocnienia negatywnego',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Człowiek nie działa na świat z próżni; to świat oddziałuje na niego poprzez konsekwencje jego czynów. Zachowanie jest kształtowane i podtrzymywane przez swoje skutki. A pośród wszystkich mechanizmów sprawczych to właśnie wzmocnienie negatywne — natychmiastowa ucieczka od przykrego stanu afektywnego — buduje najbardziej nieugięte i niewidzialne więzienia behawioralne.',
+        author: 'Prof. B.F. Skinner',
+        source: 'Harvard University, „About Behaviorism”, Alfred A. Knopf, 1974'
+      },
       paragraphs: [
-        'B.F. Skinner i Badaacze behawioralni wykazali, że zachowanie jest kształtowane przez swoje konsekwencje. Jeśli po konkretnym zachowaniu następuje Wzmocnienie Pozytywne (nagroda, chwalba, zastrzyk dopaminy) lub Wzmocnienie Negatywne (usunięcie bólu, ulga od lęku), prawdopodobieństwo powtórzenia tego zachowania wzrasta.',
-        'Wielkim błędem jest niedocenianie siły Wzmocnienia Negatywnego. Ucieczka przed nieprzyjemną emocją (np. sięgnięcie po alkohol czy wyjście z trudnego zebrania) daje natychmiastową ulgę, co silnie utrwala nawyk ucieczkowy.'
-      ]
+        'B.F. Skinner, twórca radykalnego behawioryzmu i paradygmatu warunkowania sprawczego (Operant Conditioning), zrewolucjonizował rozumienie ludzkiego działania, wykazując, że prawdopodobieństwo pojawienia się zachowania w przyszłości jest bezpośrednią funkcją konsekwencji, jakie następują natychmiast po jego wykonaniu.',
+        'W analizie behawioralnej wyróżniamy cztery podstawowe relacje konsekwencji:',
+        '1. Wzmocnienie Pozytywne (Positive Reinforcement): Dodanie bodźca przyjemnego (nagroda, pochwała, dopamina), co zwiększa częstotliwość zachowania.',
+        '2. Wzmocnienie Negatywne (Negative Reinforcement): Usunięcie bodźca awersyjnego (redukcja bólu, lęku, nudy, napięcia trzewnego), co RÓWNIEŻ ZWIĘKSZA częstotliwość zachowania.',
+        '3. Kary (Pozytywna i Negatywna): Wprowadzenie bodźca przykrego lub zabranie przywileju w celu wygaszenia zachowania — badania pokazują jednak, że kara rzadko uczy nowego zachowania, a najczęściej uczy jedynie ukrywania się i lęku przed karzącym.',
+        'Najważniejszym, a zarazem najbardziej mylonym pojęciem jest WZMOCNIENIE NEGATYWNE. To nie jest kara! To mechanizm ulgi: zrobienie czegoś, co sprawia, że cierpienie natychmiast ustaje. Niemal wszystkie toksyczne nawyki człowieka — od nałogowego sięgania po alkohol i papierosy, przez kompulsywne jedzenie, po prokrastynację i uległość — są napędzane potęgą wzmocnienia negatywnego.'
+      ],
+      subsections: [
+        {
+          id: 'sub-25-4-1',
+          title: 'Analiza słów prof. B.F. Skinnera: Więzienie Wzmocnienia Negatywnego',
+          content: [
+            'Wypowiedź prof. Skinnera ujawnia psychologiczny paradoks unikania. Kiedy człowiek doświadcza lęku, poczucia nieadekwatności lub napięcia w relacji, jego układ nerwowy desperacko domaga się wyzerowania tego afektu.',
+            'Jeśli w tym momencie sięgnie po zachowanie ucieczkowe (np. wycofa się z zebrania, sięgnie po kieliszek wina, odłoży telefon i zapadnie w sen), napięcie znika w ułamku sekundy. Ta gwałtowna ulga staje się potężnym wzmocnieniem biologicznym: mózg uczy się, że ucieczka jest jedynym bezpiecznym ratunkiem, cementując wzorzec na lata.'
+          ]
+        },
+        {
+          id: 'sub-25-4-2',
+          title: 'Asymetria Wzmocnień: Dlaczego Ulga Wygrywa z Długoterminową Nagrodą',
+          content: [
+            'Mózg wycenia konsekwencje zachowania według zasady bliskości czasowej (Temporal Contiguity). Ulga uzyskana w ciągu 500 milisekund (wzmocnienie negatywne) ma dla układów podkorowych wielokrotnie większą siłę uczenia niż obietnica zdrowia czy sukcesu za 5 lat (odroczone wzmocnienie pozytywne).',
+            'Aby zmienić zachowanie podtrzymywane przez wzmocnienie negatywne, trzeba nauczyć się wytrzymywać mikro-dyskomfort somatyczny bez natychmiastowej ucieczki w znieczulenie (tzw. ekspozycja z powstrzymaniem reakcji — ERP).'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-25-4-1',
+          type: 'badanie',
+          title: 'Eksperyment Skinnera: Nieregularne Rozkłady Wzmocnień i Pułapka Gry wideo',
+          content: 'Skinner odkrył, że zachowanie najtrudniej poddaje się wygaszeniu wtedy, gdy wzmocnienie pojawia się według Zmiennego Rozkładu Wzmocnień (Variable Ratio Schedule) — czyli w sposób nieprzewidywalny. Zwierzęta naciskały dźwignię z obłędną częstotliwością, gdy nie wiedziały, za którym razem wypadnie ziarno. Ten sam mechanizm wykorzystują dziś twórcy algorytmów społecznościowych i gier hazardowych.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-25-4',
+        title: 'Anatomia Wzmocnienia Negatywnego: Dlaczego Ucieczka Daje Ulgę?',
+        type: 'zmien_jeden_element',
+        context: 'Michał (27 lat) ma zadzwonić do niezadowolonego klienta, by wyjaśnić opóźnienie w projekcie. Czuje narastający ścisk w klatce piersiowej i przyspieszone tętno.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wariant A: Ucieczka w zachowanie zastępcze (Wzmocnienie Negatywne)',
+            description: 'Michał zamyka zakładkę z kontaktem do klienta i mówi sobie: „Zadzwonię jutro rano, teraz posprzątam skrzynkę mailową”. Jak reaguje jego ciało w pierwszych 3 sekundach?',
+            options: [
+              {
+                text: 'Następuje gwałtowny spadek napięcia fizjologicznego — ulga somatyczna, która wzmacnia nawyk ucieczki na przyszłość',
+                feedback: 'Dokładnie tak działa wzmocnienie negatywne Skinnera. Ta natychmiastowa ulga to neurochemiczna zapłata za ucieczkę.',
+                isOptimal: true
+              },
+              {
+                text: 'Pojawia się natychmiastowa euforia i duma z doskonałego zarządzania czasem',
+                feedback: 'Nie. To nie euforia, lecz wygaszenie alarmu ciała migdałowatego — ulga, która uczy mózg bierności.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wariant B: Wytrzymanie dyskomfortu i wykonanie telefonu (Zmień jeden element)',
+            description: 'Michał bierze głęboki wydech przeponowy, akceptuje chwilowy ucisk w klatce piersiowej i wybiera numer klienta. Rozmowa trwa 4 minuty, klient dziękuje za szczerość.',
+            options: [
+              {
+                text: 'Ciało migdałowate uczy się, że konfrontacja nie niesie śmiertelnego zagrożenia — wygaszanie lęku i budowanie poczucia samoskuteczności',
+                feedback: 'Znakomita interwencja behawioralna. Przerwanie pętli unikania pozwala na wygaszenie warunkowej reakcji lękowej.',
+                isOptimal: true
+              },
+              {
+                text: 'Układ nerwowy Michała ulega trwałemu uszkodzeniu na skutek stresu rozmowy',
+                feedback: 'Absolutnie nie. Krótkotrwały stres adaptacyjny jest warunkiem koniecznym budowania odporności psychicznej.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Przed jaką jedną trudną rozmową lub zadaniem uciekasz w tym tygodniu, kupując sobie chwilową ulgę kosztem narastającego w tle problemu?'
+      }
     },
     {
       id: 'sec-25-5',
@@ -454,13 +599,86 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.6',
       title: 'Prokrastynacja jako zachowanie: Ucieczka przed trudną emocją, a nie brakiem czasu',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Prokrastynacja nie jest defektem zarządzania czasem, wadą charakteru ani brakiem samodyscypliny. To pierwotna neurobiologiczna reakcja unikania, w której układ limbiczny — w obliczu dyskomfortu afektywnego wywołanego przez trudne zadanie — wybiera natychmiastową naprawę nastroju (short-term mood repair). Mózg przedkłada chwilową ulgę w tej sekundzie ponad dobrostan przyszłego ja.',
+        author: 'Prof. Timothy A. Pychyl & Fuschia Sirois',
+        source: 'Carleton University / University of Sheffield, „Procrastination and the Priority of Short-Term Mood Regulation”, Social and Personality Psychology Compass, 2013'
+      },
       paragraphs: [
-        'Jednym z najbardziej rozpowszechnionych mitów na temat prokrastynacji jest przekonanie, że wynika ona ze złej organizacji czasu, braku odpowiednich aplikacji do zarządzania zadaniami czy lenistwa charakteru. Psychologia poznawczo-behawioralna (Timothy Pychyl, Fuschia Sirois) jednoznacznie dowodzi, że prokrastynacja jest zaburzeniem regulacji emocjonalnej, a nie deficytem zarządzania czasem.',
-        'Kiedy stajesz przed zadaniem, które budzi w Tobie niepewność, nudę, lęk przed porażką (lub lęk przed sukcesem i związaną z nim presją), Twój układ limbiczny traktuje to zadanie jak zagrożenie afektywne. W tym momencie uruchamia się mechanizm natychmiastowej naprawy nastroju (Short-Term Mood Repair).',
-        'Zamiast zmierzyć się z dyskomfortem zadania, umysł wybiera natychmiastowe zachowanie zastępcze (przeglądanie wiadomości, sprawdzanie poczty, sprzątanie mieszkania), które przynosi natychmiastowy zastrzyk dopaminy i redukcję somatycznego napięcia. Człowiek kupuje sobie chwilowy spokój za cenę późniejszego wstydu, paniki i spadku jakości wykonanej pracy.',
-        'Przełamanie prokrastynacji nie polega na kupieniu nowego terminarza, lecz na wykształceniu tolerancji na wstępny dyskomfort emocjonalny (Emotional Distress Tolerance) i zmniejszeniu pierwszego kroku działania do skali, która nie wyzwala alarmu lękowego.'
-      ]
+        'Jednym z najbardziej rozpowszechnionych i szkodliwych mitów na temat ludzkiego działania jest przekonanie, że prokrastynacja wynika ze złej organizacji czasu, braku odpowiednich aplikacji do zarządzania kalendarzem czy lenistwa. Wieloletnie badania empiryczne prof. Timothy’ego Pychyla z Centre for Procrastination Research na Carleton University oraz prof. Fuschii Sirois definitywnie obaliły tę tezę: prokrastynacja jest zaburzeniem regulacji emocjonalnej, a nie deficytem wiedzy o planowaniu.',
+        'Kiedy siadasz do pisania pracy dyplomowej, wypełniania deklaracji podatkowej, przygotowania trudnego raportu lub trudnej rozmowy, Twoja kora przedczołowa zderza się z zadaniem niosącym potencjalne zagrożenie: nudę, niepewność kompetencyjną, lęk przed porażką (lub lęk przed sukcesem i odpowiedzialnością). Ciało migdałowate interpretuje to zadanie jak drapieżnika — jako zagrożenie afektywne.',
+        'W tym ułamku sekundy organizm odpala odruch „natychmiastowej naprawy nastroju” (Short-Term Mood Repair). Zamiast znosić nieprzyjemne somatyczne napięcie, mózg odwraca uwagę i wybiera zachowanie zastępcze o zerowym oporze: wytarcie kurzu z biurka, sprawdzenie maila, przejrzenie wiadomości ze świata. Przynosi to natychmiastowy wyrzut dopaminy i ulgę od lęku — płacimy za to jednak potężnym rachunkiem odroczonym: wstydem, poczuciem winy, nocną paniką i drastycznym spadkiem jakości wykonanej pracy.'
+      ],
+      subsections: [
+        {
+          id: 'sub-25-6-1',
+          title: 'Analiza słów Pychyla i Sirois: Wojna Pomiędzy Ja-Bieżącym a Ja-Przyszłym',
+          content: [
+            'Wypowiedź badaczy obnaża neurobiologiczną schizofrenię czasową naszego mózgu. W badaniach fMRI Hala Hershfielda wykazano, że kiedy badani myślą o sobie za 10 lat, wzorzec aktywności ich kory przedczołowej jest niemal identyczny z tym, gdy myślą o obcej osobie na ulicy! Dla układu limbicznego „Przyszły Ja”, który będzie musiał zarwać noc i wstydzić się przed szefem, to obcy człowiek.',
+            'Prokrastynacja to bezduszne przerzucenie emocjonalnego i fizycznego ciężaru na obcego człowieka (na nas samych za kilka godzin lub dni) w zamian za 20 minut spokoju dla Ja-Bieżącego. Uzdrowienie tego mechanizmu wymaga emocjonalnej empatii wobec własnego przyszłego ja.'
+          ]
+        },
+        {
+          id: 'sub-25-6-2',
+          title: 'Protokół Wytrzymania Dyskomfortu: Zasada 5 Minut i Tolerancja Afektu',
+          content: [
+            'Najwyższy poziom oporu somatycznego pojawia się ZANIM zaczniesz działać. W momencie, gdy patrzysz na pusty dokument, ciało migdałowate krzyczy najgłośniej. Badania wykazują, że już po 3–5 minutach fizycznego zaangażowania w czynność, pobudzenie lękowe gwałtownie opada, a do głosu dochodzi efekt Zeigarnik (potrzeba domknięcia rozpoczętego zadania).',
+            'Złota instrukcja Pychyla brzmi: „Obniż próg wejścia do absurdu. Nie mów: «napiszę rozdział». Powiedz: «otworzę plik i napiszę jedno koślawe zdanie przez 3 minuty». Po 3 minutach masz pełne prawo przestać”. W 85% przypadków po napisaniu pierwszego zdania mózg przechodzi w tryb kontynuacji.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-25-6-1',
+          type: 'wniosek',
+          title: 'Samowspółczucie Zamiast Samobiczowania (Sirois et al.)',
+          content: 'Badania Fuschii Sirois dowodzą, że osoby, które po epizodzie prokrastynacji wybaczają sobie i okazują życzliwość („To normalne, byłem zmęczony, wyciągam wnioski”), w kolejnym tygodniu prokrastynują znacznie MNIEJ. Z kolei osoby, które biczują się poczuciem winy, generują kolejną falę negatywnych emocji, co zmusza ich mózg do ponownej ucieczki w prokrastynację!'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-25-6',
+        title: 'Anatomia Prokrastynacji: Przerwanie Odruchu Naprawy Nastroju',
+        type: 'gdzie_zaczela_sie_petla',
+        context: 'Dorota (31 lat) ma przygotować prezentację dla zarządu spółki. O 10:00 siada przy komputerze, czuje ścisk w żołądku na myśl o krytyce, odruchowo otwiera sklep internetowy i kupuje buty. O 14:00 płacze ze wstydu i bezsilności.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Punkt zwrotny pętli: Reakcja na sygnał z ciała migdałowatego',
+            description: 'W którym momencie łańcucha behawioralnego rozpoczęła się rzeczywista eskalacja problemu?',
+            options: [
+              {
+                text: 'W ułamku sekundy, gdy Dorota poczuła lęk i uciekła w przeglądanie sklepu, zamiast wytrzymać dyskomfort przez 3 minuty',
+                feedback: 'Trafna diagnoza. Zakup butów był behawioralną naprawą nastroju w odpowiedzi na mikro-panikę przed oceną.',
+                isOptimal: true
+              },
+              {
+                text: 'O godzinie 14:00, kiedy zorientowała się, ile czasu zmarnowała',
+                feedback: 'O 14:00 nastąpiła już tylko wtórna kaskada wstydu — źródłowy punkt zwrotny nastąpił o 10:00.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wdrożenie protokołu mikrokroku z akceptacją dyskomfortu',
+            description: 'Jaka interwencja przełamie pętlę Doroty?',
+            options: [
+              {
+                text: 'Zastosowanie reguły 5 minut: „Zrobię tylko pierwszy slajd tytułowy i wpiszę swoje nazwisko, godząc się na to, że czuję lekki niepokój”',
+                feedback: 'Wzorcowe zastosowanie metody Pychyla. Obniżenie kosztu wejścia rozbraja alarm afektywny.',
+                isOptimal: true
+              },
+              {
+                text: 'Złożenie przysięgi: „Dzisiaj nie wstanę od biurka przez 6 godzin, aż skończę całość”',
+                feedback: 'Błąd. Zbyt wielkie wymaganie podbije lęk do poziomu paniki, gwarantując kolejny powrót do zakupów.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Przed jakim jednym zadaniem uciekasz w zachowania zastępcze i jak brzmi jego 3-minutowa, bezbronna wersja startowa?'
+      }
     },
     {
       id: 'sec-25-7',
@@ -523,12 +741,89 @@ export const chapterTwentyFive: Chapter = {
       sectionNumber: '25.11',
       title: 'Powtarzające się schematy życiowe: Dlaczego wciąż lądujemy w tych samych miejscach',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Wczesnodziecięce nieadaptacyjne schematy działają jak niewidzialne grawitacyjne magnesy. Człowiek ma biologiczny, podświadomy przymus odtwarzania w dorosłym życiu dokładnie tych samych warunków emocjonalnych, które raniły go w dzieciństwie. Znajome cierpienie jest bowiem dla układu nerwowego bezpieczniejsze niż nieznana, obca wolność.',
+        author: 'Dr Jeffrey E. Young',
+        source: 'Columbia University, „Schema Therapy: A Practitioner\'s Guide”, Guilford Press, 2003'
+      },
       paragraphs: [
-        'Wielu ludzi z przerażeniem odkrywa, że mimo zmian partnerów, przeprowadzek do innych miast i zmian stanowisk pracy, wciąż lądują w niemal identycznych konfiguracjach problemowych: wchodzą w relacje z emocjonalnie niedostępnymi osobami, popadają w te same konflikty z przełożonymi lub w tym samym momencie sabotują swój sukces finansowy.',
-        'W terapii schematów (Jeffrey Young) zjawisko to nazywane jest Pułapką Schematu (Schema Trap) lub przymusem powtarzania. Ludzki mózg traktuje to, co jest mu znane z dzieciństwa (nawet jeśli było to odrzucenie, chłód emocjonalny czy chaos), jako bezpieczną strefę przewidywalności.',
-        'Nieświadomie wybieramy partnerów i sytuacje, które pasują do naszego starego schematu, po czym reagujemy na nie dawnymi, dziecięcymi strategiami radzenia sobie (uległość, unikanie lub nadkompensacja), utrwalając to samo błędne koło na kolejne lata. Przerwanie tego przymusu wymaga uświadomienia sobie schematu i podjęcia nowego, ryzykownego emocjonalnie zachowania.'
-      ]
+        'Jednym z najbardziej wstrząsających fenomenów ludzkiego losu jest przymus powtarzania (Wiederholungszwang Freuda, w nowoczesnej psychoterapii zdefiniowany przez Jeffreya Younga jako Pułapki Schematów). Wielu inteligentnych, wykształconych ludzi z przerażeniem konstatuje, że pomimo zmian miast, partnerów i miejsc pracy, ich relacje i kariery kończą się w dokładnie ten sam bolesny sposób.',
+        'W Terapii Schematów wyróżniamy 18 Wczesnych Nieadaptacyjnych Schematów (Early Maladaptive Schemas) powstałych w wyniku niezaspokojenia fundamentalnych potrzeb emocjonalnych w dzieciństwie (np. Deprywacja Emocjonalna, Porzucenie, Wadliwość, Podporządkowanie, Roszczeniowość).',
+        'Kiedy schemat zostaje uaktywniony w dorosłym życiu przez z pozoru neutralne zdarzenie (np. partner spóźnia się 15 minut), człowiek nie widzi partnera tu i teraz — widzi rodzica z przeszłości. Natychmiast odpala się jeden z trzech dziecięcych stylów radzenia sobie (Coping Styles): 1) Poddanie się schematowi (Surrender — bierność i cierpienie), 2) Unikanie schematu (Avoidance — ucieczka w samotność lub nałogi), 3) Nadkompensacja (Overcompensation — agresja, arogancja, chęć dominacji).'
+      ],
+      subsections: [
+        {
+          id: 'sub-25-11-1',
+          title: 'Analiza słów dr. Jeffreya Younga: Neurobiologia Magnetyzmu Schematów',
+          content: [
+            'Wypowiedź dr. Younga tłumaczy, dlaczego ludzie wybierają partnerów, którzy ich ranią. Dla ludzkiego mózgu „bezpieczeństwo” nie oznacza braku bólu — oznacza PRZEWIDYWALNOŚĆ.',
+            'Jeśli jako dziecko nauczyłeś się, że na miłość trzeba zasłużyć ciągłym zadowalaniem innych i podporządkowaniem, to dorosły partner kochający bezwarunkowo, spokojny i stabilny, wyda Ci się „nudny” i „pozbawiony chemii”. Twój układ nerwowy szuka partnera chłodnego, krytycznego i niestabilnego, bo tylko przy nim odpala się znany z dzieciństwa program neurohormonalny. Wybieramy to, co znamy, a nie to, co nam służy.'
+          ]
+        },
+        {
+          id: 'sub-25-11-2',
+          title: 'Tryby Schematów (Schema Modes): Kto w Tobie Przejmuje Kierownicę?',
+          content: [
+            'W terapii Younga kluczem do przerwania przymusu powtarzania jest zidentyfikowanie tzw. Trybu, który w danej minucie przejął kontrolę nad ciałem:',
+            '• Tryb Wrażliwego Dziecka: Poczucie opuszczenia, bezradności, wstydu i paniki.',
+            '• Tryb Wściekłego Dziecka: Atak furii w reakcji na poczucie niesprawiedliwości.',
+            '• Tryb Karzącego Rodzica: Wewnętrzny głos nienawiści do samego siebie („Jesteś nic niewart, nikt cię nie pokocha”).',
+            '• Tryb Zdrowego Dorosłego: Część psychiki, która potrafi otoczyć troską Wrażliwe Dziecko, uciszyć Karzącego Rodzica i podjąć racjonalne, odważne działanie w świecie realnym.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-25-11-1',
+          type: 'badanie',
+          title: 'Skuteczność Terapii Schematów w Zaburzeniach Osobowości (Giesen-Bloo et al., 2006)',
+          content: 'W wieloośrodkowym badaniu klinicznym wykazano, że terapia schematów doprowadziła do pełnego wyleczenia lub znaczącej redukcji objawów u ponad 52% pacjentów z głębokim zaburzeniem osobowości typu borderline (BPD), przewyższając klasyczną psychoterapię psychodynamiczną. Zmiana zachowania wymagała pracy z ciałami migdałowatymi i ponownego rodzicielstwa (reparenting) w wyobraźni.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-25-11',
+        title: 'Audyt Pułapki Schematu: Kto w Tobie Reaguje?',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Ewa (35 lat) po raz trzeci w życiu wchodzi w związek z mężczyzną, który po kilku miesiącach staje się chłodny, kontrolujący i odmawia zaangażowania. Ewa czuje rozdzierający lęk i zamiast postawić granice, zaczyna kompulsywnie gotować, sprzątać i przepraszać za rzeczy, których nie zrobiła.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Identyfikacja uaktywnionego schematu i stylu radzenia sobie',
+            description: 'Jaki schemat i tryb przejął zachowanie Ewy?',
+            options: [
+              {
+                text: 'Schemat Wadliwości / Podporządkowania w trybie Poddania się (Surrender): uległość i zasługiwanie na akceptację',
+                feedback: 'Precyzyjna diagnoza zgodna z modelem Jeffreya Younga. Ewa odtwarza dynamikę ze swoim krytycznym, chłodnym ojcem.',
+                isOptimal: true
+              },
+              {
+                text: 'Tryb Zdrowego Dorosłego stawiający asertywne granice',
+                feedback: 'Nie. Zdrowy Dorosły zakomunikowałby swoje potrzeby i zakończył relację w obliczu braku szacunku.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Krok wyzwalający Zdrowego Dorosłego',
+            description: 'Jakie zachowanie w świecie fizycznym przełamie wieloletni schemat Ewy?',
+            options: [
+              {
+                text: 'Zatrzymanie uległych gestów, spokojna i stanowcza rozmowa o potrzebach oraz gotowość do odejścia, jeśli partner nie podejmie terapii',
+                feedback: 'Wzorcowe zachowanie Zdrowego Dorosłego. Przerwanie uległości niszczy schemat i przywraca podmiotowość.',
+                isOptimal: true
+              },
+              {
+                text: 'Jeszcze większe starania i kupienie partnerowi drogiego prezentu, aby poprawić mu humor',
+                feedback: 'To tylko pogłębi pułapkę podporządkowania i utrwali poczucie krzywdy.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki bolesny schemat z przeszłości odtwarzasz w swoich relacjach i jak zachowałby się w tej sytuacji Twój wewnętrzny Zdrowy Dorosły?'
+      }
     },
     {
       id: 'sec-25-12',

@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 export const chapterSeventeenExamQuestions: ExamQuestion[] = [
   {
@@ -1146,12 +1146,76 @@ export const chapterSeventeen: Chapter = {
       sectionNumber: '17.4',
       title: 'Etykiety i Schematy Tożsamościowe — Od Rodziny po Media Społeczne',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 18,
+      quote: {
+        text: 'Kiedy przypinasz człowiekowi etykietę, zwalniasz swój mózg z konieczności widzenia jego złożoności — i zmuszasz jego umysł do obrony lub kapitulacji wobec karykatury.',
+        author: 'Claude Steele (Whistling Vivaldi: How Stereotypes Affect Us, 2010)'
+      },
       paragraphs: [
-        'Etykiety tożsamościowe rzadko powstają w próżni. Większość z nich zostaje nam zasugerowana lub narzucona w procesie socjalizacji przez znaczących dorosłych: rodziców, nauczycieli, rówieśników.',
-        'W rodzinach niezwykle często dochodzi do nieświadomego rozdawania ról tożsamościowych: „Janek to ten mądry i spokojny, a Kasia to ta zwariowana i artystyczna”. Dziecko, potrzebując akceptacji i przewidywalności, absorbuje przydzieloną rolę i dostosowuje do niej swoje decyzje życiowe.',
-        'W dobie mediów społecznościowych proces ten uległ zwielokrotnieniu. Algorytmy oraz grupy rówieśnicze wymuszają stałe wpisywanie się w konkretne estetyki i etykiety światopoglądowe, co prowadzi do zjawiska self-stereotyping — bezwiednego kopiowania pełnego pakietu zachowań przypisanych do danej subkultury lub grupy.'
-      ]
+        'Etykiety tożsamościowe rzadko powstają w próżni. Większość z nich zostaje nam zasugerowana lub bezwzględnie narzucona w procesie wczesnej socjalizacji przez znaczących dorosłych: rodziców, rodzeństwo, nauczycieli oraz rówieśników.',
+        'W dynamice rodzinnej niezwykle często dochodzi do nieświadomego rozdawania sztywnych ról tożsamościowych: „Janek to ten mądry i spokojny, a Kasia to ta zwariowana artystka, która nigdy nie ogarnie finansów”. Dziecko, powodowane pierwotną biologiczną potrzebą przynależności i przewidywalności, absorbuje przydzieloną rolę i bezwiednie dostosowuje do niej swoje wybory życiowe, traktując ją jako biologiczny wyrok.',
+        'Claude Steele i Joshua Aronson w swoich przełomowych badaniach nad Zagrożeniem Stereotypem (Stereotype Threat) wykazali, że sama świadomość bycia obserwowanym przez pryzmat negatywnej etykiety tożsamościowej drenuje zasoby pamięci roboczej w korze przedczołowej. W eksperymentach wybitni studenci rozwiązywali zadania matematyczne znacznie gorzej tylko wtedy, gdy przed testem przypomniano im o stereotypie dotyczącym ich grupy społecznej. To nie brak intelektu powodował spadek wyniku — to lęk przed potwierdzeniem cudzej etykiety blokował aparat poznawczy.',
+        'W dobie algorytmów cyfrowych proces ten osiągnął stadium masowej polaryzacji. Algorytmy oraz bańki rówieśnicze wymuszają natychmiastowe autodeklaracje i wpisywanie się w jednorodne pakiety poglądów. Dochodzi do zjawiska self-stereotyping: jednostka, przyjmując etykietę danej grupy, natychmiast przejmuje cały zestaw jej lęków, uprzedzeń i języka, rezygnując z własnej autonomii myślenia.'
+      ],
+      subsections: [
+        {
+          title: 'Neurobiologia etykiety: Od słowa rodzica do sztywnej ścieżki w DMN',
+          paragraphs: [
+            'Słowa powtarzane w dzieciństwie („zawsze byłeś roztargniony”) zostają skonsolidowane w strukturach hipokampa i przyśrodkowej kory przedczołowej (mPFC). Za każdym razem, gdy dorosły człowiek staje przed zadaniem wymagającym skupienia, Domyślna Sieć Neuronalna (DMN) odtwarza ten zapis jako automatyczną predykcję: «nie poradzę sobie, bo taki jestem».',
+            'Przełamanie tego schematu wymaga nie walki z samą etykietą, lecz dostarczenia układowi nerwowemu powtarzalnych, empirycznych dowodów behawioralnych z działania (tzw. dowodów tożsamościowych).'
+          ],
+          highlightBox: {
+            title: 'Analiza słów naukowca: Claude Steele o uwięzieniu w cudzym spojrzeniu',
+            content: 'Steele podkreślał: „Zagrożenie stereotypem nie wynika z tego, że wierzysz w etykietę. Wynika z tego, że wiesz, iż inni w nią wierzą — a Twój mózg zużywa gigantyczną energię na próbę jej obalenia, przez co brakuje mu tlenu na samo zadanie”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-17-4-etykieta-mikroskop',
+        type: 'microscope',
+        title: 'Człowiek pod mikroskopem: Marta i paraliż etykiety „analityka”',
+        subtitle: 'Wiwisekcja mechanizmu: jak jedno zdanie z przeszłości paraliżuje awans dyrektorski',
+        context: 'Marta stoi przed szansą objęcia stanowiska Vice President w firmie technologicznej.',
+        microscopeLayers: [
+          {
+            stepNumber: 1,
+            label: 'BODZIEC SYTUACYJNY',
+            question: 'Co obiektywnie proponuje przełożony?',
+            content: '„Marta, masz najlepsze kompetencje w dziale. Chcę, abyś została dyrektorem całego pionu analitycznego”.',
+            subtext: 'Obiektywne zaproszenie do rozwoju poparte faktami.'
+          },
+          {
+            stepNumber: 2,
+            label: 'AKTYWACJA STAREJ ETYKIETY W DMN',
+            question: 'Jaka automatyczna taśma pamięciowa zostaje uruchomiona?',
+            content: 'W ułamku sekundy w mPFC odpala się głos ze szkoły: „Marta jest cicha i dobra do cyferek, ale do ludzi i przywództwa się nie nadaje”.',
+            subtext: 'Błąd esencjalizmu: potraktowanie cechy nawykowej jako genetycznej granicy możliwości.'
+          },
+          {
+            stepNumber: 3,
+            label: 'REAKCJA SOMATYCZNO-EMOCJONALNA',
+            question: 'Co rejestruje ciało Marty?',
+            content: 'Gwałtowny skok kortyzolu, suchość w ustach, drżenie dłoni i ucisk za mostkiem — pień mózgu interpretuje propozycję jako zagrożenie wykluczeniem społecznym.',
+            subtext: 'Fałszywy alarm układu limbicznego chroniący przed ryzykiem kompromitacji.'
+          },
+          {
+            stepNumber: 4,
+            label: 'RACJONALIZACJA DECYZJI',
+            question: 'Jak kora przedczołowa usprawiedliwia ucieczkę?',
+            content: 'Marta myśli: „Po co mi to? Będę musiała użerać się z ludźmi i politykować. Wolę czyste dane”. Rezygnuje z aplikacji.',
+            subtext: 'Obrona spójności self-concept kosztem wieloletnich ambicji zawodowych.'
+          },
+          {
+            stepNumber: 5,
+            label: 'KOSZT SYSTEMOWY',
+            question: 'Co dzieje się po 6 miesiącach?',
+            content: 'Dyrektorem zostaje mniej kompetentny Robert, a Marta musi realizować jego chaotyczne polecenia, czując chroniczną frustrację i rozgoryczenie.',
+            subtext: 'Potwierdzenie reguły: jeśli sam nie zarządzasz swoją tożsamością, inni zarządzają Twoim losem.'
+          }
+        ],
+        takeaway: 'Etykieta to nie fakt biologiczny — to skrót myślowy, który zamienia się w klatkę, jeśli nie poddasz go empirycznej weryfikacji.'
+      }
     },
     {
       id: 'sec-17-5',
@@ -1186,12 +1250,63 @@ export const chapterSeventeen: Chapter = {
       sectionNumber: '17.7',
       title: 'Jaźń Odzwierciedlona (Looking-Glass Self) Charlesa Cooleya',
       category: 'teoria',
-      readingTimeMinutes: 13,
+      readingTimeMinutes: 18,
+      quote: {
+        text: 'Nie jestem tym, czym myślę, że jestem, ani tym, czym ty myślisz, że jestem. Jestem tym, czym myślę, że ty myślisz, że jestem.',
+        author: 'Charles Horton Cooley (Human Nature and the Social Order, 1902)'
+      },
       paragraphs: [
-        'Socjolog Charles Horton Cooley wprowadził do psychologii pojęcie „jaźni odzwierciedlonej” (Looking-Glass Self), wykazując, że człowiek nie buduje obrazu siebie w izolatce, lecz w ciągłym zwierciadle społecznym.',
-        'Proces ten składa się z trzech etapów: 1. Wyobrażamy sobie, jak wyglądamy i zachowujemy się w oczach innych; 2. Wyobrażamy sobie, jak inni nas ocenijają; 3. Rozwijamy poczucie dumy lub wstydu na podstawie tej wyobrażonej oceny.',
-        'Kluczowe słowo w tej koncepcji to „WYOBRAŻAMY SOBIE”. Często nie reagujemy na rzeczywistą ocenę innych ludzi, lecz na naszą projekcję tego, co wydaje nam się, że inni o nas myślą. To prowadzi do uwięzienia w fikcyjnych oczekiwaniach otoczenia.'
+        'Socjolog Charles Horton Cooley sformułował fundamentalną zasadę psychologii społecznej: człowiek nie buduje obrazu siebie w laboratoryjnej izolacji, lecz w nieustannym zwierciadle relacyjnym, które nazwał „jaźnią odzwierciedloną” (Looking-Glass Self).',
+        'Zgodnie z precyzyjną formułą Cooleya proces powstawania self-concept przebiega w trzech nierozłącznych krokach poznawczych:',
+        'KROK 1: Wyobrażenie sobie, jak nasza osoba, zachowanie lub wypowiedź jawią się drugiemu człowiekowi (np. „Mój szef widzi we mnie człowieka kompetentnego”).\nKROK 2: Wyobrażenie sobie, jaki sąd wartościujący wydaje na nasz temat ta druga osoba (np. „On uważa, że poradzę sobie z tym kryzysem”).\nKROK 3: Doznanie emocjonalne powiązane z tym sądem — duma, satysfakcja, zawstydzenie lub upokorzenie.',
+        'Kluczowym, często pomijanym przez pop-psychologię elementem teorii Cooleya jest słowo „WYOBRAŻENIE”. Człowiek rzadko reaguje na to, co inny człowiek RZECZYWIŚCIE o nim myśli — reaguje na WŁASNĄ PROJEKCJĘ cudzych myśli. Jeśli nosisz w sobie głęboki, nieuświadomiony lęk przed odrzuceniem, będziesz w neutralnym ziewnięciu rozmówcy widzieć pogardę i lekceważenie, budując swój obraz jako osoby nudnej i niechcianej.'
       ],
+      subsections: [
+        {
+          title: 'Analiza słów Cooleya: Dlaczego „zwierciadło” bywa krzywym lustrem?',
+          paragraphs: [
+            'Cooley ostrzegał przed pasywnym przyjmowaniem społecznych odbić. Zwierciadło społeczne nie jest płaską taflą szkła — jest krzywym zwierciadłem z lunaparku, które zniekształca obraz pod wpływem projekcji, kompleksów i zmęczenia innych ludzi.',
+            'Jeśli przeglądasz się w oczach narcystycznego rodzica lub lękowego partnera, otrzymujesz zniekształconą informację zwrotną, którą Twój układ nerwowy rejestruje jako obiektywną prawdę o Twojej wartości.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Kto trzyma Twoje lustro?',
+            content: 'Zadaj sobie fundamentalne pytanie: „Czyje oczy widzę, kiedy patrzę na siebie w chwilach zwątpienia?”. Większość ludzi nie ocenia siebie własnym głosem — ocenia siebie echem głosu surowego rodzica, dawnego nauczyciela lub złośliwego rówieśnika sprzed lat.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-17-7-lustro-cooleya',
+        type: 'dual_perspectives',
+        title: 'Dwa Spojrzenia: Karolina i Jej Ojciec — Zwierciadło Oczekiwań',
+        subtitle: 'Konfrontacja wyobrażonej oceny z rzeczywistymi potrzebami obu stron',
+        context: 'Karolina rozważa rezygnację z prestiżowej kancelarii prawniczej, by zająć się architekturą wnętrz.',
+        dualPerspective: {
+          situation: 'Niedzielny obiad rodzinny. Karolina milczy, ściskając serwetkę pod stołem.',
+          personA: {
+            name: 'Karolina (Uwięziona w jaźni odzwierciedlonej)',
+            quote: '„Jeśli powiem tacie, że rzucam prawo, zniszczę jego dumę, uzna mnie za życiową porażkę i przestanie mnie kochać”.',
+            whatTheyKnow: 'Czuje chroniczny ucisk w klatce piersiowej i bezsenność od 8 miesięcy.',
+            whatTheyMiss: 'Nie wie, że ojciec zmaga się z własnym wypaleniem zawodowym w sądownictwie.',
+            interpretation: '„Moja wartość istnieje tylko tak długo, jak przynoszę sukcesy do rodzinnego stołu”.',
+            coreNeed: 'Bezwarunkowa akceptacja i prawo do własnego powołania.',
+            fear: 'Emocjonalne wykluczenie z rodziny i etykieta niewdzięcznicy.',
+            action: 'Fałszywy uśmiech, potakiwanie i ukrywanie zgłoszenia na kurs projektowania.'
+          },
+          personB: {
+            name: 'Ojciec (Autor projekcji statusowej)',
+            quote: '„Chcę tylko, żeby Karolina miała stabilność finansową, której mi brakowało w jej wieku”.',
+            whatTheyKnow: 'Wie, jak brutalny i niepewny bywa wolny rynek bez twardego zawodu regulowanego.',
+            whatTheyMiss: 'Nie dostrzega, że jego córka stoi na krawędzi ciężkiego epizodu depresyjnego.',
+            interpretation: '„Karolina jest stworzona do wielkich procesów, jest taka bystra”.',
+            coreNeed: 'Poczucie bezpieczeństwa córki i potwierdzenie własnego sukcesu wychowawczego.',
+            fear: 'Że córka nie utrzyma się z niepewnej pracy artystycznej.',
+            action: 'Wypytywanie o sprawy kancelarii, chwalenie się córką przed znajomymi.'
+          },
+          synthesis: 'Karolina nie boi się ojca — boi się własnego wyobrażenia o jego odrzuceniu. Dopóki nie postawi sprawy jasno, oboje tkwią w tańcu pozorów, gdzie córka płaci za spokój ojca własnym zdrowiem psychicznym.'
+        },
+        takeaway: 'Nie pozwól, aby wyobrażenie o cudzych oczekiwaniach decydowało o tym, kim masz prawo się stać.'
+      },
       caseStudyRef: caseStudiesChapterSeventeen[2]
     },
     {
@@ -1213,12 +1328,58 @@ export const chapterSeventeen: Chapter = {
       sectionNumber: '17.9',
       title: 'Teatr Społeczny Ervinga Goffmana: Scena, Kulisy i Maska',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 18,
+      quote: {
+        text: 'Cały świat jest sceną, ale to kulisy decydują o tym, czy aktor dotrwa do końca spektaklu bez załamania nerwowego.',
+        author: 'Erving Goffman (The Presentation of Self in Everyday Life, 1959)'
+      },
       paragraphs: [
-        'Erving Goffman w swoim klasycznym dziele „Człowiek w teatrze życia codziennego” porównał interakcje społeczne do spektaklu teatralnego.',
-        'Na „scenie” (front stage) odgrywamy wyreżyserowane role społeczne (profesjonalnego pracownika, opanowanego rodzica, pewnego siebie lidera), stosując rekwizyty i dbając o wywarcie pożądanego wrażenia na publiczności.',
-        'Niezbędne dla zdrowia psychicznego są jednak „kulisy” (backstage) — przestrzeń, w której możemy zrzucić gorset roli, ujawnić zmęczenie i słabość bez lęku przed odrzuceniem. Współczesny problem polega na stopniowym znikaniu kulis z powodu ciągłej obecności w sieci.'
+        'Erving Goffman w swoim klasycznym dziele „Człowiek w teatrze życia codziennego” zrewolucjonizował socjologię i psychologię, odrzucając esencjalistyczny mit „jednolitej, stałej osobowości”. Zamiast tego przedstawił człowieka jako wytrawnego aktora nieustannie zarządzającego wrażeniem (Impression Management).',
+        'Goffman podzielił przestrzeń ludzkiego doświadczenia na trzy kluczowe sfery:',
+        '1. SCENA (Front Stage): Przestrzeń, w której obowiązuje określony protokół roli. Gdy lekarz zakłada biały fartuch, sędzia togę, a menedżer garnitur — wchodzą na scenę. Używają specyficznego słownictwa, kontrolują mimikę i ton głosu, by wysłać publiczności sygnał: «jestem dokładnie tym, za kogo mnie uważacie, możecie mi zaufać».\n2. KULISY (Backstage): Zamknięta, intymna przestrzeń, do której publiczność nie ma wstępu. To tu aktor może zdjąć niewygodne buty, zakląć ze złości, popłakać się ze zmęczenia lub przyznać przed zaufaną osobą: „Nie mam pojęcia, co robić, improwizowałem przez całe spotkanie”. Kulisy są biologicznym warunkiem regeneracji układu przywspółczulnego.\n3. POZA SCENĄ (Outside): Przestrzeń neutralna, w której jednostka nie jest ani na scenie przed publicznością, ani nie przygotowuje roli w kulisach.',
+        'Najważniejsza teza Goffmana brzmi: ODGRYWANIE ROLI NIE JEST HIPOKRYZJĄ ANI KŁAMSTWEM. Jest fundamentalnym narzędziem koordynacji społecznej. Problem pojawia się wtedy, gdy człowiek traci dostęp do kulis — gdy z powodu smartfonów, kamer i ciągłej presji wizerunkowej zaczyna odgrywać rolę przez 24 godziny na dobę. Wtedy teatr zamienia się w kliniczne wyczerpanie i depersonalizację.'
       ],
+      subsections: [
+        {
+          title: 'Wyczerpanie sceniczne w erze cyfrowej: Zagłada kulis',
+          paragraphs: [
+            'Współczesna kultura cyfrowa dokonała brutalnego zamachu na kulisy. Kiedyś powrót do domu oznaczał bezpieczne zamknięcie drzwi. Dzisiaj media społecznościowe przeniosły scenę do sypialni i łazienki. Człowiek nagrywa relacje z przygotowywania śniadania, odgrywając rolę „człowieka sukcesu z uśmiechem”.',
+            'Brak kulis prowadzi do tzw. zmęczenia autoprezentacyjnego (Ego Depletion in Impression Management). Kora przedczołowa, zmuszona do ciągłego monitorowania mimiki i tonu, ulega przeciążeniu, co objawia się nagłymi wybuchami wściekłości lub apatią.'
+          ],
+          highlightBox: {
+            title: 'Ostrzeżenie Goffmana: Kiedy maska wrasta w twarz',
+            content: 'Goffman pisał: „Początkowo odgrywamy rolę z dystansem. Lecz w miarę upływu lat, jeśli nie posiadamy autentycznych kulis, maska wrasta w skórę — i zaczynamy naprawdę wierzyć, że jesteśmy wyłącznie rolą, którą gramy dla zysku lub świętego spokoju”.',
+            type: 'warning'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-17-9-teatr-goffmana',
+        type: 'what_if',
+        title: 'Zmień jeden element: Piotr i syndrom permanentnej sceny',
+        subtitle: 'Symulacja wpływu odbudowy kulis na zdrowie psychiczne influencera',
+        context: 'Piotr (32 lata, twórca internetowy) odczuwa chroniczny lęk i anhedonię, relacjonując całe życie w sieci.',
+        whatIfOptions: {
+          defaultScenario: 'Piotr traktuje każde wyjście z partnerką i każdy posiłek jako materiał na vloga, ukrywając przed publicznością ataki paniki.',
+          options: [
+            {
+              id: 'c17-opt-g1',
+              changeLabel: 'Wprowadzenie żelaznych kulis: zakaz nagrywania po 18:00 i sypialnia bez ekranów',
+              resultingInterpretation: 'Układ nerwowy Piotra po 14 dniach wyłącza stan stałej mobilizacji współczulnej; poziom kortyzolu spada o 38%.',
+              resultingBehavior: 'Piotr przestaje odczuwać dławiący ucisk w gardle, a jego relacja z partnerką odzyskuje intymność.',
+              psychologicalImpact: 'Odzyskanie kontaktu z własnymi autentycznymi emocjami bez konieczności ich monetyzacji.'
+            },
+            {
+              id: 'c17-opt-g2',
+              changeLabel: 'Publiczne przyznanie się do kryzysu na scenie (tzw. pornografia emocjonalna dla lajków)',
+              resultingInterpretation: 'Publiczność nagradza post tysiącami serduszek, lecz Piotr czuje jeszcze większy wstyd — jego słabość stała się nową rolą.',
+              resultingBehavior: 'Uwięzienie w kolejnej roli: „autentycznego cierpiącego”, co uniemożliwia rzeczywistą psychoterapię.',
+              psychologicalImpact: 'Kolejny poziom uwikłania w teatr społeczny bez stworzenia prawdziwych kulis.'
+            }
+          ]
+        },
+        takeaway: 'Lekarstwem na wyczerpanie sceniczne nie jest pokazywanie swoich łez na scenie, lecz zejście za kulisy w bezpiecznej samotności lub z bliskim człowiekiem.'
+      },
       caseStudyRef: caseStudiesChapterSeventeen[3]
     },
     {
@@ -1266,12 +1427,46 @@ export const chapterSeventeen: Chapter = {
       sectionNumber: '17.13',
       title: 'Growth Mindset a Tożsamość — Carol Dweck i Psychologia Rozwoju',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'W nastawieniu na stałość sukces polega na udowodnieniu, że jesteś mądry lub utalentowany. W nastawieniu na rozwój sukces polega na rozciąganiu swoich granic, by stać się mądrzejszym.',
+        author: 'Carol S. Dweck (Mindset: The New Psychology of Success, 2006)'
+      },
       paragraphs: [
-        'Badania Carol Dweck nad nastawieniem na stałość (Fixed Mindset) oraz nastawieniem na rozwój (Growth Mindset) bezpośrednio przekładają się na architekturę tożsamości.',
-        'W Fixed Mindset cechy i możliwości są traktowane jako sztywna matryca („albo mam talent, albo nie”). Porażka jest tu traktowana jako ostateczny wyrok tożsamościowy.',
-        'W Growth Mindset tożsamość ma charakter procesowy: kompetencje są wynikiem włożonego wysiłku i właściwych strategii. Porażka to tylko sygnał do korekty metody.'
-      ]
+        'Przełomowe badania prof. Carol Dweck ze Stanford University nad dwiema orientacjami umysłu — nastawieniem na stałość (Fixed Mindset) oraz nastawieniem na rozwój (Growth Mindset) — stanowią jeden z najważniejszych filarów współczesnej psychologii tożsamości.',
+        'Dweck wykazała, że ludzie przyjmują jedną z dwóch fundamentalnych teorii na temat własnych zdolności, inteligencji i charakteru:',
+        '1. NASTAWIENIE NA STAŁOŚĆ (Fixed Mindset): Przekonanie, że cechy osobiste są z góry daną, niezmienną wielkością biologiczną („albo masz talent matematyczny, albo nie”; „albo jesteś urodzonym liderem, albo nikim”). W tym modelu każde wyzwanie staje się śmiertelnym zagrożeniem tożsamościowym. Jeśli musisz ciężko pracować nad zadaniem, oznacza to w Twojej logice, że brak Ci talentu. Jeśli popełnisz błąd — nie popełniłeś błędu operacyjnego, lecz ujawniłeś swoją genetyczną niższość.\n2. NASTAWIENIE NA ROZWÓJ (Growth Mindset): Przekonanie, że zdolności wyjściowe są zaledwie punktem startowym, a ludzki mózg dzięki plastyczności synaptycznej uczy się i adaptuje pod wpływem właściwej strategii, wysiłku i informacji zwrotnej.',
+        'NAJCZĘSTSZE ZNIEKSZTAŁCENIE POP-PSYCHOLOGICZNE: Wiele szkół i firm spłyciło odkrycie Dweck do pustego sloganu: „po prostu wierz w siebie i ciężko pracuj”. Sama Dweck w swoich późniejszych pracach z całą mocą podkreślała: sam ślepy wysiłek bez korekty strategii i poszukiwania nowej wiedzy nie jest Growth Mindset — jest upartą bezradnością. Prawdziwe nastawienie na rozwój polega na ciekawości wobec błędu: «dlaczego ta metoda nie zadziałała i jak muszę przebudować proces?».',
+        'Eksperymenty Dweck z dziećmi rozwiązującymi łamigłówki dały porażające rezultaty: dzieci chwalone za INTELIGENCJĘ („Jesteś taki mądry!”) w kolejnej rundzie wybierały zadania ŁATWE, byle tylko nie zaryzykować utraty etykiety mądrego. Dzieci chwalone za STRATEGIĘ I WYSIŁEK („Widzę, jak wspaniale szukałeś różnych dróg rozwiązania!”) wybierały zadania TRUDNE, traktując błąd jako fascynującą łamigłówkę do rozwikłania.'
+      ],
+      subsections: [
+        {
+          title: 'Neurobiologia błędu: Co widzi EEG w Fixed vs Growth Mindset?',
+          paragraphs: [
+            'Badania elektroencefalograficzne (EEG) przeprowadzone przez Jasona Mosera i Carol Dweck pokazały, że mózgi osób z Growth Mindset w chwili popełnienia błędu wykazują potężną falę Pe (error positivity) w przedniej korze obręczy (ACC). Ich mózgi natychmiast kierują uwagę na analizę pomyłki i szukanie nowej ścieżki.',
+            'U osób z Fixed Mindset w chwili błędu pojawia się wczesny sygnał lękowy (ERN), po czym kora przedczołowa gwałtownie WYŁĄCZA uwagę z zadania. Umysł ucieka od widoku błędu, by chronić kruche poczucie własnej wartości.'
+          ],
+          highlightBox: {
+            title: 'Analiza słów Carol Dweck: Przekleństwo etykiety geniusza',
+            content: 'Dweck zauważyła: „Chwalenie dzieci za ich inteligencję nie buduje ich pewności siebie. Niszczy ją. Sprawia, że stają się niewolnikami cudzej aprobaty i unikają wyzwań, bo każdy trudny problem staje się groźbą zdemaskowania ich rzekomej przeciętności”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-17-13-slowa-dweck',
+        type: 'counter_case',
+        title: 'Kontrprzypadek: Gdy pochwała niszczy motywację — Wiwisekcja Dweck',
+        subtitle: 'Dlaczego chwalenie za talent paraliżuje rozwój inżyniera i studenta',
+        context: 'Projektowanie kultury feedbacku w zespole innowacji technologicznych.',
+        counterCase: {
+          standardTheory: 'Intuicja podpowiada: aby zmotywować pracownika lub dziecko do wielkich osiągnięć, należy nieustannie powtarzać mu, jakim jest wybitnym geniuszem i talentem.',
+          counterExample: 'Kamil, utalentowany programista, od podstawówki słyszał: „Jesteś geniuszem kodu”. W wieku 28 lat, gdy napotkał na projekt wymagający nowej, trudnej architektury rozproszonej, wpadł w paraliż. Zamiast uczyć się nowej technologii, symulował chorobę i spychał zadania na kolegów. Wolał uchodzić za leniwego niż zaryzykować, że napisze słaby kod i straci tożsamość geniusza.',
+          whyItDefiesRule: 'Pochwała tożsamościowa zamyka umysł w Fixed Mindset. Człowiek staje się zakładnikiem własnej reputacji.',
+          deeperLesson: 'Skuteczna informacja zwrotna nigdy nie dotyczy tożsamości człowieka — dotyczy konkretnej strategii, analizy parametrów i procesu poszukiwania rozwiązań.'
+        },
+        takeaway: 'Nie chwal za to, kim ktoś rzekomo jest — doceniaj to, jak analizuje, jak testuje hipotezy i jak wyciąga wnioski z potknięć.'
+      }
     },
     {
       id: 'sec-17-14',
@@ -1279,12 +1474,70 @@ export const chapterSeventeen: Chapter = {
       sectionNumber: '17.14',
       title: 'Teoria Rozbieżności Ja — Ja Realne, Idealne i Powinnościowe',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 18,
+      quote: {
+        text: 'Rozbieżność między tym, kim jesteś, a tym, kim powinieneś być według innych, nie generuje smutku — generuje stan ciągłego czuwania przed karą.',
+        author: 'E. Tory Higgins (Self-Discrepancy: A Theory Relating Affect and Motivation, 1987)'
+      },
       paragraphs: [
-        'E. Tory Higgins w Teorii Rozbieżności Ja (Self-Discrepancy Theory) wyróżnił trzy kluczowe reprezentacje wchodzące w skład self-concept.',
-        '1. Ja Realne (Actual Self) — kim naprawdę jestem w swoim przekonaniu; 2. Ja Idealne (Ideal Self) — kim chciałbym być (marzenia, pragnienia); 3. Ja Powinnościowe (Ought Self) — kim powinieneś być według wymogów społecznych i moralnych.',
-        'Duża rozbieżność między Ja Realnym a Ja Idealnym wywołuje smutek, przygnębienie i poczucie zawodu, zaś rozbieżność między Ja Realnym a Ja Powinnościowym generuje przewlekły lęk i poczucie zagrożenia.'
-      ]
+        'E. Tory Higgins z Columbia University w swojej fundamentalnej Teorii Rozbieżności Ja (Self-Discrepancy Theory) dokonał matematycznie precyzyjnego rozbicia struktury ludzkiego cierpienia emocjonalnego na wektory tożsamościowe.',
+        'Higgins zdefiniował trzy domeny Ja (Self-Domains):',
+        '1. JA REALNE (Actual Self): Zbiór cech i zachowań, które według Twojego przekonania rzeczywiście posiadasz w tej chwili w świecie fizycznym.\n2. JA IDEALNE (Ideal Self): Reprezentacja Twoich własnych najgłębszych marzeń, pragnień, aspiracji i nadziei — kim szczerze chciałbyś się stać, gdybyś nie był ograniczony strachem.\n3. JA POWINNOŚCIOWE (Ought Self): Zbiór obowiązków, nakazów, moralnych powinności i oczekiwań, które w Twoim przekonaniu nakłada na Ciebie rodzina, religia, korporacja lub społeczeństwo.',
+        'Najważniejsze odkrycie Higginsa polega na powiązaniu konkretnego typu rozbieżności z precyzyjną odpowiedzią emocjonalną i fizjologiczną układu nerwowego:',
+        'ROZBIEŻNOŚĆ 1: Ja Realne vs Ja Idealne (Dejection-related emotions).\nGdy Twoje rzeczywiste życie drastycznie odbiega od Twoich marzeń, czujesz smutek, apatię, rozczarowanie sobą i bezsilność. To stan hipoaktywacji układu dopaminergicznego — poczucie braku nagrody i utraty sensu.',
+        'ROZBIEŻNOŚĆ 2: Ja Realne vs Ja Powinnościowe (Agitation-related emotions).\nGdy Twoje zachowanie łamie standardy Ja Powinnościowego, Twój układ nerwowy nie odczuwa smutku — odczuwa lęk, panikę, niepokój, poczucie winy i napięcie mięśniowe. Ciało migdałowate interpretuje tę rozbieżność jako natychmiastowe zagrożenie karą, utratą statusu lub odrzuceniem przez stado.',
+        'Większość ludzi leczy niepokój lekami lub rozrywką, nie rozumiejąc, że ich lęk jest czysto tożsamościową reakcją na próbę spełnienia nierealistycznych, obcych powinności (introjektów), które nie mają nic wspólnego z ich Ja Idealnym.'
+      ],
+      subsections: [
+        {
+          title: 'Perspektywa Własna vs Perspektywa Znaczącego Innego',
+          paragraphs: [
+            'Higgins dodał do swojego modelu tzw. perspektywę obserwatora (Standpoints on the Self). Możesz porównywać swoje Ja Realne z własnym Ja Powinnościowym („ja sam uważam, że powinienem...”) lub z Ja Powinnościowym w oczach matki, szefa czy współmałżonka.',
+            'Rozbieżność z wymogami narzuconymi przez innych generuje wstyd i lęk przed karą, podczas gdy rozbieżność z własnymi zasadami etycznymi rodzi poczucie winy.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Higginsa: Prawdziwe źródło przewlekłego niepokoju',
+            content: 'Higgins pisał: „Ludzie nie cierpią dlatego, że są słabi. Cierpią dlatego, że mierzą swoje codzienne zachowanie dwoma sprzecznymi linijkami: linijką własnych marzeń i linijką cudzych roszczeń”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-17-14-higgins-rozbieznosc',
+        type: 'what_we_know',
+        title: 'Co naprawdę wiemy? — Demontaż Rozbieżności Ja wg Higginsa',
+        subtitle: 'Rozdzielenie faktów od iluzji w genezie smutku i stanów lękowych',
+        context: 'Analiza pacjenta zmagającego się z poczuciem wypalenia i lękiem wolnopłynącym.',
+        whatWeKnow: {
+          items: [
+            {
+              id: 'c17-hig-1',
+              statement: 'Przewlekły lęk i pobudzenie nerwowe wynikają najczęściej z rozbieżności między zachowaniem a cudzymi powinnościami (Ja Powinnościowe).',
+              category: 'fakt',
+              explanation: 'To twardo udowodniona teza Higginsa: niespełnianie wymogów Ja Powinnościowego wyzwala oś stresu i lęk przed karą społeczną.'
+            },
+            {
+              id: 'c17-hig-2',
+              statement: 'Aby pozbyć się depresji i smutku, wystarczy zmusić się do cięższej pracy i spełnienia wszystkich oczekiwań otoczenia.',
+              category: 'interpretacja',
+              explanation: 'Błąd poznawczy. Spełnianie cudzych oczekiwań powiększa dystans do Ja Idealnego (własnych marzeń), pogłębiając apatię i pustkę egzystencjalną.'
+            },
+            {
+              id: 'c17-hig-3',
+              statement: 'Ja Powinnościowe często składa się z bezkrytycznie przejętych skryptów rodzicielskich, które nie zostały poddane dorosłej weryfikacji.',
+              category: 'fakt',
+              explanation: 'Proces introjekcji sprawia, że dorosły 40-latek nadal boi się wyimaginowanej nagany ojca, paraliżując swoje wybory biznesowe.'
+            },
+            {
+              id: 'c17-hig-4',
+              statement: 'Człowiek dojrzały musi całkowicie zniszczyć swoje Ja Powinnościowe i żyć wyłącznie impulsami.',
+              category: 'interpretacja',
+              explanation: 'To infantylna skrajność. Dojrzałość polega na świadomej selekcji: odrzuceniu toksycznych powinności i zachowaniu tych, które chronią etykę i bliskich.'
+            }
+          ]
+        },
+        takeaway: 'Ulecz swój lęk poprzez audyt cudzych powinności, a ulecz swój smutek poprzez powrót do małych kroków realizujących Twoje Ja Idealne.'
+      }
     },
     {
       id: 'sec-17-15',

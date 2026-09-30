@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 export const chapterTwentySixExamQuestions: ExamQuestion[] = [
   {
@@ -391,14 +391,89 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.3',
       title: 'Rola środowiska i architektury wyboru: Przeszkody i gładkość',
       category: 'teoria',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Jeśli chcesz skłonić ludzi do pożądanego zachowania — uczyń je maksymalnie prostym (Make it easy). Architektura wyboru nie jest kwestią fakultatywną; jest nieunikniona. Środowisko fizyczne, cyfrowe i instytucjonalne zawsze popycha nas w jakimś kierunku. Prawdziwe pytanie brzmi: czy popycha nas ku zdrowiu, koncentracji i sprawczości, czy ku bezwładowi, rozproszeniu i chaosowi.',
+        author: 'Prof. Richard H. Thaler & Cass R. Sunstein',
+        source: 'University of Chicago / Harvard Law School, „Nudge: Improving Decisions About Health, Wealth, and Happiness”, Yale University Press, 2008'
+      },
       paragraphs: [
-        'Jednym z najważniejszych odkryć współczesnej psychologii behawioralnej i ekonomii behawioralnej (Richard Thaler, Cass Sunstein, Kurt Lewin) jest fakt, że to ŚRODOWISKO FIZYCZNE I SPOŁECZNE jest głównym reżyserem naszych codziennych wyborów. Człowiek rzadko podejmuje decyzje z poziomu absolutnej wolnej woli — wybiera zazwyczaj to, co w jego bezpośrednim otoczeniu jest najłatwiejsze, najbardziej widoczne i wymaga najmniejszego wysiłku.',
-        'Kluczową technologią zmiany zachowania jest Inżynieria Tarcia (Friction Engineering):',
-        '1. DLA ZACHOWAŃ SZKODLIWYCH: Maksymalnie zwiększamy tarcie środowiskowe (Friction Addition). Jeśli chcesz mniej korzystać ze smartfona, nie trenuj heroizmu — wyłącz powiadomienia, ustaw ekran w skali szarości, wyloguj się z aplikacji i zostawiaj telefon w innym pokoju. Zmuszenie kory przedczołowej do przejścia 10 kroków i wpisania hasła daje 5-sekundową pauzę poznawczą, która pozwala zatrzymać automatyczny odruch prążkowia.',
+        'Jednym z najważniejszych odkryć współczesnej psychologii behawioralnej i ekonomii behawioralnej (Richard Thaler, laureat Nagrody Nobla, Cass Sunstein oraz Kurt Lewin) jest fakt, że to ŚRODOWISKO FIZYCZNE I SPOŁECZNE jest głównym architektem naszych codziennych wyborów. Człowiek rzadko podejmuje decyzje z poziomu absolutnej, sterylnej wolnej woli — wybiera zazwyczaj to, co w jego bezpośrednim otoczeniu jest najłatwiejsze, najbardziej widoczne i wymaga najmniejszego wydatku metabolicznego.',
+        'W koncepcji Architektury Wyboru (Choice Architecture) centralną rolę odgrywa tzw. Opcja Domyślna (Default Option). Ludzki układ nerwowy wykazuje potężny Efekt Status Quo — w ponad 80% przypadków wybieramy to, co zostało nam podane bez konieczności podejmowania dodatkowego wysiłku.',
+        'Kluczową technologią trwałej zmiany zachowania jest Inżynieria Tarcia (Friction Engineering):',
+        '1. DLA ZACHOWAŃ SZKODLIWYCH: Maksymalnie zwiększamy tarcie środowiskowe (Friction Addition). Jeśli chcesz mniej korzystać ze smartfona, nie trenuj heroizmu — wyłącz powiadomienia, przełącz ekran w tryb monochromatyczny (szarości), wyloguj się z aplikacji i zostawiaj telefon w innym pokoju. Zmuszenie kory przedczołowej do przejścia 10 kroków i wpisania hasła daje 5-sekundową pauzę poznawczą, która pozwala zatrzymać automatyczny odruch prążkowia.',
         '2. DLA ZACHOWAŃ POŻĄDANYCH: Maksymalnie redukujemy tarcie środowiskowe (Friction Reduction). Jeśli chcesz biegać rano, połóż buty i strój sportowy tuż przy łóżku wieczorem; jeśli chcesz pić wodę, postaw pełną karafkę bezpośrednio na biurku przy klawiaturze.',
         'Nie zmieniaj siebie poprzez walkę ze swoimi skłonnościami — zmień geometrię swojego pokoju, kuchni i biura tak, aby dobre zachowanie było ścieżką o najniższym oporze.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-26-3-1',
+          title: 'Analiza słów Thalera i Sunsteina: Niewidzialna Władza Domyślności (Defaults)',
+          content: [
+            'Wypowiedź autorów „Impulsu” obala mit, że istnieje „neutralne środowisko”. Kiedy wchodzisz do stołówki, to, czy owoce leżą na wysokości wzroku, a batony są schowane pod ladą (lub odwrotnie), zdeterminuje wybory setek ludzi silniej niż jakiekolwiek kampanie edukacyjne.',
+            'W Twoim własnym domu jesteś jedynym architektem wyboru. Jeśli chipsy i słodycze leżą w przezroczystej misce na stoliku kawowym, to z punktu widzenia neurobiologii już podjąłeś decyzję o ich zjedzeniu — Twoje prążkowie odpali impuls za każdym razem, gdy przejdziesz obok. Projektowanie środowiska polega na tym, by zadbać o to, aby opcją domyślną i najprostszą było zachowanie wspierające Twoje cele.'
+          ]
+        },
+        {
+          id: 'sub-26-3-2',
+          title: 'Eksperyment z Zapisami na Dawstwo Narządów (Johnson & Goldstein, Science, 2003)',
+          content: [
+            'W klasycznym badaniu porównano odsetek obywateli zgadzających się na pośmiertne oddanie narządów w różnych krajach europejskich. W Niemczech wynosił on zaledwie 12%, a w sąsiedniej Austrii — niemal 100%! Różnica nie wynikała z religijności, moralności ani kultury.',
+            'Wynikała wyłącznie z architektury formularza w urzędzie: w Niemczech domyślnie NIE byłeś dawcą i musiałeś zaznaczyć kratkę (opt-in), aby nim zostać. W Austrii domyślnie BYŁEŚ dawcą i musiałeś zaznaczyć kratkę (opt-out), aby zrezygnować. Tysiące ludzkich istnień zależało od jednej domyślnej kratki na papierze. Dokładnie tak samo domyślne ustawienia Twojego telefonu decydują o Twoim życiu.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-26-3-1',
+          type: 'praktyka',
+          title: 'Reguła Jednego Korytarza: Projektowanie Przestrzeni Pracy',
+          content: 'Zaprojektuj swoje stanowisko pracy zgodnie z zasadą „Jednego Korytarza”: na biurku może znajdować się wyłącznie to, co służy JEDNEMU zadaniu, które wykonujesz w danym bloku czasowym. Wszelkie inne bodźce (notatki z innych projektów, telefon, otwarte karty z pocztą) muszą zostać fizycznie usunięte z pola widzenia, eliminując mikro-decyzje o ignorowaniu rozpraszaczy.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-26-3',
+        title: 'Architektura Wyboru w Twoim Pokoju: Dodawanie i Usuwanie Tarcia',
+        type: 'zmien_jeden_element',
+        context: 'Marta (26 lat) po powrocie z pracy chce uczyć się programowania. W jej pokoju laptop do nauki leży schowany w plecaku w szafie, a na biurku podłączona jest konsola do gier z padem leżącym na fotelu. Codziennie kończy na 4 godzinach grania.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wariant A: Poleganie na motywacji w obecnym środowisku',
+            description: 'Marta wchodzi do pokoju, widzi pad i mówi sobie: „Bądź dorosła, wyciągnij laptopa z szafy”. Jaki jest wskaźnik porażki?',
+            options: [
+              {
+                text: 'Ponad 90% — pad ma zerowe tarcie, a wyjęcie laptopa wymaga 4 kroków, więc wyczerpana kora ulega impulsowi konsoli',
+                feedback: 'Prawda. Zgodnie z Thalerem i Lewinem środowisko zadecydowało za Martę w ułamku sekundy.',
+                isOptimal: true
+              },
+              {
+                text: 'Poniżej 5% — motywacja do nauki jest silniejsza niż widok konsoli',
+                feedback: 'Błędna intuicja. Motywacja wieczorna jest najniższa w ciągu doby i przegrywa z bodźcem o zerowym oporze.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wariant B: Inżynieria tarcia (Zmień jeden element)',
+            description: 'Marta odłącza konsolę, chowa kable do piwnicy, a na biurku stawia otwarty laptop z uruchomionym kursem programowania.',
+            options: [
+              {
+                text: 'Ścieżka najmniejszego oporu prowadzi prosto do nauki — Marta siada i klika „Play” bez wysiłku woli',
+                feedback: 'Znakomita interwencja. Odwrócenie wektora tarcia zmienia prawdopodobieństwo zachowania o setki procent.',
+                isOptimal: true
+              },
+              {
+                text: 'Marta natychmiast idzie do piwnicy po kable od konsoli',
+                feedback: 'Bardzo mało prawdopodobne — fizyczne tarcie pójścia do piwnicy skutecznie gasi impuls dopaminowy.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki jeden przedmiot w Twoim bezpośrednim otoczeniu posiada zerowe tarcie i nieustannie kradnie Twój czas — i jak możesz dodać do niego 20 sekund oporu?'
+      }
     },
     {
       id: 'sec-26-4',
@@ -406,12 +481,88 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.4',
       title: 'Siła mikrokroków (Atomic Habits): Budowanie tożsamości przez dowody z działania',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Zachowanie dochodzi do skutku tylko wtedy, gdy trzy elementy zbiegają się w tym samym ułamku sekundy: Motywacja, Zdolność (łatwość wykonania) oraz Wyzwalacz (B = MAP). Kiedy ludzie nie realizują swoich postanowień, odruchowo obwiniają brak motywacji. Prawdziwa dźwignia leży jednak niemal zawsze w łatwości: uczyń zachowanie mikroskopijnie proste, zredukuj je do absurdu, a zrobisz je nawet w stanie totalnego wyczerpania.',
+        author: 'Dr B.J. Fogg',
+        source: 'Stanford University Behavior Design Lab, „Tiny Habits: The Small Changes That Change Everything”, Houghton Mifflin Harcourt, 2019'
+      },
       paragraphs: [
-        'Kiedy próbujemy wprowadzić wielką, monumentalną zmianę (np. „Od jutra uczę się 3 godziny dziennie i biegam 10 km”), ciało migdałowate odbiera to jako gwałtowne zachwianie homeostazy i wysyła potężny sygnał lęku oraz oporu. W rezultacie po 4 dniach poddajemy się w poczuciu bezsilności.',
-        'Metoda mikrokroków (BJ Fogg — Tiny Habits, James Clear — Atomic Habits) opiera się na radykalnym zmniejszeniu poprzeczki wejściowej zachowania do progu, który jest neurobiologicznie „niewidzialny dla lęku”: 2 minuty czytania, 1 pompka, 30 sekund rozciągania. Wykonanie tak małej czynności nie wymaga mobilizacji silnej woli i nie generuje stresu.',
-        'Prawdziwa potęga mikrokroku nie leży w jego bezpośrednim rezultacie fizycznym, lecz w jego funkcji tożsamościowej. Każdy zrobiony mikrokrok jest twardym, empirycznym dowodem dla Twojego układu nerwowego: „Jestem osobą, która codziennie pisze”, „Jestem osobą, która dba o ciało”. Tożsamość nie zmienia się pod wpływem afirmacji — zmienia się pod wpływem powtarzalnych dowodów z działania.'
-      ]
+        'Kiedy próbujemy wprowadzić wielką, monumentalną zmianę (np. „Od jutra uczę się 3 godziny dziennie, biegam 10 km i całkowicie odstawiam cukier”), nasze ciało migdałowate odbiera to jako gwałtowne zagrożenie dla homeostazy. Układ nerwowy generuje potężny sygnał lęku, oporu i wyczerpania — po czterech dniach heroicznej walki poddajemy się w poczuciu beznadziei i wstydu.',
+        'Rewolucyjny model zachowania B.J. Fogga ze Stanford University (Fogg Behavior Model: Behavior = Motivation × Ability × Prompt) dowodzi, że motywacja i zdolność (łatwość) znajdują się w relacji odwrotnie proporcjonalnej. Im trudniejsze zadanie, tym wyższej motywacji wymaga. Problem w tym, że motywacja jest zasobem skrajnie niestabilnym — fluktuuje falami pod wpływem nastroju, pogody i zmęczenia.',
+        'Metoda mikronawyków (Tiny Habits Fogga, rozwinięta przez Jamesa Cleara w Atomic Habits) polega na obniżeniu poprzeczki zachowania tak nisko, aby znalazło się ono powyżej tzw. Linii Działania nawet przy MOTYWACJI RÓWNEJ ZERO. Zamiast 50 pompek — 1 pompka. Zamiast 60 minut czytania — 1 strona. Zamiast medytacji godzinnej — 3 świadome oddechy.',
+        'Prawdziwa potęga mikrokroku nie leży w jego doraźnym fizycznym rezultacie, lecz w jego funkcji tożsamościowej. Każdy wykonany mikrokrok jest twardym, empirycznym dowodem dla Twojego układu nerwowego: „Jestem osobą, która codziennie pisze”, „Jestem osobą, która ćwiczy”. Tożsamość nie zmienia się pod wpływem afirmacji przed lustrem — zmienia się pod wpływem niepodważalnych dowodów z działania.'
+      ],
+      subsections: [
+        {
+          id: 'sub-26-4-1',
+          title: 'Analiza słów dr. B.J. Fogga: Równanie B = MAP i Mit Wysokiej Motywacji',
+          content: [
+            'Wypowiedź dr. Fogga uderza w fundament kultury „kołczingu motywacyjnego”. Motywacja przypomina imprezowego znajomego — jest wspaniała, gdy się pojawi, ale nigdy nie można na niej polegać w trudnych chwilach.',
+            'Kiedy projektujesz zachowanie z myślą o dniach, w których masz gorączkę, jesteś po kłótni z partnerem i spałeś 4 godziny, MUSISZ oprzeć je na wymiarze Ability (Zdolność). Mikronawyk o długości 60 sekund jest odporny na załamania motywacyjne. Wykonując go w najgorszy dzień, chronisz ciągłość obwodu neuronalnego w jądrach podstawy.'
+          ]
+        },
+        {
+          id: 'sub-26-4-2',
+          title: 'Kotwiczenie w Rutynach (Anchor Prompts): Jak Znaleźć Idealny Wyzwalacz',
+          content: [
+            'Fogg podkreśla, że zachowanie nie może wisieć w próżni. Wzór skutecznego mikronawyku brzmi:',
+            '„Po tym, jak [Istniejąca Kotwica — np. umyję zęby / postawię kubek z kawą / zamknę drzwi], zrobię [Mikronawyk — np. 2 przysiady / przeczytam 1 stronę], a następnie natychmiast poczuję mikro-sukces (Świętowanie)”.',
+            'Neurobiologiczne świętowanie (uśmiech, zaciśnięcie pięści, słowo „sukces!”) wywołuje mikroskopijny wyrzut dopaminy, który natychmiast „wypala” nowe połączenie synaptyczne wokół wyzwalacza.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-26-4-1',
+          type: 'zasada',
+          title: 'Złota Zasada Fogga: Skaluj w Górę Dopiero Po Ugruntowaniu Nawiasu',
+          content: 'Nigdy nie zwiększaj objętości nawyku, dopóki jego wersja mikroskopijna nie stanie się w 100% automatyczna przez minimum 3 kolejne tygodnie. Najpierw utrwal nawyk pojawiania się (Habit of Showing Up), a dopiero później optymalizuj wydajność i intensywność.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-26-4',
+        title: 'Konstruktor Mikronawyków Fogga: Od Monstruarium do Ziarna',
+        type: 'co_zrobilbys',
+        context: 'Radek (39 lat) od 5 lat próbuje zacząć regularnie ćwiczyć. Za każdym razem kupuje roczny karnet na siłownię, ćwiczy przez tydzień po 90 minut, dostaje bolesnych zakwasów, po czym rezygnuje na kolejne pół roku.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Diagnoza błędu konstrukcyjnego w zachowaniu Radka',
+            description: 'Dlaczego ambitny plan Radka za każdym razem kończy się załamaniem?',
+            options: [
+              {
+                text: 'Plan Radka wymagał ekstremalnie wysokiej motywacji (Aparatus B = MAP) i wywoływał szok homeostatyczny w ciele migdałowatym',
+                feedback: 'Dokładnie tak. Gdy motywacja naturalnie spadła po tygodniu, zachowanie o wysokim oporze natychmiast wypadło poniżej linii działania.',
+                isOptimal: true
+              },
+              {
+                text: 'Radek ma genetyczną niezdolność do uprawiania aktywności fizycznej',
+                feedback: 'Fałszywy determinizm biologiczny. Problem leży w błędnej architekturze nawyku, a nie w genach.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Zaprojektowanie mikronawyku opartego na kotwicy',
+            description: 'Jak powinna wyglądać wersja startowa w modelu Fogga?',
+            options: [
+              {
+                text: '„Po tym, jak rano zdejmę piżamę (Kotwica), zrobię dokładnie 2 pompki na dywanie (Mikronawyk) i powiem sobie «Dobra robota!»”',
+                feedback: 'Wzorcowy Tiny Habit! Zerowy opór, idealna kotwica somatyczna i natychmiastowe domknięcie dopaminowe.',
+                isOptimal: true
+              },
+              {
+                text: 'Zmniejszenie treningu na siłowni z 90 minut do 45 minut 4 razy w tygodniu',
+                feedback: 'Nadal zbyt wysoki próg wejścia (dojazd, przebranie, prysznic), który załamie się przy pierwszym deszczowym dniu.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki wielki nawyk próbujesz wdrożyć i jak brzmi jego mikroskopijna, 60-sekundowa wersja, której nie jesteś w stanie zawalić nawet w najgorszy dzień?'
+      }
     },
     {
       id: 'sec-26-16',
@@ -445,13 +596,88 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.7',
       title: 'Nawroty i błędy w procesie zmiany: Od katastrofizacji do wyrozumiałego realizmu',
       category: 'studium-przypadku',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Efekt Złamania Abstynencji (Abstinence Violation Effect — AVE) zamienia drobne, łatwe do opanowania potknięcie taktyczne (lapse) w katastrofalny, pełnoobjawowy nawrót (relapse). To nie samo potknięcie niszczy człowieka, lecz toksyczna atrybucja poznawcza: irracjonalne przekonanie, że pojedynczy błąd dowodzi totalnego braku silnej woli i przekreśla cały dotychczasowy dorobek.',
+        author: 'Prof. G. Alan Marlatt',
+        source: 'University of Washington Addictive Behaviors Research Center, „Relapse Prevention: Maintenance Strategies in the Treatment of Addictive Behaviors”, Guilford Press, 1985'
+      },
       paragraphs: [
-        'Jednym z najbardziej niebezpiecznych zjawisk w psychologii zmiany jest tzw. Efekt „A niech to!” (What-the-Hell Effect / Abstinence Violation Effect). Polega on na tym, że po jednorazowym potknięciu (np. zjedzenie ciastka podczas diety, pominięcie jednego treningu, sięgnięcie po papierosa) człowiek wpada w czarno-białą katastrofizację: „Skoro złamałem zasadę, cały plan jest zrujnowany, jestem beznadziejny, więc mogę zjeść całą blachę ciasta”.',
-        'W psychologii behawioralnej kluczowe jest rozróżnienie pomiędzy POTKNIĘCIEM (Lapse — jednorazowy błąd taktyczny) a NAWROTEM (Relapse — całkowity powrót do starego wzorca). To nie samo potknięcie niszczy postęp, lecz reakcja emocjonalna na potknięcie.',
-        'Badania Kristin Neff nad Samowspółczuciem (Self-Compassion) pokazują, że osoby, które po błędzie traktują siebie z życzliwym realizmem mentora („Potknąłem się, bo byłem przemęczony. Zbadajmy, co poszło nie tak i wróćmy do planu”), mają wielokrotnie wyższe szanse na trwałą zmianę niż osoby stosujące samokrytykę.',
-        'Poniższe studium przypadku ukazuje proces wychodzenia z pułapki katastrofizacji u menedżera, który zredukował masę ciała dzięki trwałemu systemowi.'
+        'Jednym z najbardziej niebezpiecznych i powszechnych zjawisk w psychologii zmiany zachowania jest mechanizm opisany przez pioniera relapsologii behawioralnej prof. G. Alana Marlatta jako Efekt Złamania Abstynencji (Abstinence Violation Effect — AVE), potocznie nazywany efektem „A niech to!” (What-The-Hell Effect).',
+        'Zjawisko to polega na tym, że po jednorazowym potknięciu (np. zjedzenie kawałka ciasta podczas diety, pominięcie jednego porannego treningu, sięgnięcie po jednego papierosa po 3 miesiącach abstynencji) człowiek wpada w czarno-białą, dychotomiczną katastrofizację: „Skoro złamałem zasadę, cały plan jest bezpowrotnie zrujnowany. Jestem beznadziejny, nie mam silnej woli, więc równie dobrze mogę zjeść całą blachę ciasta i rzucić dietę w diabły”.',
+        'W analizie Marlatta fundamentalnym warunkiem trwałego sukcesu jest radykalne rozróżnienie dwóch pojęć:',
+        '1. POTKNIĘCIE (Lapse): Jednorazowy, incydentalny błąd taktyczny w trudnych warunkach (np. zmęczenie, alkohol, presja grupy). Jest to cenna informacja zwrotna o słabym punkcie Twojego systemu, która wymaga korekty planu.',
+        '2. NAWRÓT (Relapse): Całkowite porzucenie nowych nawyków i powrót do starego stylu życia — spowodowany nie samym potknięciem, lecz kaskadą wstydu i katastrofizacją po potknięciu.'
       ],
+      subsections: [
+        {
+          id: 'sub-26-7-1',
+          title: 'Analiza słów prof. Alana Marlatta: Psychologia Dychotomii i Wstyd Podecyzyjny',
+          content: [
+            'Wypowiedź Marlatta precyzyjnie diagnozuje błąd atrybucji wewnętrznej. Kiedy człowiek interpretuje potknięcie jako dowód wady charakteru („Jestem słaby”), układ nerwowy zalewa fala paraliżującego wstydu. Wstyd — w odróżnieniu od zdrowego poczucia winy — nie motywuje do naprawy, lecz zmusza mózg do natychmiastowego znieczulenia się tym samym nawykiem, z którego próbowaliśmy wyjść.',
+            'Dojrzały protokół Marlatta uczy traktować potknięcie jak przebitą oponę w samochodzie: jeśli złapiesz gumę w jednym kole, nie wysiadasz z auta i nie przebijasz pozostałych trzech kół (co robi człowiek w efekcie AVE)! Po prostu zmieniasz koło i jedziesz dalej. Zasada „Nigdy nie opuszczaj dwa razy z rzędu” jest najprostszą barierą oddzielającą potknięcie od nawrotu.'
+          ]
+        },
+        {
+          id: 'sub-26-7-2',
+          title: 'Samowspółczucie (Kristin Neff) Jako Neurobiologiczny Hamulec Katastrofizacji',
+          content: [
+            'Badania dr Kristin Neff z University of Texas jednoznacznie dowodzą, że samokrytyka po błędzie podnosi poziom kortyzolu i wyłącza korę przedczołową, przyspieszając nawrót. Z kolei Samowspółczucie (Self-Compassion — uznanie wspólnego ludzkiego losu, życzliwość wobec siebie i uważność) aktywuje układ oksytocynowo-opioidowy, obniża stres somatyczny i pozwala na natychmiastowy powrót do dyscypliny.',
+            'Wyrozumiałość wobec siebie po potknięciu nie jest pobłażliwością — jest najbardziej pragmatyczną, naukową strategią prewencji pełnego nawrotu.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-26-7-1',
+          type: 'badanie',
+          title: 'Eksperyment z Pączkami i Samowspółczuciem (Adams & Leary, 2007)',
+          content: 'Kobiety na ścisłej diecie poproszono o zjedzenie wielkiego pączka z lukrem. Następnie połowie z nich podsunięto komunikat wyzwalający samowspółczucie („Wszyscy czasem ulegają pokusom, to normalna ludzka rzecz, nie bądź dla siebie surowa”), a drugiej grupie nie powiedziano nic. W kolejnym teście smaku kobiety, które otrzymały dawkę samowspółczucia, zjadły trzykrotnie MNIEJ słodyczy niż kobiety z grupy kontrolnej, które zżerało poczucie winy!'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-26-7',
+        title: 'Rozbrojenie Efektu „A niech to!”: Od Potknięcia do Ochrony Systemu',
+        type: 'kontrprzypadek',
+        context: 'Tomasz (36 lat) od 40 dni nie pije alkoholu i biega 3 razy w tygodniu. W piątek na imprezie firmowej pod wpływem namowy kolegi wypija 2 piwa. Wracając do domu, czuje wstręt do siebie.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wariant A: Dychotomiczna katastrofizacja (AVE Marlatta)',
+            description: 'Tomasz mówi sobie: „Wszystko na nic. 40 dni poszło w błoto, jestem alkoholikiem bez charakteru”. Co zrobi w sobotę rano?',
+            options: [
+              {
+                text: 'Kupi czteropak piwa i spędzi weekend na piciu, wpadając w pełny, wielomiesięczny nawrót (Relapse)',
+                feedback: 'Klasyczny przebieg Abstinence Violation Effect. Poczucie winy i katastrofizacja stają się wyzwalaczem nałogowej ucieczki.',
+                isOptimal: false
+              },
+              {
+                text: 'Spokojnie pójdzie na trening biegowy',
+                feedback: 'Niemożliwe przy tak skrajnej narracji wewnętrznej — wstyd paraliżuje korę przedczołową.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wariant B: Protokół Alana Marlatta (Zmień jeden element)',
+            description: 'Tomasz mówi sobie: „Złapałem gumę w jednym kole (Lapse). 40 dni trzeźwości nie zniknęło z mojego mózgu — to 40 do 1. Zbadajmy, dlaczego uległem (presja kolegi + głód) i wracamy do planu”.',
+            options: [
+              {
+                text: 'Tomasz wypija szklankę wody, rano wkłada buty do biegania i utrzymuje ciągłość systemu bez katastrofy',
+                feedback: 'Znakomita, dojrzała postawa oparta na naukowych zasadach prewencji nawrotów. Potknięcie staje się lekcją, a nie wyrokiem.',
+                isOptimal: true
+              },
+              {
+                text: 'Tomasz świętuje fakt, że wypił piwo i planuje pić co weekend',
+                feedback: 'Błędna interpretacja — celem nie jest pobłażliwość wobec nałogu, lecz wyrozumiały realizm chroniący abstynencję.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakiej dziedzinie życia jedno potknięcie sprawiło, że porzuciłeś wielotygodniowy wysiłek — i jak mógłbyś zareagować dzisiaj z pozycji Marlatta?'
+      },
       caseStudyRef: caseStudiesChapterTwentySix[0]
     },
     {
@@ -490,12 +716,91 @@ export const chapterTwentySix: Chapter = {
       sectionNumber: '26.10',
       title: 'Eksperymentowanie behawioralne: Bądź naukowcem we własnym życiu',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Zmiana zachowania nie jest pojedynczym, heroicznym aktem triumfu woli, lecz spiralnym procesem przechodzącym przez sześć odrębnych stadiów: od prekontemplacji po podtrzymanie. Oczekiwanie natychmiastowego, liniowego sukcesu ignoruje neurobiologię uczenia się — w rzeczywistości potknięcia i tymczasowe powroty do wcześniejszych faz są normalnym, integralnym elementem każdej trwałej ludzkiej transformacji.',
+        author: 'Prof. James O. Prochaska & Carlo C. DiClemente',
+        source: 'University of Rhode Island, „Transtheoretical Therapy: Toward a More Integrative Model of Change”, Psychotherapy: Theory, Research & Practice, 1982'
+      },
       paragraphs: [
-        'Najważniejszym przesunięciem paradygmatu w dojrzałym rozwoju osobistym jest porzucenie roli surowego sędziego na rzecz dociekliwego badacza i naukowca behawioralnego.',
-        'Kiedy podchodzisz do siebie jak sędzia, każda nieudana próba (np. nieudany poranny trening) jest traktowana jako wyrok na Twojej tożsamości („Jestem beznadziejny, nie nadaję się do tego”). Kiedy podchodzisz do siebie jak naukowiec, każda próba jest traktowana jako HIPOTEZA BADAWCZA: „Hipoteza: jeśli przygotuję ubranie wieczorem, wstanę o 6:30. Wynik: nie wstałem, bo poszedłem spać o 1:00 w nocy. Wniosek: zmienną krytyczną nie jest ubranie, lecz godzina gaszenia światła. Modyfikuję zmienną i testuję kolejną hipotezę”.',
-        'Naukowiec nie obraża się na dane, nie rozpacza i nie porzuca laboratorium. Mierzy, modyfikuje zmienne środowiskowe i iteracyjnie doskonali swój system.'
-      ]
+        'Jednym z największych błędów w myśleniu o rozwoju osobistym jest iluzja Liniowości Zmiany: przekonanie, że od momentu podjęcia decyzji człowiek powinien każdego dnia robić postępy w linii prostej aż do osiągnięcia doskonałości.',
+        'Transtheoretyczny Model Zmiany (TTM) opracowany przez Jamesa Prochaskę i Carlo DiClemente dowodzi, że ludzka psychika porusza się po spirali, przechodząc przez sześć precyzyjnie zdefiniowanych etapów:',
+        '1. Prekontemplacja (Brak świadomości problemu: „Wszyscy przesadzają, świetnie funkcjonuję”).',
+        '2. Kontemplacja (Świadomość ambiwalencji: „Wiem, że powinienem przestać palić/zmienić pracę, ale boję się kosztów”).',
+        '3. Przygotowanie (Planowanie taktyczne: zbieranie informacji, zakup sprzętu, określenie daty startu).',
+        '4. Działanie (Wdrożenie nowego zachowania: pierwsze tygodnie wysokiego wydatku energetycznego).',
+        '5. Podtrzymanie (Utrwalenie nawyku powyżej 6 miesięcy: automatyzacja w jądrach podstawy).',
+        '6. Nawrót / Regresja (Tymczasowy powrót do dawnego stadium — traktowany nie jako klęska, lecz jako punkt kalibracji systemu).'
+      ],
+      subsections: [
+        {
+          id: 'sub-26-10-1',
+          title: 'Analiza słów Prochaski i DiClemente: Spiralna Natura Wzrostu',
+          content: [
+            'Wypowiedź badaczy uwalnia od toksycznego perfekcjonizmu. Kiedy człowiek po 3 miesiącach sukcesu cofa się do stadium kontemplacji lub przygotowania, większość ludzi porzuca cały proces, mówiąc: „Wróciłem do punktu wyjścia”.',
+            'To nieprawda. Model TTM pokazuje, że powrót następuje na WYŻSZYM ZWOJU SPIRALI. Posiadasz już wiedzę o tym, co działało, a co zawiodło. Wracasz bogatszy o dane empiryczne, co pozwala na skonstruowanie znacznie bardziej odpornego systemu zabezpieczeń.'
+          ]
+        },
+        {
+          id: 'sub-26-10-2',
+          title: 'Dopasowanie Interwencji do Bieżącego Stadium (Stage-Matching)',
+          content: [
+            'Najczęstszym błędem jest stosowanie technik z fazy Działania (np. sztywne harmonogramy, zmuszanie się do rygoru) u osoby, która znajduje się w fazie Kontemplacji (gdzie potrzebuje rozwiązania wewnętrznego konfliktu wartości i pracy z lękiem).',
+            'Zmuszanie kogoś (lub samego siebie) do natychmiastowego działania przed domknięciem fazy przygotowania wywołuje gwałtowny opór psychologiczny (reaktancję) i gwarantuje szybki upadek.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-26-10-1',
+          type: 'praktyka',
+          title: 'Autodiagnoza TTM: Na Którym Zwoju Spirali Się Znajdujesz?',
+          content: 'Zanim rzucisz się do działania, określ swoje rzeczywiste stadium: jeśli czujesz ambiwalencję i wątpliwości — nie kupuj karnetu na siłownię, lecz zrób bilans zysków i strat z dotychczasowego zachowania. Dopiero gdy Twoja motywacja wewnętrzna jest spójna, przejdź do fazy Przygotowania i Inżynierii Środowiska.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-26-10',
+        title: 'Spirala Zmiany Prochaski: Diagnoza Stadium i Dobór Strategii',
+        type: 'trzy_interpretacje',
+        context: 'Grzegorz (42 lata) od roku mówi znajomym: „Muszę wreszcie rzucić tę toksyczną pracę w korporacji i założyć własną firmę doradczą”. Kupuje książki o biznesie, ale za każdym razem, gdy ma wysłać wypowiedzenie, znajduje wymówkę i zostaje na kolejny kwartał.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'W jakim stadium modelu TTM faktycznie znajduje się Grzegorz?',
+            description: 'Zdiagnozuj stan psychiczny Grzegorza:',
+            options: [
+              {
+                text: 'Stadium Kontemplacji (Ambiwalencja) maskowane pozorowanymi działaniami w stadium Przygotowania',
+                feedback: 'Precyzyjna diagnoza TTM. Grzegorz tkwi w konflikcie pomiędzy potrzebą bezpieczeństwa finansowego a pragnieniem autonomii.',
+                isOptimal: true
+              },
+              {
+                text: 'Stadium Działania, ponieważ czyta książki biznesowe',
+                feedback: 'Błąd. Samo czytanie to zbieranie wiedzy deklaratywnej, a nie realne działanie w świecie fizycznym.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wybór właściwej interwencji terapeutyczno-rozwojowej',
+            description: 'Jaka interwencja odblokuje Grzegorza?',
+            options: [
+              {
+                text: 'Jawne nazwanie ukrytych obaw (lęk przed brakiem płynności) i zbudowanie 6-miesięcznej poduszki finansowej przed rzuceniem etatu',
+                feedback: 'Znakomita strategia dostosowana do fazy kontemplacji i przygotowania. Usunięcie realnego lęku pozwala na bezpieczne przejście do Działania.',
+                isOptimal: true
+              },
+              {
+                text: 'Zmuszenie Grzegorza do rzucenia pracy z dnia na dzień pod hasłem „Zaufaj wszechświatowi”',
+                feedback: 'Skrajnie niebezpieczne. Wywoła paniczny wyrzut kortyzolu i paraliż adaptacyjny.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakim ważnym celu życiowym udajesz, że jesteś w fazie działania, podczas gdy w rzeczywistości tkwisz w nierozstrzygniętej fazie kontemplacji?'
+      }
     },
     {
       id: 'sec-26-11',

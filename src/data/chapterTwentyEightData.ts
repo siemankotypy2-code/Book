@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 /**
  * TOM III — ROZDZIAŁ 12 (GLOBALNIE ROZDZIAŁ 28 W STRUKTURZE DZIEŁA)
@@ -609,13 +609,87 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.17',
       title: 'Wpływ pierwszej informacji — Kotwiczenie (Anchoring Bias), manipulacja punktem odniesienia i obrona',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Efekt kotwiczenia jest jednym z najbardziej odpornych i wszechobecnych zjawisk w psychologii eksperymentalnej: kiedy człowiek rozważa określoną wartość liczbową przed dokonaniem oszacowania nieznanej wielkości, jego ostateczny szacunek pozostaje niewiarygodnie blisko tej liczby, nawet jeśli zdaje sobie sprawę, że była ona całkowicie przypadkowa, bezsensowna lub zmanipulowana.',
+        author: 'Prof. Amos Tversky & Daniel Kahneman',
+        source: 'Stanford University / Princeton University, „Judgment under Uncertainty: Heuristics and Biases”, Science, 1974'
+      },
       paragraphs: [
         'Efekt kotwiczenia (anchoring bias), odkryty przez Daniela Kahnemana i Amosa Tversky’ego, to błąd poznawczy polegający na tym, że pierwsza informacja liczbowa lub jakościowa, z jaką zetknie się nasz umysł, staje się niewidzialnym punktem odniesienia dla wszystkich kolejnych szacunków.',
         'W negocjacjach handlowych strona, która jako pierwsza rzuca kwotę (nawet absurdalnie zawyżoną), kotwiczy percepcję drugiej strony. W relacjach międzyludzkich pierwsza etykieta przypisana nowemu pracownikowi lub projektowi („to będzie trudny klient”) potrafi zniekształcić interpretację faktów na całe miesiące.',
         'Kotwiczenie działa podprogowo — nawet eksperci z wieloletnim stażem (np. sędziowie orzekający wyroki czy rzeczoznawcy majątkowi) ulegają wpływowi losowych liczb, jeśli zostały one wcześniej wyeksponowane.',
         'OBRONA PRZED KOTWICZENIEM: Zawsze ustalaj własne, niezależne widełki wyceny i kryteria PRZED rozpoczęciem rozmów. Jeśli usłyszysz agresywną kotwicę, natychmiast ją zneutralizuj: „Ta kwota jest całkowicie poza zakresem naszych realiów, odłóżmy ją na bok i zacznijmy od parametrów bazowych”.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-28-17-1',
+          title: 'Analiza słów Tversky’ego i Kahnemana: Model Selektywnej Dostępności (Selective Accessibility)',
+          content: [
+            'Współczesna psychologia poznawcza (Mussweiler & Strack) wyjaśnia, dlaczego kotwiczenie jest tak niebezpieczne. Mózg nie traktuje kotwicy jako zwykłej liczby — traktuje ją jako hipotezę do przetestowania!',
+            'Kiedy sprzedawca rzuca cenę 100 000 zł za używane auto, Twoja pamięć operacyjna natychmiast zaczyna aktywować z pamięci długotrwałej argumenty POTWIERDZAJĄCE wysoką wartość pojazdu (np. stan lakieru, prestiż marki). Nawet jeśli wynegocjujesz rabat do 85 000 zł, cieszysz się ze zniżki, ignorując fakt, że obiektywna wartość rynkowa wynosiła zaledwie 60 000 zł. Kotwica przesterowała selekcję dowodów w Twoim umyśle.'
+          ]
+        },
+        {
+          id: 'sub-28-17-2',
+          title: 'Eksperyment z Kołem Fortuny (Kahneman & Tversky, 1974)',
+          content: [
+            'Badacze kręcili przed badanymi kołem fortuny, które zatrzymywało się na liczbie 10 lub 65 (liczby były ustawione przez eksperymentatora). Następnie zadawano pytanie: „Jaki odsetek państw w ONZ stanowią kraje afrykańskie?”.',
+            'Osoby, które widziały liczbę 10, szacowały odsetek średnio na 25%. Osoby, które widziały liczbę 65, szacowały go na 45%! Całkowicie losowa liczba na jarmarcznym kole zniekształciła wiedzę geograficzno-polityczną dorosłych ludzi o niemal 100%. Dokładnie tak samo działają promocje „przekreślona cena 999 zł, teraz 499 zł”.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-28-17-1',
+          type: 'praktyka',
+          title: 'Zasada Anty-Kotwicy: Neutralizacja na Starcie',
+          content: 'Nigdy nie odpowiadaj na agresywną kotwicę kontrofertą w jej pobliżu (np. z 100 000 zł na 90 000 zł). Jeśli zaakceptujesz obecność kotwicy w przestrzeni dyskusji, już przegrałeś. Zastosuj uderzenie zerujące: „Ta liczba nie ma żadnego związku z danymi rynkowymi. Zapomnijmy o niej i zacznijmy rozmowę od twardego kosztorysu”.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-28-17',
+        title: 'Laboratorium Kotwiczenia: Negocjacje Wynagrodzenia',
+        type: 'trzy_interpretacje',
+        context: 'Piotr (30 lat) ubiega się o pracę programisty. Rekruter pyta: „Ile chciałby Pan zarabiać?”. Piotr nie sprawdził stawek rynkowych i rzuca niepewnie: „Myślałem o 8 000 zł”. Rekruter uśmiecha się i natychmiast zgadza.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Kto zakotwiczył negocjacje i z jakim skutkiem?',
+            description: 'Zanalizuj błąd Piotra z perspektywy teorii Kahnemana:',
+            options: [
+              {
+                text: 'Piotr sam zakotwiczył wycenę na drastycznie zaniżonym poziomie, uniemożliwiając pracodawcy zaoferowanie budżetowych 14 000 zł',
+                feedback: 'Tragiczny, klasyczny błąd w negocjacjach. Rzucenie niskiej kotwicy zamyka sufit finansowy.',
+                isOptimal: true
+              },
+              {
+                text: 'Piotr zachował się dyplomatycznie, zyskując sympatię rekrutera',
+                feedback: 'Błędne rozumienie biznesowe. Rekruter zaoszczędził budżet kosztem Piotra.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wzorcowe zachowanie przy pytaniu o stawkę',
+            description: 'Jak powinien odpowiedzieć Piotr, dysponując wiedzą o kotwiczeniu?',
+            options: [
+              {
+                text: 'Podać szerokie widełki oparte na raporcie rynkowym z wysoką kotwicą górną: „Mój przedział to 13 000 – 16 000 zł w zależności od pakietu benefitów”',
+                feedback: 'Znakomita, profesjonalna kotwica. Przesuwa całe negocjacje na wyższy poziom odniesienia.',
+                isOptimal: true
+              },
+              {
+                text: 'Powiedzieć: „Dla mnie pieniądze nie mają znaczenia, liczy się misja firmy”',
+                feedback: 'Naiwność gwarantująca wieloletnią frustrację finansową.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakich negocjacjach życiowych (pensja, zakup mieszkania, podział obowiązków) pozwoliłeś drugiej stronie narzucić toksyczną kotwicę?'
+      }
     },
     {
       id: 'sec-28-18',
@@ -623,13 +697,87 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.18',
       title: 'Koszt utopiony — Pułapka Sunk Cost Fallacy, syndrom Concorde i racjonalizacja minionych strat',
       category: 'teoria',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Efekt kosztu utopionego objawia się wzmożoną determinacją do kontynuowania przedsięwzięcia po zainwestowaniu w nie pieniędzy, wysiłku lub czasu. Ludzie marnują swoje cenne lata i rujnują swoją przyszłość wyłącznie po to, by nie musieć przyznać przed samym sobą, że ich przeszły wydatek był nieodwracalną stratą.',
+        author: 'Prof. Hal R. Arkes & Catherine Blumer',
+        source: 'Ohio University, „The Psychology of Sunk Cost”, Organizational Behavior and Human Decision Processes, 1985'
+      },
       paragraphs: [
         'Pułapka kosztów utopionych (sunk cost fallacy) to tendencja do kontynuowania nierentownego projektu, tkwienia w toksycznym związku czy utrzymywania chybionej inwestycji tylko dlatego, że włożono już w to dużo czasu, pieniędzy lub emocji.',
         'Klasycznym przykładem historycznym był naddźwiękowy samolot pasażerski Concorde. Rządy Wielkiej Brytanii i Francji już w połowie lat 70. wiedziały, że samolot jest komercyjną katastrofą, jednak pompowały weń kolejne miliardy funtów i franków, argumentując: „zainwestowaliśmy już zbyt wiele, by się teraz wycofać” (stąd druga nazwa: Syndrom Concorde).',
         'Z punktu widzenia czystej logiki i ekonomii koszty przeszłe są nieodwracalne i powinny wynosić dokładnie ZERO w bieżącym równaniu decyzyjnym. Pieniądze, które wydałeś wczoraj, przepadły bez względu na to, co zrobisz dzisiaj.',
         'Jedyne racjonalne pytanie decyzyjne brzmi: „Czy w świetle dzisiejszej wiedzy, zaczynając od zera, zainwestowałbym w ten projekt choćby jedną złotówkę i jedną godzinę?”. Jeśli odpowiedź brzmi „nie” — wycofaj się natychmiast bez oglądania się za siebie.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-28-18-1',
+          title: 'Analiza słów Arkesa i Blumer: Eksperyment z Karnetem do Teatru',
+          content: [
+            'W słynnym badaniu Arkes i Blumer sprzedawali karnety na sezon teatralny w trzech losowych cenach: pełnej (15 $), z małą zniżką (13 $) i z dużą zniżką (8 $). Wszyscy widzowie mieli dokładnie te same miejsca i oglądali te same spektakle.',
+            'Wyniki: w pierwszej połowie sezonu osoby, które zapłaciły pełną cenę, przychodziły do teatru znacznie częściej niż osoby, które kupiły bilet ze zniżką! Dlaczego? Ponieważ bolał je koszt utopiony 15 dolarów! Zmuszały się do wyjścia z domu w deszczowy wieczór, by „nie zmarnować pieniędzy”. Z czasem ból kosztu utopionego wygasł (efekt habituacji) i w drugiej połowie sezonu frekwencja we wszystkich grupach się wyrównała.'
+          ]
+        },
+        {
+          id: 'sub-28-18-2',
+          title: 'Koszty Utopione w Relacjach i Karierze: Złudzenie Uratowania Przeszłości',
+          content: [
+            'Koszty utopione w sprawach finansowych są bolesne, ale w życiu osobistym bywają tragiczne: „Jestem z nim od 7 lat, nie kocham go, ale szkoda mi tych 7 lat”.',
+            'Prawda psychologiczna jest bezlitosna: tamtych 7 lat już nie ma i nic ich nie przywróci. Pytanie brzmi: czy chcesz zmarnować KOLEJNYCH 7 lat swojego jedynego życia na ratowanie przeszłości, której nie da się odzyskać? Tkwienie w nieszczęściu to płacenie podwójnej ceny za ten sam błąd.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-28-18-1',
+          type: 'wniosek',
+          title: 'Złota Reguła Zero-Based: Decyduj od Dnia Dzisiejszego',
+          content: 'Zastosuj regułę Zero-Based Thinking: „Wiedząc to, co wiem dzisiaj, czy wszedłbym w tę relację, tę pracę lub tę inwestycję ponownie?”. Jeśli odpowiedź brzmi „NIE”, Twoim jedynym racjonalnym zadaniem jest zaplanowanie godnego, bezpiecznego i możliwie szybkiego wyjścia.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-28-18',
+        title: 'Rozprawa z Kosztami Utopionymi: Syndrom Concorde w Twoim Życiu',
+        type: 'co_zrobilbys',
+        context: 'Klaudia (28 lat) kończy czwarty rok ciężkich studiów prawniczych, których nienawidzi. Codziennie budzi się z mdłościami ze stresu i marzy o pracy w projektowaniu graficznym. Mówi mamie: „Nienawidzę prawa, ale muszę skończyć i zrobić aplikację, bo inaczej 4 lata pójdą do kosza”.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Zdiagnozowanie pułapki myślenia Klaudii',
+            description: 'Jaki błąd poznawczy więzi Klaudię w prawie?',
+            options: [
+              {
+                text: 'Klasyczna pułapka kosztów utopionych: poświęcenie kolejnych 40 lat kariery w imię „niezmarnowania” 4 lat przeszłości',
+                feedback: 'Precyzyjna diagnoza zgodna z badaniami Arkesa i Blumer. Klaudia zamierza ukarać swoją przyszłość za błędy z przeszłości.',
+                isOptimal: true
+              },
+              {
+                text: 'Wysoka dojrzałość emocjonalna i lojalność wobec samej siebie z przeszłości',
+                feedback: 'Nie. To nie lojalność, lecz lęk przed przyznaniem się do pomyłki i konfrontacją z rozczarowaniem rodziny.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wybór strategiczny w paradygmacie Zero-Based Thinking',
+            description: 'Co powinna zrobić Klaudia, oceniając sytuację od zera?',
+            options: [
+              {
+                text: 'Dokończyć licencjat/magisterium jako dyplom ogólny, ale natychmiast porzucić aplikację prawniczą i zacząć budować portfolio graficzne',
+                feedback: 'Rozsądny kompromis: zabezpieczenie formalnego wykształcenia bez wchodzenia w kolejną 3-letnią pętlę kosztów utopionych.',
+                isOptimal: true
+              },
+              {
+                text: 'Zrobić aplikację, zostać radcą prawnym i za 15 lat, będąc w depresji, żałować, że nie zaryzykowała',
+                feedback: 'Tragiczny scenariusz Syndromu Concorde powtarzany przez setki tysięcy ludzi.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakiej sprawie w Twoim życiu kurczowo trzymasz się minionych nakładów, zamiast zapytać siebie, co jest najlepsze dla Twojej przyszłości?'
+      }
     },
     {
       id: 'sec-28-19',
@@ -637,13 +785,87 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.19',
       title: 'Nadmierna pewność siebie — Efekt Overconfidence, błąd planowania (Planning Fallacy) i pokora poznawcza',
       category: 'teoria',
-      readingTimeMinutes: 17,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Błąd planowania wynika z naturalnej tendencji do przyjmowania wewnętrznego punktu widzenia (inside view). Ludzie skupiają się na unikalnych cechach swojego planu, wyobrażają sobie bezbłędną ścieżkę realizacji i ignorują statystyki historyczne podobnych przedsięwzięć (outside view). W rezultacie plany są zazwyczaj nierealistycznie optymistyczne, a budżety drastycznie zaniżone.',
+        author: 'Prof. Daniel Kahneman',
+        source: 'Princeton University, „Thinking, Fast and Slow” / Nobel Prize Lecture in Behavioral Economics, 2002'
+      },
       paragraphs: [
         'Efekt nadmiernej pewności siebie (overconfidence bias) sprawia, że ludzie systematycznie przeceniają swoją wiedzę, trafność własnych prognoz oraz stopień kontroli nad przypadkowym biegiem wydarzeń.',
         'Najczęstszym przejawem tego błędu jest błąd planowania (planning fallacy, Kahneman & Tversky) — niemal każdy remont mieszkania, wdrożenie systemu IT czy pisanie pracy magisterskiej zajmuje 2–3 razy więcej czasu i kosztuje 50–100% więcej, niż pierwotnie z optymizmem zakładano. Mózg skupia się na scenariuszu idealnym, ignorując nieuchronne tarcia, awarie i opóźnienia podwykonawców.',
         'Antidotum na nadmierną pewność siebie jest stosowanie perspektywy zewnętrznej (outside view): zamiast pytać siebie „w ile czasu ja to zrobię?”, sprawdź twarde dane statystyczne: „ile średnio czasu zajmuje to przedsięwzięcie 100 innym osobom w podobnej sytuacji?”.',
         'Pokora poznawcza polega na założeniu, że rzeczywistość zawsze okaże się bardziej skomplikowana niż nasz najbardziej elegancki plan.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-28-19-1',
+          title: 'Analiza słów prof. Daniela Kahnemana: Dystynkcja Inside View vs Outside View',
+          content: [
+            'Wnikliwa dekonstrukcja wypowiedzi prof. Kahnemana ujawnia fundamentalną asymetrię poznawczą: perspektywa wewnętrzna (inside view) angażuje mechanizm narracyjny Systemu 1, który generuje spójną, logiczną i optymistyczną opowieść o naszym przyszłym sukcesie. Spójność tej opowieści jest przez korę mózgową mylona z prawdopodobieństwem jej zaistnienia.',
+            'Kahneman zwraca uwagę, że przejście do perspektywy zewnętrznej (outside view) wymaga niewygodnego poznawczo wysiłku analitycznego Systemu 2 — musimy potraktować nasz własny, wyjątkowy projekt jak zwykły, statystyczny przypadek w próbie losowej. Dla ludzkiego ego, łaknącego poczucia unikalnej sprawczości, jest to trudna lekcja pokory, lecz stanowi jedyną niezawodną tarczę przed dotkliwymi stratami finansowymi i organizacyjnymi.'
+          ]
+        },
+        {
+          id: 'sub-28-19-2',
+          title: 'Złudzenie Nadmiernej Kontroli (Illusion of Control) i Asymetria Przypisań',
+          content: [
+            'Ellen Langer w klasycznych eksperymentach wykazała, że ludzie zachowują się tak, jakby mieli wpływ na zdarzenia o charakterze czysto losowym (np. rzucają kostką mocniej, gdy chcą wyrzucić wysoką liczbę). W podejmowaniu decyzji zawodowych złudzenie kontroli prowadzi do lekceważenia ryzyk systemowych i wstrząsów makroekonomicznych.',
+            'Połączenie błędu planowania ze złudzeniem kontroli rodzi zabójczą mieszankę: liderzy nie budują rezerw finansowych i buforów czasowych, wierząc, że ich osobista czujność i energia przezwyciężą wszelkie nieprzewidziane przeciwności losu.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-28-19-1',
+          type: 'badanie',
+          title: 'Eksperyment Kahnemana: Pisanie Podręcznika Programów Nauczania',
+          content: 'Kahneman z zespołem wybitnych pedagogów oszacował czas napisania nowego podręcznika na 1,5 do 2,5 roku. Gdy jednak zapytał dziekana o statystyki historyczne innych grup (outside view), okazało się, że 40% zespołów nigdy nie kończy pracy, a te, które ukończyły, potrzebowały średnio 7 do 10 lat! Mimo usłyszenia tej twardej statystyki, zespół Kahnemana... zignorował ją i pisał podręcznik przez 8 lat. Taka jest potęga złudzenia perspektywy wewnętrznej.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-28-19',
+        title: 'Weryfikacja Planu Decyzyjnego: Zderzenie Inside View z Statystyką Outside View',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Michał (29 lat, programista) postanawia rzucić etat i założyć startup typu SaaS. Planuje stworzyć aplikację w 3 miesiące, wydać 15 000 zł z oszczędności i w 6. miesiącu osiągnąć 20 000 zł miesięcznego przychodu subskrypcyjnego.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Analiza założeń w paradygmacie Inside View',
+            description: 'Na czym opiera się kalkulacja Michała?',
+            options: [
+              {
+                text: 'Na optymistycznym założeniu bezbłędnego kodowania bez chorób, bez problemów z marketingiem i przy natychmiastowej akceptacji klientów',
+                feedback: 'Podręcznikowy przykład błędu planowania: Michał zaplanował wyłącznie sukces w próżni bez tarcia środowiskowego.',
+                isOptimal: true
+              },
+              {
+                text: 'Na gruntownej analizie wskaźnika upadłości startupów i kosztów pozyskania klienta (CAC)',
+                feedback: 'Nie, Michał całkowicie zignorował dane zewnętrzne i nie posiada kalkulacji kosztu konwersji.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Wprowadzenie perspektywy zewnętrznej (Outside View)',
+            description: 'Jakie realne korekty musi wprowadzić Michał przed złożeniem wypowiedzenia w pracy?',
+            options: [
+              {
+                text: 'Przemnożyć czas wdrożenia przez 2,5, zabezpieczyć poduszkę finansową na minimum 18 miesięcy i najpierw pozyskać 5 płacących klientów na wersję prototypową (pre-sale) przed rezygnacją z etatu',
+                feedback: 'Doskonałe zastosowanie outside view: minimalizacja ryzyka ruiny i oparcie decyzji na faktach rynkowych, a nie nadziejach.',
+                isOptimal: true
+              },
+              {
+                text: 'Pracować po 16 godzin na dobę, by zmusić rzeczywistość do dopasowania się do jego 3-miesięcznego harmonogramu',
+                feedback: 'Droga do wypalenia zawodowego, problemów zdrowotnych i szybkiej katastrofy finansowej.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki osobisty projekt planujesz obecnie i o ile musiałbyś pomnożyć swoje szacunki czasowe oraz finansowe, by odpowiadały one obiektywnym statystykom?'
+      }
     },
     {
       id: 'sec-28-20',
@@ -651,7 +873,12 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.20',
       title: 'Paraliż decyzyjny — Ambiwalencja, perfekcjonizm i algorytm przełamywania impasu decyzyjnego',
       category: 'teoria',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'W świecie złożonym i niepewnym proste reguły kciuka (heurystyki) często prowadzą do trafniejszych decyzji niż skomplikowane modele optymalizacyjne. Mniej informacji i mniej obliczeń może w rzeczywistości oznaczać lepszy wybór — zjawisko to nazywamy efektem „mniej znaczy więcej” (less-is-more effect).',
+        author: 'Prof. Gerd Gigerenzer',
+        source: 'Max Planck Institute for Human Development, „Gut Feelings: The Intelligence of the Unconscious”, 2007'
+      },
       paragraphs: [
         'Paraliż decyzyjny (analysis paralysis) to stan chronicznego zawieszenia, w którym koszt niepodjęcia żadnej decyzji dawno przewyższył potencjalny koszt pomyłki w wybranym wariancie.',
         'Głównym korzeniem paraliżu jest ukryty, neurotyczny perfekcjonizm — nierealistyczne pragnienie znalezienia decyzji „bezkosztowej”, która zapewni same zyski bez jakichkolwiek strat, wątpliwości czy dyskomfortu.',
@@ -660,7 +887,51 @@ export const chapterTwentyEight: Chapter = {
         '2. Kryterium „Wystarczająco Dobre” (Good Enough): wybierz opcję, która spełnia 80% Twoich kluczowych wymagań.',
         '3. Narzucenie Sztywnego Terminu: wyznacz twardą godzinę (np. „piątek, godzina 15:00”), po której następuje obligatoryjny wybór — w razie remisu decyduje rzut monetą.',
         '4. Zdefiniowanie Mikrokroku Testowego: zamiast skakać na głęboką wodę, wykonaj mały, bezpieczny eksperyment sondujący.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-28-20-1',
+          title: 'Analiza słów prof. Gerda Gigerenzera: Ekologiczna Racjonalność i Szybkie Drzewa Decyzyjne',
+          content: [
+            'Wypowiedź prof. Gigerenzera stanowi fundamentalne wyzwanie rzucone tradycyjnej teorii racjonalnego wyboru. W warunkach głębokiej niepewności (nieobliczalnej przyszłości) dodawanie kolejnych zmiennych do modelu matematycznego prowadzi do tzw. przeuczenia (overfittingu) — algorytm idealnie opisuje przeszłość, lecz kompromituje się w przewidywaniu przyszłości.',
+            'Gigerenzer proponuje tzw. Szybkie i Oszczędne Drzewa Decyzyjne (Fast-and-Frugal Trees). Zamiast ważyć dziesiątki cech, sprawdzamy jedną, najważniejszą cechę różnicującą: jeśli spełnia kryterium progowe, podejmujemy decyzję natychmiast. Ta ekologiczna racjonalność chroni zasoby poznawcze przed wyczerpaniem i uwalnia człowieka z pułapki bezpłodnego paraliżu analitycznego.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-28-20-1',
+          type: 'insight',
+          title: 'Zasada 70% Colina Powella i Jeffa Bezosa',
+          content: 'Generał Colin Powell sformułował regułę P=40–70: jeśli masz mniej niż 40% informacji, nie podejmuj decyzji, bo działasz na ślepo. Jeśli jednak czekasz, aż zgromadzisz ponad 70% informacji, prawie na pewno jesteś spóźniony, a okno możliwości bezpowrotnie się zamknęło. Decyzje strategiczne podejmuj przy 70% danych, polegając na elastyczności korygującej.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-28-20',
+        title: 'Przełamywanie Paraliżu: Test Monety i Reakcja Trzewna vmPFC',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Joanna (33 lata) od 6 miesięcy nie potrafi podjąć decyzji, czy przyjąć propozycję przeprowadzki do filii firmy w Zurychu. Ma 30 stron notatek i wciąż czuje paraliżujący lęk przed pomyłką.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wymuszenie rozstrzygnięcia rzutem monetą',
+            description: 'Co dzieje się w umyśle Joanny, gdy moneta wiruje w powietrzu, a reszka oznacza wyjazd, a orzeł pozostanie w kraju?',
+            options: [
+              {
+                text: 'Kora brzuszno-przyśrodkowa (vmPFC) generuje natychmiastową reakcję afektywną: ulgę lub rozczarowanie, ujawniając prawdziwe podświadome preferencje jeszcze przed upadkiem monety',
+                feedback: 'Dokładnie tak: test monety nie służy do podporządkowania się losowi, lecz do odsłonięcia głębokiego markera somatycznego.',
+                isOptimal: true
+              },
+              {
+                text: 'Moneta rozwiązuje problem w sposób logiczny i matematyczny',
+                feedback: 'Błąd: moneta jest jedynie katalizatorem emocjonalnym obnażającym stłumione pragnienia.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Którą decyzję odsuwasz od miesięcy i co poczułbyś, gdyby rzut monetą bezdyskusyjnie nakazał Ci wybór jednej ze stron?'
+      }
     },
 
     // BLOK V — SYSTEM ŚWIADOMEGO PODEJMOWANIA DECYZJI (28.21 - 28.25)
@@ -700,13 +971,79 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.23',
       title: 'Jak porównywać konsekwencje? Myślenie drugiego i trzeciego rzędu (Second-Order Thinking)',
       category: 'teoria',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Myślenie pierwszego rzędu jest proste i powierzchowne — odpowiada na pytanie: „Co się stanie?”. Myślenie drugiego rzędu jest głębokie, złożone i wymaga wysiłku — pyta: „A co się stanie potem?”. Niemal każdy potrafi przewidzieć skutki natychmiastowe, ale przewaga decyzyjna leży wyłącznie w kalkulacji skutków skumulowanych i kaskadowych reakcji łańcuchowych.',
+        author: 'Howard Marks',
+        source: 'Oaktree Capital Management / Columbia Business School, „The Most Important Thing: Uncommon Sense for the Thoughtful Investor”, 2011'
+      },
       paragraphs: [
         'Myślenie pierwszego rzędu pyta: „Jaki będzie natychmiastowy, bezpośredni skutek mojego wyboru?”. Jest proste, szybkie i powierzchowne (np. „Jeśli wezmę pożyczkę na wakacje, pojadę do ciepłych krajów i poczuję radość”).',
         'Myślenie drugiego i trzeciego rzędu (Howard Marks, Shane Parrish) pyta: „A co stanie się potem? Jakie będą konsekwencje tych konsekwencji za 6 miesięcy, 2 lata i 5 lat?”. (Np. „W drugim rzędzie będę spłacać raty przez 2 lata, co ograniczy mój budżet na kursy; w trzecim rzędzie brak kursów opóźni mój awans i zwiększy chroniczny stres”).',
         'Większość wielkich błędów życiowych i biznesowych wynika z wyboru opcji, które w pierwszym rzędzie dają natychmiastową przyjemność i ulgę (prokrastynacja, alkohol, unikanie trudnej rozmowy), lecz w drugim i trzecim rzędzie przynoszą katastrofalne koszty skumulowane.',
         'Mądrość decyzyjna polega na wybieraniu działań, które w pierwszym rzędzie niosą wysiłek i dyskomfort (trening, nauka, asertywna konfrontacja), lecz w kolejnych rzędach przynoszą wykładnicze zyski i spokój.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-28-23-1',
+          title: 'Analiza słów Howarda Marksa: Dynamika Nieliniowych Skutków Ubocznych',
+          content: [
+            'Wnikliwa dekonstrukcja maksymy Howarda Marksa obnaża ułomność ewolucyjną ludzkiego aparatu poznawczego. Nasz mózg ewoluował w świecie prostych, liniowych zależności przyczynowo-skutkowych: „widzę drapieżnika -> uciekam -> przeżyłem”. W nowoczesnym świecie sieciowym każde działanie wywołuje wielopoziomowe sprzężenia zwrotne.',
+            'Marks wskazuje, że myśliciele pierwszego rzędu wybierają rozwiązania popularne i intuicyjne, generując tzw. „efekt kobry” (gdzie lekarstwo pogarsza chorobę). Myślenie drugiego rzędu wymaga zadania pytań kontrintuicyjnych: jak zareagują inni uczestnicy gry? Jak zmieni się kontekst po wdrożeniu tej decyzji? Jakie niepożądane zachowania zostaną nagrodzone przez nowy system zachęt?'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-28-23-1',
+          type: 'insight',
+          title: 'Zasada 10/10/10 Suzy Welch',
+          content: 'Aby błyskawicznie uruchomić myślenie wyższych rzędów w codziennych dylematach, zadaj sobie 3 pytania: 1. Jak będę się czuć z tą decyzją za 10 minut? 2. Jak ocenię tę decyzję za 10 miesięcy? 3. Jakie będą jej konsekwencje za 10 lat? Perspektywa 10 lat natychmiast gasi impulsywną reakcję ciała migdałowatego i przywraca prymat wartości długoterminowych.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-28-23',
+        title: 'Kaskada Skutków Drugiego i Trzeciego Rzędu: Dylemat Awansu Konrada',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Konrad (35 lat) otrzymuje propozycję objęcia stanowiska dyrektora sprzedaży z 40% podwyżką, ale wiążącą się z 60-godzinnym tygodniem pracy i cotygodniowymi delegacjami.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Ocena w pierwszym rzędzie (System 1)',
+            description: 'Co kusi Konrada w pierwszym odruchu?',
+            options: [
+              {
+                text: 'Wyższe zarobki, prestiżowy tytuł na wizytówce i natychmiastowe poczucie triumfu zawodowego',
+                feedback: 'Klasyczny pierwszy rząd: natychmiastowy dopaminowy zastrzyk statusu.',
+                isOptimal: true
+              },
+              {
+                text: 'Pogorszenie relacji z 3-letnią córką i chroniczny brak snu',
+                feedback: 'Nie, to są konsekwencje drugiego rzędu, które w pierwszym odruchu są wypierane.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Kalkulacja w drugim i trzecim rzędzie',
+            description: 'Co ujawnia analiza długofalowa?',
+            options: [
+              {
+                text: 'Brak obecności w domu doprowadzi do kryzysu małżeńskiego, a koszty terapii, rozwodu i podziału majątku za 3 lata wielokrotnie przewyższą 40% podwyżkę pensji',
+                feedback: 'Mądrość myślenia drugiego i trzeciego rzędu: pieniądze nie rekompensują dewastacji kluczowych relacji życiowych.',
+                isOptimal: true
+              },
+              {
+                text: 'Wszystko samo się ułoży, bo rodzina doceni większy dom',
+                feedback: 'Naiwna racjonalizacja ignorująca ludzkie potrzeby emocjonalne i bliskości.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaka decyzja z Twojej przeszłości przyniosła natychmiastową ulgę w pierwszym rzędzie, ale wywołała bolesne koszty w drugim i trzecim rzędzie?'
+      }
     },
     {
       id: 'sec-28-24',
@@ -714,13 +1051,62 @@ export const chapterTwentyEight: Chapter = {
       sectionNumber: '28.24',
       title: 'Decyzje odwracalne i nieodwracalne — Model Drzwi Typu 1 i Drzwi Typu 2 Jeffa Bezosa',
       category: 'teoria',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Niektóre decyzje są jednokierunkowe — jak przejście przez drzwi, za którymi zatrzaskuje się zamek (Typ 1). Jeśli przejdziesz i nie spodoba ci się to, co widzisz, nie możesz po prostu wrócić. Te decyzje muszą być podejmowane powoli i ostrożnie. Jednak większość decyzji to drzwi dwukierunkowe (Typ 2) — możesz wejść, a jeśli wybór okaże się chybiony, po prostu wrócić. Traktowanie decyzji Typu 2 tak, jakby były Typem 1, to największy grzech korporacyjnej powolności.',
+        author: 'Jeff Bezos',
+        source: 'Amazon Letter to Shareholders, 1997 / 2016'
+      },
       paragraphs: [
         'Jednym z najbardziej eleganckich i praktycznych modeli podejmowania decyzji jest podział wprowadzony przez Jeffa Bezosa w listach do akcjonariuszy Amazon:',
         'DECYZJE TYPU 1 (Drzwi Jednokierunkowe): Decyzje nieodwracalne lub skrajnie trudne do cofnięcia (np. sprzedaż firmy, podpisanie 30-letniego kredytu na granicy płynności, narodziny dziecka, poważna operacja chirurgiczna). Przejście przez te drzwi zatrzaskuje je za Tobą. Te decyzje wymagają głębokiej deliberacji, konsultacji z ekspertami, zbierania danych i wielotygodniowej ostrożności.',
         'DECYZJE TYPU 2 (Drzwi Dwukierunkowe): Decyzje odwracalne (np. wypróbowanie nowego oprogramowania, zmiana układu strony www, zatrudnienie stażysty na 3-miesięczny okres próbny, wyjazd na weekend w nowe miejsce). Jeśli decyzja okaże się błędem, wystarczy po prostu otworzyć drzwi i wrócić do punktu wyjścia przy minimalnym koszcie.',
         'NAJWIĘKSZY BŁĄD ORGANIZACJI I LUDZI: Traktowanie decyzji Typu 2 tak, jakby były Typem 1! Prowadzi to do powolności, paraliżu i marnowania zasobów na debaty o drobiazgach. Decyzje Typu 2 należy podejmować szybko (przy 70% danych) i korygować w marszu.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-28-24-1',
+          title: 'Analiza słów Jeffa Bezosa: Odwracalność jako Bufor Przeciw Paraliżowi',
+          content: [
+            'Wypowiedź Jeffa Bezosa przenosi filozofię elastyczności poznawczej na poziom operacyjny. Kluczowym wglądem jest uświadomienie sobie, że koszt opóźnienia decyzji odwracalnej jest niemal zawsze drastycznie wyższy niż koszt ewentualnej drobnej pomyłki.',
+            'Kiedy ludzie i menedżerowie traktują decyzje Typu 2 z powagą Typu 1, kora przedczołowa wchodzi w stan przewlekłego przeciążenia, a kultura działania zostaje sparaliżowana lękiem przed jakimkolwiek błędem. Umiejętność błyskawicznej klasyfikacji dylematu: „Czy te drzwi można z powrotem otworzyć?” to jedna z najważniejszych metakompetencji współczesnego lidera.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-28-24-1',
+          type: 'insight',
+          title: 'Eksperymentowanie z niskim kosztem błędu (Low-Cost Prototyping)',
+          content: 'Zanim podejmiesz decyzję Typu 1, sprawdź, czy nie możesz zamienić jej w sekwencję decyzji Typu 2! Przykład: Zamiast od razu rzucać etat i brać 100 tys. zł kredytu na kawiarnię (Typ 1), wynajmij mobilne stoisko na festiwalu food trucków na jeden weekend za 1500 zł (Typ 2). Zweryfikujesz popyt, zmęczenie i rentowność bez ryzyka finansowej katastrofy.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-28-24',
+        title: 'Klasyfikacja Dylematu: Drzwi Typu 1 vs Typu 2',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Ewelina (27 lat) od trzech tygodni waha się, czy zapisać się na 6-miesięczny kurs języka hiszpańskiego z opcją bezpłatnej rezygnacji w ciągu pierwszych 30 dni.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Identyfikacja typu decyzji',
+            description: 'Jakim rodzajem drzwi jest zapis na kurs z prawem rezygnacji?',
+            options: [
+              {
+                text: 'Klasycznymi drzwiami dwukierunkowymi (Typ 2): koszt wejścia jest minimalny, a wyjście bezstratne',
+                feedback: 'Prawidłowo: zwlekanie z tą decyzją przez 3 tygodnie to marnowanie energii na analizowanie sprawy całkowicie odwracalnej.',
+                isOptimal: true
+              },
+              {
+                text: 'Drzwiami jednokierunkowymi (Typ 1) wymagającymi wielotygodniowych rozważań',
+                feedback: 'Błąd: Ewelina traktuje odwracalny kurs jak wiążący wyrok życiowy.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki wybór z Twojego obecnego tygodnia jest decyzją Typu 2, którą możesz podjąć w 5 minut zamiast w 5 dni?'
+      }
     },
     {
       id: 'sec-28-25',

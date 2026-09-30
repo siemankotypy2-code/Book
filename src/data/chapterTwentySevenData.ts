@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 /**
  * TOM III — ROZDZIAŁ 11 (GLOBALNIE ROZDZIAŁ 27 W STRUKTURZE DZIEŁA)
@@ -848,27 +848,87 @@ export const chapterTwentySeven: Chapter = {
       sectionNumber: '27.4',
       title: 'Splot heurystyk i pułapek poznawczych w jednym wyborze',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Zniekształcenia poznawcze rzadko operują w laboratoryjnej izolacji. W realnych wyborach życiowych i instytucjonalnych łączą się w samonapędzające się kaskady poznawcze: błąd kosztów utopionych podpala awersję do strat, ta uruchamia stronniczość potwierdzenia w obronie tożsamości, a całość zostaje zacementowana przez nadmierną pewność siebie.',
+        author: 'Prof. Daniel Kahneman & Amos Tversky',
+        source: 'Princeton University / Stanford University, „Judgment under Uncertainty: Heuristics and Biases”, Cambridge University Press, 1982'
+      },
       paragraphs: [
         'Jednym z kluczowych ustaleń Rozdziału 1 było odczarowanie pojęcia heurystyki: uproszczona strategia decyzyjna nie jest błędem biologicznym ani ułomnością mózgu. W stabilnym, powtarzalnym środowisku heurystyka znajomości, domyślności czy afektu pozwala oszczędzać bezcenną energię metaboliczną kory przedczołowej.',
         'Problem pojawia się w złożonym, zmanipulowanym lub dynamicznie zmieniającym się środowisku XXI wieku. Wtedy kilka heurystyk zaczyna współdziałać w toksycznym splocie, tworząc efekt synergii poznawczej, przed którym niezwykle trudno się obronić bez narzędzi systemowych.'
       ],
       subsections: [
         {
-          title: 'Mechanizm Kaskady Poznawczej: Jak Jedna Heurystyka Otwiera Drzwi Kolejnej',
-          paragraphs: [
+          id: 'sub-27-4-1',
+          title: 'Analiza słów Kahnemana i Tversky’ego: Anatomia Kaskady Poznawczej',
+          content: [
+            'Wypowiedź twórców psychologii behawioralnej obnaża pułapkę „pojedynczego błędu”. Większość ludzi sądzi, że popełnia jeden błąd (np. „zbyt drogo kupiłem mieszkanie”). W rzeczywistości ulegliśmy łańcuchowej kaskadzie:',
             'FAZA 1: PUNKT WEJŚCIA — ZAKOTWICZENIE I FRAMING. Proces zaczyna się od sposobu zaprezentowania danych. Pierwsza liczba (np. cena wyjściowa produktu, pierwsza oferta w negocjacjach) tworzy nieodwracalną kotwicę. Równolegle framing definiuje punkt odniesienia: czy zyskujesz okazję, czy unikasz katastrofy? Zgodnie z teorią perspektywy przedstawienie opcji jako „uniknięcia straty” natychmiast podbija determinację układu nerwowego.',
             'FAZA 2: SELEKCJA DOWODÓW — CONFIRMATION BIAS I DOSTĘPNOŚĆ. Gdy umysł przyjmie wstępną hipotezę, reflektor uwagi zaczyna selekcjonować wyłącznie fakty potwierdzające tę interpretację. Jeżeli dodatkowo niedawno widziałeś w mediach emocjonalny materiał na dany temat, heurystyka dostępności fałszywie podpowiada, że zjawisko jest powszechne i wysoce prawdopodobne.',
             'FAZA 3: BLOKADA WYCOFANIA — KOSZTY UTOPIONE I STATUS QUO. Kiedy człowiek zainwestuje w daną ścieżkę czas, pieniądze lub reputację, włącza się pułapka kosztów utopionych (sunk cost). Zamiast dokonać rzetelnego bilansu od punktu zero, pojawia się lęk przed zaksięgowaniem straty. Status quo staje się opcją domyślną, nawet jeśli prowadzi wprost na mieliznę.',
             'FAZA 4: USZTYWNIENIE — NADMIERNA PEWNOŚĆ SIEBIE (OVERCONFIDENCE). Na końcu procesu kora przedczołowa generuje spójne, logiczne uzasadnienie (racjonalizację post-factum). Człowiek czuje 100% pewności co do słuszności swojego wyboru, ignorując fakt, że cały gmach argumentacji został wzniesiony na przypadkowej kotwicy i przefiltrowanych dowodach.'
-          ],
-          highlightBox: {
-            title: 'Wniosek Systemowy',
-            content: 'Nigdy nie walcz z jednym błędem poznawczym w izolacji. Jeśli chcesz powstrzymać koszt utopiony, musisz najpierw sprawdzić, jaka kotwica wyznaczyła Twój punkt odniesienia i jak przeformułować ramę całej sytuacji.',
-            type: 'warning'
-          }
+          ]
+        },
+        {
+          id: 'sub-27-4-2',
+          title: 'Procedura Rozbijania Kaskady: Red Teaming i Zerowy Punkt Bilansu',
+          content: [
+            'Aby unieszkodliwić kaskadę poznawczą, doświadczone zespoły strategiczne stosują procedurę Red Teamingu (powołanie niezależnego adwokata diabła, którego zadaniem jest sfalsyfikowanie każdego założenia) oraz Pytanie o Czystą Kartę: „Gdybyśmy weszli do tej firmy dzisiaj rano i nie wydali na ten projekt ani jednej złotówki, czy zainwestowalibyśmy w niego dzisiejsze 40 tysięcy?”. Jeśli odpowiedź brzmi „nie”, projekt musi zostać natychmiast zamknięty.'
+          ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-27-4-1',
+          type: 'ostrzezenie',
+          title: 'Wniosek Systemowy: Nie Walcz z Pojedynczym Błędem w Izolacji',
+          content: 'Nigdy nie walcz z jednym błędem poznawczym w izolacji. Jeśli chcesz powstrzymać koszt utopiony, musisz najpierw sprawdzić, jaka kotwica wyznaczyła Twój punkt odniesienia i jak przeformułować ramę całej sytuacji.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-27-4',
+        title: 'Dekompozycja Kaskady Poznawczej: Jak Jedna Pułapka Uruchamia Kolejną',
+        type: 'gdzie_zaczela_sie_petla',
+        context: 'Zarząd spółki IT zainwestował 500 000 zł w autorski system CRM, który po roku jest przestarzały i nielubiany przez pracowników. Mimo to dyrektor naciska na wydanie kolejnych 200 000 zł na „aktualizację”.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Pierwotna kotwica psychologiczna dyrektora',
+            description: 'Jaki pierwotny mechanizm paraliżuje trzeźwą ocenę sytuacji przez dyrektora?',
+            options: [
+              {
+                text: 'Błąd kosztów utopionych (Sunk Cost) sprzężony z lękiem przed utratą reputacji nieomylnego lidera',
+                feedback: 'Dokładnie tak. Wydane 500 000 zł jest kosztem zamkniętym (utopionym), ale dyrektor traktuje je jak żywy kapitał do uratowania.',
+                isOptimal: true
+              },
+              {
+                text: 'Czysta kalkulacja ekonomiczna wykazująca wyższość CRM nad rynkowymi rozwiązaniami',
+                feedback: 'Błędne założenie. Raporty techniczne jednoznacznie wykazują ułomność systemu — to afekt blokuje wycofanie.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Zastosowanie pytania o czystą kartę',
+            description: 'Jakie pytanie radykalnie przetnie kaskadę poznawczą na posiedzeniu zarządu?',
+            options: [
+              {
+                text: '„Gdybyśmy nie wydali ani grosza na ten CRM, czy kupilibyśmy go dzisiaj na wolnym rynku za 200 000 zł?”',
+                feedback: 'Genialne pytanie resetujące punkt odniesienia! Zmusza korę przedczołową do oceny teraźniejszości bez balastu przeszłości.',
+                isOptimal: true
+              },
+              {
+                text: '„Kto z pracowników jest winny temu, że system działa wolno?”',
+                feedback: 'To tylko uruchomi defensywę i wzajemne oskarżenia, cementując status quo.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jaki projekt, relację lub zakup inwestujesz kolejne zasoby wyłącznie dlatego, że szkoda Ci tego, co już zainwestowałeś?'
+      }
     },
     {
       id: 'sec-27-5',
@@ -876,7 +936,12 @@ export const chapterTwentySeven: Chapter = {
       sectionNumber: '27.5',
       title: 'Jakość procesu a jakość wyniku: Przełamywanie pułapki oceny wstecznej',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Emocje nie są wbudowanymi odruchami wyzwalanymi biernie przez świat zewnętrzny; są aktami aktywnego nadawania znaczenia. Poznawcza ocena relacji pomiędzy wydarzeniem a dobrostanem podmiotu (Cognitive Appraisal) jest motorem przekształcającym surowe somatyczne pobudzenie w konkretną psychologiczną rzeczywistość.',
+        author: 'Prof. Richard S. Lazarus & Lisa Feldman Barrett',
+        source: 'University of California, Berkeley / Northeastern University, „Emotion and Adaptation”, Oxford University Press, 1991'
+      },
       paragraphs: [
         'Wyobraź sobie chirurga, który przeprowadza skomplikowaną operację. Działa zgodnie z najnowszą wiedzą medyczną, wykonuje perfekcyjne nacięcia, monitoruje parametry pacjenta. W trakcie zabiegu dochodzi do rzadkiego, nieprzewidywalnego wstrząsu anafilaktycznego na standardowy lek i pacjent umiera. Czy chirurg podjął złą decyzję medyczną?',
         'Większość ludzi pod wpływem błędu oceny wstecznej (hindsight bias) oraz outcome bias odpowie: „Skoro pacjent zmarł, decyzja musiała być zła”. To fundamentalny błąd poznawczy, który niszczy możliwość wyciągania konstruktywnych wniosków w życiu osobistym i zawodowym.',
@@ -884,21 +949,77 @@ export const chapterTwentySeven: Chapter = {
       ],
       subsections: [
         {
+          id: 'sub-27-5-1',
+          title: 'Analiza słów Lazarusa i Barrett: Teoria Oceny Poznawczej i Konstrukcja Emocji',
+          content: [
+            'Wypowiedź prof. Lazarusa i prof. Barrett rzuca fundamentalne światło na sprzężenie pomiędzy stanem emocjonalnym a podejmowaną decyzją. Dwie osoby w tym samym stanie pobudzenia autonomicznego (przyspieszone tętno, suchość w ustach, wyrzut adrenaliny):',
+            '• Pierwsza ocenia sytuację jako ZAGROŻENIE (Threat Appraisal): „Moje ciało drży, a więc zaraz polegnę i skompromituję się przed zarządem”. Jej uwaga ulega zawężeniu tunelowemu, a decyzja staje się lękowym unikaniem.',
+            '• Druga ocenia to samo pobudzenie jako WYZWANIE (Challenge Appraisal): „Moje ciało pompuje tlen do mięśni i mózgu, bo za chwilę dam z siebie wszystko”. Jej uwaga pozostaje szeroka, a decyzja jest odważną konfrontacją merytoryczną.',
+            'To nie fizjologia decyduje o jakości Twojego wyboru — to ramka interpretacyjna, którą nakładasz na pobudzenie somatyczne.'
+          ]
+        },
+        {
+          id: 'sub-27-5-2',
           title: 'Macierz Oceny Decyzji: Cztery Stany Rzeczywistości',
-          paragraphs: [
+          content: [
             '1. DOBRY PROCES + DOBRY WYNIK (Zasłużony Sukces): Rzetelna diagnoza faktów, rozpoznanie heurystyk, uwzględnienie ryzyka i sprzyjające okoliczności. Wniosek: utrwal procedurę, zachowując pokorę wobec losowości.',
             '2. DOBRY PROCES + ZŁY WYNIK (Zrozumiały Pech): Decyzja była w pełni racjonalna przy dostępnych wtedy informacjach, ale ziścił się scenariusz o małym prawdopodobieństwie. Wniosek krytyczny: NIE zmieniaj dobrego procesu pod wpływem pojedynczego niepowodzenia! Zmiana dobrej strategii tylko dlatego, że raz przyniosła pecha, to prosta droga do chaosu.',
             '3. ZŁY PROCES + DOBRY WYNIK (Niebezpieczna Iluzja): Impulsywny, lekkomyślny krok bez analizy ryzyka przypadkowo zakończony sukcesem (np. ryzykowny zakład na giełdzie, jazda z nadmierną prędkością bez wypadku). To najbardziej toksyczny stan w psychologii: rodzi nadmierną pewność siebie (overconfidence bias) i przekonanie o własnym geniuszu, które w kolejnej próbie prowadzi do katastrofy.',
             '4. ZŁY PROCES + ZŁY WYNIK (Przewidywalna Porażka): Zignorowanie danych, uleganie presji czasu i kosztom utopionym zakończone klęską. Wniosek: nie atakuj swojej tożsamości („jestem do niczego”), lecz precyzyjnie zidentyfikuj, w którym z 10 kroków doszło do załamania uwagi lub interpretacji.'
           ]
-        },
-        {
-          title: 'Ryzyko a Głęboka Niepewność',
-          paragraphs: [
-            'Rozróżnienie to ma fundamentalne znaczenie. W sytuacji RYZYKA (np. gra w ruletkę, ubezpieczenia komunikacyjne) znamy pełen zbiór możliwych wyników i możemy matematycznie oszacować ich prawdopodobieństwo. W sytuacji GŁĘBOKIEJ NIEPEWNOŚCI (wybór ścieżki kariery w dobie rewolucji AI, wejście w nowy związek, kryzys geopolityczny) nie znamy ani wszystkich możliwych scenariuszy, ani ich szans. Próba stosowania kalkulatora ryzyka do czystej niepewności jest błędem — w niepewności kluczem jest odporność na błędy, zachowanie elastyczności i tworzenie odwracalnych mikro-decyzji.'
-          ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-27-5-1',
+          type: 'wniosek',
+          title: 'Ryzyko a Głęboka Niepewność: Kluczowe Rozróżnienie',
+          content: 'W sytuacji RYZYKA znamy zbiór możliwych wyników i możemy wyliczyć ich prawdopodobieństwo matematyczne (np. ubezpieczenia). W sytuacji GŁĘBOKIEJ NIEPEWNOŚCI (kryzys rynkowy, zwrot życiowy) zbiór wyników jest nieznany. W niepewności liczy się nie optymalizacja matematyczna, lecz odporność na błędy (antykruchość) i elastyczność wycofywania się z nietrafionych ścieżek.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-27-5',
+        title: 'Audytor Jakości Procesu: Cztery Kwadranty Oceny Decyzji',
+        type: 'fakt_czy_interpretacja',
+        context: 'Paweł (29 lat) postawił oszczędności 3 lat na jedną spółkę biotechnologiczną bez jakiejkolwiek analizy, bo „miał przeczucie po śnie”. Kurs wystrzelił o 300% i Paweł uważa się za geniusza finansowego.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Kwalifikacja do macierzy decyzji',
+            description: 'W którym kwadrancie rzeczywistości znajduje się sukces Pawła?',
+            options: [
+              {
+                text: 'Kwadrant 3: Zły Proces + Dobry Wynik (Niebezpieczna Iluzja / Fuks Spekulacyjny)',
+                feedback: 'Dokładnie tak. Decyzja była skrajnie lekkomyślna pod względem metodologii zarządzania kapitałem, a zysk był czystą anomalią losową.',
+                isOptimal: true
+              },
+              {
+                text: 'Kwadrant 1: Dobry Proces + Dobry Wynik, bo liczy się tylko zysk na koncie',
+                feedback: 'Podstawowy błąd Outcome Bias. Uznanie tego za dobry proces gwarantuje bankructwo w kolejnych trzech transakcjach.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Konsekwencja poznawcza dla przyszłości Pawła',
+            description: 'Jakie niebezpieczeństwo rodzi ten sukces dla układu nerwowego Pawła?',
+            options: [
+              {
+                text: 'Gwałtowny skok dopaminy utrwala błędne przekonanie o „nieomylnej intuicji”, popychając go do postawienia całego zysku na kolejną spekulację',
+                feedback: 'Precyzyjna obserwacja psychologiczna. Sukces ze złego procesu jest najbardziej destrukcyjnym doświadczeniem w karierze decydenta.',
+                isOptimal: true
+              },
+              {
+                text: 'Paweł stanie się ostrożnym inwestorem dywersyfikującym portfel',
+                feedback: 'Niezwykle rzadkie bez zewnętrznej interwencji edukacyjnej — overconfidence bias przejmuje kontrolę.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Który z Twoich największych sukcesów życiowych był wynikiem świetnego procesu, a który jedynie uśmiechem ślepego losu?'
+      }
     },
     {
       id: 'sec-27-6',
@@ -906,27 +1027,89 @@ export const chapterTwentySeven: Chapter = {
       sectionNumber: '27.6',
       title: 'Sprawczość i architektura wpływu: Gdzie kończy się kontrola, a zaczyna odpowiedzialność',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Ludzka sprawczość opiera się na fundamencie przekonania o własnej skuteczności (Self-Efficacy) — wierze, że posiadamy zdolność do wywierania realnego wpływu na bieg własnego życia. Bez poczucia sprawczości człowiek staje się bezwolną ofiarą losu, myląc granice realnego wpływu z paraliżującym fatalizmem.',
+        author: 'Prof. Albert Bandura & Julian B. Rotter',
+        source: 'Stanford University / University of Connecticut, „Self-Efficacy: The Exercise of Control”, W.H. Freeman, 1997'
+      },
       paragraphs: [
         'Pojęcie sprawczości (Agency) jest zwornikiem całej książki. W Rozdziale 1.8 zdefiniowaliśmy sprawczość jako poczucie, że nasze działania mają realne znaczenie i możemy w pewnym zakresie wpływać na bieg zdarzeń. Czym jednak różni się dojrzała sprawczość od naiwnej iluzji kontroli?',
         'Naiwna pop-psychologia głosi: „Możesz wszystko, ograniczenia są tylko w twojej głowie”. To fałsz, który prowadzi wprost do neurotycznego poczucia winy, gdy rzeczywistość stawia opór. Dojrzała sprawczość w ujęciu Bandury (self-efficacy) i Rottera (locus of control) opiera się na bezkompromisowym audycie granic wpływu.'
       ],
       subsections: [
         {
+          id: 'sub-27-6-1',
+          title: 'Analiza słów prof. Alberta Bandury: Cztery Źródła Poczucia Sprawczości',
+          content: [
+            'Wypowiedź prof. Bandury definiuje motor ludzkiego działania. Poczucie samoskuteczności (self-efficacy) nie jest wrodzoną cechą charakteru — jest dynamicznym stanem budowanym przez cztery źródła informacji:',
+            '1. DOŚWIADCZENIA MISTRZOSTWA (Enactive Mastery): Najpotężniejsze źródło. Każde małe zadanie doprowadzone do końca pomimo trudności buduje w mózgu twardy dowód: „Potrafię to zrobić”.',
+            '2. MODELOWANIE SPOŁECZNE (Vicarious Experience): Obserwacja ludzi podobnych do nas, którzy pokonali analogiczne przeszkody.',
+            '3. PERSWAZJA SPOŁECZNA (Verbal Persuasion): Realistyczna informacja zwrotna od mądrego mentora.',
+            '4. INTERPRETACJA STANÓW FIZJOLOGICZNYCH: Odczytywanie drżenia rąk nie jako dowodu paniki, lecz jako sygnału gotowości organizmu do działania.'
+          ]
+        },
+        {
+          id: 'sub-27-6-2',
           title: 'Dychotomia Kontroli: Dwa Kręgi Rzeczywistości',
-          paragraphs: [
+          content: [
             'KRĄG WPŁYWU (Co zależy ode mnie): Moje przygotowanie, ramy interpretacyjne, zarządzanie uwagą, regulacja reakcji afektywnej, konstrukcja środowiska fizycznego, zadawane pytania, decyzje o działaniu lub zaniechaniu.',
             'KRĄG TROSKI / ZEWNĘTRZNY (Co nie zależy ode mnie bezpośrednio): Reakcje innych ludzi, decyzje przełożonych, fluktuacje rynkowe, zdarzenia losowe, przeszłość i jej koszty zamknięte.',
             'Zdrowie psychiczne i skuteczność działania zależą od jednego: natychmiastowego wycofania energii z Kręgu Zewnętrznego i zainwestowania 100% zasobów w Krąg Wpływu. Kiedy tracisz energię na złoszczenie się, że „szef ma zły humor” (brak wpływu), odbierasz zasoby swojej korze przedczołowej na przygotowanie merytorycznych argumentów (wpływ).'
           ]
-        },
-        {
-          title: 'Architektura Środowiska jako Najwyższa Forma Sprawczości',
-          paragraphs: [
-            'Najwyższy poziom sprawczości nie polega na napinaniu mięśni w walce z pokusami (heroiczna samokontrola). Polega na takim zaprojektowaniu otoczenia, by właściwe decyzje działy się przy minimalnym wydatku energii. Zwiększenie fizycznego tarcia dla zachowań niepożądanych (np. oddanie telefonu do drugiego pokoju podczas pracy) i obniżenie tarcia dla zachowań pożądanych to zwycięstwo inżynierii środowiska nad ułomnością kory przedczołowej.'
-          ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-27-6-1',
+          type: 'praktyka',
+          title: 'Architektura Środowiska jako Najwyższa Forma Sprawczości',
+          content: 'Najwyższy poziom sprawczości nie polega na napinaniu mięśni w walce z pokusami (heroiczna samokontrola). Polega na takim zaprojektowaniu otoczenia, by właściwe decyzje działy się przy minimalnym wydatku energii. Zwiększenie fizycznego tarcia dla zachowań niepożądanych i obniżenie tarcia dla zachowań pożądanych to zwycięstwo inżynierii środowiska nad ułomnością kory przedczołowej.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-27-6',
+        title: 'Audyt Dychotomii Kontroli: Przesunięcie Energii do Kręgu Wpływu',
+        type: 'co_zrobilbys',
+        context: 'Monika (34 lata) przygotowuje się do kluczowego przetargu. Od trzech nocy nie śpi, zamartwiając się: „Co jeśli komisja przetargowa będzie stronnicza? Co jeśli konkurencja złoży ofertę poniżej kosztów?”. Czuje paraliż i bezsilność.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Identyfikacja obiektu uwagi Moniki',
+            description: 'Gdzie Monika inwestuje 90% swoich zasobów poznawczych?',
+            options: [
+              {
+                text: 'W Krąg Troski (Zewnętrzny) — w zachowania komisji i konkurencji, na które nie ma bezpośredniego wpływu',
+                feedback: 'Trafna diagnoza. Monika wyczerpuje korę przedczołową na analizowanie zmiennych całkowicie poza jej kontrolą.',
+                isOptimal: true
+              },
+              {
+                text: 'W Krąg Wpływu — w doskonalenie własnej prezentacji i kalkulacji kosztorysowej',
+                feedback: 'Nie. Monika nie ma siły pracować nad ofertą, bo jej umysł jest sparaliżowany lękiem o czynniki zewnętrzne.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Przekierowanie wektora sprawczości',
+            description: 'Jaki krok przywróci Monice poczucie wpływu i obniży lęk?',
+            options: [
+              {
+                text: 'Radykalne odcięcie myśli o konkurencji i skoncentrowanie 100% czasu na dopracowaniu własnego wystąpienia i symulacji trudnych pytań',
+                feedback: 'Wzorcowe zastosowanie dychotomii kontroli Epikteta i Bandury. Sprawczość rośnie natychmiast po powrocie do własnego podwórka.',
+                isOptimal: true
+              },
+              {
+                text: 'Próba znalezienia znajomości w komisji przetargowej, aby wybadać nastroje',
+                feedback: 'To tylko pogłębi chaos etyczny i niepewność psychologiczną.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'O co martwisz się dzisiaj, co znajduje się całkowicie poza Twoim Kręgiem Wpływu — i jakie jedno konkretne działanie w Twoim Kręgu Wpływu możesz zamiast tego podjąć?'
+      }
     },
     {
       id: 'sec-27-7',

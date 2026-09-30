@@ -188,13 +188,33 @@ export const chapterThirtySix: Chapter = {
       id: 'sec-36-1',
       pageNumber: 2700,
       sectionNumber: '36.1',
-      title: 'Czym jest zaufanie? Zaufanie jako oczekiwanie dotyczące zachowania drugiej osoby',
+      title: 'Czym jest zaufanie? Zaufanie jako oczekiwanie dotyczące zachowania drugiej osoby i Akceptacja Podatności na Zranienie',
       category: 'teoria',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 26,
+      quote: {
+        text: 'Zaufanie to decyzja o wejściu w stan pełnej podatności na zranienie (vulnerability) w sytuacji niepewności. Nie jest to przekonanie, że druga osoba nigdy nas nie skrzywdzi, lecz gotowość do zaryzykowania własnego bezpieczeństwa emocjonalnego na podstawie pozytywnych oczekiwań co do jej intencji i integralności.',
+        author: 'Prof. Roger C. Mayer & Prof. David H. Schoorman',
+        source: 'Purdue University, „An Integrative Model of Organizational Trust”, Academy of Management Review, 1995'
+      },
       paragraphs: [
-        'Zaufanie nie jest uczuciem ani mglistym stanem sentymentalnym. W ujęciu psychologii poznawczej zaufanie jest SPECYFICZNYM STANEM PROBABILISTYCZNYM UMYSŁU: polega na przyjęciu założenia, że druga osoba w przyszłości zachowa się w sposób lojalny, życzliwy i przewidywalny, nawet wtedy, gdy nie mamy możliwości jej kontrolowania ani ukarania.',
-        'Kiedy komuś ufam, mówię swojemu układowi nerwowemu: «Możesz wyłączyć stan alarmowy. Możesz zwinąć posterunki wartownicze. Ten człowiek nie wbije ci noża w plecy, gdy odwrócisz wzrok».',
-        'Zaufanie jest więc gigantyczną oszczędnością energii biologicznej. Relacja bez zaufania wymaga nieustannej pracy detektywistycznej, co prowadzi do przewlekłego wyczerpania układu współczulnego.'
+        'Zaufanie nie jest dziecinnym sentymentem ani naiwnym romantyzmem. W ujęciu psychologii poznawczej i nauk o zachowaniu zaufanie jest SPECYFICZNYM STANEM PROBABILISTYCZNYM UMYSŁU: polega na przyjęciu odważnego założenia predykcyjnego, że druga osoba w przyszłości zachowa się w sposób lojalny, życzliwy i spójny z wartościami, nawet wtedy (i przede wszystkim wtedy), gdy nie mamy żadnej możliwości jej bieżącego kontrolowania, śledzenia ani penalizacji.',
+        'Kiedy komuś naprawdę ufam, wydaję naszemu układowi nerwowemu polecenie metaboliczne: «Możesz wyłączyć przewlekły stan czujności lękowej. Możesz zwinąć posterunki wartownicze ciała migdałowatego. Ten człowiek nie wykorzysta moich czułych miejsc przeciwko mnie, gdy odwrócę wzrok».',
+        'Zaufanie stanowi więc fundamentalną oszczędność energii biologicznej. Relacja pozbawiona zaufania zamienia się w wycieńczającą pracę śledczą i stały nadzór techniczny, co wywołuje u obu stron przewlekły wyrzut kortyzolu i wyczerpanie kory przedczołowej.'
+      ],
+      subsections: [
+        {
+          id: 'sub-36-1-1',
+          title: 'Analiza słów prof. Rogera C. Mayera i prof. Davida H. Schoormana: Paradoks Podatności na Zranienie',
+          content: [
+            'Sformułowanie prof. Mayera i Schoormana ujawnia osiowy paradoks zaufania: jeśli posiadasz 100% gwarancji, umowę notarialną, podgląd z kamer i śledzenie GPS w telefonie partnera — to nie ufasz. Prowadzisz kontrolę techniczną.',
+            'Zaufanie rozpoczyna się dokładnie tam, gdzie kończy się możliwość kontroli. Wymaga ono zgody na ryzyko (risk acceptance). Dając komuś zaufanie, dajesz mu broń, która może cię zranić, wierząc, że ten człowiek postanowi jej nie użyć. Bez tej odważnej gotowości na zranienie niemożliwe jest zbudowanie żadnej głębokiej więzi międzyludzkiej.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Zaufanie a Nadzór',
+            content: 'Nadzorem wymuszasz uległość, ale niszczysz bliskość. Zaufanie buduje się w cieniu wolności: tylko wtedy, gdy partner ma pełną swobodę oszustwa, a z własnej woli wybiera uczciwość, zaufanie staje się żywą tkanką relacji.',
+            type: 'insight'
+          }
+        }
       ]
     },
 
@@ -209,7 +229,43 @@ export const chapterThirtySix: Chapter = {
       paragraphs: [
         'Zgodnie z koncepcją niemieckiego socjologa Niklasa Luhmanna, zaufanie jest podstawowym mechanizmem REDUKCJI ZŁOŻONOŚCI SPOŁECZNEJ. Świat ludzki jest nieskończenie skomplikowany. Gdybyśmy musieli w każdej sekundzie weryfikować kompetencje chirurga, uczciwość pilota samolotu i wierność partnera — nasze funkcje wykonawcze załamałyby się w ciągu godziny.',
         'Zaufanie działa jak poznawczy skrót (heurystyka): zastępuje brakującą informację pewnością psychologiczną. Zamiast sprawdzać telefon partnera co 15 minut, przyjmuję hipotezę: «On jest lojalny» i zwalniam zasoby uwagi na realizację własnych celów życiowych i zawodowych.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-36-2-istota-zaufania',
+        type: 'what_we_know',
+        title: 'Co naprawdę wiemy? — Istota i paradoks zaufania',
+        subtitle: 'Rozdzielenie faktów od złudzeń w mechanizmach redukcji lęku',
+        context: 'Decyzja o powierzeniu partnerowi haseł do kont lub kluczy do mieszkania.',
+        whatWeKnow: {
+          items: [
+            {
+              id: 'c36-item-z1',
+              statement: 'Zaufanie polega na rezygnacji z nadzoru i kontroli na rzecz wiary w intencje drugiej osoby.',
+              category: 'fakt',
+              explanation: 'To podstawowa naukowa definicja zaufania; bez podatności na zranienie i rezygnacji z kontroli zaufanie nie istnieje.'
+            },
+            {
+              id: 'c36-item-z2',
+              statement: 'If ogólnie zainstaluję partnerowi aplikację śledzącą GPS w telefonie, będę miał do niego pełne zaufanie.',
+              category: 'interpretacja',
+              explanation: 'To błąd poznawczy. Stały nadzór techniczny to brak zaufania i uwięzienie partnera w systemie kontroli, co potęguje jego bunt.'
+            },
+            {
+              id: 'c36-item-z3',
+              statement: 'Mózg zużywa znacznie mniej glukozy, gdy przyjmuje bezpieczną predykcję dotyczącą wierności partnera.',
+              category: 'fakt',
+              explanation: 'Badania neurobiologiczne potwierdzają, że stan stałej podejrzliwości (hipervigilance) drenuje zasoby energetyczne kory przedczołowej.'
+            },
+            {
+              id: 'c36-item-z4',
+              statement: 'Zaufanie oznacza pewność, że partner nigdy nie popełni błędu ani nas nie rozczaruje.',
+              category: 'interpretacja',
+              explanation: 'To jest idealistyczna iluzja. Zaufanie to zgoda na to, że błąd jest możliwy, ale wierzymy w dobrą wolę i naprawę po fakcie.'
+            }
+          ]
+        },
+        takeaway: 'Zaufanie to nie brak ryzyka — to świadoma zgoda na podatność na zranienie w imię głębokiej bliskości.'
+      }
     },
 
     // 36.3
@@ -405,7 +461,39 @@ export const chapterThirtySix: Chapter = {
         'Zdrada nie sprowadza się wyłącznie do aktu seksualnego. W relacjach dorosłych wyróżniamy cztery odrębne wymiary zdrady:',
         '1. Zdrada seksualna: Złamanie wyłączności cielesnej.\n2. Zdrada emocjonalna: Przeniesienie intymności, zwierzeń i marzeń na osobę trzecią z jednoczesnym ukrywaniem tego przed stałym partnerem.\n3. Zdrada finansowa: Tajne konta, długi, ukrywane wydatki (jak u Tomasza i Moniki).\n4. Zdrada koalicyjna: Trzymanie strony rodziców lub znajomych przeciwko własnemu partnerowi w kluczowych momentach życiowych.',
         'Wspólnym mianownikiem każdej zdrady jest ZŁAMANIE NIEPISANEGO PRZYMIERZA i utworzenie tajnego sojuszu za plecami osoby, która powierzyła nam swoje bezpieczeństwo.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-36-11-wymiary-zdrady',
+        type: 'dual_perspectives',
+        title: 'Wymiary Zdrady: Seksualna vs Emocjonalna',
+        subtitle: 'Zderzenie definicji nielojalności w diadzie małżeńskiej',
+        context: 'Konfrontacja małżonków po odkryciu intensywnej, wielotygodniowej relacji online partnera z inną osobą.',
+        dualPerspective: {
+          situation: 'Dyskusja o granicach zdrady w dobie komunikacji cyfrowej.',
+          personA: {
+            name: 'Piotr (Sprawca kontaktu)',
+            quote: 'Przecież nawet jej nie dotknąłem! To była tylko koleżeńska rozmowa o pasjach, nie ma tu żadnej zdrady.',
+            whatTheyKnow: 'Zna treść swoich rozmów online, uważa, że brak kontaktu fizycznego całkowicie go usprawiedliwia.',
+            whatTheyMiss: 'Ignoruje ból żony i fakt, że ukrywał tę relację przez 3 miesiące, kasując wiadomości.',
+            interpretation: '„Żona przesadza, jest zazdrosna i chce mnie całkowicie odciąć od ludzi”.',
+            coreNeed: 'Zrozumienie, stymulacja intelektualna, uznanie poza małżeństwem.',
+            fear: 'Uwięzienie w rutynie domowej i całkowity brak swobody.',
+            action: 'Minimalizowanie wagi problemu, obrona przed zarzutami.'
+          },
+          personB: {
+            name: 'Anna (Zraniona żona)',
+            quote: 'Pisałeś do niej o naszych problemach seksualnych, wysyłałeś jej zdjęcia o 23:00 i pisałeś, że cię inspiruje. To jest gorsze niż seks na jedną noc!',
+            whatTheyKnow: 'Zobaczyła screeny czatu, na których Piotr pisał rzeczy, o których nigdy nie rozmawiał z nią pod jednym dachem.',
+            whatTheyMiss: 'Brak.',
+            interpretation: '„Zostałam całkowicie zdradzona emocjonalnie, on oddał naszą intymność obcej kobiecie”.',
+            coreNeed: 'Wyłączność emocjonalna, prawda, poczucie bycia jedynym powiernikiem sekretów.',
+            fear: 'Bycie uwięzioną w pustym związku-fikcji, w którym mąż kocha kogoś innego online.',
+            action: 'Wypominanie zdrady, płacz, żądanie zablokowania tamtej osoby.'
+          },
+          synthesis: 'Zdrada emocjonalna boli równie mocno jak fizyczna, ponieważ łamie przymierze intymności psychicznej, które stanowi rdzeń zaufania w związku.'
+        },
+        takeaway: 'Granice zdrady określa przymierze pary, a nie tylko fizjologiczny kontakt cielesny.'
+      }
     },
 
     // 36.12
@@ -434,7 +522,52 @@ export const chapterThirtySix: Chapter = {
       paragraphs: [
         'Moment, w którym zdrada wychodzi na jaw, ma charakter ostrego wstrząsu psychicznego. Ofiara często doświadcza zjawiska DEREALIZACJI i DEPERSONALIZACJI: „To się nie dzieje naprawdę, to zły sen, moje ciało jest z waty, a dźwięki dochodzą jak zza grubej szyby”.',
         'Układ nerwowy nie jest w stanie zintegrować sprzecznych danych: człowiek, który wczoraj robił herbatę i całował w czoło, okazuje się kimś, kto prowadził podwójne życie. W ułamku sekundy dotychczasowy świat zostaje zrównany z ziemią.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-36-13-anatomia-szoku',
+        type: 'microscope',
+        title: 'Człowiek pod mikroskopem: Aleksandra w momencie odkrycia prawdy',
+        subtitle: 'Wiwisekcja wstrząsu pourazowego po ujawnieniu podwójnego życia partnera',
+        context: 'Aleksandra otwiera telefon Marcina i widzi intymne zdjęcia przesyłane od koleżanki z biura.',
+        microscopeLayers: [
+          {
+            stepNumber: 1,
+            label: 'SYTUACJA',
+            question: 'Co obiektywnie rejestruje wzrok Aleksandry?',
+            content: 'Niebieskie dymki czatu na ekranie telefonu, intymny nagłówek, zdjęcie z plaży i wyznania miłosne z datą wczorajszą.',
+            subtext: 'Surowy bodziec docierający do kory wzrokowej.'
+          },
+          {
+            stepNumber: 2,
+            label: 'DEREALIZACJA',
+            question: 'Jak reaguje mózg na tak potężną sprzeczność?',
+            content: 'Gwałtowne wyłączenie orientacji przestrzennej. Aleksandra ma wrażenie, że sufit się obniża, a przedmioty tracą trójwymiarowość.',
+            subtext: 'Błąd predykcji o skrajnej sile niszczący dotychczasową mapę świata.'
+          },
+          {
+            stepNumber: 3,
+            label: 'EMOCJA I REAKCJA SOMATYCZNA',
+            question: 'Jak reaguje ciało Aleksandry?',
+            content: 'Nagłe tąpnięcie ciśnienia, tętno skacze do 135 bpm, ostry dreszcz zimna od stóp do głowy, paraliż mięśni rąk.',
+            subtext: 'Masywny wyrzut adrenaliny i aktywacja pętli lękowej dACC-insula.'
+          },
+          {
+            stepNumber: 4,
+            label: 'ROZPAD PRZESZŁOŚCI',
+            question: 'Jak reorganizuje się pamięć w ciągu tych kilku sekund?',
+            content: '„Kiedy tydzień temu mówił, że jedzie do klienta... Kiedy kupował wino... On cały czas mnie okłamywał”. Cała przeszłość relacji zostaje skażona kłamstwem.',
+            subtext: 'Wsteczna rekalibracja pamięci epizodycznej.'
+          },
+          {
+            stepNumber: 5,
+            label: 'DECYZJA I KROK OPERACYJNY',
+            question: 'Co robi Aleksandra, by uniknąć natychmiastowego załamania?',
+            content: 'Odkłada telefon, wychodzi z pokoju, zamyka się w łazience i bierze cichy, głęboki oddech, by nie wybuchnąć płaczem przy śpiących dzieciach.',
+            subtext: 'Szybkie, obronne odcięcie dopływu bodźców w celu ratowania równowagi.'
+          }
+        ],
+        takeaway: 'Wstrząs po zdradzie to nie zwykły smutek — to biologiczny uraz poznawczy niszczący poczucie realności.'
+      }
     },
 
     // 36.14
@@ -633,14 +766,34 @@ export const chapterThirtySix: Chapter = {
       id: 'sec-36-23',
       pageNumber: 3000,
       sectionNumber: '36.23',
-      title: 'Badania nad zaufaniem: Model ABI, dylemat więźnia i neurobiologia oksytocyny',
+      title: 'Badania nad zaufaniem: Model ABI, gry zaufania i neurobiologia oksytocyny Kosfelda',
       category: 'teoria',
-      readingTimeMinutes: 25,
+      readingTimeMinutes: 27,
+      quote: {
+        text: 'Oksytocyna podawana donosowo znacząco zwiększa zaufanie u ludzi. W grze finansowej inwestorzy z grupy oksytocynowej powierzali nieznajomym o 17% więcej gotówki niż grupa kontrolna. Oksytocyna nie wpływa jednak na gotowość do podejmowania ryzyka losowego — działa wybitnie selektywnie, wyciszając biologiczny lęk przed oszustwem ze strony drugiego człowieka.',
+        author: 'Dr Michael Kosfeld & Prof. Markus Heinrichs',
+        source: 'University of Zurich, „Oxytocin increases trust in humans”, Nature, 2005'
+      },
       paragraphs: [
-        'Współczesna nauka bada zaufanie w laboratoriach ekonomii behawioralnej i neurobiologii:',
-        '1. Dylemat Więźnia i Gry Zaufania (Trust Games — Berg, Dickhaut, McCabe): Badania wykazują, że ludzie inwestują pieniądze w anonimowych partnerów znacznie częściej, niż przewidywałaby to teoria czystego egoizmu ekonomicznego (Homo Oeconomicus). Mamy wrodzoną preferencję kooperacyjną (Prosocial Bias).',
-        '2. Rola Oksytocyny (badania Michaela Kosfelda i Markusa Heinrichsa): Donosowe podanie oksytocyny badanym w grze inwestycyjnej podwajało kwoty przekazywane partnerowi! Oksytocyna nie czyni nas jednak „głupio naiwnymi” — ona selektywnie wycisza lęk przed społeczną zdradą w ciele migdałowatym.',
-        '3. Model ABI (Ability, Benevolence, Integrity): Metaanalizy Dirksa i Ferrina dowodzą, że w relacjach osobistych najważniejsza jest Prawość (Integrity) i Życzliwość (Benevolence), podczas gdy w biznesie kluczowa bywa Kompetencja (Ability).'
+        'Współczesna neuronauka i ekonomia behawioralna badają zaufanie w kontrolowanych warunkach laboratoryjnych za pomocą zaawansowanych gier decyzyjnych oraz neuroobrazowania fMRI:',
+        '1. DYLEMAT WIĘŹNIA I GRY ZAUFANIA (Trust Games — Berg, Dickhaut, McCabe): Badania dowodzą, że wbrew dogmatowi o czysto egoistycznej naturze ludzkiej (Homo Oeconomicus), ludzie inwestują realne pieniądze w anonimowych partnerów znacznie częściej, niż wynikałoby to z chłodnego rachunku zysków. Istnieje ewolucyjny „prospołeczny skłon” (prosocial bias).',
+        '2. NEUROBIOLOGIA OKSYTOCYNY (Pionierskie badania Michaela Kosfelda i Markusa Heinrichsa w Zurychu): Podanie badanym pojedynczej dawki oksytocyny w sprayu do nosa spowodowało podwojenie odsetka uczestników, którzy powierzyli całość swoich pieniędzy całkowicie obcej osobie. Neuroobrazowanie pokazało, że oksytocyna zmniejsza odpowiedź ciała migdałowatego na społeczne sygnały zagrożenia.',
+        '3. MODEL ABI (Ability, Benevolence, Integrity): Metaanalizy Kurtzberga, Dirksa i Ferrina dowodzą, że wiarygodność człowieka opiera się na trzech filarach: Kompetencji (Ability — czy potrafi to zrobić), Życzliwości (Benevolence — czy chce mojego dobra) oraz Prawości (Integrity — czy przestrzega spójnych zasad etycznych, gdy nikt nie patrzy).'
+      ],
+      subsections: [
+        {
+          id: 'sub-36-23-1',
+          title: 'Analiza słów dr. Michaela Kosfelda i prof. Markusa Heinrichsa: Neurochemia Przełamywania Lęku Społecznego',
+          content: [
+            'Odkrycie zespołu z Zurychu opublikowane w „Nature” zdemaskowało neurobiologiczny hamulec zaufania. Tym hamulcem jest aktywacja struktury limbicznej — ciała migdałowatego — które rejestruje każdego obcego człowieka jako potencjalnego oszusta lub drapieżnika.',
+            'Oksytocyna nie wyłącza logicznego myślenia ani oceny ryzyka finansowego (gdy badani grali z komputerowym losowym generatorem, oksytocyna nie zmieniła ich decyzji!). Zmieniła wyłącznie relację z drugim człowiekiem — wyciszyła pierwotną paranoidalną czujność społeczną. Pokazuje to, że naturalne budowanie zaufania wymaga środowiska o niskim poziomie wrogości, w którym neuropeptydy łączności mogą swobodnie regulować pracę mózgu.'
+          ],
+          highlightBox: {
+            title: 'Trzy Filary Modelu ABI w Praktyce',
+            content: 'Jeśli ktoś ma wysokie Kompetencje (Ability), ale zerową Życzliwość (Benevolence) — wykorzysta Cię do własnych celów. Jeśli ma Życzliwość, ale brakuje mu Prawości (Integrity) — zdradzi Cię pod wpływem pierwszej większej presji otoczenia.',
+            type: 'neuro'
+          }
+        }
       ]
     },
 
@@ -657,7 +810,44 @@ export const chapterThirtySix: Chapter = {
         'CO DZIEJE SIĘ ZE SPRAWCĄ? Sprawca rzadko jest psychopatą. Najczęściej jest człowiekiem słabym, uwikłanym w dysonans poznawczy, który nie potrafił skonfrontować się z pustką we własnym życiu. Po zdradzie zmaga się z toksycznym wstydem i poczuciem moralnego upadku.',
         'CO DZIEJE SIĘ Z OFIARĄ? Ofiara cierpi na tzw. ZESPÓŁ TRAUMY ZDRADY (Betrayal Trauma): doświadcza natrętnych myśli, bezsenności, huśtawki emocjonalnej i głębokiego podważenia poczucia własnej wartości.',
         'Mostem między tymi dwoma brzegami cierpienia może być wyłącznie bezwzględna prawda. Prawda rani natychmiastowo, ale pozwala ranie się zagoić. Kłamstwo znieczula na chwilę, ale sprawia, że pod opatrunkiem rozwija się gangrena.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-36-24-petla-podejrzen',
+        type: 'loop',
+        title: 'Pętla Podejrzliwości i Defensywy po Zdradzie',
+        subtitle: 'Samonapędzający się mechanizm niszczenia resztek więzi',
+        context: 'Życie codzienne pod jednym dachem po ujawnieniu i próbie wybaczenia zdrady.',
+        loopSteps: [
+          {
+            step: 1,
+            title: 'Wzmożona czujność',
+            actor: 'Ofiara (Anna)',
+            action: 'Skanowanie reakcji partnera, sprawdzanie ekranu telefonu i bilingów.',
+            interpretationByOther: '„Ona mnie kontroluje, nie daje mi żyć, jestem więźniem we własnym domu”.',
+            emotionalTrigger: 'Poczucie winy zamieniające się w bunt i duszność u sprawcy.',
+            counterAction: 'Blokowanie dostępu do telefonu, chowanie aparatu do kieszeni.'
+          },
+          {
+            step: 2,
+            title: 'Potwierdzenie podejrzeń',
+            actor: 'Sprawca (Piotr)',
+            action: 'Chowanie telefonu i zmiana haseł w imię „obrony prywatności”.',
+            interpretationByOther: '„On znowu kłamie, na pewno romans trwa nadal!”.',
+            emotionalTrigger: 'Ostry atak lęku i paniki u Anny.',
+            counterAction: 'Wybuch płaczu, publiczne oskarżenia o cynizm i kłamstwo.'
+          },
+          {
+            step: 3,
+            title: 'Defensywny kontratak',
+            actor: 'Sprawca (Piotr)',
+            action: 'Krzyk: „Ile jeszcze będziesz mnie biczować?! Przeprosiłem sto razy, a ty wciąż szukasz dziury w całym!”.',
+            interpretationByOther: '„On w ogóle nie żałuje tego, co zrobił, jego skrucha była tylko maską”.',
+            emotionalTrigger: 'Głęboka rozpacz i emocjonalne zamrożenie u obojga.',
+            counterAction: 'Ciche dni, spanie w osobnych pokojach.'
+          }
+        ],
+        takeaway: 'Przerwanie pętli podejrzliwości wymaga od sprawcy zgody na dobrowolną, transparentną przewidywalność, a od ofiary — powolnego rezygnowania z moralnej wyższości oskarżyciela.'
+      }
     },
 
     // 36.25

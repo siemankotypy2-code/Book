@@ -1,4 +1,4 @@
-import { Chapter, CaseStudy, SelfExercise, ExamQuestion } from '../types/book';
+import { Chapter, CaseStudy, SelfExercise, ExamQuestion, InteractiveWindowData } from '../types/book';
 
 export const caseStudiesChapterTwentyTwo: CaseStudy[] = [
   {
@@ -1203,14 +1203,45 @@ export const chapterTwentyTwo: Chapter = {
       sectionNumber: '22.8',
       title: 'Pętla Impulsu i Odroczona Satysfakcja — Eksperyment Marshmallow w XXI Wieku',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Samokontrola nie polega na zaciskaniu zębów ani na heroicznej walce z pokusą. Polega na strategicznym zarządzaniu uwagą tak, by gorący bodziec zyskał chłodną, abstrakcyjną reprezentację poznawczą.',
+        author: 'Walter Mischel (The Marshmallow Test: Mastering Self-Control, 2014)'
+      },
       paragraphs: [
-        'Słynny eksperyment ze słodką pianką (Marshmallow Test), przeprowadzony przez Waltera Mischela na Uniwersytecie Stanforda w latach 60. XX wieku, stał się fundamentem badań nad odroczoną satysfakcją (Delay of Gratification). Dzieci, które potrafiły powstrzymać się przed zjedzeniem jednej pianki przez 15 minut, aby otrzymać drugą, w dojrzałym życiu osiągały wyższe wyniki akademickie, miały niższy wskaźnik masy ciała i lepsze relacje społeczne.',
-        'Jednak kluczowe odkrycie Mischela — często pomijane w uproszczonych przekazach — nie dotyczyło "siły woli" dzieci, lecz ich STRATEGII ATENCYJNYCH:',
-        '• Dzieci, które ulegały pokusie, wpatrywały się bezustannie w piankę, dotykały jej i wąchały (stymulacja układy gorącego).',
-        '• Dzieci, które odroczyły nagrodę, stosowały Przekierowanie Uwagi (Attentional Deployment) — zasłaniały oczy dłońmi, śpiewały piosenki, bawiły się swoimi butami lub wyobrażały sobie, że pianka jest jedynie chmurką na obrazku (przewartościowanie poznawcze).',
-        'W dzisiejszym świecie, w którym algorytmy mediów społecznościowych i dostawców treści serwują dopaminergiczne pianki co kilka sekund, zdolność do świadomego przekierowania uwagi staje się najważniejszą walutą autonimii jednostki.'
-      ]
+        'Słynny eksperyment ze słodką pianką (Marshmallow Test), przeprowadzony przez Waltera Mischela w Bing Nursery School na Uniwersytecie Stanforda na przełomie lat 60. i 70. XX wieku, stał się kamieniem węgielnym psychologii samokontroli i odraczania gratyfikacji (Delay of Gratification).',
+        'Mischel stworzył model dwóch systemów przetwarzania impulsów:',
+        '1. SYSTEM GORĄCY (Hot System): Zakorzeniony w ciele migdałowatym i brzusznym prążkowiu. Jest emocjonalny, impulsywny, prosty, bezrefleksyjny i reaguje błyskawicznie na zmysłowe cechy bodźca (zapach cukru, chrupnięcie, powiadomienie w telefonie). Jego jedyną regułą jest: «CHĘĆ TU I TERAZ».\n2. SYSTEM CHŁODNY (Cool System): Zlokalizowany w grzbietowo-bocznej korze przedczołowej (dlPFC) i hipokampie. Jest racjonalny, refleksyjny, powolny, zdolny do abstrakcyjnego myślenia o przyszłości i analizy długofalowych konsekwencji.',
+        'Wbrew popkulturowym uproszczeniom, sukces dzieci, które wytrzymały 15 minut, nie wynikał z „wrodzonej żelaznej dyscypliny”. Wynikał z wyrafinowanych technik kognitywnych: dzieci te celowo wygaszały system gorący, odwracając wzrok od pianki, nucąc piosenki, zasypiając na krześle lub przekadrowując bodziec poznawczo — mówiły sobie, że pianka to tylko „chmurka na obrazku zrobiona z plastiku”.'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Waltera Mischela: Przekształcanie gorącego w chłodne',
+          paragraphs: [
+            'Mischel wykazał, że samokontrola jest umiejętnością metapoznawczą, której można się nauczyć w każdym wieku. Polega ona na tzw. schładzaniu bodźców pożądanych (Cooling the Hot) oraz podgrzewaniu bodźców odroczonych (Heating the Cool).',
+            'Gdy stoisz przed ciastkiem, schładzasz je, myśląc o nim jak o grudzie rafinowanego tłuszczu ze sztucznym barwnikiem zatykającej Twoje naczynia krwionośne. Gdy myślisz o nudnym treningu, podgrzewasz go, wizualizując sobie potężny przypływ energii i dumę po ukończeniu biegu.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Dlaczego wola przegrywa z obecnością bodźca?',
+            content: 'Jeśli pianka leży na Twoim biurku, Twój system gorący wysyła salwy dopaminy co ułamek sekundy. Prędzej czy później kora przedczołowa ulegnie zmęczeniu. Prawdziwa samokontrola polega na schowaniu pianki do szafy w innym pokoju, zanim zmęczenie podejmie decyzję za Ciebie.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-22-8-kontrprzypadek-watts',
+        type: 'counter_case',
+        title: 'Kontrprzypadek: Replikacja Wattsa (2018) — Dlaczego zjedzenie pianki bywa racjonalne?',
+        subtitle: 'Kiedy brak odraczania gratyfikacji wynika z biedy i braku zaufania do świata, a nie ze słabości',
+        context: 'Wielka replikacja Marshmallow Test na zróżnicowanej próbie 900 dzieci z różnych klas społecznych.',
+        counterCase: {
+          standardTheory: 'Tradycyjna interpretacja Mischela: dziecko, które zjada piankę od razu, ma słaby charakter i deficyt samokontroli, co skazuje je na porażkę życiową.',
+          counterExample: 'Tyler Watts i współpracownicy (2018) wykazali, że gdy uwzględni się status socjoekonomiczny rodziny i wykształcenie matki, korelacja między odroczeniem pianki a sukcesem w dorosłości drastycznie spada. Dzieci z ubogich rodzin zjadały piankę natychmiast nie dlatego, że brakowało im woli, lecz dlatego, że w ich domach obietnice dorosłych były notorycznie łamane, a zasoby znikały w mgnieniu oka. W ich środowisku natychmiastowa konsumpcja była najbardziej racjonalną adaptacją biologiczną — jeśli nie zjesz pianki teraz, starsze rodzeństwo ci ją zabierze, a dorosły nie przyniesie drugiej.',
+          whyItDefiesRule: 'Odraczanie gratyfikacji ma sens adaptacyjny wyłącznie w stabilnym, przewidywalnym środowisku, w którym instytucje i dorośli dotrzymują słowa.',
+          deeperLesson: 'Nie oceniaj czyjejś „słabej samokontroli” bez zrozumienia historii jego środowiska. Człowiek wychowany w chronicznej niepewności i braku zasobów ma układ nerwowy zaprogramowany na natychmiastowe zabezpieczanie kalorii i ulgi.'
+        },
+        takeaway: 'Zanim zaczniesz wymagać od kogoś żelaznej samokontroli, zadbaj o stabilność i przewidywalność środowiska, w którym ma ona działać.'
+      }
     },
 
     {
@@ -1236,19 +1267,63 @@ export const chapterTwentyTwo: Chapter = {
       sectionNumber: '22.10',
       title: 'Intencje Implementacyjne Gollwitzera — Planowanie typu "Jeśli X, to Y"',
       category: 'teoria',
-      readingTimeMinutes: 15,
-      caseStudyRef: caseStudiesChapterTwentyTwo[2],
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Intencje celowe mówią nam, CO chcemy osiągnąć, lecz pozostawiają nas bezbronnymi wobec chwilowego braku woli. Intencje implementacyjne przekazują bezpośrednią kontrolę nad zachowaniem w ręce wyzwalaczy środowiskowych, czyniąc reakcję automatyczną.',
+        author: 'Peter M. Gollwitzer (Implementation Intentions: Strong Effects of Simple Plans, 1999)'
+      },
       paragraphs: [
-        'Niemiecki psycholog Peter Gollwitzer dokonał przełomu w badaniach nad realizacją celów, wprowadzając pojęcie Intencji Implementacyjnych (Implementation Intentions).',
-        'Podczas gdy tradycyjna intencja celu ma postać: "Chcę osiągnąć Z" (np. "Będę więcej ćwiczył"), intencja implementacyjna ma postać sztywnego algorytmu wykonawczego:',
-        '„JEŚLI pojawi się sytuacja X, TO wykonam działanie Y.”',
-        'Dlaczego ta prosta zmiana składniowa drastycznie zwiększa skuteczność (metaanalizy wskazują na wskaźnik d Cohena = 0.65)?',
-        '• Tworzy w pamięci wyrazistą reprezentację wyzwalacza sytuacyjnego "X". Mózg podświadomie wypatruje momentu pojawienia się sygnału.',
-        '• Odciąża korę przedczołową z konieczności podejmowania decyzji w stanie zmęczenia lub emocjonalnego wzburzenia. Kiedy pojawia się "X", zachowanie "Y" uruchamia się niemal automatycznie (proceduralnie).',
-        'Przykłady precyzyjnych intencji implementacyjnych:',
-        '• "JEŚLI kelner zapyta o deser, TO zamówię czarną kawę bez cukru."',
-        '• "JEŚLI o godzinie 17:00 wyłączę komputer, TO natychmiast założę buty do biegania."'
-      ]
+        'Peter M. Gollwitzer z New York University i Uniwersytetu w Konstancji dokonał jednego z najbardziej przełomowych odkryć w psychologii behawioralnej, rozwiązując odwieczny problem rozejścia się intencji i działania (Intention-Behavior Gap).',
+        'Większość ludzi formułuje swoje plany w formie intencji celowych (Goal Intentions): „Chcę schudnąć 5 kg”, „Będę pisał doktorat po pracy”, „Ograniczę czas na telefonie”. Badania empiryczne wykazują, że sama siła intencji celowej wyjaśnia zaledwie 20–30% wariancji rzeczywistego zachowania. Reszta rozbija się o zmęczenie, rozproszenia i brak dogodnego momentu startowego.',
+        'Gollwitzer wprowadził pojęcie INTENCJI IMPLEMENTACYJNYCH (Implementation Intentions) — warunkowych algorytmów poznawczych o sztywnej strukturze językowej:',
+        '„JEŚLI pojawi się sytuacja X, TO natychmiast wykonam działanie Y”.',
+        'W formule tej X jest precyzyjnie zdefiniowanym w czasie i przestrzeni wyzwalaczem sensorycznym (np. „Gdy zegar w kuchni wskaże 20:00 i usłyszę sygnał alarmu”), zaś Y jest konkretnym mikroruchem fizycznym (np. „otworzę plik z rozdziałem 3 i napiszę 200 słów”).',
+        'Metaanalizy obejmujące ponad 8 000 uczestników (Gollwitzer & Sheeran, 2006) wykazały kolosalny efekt tej interwencji (d = 0.65). Formuła „Jeśli-To” działa jak stworzenie sztucznego odruchu: wyzwalacz X staje się hiper-dostępny w polu uwagi, a kora ruchowa odpala zachowanie Y niemal bez udziału zmęczonej kory przedczołowej.'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Petera Gollwitzera: Delegowanie woli do środowiska',
+          paragraphs: [
+            'Gollwitzer podkreślał, że intencja implementacyjna jest „strategicznym automatyzmem” (Strategic Automatism). Zamiast polegać na zawodnej motywacji, człowiek z góry podejmuje decyzję wykonawczą w stanie spokoju poznawczego.',
+            'Kiedy nadejdzie krytyczny moment X, nie ma już miejsca na deliberację, wahanie czy negocjacje z układem limbicznym. Decyzja została podjęta wczoraj — teraz następuje jedynie mechaniczne odpalenie procedury.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Gollwitzera: Różnica między życzeniem a algorytmem',
+            content: '„Nigdy nie mów sobie: «muszę być bardziej asertywny». Powiedz: «JEŚLI szef poprosi mnie o nadgodziny w piątek po 16:00, TO wezmę jeden głęboki oddech i odpowiem: Przykro mi, mam na ten wieczór nienaruszalne zobowiązanie rodzinne»”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-22-10-mikroskop-gollwitzer',
+        type: 'microscope',
+        title: 'Człowiek pod mikroskopem: Marta — 19 etapów przełamania wieczornego objadania się',
+        subtitle: 'Wiwisekcja zastąpienia nawykowego sięgania po słodycze algorytmem „Jeśli-To”',
+        context: 'Marta (32 lata, menedżerka) od 2 lat kończy każdy stresujący dzień zjedzeniem tabliczki czekolady przed telewizorem.',
+        microscopeSteps: [
+          { stepNumber: 1, label: 'SYTUACJA', question: 'Co zaszło fizycznie?', content: 'Godzina 20:45. Marta wchodzi do kuchni po 10 godzinach pracy, zamyka drzwi mieszkania i rzuca klucze na blat.', subtext: 'Klasyczny wyzwalacz kontekstowy związany z powrotem do domu.' },
+          { stepNumber: 2, label: 'INFORMACJE ZNANE', question: 'Co wie Marta?', content: 'Wie, że obiecała sobie rano nie jeść cukru i że badania krwi wykazały u niej stan przedcukrzycowy.', subtext: 'Wiedza deklaratywna o zdrowiu.' },
+          { stepNumber: 3, label: 'BRAK INFORMACJI', question: 'Czego nie rejestruje?', content: 'Nie rejestruje faktu, że jej poziom glukozy i energii kory przedczołowej jest na wyczerpaniu.', subtext: 'Ślepota na stan biologiczny organizmu.' },
+          { stepNumber: 4, label: 'UWAGA', question: 'Gdzie kieruje się wzrok?', content: 'Wzrok automatycznie skanuje górną szafkę nad lodówką, gdzie ukryte są słodycze.', subtext: 'Nawykowy wektor uwagi sterowany prążkowiem.' },
+          { stepNumber: 5, label: 'PERCEPCJA', question: 'Co rejestrują zmysły?', content: 'Widzi róg srebrnego papierka czekolady i słyszy ciszę w pustym mieszkaniu.', subtext: 'Zmysłowe wyzwolenie pętli dopaminowej.' },
+          { stepNumber: 6, label: 'INTERPRETACJA AUTOMATYCZNA', question: 'Jaka myśl pojawia się w ułamku sekundy?', content: '„Miałam koszmarny dzień. Należy mi się mała nagroda, od jutra zacznę na czysto”.', subtext: 'Mechanizm moralnego rozgrzeszenia (Moral Licensing).' },
+          { stepNumber: 7, label: 'EMOCJE', question: 'Co czuje w ciele?', content: 'Ssący niepokój w żołądku, pustkę i natychmiastowe napięcie domagające się rozładowania.', subtext: 'Głód dopaminowy po wyczerpującym dniu.' },
+          { stepNumber: 8, label: 'POBUDZENIE', question: 'Stan fizjologiczny?', content: 'Spadek serotoniny, podwyższony kortyzol i gwałtowny skok łaknienia sensorycznego.', subtext: 'Biologiczna pułapka na wolę.' },
+          { stepNumber: 9, label: 'POTRZEBA', question: 'Czego potrzebuje?', content: 'Natychmiastowej ulgi, ukojenia układu nerwowego i wyciszenia gonitwy myśli o pracy.', subtext: 'Potrzeba samoregulacji afektywnej.' },
+          { stepNumber: 10, label: 'AKTYWACJA INTENCJI IMPLEMENTACYJNEJ', question: 'Jaki algorytm odpala się w pamięci proceduralnej?', content: 'Marta przypomina sobie zapisany rano na lodówce algorytm: „JEŚLI moja ręka dotknie uchwytu szafki ze słodyczami, TO natychmiast naleję szklankę wody mineralnej i włączę płytę z jazzem”.', subtext: 'Przejęcie kontroli przez algorytm Gollwitzera.' },
+          { stepNumber: 11, label: 'ZATRZYMANIE RĘKI', question: 'Co dzieje się z mięśniami?', content: 'Dłoń zatrzymuje się na uchwycie na 2 sekundy. Algorytm wywołuje mikro-pauzę poznawczą.', subtext: 'Zablokowanie automatycznego skryptu ruchowego.' },
+          { stepNumber: 12, label: 'CEL ZASTĘPCZY', question: 'Jakie działanie zastępcze zostaje uruchomione?', content: 'Marta odwraca się na pięcie, sięga po butelkę wody i bierze 5 głębokich łyków zimnej wody.', subtext: 'Wykonanie części „TO” intencji implementacyjnej.' },
+          { stepNumber: 13, label: 'ALTERNATYWY', question: 'Co by się stało bez planu „Jeśli-To”?', content: 'W 90 sekund pochłonęłaby 600 kalorii, po czym wpadła w spiralę poczucia winy i zjadła resztę ciastek.', subtext: 'Efekt What-The-Hell.' },
+          { stepNumber: 14, label: 'DECYZJA', question: 'Dlaczego algorytm zadziałał?', content: 'Bo Marta nie musiała decydować w stanie zmęczenia — wykonała wcześniej zakodowany protokół motoryczny.', subtext: 'Triumf automatyzmu strategicznego.' },
+          { stepNumber: 15, label: 'ZACHOWANIE', question: 'Co robi po wypiciu wody?', content: 'Siada w fotelu, zakłada słuchawki i słucha muzyki przez 10 minut, pozwalając fali głodu dopaminowego opaść (Urge Surfing).', subtext: 'Przeczekanie fali impulsu.' },
+          { stepNumber: 16, label: 'REAKCJA UKŁADU NERWOWEGO', question: 'Jak zmienia się stan ciała po 15 minutach?', content: 'Poziom pobudzenia opada, tętno zwalnia, ssanie w żołądku znika.', subtext: 'Naturalne wygaśnięcie fali neurochemicznej.' },
+          { stepNumber: 17, label: 'KONSEKWENCJE', question: 'Bilans wieczoru?', content: 'Brak skoku insuliny, spokojny sen, obudzenie się rano z poczuciem dumy i kontroli nad własnym życiem.', subtext: 'Zwycięstwo bez konieczności heroicznej walki.' },
+          { stepNumber: 18, label: 'AKTUALIZACJA PRZEKONAŃ', question: 'Czego uczy się mózg Marty?', content: '„Nie mam słabej woli! Wystarczy precyzyjny plan działania, by pokonać nawyk z dzieciństwa”.', subtext: 'Skokowy wzrost poczucia własnej skuteczności (Self-Efficacy).' },
+          { stepNumber: 19, label: 'KOLEJNA RUNDA', question: 'Co stanie się za miesiąc?', content: 'Po 30 powtórzeniach algorytm staje się nowym, domyślnym nawykiem. Marta chudnie 4 kg bez poczucia katorgi.', subtext: 'Trwałe ukształtowanie neuroplastyczne nowego obwodu.' }
+        ],
+        takeaway: 'Nie polegaj na dobrej intencji. Zbuduj precyzyjny algorytm „JEŚLI X, TO Y”, a Twoje środowisko samo wykona za Ciebie najtrudniejszą pracę samokontroli.'
+      },
+      caseStudyRef: caseStudiesChapterTwentyTwo[2]
     },
 
     {
@@ -1257,19 +1332,60 @@ export const chapterTwentyTwo: Chapter = {
       sectionNumber: '22.11',
       title: 'Mental Contrasting z Intencjami Implementacyjnymi — Metoda WOOP Gabriele Oettingen',
       category: 'cwiczenia',
-      readingTimeMinutes: 16,
-      caseStudyRef: caseStudiesChapterTwentyTwo[3],
-      exerciseRef: selfExercisesChapterTwentyTwo[2],
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Czysty optymizm i pozytywne fantazjowanie o sukcesie nie motywują — one relaksują układ nerwowy, obniżają ciśnienie krwi i wysyłają do mózgu fałszywy sygnał, że cel został już zrealizowany. Dopiero bezwzględne zderzenie marzenia z wewnętrzną przeszkodą wyzwala energię do działania.',
+        author: 'Gabriele Oettingen (Rethinking Positive Thinking: Inside the New Science of Motivation, 2014)'
+      },
       paragraphs: [
-        'Gabriele Oettingen z New York University połączyła badania nad kontrastowaniem mentalnym z intencjami implementacyjnymi Gollwitzera, tworząc potężny, naukowo zweryfikowany protokół WOOP (Wish, Outcome, Obstacle, Plan).',
-        'WOOP przełamuje największą słabość tradycyjnego pozytywnego myślenia. Większość ludzi popada w pułapkę czystego fantazjowania — wyobrażają sobie sukces, co usypia czujność układu nerwowego. WOOP zmusza do bezwzględnie uczciwego zderzenia marzenia z wewnętrznym oporem.',
-        'Cztery kroki protokołu WOOP:',
-        '1. W — WISH (Życzenie): Zdefiniowanie wyzywającego, ale realnego celu na najbliższy czas.',
-        '2. O — OUTCOME (Wynik): Żywe wyobrażenie sobie najlepszego rezultatu i emocji towarzyszących sukcesowi.',
-        '3. O — OBSTACLE (Przeszkoda): Zidentyfikowanie GŁÓWNEJ WEWNĘTRZNEJ PRZESZKODY (emocji, przekonania, odruchu), która w przeszłości niweczyła Twoje starania.',
-        '4. P — PLAN (Plan Jeśli-To): Stworzenie precyzyjnej intencji implementacyjnej ukierunkowanej na neutralizację zidentyfikowanej przeszkody.',
-        'Regularne stosowanie WOOP przeprogramowuje architekturę oczekiwań mózgu, budując pomost między emocjonalną intencją a konkretnym mikroruchem.'
-      ]
+        'Prof. Gabriele Oettingen z New York University i Uniwersytetu w Hamburgu przez ponad dwie dekady badała wpływ pozytywnego myślenia na osiąganie celów. Jej odkrycia wywołały szok w świecie coachingu motywacyjnego: bezkrytyczne wizualizowanie sukcesu (tzw. indulging — pławienie się w marzeniach) koreluje UJEMNIE z rzeczywistymi osiągnięciami!',
+        'Gdy badani leżeli i wyobrażali sobie, jak łatwo zdają egzamin lub jak wspaniale wyglądają po zrzuceniu wagi, ich ciśnienie skurczowe krwi spadało, a poziom energii życiowej obniżał się. Mózg biologiczny nie odróżnia żywej fantazji od rzeczywistości — uznał, że nagroda została już zdobyta, i wyłączył motywację dopaminową.',
+        'W odpowiedzi Oettingen stworzyła metodę KONTRASTOWANIA MENTALNEGO (Mental Contrasting), którą połączyła z intencjami implementacyjnymi Gollwitzera w uniwersalny, zwalidowany naukowo protokół WOOP:',
+        '1. W — WISH (Życzenie): Wybierz cel, który jest dla Ciebie ważny, ambitny, ale realny do osiągnięcia w określonym czasie (np. w tym miesiącu).\n2. O — OUTCOME (Najlepszy Wynik): Wyobraź sobie najwspanialszy, emocjonalny rezultat osiągnięcia celu. Pozwól sobie poczuć tę satysfakcję przez kilkadziesiąt sekund.\n3. O — OBSTACLE (Główna Przeszkoda Wewnętrzna): Tu następuje kluczowy zwrot! Zadaj sobie pytanie: «Co we MNIE stoi na drodze? Jaka moja emocja, nawyk, przekonanie lub impuls torpeduje ten plan?». Nie szukaj winy w pogodzie czy szefie — znajdź wewnętrzny opór.\n4. P — PLAN (Plan Jeśli-To): Stwórz intencję implementacyjną: «JEŚLI pojawi się ta moja przeszkoda wewnętrzna, TO wykonam konkretne działanie zaradcze».'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Gabriele Oettingen: Neurobiologia kontrastowania mentalnego',
+          paragraphs: [
+            'Oettingen za pomocą neuroobrazowania wykazała, że kontrastowanie mentalne aktywuje jednocześnie sieci czołowo-ciemieniowe odpowiedzialne za planowanie oraz hipokamp kodujący wspomnienia przeszkód. W mózgu powstaje silne, nieświadome skojarzenie między marzeniem a koniecznym wysiłkiem.',
+            'Jeśli cel jest obiektywnie niemożliwy do osiągnięcia, WOOP działa jak nóż chirurgiczny: pomaga bez żalu porzucić mrzonki i przekierować zasoby na cele wykonalne. Jeśli cel jest realny — wyzwala natychmiastowy skok energii motywacyjnej.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Dlaczego WOOP deklasuje pozytywne myślenie?',
+            content: 'Pozytywne myślenie sprawia, że czujesz się dobrze w fotelu. WOOP sprawia, że wstajesz z fotela i pokonujesz przeszkodę, ponieważ Twój mózg został zawczasu przygotowany na moment kryzysu.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-22-11-woop-student',
+        type: 'what_if',
+        title: 'Zmień jeden element: Od naiwnego afirmowania sukcesu do protokołu WOOP',
+        subtitle: 'Symulacja przygotowań studenta medycyny do najtrudniejszego egzaminu z anatomii',
+        context: 'Michał (21 lat) ma 3 tygodnie na opanowanie 800 stron anatomii prawidłowej.',
+        whatIfOptions: {
+          defaultScenario: 'Michał stosuje metodę „pozytywnego myślenia”: wiesza na ścianie napis „Jestem lekarzem”, wizualizuje sobie ocenę 5.0 w indeksie i zrelaksowany ogląda seriale, powtarzając sobie, że „wszystko będzie dobrze”. Na egzaminie dostaje ocenę niedostateczną i załamuje się psychicznie.',
+          options: [
+            {
+              id: 'c22-opt-w1',
+              changeLabel: 'Zastosowanie pełnego protokołu WOOP Gabriele Oettingen',
+              resultingInterpretation: 'Michał definiuje przeszkodę wewnętrzną: „Mój lęk przed trudnymi rycinami sprawia, że uciekam w telefon”. Tworzy plan: «JEŚLI poczuję chęć sięgnięcia po telefon, TO zamknę oczy na 60 sekund i rozrysuję jedno naczynie krwionośne na czystej kartce».',
+              resultingBehavior: 'Uczy się systematycznie po 4 godziny dziennie w blokach Pomodoro, omijając rozproszenia.',
+              psychologicalImpact: 'Zdanie egzaminu w pierwszym terminie na 4.5, ogromny wzrost poczucia własnej sprawczości i dyscypliny akademickiej.'
+            },
+            {
+              id: 'c22-opt-w2',
+              changeLabel: 'Przejście w skrajny pesymizm i katastrofizację („Na pewno obleję, nie dam rady”) bez planu działania',
+              resultingInterpretation: 'Michał uważa, że wysiłek nie ma sensu, bo egzaminatorzy są sadystami.',
+              resultingBehavior: 'Paraliż lękowy, nieprzespane noce i rezygnacja z podejścia do egzaminu w pierwszym terminie.',
+              psychologicalImpact: 'Utrata roku studiów i głęboki epizod depresyjny.'
+            }
+          ]
+        },
+        takeaway: 'Nie bój się patrzeć na swoje przeszkody. Prawdziwa nadzieja nie polega na ignorowaniu trudności, lecz na stworzeniu precyzyjnego planu ich pokonania.'
+      },
+      caseStudyRef: caseStudiesChapterTwentyTwo[3],
+      exerciseRef: selfExercisesChapterTwentyTwo[2]
     },
 
     {
@@ -1278,15 +1394,65 @@ export const chapterTwentyTwo: Chapter = {
       sectionNumber: '22.12',
       title: 'Przewartościowanie Poznawcze i Regulacja Emocjonalna według Jamesa Grossa',
       category: 'teoria',
-      readingTimeMinutes: 15,
-      caseStudyRef: caseStudiesChapterTwentyTwo[5],
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Regulacja emocji nie polega na ich wyłączaniu ani na udawaniu, że nie istnieją. To elastyczny proces zarządzania trajektorią emocjonalną, w którym kluczem jest moment interwencji — im wcześniej zainterweniujesz w łańcuchu poznawczym, tym mniejszy koszt biologiczny zapłaci Twoje ciało.',
+        author: 'James J. Gross (Handbook of Emotion Regulation, 2014)'
+      },
       paragraphs: [
-        'James Gross ze Stanford University stworzył Model Procesowy Regulacji Emocjonalnej, w którym podzielił strategie samoregulacyjnych ingerencji na dwie główne grupy:',
-        '1. STRATEGIE ANTYCYPACYJNE (Antecedent-focused): Działające zanim emocja i impuls w pełni się rozwiną (Modyfikacja Sytuacji, Przekierowanie Uwagi, Przewartościowanie Poznawcze).',
-        '2. STRATEGIE REAKTYWNE (Response-focused): Działające w momencie, gdy reakcja fizjologiczna już nastąpiła (Tłumienie ekspresji, Zmuszanie się).',
-        'Gwiazdą w koronie strategii antycypacyjnych jest Przewartościowanie Poznawcze (Cognitive Reappraisal). Polega ono na zmianie sposobu interpretacji znaczenia danego bodźca.',
-        'Gdy czujesz przyspieszone bicie serca przed wystąpieniem publicznym, możesz zinterpretować to doznanie jako: "Jestem przerażony, zaraz zemdleję" (co wywoła paraliż) LUB jako: "Moje ciało daje mi darmową dawkę adrenaliny, bym wypadł z maksymalną dynamiką" (co wywoła ekscytację). Doznanie fizjologiczne jest to samo — zmiana etykiety poznawczej całkowicie modyfikuje zachowanie.'
-      ]
+        'Prof. James J. Gross ze Stanford University stworzył dominujący we współczesnej nauce Model Procesowy Regulacji Emocjonalnej (Process Model of Emotion Regulation).',
+        'Gross dowiódł, że emocja nie jest monolitycznym wybuchem, lecz dynamicznym procesem rozwijającym się w czasie wzdłuż sekwencji: SYTUACJA → UWAGA → APERCEPCJA / INTERPRETACJA → ODPOWIEDŹ EMOCJONALNA (somatyczna, behawioralna, subiektywna).',
+        'Zgodnie z modelem Grossa punkty interwencji regulacyjnej dzielą się na dwie fundamentalne kategorie:',
+        '1. STRATEGIE ANTYCYPACYJNE (Antecedent-focused): Uruchamiane ZANIM odpowiedź emocjonalna w pełni eksploduje w ciele. Należą do nich: Wybór Sytuacji (unikanie toksycznych miejsc), Modyfikacja Sytuacji, Przekierowanie Uwagi (odwrócenie wzroku) oraz król samoregulacji — PRZEWARTOŚCIOWANIE POZNAWCZE (Cognitive Reappraisal).\n2. STRATEGIE REAKTYWNE (Response-focused): Uruchamiane wtedy, gdy emocja już zalała układ nerwowy. Główną z nich jest TŁUMIENIE EKSPRESJI (Expressive Suppression) — próba zachowania kamiennej twarzy i powstrzymywania drżenia głosu mimo szalejącego lęku lub wściekłości.',
+        'W serii spektakularnych badań z użyciem fMRI i monitoringu kardiologicznego Gross wykazał miażdżącą wyższość przewartościowania poznawczego nad tłumieniem. Tłumienie emocji NIE OBNIŻA pobudzenia ciała migdałowatego — przeciwnie, ciśnienie krwi gwałtownie rośnie, a kora przedczołowa ulega wyczerpaniu! Z kolei przewartościowanie poznawcze w ułamku sekundy gasi alarm limbiczny u samego źródła.'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Jamesa Grossa: Neurobiologia przewartościowania vs tłumienia',
+          paragraphs: [
+            'W eksperymencie Grossa badani oglądali drastyczne nagrania z operacji medycznych (amputacje, krew). Grupa instruowana, by TŁUMIĆ emocje („nie okazuj żadnych uczuć po sobie”), miała potężny wyrzut kortyzolu, tachykardię i po seansie nic nie pamiętała z treści filmu, ponieważ całe zasoby poznawcze poszły na kontrolowanie mimiki twarzy.',
+            'Grupa instruowana, by PRZEWARTOŚCIOWAĆ obraz („spójrz na to okiem chirurga, który uczy się ratować ludzkie życie”), wykazała natychmiastowe uspokojenie tętna i pełne zrozumienie procedury. Ich kora przedczołowa wysłała sygnał hamujący do ciała migdałowatego, przekształcając wstręt w profesjonalną ciekawość.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Przekleństwo pokerowej twarzy',
+            content: '„Tłumienie emocji to jak dociskanie pokrywki na wrzącym garnku. Na zewnątrz wyglądasz na spokojnego, ale w środku ciśnienie rozrywa Twoje naczynia krwionośne, a partner intuicyjnie wyczuwa Twój fałsz i chłód. Prawdziwa siła to zmiana ognia pod garnkiem — zmiana znaczenia, jakie nadajesz sytuacji”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-22-12-gross-regulacja',
+        type: 'dual_perspectives',
+        title: 'Dwie Perspektywy: Przewartościowanie Poznawcze vs Tłumienie Emocji u Lidera',
+        subtitle: 'Konfrontacja dwóch strategii radzenia sobie z agresywnym atakiem klienta na zebraniu',
+        context: 'Klient wściekle krzyczy na spotkaniu projektowym: „Wasz zespół to banda amatorów!”.',
+        dualPerspective: {
+          situation: 'Sala konferencyjna. Prezes klienta rzuca teczką na stół przed 10 osobami.',
+          personA: {
+            name: 'Marek (Strategia Tłumienia Ekspresji — Pokerowa Twarz)',
+            quote: '„Muszę zacisnąć zęby, udawać, że mnie to nie rusza i nie okazać żadnej słabości. Jeśli drgnie mi powieka, on wygra”.',
+            whatTheyKnow: 'Wie, że agresja klienta jest niesprawiedliwa.',
+            whatTheyMiss: 'Nie zauważa, że tłumienie gniewu podnosi jego tętno do 160 bpm, a dłonie drżą mu pod stołem.',
+            interpretation: '„Ten człowiek chce mnie zniszczyć i upokorzyć przed moimi ludźmi”.',
+            coreNeed: 'Obrona statusu za wszelką cenę.',
+            fear: 'Utrata twarzy i wizerunku twardziela.',
+            action: 'Sztywny, lodowaty uśmiech, milczenie, a po spotkaniu wybuch wściekłości na niewinną asystentkę.'
+          },
+          personB: {
+            name: 'Marek (Strategia Przewartościowania Poznawczego Grossa)',
+            quote: '„Ten człowiek nie krzyczy na mnie osobiście. Krzyczy, bo sam panicznie boi się swojego zarządu i nie radzi sobie z presją. Jego krzyk jest dowodem jego bezradności, a nie mojej winy”.',
+            whatTheyKnow: 'Zna psychologiczny mechanizm projekcji lęku u klienta.',
+            whatTheyMiss: 'Widzi sytuację w chłodnym świetle diagnostycznym.',
+            interpretation: '„Mamy do czynienia z przerażonym człowiekiem w stanie ataku paniki. Moim zadaniem jest przywrócenie mu poczucia bezpieczeństwa faktami”.',
+            coreNeed: 'Merytoryczne rozwiązanie problemu i deeskalacja konfliktu.',
+            fear: 'Brak lęku; kora przedczołowa zachowuje pełną jasność analityczną.',
+            action: 'Spokojny, głęboki oddech, łagodny ton głosu i słowa: „Widzę, jak bardzo zależy panu na tym projekcie. Przeanalizujmy wspólnie liczby z punktu 4”.'
+          },
+          synthesis: 'W wariancie A klient eskaluje agresję, wyczuwając bierny opór i wrogość Marka, a spotkanie kończy się zerwaniem kontraktu. W wariancie B spokój Marka i jego empatyczne przewartościowanie rozbrajają układ limbiczny klienta, który po 5 minutach przeprasza za uniesienie i podpisuje aneks. Przewartościowanie ocaliło kontrakt i zdrowie Marka.'
+        },
+        takeaway: 'Nie kontroluj mięśni twarzy, by ukryć emocję. Kontroluj interpretację w swoim umyśle, by wygenerować inną emocję u samego źródła.'
+      },
+      caseStudyRef: caseStudiesChapterTwentyTwo[5]
     },
 
     {

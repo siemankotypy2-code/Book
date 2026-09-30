@@ -220,13 +220,34 @@ export const chapterThirtyFour: Chapter = {
       id: 'sec-34-3',
       pageNumber: 2062,
       sectionNumber: '34.3',
-      title: 'Teoria przywiązania — początki: Rewolucja Johna Bowlby’ego',
+      title: 'Teoria przywiązania — początki: Rewolucja Johna Bowlby’ego i Biologia Przetrwania',
       category: 'teoria',
-      readingTimeMinutes: 24,
+      readingTimeMinutes: 26,
+      quote: {
+        text: 'Przywiązanie intymne do drugiego człowieka jest osnową, wokół której toczy się całe ludzkie życie — nie tylko w niemowlęctwie i dzieciństwie, ale przez cały okres dorosłości aż po podeszły wiek. Z tych pierwotnych więzi człowiek czerpie siłę i radość życia, a także zdolność dawania siły i radości innym.',
+        author: 'Dr John Bowlby',
+        source: 'Tavistock Institute of Medical Psychology, „A Secure Base: Parent-Child Attachment and Healthy Human Development”, Basic Books, 1988'
+      },
       paragraphs: [
-        'W latach 50. XX wieku John Bowlby, brytyjski psychoanalityk i psychiatra dziecięcy, rzucił wyzwanie ówczesnemu dogmatowi głoszącemu, że niemowlę przywiązuje się do matki wyłącznie dlatego, że ta zaspokaja jego głód fizjologiczny (tzw. teoria popędowa).',
-        'Inspirując się etologią (badaniami Konrada Lorenza nad wdrukowaniem u gęsi oraz eksperymentami Harry’ego Harlowa z młodymi rezusami wybierającymi miękką kukłę z tkaniny zamiast drucianej kukły podającej mleko), Bowlby sformułował rewolucyjną tezę: System przywiązania jest wrodzonym, ewolucyjnie ukształtowanym mechanizmem motywacyjnym.',
-        'Dziecko nie szuka matki z powodu jedzenia — szuka ochrony przed drapieżnikami i regulacji termiczno-emocjonalnej. Bowlby wprowadził pojęcie WEWNĘTRZNYCH MODELI OPERACYJNYCH (Internal Working Models — IWM): poznawczo-afektywnych map, które mózg buduje w pierwszych latach życia. Model ten odpowiada na dwa kluczowe pytania: „Czy świat i inni ludzie są dostępni i bezpieczni?” oraz „Czy ja sam zasługuję na troskę i miłość?”.'
+        'W latach 50. XX wieku John Bowlby, brytyjski psychoanalityk i psychiatra dziecięcy, rzucił wyzwanie ówczesnemu dogmatowi psychoanalitycznemu i behawiorystycznemu, głoszącemu, że niemowlę przywiązuje się do matki wyłącznie dlatego, że ta zaspokaja jego głód fizjologiczny (tzw. teoria popędowa lub redukcja popędu wtórnego).',
+        'Inspirując się etologią (badaniami Konrada Lorenza nad wdrukowaniem u gęsi oraz eksperymentami Harry’ego Harlowa z młodymi rezusami wybierającymi miękką kukłę z frotte zamiast drucianej kukły podającej mleko), Bowlby sformułował rewolucyjną tezę: System przywiązania jest wrodzonym, ewolucyjnie ukształtowanym behawioralnym systemem kontrolnym (Behavioral Control System), działającym analogicznie do biologicznego termostatu.',
+        'Dziecko nie szuka opiekuna z powodu jedzenia — szuka ochrony przed drapieżnikami, ukojenia przerażonego układu nerwowego i fizjologicznej synchronizacji. Bowlby wprowadził fundamentalne pojęcie WEWNĘTRZNYCH MODELI OPERACYJNYCH (Internal Working Models — IWM): poznawczo-afektywnych map predykcyjnych, które mózg konstruuje na fundamencie powtarzających się interakcji z kluczowymi opiekunami.',
+        'Model operacyjny odpowiada na dwa kardynalne pytania egzystencjalne: 1) „Czy świat i inni ludzie są dostępni, przewidywalni i godni zaufania w chwilach mojego cierpienia?”, oraz 2) „Czy ja sam jestem kimś wartościowym, kto zasługuje na troskę i miłość bez konieczności udowadniania swojej przydatności?”. Ta podwójna matryca rzutuje później na każdą relację romantyczną, przyjacielską i zawodową w dorosłym życiu.'
+      ],
+      subsections: [
+        {
+          id: 'sub-34-3-1',
+          title: 'Analiza słów dr. Johna Bowlby’ego: Przywiązanie jako Podstawa Odwagi Życiowej',
+          content: [
+            'Słowa dr. Johna Bowlby’ego o przywiązaniu jako „osnowie całego ludzkiego życia” obalają jeden z najbardziej destrukcyjnych mitów zachodniej kultury sukcesu: mit absolutnej, samowystarczalnej niezależności. Bowlby dowodził, że dojrzała niezależność nie powstaje z odcięcia się od innych, lecz rodzi się z głębokiego, zinternalizowanego poczucia bezpiecznej bazy.',
+            'Z perspektywy neurobiologii przywiązania, posiadanie bezpiecznej przystani w drugim człowieku dramatycznie obniża poziom bazowej aktywności ciała migdałowatego i osi podwzgórze-przysadka-nadnercza (HPA). Kiedy człowiek czuje, że w razie katastrofy ma do kogo wrócić, jego kora przedczołowa zyskuje metabolizm niezbędny do eksploracji, twórczego ryzyka i uczenia się. Paradoks Bowlby’ego brzmi: Im bezpieczniej jesteś połączony, tym odważniej możesz eksplorować świat w pojedynkę.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Kliniczny: Pozorna Samowystarczalność a Chroniczny Stres',
+            content: 'Jednostka, która uważa, że „nie potrzebuje nikogo i na nikim nie polega”, często płaci za to utajoną hiperaktywacją układu współczulnego. Niezależność wymuszona lękiem przed odrzuceniem to nie dojrzałość, lecz mechanizm obronny izolacji afektu.',
+            type: 'insight'
+          }
+        }
       ]
     },
 
@@ -237,11 +258,34 @@ export const chapterThirtyFour: Chapter = {
       sectionNumber: '34.4',
       title: 'Mary Ainsworth i procedura Strange Situation: Od obserwacji do empirii',
       category: 'teoria',
-      readingTimeMinutes: 25,
+      readingTimeMinutes: 27,
+      quote: {
+        text: 'Wzorce zachowania obserwowane podczas ponownego spotkania po krótkiej separacji nie odzwierciedlają jedynie nastroju dziecka w danej chwili; odzwierciedlają one całą historię wzajemnej responsywności i wrażliwości, jakiej dziecko doświadczało w ramionach matki przez pierwsze dwanaście miesięcy życia.',
+        author: 'Dr Mary D. Salter Ainsworth',
+        source: 'University of Virginia, „Patterns of Attachment: A Psychological Study of the Strange Situation”, Lawrence Erlbaum, 1978'
+      },
       paragraphs: [
-        'Mary Ainsworth przeniosła intuicje Bowlby’ego na grunt precyzyjnych badań empirycznych, tworząc procedurę „Obcej Sytuacji” (Strange Situation). Roczne dziecko przechodziło przez serię 8 epizodów: zabawa z matką, wejście obcej osoby, wyjście matki, pozostanie z obcym, samotność w pokoju, powrót matki.',
-        'Kluczowe odkrycie Ainsworth nie dotyczyło tego, czy dzieci płaczą podczas separacji (płacze większość). Prawdziwa różnica ujawniła się w MOMENCIE POWROTU opiekuna:\n- Grupa B (Przywiązanie bezpieczne, ~65%): Dziecko wita matkę, szuka ukojenia, po 1-2 minutach uspokaja się i wraca do zabawy.\n- Grupa A (Przywiązanie lękowo-unikające, ~20%): Dziecko udaje obojętność, unika kontaktu wzrokowego, ignoruje matkę. Pomiary fizjologiczne wykazały jednak, że tętno i poziom kortyzolu u tych dzieci były równie wysokie jak u płaczących — ich spokój był maską behawioralną służącą uniknięciu kolejnego odrzucenia.\n- Grupa C (Przywiązanie lękowo-ambiwalentne/oporne, ~15%): Dziecko krzyczy, lgnie do matki, a jednocześnie bije ją rączkami i odpycha zabawki. Nie potrafi ukoić pobudzenia.',
-        'WAŻNE OGRANICZENIE NAUKOWE: Obca Sytuacja badała zachowanie w 20-minutowym oknie w sztucznym laboratorium. Badania longitudynalne (np. Alana Sroufe’a) pokazują, że wzorzec z 12. miesiąca życia nie determinuje dorosłości w 100%. Bezpieczna relacja z nauczycielem, mentorem lub dorosłym partnerem może zreorganizować układ nerwowy (tzw. przywiązanie nabyte bezpieczne — earned secure).'
+        'Mary Ainsworth przeniosła intuicje Bowlby’ego na grunt precyzyjnych badań empirycznych, tworząc ustandaryzowaną procedurę „Obcej Sytuacji” (Strange Situation). Roczne dziecko przechodziło przez serię 8 starannie zaaranżowanych, 3-minutowych epizodów: swobodna zabawa z matką, wejście obcej osoby dorosłej, wyjście matki i pozostanie dziecka z obcym, samotność dziecka w pokoju, powrót matki, ponowna separacja i ostateczne spotkanie.',
+        'Kluczowe odkrycie naukowe Ainsworth nie dotyczyło tego, czy dzieci płaczą podczas separacji (płacze większość zdrowych niemowląt pod wpływem aktywacji lęku separacyjnego w zakręcie obręczy). Prawdziwa różnica diagnostyczna ujawniła się w MOMENCIE POWROTU opiekuna do pokoju:',
+        '- Grupa B (Przywiązanie bezpieczne, ~65% populacji normatywnej): Dziecko aktywnie wita matkę, szuka fizycznego kontaktu, pozwala się objąć i ukoić. Po 1-2 minutach pobudzenie somatyczne spada, tętno zwalnia, a dziecko z zaciekawieniem powraca do eksploracji zabawek.',
+        '- Grupa A (Przywiązanie lękowo-unikające, ~20%): Dziecko przy powrocie matki demonstracyjnie udaje obojętność, nie podnosi wzroku, odwraca się plecami i skupia na zabawkach. Jednak podpięte czujniki telemetryczne wykazały szokujący fakt: tętno tych dzieci było gwałtownie przyspieszone, a poziom kortyzolu w ślinie równie wysoki jak u dzieci głośno płaczących! Ich spokój był fałszywą maską autonomiczną służącą wygaszeniu sygnałów distressu, aby uniknąć kolejnego chłodnego odrzucenia.',
+        '- Grupa C (Przywiązanie lękowo-ambiwalentne / oporne, ~15%): Dziecko po wejściu matki krzyczy, rzuca się w jej stronę, a gdy znajdzie się na rękach — szarpie się, bije opiekunkę rączkami, odpycha zabawki i nie daje się ukoić przez wiele minut. Chroniczna hiperaktywacja służy utrzymaniu uwagi niekonsekwentnego opiekuna za wszelką cenę.',
+        'W późniejszych latach Mary Main i Judith Solomon zidentyfikowały czwartą, najtrudniejszą kategorię: Styl Zdezorganizowany (Grupa D), w którym dziecko zastyga w bezruchu (freezing), wykazuje zachowania sprzeczne (np. czołga się w tył w stronę matki z twarzą odwróconą w ścianę), ponieważ opiekun jest jednocześnie jedynym źródłem bezpieczeństwa i źródłem śmiertelnego przerażenia.'
+      ],
+      subsections: [
+        {
+          id: 'sub-34-4-1',
+          title: 'Analiza słów dr Mary Ainsworth: Odpowiedzialność Responsywności a Biologia Regulacji',
+          content: [
+            'Wnikliwa dekonstrukcja obserwacji dr Ainsworth ujawnia fundamentalne prawo relacyjne: styl przywiązania niemowlęcia nie jest cechą wrodzoną ani genetycznym przeznaczeniem temperamentu, lecz bezpośrednim zapisem wrażliwości emocjonalnej opiekuna (maternal sensitivity). Opiekun bezpieczny to nie ktoś nieskazitelny, lecz ktoś, kto trafnie odczytuje sygnały niemowlęcia i odpowiada na nie bez zbędnej zwłoki.',
+            'W przypadku dzieci unikających matki systematycznie odrzucały prośby o przytulenie w chwilach bólu; w przypadku dzieci ambiwalentnych matki były nieprzewidywalne — raz nadmiernie wylewne, raz nieobecne psychicznie. Mózg dziecka dostosowuje więc swoją strategię nerwową: unikający wyłącza ekspresję, by zatrzymać matkę chociaż w zasięgu wzroku; ambiwalentny rozkręca krzyk do maksimum, by wymusić kontakt. Te strategie radzenia sobie, zrodzone jako genialne adaptacje w kołysce, w dorosłym małżeństwie zamieniają się w destrukcyjne pułapki.'
+          ],
+          highlightBox: {
+            title: 'Kluczowe Ograniczenie Metodologiczne Badania Ainsworth',
+            content: 'Procedura Obcej Sytuacji rejestruje mikromoment w sztucznym laboratorium. Choć styl przywiązania ma tendencję do samopotwierdzania się, mózg zachowuje neuroplastyczność przez całe życie. Głębokie, bezpieczne relacje partnerskie w dorosłości, psychoterapia relacyjna oraz autorefleksja pozwalają wypracować tzw. styl bezpieczny nabyty (earned security).',
+            type: 'warning'
+          }
+        }
       ]
     },
 
@@ -379,14 +423,35 @@ export const chapterThirtyFour: Chapter = {
       id: 'sec-34-11',
       pageNumber: 2158,
       sectionNumber: '34.11',
-      title: 'Bliskość kontra autonomia: Dialektyczne napięcie dojrzałej relacji',
+      title: 'Bliskość kontra autonomia: Dialektyczne napięcie dojrzałej relacji i Protest Przywiązaniowy',
       category: 'teoria',
-      readingTimeMinutes: 24,
+      readingTimeMinutes: 26,
+      quote: {
+        text: 'Większość walk w związkach nie dotyczy pieniędzy, seksu ani niepozmywanych naczyń. To zawoalowane, desperackie protesty przywiązaniowe. Pod powłoką wściekłości i oskarżeń kryje się jedno przerażone pytanie: „Czy jesteś tam dla mnie? Czy się dla ciebie liczę? Czy jeśli zawołam w ciemności, przyjdziesz mi z pomocą?”.',
+        author: 'Dr Sue Johnson',
+        source: 'University of Ottawa, „Hold Me Tight: Seven Conversations for a Lifetime of Love”, Little, Brown & Company, 2008'
+      },
       paragraphs: [
-        'Największy dramat wielu par nie wynika ze zderzenia „dobra ze złem”, lecz ze zderzenia DWÓCH PRAWIDŁOWYCH, ZDROWYCH POTRZEB: potrzeby bliskości i potrzeby autonomii.',
-        'Kiedy partner A mówi: „Chcę być z tobą bliżej”, a partner B mówi: „Potrzebuję pobyć sam”, żaden z nich nie jest potworem ani egoistą. Reprezentują dwa bieguny ludzkiej kondycji. Konflikt zaczyna się wtedy, gdy każda ze stron interpretuje potrzebę partnera jako atak na własne bezpieczeństwo:',
-        '- Partner lękowy interpretuje potrzebę autonomii jako odrzucenie („Nie zależy mu”).\n- Partner unikający interpretuje potrzebę bliskości jako agresywne zawłaszczenie („Ona mnie dusi”).',
-        'Dojrzałość relacyjna polega na uznaniu, że związek nie jest statycznym punktem, lecz nieustannym, pulsującym ruchem: przybliżeniem i oddaleniem, wdechem i wydechem.'
+        'Największy dramat i zarazem powtarzalny paraliż w relacjach intymnych nie wynika ze zderzenia „dobra ze złem” czy manipulacji socjopatycznej, lecz ze zderzenia DWÓCH RÓWNIE ZDROWYCH, BIOLOGICZNIE ZAKORZENIONYCH POTRZEB: potrzeby bezpiecznej przynależności oraz potrzeby psychologicznej autonomii.',
+        'Kiedy partner A wysyła komunikat: „Chcę być z tobą bliżej, porozmawiajmy o nas”, a partner B odpowiada: „Potrzebuję pobyć sam, dusi mnie ta rozmowa”, żaden z nich nie jest potworem ani emocjonalnym kaleką. Reprezentują oni dwa bieguny ludzkiej kondycji układu nerwowego. Katastrofa relacyjna zaczyna się wtedy, gdy każda ze stron interpretuje neurologiczną potrzebę partnera jako egzystencjalny atak na własne bezpieczeństwo:',
+        '- Partner lękowy interpretuje prośbę o autonomię jako zwiastun odrzucenia i porzucenia („Jeśli on chce być sam, to znaczy, że już mnie nie kocha, a ja przestaję dla niego istnieć”).',
+        '- Partner unikający interpretuje prośbę o bliskość jako agresywne wtargnięcie, kontrolę i próbę emocjonalnego połknięcia („Ona chce mnie uwięzić, odebrać mi wolność i zniszczyć moją tożsamość”).',
+        'Dojrzałość relacyjna polega na porzuceniu naiwnego wyobrażenia, że związek jest statycznym punktem pełnego zespolenia. Dojrzała relacja jest pulsującym tańcem homeostazy: nieustannym rytmem przybliżenia i oddalenia, bezpiecznego powrotu do bazy i odważnego wyjścia w świat — dokładnie tak, jak wdech i wydech w fizjologii oddychania.'
+      ],
+      subsections: [
+        {
+          id: 'sub-34-11-1',
+          title: 'Analiza słów dr Sue Johnson: Protest Przywiązaniowy i Koncepcja Demon Dialogues',
+          content: [
+            'Twórczyni Terapii Skoncentrowanej na Emocjach (EFT), dr Sue Johnson, demaskuje naturę awantur domowych. Gdy kora mózgowa partnera lękowego rejestruje emocjonalny chłód lub milczenie drugiej strony, w ciele migdałowatym odpala się tzw. Panika Przywiązaniowa (Attachment Panic) — identyczny neurochemiczny alarm, jaki przeżywa niemowlę zgubione w lesie.',
+            'Ponieważ dorosły człowiek wstydzi się powiedzieć: „Boję się, że mnie opuścisz i jestem bezradny”, maskuje ten lęk agresją wtórną: krzykiem, ironią, wypominaniem starych błędów. Druga strona widzi jedynie atakującego agresora, więc uruchamia strategię obronną: zamyka się w sobie lub ucieka. Dr Johnson nazywa to „Tańcem Protestu”: im głośniej krzyczysz z lęku, tym dalej ucieka partner, co z kolei potęguje Twój krzyk. Przerwanie tego zaklętego koła wymaga odwagi obnażenia pierwotnej bezradności pod pancerzem złości.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Terapeutyczny: Pytanie ARE (Accessibility, Responsiveness, Engagement)',
+            content: 'W chwilach kryzysu partnerskiego układ limbiczny zadaje podświadomie trzy pytania: 1) Dostępność: Czy mogę do Ciebie dotrzeć? 2) Responsywność: Czy odpowiesz na mój ból, gdy Ci go pokażę? 3) Zaangażowanie: Czy wiesz, jak bardzo jestem dla Ciebie ważny? Pozytywna odpowiedź na te trzy pytania gasi 90% relacyjnych pożarów.',
+            type: 'insight'
+          }
+        }
       ]
     },
 
@@ -550,11 +615,31 @@ export const chapterThirtyFour: Chapter = {
       sectionNumber: '34.18',
       title: 'Pętla niepewności: Jak przerwać spiralę i zmienić jeden parametr relacji',
       category: 'cwiczenia',
-      readingTimeMinutes: 22,
+      readingTimeMinutes: 24,
+      quote: {
+        text: 'Strategie wtórne przywiązania — hiperaktywacja u osób lękowych i deaktywacja u osób unikających — nie są patologią, lecz desperackimi próbami samoregulacji. Aby przerwać ich destrukcyjną dynamikę, jedna ze stron musi zaryzykować zmianę własnego zachowania bez czekania, aż partner zmieni się pierwszy.',
+        author: 'Prof. Mario Mikulincer & Prof. Phillip R. Shaver',
+        source: 'Interdisciplinary Center Herzliya & UC Davis, „Attachment in Adulthood: Structure, Dynamics, and Change”, Guilford Press, 2016'
+      },
       paragraphs: [
-        'Czy skazani jesteśmy na wieczne powtarzanie tych samych pętli? Nie. Pętla relacyjna jest systemem naczyń połączonych. Oznacza to, że ZMIANA JEDNEGO ELEMENTU po którejkolwiek stronie natychmiast zmienia dynamikę całego układu.',
-        'Jeśli osoba goniąca powstrzyma impuls nacisku i zajmie się własnym ukojeniem, osoba uciekająca przestaje czuć zagrożenie i często sama robi krok w stronę kontaktu. Z kolei jeśli osoba wycofująca się przed odejściem powie: „Kocham cię, potrzebuję 20 minut ciszy i wrócę do ciebie o 18:00”, osoba lękowa nie wpada w panikę.',
-        'Poniższy moduł symulacyjny pozwala przetestować wpływ zmiany jednego parametru.'
+        'Czy skazani jesteśmy na wieczne powtarzanie tych samych destrukcyjnych pętli? Zdecydowanie nie. Pętla relacyjna jest z punktu widzenia cybernetyki systemem sprzężeń zwrotnych. Oznacza to, że ZMIANA JEDNEGO ELEMENTU (Single-Parameter Shift) po którejkolwiek stronie natychmiast destabilizuje cały patologiczny wzorzec i wymusza rekonfigurację całego układu.',
+        'Jeśli osoba goniąca powstrzyma automatyczny impuls nacisku i wdroży samoukojenie (Self-Soothing), osoba uciekająca przestaje rejestrować sygnał zagrożenia i bardzo często sama, nieprzymuszona, robi krok w stronę kontaktu. Z kolei jeśli osoba wycofująca się przed wyjściem do pokoju wypowie proste zdanie ugruntowujące: „Kocham cię, bardzo cię cenię, ale mój mózg jest przebodźcowany; potrzebuję 30 minut ciszy i dokładnie o 18:30 wrócę do ciebie na herbatę”, układ limbiczny osoby lękowej nie wpada w panikę separacyjną.',
+        'Poniższy interaktywny moduł symulacyjny pozwala przetestować laboratoryjnie wpływ zmiany pojedynczego parametru behawioralnego na dynamikę związku.'
+      ],
+      subsections: [
+        {
+          id: 'sub-34-18-1',
+          title: 'Analiza słów prof. Mario Mikulincera i prof. Phillipa Shavera: Rozbrojenie Wtórnych Strategii Przywiązania',
+          content: [
+            'Profesorowie Mikulincer i Shaver w swoich monumentalnych badaniach nad dorosłym przywiązaniem wykazali, że zmiana w relacji nie wymaga jednoczesnego oświecenia obojga partnerów. Gdy jedna osoba świadomie wygasza swoją strategię wtórną (np. osoba lękowa przestaje bombardować wiadomościami, a osoba unikająca przestaje trzaskać drzwiami), pętla traci swoje paliwo energetyczne.',
+            'Kluczem jest zrozumienie, że nie czekamy na idealną postawę drugiej strony. Zmiana własnego parametru komunikacyjnego to akt autonomicznego przywództwa relacyjnego. Kiedy zmieniasz swój krok w tańcu, partner po prostu nie może kontynuować starego układu choreograficznego bez potknięcia się — musi dostosować swój krok do nowej rzeczywistości.'
+          ],
+          highlightBox: {
+            title: 'Zasada 1% Zmiany Parametru',
+            content: 'Nie próbuj rozwiązywać wszystkich problemów naraz w środku awantury. Zmień jeden mikroskopijny parametr: ton głosu, podanie dokładnej godziny powrotu lub wypicie szklanki wody przed odpowiedzią na zarzut. Zmiana jednego parametru wyhamowuje kaskadę adrenergiczną.',
+            type: 'exercise'
+          }
+        }
       ],
       interactiveWindowRef: {
         id: 'iw-34-18-zmien-element',
@@ -813,7 +898,21 @@ export const chapterThirtyFour: Chapter = {
         'Przyjrzyjmy się kontrprzypadkowi: Marta kocha swojego męża niezwykle głęboko, uwielbia spędzać z nim czas i otwarcie mówi: „Tęsknię za tobą, gdy wyjeżdżasz”. Kiedy jednak mąż mówi, że w sobotę idzie z kolegami w góry na cały dzień, Marta mówi: „Super, odpocznij sobie, ja nadrobię zaległości z książkami”.',
         'Marta ma BARDZO WYSOKĄ POTRZEBĘ BLISKOŚCI, ale jej styl przywiązania jest BEZPIECZNY. Jej potrzeba nie wynika z lęku, że bez męża przestanie istnieć, lecz z autentycznej radości z kontaktu. Gdy męża nie ma — jej wewnętrzne poczucie wartości pozostaje nienaruszone.',
         'Potrzeba bliskości nie jest chorobą. Patologią staje się dopiero wtedy, gdy zostaje zaprzęgnięta w służbę uciszania lęku egzystencjalnego poprzez kontrolowanie drugiego człowieka.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-34-23-kontrprzypadek',
+        type: 'counter_case',
+        title: 'Kontrprzypadek: Bezpieczna Bliskość vs Lękowa Zależność',
+        subtitle: 'Przełamywanie powierzchownych ocen potrzeb relacyjnych',
+        context: 'Jak odróżnić zdrową, wysoką potrzebę bliskości od lękowego kontrolowania i osaczania partnera.',
+        counterCase: {
+          standardTheory: 'Ktoś, kto chce spędzać z partnerem każdą wolną chwilę i głośno deklaruje tęsknotę, cierpi na lękowe przywiązanie i brak dojrzałości emocjonalnej.',
+          counterExample: 'Marta kocha intensywną bliskość, ale potrafi uszanować pasję męża (całodniowy wyjazd w góry) i spędzić czas na własnych pasjach z pełnym spokojem w ciele.',
+          whyItDefiesRule: 'Marta reprezentuje wysokie pragnienie bliskości zintegrowane z bezpiecznym stylem przywiązania — jej miłość nie jest próbą uciszenia lęku egzystencjalnego.',
+          deeperLesson: 'Miarą dojrzałości nie jest udawanie samowystarczalności, lecz zdolność do cieszenia się bliskością bez przymusu sprawowania kontroli.'
+        },
+        takeaway: 'Potrzeba bliskości jest zdrowym, biologicznym faktem, a nie patologią.'
+      }
     },
 
     // 34.24
@@ -830,7 +929,43 @@ export const chapterThirtyFour: Chapter = {
         'Człowiek może nie odpisywać, bo:',
         'a) Jest unikający,\nb) Ma zawał serca,\nc) Rozładował mu się telefon,\nd) Jest wściekły,\ne) Skupia się na operacji chirurgicznej,\nf) Zgubił okulary.',
         'Dopóki nie zapytasz i nie zweryfikujesz faktów, każda Twoja diagnoza jest tylko projekcją Twojego własnego mózgu. Pokora poznawcza to najwspanialszy prezent, jaki możesz podarować swojemu związkowi.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-34-24-dekoder',
+        type: 'what_we_know',
+        title: 'Fakt czy Interpretacja? — Skanowanie zachowań komunikacyjnych',
+        subtitle: 'Jak odróżnić nagie fakty od nadinterpretacji pop-psychologicznych',
+        context: 'Analiza zachowań partnera na komunikatorach internetowych.',
+        whatWeKnow: {
+          items: [
+            {
+              id: 'iw-34-24-item-1',
+              statement: 'Partner odczytał wiadomość o 14:00 i do 15:30 nie przysłał odpowiedzi.',
+              category: 'fakt',
+              explanation: 'To czysty fakt behawioralno-techniczny zarejestrowany na urządzeniu.'
+            },
+            {
+              id: 'iw-34-24-item-2',
+              statement: 'Partner stosuje strategię unikającą i celowo ignoruje mój komunikat, by mnie ukarać.',
+              category: 'interpretacja',
+              explanation: 'To jest zaawansowana nadinterpretacja przypisująca wrogie intencje i diagnozująca styl bez żadnych dowodów.'
+            },
+            {
+              id: 'iw-34-24-item-3',
+              statement: 'Partner może być pochłonięty pracą, spotkaniem lub po prostu odłożył telefon, by dokończyć zadanie.',
+              category: 'hipoteza',
+              explanation: 'Zdrowa, neutralna hipoteza alternatywna, którą należy zweryfikować przed eskalacją napięcia.'
+            },
+            {
+              id: 'iw-34-24-item-4',
+              statement: 'Odpisanie na wiadomość zajmuje tylko 5 sekund, więc brak odpowiedzi zawsze oznacza brak szacunku.',
+              category: 'interpretacja',
+              explanation: 'To uogólnienie poznawcze wynikające z narzucania własnego tempa przetwarzania bodźców jako jedynej normy relacyjnej.'
+            }
+          ]
+        },
+        takeaway: 'Zawsze oddzielaj nagie fakty techniczne od pop-psychologicznych wyroków, które wydaje Twój umysł.'
+      }
     },
 
     // 34.25

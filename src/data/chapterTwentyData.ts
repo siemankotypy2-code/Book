@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 export const chapterTwentyExamQuestions: ExamQuestion[] = [
   {
@@ -906,12 +906,60 @@ export const chapterTwenty: Chapter = {
       sectionNumber: '20.2',
       title: 'Teoria Samodeterminacji (SDT Deci & Ryan) — 3 Podstawowe Potrzeby Psychologiczne',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Człowiek nie jest bierną maszyną sterowaną zewnętrznymi bodźcami i karami. Posiada wrodzoną tendencję do integracji, rozwoju i poszukiwania wyzwań, która rozkwita wyłącznie w warunkach zaspokojenia trzech fundamentalnych potrzeb: autonomii, kompetencji i powiązania.',
+        author: 'Edward L. Deci & Richard M. Ryan (Self-Determination Theory, 2000)'
+      },
       paragraphs: [
-        'Edward Deci i Richard Ryan w Teorii Samodeterminacji (Self-Determination Theory) udowodnili, że każdy człowiek do prawidłowego rozwoju i dobrostanu potrzebuje stałego zaspokajania 3 uniwersalnych potrzeb psychologicznych:',
-        '1. Potrzeba Autonomii (Autonomy) — poczucie, że jesteśmy autorem własnych wyborów, a nie pionkiem przesuwanym na szachownicy przez szefa czy rodzinę; 2. Potrzeba Kompetencji (Competence) — poczucie sprawczości i rozwoju umiejętności w starciu z wyzwaniami; 3. Potrzeba Bliskości i Powiązania (Relatedness) — poczucie przynależności, bycia kochanym i szanowanym w bezpiecznej grupie.',
-        'Gdy środowisko pracy lub domowe blokuje te potrzeby (np. mikromanagement niszczący autonomię), człowiek popada w stan wyczerpania, cynizmu i biernego oporu.'
-      ]
+        'Edward Deci i Richard Ryan z University of Rochester w swojej Teorii Samodeterminacji (Self-Determination Theory — SDT) zrewolucjonizowali psychologię motywacji, zadając kłam behawiorystycznemu dogmatowi, jakoby człowiek działał wyłącznie pod wpływem kija i marchewki.',
+        'Badacze udowodnili, że ludzka psychika posiada trzy uniwersalne, ewolucyjnie ukształtowane potrzeby psychologiczne, które są dla zdrowia psychicznego tym samym, czym witaminy i tlen dla ciała biologicznego:',
+        '1. POTRZEBA AUTONOMII (Autonomy): Poczucie, że jednostka jest inicjatorem i podmiotem własnych działań, a jej wybory wypływają z wewnętrznego systemu wartości, a nie z przymusu, manipulacji czy mikromanagementu.\n2. POTRZEBA KOMPETENCJI (Competence): Doświadczenie skuteczności w oddziaływaniu na środowisko, możliwość opanowywania nowych umiejętności i mierzenia się z optymalnymi wyzwaniami.\n3. POTRZEBA POWIĄZANIA / BLISKOŚCI (Relatedness): Poczucie przynależności do wspólnoty, doświadczenie bycia kochanym, szanowanym i potrzebnym innym ludziom w bezpiecznych, nieprzemocowych więziach.',
+        'Najważniejsze odkrycie Deci i Ryana dotyczy tzv. Kontinuum Samodeterminacji: motywacja nie jest jednolita. Dzieli się na zewnętrzną (regulacja zewnętrzna, introjekcja — napędzana wstydem i poczuciem winy), identyfikowaną (działam, bo rozumiem sens) oraz autonomiczną motywację wewnętrzną (Intrinsic Motivation — działam z czystej radości eksploracji).'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Deci i Ryana: Efekt podkopania (The Overjustification Effect)',
+          paragraphs: [
+            'W klasycznym eksperymencie Deci zaprosił studentów do rozwiązywania łamigłówek przestrzennych Soma. W grupie, której zaczęto płacić za każdą rozwiązaną układankę, po wycofaniu nagród finansowych zainteresowanie zadaniem spadło niemal do zera! W grupie, której nie płacono, studenci w czasie wolnym z pasją kontynuowali układanie klocków.',
+            'Zewnętrzna nagroda (pieniądze, punkty, premia) przeramowała doświadczenie: umysł przestał postrzegać czynność jako autonomiczną zabawę, a zaczął traktować jako przymuszoną pracę dla zysku. W ten sposób korporacje i szkoły, wprowadzając sztywne systemy premiowe, bezwiednie zabijają naturalną pasję i kreatywność pracowników.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Kiedy motywacja zamienia się w truciznę?',
+            content: '„Gdy zmuszasz człowieka do działania za pomocą szantażu emocjonalnego („zawiedziesz mnie”) lub obietnicy bonusu, niszczysz jego autonomię. Człowiek wykona zadanie, ale jego mózg zarejestruje czynność jako opresję, co prowadzi do chronicznego cynizmu i wypalenia”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-20-2-mikroskop-sdt',
+        type: 'microscope',
+        title: 'Człowiek pod mikroskopem: Tomasz — 19 etapów uwiądu motywacji po wdrożeniu mikromanagementu',
+        subtitle: 'Wiwisekcja degradacji autonomii u utalentowanego architekta systemów IT',
+        context: 'Nowy dyrektor operacyjny wprowadza w software house system monitorowania każdego kliknięcia myszy.',
+        microscopeSteps: [
+          { stepNumber: 1, label: 'SYTUACJA', question: 'Co zaszło w środowisku?', content: 'Dyrektor ogłasza wdrożenie oprogramowania śledzącego aktywność klawiatury i wymagającego logowania każdego 15-minutowego bloku czasu pracy.', subtext: 'Zewnętrzny mechanizm kontrolny niszczący zaufanie.' },
+          { stepNumber: 2, label: 'INFORMACJE ZNANE', question: 'Co Tomasz wie o swojej dotychczasowej pracy?', content: 'Wie, że przez 3 lata dostarczał kod najwyższej jakości, pracując nienormowano i często rozwiązując krytyczne błędy w nocy z własnej woli.', subtext: 'Wysoka motywacja wewnętrzna i etyka zawodowa.' },
+          { stepNumber: 3, label: 'BRAK INFORMACJI', question: 'Czego Tomasz nie wie o motywach zarządu?', content: 'Nie wie, czy zarząd tnie koszty przed sprzedażą spółki, czy dyrektor realizuje własne lęki kontrolne.', subtext: 'Niepewność co do intencji systemu.' },
+          { stepNumber: 4, label: 'UWAGA', question: 'Gdzie wędruje reflektor uwagi?', content: 'Od innowacyjnych koncepcji refaktoryzacji kodu przesuwa się na mechaniczne nabijanie kliknięć i unikanie „czerwonych flag” w programie śledzącym.', subtext: 'Przesunięcie uwagi z jakości na pozory.' },
+          { stepNumber: 5, label: 'PERCEPCJA', question: 'Co rejestrują zmysły?', content: 'Widzi wyskakujące co 10 minut okienko kontrolne i czuje suchość w ustach na widok ikony aplikacji szpiegującej.', subtext: 'Środowisko pracy staje się polem minowym.' },
+          { stepNumber: 6, label: 'INTERPRETACJA', question: 'Jakie znaczenie nadaje aparat poznawczy?', content: '„Jestem dla nich tylko cyfrą w Excelu. Nie ufają mi ani za grosz. Moja wiedza inżynierska nie ma znaczenia — liczy się ruszanie myszką”.', subtext: 'Zniszczenie poczucia autonomii i godności.' },
+          { stepNumber: 7, label: 'EMOCJE', question: 'Co czuje w ciele?', content: 'Głuchy gniew, upokorzenie, spadek entuzjazmu i narastający chłód emocjonalny.', subtext: 'Emocjonalna reakcja na ubezwłasnowolnienie.' },
+          { stepNumber: 8, label: 'POBUDZENIE', question: 'Stan fizjologiczny?', content: 'Spadek poziomu dopaminy w prążkowiu, chroniczne napięcie mięśni karku i apatia.', subtext: 'Biologiczny uwiąd motywacji wewnętrznej.' },
+          { stepNumber: 9, label: 'POTRZEBA', question: 'Czego potrzebuje?', content: 'Odzyskania podmiotowości, szacunku dla profesjonalizmu i zaufania.', subtext: 'Fundamentalna potrzeba autonomii wg Deci & Ryana.' },
+          { stepNumber: 10, label: 'MOTYWACJA', question: 'Do czego dąży?', content: 'Do absolutnego minimum wysiłku niezbędnego do utrzymania pensji (quiet quitting).', subtext: 'Degradacja do najniższego poziomu regulacji zewnętrznej.' },
+          { stepNumber: 11, label: 'OBAWY', question: 'Czego się boi?', content: 'Że wypali się doszczętnie i straci radość z programowania, którą miał od 14. roku życia.', subtext: 'Zagrożenie tożsamości twórcy.' },
+          { stepNumber: 12, label: 'CEL', question: 'Jaki cel obiera?', content: 'Zainstalować skrypt poruszający kursorem myszy i szukać nowej pracy w godzinach biurowych.', subtext: 'Pasywny opór wobec opresyjnego systemu.' },
+          { stepNumber: 13, label: 'ALTERNATYWY', question: 'Co mógł zrobić dojrzały zarząd?', content: 'Mierzyć efekty końcowe sprintu (działający produkt) i dać inżynierom 100% autonomii co do sposobu i czasu wykonania.', subtext: 'Paradygmat autonomii i zaufania.' },
+          { stepNumber: 14, label: 'DECYZJA', question: 'Dlaczego wybiera opór?', content: 'Bo to jedyny sposób na ocalenie poczucia własnej wartości w toksycznym środowisku.', subtext: 'Obrona integralności psychicznej.' },
+          { stepNumber: 15, label: 'ZACHOWANIE', question: 'Co robi?', content: 'Przestaje zgłaszać usprawnienia architektoniczne, milczy na spotkaniach projektowych, wykonuje wyłącznie dosłowne polecenia.', subtext: 'Całkowity zanik innowacyjności.' },
+          { stepNumber: 16, label: 'REAKCJA INNYCH', question: 'Jak reaguje dyrektor?', content: 'Dyrektor widzi raport: „Tomasz ma 98% aktywności myszki, system działa doskonale!”, nie wiedząc, że kod Tomasza jest bezduszny i pełen długu technologicznego.', subtext: 'Pozorne zwycięstwo mierników metrycznych (Prawo Goodharta).' },
+          { stepNumber: 17, label: 'KONSEKWENCJE', question: 'Bilans dla firmy?', content: 'Aplikacja zalicza awarię w święta, Tomasz nie odbiera telefonu służbowego („nie płacą mi za to”), firma traci klienta wartego 500 tys. euro, a Tomasz składa wypowiedzenie.', subtext: 'Ogromne straty finansowe spowodowane zniszczeniem autonomii.' },
+          { stepNumber: 18, label: 'AKTUALIZACJA PRZEKONAŃ', question: 'Czego uczy się Tomasz?', content: '„Nigdy więcej nie dam sobie odebrać autonomii. W następnej firmie zaufanie i swoboda działania są warunkiem bezwzględnym”.', subtext: 'Wzmocnienie wglądu o prymacie wartości autonomii.' },
+          { stepNumber: 19, label: 'KOLEJNA RUNDA', question: 'Gdzie trafia za 3 miesiące?', content: 'Przechodzi do organizacji turkusowej, gdzie w warunkach pełnej autonomii tworzy w 6 miesięcy najbardziej zyskowny moduł roku.', subtext: 'Empiryczny dowód na słuszność teorii SDT.' }
+        ],
+        takeaway: 'Kontrola zabija zaangażowanie. Jeśli chcesz wybitnych rezultatów od inteligentnych ludzi, daj im jasny cel merytoryczny i całkowitą autonomię co do drogi jego osiągnięcia.'
+      }
     },
     {
       id: 'sec-20-3',
@@ -932,12 +980,67 @@ export const chapterTwenty: Chapter = {
       sectionNumber: '20.4',
       title: 'Wartości Deklarowane vs Wartości Realizowane w Działaniu',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Wartości to nie przedmioty, które można kupić i postawić na półce. Wartości to przysłówki i przymiotniki określające, jak chcesz iść przez świat w tej konkretnej minucie — zwłaszcza wtedy, gdy nikt nie patrzy.',
+        author: 'Steven C. Hayes (Get Out of Your Mind and Into Your Life, 2005)'
+      },
       paragraphs: [
-        'Istnieje drastyczna różnica między tym, co człowiek twierdzi na temat swoich wartości, a tym, jak faktycznie żyje.',
-        'Wartości deklarowane to szlachetne słowa wypowiadane podczas dyskusji czy pisane w CV („Rodzina jest dla mnie najważniejsza”). Wartości realizowane to obiektywne fakty wynikające ze sposobu alokacji czasu, energii i pieniędzy.',
-        'Jeśli Twój kalendarz wykazuje 70 godzin pracy i 2 godziny dla rodziny w tygodniu, to bez względu na deklaracje słowne Twoją wartością realizowaną jest Status/Praca, a nie Rodzina. Konfrontacja z tą prawdą jest pierwszym krokiem do dojrzałości.'
+        'Prof. Steven C. Hayes, twórca Terapii Akceptacji i Zaangażowania (ACT), dokonał bezwzględnego rozliczenia z popularnym w psychologii zjawiskiem deklaratywności tożsamościowej.',
+        'Istnieje fundamentalna przepaść pomiędzy dwoma rejestrami wartości:',
+        '1. WARTOŚCI DEKLAROWANE (Espoused Values): Szlachetne hasła, którymi człowiek lub korporacja chwali się w mediach społecznościowych, podczas rozmów rekrutacyjnych i przy świątecznym stole („Najważniejsza jest dla mnie rodzina”, „W naszej firmie liczy się człowiek”, „Zdrowie to mój absolutny priorytet”). Te deklaracje karmią ego i chronią przed poczuciem winy.\n2. WARTOŚCI REALIZOWANE (Values-in-Action / Enacted Values): Rzeczywiste wybory behawioralne, które można zarejestrować kamerą i udowodnić matematycznie poprzez analizę wyciągów bankowych oraz kalendarza.',
+        'Jeśli menedżer deklaruje, że „rodzina jest na 1. miejscu”, a przez 320 dni w roku wraca do domu o 21:30, nie rozmawia z dziećmi i w weekendy odpisuje na maile korporacyjne — to z punktu widzenia psychologii behawioralnej jego realizowaną wartością jest Status, Awans lub Ucieczka przed intymnością. Rodzina pozostaje jedynie sentymentalną etykietą.'
       ],
+      subsections: [
+        {
+          title: 'Analiza słów Stevena Hayesa: Wartości jako kompas, a nie cel podróży',
+          paragraphs: [
+            'Hayes porównuje wartości do kierunków świata na kompasie. Nie można „dotrzeć na Zachód” i zakończyć podróży. Można jedynie podróżować na zachód. Jeśli Twoją wartością jest bycie opiekuńczym rodzicem, nie jest to cel, który „odhaczysz” po kupieniu dziecku roweru. To jakość obecności, którą wnosisz do każdej rozmowy, gdy dziecko wraca zapłakane ze szkoły.',
+            'Kiedy mylisz wartości z celami, wpadasz w pułapkę permanentnego rozczarowania: przed osiągnięciem celu czujesz frustrację, a po jego osiągnięciu — chwilową ulgę i dojmującą pustkę egzystencjalną.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Bezlitosny audyt dwóch dokumentów',
+            content: 'Chcesz poznać swoje prawdziwe wartości realizowane? Nie rób testów psychologicznych w internecie. Otwórz dwa dokumenty z ostatnich 3 miesięcy: swój kalendarz w telefonie oraz historię transakcji na koncie bankowym. Gdzie poszedł Twój czas i Twoje pieniądze? Oto jedyna obiektywna prawda o Twoich wartościach.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-20-4-hayes-wartosci',
+        type: 'what_we_know',
+        title: 'Co naprawdę wiemy? — Hayes i ACT obalają Mit Szczęścia jako Celu',
+        subtitle: 'Oddzielenie pogoni za przyjemnością od życia opartego na sensie i wartościach',
+        context: 'Praca z pacjentem cierpiącym na przewlekły brak satysfakcji mimo sukcesu materialnego.',
+        whatWeKnow: {
+          items: [
+            {
+              id: 'c20-hys-1',
+              statement: 'Prawdziwe wartości poznaje się po tym, na co człowiek bez przymusu poświęca swój czas, uwagę i zasoby finansowe.',
+              category: 'fakt',
+              explanation: 'To twarda zasada psychologii behawioralnej: alokacja zasobów jest jedynym empirycznym miernikiem priorytetów organizmu.'
+            },
+            {
+              id: 'c20-hys-2',
+              statement: 'Celem dojrzałego życia powinno być osiągnięcie stanu, w którym nie odczuwa się żadnego smutku, lęku ani bólu.',
+              category: 'interpretacja',
+              explanation: 'Fundamentalny błąd kulturowy (Mit Szczęścia). Hayes udowadnia, że unikanie trudnych emocji jest główną przyczyną nerwic i depresji. Życie zgodne z wartościami nieuchronnie wiąże się z trudnymi emocjami, które należy nauczyć się akceptować.'
+            },
+            {
+              id: 'c20-hys-3',
+              statement: 'Cele wyznaczone w oderwaniu od wartości generują po ich osiągnięciu stan anhedonii i pustki egzystencjalnej.',
+              category: 'fakt',
+              explanation: 'Zjawisko powszechne u olimpijczyków i przedsiębiorców po sprzedaży spółki (Post-Achievement Depression).'
+            },
+            {
+              id: 'c20-hys-4',
+              statement: 'Wystarczy raz ustalić swoje wartości, by kierowały one zachowaniem przez całe życie bez konieczności codziennej rewizji.',
+              category: 'interpretacja',
+              explanation: 'Iluzja statyczności. Wartości wymagają nieustannego, codziennego mikrowyboru pod presją bieżących pokus i lęków.'
+            }
+          ]
+        },
+        takeaway: 'Nie pytaj siebie: „Jak mogę czuć się szczęśliwy?”. Zadaj sobie pytanie: „Za czym chcę się opowiedzieć w tej godzinie, nawet jeśli będzie to wymagało znoszenia lęku i niewygody?”.'
+      },
       caseStudyRef: caseStudiesChapterTwenty[0]
     },
     {
@@ -946,12 +1049,63 @@ export const chapterTwenty: Chapter = {
       sectionNumber: '20.5',
       title: 'Konflikty Wartości — Gdy Wolność Zderza Się z Bezpieczeństwem',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Konflikt wartości nie jest ułomnością charakteru ani błędem logicznym — jest geometryczną koniecznością ludzkiej egzystencji. Dążenie do autonomii i nowości nieuchronnie wchodzi w zwarcie z potrzebą bezpieczeństwa i przynależności.',
+        author: 'Shalom H. Schwartz (Universals in the Content and Structure of Values, 1992)'
+      },
       paragraphs: [
-        'Dojrzałe życie nie polega na łatwym wyborze między Dobrem a Złem. Najtrudniejsze dylematy życiowe to starcie między dwoma wartościami, z których obie są dobre (np. Wolność vs Bezpieczeństwo, Uczciwość vs Lojalność).',
-        'W sytuacji konfliktu wartości opowiedzenie się za jedną opcją wymusza konieczność znoszenia kosztu rezygnacji z drugiej. Brak akceptacji tego kosztu generuje przewlekły paraliż decyzyjny.',
-        'Świadoma nawigacja wymaga ustalenia jasnej hierarchii priorytetów na dany etap życia i akceptacji faktu, że nie można mieć wszystkiego naraz.'
+        'Shalom H. Schwartz z Hebrew University of Jerusalem stworzył najpełniejszy i empirycznie zweryfikowany w ponad 80 krajach model struktury wartości ludzkich — Koło Wartości Schwartza (Schwartz Value Circumplex).',
+        'Schwartz wykazał, że 10 podstawowych typów motywacyjnych układa się w kołową strukturę, w której wartości leżące po przeciwnych stronach koła pozostają w dynamicznym, nieuniknionym konflikcie:',
+        '1. OTWARTOŚĆ NA ZMIANĘ (Kierowanie sobą, Stymulacja) vs ZACHOWAWCZOŚĆ (Bezpieczeństwo, Konformizm, Tradycja).\n2. PRZEKRACZANIE SIEBIE (Uniwersalizm, Życzliwość) vs UMACNIANIE SIEBIE (Władza, Osiągnięcia, Hedonizm).',
+        'Gdy jednostka staje przed dylematem: „Czy rzucić stabilną posadę w banku (Bezpieczeństwo/Tradycja) i założyć własny teatr (Stymulacja/Kierowanie sobą)?”, nie wybiera między dobrem a złem. Wybiera między dwoma prawomocnymi, szlachetnymi wektorami ludzkiej natury. Cierpienie i paraliż decyzyjny wynikają z dziecięcego pragnienia posiadania obu wartości w maksymalnym stopniu bez ponoszenia kosztu alternatywnego.'
       ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Shaloma Schwartza: Koszt utraconych możliwości',
+          paragraphs: [
+            'Schwartz podkreśla, że dojrzałość polega na świadomym opłaceniu rachunku za wybraną wartość. Jeśli wybierasz Wolność i niezależność freelancera, Twoim rachunkiem jest niepewność finansowa i brak płatnego urlopu. Jeśli nie chcesz zapłacić tej ceny, zaczniesz projektować swój lęk na świat, twierdząc, że rynek jest niesprawiedliwy.',
+            'Jeśli wybierasz Bezpieczeństwo korporacji, Twoim rachunkiem jest konieczność podporządkowania się procedurom i hierarchii. Konflikt wartości rozwiązuje się nie poprzez unikanie wyboru, lecz przez godną akceptację ceny, jaką niesie wybrany wektor.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Zasada tragizmu wyboru',
+            content: '„Każde autentyczne «Tak» powiedziane jednej wartości jest jednoczesnym, bolesnym «Nie» powiedzianym innej wartości. Człowiek, który próbuje ocalić wszystkie wartości naraz, staje się sparaliżowanym obserwatorem własnego życia”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-20-5-dylemat-schwartza',
+        type: 'dual_perspectives',
+        title: 'Dwie Perspektywy: Jakub — Wolność Nomady Cyfrowego vs Stabilność Rodziny',
+        subtitle: 'Konfrontacja dwóch prawomocnych wartości w przełomowym momencie życia',
+        context: 'Jakub (33 lata) otrzymuje propozycję kontraktu na Bali przy jednoczesnym oczekiwaniu partnerki na stabilizację i założenie rodziny w Polsce.',
+        dualPerspective: {
+          situation: 'Niedzielny wieczór. Na stole leży podpisany kontrakt zdalny w Azji oraz prospekt kredytu hipotecznego na dom pod Warszawą.',
+          personA: {
+            name: 'Jakub (Głos Otwartości na Zmianę i Wolności)',
+            quote: '„Życie w jednym miejscu mnie dusi. Chcę surfować, poznawać twórców z całego świata i żyć pełnią przygody. Kredyt na 30 lat to dla mnie śmierć za życia”.',
+            whatTheyKnow: 'Zna swoje pragnienie eksploracji, lęk przed monotonią i miłość do dalekich podróży.',
+            whatTheyMiss: 'Ignoruje fakt, że samotne podróże po 30. roku życia często zamieniają się w głęboką pustkę relacyjną i powierzchowność znajomości.',
+            interpretation: '„Zostanie w Polsce oznacza rezygnację z marzeń i kapitulację przed nudnym mieszczaństwem”.',
+            coreNeed: 'Ekscytacja, brak ograniczeń i poczucie nieograniczonego potencjału.',
+            fear: 'Uwięzienie w rutynie, utrata młodości i zgorzknienie.',
+            action: 'Pakowanie plecaka i unikanie rozmów o przyszłości relacji.'
+          },
+          personB: {
+            name: 'Jakub (Głos Bezpieczeństwa, Więzi i Generatywności)',
+            quote: '„Kocham Anię i marzę o dziecku. Jeśli wyjadę na Bali sam, stracę najważniejszą relację mojego życia dla kilku zachodów słońca”.',
+            whatTheyKnow: 'Wie, jak głęboką i bezpieczną więź zbudował z partnerką przez ostatnie 6 lat.',
+            whatTheyMiss: 'Boi się, że jeśli zamieszka pod miastem, w chwilach zmęczenia będzie winił partnerkę za zaprzepaszczone marzenia.',
+            interpretation: '„Prawdziwa dojrzałość polega na wzięciu odpowiedzialności za drugi podmiot i zbudowaniu gniazda”.',
+            coreNeed: 'Bliskość, trwałość, przynależność i przekazanie życia dalej.',
+            fear: 'Samotność na starość i utrata kobiety życia.',
+            action: 'Przeglądanie planów architektonicznych z poczuciem ucisku w klatce piersiowej.'
+          },
+          synthesis: 'Jakub nie może uciec przed kosztem wyboru. Jeśli wybierze Bali, zapłaci utratą głębokiej więzi. Jeśli wybierze dom, zapłaci rezygnacją z nomadycznego stylu życia. Dojrzałość Jakuba polega na tym, by nie obarczać Ani winą za ten wybór, lecz samemu podjąć decyzję i z godnością unieść stratę nieobranej ścieżki.'
+        },
+        takeaway: 'Dylematy wartości nie mają bezbolesnych rozwiązań. Wybierz tę stratę, którą wolisz nosić na swoich barkach w zamian za sens, który pragniesz stworzyć.'
+      },
       caseStudyRef: caseStudiesChapterTwenty[1]
     },
     {
@@ -960,12 +1114,48 @@ export const chapterTwenty: Chapter = {
       sectionNumber: '20.6',
       title: 'Priorytety i Nawigacja Decyzyjna — Krótki Termin vs Długi Termin',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Limbiczny mózg wycenia nagrodę dostępną natychmiast nieproporcjonalnie wyżej niż wielokrotnie większą nagrodę odroczoną w czasie. Walka o priorytety jest wojną o kontrolę nad czasem poznawczym.',
+        author: 'George Ainslie (Breakdown of Will, 2001)'
+      },
       paragraphs: [
-        'Umysł ludzki z powodu ewolucyjnego budowy układu limbicznym ma naturalną tendencję do faworyzowania natychmiastowej ulgi i małych nagród krótko-terminowych nad dużymi celami długo-terminowymi (Hyperbolic Discounting).',
-        'Zarządzanie priorytetami to umiejętność odraczania gratyfikacji (Delayed Gratification). To świadomy wybór dyskomfortu w tej minucie w imię spójności z wartościami w perspektywie lat.',
-        'Zasada Pareto (80/20) w zarządzaniu priorytetami nakazuje odważne wyeliminowanie 80% błahostek po to, by skoncentrować pełną energię na 20% kluczowych działań zasilających nasze główne wartości.'
+        'George Ainslie w swojej przełomowej teorii dyskontowania hiperbolicznego (Hyperbolic Discounting) wyjaśnił tajemnicę, dlaczego ludzie tak często zdradzają własne najważniejsze wartości na rzecz trywialnych, chwilowych impulsów.',
+        'W ujęciu klasycznej ekonomii człowiek powinien racjonalnie dyskontować wartość przyszłych dóbr według krzywej wykładniczej. Mózg biologiczny stosuje jednak funkcję hiperboliczną: subiektywna wartość nagrody natychmiastowej (czekolada, scrollowanie TikToka, odłożenie trudnej rozmowy na jutro) gwałtownie eksploduje w chwili, gdy staje się ona dostępna w zasięgu ręki.',
+        'Oznacza to zjawisko Odwrócenia Preferencji (Preference Reversal):',
+        'Rano, w ciszy gabinetu, kora przedczołowa z pełnym przekonaniem decyduje: «Dziś po pracy o 18:00 idę na siłownię, a wieczorem piszę rozdział książki». O 17:55, gdy pojawia się zmęczenie, a kanapa i telefon są tuż obok, funkcja hiperboliczna sprawia, że chwilowa ulga na kanapie wydaje się układowi limbicznemu tysiąckrotnie cenniejsza niż zdrowie czy książka za rok.',
+        'Zarządzanie priorytetami nie jest kwestią „silniejszej woli”. Jest kwestią architektonicznego zabezpieczenia decyzji — stosowania tzw. Kontraktów Odyseusza (Precommitment Strategies).'
       ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów George’a Ainsliego: Kontrakt Odyseusza jako tarcza priorytetów',
+          paragraphs: [
+            'Ainslie przypomina mit o Odyseuszu zbliżającym się do wyspy Syren. Odyseusz wiedział, że gdy usłyszy śpiew Syren, jego kora nowa ulegnie paraliżowi, a układ limbiczny rzuci statek na skały w pogoni za natychmiastową rozkoszą. Nie polegał na swojej „sile woli”. Rozkazał załodze zalać uszy woskiem, a siebie przywiązać grubymi linami do masztu, zakazując uwalniania bez względu na jego błagania.',
+            'Zwycięstwo priorytetów długoterminowych wymaga powiązania rąk swojemu przyszłemu, impulsywnemu Ja: zablokowania aplikacji w telefonie o 18:00, opłacenia trenera personalnego z góry za 6 miesięcy czy publicznego zobowiązania z dotkliwą karą finansową za złamanie terminu.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Ainsliego: Złudzenie jutrzejszego superbohatera',
+            content: '„Zawsze wydaje nam się, że jutrzejszy Ja będzie wyspany, zmotywowany, pełen żelaznej dyscypliny i bez trudu pójdzie na trening. Jutrzejszy Ja będzie dokładnie tak samo zmęczony i podatny na pokusy jak dzisiejszy. Jeśli nie zwiążesz go kontraktem dzisiaj, jutro znowu przegrasz z kanapą”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-20-6-petla-prokrastynacji',
+        type: 'loop',
+        title: 'Gdzie zaczęła się pętla? — Anatomia zawalenia projektu przez dyskontowanie hiperboliczne',
+        subtitle: 'Jak drobne ucieczki w natychmiastową ulgę zniszczyły priorytet kwartalny',
+        context: 'Ania (30 lat, architekt krajobrazu) ma 6 tygodni na przygotowanie koncepcji rewitalizacji parku miejskiego.',
+        loopStages: [
+          { stageNumber: 1, label: 'SPÓKOJNY POCZĄTEK', description: 'Tydzień 1: Do terminu zostało 40 dni. Kora przedczołowa myśli: „Mamy mnóstwo czasu, najpierw uporządkuję biurko i poszukam inspiracji w sieci”.' },
+          { stageNumber: 2, label: 'POKUSA ULGI (DYSKONTOWANIE)', description: 'Tydzień 3: Zmierzenie się z trudną specyfikacją techniczną wywołuje nieprzyjemne napięcie. Wybór: 15 minut na Instagramie daje natychmiastowy spadek dyskomfortu.' },
+          { stageNumber: 3, label: 'NARASTAJĄCY DŁUG CZASOWY', description: 'Tydzień 5: Zostało 7 dni. Ania czuje ucisk w żołądku, ale dysonans poznawczy tłumi racjonalizacją: „Najlepiej pracuję pod presją, za 3 dni usiądę i zrobię to w jedną noc”.' },
+          { stageNumber: 4, label: 'PANIKA I PORAŻKA SYSTEMU', description: 'Doba przed terminem: Oprogramowanie CAD zawiesza się o 3:00 w nocy. Ania oddaje projekt niekompletny, z błędami w kosztorysie. Komisja odrzuca wniosek.' },
+          { stageNumber: 5, label: 'KAC MORALNY I BŁĘDNE PRZEKONANIE', description: 'Ania mówi sobie: „Jestem beznadziejną organizatorką, nie nadaję się na samodzielnego architekta”. Wstyd obniża samoocenę i zwiększa lęk przed kolejnym projektem.' },
+          { stageNumber: 6, label: 'PUNKT PRZEŁAMANIA PĘTLI', description: 'W Tygodniu 1 Ania powinna zawrzeć Kontrakt Odyseusza: cotygodniowe oddawanie 20% projektu do bezwzględnego audytu mentorki pod rygorem wpłaty 1000 zł na schronisko.' }
+        ],
+        takeaway: 'Nie ufaj swojemu przyszłemu Ja. Jeśli priorytet ma przetrwać zderzenie z dyskontowaniem hiperbolicznym, musisz stworzyć twarde, zewnętrzne ramy rozliczalności zanim nadejdzie pokusa.'
+      },
       caseStudyRef: caseStudiesChapterTwenty[4]
     },
     {
@@ -988,12 +1178,59 @@ export const chapterTwenty: Chapter = {
       sectionNumber: '20.8',
       title: 'Decyzje Pod Naciskiem i Zachowanie Autonomii — Sztuka Wyznaczania Granic',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Granice wyznaczają przestrzeń Twojej osobistej własności psychicznej. Mówią, gdzie kończysz się Ty, a zaczyna ktoś inny. Jeśli nie potrafisz powiedzieć spokojnego, stanowczego „Nie”, Twoje „Tak” jest bezwartościowe — jest tylko kapitulacją ze strachu.',
+        author: 'Henry Cloud & John Townsend (Boundaries, 1992)'
+      },
       paragraphs: [
-        'Wyznaczanie granic (Boundaries) jest umiejętnością komunikowania własnych nienaruszalnych wartości bez agresji i bez poczucia winy.',
-        'Granica nie jest atakiem na drugiego człowieka — jest jasną informacją o tym, na co się zgadzamy, a na co nie. Osoba o jasnych priorytetach potrafi wypowiedzieć spokojne „Nie” prośbie szefa czy znajomego, powołując się na własny kompas.',
-        'Mówienie „Nie” innym ludziom jest w rzeczywistości jedyną drogą do powiedzenia „Tak” własnym priorytetom.'
-      ]
+        'Dr Henry Cloud i dr John Townsend w swojej klasycznej pracy nad architekturą granic psychologicznych (Boundaries) dowiedli, że brak jasnych granic jest głównym źródłem wypalenia zawodowego, depresji i rozpadu relacji partnerskich.',
+        'Granica psychologiczna pełni taką samą funkcję jak ogrodzenie wokół posesji: posiada furtkę przepuszczającą to, co dobre (miłość, wsparcie, inspirację), oraz zamek zatrzymujący to, co toksyczne (roszczenia, manipulację, cudzy chaos emocjonalny).',
+        'Cloud i Townsend opisali cztery patologie granic:',
+        '1. ULEGŁOŚĆ (Compliant): Niemożność powiedzenia „nie” z powodu panicznego lęku przed odrzuceniem, gniewem drugiej strony lub poczuciem winy.\n2. UNIKANIE (Avoidant): Niemożność powiedzenia „tak” i przyjęcia pomocy — izolowanie się za grubym murem chłodu.\n3. KONTROLERZY (Controllers): Nierespektowanie cudzych granic, wymuszanie posłuszeństwa i manipulacja poczuciem winy.\n4. NIEREAGUJĄCY (Unresponsive): Obojętność na uzasadnione potrzeby bliskich w relacji partnerskiej.',
+        'Obrona priorytetów w życiu zawodowym i osobistym wymaga opanowania asertywnej odmowy pozbawionej agresji i usprawiedliwień.'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Clouda i Townsenda: Poczucie winy jako fałszywy alarm',
+          paragraphs: [
+            'Większość ludzi uległych myli poczucie winy z głosem sumienia. Kiedy odmawiają wzięcia kolejnego bezpłatnego projektu w piątek o 17:00, ich układ limbiczny reaguje gwałtownym wyrzutem winy: „Jestem złą, egoistyczną osobą!”.',
+            'Cloud i Townsend podkreślają: to poczucie winy nie jest sygnałem grzechu moralnego. Jest ECHEM DZIECIĘCEGO LĘKU przed utratą miłości rodzica, który warunkował akceptację pełną uległością. Dojrzały dorosły musi nauczyć się znosić ten fałszywy dyskomfort, wiedząc, że ochrona własnego czasu jest warunkiem zachowania zdrowia psychicznego.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Złota reguła asertywnej odmowy',
+            content: 'Nigdy nie tłumacz się drobiazgowo, gdy odmawiasz. Długie usprawiedliwienia („nie mogę, bo boli mnie głowa, pralka mi się popsuła...”) są sygnałem słabości, który kontroler natychmiast wykorzysta do podważenia Twoich powodów. Wystarczy jasny komunikat: «Dziękuję za propozycję, ale w tym kwartale mam inne priorytety i nie wezmę tego zadania».',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-20-8-granice-asertywnosc',
+        type: 'what_if',
+        title: 'Zmień jeden element: Od uległego „tak” do asertywnej obrony priorytetów',
+        subtitle: 'Symulacja reakcji menedżera na próbę wrzucenia awaryjnego projektu w piątek po południu',
+        context: 'Marek (36 lat, lead designer) kończy tydzień pracy i o 16:45 odbiera telefon od dyrektora zarządzającego.',
+        whatIfOptions: {
+          defaultScenario: 'Marek boi się odmówić szefowi. Przeprasza cicho, zgadza się zarwać weekend, odwołuje wyjazd z dziećmi. Spędza 24 godziny przy biurku, czując wściekłość na szefa, która w niedzielę wybucha awanturą domową.',
+          options: [
+            {
+              id: 'c20-opt-g1',
+              changeLabel: 'Zastosowanie asertywnej granicy Clouda i Townsenda z pokazaniem kosztu alternatywnego',
+              resultingInterpretation: 'Marek mówi spokojnie: „Rozumiem wagę tego klienta. Jeśli mam przygotować tę makietę w weekend, w poniedziałek nie wystartujemy z wdrożeniem dla klienta B. Który z tych projektów zarząd wybiera jako priorytet numer jeden?”.',
+              resultingBehavior: 'Dyrektor zatrzymuje się, analizuje sytuację i odpowiada: „Masz rację, klient B jest ważniejszy. Zrobimy makietę w przyszłą środę”. Marek spędza weekend z rodziną.',
+              psychologicalImpact: 'Wzrost szacunku dyrektora do Marka jako dojrzałego partnera biznesowego; zachowanie energii i spokoju domowego.'
+            },
+            {
+              id: 'c20-opt-g2',
+              changeLabel: 'Agresywny wybuch ze skumulowanej frustracji („Zawsze niszczycie mi życie!”)',
+              resultingInterpretation: 'Dyrektor odbiera reakcję jako brak profesjonalizmu i histerię, co niszczy zaufanie do Marka.',
+              resultingBehavior: 'Eskalacja konfliktu personalnego, nagana z wpisem do akt i zatrucie atmosfery w zespole.',
+              psychologicalImpact: 'Poczucie wstydu i kompromitacji z powodu utraty panowania nad sobą.'
+            }
+          ]
+        },
+        takeaway: 'Granice to nie mury wrogości — to drzwi z zamkiem, do którego klucz trzymasz wyłącznie Ty. Szanuj własne granice, a inni zaczną szanować Twój czas.'
+      }
     },
     {
       id: 'sec-20-9',

@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 /**
  * TOM III — ROZDZIAŁ 13 (GLOBALNIE ROZDZIAŁ 29 W STRUKTURZE DZIEŁA)
@@ -577,13 +577,79 @@ export const chapterTwentyNine: Chapter = {
       sectionNumber: '29.11',
       title: 'Potrzeba akceptacji — Ewolucyjny lęk przed ostracyzmem i biologia przynależności w dACC',
       category: 'neuronauka',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Ból społeczny nie jest jedynie metaforą poetycką. Zapisy z funkcjonalnego rezonansu magnetycznego (fMRI) jednoznacznie dowodzą, że mózg przetwarza odrzucenie społeczne, wykluczenie i dezaprobatę grupy przy użyciu tej samej neuronalnej sieci alarmowej (dACC oraz przednia wyspa), która rejestruje fizyczne uszkodzenie tkanek. Dla naszego układu nerwowego utrata przynależności jest biologicznie tożsama z fizycznym zranieniem.',
+        author: 'Prof. Naomi Eisenberger',
+        source: 'University of California, Los Angeles (UCLA), „Does Rejection Hurt? An fMRI Study of Social Exclusion”, Science, 2003'
+      },
       paragraphs: [
         'Z ewolucyjnego punktu widzenia potrzeba akceptacji społecznej jest jedną z najpotężniejszych sił napędzających ludzki mózg. Przez setki tysięcy lat wykluczenie z pierwotnego plemienia oznaczało nieuchronną śmierć z głodu, zimna lub w szponach drapieżników.',
         'Badania neuroobrazowe fMRI (Naomi Eisenberger i Matthew Lieberman) wykazały zdumiewające zjawisko: ból wywołany odrzuceniem społecznym (ostracism pain) aktywuje dokładnie te same struktury w mózgu — grzbietową część przedniej kory obręczy (dACC) oraz przednią wyspę — co fizyczny ból po oparzeniu ręki wrzątkiem.',
         'Dlatego gdy mamy odmówić komuś bliskiemu lub przełożonemu, nasze ciało migdałowate wszczyna natychmiastowy alarm fizjologiczny, interpretując potencjalne niezadowolenie drugiej osoby jako bezpośrednie zagrożenie biologicznego bytu.',
         'Przełamanie tego odruchu wymaga świadomej interwencji kory przedczołowej: „Niezadowolenie tej osoby nie zagraża mojemu życiu. Jestem dorosły, bezpieczny i mam prawo do własnych granic”.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-29-11-1',
+          title: 'Analiza słów prof. Naomi Eisenberger: Neuronalna Nakładka Bólu Społecznego i Fizycznego',
+          content: [
+            'Wypowiedź prof. Naomi Eisenberger wyjaśnia, dlaczego odmowa wywołuje tak potężny, somatyczny opór u osób o niskiej tolerancji na dyskomfort relacyjny. Ewolucja nie wykształciła oddzielnego systemu ostrzegania przed samotnością — zamiast tego „pożyczyła” stary ewolucyjnie system bólu fizycznego (neural alarm system).',
+            'Grzbietowa kora obręczy (dACC) działa jak detektor rozbieżności i zagrożenia: kiedy wyobrażamy sobie grymas niezadowolenia na twarzy matki, partnera czy szefa po naszej odmowie, dACC wyzwala wyrzut kortyzolu i przyspieszenie akcji serca. Zrozumienie, że ten afektywny ból to biologiczny anachronizm z czasów łowiecko-zbierackich, pozwala zdesensytyzować reakcję i zachować asertywność.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-29-11-1',
+          type: 'badanie',
+          title: 'Eksperyment Cyberball (Eisenberger & Lieberman, UCLA)',
+          content: 'Uczestnicy badania leżeli w skanerze fMRI, grając w wirtualną grę w rzucanie piłką z dwoma awatarami (będącymi w rzeczywistości programem komputerowym). Gdy po chwili awatary zaczęły rzucać piłkę wyłącznie do siebie, wykluczając badanego, w jego mózgu natychmiast rozbłysła grzbietowa część przedniej kory obręczy (dACC) oraz przednia wyspa. Co fascynujące, podanie paracetamolu (leku przeciwbólowego) przed eksperymentem statystycznie zmniejszyło aktywację dACC i subiektywne poczucie zranienia psychicznego!'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-29-11',
+        title: 'Rozbrojenie Alarmu dACC przed Odmową: Protokół Odwrażliwiania',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Damian (26 lat) ma odmówić koledze z pracy wzięcia za niego weekendowego dyżuru. Na samą myśl czuje ucisk w klatce piersiowej, suchość w ustach i strach, że zespół uzna go za egoistę.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Rozpoznanie reakcji alarmowej układu nerwowego',
+            description: 'Czym w istocie jest fizyczny lęk Damiana przed wysłaniem odmownej wiadomości?',
+            options: [
+              {
+                text: 'Ewolucyjnym alarmem sieci dACC-wyspa, która myli potencjalny chłód kolegi z plemiennym wygnaniem na pewną śmierć',
+                feedback: 'Precyzyjna diagnoza neurobiologiczna: Damian nie jest w realnym niebezpieczeństwie, lecz przeżywa fałszywy alarm pierwotnego mózgu.',
+                isOptimal: true
+              },
+              {
+                text: 'Dowodem na to, że Damian jest złym człowiekiem i nie nadaje się do pracy zespołowej',
+                feedback: 'Błędna autokrytyka pogłębiająca neurotyczne poczucie winy.',
+                isOptimal: false
+              }
+            ]
+          },
+          {
+            stepNumber: 2,
+            title: 'Interwencja poznawcza kory przedczołowej (reappraisal)',
+            description: 'Jakie przeformułowanie pozwala Damianowi spokojnie odmówić?',
+            options: [
+              {
+                text: '„Mój dyskomfort w ciele to tylko stara reakcja dACC. Mam prawo do mojego wolnego weekendu, a kolega jest dorosły i znajdzie inne rozwiązanie”.',
+                feedback: 'Skuteczne wygaszenie pobudzenia układu limbicznego za pomocą etykietowania afektu (affect labeling).',
+                isOptimal: true
+              },
+              {
+                text: 'Zgodzić się na dyżur, aby natychmiast uciszyć ból w klatce piersiowej, a potem wściekać się w samotności',
+                feedback: 'Krótkoterminowa ulga za cenę wzmocnienia schematu uległości i narastającej frustracji.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Przed jaką odmową w swoim życiu odczuwasz fizyczny ucisk w gardle lub żołądku i jak możesz uspokoić swój neuronalny system alarmowy dACC?'
+      }
     },
     {
       id: 'sec-29-12',
@@ -605,7 +671,12 @@ export const chapterTwentyNine: Chapter = {
       sectionNumber: '29.13',
       title: 'Poczucie winy — Fałszywa odpowiedzialność za cudze emocje i dekonstrukcja wyrzutów sumienia',
       category: 'teoria',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Osoby cierpiące na „chorobę zadowalania innych” (people pleasing) żyją w niebezpiecznym złudzeniu wszechmocy: wierzą, że mają moc kontrolowania emocji drugiego człowieka i że ponoszą moralną odpowiedzialność za jego szczęście lub rozczarowanie. Uwolnienie z tej pułapki wymaga zrozumienia twardej prawdy: twoje poczucie winy po postawieniu granicy nie jest dowodem na to, że zrobiłeś coś złego — jest jedynie dowodem na to, że przełamujesz stary skrypt uległości.',
+        author: 'Dr Harriet Braiker',
+        source: 'University of California, „The Disease to Please: Curing the People-Pleasing Syndrome”, McGraw-Hill, 2001'
+      },
       paragraphs: [
         'Poczucie winy pojawiające się po postawieniu granicy jest najczęstszą pułapką, w którą wpadają osoby uczące się asertywności. Człowiek odmawia wykonania niechcianego zadania, po czym przez trzy noce nie może zasnąć, zadręczając się myślami: „Jestem potworem, jak mogłem tak postąpić?”.',
         'NALEŻY BEZWZGLĘDNIE ODRÓŻNIĆ DWA RODZAJE POCZUCIA WINY:',
@@ -615,15 +686,58 @@ export const chapterTwentyNine: Chapter = {
       ],
       subsections: [
         {
+          id: 'sub-29-13-1',
+          title: 'Analiza słów dr Harriet Braiker: Złudzenie Wszechmocy i Przymus Zadowalania',
+          content: [
+            'Wnikliwa analiza diagnozy dr Braiker odsłania paradoks leżący u podstaw syndromu zadowalania innych. Z jednej strony uległość wydaje się aktem altruizmu i skromności; z drugiej strony kryje w sobie ukrytą arogancję poznawczą — założenie, że to od naszej uległości zależy emocjonalny dobrostan drugiej osoby.',
+            'Braiker podkreśla, że dorośli ludzie mają pełne prawo do odczuwania smutku, złości czy frustracji, gdy nie otrzymają tego, czego chcą. Próba ochronienia ich przed tymi naturalnymi emocjami poprzez rezygnację z siebie jest formą protekcjonalnego traktowania dorosłego jak bezradnego dziecka (infantylizacja relacji).'
+          ]
+        },
+        {
+          id: 'sub-29-13-2',
           title: 'Algorytm Rozbrajania Neurotycznego Poczucia Winy',
-          paragraphs: [
+          content: [
             'Gdy po odmowie czujesz ucisk w klatce piersiowej i wyrzuty sumienia, przeprowadź test 3 pytań:',
             '1. Czy złamałem prawo lub przysięgę? (Nie).',
             '2. Czy moim celem było sprawienie komuś bólu? (Nie, moim celem była ochrona mojego odpoczynku/zdrowia).',
             '3. Czy ta osoba jest dorosła i posiada zasoby, by poradzić sobie z własnym rozczarowaniem? (Tak).'
           ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-29-13-1',
+          type: 'insight',
+          title: 'Wybór między Poczuciem Winy a Żalem do Samego Siebie (Brené Brown)',
+          content: 'Jak pisała prof. Brené Brown: „Kiedy musisz wybrać między odczuwaniem poczucia winy a odczuwaniem żalu do samego siebie (resentment) — zawsze wybierz poczucie winy”. Poczucie winy po asertywnej odmowie mija po kilkunastu minutach lub godzinach. Żal i wściekłość do samego siebie za to, że znowu dałeś się wykorzystać, zatruwają Twoją duszę przez całe tygodnie.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-29-13',
+        title: 'Filtracja Poczucia Winy: Moralne vs Indukowane w Praktyce',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Monika (30 lat) odmawia pożyczenia 5000 zł swojemu bratu, który po raz kolejny przegrał pieniądze na zakładach sportowych. Brat płacze do słuchawki: „Własnemu bratu nie pomożesz? Przez ciebie wyrzucą mnie z mieszkania!”. Monika nie może spać z poczucia winy.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Kategoryzacja wyrzutów sumienia Moniki',
+            description: 'Jakim rodzajem poczucia winy są emocje Moniki?',
+            options: [
+              {
+                text: 'Klasycznym poczuciem winy indukowanym przez szantaż emocjonalny brata — Monika nie wyrzuca brata z mieszkania, to konsekwencja jego własnych wyborów',
+                feedback: 'Trafna dekonstrukcja: Monika nie jest sprawcą problemu brata. Pożyczenie pieniędzy byłoby jedynie współuzależnieniem (enablingiem) finansującym nałóg.',
+                isOptimal: true
+              },
+              {
+                text: 'Prawdziwym poczuciem winy moralnej za brak siostrzanej miłości',
+                feedback: 'Błąd poznawczy: Monika myli pomoc z ratowaniem nałogowca przed naturalnymi konsekwencjami.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Kiedy ostatnio czułeś palące poczucie winy za czyjeś rozczarowanie, mimo że postąpiłeś w zgodzie ze swoimi wartościami?'
+      }
     },
     {
       id: 'sec-29-14',
@@ -733,7 +847,12 @@ export const chapterTwentyNine: Chapter = {
       sectionNumber: '29.20',
       title: 'Szantaż emocjonalny — Anatomia syndromu FOG (Fear, Obligation, Guilt) Susan Forward',
       category: 'teoria',
-      readingTimeMinutes: 19,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Szantaż emocjonalny to potężna forma manipulacji, w której bliska osoba bezpośrednio lub pośrednio grozi nam karą, jeśli nie spełnimy jej oczekiwań. Szantażysta otacza nas gęstą mgłą FOG — Lękiem (Fear) przed odrzuceniem lub konfliktem, Poczuciem Obowiązku (Obligation) podporządkowania się oraz Poczuciem Winy (Guilt), że jesteśmy samolubni. Zrozumienie, że FOG to systematyczny mechanizm kontroli, a nie wyraz miłości, jest pierwszym krokiem do odzyskania emocjonalnej wolności.',
+        author: 'Dr Susan Forward',
+        source: 'University of Southern California / UCLA, „Emotional Blackmail: When the People in Your Life Use Fear, Obligation, and Guilt to Manipulate You”, HarperCollins, 1997'
+      },
       paragraphs: [
         'W fundamentalnej pracy Toksyczni rodzice i Szantaż emocjonalny Susan Forward opisała model FOG — trującą mgłę manipulacji opartą na trzech filarach: LĘKU (Fear), POCZUCIU OBOWIĄZKU (Obligation) i POCZUCIU WINY (Guilt).',
         'CZTERY TYPY SZANTAŻYSTÓW EMOCJONALNYCH:',
@@ -745,15 +864,58 @@ export const chapterTwentyNine: Chapter = {
       ],
       subsections: [
         {
+          id: 'sub-29-20-1',
+          title: 'Analiza słów dr Susan Forward: Psychodynamiczna Anatomia Triady FOG',
+          content: [
+            'Wnikliwa dekonstrukcja modelu dr Susan Forward ukazuje, że szantaż emocjonalny nie mógłby zaistnieć bez cichego współudziału ofiary — manipulator precyzyjnie celuje w nasze „punkty zapalne” (hot spots). Jeśli nosimy w sobie głębokie przekonanie, że musimy być nienaganni moralnie, szantażysta użyje Poczucia Winy. Jeśli panicznie boimy się porzucenia, użyje Lęku.',
+            'Forward akcentuje konieczność zastosowania tzw. Pauzy Decyzyjnej (Stop, Observe, Decide). W momencie uderzenia szantażu mózg ofiary zostaje zalany afektem. Zamiast natychmiast ulegać lub agresywnie atakować, należy wycofać się ze strefy rażenia słowami: „To ważna sprawa, muszę to przemyśleć. Porozmawiamy jutro”. Daje to korze przedczołowej czas na wygaszenie pobudzenia układu limbicznego.'
+          ]
+        },
+        {
+          id: 'sub-29-20-2',
           title: 'Dialog Porównawczy: Szantaż cierpieniem matki',
-          paragraphs: [
+          content: [
             'SYTUACJA: Matka mówi do dorosłej córki: „Jeśli nie przyjedziesz w tę niedzielę na obiad, to chyba pęknie mi serce. Przez ciebie znowu wyląduję w szpitalu z nadciśnieniem”.',
             '• REAKCJA ULEGŁA: „Mamo, proszę, nie denerwuj się! Już kasuję swoje plany i przyjadę, tylko bądź zdrowa!”. (Wyczerpanie, narastająca nienawiść do matki).',
             '• REAKCJA AGRESYWNA: „Jesteś wstrętną manipulatorką! Zawsze mną sterujesz swoimi chorobami!”.',
             '• REAKCJA ASERTYWNA: „Mamo, bardzo zależy mi na twoim zdrowiu i jeśli źle się czujesz, wezwijmy lekarza. Jednocześnie w tę niedzielę mam inne zobowiązania i nie przyjadę. Odwiedzę cię w następną sobotę o 16:00”.'
           ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-29-20-1',
+          type: 'insight',
+          title: 'Zasada Susan Forward: Negocjuj z dorosłym, nie z szantażystą',
+          content: 'Kiedy ustępujesz szantażowi, wzmacniasz w manipulatorze przekonanie, że traktowanie Cię w ten sposób jest skuteczną strategią. Z każdą uległością kolejna prośba będzie większa, a szantaż brutalniejszy. Jedynym sposobem na uzdrowienie relacji jest postawienie twardej tamy i wymuszenie powrotu do komunikacji partnerskiej.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-29-20',
+        title: 'Rozpoznawanie Triady FOG: Dekompozycja Ataku Manipulacyjnego',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Partner mówi do Natalii: „Jeśli pójdziesz na ten wyjazd integracyjny z pracy, to znaczy, że nasza relacja nic dla ciebie nie znaczy i będę musiał zastanowić się nad rozwodem”.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Analiza składowych syndromu FOG',
+            description: 'Który komponent triady Susan Forward jest tu dominujący?',
+            options: [
+              {
+                text: 'Lęk (Fear) przed porzuceniem oraz Poczucie Winy (Guilt) wywołane zrównaniem służbowego wyjazdu z brakiem miłości',
+                feedback: 'Podręcznikowa dekonstrukcja: partner stosuje skrajną groźbę sankcji ostatecznej w celu narzucenia kontroli nad wolnością Natalii.',
+                isOptimal: true
+              },
+              {
+                text: 'Czysta, dojrzała troska o bezpieczeństwo partnerki w podróży',
+                feedback: 'Błąd: to nie troska, lecz przemocowe ograniczanie autonomii partnera pod groźbą kary.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakich relacjach w Twoim życiu pojawia się któryś z 4 typów szantażystów Susan Forward i jak reagujesz na ich nacisk?'
+      }
     },
 
     // BLOK V — STAWIANIE GRANIC W PRAKTYCE (29.21 - 29.25)
@@ -812,7 +974,12 @@ export const chapterTwentyNine: Chapter = {
       sectionNumber: '29.24',
       title: 'Jak komunikować konsekwencje? Różnica między groźbą a informacją o własnym działaniu',
       category: 'teoria',
-      readingTimeMinutes: 18,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Granice nie polegają na zmienianiu drugiego człowieka ani na zmuszaniu go do określonych zachowań. Granice polegają na jasnym określeniu tego, co JA zrobię, jeśli dane zachowanie będzie kontynuowane. Kiedy grozisz, próbujesz kontrolować drugą osobę. Kiedy komunikujesz konsekwencje, odzyskujesz kontrolę nad własnym życiem i przestrzenią.',
+        author: 'Dr Harriet Lerner',
+        source: 'Menninger Clinic / University of Kansas, „The Dance of Anger: A Woman’s Guide to Changing the Patterns of Intimate Relationships”, Harper & Row, 1985'
+      },
       paragraphs: [
         'Granica bez określonej i wyegzekwowanej konsekwencji jest jedynie bezwartościową prośbą lub pustą sugestią. Musisz jasno poinformować drugą stronę, co TY zrobisz, jeśli niedopuszczalne zachowanie nie ustanie.',
         'KLUCZOWE JEST ROZRÓŻNIENIE MIĘDZY GROŹBĄ A KONSEKWENCJĄ:',
@@ -822,15 +989,58 @@ export const chapterTwentyNine: Chapter = {
       ],
       subsections: [
         {
+          id: 'sub-29-24-1',
+          title: 'Analiza słów dr Harriet Lerner: Dystynkcja Kontroli Zewnętrznej a Samostanowienia',
+          content: [
+            'Wnikliwa dekonstrukcja koncepcji dr Lerner obnaża najpowszechniejszy błąd w komunikowaniu granic: skupienie na partnerze zamiast na sobie („Przestań krzyczeć!” zamiast „Nie będę uczestniczyć w rozmowie, w której podnosi się głos”). Próba narzucenia zachowania drugiej osobie jest odbierana przez układ nerwowy rozmówcy jako atak na jego autonomię, co natychmiast wyzwala opór psychologiczny (reaktancję Brehma).',
+            'Lerner dowodzi, że zmiana wektora z „ty masz zrobić X” na „ja zrobię Y” całkowicie neutralizuje zarzut manipulacji. Nie nakazujesz nikomu, jak ma się czuć czy co ma mówić — definiujesz jedynie twarde warunki brzegowe własnej obecności w danym kontakcie.'
+          ]
+        },
+        {
+          id: 'sub-29-24-2',
           title: 'Dialog Porównawczy: Przekraczanie granic podczas kłótni małżeńskiej',
-          paragraphs: [
+          content: [
             'SYTUACJA: Partner podczas sporu o finanse zaczyna na Ciebie krzyczeć i uderza dłonią w stół.',
             '• REAKCJA ULEGŁA: Zwijasz się w kłębek, płaczesz i przepraszasz, że w ogóle poruszyłeś temat.',
             '• REAKCJA AGRESYWNA (Groźba): „Jeszcze raz uderz w stół, a wyrzucę twoje rzeczy przez okno i złożę pozew o rozwód!”.',
             '• REAKCJA ASERTYWNA (Konsekwencja): Wstajesz spokojnie: „Nie rozmawiam w atmosferze krzyku i agresji fizycznej. Wychodzę na 20-minutowy spacer. Porozmawiamy, kiedy oboje opuścimy poziom emocji”. (Wychodzisz natychmiast).'
           ]
         }
-      ]
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-29-24-1',
+          type: 'insight',
+          title: 'Żelazna reguła: Nigdy nie wypowiadaj konsekwencji, której nie jesteś gotów spełnić',
+          content: 'Jeśli powiesz: „Jeśli spóźnisz się jeszcze raz, odwołam naszą współpracę”, a potem po kolejnym spóźnieniu uśmiechniesz się i powiesz: „No dobra, tym razem ci daruję” — Twoje granice tracą jakąkolwiek wiarygodność. Uczysz drugą stronę, że Twoje słowa to puste groźby, które można bezkarnie ignorować.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-29-24',
+        title: 'Formułowanie Skutecznych Konsekwencji: Od Groźby do Samostanowienia',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Szef notorycznie dzwoni do Anny w niedzielę po południu, żądając natychmiastowego sprawdzania maili i poprawek w prezentacjach.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór asertywnej komunikacji konsekwencji',
+            description: 'Jak Anna powinna zakomunikować granicę szefowi w poniedziałek rano?',
+            options: [
+              {
+                text: '„W weekendy mój telefon służbowy pozostaje wyłączony, ponieważ regeneruję siły do pracy. Wszystkie zadania przekazane w niedzielę przeczytam w poniedziałek o 8:00”.',
+                feedback: 'Idealna konstrukcja wg dr Harriet Lerner: informacja o własnym działaniu (wyłączony telefon), brak agresji i precyzyjne określenie dostępności.',
+                isOptimal: true
+              },
+              {
+                text: '„Jak pan śmie do mnie dzwonić w niedzielę?! Zgłoszę pana do Państwowej Inspekcji Pracy!”.',
+                feedback: 'Agresywna groźba eskalująca konflikt i zamykająca przestrzeń do profesjonalnego dialogu.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaką konsekwencję w relacji zawodowej lub osobistej musisz wreszcie wyartykułować i bezwzględnie wdrożyć?'
+      }
     },
     {
       id: 'sec-29-25',

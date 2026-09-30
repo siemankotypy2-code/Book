@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 export const chapterTwentyOneExamQuestions: ExamQuestion[] = [
   {
@@ -909,12 +909,60 @@ export const chapterTwentyOne: Chapter = {
       sectionNumber: '21.2',
       title: 'Metapoznanie — Myślenie o Własnym Myśleniu i Obserwator Nadzorczy',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Metapoznanie odnosi się do wiedzy jednostki dotyczącej jej własnych procesów poznawczych oraz do aktywnego monitorowania i orkiestracji tych procesów w relacji do celów poznawczych.',
+        author: 'John H. Flavell (Metacognition and Cognitive Monitoring, 1979)'
+      },
       paragraphs: [
-        'Wyobraź sobie, że w Twoim umyśle znajduje się reżyser, który stoi za kamerą i obserwuje scenę, na której występują Twoje myśli, emocje i impulsy.',
-        'Większość ludzi utożsamia się w 100% z aktorami na scenie („Jestem wściekły”, „Nie dam rady”). Trening metapoznawczy pozwala przenieść punkt ciężkości tożsamości do Reżysera („Zauważam, że w moim umyśle pojawiła się myśl o treści: nie dam rady”).',
-        'Ta drobna zmiana perspektywy stwarza bezcenną przestrzeń decyzyjną i przerywa dyktat automatycznych nawyków limficznych.'
-      ]
+        'John H. Flavell z Uniwersytetu Stanforda, uznawany za ojca badań nad metapoznaniem, sformułował fundamentalną teorię wyjaśniającą, czym różni się zwykłe myślenie od myślenia o myśleniu.',
+        'W modelu Flavella metapoznanie składa się z dwóch powiązanych ze sobą wymiarów:',
+        '1. WIEDZA METAPOZNAWCZA (Metacognitive Knowledge): Zgromadzona w pamięci długotrwałej wiedza na temat trzech składowych: OSOBY („Wiem, że w stresie mam tendencję do zapominania dat”), ZADANIA („Wiem, że ten raport wymaga głębszej analizy statystycznej niż zwykła notatka”) oraz STRATEGII („Wiem, że rozrysowanie schematu blokowego pomoże mi zrozumieć ten problem”).\n2. DOŚWIADCZENIA I REGULACJA METAPOZNAWCZA (Metacognitive Experiences & Regulation): Świadome odczucia i decyzje pojawiające się w czasie rzeczywistym podczas wykonywania zadania (poczucie nagłego braku zrozumienia, impuls do zwolnienia tempa czytania, decyzja o sprawdzeniu poprawności wyliczeń).',
+        'Wykształcenie w sobie Obserwatora Nadzorczego pozwala na przejście od stanu fuzji poznawczej („Moja myśl TO JA”) do stanu dystansu metapoznawczego („Mój mózg właśnie wygenerował myśl o porażce — traktuję ją jako zjawisko meteorologiczne w świadomości, a nie jako nakaz działania”).'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Johna Flavella: Trójkąt poznawczy w praktyce',
+          paragraphs: [
+            'Flavell wykazał, że mistrzowie w dowolnej dziedzinie — od arcymistrzów szachowych, przez neurochirurgów, po wytrawnych negocjatorów — nie różnią się od nowicjuszy samą pojemnością pamięci roboczej. Różnią się precyzją pętli metapoznawczej.',
+            'Nowicjusz brnie w ślepą uliczkę, nie zauważając, że jego strategia nie działa. Ekspert w ułamku sekundy rejestruje sygnał błędu, zatrzymuje proces, zadaje sobie pytanie: «Dlaczego ta metoda zawodzi?» i płynnie przełącza się na strategię alternatywną.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Przełącznik Flavella',
+            content: '„Nie jesteś swoimi myślami — jesteś przestrzenią, w której te myśli się pojawiają. Kiedy potrafisz zaobserwować własny lęk, ten lęk przestaje być Twoim panem, a staje się obiektem Twojej obserwacji”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-21-2-mikroskop-flavell',
+        type: 'microscope',
+        title: 'Człowiek pod mikroskopem: Karolina — 19 kroków przejścia z automatycznej paniki do kontroli metapoznawczej',
+        subtitle: 'Wiwisekcja opanowania ataku paniki scenicznej przed wejściem do studia telewizyjnego',
+        context: 'Karolina (29 lat, prawniczka) czeka za kulisami na wejście na żywo do debaty w ogólnokrajowej telewizji.',
+        microscopeSteps: [
+          { stepNumber: 1, label: 'SYTUACJA', question: 'Co zaszło w otoczeniu?', content: 'Inspicjent mówi do mikrofonu: „Wchodzimy na żywo za 60 sekund, Karolina na stanowisko 2”.', subtext: 'Obiektywny bodziec czasowy o wysokiej stawce społecznej.' },
+          { stepNumber: 2, label: 'INFORMACJE ZNANE', question: 'Co Karolina wie merytorycznie?', content: 'Zna na pamięć treść nowelizacji ustawy, przygotowała 3 zwięzłe tezy i posiada twarde dane statystyczne.', subtext: 'Wysoka wiedza merytoryczna.' },
+          { stepNumber: 3, label: 'BRAK INFORMACJI', question: 'Czego nie wie o debacie?', content: 'Nie wie, które pytanie jako pierwsze zada prowadzący ani czy oponent nie zastosuje agresywnego chwytu erystycznego.', subtext: 'Naturalna niepewność dynamicznej sytuacji społecznej.' },
+          { stepNumber: 4, label: 'UWAGA', question: 'Gdzie ucieka uwaga?', content: 'Gwałtownie odrywa się od merytoryki i wbija w somatykę: pulsujące skronie i ścisk w gardle.', subtext: 'Zawężenie pola uwagi przez układ limbiczny.' },
+          { stepNumber: 5, label: 'PERCEPCJA', question: 'Co rejestrują zmysły?', content: 'Oślepiające światło reflektorów studyjnych i czerwone światełko kamery głównej.', subtext: 'Bodźce potęgujące pobudzenie autonomiczne.' },
+          { stepNumber: 6, label: 'INTERPRETACJA AUTOMATYCZNA', question: 'Jaka myśl automatyczna pojawia się w Systemie 1?', content: '„Zaraz zemdleję. Zapomnę języka w gębie, zbłaźnię się przed milionem ludzi i zniszczę kancelarię”.', subtext: 'Katastrofizacja Systemu 1.' },
+          { stepNumber: 7, label: 'EMOCJE', question: 'Co czuje w ciele?', content: 'Eksplozję panicznego lęku, zimny pot na karku i uczucie zapadania się w klatce piersiowej.', subtext: 'Wyrzut adrenaliny i noradrenaliny.' },
+          { stepNumber: 8, label: 'POBUDZENIE', question: 'Stan fizjologiczny?', content: 'Tętno 155 bpm, płytki oddech szczytowy, skurcz naczyń obwodowych.', subtext: 'Ostry stan przedomdleniowy z hiperwentylacji.' },
+          { stepNumber: 9, label: 'POTRZEBA', question: 'Czego potrzebuje?', content: 'Błyskawicznego przywrócenia homeostazy fizjologicznej i odzyskania jasności kory przedczołowej.', subtext: 'Biologiczna potrzeba samoregulacji.' },
+          { stepNumber: 10, label: 'AKTYWACJA METAPOZNANIA (FLAVELL)', question: 'Jaki proces uruchamia Reżyser?', content: 'Karolina mówi w myślach: „STOP. Rejestruję, że mój umysł właśnie wszedł w katastrofizację. To tylko biochemia adrenaliny, a nie fakt biologiczny”.', subtext: 'Defuzja metapoznawcza — przejście do Obserwatora.' },
+          { stepNumber: 11, label: 'OBAWY POD LUPĄ', question: 'Jak metapoznanie traktuje obawę?', content: '„Czy kiedykolwiek zemdlałam na sali sądowej? Nigdy. To tylko fałszywy alarm ciała migdałowatego”.', subtext: 'Metapoznawcza weryfikacja dowodów.' },
+          { stepNumber: 12, label: 'CEL WYKONAWCZY', question: 'Jaki mikronawyk wybiera?', content: 'Zastosować oddech pudełkowy (4 sekundy wdech, 4 zatrzymanie, 4 wydech, 4 zatrzymanie) i oprzeć stopy twardo o podłogę.', subtext: 'Przejęcie kontroli przez układ przywspółczulny.' },
+          { stepNumber: 13, label: 'ALTERNATYWY', question: 'Co by się stało bez metapoznania?', content: 'Uciekłaby ze studia lub zaczęła dławić się własnym głosem przy pierwszym pytaniu.', subtext: 'Katastrofa wizerunkowa w trybie automatycznym.' },
+          { stepNumber: 14, label: 'DECYZJA', question: 'Dlaczego procedura działa?', content: 'Bo aktywacja dlPFC poprzez liczenie oddechów fizycznie hamuje wyładowania w ciele migdałowatym.', subtext: 'Neurobiologiczny mechanizm hamowania zstępującego.' },
+          { stepNumber: 15, label: 'ZACHOWANIE', question: 'Co robi, gdy kamera rusza?', content: 'Patrzy prosto w obiektyw, bierze spokojny wdech i odpowiada na pytanie wyważonym, głębokim głosem, punktując pierwszą tezę.', subtext: 'Wzorowa ekspozycja merytoryczna.' },
+          { stepNumber: 16, label: 'REAKCJA INNYCH', question: 'Jak reaguje studio?', content: 'Prowadzący kiwa głową z uznaniem, a oponent jest zaskoczony jej spokojem i traci rezon.', subtext: 'Dominacja spokoju w przestrzeni medialnej.' },
+          { stepNumber: 17, label: 'KONSEKWENCJE', question: 'Bilans wystąpienia?', content: 'Świetny odbiór debaty, dziesiątki gratulacji od partnerów i propozycja stałej rubryki eksperckiej.', subtext: 'Ogromny sukces zawodowy wywalczony w 30 sekundach metapoznania.' },
+          { stepNumber: 18, label: 'AKTUALIZACJA PRZEKONAŃ', question: 'Czego uczy się mózg Karoliny?', content: '„Panika w ciele nie oznacza katastrofy. Posiadam narzędzia metapoznawcze, by zresetować układ nerwowy w każdych warunkach”.', subtext: 'Potężny wzrost Self-Efficacy.' },
+          { stepNumber: 19, label: 'KOLEJNA RUNDA', question: 'Jak zachowa się przed kolejnym wywiadem?', content: 'Podejdzie do reflektorów z ciekawością i spokojnym oddechem, traktując pobudzenie jako paliwo.', subtext: 'Trwałe ukształtowanie nawyku metapoznawczego.' }
+        ],
+        takeaway: 'Największą potęgą człowieka nie jest brak lęku, lecz zdolność do stania się świadomym obserwatorem własnego lęku i pokierowania swoim zachowaniem wbrew panice ciała migdałowatego.'
+      }
     },
     {
       id: 'sec-21-3',
@@ -935,26 +983,115 @@ export const chapterTwentyOne: Chapter = {
       sectionNumber: '21.4',
       title: 'Introspekcja i Jej Granice — Badania Nisbetta i Wilsona nad Iluzją Wglądu',
       category: 'teoria',
-      readingTimeMinutes: 16,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Ludzie nie mają bezpośredniego dostępu do wyższych procesów poznawczych. Kiedy pytamy ich, dlaczego podjęli daną decyzję, nie zdają relacji z faktów — snują kulturowo akceptowalne teorie na temat tego, co mogło nimi kierować.',
+        author: 'Richard E. Nisbett & Timothy D. Wilson (Telling More Than We Can Know, 1977)'
+      },
       paragraphs: [
-        'Przez wieki wierzono, że człowiek ma bezpośredni, nieograniczony i bezbłędny dostęp do przyczyn własnych decyzji poprzez introspekcję.',
-        'Klasyczne badania Richarda Nisbetta i Timothy’ego Wilsona (1977 - „Telling More Than We Can Know”) zadały śmiertelny cios tej iluzji. Wykazano, że ludzie zapytani o powód swojego wyboru podawali z pełną pewnością siebie wyrafinowane teorie, które miały się nijak do rzeczywistych czynników sterujących (np. pozycji produktu na półce).',
-        'Zrozumienie granic introspekcji uczy pokory: nasze uzasadnienia post-hoc są często jedynie ładnymi bajkami opowiadanymi przez DMN w celu obrony wizerunku racjonalnego człowieka.'
+        'W 1977 roku Richard Nisbett i Timothy DeCamp Wilson opublikowali w Psychological Review artykuł, który wywołał prawdziwe trzęsienie ziemi w psychologii: „Telling More Than We Can Know: Verbal Reports on Mental Processes”.',
+        'Przez stulecia filozofia i psychologia zakładały, że człowiek poprzez introspekcję (wewnętrzne wejrzenie) potrafi bezbłędnie podać motywy swoich wyborów. Nisbett i Wilson obalili ten dogmat w serii genialnych eksperymentów.',
+        'W jednym z nich badacze rozłożyli na stole w domu towarowym cztery identyczne pary nylonowych rajstop (oznaczone literami A, B, C, D) i poprosili klientki o wskazanie pary najwyższej jakości. Klientki zdecydowanie wybierały parę D (skrajnie po prawej stronie) — aż czterokrotnie częściej niż parę A (tzw. Right-Side Position Effect — podświadoma tendencja oka do faworyzowania obiektów po prawej stronie).',
+        'Gdy badacze zapytali kobiety: «Dlaczego wybrała Pani właśnie tę parę?», żadna z nich nie wspomniała o pozycji na stole. Zamiast tego z pełnym przekonaniem podawały wyrafinowane uzasadnienia: „Ta para ma znacznie lepszy splot”, „Ten materiał jest bardziej elastyczny”, „Odcień jest szlachetniejszy”. Nawet gdy eksperymentator wprost zapytał, czy pozycja po prawej stronie mogła mieć wpływ, klientki uznały to pytanie za absurdalną obrazę ich inteligencji!',
+        'Najważniejszy wniosek brzmi: Kiedy pytasz samego siebie: «Dlaczego tak postąpiłem?», Twój mózg nie czyta zapisu z czarnej skrzynki. Twój lewopółkulowy moduł narracyjny (The Interpreter, Michael Gazzaniga) natychmiast generuje wiarygodną bajkę, która ma logicznie uzasadnić zachowanie sterowane nieuświadomionymi automatyzmami.'
       ],
+      subsections: [
+        {
+          title: 'Analiza słów Nisbetta i Wilsona: Dlaczego pytania „Dlaczego?” bywają toksyczne?',
+          paragraphs: [
+            'Wilson w swoich późniejszych badaniach (Strangers to Ourselves, 2002) wykazał, że zmuszanie ludzi do drobiazgowej introspekcji („Dlaczego kochasz swojego partnera?”, „Dlaczego wybrałeś ten obraz?”) często POGARSZA jakość decyzji! Umysł zaczyna faworyzować te powody, które łatwo ubrać w słowa, ignorując głębokie, holistyczne intuicje zmysłowe.',
+            'Dojrzałe metapoznanie nie polega na nieustannym dociekaniu „Dlaczego?”. Polega na rejestrowaniu: „CO dokładnie robię, JAKIE są tego konsekwencje i JAK mogę zmienić ten proces w działaniu”.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Psychologiczny: Iluzja introspekcyjna',
+            content: 'Nigdy nie wierz bezkrytycznie we własne uzasadnienia post-hoc. Twój umysł jest genialnym prawnikiem, który potrafi znaleźć logiczne wytłumaczenie dla każdego głupstwa, jakiego dopuścił się Twój układ limbiczny.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-21-4-kontrprzypadek-nisbett',
+        type: 'counter_case',
+        title: 'Kontrprzypadek: Gdy prezes był pewien, że podjął genialną decyzję analityczną',
+        subtitle: 'Dekonstrukcja iluzji wglądu podczas rekrutacji dyrektora marketingu',
+        context: 'Decyzja rekrutacyjna w dużej spółce e-commerce.',
+        counterCase: {
+          standardTheory: 'Prezes zarządu jest przekonany: „Wybieram ludzi wyłącznie na podstawie obiektywnej analizy ich wskaźników ROI, wiedzy merytorycznej i wyników testów kompetencyjnych”.',
+          counterExample: 'Spośród dwóch finalistów prezes wybrał kandydata B, odrzucając kandydatkę A o 30% lepszych referencjach. Zapytany przez HR o powód, prezes przygotował 3-stronicową notatkę analityczną wykazującą rzekome „ryzyka w podejściu kandydatki A do budżetowania”. W rzeczywistości audyt psychologiczny wykazał, że kandydat B kibicował temu samemu klubowi piłkarskiemu i miał taki sam zegarek jak ojciec prezesa. To uderzenie w neurony lustrzane wywołało u prezesa natychmiastowe poczucie sympatii i zaufania, a cała 3-stronicowa notatka była czystą konfabulacją post-hoc wygenerowaną przez lewą półkulę.',
+          whyItDefiesRule: 'Prezes nie kłamał świadomie — on naprawdę wierzył we własną notatkę. Padł ofiarą Iluzji Wglądu Nisbetta i Wilsona.',
+          deeperLesson: 'Jeśli nie wprowadzisz ślepych procedur decyzyjnych (anonimizacja CV, ustrukturyzowane pytania punktowane przez niezależną komisję), Twoje decyzje będą sterowane prymitywnymi skojarzeniami podkorowymi ubranymi w garnitur racjonalizacji.'
+        },
+        takeaway: 'Introspekcja nie jest oknem na prawdę o motywach — jest generatorem spójnej opowieści. Chcesz poznać prawdę? Zbadaj procedurę i mierzalne dane, a nie własne deklaracje.'
+      },
       caseStudyRef: caseStudiesChapterTwentyOne[0]
     },
     {
       id: 'sec-21-5',
       pageNumber: 13,
       sectionNumber: '21.5',
-      title: 'Obserwacja Fenomenologiczna vs Interpretacja i Dorabianie Teorii',
+      title: 'Obserwacja Fenomenologiczna vs Interpretacja i Drabina Wnioskowania Argyrisa',
       category: 'teoria',
-      readingTimeMinutes: 14,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Wspinamy się po drabinie wnioskowania z zawrotną prędkością, tak że mylimy nasze subiektywne interpretacje i założenia z surowymi danymi rzeczywistości, stając się więźniami własnych mentalnych modeli.',
+        author: 'Chris Argyris (Overcoming Organizational Defenses, 1990)'
+      },
       paragraphs: [
-        'Praktyczna samoświadomość wymaga umiejętności rozdzielenia surowej obserwacji doznaniowej od dorobionej do niej teorii.',
-        'Obserwacja surowa brzmi: „Czuję przyspieszone tętno, ucisk w klatce i ścisk w żołądku”. Interpretacja brzmi: „Obojętność szefa oznacza, że zaraz mnie zwolni, a moje życie się zawali”.',
-        'Gdy nauczysz się zatrzymywać na poziomie surowej obserwacji biologicznej, emocja traci swoją niszczycielską siłę i mija jak fala w ciągu kilkudziesięciu sekund.'
-      ]
+        'Prof. Chris Argyris z Harvard Business School stworzył jedno z najpotężniejszych narzędzi metapoznawczych we współczesnej nauce — Drabinę Wnioskowania (The Ladder of Inference).',
+        'Model Argyrisa opisuje mikrosekundowy proces, w którym człowiek przeskakuje od rzeczywistości fizycznej do wojen personalnych:',
+        'SZCZEBEL 1 (Rzeczywistość obiektywna): Surowe dane i fakty, które zarejestrowałaby kamera (np. Jan spóźnił się 15 minut na spotkanie i milczał przez pierwsze pół godziny).\nSZCZEBEL 2 (Selekcja danych): Twój aparat uwagowy wyłapuje tylko niektóre fakty na bazie wcześniejszych schematów (zauważasz jego milczenie, ignorujesz, że przyniósł wydrukowane materiały dla wszystkich).\nSZCZEBEL 3 (Nadanie znaczenia): Tłumaczysz dane surowe w języku kulturowym („Jan jest zdemotywowany i lekceważy ten projekt”).\nSZCZEBEL 4 (Założenia): Dorabiasz ukryte założenia („Zawsze, gdy ktoś milczy, oznacza to, że spiskuje przeciwko mnie”).\nSZCZEBEL 5 (Wnioski): Wyciągasz ostateczny wyrok („Jan jest nielojalny i nie można na nim polegać”).\nSZCZEBEL 6 (Przekonania o świecie): Wzmacniasz schemat rdzenny („Współpracownicy to wrogowie”).\nSZCZEBEL 7 (Działanie): Wchodzisz na spotkanie z agresją, odbierasz Janowi projekt i niszczysz relację.',
+        'Dramat polega na tym, że wspinaczka po drabinie trwa 300 milisekund! Człowiek ląduje na szczeblu 7, będąc święcie przekonanym, że jego agresywne zachowanie wynika bezpośrednio z obiektywnej rzeczywistości (szczebel 1).'
+      ],
+      subsections: [
+        {
+          title: 'Analiza słów Chrisa Argyrisa: Protokół schodzenia po drabinie',
+          paragraphs: [
+            'Mistrzostwo metapoznawcze polega na umiejętności „zejścia po drabinie w dół” w trakcie trudnej rozmowy. Gdy czujesz narastającą wściekłość, zadajesz sobie i rozmówcy pytanie operacyjne:',
+            '«Jakie surowe dane ze szczebla 1 obaj zaobserwowaliśmy? Czy to, co uważam za fakt, nie jest zaledwie moim założeniem ze szczebla 4?». Otwarta weryfikacja danych zdejmuje ładunek afektywny i przywraca dialog merytoryczny.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Argyrisa: Uważność według Ellen Langer',
+            content: 'Ellen Langer z Harvardu definiuje uważność (mindfulness) nie jako siedzenie na poduszce medytacyjnej, lecz jako ciągłą czujność wobec kontekstu — gotowość do zadania sobie pytania: „Czy to, co biorę za pewnik, nie jest tylko jednym z wielu możliwych sposobów ułożenia faktów?”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-21-5-drabina-argyrisa',
+        type: 'what_we_know',
+        title: 'Co naprawdę wiemy? — Demontaż Drabiny Wnioskowania w Zespole',
+        subtitle: 'Rozdzielenie faktów kamerowych od założeń i wyroków personalnych',
+        context: 'Konflikt między szefową marketingu a dyrektorem IT o opóźnienie wdrożenia strony.',
+        whatWeKnow: {
+          items: [
+            {
+              id: 'c21-arg-1',
+              statement: 'Fakt ze szczebla 1 to wyłącznie zdarzenie, które mogłaby zarejestrować kamera wideo (np. brak maila z kodem do godziny 17:00).',
+              category: 'fakt',
+              explanation: 'Podstawa rygoru poznawczego Argyrisa: oddzielenie danych od interpretacji.'
+            },
+            {
+              id: 'c21-arg-2',
+              statement: 'Zdanie „Dyrektor IT celowo torpeduje mój projekt, bo czuje się zagrożony moją pozycją” jest obiektywnym faktem psychologicznym.',
+              category: 'interpretacja',
+              explanation: 'To klasyczny skok na szczebel 5 (Wnioski i atrybucje intencji) bez zweryfikowania założeń.'
+            },
+            {
+              id: 'c21-arg-3',
+              statement: 'Mózg ludzki ma wbudowaną tendencję do traktowania własnych założeń jako prawd absolutnych, pomijając etapy pośrednie wnioskowania.',
+              category: 'fakt',
+              explanation: 'Ewolucyjny mechanizm kompresji czasu decyzyjnego kosztem dokładności epistemicznej.'
+            },
+            {
+              id: 'c21-arg-4',
+              statement: 'Zejście po drabinie w dół i zadanie pytania: „Jakie fakty skłoniły cię do takiego wniosku?” pozwala rozładować 80% konfliktów korporacyjnych.',
+              category: 'fakt',
+              explanation: 'Empirycznie potwierdzona metoda facylitacji dialogu organizacyjnego wg Argyrisa i Schöna.'
+            }
+          ]
+        },
+        takeaway: 'Zanim rzucisz w kogoś oskarżeniem ze szczebla 7, zejdź na szczebel 1 i sprawdź, co naprawdę zarejestrowała kamera.'
+      }
     },
     {
       id: 'sec-21-6',
@@ -989,26 +1126,124 @@ export const chapterTwentyOne: Chapter = {
       sectionNumber: '21.8',
       title: 'Pewność Siebie vs Trafność Sądu — Kalibracja Metapoznawcza',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Nasza pocieszająca wiara w to, że świat ma sens, spoczywa na bezpiecznym fundamencie: naszej niemal nieograniczonej zdolności do ignorowania własnej ignorancji.',
+        author: 'Daniel Kahneman (Thinking, Fast and Slow, 2011)'
+      },
       paragraphs: [
-        'Jednym z największych zagrożeń w decyzjach biznesowych i osobistych jest zjawisko Certainty-Accuracy Fallacy — fałszywe utożsamianie siły subiektywnej pewności z obiektywną trafnością sądu.',
-        'Kalibracja metapoznawcza mierzy spójność między tymi dwoma wskaźnikami. Osoba o dobrej kalibracji jest bardzo pewna siebie tylko wtedy, gdy jej wiedza jest obiektywna i wysoka, a gdy dane są niepełne — szacuje swoją pewność na niska.',
-        'Prowadzenie rejestru prognoz na piśmie jest najskuteczniejszą metodą urealniania kalibracji metapoznawczej.'
+        'Daniel Kahneman i Amos Tversky w swoich fundamentalnych pracach nad heurystykami i błędami poznawczymi wykazali, że subiektywna pewność siebie (Subjective Confidence) NIE JEST miarą prawdy obiektywnej. Jest miarą SPÓJNOŚCI OPOWIEŚCI, jaką umysł zdołał skonstruować na bazie posiadanych danych (zasada WYSIATI: What You See Is All There Is).',
+        'Kalibracja metapoznawcza (Metacognitive Calibration) to matematyczny wskaźnik spójności między subiektywnym prawdopodobieństwem przypisywanym swojemu sądowi a rzeczywistą trafnością tego sądu w świecie fizycznym.',
+        'Badania nad ekspertami wykazują powszechną i groźną patologię zwaną Efektem Nadmiernej Pewności Siebie (Overconfidence Effect):',
+        'Gdy lekarze, maklerzy giełdowi czy analitycy polityczni twierdzą, że są „w 100% pewni” swojej diagnozy lub prognozy, mylą się w rzeczywistości w 15–30% przypadków! W medycynie i lotnictwie taka nieskalibrowana pewność siebie bywa bezpośrednią przyczyną zgonów pacjentów i katastrof samolotów.',
+        'Człowiek doskonale skalibrowany metapoznawczo to taki, u którego spośród wszystkich twierdzeń wygłoszonych z pewnością 70% dokładnie 70% okazuje się prawdziwych, a gdy jego wiedza jest znikoma, bez wahania deklaruje pewność na poziomie 10% lub przyznaje: „Nie wiem”.'
       ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza słów Daniela Kahnemana: Trening kalibracji probabilistycznej',
+          paragraphs: [
+            'Kahneman zalecał stosowanie procedur kalibracyjnych używanych przez analityków wywiadu (np. metoda Philipa Tetlocka w turniejach Superforecasting). Zamiast mówić: „Uważam, że ten projekt odniesie sukces”, analityk musi podać liczbę: „Oceniam prawdopodobieństwo dowiezienia projektu w terminie na 65%”.',
+            'Prowadzenie pisemnego rejestru własnych prognoz z podaniem procentu pewności i późniejsze bezwzględne porównanie ich z rzeczywistością po 6 miesiącach jest jedynym znanym nauce sposobem na uleczenie mózgu z pychy poznawczej i wyrobienie mistrzowskiej precyzji sądu.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Kahnemana: Prawdziwy koszt fałszywej pewności',
+            content: '„Najgorsze decyzje w historii ludzkości nie zostały podjęte przez ludzi, którzy się wahali. Zostały podjęte przez charyzmatycznych przywódców, którzy byli w 100% pewni swoich racji i nie dopuszczali do siebie myśli o własnej ślepocie”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-21-8-kalibracja-spór',
+        type: 'dual_perspectives',
+        title: 'Dwie Perspektywy: Spór o Prognozę Kryzysu Walutowego',
+        subtitle: 'Konfrontacja aroganckiej pewności siebie z rygorem kalibracji probabilistycznej',
+        context: 'Komitet inwestycyjny funduszu hedgingowego decyduje o zabezpieczeniu pozycji walutowych przed decyzją banku centralnego.',
+        dualPerspective: {
+          situation: 'Wtorek rano. Główny ekonomista funduszu i młoda analityczka danych prezentują sprzeczne rekomendacje dotyczące kursu walutowego.',
+          personA: {
+            name: 'Artur (Główny Ekonomista — Nieskalibrowana Pewność Siebie)',
+            quote: '„Jestem w 100% pewien, że bank centralny obniży stopy procentowe o 50 punktów bazowych. Znam prezesa banku od 20 lat, rynki nie mają wątpliwości. Nie wydawajmy miliona na opcje zabezpieczające!”.',
+            whatTheyKnow: 'Zna oficjalne komunikaty i opinie publicystów finansowych z wiodących gazet.',
+            whatTheyMiss: 'Ignoruje niejawne dane o skoku inflacji bazowej w sektorze usług z ostatniego piątku.',
+            interpretation: '„Moja reputacja i doświadczenie gwarantują nieomylność. Każdy, kto wątpi, jest tchórzem”.',
+            coreNeed: 'Utrzymanie statusu wyroczni i dominacji w komitecie inwestycyjnym.',
+            fear: 'Przyznanie się do niepewności i utrata aury geniusza rynkowego.',
+            action: 'Forsowanie otwarcia lewarowanej pozycji bez ubezpieczenia.'
+          },
+          personB: {
+            name: 'Monika (Analityczka Danych — Skalibrowana Pokora Bayesowska)',
+            quote: '„Na bazie modelu bayesowskiego szacuję prawdopodobieństwo obniżki stóp na 62%, a prawdopodobieństwo braku zmian na 38%. Koszt opcji to 2% kapitału, a brak zabezpieczenia w przypadku braku zmian oznacza stratę 40 milionów”.',
+            whatTheyKnow: 'Zna rozkład prawdopodobieństw i historyczną asymetrię wypłat w scenariuszach skrajnych.',
+            whatTheyMiss: 'Czuje presję hierarchiczną i boi się otwartego ataku ze strony wpływowego ekonomisty.',
+            interpretation: '„Rynek jest złożonym systemem nieliniowym — 38% ryzyka to gigantyczna ekspozycja, której nie wolno ignorować”.',
+            coreNeed: 'Ochrona kapitału funduszu i rzetelność naukowa procesu decyzyjnego.',
+            fear: 'Wyrzucenie z pracy za podważanie autorytetu przełożonego.',
+            action: 'Przedstawienie wykresu symulacji Monte Carlo i żądanie zakupu opcji ochronnych.'
+          },
+          synthesis: 'Bank centralny zaskoczył rynek i pozostawił stopy bez zmian. Fundusze bez zabezpieczeń straciły fortuny. Dzięki uporowi Moniki fundusz zrealizował zysk z opcji, ocalając kapitał inwestorów. Artur padł ofiarą Certainty-Accuracy Fallacy, podczas gdy kalibracja Moniki okazała się tarczą chroniącą przed bankructwem.'
+        },
+        takeaway: 'Prawdziwy profesjonalizm nie polega na wykrzykiwaniu stuprocentowej pewności. Polega na precyzyjnym skalkulowaniu niepewności i zabezpieczeniu systemu przed skutkami własnej pomyłki.'
+      },
       caseStudyRef: caseStudiesChapterTwentyOne[3]
     },
     {
       id: 'sec-21-9',
       pageNumber: 25,
       sectionNumber: '21.9',
-      title: 'Wykrywanie Własnych Błędów Poznawczych w Czasie Rzeczywistym',
+      title: 'Wykrywanie Własnych Błędów Poznawczych w Czasie Rzeczywistym — Teoria Kegana',
       category: 'teoria',
-      readingTimeMinutes: 15,
+      readingTimeMinutes: 20,
+      quote: {
+        text: 'Jesteśmy więźniami tego, z czym jesteśmy utożsamieni jako Podmiot. Dopiero to, na co potrafimy spojrzeć z dystansu jako na Przedmiot, możemy świadomie badać, kontrolować i przekraczać.',
+        author: 'Robert Kegan (The Evolving Self, 1982)'
+      },
       paragraphs: [
-        'Najwyższym stopniem dojrzałości metapoznawczej jest zdolność do złapania własnego umysłu na błędzie myślowym W MOMENCIE, gdy ten błąd się pojawia.',
-        'Zamiast dać się ponieść fali Confirmation Bias czy Katastrofizacji, świadomy obserwator mówi do siebie: „Aha! Właśnie w tym momencie mój umysł uruchomił Błąd Potwierdzenia. Zrzycam soczewkę i szukam dowodów przeciwstawnych”.',
-        'To jest prawdziwa autonomia decyzyjna w praktyce.'
-      ]
+        'Prof. Robert Kegan z Harvard University w swojej Teorii Rozwoju Konstruktywistyczno-Rozwojowego (Subject-Object Theory) dokonał jednego z najgłębszych wglądów w ewolucję ludzkiej świadomości.',
+        'Kegan zdefiniował dwa stany relacji człowieka z własnymi procesami psychicznymi:',
+        '1. PODMIOT (Subject): To elementy naszej psychiki, z którymi jesteśmy bez reszty zrośnięci i utożsamieni. Nie możemy ich zobaczyć, ponieważ patrzymy PRZEZ NIE na świat. Jeśli jesteś podmiotem swojego lęku, gniewu lub schematu tożsamościowego, nie mówisz: „czuję złość” — TY JESTEŚ ZŁOŚCIĄ. Twoje reakcje są automatyczne i bezrefleksyjne.\n2. PRZEDMIOT (Object): To elementy naszej psychiki, od których zdołaliśmy się odkleić (dystans poznawczy / defuzja). Możemy na nie spojrzeć z zewnątrz, zbadać ich strukturę, poddać krytycznej ocenie i zdecydować, czy chcemy za nimi podążać.',
+        'Cały rozwój dojrzałości człowieka według Kegana polega na nieustannym przesuwaniu kolejnych warstw psychiki ze stanu Podmiotu do stanu Przedmiotu. Kiedy Twoje przekonania, Twoja samoocena i Twoje błędy poznawcze przestają być Tobą (Podmiotem), a stają się obserwowalnymi procesami w Twoim laboratorium umysłu (Przedmiotem) — osiągasz najwyższy stopień wolności wewnętrznej (Self-Transforming Mind).'
+      ],
+      subsections: [
+        {
+          title: 'Szczegółowa analiza teorii Kegana: Jak uwolnić się od fuzji poznawczej?',
+          paragraphs: [
+            'Gdy człowiek mówi: „Ja po prostu taki jestem — jestem wybuchowy i nie znoszę sprzeciwu”, tkwi w niewoli Podmiotu. Utożsamił swój biologiczny odruch ze swoją tożsamością.',
+            'Trening przesunięcia Subject-Object polega na zmianie gramatyki wewnętrznej: zamiast „Jestem załamany”, mówisz: „Zauważam w moim ciele doznanie załamania”. W ten sposób tworzy się podmiot obserwujący (Świadek), który posiada pełną suwerenność wyboru reakcji behawioralnej.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Roberta Kegana: Wolność wyboru',
+            content: '„Nie możesz zmienić niczego, czym w danej chwili jesteś. Możesz zmienić wyłącznie to, co potrafisz postawić przed sobą na stole i obejrzeć ze wszystkich stron jak ciekawy kamień znaleziony na plaży”.',
+            type: 'insight'
+          }
+        }
+      ],
+      interactiveWindowRef: {
+        id: 'iw-21-9-kegan-przesuniecie',
+        type: 'what_if',
+        title: 'Zmień jeden element: Od fuzji z myślą katastroficzną do przesunięcia Subject-Object',
+        subtitle: 'Symulacja reakcji menedżera podczas niespodziewanego audytu skarbowego',
+        context: 'Piotr (42 lata, właściciel firmy produkcyjnej) otrzymuje zawiadomienie o kontroli skarbowej za ostatnie 5 lat.',
+        whatIfOptions: {
+          defaultScenario: 'Piotr utożsamia się z myślą: „Zniszczą mnie, pójdę z torbami, to koniec firmy”. Jest Podmiotem swojego przerażenia. Wpada w amok, nie śpi przez 3 noce, krzyczy na księgową, która w stresie składa błędne korekty deklaracji, ściągając na firmę dotkliwe kary.',
+          options: [
+            {
+              id: 'c21-opt-k1',
+              changeLabel: 'Zastosowanie przesunięcia Subject-Object Kegana: zamiana lęku w obserwowany Przedmiot',
+              resultingInterpretation: 'Piotr bierze kartkę, zapisuje na niej słowa: „W moim ciele pojawił się ostry lęk przed utratą bezpieczeństwa finansowego”. Oddziela siebie od emocji i patrzy na notatkę z dystansu.',
+              resultingBehavior: 'Spokojna rozmowa z doświadczonym doradcą podatkowym, rzetelne przygotowanie segregatorów z dokumentami, bezbłędne przejście kontroli z drobną dopłatą odsetkową.',
+              psychologicalImpact: 'Głęboki spokój wewnętrzny i uświadomienie sobie własnej odporności psychicznej w obliczu kryzysu.'
+            },
+            {
+              id: 'c21-opt-k2',
+              changeLabel: 'Ucieczka w mechanizmy wyparcia i racjonalizacji („Nie będę otwierał tych pism, jakoś to będzie”)',
+              resultingInterpretation: 'Piotr próbuje stłumić lęk alkoholem i pracoholizmem w innych obszarach.',
+              resultingBehavior: 'Przekroczenie ustawowych terminów na odpowiedź, zajęcie kont bankowych przez urząd i paraliż płynności finansowej firmy.',
+              psychologicalImpact: 'Prawdziwa katastrofa życiowa spowodowana brakiem kontaktu z rzeczywistością.'
+            }
+          ]
+        },
+        takeaway: 'Dopóki jesteś swoim lękiem, lęk podejmuje decyzje za Ciebie. Przekształć lęk w obserwowany obiekt, a odzyskasz władzę nad własnym losem.'
+      }
     },
     {
       id: 'sec-21-10',

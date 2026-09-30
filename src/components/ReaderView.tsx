@@ -323,9 +323,9 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
         )}
 
         {/* Interactive Analytical Window if present on regular sections */}
-        {activeSection.interactiveWindowRef && (
+        {(activeSection.interactiveWindowRef || (activeSection as any).interactiveWindow) && (
           <div className="my-10">
-            <InteractiveAnalyticalWindowCard data={activeSection.interactiveWindowRef} />
+            <InteractiveAnalyticalWindowCard data={activeSection.interactiveWindowRef || (activeSection as any).interactiveWindow} />
           </div>
         )}
 
@@ -338,7 +338,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
                   {sub.title}
                 </h3>
                 <div className={`space-y-5 font-serif ${currentFont.body} ${currentTheme.text}`}>
-                  {sub.paragraphs.map((p, pIdx) => (
+                  {((sub.paragraphs || (sub as any).content || []) as string[]).map((p, pIdx) => (
                     <p key={pIdx}>{p}</p>
                   ))}
                 </div>

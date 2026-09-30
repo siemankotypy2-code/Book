@@ -241,7 +241,34 @@ export const chapterThirtyFive: Chapter = {
         'Konflikt wartości jest najtrudniejszym rodzajem sporu interpersonalnego, ponieważ dotyczy fundamentów etycznych i moralnych, na których człowiek buduje swoje poczucie sensu.',
         'Przykłady: Co jest ważniejsze w kryzysie rodziny: bezwzględna lojalność wobec rodziców czy autonomia własnego małżeństwa? Jak wychowywać dzieci: w dyscyplinie i surowych wymaganiach czy w wolności i bezwarunkowej akceptacji?',
         'Wartości nie podlegają prostemu targowaniu się („Dziś ty jesteś uczciwy w 50%, a jutro ja w 50%”). Próba wymuszenia na partnerze zdrady jego fundamentalnych wartości rodzi głęboką urazę i poczucie gwałtu psychicznego. W tym obszarze rozwiązaniem rzadko bywa unifikacja — częściej jest nim głęboki, pełen szacunku kompromis granic.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-35-4-dylemat-wartosci',
+        type: 'what_if',
+        title: 'Zmień jeden element: Spór o lojalność rodzinną',
+        subtitle: 'Symulacja wpływu granic na konflikt wartości',
+        context: 'Matka Marka dzwoni w niedzielę rano, żądając, by Marek natychmiast przyjechał pomóc jej w ogrodzie. Marek obiecał żonie Joannie wspólny wyjazd do lasu.',
+        whatIfOptions: {
+          defaultScenario: 'Marek w panice przed gniewem matki odwołuje wyjazd z Joanną, mówiąc: „To moja matka, muszę jechać, ty nic nie rozumiesz!”. Joanna reaguje wściekłością i płaczem.',
+          options: [
+            {
+              id: 'c35-opt-1',
+              changeLabel: 'Marek stawia matce asertywną granicę z alternatywnym terminem',
+              resultingInterpretation: 'Joanna myśli: „Jestem dla niego priorytetem, szanuje nasz wspólny czas”. Matka uczy się, że dorosły syn ma własne życie.',
+              resultingBehavior: 'Marek mówi matce: „Mamo, dziś mam plany z Joanną. Przyjadę pomóc ci we wtorek o 16:00”. Wyjeżdża z Joanną do lasu.',
+              psychologicalImpact: 'Wzmocnienie więzi małżeńskiej, wygaszenie lęku u Joanny i uregulowanie relacji syn-matka.'
+            },
+            {
+              id: 'c35-opt-2',
+              changeLabel: 'Joanna zgadza się na zmianę planów pod warunkiem wspólnego kontraktu',
+              resultingInterpretation: 'Marek myśli: „Joanna jest elastyczna i rozumie moją trudną sytuację z mamą, nie muszę z nią walczyć”.',
+              resultingBehavior: 'Joanna mówi: „Widzę, że to dla ciebie ważne. Jedźmy tam razem, pomóżmy jej przez 2 godziny, a potem pojedziemy do lasu”.',
+              psychologicalImpact: 'Zamiana polaryzacji we wspólny front zadaniowy i rozbrojenie lęku przed odrzuceniem.'
+            }
+          ]
+        },
+        takeaway: 'Konfliktu wartości nie rozwiązuje się poprzez łamanie partnera, lecz poprzez elastyczne negocjowanie granic i ramy czasowe.'
+      }
     },
 
     // 35.5
@@ -336,9 +363,54 @@ export const chapterThirtyFive: Chapter = {
       readingTimeMinutes: 20,
       paragraphs: [
         'Zjawisko to zostało szczegółowo opisane przez Lee Rossa jako PODSTAWOWY BŁĄD ATRYBUCJI (Fundamental Attribution Error):',
-        'Kiedy JA popełniam błąd (np. spóźnię się na spotkanie), wyjaśniam to CZYNNIKAMI SYTUACYJNYMI: „Był potworny korek, wypadek na moście, szef mnie zatrzymał”. Moja tożsamość pozostaje czysta.\nKiedy PARTNER popełnia dokładnie ten sam błąd (spóźnia się 15 minut), wyjaśniam to CZYNNIKAMI DYSPOSYCYJNYMI: „On jest nielojalny, lekceważący, leniwy i ma mnie gdzieś”.',
+        'Kiedy JA popełniam błąd (np. spóźnię się na spotkanie), wyjaśniam to CZYNNIKAMI SYTUACYJNYMI: „Był potworny korek, wypadek na moście, szef mnie zatrzymał”. Moja tożsony pozostaje czysta.\nKiedy PARTNER popełnia dokładnie ten sam błąd (spóźnia się 15 minut), wyjaśniam to CZYNNIKAMI DYSPOSYCYJNYMI: „On jest nielojalny, lekceważący, leniwy i ma mnie gdzieś”.',
         'W relacjach intymnych podstawowy błąd atrybucji ulega zwielokrotnieniu pod wpływem przewlekłego zmęczenia. Im mniej mamy energii biologicznej, tym szybciej nasz mózg rezygnuje ze sprawdzania kontekstu i przypisuje partnerowi wady charakteru.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-35-8-atrybucja',
+        type: 'microscope',
+        title: 'Człowiek pod mikroskopem: Krzysztof i spóźnienie Marty',
+        subtitle: 'Wiwisekcja podstawowego błędu atrybucji w relacji intymnej',
+        context: 'Marta spóźnia się 20 minut na wspólną kolację w restauracji. Krzysztof siedzi przy stoliku.',
+        microscopeLayers: [
+          {
+            stepNumber: 1,
+            label: 'SYTUACJA',
+            question: 'Co dokładnie widzi Krzysztof?',
+            content: 'Wskazówki zegara pokazują 20 minut po umówionej godzinie. Marta nie wchodzi przez drzwi, nie napisała SMS-a.',
+            subtext: 'Rejestracja nagiego faktu bez interpretacji emocjonalnej.'
+          },
+          {
+            stepNumber: 2,
+            label: 'CO CZŁOWIEK WIE?',
+            question: 'Jakie informacje posiada Krzysztof?',
+            content: 'Wie, że Marta pracuje dziś do 17:00 i że zwykle stara się przychodzić na czas.',
+            subtext: 'Fakty obiektywne w pamięci operacyjnej.'
+          },
+          {
+            stepNumber: 3,
+            label: 'CO INTERPRETUJE?',
+            question: 'Jakie znaczenie nadaje sytuacji?',
+            content: '„Marta mnie lekceważy. Gdyby jej zależało, rzuciłaby wszystko i przybiegła. Jej praca jest zawsze ważniejsza od mojego czasu”.',
+            subtext: 'Uruchomienie podstawowego błędu atrybucji charakteru.'
+          },
+          {
+            stepNumber: 4,
+            label: 'CO CZUJE W CIELE?',
+            question: 'Jakie emocje i stany somatyczne się pojawiają?',
+            content: 'Ścisk w żołądku, podwyższone tętno (92 bpm), silne napięcie w karku i dłoniach.',
+            subtext: 'Aktywacja reakcji stresowej układu współczulnego.'
+          },
+          {
+            stepNumber: 5,
+            label: 'AKTUALIZACJA I REAKCJA',
+            question: 'Co dzieje się, gdy Marta wchodzi i przeprasza?',
+            content: 'Marta wbiega zziajana: „Krzysztof, przepraszam, metro stanęło z powodu awarii zasilania!”. Krzysztof oddycha z ulgą, a jego wroga interpretacja rozpada się w zderzeniu z faktem sytuacyjnym.',
+            subtext: 'Dojrzała rekalibracja predykcji po otrzymaniu twardych danych.'
+          }
+        ],
+        takeaway: 'Zanim oskarżysz partnera o brak miłości, najpierw sprawdź stan techniczny metra lub drogi.'
+      }
     },
 
     // 35.9
@@ -615,15 +687,35 @@ export const chapterThirtyFive: Chapter = {
       id: 'sec-35-21',
       pageNumber: 2628,
       sectionNumber: '35.21',
-      title: 'Badania nad konfliktem i komunikacją: Laboratorium Johna Gottmana i wskaźnik 5:1',
+      title: 'Badania nad konfliktem i komunikacją: Laboratorium Johna Gottmana, Wskaźnik 5:1 i Jeźdźcy Apokalipsy',
       category: 'teoria',
-      readingTimeMinutes: 26,
+      readingTimeMinutes: 28,
+      quote: {
+        text: 'Pogarda jest najpotężniejszym predyktorem rozwodu, jakiego kiedykolwiek użyliśmy w naszych badaniach. Kiedy w relacji pojawia się pogarda — przewracanie oczami, sarkazm, złośliwy uśmiech — to nie tylko znak, że miłość umiera, ale wskaźnik, że układ odpornościowy partnera doświadcza realnej degradacji biologicznej.',
+        author: 'Prof. John M. Gottman',
+        source: 'University of Washington Love Lab, „The Seven Principles for Making Marriage Work”, Harmony Books, 1999'
+      },
       paragraphs: [
-        'John Gottman na Uniwersytecie Waszyngtońskim przez cztery dekady badał pary w tzw. „Laboratorium Miłości” (Love Lab) — mieszkaniu wyposażonym w kamery, mikrofony oraz aparaturę monitorującą EKG, przewodnictwo skóry i poziom hormonów stresu w moczu.',
-        'Jego najważniejsze odkrycia zrewolucjonizowały wiedzę o konflikcie:',
-        '1. CZTEREJ JEŹDŹCY APOCALYPSY:\n- Krytyka (atak na osobę zamiast skargi na fakt),\n- Pogarda (poczucie wyższości, sarkazm, kokieteria złośliwości — najgroźniejszy jeździec),\n- Defensywność (odpieranie zarzutu kontratakiem lub udawaniem ofiary),\n- Mur obojętności / Stonewalling (odcięcie kontaktu, zamrożenie wzroku — występuje w 85% u mężczyzn z powodu szybszego zalania fizjologicznego).',
-        '2. WSKAŹNIK GOTTMANA (5:1):\nW stabilnych, szczęśliwych relacjach podczas kłótni na 1 negatywną interakcję (irytacja, różnica zdań) przypada MINIMUM 5 INTERAKCJI POZYTYWNYCH (uśmiech, wzięcie za rękę, żart rozładowujący, uznanie racji partnera). Gdy wskaźnik spada poniżej 1:1, prawdopodobieństwo rozwodu w ciągu 5 lat wynosi ponad 90%!',
-        '3. PRÓBY NAPRAWCZE (Repair Attempts):\nTo nie brak kłótni chroni parę, lecz zdolność do wciśnięcia hamulca: „Kochanie, zagalopowałem się, przepraszam”, „Zróbmy przerwę, bo zaczynamy krzyczeć”. Sukces próby naprawczej zależy w 100% od tego, czy DRUGA STRONA ZECHCE JĄ PRZYJĄĆ.'
+        'Profesor John Gottman na Uniwersytecie Waszyngtońskim przez ponad cztery dekady prowadził pionierskie badania nad dynamiką małżeństw w słynnym „Laboratorium Miłości” (Love Lab) — specjalnie zaaranżowanym mieszkaniu badawczym wyposażonym w wielokątowe kamery, mikrofony oraz aparaturę biometryczną monitorującą EKG, przewodnictwo galwaniczne skóry, temperaturę ciała oraz poziom kortyzolu i katecholamin w moczu.',
+        'Analizując tysiące godzin nagrań kłótni małżeńskich z dokładnością do pojedynczej sekundy (przy użyciu systemu kodowania afektu SPAFF), Gottman wypracował model predykcyjny pozwalający przewidzieć z 94% dokładnością, które pary rozwiodą się w ciągu najbliższych 6 lat. Jego najważniejsze wnioski empiryczne zrewolucjonizowały wiedzę o konflikcie:',
+        '1. CZTEREJ JEŹDŹCY APOKALIPSY (The Four Horsemen of the Apocalypse):\n- Krytyka (Criticism): Atak na osobowość i charakter partnera zamiast skargi na konkretne zachowanie („Jesteś bałaganiarzem” vs „Nie zmyłeś talerza”).\n- Pogarda (Contempt): Poczucie moralnej wyższości, sarkazm, kokieteria złośliwości, wyzwiska i przewracanie oczami. Jest to jedyny Jeździec, który przewiduje zgon relacji i spadek odporności immunologicznej u partnera.\n- Defensywność (Defensiveness): Natychmiastowe odpieranie zarzutu kontratakiem lub przybieranie roli bezbronnej ofiary („To nie moja wina, a ty co zrobiłeś?”).\n- Mur obojętności (Stonewalling): Wyłączenie kontaktu wzrokowego, zamrożenie mimiki, milczenie i udawanie, że partner nie istnieje. Wytępuje w 85% u mężczyzn pod wpływem zalania fizjologicznego.',
+        '2. WSKAŹNIK MAGIICZNY GOTTMANA (5:1):\nW trwałych, stabilnych relacjach podczas kłótni na 1 negatywny impuls (krytyka, irytacja) przypada MINIMUM 5 IMPULSÓW POZYTYWNYCH (uśmiech, muśnięcie dłoni, żart rozładowujący, uznanie części racji, potakiwanie). Gdy wskaźnik spada poniżej 1:1, rozwód jest kwestią czasu.',
+        '3. PRÓBY NAPRAWCZE (Repair Attempts):\nTo nie brak konfliktów decyduje o jakości związku, lecz zdolność do wciśnięcia hamulca w trakcie eskalacji („Kochanie, zagalopowałem się”, „Zróbmy 15 minut przerwy”). Sukces próby naprawczej zależy jednak nie od jej kunsztu, lecz od tego, czy DRUGA STRONA ZECHCE JĄ PRZYJĄĆ.'
+      ],
+      subsections: [
+        {
+          id: 'sub-35-21-1',
+          title: 'Analiza słów prof. Johna Gottmana: Pogarda jako Kwas Relacyjny i Biologia Odrzucenia',
+          content: [
+            'Słowa prof. Gottmana rzucają wstrząsające światło na psychosomatykę konfliktu. Pogarda nie jest zwykłą złością; złość traktuje drugą osobę jako równego partnera, z którym się spieramy. Pogarda z kolei plasuje nas na moralnym podium, spoglądając na partnera z góry jak na coś podrzędnego i wstrętnego.',
+            'Kiedy partner doświadcza pogardy, jego ciało migdałowate odbiera to jako śmiertelny ostracyzm. Badania krwi wykazują u tych osób gwałtowny spadek liczby białych krwinek (limfocytów) oraz podwyższoną podatność na infekcje wirusowe. Pogarda dosłownie zatruwa ciało drugiego człowieka, niszcząc fundament poczucia bezpieczeństwa.'
+          ],
+          highlightBox: {
+            title: 'Wskaźnik Miłości w Laboratorium: Test 5:1',
+            content: 'Czy potrafisz w trakcie trudnej dyskusji powiedzieć: „Rozumiem, dlaczego tak myślisz”, lub delikatnie uśmiechnąć się do partnera? Jeden pozytywny gest nie zamazuje problemu, ale daje mózgowi sygnał: „To spór o sprawozdanie, a nie wojna o przetrwanie”.',
+            type: 'neuro'
+          }
+        }
       ]
     },
 
@@ -640,7 +732,21 @@ export const chapterThirtyFive: Chapter = {
         'Sylwia wchodzi do kuchni, widzi patelnię. Bierze głęboki oddech (rejestruje zmęczenie), wchodzi do pokoju Adama, siada na podłodze przy jego fotelu i mówi miękkim, zmęczonym głosem: „Adam, padam z nóg po pracy, a w zlewie leży patelnia. Mógłbyś ją zmyć i zrobić mi herbaty? Naprawdę nie mam siły”.',
         'Adam odrywa wzrok od komputera. Co słyszy? Nie słyszy oskarżenia: „Znowu nie zmyłeś, jesteś dzieckiem!”. Słyszy prośbę bezbronnej, kochanej kobiety. Odpowiada: „Jasne, przepraszam, zapomniałem rano. Usiądź, już idę”.',
         'Konflikt został rozwiązany w 12 sekund bez podniesienia tętna o choćby jedno uderzenie. Różnica nie tkwiła w patelni. Tkwiła w BRAKU ATAKU NA TOŻSAMOŚĆ.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-35-22-brak-eskalacji',
+        type: 'counter_case',
+        title: 'Kontrprzypadek: Deeskalacja w 12 sekund',
+        subtitle: 'Sztuka komunikowania bezbronnej prośby zamiast zarzutu',
+        context: 'Ta sama brudna patelnia w zlewie o 18:45 po ciężkim dniu pracy obojga partnerów.',
+        counterCase: {
+          standardTheory: 'Każda różnica zdań lub niedociągnięcie organizacyjne w domu musi prowadzić do awantury, ponieważ zmęczenie automatycznie odbiera ludziom kulturę osobistą.',
+          counterExample: 'Sylwia widzi patelnię, siada przy fotelu Adama i mówi miękko: „Adam, padam z nóg, a w zlewie leży patelnia. Zmyjesz ją i zrobisz mi herbaty?”. Adam od razu wstaje i całuje ją w czoło: „Jasne kochanie, już robię”.',
+          whyItDefiesRule: 'Spór został zneutralizowany przed narodzeniem eskalacji, ponieważ Sylwia sformułowała bezbronną prośbę o wsparcie, nie atakując charakteru ani tożsamości Adama.',
+          deeperLesson: 'Mózg partnera nie broni się przed Twoją potrzebą. Broni się przed Twoim oskarżeniem.'
+        },
+        takeaway: 'Zmiana formy wypowiedzi o 10% potrafi zmienić wynik relacyjny o 100%.'
+      }
     },
 
     // 35.23

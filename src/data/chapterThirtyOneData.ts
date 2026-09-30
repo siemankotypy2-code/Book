@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 /**
  * TOM III — ROZDZIAŁ 15 (GLOBALNIE ROZDZIAŁ 31 W STRUKTURZE DZIEŁA)
@@ -305,7 +305,12 @@ export const chapterThirtyOne: Chapter = {
       sectionNumber: '31.1',
       title: 'Autonomia nie oznacza robienia wszystkiego samemu: Wolność wyboru a mit samowystarczalności',
       category: 'teoria',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 22,
+      quote: {
+        text: 'Autonomia nie jest synonimem niezależności czy samowystarczalności. Być autonomicznym to działać w sposób w pełni dobrowolny, z poczuciem autentycznej aprobaty dla własnych działań. Człowiek może być całkowicie autonomiczny, prosząc o pomoc, polegając na innych, a nawet stosując się do nakazów — o ile sam szczerze uznaje ich wartość i sens.',
+        author: 'Prof. Edward L. Deci & Prof. Richard M. Ryan',
+        source: 'University of Rochester / Australian Catholic University, „Self-Determination Theory: Basic Psychological Needs in Motivation, Development, and Wellness”, Guilford Press, 2017'
+      },
       paragraphs: [
         'W potocznym rozumieniu pojęcie autonomii bywa często mylone z absolutną samowystarczalnością, samotnictwem lub buntowniczym odrzuceniem jakichkolwiek zasad społecznych. Człowiek deklarujący: „Jestem w 100% autonomiczny, nie potrzebuję nikogo i nikt nie będzie mi mówił, co mam robić”, rzadko bywa rzeczywiście wolny. Najczęściej jest to jednostka uwięziona w reaktywnym buncie, kierowana lękiem przed bliskością i zależnością.',
         'W psychologii naukowej — a w szczególności w Teorii Autodeterminacji (Self-Determination Theory, Edward Deci i Richard Ryan) — autonomia (z greckiego: autos — sam, nomos — prawo) oznacza zdolność do stanowienia o sobie i podejmowania działań z poczuciem pełnej wewnętrznej zgody, spójności i autorstwa. Człowiek autonomiczny nie musi robić wszystkiego samemu. Może poprosić o pomoc, może współpracować w zespole, może zasięgnąć porady mentora, a nawet podporządkować się regułom organizacji — pod warunkiem, że robi to na mocy własnego, świadomego wyboru opartego na uznaniu sensu tych reguł.',
@@ -313,14 +318,57 @@ export const chapterThirtyOne: Chapter = {
       ],
       subsections: [
         {
-          title: 'PRZYKŁAD: Dwa oblicza proszenia o pomoc',
-          paragraphs: [
+          id: 'sub-31-1-1',
+          title: 'Analiza słów prof. Edwarda Deci i prof. Richarda Ryana: Trzy Fundamentalne Potrzeby SDT',
+          content: [
+            'Wnikliwa analiza Teorii Autodeterminacji dowodzi, że człowiek rozkwita tylko wtedy, gdy zaspokojone są trzy wrodzone potrzeby psychologiczne: Autonomii (poczucia autorstwa), Kompetencji (poczucia skuteczności) oraz Relacyjności (poczucia przynależności i więzi).',
+            'Deci i Ryan zwracają uwagę na tragiczny błąd zachodniej kultury indywidualizmu, która przeciwstawia autonomię relacyjności. Prawdziwa autonomia nie niszczy więzi społecznych — ona je uszlachetnia. Kiedy pomagasz bliskiemu z przymusu lub lęku przed odrzuceniem, twoje działanie jest heteronomiczne i rodzi ukrytą urazę. Kiedy pomagasz z autonomicznego wyboru i miłości, budujesz najtrwalszą tkankę bliskości.'
+          ]
+        },
+        {
+          id: 'sub-31-1-2',
+          title: 'Dwa oblicza proszenia o pomoc: Zależność lękowa vs Sprawcza współpraca',
+          content: [
             'Osoba A (Brak autonomii — zależność lękowa): Kamil staje przed trudnym wyborem zawodowym. Dzwoni po kolei do matki, przyjaciela i szefa, pytając każdego: „Powiedz mi, co mam zrobić?”. Nie szuka informacji, lecz chce zrzucić odpowiedzialność za wybór na innych. Jeśli decyzja okaże się błędna, oskarży doradców o złą radę.',
             'Osoba B (Wysoka autonomia — sprawcza współpraca): Marek staje przed tym samym wyborem. Umawia się na rozmowę z doświadczonym doradcą kariery i mówi: „Przeanalizowałem rynek i mam dwie opcje zgodne z moimi wartościami. Chcę poznać Twoją opinię o ryzykach prawnych wariantu B, aby podjąć najlepszą decyzję”. Marek zbiera fakty, ale ostateczną decyzję podejmuje sam i bierze za nią 100% odpowiedzialności.',
             'Wniosek psychologiczny: Proszenie o pomoc nie umniejsza Twojej autonomii — to cel i intencja, z jaką sięgasz po wsparcie, decydują o tym, czy jesteś kapitanem, czy pasażerem swojego życia.'
           ]
         }
       ],
+      highlightBoxes: [
+        {
+          id: 'hb-31-1-1',
+          type: 'insight',
+          title: 'Kontinuum Motywacji: Od Amotywacji do Integracji',
+          content: 'Model SDT opisuje kontinuum internalizacji: 1. Regulacja Zewnętrzna (kije i marchewki), 2. Introjekcja (poczucie winy i wstyd), 3. Identyfikacja (uznanie ważności celu), 4. Integracja (pełna zgodność z tożsamością). Prawdziwa autonomia zaczyna się od poziomu identyfikacji, gdzie robisz trudne rzeczy, bo wiesz, kim jesteś.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-31-1',
+        title: 'Audyt Motywacji: Autonomia czy Introjekcja w Twoich Wyborach?',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Łukasz (32 lata) przygotowuje się do triathlonu IronMan. Trenuje po 18 godzin w tygodniu, odczuwając chroniczne zmęczenie i bóle stawów. Na pytanie żony, dlaczego to robi, odpowiada: „Bo jak nie zrobię IronMana, to będę czuł się jak kompletne zero”.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Analiza źródła napędu Łukasza wg Teorii SDT',
+            description: 'Jaki rodzaj motywacji napędza morderczy reżim Łukasza?',
+            options: [
+              {
+                text: 'Klasyczna motywacja introjektowana (Introjected Regulation): Łukasz nie trenuje z autonomicznej radości ruchu, lecz ucieka przed wstydem i nienawiścią do samego siebie',
+                feedback: 'Precyzyjna diagnoza psychologiczna: brak autonomii. Łukasz jest niewolnikiem surowego wewnętrznego krytyka.',
+                isOptimal: true
+              },
+              {
+                text: 'Najwyższy poziom autonomii i dojrzałej samodyscypliny sportowej',
+                feedback: 'Błąd poznawczy: motywacja oparta na unikaniu poczucia bycia „zerem” nie jest autonomią, lecz psychologicznym batem.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Które z Twoich obecnych ambitnych celów są podyktowane introjekcją („muszę, bo inaczej będę nikim”), a które autentyczną autonomią?'
+      },
       exerciseRef: chapterThirtyOneExerciseCzyToMojaDecyzja
     },
     {
@@ -329,12 +377,61 @@ export const chapterThirtyOne: Chapter = {
       sectionNumber: '31.2',
       title: 'Sprawczość (Agency) — poczucie wpływu na własne życie i relacja działanie-feedback',
       category: 'teoria',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 22,
+      quote: {
+        text: 'Poczucie własnej skuteczności (self-efficacy) to nie pusta wiara we własne siły ani deklaratywny optymizm. To przekonanie wyrasta z twardych doświadczeń mistrzostwa (mastery experiences): mózg musi zarejestrować realny ciąg przyczynowo-skutkowy między włożonym wysiłkiem a pokonaniem konkretnej, mierzalnej przeszkody.',
+        author: 'Prof. Albert Bandura',
+        source: 'Stanford University, „Self-Efficacy: The Exercise of Control”, W.H. Freeman, 1997'
+      },
       paragraphs: [
         'Poczucie sprawczości (Sense of Agency) to fundamentalne doświadczenie psychiczne polegające na przeświadczeniu: „To ja jestem autorem tego ruchu, to moje działanie wywołało tę zmianę w świecie fizycznym lub społecznym”. Bez poczucia sprawczości ludzki umysł osuwa się w stan apatii, anhedonii i depresyjnej bierności.',
         'Sprawczość nie jest wrodzonym darem ani niezmienną cechą charakteru — jest dynamicznym stanem neurobiologicznym, który buduje się na styku DZIAŁANIA i INFORMACJI ZWROTNEJ (Feedback Loop). Albert Bandura w swojej teorii Społeczno-Poznawczej wykazał, że poczucie własnej skuteczności (Self-Efficacy) rozwija się przede wszystkim poprzez Doświadczenia Mistrzostwa (Mastery Experiences) — czyli małe, policzalne dowody na to, że podjęty wysiłek przyniósł przewidywalny rezultat.',
         'Sekret budowania trwałej sprawczości łączy się bezpośrednio z wiedzą z Rozdziału 23 (samoregulacja), 25 (wykonanie zachowania) i 26 (mikrokroki). Nie budujesz sprawczości przez powtarzanie przed lustrem: „Jestem zwycięzcą”. Budujesz ją wtedy, gdy w stanie zmęczenia odkładasz telefon na 45 minut, siadasz do biurka i zapisujesz 2 strony tekstu. Twój mózg rejestruje fakt: „Powiedziałem, że to zrobię, i zrobiłem to”. Każdy taki mikrodowód wzmacnia obwody sprawcze w korze przedczołowej.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-31-2-1',
+          title: 'Analiza słów prof. Alberta Bandury: Cztery Źródła Poczucia Skuteczności',
+          content: [
+            'Prof. Bandura zdefiniował cztery kanały, którymi mózg aktualizuje poczucie sprawczości: 1. Doświadczenia mistrzostwa (najpotężniejsze — osobiste sukcesy po wysiłku), 2. Doświadczenia zastępcze (obserwacja ludzi podobnych do nas pokonujących trudności), 3. Perswazja społeczna (wiarygodny feedback od mentora), 4. Pobudzenie somatyczne (interpretacja przyspieszonego pulsu jako mobilizacji, a nie paniki).',
+            'Bandura dowodzi, że najtrwalszą odporność psychiczną (resilience) buduje nie seria łatwych zwycięstw, lecz pokonywanie trudności wymagające podtrzymania wysiłku mimo początkowych porażek. W ten sposób jednostka uczy się, że błąd nie jest dowodem braku kompetencji, lecz naturalnym elementem pętli zwrotnej.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-31-2-1',
+          type: 'badanie',
+          title: 'Neurobiologia Sprawczości: Sygnał Błędu Predykcji Motorycznej',
+          content: 'Kiedy wykonujesz zamierzony ruch fizyczny, kora motoryczna wysyła tzw. kopię eferentną (efference copy) do móżdżku i kory ciemieniowej, która wygasza odczucie bodźca (dlatego nie potrafisz sam siebie połaskotać!). Poczucie autorstwa czynu jest biologicznym zjawiskiem komparatora neuronalnego: mózg wie, że to Ty zmieniłeś świat.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-31-2',
+        title: 'Odbudowa Poczucia Skuteczności po Porażce: Protokół Bandury',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Beata (36 lat) po nieudanym projekcie biznesowym straciła wiarę w swoje kompetencje. Od pół roku nie podejmuje żadnych działań, czując paraliżujący lęk przed kolejną porażką.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór pierwszego kroku odbudowy sprawczości wg Bandury',
+            description: 'Jak Beata powinna zacząć odbudowywać poczucie własnej skuteczności?',
+            options: [
+              {
+                text: 'Zaprojektować mikrozadanie o 95% prawdopodobieństwie sukcesu (np. napisanie jednej oferty doradczej w 60 minut) w celu wygenerowania natychmiastowego doświadczenia mistrzostwa',
+                feedback: 'Doskonałe zastosowanie teorii Bandury: mózg Beaty potrzebuje twardego faktu dopięcia zadania, aby przerwać pętlę wyuczonej bezradności.',
+                isOptimal: true
+              },
+              {
+                text: 'Czekać, aż wróci jej motywacja i pewność siebie, czytając biografie miliarderów',
+                feedback: 'Bierność pogłębiająca poczucie obcości i beznadziei — motywacja podąża za działaniem, nigdy przed nim.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki mały, mierzalny mikrosukces możesz odnieść dzisiaj, aby dostarczyć swojemu mózgowi dowodu na własną sprawczość?'
+      }
     },
     {
       id: 'sec-31-3',
@@ -343,6 +440,11 @@ export const chapterThirtyOne: Chapter = {
       title: 'Locus of Control — co naprawdę kontroluję? Model Trzech Kręgów Wpływu',
       category: 'cwiczenia',
       readingTimeMinutes: 22,
+      quote: {
+        text: 'Główna różnica między ludźmi tkwi w ich poczuciu umiejscowienia kontroli (locus of control). Jednostki z wewnętrznym poczuciem kontroli wierzą, że ich własne zachowania determinują nagrody i kary, jakie otrzymują od życia. Jednostki z zewnętrznym umiejscowieniem kontroli postrzegają swój los jako wypadkową przypadku, szczęścia, przeznaczenia lub decyzji potężnych sił zewnętrznych.',
+        author: 'Prof. Julian B. Rotter',
+        source: 'University of Connecticut, „Generalized Expectancies for Internal Versus External Control of Reinforcement”, Psychological Monographs, 1966'
+      },
       paragraphs: [
         'W 1954 roku Julian Rotter wprowadził pojęcie Poczucia Umiejscowienia Kontroli (Locus of Control). Przez dekady w literaturze popularnonaukowej panowało uproszczone przekonanie, że Wewnętrzne Poczucie Kontroli jest zawsze dobre, a Zewnętrzne — zawsze złe. Współczesna psychologia poznawcza rewiduje ten dogmat: skrajnie wewnętrzne poczucie kontroli prowadzi do toksycznego poczucia omnipotencji i obwiniania siebie za kataklizmy, choroby i decyzje innych ludzi.',
         'Dojrzała architektura życia wymaga wprowadzenia zrównoważonego modelu TRZECH KRĘGÓW WPŁYWU (inspirowanego stoicyzmem Epikteta i Marka Aureliusza oraz pracami Stephena Coveya):',
@@ -350,9 +452,52 @@ export const chapterThirtyOne: Chapter = {
         '2. STREFA B — WPŁYW CZĘŚCIOWY (0–99% wpływu): Obejmuje wyniki negocjacji, relacje z bliskimi, oceny w szkole, postępy zespołu w pracy. Masz na to wpływ poprzez jakość swoich komunikatów (Rozdział 30) i granic (Rozdział 29), ale nie kontrolujesz ostatecznego rezultatu.',
         '3. STREFA C — BRAK KONTROLI (0% kontroli): Obejmuje pogodę, inflację, genetykę, przeszłość, zdarzenia losowe oraz to, co myślą i czują inni ludzie. Jedyną dojrzałą reakcją na tę strefę jest RADYKALNA AKCEPTACJA i natychmiastowe przekierowanie uwagi z powrotem do Strefy A.'
       ],
+      subsections: [
+        {
+          id: 'sub-31-3-1',
+          title: 'Analiza słów prof. Juliana Rottera: Pułapki Skrajnego Umiejscowienia Kontroli',
+          content: [
+            'Wnikliwa dekonstrukcja badań Rottera pokazuje, że optymalny psychologicznie profil to zniuansowany realizm: wewnętrzne umiejscowienie kontroli nad własnym wysiłkiem i postawą, połączone z pokornym uznaniem obiektywnych barier środowiskowych.',
+            'Osoba ze skrajnym zewnętrznym Locus of Control cierpi na wyuczoną bezradność (Seligman) — nie podejmuje prób, bo „i tak układ rządzi”. Z kolei osoba ze skrajnym wewnętrznym Locus of Control wpada w nerwicę natręctw i depresję wyczerpania, usiłując kontrolować cudze humory, sytuację makroekonomiczną i przypadkowe zrządzenia losu.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-31-3-1',
+          type: 'insight',
+          title: 'Dychotomia Kontroli Epikteta: Starożytny Korzeń Współczesnej Terapii',
+          content: 'Epiktet z Hierapolis pisał w Enchiridionie: „Jedne rzeczy są od nas zależne, inne zaś niezależne. Od nas zależą: sądzenie, popęd, pragnienie, wstręt — jednym słowem wszystkie nasze czyny. Nie zależą od nas: ciało, mienie, opinie innych, stanowiska — jednym słowem to, co nie jest naszym czynem”. Kto myli te dwie sfery, skazuje się na wieczną udrękę.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-31-3',
+        title: 'Sortowanie Dylematów: Do Którego Kręgu Wpływu Należy Twój Stres?',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Marek (41 lat) nie śpi po nocach, zamartwiając się potencjalną recesją w branży IT, możliwością zwolnień grupowych oraz tym, czy jego prezes dobrze oceni projekt jego działu.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Kategoryzacja źródeł lęku Marka',
+            description: 'Gdzie leży globalna recesja i decyzje prezesa w modelu Trzech Kręgów?',
+            options: [
+              {
+                text: 'Recesja leży w Strefie C (brak kontroli), a ocena prezesa w Strefie B (wpływ częściowy). Marek marnuje 90% energii na Strefę C zamiast skupić się na Strefie A',
+                feedback: 'Podręcznikowa dekompozycja poznawcza: Marek musi przekierować energię do Strefy A (aktualizacja portfolio, budowanie poduszki finansowej na 12 miesięcy, wysoka jakość kodu dzisiaj).',
+                isOptimal: true
+              },
+              {
+                text: 'Wszystkie te czynniki leżą w Strefie A, bo Marek jest menedżerem i musi kontrolować rynek',
+                feedback: 'Iluzja omnipotencji prowadząca prosto do zawału serca i wypalenia.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki problem spędza Ci sen z powiek i do którego z trzech kręgów (A, B czy C) obiektywnie należy?'
+      },
       exerciseRef: chapterThirtyOneExerciseTrzyKregiWplywu
     },
-
     // CZĘŚĆ II — AUTONOMIA A WPŁYW INNYCH LUDZI (31.4 - 31.6)
     {
       id: 'sec-31-4',
@@ -404,12 +549,61 @@ export const chapterThirtyOne: Chapter = {
       sectionNumber: '31.7',
       title: 'Wartości a cele — dwie różne rzeczy: Dlaczego potrzebujesz kompasu, a nie tylko punktów na mapie',
       category: 'teoria',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 22,
+      quote: {
+        text: 'Wartości nie są celami, które można osiągnąć i odhaczyć. Wartości to wybrane jakości bycia i działania w świecie — jak kierunek na kompasie. Nigdy nie „osiągniesz” kierunku zachodniego; możesz jedynie podróżować na zachód. Cele to konkretne przystanki po drodze, które wybierasz dlatego, że leżą na kursie wyznaczonym przez Twoje wartości.',
+        author: 'Prof. Steven C. Hayes',
+        source: 'University of Nevada, Reno, „Get Out of Your Mind and Into Your Life: The New Acceptance and Commitment Therapy”, New Harbinger, 2005'
+      },
       paragraphs: [
         'Wielu ludzi osiąga swoje wielkie cele życiowe (kupno mieszkania, awans na dyrektora, utrata 15 kg), po czym zamiast oczekiwanego szczęścia doświadcza tzw. Pustki Sukcesu i natychmiastowego powrotu do anhedonii (Adaptacja Hedonistyczna, Rozdział 24). Wynika to z fundamentalnego błędu w nawigacji życiowej: mylenia CELÓW z WARTOŚCIAMI.',
         'W psychologii akceptacji i zaangażowania (ACT, Steven Hayes) stosuje się klasyczną metaforę żeglarską: WARTOŚĆ to kierunek zachodni. Nie możesz „dotrzeć na zachód” i powiedzieć: „Zrobiłem to, koniec”. Zachód jest jakością Twojej podróży w każdej sekundzie. CEL to konkretna wyspa lub port leżący na zachodzie. Port możesz osiągnąć, zweryfikować i popłynąć dalej.',
         'Wartości to nadrzędne zasady określające, JAKIM człowiekiem chcesz być w relacjach, w pracy i wobec samego siebie (np. ciekawość, odwaga, uczciwość, troska, rozwój). Cele są jedynie narzędziami służącymi do wyrażania tych wartości w świecie materialnym. Jeśli Twój cel nie jest zakotwiczony w wartości, jego osiągnięcie przyniesie tylko chwilowy wyrzut dopaminy i długoterminową pustkę.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-31-7-1',
+          title: 'Analiza słów prof. Stevena Hayesa: Dlaczego Życie Nastawione Wyłącznie na Cele Prowadzi do Wypalenia',
+          content: [
+            'Wnikliwa dekonstrukcja modelu ACT autorstwa prof. Hayesa obnaża pułapkę „hedonistycznego kołowrotka”: człowiek skupiony wyłącznie na celach żyje w permanentnym stanie niedostatku („będę szczęśliwy dopiero, kiedy osiągnę X”), po czym po osiągnięciu X cieszy się przez 48 godzin i natychmiast wyznacza cel Y.',
+            'Hayes dowodzi, że zakotwiczenie w wartościach pozwala odnaleźć satysfakcję w samym procesie (in the journey itself). Nawet jeśli cel nie zostanie osiągnięty z powodu sztormu czy wypadku losowego (Strefa C), człowiek żyjący według wartości zachowuje godność i poczucie sensu, bo w obliczu katastrofy nadal działał w zgodzie ze swoją odwagą i prawością.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-31-7-1',
+          type: 'insight',
+          title: 'Test Pogrzebu (The Funeral Exercise w ACT)',
+          content: 'Wyobraź sobie swoje 90. urodziny lub ceremonię pogrzebową. O czym chciałbyś, aby mówili Twoi najbliżsi przyjaciele i dzieci? Nikt nie powie: „Wspaniale zarządzał arkuszem Excel i miał 200 tysięcy followersów”. Ludzie będą mówić o Twoich wartościach: czy byłeś obecny, czy można było na Tobie polegać, jak traktowałeś słabszych. To jest Twój prawdziwy kompas.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-31-7',
+        title: 'Kompas Wartości ACT: Odróżnienie Celu od Wartości Kierunkowej',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Klaudia (28 lat) ma cel: „Zarabiać 25 000 zł miesięcznie przed 30. rokiem życia”. Pracuje po 70 godzin w tygodniu w agencji reklamowej, oszukując klientów w raportach i biorąc leki nasenne.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Analiza spójności celu Klaudii z wartościami',
+            description: 'Co ujawnia audyt w modelu prof. Stevena Hayesa?',
+            options: [
+              {
+                text: 'Klaudia pomyliła cel finansowy z wartością — poświęca zdrowie i uczciwość dla cyfry na koncie, co nieuchronnie doprowadzi ją do załamania psychicznego',
+                feedback: 'Trafna ocena ACT: pieniądze są środkiem, nie wartością. Pogoń za celem oderwanym od integralności niszczy dobrostan Klaudii.',
+                isOptimal: true
+              },
+              {
+                text: 'Klaudia realizuje doskonałą strategię życiową, bo cel uświęca środki',
+                feedback: 'Skrajny błąd poznawczy prowadzący do ciężkiego wypalenia i zniszczenia relacji.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Jaki jest Twój najważniejszy cel życiowy i jakiej fundamentalnej wartości ma w rzeczywistości służyć?'
+      }
     },
     {
       id: 'sec-31-8',

@@ -1,4 +1,4 @@
-import { Chapter, ExamQuestion, CaseStudy, SelfExercise } from '../types/book';
+import { Chapter, ExamQuestion, CaseStudy, SelfExercise, InteractiveWindowData } from '../types/book';
 
 /**
  * TOM III — ROZDZIAŁ 17 (GLOBALNIE ROZDZIAŁ 33 W STRUKTURZE DZIEŁA)
@@ -875,13 +875,62 @@ export const chapterThirtyThree: Chapter = {
       sectionNumber: '33.3',
       title: 'Dwa Filary Wpływu Społecznego: Wpływ Informacyjny a Wpływ Normatywny (Deutsch & Gerard)',
       category: 'teoria',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 22,
+      quote: {
+        text: 'Wpływ informacyjny opiera się na akceptacji informacji od innych jako dowodu na temat rzeczywistości. Z kolei wpływ normatywny opiera się na dostosowaniu się do pozytywnych oczekiwań innych osób w celu zyskania aprobaty lub uniknięcia kary. Choć oba mechanizmy często współwystępują, ich konsekwencje psychologiczne są diametralnie różne: pierwszy przekształca prywatne przekonania, drugi jedynie publiczną maskę.',
+        author: 'Prof. Morton Deutsch & Prof. Harold B. Gerard',
+        source: 'New York University, „A Study of Normative and Informational Social Influences Upon Individual Judgment”, Journal of Abnormal and Social Psychology, 1955'
+      },
       paragraphs: [
         'W 1955 roku Morton Deutsch i Harold Gerard uporządkowali teorię wpływu społecznego, wprowadzając fundamentalny podział na dwa odrębne mechanizmy motywacyjne, które kierują naszymi wyborami:',
         '1. INFORMACYJNY WPŁYW SPOŁECZNY (Informational Social Influence):\n- Źródło motywacji: Pragnienie posiadania racji, trafnego zrozumienia sytuacji i podjęcia optymalnej decyzji.\n- Warunki występowania: Sytuacje nowe, niejasne, wieloznaczne, kryzysowe, w których jednostka nie dysponuje pełnymi danymi lub uważa, że inni posiadają większą wiedzę ekspercką.\n- Rezultat psychologiczny: Prowadzi do autentycznej, głębokiej i trwałej PRYWATNEJ AKCEPTACJI (Private Acceptance). Człowiek naprawdę zmienia swoje przekonania, wierząc, że grupa ma rację (np. turysta w nieznanym mieście wchodzący do restauracji pełnej miejscowych).',
         '2. NORMATYWNY WPŁYW SPOŁECZNY (Normative Social Influence):\n- Źródło motywacji: Pragnienie bycia lubianym, akceptowanym, unikania wstydu, kary, kpin i wykluczenia ze strony grupy.\n- Warunki występowania: Nawet w sytuacjach całkowicie jasnych i jednoznacznych, w których jednostka doskonale wie, jaka jest prawda, lecz odczuwa presję normy społecznej.\n- Rezultat psychologiczny: Prowadzi do PUBLICZNEGO ULEGANIA (Public Compliance) bez wewnętrznej zgody. Człowiek deklaruje to, czego żąda otoczenie, zachowując prywatny sceptycyzm lub tłumiąc go w poczuciu bezradności.',
         'Rozróżnienie to jest fundamentem diagnostyki osobistej: Kiedy zmieniasz zdanie, zadaj sobie pytanie: «Czy robię to dlatego, że poznałem nowe, rzetelne fakty (wpływ informacyjny), czy dlatego, że panicznie boję się tego, co pomyślą o mnie inni (wpływ normatywny)?».'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-33-3-1',
+          title: 'Analiza słów prof. Mortona Deutscha i prof. Harolda Gerarda: Prywatna Akceptacja vs Publiczna Maska',
+          content: [
+            'Wnikliwa dekonstrukcja modelu Deutscha i Gerarda ujawnia podwójną naturę ludzkiego konformizmu. W przypadku wpływu informacyjnego jednostka używa zachowania innych jako taniego, zastępczego sensora rzeczywistości: skoro tłum ucieka w lewo, uciekam w lewo, bo prawdopodobnie tam nie ma pożaru.',
+            'Z kolei wpływ normatywny odsłania potęgę społecznego przymusu: człowiek wie, że król jest nagi, ale boi się, że jeśli to powie na głos, strażnicy wyrzucą go za mury pałacu. Ta schizofrenia między prywatną wiedzą a publiczną deklaracją rodzi dotkliwy dysonans poznawczy (Festinger), który z czasem jednostka często redukuje poprzez... faktyczną zmianę przekonań, byle tylko nie czuć się tchórzem.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-33-3-1',
+          type: 'insight',
+          title: 'Test Spójności Wewnętrznej: Czy Mówiłbyś To Samo na Bezludnej Wyspie?',
+          content: 'Aby sprawdzić, czy Twoje poglądy wynikają z wpływu informacyjnego czy normatywnego, zadaj sobie pytanie: „Gdyby nikt z moich znajomych, szefów ani rodziny nigdy nie dowiedział się o mojej opinii, czy nadal broniłbym tego stanowiska?”. Jeśli tak — to zinternalizowana prawda. Jeśli nie — to konformistyczny kamuflaż normatywny.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-33-3',
+        title: 'Rozpoznawanie Źródła Wpływu: Informacyjny czy Normatywny?',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Konrad (34 lata) na zebraniu zarządu milczy i podnosi rękę za wdrożeniem ryzykownej kampanii marketingowej, mimo że jego własne obliczenia wskazują na 70% ryzyko straty 2 milionów złotych.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Analiza motywacji Konrada',
+            description: 'Dlaczego Konrad zagłosował za szkodliwym projektem?',
+            options: [
+              {
+                text: 'Poddał się wpływowi normatywnemu: panicznie bał się, że prezes uzna go za „człowieka hamującego innowacje” i pozbawi premii rocznej',
+                feedback: 'Precyzyjna diagnoza: podręcznikowy wpływ normatywny. Konrad wiedział, jaka jest prawda matematyczna, ale wybrał publiczną uległość dla ochrony statusu.',
+                isOptimal: true
+              },
+              {
+                text: 'Uległ wpływowi informacyjnemu, bo uznał, że prezes ma doktorat z ekonomii i wie lepiej',
+                feedback: 'Błąd: Konrad sam sporządził raport i wiedział o błędach prezesa — uległ lękowi przed odrzuceniem.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakich sprawach w Twoim życiu zawodowym lub prywatnym ulegasz wpływowi normatywnemu, głosując przeciwko własnemu sumieniu?'
+      }
     },
 
     // CZĘŚĆ IV — EKSPERYMENT ASCHA (33.4)
@@ -892,6 +941,11 @@ export const chapterThirtyThree: Chapter = {
       title: 'Eksperyment Solomona Ascha: Anatomia Konformizmu Percepcyjnego i Potęga Pojedynczego Sprzeciwu',
       category: 'teoria',
       readingTimeMinutes: 24,
+      quote: {
+        text: 'To, że inteligentni, dobrze wykształceni młodzi ludzie są gotowi nazwać biel czernią tylko dlatego, że grupa jednogłośnie podtrzymuje to kłamstwo, jest zjawiskiem budzącym głęboki niepokój. Zadaje to fundamentalne pytania o nasz system edukacji i wartości, które kierują naszym społeczeństwem.',
+        author: 'Prof. Solomon E. Asch',
+        source: 'Swarthmore College, „Opinions and Social Pressure”, Scientific American, 1955'
+      },
       paragraphs: [
         'W 1951 roku Solomon Asch przeprowadził jedno z najbardziej eleganckich i wstrząsających badań w historii psychologii. Badany student wchodził do sali z siedmioma innymi osobami (w rzeczywistości pomocnikami eksperymentatora). Zadanie wydawało się dziecinnie proste: porównać długość linii wzorcowej z trzema liniami testowymi (A, B, C), z których tylko jedna była identyczna z wzorcem.',
         'W pierwszych próbach wszyscy odpowiadali poprawnie. Jednak w próbach krytycznych pomocnicy eksperymentatora jeden po drugim, z kamienną twarzą, podawali ewidentnie błędną odpowiedź (np. wskazywali linię o połowę krótszą). Badany odpowiadał jako przedostatni.',
@@ -899,7 +953,51 @@ export const chapterThirtyThree: Chapter = {
         'Podczas wywiadów poeksperymentalnych Asch odkrył trzy różne poziomy uległości:\n1. Zniekształcenie percepcji (bardzo rzadkie): Nieliczni badani naprawdę zaczęli widzieć linie inaczej.\n2. Zniekształcenie osądu (częste): Badani uznali, że skoro 7 inteligentnych ludzi widzi co innego, to ich własne oczy muszą ich mylić („widocznie jest tu jakiś optyczny haczyk, którego nie rozumiem”).\n3. Zniekształcenie działania (najczęstsze): Badani doskonale wiedzieli, która linia jest poprawna, ale nie byli w stanie znieść dyskomfortu bycia jedynym odmieńcem na sali.',
         'Jednak najważniejszy wniosek z eksperymentu Ascha dotyczy przełamywania konformizmu: Gdy Asch wprowadził do grupy tylko JEDNEGO pomocnika, który odpowiadał poprawnie (tzw. sojusznik prawdy), poziom błędów konformistycznych spadł natychmiast z 37% do zaledwie 5%! Nawet gdy sojusznik podawał inną błędną odpowiedź, samo rozbicie jednomyślności wystarczało, by przywrócić badanemu odwagę do samodzielnego myślenia.',
         'LEKCJA NA DZIŚ: Jeśli widzisz błąd, fałsz lub zło w swojej organizacji, nie musisz przekonywać od razu wszystkich. Wystarczy, że jako pierwszy podniesiesz rękę i powiesz prawdę — Twój pojedynczy głos da tlen i odwagę tym, którzy w milczeniu czekają na impuls.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-33-4-1',
+          title: 'Analiza słów prof. Solomona Ascha: Zniekształcenie Działania a Moralne Tchórzostwo',
+          content: [
+            'Wypowiedź prof. Ascha dotyka sedna problemu obywatelskiego: większość badanych, którzy ulegli grupie, wcale nie straciła wzroku ani rozumu. Przeżywali oni ostry konflikt emocjonalny: pocili się, wiercili na krześle, nerwowo chrząkali.',
+            'Asch podkreślał, że uległość w tym badaniu nie była błędem logicznym, lecz kapitulacją woli. Gdy człowiek zostaje sam przeciwko zjednoczonej grupie, dACC odpala sygnał zagrożenia fizycznego. Dlatego odwaga nie jest brakiem strachu przed grupą — jest zdolnością powiedzenia: „Linia B jest równa linii wzorcowej”, nawet gdy głos w gardle drży ze strachu.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-33-4-1',
+          type: 'badanie',
+          title: 'Magia Pojedynczego Sprzeciwu: Od 37% do 5%',
+          content: 'Obecność zaledwie JEDNEGO dysydenta w grupie obniża poziom konformizmu siedmiokrotnie! Twój pojedynczy sprzeciw na zebraniu nie służy tylko Tobie — jest sygnałem ratunkowym dla wszystkich innych uczestników, którzy boją się odezwać jako pierwsi.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-33-4',
+        title: 'Przełamywanie Jednomyślności Stada: Rola Sojusznika Ascha',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'W trakcie narady projektowej 6 inżynierów zgadza się na przyspieszenie premiery oprogramowania medycznego o miesiąc, pomijając testy bezpieczeństwa. Anna wie, że błąd w kodzie może zabić pacjenta, ale boi się wyjść na histeryczkę.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór działania Anny w paradygmacie Solomona Ascha',
+            description: 'Jak Anna powinna przełamać hipnotyczną jednomyślność grupy?',
+            options: [
+              {
+                text: 'Podnieść rękę i spokojnie przedstawić twarde logi testowe: „Nie wyrażam zgody na podpisanie protokołu. Mamy 3 krytyczne błędy w module dawkowania. Złamanie procedury bezpieczeństwa to ryzyko utraty życia pacjenta”.',
+                feedback: 'Doskonałe przełamanie konformizmu: rola pierwszego sprawiedliwego natychmiast uwalnia dwóch innych inżynierów z paraliżu milczenia.',
+                isOptimal: true
+              },
+              {
+                text: 'Podpisać protokół i liczyć na to, że błąd nie ujawni się podczas operacji',
+                feedback: 'Tragiczny konformizm w stylu katastrofy promu Challenger — kapitulacja etyczna z lęku przed konfliktem.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Kiedy ostatnio milczałeś na spotkaniu, widząc ewidentny błąd, tylko dlatego, że wszyscy inni kiwali z uśmiechem głowami?'
+      }
     },
 
     // CZĘŚĆ V — EKSPERYMENT MILGRAMA I AUTORYTET (33.5)
@@ -910,6 +1008,11 @@ export const chapterThirtyThree: Chapter = {
       title: 'Wpływ Autorytetu i Stan Agentalny: Eksperyment Stanleya Milgrama i Granice Posłuszeństwa',
       category: 'teoria',
       readingTimeMinutes: 26,
+      quote: {
+        text: 'Zwykli ludzie, po prostu wykonujący swoją pracę i nie żywiący żadnej szczególnej wrogości, mogą stać się wykonawcami straszliwego niszczycielskiego procesu. Co więcej, nawet wtedy, gdy destrukcyjne skutki ich pracy stają się całkowicie oczywiste i są proszeni o podjęcie działań niezgodnych z fundamentalnymi standardami moralności, stosunkowo niewiele osób ma wystarczającą siłę, by przeciwstawić się autorytetowi.',
+        author: 'Prof. Stanley Milgram',
+        source: 'Yale University, „Obedience to Authority: An Experimental View”, Harper & Row, 1974'
+      },
       paragraphs: [
         'W cieniu procesu Adolfa Eichmanna w Jerozolimie, Stanley Milgram na Uniwersytecie Yale (1961–1963) postanowił sprawdzić, jak daleko posunie się zwykły, przyzwoity obywatel, gdy autorytet w białym fartuchu wyda mu polecenie krzywdzenia drugiego człowieka.',
         'Uczestnicy sądzili, że biorą udział w badaniu nad wpływem kar na pamięć. W roli „Nauczyciela” mieli aplikować „Uczniowi” (aktorowi) wstrząsy elektryczne o rosnącym napięciu (od 15 V do śmiertelnych 450 V z oznaczeniem „XXX”) za każdą błędną odpowiedź. Przy wyższych napięciach aktor krzyczał z bólu, błagał o przerwanie, skarżył się na chore serce, a powyżej 330 V milkł całkowicie.',
@@ -918,7 +1021,51 @@ export const chapterThirtyThree: Chapter = {
         'Milgram sformułował pojęcie STANU AGENTALNEGO (Agentic State): Człowiek przestaje postrzegać siebie jako moralnie odpowiedzialnego sprawcę swoich czynów, a zaczyna widzieć siebie jedynie jako instrument («agenta») realizującego wolę wyższej instancji. Odpowiedzialność zostaje scedowana na autorytet: «Ja tylko wykonywałem polecenia».',
         'CZYNNIKI MODYFIKUJĄCE POSŁUSZEŃSTWO:\n- Dystans fizyczny od ofiary: Gdy Nauczyciel musiał osobiście przyciskać dłoń Ucznia do płytki z prądem, posłuszeństwo spadło do 30%.\n- Bliskość autorytetu: Gdy eksperymentator wydawał polecenia przez telefon, posłuszeństwo spadło do 21%.\n- Sprzeciw rówieśników: Gdy w sali obecni byli dwaj inni badani (aktorzy), którzy odmówili dalszego rażenia prądem, posłuszeństwo runęło do zaledwie 10%!',
         'ANATOMIA WSPÓŁCZESNEGO POSŁUSZEŃSTWA: Dzisiejsze zbrodnie korporacyjne, oszustwa finansowe i systemowa bezduszność rzadko odbywają się w mundurach. Odbywają się w garniturach, za pośrednictwem arkuszy Excela, procedur i regulaminów, w których każdy pracownik mówi sobie: «To nie moja wina, taka jest polityka firmy».'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-33-5-1',
+          title: 'Analiza słów prof. Stanleya Milgrama: Przejście w Stan Agentalny i Utrata Sprawczości',
+          content: [
+            'Wnikliwa analiza koncepcji Milgrama obnaża najbardziej niebezpieczną metamorfozę ludzkiego umysłu: przejście ze Stanu Autonomicznego (gdzie czujemy się moralnie odpowiedzialni za każdy skutek naszych działań) w Stan Agentalny (gdzie stajemy się biernym narzędziem w rękach struktury hierarchicznej).',
+            'Milgram udowodnił, że nie potrzeba sadyzmu, by czynić zło — wystarczy formalny autorytet, który zdejmie z jednostki ciężar odpowiedzialności („Ja biorę za to pełną odpowiedzialność, panie Kowalski, proszę nacisnąć przycisk”). Zdolność do zachowania stanu autonomicznego w obliczu rozkazu jest ostatecznym testem dojrzałości człowieka.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-33-5-1',
+          type: 'badanie',
+          title: 'Złamanie Posłuszeństwa przez Rówieśników: Spadek do 10%',
+          content: 'Najbardziej budujący wariant Milgrama to obecność dwóch zbuntowanych współpracowników. Gdy obaj powiedzieli eksperymentatorowi: „Nie będziemy dalej razić prądem”, 90% badanych natychmiast poszło w ich ślady i odmówiło posłuszeństwa. Społeczny dowód odwagi jest silniejszy niż presja autorytetu.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-33-5',
+        title: 'Przełamanie Stanu Agentalnego: Asertywny Bunt przeciw Autorytetowi',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Paweł (29 lat), audytor finansowy, otrzymuje od partnera zarządzającego polecenie ukrycia 3 milionów złotych nielegalnych wypłat zarządu w sprawozdaniu rocznym pod groźbą natychmiastowego zwolnienia z pracy.',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Wybór postawy Pawła wobec rozkazu autorytetu',
+            description: 'Która postawa pozwala Pawłowi pozostać w Stanie Autonomicznym?',
+            options: [
+              {
+                text: 'Kategoryczna odmowa na piśmie: „Nie podpiszę sfałszowanego bilansu. Jest to przestępstwo gospodarcze, za które ponoszę osobistą odpowiedzialność karną”. Równoległe zabezpieczenie dowodów i kontakt z radcą prawnym',
+                feedback: 'Bohaterstwo autonomiczne wg Milgrama: odmowa przejścia w stan agentalny, obrona integralności osobistej pomimo groźby utraty posady.',
+                isOptimal: true
+              },
+              {
+                text: 'Podpisanie raportu z myślą: „To partner ponosi odpowiedzialność, ja tylko wykonuję polecenia przełożonego”',
+                feedback: 'Podręcznikowy stan agentalny — współudział w przestępstwie i moralna katastrofa.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'W jakich sytuacjach w pracy lub w instytucjach usprawiedliwiasz swoje nieetyczne lub bierne zachowanie słowami: „ja tylko wykonuję procedury”?'
+      }
     },
 
     // CZĘŚĆ VI — REGUŁY CIALDINIEGO (33.6)
@@ -929,6 +1076,11 @@ export const chapterThirtyThree: Chapter = {
       title: 'Siedem Uniwersalnych Zasad Wpływu Społecznego według Roberta Cialdiniego',
       category: 'teoria',
       readingTimeMinutes: 28,
+      quote: {
+        text: 'Automatyczne reguły wpływu społecznego działają jak mentalne skróty (heurystyki) — pozwalają nam podejmować błyskawiczne decyzje w świecie zalanym informacjami. Jednak profesjonaliści perswazji potrafią uruchomić te odruchy jak naciśnięcie guzika w magnetofonie (click-whirr), sprawiając, że zgadzamy się na rzeczy, których wcale nie chcemy.',
+        author: 'Prof. Robert B. Cialdini',
+        source: 'Arizona State University, „Influence: Science and Practice”, HarperCollins, 1984 / 2021'
+      },
       paragraphs: [
         'Profesor Robert Cialdini spędził dekady badając praktyków perswazji — sprzedawców, negocjatorów, lobbystów, rekruterów i fundraiserów. Wyodrębnił fundamentalne heurystyki decyzyjne, które nasz mózg stosuje w trybie automatycznym:',
         '1. REGUŁA WZAJEMNOŚCI (Reciprocity):\nEwolucyjny imperatyw odwzajemnienia przysługi, daru lub ustępstwa. Kiedy ktoś daje nam cokolwiek bez zapowiedzi (darmowa kawa, raport, drobiazg), w naszym mózgu powstaje silne napięcie motywacyjne do zlikwidowania długu wdzięczności. Wersja zaawansowana: technika „Drzwiami w twarz” (Door-in-the-face) — wygórowane żądanie, a po jego odrzuceniu wycofanie się do właściwej prośby, co odbiorca interpretuje jako ustępstwo i czuje obowiązek rewanżu.',
@@ -938,7 +1090,51 @@ export const chapterThirtyThree: Chapter = {
         '5. AUTORYTET (Authority):\nAutomatyczne posłuszeństwo wobec symboli wiedzy, władzy i statusu: tytułów naukowych, mundurów, drogich garniturów, pieczątek i specjalistycznego żargonu.',
         '6. NIEDOSTĘPNOŚĆ (Scarcity):\nPrzekonanie, że to, co rzadkie, trudnodostępne lub ograniczone w czasie, ma wyższą wartość. Uruchamia lęk przed stratą (Loss Aversion) i reaktancję psychiczną („muszę to kupić, zanim inni mi to sprzątną sprzed nosa”).',
         '7. JEDNOŚĆ (Unity — dodana w nowszych pracach):\nWpływ oparty na wspólnej tożsamości plemiennej („jesteśmy jednymi z nas” — rodzina, nacja, fani tej samej drużyny, członkowie tego samego ruchu). Tworzy bezwarunkowe zaufanie i zawieszenie krytycyzmu wobec członków własnej grupy.'
-      ]
+      ],
+      subsections: [
+        {
+          id: 'sub-33-6-1',
+          title: 'Analiza słów prof. Roberta Cialdiniego: Zjawisko „Click-Whirr” i Tarcza Obronna',
+          content: [
+            'Cialdini w genialny sposób opisuje etologię ludzkiego zachowania: podobnie jak indyczka zaczyna opiekować się każdym obiektem wydającym dźwięk „czip-czip” (nawet wypchanym tchórzem!), tak ludzki mózg na widok darmowego prezentu natychmiast odpala sekwencję wzajemności (whirr).',
+            'Obrona przed manipulacją nie polega na stawaniu się cynicznym odludkiem odrzucającym wszelkie prezenty i życzliwość. Polega na tzw. Przeklasyfikowaniu Intencji: jeśli odkrywasz, że przysługa nie była darem z serca, lecz starannie skalkulowaną przynętą marketingową, Twój dług wdzięczności natychmiast wygasa. Nie jesteś winien lojalności sztuczce handlowej.'
+          ]
+        }
+      ],
+      highlightBoxes: [
+        {
+          id: 'hb-33-6-1',
+          type: 'insight',
+          title: 'Reguła Pauzy Poznawczej przed Zakupem',
+          content: 'Kiedy sprzedawca mówi: „Ta oferta jest ważna tylko przez najbliższe 15 minut!”, wiedz, że celowo próbuje wyłączyć Twoją korę przedczołową za pomocą reguły niedostępności. Zastosuj żelazną zasadę: „Jeśli nie mogę podjąć tej decyzji jutro rano po przespanej nocy, moja odpowiedź brzmi: NIE”.'
+        }
+      ],
+      interactiveWindow: {
+        id: 'win-33-6',
+        title: 'Rozbrajanie Manipulacji: Siedem Zasad Cialdiniego w Praktyce',
+        type: 'czlowiek_pod_mikroskopem',
+        context: 'Handlowiec w salonie samochodowym częstuje Marka ekskluzywną kawą z logo marki (Wzajemność), chwali jego gust modowy (Sympatia), a następnie mówi: „Ten model w tej cenie ma jeszcze tylko dwóch chętnych, którzy jadą z gotówką, musimy podpisać rezerwację w 10 minut” (Niedostępność).',
+        steps: [
+          {
+            stepNumber: 1,
+            title: 'Identyfikacja potrójnego ataku perswazyjnego',
+            description: 'Jak Marek powinien zareagować, by zachować suwerenność decyzji?',
+            options: [
+              {
+                text: 'Podziękować za kawę, zignorować sztuczny pośpiech i powiedzieć z uśmiechem: „Dziękuję za kawę i rozmowę. Zgodnie z moją zasadą, decyzję o zakupie samochodu podejmuję po 24 godzinach od jazdy próbnej. Zadzwonię jutro o 11:00”.',
+                feedback: 'Doskonałe rozbrojenie triangulacji Cialdiniego: oddzielenie uprzejmości od decyzji finansowej i zneutralizowanie sztucznego niedoboru.',
+                isOptimal: true
+              },
+              {
+                text: 'Natychmiast wpłacić zaliczkę 5000 zł, bojąc się, że wymarzony samochód zniknie',
+                feedback: 'Uległość wobec heurystyki niedostępności — klasyczny błąd konsumencki.',
+                isOptimal: false
+              }
+            ]
+          }
+        ],
+        reflectionPrompt: 'Która z 7 reguł Cialdiniego najczęściej skłania Cię do impulsywnych wydatków lub niechcianych zobowiązań?'
+      }
     },
 
     // CZĘŚĆ VII — DYNAMIKA GRUPOWA (33.7)

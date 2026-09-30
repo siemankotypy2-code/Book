@@ -63,16 +63,20 @@ export interface BookSection {
   title: string;
   category: 'wstep' | 'teoria' | 'studium-przypadku' | 'neuronauka' | 'cwiczenia' | 'podsumowanie';
   readingTimeMinutes: number;
-  quote?: { text: string; author: string };
+  quote?: { text: string; author: string; source?: string };
   paragraphs: string[];
   subsections?: {
+    id?: string;
     title: string;
-    paragraphs: string[];
+    paragraphs?: string[];
+    content?: string[];
     highlightBox?: { title: string; content: string; type: 'insight' | 'warning' | 'neuro' | 'exercise' };
   }[];
   caseStudyRef?: CaseStudy;
   exerciseRef?: SelfExercise;
   interactiveWindowRef?: InteractiveWindowData;
+  interactiveWindow?: any;
+  highlightBoxes?: any[];
 }
 
 export type InteractiveWindowType = 
@@ -81,7 +85,9 @@ export type InteractiveWindowType =
   | 'what_if'            // Co zmieniłoby sytuację? / Zmień jeden element
   | 'counter_case'       // Kontrprzypadek
   | 'what_we_know'       // Co naprawdę wiemy? (Fakty vs Interpretacje)
-  | 'loop';              // Pętla relacji / konfliktu
+  | 'loop'               // Pętla relacji / konfliktu
+  | 'czlowiek_pod_mikroskopem'
+  | string;
 
 export interface MicroscopeLayer {
   stepNumber: number;
@@ -148,6 +154,9 @@ export interface InteractiveWindowData {
   subtitle?: string;
   context: string;
   microscopeLayers?: MicroscopeLayer[];
+  microscopeSteps?: any[];
+  steps?: any[];
+  reflectionPrompt?: string;
   dualPerspective?: DualPerspectiveData;
   whatIfOptions?: {
     defaultScenario: string;
@@ -163,7 +172,9 @@ export interface InteractiveWindowData {
     items: FactInterpretationItem[];
   };
   loopSteps?: RelationalLoopStep[];
-  takeaway: string;
+  loopStages?: any[];
+  takeaway?: string;
+  keyTakeaway?: string;
 }
 
 export interface Chapter {

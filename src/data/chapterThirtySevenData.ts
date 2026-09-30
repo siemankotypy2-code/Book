@@ -189,14 +189,36 @@ export const chapterThirtySeven: Chapter = {
       id: 'sec-37-1',
       pageNumber: 3050,
       sectionNumber: '37.1',
-      title: 'Czym jest konformizm? Definicja i odróżnienie od posłuszeństwa i uległości',
+      title: 'Czym jest konformizm? Definicja, ewolucyjne korzenie i rozróżnienie od posłuszeństwa',
       category: 'teoria',
-      readingTimeMinutes: 20,
+      readingTimeMinutes: 26,
+      quote: {
+        text: 'Nasz współczesny system społeczny nakłada na jednostkę olbrzymią presję, by ta dostosowywała swoje przekonania do opinii otoczenia. Gdy wykształceni, inteligentni ludzie w oczywistej sprawie wybierają fałsz tylko po to, by nie wyróżniać się z tłumu, stawia to fundamentalne pytanie o charakter naszej wolności i edukacji.',
+        author: 'Prof. Solomon E. Asch',
+        source: 'Swarthmore College, „Opinions and Social Pressure”, Scientific American, 1955'
+      },
       paragraphs: [
-        'Konformizm jest jednym z najczęściej potępianych, a jednocześnie najbardziej uniwersalnych zjawisk w psychologii człowieka. W języku potocznym słowo to ma wydźwięk pejoratywny: kojarzy się z brakiem kręgosłupa moralnego, oportunizmem i bezmyślnym naśladownictwem.',
-        'W ujęciu psychologii społecznej KONFORMIZM definiuje się neutralnie jako: Zmianę zachowania, opinii lub przekonań jednostki pod wpływem rzeczywistej lub wyobrażonej presji grupy.',
-        'Kluczowe jest odróżnienie konformizmu od pojęć pokrewnych:',
-        '- ULEGŁOŚĆ (Compliance): Publiczne podporządkowanie się prośbie lub żądaniu bez zmiany prywatnych przekonań (np. założenie krawata na wesele, mimo że go nienawidzę).\n- POSŁUSZEŃSTWO (Obedience): Wykonanie bezpośredniego polecenia autorytetu w strukturze pionowej (Milgram).\n- KONFORMIZM (Conformity): Dopasowanie się do niepisanych norm grupy o charakterze poziomym (Asch).'
+        'Konformizm należy do najbardziej powszechnych, a zarazem najbardziej potępianych mechanizmów w psychologii człowieka. W języku potocznym słowo to nosi silne piętno pejoratywne: kojarzy się z bezmyślnym naśladownictwem, brakiem kręgosłupa moralnego i oportunizmem.',
+        'W naukowej psychologii społecznej KONFORMIZM definiuje się jako: Zmianę zachowania, postaw lub prywatnych przekonań jednostki pod wpływem rzeczywistej, wyobrażonej lub domniemanej presji ze strony grupy społecznej.',
+        'Warto precyzyjnie odróżnić trzy pokrewne pojęcia behavioralne:',
+        '- ULEGŁOŚĆ (Compliance): Publiczne dopasowanie się do żądania bez wewnętrznego przekonania (np. założenie garnituru na oficjalne spotkanie z szacunku dla protokołu).',
+        '- POSŁUSZEŃSTWO (Obedience): Wykonanie bezpośredniego nakazu wydanego przez autorytet w strukturze hierarchicznej (presja pionowa — np. eksperyment Milgrama).',
+        '- KONFORMIZM (Conformity): Dostosowanie się do niepisanych norm grupy rówieśniczej lub współuczestników o zbliżonym statusie (presja pozioma — np. eksperyment Ascha).'
+      ],
+      subsections: [
+        {
+          id: 'sub-37-1-1',
+          title: 'Analiza słów prof. Solomona Ascha: Presja Stada a Kapitulacja Woli',
+          content: [
+            'Słynne słowa prof. Solomona Ascha z 1955 roku uderzają w samo serce mitu o niepodległym, suwerennym jednostkowym intelekcie. Asch wykazał, że konformizm nie jest marginesem patologii — jest bazowym programem domyślnym ludzkiego mózgu.',
+            'Z perspektywy ewolucyjnej, odłączenie się od stada w plemiennym środowisku praprzodków oznaczało nieuchronną śmierć biologiczną. Ciało migdałowate reaguje więc na odmienność opinii od grupy jak na fizyczne zagrożenie wykluczeniem. Odwaga cywilna i niezależność myślenia wymagają oporu wobec własnej biologii.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Ewolucyjny: Dlaczego Stado Zawsze Wygrywa?',
+            content: 'Mózg wolne chwile niepewności traktuje jako potencjalne zagrożenie. Skoro wszyscy uciekają w lewo, to ten, kto zatrzymuje się, by sprawdzić przyczynę, zostaje zjedzony przez drapieżnika. Konformizm informacyjny uratował tysiące pokoleń naszych przodków.',
+            type: 'neuro'
+          }
+        }
       ]
     },
 
@@ -212,7 +234,21 @@ export const chapterThirtySeven: Chapter = {
         'Norma społeczna jest niewidzialnym szkieletem każdej grupy. Wyróżniamy dwa rodzaje norm:',
         '1. NORMY OPISOWE (Descriptive Norms): Informują o tym, co ludzie RZECZYWIŚCIE ROBIĄ w danej sytuacji (np. „Wszyscy w tym biurze zostają po godzinach do 18:30”).\n2. NORMY NAKAZUJĄCE (Injunctive Norms): Informują o tym, co grupa UWAŻA ZA WŁAŚCIWE i co nagradza lub karze moralnie (np. „Należy pomagać nowym pracownikom”).',
         'Znakomity eksperyment Roberta Cialdiniego w Parku Narodowym Skamieniałego Lasu wykazał, że tabliczka: „Wielu turystów zabiera kawałki skamieniałego drewna, niszcząc park” (aktywująca normę opisową: „wszyscy kradną”) POTROIŁA liczbę kradzieży w porównaniu z tabliczką zakazującą! Ludzki mózg najpierw patrzy na to, co robi stado, a dopiero potem na to, co nakazuje regulamin.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-37-2-norma-parku',
+        type: 'counter_case',
+        title: 'Kontrprzypadek: Tabliczka, która powstrzymała kradzież',
+        subtitle: 'Sztuka programowania norm społecznych w przestrzeni publicznej',
+        context: 'Zarządzanie zachowaniem turystów w chronionym parku narodowym.',
+        counterCase: {
+          standardTheory: 'Aby powstrzymać ludzi przed kradzieżą, należy na czerwono i wielkimi literami pokazać skalę problemu, np.: „Codziennie dziesiątki osób kradną skały, niszcząc nasz wspólny las! Prosimy przestać!”.',
+          counterExample: 'Wprowadzenie takiego napisu trzykrotnie zwiększyło liczbę kradzieży. Turysta myślał: „Skoro wszyscy biorą na pamiątkę, to i ja wezmę jedną małą, to normalne”. Dopiero tabliczka aktywująca normę nakazującą: „Zabieranie drewna jest zabronione. Pomóż nam ocalić ten las dla przyszłych pokoleń” (bez wspominania o kryminalnym zachowaniu innych) zredukowała kradzieże do minimum.',
+          whyItDefiesRule: 'Mózg ludzki jest zaprogramowany na naśladowanie większości (norma opisowa). Pokazywanie złego zachowania większości legalizuje je społecznie.',
+          deeperLesson: 'Chcesz, żeby ludzie zachowywali się dobrze? Pokazuj im, że dobre zachowanie jest powszechne lub pożądane, a nie że zło jest normą.'
+        },
+        takeaway: 'Nigdy nie piętnuj patologii poprzez pokazywanie, jak wielu ludzi jej ulega — w ten sposób nieświadomie ją ułatwiasz.'
+      }
     },
 
     // 37.3
@@ -241,7 +277,34 @@ export const chapterThirtySeven: Chapter = {
         'Gdy znajdujemy się w sytuacji nowej, skomplikowanej lub kryzysowej, pojawia się INFORMACYJNY WPŁYW SPOŁECZNY (Deutsch & Gerard).',
         'Klasyczny eksperyment Muzafera Sherifa z efektem autokinetycznym (1936): Badani w całkowicie ciemnym pokoju patrzyli na nieruchomy punkt świetlny, który z powodu mikroruchów gałki ocznej wydawał się poruszać. Gdy badani oceniali ruch indywidualnie, ich szacunki były skrajnie różne (od 2 do 20 cm). Kiedy jednak połączono ich w grupy — w ciągu trzech sesji ich oceny zbiegły się w jedną wspólną, trwałą normę grupową!',
         'Co najważniejsze: badani po roku, badani pojedynczo, nadal posługiwali się wypracowaną wcześniej normą grupy. Doszło do autentycznej, głębokiej PRYWATNEJ AKCEPTACJI.'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-37-4-ewakuacja',
+        type: 'what_if',
+        title: 'Zmień jeden element: Alarm w obcym budynku',
+        subtitle: 'Symulacja wpływu zachowania innych na decyzję o ucieczce przed niebezpieczeństwem',
+        context: 'Rozlega się cichy sygnał alarmowy w czytelni uniwersyteckiej. W pokoju siedzi 15 osób.',
+        whatIfOptions: {
+          defaultScenario: 'Gdy nikt się nie rusza (14 podstawionych osób milczy i czyta dalej), badany ignoruje dym pod drzwiami i siedzi bezczynnie przez kolejne 20 minut.',
+          options: [
+            {
+              id: 'c37-opt-ew1',
+              changeLabel: 'Choćby jedna inna osoba wstaje, pakuje laptopa i zmierza do wyjścia',
+              resultingInterpretation: 'Badany myśli: „A jednak to nie pomyłka. Skoro ona ucieka, to ja też wychodzę, nie będę ryzykować”.',
+              resultingBehavior: 'Badany natychmiast wstaje i opuszcza budynek.',
+              psychologicalImpact: 'Rozbicie iluzji bezpieczeństwa i aktywacja proaktywnego instynktu samozachowawczego.'
+            },
+            {
+              id: 'c37-opt-ew2',
+              changeLabel: 'Badany dowiaduje się przed wejściem, że budynek ma uszkodzoną instalację czujek dymu',
+              resultingInterpretation: 'Badany myśli: „Inni nie wiedzą o awarii czujek, dlatego milczą. Muszę ich ostrzec”.',
+              resultingBehavior: 'Badany wstaje i krzyczy: „Słuchajcie, to prawdziwy alarm, wychodzimy!”.',
+              psychologicalImpact: 'Przełamanie konformizmu informacyjnego dzięki posiadaniu unikalnej, twardej wiedzy.'
+            }
+          ]
+        },
+        takeaway: 'W warunkach niepewności podążamy za stadem, zapominając, że stado może być tak samo niedoinformowane jak my.'
+      }
     },
 
     // 37.5
@@ -334,7 +397,43 @@ export const chapterThirtySeven: Chapter = {
       paragraphs: [
         'W wywiadach poeksperymentalnych Asch odkrył, że badani ulegali z trzech zupełnie różnych powodów:',
         '1. Zniekształcenie percepcji (bardzo rzadkie): Kilku badanych naprawdę zaczęło widzieć linie inaczej — presja stada wpłynęła na pierwotne przetwarzanie wzrokowe w korze potylicznej.\n2. Zniekształcenie osądu (częste): Badani widzieli różnicę, ale uznali, że skoro 7 inteligentnych studentów mówi inaczej, to ich własny wzrok musi być wadliwy („pewnie mam astygmatyzm lub kąt patrzenia mnie myli”).\n3. Zniekształcenie działania (najczęstsze): Badani wiedzieli, która linia jest poprawna, ale nie byli w stanie znieść fizycznego dyskomfortu bycia jedyną osobą głosującą inaczej w pokoju!'
-      ]
+      ],
+      interactiveWindowRef: {
+        id: 'iw-37-8-prawda-asch',
+        type: 'what_we_know',
+        title: 'Co naprawdę pokazał Asch? — Demitologizacja uległości',
+        subtitle: 'Oddzielenie rzetelnych danych od obiegowych opinii podręcznikowych',
+        context: 'Analiza psychologiczna zachowania badanych w salach Swarthmore College.',
+        whatWeKnow: {
+          items: [
+            {
+              id: 'c37-asch-k1',
+              statement: 'Większość badanych w eksperymencie Ascha uległa grupie w każdej pojedynczej próbie.',
+              category: 'interpretacja',
+              explanation: 'To mit. Aż 25% badanych zachowało absolutną niezależność i NIGDY nie uległo kłamstwu grupy, a średni odsetek uległości wynosił 37%.'
+            },
+            {
+              id: 'c37-asch-k2',
+              statement: 'Uleganie grupie najczęściej wynikało z chęci uniknięcia śmieszności (konformizm normatywny), a nie z realnej zmiany percepcji.',
+              category: 'fakt',
+              explanation: 'Prawda. Gdy badany mógł zapisywać swoje odpowiedzi na kartce, zamiast wygłaszać je na głos, poziom uległości spadł do zaledwie 12%!'
+            },
+            {
+              id: 'c37-asch-k3',
+              statement: 'Wystarczy, by jedna osoba z grupy podała poprawną odpowiedź, by uległość badanego spadła o 75%.',
+              category: 'fakt',
+              explanation: 'Znakomite odkrycie Ascha: rozbicie jednomyślności monolitu znosi paraliżujący lęk przed samotną innością.'
+            },
+            {
+              id: 'c37-asch-k4',
+              statement: 'Badani, którzy ulegli grupie, byli słabymi ludźmi o ugodowym charakterze i niskim ilorazie inteligencji.',
+              category: 'interpretacja',
+              explanation: 'Błąd atrybucji. Byli to wybitni studenci prestiżowej uczelni. Siła presji społecznej jest mechanizmem adaptacyjnym, a nie defektem moralnym.'
+            }
+          ]
+        },
+        takeaway: 'Konformizm nie jest słabością jednostki — jest biologicznym polem magnetycznym, przed którym chroni nas tylko świadome budowanie sojuszy prawdy.'
+      }
     },
 
     // 37.9
@@ -597,8 +696,22 @@ export const chapterThirtySeven: Chapter = {
       readingTimeMinutes: 22,
       paragraphs: [
         'W korporacjach konformizm rzadko wymusza się krzykiem. Wymusza się go KULTURĄ „FITU KULTUROWEGO” i subtelnymi nagrodami statusowymi.',
-        'Pracownik szybko uczy się, że karierę robią ci, którzy ładnie ubierają pomysły zarządu w modne slajdy, a nie ci, którzy zadają trudne pytania o opłacalność. Powstaje tzw. FUNKCJONALNA GŁUPOTA (Alvesson & Spicer): inteligentni ludzie dobrowolnie rezygnują z używania własnego krytycyzmu na rzecz korporacyjnego spokoju.'
-      ]
+        'Pracownik szybko uczy się, że karierę robią ci, którzy ładnie ubierają pomysły zarządu w modne slajdy, a nie ci, którzy zadają trudne pytania o opłacalność. Powstaje tzw. FUNKCJONALNA GŁUPOTA (Alvesson & Spicer): inteligentni oameni dobrowolnie rezygnują z używania własnego krytycyzmu na rzecz korporacyjnego spokoju.'
+      ],
+      interactiveWindowRef: {
+        id: 'iw-37-21-funkcjonalna-glupota',
+        type: 'counter_case',
+        title: 'Kontrprzypadek: Gdy asertywny lider legalizuje krytykę',
+        subtitle: 'Przełamywanie kultury potakiwania w zespołach kreatywnych',
+        context: 'Zebranie działu marketingu w sprawie nowej kampanii reklamowej.',
+        counterCase: {
+          standardTheory: 'Lider powinien zawsze głośno i entuzjastycznie przedstawić swój pomysł na początku zebrania, oczekując, że zespół od razu podchwyci jego wizję i wykaże pełną lojalność.',
+          counterExample: 'Prezes Janusz wchodzi i mówi: „Oto mój pomysł na kampanię. Chcę, żebyśmy zrobili X”. Wszyscy milczą i potakują, mimo że kampania jest przestarzała. Dopiero w drugim zespole dyrektor Marek mówi: „Oto moja propozycja. A teraz mianuję Piotra oficjalnym Adwokatem Diabła — jego jedynym zadaniem na następne 20 minut jest znalezienie 5 powodów, dla których ten pomysł legnie w gruzach. Piotr, zaczynaj”. Nagle zespół ożywa, a projekt zostaje poprawiony o 40%.',
+          whyItDefiesRule: 'Lider celowo delegalizuje fałszywą jednomyślność, nakładając rolę krytyka jako oficjalny, bezpieczny obowiązek zawodowy.',
+          deeperLesson: 'Ludzie nie zgłoszą sprzeciwu, jeśli grozi to utratą akceptacji. Aby usłyszeć prawdę, musisz uczynić krytykę formalną normą grupy.'
+        },
+        takeaway: 'Chcesz innowacji? Nie pytaj „kto się nie zgadza” — wyznacz kogoś, czyim zadaniem jest się nie zgadzać.'
+      }
     },
 
     // 37.22

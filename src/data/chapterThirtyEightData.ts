@@ -180,13 +180,33 @@ export const chapterThirtyEight: Chapter = {
       id: 'sec-38-1',
       pageNumber: 1,
       sectionNumber: '38.1',
-      title: 'Władza jako relacja, a nie cecha jednostki',
+      title: 'Władza jako relacja zależności i asymetrii, a nie cecha jednostki',
       category: 'teoria',
-      readingTimeMinutes: 7,
+      readingTimeMinutes: 24,
+      quote: {
+        text: 'Władza A nad B jest wprost proporcjonalna do zależności B od dóbr i zasobów kontrolowanych przez A, oraz odwrotnie proporcjonalna do dostępności dla B alternatywnych źródeł zaspokojenia tych samych potrzeb.',
+        author: 'Prof. Richard M. Emerson',
+        source: 'University of Washington, „Power-Dependence Relations”, American Sociological Review, 1962'
+      },
       paragraphs: [
-        'W potocznym rozumieniu władzę często traktuje się jak przymiot charakteru: mówi się o „ludziach o silnej władczości”, „urodzonych przywódcach” lub osobach o „słabej woli”. Psychologia społeczna i socjologia relacyjna odrzucają ten naiwny esencjalizm. Władza nie jest substancją ani genetycznym wyposażeniem jednostki — jest właściwością relacji między co najmniej dwoma podmiotami.',
-        'W definicji Richarda Emersona (1962) władza osoby A nad osobą B jest wprost proporcjonalna do zależności osoby B od dóbr i zasobów kontrolowanych przez osobę A, oraz odwrotnie proporcjonalna do dostępności alternatywnych źródeł zaspokojenia tych potrzeb dla osoby B. Jeżeli szef kontroluje twoje jedyne źródło dochodu w mieście o wysokim bezrobociu, posiada nad tobą ogromną władzę. Jeżeli jednak posiadasz na biurku trzy konkurencyjne oferty pracy z wyższą stawką, władza tego samego szefa natychmiast drastycznie spada — mimo że jego stanowisko, osobowość i ton głosu nie zmieniły się ani o milimetr.',
-        'Władza oznacza zatem asymetryczną kontrolę nad wartościowymi zasobami (czasem, pieniędzmi, awansem, uwagą, poczuciem bezpieczeństwa, informacją). Zrozumienie tej relacyjnej natury jest pierwszym krokiem do demitologizacji zjawiska: nie walczymy z mityczną charyzmą władcy, lecz analizujemy sieć zależności i alternatyw, w której tkwimy.'
+        'W potocznym rozumieniu władzę często traktuje się jak wrodzony przymiot charakteru lub cechę fizyczną: mówi się o „charyzmatycznych liderach”, „osobach o władczej aparycji” lub o tych, którzy „nie nadają się do rządzenia”. Psychologia społeczna i socjologia relacyjna kategorycznie odrzucają ten naiwny esencjalizm. Władza nie jest substancją, rzeczą ani cechą tkwiącą w genach — jest właściwością relacji interpersonalnej.',
+        'W przełomowej definicji Richarda Emersona (1962) władza jednostki A nad jednostką B opiera się na prostym wzorze matematyczno-psychologicznym: jest dokładnie równa stopniu zależności B od wartościowych zasobów kontrolowanych przez A. Jeżeli przełożony kontroluje jedyne źródło dochodu w mieście o wysokim bezrobociu, posiada nad tobą gigantyczną władzę.',
+        'Jeżeli jednak ten sam pracownik znajdzie na rynku trzy alternatywne oferty pracy z wyższą pensją, władza owego przełożonego natychmiast drastycznie spada — mimo że jego gabinet, stanowisko i charakter nie zmieniły się ani o milimetr. Zrozumienie tej relacyjnej natury jest pierwszym krokiem do demitologizacji wpływu: nie walczymy z mityczną charyzmą kierownika, lecz analizujemy sieć zależności i alternatyw, w której tkwimy.'
+      ],
+      subsections: [
+        {
+          id: 'sub-38-1-1',
+          title: 'Analiza słów prof. Richarda M. Emersona: Teoria Zależności i Architektura Wyzwolenia',
+          content: [
+            'Genialna formuła Emersona odczarowuje zjawisko dominacji społecznej. Pokazuje, że nikt nie posiada władzy sam z siebie; władzę dają mu ci, którzy od niego zależą i nie widzą dla siebie alternatyw (BATNA — Best Alternative to a Negotiated Agreement).',
+            'Słowa Emersona prowadzą do praktycznego wniosku: najskuteczniejszą metodą neutralizacji opresyjnej władzy nie jest bezpośredni atak na lidera, lecz dywersyfikacja własnych zasobów i budowanie niezależnych alternatyw. Zwiększając własną autonomię, automatycznie redukujesz władzę otoczenia nad sobą.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Strategiczny: Zwiększaj Swoją BATNA',
+            content: 'Nigdy nie pozwalaj, by jedna osoba, korporacja czy relacja kontrolowała 100% Twojego poczucia bezpieczeństwa, dochodów lub samooceny. Posiadanie alternatyw przywraca równowagę w każdym układzie społecznym.',
+            type: 'insight'
+          }
+        }
       ]
     },
     {
@@ -289,16 +309,36 @@ export const chapterThirtyEight: Chapter = {
       id: 'sec-38-6',
       pageNumber: 11,
       sectionNumber: '38.6',
-      title: 'Eksperyment Milgrama: nowe odczytanie mechanizmu uległości',
+      title: 'Eksperyment Milgrama: Stan Agentalny i Mechanizm Gradacji Uległości',
       category: 'teoria',
-      readingTimeMinutes: 10,
+      readingTimeMinutes: 28,
+      quote: {
+        text: 'Zwykli ludzie, po prostu wykonujący swoją pracę i bez żadnej szczególnej wrogości, mogą stać się agentami w straszliwym procesie niszczycielskim. Co więcej, nawet gdy niszczycielskie skutki ich działań stają się całkowicie oczywiste, bardzo niewielu ma wystarczającą siłę, by sprzeciwić się autorytetowi.',
+        author: 'Prof. Stanley Milgram',
+        source: 'Yale University, „Obedience to Authority: An Experimental View”, Harper & Row, 1974'
+      },
       paragraphs: [
-        'Przeprowadzony w 1961 roku na Uniwersytecie Yale eksperyment Stanleya Milgrama pozostaje najbardziej wstrząsającym badaniem w historii psychologii. Przypomnijmy: 65% przeciętnych obywateli New Haven zaaplikowało drugiemu człowiekowi serię wstrząsów elektrycznych aż do maksymalnej, potencjalnie śmiertelnej dawki 450 V tylko dlatego, że naukowiec w szarym fartuchu laboratoryjnym spokojnym tonem powtarzał: „Eksperyment wymaga, aby pan kontynuował”.',
-        'Przez dekady interpretowano ten wynik jako dowód na „uśpionego potwora” drzemiącego w każdym z nas. Współczesna psychologia społeczna (m.in. prace Haslama i Reichera) rzuca jednak zupełnie inne światło na te dane:',
-        '1. Badani nie byli sadystami: pocili się, drżeli, błagali o przerwanie procedury, gryźli wargi do krwi. Przeżywali potężny dysonans moralny.',
-        '2. Kluczem było wejście w tzw. stan pośredniczący (agentic state): człowiek przestaje postrzegać siebie jako moralnego sprawcę czynu, a zaczyna widzieć się wyłącznie jako wykonawcę woli reprezentanta wielkiej nauki.',
-        '3. Technika stopy w drzwiach: wstrząsy nie zaczynały się od 450 V, lecz od 15 V i rosły o drobne 15 V na każdym kroku. Gdyby badany odmówił przy 300 V, musiałby przyznać sam przed sobą, że jego posłuszeństwo przy 285 V było już niemoralne.',
-        '4. Identyfikacja z misją: posłuszeństwo spadało do zera, kiedy eksperymentator wydawał polecenie w formie czystego nakazu („Musi pan to zrobić”), a rosło, gdy apelował do wagi nauki („Eksperyment jest kluczowy dla wiedzy o pamięci”). Ludzie nie ulegają ślepej sile — ulegają zinternalizowanej idei wyższego celu.'
+        'Przeprowadzony w latach 1961–1963 na Uniwersytecie Yale eksperyment Stanleya Milgrama pozostaje najbardziej wstrząsającym badaniem empirycznym w historii psychologii. Przypomnijmy: aż 65% reprezentatywnych obywateli New Haven (robotników, urzędników, inżynierów) aplikowało drugiemu człowiekowi serię wstrząsów elektrycznych aż do maksymalnej, potencjalnie śmiertelnej dawki 450 V (oznaczonej ostrzeżeniem „XXX”), tylko dlatego, że badacz w szarym fartuchu laboratoryjnym powtarzał opanowanym tonem: „Eksperyment wymaga, aby pan kontynuował”.',
+        'Przez lata interpretowano ten wynik jako dowód na „uśpionego potwora” drzemiącego w każdym ludzkim sercu. Współczesna psychologia społeczna i reanalizy nagrań z archiwum Yale (m.in. prace Haslama i Reichera) pokazują jednak znacznie bardziej złożony mechanizm:',
+        '1. Badani nie byli sadystami: pocili się, jąkali, obgryzali paznokcie do krwi, błagali eksperymentatora o przerwanie badania. Przeżywali potężny, obezwładniający dysonans moralny.',
+        '2. Kluczem było wejście w STAN POŚREDNICZĄCY (Agentic State): stan psychiczny, w którym jednostka przestaje postrzegać siebie jako osobę odpowiedzialną za własne czyny, a zaczyna widzieć się wyłącznie jako pasywne narzędzie wykonujące wolę prawomocnego autorytetu.',
+        '3. Technika stopniowania (Foot-in-the-Door): wstrząsy nie zaczynały się od 450 V, lecz od 15 V i rosły o drobne 15 V na każdym kroku. Gdyby badany odmówił przy 300 V, musiałby przyznać przed samym sobą, że jego posłuszeństwo przy 285 V było już złe i niemoralne.',
+        '4. Identyfikacja z misją: posłuszeństwo spadało do zera, kiedy eksperymentator wydawał polecenie w formie czystego nakazu („Musi pan to zrobić”), a rosło, gdy apelował do wyższego celu nauki („Eksperyment jest kluczowy dla wiedzy o pamięci”). Ludzie ulegają nie ślepej przemocy, lecz autorytetowi ubranemu w szatę wyższej konieczności.'
+      ],
+      subsections: [
+        {
+          id: 'sub-38-6-1',
+          title: 'Analiza słów prof. Stanleya Milgrama: Rozproszone Sumienie i Anatomia Zła Systemowego',
+          content: [
+            'Diagnoza prof. Milgrama poraża swoją aktualnością. Zło w świecie nowożytnym rzadko bywa skutkiem demonicznej nienawiści; znacznie częściej rodzi się z biurokratycznego podziału pracy i oddania odpowiedzialności na zewnątrz.',
+            'Kiedy odpowiedzialność moralna zostaje rozproszona w strukturze hierarchicznej — gdy polityk wydaje dekret, urzędnik pisze rozporządzenie, a szeregowy wykonawca naciska guzik — nikt z nich indywidualnie nie czuje się winny. Każdy z nich jest tylko „częścią mechanizmu”. To jest właśnie stan agentalny, przed którym Milgram ostrzegał całą ludzkość.'
+          ],
+          highlightBox: {
+            title: 'Wgląd Moralny: Odpowiedzialność Indywidualna',
+            content: 'Nigdy nie zasłaniaj się zdaniem: „Ja tylko wykonywałem polecenia”. Moralność i odpowiedzialność prawna za własne czyny zawsze pozostają przy człowieku, który naciska przycisk, bez względu na szarżę osoby wydającej rozkaz.',
+            type: 'warning'
+          }
+        }
       ],
       interactiveWindowRef: {
         id: 'win-38-5',
