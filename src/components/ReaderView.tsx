@@ -54,6 +54,16 @@ import { chapterThirtyFiveExamQuestions } from '../data/chapterThirtyFiveData';
 import { chapterThirtySixExamQuestions } from '../data/chapterThirtySixData';
 import { chapterThirtySevenExamQuestions } from '../data/chapterThirtySevenData';
 import { chapterThirtyEightExamQuestions } from '../data/chapterThirtyEightData';
+import { chapterThirtyNineExamQuestions } from '../data/chapterThirtyNineData';
+import { chapterFortyExamQuestions } from '../data/chapterFortyData';
+import { chapterFortyOneExamQuestions } from '../data/chapterFortyOneData';
+import { chapterFortyTwoExamQuestions } from '../data/chapterFortyTwoData';
+import { chapterFortyThreeExamQuestions } from '../data/chapterFortyThreeData';
+import { chapterFortyNineExamQuestions } from '../data/chapterFortyNineData';
+import { chapterFiftyExamQuestions } from '../data/chapterFiftyData';
+import { chapterFiftyOneExamQuestions } from '../data/chapterFiftyOneData';
+import { chapterFiftyTwoExamQuestions } from '../data/chapterFiftyTwoData';
+import { chapterFiftyThreeExamQuestions } from '../data/chapterFiftyThreeData';
 import { AdaptationLabWidget } from './AdaptationLabWidget';
 import { SocialInfluenceLabWidget } from './SocialInfluenceLabWidget';
 import { InteractiveAnalyticalWindowCard } from './InteractiveAnalyticalWindowCard';
@@ -397,7 +407,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
                       }`}
                     >
                       <span className="text-[10px] font-mono uppercase block opacity-80">
-                        {cs.protagonist.split(',')[0]}
+                        {cs.protagonist ? cs.protagonist.split(',')[0] : (cs.characters?.[0]?.name || 'Bohater')}
                       </span>
                       <h4 className="font-bold text-xs line-clamp-2 mt-0.5">
                         {cs.title.split(':')[0]}
@@ -992,6 +1002,116 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
               chapterNumber={38}
               chapterTitle="Władza, Autorytet i Posłuszeństwo (Rozdział 38)"
               examQuestions={chapterThirtyEightExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 39 (Perswazja) WIDGETS --- */}
+        {activeSection.sectionNumber === '39.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={39}
+              chapterTitle="Perswazja — Jak Ludzie Zmieniają Cudze Przekonania (Rozdział 39)"
+              examQuestions={chapterThirtyNineExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 40 (Manipulacja) WIDGETS --- */}
+        {activeSection.sectionNumber === '40.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={40}
+              chapterTitle="Manipulacja — Wpływ, Ukryty Cel i Ograniczenie Wyboru (Rozdział 40)"
+              examQuestions={chapterFortyExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 41 (Władza i Kontrola) WIDGETS --- */}
+        {activeSection.sectionNumber === '41.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={41}
+              chapterTitle="Władza i Kontrola (Rozdział 41)"
+              examQuestions={chapterFortyOneExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 42 (Autorytet i Posłuszeństwo) WIDGETS --- */}
+        {activeSection.sectionNumber === '42.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={42}
+              chapterTitle="Autorytet i Posłuszeństwo (Rozdział 42)"
+              examQuestions={chapterFortyTwoExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 43 (Reputacja, Wizerunek i Tożsamość Społeczna) WIDGETS --- */}
+        {activeSection.sectionNumber === '43.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={43}
+              chapterTitle="Reputacja, Wizerunek i Tożsamość Społeczna (Rozdział 43)"
+              examQuestions={chapterFortyThreeExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 49 (Normy Grupowe i Konstruowanie Wspólnej Rzeczywistości) WIDGETS --- */}
+        {activeSection.sectionNumber === '49.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={49}
+              chapterTitle="Normy Grupowe i Konstruowanie Wspólnej Rzeczywistości (Rozdział 49)"
+              examQuestions={chapterFortyNineExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 50 (Polaryzacja Grupy i Radykalizacja Stanowisk) WIDGETS --- */}
+        {activeSection.sectionNumber === '50.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={50}
+              chapterTitle="Polaryzacja Grupy i Radykalizacja Stanowisk (Rozdział 50)"
+              examQuestions={chapterFiftyExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 51 (Przekonania, Światopoglądy i Wspólne Modele Rzeczywistości) WIDGETS --- */}
+        {activeSection.sectionNumber === '51.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={51}
+              chapterTitle="Przekonania, Światopoglądy i Wspólne Modele Rzeczywistości (Rozdział 51)"
+              examQuestions={chapterFiftyOneExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 52 (Myślenie Grupowe i Patologie Decyzyjne) WIDGETS --- */}
+        {activeSection.sectionNumber === '52.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={52}
+              chapterTitle="Myślenie Grupowe i Patologie Decyzyjne (Rozdział 52)"
+              examQuestions={chapterFiftyTwoExamQuestions}
+            />
+          </div>
+        )}
+
+        {/* --- TOM III: CHAPTER 53 (Konflikt Międzygrupowy, Tożsamość Społeczna i Drogi Porozumienia) WIDGETS --- */}
+        {activeSection.sectionNumber === '53.25' && (
+          <div className="my-10">
+            <ChapterExamWidget
+              chapterNumber={53}
+              chapterTitle="Konflikt Międzygrupowy, Tożsamość Społeczna i Drogi Porozumienia (Rozdział 53)"
+              examQuestions={chapterFiftyThreeExamQuestions}
             />
           </div>
         )}

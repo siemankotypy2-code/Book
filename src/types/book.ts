@@ -1,16 +1,20 @@
 export interface CaseStudy {
   id: string;
   title: string;
-  subtitle: string;
-  protagonist: string;
+  subtitle?: string;
+  protagonist?: string;
+  characters?: { name: string; role?: string; personality?: string }[];
   context: string;
-  story: string[];
+  dilemma?: string;
+  timeline?: { time: string; event: string }[];
+  story?: string[];
   dialogue?: { speaker: string; text: string; subtext?: string }[];
   // Structure A-J expanded
   decisionTaken?: string;
   whatProtagonistSaw?: string;
   whatWasMissed?: string;
-  psychologicalAnalysis: {
+  psychologicalDynamics?: any;
+  psychologicalAnalysis?: {
     coreMechanism: string;
     cognitiveBiases: { name: string; description: string; impact: string }[];
     defenseMechanisms: { name: string; explanation: string }[];
@@ -25,18 +29,18 @@ export interface CaseStudy {
     action: string;
     consequence: string;
   };
-  neurobiologicalAnalysis: {
+  neurobiologicalAnalysis?: {
     brainRegions: { region: string; role: string; activationState: string }[];
     neurotransmitters: { name: string; roleInScenario: string }[];
     biologicalTimeline: { timeMs: string; process: string }[];
   };
-  influenceAndManipulation: {
+  influenceAndManipulation?: {
     tacticsUsed: { tactic: string; description: string; vulnerabilityExploited: string }[];
     counterMeasures: { step: string; script: string; rationale: string }[];
   };
   alternativePath?: string;
   readerQuestion?: string;
-  keyTakeaway: string;
+  keyTakeaway?: string;
 }
 
 export interface SelfExercise {
@@ -119,7 +123,7 @@ export interface DualPerspectiveData {
     fear: string;
     action: string;
   };
-  synthesis: string;
+  synthesis?: string;
 }
 
 export interface WhatIfOption {

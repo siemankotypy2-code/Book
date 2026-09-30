@@ -115,13 +115,39 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ caseStudy }) => {
         {/* Tab 1: Story, Decision, What was seen, What was missed */}
         {activeTab === 'story' && (
           <div className="space-y-6">
-            <div className="space-y-4 text-stone-800 dark:text-stone-200 text-base sm:text-lg leading-relaxed font-serif">
-              {caseStudy.story.map((paragraph, idx) => (
-                <p key={idx} className={idx === 0 ? 'drop-cap' : ''}>
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+            {caseStudy.story && caseStudy.story.length > 0 ? (
+              <div className="space-y-4 text-stone-800 dark:text-stone-200 text-base sm:text-lg leading-relaxed font-serif">
+                {caseStudy.story.map((paragraph, idx) => (
+                  <p key={idx} className={idx === 0 ? 'drop-cap' : ''}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ) : caseStudy.timeline && caseStudy.timeline.length > 0 ? (
+              <div className="space-y-4">
+                {caseStudy.dilemma && (
+                  <div className="p-4 rounded-xl bg-amber-50 dark:bg-stone-800 border border-amber-200 dark:border-stone-700">
+                    <span className="text-xs font-mono uppercase text-amber-800 dark:text-amber-300 font-bold block mb-1">
+                      Dylemat Przewodni:
+                    </span>
+                    <p className="text-stone-800 dark:text-stone-200 font-serif text-sm">
+                      {caseStudy.dilemma}
+                    </p>
+                  </div>
+                )}
+                <div className="space-y-3 border-l-2 border-amber-600 pl-4 ml-2">
+                  {caseStudy.timeline.map((item, idx) => (
+                    <div key={idx} className="relative pb-3">
+                      <div className="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-amber-600 border-2 border-white"></div>
+                      <span className="text-xs font-mono font-bold text-amber-700 dark:text-amber-400">{item.time}</span>
+                      <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 mt-0.5 font-serif">{item.event}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <p className="text-stone-700 dark:text-stone-300 font-serif">{caseStudy.context}</p>
+            )}
 
             {/* Decision taken & Information gap breakdown (B, C, D) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-4 border-t border-stone-200 dark:border-stone-800">
@@ -192,56 +218,80 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ caseStudy }) => {
         {/* Tab 2: Psychological Analysis (E) */}
         {activeTab === 'analysis' && (
           <div className="space-y-6">
-            <div className="p-4 rounded-xl bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-700">
-              <span className="text-xs font-mono uppercase text-stone-500 dark:text-stone-400 tracking-wider block mb-1">
-                Główny Mechanizm Psychologiczny
-              </span>
-              <p className="text-stone-900 dark:text-stone-100 font-serif text-lg font-semibold">
-                {caseStudy.psychologicalAnalysis.coreMechanism}
-              </p>
-              <p className="text-xs text-stone-600 dark:text-stone-400 mt-2">
-                Dynamika emocjonalna: {caseStudy.psychologicalAnalysis.emotionalDynamic}
-              </p>
-            </div>
+            {caseStudy.psychologicalAnalysis ? (
+              <>
+                <div className="p-4 rounded-xl bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-700">
+                  <span className="text-xs font-mono uppercase text-stone-500 dark:text-stone-400 tracking-wider block mb-1">
+                    Główny Mechanizm Psychologiczny
+                  </span>
+                  <p className="text-stone-900 dark:text-stone-100 font-serif text-lg font-semibold">
+                    {caseStudy.psychologicalAnalysis.coreMechanism}
+                  </p>
+                  <p className="text-xs text-stone-600 dark:text-stone-400 mt-2">
+                    Dynamika emocjonalna: {caseStudy.psychologicalAnalysis.emotionalDynamic}
+                  </p>
+                </div>
 
-            <div>
-              <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3">
-                Zidentyfikowane Błędy Poznawcze (Cognitive Biases)
-              </h4>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {caseStudy.psychologicalAnalysis.cognitiveBiases.map((bias, idx) => (
-                  <div key={idx} className="p-4 rounded-xl bg-amber-50/50 dark:bg-stone-800 border border-amber-200/60 dark:border-stone-700">
-                    <span className="text-xs font-mono text-amber-800 dark:text-amber-400 font-bold block mb-1">
-                      {bias.name}
-                    </span>
-                    <p className="text-xs text-stone-700 dark:text-stone-300 leading-relaxed mb-2 font-serif">
-                      {bias.description}
-                    </p>
-                    <div className="pt-2 border-t border-amber-200/40 dark:border-stone-700 text-[11px] text-amber-900 dark:text-amber-200">
-                      <strong>Wpływ:</strong> {bias.impact}
+                <div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3">
+                    Zidentyfikowane Błędy Poznawcze (Cognitive Biases)
+                  </h4>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {caseStudy.psychologicalAnalysis.cognitiveBiases?.map((bias, idx) => (
+                      <div key={idx} className="p-4 rounded-xl bg-amber-50/50 dark:bg-stone-800 border border-amber-200/60 dark:border-stone-700">
+                        <span className="text-xs font-mono text-amber-800 dark:text-amber-400 font-bold block mb-1">
+                          {bias.name}
+                        </span>
+                        <p className="text-xs text-stone-700 dark:text-stone-300 leading-relaxed mb-2 font-serif">
+                          {bias.description}
+                        </p>
+                        <div className="pt-2 border-t border-amber-200/40 dark:border-stone-700 text-[11px] text-amber-900 dark:text-amber-200">
+                          <strong>Wpływ:</strong> {bias.impact}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3">
+                    Podświadome Mechanizmy Obronne
+                  </h4>
+                  <div className="space-y-2">
+                    {caseStudy.psychologicalAnalysis.defenseMechanisms?.map((def, idx) => (
+                      <div key={idx} className="p-3.5 rounded-lg bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <span className="font-semibold text-stone-900 dark:text-stone-100 text-sm">
+                          {def.name}
+                        </span>
+                        <span className="text-xs text-stone-600 dark:text-stone-400 sm:text-right max-w-lg font-serif">
+                          {def.explanation}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </>
+            ) : caseStudy.psychologicalDynamics ? (
+              <div className="space-y-4">
+                <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3">
+                  Dynamika Psychologiczna i Zidentyfikowane Błędy Poznawcze
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {caseStudy.psychologicalDynamics.cognitiveBiases?.map((bias: any, idx: number) => (
+                    <div key={idx} className="p-4 rounded-xl bg-amber-50/50 dark:bg-stone-800 border border-amber-200/60 dark:border-stone-700">
+                      <span className="text-xs font-mono text-amber-800 dark:text-amber-400 font-bold block mb-1">
+                        {bias.biasName || bias.name}
+                      </span>
+                      <p className="text-xs text-stone-700 dark:text-stone-300 leading-relaxed font-serif">
+                        {bias.manifestation || bias.description}
+                      </p>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-
-            <div>
-              <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3">
-                Podświadome Mechanizmy Obronne
-              </h4>
-              <div className="space-y-2">
-                {caseStudy.psychologicalAnalysis.defenseMechanisms.map((def, idx) => (
-                  <div key={idx} className="p-3.5 rounded-lg bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <span className="font-semibold text-stone-900 dark:text-stone-100 text-sm">
-                      {def.name}
-                    </span>
-                    <span className="text-xs text-stone-600 dark:text-stone-400 sm:text-right max-w-lg font-serif">
-                      {def.explanation}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            ) : (
+              <p className="text-stone-600 dark:text-stone-400 text-sm font-serif">Analiza psychologiczna w toku.</p>
+            )}
           </div>
         )}
 
@@ -294,55 +344,77 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ caseStudy }) => {
         {/* Tab 4: Neurobiology (G) */}
         {activeTab === 'neuro' && (
           <div className="space-y-6">
-            <div>
-              <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3 flex items-center space-x-2">
-                <Brain className="w-4 h-4 text-purple-600" />
-                <span>Zaangażowane Ośrodki Mózgowe</span>
-              </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {caseStudy.neurobiologicalAnalysis.brainRegions.map((region, idx) => (
-                  <div key={idx} className="p-4 rounded-xl bg-purple-50/50 dark:bg-stone-800 border border-purple-100 dark:border-stone-700">
-                    <h5 className="font-bold text-sm text-purple-950 dark:text-purple-300 mb-1">{region.region}</h5>
-                    <p className="text-xs text-stone-600 dark:text-stone-400 mb-2 font-serif">{region.role}</p>
-                    <span className="inline-block text-[11px] font-mono font-medium px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-950/60 text-purple-800 dark:text-purple-300">
-                      Stan: {region.activationState}
-                    </span>
+            {caseStudy.neurobiologicalAnalysis ? (
+              <>
+                <div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3 flex items-center space-x-2">
+                    <Brain className="w-4 h-4 text-purple-600" />
+                    <span>Zaangażowane Ośrodki Mózgowe</span>
+                  </h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    {caseStudy.neurobiologicalAnalysis.brainRegions?.map((region, idx) => (
+                      <div key={idx} className="p-4 rounded-xl bg-purple-50/50 dark:bg-stone-800 border border-purple-100 dark:border-stone-700">
+                        <h5 className="font-bold text-sm text-purple-950 dark:text-purple-300 mb-1">{region.region}</h5>
+                        <p className="text-xs text-stone-600 dark:text-stone-400 mb-2 font-serif">{region.role}</p>
+                        <span className="inline-block text-[11px] font-mono font-medium px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-950/60 text-purple-800 dark:text-purple-300">
+                          Stan: {region.activationState}
+                        </span>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            </div>
+                </div>
 
-            {/* Neurotransmitters */}
-            <div>
-              <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3">
-                Kaskada Neuroprzekaźników
-              </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                {caseStudy.neurobiologicalAnalysis.neurotransmitters.map((nt, idx) => (
-                  <div key={idx} className="p-3.5 rounded-lg bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700">
-                    <span className="text-xs font-bold text-stone-900 dark:text-stone-100 block font-mono">{nt.name}</span>
-                    <p className="text-xs text-stone-600 dark:text-stone-400 mt-1 leading-relaxed font-serif">{nt.roleInScenario}</p>
+                {/* Neurotransmitters */}
+                <div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3">
+                    Kaskada Neuroprzekaźników
+                  </h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {caseStudy.neurobiologicalAnalysis.neurotransmitters?.map((nt, idx) => (
+                      <div key={idx} className="p-3.5 rounded-lg bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700">
+                        <span className="text-xs font-bold text-stone-900 dark:text-stone-100 block font-mono">{nt.name}</span>
+                        <p className="text-xs text-stone-600 dark:text-stone-400 mt-1 leading-relaxed font-serif">{nt.roleInScenario}</p>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            </div>
+                </div>
 
-            {/* Biological Timeline */}
-            <div>
-              <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3 flex items-center space-x-2">
-                <Clock className="w-4 h-4 text-blue-600" />
-                <span>Oś Czasu Biologicznego w Głowie Bohatera</span>
-              </h4>
-              <div className="space-y-2 border-l-2 border-blue-400 pl-4 ml-2">
-                {caseStudy.neurobiologicalAnalysis.biologicalTimeline.map((item, idx) => (
-                  <div key={idx} className="relative pb-3">
-                    <div className="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-blue-600 border-2 border-white"></div>
-                    <span className="text-xs font-mono font-bold text-blue-700 dark:text-blue-400">{item.timeMs}</span>
-                    <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 mt-0.5 font-serif">{item.process}</p>
+                {/* Biological Timeline */}
+                <div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3 flex items-center space-x-2">
+                    <Clock className="w-4 h-4 text-blue-600" />
+                    <span>Oś Czasu Biologicznego w Głowie Bohatera</span>
+                  </h4>
+                  <div className="space-y-2 border-l-2 border-blue-400 pl-4 ml-2">
+                    {caseStudy.neurobiologicalAnalysis.biologicalTimeline?.map((item, idx) => (
+                      <div key={idx} className="relative pb-3">
+                        <div className="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-blue-600 border-2 border-white"></div>
+                        <span className="text-xs font-mono font-bold text-blue-700 dark:text-blue-400">{item.timeMs}</span>
+                        <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 mt-0.5 font-serif">{item.process}</p>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
+              </>
+            ) : caseStudy.psychologicalDynamics?.neurotransmitters ? (
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 font-mono mb-3">
+                    Kaskada Neuroprzekaźników w Scenariuszu
+                  </h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {caseStudy.psychologicalDynamics.neurotransmitters.map((nt: any, idx: number) => (
+                      <div key={idx} className="p-3.5 rounded-lg bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700">
+                        <span className="text-xs font-bold text-stone-900 dark:text-stone-100 block font-mono">{nt.name}</span>
+                        <p className="text-xs text-stone-600 dark:text-stone-400 mt-1 leading-relaxed font-serif">{nt.roleInScenario}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
+            ) : (
+              <p className="text-stone-600 dark:text-stone-400 text-sm font-serif">Analiza neurobiologiczna w toku.</p>
+            )}
           </div>
         )}
 
@@ -362,28 +434,30 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ caseStudy }) => {
             )}
 
             {/* Defense tool & scripts (I) */}
-            <div>
-              <span className="text-xs font-mono uppercase tracking-wider text-emerald-800 dark:text-emerald-300 font-bold block mb-2">
-                I. Narzędzie Obronne i Skrypty Działania
-              </span>
-              <div className="space-y-3">
-                {caseStudy.influenceAndManipulation.counterMeasures.map((counter, idx) => (
-                  <div key={idx} className="p-4 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 shadow-xs">
-                    <div className="flex items-center space-x-2 text-stone-900 dark:text-stone-100 font-bold text-xs uppercase tracking-wider mb-2 font-mono">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                      <span>{counter.step}</span>
+            {caseStudy.influenceAndManipulation && (
+              <div>
+                <span className="text-xs font-mono uppercase tracking-wider text-emerald-800 dark:text-emerald-300 font-bold block mb-2">
+                  I. Narzędzie Obronne i Skrypty Działania
+                </span>
+                <div className="space-y-3">
+                  {caseStudy.influenceAndManipulation.counterMeasures?.map((counter, idx) => (
+                    <div key={idx} className="p-4 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 shadow-xs">
+                      <div className="flex items-center space-x-2 text-stone-900 dark:text-stone-100 font-bold text-xs uppercase tracking-wider mb-2 font-mono">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                        <span>{counter.step}</span>
+                      </div>
+                      <div className="p-3 bg-stone-50 dark:bg-stone-900 rounded-lg border border-stone-200 dark:border-stone-700 font-serif text-stone-800 dark:text-stone-200 text-sm italic mb-2">
+                        {counter.script}
+                      </div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400 flex items-start space-x-1.5">
+                        <ArrowRight className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
+                        <span><strong>Dlaczego to działa:</strong> {counter.rationale}</span>
+                      </div>
                     </div>
-                    <div className="p-3 bg-stone-50 dark:bg-stone-900 rounded-lg border border-stone-200 dark:border-stone-700 font-serif text-stone-800 dark:text-stone-200 text-sm italic mb-2">
-                      {counter.script}
-                    </div>
-                    <div className="text-xs text-stone-600 dark:text-stone-400 flex items-start space-x-1.5">
-                      <ArrowRight className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                      <span><strong>Dlaczego to działa:</strong> {counter.rationale}</span>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Reader Question (J) */}
             {caseStudy.readerQuestion && (
@@ -393,20 +467,27 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ caseStudy }) => {
                   <strong className="text-amber-950 dark:text-amber-200 font-mono text-xs uppercase block mb-1">
                     J. Pytanie dla Czytelnika:
                   </strong>
-                  <p className="font-serif text-stone-800 dark:text-stone-200 text-xs sm:text-sm italic">
-                    "{caseStudy.readerQuestion}"
+                  <p className="text-stone-800 dark:text-stone-200 font-serif text-xs sm:text-sm">
+                    {caseStudy.readerQuestion}
                   </p>
                 </div>
               </div>
             )}
 
-            {/* Key takeaway */}
-            <div className="p-4 rounded-xl bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-xs text-stone-700 dark:text-stone-300">
-              <span className="font-mono uppercase font-bold text-stone-900 dark:text-stone-100 block mb-0.5">
-                Główny Wniosek:
-              </span>
-              <p className="font-serif italic leading-relaxed">{caseStudy.keyTakeaway}</p>
-            </div>
+            {/* Key Takeaway */}
+            {caseStudy.keyTakeaway && (
+              <div className="p-4 rounded-xl bg-gradient-to-r from-amber-900 to-stone-900 text-amber-100 flex items-start space-x-3">
+                <BookOpen className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-amber-300 block mb-0.5">
+                    Główny Wniosek Psychologiczny
+                  </span>
+                  <p className="font-serif text-sm leading-relaxed">
+                    {caseStudy.keyTakeaway}
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>

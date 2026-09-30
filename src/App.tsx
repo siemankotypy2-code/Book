@@ -121,6 +121,7 @@ export default function App() {
     }
   }, [completedSections]);
 
+  const currentChapterIndex = allChapters.findIndex((c) => c.number === activeChapterNumber);
   const activeIndex = currentChapter.sections.findIndex((s) => s.id === activeSectionId);
   const currentSection: BookSection = currentChapter.sections[activeIndex >= 0 ? activeIndex : 0];
 
@@ -128,8 +129,8 @@ export default function App() {
     if (direction === 'prev') {
       if (activeIndex > 0) {
         setActiveSectionId(currentChapter.sections[activeIndex - 1].id);
-      } else if (activeChapterNumber > 1) {
-        const prevChapter = allChapters.find((c) => c.number === activeChapterNumber - 1);
+      } else if (currentChapterIndex > 0) {
+        const prevChapter = allChapters[currentChapterIndex - 1];
         if (prevChapter) {
           setActiveChapterNumber(prevChapter.number);
           setActiveSectionId(prevChapter.sections[prevChapter.sections.length - 1].id);
@@ -138,8 +139,8 @@ export default function App() {
     } else if (direction === 'next') {
       if (activeIndex < currentChapter.sections.length - 1) {
         setActiveSectionId(currentChapter.sections[activeIndex + 1].id);
-      } else if (activeChapterNumber < allChapters.length) {
-        const nextChapter = allChapters.find((c) => c.number === activeChapterNumber + 1);
+      } else if (currentChapterIndex < allChapters.length - 1) {
+        const nextChapter = allChapters[currentChapterIndex + 1];
         if (nextChapter) {
           setActiveChapterNumber(nextChapter.number);
           setActiveSectionId(nextChapter.sections[0].id);
@@ -169,8 +170,8 @@ export default function App() {
     );
   };
 
-  const hasPrev = activeIndex > 0 || activeChapterNumber > 1;
-  const hasNext = activeIndex < currentChapter.sections.length - 1 || activeChapterNumber < allChapters.length;
+  const hasPrev = activeIndex > 0 || currentChapterIndex > 0;
+  const hasNext = activeIndex < currentChapter.sections.length - 1 || currentChapterIndex < allChapters.length - 1;
 
   // Prepare text for speech narration
   const narrationText = `${currentSection.title}. ${currentSection.paragraphs.slice(0, 3).join(' ')}`;
@@ -325,7 +326,7 @@ export default function App() {
       {/* Book Footer */}
       <footer className="border-t border-stone-300/60 py-8 px-4 text-center font-sans text-xs text-stone-500">
         <p className="font-serif italic text-sm text-stone-700 dark:text-stone-300 mb-1">
-          „Anatomia Umysłu: Psychologia, Neuronauka i Wpływ” • Tom I & Tom II (Rozdziały 1–16)
+          „Anatomia Umysłu: Psychologia, Neuronauka i Wpływ” • Tom I, Tom II & Tom III (Rozdziały 1–43)
         </p>
         <p>
           Wszystkie badania i studia przypadków ugruntowane w neuronauce poznawczej, afektywnej, psychologii społecznej i behawioralnej.
